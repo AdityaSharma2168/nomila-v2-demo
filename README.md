@@ -1,3 +1,30 @@
+# Nomila
+
+## Product demos
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <a href="docs/demos/mila-voice-agent.mp4">
+        <img src="docs/demos/mila-voice-agent.jpg" alt="Mila — voice agent and deal intelligence" height="420">
+      </a>
+      <br>
+      <strong>Mila — voice agent and deal intelligence</strong>
+      <br>
+      <sub><a href="docs/demos/mila-voice-agent.mp4">▶ Watch (1:43)</a></sub>
+    </td>
+    <td align="center" width="50%">
+      <a href="docs/demos/nomila-studio.mp4">
+        <img src="docs/demos/nomila-studio.jpg" alt="Nomila Studio — AI creative and video generation" height="420">
+      </a>
+      <br>
+      <strong>Nomila Studio — AI creative and video generation</strong>
+      <br>
+      <sub><a href="docs/demos/nomila-studio.mp4">▶ Watch (1:23)</a></sub>
+    </td>
+  </tr>
+</table>
+
 ## Architecture
 
 Nomila is a cross-platform creator intelligence system composed of an Expo client, a TypeScript/Express API, a PostgreSQL-backed domain model, AI orchestration services, durable background execution, and specialized media and voice runtimes.
