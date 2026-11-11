@@ -1,0 +1,615 @@
+{
+  "specVersion": "blind-eval-spec/0.1",
+  "provider": "openai",
+  "athlete": {
+    "key": "riya-mehta",
+    "name": "Riya Mehta",
+    "sport": "Gymnastics"
+  },
+  "parseError": null,
+  "identityConfidence": "LOW",
+  "summary": "Public evidence for \"Riya Mehta\" in gymnastics is fragmented and may refer to more than one athlete, so identity confidence is low. The strongest match I found is an FIG profile for a young Indian rhythmic gymnast, Bafna Riya, with 2025 Junior Asian Championships results; I also found separate Khelo India and meet-result records for other gymnasts named Riya Mehta/related variants, but not enough to confidently unify them as one person. Based on the most plausible gymnastics identity, the athlete appears to be a developing junior-level competitor with some official competition exposure but limited evidence of elite senior achievements, broad audience reach, media footprint, or commercial partnerships. There is no strong public proof of major endorsements, repeated brand demand, or a sizable cross-platform presence. The main uncertainty is identity: the public record suggests multiple similarly named athletes across different regions, disciplines, and competition levels, which materially limits confidence in any marketability assessment.",
+  "summaryWords": 152,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "FIG athlete profile for BAFNA Riya from India in rhythmic gymnastics shows a junior-level international competition record, including the 2025 Junior Asian Championships in Singapore.",
+      "sourceTitle": "BAFNA Riya - FIG Athlete Profile",
+      "sourceUrl": "https://www.gymnastics.sport/site/athletes/bio_detail.php?id=94619",
+      "sourceType": "official",
+      "date": "2025"
+    },
+    {
+      "id": "E2",
+      "claim": "Khelo India 2025 merit certificate lists RIYA M from Karnataka in gymnastics, artistic individual apparatus floor, placing third.",
+      "sourceTitle": "KIYG 2k25 Athlete Merit Certificate Master",
+      "sourceUrl": "https://kheloindia.gov.in/uploads/KIYG%202k25%20Athlete%20Merit%20Certificate%20Master.pdf",
+      "sourceType": "official",
+      "date": "2025"
+    },
+    {
+      "id": "E3",
+      "claim": "Khelo India Youth Games 2023 participation certificate lists Riya Sharma in gymnastics floor, indicating youth-level participation under a similar first name but different surname.",
+      "sourceTitle": "Khelo India Youth Games 2023 - Participation",
+      "sourceUrl": "https://youth.kheloindia.gov.in/assets/landing_new/participation_certificate.pdf",
+      "sourceType": "official",
+      "date": "2023"
+    },
+    {
+      "id": "E4",
+      "claim": "A meet-results page lists 'Mehta, Riya' in gymnastics with junior division scores, indicating local or developmental competition participation.",
+      "sourceTitle": "mymeetscores.com meet result for Riya Mehta",
+      "sourceUrl": "https://www.mymeetscores.com/meet.pl?gymnastid=21653598&meetid=90958&session=7",
+      "sourceType": "secondary",
+      "date": "2024"
+    },
+    {
+      "id": "E5",
+      "claim": "Another meet-results page lists 'Mehta, Riya' in gymnastics with junior results, again suggesting participation at a developmental level.",
+      "sourceTitle": "mymeetscores.com meet result for Riya Mehta",
+      "sourceUrl": "https://www.mymeetscores.com/meet.pl?gymnastid=21600635&meetid=1000004031&session=07D",
+      "sourceType": "secondary",
+      "date": "2023"
+    },
+    {
+      "id": "E6",
+      "claim": "LinkedIn search results show profiles for Riya Mehta, but they do not provide reliable athlete-specific public audience or commercial evidence.",
+      "sourceTitle": "LinkedIn results for Riya Mehta",
+      "sourceUrl": "https://www.linkedin.com/in/riyam.../ / https://www.linkedin.com/posts/riyalizations_mba-newbeginnings-activity-7248534985106698241-MLom",
+      "sourceType": "platform",
+      "date": "2026"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 35,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "rationale": "The evidence points to junior/developmental gymnastics participation and some official youth competition exposure, but not to a major professional or senior international environment.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 30,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "rationale": "Available results show participation and a third-place youth result in floor, but the record does not show elite or dominant competitive outcomes.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "I found no reliable rankings, major awards, or widely recognized honors tied confidently to this athlete identity.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 40,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E1",
+        "E3"
+      ],
+      "rationale": "The FIG profile shows official international junior competition exposure, but there is no evidence of senior national team status or major global representation.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E1",
+        "E4",
+        "E5"
+      ],
+      "rationale": "The sources do not establish whether the athlete is a key team member, captain, or central figure within a squad or program.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 45,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "The most concrete competition evidence is recent, from 2025, but it reflects developmental-level achievement rather than a breakout elite result.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "I did not find reliable public follower counts, platform metrics, or a clear multi-platform audience footprint for this athlete.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E1",
+        "E4",
+        "E5"
+      ],
+      "rationale": "There is not enough evidence to compare her audience against other gymnasts at the same level.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No longitudinal audience data or reliable growth trend was available.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "I found no verified athlete-managed presence across multiple public platforms.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No reliable engagement metrics were available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There is insufficient evidence to assess how efficiently content reaches beyond the current audience.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No public data on shares, saves, or similar high-value interactions was found.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No retention or completion data was available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No story analytics or comparable metrics were available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Without public audience metrics or platform analytics, audience authenticity cannot be assessed.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 15,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E1",
+        "E4",
+        "E5"
+      ],
+      "rationale": "The public footprint appears very limited, with only sparse official and meet-result traces rather than sustained media coverage.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 35,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "rationale": "Coverage exists from official federation and sports-program sources, but not from major mainstream media.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "I found no reliable search-interest evidence such as trend data or consistent public curiosity indicators.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No evidence of broader public discussion beyond isolated records.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There is no evidence of recognition outside gymnastics.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 35,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "rationale": "The only clearly supported narrative is a young Indian gymnast in developmental competition, which is real but not especially distinctive or uniquely memorable.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 25,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E4"
+      ],
+      "rationale": "There is enough evidence to confirm participation, but not enough depth to show a rich public story arc.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 40,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "rationale": "The competitions and results are genuine, but the identity ambiguity prevents full confidence in a single coherent narrative.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 15,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "rationale": "The available sources do not show broad media amplification of her story.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 30,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "A youth-athlete development story could fit some local or inspirational campaigns, but there is limited proof of broader campaign-ready resonance.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 30,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "The narrative is likely tied to an early-career stage and current competition cycle, making it less durable unless stronger achievements emerge.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 35,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "rationale": "As a young gymnast, she could plausibly fit a limited set of categories such as youth sports, training gear, education, or local wellness brands.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 80,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "rationale": "I found no confirmed serious brand-safety issues in the sources reviewed.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No verified audience demographic or purchasing-profile data was available.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 30,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3",
+        "E6"
+      ],
+      "rationale": "The identity is not yet coherent in public data because multiple similar names and records make the athlete persona hard to pin down.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There is not enough public content to judge versatility across campaign formats.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 45,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "rationale": "The strongest evidence points to India-based competition, which creates some regional relevance, but the commercial reach appears limited.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "I found no credible public evidence of paid endorsements or meaningful commercial activity.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No repeat brand or commercial demand was publicly verifiable.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There were no confirmed brand partners to evaluate.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No renewal or repeat-partnership evidence was found.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No public campaign-performance evidence was available.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There is no public evidence supporting premium pricing power.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 45,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "rationale": "The athlete appears active and still developing competitively, but the evidence does not show a clear breakout trajectory.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No reliable audience-growth data was available.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There is insufficient media history to determine acceleration or decline.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No trustworthy search or social trend evidence was found.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No public evidence of accelerating brand activity was found.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Official federation-level evidence suggests real competitive participation in gymnastics.",
+    "Recent youth competition activity indicates the athlete is still active and developing.",
+    "Brand-safety risk appears low based on the available public record."
+  ],
+  "keyConstraints": [
+    "Identity is not confidently resolved; multiple similar names appear across different gymnastics records.",
+    "No reliable public social audience metrics were found.",
+    "No confirmed endorsements, paid partnerships, or repeat commercial relationships were found.",
+    "Public media footprint appears limited and mostly administrative or results-based."
+  ],
+  "importantMissingData": [
+    "Verified athlete-owned social accounts and follower counts.",
+    "Official biography confirming exact identity, discipline, age, and current level.",
+    "Senior national/international rankings and major medals.",
+    "Documented brand partnerships, sponsorships, or NIL/commercial deals.",
+    "Audience demographics, engagement, and growth trends."
+  ],
+  "identityOrEvidenceRisks": [
+    "There is a substantial risk of conflating multiple different people named Riya Mehta, Riya Sharma, or similar variants.",
+    "At least one strong official source found is for BAFNA Riya rather than Riya Mehta, so the evidence may not describe the same athlete.",
+    "Because of identity ambiguity, several scores should be treated as provisional and low-confidence."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "pk06-partner-rival-mark",
+  "description": "A partner post: a photo showing another sportswear brand's mark is kept out; a photo in the partner's gear is used.",
+  "reviewed": false,
+  "library": [
+    { "key": "rival_mark", "kind": "photo", "description": "the athlete running in shoes with a clear logo", "brands": ["$rival"] },
+    { "key": "partner_gear", "kind": "photo", "description": "the athlete lacing up the partner's running shoes", "brands": ["$partner"] },
+    { "key": "plain", "kind": "photo", "description": "the athlete jogging on a quiet road at dawn" }
+  ],
+  "post": {
+    "what": "Partner post",
+    "body": "Caption: Miles start here.\nShots: lacing up, the first steps.",
+    "platform": "instagram",
+    "partner": "$partner"
+  },
+  "expect": { "any_of": ["partner_gear", "plain"], "must_not": ["rival_mark"], "ai_needed": false },
+  "mock": { "picks": [{ "key": "partner_gear" }, { "key": "plain" }], "look": "natural", "mood": "driving" }
+}

@@ -1,0 +1,665 @@
+{
+ "id": "aa36ba50-8c6f-40ed-bc37-c2b14a86ecdb",
+ "subject_id": "77bbebfe-697f-4eb1-bcdf-5fb97f74cb0c",
+ "versions": {
+  "params": "v1.0.1-beta.1+lookups-v1+policy-v0",
+  "policy": "policy-v0",
+  "priors": "priors-v1",
+  "cohorts": "cohorts-v0-empty",
+  "lookups": "lookups-v1",
+  "evaluator": "blind-eval-spec/0.2.1",
+  "methodology": "v1.0.1-beta.1"
+ },
+ "value": {
+  "score": 786,
+  "drivers": [],
+  "summary": "Ilona Maher is a historic U.S. Olympic rugby sevens medalist, a breakout media star, and a global cultural phenomenon. At 30 years old, she has successfully transformed her athletic platform into a multi-million-dollar commercial empire, making her the world's most followed rugby player with over 9.4 million combined social media followers. Her distinct 'Beast, Beauty, Brains' narrative championing body positivity and female empowerment has made her an exceptionally valuable corporate partner, culminating in her ranking as the 20th highest-paid female athlete globally in 2025 with $8 million in off-field earnings. Maher works with more than 20 prestigious global brands, including Adidas, Paula's Choice, and Barbie, and has successfully crossed over into mainstream entertainment as the runner-up on ABC's Dancing with the Stars. Her cultural momentum is currently sustained by a high-profile, self-titled docuseries in development with Reese Witherspoon's Hello Sunshine. Having officially returned to active training with the USA Sevens program in late 2026 to target the Los Angeles 2028 Olympic Games, Maher's unique blend of athletic authority, elite commercial proof, and cultural resonance makes her one of the most commercially powerful and secure assets in modern sports marketing.",
+  "composite": 90.65,
+  "confidence": 85.5,
+  "dimensions": [
+   {
+    "score": 87.75,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "athletic_authority.role_importance",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 88,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3",
+       "E9"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 80,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3",
+       "E9",
+       "E10"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 82,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E3",
+       "E9"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 80,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3",
+       "E9"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "athletic_authority",
+    "confidence": 90,
+    "contribution": 13.16
+   },
+   {
+    "score": 89.5,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "audience_scale.audience_growth",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 88,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 88,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E5",
+       "E6",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 100,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "audience_scale",
+    "confidence": 90,
+    "contribution": 13.43
+   },
+   {
+    "score": 87.38,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "engagement_quality.video_retention",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 90,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 88,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E4",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "engagement_quality",
+    "confidence": 60,
+    "contribution": 13.11
+   },
+   {
+    "score": 96.35,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E5",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 96,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E5",
+       "E6",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "cultural_relevance",
+    "confidence": 90,
+    "contribution": 9.64
+   },
+   {
+    "score": 95.55,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "narrative_power.durability",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 92,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E6",
+       "E10"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3",
+       "E5",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 96,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E7",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "narrative_power",
+    "confidence": 90,
+    "contribution": 9.56
+   },
+   {
+    "score": 95.25,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "brand_fit.brand_safety",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 92,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E5",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 90,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "brand_fit",
+    "confidence": 90,
+    "contribution": 9.53
+   },
+   {
+    "score": 94.6,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 96,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 90,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E7",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 92,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "commercial_proof",
+    "confidence": 90,
+    "contribution": 14.19
+   },
+   {
+    "score": 80.25,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "momentum.audience_growth",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 75,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E6"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 80,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E10"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "asOf": "2026-09-13T22:51:57.666Z",
+      "value": 80,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E10"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "momentum",
+    "confidence": 90,
+    "contribution": 8.03
+   }
+  ],
+  "overallConfidence": {
+   "level": "HIGH",
+   "explanation": "The evaluation is backed by highly authoritative, fresh public data, including Forbes' December 2025 highest-paid female athlete ranking, official Olympic records, and confirmed major production deals. The only minor missing pieces are private digital platform metrics, which do not materially change the overall exceptional marketability assessment."
+  },
+  "identityConfidence": "HIGH",
+  "importantMissingData": [
+   "First-party digital engagement data including shares, saves, story performance, and audience demographic distributions."
+  ]
+ },
+ "evidence_as_of": "2026-09-13T22:51:57.666Z",
+ "evaluation_run_id": "57ab12ce-b23b-4f4c-bb40-3b9575ec7cb9",
+ "created_at": "2026-09-16T06:24:51.777Z",
+ "career_status": "active",
+ "sport": "rugby",
+ "division": null
+}

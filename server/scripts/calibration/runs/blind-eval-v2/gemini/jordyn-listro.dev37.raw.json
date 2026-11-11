@@ -1,0 +1,858 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "jordyn-listro",
+    "name": "Jordyn Listro",
+    "sport": "Soccer"
+  },
+  "conditions": "gemini-3.5-flash via Vertex; Google Search grounding; default thinking; temperature 1.0; text output with fenced JSON; spec v0.2 additions; social block none",
+  "startedAt": "2026-09-14T12:28:56.137Z",
+  "attempts": 1,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "responseId": "iOinasDvLpLgsbwP9-CYQQ",
+  "latencyMs": 115365,
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+    "promptTokens": 3511,
+    "outputTokens": 7394,
+    "thoughtTokens": 14985,
+    "totalTokens": 25890,
+    "searchCalls": 13
+  },
+  "costUsd": 0.24167750000000002,
+  "text": "```json\n{\n  \"athlete\": {\n    \"name\": \"Jordyn Listro\",\n    \"sport\": \"Soccer\",\n    \"identity_confidence\": \"HIGH\"\n  },\n\n  \"marketability_summary\": \"Jordyn Listro is a veteran professional soccer midfielder and the captain of Tampa Bay Sun FC, whom she led to the inaugural USL Super League championship in June 2025. Her elite standing is anchored by prior experience in the NWSL with Orlando Pride and Kansas City Current, and two senior caps for the Canadian National Team. On social media, Listro maintains a moderate audience centered on Instagram (@jordylistro) with nearly 30,000 followers, though she boasts a highly engaged fanbase with an above-average 7% engagement rate. Culturally, she enjoys strong regional popularity in Florida and Canada, bolstered by her marriage to golfer Cristian DiMarco. Listro's highly compelling comeback narrative—transitioning from professional soccer to medical device sales during a career hiatus, then returning to reach the national team and captain a champion franchise—provides immense storytelling power. This narrative has propelled significant commercial momentum in 2026, highlighted by her signings as a prominent brand ambassador for Gainbridge and her feature in a national Under Armour campaign. Major missing information includes private platform metrics such as video retention, saves, shares, and exact ROI performance for her commercial campaigns, resulting in some evaluated social and commercial sub-signals being marked as missing.\",\n\n  \"evidence\": [\n    {\n      \"id\": \"E1\",\n      \"claim\": \"Jordyn Listro captains Tampa Bay Sun FC and led them to the inaugural USL Gainbridge Super League championship in June 2025.\",\n      \"source_title\": \"Tampa Bay Sun wins inaugural USL Super League title\",\n      \"source_url\": \"https://equalizersoccer.com/2025/06/14/tampa-bay-sun-wins-inaugural-usl-super-league-title/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2025-06-14\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Covers her role as captain leading the team to the first ever USL Super League title.\"\n    },\n    {\n      \"id\": \"E2\",\n      \"claim\": \"Listro has earned two senior caps for the Canadian Women's National Team, debuting at the SheBelieves Cup in February 2021 against Argentina.\",\n      \"source_title\": \"Jordyn Listro | Canada Soccer\",\n      \"source_url\": \"https://canadasoccer.com/profile/?id=2888\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2021-02-21\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Official player profile showing her senior and youth national team appearances.\"\n    },\n    {\n      \"id\": \"E3\",\n      \"claim\": \"Listro has played professionally in Spain's top flight for UDG Tenerife, and in the NWSL for Orlando Pride and Kansas City Current.\",\n      \"source_title\": \"Jordyn Listro - Wikipedia\",\n      \"source_url\": \"https://en.wikipedia.org/wiki/Jordyn_Listro\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-08-26\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Details her club career trajectory across Tenerife, Orlando, Kansas City, and Tampa Bay.\"\n    },\n    {\n      \"id\": \"E4\",\n      \"claim\": \"Listro's Instagram account (@jordylistro) has nearly 30,000 followers with a strong above-average engagement rate of approximately 7%.\",\n      \"source_title\": \"Proč bikiny poráží kapitánskou pásku\",\n      \"source_url\": \"https://zpravy.aktualne.cz/ekonomika/proc-bikiny-porazi-kapitanskou-pasku/r~db67ef26284611ebb801ac1f6b220ee8/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2026-07-23\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Verifies her follower scale and exact 7% engagement rate via commercial influencer databases.\"\n    },\n    {\n      \"id\": \"E5\",\n      \"claim\": \"Gainbridge announced Listro as one of nine brand ambassadors for the Gainbridge Super League in March 2026.\",\n      \"source_title\": \"Rising soccer stars join ambassador roster alongside Billie Jean King, Caitlin Clark, Annika Sörenstam, and Briana Scurry\",\n      \"source_url\": \"https://www.businesswire.com/news/home/20260309115160/en/\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-03-09\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Announcement of major brand ambassador partnership representing the USL Super League.\"\n    },\n    {\n      \"id\": \"E6\",\n      \"claim\": \"Listro was featured in Under Armour's national 'Back To Sports' marketing campaign in partnership with Dick's Sporting Goods.\",\n      \"source_title\": \"Nolis Anderson Photography - Back To Sports campaign\",\n      \"source_url\": \"https://facebook.com/nolisandersonphotography\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-03-05\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Verifies her role as an elite athlete talent in Under Armour's campaign.\"\n    },\n    {\n      \"id\": \"E7\",\n      \"claim\": \"She is sponsored by Hornby Organic and listed on OpenSponsorship with a public pricing structure starting at $1,440 per social media post.\",\n      \"source_title\": \"Jordyn Listro open sponsorship profile\",\n      \"source_url\": \"https://opensponsorship.com/athletes/jordyn-listro\",\n      \"source_type\": \"platform\",\n      \"published_or_observed_date\": \"2026-08-01\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Provides details on her active lifestyle partnerships and commercial deal rates.\"\n    }\n  ],\n\n  \"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"Listro plays in the USL Super League, a sanctioned Division One professional league in the US, and has represented Canada at the senior international level.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"She captained Tampa Bay Sun FC to the inaugural USL Super League championship title in June 2025 and remains a highly consistent first-choice starting midfielder.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"While she lacks top-tier individual international awards, her formal honors include collegiate appearance records and winning a professional league title.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 68,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"She has earned two senior caps for Canada's national team and competed in the 2012 FIFA U-17 World Cup.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"As team captain and a vital midfield engine, she is the central leadership figure for Tampa Bay Sun FC on and off the field.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Her primary career achievement of captaining her club to the USL Super League title occurred recently in June 2025, and she continues to lead the squad.\"\n      }\n    },\n\n    \"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 45,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her primary audience consists of approximately 30,000 followers on Instagram, reflecting a moderate but stable digital footprint.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 50,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her follower base is typical for professional women's soccer players of her level, positioning her in the mid-tier of the sport.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No reliable longitudinal data is available to evaluate her recent audience growth trends.\"\n      },\n      \"platform_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 35,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her digital presence is heavily concentrated on Instagram, with no verified active presence on other major social platforms.\"\n      }\n    },\n\n    \"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Listro's Instagram engagement rate of approximately 7% is exceptionally strong and far exceeds industry averages for her follower tier.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Private platform metrics regarding organic impressions and content reach efficiency are unavailable.\"\n      },\n      \"shares_saves_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"High-value engagement metrics such as post shares and saves are private and cannot be evaluated from public sources.\"\n      },\n      \"video_retention\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Video completion rates and retention curves require backend platform analytics that are not publicly available.\"\n      },\n      \"story_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Temporary story view rates and interaction metrics require private account insights and are not accessible.\"\n      },\n      \"audience_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 72,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\", \"E5\", \"E6\"],\n        \"rationale\": \"Her exceptional engagement rate and selection for major brand campaigns by corporate sponsors confirm a highly genuine, high-quality audience.\"\n      }\n    },\n\n    \"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 52,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"She receives steady, targeted coverage in regional Florida media and Canadian sports outlets, though she lacks massive mainstream global volume.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E5\"],\n        \"rationale\": \"Major prestige publications like the Canadian Press, CBC Sports, and Front Office Sports have written comprehensive features on her career.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 42,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"Search interest is moderate and primarily driven by her team's competitive schedule, local community milestones, and family background.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 50,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"She generates regular, localized public conversation online among USL Super League supporters and regional sports fans.\"\n      },\n      \"crossover_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 48,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E3\", \"E7\"],\n        \"rationale\": \"Her lifestyle and fashion posting style, along with her marriage into a professional golfing family, provides modest crossover appeal outside soccer.\"\n      }\n    },\n\n    \"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her transition from professional soccer to medical device sales during a hiatus, followed by a successful return to the national team and captaincy, is highly distinct.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her narrative has immense depth, touching on themes of resilience, career transition, mental wellness, and local community leadership.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her life journey and the specific timeline of her medical sales career and subsequent athletic comeback are thoroughly verified by journalists.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Journalists frequently seize upon her unique career hiatus and comeback story, keeping it central to her media footprint.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"Her personal journey of financial transitions and athletic endurance seamlessly aligns with campaigns for both financial services and fitness brands.\"\n      },\n      \"durability\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"Based on personal growth and leadership, her narrative remains compelling throughout her career and will transition naturally into her post-playing life.\"\n      }\n    },\n\n    \"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\", \"E7\"],\n        \"rationale\": \"Listro's profile naturally supports a wide range of partnerships across athletic apparel, health and wellness, finance, travel, and local lifestyle.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"She maintains a pristine, scandal-free public reputation, making her an exceptionally safe choice for corporate brands.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 68,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her audience skews toward active, wellness-oriented, and community-focused individuals, presenting strong commercial value for targeted brands.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E7\"],\n        \"rationale\": \"Her public persona is incredibly cohesive, consistently emphasizing hard work, resilience, leadership, and a balanced lifestyle.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\", \"E7\"],\n        \"rationale\": \"She is equally comfortable in action-oriented sportswear shoots, structured financial presentations, and casual lifestyle content.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"She holds deep commercial appeal in Florida (Tampa and Orlando) and major Canadian urban markets, maximizing her geographical utility.\"\n      }\n    },\n\n    \"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 76,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"Her active, paid partnerships with major brands like Gainbridge and Under Armour prove she commands high commercial value.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 72,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\", \"E7\"],\n        \"rationale\": \"Listro secures a steady flow of partnerships, spanning athletic, corporate, and organic consumer brand deals.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"Partnering with top-tier global names like Under Armour and major financial firms like Gainbridge highlights the exceptional quality of her sponsors.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E7\"],\n        \"rationale\": \"She has maintained a multi-year partnership with Hornby Organic, demonstrating her reliability and value to long-term sponsors.\"\n      },\n      \"campaign_performance\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Specific ROI metrics, sales conversion rates, and click-through data for her campaigns are not publicly accessible.\"\n      },\n      \"pricing_power\": {\n        \"status\": \"scored\",\n        \"score\": 60,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E7\"],\n        \"rationale\": \"Her public OpenSponsorship profile lists clear, professional base rates for social media and appearances, which are solid but typical for her follower tier.\"\n      }\n    },\n\n    \"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"While she is a stable and celebrated champion captain in her prime at age 31, her international national team activity has leveled off since 2021.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Reliable historical audience growth data is not publicly available to evaluate her digital expansion.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 60,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"Her media presence is stable, driven by her championship defense and high-profile ambassador announcements.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 55,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her public interest remains steady and consistent, though without dramatic viral spikes.\"\n      },\n      \"commercial_acceleration\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"Her commercial career is experiencing clear acceleration in 2026, driven by top-tier brand deals with Gainbridge and Under Armour.\"\n      }\n    }\n  },\n\n  \"dimension_assessments\": {\n    \"athletic_authority\": {\n      \"prose\": \"Jordyn Listro maintains strong athletic authority as a veteran professional midfielder and captain of Tampa Bay Sun FC, whom she led to the inaugural USL Super League championship. Her background includes extensive play in the top-tier NWSL with the Orlando Pride and Kansas City Current, alongside international experience representing Canada. Her leadership role as team captain and consistent performance in a Division One professional league anchor her sporting credibility.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Her playing career, national caps, and championship-winning captaincy are thoroughly documented by official leagues and major news outlets.\"\n    },\n    \"audience_scale\": {\n      \"prose\": \"Listro possesses a moderate public audience, primarily concentrated on Instagram where she has nearly 30,000 followers. This audience size is typical for a non-national team regular in professional women's soccer, placing her in a solid mid-tier. While she lacks massive global scale, her local and sport-specific reach is highly defined.\",\n      \"confidence\": \"MEDIUM\",\n      \"confidence_reason\": \"Follower counts and platform presence are observed via public channels and commercial databases, but private cross-platform metrics are unavailable.\"\n    },\n    \"engagement_quality\": {\n      \"prose\": \"Despite her moderate audience scale, Listro's engagement is exceptionally high, with public commercial tools reporting an above-average engagement rate of approximately 7% on Instagram. Her audience demonstrates a genuine connection to her dual athletic-lifestyle persona. However, deeper quality metrics remain private.\",\n      \"confidence\": \"MEDIUM\",\n      \"confidence_reason\": \"Public engagement rates are documented by marketing analyses, but private platform data such as shares, saves, and retention rates are missing.\"\n    },\n    \"cultural_relevance\": {\n      \"prose\": \"Listro has stable cultural relevance within the Tampa Bay region and the Canadian women's soccer community. She receives consistent coverage from high-prestige sports journalism outlets, and her marriage to professional golfer Cristian DiMarco provides modest crossover interest. While she is not a mainstream pop-culture figure, her local and sport-specific footprint is secure.\",\n      \"confidence\": \"MEDIUM\",\n      \"confidence_reason\": \"Media volume, source quality, and community presence are visible, but search and conversational trajectory lack direct platform analytics.\"\n    },\n    \"narrative_power\": {\n      \"prose\": \"Narrative power is one of Listro's greatest marketability strengths, driven by her compelling story of perseverance. After stepping away from soccer to work in medical device sales, she successfully mounted a comeback to play in the NWSL and debut for the Canadian national team at age 25. Her current role as a champion captain in a new league provides a highly inspiring and authentic story for corporate and athletic brands.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Her distinct career trajectory from medical device sales back to elite soccer has been widely detailed and celebrated in extensive media features.\"\n    },\n    \"brand_fit\": {\n      \"prose\": \"Listro offers an exceptional brand fit for mainstream corporate partnerships, combining flawless brand safety with a cohesive public identity. She naturally bridges multiple commercial categories, including sports performance, wellness, personal finance, and travel. Her profile as an articulate, family-oriented leader makes her highly appealing to premium sponsors.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Her clear value system, multi-category commercial adaptability, and pristine public record provide overwhelming evidence of her suitability.\"\n    },\n    \"commercial_proof\": {\n      \"prose\": \"Listro has established robust commercial proof, highlighted by her appointment as a Gainbridge brand ambassador alongside high-profile athletes, and her participation in Under Armour's national campaign. These premium partnerships, combined with long-term sponsorship from Hornby Organic and transparent pricing on OpenSponsorship, demonstrate clear, verified market demand.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Her active endorsement contracts with major entities like Under Armour and Gainbridge are fully verified by official brand announcements.\"\n    },\n    \"momentum\": {\n      \"prose\": \"Listro's momentum is highly favorable commercially, fueled by her recent 2026 ambassador signings with major brands like Gainbridge and Under Armour. Athletically, her trajectory is stable as a champion captain, though her national team integration remains a long-term goal. Her overall profile is currently experiencing its strongest commercial upswing to date.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"The timing and high profile of her recent brand acquisitions in 2026 provide undeniable evidence of upward commercial momentum.\"\n    }\n  },\n\n  \"overall_confidence\": {\n    \"level\": \"HIGH\",\n    \"explanation\": \"The athlete's identity, professional achievements, and major corporate sponsorships (Gainbridge and Under Armour) are well-documented by reputable public sources. While some private platform-specific social and ROI metrics are missing, the available evidence is highly consistent and sufficient to evaluate her current marketability with high certainty.\"\n  },\n\n  \"key_strengths\": [\n    \"Inspirational comeback narrative from medical device sales back to professional soccer and the national team.\",\n    \"Championship leadership pedigree as captain of the inaugural USL Super League champions, Tampa Bay Sun FC.\",\n    \"Exceptional brand fit and safety, securing partnerships with prestigious brands like Under Armour and Gainbridge.\",\n    \"Highly engaged Instagram audience with a 7% engagement rate that far exceeds typical industry benchmarks.\"\n  ],\n\n  \"key_constraints\": [\n    \"Moderate absolute audience scale (under 30,000 followers) limits global reach compared to major soccer stars.\",\n    \"Lack of active presence on alternative platforms like TikTok, YouTube, or X concentrates her digital footprint.\",\n    \"At age 31, her physical athletic peak is established, and future national team reintegration remains a long-term goal.\"\n  ],\n\n  \"important_missing_data\": [\n    \"Private social media metrics including story efficiency, video completion/retention, and post saves/shares.\",\n    \"Granular longitudinal audience growth trends over time.\",\n    \"Specific campaign performance metrics, conversion rates, and ROI data from her brand sponsors.\"\n  ],\n\n  \"identity_or_evidence_risks\": [\n    \"Potential name confusion in search databases with other athletes named Jordyn (e.g., Jordyn Huitema, Jordyn Conrad), though identity resolution for Jordyn Listro DiMarco is verified as highly secure.\"\n  ]\n}\n```",
+  "native": {
+    "groundingChunks": [
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIUMhHzcs-_KsRZ4B9-YmhDyYG6LRVGBju5MLkdyERWEvMdq0tAR9LZUgcBeShN2Y-JQu93KTHUjTqF96H2fYkMDDAY9nLYm0uus_fCjQpP9RENtzOafnV-8i8KdopsxwY2Hg322hG1avaxYD5Qb3aL1auViGCSj0yS_Iao9TZW_yFY3mWrjOXOUmAIhByrVmQHrcGdpxgueeWS1uPCX_Vp8Tdu-gI0sexfON9FN1GmaAmJlUgBzSr7ni5KLgOt0firdOWeA==",
+          "title": "stalbertgazette.com",
+          "domain": "stalbertgazette.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwJbKPvGJQaE1hc0C7x_SmBhxUjwj6RMxPM_y2Iuaum3Og8h5gttN9_KmbIw0EsRuYKsB6d4Tz5d5Bvw6ozp2O35MKVR0MlQ9lm4MqxhfsiHJcfVm2tIDjpV-F__xMnM0Mv76vWmYGRQDsX948VcY=",
+          "title": "canadasoccer.com",
+          "domain": "canadasoccer.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3T1liYKHEDSHhmCYHA-V3hH-NI-ungMOFgpHPgWExHZjI5oHe2hDygpRew5VX1poodBYZ_7-NHC56-MtEE_LnX5VFWJ68IYjCqcnnI8Ge5RoQBTolXqf6V1V4Ca-ZfebNHWqCjP5oWwTzvSRhRlkZ1BZ0VZ1rRuCmqyYabY_IIqm7Gtnz8tgQjsXMNG3pvWTH2514p0YgIfk8D8V3ANt2KbWkSymJCmjCqLQ99FrYmCidi0onoRJgH0LabLGZmonzFXISRp3XBoST8o9UenWK0g8=",
+          "title": "centrum.cz",
+          "domain": "centrum.cz"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGa9nFA2RSACNR498PP55D2vXLr8OgJxRcUH4NkIeL8oZkDuk0Y-UI7cg6Zk4629rNDRIR6amtPyt77wSegEvs3cYf01rWTVHXU-RHjyQdf-cuGHENlKqLHQBTA_X3qXeLp-f7pcLZ9yB5imjDG-OZSreZzsTyOMztw69BQwAcOwLeQaF6dabODzAYdpr7ShL7vugV4Z4voSxyi4i0QdAYq02GqnyXaXjusidA=",
+          "title": "tampabay.com",
+          "domain": "tampabay.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEq0AwOWAHTcZY3olWUkINfgHWZ1vPdS0wVo2F65e-yvH8gDDuE-DAQfvj0kAwrtqEfw1vLftet9GXUCrAbaAIrEV-c9ct3zYB8WmhHNnyPMtzaz4OUCUOiY9tt87LTHZg8Cpvvs1VxTjR0Fx8AugNeJvprquU76Ve58Rk543c-rjnPXM0B4onxvd2ojeJslhkTo4YKwcyW-n2RCOEmMRer4fdq8bGj_dXMr28Tlp-2O3t3eJyamDiNlsv6L8Scj6UH1fUnUFDD",
+          "title": "piquenewsmagazine.com",
+          "domain": "piquenewsmagazine.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOt5bYRF7-Ef7syqBTr65HrO1AZ8Z74JF7wWi3QvsW6LT2vUqfOUQ4qaJshS6oNXl4wYurgLbTD6YE3-HD46QR3gXa8hWsSiVGWOLlPyAiZ8VrB5vc7ElpXp0kXC3EeGo4-1dPBjCv35QDH3N956x0GtXbPr2Pp4MjYBYiiw0m3GsEyjz--bWoXOY18x4zHis41W2QUWtNmgncpiPm8iaoIg==",
+          "title": "facebook.com",
+          "domain": "facebook.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6R1QBbFS-yMZoUt2vnHz_SlsxumehubtjsfYTDZSHVvoB90IpOd-PgiX2NjdJ_AUiIMvvT8JkSpTtRiV0h6TEHmcZsUGpp1gMKSshS6uYHvYthgtDxcTOiO7JdC92tpRXw9M1HLLcGQEnDPPScHpJP4FQCBvfiHLbx8HuTA0j-KsYJwZ9t8qno00dd88dTErE3UBIiQhm7ySLKuksZxskcBe3p-KVblhqxwmINbgsj-E4tB2BgLnF9n3sPPZxDJ_njjOeWqdFyne5C_55DIwkry8SYvxUqvSRRRt3bWC6SIXlYwE=",
+          "title": "businesswire.com",
+          "domain": "businesswire.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG2Bfu3RBZ9zMMZnoZaYOoeW7dfGDecVfFGzU671dN6WgdKd14ybXTAvi49dJrQCv87YI605dMYItbee_jC2GkOuQcdGy36Hcj3QMzppyE2WE_bSugcSvc2IuK2jM_YBM3dGk2-hw==",
+          "title": "facebook.com",
+          "domain": "facebook.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTRhZI6tWbbFdX3Ih9yOGbaLCXhvUH4pGqr3kZ4MZhdFVGUHcbXDdeZpU_J8zZxau0cODaExQr1mPA-pAocIqkjgMm6Ia-qgbJEv6ut_bevKbbSjRoFA-oeJFSAWrwSgwflZG-ILU=",
+          "title": "wikipedia.org",
+          "domain": "wikipedia.org"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuAS0ZCe3kBU1tZg45CSERhnLnVXElKL4C_stWalNH4RyY-zVB37JOg3k8era9btbWSXEIcRneBve1c5xkQkD7sG0WX8iEz8TlO48rWk1hL5EMS3QXeN8UzUF3gVMIg7wHiZrfW5M=",
+          "title": "wikipedia.org",
+          "domain": "wikipedia.org"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsyxQIPefYpxXSwma7U8p7av70Vok0bOhO3eyi5LRVpsYrexicCrcXDFl8l-1mwGj9L_pvAxLOrxlvYm4Aq3gDCZsn255eU_vuAelrsIgX_1SmThv_GRtMn_oYkon3Mx6uczlCFGHRWJMwMQLDlG9zyOUNnqFFBWIs8q82oQHfDAAm466jR2jymwLYhtR3pfl_1ZYMDdNrUq6CwSyKqzus",
+          "title": "cbc.ca",
+          "domain": "cbc.ca"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFy7lb-cAaS1UwTBcBb6Isw0ADEn5_dJgdybwBXC6YUyrzyeTtfTS_jjXcO13IIRorGvPA3ZTKj09IwTi5cUh_1vzh3FvdItkHdAoL1DLjrRFgIulF5xd1MJpV0C53V3ihWs3QycodDK2XlJmtO7L_vyDwgW6A=",
+          "title": "frontofficesports.com",
+          "domain": "frontofficesports.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpQFQULcYY6i2-c-VJXwolAFETmjdRkRKxcXENAwrU0VvevjoPIeR3Sf1PgVnb4L-UcvvJzFSEHxT0JP4yb9FSkSU0T5LIA6PxYvcE-23me-FLNyiXgVgHLkWA3bp0DQ_mCQHU7FbdzR_4P1JNkAW-zmdgIkV6Z9G6wjA=",
+          "title": "usf.edu",
+          "domain": "usf.edu"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPNYidNkt49EOB5eRH1vjUo8EGe9KU91uQK3pHQvtX0taUabm1ZW1e3sjDf_PL4BfrrHC9LNLhT23RWoOcmSbRBWARxXPNoEgfRhnJVF_1R7ICsWTeoDC8C5l2au8PdjppkOmb0rmHeODfp4sXcIJEuHUfJU7EIvTDourun9LVvJfDVNFoqv_Ot7eOB5TrDpFoHclUGPvWpQ6iuLlA91uZ3n0_",
+          "title": "tampabay.com",
+          "domain": "tampabay.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEesueDRaZqQnmXXBbRWG8_z6ETqnvZ0PI6-N46S1dVe9fQnl47AkrRRQcuJlE86iwAHdr6EFrUT_KscuY13t9hcbRS6tI1wsJ0w6uHXEWIazXdroQ1tB3Uy5GZfoBK5spy19hCB8e3n0tlNXg1",
+          "title": "opensponsorship.com",
+          "domain": "opensponsorship.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1zdoX6vbBdWsT60DjMqsod834fAEGExpdWv635jOG6DjZfoNmNsbcLBODsKd8Igmiap_Csl74vBdJi0l4cbbryhn1QJoKne-bYe7lP_phpdoZgt19ni-GoaZl80Utq90tLCnSkX2YN7iGo26zvQ7fr73zwStdweMOGpJ01NuJLtvuIXRobaGBQB9Nr3mIdaMlNf0J4Evw7kk=",
+          "title": "libsyn.com",
+          "domain": "libsyn.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-kYLVSCfEqBur7jJtLTyCUexjBv2vjrRXO1Tgsb6JnyG_TQklxZK3ypKrlmZ-gThK78VYt9EGqr51i2I9wu7-XWFw49y48xQlRZ6uoczNWbATwfMtCVQUxB2209zWNAsQcuL0Q7kCApIjFnXURCQFSWQxxA==",
+          "title": "hornbyorganic.com",
+          "domain": "hornbyorganic.com"
+        }
+      }
+    ],
+    "groundingSupports": [
+      {
+        "segment": {
+          "startIndex": 119,
+          "endIndex": 312,
+          "text": "\"marketability_summary\": \"Jordyn Listro is a veteran professional soccer midfielder and the captain of Tampa Bay Sun FC, whom she led to the inaugural USL Super League championship in June 2025"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 314,
+          "endIndex": 419,
+          "text": "Her elite standing is anchored by prior experience in the NWSL with Orlando Pride and Kansas City Current"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 314,
+          "endIndex": 471,
+          "text": "Her elite standing is anchored by prior experience in the NWSL with Orlando Pride and Kansas City Current, and two senior caps for the Canadian National Team"
+        },
+        "groundingChunkIndices": [
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 473,
+          "endIndex": 677,
+          "text": "On social media, Listro maintains a moderate audience centered on Instagram (@jordylistro) with nearly 30,000 followers, though she boasts a highly engaged fanbase with an above-average 7% engagement rate"
+        },
+        "groundingChunkIndices": [
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 679,
+          "endIndex": 750,
+          "text": "Culturally, she enjoys strong regional popularity in Florida and Canada"
+        },
+        "groundingChunkIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 679,
+          "endIndex": 804,
+          "text": "Culturally, she enjoys strong regional popularity in Florida and Canada, bolstered by her marriage to golfer Cristian DiMarco"
+        },
+        "groundingChunkIndices": [
+          5
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 806,
+          "endIndex": 1015,
+          "text": "Listro's highly compelling comeback narrative—transitioning from professional soccer to medical device sales during a career hiatus, then returning to reach the national team and captain a champion franchise"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1055,
+          "endIndex": 1199,
+          "text": "This narrative has propelled significant commercial momentum in 2026, highlighted by her signings as a prominent brand ambassador for Gainbridge"
+        },
+        "groundingChunkIndices": [
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1055,
+          "endIndex": 1251,
+          "text": "This narrative has propelled significant commercial momentum in 2026, highlighted by her signings as a prominent brand ambassador for Gainbridge and her feature in a national Under Armour campaign"
+        },
+        "groundingChunkIndices": [
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 5466,
+          "endIndex": 5833,
+          "text": "\"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"Listro plays in the USL Super League, a sanctioned Division One professional league in the US, and has represented Canada at the senior international level"
+        },
+        "groundingChunkIndices": [
+          8,
+          9
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 5466,
+          "endIndex": 6176,
+          "text": "\"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"Listro plays in the USL Super League, a sanctioned Division One professional league in the US, and has represented Canada at the senior international level.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"She captained Tampa Bay Sun FC to the inaugural USL Super League championship title in June 2025 and remains a highly consistent first-choice starting midfielder"
+        },
+        "groundingChunkIndices": [
+          0,
+          8
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 5466,
+          "endIndex": 6520,
+          "text": "\"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"Listro plays in the USL Super League, a sanctioned Division One professional league in the US, and has represented Canada at the senior international level.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"She captained Tampa Bay Sun FC to the inaugural USL Super League championship title in June 2025 and remains a highly consistent first-choice starting midfielder.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"While she lacks top-tier individual international awards, her formal honors include collegiate appearance records and winning a professional league title"
+        },
+        "groundingChunkIndices": [
+          0,
+          8,
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 5466,
+          "endIndex": 6808,
+          "text": "\"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"Listro plays in the USL Super League, a sanctioned Division One professional league in the US, and has represented Canada at the senior international level.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"She captained Tampa Bay Sun FC to the inaugural USL Super League championship title in June 2025 and remains a highly consistent first-choice starting midfielder.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"While she lacks top-tier individual international awards, her formal honors include collegiate appearance records and winning a professional league title.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 68,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"She has earned two senior caps for Canada's national team and competed in the 2012 FIFA U-17 World Cup"
+        },
+        "groundingChunkIndices": [
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 5466,
+          "endIndex": 7103,
+          "text": "\"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"Listro plays in the USL Super League, a sanctioned Division One professional league in the US, and has represented Canada at the senior international level.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"She captained Tampa Bay Sun FC to the inaugural USL Super League championship title in June 2025 and remains a highly consistent first-choice starting midfielder.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"While she lacks top-tier individual international awards, her formal honors include collegiate appearance records and winning a professional league title.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 68,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"She has earned two senior caps for Canada's national team and competed in the 2012 FIFA U-17 World Cup.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"As team captain and a vital midfield engine, she is the central leadership figure for Tampa Bay Sun FC on and off the field"
+        },
+        "groundingChunkIndices": [
+          3,
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 5466,
+          "endIndex": 7430,
+          "text": "\"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"Listro plays in the USL Super League, a sanctioned Division One professional league in the US, and has represented Canada at the senior international level.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"She captained Tampa Bay Sun FC to the inaugural USL Super League championship title in June 2025 and remains a highly consistent first-choice starting midfielder.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"While she lacks top-tier individual international awards, her formal honors include collegiate appearance records and winning a professional league title.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 68,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"She has earned two senior caps for Canada's national team and competed in the 2012 FIFA U-17 World Cup.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"As team captain and a vital midfield engine, she is the central leadership figure for Tampa Bay Sun FC on and off the field.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Her primary career achievement of captaining her club to the USL Super League title occurred recently in June 2025, and she continues to lead the squad"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 7453,
+          "endIndex": 7778,
+          "text": "\"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 45,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her primary audience consists of approximately 30,000 followers on Instagram, reflecting a moderate but stable digital footprint"
+        },
+        "groundingChunkIndices": [
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 7453,
+          "endIndex": 8095,
+          "text": "\"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 45,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her primary audience consists of approximately 30,000 followers on Instagram, reflecting a moderate but stable digital footprint.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 50,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her follower base is typical for professional women's soccer players of her level, positioning her in the mid-tier of the sport"
+        },
+        "groundingChunkIndices": [
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 7453,
+          "endIndex": 8655,
+          "text": "\"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 45,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her primary audience consists of approximately 30,000 followers on Instagram, reflecting a moderate but stable digital footprint.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 50,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her follower base is typical for professional women's soccer players of her level, positioning her in the mid-tier of the sport.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No reliable longitudinal data is available to evaluate her recent audience growth trends.\"\n      },\n      \"platform_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 35,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her digital presence is heavily concentrated on Instagram, with no verified active presence on other major social platforms"
+        },
+        "groundingChunkIndices": [
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 8678,
+          "endIndex": 9004,
+          "text": "\"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Listro's Instagram engagement rate of approximately 7% is exceptionally strong and far exceeds industry averages for her follower tier"
+        },
+        "groundingChunkIndices": [
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 8678,
+          "endIndex": 10470,
+          "text": "\"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Listro's Instagram engagement rate of approximately 7% is exceptionally strong and far exceeds industry averages for her follower tier.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Private platform metrics regarding organic impressions and content reach efficiency are unavailable.\"\n      },\n      \"shares_saves_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"High-value engagement metrics such as post shares and saves are private and cannot be evaluated from public sources.\"\n      },\n      \"video_retention\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Video completion rates and retention curves require backend platform analytics that are not publicly available.\"\n      },\n      \"story_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Temporary story view rates and interaction metrics require private account insights and are not accessible.\"\n      },\n      \"audience_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 72,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\", \"E5\", \"E6\"],\n        \"rationale\": \"Her exceptional engagement rate and selection for major brand campaigns by corporate sponsors confirm a highly genuine, high-quality audience"
+        },
+        "groundingChunkIndices": [
+          6,
+          2,
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 10493,
+          "endIndex": 10836,
+          "text": "\"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 52,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"She receives steady, targeted coverage in regional Florida media and Canadian sports outlets, though she lacks massive mainstream global volume"
+        },
+        "groundingChunkIndices": [
+          0,
+          10
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 10493,
+          "endIndex": 11163,
+          "text": "\"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 52,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"She receives steady, targeted coverage in regional Florida media and Canadian sports outlets, though she lacks massive mainstream global volume.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E5\"],\n        \"rationale\": \"Major prestige publications like the Canadian Press, CBC Sports, and Front Office Sports have written comprehensive features on her career"
+        },
+        "groundingChunkIndices": [
+          0,
+          10,
+          11
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 10493,
+          "endIndex": 11477,
+          "text": "\"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 52,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"She receives steady, targeted coverage in regional Florida media and Canadian sports outlets, though she lacks massive mainstream global volume.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E5\"],\n        \"rationale\": \"Major prestige publications like the Canadian Press, CBC Sports, and Front Office Sports have written comprehensive features on her career.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 42,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"Search interest is moderate and primarily driven by her team's competitive schedule, local community milestones, and family background"
+        },
+        "groundingChunkIndices": [
+          12,
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 10493,
+          "endIndex": 11779,
+          "text": "\"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 52,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"She receives steady, targeted coverage in regional Florida media and Canadian sports outlets, though she lacks massive mainstream global volume.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E5\"],\n        \"rationale\": \"Major prestige publications like the Canadian Press, CBC Sports, and Front Office Sports have written comprehensive features on her career.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 42,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"Search interest is moderate and primarily driven by her team's competitive schedule, local community milestones, and family background.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 50,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"She generates regular, localized public conversation online among USL Super League supporters and regional sports fans"
+        },
+        "groundingChunkIndices": [
+          13,
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 10493,
+          "endIndex": 12113,
+          "text": "\"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 52,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"She receives steady, targeted coverage in regional Florida media and Canadian sports outlets, though she lacks massive mainstream global volume.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E5\"],\n        \"rationale\": \"Major prestige publications like the Canadian Press, CBC Sports, and Front Office Sports have written comprehensive features on her career.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 42,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"Search interest is moderate and primarily driven by her team's competitive schedule, local community milestones, and family background.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 50,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"She generates regular, localized public conversation online among USL Super League supporters and regional sports fans.\"\n      },\n      \"crossover_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 48,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E3\", \"E7\"],\n        \"rationale\": \"Her lifestyle and fashion posting style, along with her marriage into a professional golfing family, provides modest crossover appeal outside soccer"
+        },
+        "groundingChunkIndices": [
+          5,
+          14
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 12136,
+          "endIndex": 12496,
+          "text": "\"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her transition from professional soccer to medical device sales during a hiatus, followed by a successful return to the national team and captaincy, is highly distinct"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 12136,
+          "endIndex": 12809,
+          "text": "\"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her transition from professional soccer to medical device sales during a hiatus, followed by a successful return to the national team and captaincy, is highly distinct.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her narrative has immense depth, touching on themes of resilience, career transition, mental wellness, and local community leadership"
+        },
+        "groundingChunkIndices": [
+          3,
+          0,
+          15
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 12136,
+          "endIndex": 13141,
+          "text": "\"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her transition from professional soccer to medical device sales during a hiatus, followed by a successful return to the national team and captaincy, is highly distinct.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her narrative has immense depth, touching on themes of resilience, career transition, mental wellness, and local community leadership.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her life journey and the specific timeline of her medical sales career and subsequent athletic comeback are thoroughly verified by journalists"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 12136,
+          "endIndex": 13445,
+          "text": "\"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her transition from professional soccer to medical device sales during a hiatus, followed by a successful return to the national team and captaincy, is highly distinct.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her narrative has immense depth, touching on themes of resilience, career transition, mental wellness, and local community leadership.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her life journey and the specific timeline of her medical sales career and subsequent athletic comeback are thoroughly verified by journalists.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Journalists frequently seize upon her unique career hiatus and comeback story, keeping it central to her media footprint"
+        },
+        "groundingChunkIndices": [
+          3,
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 12136,
+          "endIndex": 13780,
+          "text": "\"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her transition from professional soccer to medical device sales during a hiatus, followed by a successful return to the national team and captaincy, is highly distinct.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her narrative has immense depth, touching on themes of resilience, career transition, mental wellness, and local community leadership.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her life journey and the specific timeline of her medical sales career and subsequent athletic comeback are thoroughly verified by journalists.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Journalists frequently seize upon her unique career hiatus and comeback story, keeping it central to her media footprint.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"Her personal journey of financial transitions and athletic endurance seamlessly aligns with campaigns for both financial services and fitness brands"
+        },
+        "groundingChunkIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 12136,
+          "endIndex": 14105,
+          "text": "\"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her transition from professional soccer to medical device sales during a hiatus, followed by a successful return to the national team and captaincy, is highly distinct.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her narrative has immense depth, touching on themes of resilience, career transition, mental wellness, and local community leadership.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her life journey and the specific timeline of her medical sales career and subsequent athletic comeback are thoroughly verified by journalists.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Journalists frequently seize upon her unique career hiatus and comeback story, keeping it central to her media footprint.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"Her personal journey of financial transitions and athletic endurance seamlessly aligns with campaigns for both financial services and fitness brands.\"\n      },\n      \"durability\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"Based on personal growth and leadership, her narrative remains compelling throughout her career and will transition naturally into her post-playing life"
+        },
+        "groundingChunkIndices": [
+          3,
+          12
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 14128,
+          "endIndex": 14463,
+          "text": "\"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\", \"E7\"],\n        \"rationale\": \"Listro's profile naturally supports a wide range of partnerships across athletic apparel, health and wellness, finance, travel, and local lifestyle"
+        },
+        "groundingChunkIndices": [
+          14,
+          16,
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 14128,
+          "endIndex": 14750,
+          "text": "\"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\", \"E7\"],\n        \"rationale\": \"Listro's profile naturally supports a wide range of partnerships across athletic apparel, health and wellness, finance, travel, and local lifestyle.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"She maintains a pristine, scandal-free public reputation, making her an exceptionally safe choice for corporate brands"
+        },
+        "groundingChunkIndices": [
+          3,
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 14128,
+          "endIndex": 15074,
+          "text": "\"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\", \"E7\"],\n        \"rationale\": \"Listro's profile naturally supports a wide range of partnerships across athletic apparel, health and wellness, finance, travel, and local lifestyle.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"She maintains a pristine, scandal-free public reputation, making her an exceptionally safe choice for corporate brands.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 68,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her audience skews toward active, wellness-oriented, and community-focused individuals, presenting strong commercial value for targeted brands"
+        },
+        "groundingChunkIndices": [
+          14,
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 14128,
+          "endIndex": 15389,
+          "text": "\"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\", \"E7\"],\n        \"rationale\": \"Listro's profile naturally supports a wide range of partnerships across athletic apparel, health and wellness, finance, travel, and local lifestyle.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"She maintains a pristine, scandal-free public reputation, making her an exceptionally safe choice for corporate brands.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 68,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her audience skews toward active, wellness-oriented, and community-focused individuals, presenting strong commercial value for targeted brands.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E7\"],\n        \"rationale\": \"Her public persona is incredibly cohesive, consistently emphasizing hard work, resilience, leadership, and a balanced lifestyle"
+        },
+        "groundingChunkIndices": [
+          3,
+          14
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 14128,
+          "endIndex": 15706,
+          "text": "\"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\", \"E7\"],\n        \"rationale\": \"Listro's profile naturally supports a wide range of partnerships across athletic apparel, health and wellness, finance, travel, and local lifestyle.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"She maintains a pristine, scandal-free public reputation, making her an exceptionally safe choice for corporate brands.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 68,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her audience skews toward active, wellness-oriented, and community-focused individuals, presenting strong commercial value for targeted brands.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E7\"],\n        \"rationale\": \"Her public persona is incredibly cohesive, consistently emphasizing hard work, resilience, leadership, and a balanced lifestyle.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\", \"E7\"],\n        \"rationale\": \"She is equally comfortable in action-oriented sportswear shoots, structured financial presentations, and casual lifestyle content"
+        },
+        "groundingChunkIndices": [
+          14,
+          6,
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 14128,
+          "endIndex": 16028,
+          "text": "\"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\", \"E7\"],\n        \"rationale\": \"Listro's profile naturally supports a wide range of partnerships across athletic apparel, health and wellness, finance, travel, and local lifestyle.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"She maintains a pristine, scandal-free public reputation, making her an exceptionally safe choice for corporate brands.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 68,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her audience skews toward active, wellness-oriented, and community-focused individuals, presenting strong commercial value for targeted brands.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E7\"],\n        \"rationale\": \"Her public persona is incredibly cohesive, consistently emphasizing hard work, resilience, leadership, and a balanced lifestyle.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\", \"E7\"],\n        \"rationale\": \"She is equally comfortable in action-oriented sportswear shoots, structured financial presentations, and casual lifestyle content.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"She holds deep commercial appeal in Florida (Tampa and Orlando) and major Canadian urban markets, maximizing her geographical utility"
+        },
+        "groundingChunkIndices": [
+          12,
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 16051,
+          "endIndex": 16370,
+          "text": "\"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 76,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"Her active, paid partnerships with major brands like Gainbridge and Under Armour prove she commands high commercial value"
+        },
+        "groundingChunkIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 16051,
+          "endIndex": 16661,
+          "text": "\"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 76,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"Her active, paid partnerships with major brands like Gainbridge and Under Armour prove she commands high commercial value.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 72,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\", \"E7\"],\n        \"rationale\": \"Listro secures a steady flow of partnerships, spanning athletic, corporate, and organic consumer brand deals"
+        },
+        "groundingChunkIndices": [
+          16,
+          6,
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 16051,
+          "endIndex": 16985,
+          "text": "\"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 76,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"Her active, paid partnerships with major brands like Gainbridge and Under Armour prove she commands high commercial value.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 72,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\", \"E7\"],\n        \"rationale\": \"Listro secures a steady flow of partnerships, spanning athletic, corporate, and organic consumer brand deals.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"Partnering with top-tier global names like Under Armour and major financial firms like Gainbridge highlights the exceptional quality of her sponsors"
+        },
+        "groundingChunkIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 16051,
+          "endIndex": 17285,
+          "text": "\"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 76,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"Her active, paid partnerships with major brands like Gainbridge and Under Armour prove she commands high commercial value.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 72,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\", \"E7\"],\n        \"rationale\": \"Listro secures a steady flow of partnerships, spanning athletic, corporate, and organic consumer brand deals.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"Partnering with top-tier global names like Under Armour and major financial firms like Gainbridge highlights the exceptional quality of her sponsors.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E7\"],\n        \"rationale\": \"She has maintained a multi-year partnership with Hornby Organic, demonstrating her reliability and value to long-term sponsors"
+        },
+        "groundingChunkIndices": [
+          16
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 16051,
+          "endIndex": 17905,
+          "text": "\"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 76,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"Her active, paid partnerships with major brands like Gainbridge and Under Armour prove she commands high commercial value.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 72,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\", \"E7\"],\n        \"rationale\": \"Listro secures a steady flow of partnerships, spanning athletic, corporate, and organic consumer brand deals.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"Partnering with top-tier global names like Under Armour and major financial firms like Gainbridge highlights the exceptional quality of her sponsors.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E7\"],\n        \"rationale\": \"She has maintained a multi-year partnership with Hornby Organic, demonstrating her reliability and value to long-term sponsors.\"\n      },\n      \"campaign_performance\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Specific ROI metrics, sales conversion rates, and click-through data for her campaigns are not publicly accessible.\"\n      },\n      \"pricing_power\": {\n        \"status\": \"scored\",\n        \"score\": 60,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E7\"],\n        \"rationale\": \"Her public OpenSponsorship profile lists clear, professional base rates for social media and appearances, which are solid but typical for her follower tier"
+        },
+        "groundingChunkIndices": [
+          14
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 17928,
+          "endIndex": 18257,
+          "text": "\"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"While she is a stable and celebrated champion captain in her prime at age 31, her international national team activity has leveled off since 2021"
+        },
+        "groundingChunkIndices": [
+          0,
+          8
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 17928,
+          "endIndex": 18818,
+          "text": "\"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"While she is a stable and celebrated champion captain in her prime at age 31, her international national team activity has leveled off since 2021.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Reliable historical audience growth data is not publicly available to evaluate her digital expansion.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 60,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"Her media presence is stable, driven by her championship defense and high-profile ambassador announcements"
+        },
+        "groundingChunkIndices": [
+          13,
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 17928,
+          "endIndex": 19088,
+          "text": "\"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"While she is a stable and celebrated champion captain in her prime at age 31, her international national team activity has leveled off since 2021.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Reliable historical audience growth data is not publicly available to evaluate her digital expansion.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 60,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"Her media presence is stable, driven by her championship defense and high-profile ambassador announcements.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 55,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her public interest remains steady and consistent, though without dramatic viral spikes"
+        },
+        "groundingChunkIndices": [
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 17928,
+          "endIndex": 19403,
+          "text": "\"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"While she is a stable and celebrated champion captain in her prime at age 31, her international national team activity has leveled off since 2021.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Reliable historical audience growth data is not publicly available to evaluate her digital expansion.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 60,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"Her media presence is stable, driven by her championship defense and high-profile ambassador announcements.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 55,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her public interest remains steady and consistent, though without dramatic viral spikes.\"\n      },\n      \"commercial_acceleration\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"Her commercial career is experiencing clear acceleration in 2026, driven by top-tier brand deals with Gainbridge and Under Armour"
+        },
+        "groundingChunkIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19428,
+          "endIndex": 19678,
+          "text": "\"dimension_assessments\": {\n    \"athletic_authority\": {\n      \"prose\": \"Jordyn Listro maintains strong athletic authority as a veteran professional midfielder and captain of Tampa Bay Sun FC, whom she led to the inaugural USL Super League championship"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19680,
+          "endIndex": 19842,
+          "text": "Her background includes extensive play in the top-tier NWSL with the Orlando Pride and Kansas City Current, alongside international experience representing Canada"
+        },
+        "groundingChunkIndices": [
+          0,
+          8
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19844,
+          "endIndex": 19976,
+          "text": "Her leadership role as team captain and consistent performance in a Division One professional league anchor her sporting credibility"
+        },
+        "groundingChunkIndices": [
+          3,
+          13
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19844,
+          "endIndex": 20342,
+          "text": "Her leadership role as team captain and consistent performance in a Division One professional league anchor her sporting credibility.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Her playing career, national caps, and championship-winning captaincy are thoroughly documented by official leagues and major news outlets.\"\n    },\n    \"audience_scale\": {\n      \"prose\": \"Listro possesses a moderate public audience, primarily concentrated on Instagram where she has nearly 30,000 followers"
+        },
+        "groundingChunkIndices": [
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 20471,
+          "endIndex": 20561,
+          "text": "While she lacks massive global scale, her local and sport-specific reach is highly defined"
+        },
+        "groundingChunkIndices": [
+          14,
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 20471,
+          "endIndex": 21008,
+          "text": "While she lacks massive global scale, her local and sport-specific reach is highly defined.\",\n      \"confidence\": \"MEDIUM\",\n      \"confidence_reason\": \"Follower counts and platform presence are observed via public channels and commercial databases, but private cross-platform metrics are unavailable.\"\n    },\n    \"engagement_quality\": {\n      \"prose\": \"Despite her moderate audience scale, Listro's engagement is exceptionally high, with public commercial tools reporting an above-average engagement rate of approximately 7% on Instagram"
+        },
+        "groundingChunkIndices": [
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 21097,
+          "endIndex": 21507,
+          "text": "However, deeper quality metrics remain private.\",\n      \"confidence\": \"MEDIUM\",\n      \"confidence_reason\": \"Public engagement rates are documented by marketing analyses, but private platform data such as shares, saves, and retention rates are missing.\"\n    },\n    \"cultural_relevance\": {\n      \"prose\": \"Listro has stable cultural relevance within the Tampa Bay region and the Canadian women's soccer community"
+        },
+        "groundingChunkIndices": [
+          12,
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 21509,
+          "endIndex": 21679,
+          "text": "She receives consistent coverage from high-prestige sports journalism outlets, and her marriage to professional golfer Cristian DiMarco provides modest crossover interest"
+        },
+        "groundingChunkIndices": [
+          5,
+          10
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 22146,
+          "endIndex": 22317,
+          "text": "After stepping away from soccer to work in medical device sales, she successfully mounted a comeback to play in the NWSL and debut for the Canadian national team at age 25"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 22319,
+          "endIndex": 22455,
+          "text": "Her current role as a champion captain in a new league provides a highly inspiring and authentic story for corporate and athletic brands"
+        },
+        "groundingChunkIndices": [
+          12,
+          15
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 22319,
+          "endIndex": 22846,
+          "text": "Her current role as a champion captain in a new league provides a highly inspiring and authentic story for corporate and athletic brands.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Her distinct career trajectory from medical device sales back to elite soccer has been widely detailed and celebrated in extensive media features.\"\n    },\n    \"brand_fit\": {\n      \"prose\": \"Listro offers an exceptional brand fit for mainstream corporate partnerships, combining flawless brand safety with a cohesive public identity"
+        },
+        "groundingChunkIndices": [
+          3,
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 22848,
+          "endIndex": 22970,
+          "text": "She naturally bridges multiple commercial categories, including sports performance, wellness, personal finance, and travel"
+        },
+        "groundingChunkIndices": [
+          14,
+          16,
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 22972,
+          "endIndex": 23524,
+          "text": "Her profile as an articulate, family-oriented leader makes her highly appealing to premium sponsors.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Her clear value system, multi-category commercial adaptability, and pristine public record provide overwhelming evidence of her suitability.\"\n    },\n    \"commercial_proof\": {\n      \"prose\": \"Listro has established robust commercial proof, highlighted by her appointment as a Gainbridge brand ambassador alongside high-profile athletes, and her participation in Under Armour's national campaign"
+        },
+        "groundingChunkIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 23526,
+          "endIndex": 23695,
+          "text": "These premium partnerships, combined with long-term sponsorship from Hornby Organic and transparent pricing on OpenSponsorship, demonstrate clear, verified market demand"
+        },
+        "groundingChunkIndices": [
+          14,
+          16
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 23526,
+          "endIndex": 24083,
+          "text": "These premium partnerships, combined with long-term sponsorship from Hornby Organic and transparent pricing on OpenSponsorship, demonstrate clear, verified market demand.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Her active endorsement contracts with major entities like Under Armour and Gainbridge are fully verified by official brand announcements.\"\n    },\n    \"momentum\": {\n      \"prose\": \"Listro's momentum is highly favorable commercially, fueled by her recent 2026 ambassador signings with major brands like Gainbridge and Under Armour"
+        },
+        "groundingChunkIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 24085,
+          "endIndex": 24208,
+          "text": "Athletically, her trajectory is stable as a champion captain, though her national team integration remains a long-term goal"
+        },
+        "groundingChunkIndices": [
+          0,
+          12
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 24499,
+          "endIndex": 24725,
+          "text": "\"overall_confidence\": {\n    \"level\": \"HIGH\",\n    \"explanation\": \"The athlete's identity, professional achievements, and major corporate sponsorships (Gainbridge and Under Armour) are well-documented by reputable public sources"
+        },
+        "groundingChunkIndices": [
+          0,
+          6,
+          7
+        ]
+      }
+    ],
+    "webSearchQueries": [
+      "\"Jordyn Listro\"",
+      "\"Jordyn Listro\" soccer",
+      "\"Jordyn Listro\" news",
+      "\"Jordyn Listro\" current team",
+      " \"jordynlistro\" OR \"jordyn_listro\" OR \"jordyn.listro\" OR \"jordynlistrodimarco\"",
+      "\"Jordyn Listro\" brand sponsors OR partner OR deals OR endorsement OR commercials OR commercial",
+      "\"Jordyn Listro\" \"retired\" OR \"retire\" OR \"retirement\" OR \"retired soccer player\"",
+      "\"Jordyn Listro\" \"Tampa Bay Sun\" 2025 OR 2026",
+      "\"Jordyn Listro\" podcast \"2 Miles With\" OR \"Two Miles With\"",
+      "\"Jordyn Listro\" \"Gainbridge\"",
+      "\"jordylistro\" instagram OR followers",
+      "\"jordynlistro\" instagram OR followers",
+      " \"jordylistro\" OR \"jordynlistro\""
+    ],
+    "config": {
+      "tools": [
+        {
+          "googleSearch": {}
+        }
+      ],
+      "temperature": 1,
+      "maxOutputTokens": 65536,
+      "thinking": "default"
+    }
+  },
+  "error": null,
+  "promptSocialBlock": null
+}

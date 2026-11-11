@@ -1,0 +1,626 @@
+{
+  "specVersion": "blind-eval-spec/0.1",
+  "provider": "openai",
+  "athlete": {
+    "key": "mia-bhuta",
+    "name": "Mia Bhuta",
+    "sport": "Soccer"
+  },
+  "parseError": null,
+  "identityConfidence": "HIGH",
+  "summary": "Mia Bhuta is a high-profile Stanford women’s soccer midfielder whose marketability is anchored in elite collegiate competition, recognized All-America and all-conference honors, and meaningful youth-national-team pedigree. Stanford lists her as a senior in 2026 with ACC championship and College Cup experience, and her award history includes United Soccer Coaches All-America fourth team, All-ACC second team, and multiple other honors. Her public identity is notably distinct: Stanford highlights that she became the first Indian-American to represent the United States at a FIFA World Cup at any age level, and the university’s feature content emphasizes her family background and personal routines. That creates a credible narrative around representation, heritage, and leadership that is brand-friendly and easy to communicate. Her broader public footprint appears stronger than many college athletes because she has official school coverage, some mainstream media visibility, and signals of NIL interest from secondary coverage, though publicly verifiable platform analytics, follower scale, and concrete deal terms are limited. The main uncertainty is the lack of robust public social-performance data and limited visibility into confirmed, repeated commercial partnerships, which makes parts of the audience and commercial-proof assessment necessarily cautious.",
+  "summaryWords": 187,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Stanford lists Mia Bhuta as a 2026 senior midfielder with ACC champion, ACC Tournament champion, College Cup appearances, and All-America / all-conference honors.",
+      "sourceTitle": "Mia Bhuta - Women's Soccer 2026 - Stanford Cardinal",
+      "sourceUrl": "https://gostanford.com/sports/womens-soccer/roster/player/mia-bhuta",
+      "sourceType": "official",
+      "date": "2026-09-11"
+    },
+    {
+      "id": "E2",
+      "claim": "Stanford’s 2024 feature says Bhuta was the first Indian-American to represent the United States at a World Cup at any level and discusses her personal background and routines.",
+      "sourceTitle": "Card Essentials: Mia Bhuta",
+      "sourceUrl": "https://gostanford.com/news/2024/11/14/card-essentials-mia-bhuta",
+      "sourceType": "official",
+      "date": "2024-11-14"
+    },
+    {
+      "id": "E3",
+      "claim": "Stanford’s athletics page says Bhuta earned United Soccer Coaches All-America fourth team honors in 2024.",
+      "sourceTitle": "Bhuta Earns All-America Honor",
+      "sourceUrl": "https://gostanford.com/news/2024/12/08/bhuta-earns-all-america-honor",
+      "sourceType": "official",
+      "date": "2024-12-08"
+    },
+    {
+      "id": "E4",
+      "claim": "Stanford announced Bhuta among three Cardinal summoned to the U.S. Under-20 National Team in 2025.",
+      "sourceTitle": "U.S. Under-20 National Team Summons Three Cardinal",
+      "sourceUrl": "https://gostanford.com/news/2025/03/28/us-under-20-national-team-summons-three-cardinal",
+      "sourceType": "official",
+      "date": "2025-03-28"
+    },
+    {
+      "id": "E5",
+      "claim": "A Stanford resume document published through Stanford materials lists Bhuta as an Adidas brand ambassador and references media coverage including The Today Show and CBS News.",
+      "sourceTitle": "Mia Bhuta Resume (Stanford STVP document)",
+      "sourceUrl": "https://stvp.stanford.edu/wp-content/uploads/sites/3/2024/12/Mia-Bhuta.-Resume.docx.pdf",
+      "sourceType": "official",
+      "date": "2024-12"
+    },
+    {
+      "id": "E6",
+      "claim": "A Girls Soccer Network profile identified Bhuta as a Stanford college player to watch and referenced Stanford women’s soccer social content.",
+      "sourceTitle": "10 College Soccer Players to Watch This Season",
+      "sourceUrl": "https://girlssoccernetwork.com/10-college-soccer-players-to-watch-this-season/",
+      "sourceType": "secondary",
+      "date": "2025-01"
+    },
+    {
+      "id": "E7",
+      "claim": "A RallyFuel article claimed top women’s college soccer NIL players include Mia Bhuta and described Nike, Adidas, and international club deals as valuable partnerships in the category.",
+      "sourceTitle": "Women's College Soccer NIL Deals: The Real Landscape in 2026",
+      "sourceUrl": "https://blog.rallyfuel.com/women-soccer-nil-deals-the-real-landscape-and-how-players-are-breaking-through/",
+      "sourceType": "secondary",
+      "date": "2026-06"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "Fact: she competes for Stanford women’s soccer, a top NCAA women’s soccer program, and has current U.S. U-20 national-team involvement. Interpretation: that places her in a high-level, nationally relevant competition environment.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 74,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3"
+      ],
+      "rationale": "Fact: she has an All-America fourth team honor and Stanford credits her with major team success. Interpretation: these are strong high-level results, though not dominant on a global/professional scale.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 77,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3"
+      ],
+      "rationale": "Fact: she has recognized honors including United Soccer Coaches All-America and All-ACC recognition. Interpretation: this is strong formal acknowledgment within college soccer.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 68,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E4"
+      ],
+      "rationale": "Fact: Stanford identifies her as having U.S. youth World Cup representation and U-20 national-team summons. Interpretation: this is meaningful national-level recognition, but not senior national-team status.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 72,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "Fact: she is listed as a midfielder with major minutes and honors on Stanford’s roster page. Interpretation: she appears to be an important contributor, though the source does not explicitly state captaincy.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "rationale": "Fact: her major recognition and national-team summons are dated 2024-2025 and she remains active in 2026. Interpretation: her notable achievements are recent and commercially current.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Reliable public follower counts or cross-platform metrics were not available in the sources reviewed, so audience scale cannot be quantified without inventing data.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 63,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E6",
+        "E7"
+      ],
+      "rationale": "Fact: she plays for Stanford and appears in soccer-watch and NIL-context coverage. Interpretation: her audience likely sits above the typical college player but below the most nationally famous women’s soccer names.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No reliable longitudinal public follower or audience-growth data was available.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "The sources confirm presence of coverage and a Stanford profile, but not meaningful multi-platform operating presence with observable metrics.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No reliable engagement-rate or interaction data was available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There is not enough public platform performance data to judge whether her content overperforms relative to follower size.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No platform analytics or post-level interaction data was available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No video-retention evidence was available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There is not enough public campaign or content data to assess story-driven efficiency.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No reliable evidence on follower quality, audience composition, or bot/authenticity indicators was available.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 58,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E2",
+        "E5",
+        "E6",
+        "E7"
+      ],
+      "rationale": "Fact: she has official Stanford features, a résumé document mentioning major media, and third-party soccer/NIL coverage. Interpretation: she has a meaningful but not mass-market media footprint.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 67,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "rationale": "Fact: most substantive information comes from Stanford athletics, with additional secondary coverage. Interpretation: source quality is solid, led by official and institutionally reliable outlets.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No direct search-interest or trend data was available.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No robust public conversation metrics or large-scale social-thread evidence was available.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 71,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E2",
+        "E5"
+      ],
+      "rationale": "Fact: Stanford highlights her heritage-driven landmark representation, and her résumé references mainstream media exposure. Interpretation: she has some recognition beyond the immediate college-soccer audience.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 86,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2"
+      ],
+      "rationale": "Fact: Stanford frames her as the first Indian-American to represent the United States at a World Cup at any level. Interpretation: that is a highly distinctive, memorable narrative hook.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 71,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E1"
+      ],
+      "rationale": "Fact: the available coverage includes family background, heritage, routines, and performance context. Interpretation: the story has enough substance to support more than a one-line identity.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 84,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E4",
+        "E1"
+      ],
+      "rationale": "Fact: the narrative is supported by official Stanford descriptions and national-team involvement. Interpretation: the story is well grounded in real athletic history rather than superficial branding.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 62,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E2",
+        "E6",
+        "E7"
+      ],
+      "rationale": "Fact: the narrative has been picked up in Stanford features and third-party soccer/NIL coverage. Interpretation: media responds to it, though the resonance is still moderate rather than widespread.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E5"
+      ],
+      "rationale": "Fact: the identity combines heritage, performance, and student-athlete professionalism. Interpretation: this is naturally useful for brand storytelling without feeling forced.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E1"
+      ],
+      "rationale": "Fact: the heritage-and-achievement narrative is tied to enduring identity and ongoing career development. Interpretation: it should remain relevant beyond a single season.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 73,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E2",
+        "E5"
+      ],
+      "rationale": "Fact: the public record supports categories like sport, education, wellness, lifestyle, and youth inspiration. Interpretation: her story is adaptable across a fairly broad set of brands.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Fact: the reviewed sources show no confirmed serious brand-safety issues. Interpretation: she appears highly suitable for mainstream partnerships.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 69,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E7"
+      ],
+      "rationale": "Fact: she sits at the intersection of college sports, women’s soccer, and a compelling identity story. Interpretation: that audience is commercially attractive even if its exact size is unknown.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E5"
+      ],
+      "rationale": "Fact: the available sources show a consistent identity around elite student-athlete, family background, and ambition. Interpretation: her public persona is coherent and easy to understand.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 74,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E2",
+        "E5"
+      ],
+      "rationale": "Fact: the Stanford profile and résumé suggest she can fit performance, lifestyle, heritage, and student-success content. Interpretation: she can support multiple campaign styles.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 66,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Fact: she has U.S. college-soccer relevance, Pittsburgh roots, Stanford presence, and Indian-American identity. Interpretation: her geographic relevance is useful in the U.S. and potentially in Indian-American diaspora contexts.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 54,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E5",
+        "E7"
+      ],
+      "rationale": "Fact: a Stanford-published résumé references Adidas ambassadorship and media exposure, and secondary NIL coverage identifies her as a valuable college-soccer NIL athlete. Interpretation: there is some commercial proof, but public verification is limited.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No reliable public list of repeated deals or a frequency trail was available.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 63,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E5",
+        "E7"
+      ],
+      "rationale": "Fact: Adidas is mentioned as an ambassador partner in a Stanford-published résumé, and the NIL article places her in a high-value college soccer tier. Interpretation: partner quality appears credible, but confirmation is incomplete.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No public evidence of renewals, repeat deals, or deepened relationships was found.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No public campaign-performance metrics were available.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No published pricing or fee evidence was available, so premium economics cannot be inferred.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "rationale": "Fact: her honors and national-team pathway remain current, and Stanford lists her in 2026 with major team success. Interpretation: her athletic trajectory is clearly upward and still active.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No reliable public longitudinal audience data was available.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 61,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E2",
+        "E6",
+        "E7"
+      ],
+      "rationale": "Fact: she has official features and secondary NIL/watch-list coverage. Interpretation: visibility appears stable to moderately rising, though not enough data exists to call it sharply accelerating.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No trustworthy search or social trend series was available.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There is some commercial indication, but not enough public evidence to confirm acceleration over time.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Elite NCAA women’s soccer environment with Stanford and recent ACC championship context.",
+    "Recent recognized performance honors, including All-America and all-conference recognition.",
+    "Distinctive and authentic heritage-based narrative with official Stanford support.",
+    "Good mainstream brand safety and strong student-athlete professionalism.",
+    "Some credible NIL/commercial signals, including an Adidas ambassador reference."
+  ],
+  "keyConstraints": [
+    "Publicly verifiable audience size is not available.",
+    "Engagement quality cannot be validated with platform analytics.",
+    "Confirmed, repeated commercial partnerships are not publicly well documented.",
+    "Search-interest and broader social-conversation evidence are limited.",
+    "Commercial proof is suggestive rather than fully transparent."
+  ],
+  "importantMissingData": [
+    "Official follower counts and cross-platform audience metrics.",
+    "Post-level engagement, reach efficiency, and video performance data.",
+    "Publicly confirmed deal terms, renewals, and pricing power.",
+    "Search trend or Google Trends-style evidence.",
+    "Broader conversation and earned-media volume beyond institutionally driven coverage."
+  ],
+  "identityOrEvidenceRisks": [
+    "Some commercial claims come from a Stanford-published resume document and secondary NIL commentary, which are useful but not as strong as direct contract disclosures.",
+    "Identity is clear, but social-platform presence could not be independently quantified from the available sources.",
+    "No material brand-safety issues were found in the reviewed sources, but absence of evidence is not proof of absence."
+  ]
+}

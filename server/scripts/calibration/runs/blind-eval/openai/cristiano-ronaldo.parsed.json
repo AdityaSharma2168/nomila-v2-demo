@@ -1,0 +1,681 @@
+{
+  "specVersion": "blind-eval-spec/0.1",
+  "provider": "openai",
+  "athlete": {
+    "key": "cristiano-ronaldo",
+    "name": "Cristiano Ronaldo",
+    "sport": "Soccer"
+  },
+  "parseError": null,
+  "identityConfidence": "HIGH",
+  "summary": "Cristiano Ronaldo is still an active, high-visibility elite football figure: UEFA lists him as a Portugal forward and Al-Nassr player, and FIFA’s 2026 coverage frames him as Portugal captain, the men’s international scoring leader, and a six-time World Cup participant. His athletic standing remains commercially relevant because he is not just a legacy icon; he continues to produce in top-level international and club contexts, with recent FIFA and UEFA material highlighting goals and record-setting longevity. His audience position is exceptional and unusually global, built on decades of mass recognition and one of the largest public social footprints in sport, while his cultural relevance extends well beyond soccer through mainstream media attention, brand campaigns, and durable celebrity status. The commercial position is also unusually strong because his name is directly attached to major consumer brands, especially Nike’s CR7 ecosystem. The main uncertainty is that public sources do not fully expose current private deal terms, modern platform analytics, or up-to-date follower counts across every platform, so some engagement and pricing signals remain partially inferential rather than directly measurable.",
+  "summaryWords": 176,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "UEFA lists Cristiano Ronaldo as a Portugal forward, number 7, and Al-Nassr player, confirming his current elite competitive environment and active status.",
+      "sourceTitle": "Cristiano Ronaldo | Portugal | European Qualifiers | UEFA.com",
+      "sourceUrl": "https://www.uefa.com/european-qualifiers/teams/players/63706--cristiano-ronaldo/",
+      "sourceType": "official",
+      "date": "2026-09-11"
+    },
+    {
+      "id": "E2",
+      "claim": "UEFA’s 2026 player statistics page shows Ronaldo actively producing in qualifying, including 5 matches, 372 minutes, and 5 goals.",
+      "sourceTitle": "Cristiano Ronaldo | Portugal | Qualificação Europeia | UEFA.com",
+      "sourceUrl": "https://pt.uefa.com/european-qualifiers/teams/players/63706--cristiano-ronaldo/",
+      "sourceType": "official",
+      "date": "2026-09-11"
+    },
+    {
+      "id": "E3",
+      "claim": "FIFA announced on 19 May 2026 that Ronaldo was named in Portugal’s World Cup 2026 squad as captain, with 226 caps and 143 goals, both records.",
+      "sourceTitle": "Ronaldo set for sixth World Cup as Portugal squad named",
+      "sourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/cristiano-ronaldo-roberto-martinez-portugal-squad-announcement",
+      "sourceType": "official",
+      "date": "2026-05-19"
+    },
+    {
+      "id": "E4",
+      "claim": "FIFA’s March 2026 feature describes Ronaldo as a Portugal icon whose career spans Manchester, Madrid, Saudi Arabia, and a long run of record-breaking achievements.",
+      "sourceTitle": "26 Superstars: Cristiano Ronaldo",
+      "sourceUrl": "https://www.fifa.com/en/articles/26-superstars-cristiano-ronaldo",
+      "sourceType": "official",
+      "date": "2026-03-17"
+    },
+    {
+      "id": "E5",
+      "claim": "FIFA’s 2026 reporting highlights Ronaldo’s continued scoring relevance, including a century of goals for four different clubs and nearly 1,000 career goals in view.",
+      "sourceTitle": "Cristiano Ronaldo: Stats, quotes, highlights, trivia and quiz",
+      "sourceUrl": "https://www.fifa.com/en/articles/26-superstars-cristiano-ronaldo",
+      "sourceType": "official",
+      "date": "2026-03-17"
+    },
+    {
+      "id": "E6",
+      "claim": "Nike maintains a dedicated Cristiano Ronaldo product presence, including CR7-branded merchandising pages in multiple country storefronts.",
+      "sourceTitle": "Cristiano Ronaldo CR7 Collection | Nike.com",
+      "sourceUrl": "https://www.nike.com/w/cristiano-ronaldo-69np1",
+      "sourceType": "official",
+      "date": "2026-09-07"
+    },
+    {
+      "id": "E7",
+      "claim": "Nike’s football 2026 page references custom boot delivery for Ronaldo alongside other global stars, indicating he remains in Nike’s elite athlete marketing mix.",
+      "sourceTitle": "The Latest News and Content From Nike Football (Soccer ) 2026",
+      "sourceUrl": "https://about.nike.com/en/topics/nike-football-2026",
+      "sourceType": "official",
+      "date": "2026-09-08"
+    },
+    {
+      "id": "E8",
+      "claim": "UEFA previously documented Ronaldo as the most popular current player on social media and later reported that he accounted for a very large share of the top football players’ combined social audience.",
+      "sourceTitle": "PowerPoint Presentation / Clubs’ and players’ social media following",
+      "sourceUrl": "https://www.uefa.com/MultimediaFiles/Download/OfficialDocument/uefaorg/Clublicensing/02/58/98/12/2589812_DOWNLOAD.pdf",
+      "sourceType": "official",
+      "date": "2018-07-01"
+    },
+    {
+      "id": "E9",
+      "claim": "UEFA’s later social media report states Ronaldo contributed just under a quarter of the combined social fanbase of the 20 most popular players across Europe’s top divisions, with around 600 million followers across Twitter, Facebook, and Instagram at the time.",
+      "sourceTitle": "Clubs’ and players’ social media following",
+      "sourceUrl": "https://editorial.uefa.com/resources/0272-145aed9c84b9-55b23d2aaa12-1000/master_bm_report_lowres.pdf",
+      "sourceType": "official",
+      "date": "2021-01-01"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "rationale": "Fact: Ronaldo is still competing as a Portugal international and Al-Nassr player in top-tier football contexts; interpretation: this places him in an exceptionally prestigious competitive environment.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "rationale": "Fact: UEFA and FIFA both show recent scoring output and ongoing record production; interpretation: the recent results remain elite rather than merely legacy-based.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 96,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E5"
+      ],
+      "rationale": "Fact: FIFA cites him as captain with record caps and goals, and its 2026 coverage highlights historic milestones; interpretation: formal recognition and honors remain category-leading.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E5"
+      ],
+      "rationale": "Fact: FIFA names him in Portugal’s World Cup squad and identifies him as the men’s international scoring leader; interpretation: his national-team status is exceptionally strong.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 96,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E1"
+      ],
+      "rationale": "Fact: FIFA explicitly lists him as captain, and UEFA identifies him as a Portugal forward; interpretation: he remains central to team identity and tactical relevance.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "rationale": "Fact: recent 2026 FIFA and UEFA materials document current production and continued selection; interpretation: the achievements are commercially fresh, not archival.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 99,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8",
+        "E9",
+        "E4"
+      ],
+      "rationale": "Fact: UEFA previously documented an enormous social following and Ronaldo’s outsized share among top players; interpretation: his effective public reach is exceptional across major platforms.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 99,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8",
+        "E9",
+        "E4"
+      ],
+      "rationale": "Fact: UEFA’s reports place him far above peers in social fanbase size; interpretation: relative to comparable soccer athletes, his audience is near the top of the sport.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Reliable longitudinal platform growth data is not publicly available in the sources reviewed, so a current growth rate cannot be responsibly inferred.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8",
+        "E9",
+        "E6"
+      ],
+      "rationale": "Fact: UEFA documents audience presence across Twitter, Facebook, and Instagram, and Nike maintains broad merchandising visibility; interpretation: his presence is meaningfully multi-platform.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No reliable public engagement-rate benchmarks or comparable post-level analytics were available, so engagement quality cannot be quantified with confidence.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "The sources show enormous audience scale but do not provide current post-level distribution, impressions, or efficiency metrics.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No public data on shares, saves, or comparable high-value interactions was found in the reviewed sources.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No creator-platform analytics or retention reporting were available in the public evidence set.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There is no public story analytics dataset in the reviewed sources to support a current assessment.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E8",
+        "E9"
+      ],
+      "rationale": "UEFA confirms broad public following, but the sources do not provide bot, fraud, or audience-quality diagnostics needed for a stronger score.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5",
+        "E3",
+        "E7"
+      ],
+      "rationale": "Fact: FIFA continues to feature him prominently in 2026, and Nike still incorporates him into football content; interpretation: his media presence is persistent and unusually broad.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4",
+        "E5",
+        "E7"
+      ],
+      "rationale": "Fact: the coverage comes from FIFA, UEFA, and Nike; interpretation: the source quality and prestige are extremely high.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No direct search-interest dataset or trend chart was retrieved, so broader public query demand cannot be measured reliably here.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 92,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E5",
+        "E3"
+      ],
+      "rationale": "Fact: major football bodies keep centering him in news and feature coverage; interpretation: he is clearly a recurring subject of public conversation beyond self-posting.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 97,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E6",
+        "E7"
+      ],
+      "rationale": "Fact: FIFA and Nike present him as a global icon and brand face; interpretation: his recognition extends well beyond the soccer core audience.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5",
+        "E3"
+      ],
+      "rationale": "Fact: the story includes record-setting longevity, multiple elite leagues, and a sixth World Cup at age 41; interpretation: this is an exceptionally distinctive sports narrative.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 96,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5",
+        "E3"
+      ],
+      "rationale": "Fact: the sources span club evolution, international records, and sustained reinvention; interpretation: the narrative has substantial dimensionality and long time depth.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 99,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "rationale": "Fact: the narrative is directly supported by official competition records and FIFA framing; interpretation: the identity story is strongly grounded in observable achievements.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 96,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "rationale": "Fact: FIFA repeatedly elevates him in 2026 editorial and tournament materials; interpretation: media clearly responds to and amplifies the narrative.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 94,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7",
+        "E4"
+      ],
+      "rationale": "Fact: the narrative is already used in Nike and FIFA-facing contexts; interpretation: it translates naturally into brand storytelling.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 97,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5",
+        "E3"
+      ],
+      "rationale": "Fact: the storyline is built on longevity, records, and legacy milestones rather than a single event; interpretation: it should remain relevant beyond a short cycle.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7",
+        "E4"
+      ],
+      "rationale": "Fact: Nike productization and broad FIFA framing suggest fitness for sport, performance, apparel, lifestyle, and mass-market campaigns; interpretation: the category range is very wide.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 82,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "rationale": "Fact: the reviewed official sources show no brand-safety barrier in current coverage; interpretation: he is generally mainstream-brand suitable, though full off-field risk auditing is outside these sources.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 96,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8",
+        "E9",
+        "E4"
+      ],
+      "rationale": "Fact: the audience is enormous and globally distributed; interpretation: it is commercially attractive for many categories and regions.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E6",
+        "E7"
+      ],
+      "rationale": "Fact: the public persona is consistently built around elite performance, discipline, and global stardom; interpretation: the identity is coherent and easy for brands to understand.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E6",
+        "E7"
+      ],
+      "rationale": "Fact: he appears in competition, editorial, and product-marketing contexts; interpretation: he can support many campaign styles.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4",
+        "E8"
+      ],
+      "rationale": "Fact: he has relevance across Portugal, Europe, the Middle East, and global football audiences; interpretation: his geographic usefulness is unusually broad.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 96,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7"
+      ],
+      "rationale": "Fact: Nike maintains active CR7 merchandising and content featuring Ronaldo; interpretation: this is strong evidence of meaningful commercial value.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 85,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6",
+        "E7",
+        "E12"
+      ],
+      "rationale": "Fact: Nike has shown continued use of Ronaldo in product and football content over time; interpretation: the available public evidence suggests repeated demand, though full deal history is not visible.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 97,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7"
+      ],
+      "rationale": "Fact: Nike is an elite global brand and Ronaldo is embedded in its football ecosystem; interpretation: partner quality is exceptionally strong.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "scored",
+      "score": 88,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6",
+        "E7"
+      ],
+      "rationale": "Fact: Ronaldo continues to appear in Nike CR7 merchandising and football campaigns; interpretation: this suggests durable or repeated relationship depth, though exact renewal terms are not public.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No public campaign ROI, lift, or conversion data was available in the reviewed sources.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No verified public fee data, rate card, or contract economics were found, so premium pricing cannot be claimed directly.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "rationale": "Fact: recent official reporting still shows goal production and continued national-team selection; interpretation: sporting visibility remains strong despite late-career stage.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No reliable current longitudinal audience-growth data was available.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4",
+        "E5",
+        "E7"
+      ],
+      "rationale": "Fact: FIFA and Nike continue to foreground him in 2026; interpretation: media visibility is stable to strongly sustained.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No current search trend or social trend dataset was retrieved to establish directionality.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 82,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6",
+        "E7"
+      ],
+      "rationale": "Fact: Nike’s 2026 football content still references Ronaldo and his product line remains active; interpretation: commercial activity appears sustained, though acceleration specifically is only partially visible.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Exceptionally high athletic authority with current elite international relevance.",
+    "Massive global audience scale and platform breadth.",
+    "Durable, highly distinctive narrative built on longevity and records.",
+    "Very strong fit for mainstream and premium global brands.",
+    "Clear commercial proof through Nike CR7 product and campaign presence."
+  ],
+  "keyConstraints": [
+    "Current platform engagement quality cannot be verified from public sources.",
+    "Recent audience growth and search-interest trajectory are not directly measurable from the available evidence.",
+    "Publicly visible pricing power and campaign performance data are not disclosed.",
+    "Some commercial-deal details remain private, limiting precision on renewals and economics."
+  ],
+  "importantMissingData": [
+    "Current verified follower counts and growth by platform.",
+    "Post-level engagement, retention, shares, saves, and audience authenticity analytics.",
+    "Publicly documented deal values, fee structure, and pricing benchmarks.",
+    "Search-interest trend data and broader social-conversation metrics over time.",
+    "Measured campaign ROI or conversion performance for specific brand activations."
+  ],
+  "identityOrEvidenceRisks": [
+    "Commercial economics are inferred only from public brand presence, not from contract disclosures.",
+    "Audience-scale evidence is partly historical (UEFA reports) rather than fully current across every platform.",
+    "Brand-safety assessment is limited to public sources reviewed here and does not replace full due diligence."
+  ]
+}

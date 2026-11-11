@@ -1,0 +1,115 @@
+{
+  "id": "olympic-sprinter",
+  "reviewed": false,
+  "description": "Olympic champion, men's sprinting (track and field), active.",
+  "tags": {
+    "stage": "olympic",
+    "sport": "track and field",
+    "gender": "male",
+    "coverage": "high"
+  },
+  "input": {
+    "name": "Noah Lyles",
+    "sport": "track and field"
+  },
+  "expected": {
+    "identity": "resolved",
+    "min_recall": 0.6,
+    "facts": [
+      {
+        "id": "e1",
+        "fact": "Won the 100m gold medal at the 2024 Paris Olympics.",
+        "match": [
+          "100m|100 m|100-meter|100 meter|100 metres|100-metre|100 meters",
+          "2024|Paris",
+          "gold|champion"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Noah_Lyles",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e2",
+        "fact": "Olympic 200m bronze at Tokyo 2020 (and again in 2024).",
+        "match": [
+          "bronze",
+          "200m|200 m|200-meter|200 meter|200 metres|200-metre|200 meters"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Noah_Lyles",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e3",
+        "fact": "American record in the 200m: 19.31 seconds.",
+        "match": [
+          "19.31"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Noah_Lyles",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e4",
+        "fact": "Turned professional with Adidas in July 2016 instead of running for Florida.",
+        "match": [
+          "Adidas"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Noah_Lyles",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e5",
+        "fact": "Sprint triple (100m, 200m, 4x100m) at the 2023 World Championships.",
+        "match": [
+          "2023",
+          "World Championships|World Championship|world champion|world titles|world title|Budapest|Worlds"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Noah_Lyles",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e6",
+        "fact": "200m and 4x100m gold at the 2019 World Championships.",
+        "match": [
+          "2019",
+          "World Championships|World Championship|world champion|world title|Doha|Worlds"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Noah_Lyles",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e7",
+        "fact": "Featured in Netflix's 'Sprint' docuseries (July 2024).",
+        "match": [
+          "Netflix"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Sprint_(TV_series)",
+        "checked": "2026-10-09"
+      }
+    ]
+  },
+  "must_not": [
+    {
+      "kind": "contact",
+      "match": "gmail.com|yahoo.com|icloud.com|hotmail.com|outlook.com|phone number|cell number",
+      "why": "Private contact details are never stored or shown (email and phone FORMATS are also checked by the never_content grader)."
+    },
+    {
+      "kind": "address",
+      "match": "home address|lives at|resides at|street address",
+      "why": "A home address is never stored or shown (street-address FORMATS are also checked by the never_content grader)."
+    },
+    {
+      "kind": "family",
+      "match": "Keisha Caine Bishop|Kevin Lyles|Junelle Bromfield|Josephus Lyles",
+      "severity": "warn",
+      "why": "Names of his parents, spouse and adult brother. Listed per the eval brief (family names must not appear). WARN, not fail: the owner rule of 9 Oct allows family as the athlete publicly presents it as a 'care' fact. Owner to decide. No child's name is ever written in a case file."
+    },
+    {
+      "kind": "invented_sponsor",
+      "match": [
+        "Nike|Puma",
+        "sponsor|sponsors|sponsored|sponsorship|endorse|endorses|endorsement|endorsements|deal|signed|partner|partnership|ambassador|contract"
+      ],
+      "why": "Plausible brands in the category that public sources do not tie to this athlete; any sponsorship claim with them is invented. Nike appears only as the Team USA kit supplier, not a personal deal."
+    }
+  ]
+}

@@ -1,0 +1,1282 @@
+{
+ "id": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2",
+ "subject_id": "967cda83-6beb-4233-ba20-126246443e33",
+ "versions": {
+  "params": "v1.0.1-beta.1+lookups-v1+policy-v0",
+  "policy": "policy-v0",
+  "priors": "priors-v1",
+  "cohorts": "cohorts-v0-empty",
+  "lookups": "lookups-v1",
+  "evaluator": "blind-eval-spec/0.2.1",
+  "methodology": "v1.0.1-beta.1"
+ },
+ "value": {
+  "notes": {
+   "strengths": [
+    "Unmatched global audience scale exceeding 1.02 billion cross-platform followers.",
+    "Supreme commercial proof, leading all global athletes with $300 million in annual earnings and $65 million in off-field revenue.",
+    "Highly coherent, authentic, and universally recognized brand narrative focused on relentless discipline and elite fitness.",
+    "Sustained athletic longevity, captaining both his national team and Al-Nassr at age 41."
+   ],
+   "constraints": [
+    "Inevitable athletic decline and approaching retirement timeline as he plays his final competitive cycles at age 41.",
+    "Legal and brand-safety risks associated with an active $1 billion U.S. class-action lawsuit over his Binance promotions."
+   ],
+   "evaluationRisks": [
+    "Potential dilution of his direct mainstream appeal due to playing in the Saudi Pro League, which has lower relative international viewership compared to major European leagues.",
+    "Ongoing litigation volatility that could affect risk-averse, highly conservative corporate brand partnerships."
+   ],
+   "missingEvidence": [
+    "Private platform-specific engagement metrics, including video completion (retention) rates, story interactions, and content share/save counts."
+   ]
+  },
+  "score": 806,
+  "drivers": [],
+  "summary": "At 41 years old in September 2026, Cristiano Ronaldo remains a singular commercial phenomenon and the highest-paid athlete in the world, earning an estimated $300 million annually ($235M on-field, $65M off-field). Despite physical decline, he continues to demonstrate elite athletic authority, captaining Al-Nassr in the Saudi Pro League and the Portugal National Team through the 2026 FIFA World Cup and the 2026-27 UEFA Nations League, while actively pursuing an unprecedented 1,000-goal career milestone. Digitally, Ronaldo commands unmatched audience scale, exceeding 1.02 billion combined followers, bolstered by his explosive YouTube channel launch which reached 83.3 million subscribers by late 2026. This cross-platform reach translates to an exceptional 4.3% Instagram engagement rate—nearly triple the sports category median. Commercially, Ronaldo represents absolute proof-of-concept, anchored by a lifetime Nike contract and blue-chip relationships with Binance, WHOOP, and the Esports World Cup. Major constraints include ongoing legal scrutiny, notably a $1 billion U.S. class-action lawsuit over Binance NFT promotions, and the inevitable sunset of his playing career. Missing data primarily concerns private platform engagement metrics like story performance and video retention rates, but his overall global marketability remains category-defining.",
+  "evidence": [
+   {
+    "id": "E1",
+    "claim": "At age 41, Cristiano Ronaldo captains Al-Nassr and Portugal, competed in his historic sixth FIFA World Cup in 2026 (reaching the round of 16 and scoring three goals), and was selected for Portugal's Nations League campaign in September 2026.",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+    "observedAt": "2026-09-24",
+    "sourceType": "secondary",
+    "sourceTitle": "Cristiano Ronaldo - Wikipedia"
+   },
+   {
+    "id": "E2",
+    "claim": "Cristiano Ronaldo is the highest-paid athlete in the world in 2026, earning an estimated $300 million pre-tax over the past 12 months ($235 million on-field, $65 million off-field).",
+    "sourceUrl": "https://www.forbes.com/lists/athletes/",
+    "observedAt": "2026-05-22",
+    "sourceType": "major_media",
+    "sourceTitle": "The World's Highest-Paid Athletes 2026"
+   },
+   {
+    "id": "E3",
+    "claim": "Ronaldo is the most-followed individual on social media, commanding an audience of over 1.02 billion combined followers, including approximately 679 million on Instagram, 113 million on X, and 171 million on Facebook.",
+    "sourceUrl": "https://www.visualcapitalist.com/",
+    "observedAt": "2026-09-21",
+    "sourceType": "secondary",
+    "sourceTitle": "Most Followed Social Media Accounts in 2026"
+   },
+   {
+    "id": "E4",
+    "claim": "Ronaldo's official YouTube channel 'UR · Cristiano' broke platform speed records upon launch in late 2024 and boasts over 83.3 million subscribers and 1.65 billion cumulative views as of September 2026.",
+    "sourceUrl": "https://hypeauditor.com/",
+    "observedAt": "2026-09-15",
+    "sourceType": "secondary",
+    "sourceTitle": "UR Cristiano YouTube Channel Stats & Reports"
+   },
+   {
+    "id": "E5",
+    "claim": "Ronaldo's commercial portfolio includes a landmark lifetime deal with Nike, long-term partnerships with Binance, Herbalife, Clear, and his return as Global Ambassador for the Esports World Cup 2026.",
+    "sourceUrl": "https://creatordb.app/",
+    "observedAt": "2026-09-24",
+    "sourceType": "secondary",
+    "sourceTitle": "Athlete Endorsement Portfolios and Renewals"
+   },
+   {
+    "id": "E6",
+    "claim": "Cristiano Ronaldo is facing a proposed $1 billion class-action lawsuit in a Florida federal court over his promotion of Binance NFT collections, alleging promotion of unregistered securities without proper paid disclosures.",
+    "sourceUrl": "https://www.cbsnews.com/",
+    "observedAt": "2023-11-30",
+    "sourceType": "major_media",
+    "sourceTitle": "Ronaldo Faces $1 Billion Class Action Over Binance NFT Promotions"
+   }
+  ],
+  "findings": [
+   {
+    "key": "athletic_authority",
+    "value": 89.55,
+    "rationale": "Your athletic authority is highly secure, sustained by your active captaincy of Al-Nassr and the Portugal National Team at age 41. Although the domestic Saudi Pro League is positioned beneath European top-flight football, your participation in a historic sixth World Cup and pursuit of 1,000 career goals maintain your elite sports status.",
+    "components": [
+     {
+      "key": "athletic_authority.role_importance",
+      "value": 96,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "value": 85,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "value": 85,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "value": 85,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "value": 98,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1"
+    ],
+    "confidenceReason": "Ronaldo's competitive status, starting lineups, international caps, and goals are rigorously documented across verified athletic bodies."
+   },
+   {
+    "key": "audience_scale",
+    "value": 98.9,
+    "rationale": "You command an unmatched digital empire with over 1.02 billion combined followers across major social media networks. This massive audience scale is further cemented by the unprecedented speed and growth of your YouTube channel, securing your position as the most-followed individual on the planet.",
+    "components": [
+     {
+      "key": "audience_scale.audience_growth",
+      "value": 98,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "value": 92,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E3",
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "value": 100,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "value": 100,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E3",
+     "E4"
+    ],
+    "confidenceReason": "Platform follower counts and independent analytics consensus highly verify his digital reach and top-percentile ranking."
+   },
+   {
+    "key": "engagement_quality",
+    "value": 92.08,
+    "rationale": "Your public engagement rate of 4.3% is highly impressive, nearly tripling the sports category median and confirming a passionate core fanbase. While exact private metrics like story interactions and video retention rates are unavailable, your immense volume of public interactions reflects exceptionally active audience loyalty.",
+    "components": [
+     {
+      "key": "engagement_quality.video_retention",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E3",
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "value": 85,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "value": 92,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "MEDIUM",
+    "citedEvidence": [
+     "E3",
+     "E4",
+     "E5"
+    ],
+    "confidenceReason": "Public engagement statistics are verified by marketing agencies, but private story and retention analytics remain unobservable."
+   },
+   {
+    "key": "cultural_relevance",
+    "value": 98.9,
+    "rationale": "Your crossover cultural relevance is extraordinary, transcending soccer to make you a global, household brand. Constant premier media coverage and massive digital conversations secure your status as an influential cultural phenomenon across multiple continents.",
+    "components": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "value": 98,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "value": 98,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E3",
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "value": 98,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2",
+       "E6"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "value": 100,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "value": 100,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E6"
+    ],
+    "confidenceReason": "Daily global media volume, high-prestige press coverage, and top-tier public search metrics provide unquestionable verification of his cultural footprint."
+   },
+   {
+    "key": "narrative_power",
+    "value": 96.45,
+    "rationale": "The 'CR7' narrative of relentless dedication, elite fitness, and longevity is one of the most distinctive and authentic stories in sports history. This deep, well-established persona easily supports brand alignments and remains highly durable, paving the way for a powerful legacy post-retirement.",
+    "components": [
+     {
+      "key": "narrative_power.durability",
+      "value": 96,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "value": 98,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "value": 98,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1",
+     "E4",
+     "E5"
+    ],
+    "confidenceReason": "The core thematic pillars of his brand are deeply backed by his physical longevity and a two-decade-long career history."
+   },
+   {
+    "key": "brand_fit",
+    "value": 89.85,
+    "rationale": "You present a versatile brand fit across luxury, wellness, and tech categories, appealing directly to a highly lucrative global consumer base. While your ongoing $1 billion Binance class-action lawsuit presents a moderate brand-safety hurdle, your coherent identity and immense geographic reach keep you highly attractive to mainstream partners.",
+    "components": [
+     {
+      "key": "brand_fit.brand_safety",
+      "value": 72,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E6"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "value": 92,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "value": 98,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "value": 96,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "value": 90,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4",
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "confidenceReason": "Mainstream commercial alignments and detailed demographic appeal are verified by current, active, high-prestige contracts."
+   },
+   {
+    "key": "commercial_proof",
+    "value": 97.3,
+    "rationale": "You represent absolute commercial proof-of-concept, leading all global athletes with $300 million in annual income. Your cornerstone lifetime Nike contract, major concurrent activations, and premium pricing power confirm your unparalleled value to commercial partners.",
+    "components": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "value": 96,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "value": 100,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2",
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "value": 98,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "value": 92,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E4",
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "value": 100,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E2",
+     "E3",
+     "E4",
+     "E5"
+    ],
+    "confidenceReason": "Off-field earnings, brand contracts, and sponsor histories are thoroughly reported and verified by major economic trackers."
+   },
+   {
+    "key": "momentum",
+    "value": 83.15,
+    "rationale": "While your physical on-field trajectory is naturally slowing down, your digital growth and commercial reach continue to show strong upward momentum. Transitions into equity-based investments and massive YouTube expansion showcase a shifting but highly positive commercial direction.",
+    "components": [
+     {
+      "key": "momentum.audience_growth",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "value": 88,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "value": 65,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "value": 88,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "value": 90,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E3",
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1",
+     "E3",
+     "E4",
+     "E5"
+    ],
+    "confidenceReason": "Recent record-breaking YouTube metrics and active 2026 commercial expansions provide strong, objective evidence of positive momentum."
+   }
+  ],
+  "headline": {
+   "key": "mia_score",
+   "value": 806,
+   "confidence": "HIGH"
+  },
+  "composite": 93.53,
+  "confidence": 85.95,
+  "dimensions": [
+   {
+    "score": 89.55,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "athletic_authority.role_importance",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 96,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "athletic_authority",
+    "confidence": 90,
+    "contribution": 13.43
+   },
+   {
+    "score": 98.9,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "audience_scale.audience_growth",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 92,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3",
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 100,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 100,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "audience_scale",
+    "confidence": 90,
+    "contribution": 14.84
+   },
+   {
+    "score": 92.08,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "engagement_quality.video_retention",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3",
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 92,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "engagement_quality",
+    "confidence": 66,
+    "contribution": 13.81
+   },
+   {
+    "score": 98.9,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3",
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2",
+       "E6"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 100,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 100,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "cultural_relevance",
+    "confidence": 90,
+    "contribution": 9.89
+   },
+   {
+    "score": 96.45,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "narrative_power.durability",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 96,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "narrative_power",
+    "confidence": 90,
+    "contribution": 9.65
+   },
+   {
+    "score": 89.85,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "brand_fit.brand_safety",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 72,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E6"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 92,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 96,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 90,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "brand_fit",
+    "confidence": 90,
+    "contribution": 8.99
+   },
+   {
+    "score": 97.3,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 96,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 100,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 92,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E4",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 100,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "commercial_proof",
+    "confidence": 87,
+    "contribution": 14.6
+   },
+   {
+    "score": 83.15,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "momentum.audience_growth",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 88,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 65,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 88,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "asOf": "2026-09-13T22:41:07.563Z",
+      "value": 90,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3",
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "momentum",
+    "confidence": 90,
+    "contribution": 8.32
+   }
+  ],
+  "overallConfidence": {
+   "level": "HIGH",
+   "explanation": "The overall assessment is backed by a massive, highly verified, and consistent volume of public data, premier media reports, and authoritative financial rankings. While private platform engagement metrics remain missing, the sheer size and transparency of Ronaldo's public commercial footprint allow for an exceptionally accurate marketability evaluation."
+  },
+  "identityConfidence": "HIGH",
+  "importantMissingData": [
+   "Private platform-specific engagement metrics, including video completion (retention) rates, story interactions, and content share/save counts."
+  ]
+ },
+ "evidence_as_of": "2026-09-13T22:41:07.563Z",
+ "evaluation_run_id": "9b7f4486-a0b4-4b5e-9d04-e93ca196d7c3",
+ "created_at": "2026-09-25T17:46:11.343Z",
+ "career_status": "active",
+ "sport": "soccer",
+ "division": null,
+ "cost_usd": "0.2130",
+ "supersedes": "346099af-ceee-4bfb-8f45-caeecf17389e"
+}

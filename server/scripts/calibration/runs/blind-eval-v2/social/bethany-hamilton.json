@@ -1,0 +1,54 @@
+{
+  "athlete": {
+    "key": "bethany-hamilton",
+    "name": "Bethany Hamilton",
+    "sport": "Surfing"
+  },
+  "accounts": [
+    {
+      "platform": "youtube",
+      "handle": "TheBethanyHamilton",
+      "source": "youtube_data_api",
+      "observedAt": "2026-09-14",
+      "identityBasis": "handle cited by Nomila research; YouTube channel title \"Bethany Hamilton\" matches the athlete",
+      "identityConfidence": "HIGH",
+      "metrics": {
+        "subscribers": "92,400",
+        "total channel views": "11,713,576",
+        "videos": "425",
+        "median views per video (last 10 uploads)": "1,659",
+        "median views per video as % of subscribers": "1.79%",
+        "median likes per video (last 10 uploads)": "44",
+        "median comments per video (last 8 uploads)": "2",
+        "upload cadence": "30.0 uploads/month over the last 10 uploads"
+      }
+    }
+  ],
+  "unavailable": [
+    {
+      "platform": "instagram",
+      "reason": "no confidently resolved account"
+    },
+    {
+      "platform": "tiktok",
+      "reason": "no authoritative route"
+    },
+    {
+      "platform": "x",
+      "reason": "no authoritative route"
+    }
+  ],
+  "candidates": [
+    {
+      "platform": "instagram",
+      "handle": "bethanyhamilton",
+      "outcome": "discovery: (#10) Application does not have permission for this action"
+    },
+    {
+      "platform": "youtube",
+      "handle": "TheBethanyHamilton",
+      "outcome": "resolved (channel \"Bethany Hamilton\")"
+    }
+  ],
+  "text": "AUTHORITATIVE SOCIAL DATA\n\nMeasured platform facts supplied by Nomila. Each account states its source, observation date and identity-resolution basis/confidence. Treat these as authoritative; do not replace them with web estimates.\n- youtube @TheBethanyHamilton — source: youtube data api; observed 2026-09-14; identity: handle cited by Nomila research; YouTube channel title \"Bethany Hamilton\" matches the athlete (HIGH). subscribers: 92,400; total channel views: 11,713,576; videos: 425; median views per video (last 10 uploads): 1,659; median views per video as % of subscribers: 1.79%; median likes per video (last 10 uploads): 44; median comments per video (last 8 uploads): 2; upload cadence: 30.0 uploads/month over the last 10 uploads\n- instagram: not available (no confidently resolved account)\n- tiktok: not available (no authoritative route)\n- x: not available (no authoritative route)"
+}

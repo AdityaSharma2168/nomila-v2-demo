@@ -1,0 +1,17 @@
+{
+  // ONE LINE OF DIFFERENCE from tsconfig.jest.json, and only Jest reads it.
+  //
+  // expo/tsconfig.base.json sets `"jsx": "react-native"`, which means PRESERVE: Metro's babel
+  // pipeline compiles the JSX, so tsc never has to. That is right for the app and wrong for
+  // ts-jest, which emits the file and hands it straight to Node — JSX intact, `SyntaxError:
+  // Unexpected token '<'`.
+  //
+  // So `.tsx` files compile through here (jest.config.cjs `transform`) with the automatic
+  // runtime, and everything else keeps reading tsconfig.jest.json unchanged. CI's
+  // `tsc --noEmit -p tsconfig.jest.json` is untouched and still type-checks `.tsx` exactly as
+  // it did before — this file is a Jest emit concern, never a type-checking one.
+  "extends": "./tsconfig.jest.json",
+  "compilerOptions": {
+    "jsx": "react-jsx"
+  }
+}

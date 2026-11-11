@@ -1,0 +1,13 @@
+# Frozen validation artifacts and the freeze bundle are hashed by content; keep them LF on every platform so a
+# Windows checkout and Linux CI produce identical bytes. The digest guard normalises line endings as well, but
+# pinning this here means the two never disagree in the first place.
+server/scripts/calibration/runs/** text eol=lf
+server/services/marketabilityBeta1.goldens.json text eol=lf
+
+# Zip archives are binary; without this the eol=lf rule above (runs/**) reclassifies the
+# blind-eval zip as text and rewrites its line endings on checkout/commit, making it show
+# as modified in every worktree even though nothing changed.
+*.zip binary
+
+# The generated catalogue (npm run catalogue) is compared byte for byte by its CI check; LF everywhere.
+docs/catalogue/** text eol=lf

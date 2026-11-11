@@ -1,0 +1,89 @@
+# Mila's chat pass: the tool scope, limits and description the Mastra chat turn is bounded by (engine/mastra/turn.ts).
+# Its instructions are NOT here: they are Mila's one definition (server/agent/mila: instructions/, surfaces/chat.md),
+# built in Mastra's words by mila/build.ts buildMilaInstructions({ surface: "chat", engine: "mastra" }) — `mila_surface`
+# below. jobs.ts loadJob reads this file; it replaced jobs/chat.md and the deals/bookings/documents toolset preambles
+# (3 Nov 2026: their rules live in the core and the playbooks).
+id: chat
+version: 2.0.0
+# `description` is athlete-facing: "How I got this" shows it as its why line (cards.ts howIGotThisCard), so plain words only.
+description: Mila answered from what Nomila holds about you and what was looked up for this chat. Nothing goes out without your tap.
+mila_surface: chat
+inputs:
+  - name: message
+    type: string
+    description: What the athlete just said or tapped.
+    required: true
+  - name: context
+    type: object
+    description: Built by code each turn - today, where the chat was opened, the athlete and their stage, the Brief summary, the M.I.A. read, goals and this week's actions, dated events, preferences and never-use names, connected accounts, items waiting for the athlete's tap, what is switched on (CAN DO NOW), selected facts keyed F1..Fn, and the conversation summaries.
+    required: true
+    external: true
+outputs:
+  - name: reply
+    type: string
+    description: What Mila says this turn - short plain prose to the athlete. Cards come from the tools called, never from the text.
+    required: true
+effort: low
+model: reasoning
+limits:
+  # 7, not 6: loading a playbook (Mastra's skill tool) is one more step before deals, bookings or documents work.
+  max_steps: 7
+  cost_cap_usd: 0.15
+  max_web_searches: 2
+tools:
+  - recall_facts
+  - remember_fact
+  - correct_fact
+  - remember_preference
+  - cite_facts
+  - read_scouting
+  - offer_connection
+  - ask_quick_question
+  - open_screen
+  - web_search
+  - list_goals
+  - keep_goal
+  - change_goal
+  - set_aside_goal
+  - drop_goal
+  - bring_back_goal
+  - add_goal
+  - suggest_goal
+  - refresh_plan
+  # Lean research refresh (LEAN_SIGNUP_RESEARCH, off in prod): left out of the run while the flag is off.
+  - refresh_research
+  - check_camera_roll
+  # Deals and bookings: their rules are the deals and bookings playbooks (mila/skills), loaded with Mastra's skill tool.
+  - deals_find
+  - deals_get
+  - deals_terms
+  - deals_waiting
+  - deals_draft_reply
+  - deals_close
+  - deals_mark
+  - deals_open
+  - brand_get
+  - bookings_list
+  - bookings_get
+  - bookings_waiting
+  - bookings_respond
+  # Documents: the brand book, the public page and a pitch per brand - read, make (in the background), edit, and share
+  # or publish on the athlete's tap. Their rules are the documents playbook.
+  - documents_status
+  - documents_make
+  - documents_edit
+  - documents_share
+  # Reads over what Nomila holds (MILA_READ_TOOLS, dev only): her library by what is in the picture, how her posts and
+  # accounts are doing, her money, and what is due. Read only; left out of the run while the flag is off.
+  - media_search
+  - posts_performance
+  - money_summary
+  - whats_next
+  # The card system v2 (MILA_CARDS_V2, off by default; dev only): the producers of the Insight, Idea, Turn-on offer,
+  # One-time question and Answer cards. Left out of the run while the flag is off, so the chat's tools and prompt are
+  # unchanged; their descriptions are the design page's words (agent/milaCards/prompts.ts).
+  - share_insight
+  - ideas_suggest
+  - offer_capability
+  - ask_once
+  - answer_with_sources

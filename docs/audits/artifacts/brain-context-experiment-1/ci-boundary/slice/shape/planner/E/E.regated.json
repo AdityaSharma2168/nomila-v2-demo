@@ -1,0 +1,78 @@
+{
+ "label": "E",
+ "plannerSpec": "planner-eval-spec/0.1.0-exp",
+ "plannerDigest": "130d10d38e331dc9d75561cfc437b70f3ef08ee8d69cbdb36a1cd8077cb2f182",
+ "planner": "content",
+ "handoff": {
+  "version": "execution-router/0.2.0-exp",
+  "shape": "specialized_plan",
+  "recommendationId": "ctl-rec-matchday-as-plan",
+  "domain": "content",
+  "what": "Launch a recurring match-day social media series across her channels for each remaining Stanford women's soccer fixture of the season.",
+  "why": "Stanford's soccer season is underway, and establishing a consistent match-day series will capitalize on her strong audience engagement. With the next matches scheduled (Syracuse on Oct 8 and Cal on Oct 16), a recurring campaign through the end of the season will satisfy her athletic narrative.",
+  "subject": "objective[ctl-obj-matchday-series]",
+  "objectiveIds": [
+   "ctl-obj-matchday-series"
+  ],
+  "advances": null,
+  "intent": null,
+  "notSeen": [
+   "Specific content creation and editing support available to Mia during travel matches"
+  ],
+  "runId": "R15:47b50da0"
+ },
+ "run": {
+  "file": "docs/audits/artifacts/brain-context-experiment-1/ci-boundary/slice/shape/R15/R15.json",
+  "promptSha256": "47b50da0d9dbdb512ca60a91b2121ab966f8c2a01b5cf4885952460da98f5069",
+  "evaluatorSpec": "brain-eval-spec/0.10.0-exp"
+ },
+ "workItems": 8,
+ "call": {
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "startedAt": "2026-09-27T07:37:57.542Z",
+  "promptSha256": "71234286123a3a260504d7a78456b904c4a7d3a57a86a99fc8a77e0d55f2493c",
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+   "promptTokens": 9213,
+   "outputTokens": 356,
+   "thoughtTokens": 3686
+  },
+  "costUsd": 0.012868899999999999
+ },
+ "rawText": "{\"version\":\"planner-eval-spec/0.1.0-exp\",\"recommendation_id\":\"ctl-rec-matchday-as-plan\",\"planner\":\"content\",\"result\":\"escalated\",\"rationale\":\"The requested move is a season-long, recurring activation spanning all remaining Stanford women's soccer fixtures. Because it operates as a persistent content initiative with an aggregate objective (season-long match-day presence) and a clear external end point tied to the athletic season's horizon, it represents a campaign. Per constraints, campaign-level work requires formal initiation by the athlete rather than tactical planning. Additionally, the lack of visibility into travel-match content support (notSeen) requires a campaign-level operational plan to resolve resource availability before individual assets can be scoped.\",\"dependencies\":[{\"ref\":\"objective[ctl-obj-matchday-series]\",\"why\":\"Defines the strategic intent of a season-long match-day series and its end-of-season horizon.\"}],\"completion\":{\"planning_complete_when\":\"The campaign is formally established and a campaign charter defining resource constraints, travel-match content support, and creative bounds is approved by the athlete.\",\"does_not_imply\":\"That the match-day series has launched, that individual match assets have been produced, or that audience engagement goals have been realized.\"},\"output\":null,\"escalation\":{\"shape\":\"campaign\",\"why\":\"The recommended match-day series constitutes a multi-month, recurring activation linked directly to the Stanford women's soccer fixtures, requiring an ongoing operational framework (especially for travel matches) and ending specifically with the season's conclusion.\",\"ends\":{\"source\":\"objective_horizon\",\"ref\":\"objective[ctl-obj-matchday-series]\"}}}",
+ "parsed": {
+  "version": "planner-eval-spec/0.1.0-exp",
+  "recommendation_id": "ctl-rec-matchday-as-plan",
+  "planner": "content",
+  "result": "escalated",
+  "rationale": "The requested move is a season-long, recurring activation spanning all remaining Stanford women's soccer fixtures. Because it operates as a persistent content initiative with an aggregate objective (season-long match-day presence) and a clear external end point tied to the athletic season's horizon, it represents a campaign. Per constraints, campaign-level work requires formal initiation by the athlete rather than tactical planning. Additionally, the lack of visibility into travel-match content support (notSeen) requires a campaign-level operational plan to resolve resource availability before individual assets can be scoped.",
+  "dependencies": [
+   {
+    "ref": "objective[ctl-obj-matchday-series]",
+    "why": "Defines the strategic intent of a season-long match-day series and its end-of-season horizon."
+   }
+  ],
+  "completion": {
+   "planning_complete_when": "The campaign is formally established and a campaign charter defining resource constraints, travel-match content support, and creative bounds is approved by the athlete.",
+   "does_not_imply": "That the match-day series has launched, that individual match assets have been produced, or that audience engagement goals have been realized."
+  },
+  "output": null,
+  "escalation": {
+   "shape": "campaign",
+   "why": "The recommended match-day series constitutes a multi-month, recurring activation linked directly to the Stanford women's soccer fixtures, requiring an ongoing operational framework (especially for travel matches) and ending specifically with the season's conclusion.",
+   "ends": {
+    "source": "objective_horizon",
+    "ref": "objective[ctl-obj-matchday-series]"
+   }
+  }
+ },
+ "problems": [
+  "version planner-eval-spec/0.1.0-exp"
+ ],
+ "result": null,
+ "projection": null,
+ "regatedAt": "2026-09-27T15:20:51.563Z",
+ "problemsBefore": []
+}

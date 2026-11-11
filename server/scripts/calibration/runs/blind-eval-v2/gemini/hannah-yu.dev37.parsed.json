@@ -1,0 +1,620 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "hannah-yu",
+    "name": "Hannah Yu",
+    "sport": "Soccer"
+  },
+  "parseError": null,
+  "dimensionAssessments": {
+    "athletic_authority": {
+      "prose": "Hannah Yu possesses exceptional athletic authority for a player of her age, highlighted by her call-up to the U.S. U-17 Women's National Team in September 2026. She is highly ranked as Michigan's #2 prospect in the Class of 2028 and has already demonstrated elite playmaking capabilities against older players in the USL W League with Union FC Macomb. Her technical skills, national championship pedigree, and rapid national team ascent establish a formidable competitive profile.",
+      "confidence": "HIGH",
+      "confidenceReason": "Direct evidence from official U.S. Soccer rosters, league match notes, and established national scout databases."
+    },
+    "audience_scale": {
+      "prose": "Yu has a virtually non-existent public audience scale because she does not maintain active, public-facing social media platforms. Her digital footprint is confined entirely to recruiting sites and team rosters. While common for a 15-year-old athlete, this absence represents a severe constraint for commercial brand activation.",
+      "confidence": "HIGH",
+      "confidenceReason": "Exhaustive search of major platforms confirms the absence of public accounts or verified profiles."
+    },
+    "engagement_quality": {
+      "prose": "We cannot responsibly assess Yu's engagement quality due to the complete lack of public social media channels. Without public posts, views, comments, or shares, there is no real-world behavioral data to analyze. Any estimation of her potential engagement would be purely speculative.",
+      "confidence": "LOW",
+      "confidenceReason": "No public social media profiles are active, precluding any empirical engagement analysis."
+    },
+    "cultural_relevance": {
+      "prose": "Yu's cultural relevance is highly concentrated within the niche of elite youth soccer and local Michigan sports communities. She generates consistent, high-quality coverage from soccer-specific outlets but is completely unrecognized by the broader public. Her cultural footprint is currently developmental, scaling strictly alongside her athletic progression.",
+      "confidence": "HIGH",
+      "confidenceReason": "Credible public database entries and search trend observations confirm a highly localized and sport-endemic profile."
+    },
+    "narrative_power": {
+      "prose": "Her narrative is anchored in the classic 'rising youth phenom' trope, showcasing early dominance, champion-level composure, and a rapid rise to international youth camps. While the story is highly authentic and well-documented, it currently lacks personal depth or off-field dimensionality in the public eye. However, its long-term durability is very high as she tracks toward the senior national team pipeline.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her competitive timeline and achievements are robustly supported by official and secondary sources."
+    },
+    "brand_fit": {
+      "prose": "Yu represents an incredibly safe and highly-motivated athlete archetype, perfectly suited for endemic athletic brands and local corporate sponsorships. However, her limited content versatility and lack of a personal digital platform severely restrict her utility for mainstream campaigns. Her geographic relevance remains highly concentrated in Metro Detroit.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her clean public profile and established geography provide high certainty regarding her safe but narrow brand compatibility."
+    },
+    "commercial_proof": {
+      "prose": "There is no public evidence of any commercial endorsements, brand campaigns, or NIL deals for Yu. At 15 years old and still in high school, she has not yet entered the commercial marketplace. Consequently, her commercial marketability is purely prospective.",
+      "confidence": "HIGH",
+      "confidenceReason": "Extensive public search confirms she has no history of corporate partnerships or commercial campaigns."
+    },
+    "momentum": {
+      "prose": "On the pitch, Yu’s momentum is exceptional, driven by her September 2026 promotion to the U.S. U-17 Women's National Team and a standout summer with her pre-professional USL W League team. Her media footprint within specialized soccer channels is expanding in tandem with these athletic feats. Conversely, her commercial and digital momentum remain completely flat.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her rapid, documented sports progression in 2026 provides a clear and highly positive athletic trajectory."
+    }
+  },
+  "overallConfidence": {
+    "level": "HIGH",
+    "explanation": "The evaluation has high confidence because Hannah Yu's identity, age, elite athletic achievements, and complete lack of public digital presence are thoroughly documented and consistent. Better information, such as direct platform access or private recruiting details, would confirm her high athletic potential but would not change the reality that she currently lacks any public commercial footprint."
+  },
+  "identityConfidence": "HIGH",
+  "summary": "Hannah Yu is an elite 15-year-old soccer prospect currently rising through the United States Youth National Team (USYNT) development system. As of September 2026, Yu is rostered on the U.S. U-17 Women's National Team and competes pre-professionally for Union FC Macomb in the USL W League, in addition to playing club soccer for Nationals SC ECNL. Highly regarded as one of Michigan's top Class of 2028 recruits, she gained regional acclaim after a 3-assist performance against Detroit City FC during her pre-professional debut. However, Yu currently possesses virtually no public audience scale or active social footprint, with no verified public platforms available. Her narrative is that of a rising phenom with exceptional playmaking skills and proven champion pedigree, strongly authenticated by her USYNT progression and Girls Academy titles. Commercially, she has zero documented endorsements or NIL activity, which is typical for a 15-year-old amateur athlete. Her athletic momentum is exceptionally strong following her September 2026 promotion to the U-17 national pool. The primary missing information and marketability constraint remains her complete lack of public-facing digital platforms and commercial history, rendering her current commercial viability highly speculative outside of highly local or endemic soccer sponsorships.",
+  "summaryWords": 194,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Hannah Yu was named to the U.S. Under-17 Women's National Team roster for a domestic training camp in Fayetteville, Georgia, in September 2026.",
+      "sourceTitle": "U.S. U-17 Women's National Team roster selected for Georgia training camp",
+      "sourceUrl": "https://www.ussoccer.com/",
+      "sourceType": "official",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "E2",
+      "claim": "Hannah Yu was rostered on the U.S. Under-16 Girls' National Team for the UEFA Development Tournament in Antalya, Türkiye in February 2026.",
+      "sourceTitle": "U.S. U-16 Girls' National Team roster selected for UEFA Development Tournament in Turkey",
+      "sourceUrl": "https://www.soccerwire.com/",
+      "sourceType": "secondary",
+      "date": "2026-02-11"
+    },
+    {
+      "id": "E3",
+      "claim": "Hannah Yu is ranked as the #2 girls' soccer prospect in Michigan for the Class of 2028.",
+      "sourceTitle": "Updated 2028 Michigan Girl Rankings",
+      "sourceUrl": "https://www.prepsoccer.com/",
+      "sourceType": "secondary",
+      "date": "2026-06-10"
+    },
+    {
+      "id": "E4",
+      "claim": "Hannah Yu made a headline-grabbing debut for pre-professional club Union FC Macomb in the USL W League at age 15, recording 3 assists in her first start against Detroit City FC.",
+      "sourceTitle": "Minnesota Aurora FC Opens USL W League Playoff Run vs. Union FC Macomb",
+      "sourceUrl": "https://www.mnaurora.com/",
+      "sourceType": "official",
+      "date": "2026-07-03"
+    },
+    {
+      "id": "E5",
+      "claim": "Hannah Yu won the Girls Academy National Championship with Nationals SC in July 2024, scoring the game-winning goal in the final.",
+      "sourceTitle": "GA U14 Final: Nationals Complete Double",
+      "sourceUrl": "https://www.topdrawersoccer.com/",
+      "sourceType": "secondary",
+      "date": "2024-07-15"
+    },
+    {
+      "id": "E6",
+      "claim": "Hannah Yu was named to the ECNL Girls Midwest All-Conference First Team in August 2025.",
+      "sourceTitle": "ECNL Girls Midwest All-Conference Teams announced for 2024-25 season",
+      "sourceUrl": "https://www.soccerwire.com/",
+      "sourceType": "secondary",
+      "date": "2025-08-13"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 72,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "She competes in the elite US Youth National Team pathway (U17 level) and pre-professional USL W League, representing a high-level developmental tier.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Demonstrates elite results including a game-winning goal in the Girls Academy National Final and a 3-assist pre-professional debut.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 74,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E6"
+      ],
+      "rationale": "Ranked #2 in Michigan's Class of 2028 by Prep Soccer and selected to the ECNL Girls Midwest All-Conference First Team.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Rostered on the U.S. U-16 Girls' National Team and recently promoted to the U.S. U-17 Women's National Team.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 68,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Acts as a key creative playmaker/midfielder for her club, though she alternates between starter and bench impact roles in pre-pro matches.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "Her achievements are highly current, marked by a national team camp in September 2026 and USL W League success in summer 2026.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 12,
+      "confidence": "HIGH",
+      "evidenceIds": [],
+      "rationale": "No active public social media presence exists, resulting in an essentially non-existent broader public audience scale.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 15,
+      "confidence": "HIGH",
+      "evidenceIds": [],
+      "rationale": "Stands in the lowest percentile of public audience size compared to other elite prospects who have active personal brands.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No reliable public longitudinal follower data exists to track audience expansion.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 10,
+      "confidence": "HIGH",
+      "evidenceIds": [],
+      "rationale": "Lacks meaningful active public accounts across any major platforms.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No active public social media platforms are available to track audience engagement.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Underlying post reach metrics cannot be analyzed due to the absence of public channels.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Private high-value interaction metrics are completely unavailable.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No public video content metrics are available for analytical retention scoring.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No story or short-form ephemeral content is available to evaluate.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Audience quality cannot be verified due to the lack of a public-facing digital community.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 30,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "rationale": "Media coverage is highly concentrated within youth soccer, recruiting, and local pre-professional league circles.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 55,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3"
+      ],
+      "rationale": "Covered by highly credible, soccer-endemic platforms including U.S. Soccer official releases and major youth databases.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 15,
+      "confidence": "HIGH",
+      "evidenceIds": [],
+      "rationale": "Google Trends and public query volumes for her name are negligible outside of recruiters and family.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 20,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Generates light conversation within specific club and regional pre-professional soccer social pages.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 12,
+      "confidence": "HIGH",
+      "evidenceIds": [],
+      "rationale": "Virtually unknown to general audiences outside the competitive youth and women's soccer community.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 58,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "The narrative of a 15-year-old pre-professional USYNT prodigy is compelling but relatively common in elite women's development.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 40,
+      "confidence": "HIGH",
+      "evidenceIds": [],
+      "rationale": "Public information is strictly athletic, lacking dimensionality concerning her personal background or off-field identity.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4",
+        "E5"
+      ],
+      "rationale": "Narrative is exceptionally authentic, backed directly by verified national championships and national team rosters.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 60,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4"
+      ],
+      "rationale": "Endemic media actively picks up and highlights her performance and playmaking ability.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 40,
+      "confidence": "MEDIUM",
+      "evidenceIds": [],
+      "rationale": "Fits standard high-achieving youth/student athlete templates, but lacks personal platforms to seamlessly integrate brands.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3"
+      ],
+      "rationale": "High long-term durability as she is only 15 and has several years of national team eligibility and a college recruiting cycle ahead.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 42,
+      "confidence": "HIGH",
+      "evidenceIds": [],
+      "rationale": "Fit is highly concentrated in endemic athletic apparel, soccer equipment, and local Metro Detroit businesses.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [],
+      "rationale": "Exceptional brand safety with no controversies, scandals, or negative media of any kind.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 45,
+      "confidence": "MEDIUM",
+      "evidenceIds": [],
+      "rationale": "Target demographic of youth soccer families is commercially attractive but currently extremely small in scope.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 68,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "Clearly projects values of discipline, elite sports development, and team-oriented focus.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 20,
+      "confidence": "HIGH",
+      "evidenceIds": [],
+      "rationale": "Extremely limited due to her lack of active personal content creation platforms.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 55,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4"
+      ],
+      "rationale": "Highly relevant in the local Michigan (Metro Detroit) market and the tight-knit national women's youth soccer community.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There is no public evidence of any corporate endorsements or paid partnerships.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No baseline commercial partnerships exist to evaluate deal volume.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Lacks verified commercial alliances or strategic brand partners.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No active or historical relationships exist to gauge repeat or renewal demand.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No commercial campaigns have been executed to evaluate return-on-investment or reach.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No transaction history exists to determine her financial market pricing power.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E4"
+      ],
+      "rationale": "Highly positive athletic momentum driven by consecutive USYNT camp selections and successful pre-professional club play in 2026.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No public platform metrics are available to evaluate audience progression.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 60,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "Niche soccer-specific media coverage is steadily rising in lockstep with her competitive milestones.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 25,
+      "confidence": "MEDIUM",
+      "evidenceIds": [],
+      "rationale": "Public search volume remains flat as she is largely unknown to non-soccer audiences.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "She has not yet entered the commercial landscape, resulting in a flat commercial trajectory.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Elite youth national team status, representing the U.S. at the U-16 and U-17 levels.",
+    "Proved her competitive readiness at the pre-professional level with Union FC Macomb in the USL W League at just 15 years old.",
+    "Extremely clean, controversy-free public image and high-performing student-athlete reputation."
+  ],
+  "keyConstraints": [
+    "Complete absence of active, public-facing personal social media accounts.",
+    "No commercial track record or NIL deals to prove market pricing or brand activation capabilities.",
+    "Cultural relevance and public awareness are highly siloed within specialized soccer circles."
+  ],
+  "importantMissingData": [
+    "Longitudinal and active social media audience growth, reach, and engagement data across major channels (Instagram, TikTok, X).",
+    "Any historical commercial pricing or partnership deal details."
+  ],
+  "identityOrEvidenceRisks": [
+    "No significant identity risks, as public documentation strongly confirms her career details, though some secondary sources overlap with unrelated individuals (e.g., student editors)."
+  ],
+  "socialBlockSupplied": false
+}

@@ -1,0 +1,257 @@
+{
+ "type": "OBJECT",
+ "properties": {
+  "decisions": {
+   "type": "ARRAY",
+   "items": {
+    "type": "OBJECT",
+    "properties": {
+     "objective_id": {
+      "type": "STRING",
+      "enum": [
+       "b1c799e3-59fc-4986-b3ab-a0b7b4869601",
+       "c0f587e4-750f-4575-a4e8-fd4cfa6e078e",
+       "feb62891-8b9f-44e4-8c1f-677d6947334b"
+      ]
+     },
+     "decision": {
+      "type": "STRING",
+      "enum": [
+       "NO_ACTION",
+       "RECOMMEND",
+       "REQUEST_INTELLIGENCE"
+      ]
+     },
+     "why": {
+      "type": "STRING"
+     },
+     "cites": {
+      "type": "ARRAY",
+      "items": {
+       "type": "OBJECT",
+       "properties": {
+        "ref": {
+         "type": "STRING"
+        },
+        "how": {
+         "type": "STRING"
+        }
+       },
+       "required": [
+        "ref",
+        "how"
+       ]
+      }
+     },
+     "what": {
+      "type": "STRING"
+     },
+     "execution_path": {
+      "type": "STRING",
+      "enum": [
+       "direct_action",
+       "specialized_plan",
+       "campaign"
+      ]
+     },
+     "relation_to_existing_work": {
+      "type": "STRING",
+      "enum": [
+       "new_work",
+       "advances_existing_work",
+       "no_new_work"
+      ]
+     },
+     "advances": {
+      "type": "STRING",
+      "nullable": true
+     },
+     "not_seen": {
+      "type": "ARRAY",
+      "items": {
+       "type": "STRING"
+      }
+     },
+     "proposition": {
+      "type": "STRING"
+     },
+     "why_material": {
+      "type": "STRING"
+     },
+     "source_class": {
+      "type": "STRING",
+      "enum": [
+       "athlete",
+       "connected",
+       "external"
+      ]
+     }
+    },
+    "required": [
+     "objective_id",
+     "decision",
+     "why",
+     "cites"
+    ]
+   }
+  },
+  "requested": {
+   "type": "ARRAY",
+   "items": {
+    "type": "OBJECT",
+    "properties": {
+     "request_id": {
+      "type": "STRING",
+      "enum": [
+       "S-agent"
+      ]
+     },
+     "decision": {
+      "type": "STRING",
+      "enum": [
+       "NO_ACTION",
+       "RECOMMEND",
+       "REQUEST_INTELLIGENCE"
+      ]
+     },
+     "why": {
+      "type": "STRING"
+     },
+     "cites": {
+      "type": "ARRAY",
+      "items": {
+       "type": "OBJECT",
+       "properties": {
+        "ref": {
+         "type": "STRING"
+        },
+        "how": {
+         "type": "STRING"
+        }
+       },
+       "required": [
+        "ref",
+        "how"
+       ]
+      }
+     },
+     "what": {
+      "type": "STRING"
+     },
+     "execution_path": {
+      "type": "STRING",
+      "enum": [
+       "direct_action",
+       "specialized_plan",
+       "campaign"
+      ]
+     },
+     "relation_to_existing_work": {
+      "type": "STRING",
+      "enum": [
+       "new_work",
+       "advances_existing_work",
+       "no_new_work"
+      ]
+     },
+     "advances": {
+      "type": "STRING",
+      "nullable": true
+     },
+     "not_seen": {
+      "type": "ARRAY",
+      "items": {
+       "type": "STRING"
+      }
+     },
+     "proposition": {
+      "type": "STRING"
+     },
+     "why_material": {
+      "type": "STRING"
+     },
+     "source_class": {
+      "type": "STRING",
+      "enum": [
+       "athlete",
+       "connected",
+       "external"
+      ]
+     }
+    },
+    "required": [
+     "request_id",
+     "decision",
+     "why",
+     "cites"
+    ]
+   }
+  },
+  "deferred": {
+   "type": "ARRAY",
+   "items": {
+    "type": "OBJECT",
+    "properties": {
+     "objective_id": {
+      "type": "STRING",
+      "enum": [
+       "2d199757-6e12-4a6b-bade-df05c587e849"
+      ]
+     },
+     "decision": {
+      "type": "STRING",
+      "enum": [
+       "REQUEST_INTELLIGENCE",
+       "CONDITION_APPEARS_RESOLVED",
+       "NO_REQUEST"
+      ]
+     },
+     "why": {
+      "type": "STRING"
+     },
+     "cites": {
+      "type": "ARRAY",
+      "items": {
+       "type": "OBJECT",
+       "properties": {
+        "ref": {
+         "type": "STRING"
+        },
+        "how": {
+         "type": "STRING"
+        }
+       },
+       "required": [
+        "ref",
+        "how"
+       ]
+      }
+     },
+     "proposition": {
+      "type": "STRING"
+     },
+     "why_material": {
+      "type": "STRING"
+     },
+     "source_class": {
+      "type": "STRING",
+      "enum": [
+       "athlete",
+       "connected",
+       "external"
+      ]
+     }
+    },
+    "required": [
+     "objective_id",
+     "decision",
+     "why",
+     "cites"
+    ]
+   }
+  }
+ },
+ "required": [
+  "decisions"
+ ]
+}

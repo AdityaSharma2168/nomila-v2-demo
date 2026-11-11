@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<title>Data Deletion — Nomila</title>
+<meta name="description" content="Nomila Data Deletion — how to request deletion of your data."/>
+<meta property="og:title" content="Data Deletion — Nomila"/>
+<meta property="og:description" content="Nomila Data Deletion — how to request deletion of your data."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://nomila.co/data-deletion"/>
+<meta property="og:image" content="https://nomila.co/assets/og-image.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Data Deletion — Nomila"/>
+<meta name="twitter:description" content="Nomila Data Deletion — how to request deletion of your data."/>
+<meta name="twitter:image" content="https://nomila.co/assets/og-image.png"/>
+<meta property="fb:app_id" content="876239621775424"/>
+<meta name="theme-color" content="#0D0B08"/>
+<meta name="robots" content="index,follow"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+  /* ─── Shared design tokens (mirrors landing/index.html) ─── */
+  :root {
+    --night: #0D0B08;
+    --pink: #E84591;
+    --blue: #2D8EFF;
+    --green: #2DC87C;
+    --gold: #E8A215;
+    --cream100: #FAF8F5;
+    --cream300: #EDE8E2;
+    --ink900: #1A1A1A;
+    --ink700: #484848;
+    --ink500: #767676;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    min-height: 100dvh;
+    background: var(--night);
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    display: flex; flex-direction: column;
+  }
+  a { color: inherit; }
+
+  /* Aurora backdrop, anchored to the top like the dark screens on index.html */
+  .aurora {
+    position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background:
+      radial-gradient(60% 40% at 25% 0%, rgba(45,142,255,0.20) 0%, transparent 60%),
+      radial-gradient(55% 35% at 80% 4%, rgba(232,69,145,0.14) 0%, transparent 60%);
+  }
+
+  /* ─── Top nav: brand + back to home ─── */
+  .nav {
+    position: relative; z-index: 1;
+    display: flex; align-items: center; justify-content: space-between;
+    max-width: 960px; width: 100%; margin: 0 auto; padding: 18px 24px;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .brand span { font-weight: 600; font-size: 15px; letter-spacing: 5px; }
+  .back-home {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-weight: 600; font-size: 13px; color: rgba(255,255,255,0.55);
+    text-decoration: none; transition: color .15s ease;
+  }
+  .back-home:hover { color: #fff; }
+
+  /* ─── Document body ─── */
+  .doc {
+    position: relative; z-index: 1; flex: 1;
+    max-width: 960px; width: 100%; margin: 0 auto; padding: 24px 24px 64px;
+  }
+  .breadcrumb {
+    font-weight: 600; font-size: 11px; letter-spacing: 1.6px;
+    text-transform: uppercase; color: var(--pink); margin-bottom: 14px;
+  }
+  .doc h1 {
+    font-weight: 800; font-size: clamp(2rem, 6vw, 2.6rem); line-height: 1.05;
+    letter-spacing: -.8px; margin-bottom: 10px;
+  }
+  .updated { font-size: 13px; color: rgba(255,255,255,0.45); margin-bottom: 0; }
+  .lead {
+    font-size: 17px; line-height: 1.6; color: rgba(255,255,255,0.78);
+    margin: 14px 0 30px; max-width: 62ch;
+  }
+  .doc h2 .num { color: var(--pink); font-variant-numeric: tabular-nums; margin-right: 12px; }
+  /* "Three ways to delete" option cards */
+  .option {
+    border: 1px solid rgba(255,255,255,0.08); border-radius: 16px;
+    padding: 18px 20px; margin-bottom: 12px;
+    background: rgba(255,255,255,0.02);
+  }
+  .option h3 { margin: 0 0 6px; display: flex; align-items: baseline; gap: 10px; }
+  .option h3 .num {
+    flex-shrink: 0; color: var(--pink); font-weight: 800; font-size: 18px;
+    font-variant-numeric: tabular-nums;
+  }
+  .option h3 .tag {
+    font-size: 11px; font-weight: 600; letter-spacing: .4px; text-transform: uppercase;
+    color: var(--green); background: rgba(45,200,124,0.12);
+    padding: 2px 8px; border-radius: 999px; margin-left: 4px;
+  }
+  .option p { margin: 0; }
+
+  /* Readable legal copy on the dark surface */
+  .doc h2 {
+    font-weight: 700; font-size: 19px; letter-spacing: -.2px;
+    margin: 36px 0 12px; color: #fff;
+  }
+  .doc h3 { font-weight: 600; font-size: 15px; margin: 22px 0 8px; color: rgba(255,255,255,0.9); }
+  .doc p, .doc li {
+    font-weight: 400; font-size: 15px; line-height: 1.7;
+    color: rgba(255,255,255,0.72);
+  }
+  .doc p { margin-bottom: 14px; }
+  .doc ul, .doc ol { margin: 0 0 14px 22px; }
+  .doc li { margin-bottom: 7px; }
+  .doc a:not(.brand):not(.back-home) { color: var(--blue); text-decoration: none; }
+  .doc a:not(.brand):not(.back-home):hover { text-decoration: underline; }
+  .doc strong { color: #fff; font-weight: 600; }
+  hr { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 36px 0; }
+
+  /* ─── Footer (shared with index.html footer) ─── */
+  .site-footer {
+    position: relative; z-index: 1;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    padding: 28px 24px;
+  }
+  .footer-inner {
+    max-width: 960px; margin: 0 auto;
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .footer-links { display: flex; flex-wrap: wrap; gap: 22px; }
+  .footer-links a {
+    font-weight: 500; font-size: 13px; color: rgba(255,255,255,0.6);
+    text-decoration: none; transition: color .15s ease;
+  }
+  .footer-links a:hover { color: #fff; }
+  .footer-copy { font-size: 12px; color: rgba(255,255,255,0.4); }
+  @media (max-width: 560px) {
+    .footer-inner { flex-direction: column; justify-content: center; text-align: center; gap: 18px; }
+    .footer-links { justify-content: center; }
+  }
+
+  :focus-visible { outline: 2px solid var(--pink); outline-offset: 3px; border-radius: 6px; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+  <div class="aurora"></div>
+
+  <!-- ─── Top nav ─── -->
+  <header class="nav">
+    <a class="brand" href="/" aria-label="Nomila home">
+      <svg width="24" height="24" viewBox="0 0 112 112" fill="none" aria-hidden="true">
+        <circle cx="56" cy="56" r="50" stroke="white" stroke-width="4" stroke-opacity="0.08"/>
+        <circle cx="56" cy="56" r="38" stroke="white" stroke-width="4" stroke-opacity="0.08"/>
+        <circle cx="56" cy="56" r="26" stroke="white" stroke-width="4" stroke-opacity="0.08"/>
+        <circle cx="56" cy="56" r="14" stroke="white" stroke-width="4" stroke-opacity="0.08"/>
+        <path d="M 17.7 88.14 A 50 50 0 1 1 99.3 31.0" stroke="#2D8EFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+        <path d="M 26.89 80.43 A 38 38 0 1 1 93.42 62.6" stroke="#2DC87C" stroke-width="5" stroke-linecap="round" fill="none"/>
+        <path d="M 36.08 72.71 A 26 26 0 1 1 72.71 75.92" stroke="#E84591" stroke-width="5" stroke-linecap="round" fill="none"/>
+        <path d="M 45.28 65.0 A 14 14 0 1 1 56.0 70.0" stroke="#E8A215" stroke-width="5" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span>NOMILA</span>
+    </a>
+    <a class="back-home" href="/">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Back to home
+    </a>
+  </header>
+
+  <!-- ─── Document ─── -->
+  <main class="doc">
+    <div class="breadcrumb">LEGAL · DATA DELETION</div>
+    <h1>How to delete your Nomila data</h1>
+    <p class="lead">Any user, in any region, can delete their data at any time — free of charge. Choose whichever option is easiest for you.</p>
+    <p class="updated">Last updated June 25, 2026 &nbsp;|&nbsp; Completed within 30 days</p>
+
+    <hr/>
+
+    <p>Nomila Inc. lets any user, in any region, delete their data at any time, free of charge. You have three options:</p>
+
+    <h2>Three ways to delete</h2>
+
+    <div class="option">
+      <h3><span class="num">1</span>Delete in the app <span class="tag">Fastest</span></h3>
+      <p>Open <strong>Nomila → Settings → Account → Delete my account</strong>. This permanently deletes your profile, connected-account tokens, inbox/deal data, and brand scores, and revokes Nomila's access to your connected services.</p>
+    </div>
+
+    <div class="option">
+      <h3><span class="num">2</span>Disconnect a single integration</h3>
+      <p>To remove data from just one connected service (e.g., Gmail or Instagram), open <strong>Nomila → Settings → Connections</strong>, and tap <strong>Disconnect</strong> next to that service. We delete the data and tokens associated with that integration.</p>
+    </div>
+
+    <div class="option">
+      <h3><span class="num">3</span>Email request</h3>
+      <p>Email <a href="mailto:privacy@nomila.co?subject=Delete%20my%20data">privacy@nomila.co</a> from the address on your account with the subject <strong>"Delete my data."</strong> We will verify your request, delete your data, and send you a confirmation code and the status of your request.</p>
+    </div>
+
+    <p>We complete verified deletion requests within <strong>30 days</strong>.</p>
+
+    <h2><span class="num">01</span>What gets deleted</h2>
+    <ul>
+      <li>Your account &amp; profile</li>
+      <li>OAuth tokens for connected services</li>
+      <li>Ingested messages and detected deals</li>
+      <li>Generated drafts</li>
+      <li>Your brand scores</li>
+    </ul>
+    <p>Some records may be retained only where required by law (e.g., financial/tax records) or in anonymized, aggregated form that cannot identify you.</p>
+
+    <h2><span class="num">02</span>Revoking access at the source</h2>
+    <p>You can also revoke Nomila's access directly with each provider:</p>
+    <ul>
+      <li><strong>Google</strong> — <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a></li>
+      <li><strong>Meta / Facebook</strong> — Settings → Apps and Websites</li>
+      <li><strong>Microsoft</strong> — <a href="https://account.microsoft.com/privacy" target="_blank" rel="noopener">account.microsoft.com privacy</a></li>
+      <li><strong>TikTok</strong> — Settings → Security → Manage app permissions</li>
+      <li><strong>Spotify</strong> — Account → Apps</li>
+    </ul>
+
+    <h2><span class="num">03</span>Questions</h2>
+    <p>Contact <a href="mailto:privacy@nomila.co">privacy@nomila.co</a> and we'll help.</p>
+
+  </main>
+
+  <!-- ─── Footer ─── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-copy">© 2026 Nomila</div>
+      <nav class="footer-links" aria-label="Legal">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/data-deletion">Data Deletion</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

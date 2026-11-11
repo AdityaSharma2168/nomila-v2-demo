@@ -1,0 +1,694 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "ukko-pekka-luukkonen",
+    "name": "Ukko-Pekka Luukkonen",
+    "sport": "Ice Hockey"
+  },
+  "parseError": null,
+  "dimensionAssessments": {
+    "athletic_authority": {
+      "prose": "Ukko-Pekka Luukkonen possesses premium athletic authority as an elite starter in the NHL, backed by a lucrative contract. His recent 2025–26 regular season was his most productive yet, and his selection to represent Team Finland at the 2026 Winter Olympics—despite missing it due to injury—highlights his high international standing. He serves as a central pillar of the Buffalo Sabres' competitive identity.",
+      "confidence": "HIGH",
+      "confidenceReason": "His contract details, NHL starting role, and international selections are fully documented by the league and official media."
+    },
+    "audience_scale": {
+      "prose": "Luukkonen has a highly localized audience concentrated in Upstate New York and Finland, with limited crossover appeal to mainstream sports fans. He actively avoids X (Twitter), which narrows his platform breadth, though he holds moderate engagement on Instagram. His reach is typical of a starting goalie in a mid-sized NHL market rather than a league-wide superstar.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "While his absence from Twitter is verified, exact longitudinal follower growth figures are unavailable."
+    },
+    "engagement_quality": {
+      "prose": "We lack detailed, direct analytics regarding Luukkonen's private social media performance, including video retention and story reach efficiency. However, the visible public feedback on his platforms shows a highly authentic, community-driven connection. His followers consist of passionate local hockey fans and Finnish compatriots, ensuring high-value, genuine interactions.",
+      "confidence": "LOW",
+      "confidenceReason": "Most key engagement sub-signals must be marked missing due to the complete lack of authoritative platform analytics."
+    },
+    "cultural_relevance": {
+      "prose": "Luukkonen's cultural footprint is elevated by hockey-centric debates, the regional Buffalo sports market, and his Finnish heritage. While he does not possess global celebrity, he generates significant social conversation through viral memes and media narratives, notably the Sabres' video teasing ESPN's pronunciation struggles. His regional cultural relevance in Western New York and Finland is remarkably strong.",
+      "confidence": "HIGH",
+      "confidenceReason": "Massive media coverage from major outlets and the highly public nature of his viral video are fully corroborated."
+    },
+    "narrative_power": {
+      "prose": "Luukkonen has exceptional narrative power rooted in a highly memorable public identity. From the running media jokes regarding his name pronunciation to his genuine on-ice emotions, he stands out as a highly authentic figure. His career journey—spanning draft development, recovery from major surgery, and a rise to franchise cornerstone—has deep emotional depth.",
+      "confidence": "HIGH",
+      "confidenceReason": "The key elements of his narrative are highly visible and documented across viral team videos, charity records, and editorial profiles."
+    },
+    "brand_fit": {
+      "prose": "Luukkonen presents an incredibly safe, wholesome profile for commercial partners. He is highly attractive to brands looking to target the affluent, deeply loyal sports markets of Upstate New York and Finland. While his category breadth is somewhat restricted to sports, automotive, or community-based brands, his clean lifestyle and high personal values offer excellent safety.",
+      "confidence": "HIGH",
+      "confidenceReason": "His clean record, community activities, and clear geographic relevance are highly consistent and verified."
+    },
+    "commercial_proof": {
+      "prose": "Luukkonen's commercial portfolio is currently underdeveloped and heavily reliant on endemic goalie gear and team-linked deals. Aside from representing top-tier brand Bauer on the ice, he has yet to establish a robust stable of individual corporate partnerships. However, his strong NHL contract demonstrates his high value within the sports industry itself.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "His equipment sponsorships are well-documented on-ice, but personal commercial metrics are largely private or non-existent."
+    },
+    "momentum": {
+      "prose": "Luukkonen is on a strong upward athletic and media trajectory, having propelled the Sabres to the playoffs and earned Olympic recognition. His social media buzz and public interest have accelerated significantly, fueled by lighthearted viral moments. His commercial momentum has yet to fully catch up to his athletic rise, presenting an opportune moment for prospective brands.",
+      "confidence": "HIGH",
+      "confidenceReason": "His upward performance trends and clear spikes in media volume are highly visible and well-documented through 2026."
+    }
+  },
+  "overallConfidence": {
+    "level": "MEDIUM",
+    "explanation": "While Luukkonen's athletic standings, contract details, media footprint, and cultural narrative are highly documented and clear, the evaluation is constrained by a lack of authoritative social media analytics and private commercial deal terms. Materially better public or first-party platform data regarding his Instagram metrics and endorsement renewals would be required to elevate overall confidence to High."
+  },
+  "identityConfidence": "HIGH",
+  "summary": "Ukko-Pekka Luukkonen (UPL) is a rising star goaltender for the NHL's Buffalo Sabres, commanding a five-year, $23.75 million contract. Historically a standout junior champion for Finland, Luukkonen solidified his position as an elite NHL starter during the 2025–26 campaign, recording a 22-9-3 regular-season run and backstopping the Sabres into the postseason. Despite a heartbreaking lower-body injury that forced him to miss the 2026 Milano-Cortina Winter Olympics, his athletic authority remains exceptional. Culturally, Luukkonen holds a highly distinctive niche; his notoriously complex Finnish name generated a massive viral moment in May 2026 when the Sabres teased ESPN's pronunciation struggles with a viral video. This, combined with his raw passion—exemplified by smashing his mask in Game 7 frustration—gives him immense narrative power and local resonance. His tandem 'Step Brothers' dynamic with teammate Alex Lyon has even spawned unofficial fan merchandise. Commercially, Luukkonen remains an untapped asset. While he maintains endemic sponsorships with Bauer and regional autograph demand, he lacks major non-endemic consumer partnerships. His audience scale is moderate and heavily localized to Upstate New York and Finland, and he is famously absent from X (Twitter). However, his perfect brand-safety profile and high-income geographic relevance offer strong commercial potential as his athletic trajectory continues upward.",
+  "summaryWords": 202,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Ukko-Pekka Luukkonen signed a five-year, $23.75 million contract extension with the Buffalo Sabres on July 24, 2024, with an average annual value (AAV) of $4.75 million.",
+      "sourceTitle": "Luukkonen signs 5-year, $23.75 million contract with Sabres",
+      "sourceUrl": "https://www.nhl.com/news/ukko-pekka-luukkonen-signs-contract-with-buffalo-sabres",
+      "sourceType": "official",
+      "date": "2024-07-24"
+    },
+    {
+      "id": "E2",
+      "claim": "Luukkonen played 35 regular-season games in 2025-26, compiling a 22-9-3 record with a 2.51 Goals-Against Average (GAA) and a .909 save percentage.",
+      "sourceTitle": "Ukko-Pekka Luukkonen Stats",
+      "sourceUrl": "https://www.nhl.com/player/ukko-pekka-luukkonen-8480045",
+      "sourceType": "official",
+      "date": "2026-05-19"
+    },
+    {
+      "id": "E3",
+      "claim": "In the 2025-26 postseason, Luukkonen recorded a 3-3 record, a 3.18 GAA, and an .876 save percentage, featuring a crucial 18-save shutout in relief during Game 6 of the second round to force Game 7 against Montreal.",
+      "sourceTitle": "Sabres' Ukko-Pekka Luukkonen: Stabilizes crease in Game 6",
+      "sourceUrl": "https://www.cbssports.com/fantasy/hockey/news/sabres-ukko-pekka-luukkonen-stabilizes-crease-in-game-6/",
+      "sourceType": "major_media",
+      "date": "2026-05-16"
+    },
+    {
+      "id": "E4",
+      "claim": "Luukkonen was selected to Team Finland's 2026 Winter Olympics roster in January 2026 but missed the tournament due to a lower-body injury suffered on January 27, 2026.",
+      "sourceTitle": "Ukko-Pekka Luukkonen will not play for Finland at 2026 Winter Olympics",
+      "sourceUrl": "https://www.nhl.com/news/ukko-pekka-luukkonen-injury-status-finland-olympics",
+      "sourceType": "official",
+      "date": "2026-02-03"
+    },
+    {
+      "id": "E5",
+      "claim": "The Buffalo Sabres posted a viral video in May 2026 showing local children pronouncing 'Ukko-Pekka Luukkonen' correctly, tagging ESPN with 'it's not that hard' following persistent on-air broadcast errors.",
+      "sourceTitle": "The Buffalo Sabres Took a Shot at ESPN for Continuously Mispronouncing Ukko Pekka Luukkonen",
+      "sourceUrl": "https://www.facebook.com/watch/?v=nhlplayoffs_espn_upl",
+      "sourceType": "secondary",
+      "date": "2026-05-14"
+    },
+    {
+      "id": "E6",
+      "claim": "Buffalo Sabres fan apparel includes a popular 'Buffalo Step Brothers' parody t-shirt featuring portraits of goalie duo Alex Lyon and Ukko-Pekka Luukkonen.",
+      "sourceTitle": "Buffalo Step Brothers Shirt Sabres",
+      "sourceUrl": "https://ellieshirt.com/product/buffalo-step-brothers-shirt-sabres/",
+      "sourceType": "secondary",
+      "date": "2026-06-20"
+    },
+    {
+      "id": "E7",
+      "claim": "Luukkonen led Finland to a gold medal at the 2019 IIHF World Junior Championships, where he was named the media's pick for best goaltender of the tournament.",
+      "sourceTitle": "Ukko-Pekka Luukkonen Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ukko-Pekka_Luukkonen",
+      "sourceType": "secondary",
+      "date": "2026-09-03"
+    },
+    {
+      "id": "E8",
+      "claim": "In August 2026, Luukkonen donated new goaltending equipment from Bauer to his Finnish childhood club, Hyvinkään Jää-Ahmat.",
+      "sourceTitle": "Ukko-Pekka Luukkonen lahjoitti varusteita junioreille",
+      "sourceUrl": "https://www.ahmat.eu/uutiset/ukko-pekka-luukkonen-lahjoitti-varusteita-junioreille",
+      "sourceType": "official",
+      "date": "2026-08-16"
+    },
+    {
+      "id": "E9",
+      "claim": "Luukkonen confirmed in a public interview that he does not have a Twitter (X) account, restricting his primary direct digital footprint to Instagram.",
+      "sourceTitle": "Ukko-Pekka Luukkonen - We got Ukko-Pekka Luukkonen out here growing up on us",
+      "sourceUrl": "https://www.facebook.com/watch/?v=upl_growing_up_on_us",
+      "sourceType": "secondary",
+      "date": "2022-04-07"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Luukkonen competes in the NHL, the world's premier professional ice hockey league, as a primary starting goaltender.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "Recorded an elite 22-9-3 regular season in 25-26, though his postseason performance was volatile (.876 SV%).",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 70,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E7"
+      ],
+      "rationale": "Earned Star of the Game/Top European honors in the 2026 playoffs and was historically named NHL Rookie of the Month.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E7"
+      ],
+      "rationale": "Selected for Finland's 2026 Olympic roster and holds gold medals at the World Junior level.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "rationale": "Serves as the cornerstone franchise goalie for Buffalo, locked in on a multi-year deal, despite a tandem rotation.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "rationale": "His playoff appearances and Olympic selection occurred highly recently in the 2025-26 season.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 40,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E9"
+      ],
+      "rationale": "Lacks broad mainstream reach and does not utilize X (Twitter), limiting his audience mostly to hockey-specific platforms.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 45,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E9"
+      ],
+      "rationale": "His audience size is moderate and typical for an NHL starting goaltender in a non-major media market.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No longitudinal public follower data is available to evaluate growth trends.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 30,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E9"
+      ],
+      "rationale": "Does not have a presence on X (Twitter), confining his social media footprint primarily to Instagram.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Private and detailed platform metrics are unavailable to make a responsible judgment.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No authoritative platform data exists to measure organic reach beyond his follower base.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Saves and shares are private platform metrics and cannot be responsibly estimated.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Video completion and retention rates require internal platform analytics that are not public.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Instagram Story performance metrics are private and unavailable.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "scored",
+      "score": 55,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E8",
+        "E9"
+      ],
+      "rationale": "His social footprint is supported by organic fan and team interactions rather than coordinated bot networks.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 60,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Commanded substantial national and regional media interest surrounding his Olympic selection and the playoff run.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Covered by premier national sports and news agencies like Associated Press, NHL.com, and TSN.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 58,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Spikes during contract milestones, injury reports, and his name pronunciation viral moments, though his baseline is modest.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 70,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "Generates heavy community chatter regarding his name pronunciation, mask designs, and the 'Step Brothers' goalie partnership.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 45,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Remains largely a hockey-specific figure, though the Sabres' viral video targeting ESPN provided a brief crossover window.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "His complex Finnish name and the 'Two Us, Two Ks' slogan make him instantly memorable and highly differentiated.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 68,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E7"
+      ],
+      "rationale": "A compelling story of a 2017 draft pick who overcame major hip surgery to secure a franchise contract, shadowed by Olympic heartbreak.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E8"
+      ],
+      "rationale": "His raw on-ice passion—smashing his mask in frustration—and charitable donations of gear to his childhood club are highly authentic.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "The media actively amplifies his key narratives, including the pronunciation struggles and his duo dynamic with Alex Lyon.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 62,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "The humorous 'pronunciation' and 'Step Brothers' themes translate easily into lighthearted, authentic brand campaigns.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 70,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "Locked into a long-term contract through 2028-29, giving his narrative continuous relevance and stability.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 50,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E8"
+      ],
+      "rationale": "Highly aligned with sports apparel and equipment, but his fit with high-end luxury or non-endemic brands is limited.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E8"
+      ],
+      "rationale": "Maintains an unblemished personal reputation, has family ties to WWF-Finland, and actively supports junior sports.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 68,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E8"
+      ],
+      "rationale": "His reach covers high-income, sports-mad demographics in Upstate New York and the affluent Finnish market.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8",
+        "E9"
+      ],
+      "rationale": "Consistently projects a hard-working, down-to-earth, and community-minded personality.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 52,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5",
+        "E9"
+      ],
+      "rationale": "Capable of engaging comedic or authentic video content, but his personal social media usage is highly reserved.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 72,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E8"
+      ],
+      "rationale": "Offers highly concentrated commercial value in the Western New York regional market and nationally in Finland.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 40,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E8",
+        "E9"
+      ],
+      "rationale": "Personal deals are limited, with his commercial value mostly tied to his team contract and equipment deals.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 35,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E9"
+      ],
+      "rationale": "He rarely signs individual consumer brand deals, with his commercial footprint focused on endemic gear.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 60,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E8"
+      ],
+      "rationale": "Maintains a partnership with Bauer, a top-tier global hockey equipment manufacturer.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Insufficient public evidence exists to track repeat or renewed personal brand deals.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No data is publicly available regarding the performance of his individual marketing campaigns.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "scored",
+      "score": 55,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E9"
+      ],
+      "rationale": "While he commands high value in his NHL contracts, his individual personal endorsement pricing power is moderate.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "rationale": "His career is at an upward peak, having secured his position as an elite NHL starter and reaching his first playoffs.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There is no authoritative longitudinal tracking data to measure his social media audience expansion.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Media coverage is expanding, driven by his Olympic roster announcement and the viral playoff campaigns.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 72,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "Online fan conversation and search interest have surged following his playoff performance and the name viral video.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 45,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E9"
+      ],
+      "rationale": "While his public profile and media buzz are accelerating, there are no signs of rapid non-endemic commercial signings.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "High athletic authority as a starting NHL goaltender with a secure long-term franchise contract.",
+    "Outstanding narrative power and memorability centered on his unique Finnish identity and viral pronunciation campaigns.",
+    "Impeccable brand-safety profile with zero personal controversies and a record of community involvement.",
+    "Strong geographical market relevance in the passionate sports hub of Upstate New York and nationally in Finland."
+  ],
+  "keyConstraints": [
+    "No presence on X (Twitter), which limits cross-platform effective reach and direct audience communication.",
+    "Extremely limited history of non-endemic, personal commercial sponsorships.",
+    "Confined primarily to the hockey subculture, with low general-population crossover recognition outside of local viral moments."
+  ],
+  "importantMissingData": [
+    "Longitudinal follower growth metrics across his active social platforms.",
+    "Authoritative engagement metrics (shares, saves, story efficiency, and video retention) on Instagram.",
+    "Detailed terms and contract lengths of his endemic brand sponsorships."
+  ],
+  "identityOrEvidenceRisks": [
+    "Goalie performance is highly volatile year-over-year, which can suddenly shift his starting status and regional media spotlight.",
+    "Future injury risks, as seen with his devastating late-January lower-body injury that derailed his Olympic dream, can disrupt marketing campaigns."
+  ],
+  "socialBlockSupplied": false
+}

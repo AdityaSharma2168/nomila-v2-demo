@@ -1,0 +1,99 @@
+{
+ "name": "Lilia Bhuta",
+ "found": true,
+ "id": "3fd80f19-be44-4cb6-9075-a7e79c1924c4",
+ "sport": "soccer",
+ "segment": "unknown",
+ "school": "Century United",
+ "division": "Class 4A",
+ "since": "2026-06-18 17:40:16.23971+00",
+ "floors": {
+  "autograph": 579,
+  "appearance": 612
+ },
+ "dealPreferencesKeys": [
+  "minimum_rates"
+ ],
+ "current": {
+  "tier": "Local",
+  "displayScore": 359,
+  "hasRateCard": true,
+  "rateCardVersion": "v3.1.0-calibrated",
+  "hasDealTypeRates": true,
+  "derivedPerTypeRanges": {
+   "socialPost": {
+    "low": 1,
+    "mid": 2,
+    "high": 2
+   },
+   "appearance": {
+    "low": 76,
+    "mid": 139,
+    "high": 222
+   },
+   "ambassador": {
+    "low": 3,
+    "mid": 6,
+    "high": 10
+   },
+   "autograph": {
+    "low": 64,
+    "mid": 116,
+    "high": 186
+   },
+   "licensing": {
+    "low": 0,
+    "mid": 1,
+    "high": 1
+   },
+   "projectedAnnualValue": {
+    "low": 242,
+    "mid": 440,
+    "high": 703
+   }
+  }
+ },
+ "deals": {
+  "byStatus": [
+   {
+    "status": "detected",
+    "n": 39
+   }
+  ],
+  "acceptedNegotiating": [],
+  "periods": [],
+  "deliverableRows": 0
+ },
+ "connectedAccounts": [
+  {
+   "platform": "gmail",
+   "status": "revoked",
+   "last_fetched_at": null
+  },
+  {
+   "platform": "gmail",
+   "status": "revoked",
+   "last_fetched_at": null
+  },
+  {
+   "platform": "gmail",
+   "status": "revoked",
+   "last_fetched_at": null
+  },
+  {
+   "platform": "gmail",
+   "status": "revoked",
+   "last_fetched_at": null
+  }
+ ],
+ "research": {
+  "runs": 0,
+  "latestFinishedAt": null,
+  "stateRows": 0
+ },
+ "socialFeatures": {
+  "rows": 0,
+  "latest": null
+ },
+ "objectives": []
+}

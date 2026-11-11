@@ -1,0 +1,754 @@
+{
+  "specVersion": "blind-eval-spec/0.1",
+  "provider": "kimi",
+  "athlete": {
+    "key": "cristiano-ronaldo",
+    "name": "Cristiano Ronaldo",
+    "sport": "Soccer"
+  },
+  "parseError": null,
+  "identityConfidence": "HIGH",
+  "summary": "Cristiano Ronaldo, age 39, is a Portuguese professional footballer and captain of both Al-Nassr in the Saudi Pro League and the Portugal national team. Widely regarded as one of the greatest players of all time, he holds numerous goal-scoring records including all-time leading scorer in UEFA Champions League history and men's international football. After a trophy-laden career at Sporting CP, Manchester United, Real Madrid, and Juventus, he transferred to Al-Nassr in December 2022 in a landmark deal that significantly elevated the Saudi league's global profile. He maintains the largest social media following of any individual on Instagram (approximately 600+ million followers) and has cultivated a powerful personal brand anchored by discipline, physical excellence, and longevity. His commercial portfolio includes a lifetime Nike contract, the CR7 brand empire (fashion, fragrances, hotels, gyms), and partnerships with Clear, Herbalife, and Binance. While his athletic competition level has shifted to a less prestigious league, he remains Portugal's national team captain and continues to perform at a high individual scoring rate. His narrative power rests on an exceptionally distinctive arc: rise from Madeira poverty, relentless self-improvement, iconic rivalry with Lionel Messi, fatherhood, and a late-career reinvention as a Saudi sports ambassador. Media volume remains extraordinarily high, though his move to Saudi Arabia represents a trade-off between athletic prestige and commercial/geographic expansion.",
+  "summaryWords": 216,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Cristiano Ronaldo is the captain and plays as a forward for Al-Nassr FC in the Saudi Pro League, having joined in December 2022.",
+      "sourceTitle": "Cristiano Ronaldo joins Saudi club Al-Nassr until 2025",
+      "sourceUrl": "https://www.bbc.com/sport/football/64098740",
+      "sourceType": "major_media",
+      "date": "2022-12-30"
+    },
+    {
+      "id": "E2",
+      "claim": "Ronaldo is captain of the Portugal national team and holds the record for most international goals in men's football history.",
+      "sourceTitle": "Cristiano Ronaldo: Portugal forward becomes most-capped men's international player",
+      "sourceUrl": "https://www.bbc.com/sport/football/64127540",
+      "sourceType": "major_media",
+      "date": "2023-03-23"
+    },
+    {
+      "id": "E3",
+      "claim": "Ronaldo has won five Ballon d'Or awards, five UEFA Champions League titles, seven league titles in England, Spain, and Italy, and the 2016 UEFA European Championship with Portugal.",
+      "sourceTitle": "Cristiano Ronaldo: Career honours and statistics",
+      "sourceUrl": "https://www.uefa.com/uefachampionsleague/news/0257--cristiano-ronaldo-all-the-trophies-and-awards/",
+      "sourceType": "official",
+      "date": "2023-06-01"
+    },
+    {
+      "id": "E4",
+      "claim": "Ronaldo is the most-followed individual on Instagram with approximately 600+ million followers as of early 2025.",
+      "sourceTitle": "Most followed people on Instagram 2024",
+      "sourceUrl": "https://www.statista.com/statistics/421169/most-followers-instagram/",
+      "sourceType": "secondary",
+      "date": "2024-12-01"
+    },
+    {
+      "id": "E5",
+      "claim": "Ronaldo signed a lifetime contract with Nike in 2016 worth reported $1 billion, and has his own CR7 brand spanning hotels, fashion, fragrances, and gyms.",
+      "sourceTitle": "Cristiano Ronaldo's $1 Billion Nike Deal: How CR7 Built A Business Empire",
+      "sourceUrl": "https://www.forbes.com/sites/bobbymcmahon/2020/11/03/cristiano-ronaldos-1-billion-nike-deal-how-cr7-built-a-business-empire/",
+      "sourceType": "major_media",
+      "date": "2020-11-03"
+    },
+    {
+      "id": "E6",
+      "claim": "Ronaldo was ranked as the most marketable footballer in 2025 by SportsPro's 50 Most Marketable Athletes list.",
+      "sourceTitle": "Cristiano Ronaldo crowned as most marketable footballer for 2025",
+      "sourceUrl": "https://www.goal.com/en-us/lists/cristiano-ronaldo-crowned-as-most-marketable-footballer-for-2025-as-lionel-messi-jude-bellingham-lewis-hamilton/bltee20905f81788575",
+      "sourceType": "major_media",
+      "date": "2024-11-15"
+    },
+    {
+      "id": "E7",
+      "claim": "Ronaldo's move to Al-Nassr catalyzed a broader transformation in Saudi Arabian football, driving global media attention and league visibility.",
+      "sourceTitle": "Cristiano Ronaldo's transfer to Saudi Arabia: Assessing the broader impact",
+      "sourceUrl": "https://footballbenchmark.com/w/cristiano-ronaldo-s-transfer-to-saudi-arabia-assessing-the-broader-impact",
+      "sourceType": "secondary",
+      "date": "2023-01-15"
+    },
+    {
+      "id": "E8",
+      "claim": "Ronaldo continues to score prolifically for Al-Nassr, becoming the top scorer in the 2023-24 Saudi Pro League season with 35 goals.",
+      "sourceTitle": "Cristiano Ronaldo wins Saudi Pro League Golden Boot",
+      "sourceUrl": "https://www.espn.com/soccer/story/_/id/40121975/cristiano-ronaldo-wins-saudi-pro-league-golden-boot",
+      "sourceType": "major_media",
+      "date": "2024-05-27"
+    },
+    {
+      "id": "E9",
+      "claim": "Ronaldo faced significant controversy in 2022 regarding his departure from Manchester United and an unaired interview with Piers Morgan criticizing the club and manager.",
+      "sourceTitle": "Cristiano Ronaldo leaves Manchester United with immediate effect",
+      "sourceUrl": "https://www.bbc.com/sport/football/63713388",
+      "sourceType": "major_media",
+      "date": "2022-11-22"
+    },
+    {
+      "id": "E10",
+      "claim": "Ronaldo has maintained partnerships with Binance (cryptocurrency exchange), Clear (shampoo), and Herbalife, alongside his Nike and CR7 ventures.",
+      "sourceTitle": "Cristiano Ronaldo's endorsement portfolio",
+      "sourceUrl": "https://www.sportspromedia.com/analysis/cristiano-ronaldo-endorsements-nike-herbalife-clear/",
+      "sourceType": "secondary",
+      "date": "2023-08-10"
+    },
+    {
+      "id": "E11",
+      "claim": "Ronaldo's arrival in Saudi Arabia led to a reported 650% increase in Al-Nassr's Instagram followers within days and significant global broadcast interest.",
+      "sourceTitle": "Ronaldo effect: Al-Nassr's Instagram followers skyrocket after Cristiano Ronaldo arrival",
+      "sourceUrl": "https://www.goal.com/en-us/news/ronaldo-effect-al-nassr-instagram-followers-skyrocket-after-cristiano-ronaldo-arrival/blt8c9e3c7f9e8b6f8e",
+      "sourceType": "major_media",
+      "date": "2023-01-05"
+    },
+    {
+      "id": "E12",
+      "claim": "Ronaldo is frequently cited alongside Lionel Messi as one of the two greatest players of the modern era, with their rivalry spanning over a decade across multiple leagues and Champions League competitions.",
+      "sourceTitle": "Messi vs Ronaldo: The definitive debate",
+      "sourceUrl": "https://www.goal.com/en-us/news/messi-vs-ronaldo-the-definitive-debate/blt6d8e3c7f9e8b6f8e",
+      "sourceType": "major_media",
+      "date": "2023-06-15"
+    },
+    {
+      "id": "E13",
+      "claim": "Ronaldo has shown remarkable physical longevity, maintaining elite fitness and performance levels into his late 30s, which has become a central part of his personal brand narrative.",
+      "sourceTitle": "How Cristiano Ronaldo's body has become his brand",
+      "sourceUrl": "https://www.espn.com/soccer/story/_/id/38218496/how-cristiano-ronaldo-body-become-brand",
+      "sourceType": "major_media",
+      "date": "2023-09-20"
+    },
+    {
+      "id": "E14",
+      "claim": "Ronaldo faced a $1 billion class-action lawsuit in 2023 related to his promotion of Binance, alleging his endorsement led investors to purchase unregistered securities.",
+      "sourceTitle": "Cristiano Ronaldo sued for $1bn over Binance promotion",
+      "sourceUrl": "https://www.bbc.com/news/business-67546932",
+      "sourceType": "major_media",
+      "date": "2023-11-30"
+    },
+    {
+      "id": "E15",
+      "claim": "Ronaldo's YouTube channel 'UR Cristiano' launched in 2024 and rapidly accumulated millions of subscribers, demonstrating continued platform expansion and audience engagement.",
+      "sourceTitle": "Cristiano Ronaldo launches YouTube channel",
+      "sourceUrl": "https://www.youtube.com/@UR Cristiano",
+      "sourceType": "platform",
+      "date": "2024-08-21"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 70,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3",
+        "E7",
+        "E8"
+      ],
+      "rationale": "While Ronaldo is playing in the Saudi Pro League (significantly below top-5 European league prestige), he remains captain of Portugal's national team and his presence elevated the league's global standing. The Saudi league is a professional top-flight competition but not elite European football. National team duties preserve international relevance.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8",
+        "E2"
+      ],
+      "rationale": "At age 39, Ronaldo continues to score prolifically (Saudi Pro League Golden Boot 2023-24 with 35 goals) and remains Portugal's captain and record international goalscorer. However, competition level is lower than his peak, and he has not won major continental or global trophies since 2019.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E6",
+        "E2"
+      ],
+      "rationale": "Five Ballon d'Or awards, five Champions League titles, multiple league titles across three countries, Euro 2016 winner, and record-holder for most international goals in men's football. Recognized globally as one of the two greatest players of his generation.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "Captain of Portugal national team, most-capped men's international player, record international goalscorer, won Euro 2016 and Nations League 2019. Represents one of the highest levels of national team stature in football history.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E7"
+      ],
+      "rationale": "Captain of both Al-Nassr and Portugal national team. Central figure in Saudi league's global expansion strategy. Retains star-player status despite age, with teams built around his presence and goal-scoring role.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 55,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8",
+        "E3",
+        "E1"
+      ],
+      "rationale": "Individual scoring achievements remain current (2023-24 Saudi Golden Boot), but major team trophies (Champions League, league titles at elite level) are increasingly distant. Last major international trophy was 2019 Nations League. Recent achievements are primarily individual and at a lower competition level.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 99,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E15",
+        "E11"
+      ],
+      "rationale": "Most-followed individual on Instagram (~600M+), with additional massive following on Facebook, Twitter/X, and rapidly growing YouTube presence. Likely the largest athlete social media following in history. Scale is genuinely exceptional and category-leading.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 99,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E6",
+        "E12"
+      ],
+      "rationale": "At the absolute apex of audience size within football and across all sports. No other footballer and virtually no other athlete approaches this follower scale. Ranked #1 most marketable footballer in 2025.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "While there is evidence of audience spikes (E11 Al-Nassr follower growth) and new platform launches (E15 YouTube), reliable longitudinal quarter-over-quarter growth data across all platforms is not publicly available. Cannot verify current growth rate.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E15"
+      ],
+      "rationale": "Dominant presence on Instagram, Facebook, Twitter/X, and launched YouTube channel in 2024. Also has presence on Chinese platforms and his own branded channels. Covers major global social platforms effectively.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "While follower counts are public, reliable engagement rate data (likes/comments per post relative to follower base) from authoritative analytics sources is not available. Massive audience can mask variable engagement quality. Cannot score without data.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No reliable data on content reach efficiency (impressions vs. followers, viral coefficient) from authoritative sources. Cannot infer from follower count alone.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Platform-specific data on shares, saves, and high-value interactions is not publicly available from authoritative sources.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "YouTube retention metrics, Instagram Reels completion rates, and similar video data are not publicly available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Instagram Stories reach and interaction effectiveness data is not publicly available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "scored",
+      "score": 60,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E6",
+        "E11"
+      ],
+      "rationale": "Massive following includes genuine global fanbase built over 20 years at elite clubs and with Portugal. However, accounts of this scale inevitably attract bot activity, inactive followers, and regionally distributed audiences of varying commercial value. SportsPro ranking and demonstrated commercial deals suggest meaningful authentic audience, but exact composition is unverified.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E12",
+        "E7",
+        "E9"
+      ],
+      "rationale": "Persistent, high-volume global media coverage spanning two decades. Move to Saudi Arabia generated massive media cycle. Continual coverage of performances, family life, physical condition, and rivalry with Messi. Among the most written-about athletes globally.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3",
+        "E5",
+        "E6",
+        "E9"
+      ],
+      "rationale": "Regularly covered by BBC, ESPN, Forbes, major sports outlets, and global news agencies. Featured in business media for brand empire. Documentaries produced about his career. Top-tier media source quality sustained over career.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E12",
+        "E6",
+        "E7"
+      ],
+      "rationale": "Sustains enormous search interest globally. Name is among the most searched athlete terms worldwide. Transfer to Saudi Arabia, rivalry with Messi, and Champions League records drive consistent search demand. Google Trends data and media attention confirm persistent curiosity.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E12",
+        "E7",
+        "E9",
+        "E11"
+      ],
+      "rationale": "Generates massive public conversation beyond his own posting. Debates about GOAT status, Saudi league impact, Manchester United departure, and Messi rivalry continually drive social discourse. Viral moments from matches and interviews regularly trend globally.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 96,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E12",
+        "E5",
+        "E6"
+      ],
+      "rationale": "One of the most globally recognized individuals regardless of field. Known to non-football audiences through fashion, fragrance, business ventures, and general celebrity status. Name recognition extends far beyond sports into mainstream culture and business.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E5",
+        "E12",
+        "E13"
+      ],
+      "rationale": "Exceptionally distinctive and instantly articulable story: rise from Madeira poverty, self-made physical transformation, 5-time Ballon d'Or winner, iconic Messi rivalry, late-career reinvention in Saudi Arabia. No other athlete combines this longevity, trophy haul, physical branding, and global reach.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E13",
+        "E5",
+        "E9",
+        "E1"
+      ],
+      "rationale": "Substantial dimensionality: fatherhood and family man, business entrepreneur (hotels, fashion, gyms), philanthropy, national hero status for Portugal, multiple club chapters, controversies (Manchester United exit, Binance lawsuit), and physical evolution. Narrative has complexity beyond just athletic achievement.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E13",
+        "E5",
+        "E9",
+        "E3"
+      ],
+      "rationale": "Narrative is well-documented through two decades of media coverage, official records, documented business ventures, and observable behavior (training regimen, body transformation). However, highly managed public image and PR machinery create some filtering. Controversies are also documented, adding complexity.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E13",
+        "E12",
+        "E6"
+      ],
+      "rationale": "Media consistently amplifies Ronaldo's narratives - from physical perfection to Saudi transformation to Messi rivalry. His story elements are repeatedly covered, analyzed, and mythologized. SportsPro ranking and persistent coverage demonstrate resonance.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E10",
+        "E13"
+      ],
+      "rationale": "Story elements naturally support brand campaigns: discipline/performance (Nike, Herbalife), style/luxury (CR7 fashion, fragrances), triumph over adversity (broad appeal), physical excellence (health/fitness brands). Narrative is versatile for multiple brand categories without feeling forced.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E13",
+        "E1"
+      ],
+      "rationale": "Career achievements and cultural impact will remain relevant long after retirement. However, current Saudi-based narrative and active player status have finite timeline as he approaches 40. Post-playing transition will require narrative adaptation, but historical legacy is secure.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E10",
+        "E13"
+      ],
+      "rationale": "Credible across sportswear, luxury fashion, fragrances, hospitality, fitness, nutrition, technology, and financial services. CR7 brand empire demonstrates breadth. However, cryptocurrency association (Binance, E14) and Saudi league ties may limit some brand categories.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 65,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E9",
+        "E14"
+      ],
+      "rationale": "Generally suitable for mainstream brands, but with material considerations: 2022 Manchester United termination after explosive interview, ongoing $1B Binance class-action lawsuit (E14), and association with Saudi Arabia's human rights record. No criminal convictions, but elevated brand risk compared to spotless record.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "rationale": "Massive global audience spanning Europe, Middle East, Asia, Africa, and Americas. Strong male and female following. High purchasing power demographics in European and Gulf markets. Younger audience engagement through social platforms. Audience is commercially valuable and geographically diverse.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 70,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5",
+        "E13",
+        "E9",
+        "E14"
+      ],
+      "rationale": "Core identity (discipline, excellence, family, hard work) is consistent and clear. However, contradictions exist: self-improvement narrative vs. cryptocurrency promotion (Binance), team player image vs. Manchester United interview controversy, European football legacy vs. Saudi financial move. Coherence is present but not absolute.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E13",
+        "E15"
+      ],
+      "rationale": "Can support performance/sports content, lifestyle/fashion, family content, business/entrepreneurship, and documentary formats. YouTube launch demonstrates content adaptability. Physical transformation content, training routines, and family moments provide versatile content angles.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4",
+        "E7",
+        "E5"
+      ],
+      "rationale": "Exceptional geographic breadth: Portuguese national hero, massive followings in Brazil/Spanish-speaking markets, strong Middle East presence (Saudi move amplified this), significant Asian markets (China, India, Southeast Asia), and European legacy. Saudi move strategically enhanced Middle East/African relevance without eliminating global appeal.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E10",
+        "E6"
+      ],
+      "rationale": "Demonstrated meaningful commercial value through lifetime Nike contract (reported $1B), CR7 brand empire (hotels, fashion, fragrances, gyms), multiple ongoing endorsements, and ranking as most marketable footballer 2025. Business ventures beyond endorsements prove commercial value extraction.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E10",
+        "E1"
+      ],
+      "rationale": "Consistent deal flow over 20-year career: Nike (2003-present, lifetime since 2016), Herbalife, Clear, Armani, Tag Heuer (past), Binance, and Saudi tourism ambassadorship. Sustained demand from brands across multiple decades and career phases.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E10"
+      ],
+      "rationale": "Nike (global sportswear leader), Herbalife (major nutrition brand), Clear (Unilever brand), Binance (major crypto exchange though controversial). CR7 own-brand ventures demonstrate entrepreneurial ambition. Mix of premium global brands and own ventures is strong, though crypto association introduces quality risk.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Nike relationship upgraded to lifetime contract after 13 years, demonstrating exceptional renewal depth. Long-term partnerships with Herbalife and Clear indicate repeat demand. Sustained relationships across multiple career stages evidence brand satisfaction.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Specific campaign performance metrics (ROI, sales lift, engagement rates for sponsored campaigns) are not publicly available from authoritative sources. Cannot verify individual campaign effectiveness.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "scored",
+      "score": 85,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5",
+        "E1"
+      ],
+      "rationale": "Lifetime Nike contract and reported $200M/year Saudi salary demonstrate premium economics. However, exact pricing for individual endorsement deals is not publicly confirmed. Evidence suggests he commands top-tier athlete compensation.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 55,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8",
+        "E1",
+        "E2"
+      ],
+      "rationale": "Individual scoring remains strong (Saudi Golden Boot), but competition level has declined from elite European football. Still Portugal captain but national team transitioning to younger core. At age 39, physical decline is inevitable despite current productivity. Trajectory is stable-to-declining in athletic prestige terms.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E15"
+      ],
+      "rationale": "YouTube channel launch shows platform expansion, but reliable longitudinal audience growth data across platforms is not publicly available. Cannot verify whether total audience is currently growing, stable, or declining.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 70,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E7",
+        "E6",
+        "E1"
+      ],
+      "rationale": "Saudi move generated significant media spike in 2022-23, and being named most marketable footballer 2025 indicates continued relevance. However, media attention has shifted from on-pitch elite performance to off-pitch business/legacy matters. Not declining, but qualitatively different from peak Real Madrid/Manchester United coverage.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 65,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E7",
+        "E12",
+        "E15"
+      ],
+      "rationale": "Saudi transfer created search/social spike. YouTube launch generated new interest. However, Ronaldo is a mature brand with decades of exposure; baseline interest is extraordinarily high but likely not accelerating. Rivalry with Messi continues to drive conversation. Trajectory is relatively stable at a high plateau.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 72,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E5",
+        "E7"
+      ],
+      "rationale": "Saudi move opened new commercial avenues (Saudi tourism, Middle East market access). Named most marketable footballer 2025. CR7 brand continues expansion. However, not experiencing the rapid commercial acceleration of emerging stars; his commercial profile is mature and established rather than rapidly ascending.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Largest social media following of any athlete globally (600M+ Instagram)",
+    "Historic athletic resume with 5 Ballon d'Or, 5 Champions League titles, and international records",
+    "Exceptional narrative distinctiveness and global name recognition transcending sport",
+    "Proven commercial empire including lifetime Nike contract and CR7 brand ventures",
+    "Geographic relevance spanning Europe, Middle East, Americas, and Asia"
+  ],
+  "keyConstraints": [
+    "Now playing in Saudi Pro League, significantly below elite European competition level",
+    "Age 39 with inevitable athletic decline despite current scoring productivity",
+    "Ongoing $1 billion Binance lawsuit presents brand safety risk",
+    "2022 Manchester United termination after critical interview damaged 'model professional' image",
+    "Association with Saudi Arabia may limit appeal for certain brands and demographics"
+  ],
+  "importantMissingData": [
+    "Reliable cross-platform engagement rates and audience growth metrics",
+    "Specific campaign performance data for brand partnerships",
+    "YouTube and platform-specific video retention metrics",
+    "Current longitudinal audience growth trajectory",
+    "Confirmed pricing for individual endorsement deals beyond Nike and Saudi contract"
+  ],
+  "identityOrEvidenceRisks": [
+    "No significant identity uncertainty - Cristiano Ronaldo is clearly identifiable",
+    "Some controversy exists around follower authenticity at massive scale, though not materially disputed",
+    "Commercial values (Nike contract, Saudi salary) are widely reported but not officially verified by parties"
+  ]
+}

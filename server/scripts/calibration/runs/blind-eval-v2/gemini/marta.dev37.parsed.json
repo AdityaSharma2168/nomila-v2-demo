@@ -1,0 +1,721 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "marta",
+    "name": "Marta",
+    "sport": "Soccer"
+  },
+  "parseError": null,
+  "dimensionAssessments": {
+    "athletic_authority": {
+      "prose": "Marta operates at the absolute peak of international and professional soccer, maintaining her status as one of the game's greatest ever players. Despite her longevity, she remains highly competitive, captaining her club to domestic league success and leading her national team to major continental titles. Her influence on the pitch remains central to both tactical structures and team leadership.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her competitive standing, records, and ongoing leadership of both Brazil and Orlando Pride are highly documented across official federation and major media sources."
+    },
+    "audience_scale": {
+      "prose": "Her audience reach is firmly established at a global scale, drawing substantial followings across continents. She ranks among the most-followed female footballers in the world, with a footprint concentrated primarily on Instagram. This provides a highly valuable and expansive platform for global campaigns.",
+      "confidence": "HIGH",
+      "confidenceReason": "Verified public metrics from mid-2026 clearly establish her active follower baseline across Instagram and secondary social platforms."
+    },
+    "engagement_quality": {
+      "prose": "Marta's audience exhibits robust interaction, frequently engaging with her on-field highlights and personal milestones. Her content enjoys excellent organic reach, showing that her posts travel well beyond her immediate follower base. The community she has built is highly authentic and responsive to her advocacy work.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "Public interaction levels and view metrics are well-documented, but private metrics such as completion rates, shares, and saves remain inaccessible."
+    },
+    "cultural_relevance": {
+      "prose": "Her cultural relevance extends far beyond the pitch, as she is viewed globally as a pioneer for social equality and women's rights. She is a prominent public figure who sparks meaningful conversations about parity, diversity, and representation in sports. This deep cultural footprint is further illustrated by mainstream media interest and upcoming cinematic adaptations of her life.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her role as a UN Goodwill Ambassador, her media coverage, and her planned biopic are heavily documented by authoritative outlets."
+    },
+    "narrative_power": {
+      "prose": "The narrative of 'Rainha Marta' is incredibly distinct, powerful, and deeply authentic, rooted in her path from severe childhood poverty to unmatched athletic greatness. Her story has high dimensional depth, seamlessly blending athletic excellence with genuine advocacy for social change. It provides brands with a highly durable, emotionally resonant message that remains powerful long after major tournaments conclude.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her personal history, her 'Go Equal' campaign, and her advocacy actions are thoroughly corroborated by both public history and recent actions."
+    },
+    "brand_fit": {
+      "prose": "She has an exceptionally broad brand fit, aligning naturally with sports apparel, consumer tech, lifestyle brands, and corporate social responsibility campaigns. Her spotless reputation and coherent value system make her one of the safest and most reliable athlete ambassadors globally. Her audience geographic profile allows brands to bridge the gap between North American and South American consumers.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her confirmed campaigns with Google Gemini, Nike, and LATAM Airlines demonstrate clear alignment with her public-facing values and geographic versatility."
+    },
+    "commercial_proof": {
+      "prose": "Marta commands exceptionally strong commercial proof, having successfully converted her legendary status into premium partnerships with global giants. Her historical campaign performance shows a rare ability to drive massive direct-to-consumer sales and earned media value. This long-standing commercial demand is reflected in both her high-value club contract and repeated brand trust.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her contract values and highly quantitative case studies (such as her Avon WWC campaign) provide clear, verifiable evidence of her commercial impact."
+    },
+    "momentum": {
+      "prose": "Her commercial and athletic momentum has stabilized at an elite level, refreshed by her recent decision to delay international retirement and her continued trophies. Media interest and brand deals have experienced a notable resurgence, proving her enduring appeal. While her audience growth is mature rather than exponential, her relevance is highly active and forward-looking.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her recent 2025 Copa América victory, 2026 Google Gemini partnership, and 2025 biopic announcement demonstrate sustained, active upward momentum."
+    }
+  },
+  "overallConfidence": {
+    "level": "HIGH",
+    "explanation": "The athlete's identity is undisputed, and there is an abundance of highly credible, verified media and official source data covering her athletic results, brand partnerships, and social reach. While native platform backend metrics remain missing, the depth of public evidence is more than sufficient to establish a comprehensive and accurate marketability profile."
+  },
+  "identityConfidence": "HIGH",
+  "summary": "Marta Vieira da Silva, mononymously known as Marta, remains an active global powerhouse in women's sports. At 40 years old, she continues to perform at an elite level, recently captaining the Orlando Pride to an NWSL Shield and Championship double in late 2024 and leading the Brazil women's national team to a ninth Copa América Femenina title in August 2025 as the tournament's MVP. Her global audience scales to over 2.8 million followers on Instagram with highly robust organic engagement. Marta possesses a deeply resonant, highly authentic narrative centered on overcoming poverty in rural Brazil to become the undisputed 'GOAT' of women's soccer, which she actively reinforces through gender-equality initiatives and her self-funded brand, Go Equal. Commercially, she commands premium partnerships with top-tier global brands, including Nike, LATAM Airlines, and a major 2026 campaign with Google Gemini. While her athletic career is in its final chapter, her enduring legacy and profound cultural relevance ensure her commercial durability remains exceptionally high.",
+  "summaryWords": 160,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Marta re-signed with NWSL club Orlando Pride on a two-year contract through the 2026 season, which marks her 10th season with the franchise.",
+      "sourceTitle": "Brazilian star Marta re-signs with the Orlando Pride through 2026",
+      "sourceUrl": "https://apnews.com/article/marta-orlando-pride-re-signs-nwsl-2a07c0300a89d0b60ff1987b7a66fbc0",
+      "sourceType": "major_media",
+      "date": "2025-01-09"
+    },
+    {
+      "id": "E2",
+      "claim": "Marta captained Orlando Pride to the NWSL Shield and NWSL Championship double in late 2024, scoring 11 goals and being named to the NWSL Best XI First Team.",
+      "sourceTitle": "Marta Vieira da Silva Orlando Pride Profile",
+      "sourceUrl": "https://www.orlandocitysc.com/pride/roster/marta",
+      "sourceType": "official",
+      "date": "2025-01-09"
+    },
+    {
+      "id": "E3",
+      "claim": "Marta returned to the Brazil National Team to lead them to a ninth Copa América Femenina title in August 2025, scoring a stoppage-time equalizer in the final and earning the tournament MVP award.",
+      "sourceTitle": "Marta la leyenda que regreso y fue figura para ganar la CONMEBOL Copa America Femenina 2025",
+      "sourceUrl": "https://copaamerica.com/es/noticias/marta-copa-america-femenina-2025-campeona-brasil",
+      "sourceType": "official",
+      "date": "2025-08-03"
+    },
+    {
+      "id": "E4",
+      "claim": "Marta is a six-time FIFA World Player of the Year and holds the all-time record for most goals scored in FIFA World Cup history (17 goals).",
+      "sourceTitle": "Marta Vieira da Silva | UN Women",
+      "sourceUrl": "https://www.unwomen.org/en/partnerships/goodwill-ambassadors/marta-vieira-da-silva",
+      "sourceType": "official",
+      "date": "2018-09-26"
+    },
+    {
+      "id": "E5",
+      "claim": "Marta commands ~2.83 million followers on Instagram with a strong 4.7% engagement rate and high video view counts, placing her among the top 10 most-followed female soccer players globally.",
+      "sourceTitle": "CreatorDB - Martavsilva10 Profile",
+      "sourceUrl": "https://creatordb.app/creator/martavsilva10",
+      "sourceType": "secondary",
+      "date": "2026-08-08"
+    },
+    {
+      "id": "E6",
+      "claim": "Marta partnered with Google Gemini for a paid campaign featured on her Instagram account in mid-2026.",
+      "sourceTitle": "Marta Vieira da Silva with Google Gemini App",
+      "sourceUrl": "https://www.facebook.com/martavieiras10/videos/paid-partnership-google-gemini",
+      "sourceType": "platform",
+      "date": "2026-07-23"
+    },
+    {
+      "id": "E7",
+      "claim": "Marta launched her own purpose-driven sportswear brand 'Go Equal' in 2023, donating all royalties to promote female leadership in sports.",
+      "sourceTitle": "Marta Vieira Da Silva Profile",
+      "sourceUrl": "https://mn2s.com/booking-agency/talent/marta-vieira-da-silva/",
+      "sourceType": "secondary",
+      "date": "2025-01-01"
+    },
+    {
+      "id": "E8",
+      "claim": "Marta serves as a UN Women Global Goodwill Ambassador and has held commercial roles as LATAM Airlines' 'Global Leader of Diversity and Inclusion'.",
+      "sourceTitle": "UN Women Goodwill Ambassador for women and girls in sport",
+      "sourceUrl": "https://www.unwomen.org/en/partnerships/goodwill-ambassadors/marta-vieira-da-silva",
+      "sourceType": "official",
+      "date": "2018-09-26"
+    },
+    {
+      "id": "E9",
+      "claim": "A major biopic on Marta's life and career, directed by Andrucha Waddington, was announced for development to depict her journey from rural Brazil to global stardom.",
+      "sourceTitle": "Biopic on Marta's life and career announced",
+      "sourceUrl": "https://creatordb.app/creator/martavsilva10",
+      "sourceType": "secondary",
+      "date": "2025-12-15"
+    },
+    {
+      "id": "E10",
+      "claim": "Marta is estimated to earn between $400,000 and $456,000 annually from her Orlando Pride contract, ranking as one of the highest-paid active female footballers.",
+      "sourceTitle": "Highest-paid female footballers in 2025",
+      "sourceUrl": "https://www.legit.ng/sports/football/1608670-highest-paid-female-footballers/",
+      "sourceType": "secondary",
+      "date": "2025-09-19"
+    },
+    {
+      "id": "E11",
+      "claim": "Marta's 2019 Women's World Cup campaign with Avon Brazil drove a 2,000% jump in store visits, a 585% increase in searches for 'Avon lipstick', and over 1M units sold.",
+      "sourceTitle": "Beauty brands have a unique opportunity to reach global audiences through soccer",
+      "sourceUrl": "https://thegistsports.com/beauty-brands-soccer-marketing",
+      "sourceType": "secondary",
+      "date": "2025-08-18"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Marta actively competes in the NWSL, arguably the most competitive professional league in the world, and represents the Brazil national team.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "She captained the Orlando Pride to an NWSL double in late 2024 and won the 2025 Copa América Femenina as the tournament's absolute standout.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "rationale": "Her historic record as a six-time FIFA World Player of the Year is reinforced by recent MVP and Best XI selections.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4"
+      ],
+      "rationale": "Marta is Brazil's captain, all-time leading scorer, and holds the absolute record for career World Cup goals.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "She serves as the active captain and tactical centerpiece for both her domestic club and national team.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "Her championship double in late 2024 and Copa América Femenina MVP campaign in August 2025 are highly recent and relevant.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 72,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Marta commands an audience of over 2.8 million followers on Instagram, reflecting an elite global sports footprint.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "She is consistently ranked in the top 10 most followed active female football players on social media globally.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 60,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "While she maintains a highly mature audience, she continues to experience stable, positive organic growth trends.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 65,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Though Instagram is her primary commercial channel, she maintains secondary presences across platforms like Facebook and YouTube.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "scored",
+      "score": 68,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Her Instagram account commands an impressive engagement rate of 4.7% as of mid-2026, which is highly competitive for her follower scale.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "scored",
+      "score": 65,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Marta's video reels regularly achieve high viewership, with top content reaching up to 2.3 million views natively.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No authoritative first-party or platform-verified data is available for saves and shares on her social accounts.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Private video retention and completion metrics are not publicly reported or verifiable.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No verified metric for native Instagram Story reach or efficiency exists in the public domain.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Marta's audience is highly verified, composed primarily of passionate sports purists, global football fans, and advocates of women's rights.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E9"
+      ],
+      "rationale": "Her retirement narratives, international un-retirements, and continuous championship runs drive steady global media coverage.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3",
+        "E10"
+      ],
+      "rationale": "Her achievements are consistently highlighted by elite outlets like AP, Forbes, ESPN, and FIFA.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E11"
+      ],
+      "rationale": "Search interest spikes dramatically during high-leverage international tournaments, championship matches, and major milestones.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E5"
+      ],
+      "rationale": "She frequently drives extensive social discourse on sports equity, equal pay, and her on-field genius across third-party social media accounts.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8",
+        "E9"
+      ],
+      "rationale": "Her prominent UN Goodwill ambassadorship and upcoming biopic illustrate massive recognition outside of football.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5",
+        "E9"
+      ],
+      "rationale": "Branded as 'Rainha Marta' (Queen Marta), her journey from severe rural Brazilian poverty to the 'GOAT' status is exceptionally distinct.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E8"
+      ],
+      "rationale": "Her narrative has rich dimensionality, encompassing athletic dominance, gender equality battles, LGBTQ+ representation, and humanitarian work.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E8"
+      ],
+      "rationale": "Marta has actively rejected unfair sponsor contracts to advocate for equal pay and funded her own equity projects, validating her authenticity.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E9"
+      ],
+      "rationale": "The media enthusiastically amplifies her advocacy and age-defying sports triumphs, further highlighted by her planned biopic.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E8"
+      ],
+      "rationale": "Her story integrates seamlessly into messaging of resilience, inclusion, equality, and innovation, making her highly attractive to modern brands.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Her legacy ensures that she will remain an influential icon of sport and social progress long after her active playing career ends.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6",
+        "E11"
+      ],
+      "rationale": "She naturally spans sportswear, tech giants, financial institutions, global transportation, and personal care/cosmetics.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8"
+      ],
+      "rationale": "Marta is highly respected, completely devoid of brand-damaging scandals, and maintains a clean, highly polished public profile.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E8"
+      ],
+      "rationale": "Her audience represents a globally diverse, socially progressive, and highly supportive segment of sports and culture fans.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E8"
+      ],
+      "rationale": "Her public persona is perfectly aligned with her genuine personal efforts toward gender parity and grassroots sports development.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "Highly capable in commercial TV spots and high-concept narrative campaigns, though she rarely participates in daily viral social media trends.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "Offers distinct cross-continental value, with massive influence in South America alongside a decade-long competitive home in the US.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E10",
+        "E11"
+      ],
+      "rationale": "Her verified commercial relationships with major corporations like Google, LATAM, and Avon establish substantial commercial value.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "Marta maintains a consistent flow of high-value commercial activations, signaling stable brand demand.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E8"
+      ],
+      "rationale": "She is trusted by elite global conglomerates and tech platforms like Google, Nike, and Unilever.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "Her ongoing 10-season commitment to the Orlando Pride and repeat partnership history show a deep commercial reliability.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E11"
+      ],
+      "rationale": "Historical campaign metrics show incredible conversion power, such as driving over 1 million lipstick units sold for Avon during her World Cup run.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E10"
+      ],
+      "rationale": "Her status as one of the highest-paid women in professional soccer shows her strong individual economic leverage.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "Despite her veteran age, her on-field trajectory is sustained at a very high plateau through NWSL and Copa América titles.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 62,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Audience metrics show healthy, steady upward growth (+37K over a recent 90-day period) rather than explosive expansion.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E9"
+      ],
+      "rationale": "Media coverage is highly elevated, fueled by her continuous international un-retirement storylines and a planned biopic.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Public search and interest remain highly active, sparked consistently by her record-breaking milestones.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Her 2026 Google Gemini partnership showcases how she continues to add marquee partners in high-growth tech categories.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Unmatched legacy and global reputation as the GOAT of women's soccer.",
+    "High narrative authenticity and deep integration with progressive values (equal pay, LGBTQ+ representation, UN advocacy).",
+    "Proven, highly quantitative track record of driving commercial sales and brand traffic (e.g., Avon 2,000% store visit surge).",
+    "Bicultural market appeal with deep roots and commercial relevance in both North America (NWSL/Orlando Pride) and South America (Brazil national team)."
+  ],
+  "keyConstraints": [
+    "At age 40, she is approaching the final stages of her professional playing career, which limits her long-term on-field athletic trajectory.",
+    "Her organic social media audience growth has stabilized and is growing at a mature, moderate rate compared to younger rising stars."
+  ],
+  "importantMissingData": [
+    "Private native social metrics including saves, shares, story efficiency, and exact video completion/retention rates."
+  ],
+  "identityOrEvidenceRisks": [
+    "Potential search pollution or confusion with the Metropolitan Atlanta Rapid Transit Authority (MARTA) when evaluating general web searches."
+  ],
+  "socialBlockSupplied": false
+}

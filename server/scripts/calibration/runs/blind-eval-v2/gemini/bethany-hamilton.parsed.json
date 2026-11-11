@@ -1,0 +1,760 @@
+{
+  "specVersion": "blind-eval-spec/0.2",
+  "provider": "gemini",
+  "athlete": {
+    "key": "bethany-hamilton",
+    "name": "Bethany Hamilton",
+    "sport": "Surfing"
+  },
+  "parseError": null,
+  "dimensionAssessments": {
+    "athletic_authority": {
+      "prose": "Bethany Hamilton's athletic authority is built upon a legendary competitive foundation, including 15 years on the elite WSL tour and major adaptive sports milestones. While she is no longer actively competing on the primary world circuit following her 2023 boycott, she remains a prominent figure in free surfing and big-wave riding. Her sporting influence is now legacy-driven but carries profound respect across the surfing community.",
+      "confidence": "HIGH",
+      "confidenceReason": "Well-documented competitive history and her public 2023 withdrawal from WSL events leave no uncertainty regarding her current sporting status."
+    },
+    "audience_scale": {
+      "prose": "Hamilton has an exceptionally large digital footprint for a surfing athlete, with over 5 million combined followers across multiple social platforms. This includes her massive 2.6M+ Instagram base and a verified YouTube subscriber count of 92,400. This audience scale places her in the absolute upper echelon of female surfers globally.",
+      "confidence": "HIGH",
+      "confidenceReason": "Reliable and corroborated public follower counts and authoritative YouTube API data confirm her major audience footprint."
+    },
+    "engagement_quality": {
+      "prose": "Hamilton enjoys strong engagement from a deeply loyal and active follower base of faith, family, and outdoor wellness enthusiasts. Her posts regularly achieve solid interaction rates and have demonstrated exceptional reach efficiency when discussing major life milestones or public advocacy. However, detailed back-end metrics such as retention and story shares remain private.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "While Instagram engagement rates and campaign performance are well-substantiated by secondary sources, granular metrics like story completion and direct saves are unavailable."
+    },
+    "cultural_relevance": {
+      "prose": "Hamilton is a global cultural icon whose name recognition extends far beyond the surfing world. Thanks to the success of her bestselling autobiography, Hollywood film adaptation, and continuous high-profile public appearances, her public footprint is incredibly deep and durable. She generates persistent media attention and public conversation, making her one of the most recognizable figures in sports.",
+      "confidence": "HIGH",
+      "confidenceReason": "Decades of consistent, high-prestige media coverage and widespread crossover recognition are thoroughly documented in public records."
+    },
+    "narrative_power": {
+      "prose": "The 'Soul Surfer' narrative of returning to elite athletic competition with one arm after a shark attack is one of the most compelling comeback stories in modern history. This story is deeply authentic, has massive media resonance, and possesses extraordinary long-term durability. It serves as a powerful, organic foundation for commercial partners focusing on resilience and family values.",
+      "confidence": "HIGH",
+      "confidenceReason": "The distinctiveness and multi-decade longevity of her personal story are universally recognized and extensively documented."
+    },
+    "brand_fit": {
+      "prose": "Hamilton has a very clear, unwavering public persona anchored in her Christian faith, family of four, and personal resilience. This makes her an exceptional fit for categories like family lifestyle, wellness, publishing, and values-aligned brands. However, her active advocacy on polarizing cultural issues represents a significant brand-safety risk for progressive, mainstream corporate sponsors.",
+      "confidence": "HIGH",
+      "confidenceReason": "Clear evidence from her 2023 Rip Curl contract termination and subsequent partnerships with EveryLife and Brave Books outlines her commercial fit."
+    },
+    "commercial_proof": {
+      "prose": "Hamilton has robust commercial proof, with a history of six-figure endorsement contracts and a steady demand for high-paying motivational speaking engagements. She has successfully launched direct-to-consumer businesses and secured premium ambassador deals. Her ability to drive real campaign results is demonstrated by her past corporate collaborations.",
+      "confidence": "HIGH",
+      "confidenceReason": "Publicly reported speaking fees, documented ambassador campaigns, and historical sponsorship renewals provide clear financial validation."
+    },
+    "momentum": {
+      "prose": "Hamilton's commercial momentum is stable and highly resilient as she transitions to a dedicated values-aligned partner ecosystem. While her active athletic trajectory is downward due to competitive retirement, her cultural and media visibility remains steady. Her digital audience growth has leveled off as she consciously limits personal smartphone-based social media usage.",
+      "confidence": "HIGH",
+      "confidenceReason": "Recent public speaking schedules, 2026 social media updates, and documented brand transitions provide a clear picture of her current trajectory."
+    }
+  },
+  "overallConfidence": {
+    "level": "HIGH",
+    "explanation": "Bethany Hamilton's identity and entire career trajectory are exceptionally clear and well-documented. While some detailed platform engagement analytics are missing and therefore excluded from scoring, her overarching commercial marketability, major narrative power, brand split, and financial proof are supported by robust, highly consistent public evidence."
+  },
+  "identityConfidence": "HIGH",
+  "summary": "Bethany Hamilton is a globally recognized professional surfer and iconic motivational speaker who represents one of the most remarkable stories of resilience in modern sports. After surviving a life-altering shark attack in 2003 at age 13, she achieved international acclaim by returning to compete at the highest level of surfing. While she effectively withdrew from elite World Surf League (WSL) competition in 2023 due to policy disputes, her athletic authority remains anchored in her legacy as a pioneer of adaptive sports and a big-wave rider. Today, Hamilton's commercial marketability has transitioned from traditional athletic endorsements to a highly lucrative, values-driven model. She commands a massive audience scale of over 5 million combined social media followers, including a verified YouTube channel with over 92,400 subscribers. Her narrative power is exceptional and incredibly durable, driving premium speaking fees ($30,000–$50,000 per event) and long-term brand partnerships with values-aligned entities like EveryLife, PublicSq., and Brave Books. Although her outspoken public stances on gender-identity and pro-life policies have polarized mainstream brands—resulting in the end of her 24-year Rip Curl sponsorship in late 2023—she maintains incredible coherence and commercial appeal within faith-based, family-oriented, and conservative markets. Her momentum is stable, supported by steady media coverage and her active role as an author and advocate, though her competitive athletic trajectory and direct social media growth have decelerated as she prioritizes family life.",
+  "summaryWords": 225,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Survived a devastating shark attack at age 13 in 2003, returned to surfing 1 month later, and won a national surfing title in 2005.",
+      "sourceTitle": "Britannica Biography: Bethany Hamilton",
+      "sourceUrl": "https://www.britannica.com/biography/Bethany-Hamilton",
+      "sourceType": "secondary",
+      "date": "2026-07-23"
+    },
+    {
+      "id": "E2",
+      "claim": "Competed on the elite WSL tour for 15 years, with notable highlights including finishing 3rd in the 2016 Fiji Pro.",
+      "sourceTitle": "Wikipedia Surfing Career",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bethany_Hamilton",
+      "sourceType": "secondary",
+      "date": "2026-07-23"
+    },
+    {
+      "id": "E3",
+      "claim": "Announced a boycott of WSL events in February 2023 due to the league's transgender athlete participation policies.",
+      "sourceTitle": "Why Bethany Hamilton Left Rip Curl",
+      "sourceUrl": "https://stabmag.com/news/why-bethany-hamilton-left-rip-curl/",
+      "sourceType": "major_media",
+      "date": "2023-11-08"
+    },
+    {
+      "id": "E4",
+      "claim": "Ended her 24-year relationship with major sponsor Rip Curl in late 2023 over her gender-identity stances.",
+      "sourceTitle": "Why Bethany Hamilton Left Rip Curl",
+      "sourceUrl": "https://stabmag.com/news/why-bethany-hamilton-left-rip-curl/",
+      "sourceType": "major_media",
+      "date": "2023-11-08"
+    },
+    {
+      "id": "E5",
+      "claim": "Official brand ambassador for EveryLife (baby-care brand) and PublicSq. since October 2023.",
+      "sourceTitle": "PublicSq. Brand Ambassador Announcement",
+      "sourceUrl": "https://publicsq.com/press/bethany-hamilton-everylife-brand-ambassador",
+      "sourceType": "official",
+      "date": "2023-10-02"
+    },
+    {
+      "id": "E6",
+      "claim": "Bestselling author of 'Soul Surfer' (2004) and subsequent books, including 'Surfing Past Fear' (2022) with Brave Books.",
+      "sourceTitle": "Brave Books - Surfing Past Fear",
+      "sourceUrl": "https://bravebooks.us/products/surfing-past-fear",
+      "sourceType": "official",
+      "date": "2026-03-02"
+    },
+    {
+      "id": "E7",
+      "claim": "Highly active motivational speaker at major national rallies and colleges, including 2025 March for Life and Liberty University's Convocation.",
+      "sourceTitle": "National Catholic Register - 10 Things to Know About Keynote Speaker Bethany Hamilton",
+      "sourceUrl": "https://www.ncregister.com/news/10-things-about-soul-surfer-bethany-hamilton-march-for-life-2025",
+      "sourceType": "major_media",
+      "date": "2025-01-23"
+    },
+    {
+      "id": "E8",
+      "claim": "OpenSponsorship athlete profile indicates her Instagram audience at 2.6M+ and lists estimated pricing for social deals ($50,000) and brand ambassadorships ($450,000).",
+      "sourceTitle": "OpenSponsorship Profile: Bethany Hamilton",
+      "sourceUrl": "https://opensponsorship.com/athletes/bethany-hamilton",
+      "sourceType": "secondary",
+      "date": "2026-09-14"
+    },
+    {
+      "id": "E9",
+      "claim": "HypeAuditor Instagram profile analysis reports 2.62M followers and a 2.69% engagement rate for @bethanyhamilton as of August 2026.",
+      "sourceTitle": "HypeAuditor Instagram Report: @bethanyhamilton",
+      "sourceUrl": "https://hypeauditor.com/instagram/bethanyhamilton-report/",
+      "sourceType": "secondary",
+      "date": "2026-08-15"
+    },
+    {
+      "id": "E10",
+      "claim": "Achieved outstanding engagement (average 5.79% engagement rate) participating in American Express's #BackOurOceans campaign.",
+      "sourceTitle": "Shorty Awards - AmEx Back Our Oceans Campaign",
+      "sourceUrl": "https://www.shortyawards.com/results/american-express-back-our-oceans",
+      "sourceType": "secondary",
+      "date": "2026-09-14"
+    },
+    {
+      "id": "E11",
+      "claim": "Cast in season 12 of 'The Masked Singer' as 'Macaron' in late 2024, demonstrating persistent mainstream crossover appeal.",
+      "sourceTitle": "Wikipedia - The Masked Singer Season 12",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bethany_Hamilton",
+      "sourceType": "secondary",
+      "date": "2026-07-23"
+    },
+    {
+      "id": "E12",
+      "claim": "Verified YouTube channel @TheBethanyHamilton data: 92,400 subscribers, 11,712,609 total views, 425 videos.",
+      "sourceTitle": "YouTube Channel Data - Bethany Hamilton",
+      "sourceUrl": "https://www.youtube.com/@TheBethanyHamilton",
+      "sourceType": "platform",
+      "date": "2026-09-14"
+    },
+    {
+      "id": "E13",
+      "claim": "SurferToday analysis showing only 19 surfers have over 1M combined followers, emphasizing her elite category scale.",
+      "sourceTitle": "SurferToday - Most Followed Surfers on Social Media",
+      "sourceUrl": "https://www.surfertoday.com/surfing/the-most-followed-surfers-on-social-media",
+      "sourceType": "major_media",
+      "date": "2025-09-08"
+    },
+    {
+      "id": "E14",
+      "claim": "Announced in early 2026 that she deleted social media apps from her phone to be more present, though team-managed accounts remain active.",
+      "sourceTitle": "Duke Surf: Bethany Hamilton Deletes Social Media",
+      "sourceUrl": "https://dukesurf.com/bethany-hamilton-deletes-social-media/",
+      "sourceType": "secondary",
+      "date": "2026-02-01"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 60,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "Hamilton spent 15 years competing at the elite World Surf League (WSL) level, but since her 2023 boycott, her active environment consists of adaptive events, clinics, and free/big-wave surfing.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 45,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "While Hamilton possesses legendary historic results (such as 3rd in the 2016 Fiji Pro), she currently does not participate in active top-tier competitive WSL event circuits.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 45,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "rationale": "Hamilton lacks any current competitive WSL ranking, but possesses highly prestigious legacy accolades, including the 2004 ESPY Award for Best Comeback Athlete.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "rationale": "She maintains an exceptionally high international reputation as a pioneer in adaptive surfing and a global symbol of athletic perseverance.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 65,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "She remains a highly important figure in surfing history and a central spokesperson for adaptive sports, although she is no longer active on the competitive tour.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 30,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "Her primary competitive surfing milestones occurred years ago, with her peak competitive season in 2016 and her formal exit from WSL contests in 2023.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8",
+        "E9",
+        "E12"
+      ],
+      "rationale": "Hamilton commands a massive reach of over 5 million combined followers, anchored by 2.6M+ on Instagram and her verified 92,400 YouTube subscribers.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8",
+        "E13"
+      ],
+      "rationale": "She is in the absolute upper tier of her sport; surfing has highly niche audiences, and very few female surfers globally exceed 1 million followers.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Reliable, long-term longitudinal data tracking her audience growth trend across 2025/2026 is currently unavailable.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8",
+        "E12",
+        "E13"
+      ],
+      "rationale": "She maintains established accounts with high follower bases across Instagram, Facebook, TikTok, Twitter/X, and YouTube.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "scored",
+      "score": 68,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E9"
+      ],
+      "rationale": "Independent audits of her 2.6M Instagram account report an engagement rate of approximately 2.69%, which is very healthy for an account of her size.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E7",
+        "E11"
+      ],
+      "rationale": "Hamilton's posts and speeches consistently break out of her core following and gain massive traction due to her deeply inspiring backstory and active cultural commentary.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Internal save and share metrics from social media platforms are proprietary and unavailable in public sources.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Detailed video view duration and completion rate metrics are not publicly published.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Instagram and TikTok story-specific audience reach and click-through statistics are unavailable.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E9"
+      ],
+      "rationale": "Her audience is highly active, consisting of deeply committed family-oriented, faith-centered, and outdoor communities who intensely support her life philosophy.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E7",
+        "E11"
+      ],
+      "rationale": "Hamilton maintains a robust, continuous media footprint across surfing journalism, mainstream entertainment, and prominent religious/family platforms.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3",
+        "E7"
+      ],
+      "rationale": "She is covered by high-tier mainstream media outlets, major surf publications like Stab Mag, and reputable academic/religious portals.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E6"
+      ],
+      "rationale": "Widespread search interest has remained strong and remarkably durable over multiple decades, driven by her status as a global symbol of courage.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4"
+      ],
+      "rationale": "Hamilton generates substantial public dialogue and conversation regarding women's sports policies, family values, and religious freedom.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E11"
+      ],
+      "rationale": "Her fame extends far beyond surfing; she is globally recognized from her 'Soul Surfer' movie, bestselling books, and network television appearances.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E6"
+      ],
+      "rationale": "Her survival and immediate return to competitive surfing with one arm is one of the most distinctive, easily articulable narratives in athletic history.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5",
+        "E6",
+        "E7"
+      ],
+      "rationale": "Her story is incredibly rich, evolving from her teenage tragedy to mothering four children, motivational speaking, writing books, and pursuing activism.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Her narrative is entirely authentic and historically validated, proven by her actual world-class athletic feats accomplished with a physical disability.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E6"
+      ],
+      "rationale": "The media deeply embraced and continues to echo her journey, amplifying her books, documentaries, and personal life milestones for over twenty years.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "Her core message of resilience, faith, and family easily and naturally integrates into corporate wellness, parenting, children's publishing, and health campaigns.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7"
+      ],
+      "rationale": "Her narrative has proved highly resilient and shows no signs of losing relevance, consistently attracting massive crowds and new generations of followers.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "Hamilton has a broad fit, successfully promoting baby products, publishing projects, wellness supplements, outdoor apparel, and travel packages.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 50,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4"
+      ],
+      "rationale": "She is polarizing: highly safe and appealing for traditional/faith-based brands, but presents a high risk for progressive or mainstream corporate sponsors due to her gender-policy stances.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E8"
+      ],
+      "rationale": "She is highly attractive to a loyal, values-driven demographic of religious families, children's book consumers, and healthy lifestyle enthusiasts.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E7"
+      ],
+      "rationale": "Her public persona is incredibly coherent and unwavering; she has proven she will sacrifice lucrative commercial sponsorships rather than compromise on her values.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "Shows strong versatility in promoting child-focused books, curating lifestyle travel programs, and organizing health/wellness courses.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E8"
+      ],
+      "rationale": "While highly relevant in major global surfing nations like Australia, her primary commercial and audience base is concentrated within the United States.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E8"
+      ],
+      "rationale": "Hamilton commands high-paying speaking fees ($30k-$50k) and serves as an official face for values-aligned brands, supporting her multimillion-dollar net worth.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "She maintains a consistent frequency of deals, books, and courses specifically tailored to her dedicated, values-aligned commercial partners.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Sponsors include upscale hospitality brands (1 Hotels) and prominent parallel economy platforms, alongside past alliances with Rip Curl, Oakley, and Patagonia.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Her historic 24-year tenure with Rip Curl is concrete evidence of her ability to cultivate exceptionally long-term, loyal commercial relationships.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E10"
+      ],
+      "rationale": "Past campaigns (like AmEx) yielded exceptional engagement rates of 5.79%, and EveryLife reported high-performing launch metrics after onboarding her.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E8"
+      ],
+      "rationale": "Commands premium commercial pricing, with brand ambassadorship packages valued at up to $450,000 on major matchmaking platforms.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 30,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "Her active professional competitive surfing trajectory has concluded, as she focuses on non-WSL free-surfing, big-wave riding, and mentoring clinics.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 40,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E14"
+      ],
+      "rationale": "Digital audience size remains massive but stable, with direct growth intentionally moderated by her early 2026 decision to delete social apps from her phone.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 65,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E7",
+        "E11"
+      ],
+      "rationale": "Media coverage remains stable and steady, periodically spiking due to her active national speaking tours and cultural advocacy statements.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 60,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E7"
+      ],
+      "rationale": "Public search and interest volumes are highly stable, showing predictable spikes during major public announcements or event keynotes.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 55,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Despite a major structural shift after departing Rip Curl, she experienced a stable, targeted pivot toward highly lucrative values-aligned partnerships.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Unrivaled, highly distinctive narrative with exceptional global recognition spanning over two decades.",
+    "Highly coherent, unwavering public identity that fosters an incredibly loyal, passionate, and high-intent faith/family audience.",
+    "Immense audience reach (over 5M combined) that is exceptionally rare in the niche sport of surfing.",
+    "Strong commercial proof with premium pricing power across speaking circuits, children's publishing, and values-aligned brand endorsements."
+  ],
+  "keyConstraints": [
+    "Vocal stances on gender-identity and social policies have severely polarized her appeal among mainstream, progressive, and mass-market corporate brands.",
+    "No longer competing at the elite competitive WSL level, diminishing her active connection to mainstream professional sports news.",
+    "A self-imposed detachment from mobile social media apps limits active, real-time platform growth and modern influencer content routines."
+  ],
+  "importantMissingData": [
+    "Granular platform engagement metrics (shares, saves, and story-specific interaction rates) are private and could not be verified."
+  ],
+  "identityOrEvidenceRisks": [
+    "Risk of brand polarization; mainstream campaign opportunities are constrained due to public controversies surrounding her WSL transgender boycott and pro-life stances."
+  ],
+  "socialBlockSupplied": true
+}

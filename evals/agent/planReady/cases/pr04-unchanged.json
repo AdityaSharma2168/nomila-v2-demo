@@ -1,0 +1,19 @@
+{
+  "id": "pr04-unchanged",
+  "description": "Nothing new came in: the plan stays as it is. The line says so and claims no new kits or previews.",
+  "reviewed": true,
+  "facts": {
+    "outcome": "unchanged", "skippedWhy": null, "forGoal": null,
+    "posts": [
+      { "format": "reel", "hook": "Nobody sees the early part.", "timedFor": null, "pillar": "Behind the scenes", "due": "Thu 15 Oct", "kit": "built", "preview": "ready", "mediaNeeds": null }
+    ],
+    "counts": { "posts": 1, "kitsBuilt": 1, "kitsNeedMedia": 0, "kitsHeld": 0, "kitsNotBuilt": 0, "previewsReady": 1, "previewsPreparing": 0, "previewsFailed": 0, "otherActions": 0, "newGoalIdeas": 0 },
+    "kitsStep": "done", "heldWhy": [], "nextPlanOn": null
+  },
+  "mock_line": "Nothing new came in since your last plan, so it stays as it is: 1 post this week, and its kit is ready.",
+  "expect": {
+    "numbers": [],
+    "reason": ["nothing new|stays as it is|stays the same|hasn't changed"],
+    "must_not": ["posted", "sent", "new plan", "rewrote", "budget", "limit"]
+  }
+}

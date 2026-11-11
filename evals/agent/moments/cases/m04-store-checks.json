@@ -1,0 +1,170 @@
+{
+  "id": "m04-store-checks",
+  "reviewed": false,
+  "description": "The store's checks: the same moment twice in one scan is written once, a year-only date is held, a month-only moment this month is neither retired nor duplicated, and three good moments are kept.",
+  "mock_today": "2026-10-10",
+  "athlete": {
+    "name": "Kofi Mensah",
+    "sport": "rugby"
+  },
+  "stage": {
+    "label": "Club first-team player",
+    "band": "developing"
+  },
+  "fixture": {
+    "facts": [
+      {
+        "key": "f1",
+        "subject_kind": "athlete",
+        "subject_name": "Kofi Mensah",
+        "claim": "Kofi Mensah plays on the wing for Harbour City RFC.",
+        "type": "found",
+        "date": "-50",
+        "topic": "team",
+        "field": "team",
+        "field_value": "Harbour City RFC"
+      }
+    ],
+    "moments": [
+      {
+        "key": "m1",
+        "name": "Club centenary celebrations",
+        "claim": "Harbour City RFC celebrates its centenary this month.",
+        "date": "+0",
+        "date_precision": "month",
+        "topic": "moment"
+      }
+    ],
+    "deals": []
+  },
+  "expect": {
+    "min_moments": 3,
+    "max_moments": 5,
+    "retired": [],
+    "kept": [
+      "m1"
+    ],
+    "golden": [
+      {
+        "id": "g1",
+        "match": "derby",
+        "why": "The local derby is the club's biggest fixture in the window."
+      },
+      {
+        "id": "g2",
+        "match": "cup",
+        "why": "The cup tie is on the club's published schedule."
+      }
+    ],
+    "min_recall": 1,
+    "must_not": []
+  },
+  "mock": {
+    "sources": [
+      "https://example.org/m04-store-checks/fixtures",
+      "https://example.org/m04-store-checks/kit"
+    ],
+    "moments": [
+      {
+        "name": "Harbour derby",
+        "description": "Harbour City RFC hosts the harbour derby.",
+        "date": "+14",
+        "date_precision": "day",
+        "category": "schedule",
+        "why_now": "The biggest crowd of the season.",
+        "source_url": "https://example.org/m04-store-checks/fixtures",
+        "source_title": "Club fixtures",
+        "confidence": 0.9,
+        "based_on": [
+          "$F:f1"
+        ],
+        "refreshes": null,
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "Derby week starts now.",
+          "angle": "One week, one city."
+        }
+      },
+      {
+        "name": "The Harbour Derby!",
+        "description": "The derby again.",
+        "date": "+14",
+        "date_precision": "day",
+        "category": "schedule",
+        "why_now": "Repeated.",
+        "source_url": "https://example.org/m04-store-checks/fixtures",
+        "source_title": "Club fixtures",
+        "confidence": 0.9,
+        "based_on": [],
+        "refreshes": null,
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "Again.",
+          "angle": "Again."
+        }
+      },
+      {
+        "name": "Season review",
+        "description": "Some time this year.",
+        "date": "2026",
+        "date_precision": "day",
+        "category": "league",
+        "why_now": "Vague.",
+        "source_url": "https://example.org/m04-store-checks/fixtures",
+        "source_title": "Club fixtures",
+        "confidence": 0.4,
+        "based_on": [],
+        "refreshes": null,
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "A year in review.",
+          "angle": "Looking back."
+        }
+      },
+      {
+        "name": "County cup quarter-final",
+        "description": "Harbour City RFC plays a county cup quarter-final.",
+        "date": "+24",
+        "date_precision": "day",
+        "category": "schedule",
+        "why_now": "A knockout game with a trophy in sight.",
+        "source_url": "https://example.org/m04-store-checks/fixtures",
+        "source_title": "Club fixtures",
+        "confidence": 0.85,
+        "based_on": [
+          "$F:f1"
+        ],
+        "refreshes": null,
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "Win and we go on.",
+          "angle": "Knockout nerves."
+        }
+      },
+      {
+        "name": "New club kit reveal",
+        "description": "The club reveals its new kit.",
+        "date": "+18",
+        "date_precision": "day",
+        "category": "league",
+        "why_now": "Fans share kit reveals widely.",
+        "source_url": "https://example.org/m04-store-checks/kit",
+        "source_title": "Club news",
+        "confidence": 0.8,
+        "based_on": [],
+        "refreshes": null,
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "First look at the new kit.",
+          "angle": "A new chapter."
+        }
+      }
+    ],
+    "retire": []
+  }
+}

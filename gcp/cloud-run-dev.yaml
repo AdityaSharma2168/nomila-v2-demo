@@ -1,0 +1,843 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: nomila-v2
+  annotations:
+    run.googleapis.com/launch-stage: BETA
+    run.googleapis.com/ingress: all
+spec:
+  template:
+    metadata:
+      annotations:
+        run.googleapis.com/cloudsql-instances: gamechanger-pocket-agent:us-central1:nomila-v2-db
+        run.googleapis.com/cpu-throttling: "false"
+        run.googleapis.com/execution-environment: gen2
+        run.googleapis.com/startup-cpu-boost: "true"
+        autoscaling.knative.dev/minScale: "1"
+        autoscaling.knative.dev/maxScale: "3"
+    spec:
+      containerConcurrency: 80
+      timeoutSeconds: 3600
+      # The DEV API's own runtime account (owner script tfprod/10_api_service_accounts.sh, 26 Oct 2026): least
+      # privilege, dev resources only (dev DB secret, dev buckets, dev KMS key; the dev TrueForge caller grant is unused
+      # since TrueForge was removed, Mastra-only PR 3, 9 Nov 2026). Was the
+      # shared gamechanger-runtime@, which prod still uses until its own switch to nomila-api-prod@.
+      serviceAccountName: nomila-api-dev@gamechanger-pocket-agent.iam.gserviceaccount.com
+      containers:
+        - image: us-central1-docker.pkg.dev/gamechanger-pocket-agent/gamechanger/nomila-v2:latest
+          ports:
+            - name: http1
+              containerPort: 8080
+          resources:
+            limits:
+              cpu: "2"
+              memory: 2Gi
+          env:
+            - name: NODE_ENV
+              value: "production"
+            - name: LOG_LEVEL
+              value: "info"
+            - name: GCP_PROJECT_ID
+              value: "gamechanger-pocket-agent"
+            - name: API_BASE_URL
+              value: "https://api-dev.nomila.co"
+            - name: WEB_APP_URL
+              value: "https://nomila-dev.web.app"
+            - name: GMAIL_PUBSUB_TOPIC
+              value: "projects/gamechanger-pocket-agent/topics/nomila-gmail-notifications"
+
+            # ── Gmail webhook authentication (N1) ────────────────────────────────
+            # `verifyPubSubPush` (server/routes/webhooks.ts) enforces ONLY when
+            # PUBSUB_PUSH_SA is set — unset means every push is accepted, and the
+            # service is invokable by allUsers, so the endpoint was open to anyone
+            # who guessed the URL. A forged push advances an athlete's
+            # gmail_history_id and permanently skips the real brand mail in between.
+            #
+            # The subscription-side half was wired up on 2026-08-03 and verified
+            # end-to-end (probe push delivered + handled, zero rejections):
+            #   - `roles/iam.serviceAccountTokenCreator` on gmail-push@… granted to
+            #     the Pub/Sub service agent service-241621020090@gcp-sa-pubsub…
+            #   - subscription `nomila-gmail-push` now sends an OIDC token for that
+            #     SA with audience = the value below.
+            #
+            # AUDIENCE MUST MATCH the subscription's --push-auth-token-audience
+            # exactly, or every genuine push 403s and Gmail ingestion stops. Check
+            # with: gcloud pubsub subscriptions describe nomila-gmail-push
+            - name: PUBSUB_PUSH_SA
+              value: "gmail-push@gamechanger-pocket-agent.iam.gserviceaccount.com"
+            - name: PUBSUB_PUSH_AUDIENCE
+              value: "https://nomila-v2-iau7alh5qq-uc.a.run.app"
+
+            - name: DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: NOMILA_V2_DATABASE_URL
+                  key: latest
+            # Per-instance pg pool size (server/db.ts). nomila-v2-db has max_connections=100
+            # (97 usable) and maxScale is 3; with Mastra's pool on top, 3 × (5 + 4) = 27 leaves
+            # plenty of room. server/lib/dbPoolBudget.test.ts pins it (cap 95).
+            - name: DB_POOL_MAX
+              value: "5"
+            # Mastra's own pg pool per instance (server/agent/engine/mastra/runtime.ts).
+            - name: MILA_MASTRA_POOL_MAX
+              value: "4"
+            - name: MOONSHOT_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: MOONSHOT_API_KEY
+                  key: latest
+            - name: ANTHROPIC_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: ANTHROPIC_API_KEY
+                  key: latest
+            - name: IG_PAGE_ACCESS_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: IG_PAGE_ACCESS_TOKEN
+                  key: latest
+            - name: IG_BUSINESS_ACCOUNT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: IG_BUSINESS_ACCOUNT_ID
+                  key: latest
+            - name: DISCOVERY_IG_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: DISCOVERY_IG_TOKEN
+                  key: latest
+            - name: DISCOVERY_IG_BUSINESS_ID
+              valueFrom:
+                secretKeyRef:
+                  name: DISCOVERY_IG_BUSINESS_ID
+                  key: latest
+            # Dev uses the Meta TEST app (created 20 Sep 2026 per docs/runbooks/beta-launch-checklist.md §2a);
+            # the live app's credentials — the un-suffixed secrets — belong to production only.
+            - name: INSTAGRAM_APP_ID
+              valueFrom:
+                secretKeyRef:
+                  name: INSTAGRAM_APP_ID_DEV
+                  key: latest
+            - name: INSTAGRAM_APP_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: INSTAGRAM_APP_SECRET_DEV
+                  key: latest
+            # Instagram API with Instagram Login credentials (distinct from the Facebook
+            # INSTAGRAM_APP_* above). The Instagram app id/secret from the Meta console's
+            # "API setup with Instagram business login" product.
+            - name: INSTAGRAM_LOGIN_APP_ID
+              valueFrom:
+                secretKeyRef:
+                  name: INSTAGRAM_LOGIN_APP_ID_DEV
+                  key: latest
+            - name: INSTAGRAM_LOGIN_APP_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: INSTAGRAM_LOGIN_APP_SECRET_DEV
+                  key: latest
+            # Echoed back during the Instagram webhook verification handshake
+            # (GET /api/webhooks/instagram). Must match the "Verify token" set in the Meta
+            # App Dashboard. Low-sensitivity (it only gates the one-time GET handshake;
+            # incoming POSTs are authenticated by the app-secret HMAC), but it lives in
+            # Secret Manager since 2026-09-08 so it is not committed in plain text.
+            # Rotating it means changing the secret AND the Meta dashboard together.
+            - name: META_WEBHOOK_VERIFY_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: META_WEBHOOK_VERIFY_TOKEN
+                  key: latest
+            - name: GOOGLE_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: GOOGLE_CLIENT_ID
+                  key: latest
+            - name: GOOGLE_OAUTH_CLIENT_SECRET_WEB
+              valueFrom:
+                secretKeyRef:
+                  name: GOOGLE_OAUTH_CLIENT_SECRET_WEB
+                  key: latest
+            - name: TIKTOK_CLIENT_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: TIKTOK_CLIENT_KEY
+                  key: latest
+            - name: TIKTOK_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: TIKTOK_CLIENT_SECRET
+                  key: latest
+            # SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET must be created in Secret Manager
+            # before uncommenting these lines (see gcp/setup scripts):
+            # - name: SPOTIFY_CLIENT_ID
+            #   valueFrom:
+            #     secretKeyRef:
+            #       name: SPOTIFY_CLIENT_ID
+            #       key: latest
+            # - name: SPOTIFY_CLIENT_SECRET
+            #   valueFrom:
+            #     secretKeyRef:
+            #       name: SPOTIFY_CLIENT_SECRET
+            #       key: latest
+            - name: YOUTUBE_DATA_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: YOUTUBE_DATA_API_KEY
+                  key: latest
+            - name: CRON_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: INTERNAL_CRON_SECRET
+                  key: latest
+            # SESSION_SECRET — the server-only HMAC key behind OAuth state (server/lib/oauthState.ts),
+            # partner-intake tokens, booking session links and the Ask Mila visitor salt. It was
+            # mounted nowhere, so all of those fell back to CRON_SECRET — the bearer secret Cloud
+            # Scheduler sends in a header, which is the wrong key to sign with (one leak forges all
+            # of them). Its own secret, separate per environment (prod mounts SESSION_SECRET_PROD).
+            # Changing the key invalidates in-flight OAuth states (10 min) and any partner /
+            # booking links already sent from this environment.
+            - name: SESSION_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: SESSION_SECRET
+                  key: latest
+            # OpenRouter — b-roll (seedance) and bridges (Kling) submit through it
+            # (server/studio/adapters/openrouter.ts). One key for dev and prod (ADI-S20-HOLD2, flip
+            # checklist 1b settled as one); the runtime account reads it through its project-level
+            # secretAccessor (checked by Adi, 25 Sep 2026). Inert while Studio video is off.
+            - name: OPENROUTER_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: OPENROUTER_API_KEY
+                  key: latest
+            - name: VOICE_SERVICE_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: VOICE_SERVICE_SECRET
+                  key: latest
+            # Signs the athlete-bound voice session grant (server/voice/auth.ts). PLACEHOLDER:
+            # the Secret Manager secret must be CREATED (32+ random bytes, runtime SA granted
+            # secretAccessor) BEFORE this yaml deploys, or the revision will not start. Server-
+            # only — the worker never needs it. Enforcement is the separate VOICE_GRANT_ENFORCE
+            # flag (unset = observe mode). See docs/runbooks/voice-grant-rollout.md.
+            - name: VOICE_GRANT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: VOICE_GRANT_SECRET
+                  key: latest
+            # VOICE_GRANT_ENFORCE — the internal voice routes REQUIRE the per-session, athlete-bound grant (401 missing /
+            # invalid / expired, 403 another athlete's). ON in dev 2 Nov 2026 (owner, never-on decisions): every internal
+            # call in mila-voice sends x-voice-grant, and observe mode logged zero "Voice grant check failed" on dev.
+            # Rollback: unset it (observe mode). Prod stays off (prod flag guard).
+            - name: VOICE_GRANT_ENFORCE
+              value: "true"
+            - name: LIVEKIT_URL
+              valueFrom:
+                secretKeyRef:
+                  name: LIVEKIT_URL
+                  key: latest
+            - name: LIVEKIT_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: LIVEKIT_API_KEY
+                  key: latest
+            - name: LIVEKIT_API_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: LIVEKIT_API_SECRET
+                  key: latest
+            # Ask Mila web voice. Turns on POST /voice/token (server/index.ts) and
+            # flips voiceEnabled on the athlete profile, which is what decides
+            # whether the mic button renders at all — with this off the button
+            # hides itself and the endpoint 404s, so BOTH halves are dark.
+            #
+            # A plain value, not a secret, precisely so it can be flipped without
+            # a deploy in an incident:
+            #   gcloud run services update nomila-v2 --region=us-central1 \
+            #     --update-env-vars MILA_VOICE_WEB=false
+            # That is the kill switch. Note it lasts only until the next deploy
+            # re-applies this file, so an incident flip must also land here.
+            #
+            # The other side of this pipe is the LiveKit Cloud agent `mila-voice`,
+            # deployed from the mila-voice repo. Both sides default to that same
+            # dispatch name, so MILA_VOICE_AGENT_NAME must stay UNSET here — a
+            # stray value routes rooms to a worker name nothing is registered
+            # under, and the room simply never gets an agent (no error).
+            - name: MILA_VOICE_WEB
+              value: "true"
+            # MILA_VOICE_ONE — ONE MILA FOR VOICE (server/voice/oneMila): POST /api/internal/voice/session serves the
+            # worker Mila's one definition for voice, the chat's CONTEXT and the registry's tools as Gemini Live
+            # declarations; POST /api/internal/voice/tool runs every voice tool call through the chat's guarded path
+            # (callPassTool), with the athlete from the REQUIRED grant. Off = both routes 404 and the worker keeps its own
+            # briefing and tools. ON in dev only (10 Nov 2026); prod stays off (prod flag guard). Kill switch:
+            #   gcloud run services update nomila-v2 --region=us-central1 --update-env-vars MILA_VOICE_ONE=false
+            - name: MILA_VOICE_ONE
+              value: "true"
+            # SOCIAL_SUBSTRATE_WRITE — Phase A Step 1a. When true the nightly collectors, the media
+            # backfill and the top-post enrichment ALSO write sanitized raw payloads, canonical
+            # observations and features beside their existing rows. Nothing reads the substrate
+            # in production yet (Step 4 does). Off = the pre-Step-1a code path, byte for byte.
+            # SOCIAL_STORIES_WRITE — Phase A Step 1b. Its own flag: Instagram Story sweeps (every 8 h)
+            # and the hourly last-look tick write observations only when true. Off at the Step 1b merge
+            # in both environments; dev is flipped by a later PR after review, prod stays off.
+            # RESEARCH_SUBSTRATE_WRITE — Phase A Step 2a, D3 (a). When true persistResearchRun may write the
+            # research substrate (runs, sanitized payloads, cited evidence, facts, state). It turns nothing
+            # else on: not the legacy dual-write, not planner execution. Off in both environments.
+            - name: RESEARCH_SUBSTRATE_WRITE
+              value: "true"
+            # RESEARCH_REFRESH_ENABLED — Phase A Step 2b. Half of the ONE execution gate
+            # (researchPlannerExecutionEnabled = RESEARCH_REFRESH_ENABLED && RESEARCH_SUBSTRATE_WRITE).
+            # Only when BOTH are true may the planner enqueue refresh runs, apply lifecycle transitions,
+            # suppress the dev monthly re-enrich or route admin re-research to the planner. Either false
+            # ⇒ the planner is dry-run (telemetry row only) and legacy behaviour is untouched.
+            - name: RESEARCH_REFRESH_ENABLED
+              value: "true"
+            # RESEARCH_REFRESH_PROVIDER — D3 (b). Provider binding for research_refresh: "kimi" (v2, default) or
+            # "direct" (v3, not built yet — fails closed). Read only when a refresh run executes.
+            - name: RESEARCH_REFRESH_PROVIDER
+              value: "direct"
+            # RESEARCH_PIPELINE_V2_SHADOW — the narrow research pipeline (agent/research/v2: plan → Google-grounded
+            # discovery → our own fetch + Readability clean → rank → one extract call) run BESIDE sign-up research for
+            # comparison only. It never writes the athlete's record or score; its output stays on its own
+            # research_v2_shadow workflow run. Roughly $0.10–0.25 per dev sign-up. Dev only (owner, 25 Oct 2026).
+            - name: RESEARCH_PIPELINE_V2_SHADOW
+              value: "true"
+            # ATHLETE_INDEX_CLAIM — Phase A Step 2c. When true the creation paths (signup, Microsoft,
+            # waitlist) search the Athlete Index first and link ONLY on claim proof (existing auth, a
+            # unique provider-verified email); every match tier alone creates + records. Off ⇒ the
+            # pre-Step-2c creation paths byte for byte. The view, admin ?q= and the dark candidates
+            # endpoint mutate nothing and do not depend on this flag.
+            - name: ATHLETE_INDEX_CLAIM
+              value: "true"
+            # SIGNUPS_OPEN — the sign-ups kill switch (server/lib/signups.ts). Only exactly "true" lets the
+            # auth paths (signup, Microsoft, waitlist) create a NEW athlete; anything else answers 403
+            # { error: "signups_closed" }. Existing users (a matching auth_id) sign in either way.
+            - name: SIGNUPS_OPEN
+              value: "true"
+            # IDENTITY_MEMBERSHIP_READ — Phase A Step 3a. When true requireAuth/requireAdmin resolve the caller through
+            # users + athlete_users (design step3 §3.2: exactly one membership ⇒ auto; more ⇒ X-Athlete-Id or 409).
+            # Off ⇒ today's athletes.auth_id lookup byte for byte. ON in dev since 12 Sep 2026 (Step 3a rollout step 2).
+            - name: IDENTITY_MEMBERSHIP_READ
+              value: "true"
+            # MAILBOX_LIVE_READS — "Mailbox Owns Correspondence" phase 1 (#776 Gmail, #788 Outlook). When true the
+            # conversation view, summarizer, drafter, ask-terms, voice and requalify read the thread LIVE from the
+            # mailbox instead of stored bodies; a read failure degrades ("reconnect Gmail") and never changes state.
+            # Turned on in dev 7 Oct 2026 after mila-voice #13 (503 handling) was deployed. Dev only.
+            - name: MAILBOX_LIVE_READS
+              value: "true"
+            # BRAND_IDENTITY_GATE — brand research identity gate (#778). When true: brand research is stored only when a
+            # grounding source is hosted on the brand's own domain (sender domain, or the advertiser domain literally in the
+            # mail); otherwise only enrichment.identity is kept and the profile/images are cleared. Turned on 6 Oct 2026
+            # after the reviewed dev backfill (11 brands: 2 confirmed, 9 unconfirmed). Dev only.
+            - name: BRAND_IDENTITY_GATE
+              value: "true"
+            # OUTLOOK_PUSH — Outlook PR 1. When true: an Outlook connect creates a Microsoft Graph change-notification
+            # subscription (POST /api/v1/webhooks/outlook + /lifecycle), a notification triggers the existing delta
+            # sync within seconds, and the 6h poll becomes a daily backstop per Outlook connection. Off ⇒ no
+            # subscription calls and the 6h poll exactly as before. Needs OUTLOOK_WEBHOOK_SECRET (Secret Manager) and
+            # the outlook-subscriptions-cron Scheduler job before it is turned on.
+            - name: OUTLOOK_PUSH
+              value: "false"
+            # OUTLOOK_SEND — Outlook replies sent from the app through Microsoft Graph (/me/messages/{id}/reply), only on
+            # her tap via the approved pending action (body hash, claim-once). OFF: Outlook reply cards say to reply in
+            # Outlook. Even when on, a connection must have granted Mail.Send, which the live OAuth request does not ask
+            # for yet; without it the card says to reconnect Outlook. Azure checklist: docs/plans/outlook-send-azure-checklist.md.
+            - name: OUTLOOK_SEND
+              value: "false"
+            # IDENTITY_INTELLIGENCE_ENABLED — Concept 0.4 (#739). When true GET /api/v1/me/story serves the latest
+            # identity-intelligence/0.1 projection; off ⇒ { pageState: "unavailable" }. Dev only, for the first real
+            # Identity Intelligence run and the preview build (2 Oct 2026). Never set for production.
+            - name: IDENTITY_INTELLIGENCE_ENABLED
+              value: "true"
+            # SHOP_V1 — Her picks (docs/design/shop-her-picks.md): her shelf routes, the /go/:code redirect and the
+            # Mila shop tools. Off by default; turning it on for the owner preview is a follow-up (owner's call).
+            - name: SHOP_V1
+              value: "true"
+            # SHOP_SHOPIFY_APP — the catalog-only Shopify app for Her picks (docs/design/shop-her-picks.md §12): /shopify/*,
+            # the webhook receiver, the reconcile cron and "From your brands". Needs SHOP_V1. Off by default; the owner turns it on after the Shopify Partner app exists (docs §12 checklist).
+            - name: SHOP_SHOPIFY_APP
+              value: "false"
+            # BOOKINGS_ENABLED — Bookings v2 (paid bookings from her card; server/services/bookings/config.ts). OFF. Even when
+            # on, only athletes on BOOKINGS_PILOT_ATHLETE_IDS see it, and the buyer side needs BOOKING_HASH_SECRET (Secret
+            # Manager) and email delivery on (EMAIL_PROVIDER=gmail). Turning it on is the owner's call after the pilot checklist.
+            - name: BOOKINGS_ENABLED
+              value: "true"
+            # BOOKINGS_PILOT_ATHLETE_IDS — DEV ONLY: the athletes Bookings v2 is on for (comma-separated athlete ids; empty =
+            # nobody). Config data, not code: the owner's existing dev test account + the "Paytest Athlete" dev test account
+            # (end-to-end Stripe TEST-mode booking runs; remove when the pilot ends). Never set in prod.
+            - name: BOOKINGS_PILOT_ATHLETE_IDS
+              value: "dc8f37f1-deff-43f8-8c02-e37a5cc20d4f,dd1a8a80-d31b-423a-a572-9d146716cb0f"
+            # BOOKING_HASH_SECRET — HMAC key for buyer email/phone hashes and the buyer page's access key
+            # (server/services/bookings/config.ts). Secret Manager, created 12 Oct 2026; never rotate it while
+            # bookings exist (old links and hashes stop matching).
+            - name: BOOKING_HASH_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: BOOKING_HASH_SECRET
+                  key: latest
+            # PUBLIC_CARD — the public Nomi Card (design-public-card-v3 §15 PR 1–2): the snapshot/publish service, the
+            # public reader and her /me/public-card routes. Off by default; turning it on is the owner's call.
+            - name: PUBLIC_CARD
+              value: "true"
+            # ASK_MILA_PUBLIC — public Mila mode on /p/:handle (design-public-card-v3 §4, PR 5): a visitor's chat with Mila
+            # over her published card, its two taps, and the free-text box in the page's Mila sheet. Needs PUBLIC_CARD too.
+            # Limits are DB-backed; ASK_MILA_DAILY_SPEND_CAP_USD (default 20, "0" = off) caps the spend. Off by default.
+            - name: ASK_MILA_PUBLIC
+              value: "true"
+            # AGENT_V3 — on in dev and prod. It no longer picks the chat's engine (Mila runs on Mastra). It gates the app's new
+            # layout (EXPO_PUBLIC_AGENT_V3), including the Studio v3 tab root, and on the server the Studio library route and
+            # the onboarding content capability. Studio's own server features use STUDIO_ALL_ON.
+            - name: AGENT_V3
+              value: "true"
+            # AGENT_ONBOARDING — the agent onboarding front + API (server/agent/onboarding; mounted under /api/v1/me,
+            # routes dark otherwise). DEV ONLY: on for the new agent experience.
+            - name: AGENT_ONBOARDING
+              value: "true"
+            # SIGNUP_RESEARCH_AGENT — the landing waitlist and the app sign-up (non-agent front) start the agent's
+            # research-only run (signup_research: two web-search passes + merge into memory, then the M.I.A. score and
+            # the score-ready email) instead of legacy research; agent_onboarding v4 reuses it at first launch.
+            # About $1 per sign-up, under DAILY_RESEARCH_CAP_USD. DEV ONLY: on so the dev preview exercises it.
+            - name: SIGNUP_RESEARCH_AGENT
+              value: "true"
+            # QUICK_SCORE_ONE_CALL — new signup_research runs pin v3: beside the two passes, ONE OpenAI web-search call
+            # (gpt-6-luna, low search context, the existing search-enabled M.I.A. prompt) gives her a quick score in about
+            # a minute (server/services/quickScore). The full research + score still run as before. DEV ONLY (owner, 26 Oct 2026).
+            - name: QUICK_SCORE_ONE_CALL
+              value: "true"
+            # LEAN_SIGNUP_RESEARCH — new signup_research runs pin v4: ONE lean_research step (Wikidata, then OpenAI web
+            # search, our own fetch, extract-all, identity, verify; agent/research/v2/lean.ts) replaces the two passes and
+            # the merge, then the same facts-only M.I.A. and email; quick_score stays on its own flag. Also offers Mila's
+            # refresh_research tool. DEV ONLY (owner, 26 Oct 2026).
+            - name: LEAN_SIGNUP_RESEARCH
+              value: "true"
+            # DAILY_RESEARCH_CAP_USD — the global per-UTC-day cap on sign-up research spend (agent onboarding research,
+            # her other model runs in her first week and the M.I.A. score; server/agent/onboarding/dailyCap.ts). Past it a
+            # new sign-up's research is queued and the minute workflow tick starts it when there is budget again (the
+            # next UTC day at the latest). Unset means no cap. DEV ONLY.
+            - name: DAILY_RESEARCH_CAP_USD
+              value: "200"
+            # ATHLETE_FOOTPRINT_CHECK — the "real athlete?" check (agent/onboarding/footprintCheck.ts; anti-fake plan,
+            # owner, 24 Oct 2026): ONE fast-tier OpenAI call with ONE web search (skill onboarding/athlete-footprint,
+            # ≤ $0.05, counted in the daily cap above) before the full sign-up research. Not found ⇒ she joins the
+            # waitlist, no full research, the landing asks for a team or Instagram (which re-check); the admin list shows
+            # no_athlete_footprint. A model error counts as found (fail open). On in prod since 24 Oct 2026; turned on
+            # here too so dev matches prod (owner, 31 Oct 2026).
+            - name: ATHLETE_FOOTPRINT_CHECK
+              value: "true"
+            # AGENT_PLAN — the plan step (plan_refresh runs) and its Goals API (server/agent/plan) are on and mounted.
+            # DEV ONLY: on for the new agent experience.
+            - name: AGENT_PLAN
+              value: "true"
+            # RESEARCH_MERGE_COMPACT — the research merge answers by pass-fact key and returns only the fields it changes
+            # (jobs/research/merge-compact.md); code rebuilds the full merged facts before anything stores or reads
+            # them. About half the merge's cost and time. DEV ONLY: on after its equivalence check (replayed dev passes,
+            # old vs new, same facts / sources / statuses / conflicts within the old merge's own run-to-run spread).
+            - name: RESEARCH_MERGE_COMPACT
+              value: "true"
+            # AGENT_MOMENTS — the moments scan (server/agent/moments): the first scan at onboarding (before the Brief) and
+            # the 12:00 UTC sweep that enqueues weekly moments_scan runs (fast tier + web search, ≈ $0.06–0.12 a scan;
+            # caps AGENT_MOMENTS_RUN_CAP_USD 0.25, AGENT_MOMENTS_WEEK_CAP_USD 0.50). DEV ONLY: on for the new agent
+            # experience. The scheduler job itself is declared in scripts/provision-schedulers.sh, not yet provisioned.
+            - name: AGENT_MOMENTS
+              value: "true"
+            # AGENT_RESEARCH_REFRESH — the agent research refresh (server/agent/researchRefresh): re-runs the agent's
+            # research for one athlete, merges it into her memory (what she said is never overwritten), writes a new
+            # Brief that carries her strategy forward, and turns a material change into ONE suggestion she answers.
+            # Caps: $1.50 a refresh, $10 a day across all refreshes. DEV ONLY: on so an operator can run it for ONE
+            # approved athlete (POST /api/v1/admin/agent/research-refresh/:athleteId).
+            - name: AGENT_RESEARCH_REFRESH
+              value: "true"
+            # AGENT_RESEARCH_REFRESH_COHORT — the daily sweep over everyone (agent-research-refresh-cron). OFF until the
+            # first single-athlete result is checked (owner, 12 Oct 2026).
+            - name: AGENT_RESEARCH_REFRESH_COHORT
+              value: "false"
+            # AGENT_PLAYBOOK — the shared content playbook (server/agent/playbook; design "Moments → post kits" §5):
+            # the DAILY sweep (POST /api/internal/playbook-refresh-cron) refreshes content_playbooks, one fast-tier
+            # + web_search call per STALE (sport, stage, platform) key found in the live roster — each key only
+            # roughly once a month (triggers.ts isStale), shared across every athlete at that key. Off here too: the
+            # scheduler job itself is declared in
+            # scripts/provision-schedulers.sh but not yet provisioned, and the read API (getPlaybookForAthlete) is
+            # read by agent/plan only while AGENT_IDEA_BANK is on. DEV ONLY: on (owner, 12 Oct 2026: switch the
+            # moments → post-kits chain on in dev, design step 11); playbook-refresh-cron provisioned with it.
+            - name: AGENT_PLAYBOOK
+              value: "true"
+            # AGENT_POST_KITS — post kits (server/agent/postKit): the plan workflow's post_kits step builds a kit for each
+            # new post action from the athlete's own media (OpenAI match + Gemini Flash re-rank, a few cents a kit,
+            # capped per day/week in postKit/config.ts), the daily ideas pass (post-ideas-cron), and the kit routes the
+            # post-kit screen and Studio "For you" read. DEV ONLY: on (owner, 12 Oct 2026, design step 11).
+            - name: AGENT_POST_KITS
+              value: "true"
+            # COPYWRITER_V1 — the copywriter (server/services/narrator.ts + copywriter.ts): Nomi Card copy from Fable 5.1
+            # alone (3 options per slot, the Gemini editor picks) with the current Brief as context, and the same craft
+            # rewriting each post kit's hook and caption and each moments scan's angles and hooks (one Fable + one editor
+            # call each, a few cents). Off: the pooled Gemini + Kimi + Fable 5 kit copy and no copy pass. DEV ONLY: on
+            # (owner, 19 Oct 2026: "go ahead with fable 5.1"; blind test https://claude.ai/artifact/3NHFZCfZDQ5d7GaCu8QrT6).
+            - name: COPYWRITER_V1
+              value: "true"
+            # PITCH_CONCEPT_V1 — the Nomi Card's creative core (server/services/pitchConcept.ts): one Fable + one editor call
+            # per deck build writes the brand pitch's concept, year-round calendar and fit reasons from the brand's
+            # CONFIRMED research (or the generic card's signature idea), and the deck follows the order of the deck that
+            # worked. Off: the three Gemini calls and the old order. DEV ONLY: on (owner, 20 Oct 2026).
+            - name: PITCH_CONCEPT_V1
+              value: "true"
+            # ENRICH_CAROUSEL_FRAMES — the media enrichment pass also tags + embeds the single photo frames inside her
+            # carousel posts (services/mediaEnrichment enrichScope), so per-page photo casting (curator castBriefs) can find
+            # them. Same tagger + embedder, same caps, ~$0.005 a frame once. Off: top-level rows only. DEV ONLY (21 Oct 2026).
+            - name: ENRICH_CAROUSEL_FRAMES
+              value: "true"
+            # REMOTION_RENDER_URL — the motion renderer (media/remotion, Cloud Run nomila-render-dev, private: this service's
+            # account holds run.invoker). Set: the brand book reel renders there (camera moves, kinetic words, her accent,
+            # a closing card), ffmpeg stays the fallback; the Remotion capability engines count as up. DEV ONLY — prod has
+            # no renderer and never sets this. Remotion licence: free for a company of up to 3 (owner, 12 + 20 Oct 2026).
+            - name: REMOTION_RENDER_URL
+              value: "https://nomila-render-dev-241621020090.us-central1.run.app"
+            # AGENT_POST_KIT_RENDER — the preview render of a built kit (server/agent/postKit/render): ffmpeg on the
+            # stitch queue from her own media, no model call, $0 but CPU. Only acts with AGENT_POST_KITS on. DEV ONLY.
+            - name: AGENT_POST_KIT_RENDER
+              value: "true"
+            # AGENT_POST_KIT_PREVIEW_CLEANUP — the daily clean-up of superseded preview renders
+            # (server/agent/postKit/render/cleanup.ts, post-kit-preview-cleanup-cron): a preview row whose key is no
+            # longer its kit's is soft-deleted after 24 h, its files deleted from storage after 7 days; preview rows
+            # only, per athlete. No model call. DEV ONLY. The scheduler job is declared in
+            # scripts/provision-schedulers.sh, not yet provisioned.
+            - name: AGENT_POST_KIT_PREVIEW_CLEANUP
+              value: "true"
+            # AGENT_LEARNING_LOOP — the learning loop (server/agent/learning; design "What works for you", L1): after the
+            # nightly social sync it links each new post to the plan post action it came from (same platform and format,
+            # ±3 days of the due date), judges it at 2 and 7 days against the athlete's own usual (median of the athlete's
+            # posts on that platform, 90 days) and records the outcome, writes a
+            # weekly "what works for you" measured fact, and sends at most ONE Mila message (+ one mila_suggestion push)
+            # when a post gets ≥ 3× the athlete's usual reach or saves — at most one per post and one a week. No model call ($0),
+            # no migration. DEV ONLY: not in prod.
+            - name: AGENT_LEARNING_LOOP
+              value: "true"
+            # ATMOSPHERE_IMAGERY — atmosphere images for everything not about the athlete (DESIGN.md §9; POST
+            # /me/atmosphere/pick, server/services/atmosphere). DEV ONLY: on for the new agent experience. When on it
+            # needs PIXABAY_API_KEY (Secret Manager secret of the same name, mounted with secretKeyRef once the owner has
+            # created it) and OPENAI_API_KEY (the cheap-tier query writer and image check); without Pixabay it falls back to
+            # generation (Vertex, ~$0.07 an image) and then to the category default. Caps: ATMOSPHERE_ATHLETE_DAY_CAP_USD
+            # (0.50), ATMOSPHERE_ATHLETE_TOTAL_CAP_USD (2), ATMOSPHERE_DAY_CAP_USD (10), ATMOSPHERE_GENERATIONS_PER_ATHLETE_DAY (3).
+            - name: ATMOSPHERE_IMAGERY
+              value: "true"
+            # OPENAI_API_KEY — the OpenAI model key: Mila's Mastra turns (engine/mastra/runtime.ts) and the agent's OpenAI
+            # skill calls (server/agent/openaiResponses.ts).
+            - name: OPENAI_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: OPENAI_API_KEY
+                  key: latest
+            # PARTNER_INTAKE — the Partner door of her public profile (brand + press requests, the Nomila relay thread on the
+            # opportunity, the visitor status page, "Your requests", email replies and the Serious offer hold). Needs
+            # PUBLIC_CARD too (both must be "true"). Off by default. Email delivery also needs EMAIL_PROVIDER=gmail.
+            - name: PARTNER_INTAKE
+              value: "true"
+            # PARTNER_INBOUND_MAIL — brands reply to partner notices by email: each notice's Reply-To is a plus-address of
+            # the partner Workspace mailbox (PARTNER_INBOX_ADDRESS, default partners@nomila.co), which the server polls every
+            # 2 minutes through the Gmail API (gmail.modify, that mailbox only — server/services/partner/inboundMail.ts).
+            # Needs PARTNER_INTAKE. On since 3 Nov 2026: partners@nomila.co exists and gmail.modify is on the delegation entry.
+            - name: PARTNER_INBOUND_MAIL
+              value: "true"
+            - name: SOCIAL_STORIES_WRITE
+              value: "true"
+            - name: SOCIAL_SUBSTRATE_WRITE
+              value: "true"
+            # Voice web search — the BACKEND half. Two switches guard one
+            # capability and both must be on: this one decides whether
+            # /api/internal/voice/web-search will answer, and the worker's own
+            # MILA_VOICE_WEB_SEARCH decides whether Mila is given the tool to ask
+            # with. They are separate because the worker and this service deploy
+            # separately, so either side can kill the capability alone.
+            #
+            # Necessary but not sufficient on its own: the route also early-returns
+            # unless OPENAI_API_KEY is set (server/voice/webSearchRoute.ts).
+            #
+            # This path searches with OpenAI web search (skill voice/web-search, one
+            # search per call, an agent_runs row counted in the athlete's day cap) and returns
+            # bounded structured hits.
+            - name: MILA_VOICE_WEB_SEARCH
+              value: "true"
+            # ── Langfuse — LLM observability ─────────────────────────────────────
+            # Traces every model call across all five providers (Gemini and Kimi on
+            # Vertex, Kimi on Moonshot, Anthropic, OpenRouter). Provider-agnostic on
+            # purpose: Vertex-native logging would have seen two of the five, which is
+            # why it lost — see docs/plans/phase-1-observability.md §1.
+            #
+            # A plain value, not a secret, precisely so tracing can be killed without a
+            # deploy during an incident:
+            #   gcloud run services update nomila-v2 --region=us-central1 \
+            #     --update-env-vars LANGFUSE_TRACING=false
+            # Note it lasts only until the next deploy re-applies this file, so an
+            # incident flip must also land here. Same posture as MILA_VOICE_WEB.
+            #
+            # Payloads include brand email bodies, chat turns and contract text. That
+            # exposure is accepted deliberately until we self-host; it is not masked.
+            - name: LANGFUSE_TRACING
+              value: "true"
+            # The prompt registry: when false, every prompt resolves to the in-code constant,
+            # which is exactly today's behaviour. A plain value for the same reason as the flag
+            # above — a bad published prompt has to be killable without a deploy:
+            #   gcloud run services update nomila-v2 --region=us-central1 \
+            #     --update-env-vars PROMPT_REGISTRY=false
+            #
+            # Do not turn this on before migration 0033 has been applied: the resolver falls
+            # back cleanly when the `prompts` table is missing, but it will log a failed lookup
+            # on every prompt read until the cache absorbs it.
+            #
+            # Turning it on never puts the classifier, the scorer or the contract extractor at
+            # risk — those are refused live edits by LOCKED_PROMPTS in code, not by this flag
+            # and not by the table. See server/lib/promptRegistry.ts.
+            - name: PROMPT_REGISTRY
+              value: "true"
+            - name: LANGFUSE_PUBLIC_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: LANGFUSE_PUBLIC_KEY
+                  key: latest
+            - name: LANGFUSE_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: LANGFUSE_SECRET_KEY
+                  key: latest
+            - name: LANGFUSE_BASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: LANGFUSE_BASE_URL
+                  key: latest
+            - name: MICROSOFT_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: MICROSOFT_CLIENT_ID
+                  key: latest
+            - name: MICROSOFT_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: MICROSOFT_CLIENT_SECRET
+                  key: latest
+
+            # ── Environment identity ─────────────────────────────────────────────
+            # Everything from here to the Stripe block is written explicitly so that
+            # gcp/cloud-run-prod.yaml can differ from it on purpose. Each value is what
+            # this service had IN EFFECT on 2026-09-07 — a flag that was absent defaulted
+            # to false in code — so writing them down changed nothing. The full dev/prod
+            # table is in docs/plans/production-environment-split.md §5.
+            #
+            # Browser origins allowed to call this API (comma-separated). Read once at
+            # boot in server/index.ts; envGuards logs an error in production if unset.
+            - name: ALLOWED_ORIGINS
+              value: "https://nomila-dev.web.app,https://nomila.web.app,https://nomila.co,https://www.nomila.co,http://localhost:8080,http://localhost:8081,http://localhost:8083"
+            # Public pages this API serves itself (payment + deposit pages), and the host
+            # share cards are minted on (server/services/kitShare.ts, pitches.ts).
+            # nomila.co/c/** rewrites to the PROD service (firebase.json), so a share
+            # token minted in the dev DB must be served from the dev API host directly.
+            - name: PUBLIC_BASE_URL
+              value: "https://api-dev.nomila.co"
+            - name: PUBLIC_CARD_BASE_URL
+              value: "https://api-dev.nomila.co"
+            # Short link {host}/{handle} → /p/{handle} (routes/shortLink.ts). Dev only; prod needs the hosting change.
+            - name: SHORT_LINK_HOSTS
+              value: "api-dev.nomila.co"
+            # Storage. The code defaults to exactly these dev names when unset — which is
+            # why production MUST set its own, or it writes athlete media into dev buckets.
+            - name: MEDIA_BUCKET
+              value: "nomila-v2-athlete-media"
+            - name: INBOX_ATTACHMENT_BUCKET
+              value: "nomila-v2-inbox-attachments"
+            # Feature flags that were absent here and therefore OFF in dev (developers run
+            # them locally via .env). Written down so "off" is a decision, not an accident.
+            #
+            # STUDIO — PR 20 (docs/probes/ship.md, ADI-S20-GO): dev is the flip's proof, so the master
+            # is on. STUDIO_ALL_ON turns every boolean Studio flag on unless its own line says exactly
+            # "false" (server/studio/studioFlag.ts) — which is why the old `STUDIO_ENABLED: "false"` line
+            # is GONE: an explicit false outranks the master. The client half is
+            # EXPO_PUBLIC_STUDIO_ALL_ON in eas.json's `preview` profile (binary, OTA and dev web).
+            # The caps travel with the master: STUDIO_ENRICH_DAILY_CAP_USD bounds the background video
+            # enrichment the master turns on (per athlete per UTC day; unset would be no cap at all).
+            # Not day-capped, by design: STUDIO_DIRECTION_MOMENTS ($0.035 a search) and STUDIO_AGENT_RETRY.
+            # b-roll's OPENROUTER_API_KEY is mounted with the other secrets above (ADI-S20-HOLD2).
+            - name: STUDIO_ALL_ON
+              value: "true"
+            - name: STUDIO_ENRICH_DAILY_CAP_USD
+              value: "5"
+            # moments→post-kits design, step 3 (§13/§16): explicit now, not just implied by the master — $0, local ffmpeg, no model call.
+            - name: STUDIO_SHOT_DETECT
+              value: "true"
+            # moments→post-kits design, step 3 (§13/§16): explicit now; run cost stays bounded by the caps above.
+            - name: STUDIO_VIDEO_ENRICH
+              value: "true"
+            # Instagram: request instagram_business_content_publish at connect (PR 20 item 5), so a
+            # tester account on the dev Meta app can post. Dev only — never prod before App Review.
+            - name: IG_REQUEST_PUBLISH_SCOPE
+              value: "true"
+            # Spend knobs — the code defaults, made explicit. Prod sets lower ones.
+            - name: STUDIO_MAX_JOB_USD
+              value: "30"
+            - name: CHAT_RATE_LIMIT_PER_HOUR
+              value: "60"
+            # OAuth tokens at rest (server/lib/tokenCrypto.ts). TOKEN_KMS=true seals every new
+            # connected_accounts access/refresh token as a Cloud KMS envelope ("kms1:…"); reads accept
+            # sealed AND legacy plain text whatever the flag says, so turning it off again is safe.
+            # KMS_TOKEN_KEY is the ONE cryptoKey (not per athlete); the runtime SA needs
+            # roles/cloudkms.cryptoKeyEncrypterDecrypter on it. Runbook: the feat/token-kms PR body.
+            - name: KMS_TOKEN_KEY
+              value: "projects/gamechanger-pocket-agent/locations/us-central1/keyRings/nomila-tokens/cryptoKeys/oauth-tokens"
+            - name: TOKEN_KMS
+              value: "true"
+            # Stripe — TEST-mode keys in dev (sk_test_/pk_test_ in Secret Manager). These
+            # were mounted nowhere before 2026-09-08, so every payment path threw; mounting
+            # them is the one deliberate behaviour change of the environment split in dev.
+            # Prod mounts the *_LIVE secrets instead.
+            - name: STRIPE_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: STRIPE_SECRET_KEY
+                  key: latest
+            - name: STRIPE_WEBHOOK_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: STRIPE_WEBHOOK_SECRET
+                  key: latest
+            # Connect-type endpoint (POST /api/webhooks/stripe/connect, #830): account.updated on
+            # the athletes' connected accounts. Its own signing secret (sandbox endpoint in the
+            # same Stripe account as STRIPE_SECRET_KEY). Unset, that route answers 400 to every
+            # delivery and KYC only syncs through the onboarding-return / status-read fallback.
+            - name: STRIPE_CONNECT_WEBHOOK_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: STRIPE_CONNECT_WEBHOOK_SECRET
+                  key: latest
+            # The From address of every transactional email.
+            - name: NOTIFY_FROM_EMAIL
+              value: "Nomila <hello@nomila.co>"
+            # Transactional email: "gmail" (Google Workspace Gmail API, the only provider) delivers, sent as
+            # NOTIFY_FROM_EMAIL via KEYLESS domain-wide delegation of this service account (scope gmail.send —
+            # server/lib/gmailSender.ts; a Workspace Admin delegation entry for nomila-api-dev@'s client id, added by the
+            # owner before this deploys). Unset or
+            # "off" ⇒ nothing is delivered (promotions etc. still log to notification_log, sent=false).
+            # GMAIL_DAILY_CAP (default 1500/day per instance) bounds Gmail sends.
+            - name: EMAIL_PROVIDER
+              value: "gmail"
+            # GMAIL_SENDER_SERVICE_ACCOUNT — the account that signs the delegation JWT (IAM signJwt on itself; it holds
+            # roles/iam.serviceAccountTokenCreator on itself). Must be this service's runtime account: the code default
+            # (DEFAULT_RUNTIME_SERVICE_ACCOUNT) is the old shared gamechanger-runtime@.
+            - name: GMAIL_SENDER_SERVICE_ACCOUNT
+              value: "nomila-api-dev@gamechanger-pocket-agent.iam.gserviceaccount.com"
+            # LANDING_URL — the waitlist page the score-ready email links to (server/services/notify/templates/
+            # waitlist.ts). Outside production it is required for that email to go out at all. nomila.web.app is the
+            # landing site's own domain; any host but nomila.co talks to the dev API. Owner, 27 Oct 2026: "turn the
+            # email on for dev as well".
+            - name: LANDING_URL
+              value: "https://nomila.web.app"
+            # EMAIL_CODE_SIGNIN — sign in with a 6-digit email code (server/routes/authEmailCode.ts; the front's "Use
+            # email instead"). DEV ONLY: on. The code goes out through EMAIL_PROVIDER above, so with delivery off
+            # /start refuses (503) rather than say "sent". EMAIL_CODE_SECRET keys the HMACs that are all the
+            # email_signin_codes table stores (the address, the code, the IP); without it the feature stays off.
+            # Dev switch-on, 12 Oct 2026 (owner: "turn on what's new in dev unless there's risk").
+            # MEDIA_VIDEO_FIXES (#959): real mp4 per Instagram video, one stored copy per clip (originals parked 30 days,
+            # then purged), clip transcripts + quality signals, poster content check on uploaded videos.
+            # CAMERA_ROLL_INTAKE (#960/#965): camera-roll review + import, Mila's check_camera_roll tool, transcript
+            # backfill of her library (capped about $2/day per athlete). Turned on TOGETHER with MEDIA_VIDEO_FIXES so
+            # imported videos are always content-checked.
+            # PUSH_NOTIFICATIONS (#954): phone notifications; nothing reaches a phone until APNs/FCM credentials and a
+            # new native build exist, so in dev this only records and dedupes.
+            - name: MEDIA_VIDEO_FIXES
+              value: "true"
+            - name: CAMERA_ROLL_INTAKE
+              value: "true"
+            - name: PUSH_NOTIFICATIONS
+              value: "true"
+            # PUSH_PAYMENT_RECEIVED (20 Oct 2026): "{Brand} paid you $X" when a payment notice is filed on her deal. Dev only.
+            - name: PUSH_PAYMENT_RECEIVED
+              value: "true"
+            # Deals with Mila, dev switch-on 13 Oct 2026 (owner: see the new deals screens on the phone). DEALS_MAYBE stays
+            # OFF on purpose.
+            - name: DEALS_READ_MODEL
+              value: "true"
+            - name: DEALS_REPLY_V2
+              value: "true"
+            - name: DEALS_SUMMARY_FLASH
+              value: "true"
+            # DEALS_PARTITION_FLASH — the same-deal partition (grouping, opportunity placement, new-subject branch) on the
+            # routine tier (Gemini Flash) instead of Kimi (end of life). ON in dev 2 Nov 2026 (owner, never-on decisions);
+            # the live parity eval (server/scripts/deals/evalDealEngineParity.ts) is still to run before Kimi retires.
+            # Prod stays off (prod flag guard).
+            - name: DEALS_PARTITION_FLASH
+              value: "true"
+            - name: EMAIL_CODE_SIGNIN
+              value: "true"
+            - name: EMAIL_CODE_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: EMAIL_CODE_SECRET
+                  key: latest
+            # NOMILA_MCP_PASS_KEY — signs and checks the athlete pass every Mila turn's tools run under
+            # (server/agent/engine/tools/pass.ts). The name is from the /mcp server, removed with TrueForge (Mastra-only
+            # PR 3); renaming the secret is a config change of its own. Secret Manager only; the runtime SA has
+            # secretAccessor on this secret.
+            - name: NOMILA_MCP_PASS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: NOMILA_MCP_PASS_KEY
+                  key: latest
+            # MILA_TF_WAITLIST — Mila hosts the landing's waitlist join flow (routes/waitlistMila.ts; design
+            # docs/design/mila-hosted-waitlist.md): the existing cards inside a conversation, the steps still run by our
+            # workflow runner; agent_onboarding's turns continue in that conversation. DEV ONLY. Needs nothing else (the
+            # "TF" in the name is from TrueForge; the name is kept for now); off ⇒ the landing runs today's screens.
+            - name: MILA_TF_WAITLIST
+              value: "true"
+            # MILA_PROACTIVE — Mila starts the conversation (server/agent/proactive; design "Mila on watch", 27 Oct 2026):
+            # app events are logged (athlete_events), a dispatcher on the workflow runner sorts them, and for the
+            # speak-now ones Mila writes a message in a separate conversation of its own that is added to the athlete's chat
+            # with one notification. Switched OFF in dev 28 Oct 2026 (owner) when the silence decision failed its tests; back ON
+            # with the SPEAK/SILENT/DEFER decision fix (#1161). Prod stays off (prod flag guard).
+            - name: MILA_PROACTIVE
+              value: "true"
+            # Mila runs on Mastra, always (server/agent/engine; Mastra as a library inside this service: its own schema
+            # "mastra", migration 0147; model through OPENAI_API_KEY; tools in-process with the athlete pass,
+            # NOMILA_MCP_PASS_KEY). There is no engine switch: MILA_ENGINE and MILA_MASTRA_ATHLETES are gone (Mastra-only PR 2).
+            # MILA_CHAT_V2 — mounts POST /api/v1/me/chat/v2 (routes/chatV2.ts; docs/design/mila-chat-v2.md): Mila's Mastra turn
+            # streamed in the AI SDK v7 UI message stream format, for the next app build's chat. Dev only; prod "false"
+            # (prod flag guard). Off = the route is not mounted.
+            - name: MILA_CHAT_V2
+              value: "true"
+            # MILA_READ_TOOLS — Mila's read tools over what Nomila holds (server/agent/reads): media_search (her library by
+            # what is in the picture; one text embedding a search), posts_performance, money_summary and whats_next.
+            # Read only, nothing written or sent. Dev only; prod "false" (prod flag guard).
+            - name: MILA_READ_TOOLS
+              value: "true"
+            # MILA_CARDS_V2 — the card system v2's producers (share_insight, ideas_suggest, offer_capability, ask_once,
+            # answer_with_sources: agent/milaCards) join the chat's tools, and POST /api/v1/me/mila/cards/outcome records
+            # the taps (design "Mila card designs" v2.2, approved 3 Nov 2026). Dev only; prod "false" (prod flag guard).
+            - name: MILA_CARDS_V2
+              value: "true"
+            # Mastra's feature telemetry (PostHog) off. Also set in the Dockerfile and by the engine before Mastra loads.
+            - name: MASTRA_TELEMETRY_DISABLED
+              value: "1"
+            # MILA_WELCOME — the welcome flow's capability model (server/agent/welcome; design "Mila welcome flow", 28 Oct
+            # 2026): the athlete's yes / not now / never per capability and account (mila_choices), and the always-on
+            # OPTIONAL jobs (moments scan, post ideas, plan refresh, "post took off", auto-archive, monthly research
+            # refresh) run only for athletes who said yes, checked again when each job's step runs; and the Mila tools an
+            # optional capability unlocks (welcome/toolGate.ts) are refused, per turn and per call, until the athlete turns
+            # it on. Everyone starts unset.
+            # ON in dev only (owner, 6 Nov 2026, after opt-in #1226/#1228 and the switch-on walk test); prod stays "false".
+            - name: MILA_WELCOME
+              value: "true"
+
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 30
+            failureThreshold: 3
+
+          startupProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            failureThreshold: 12
+
+  traffic:
+    - percent: 100
+      latestRevision: true

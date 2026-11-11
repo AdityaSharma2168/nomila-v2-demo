@@ -1,0 +1,76 @@
+{
+  "cli": {
+    "version": ">= 20.5.1",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "channel": "development",
+      "env": {
+        "SHARP_IGNORE_GLOBAL_LIBVIPS": "1",
+        "EXPO_PUBLIC_MILA_VOICE_NATIVE": "true",
+        "EXPO_PUBLIC_MILA_THREAD_V2": "true",
+        "EXPO_PUBLIC_MILA_CARDS_V2": "true"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "channel": "preview",
+      "ios": {
+        "simulator": false
+      },
+      "env": {
+        "SHARP_IGNORE_GLOBAL_LIBVIPS": "1",
+        "EXPO_PUBLIC_API_URL": "https://nomila-v2-iau7alh5qq-uc.a.run.app",
+        "EXPO_PUBLIC_MICROSOFT_CLIENT_ID": "d614f3fe-6f13-4c94-a5b9-2f715a66e015",
+        "EXPO_PUBLIC_MILA_VOICE_NATIVE": "true",
+        "EXPO_PUBLIC_IDENTITY_CLAIM": "true",
+        "EXPO_PUBLIC_STUDIO_ALL_ON": "true",
+        "EXPO_PUBLIC_OPPS_BOARD": "true",
+        "EXPO_PUBLIC_SHOP_V1": "true",
+        "EXPO_PUBLIC_PUBLIC_CARD": "true",
+        "EXPO_PUBLIC_PARTNER_INTAKE": "true",
+        "EXPO_PUBLIC_BOOKINGS": "true",
+        "EXPO_PUBLIC_CAMERA_ROLL_INTAKE": "true",
+        "EXPO_PUBLIC_AGENT_V3": "true",
+        "EXPO_PUBLIC_HOME_V3": "true",
+        "EXPO_PUBLIC_MILA_PROACTIVE": "true",
+        "EXPO_PUBLIC_MILA_THREAD_V2": "true",
+        "EXPO_PUBLIC_MILA_CARDS_V2": "true"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "channel": "production",
+      "env": {
+        "SHARP_IGNORE_GLOBAL_LIBVIPS": "1",
+        "EXPO_PUBLIC_API_URL": "https://api.nomila.co",
+        "EXPO_PUBLIC_MICROSOFT_CLIENT_ID": "d614f3fe-6f13-4c94-a5b9-2f715a66e015",
+        "EXPO_PUBLIC_MILA_VOICE_NATIVE": "true",
+        "EXPO_PUBLIC_PUBLIC_CARD": "false",
+        "EXPO_PUBLIC_PARTNER_INTAKE": "false",
+        "EXPO_PUBLIC_AGENT_V3": "true",
+        "EXPO_PUBLIC_HOME_V3": "true",
+        "EXPO_PUBLIC_IDENTITY_CLAIM": "true",
+        "EXPO_PUBLIC_STUDIO_ALL_ON": "true",
+        "EXPO_PUBLIC_OPPS_BOARD": "true",
+        "EXPO_PUBLIC_OPPS_V2": "true",
+        "EXPO_PUBLIC_AGENT_DEALS_TOOLS": "true",
+        "EXPO_PUBLIC_MILA_THREAD_V2": "false",
+        "EXPO_PUBLIC_MILA_CARDS_V2": "false"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "ascAppId": "6762380524",
+        "ascApiKeyPath": "./credentials/AuthKey_F2HCDC764D.p8",
+        "ascApiKeyId": "F2HCDC764D",
+        "ascApiKeyIssuerId": "bf94e05c-4282-4433-8a8f-8f5358aac5d7"
+      }
+    }
+  }
+}

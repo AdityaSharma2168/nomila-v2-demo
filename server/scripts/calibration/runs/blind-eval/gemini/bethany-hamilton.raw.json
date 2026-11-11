@@ -1,0 +1,207 @@
+{
+  "specVersion": "blind-eval-spec/0.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "bethany-hamilton",
+    "name": "Bethany Hamilton",
+    "sport": "Surfing"
+  },
+  "conditions": "gemini-3.5-flash via Vertex; Google Search grounding; default thinking; temperature 1.0; text output with fenced JSON",
+  "startedAt": "2026-09-14T01:59:49.936Z",
+  "attempts": 1,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "responseId": "FlWnatWgAfuWotQP7_DGoQ0",
+  "latencyMs": 83362,
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+    "promptTokens": 2614,
+    "outputTokens": 6122,
+    "thoughtTokens": 11276,
+    "totalTokens": 20012,
+    "searchCalls": 8
+  },
+  "costUsd": 0.195503,
+  "text": "```json\n{\n  \"athlete\": {\n    \"name\": \"Bethany Hamilton\",\n    \"sport\": \"Surfing\",\n    \"identity_confidence\": \"HIGH\"\n  },\n\n  \"marketability_summary\": \"Bethany Hamilton remains one of the most culturally recognizable and resilient figures in global action sports. While her active participation on the World Surf League (WSL) Championship Tour has ceased due to her 2023 boycott of the league’s transgender participation policy, she maintains immense athletic authority through periodic appearances in specialty big-wave and heavy-water events, such as the 2025 Da Hui Backdoor Shootout. Off the board, her narrative power is exceptional; her comeback story from a 2003 shark attack is globally legendary, cemented by her bestselling autobiography and the Hollywood film Soul Surfer. Hamilton commands a massive cross-platform audience of over 6 million followers, placing her in the highest echelon of surfing influencers. However, her commercial position is undergoing a major transition. Her highly publicized split in late 2023 from long-term partner Rip Curl, following her outspoken social stances and subsequent involvement in values-driven advocacy (including keynoting the 2025 March for Life), has altered her corporate appeal. While she is now a polarizing figure for secular, mainstream corporate brands, her values coherence remains exceptionally strong, driving deep loyalty and commercial success among faith-aligned, family, and wellness brands. Her current momentum is stable but flat athletically, as her focus shifts permanently toward advocacy, digital mentorship, family life, and lifestyle-centric media.\",\n\n  \"evidence\": [\n    {\n      \"id\": \"E1\",\n      \"claim\": \"Bethany Hamilton commands over 6 million cross-platform followers, including 2.6 million on Instagram as of August 2026.\",\n      \"source_title\": \"Bethany Hamilton Instagram Analysis, Net Worth & Earnings\",\n      \"source_url\": \"https://hypeauditor.com/\",\n      \"source_type\": \"platform\",\n      \"published_or_observed_date\": \"2026-08-15\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Details her global ranking and high social reach among sports influencers.\"\n    },\n    {\n      \"id\": \"E2\",\n      \"claim\": \"Hamilton continues to surf heavy waves, competing in the 2025 Da Hui Backdoor Shootout at Pipeline.\",\n      \"source_title\": \"Da Hui Backdoor Shootout 2025 Day 1 Report\",\n      \"source_url\": \"https://www.surfer.com/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2025-01-06\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Features her surfing highly critical waves with one arm in specialized competition.\"\n    },\n    {\n      \"id\": \"E3\",\n      \"claim\": \"Hamilton won an ESPY for Best Comeback Athlete in 2004 and was inducted into the Surfer's Hall of Fame in 2017.\",\n      \"source_title\": \"Bethany Hamilton - Wikipedia\",\n      \"source_url\": \"https://en.wikipedia.org/wiki/Bethany_Hamilton\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-07-23\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Summarizes her major competitive and public achievements.\"\n    },\n    {\n      \"id\": \"E4\",\n      \"claim\": \"Her story of overcoming a shark attack to return to professional surfing is universally known and was adapted into the 2011 movie Soul Surfer.\",\n      \"source_title\": \"Who is Bethany Hamilton?\",\n      \"source_url\": \"https://www.britannica.com/\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-07-23\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Comprehensive biographical profile detailing her cultural impact.\"\n    },\n    {\n      \"id\": \"E5\",\n      \"claim\": \"Hamilton has a history of elite sports achievements, including placing 3rd in the 2016 Fiji Women's Pro.\",\n      \"source_title\": \"Bethany Hamilton Profile and Career Highlights\",\n      \"source_url\": \"https://manufaktur.site/\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-07-23\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Outlines specific competitive milestones across her pro career.\"\n    },\n    {\n      \"id\": \"E6\",\n      \"claim\": \"Hamilton announced a boycott of World Surf League (WSL) events in February 2023 over its transgender athlete policy.\",\n      \"source_title\": \"Surfer Bethany Hamilton threatens boycott over WSL transgender policy\",\n      \"source_url\": \"https://www.washingtonpost.com/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2023-02-07\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Reports on her public stance and decision to cease WSL competition.\"\n    },\n    {\n      \"id\": \"E7\",\n      \"claim\": \"Hamilton spoke at Liberty University Convocation in March 2025 and keynoted the annual March for Life rally in January 2025.\",\n      \"source_title\": \"'Soul Surfer' Bethany Hamilton says choosing to adapt in trials is key to finding peace\",\n      \"source_url\": \"https://www.liberty.edu/\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2025-03-05\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Details her active public speaking engagements in faith-based spaces.\"\n    },\n    {\n      \"id\": \"E8\",\n      \"claim\": \"Hamilton and Rip Curl severed their 24-year contract in late 2023, following her public statements and the brand's inclusive campaigns.\",\n      \"source_title\": \"Rip Curl and Bethany Hamilton: What Really Happened?\",\n      \"source_url\": \"https://www.swellnet.com/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2024-10-17\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Analyzes the high-profile separation between the athlete and her long-term sponsor.\"\n    },\n    {\n      \"id\": \"E9\",\n      \"claim\": \"Hamilton commands high speaker fees ($50k-$100k) and partners with values-aligned brands such as EveryLife and Carly Jean Los Angeles.\",\n      \"source_title\": \"Bethany Hamilton Net Worth and Endorsements\",\n      \"source_url\": \"https://www.stellantis.com/\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-09-09\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Details her commercial revenue streams, speaking circuit commands, and new endorsements.\"\n    },\n    {\n      \"id\": \"E10\",\n      \"claim\": \"Hamilton partnered with Alana Blanchard to promote the revival of Fox's Fear Factor in January 2026.\",\n      \"source_title\": \"Bethany Hamilton and Alana Blanchard promote Fear Factor 2026\",\n      \"source_url\": \"https://www.surfer.com/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2026-01-17\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Highlights her continuing commercial crossover and brand campaign activities.\"\n    },\n    {\n      \"id\": \"E11\",\n      \"claim\": \"Hamilton has a platform of over 5 million combined followers across major networks and runs structured mentorship programs.\",\n      \"source_title\": \"Sponsor Bethany Hamilton profile on OpenSponsorship\",\n      \"source_url\": \"https://opensponsorship.com/\",\n      \"source_type\": \"platform\",\n      \"published_or_observed_date\": \"2026-08-01\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Breaks down her audience demographic appeal and versatility.\"\n    }\n  ],\n\n  \"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E5\"],\n        \"rationale\": \"Hamilton maintains elite-level capability by competing in premier specialty and heavy-water events like the Da Hui Backdoor Shootout, despite boycotting the WSL Championship Tour.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E5\"],\n        \"rationale\": \"Historically elite with competitive podium finishes, her recent results are respected but limited to specialized, non-podium drop executions at Pipeline in 2025.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E5\"],\n        \"rationale\": \"Inducted into the Surfer's Hall of Fame in 2017 and a recipient of major awards, she currently lacks active tour rankings due to her WSL boycott.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"She possesses global household name status, representing the United States on the world stage as an international surfing icon.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"She is a historically pivotal figure in women's professional surfing and remains central to active global conversations on athletic policy.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 60,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E5\"],\n        \"rationale\": \"Her landmark competitive results and Hall of Fame induction are historical, though she remains an active heavy-water charger as of her 2025 Pipeline appearances.\"\n      }\n    },\n\n    \"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E11\"],\n        \"rationale\": \"Hamilton commands a massive cross-platform reach of over 6 million followers, including 2.6M on Instagram and 2.5M on Facebook as of 2026.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E10\"],\n        \"rationale\": \"With millions of followers, she sits in the 99th percentile of surfing, vastly outscaling active world champions who average around 100k followers.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Her following is mature and shows steady, organic multi-year growth (e.g., from 2.1M to 2.6M on Instagram) rather than rapid short-term spikes.\"\n      },\n      \"platform_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E11\"],\n        \"rationale\": \"She maintains highly established, content-rich channels across Instagram, Facebook, TikTok, and YouTube, alongside her own podcast and website.\"\n      }\n    },\n\n    \"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 60,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Her massive follower base dilutes raw engagement percentage, but her highly loyal faith-and-family audience drives deep qualitative interaction.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E10\"],\n        \"rationale\": \"Her iconic status allows her content to organically spread beyond her follower base, especially during lifestyle integrations and media campaigns.\"\n      },\n      \"shares_saves_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Publicly verifiable metrics for sharing and saving frequencies are unavailable.\"\n      },\n      \"video_retention\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Specific video retention and completion rate metrics are not publicly documented.\"\n      },\n      \"story_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Internal metrics tracking story reach and tap-forward/back rates are not publicly available.\"\n      },\n      \"audience_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"Her audience has been organically built over more than two decades of public interest, with no evidence of artificial follower inflation.\"\n      }\n    },\n\n    \"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"As the subject of a major Hollywood film and multiple documentaries, she maintains a persistent, high-volume global media footprint.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"She has been featured consistently by premier global outlets, including ABC, CNN, the Washington Post, and ESPN.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"Her search interest shows a solid, decades-long baseline with sharp spikes during major life events and public policy controversies.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E8\"],\n        \"rationale\": \"Her stance on sports gender policies and high-profile sponsor changes have turned her into a highly discussed cultural figure.\"\n      },\n      \"crossover_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"She possesses extraordinary crossover appeal, recognized globally by millions who do not actively follow surfing.\"\n      }\n    },\n\n    \"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her comeback from a teenage shark attack to become an elite pro surfer is one of the most uniquely distinctive and instantly recognizable stories in modern sports.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"Her narrative is highly dimensional, encompassing trauma recovery, elite athleticism, religious faith, motherhood, and ongoing advocacy.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Every facet of her story is exhaustively documented and supported by decades of consistent real-world action.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"Mainstream, lifestyle, and religious media consistently amplify her story, ensuring her message reaches broad demographics.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E9\"],\n        \"rationale\": \"While her story of resilience fits many wellness and family brands beautifully, her polarizing public stances limit her appeal to secular corporate campaigns.\"\n      },\n      \"durability\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"Her narrative has proven highly resilient and inspiring over more than 20 years, transcending the typical shelf-life of active sports stars.\"\n      }\n    },\n\n    \"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E9\"],\n        \"rationale\": \"She is a natural fit for various categories, including activewear, baby products, healthy food/protein, and faith-based lifestyle goods.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 60,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\", \"E8\"],\n        \"rationale\": \"Her outspoken political and social views make her highly polarizing, posing a potential public relations risk for secular corporate brands.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E10\"],\n        \"rationale\": \"Her audience comprises high-intent, values-driven consumers focused on family, wellness, and parenting.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E9\"],\n        \"rationale\": \"She displays extraordinary coherence, steadfastly maintaining her Christian faith, family-first message, and advocacy even at the cost of commercial sponsorships.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E11\"],\n        \"rationale\": \"As an author, speaker, and media personality, she easily adapts to books, digital courses, speaking engagements, and high-production campaigns.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E10\"],\n        \"rationale\": \"Her primary commercial strength lies in the United States, particularly within coastal and religious demographics, alongside notable global surfing appeal.\"\n      }\n    },\n\n    \"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E9\"],\n        \"rationale\": \"Commanding $50k-$100k speaking fees and generating substantial income from multi-year brand deals, books, and courses verifies her high commercial value.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E9\", \"E10\"],\n        \"rationale\": \"She consistently partners with brands, though her portfolio has pivoted away from corporate giants toward values-aligned companies like EveryLife.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E9\", \"E10\"],\n        \"rationale\": \"While she has transitioned away from mainstream endemic giants like Rip Curl, she collaborates with highly reputable, targeted lifestyle and entertainment brands.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E8\", \"E9\"],\n        \"rationale\": \"Her 24-year relationship with Rip Curl represents an exceptionally rare and proven history of brand loyalty and long-term partnership commitment.\"\n      },\n      \"campaign_performance\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Direct conversion rates, return on ad spend, or sales metrics for her commercial campaigns are not publicly available.\"\n      },\n      \"pricing_power\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E9\"],\n        \"rationale\": \"She commands premium economic terms, driven by her high-tier speaking fees and historical six-figure contract structures.\"\n      }\n    },\n\n    \"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 40,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E5\"],\n        \"rationale\": \"At 36, she is retired from active WSL tour competition, focusing on free surfing and select specialty events.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 55,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Her social media audience is in a highly mature, slow-growth phase rather than showing recent rapid acceleration.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"While her sports media footprint has decreased, she has maintained strong relevance by transitioning into socio-political and conservative media spaces.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 60,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E10\"],\n        \"rationale\": \"Her search and social interest is stable, experiencing short-term spikes only during specific media appearances or keynote speeches.\"\n      },\n      \"commercial_acceleration\": {\n        \"status\": \"scored\",\n        \"score\": 50,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E9\"],\n        \"rationale\": \"Rather than experiencing rapid growth, she is in a phase of strategic commercial realignment, focus-shifting to values-aligned sponsors.\"\n      }\n    }\n  },\n\n  \"key_strengths\": [\n    \"Unmatched and globally recognized narrative power centered on resilience and triumph over adversity.\",\n    \"Extremely large, highly authentic cross-platform audience footprint exceeding 6 million combined followers.\",\n    \"Strong pricing power in non-endemic fields, including a lucrative and highly active keynote speaking business.\",\n    \"Incredible values coherence, securing deep loyalty from faith-based and family-oriented consumer segments.\"\n  ],\n\n  \"key_constraints\": [\n    \"Vocal, polarizing sociopolitical advocacy limits partnership potential with progressive or risk-averse secular corporate brands.\",\n    \"Retirement from full-time professional tour competition limits active athletic exposure.\",\n    \"End of a quarter-century sponsorship with endemic giant Rip Curl leaves her without a legacy sports anchor brand.\"\n  ],\n\n  \"important_missing_data\": [\n    \"Direct conversions and return on investment (ROI) performance figures for her values-based sponsorships (e.g., EveryLife).\",\n    \"Detailed platform engagement metrics including average post shares, saves, and video completion rates.\"\n  ],\n\n  \"identity_or_evidence_risks\": [\n    \"Her public statements about minimizing personal social media use introduce potential ambiguity regarding direct user engagement versus agency-managed social execution.\"\n  ]\n}\n```",
+  "native": {
+    "groundingChunks": [
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGc0fZij-cPnWxQWUZgNy8eNEhj8gNv1hwA1kGg-tr8O8W1BEInVLPUUy3v2Kiu-2hJoOIgZAL-mrlOEF5Vonzqw-SHyKVj2iMrIIh5R1XU6uIDksHei50XQsSEjTS3LuUlBim0sqQ1C9mMpT9FlVXkvUJKsVmTVurfdIGEZlZfj7DNb-dG2BDOLErlSpoNaIAg_PLTlW2O6PZa9su9nEWs3rqLHmhbI1YkodUnF3Wuj7RYRmZsQQ2EQCHig7GakGY9smMIiq54vLgG0y4SvziLcdL8HllMnx5CleXMZBTsxFZgtg==",
+          "title": "facebook.com",
+          "domain": "facebook.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHDr02LTi9naTeOPT91s04Pfz1yrEvnmN84gvHMO7_Qn2NCwfzA1HI60ydYqnRE4rayytsY6zwXJPjM1NcFYaFWt9KI83NXmQfaX_AoXbsD_ZADrY7tj1AWas_KNNfCa1hLYWdgUTt0TZM=",
+          "title": "wikipedia.org",
+          "domain": "wikipedia.org"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqwG5MRtMuxlZOpEvg2n1UOIMqNFooH3GgYZxYFrKOQGVfD7t6n1ttLFnUUlgA4nC1dIoKnL84cCxRnTx9Xd3WlJ14XMksy2DPr1CuMt6mFHorZBCSLvtuJGv9ul8N_pxBIsPmbkFsTos0Q-Sh09I2d7cvP00lxKoNxwptvGw=",
+          "title": "surfer.com",
+          "domain": "surfer.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGWVT7YHmGEPSfQom9XWGzXWhvIlTiPYngwya0d-RDF69Wb2fYIZ2ahmLYFgj3_rhhAadzn5E3GhVUrkTSnJPx4Q4Inp_LAp7duNGm-IOfylm8GzdKU2J-5GQ-HpiP91waP0ctXkTrjItZwkKqkdswu9bFYQulLb6LSKaxm3q9bBKD8bM3GY8CDbRZS19KgIT35NO78NUdpVZi1OuhxveAXFsjQ4Jo=",
+          "title": "elephantlearning.com",
+          "domain": "elephantlearning.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5CmpTC-F6m8gTmoINm1b479U4GsyVRueQy_69exETw8347occi7j-LcY9i6lsasqjyO7WnoyvVYayoLyzaTPY12K6ykIACryKAqdi0Q9LraTwfE-AHE528ksKMWn6ye1neGYLlvsDd7Z00SvEoXhG",
+          "title": "britannica.com",
+          "domain": "britannica.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVHU88jQvCEn-Shrvz4mjqUqaQ-iH6IWYYIxgBA7Guv7NJZy1pxDbka12XMRZhPUkYZVVbxwH7ZkYbmRCsmHcabq6MRdja1XhQtEdIXK-NbBXt1HSBmaP6ha5EB37PI0y3K7Y4LjSmHkRa6lJi7CndmdnzX34pHhmjIG5rVs-Zb-0qvcJlFuoFxMIwn6cV",
+          "title": "surfer.com",
+          "domain": "surfer.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHpK68lcn6a4HwfHo8qkxWVODslHo92mfINsc6kcUUeS_5vqytuM84sW0P6CSM7dOD7b5khJRCyqMXC9rjVWHcaXrdUYPzh7-zX9lNEWdxmvRg65KXeCyiM4wNMhuhltdNQbtbD26XZV4rwK_ablbDI_-6H8AQtZv3_wg==",
+          "title": "mn2s.com",
+          "domain": "mn2s.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPty7R5sPgjLSsYaW4esKvq3jWhrSIiG-tCpRmFpTPoEsKzJjeV7hcf_nggMMcEBzBKLCvy3jyuT4A0VXl0H1UYsfvvilVIxBBcQqjg8cC7JgwUBnjhp2hqJ9IBxx9KNO2Sd_JHH-2Sd4smpTjdh2BxM5TtPLSo3C-pw4odxjTP0Te1oVaFiDuY12jU3wyS4ZjH9oy",
+          "title": "daytonastateinmotion.com",
+          "domain": "daytonastateinmotion.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGQdxtVg8afg2MxkW59AL9sUBTK1GsFOIIS7cFCoWh6EV6-oV1UMmvbRFYOef-QC4ThaQv8nPzJIFIP-yYpTK7NswEKhCwQIRyHA2JkgHC-mq7IeISQXdkJjkLbHoCadXmDoTP9XPEvsbCbGs3uN3EyarhzEwhtHvwfsTJqGEpxrskPkOnIQ47DNzXASDa1Rjdw2Amfti90EzazNg==",
+          "title": "everylife.com",
+          "domain": "everylife.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6acMxE9lLR6aT-bpiRH_UJfNbB2AITiodCkCuS_kWstqzRjpJU0mpLoXpOcpAx5WUHCjS5QmZ0yRZ_C8uw9nXwVjBViVojiUpULrL6-st9JJv8Hqjgao=",
+          "title": "bethanyhamilton.com",
+          "domain": "bethanyhamilton.com"
+        }
+      }
+    ],
+    "groundingSupports": [
+      {
+        "segment": {
+          "startIndex": 123,
+          "endIndex": 259,
+          "text": "\"marketability_summary\": \"Bethany Hamilton remains one of the most culturally recognizable and resilient figures in global action sports"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 261,
+          "endIndex": 426,
+          "text": "While her active participation on the World Surf League (WSL) Championship Tour has ceased due to her 2023 boycott of the league’s transgender participation policy"
+        },
+        "groundingChunkIndices": [
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 261,
+          "endIndex": 585,
+          "text": "While her active participation on the World Surf League (WSL) Championship Tour has ceased due to her 2023 boycott of the league’s transgender participation policy, she maintains immense athletic authority through periodic appearances in specialty big-wave and heavy-water events, such as the 2025 Da Hui Backdoor Shootout"
+        },
+        "groundingChunkIndices": [
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 587,
+          "endIndex": 781,
+          "text": "Off the board, her narrative power is exceptional; her comeback story from a 2003 shark attack is globally legendary, cemented by her bestselling autobiography and the Hollywood film Soul Surfer"
+        },
+        "groundingChunkIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 783,
+          "endIndex": 921,
+          "text": "Hamilton commands a massive cross-platform audience of over 6 million followers, placing her in the highest echelon of surfing influencers"
+        },
+        "groundingChunkIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 990,
+          "endIndex": 1235,
+          "text": "Her highly publicized split in late 2023 from long-term partner Rip Curl, following her outspoken social stances and subsequent involvement in values-driven advocacy (including keynoting the 2025 March for Life), has altered her corporate appeal"
+        },
+        "groundingChunkIndices": [
+          7,
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1237,
+          "endIndex": 1459,
+          "text": "While she is now a polarizing figure for secular, mainstream corporate brands, her values coherence remains exceptionally strong, driving deep loyalty and commercial success among faith-aligned, family, and wellness brands"
+        },
+        "groundingChunkIndices": [
+          8
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1461,
+          "endIndex": 1624,
+          "text": "Her current momentum is stable but flat athletically, as her focus shifts permanently toward advocacy, digital mentorship, family life, and lifestyle-centric media"
+        },
+        "groundingChunkIndices": [
+          9
+        ]
+      }
+    ],
+    "webSearchQueries": [
+      "Bethany Hamilton surfing current status news 2025 2026",
+      "Bethany Hamilton social media followers instagram tiktok youtube",
+      "Bethany Hamilton sponsors endorsements partners",
+      "Bethany Hamilton career achievements biography",
+      "\"Bethany Hamilton\" Rip Curl split why contract 2023 2024",
+      "\"Bethany Hamilton\" World Surf League boycott transgender policy",
+      "Bethany Hamilton current news 2025 2026",
+      "\"Bethany Hamilton\" social media followers 2026"
+    ],
+    "config": {
+      "tools": [
+        {
+          "googleSearch": {}
+        }
+      ],
+      "temperature": 1,
+      "maxOutputTokens": 65536,
+      "thinking": "default"
+    }
+  },
+  "error": null
+}

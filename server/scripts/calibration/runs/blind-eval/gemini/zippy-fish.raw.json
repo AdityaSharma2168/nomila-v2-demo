@@ -1,0 +1,247 @@
+{
+  "specVersion": "blind-eval-spec/0.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "zippy-fish",
+    "name": "Zippy Fish",
+    "sport": "Australian Rules Football"
+  },
+  "conditions": "gemini-3.5-flash via Vertex; Google Search grounding; default thinking; temperature 1.0; text output with fenced JSON",
+  "startedAt": "2026-09-14T02:02:11.264Z",
+  "attempts": 1,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "responseId": "o1WnaoCdFeqQl7oPuIXRoQE",
+  "latencyMs": 80192,
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+    "promptTokens": 2616,
+    "outputTokens": 6115,
+    "thoughtTokens": 11205,
+    "totalTokens": 19936,
+    "searchCalls": 18
+  },
+  "costUsd": 0.19480399999999998,
+  "text": "```json\n{\n  \"athlete\": {\n    \"name\": \"Zippy Fish\",\n    \"sport\": \"Australian Rules Football\",\n    \"identity_confidence\": \"HIGH\"\n  },\n\n  \"marketability_summary\": \"Zipporah 'Zippy' Fish is one of the most promising young talents in Australian Rules Football (AFLW). Relocating from a remote WA mining town to enter the league as the No. 5 pick in the 2024 Draft for the Sydney Swans, she enjoyed a stellar debut 2025 season where she won the Telstra AFLW Rising Star and the AFLPA Best First-Year Player awards. Her elite athletic standing is reinforced in the ongoing 2026 season, where she averages 24.8 disposals per game and represents Australia internationally. Culturally, she possesses a uniquely memorable name ('zippy by name, zippy by nature') and a compelling narrative as a proud Noongar, Wongi, and Larrakia woman. Commercially, she boasts a highly distinct identity, a custom licensed product line with Sherrin, and zero brand-safety risks. Her recent momentum is accelerating due to her stellar on-field performance and intense media speculation regarding her uncontracted status at the end of 2026. However, major missing information exists around her exact social media follower numbers and engagement metrics, which are not publicly reported, creating some commercial uncertainty regarding her direct audience scale.\",\n\n  \"evidence\": [\n    {\n      \"id\": \"E1\",\n      \"claim\": \"Zippy Fish was drafted by the Sydney Swans with Pick 5 in the 2024 AFLW Draft after an outstanding junior career with East Fremantle in the WAFLW, including winning the 2023 premiership best-on-ground (Lou Knitter Medal) and finishing second in the 2024 league best and fairest.\",\n      \"source_title\": \"Zippy Fish Draft Profile\",\n      \"source_url\": \"https://rookieme.com/zippy-fish-draft-profile/\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2025-09-01\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Rookie Me Central details her junior accolades, draft profile, and rapid junior rise.\"\n    },\n    {\n      \"id\": \"E2\",\n      \"claim\": \"In her 2025 debut season, Fish won the Telstra AFLW Rising Star award with a perfect 50 votes, was named the AFLPA Best First-Year Player, and earned 22 Under 22 team selection while averaging 21.2 disposals across all 12 matches.\",\n      \"source_title\": \"Zippy Fish Player Profile\",\n      \"source_url\": \"https://www.sydneyswans.com.au/players/zippy-fish\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-08-25\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Official Swans profile outlining her incredible rookie achievements and statistical breakdown.\"\n    },\n    {\n      \"id\": \"E3\",\n      \"claim\": \"Fish represented Australia in the historic inaugural Australia v Ireland representative match in August 2026, where she scored Australia's first goal.\",\n      \"source_title\": \"Zippy Fish will represent Australia\",\n      \"source_url\": \"https://www.sydneyswans.com.au/news/zippy-fish-finds-out-she-will-represent-australia\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-06-20\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Official representative team selection news and national broadcast details.\"\n    },\n    {\n      \"id\": \"E4\",\n      \"claim\": \"In the first month of the 2026 season, Fish was the only non-key position player in the AFLW to play 100% of game time across four matches, increasing her output to 24.8 disposals per game.\",\n      \"source_title\": \"The Fish tank: The incredible stat proving Zippy is an endurance beast\",\n      \"source_url\": \"https://www.afl.com.au/aflw/news/the-fish-tank-the-incredible-stat-proving-zippy-is-an-endurance-beast\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-09-07\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"AFL official article highlighting her unique endurance and on-field dominance.\"\n    },\n    {\n      \"id\": \"E5\",\n      \"claim\": \"Fish is a proud Noongar, Wongi, and Larrakia woman who grew up in the remote WA mining town of Newman before relocating to Perth and later Sydney, emphasizing humility, culture, and community representation as her primary drivers.\",\n      \"source_title\": \"In-demand Swan on her humble roots, contract call, bond with superstar Lion\",\n      \"source_url\": \"https://www.afl.com.au/aflw/news/in-demand-swan-on-her-humble-roots-contract-call-bond-with-superstar-lion\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-08-27\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Detailed interview highlighting her First Nations heritage and small-town roots.\"\n    },\n    {\n      \"id\": \"E6\",\n      \"claim\": \"As an uncontracted player at the end of 2026, multiple powerhouse AFLW clubs, including North Melbourne, West Coast, and Carlton, have registered intense recruitment interest in signing her.\",\n      \"source_title\": \"Sydney's Zippy Fish is yet to re-sign at Sydney, with the reigning premier emerging as a potential suitor\",\n      \"source_url\": \"https://www.afl.com.au/aflw/news/sydneys-zippy-fish-yet-to-resign-at-sydney-with-reigning-premier-emerging-as-potential-suitor\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-08-26\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"AFL trade update detailing her extreme market value in the league.\"\n    },\n    {\n      \"id\": \"E7\",\n      \"claim\": \"In August 2026, Sherrin released a custom, limited edition size 3 recreational football designed by Zippy Fish, featuring her personal artwork and symbols of her Indigenous culture, family, and dog.\",\n      \"source_title\": \"Introducing the limited edition ball designed by Swans star Zippy Fish\",\n      \"source_url\": \"https://www.sherrin.com.au/zippy-fish-size-3-football\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-08-12\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Product page for her officially licensed Sherrin football design.\"\n    },\n    {\n      \"id\": \"E8\",\n      \"claim\": \"Fish has appeared as a high-profile guest on the AFLW digital series 'Tagged' (sponsored by Head and Shoulders) and maintains an active profile offering video shoutouts on Swysh.\",\n      \"source_title\": \"Zippy Fish joins the crew to chat off season plans\",\n      \"source_url\": \"https://www.heyswysh.com/players/zippy-fish\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2025-11-24\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Details her lifestyle, platform interviews, and direct-to-fan monetization channels.\"\n    },\n    {\n      \"id\": \"E9\",\n      \"claim\": \"Fish continues her affiliation with Binar Futures, an Indigenous youth sports program in WA, including modeling their brand-new Binar Maali uniform.\",\n      \"source_title\": \"So special having Zippy Fish drop into Binar HQ\",\n      \"source_url\": \"https://www.facebook.com/BinarFutures\",\n      \"source_type\": \"platform\",\n      \"published_or_observed_date\": \"2026-08-12\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Social platform post detailing her community support, basketball background, and uniform modeling.\"\n    }\n  ],\n\n  \"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"AFLW is the premier national Australian rules football league for women, representing the highest competitive standard of the sport.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E4\"],\n        \"rationale\": \"She dominated her debut year averaging 21.2 disposals, and in 2026 has increased her output to 24.8 disposals while showcasing unmatched elite endurance.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"A highly recognized champion, she claimed the 2025 AFLW Rising Star (polling maximum votes), the 2025 AFLPA Best First-Year Player, and junior premiership MVPs.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"Represented Australia in the August 2026 representative match against Ireland, asserting her elite national-level credentials.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"Central to the Sydney Swans' setup as a key midfielder/defender and currently one of the most intensely pursued players in the league.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E4\"],\n        \"rationale\": \"Her landmark individual accolades occurred in late 2025, and her international debut and peak on-field performances are happening in the current 2026 season.\"\n      }\n    },\n\n    \"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Exact quantitative follower numbers across social media platforms are not explicitly detailed in mainstream or public databases.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"A lack of exact follower numbers prevents a precise calculation of her audience percentile relative to other AFLW players.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No longitudinal tracking of her personal social media followers is publicly accessible.\"\n      },\n      \"platform_breadth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"While she maintains various social profiles, detailed data regarding her specific platform-by-platform distribution is missing.\"\n      }\n    },\n\n    \"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Social media engagement rates and interaction analytics are not published in public sources.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Public data regarding her organic content reach efficiency remains unavailable.\"\n      },\n      \"shares_saves_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"High-value post interaction statistics like shares and saves are private account analytics.\"\n      },\n      \"video_retention\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Video completion and retention figures on her personal video uploads are unavailable.\"\n      },\n      \"story_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Story view rates and click-through metrics are not publicly disclosed.\"\n      },\n      \"audience_authenticity\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Audience quality and follower authenticity audits have not been publicly compiled for this athlete.\"\n      }\n    },\n\n    \"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 68,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\", \"E6\"],\n        \"rationale\": \"Receives substantial, persistent national coverage in Australian sports media due to her rare on-field traits, historic rise, and trade rumors.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E5\", \"E8\"],\n        \"rationale\": \"Covered extensively by prestigious national outlets like AFL.com.au, ABC Sport, and Seven Network's prime sports programs.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 72,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E8\"],\n        \"rationale\": \"Her unique and memorable name ('Zippy Fish') naturally generates immense organic curiosity and Google search queries from sports fans.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E6\"],\n        \"rationale\": \"Generates strong public fan discussion, particularly around her representing Australia and the high-profile trade speculation.\"\n      },\n      \"crossover_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E8\"],\n        \"rationale\": \"Her distinctive identity has earned crossover appeal on national television shows, though she remains primarily focused within the Australian sports market.\"\n      }\n    },\n\n    \"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"Boasts one of the most distinctive and highly memorable personal identities in sport, seamlessly aligning with her explosive speed on the field.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E5\"],\n        \"rationale\": \"Possesses a rich, multidimensional narrative tracing her childhood in a remote Pilbara mining town, picking up footy late, and moving across the country with her father.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"Her narrative is perfectly supported by real athletic records (sub-3.2s 20m sprint) and transparent personal histories documented by her family.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"Media coverage heavily mirrors her story, often utilizing creative thematic plays on her name and highlighting her community values.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E7\"],\n        \"rationale\": \"Her background, values of humility, and First Nations pride translate beautifully into authentic brand storytelling, as seen in her custom Sherrin ball.\"\n      },\n      \"durability\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E5\"],\n        \"rationale\": \"At just 20 years old with an exceptionally grounded mindset and elite athletic capabilities, her narrative is set to remain relevant for over a decade.\"\n      }\n    },\n\n    \"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E7\", \"E9\"],\n        \"rationale\": \"Highly versatile profile suitable for athletic brands, First Nations community programs, regional development, and youth lifestyle products.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Exceptionally brand-safe, defined by a public reputation of absolute humility, community focus, and no history of behavioral controversies.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E7\"],\n        \"rationale\": \"Highly attractive to family demographics, young female athletes, and Indigenous communities, reflecting highly positive consumer sentiment.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Her public persona is perfectly coherent across all media, consistently prioritizing family, cultural heritage, and sportsmanship.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E7\", \"E8\"],\n        \"rationale\": \"Extremely versatile, displaying talent in product design (designing her own football), digital sports hosting, and modeling.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E5\", \"E6\"],\n        \"rationale\": \"A strong multi-state domestic footprint spanning Western Australia, New South Wales (Sydney), and Victoria (highly targeted by Melbourne-based clubs).\"\n      }\n    },\n\n    \"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E7\"],\n        \"rationale\": \"Proven commercial demand is established through her own officially licensed, custom-designed Sherrin football sold nationally.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 60,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E7\", \"E8\", \"E9\"],\n        \"rationale\": \"Maintains an active commercial presence via custom Sherrin lines, Swysh fan videos, and promotional spots on AFL's 'Tagged'.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E7\", \"E8\"],\n        \"rationale\": \"Partners with key domestic brands, notably Sherrin (AFL's official game ball maker) and participates in integrations with global giants like Head & Shoulders.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"As a second-year player, she does not yet possess a long-term public history of recurring multi-year corporate campaign renewals.\"\n      },\n      \"campaign_performance\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Sales statistics and commercial return on investment for her custom Sherrin ball lines are not publicly disclosed.\"\n      },\n      \"pricing_power\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"While her sporting trade value is incredibly high, her corporate endorsement fee structures are private commercial contracts.\"\n      }\n    },\n\n    \"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\", \"E4\"],\n        \"rationale\": \"Stunning athletic rise from high draft prospect to league Rising Star, and now entering her second year as a full-time, 100% game-time national representative.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Longitudinal growth metrics for her personal social media channels are missing from public data trackers.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"Strong upward trajectory, fueled by her record-breaking on-field stats and the intense trade rumors surrounding her contract status.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E6\"],\n        \"rationale\": \"Public search and conversation interest have clearly accelerated, particularly around her representing Australia and upcoming career decisions.\"\n      },\n      \"commercial_acceleration\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E7\"],\n        \"rationale\": \"Strong positive momentum marked by the high-profile launch of her custom Sherrin product line in August 2026.\"\n      }\n    }\n  },\n\n  \"key_strengths\": [\n    \"Elite athletic pedigree as the 2025 AFLW Rising Star and 2026 Australian representative.\",\n    \"Highly unique, instantly recognizable, and culturally resonant name ('Zippy Fish') that aligns perfectly with her game.\",\n    \"Exceptional brand-safety profile backed by a narrative of community humility, First Nations pride, and strong family values.\",\n    \"Early commercial validation through a licensed product partnership with Sherrin.\"\n  ],\n\n  \"key_constraints\": [\n    \"AFLW is primarily a domestic sport, which limits her direct international commercial crossover appeal.\",\n    \"Early in her professional career, meaning her commercial durability has not yet been tested over a multi-year span.\"\n  ],\n\n  \"important_missing_data\": [\n    \"Quantitative cross-platform follower numbers and demographics.\",\n    \"Detailed social media engagement analytics (reach, share rates, audience authenticity audits).\",\n    \"Commercial performance metrics (sales, royalty earnings, and corporate fee structures).\"\n  ],\n\n  \"identity_or_evidence_risks\": [\n    \"No reputation risks identified; her personal identity is highly verified across official league and club channels.\",\n    \"Uncontracted status at the end of 2026 creates minor regional market uncertainty, as a potential move from Sydney to a Victoria-based or WA-based club could shift her primary regional fan base.\"\n  ]\n}\n```",
+  "native": {
+    "groundingChunks": [
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWn66mIFLVvTqoJERMO1HzhMbDlvUTdW6h3YyQ8Vs9dqetea0xRxlwHLyMMyXwz50PhqVvZZbU7K2OU29gh_sKL5LKfVKE5LsCL8JkyIdiyjghNMGtRTIIRKSpjXU_6kEzkQFcSb4ujAPNDdnu",
+          "title": "rookieme.com",
+          "domain": "rookieme.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRs1mnWuBckmv9-JAB6gXmR6CISCUPyIcQR1Io5o7PTNocwHafnTb3Wr2f8qlk4qO58g4VXumQ1JyUnnMklhGAIyPnf5e8OqLxrXX31OHwM4XXlt6sFz533zEcT9ydNMzFOA==",
+          "title": "wikipedia.org",
+          "domain": "wikipedia.org"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBnT_h8PcDyfc1RyeH3qpmuKMbHjQcsjFpTgjytXbMTxcwttw_NtWiQeU7_bGyhHmJ95DSq0OkDYDx20payTTcXfLtarIrgGE13WAWnLUkhxwNF7BERwS2doTaj7M8GPvQDr-vS-hfJik-Tp8F-uQiUklRQHNPpza5NWylrXbVwHIppqR3uXdUonsbbe1L2TBtqP7BSlm_og==",
+          "title": "sydneyswans.com.au",
+          "domain": "sydneyswans.com.au"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE1Uy8Txiua-Qfxp6_wgdQPWtZ1TGpevjINVOPu1xIytM0nzO9rs6EAj2ncsmNM4bzq9oUn_fVIr3lfUgmeRPPebfPWlZNf0XDd68MVLei98Rl2gr42mgI1sfJTvWJkJOabsa8PgoYUzuQjOF2wQyihQpCAVHaZp6mJHC8_EWVHqtzMhxhwUxDhzQfQdFsqPFYtFsB4U-UHzQEfnwiEyLcdWlnFQ2UML3S866YAUCzUvbmBig==",
+          "title": "afl.com.au",
+          "domain": "afl.com.au"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFmY9tB0ULbcHYr3cwK33G45CdM4EvAUDSYLt73mjxNOyasRO-V5NjexU3dhk6qH8GZYSbbvWKlYiun32F8wPHRjHeU9JlMpG30PkcXo99KyQrE8M2iKhlFdELfmC1K_1KRJBFCnVzxBFZzK16ZAu23LcTadM9ChjTp",
+          "title": "afl.com.au",
+          "domain": "afl.com.au"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTMVdy-EoWBw2psHtzbaGp4EH7pBKCDV1Umoxvt6Bm3Yy9lKmXNuoOGhiYHO-y8wLhqmx5B-zOaVp5DflWvzvvBt-2eb0fbsNTWqnFj-WdBF7A4cumcf3qnDruF4guWJI7QYU7WHo9csR2jrLwqwLdhTbzeNUqgNXRUwGnqSlvn2WVOZD6nxQeC8fkE62DoCwp-4a9tv6xFipodzkR1xzPuL9reOBVfFhyiUrs",
+          "title": "afl.com.au",
+          "domain": "afl.com.au"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG8evW_bSl6IaEp5gqK3uM0rL3UsebmIa4p5DaJGzSRrAlizgDOWR6Gam2fklOGuihXeKWjq8-0agWWt8rYnM9_RYVr9_Tf-GKha9UPqwEqANq00CJlfanncWJBX19oYfgt8eSnX83r4BoSQtaTupPilh4dZCPX5IqaBeBGiqb4SpnnEgKhr8LN9m6shvL14thhIXG3bb5MYaHYT1IROuVKlJm9OmH0fnfSGDJS9K3hW6jPL-FUfDhjEeVp6CADpCYOb9Z7paCR1A==",
+          "title": "facebook.com",
+          "domain": "facebook.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUcpcjafXBB3m8TfAUTw5guJGbgD1zaUfqEZTcoaLfWCFpsFUBdHKBlROFphv2xwYt2jXmjTP7eTHa5LLSWy6ZGP6-dHhdavs-xT-k0wWjRyAFKELpYH4chTQat8e0rwixIAbbpEfql-d-7bosreZsEa5ffhSxDa_qVSBYji34VUYo3ToURnWSNLqMh6pZFro0tle1uWMKqLL8_5Bw0BB-PcJWj182KuvQnjlksUpX0T5OqDcEfBnlssf2aK2o",
+          "title": "afl.com.au",
+          "domain": "afl.com.au"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTxtwaRsEMcY1LzWzU1Ka9tp0kGf4pAZbkMzNywuZet2rKl6wwXTfOgdTxaKN4Sd8BRVLlJXkBtdo0frCF6aSeZHSXXxdbsr2j8s1Wd0laZoyXwc7m0vSvj5huiWQEMoGL8TuTDNccTVNDUEcA8PS0DwTG-O3trNq16G2JeFCCY3_0o1WbQmTF0TqAWLH39L6oKPQCVuv7_ejhB4K1njYBL7cBNJKjcEnLPTtaYhDQ2hc=",
+          "title": "afl.com.au",
+          "domain": "afl.com.au"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDyqCKsTDwKjzKdbnca3rG_Q6JJpgPa26adrqmO8JiaaoTdXu46EyR2hT5oovIfWqiXgB0acgemTX6LTT4AL9jcjDK3jIj0PzV3DFhfWBVbLzbh27x7wpLpNvTVN13",
+          "title": "nmfc.com.au",
+          "domain": "nmfc.com.au"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMw2xLka1pGyn2g81oFLGEmR_L0NkGEzr3YdCVksnBVMtsVm2SoHH29tj-BNkLOqNK8eyDdse97_bYW05gmXKYwcnFJc8004ENfIqCvEJCJ5Oaz2qm5FJEUmY9mBOrUc-u8vX-riLt3PigfxcEDLh0LQ==",
+          "title": "sydneyswans.com.au",
+          "domain": "sydneyswans.com.au"
+        }
+      }
+    ],
+    "groundingSupports": [
+      {
+        "segment": {
+          "startIndex": 135,
+          "endIndex": 261,
+          "text": "\"marketability_summary\": \"Zipporah 'Zippy' Fish is one of the most promising young talents in Australian Rules Football (AFLW)"
+        },
+        "groundingChunkIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 334,
+          "endIndex": 379,
+          "text": "5 pick in the 2024 Draft for the Sydney Swans"
+        },
+        "groundingChunkIndices": [
+          2,
+          1,
+          3
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 334,
+          "endIndex": 507,
+          "text": "5 pick in the 2024 Draft for the Sydney Swans, she enjoyed a stellar debut 2025 season where she won the Telstra AFLW Rising Star and the AFLPA Best First-Year Player awards"
+        },
+        "groundingChunkIndices": [
+          1,
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 509,
+          "endIndex": 662,
+          "text": "Her elite athletic standing is reinforced in the ongoing 2026 season, where she averages 24.8 disposals per game and represents Australia internationally"
+        },
+        "groundingChunkIndices": [
+          1,
+          5
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 664,
+          "endIndex": 750,
+          "text": "Culturally, she possesses a uniquely memorable name ('zippy by name, zippy by nature')"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 664,
+          "endIndex": 823,
+          "text": "Culturally, she possesses a uniquely memorable name ('zippy by name, zippy by nature') and a compelling narrative as a proud Noongar, Wongi, and Larrakia woman"
+        },
+        "groundingChunkIndices": [
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 825,
+          "endIndex": 921,
+          "text": "Commercially, she boasts a highly distinct identity, a custom licensed product line with Sherrin"
+        },
+        "groundingChunkIndices": [
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 825,
+          "endIndex": 950,
+          "text": "Commercially, she boasts a highly distinct identity, a custom licensed product line with Sherrin, and zero brand-safety risks"
+        },
+        "groundingChunkIndices": [
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 952,
+          "endIndex": 1110,
+          "text": "Her recent momentum is accelerating due to her stellar on-field performance and intense media speculation regarding her uncontracted status at the end of 2026"
+        },
+        "groundingChunkIndices": [
+          8
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1112,
+          "endIndex": 1330,
+          "text": "However, major missing information exists around her exact social media follower numbers and engagement metrics, which are not publicly reported, creating some commercial uncertainty regarding her direct audience scale"
+        },
+        "groundingChunkIndices": [
+          9,
+          10
+        ]
+      }
+    ],
+    "webSearchQueries": [
+      "\"Zippy Fish\" AFL",
+      "\"Zippy Fish\" AFLW",
+      "\"Zippy Fish\" Australian Rules Football",
+      "\"Zippy Fish\" sport",
+      "\"Zippy Fish\" instagram",
+      "\"Zippy Fish\" tiktok",
+      "\"Zippy Fish\" sponsor OR partnership OR commercial OR \"brand\" OR deal",
+      "\"Zippy Fish\" \"Telstra\" OR \"Nike\" OR \"Adidas\" OR \"Puma\"",
+      "\"Zippy Fish\" \"Sherrin\"",
+      "\"Zippy Fish\" \"Tagged\" \"Head and Shoulders\"",
+      "\"Zippy Fish\" \"Binar\"",
+      "\"Zippy Fish\" manager OR agency",
+      "\"zippy fish\" \"instagram\" OR \"followers\" OR \"tiktok\" OR \"social media\"",
+      "\"zipporah fish\" \"instagram\"",
+      "\"zippy fish\" \"followers\"",
+      " \"zippy fish\" OR \"zipporah fish\"",
+      " inurl:zipporah.fish OR inurl:zipporah_fish OR inurl:zippy_fish OR inurl:zippy.fish",
+      "\"zipporah.fish\" OR \"zipporah_fish\" OR \"zippy_fish\" OR \"zippy.fish\" instagram"
+    ],
+    "config": {
+      "tools": [
+        {
+          "googleSearch": {}
+        }
+      ],
+      "temperature": 1,
+      "maxOutputTokens": 65536,
+      "thinking": "default"
+    }
+  },
+  "error": null
+}

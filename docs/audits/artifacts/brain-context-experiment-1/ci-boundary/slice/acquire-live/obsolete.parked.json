@@ -1,0 +1,65 @@
+{
+ "request": {
+  "id": "req_b7b35676175152b3",
+  "key": "6fc6fcdffaf84351",
+  "need": "athlete_capability_intent",
+  "status": "acquiring"
+ },
+ "plan": {
+  "mechanism": "mila_question",
+  "chosenBecause": [
+   "need athlete_capability_intent can be established by mila_question",
+   "authority required: athlete",
+   "chosen mila_question: available, authority athlete ≥ athlete, lowest athlete burden among the available"
+  ],
+  "rejected": []
+ },
+ "run": {
+  "id": "ff9b2d16-f504-4d13-b1d2-b0b7e4b7c5ee",
+  "athlete_id": "dd1a8a80-d31b-423a-a572-9d146716cb0f",
+  "process": "intelligence_acquisition",
+  "definition_version": 1,
+  "active_scope": "intelligence_acquisition:req_b7b35676175152b3",
+  "status": "waiting",
+  "current_step": "ask",
+  "input": {
+   "why": "A partnership's deliverables must fit what she will actually post; only she can say what that is.",
+   "asks": "intelligence_request",
+   "need": "athlete_capability_intent",
+   "field": "cadence",
+   "question": "Could you add one Story a week for a partner?",
+   "request_id": "req_b7b35676175152b3"
+  },
+  "started_at": "2026-09-27T01:51:51.345Z",
+  "finished_at": null,
+  "last_error": null,
+  "created_by": "brain-acquisition-seam",
+  "idempotency_key": "intelligence_acquisition:req_b7b35676175152b3"
+ },
+ "step": {
+  "id": "c7a4afa6-76ce-433f-8c62-e746a737b591",
+  "run_id": "ff9b2d16-f504-4d13-b1d2-b0b7e4b7c5ee",
+  "step": "ask",
+  "ordinal": 0,
+  "attempt": 1,
+  "kind": "await_human",
+  "status": "waiting",
+  "ready_at": "2026-09-27T01:51:51.200Z",
+  "lease_until": null,
+  "input": {
+   "why": "A partnership's deliverables must fit what she will actually post; only she can say what that is.",
+   "asks": "intelligence_request",
+   "need": "athlete_capability_intent",
+   "field": "cadence",
+   "question": "Could you add one Story a week for a partner?",
+   "request_id": "req_b7b35676175152b3"
+  },
+  "output": null,
+  "mode": null,
+  "trace_id": null,
+  "error": null,
+  "started_at": null,
+  "finished_at": null,
+  "created_at": "2026-09-27T01:51:51.200Z"
+ }
+}

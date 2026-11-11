@@ -1,0 +1,404 @@
+{
+    "momentum": {
+        "stableBonus": 0,
+        "growingBonus": 5,
+        "decliningBonus": -3,
+        "stableThreshold": 0,
+        "growingThreshold": 5,
+        "acceleratingBonus": 8,
+        "decliningThreshold": -5,
+        "severeDecliningBonus": -6,
+        "acceleratingThreshold": 10
+    },
+    "dealDecay": {
+        "midFactor": 0.75,
+        "midMonths": 12,
+        "oldFactor": 0.5,
+        "oldMonths": 24,
+        "recentFactor": 1,
+        "recentMonths": 6,
+        "expiredFactor": 0.3
+    },
+    "authenticity": {
+        "penalty": 8,
+        "followerSpikeThreshold": 0.5,
+        "engagementDivergenceThreshold": -0.5
+    },
+    "brandCapital": {
+        "mediaAssets": {
+            "bothBonus": 10,
+            "imagesOnly": 5
+        },
+        "pressVolume": {
+            "maxScore": 30,
+            "ptsPerMention": 1.2,
+            "nationalOutlets": [
+                "ESPN",
+                "Sports Illustrated",
+                "The Athletic",
+                "USA Today",
+                "CBS Sports",
+                "NBC Sports",
+                "Fox Sports",
+                "Bleacher Report",
+                "SI.com"
+            ],
+            "nationalOutletBonus": 5
+        },
+        "geoDiversity": {
+            "maxBonus": 15,
+            "igNonUSBonus": 5,
+            "highValueMarkets": [
+                "GB",
+                "AU",
+                "CA",
+                "DE",
+                "FR",
+                "JP",
+                "BR",
+                "MX"
+            ],
+            "highValueMarketBonus": 5,
+            "tkNonUSDifferentBonus": 3,
+            "crossPlatformMarketBonus": 2
+        },
+        "storyArcBonus": 10,
+        "verifiedBonus": 15,
+        "trendsBaseline": {
+            "maxScore": 20
+        },
+        "categoryDiversity": {
+            "one": 5,
+            "two": 10,
+            "four": 20,
+            "three": 15,
+            "fiveOrMore": 25
+        },
+        "gdeltPressQuality": {
+            "tier0": {
+                "pts": 0
+            },
+            "tier1": {
+                "pts": 4,
+                "minArticles": 1
+            },
+            "tier2": {
+                "pts": 7,
+                "minArticles": 3
+            },
+            "tier3": {
+                "pts": 10,
+                "minArticles": 10
+            },
+            "tier4": {
+                "pts": 15,
+                "minArticles": 20
+            }
+        },
+        "affiliationPtsEach": 3,
+        "exclusivityPtsEach": 10,
+        "affiliationMaxScore": 15,
+        "exclusivityMaxScore": 20
+    },
+    "momentumDecay": {
+        "negativeHalfLifeDays": 30,
+        "positiveHalfLifeDays": 7
+    },
+    "capitalWeights": {
+        "brand": 0.25,
+        "athletic": 0.25,
+        "audience": 0.25,
+        "commercial": 0.25
+    },
+    "rateEstimation": {
+        "brackets": [
+            {
+                "lerpMax": 75000,
+                "lerpMin": 22500,
+                "minFollowers": 1000000
+            },
+            {
+                "lerpMax": 22500,
+                "lerpMin": 7500,
+                "minFollowers": 500000
+            },
+            {
+                "lerpMax": 7500,
+                "lerpMin": 1500,
+                "minFollowers": 100000
+            },
+            {
+                "lerpMax": 1500,
+                "lerpMin": 300,
+                "minFollowers": 10000
+            },
+            {
+                "lerpMax": 300,
+                "lerpMin": 30,
+                "minFollowers": 1000
+            }
+        ],
+        "engagementMultipliers": {
+            "midThreshold": 3,
+            "highThreshold": 5,
+            "midMultiplier": 1.15,
+            "highMultiplier": 1.3
+        }
+    },
+    "tierThresholds": {
+        "icon": 800,
+        "elite": 700,
+        "local": 200,
+        "rising": 400,
+        "established": 550
+    },
+    "athleticCapital": {
+        "achievements": {
+            "academic": {
+                "pts": 1,
+                "maxCount": 8
+            },
+            "national": {
+                "pts": 5,
+                "maxCount": 6
+            },
+            "conference": {
+                "pts": 3,
+                "maxCount": 8
+            }
+        },
+        "baselinePress": {
+            "tier0": {
+                "pts": 0
+            },
+            "tier1": {
+                "pts": 2,
+                "minArticles": 1
+            },
+            "tier2": {
+                "pts": 4,
+                "minArticles": 3
+            },
+            "tier3": {
+                "pts": 7,
+                "minArticles": 10
+            },
+            "tier4": {
+                "pts": 10,
+                "minArticles": 20
+            }
+        },
+        "competitionLevel": {
+            "d2": 12,
+            "pro": 25,
+            "youth": 3,
+            "d3naia": 8,
+            "d1Other": 20,
+            "olympic": 25,
+            "d1Power5": 25,
+            "highSchool": 5
+        },
+        "institutionalTier": {
+            "lower": 0,
+            "majorD1": 7,
+            "otherD1": 3,
+            "powerConf": 15
+        }
+    },
+    "audienceCapital": {
+        "logCurveCap": 100,
+        "frequencyBonus": {
+            "lowPts": 2,
+            "midPts": 5,
+            "highPts": 8,
+            "lowThreshold": 0.5,
+            "midThreshold": 2,
+            "highThreshold": 5
+        },
+        "logCurveMultiplier": 13,
+        "platformCountBonus": {
+            "twoOrMore": 2,
+            "threeOrMore": 4
+        }
+    },
+    "dealTypeWeights": {
+        "autograph": {
+            "brand": 0.2,
+            "athletic": 0.3,
+            "audience": 0.2,
+            "narrative": 0.25,
+            "commercial": 0.05,
+            "annualUnits": 8
+        },
+        "licensing": {
+            "brand": 0.15,
+            "athletic": 0.2,
+            "audience": 0.3,
+            "narrative": 0.25,
+            "commercial": 0.1,
+            "annualUnits": 1
+        },
+        "ambassador": {
+            "brand": 0.3,
+            "athletic": 0.05,
+            "audience": 0.2,
+            "narrative": 0.3,
+            "commercial": 0.15,
+            "annualUnits": 18
+        },
+        "appearance": {
+            "brand": 0.2,
+            "athletic": 0.3,
+            "audience": 0.15,
+            "narrative": 0.3,
+            "commercial": 0.05,
+            "annualUnits": 12
+        },
+        "socialPost": {
+            "brand": 0.15,
+            "athletic": 0.1,
+            "audience": 0.5,
+            "narrative": 0.15,
+            "commercial": 0.1,
+            "annualUnits": 20
+        }
+    },
+    "engagementTiers": {
+        "mid": {
+            "expectedMax": 4,
+            "minFollowers": 100000,
+            "flagThreshold": 10
+        },
+        "mega": {
+            "expectedMax": 1.5,
+            "minFollowers": 10000000,
+            "flagThreshold": 3.75
+        },
+        "nano": {
+            "expectedMax": 15,
+            "flagThreshold": 37.5
+        },
+        "macro": {
+            "expectedMax": 2,
+            "minFollowers": 500000,
+            "flagThreshold": 5
+        },
+        "micro": {
+            "expectedMax": 8,
+            "minFollowers": 10000,
+            "flagThreshold": 20
+        },
+        "celebrity": {
+            "expectedMax": 6,
+            "minFollowers": 50000000,
+            "flagThreshold": 15
+        }
+    },
+    "coldStartWeights": {
+        "socialOnly": {
+            "brand": 0.1,
+            "athletic": 0.1,
+            "audience": 0.45,
+            "commercial": 0.35
+        },
+        "researchOnly": {
+            "brand": 0.4,
+            "athletic": 0.4,
+            "audience": 0.05,
+            "commercial": 0.15
+        },
+        "socialAndResearch": {
+            "brand": 0.25,
+            "athletic": 0.25,
+            "audience": 0.3,
+            "commercial": 0.2
+        }
+    },
+    "displayTransform": {
+        "segment1MaxDisplay": 710,
+        "segment1MinDisplay": 200,
+        "segment2MaxDisplay": 850,
+        "segment1InternalBreak": 80
+    },
+    "commercialCapital": {
+        "dealValueTiers": {
+            "anyPts": 10,
+            "lowPts": 20,
+            "midPts": 30,
+            "highPts": 40,
+            "lowThreshold": 1000,
+            "midThreshold": 5000,
+            "highThreshold": 10000
+        },
+        "dealCountMaxScore": 40,
+        "paidRatioBonusCap": 10,
+        "dealCountPtsPerDeal": 10,
+        "engagementValueBoost": {
+            "cap": 50,
+            "threshold": 3,
+            "multiplier": 1.3
+        }
+    },
+    "performanceCapital": {
+        "crossPlatform": {
+            "consistentBonus": 10,
+            "divergentPenalty": -5,
+            "divergentRatioThreshold": 1.5,
+            "consistentRatioThreshold": 1.3
+        },
+        "audienceGrowth": {
+            "flatBonus": 0,
+            "growingBonus": 12,
+            "flatThreshold": -0.02,
+            "decliningBonus": -8,
+            "growingThreshold": 0.02
+        },
+        "audienceQuality": {
+            "normalPts": 20,
+            "elevatedPts": 10,
+            "anomalousPts": 0,
+            "noDataBaseline": 8,
+            "normalRatioThreshold": 1.5,
+            "elevatedRatioThreshold": 2.5
+        },
+        "contentConsistency": {
+            "lowCVPts": 20,
+            "midCVPts": 13,
+            "highCVPts": 6,
+            "veryHighCVPts": 0,
+            "lowCVThreshold": 0.1,
+            "midCVThreshold": 0.25,
+            "sparseBaseline": 10,
+            "highCVThreshold": 0.4
+        },
+        "engagementStability": {
+            "lowCVPts": 15,
+            "midCVPts": 10,
+            "highCVPts": 5,
+            "veryHighCVPts": 0,
+            "lowCVThreshold": 0.1,
+            "midCVThreshold": 0.2,
+            "sparseBaseline": 8,
+            "highCVThreshold": 0.35
+        },
+        "tierRelativeEngagement": {
+            "lowBonus": 2,
+            "midBonus": 5,
+            "fullBonus": 15,
+            "highBonus": 10
+        }
+    },
+    "brandSafetyMultiplier": {
+        "mild": 0.95,
+        "clean": 1,
+        "severe": 0.85,
+        "moderate": 0.9,
+        "mildToneThreshold": 0,
+        "severeToneThreshold": -5,
+        "moderateToneThreshold": -2
+    },
+    "platformEngagementWeights": {
+        "tiktok": 0.75,
+        "instagram": 1
+    }
+}

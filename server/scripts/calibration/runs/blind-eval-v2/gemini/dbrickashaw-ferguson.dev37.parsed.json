@@ -1,0 +1,720 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "dbrickashaw-ferguson",
+    "name": "D'Brickashaw Ferguson",
+    "sport": "Football"
+  },
+  "parseError": null,
+  "dimensionAssessments": {
+    "athletic_authority": {
+      "prose": "Ferguson is an established, retired NFL giant whose athletic authority rests on an outstanding 10-year career with the New York Jets and a three-time Pro Bowl selection. His durability is legendary, holding an iconic near-perfect record of starting all 160 games and playing over 99.9% of all offensive snaps. Although he has been retired since 2016, his legacy within the franchise and college sports remains incredibly strong.",
+      "confidence": "HIGH",
+      "confidenceReason": "The historical record of his college and NFL career is comprehensive, fully documented, and unquestioned."
+    },
+    "audience_scale": {
+      "prose": "Ferguson does not actively maintain personal public social media accounts. Outside of legacy mentions and his inactive Twitter handle, he has no measurable digital-first audience across modern platforms like Instagram or TikTok. Consequently, his direct reach and relative audience percentile among NFL athletes remain extremely low.",
+      "confidence": "HIGH",
+      "confidenceReason": "Public directories and athletic databases confirm the absolute lack of active personal social media profiles."
+    },
+    "engagement_quality": {
+      "prose": "Due to his complete absence from active public social media platforms, no empirical engagement data is available for evaluation. We cannot analyze follower interactions, video completion rates, or private distribution efficiency. Any potential engagement is confined to localized community foundation events and offline interactions.",
+      "confidence": "LOW",
+      "confidenceReason": "The absence of active personal social profiles makes it impossible to gather empirical engagement metrics."
+    },
+    "cultural_relevance": {
+      "prose": "Ferguson maintains a highly distinctive position in culture, primarily sustained by his memorable name which inspired Keegan-Michael Key and Jordan Peele's legendary 'East-West Bowl' comedy sketch. His transition into healthcare has also generated prestigious national coverage, showcasing his broad appeal. Despite being retired, he is organically discussed as an exemplary model for career transitions, giving him strong cross-cultural recognition.",
+      "confidence": "HIGH",
+      "confidenceReason": "His cultural relevance is well-supported by mainstream press features, viral comedic legacy, and active public forum discussions."
+    },
+    "narrative_power": {
+      "prose": "His story is incredibly compelling, combining a childhood survival of open-heart surgery with an elite NFL career, followed by a humble and authentic transition into a professional nursing career. This trajectory is deeply personal, inspired by his mother and grandmother who were also nurses, and reflects a genuine desire to serve rather than pursue celebrity. It is a highly durable and unique narrative that resonates deeply across both sports and civilian audiences.",
+      "confidence": "HIGH",
+      "confidenceReason": "The narrative elements are thoroughly documented through personal interviews, institutional press releases, and reputable media profiles."
+    },
+    "brand_fit": {
+      "prose": "Ferguson possesses an outstanding and highly secure brand profile with virtually zero reputation risks, backed by a prestigious nursing degree and a clean professional history. He is a natural fit for healthcare, wellness, insurance, and long-term financial planning categories. Although his lack of active social channels limits digital-first campaign options, his values of humility, dedication, and service align perfectly with high-integrity brands.",
+      "confidence": "HIGH",
+      "confidenceReason": "His clear personal values, professional nursing credentials, and clean legal/personal record provide an indisputable foundation for brand safety."
+    },
+    "commercial_proof": {
+      "prose": "While Ferguson earned over $72 million during his NFL career and runs a philanthropic foundation, there is no public evidence of active, paid corporate endorsements as of 2026. He previously participated in regional community health campaigns, but his current commercial economics are entirely undocumented. Consequently, his marketability lacks modern commercial proof.",
+      "confidence": "LOW",
+      "confidenceReason": "A complete lack of public records regarding current paid brand deals prevents a confident assessment of commercial proof."
+    },
+    "momentum": {
+      "prose": "His athletic trajectory is completely flat as a retired player, and his commercial acceleration is undocumented. However, his media and search trajectory remain stable, experiencing a notable temporary elevation around his nursing graduation in late 2025. He is not currently on an upward viral trajectory, but rather maintains a steady, positive public presence.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "While his career changes and graduation are well-documented, his current day-to-day public attention lacks high-frequency tracking."
+    }
+  },
+  "overallConfidence": {
+    "level": "MEDIUM",
+    "explanation": "While Ferguson's athletic legacy, brand safety, and unique nursing narrative are highly documented and stable, his complete lack of active personal social media platforms and public commercial contracts creates significant uncertainty regarding his current commercial demand. Better information regarding private endorsement negotiations, active speaking engagement data, or future media plans would be necessary to elevate confidence to High."
+  },
+  "identityConfidence": "HIGH",
+  "summary": "D'Brickashaw Ferguson is a former elite NFL offensive tackle who retired in 2016 after a highly decorated 10-year career with the New York Jets, highlighted by a legendary durability streak of 10,707 snaps. Though his athletic standing is in a retired, legacy state, his narrative has evolved uniquely into a powerful story of personal reinvention. In 2025, he graduated with a nursing degree from Thomas Jefferson University and began working as an inpatient registered nurse (RN) at RWJBarnabas Health. This transition, rooted in his childhood heart surgery and a desire to serve the community, gives him immense narrative power and exceptional brand safety. However, Ferguson lacks any active public social media presence, meaning his direct audience scale and engagement metrics are virtually non-existent. Culturally, he maintains permanent long-tail recognition due to the famous Key & Peele comedy sketch inspired by his name and legacy NFL media features. Commercially, he represents an exceptionally authentic potential partner for healthcare, pharmaceutical, medical apparel, and financial sectors, but lacks current active corporate deals. His momentum is stable as his media attention has returned to a moderate baseline post-graduation. The major uncertainty lies in his willingness to pursue commercial partnerships, as well as the exact metrics of his offline and private audience appeal.",
+  "summaryWords": 208,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Ferguson played 10 seasons with the New York Jets, started all 160 games, and played 10,707 out of 10,708 offensive snaps.",
+      "sourceTitle": "D'Brickashaw Ferguson - Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/D%27Brickashaw_Ferguson",
+      "sourceType": "secondary",
+      "date": "2026-02-18"
+    },
+    {
+      "id": "E2",
+      "claim": "Ferguson was a 3-time Pro Bowl selection, a college first-team All-American, and has his collegiate jersey retired at UVA.",
+      "sourceTitle": "D'Brickashaw Ferguson - Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/D%27Brickashaw_Ferguson",
+      "sourceType": "secondary",
+      "date": "2026-02-18"
+    },
+    {
+      "id": "E3",
+      "claim": "Ferguson was inducted into the New York Jets Ring of Honor in 2022.",
+      "sourceTitle": "The Story of D'Brickashaw Ferguson",
+      "sourceUrl": "https://www.newyorkjets.com/video/the-story-of-d-brickashaw-ferguson",
+      "sourceType": "official",
+      "date": "2022-06-02"
+    },
+    {
+      "id": "E4",
+      "claim": "The On3 recruiting database indicates Ferguson does not maintain active public social media handles.",
+      "sourceTitle": "D'Brickashaw Ferguson - New York Jets - Offensive Tackle",
+      "sourceUrl": "https://www.on3.com/db/dbrickashaw-ferguson-110091/",
+      "sourceType": "secondary",
+      "date": "2026-02-18"
+    },
+    {
+      "id": "E5",
+      "claim": "Pro Football Reference notes Ferguson's legacy Twitter handle @DBrickashaw, which has been inactive for several years.",
+      "sourceTitle": "Football Player Twitter Accounts",
+      "sourceUrl": "https://www.pro-football-reference.com/friv/twitter.htm",
+      "sourceType": "secondary",
+      "date": "2026-02-18"
+    },
+    {
+      "id": "E6",
+      "claim": "Ferguson graduated from Thomas Jefferson University's nursing program in May 2025 and passed the NCLEX.",
+      "sourceTitle": "Nurse D'Brickashaw: How a UVA football giant is conquering his next act",
+      "sourceUrl": "https://news.virginia.edu/content/nurse-dbrickashaw-how-uva-football-giant-conquering-his-next-act",
+      "sourceType": "official",
+      "date": "2025-07-17"
+    },
+    {
+      "id": "E7",
+      "claim": "Ferguson currently works as an inpatient registered nurse at RWJBarnabas Health in New Jersey, following a family legacy of nursing.",
+      "sourceTitle": "NFL Alums Pivot to Nursing Careers",
+      "sourceUrl": "https://www.blackenterprise.com/nfl-alums-pivot-nursing-careers/",
+      "sourceType": "major_media",
+      "date": "2025-10-22"
+    },
+    {
+      "id": "E8",
+      "claim": "The Philadelphia Inquirer highlighted Ferguson's transition to nursing at age 41.",
+      "sourceTitle": "Former Jets star D'Brickashaw Ferguson earns nursing degree from Jefferson",
+      "sourceUrl": "https://www.inquirer.com/news/dbrickashaw-ferguson-jets-nursing-degree-jefferson-20250605.html",
+      "sourceType": "major_media",
+      "date": "2025-06-05"
+    },
+    {
+      "id": "E9",
+      "claim": "Comedian Keegan-Michael Key revealed that Jordan Peele based the famous 'East-West Bowl' comedy sketch on Ferguson's unique name.",
+      "sourceTitle": "Watch: How D'Brickashaw Ferguson inspired Key & Peele's East-West Bowl",
+      "sourceUrl": "https://www.thescore.com/nfl/news/1346369",
+      "sourceType": "major_media",
+      "date": "2017-08-10"
+    },
+    {
+      "id": "E10",
+      "claim": "Public threads on platforms like Reddit discuss and celebrate Ferguson's nursing transition with immense warmth and high engagement.",
+      "sourceTitle": "Reddit: D'Brickashaw Ferguson, RN",
+      "sourceUrl": "https://www.reddit.com/r/nursing/comments/14re2y3/dbrickashaw_ferguson_rn/",
+      "sourceType": "secondary",
+      "date": "2025-07-23"
+    },
+    {
+      "id": "E11",
+      "claim": "Springer Publishing detailed how his childhood heart surgery and discipline helped him excel in clinical ICU environments.",
+      "sourceTitle": "Nurse of the Week: D'Brickashaw Ferguson",
+      "sourceUrl": "https://www.springerpub.com/blog/nurse-of-the-week-dbrickashaw-ferguson/",
+      "sourceType": "secondary",
+      "date": "2025-11-25"
+    },
+    {
+      "id": "E12",
+      "claim": "Ferguson's name and legacy recognition are deeply integrated into mainstream football and internet culture.",
+      "sourceTitle": "Wikipedia: Personal Life - D'Brickashaw Ferguson",
+      "sourceUrl": "https://en.wikipedia.org/wiki/D%27Brickashaw_Ferguson",
+      "sourceType": "secondary",
+      "date": "2026-02-18"
+    },
+    {
+      "id": "E13",
+      "claim": "He discussed his life journey, childhood heart surgery, and nursing school on the official 'NFL Players: Second Acts' podcast.",
+      "sourceTitle": "NFL Players: Second Acts Ep 28 - D'Brickashaw Ferguson",
+      "sourceUrl": "https://podcasts.apple.com/us/podcast/ep-28-the-gentle-giant-dbrickashaw-ferguson/id1653894723?i=1000614442813",
+      "sourceType": "official",
+      "date": "2023-05-25"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Played 10 seasons in the NFL, which is the absolute highest global professional level for American football.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "A highly distinguished starter with three Pro Bowl selections and a near-perfect snaps-played record.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "Inducted into the New York Jets Ring of Honor, named a collegiate All-American, and has his jersey retired at UVA.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Represented the AFC in three Pro Bowls, achieving elite standing in a premier national league.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3"
+      ],
+      "rationale": "Anchored the New York Jets' offensive line as the starting left tackle, the team's vital blind-side protector, for a decade.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 20,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Retired from active professional competition in 2016, placing his on-field achievements over a decade in the past.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 5,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "He does not maintain any active, public personal social media channels, resulting in a virtually non-existent digital reach.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 10,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Positioned in the bottom percentile compared to active NFL players or media-active retirees due to the lack of personal profiles.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No longitudinal data exists to evaluate audience growth since his platforms are inactive or non-existent.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 5,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Lacks active public accounts across all major mainstream platforms (Instagram, X, TikTok, YouTube).",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Unable to calculate engagement percentile due to a complete lack of active personal social postings.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Reach efficiency cannot be measured without an active public content feed.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "High-value metrics like shares and saves are unavailable due to non-existent active accounts.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No self-produced video content is published to analyze watch-time retention metrics.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Story performance data is entirely unavailable as he does not maintain active profiles.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Genuine audience composition cannot be assessed without an active social follower database.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 55,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7",
+        "E8"
+      ],
+      "rationale": "Receives steady, moderate feature coverage surrounding his post-NFL nursing transition, though daily volume is naturally lower as a retiree.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7"
+      ],
+      "rationale": "Covered by highly reputable, national news organizations such as The New York Times, The Philadelphia Inquirer, and major university journals.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 60,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E8",
+        "E9"
+      ],
+      "rationale": "Experiences stable, long-tail search interest driven by his unique name, Key & Peele connections, and recent nursing career spikes.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 65,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E10",
+        "E11"
+      ],
+      "rationale": "Generates warm and highly positive organic discussions on platforms like Reddit regarding his humble transition and athletic durability.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E9",
+        "E12"
+      ],
+      "rationale": "Recognized widely outside of sports due to the iconic Key & Peele comedy sketch based entirely on his unique name.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E9",
+        "E12"
+      ],
+      "rationale": "An exceptionally differentiated story combining an iconic name-driven pop-culture hook with a rare transition from an elite NFL star to a nurse.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7",
+        "E13"
+      ],
+      "rationale": "Multidimensional narrative involving a childhood open-heart surgery, a ten-year NFL career, and following a family legacy of medical service.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7",
+        "E13"
+      ],
+      "rationale": "Perfect authenticity: he completed prerequisites, completed an intensive BSN program, passed the NCLEX, and actively works in a hospital.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7",
+        "E8"
+      ],
+      "rationale": "Media coverage routinely amplifies and praises his self-reinvention, aligning with the narrative of service and humility.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7"
+      ],
+      "rationale": "His journey naturally fits campaigns for healthcare, pharmaceuticals, medical apparel (scrubs), insurance, and second-act financial planning.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E6",
+        "E7"
+      ],
+      "rationale": "Both his professional nursing career and his permanent NFL ironman status represent long-term, highly durable narrative pillars.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7",
+        "E13"
+      ],
+      "rationale": "Naturally fits multiple fields, including health/wellness, pharmaceuticals, medical apparel, insurance, and long-term financial planning.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E6",
+        "E7"
+      ],
+      "rationale": "Exemplary personal record with zero controversies and a professional dedication to public health and patient care.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 70,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6",
+        "E10"
+      ],
+      "rationale": "Attracts a mature, high-value demographic consisting of NFL fans, healthcare workers, and individuals interested in career reinvention.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7"
+      ],
+      "rationale": "His public persona consistently centers on humility, work ethic, and community service, which are fully integrated in his actions.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 60,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E13"
+      ],
+      "rationale": "Articulate and charismatic in interviews, but constrained by the lack of active personal social channels to self-produce content.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7"
+      ],
+      "rationale": "Strongly rooted in the high-wealth New York/New Jersey and Philadelphia metropolitan markets.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No public evidence of active corporate endorsements or commercial contract values is available.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No active paid brand partnerships are documented to determine commercial deal frequency.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No current brand alignments are available for strategic quality assessment.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Unable to assess renewal history as he does not maintain active commercial partnerships.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Recent marketing and commercial campaign performance data does not exist.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "His current economic valuation and commercial command pricing are undocumented.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 10,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "His athletic trajectory is entirely flat and legacy-oriented as a long-retired NFL player.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Growth metrics cannot be assessed due to the complete absence of active personal social platforms.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 40,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6",
+        "E7"
+      ],
+      "rationale": "His media visibility has stabilized back to a baseline level following a temporary spike during his 2025 nursing graduation.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 40,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E8",
+        "E9"
+      ],
+      "rationale": "Public search and interest are steady but flat, primarily driven by legacy associations.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No active commercial expansion or incoming campaign deals are documented.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Incredibly unique and inspiring narrative of transitioning from an elite $72M NFL career to a registered nurse following a family legacy of service.",
+    "Exceptional brand safety profile with zero controversies, active community philanthropy, and a professional nursing career.",
+    "Legendary NFL durability legacy (played 10,707 out of 10,708 snaps) and New York Jets Ring of Honor status.",
+    "Broad pop-culture crossover recognition due to his memorable name and the iconic Key & Peele 'East-West Bowl' sketch."
+  ],
+  "keyConstraints": [
+    "Complete lack of active personal public social media channels, limiting digital reach and direct campaign distribution.",
+    "Retired status (since 2016) means athletic authority and daily sports-media coverage are in a legacy state.",
+    "Lack of documented active commercial deals restricts immediate proof of current market pricing or corporate demand."
+  ],
+  "importantMissingData": [
+    "Active public social media metrics (followers, engagement rates, video completion) due to nonexistent profiles.",
+    "Current commercial pricing power, brand endorsement valuations, and corporate campaign performance data."
+  ],
+  "identityOrEvidenceRisks": [
+    "No major risks of identity confusion given the highly unique name 'D'Brickashaw Ferguson' and clear historical records, though his transition to nursing might surprise some legacy sports fans."
+  ],
+  "socialBlockSupplied": false
+}

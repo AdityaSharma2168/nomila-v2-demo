@@ -1,0 +1,2120 @@
+{
+ "state": {
+  "athleteId": "77bbebfe-697f-4eb1-bcdf-5fb97f74cb0c",
+  "asOf": "2026-09-25T17:53:34.146Z",
+  "version": "athlete-state/1.2.0",
+  "identity": {
+   "name": "Ilona Maher",
+   "sport": "rugby",
+   "competitionContext": null,
+   "careerStatus": "active"
+  },
+  "findings": [
+   {
+    "key": "mia.athletic_authority",
+    "direction": "strength",
+    "rationale": {
+     "value": "Maher possesses premier international athletic credentials as a two-time Olympian and historic 2024 Olympic bronze medalist. Her brief transition to XVs rugby saw her debut with the English Premiership's Bristol Bears and represent the US in the 2025 World Cup. Although she is currently taking a competitive sabbatical, her elite sporting standing remains completely legitimate and is anchored by a planned return for the LA 2028 cycle.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:51:57.666Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E3",
+      "E5"
+     ],
+     "rationale": "Her international match history, Olympic results, and career transitions are fully documented by official federation and news sources.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her international match history, Olympic results, and career transitions are fully documented by official federation and news sources.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Ilona Maher is a two-time Olympian who won a historic Bronze Medal with the US Women's National Rugby Sevens team at the 2024 Paris Olympics.",
+      "sourceUrl": "https://www.teamusa.com/profiles/ilona-maher",
+      "observedAt": "2026-02-24",
+      "sourceType": "official",
+      "sourceTitle": "Ilona Maher - Team USA Profile"
+     },
+     {
+      "id": "E2",
+      "claim": "Maher played for the Bristol Bears in England's Premiership Women's Rugby (PWR) on a short-term contract starting in January 2025, generating massive ticket-demand surges that forced the game to Ashton Gate in front of a club record crowd of 9,240.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ilona_Maher",
+      "observedAt": "2026-07-29",
+      "sourceType": "secondary",
+      "sourceTitle": "Ilona Maher Wikipedia Profile"
+     },
+     {
+      "id": "E3",
+      "claim": "Maher has been taking a competitive break since late 2025, but confirmed in July 2026 her desire to return to the US Rugby Sevens program for the 2026–2027 season and target the 2028 Los Angeles Olympics.",
+      "sourceUrl": "https://www.ruck.co.uk/ilona-maher-eager-to-get-back-on-the-pitch/",
+      "observedAt": "2026-07-28",
+      "sourceType": "major_media",
+      "sourceTitle": "Ilona Maher eager to get back on the pitch"
+     },
+     {
+      "id": "E5",
+      "claim": "Maher won the 2025 ESPY for Best Breakthrough Athlete, finished as runner-up on Season 33 of ABC's Dancing with the Stars, and was named one of USA Today's Women of the Year.",
+      "sourceUrl": "https://www.si.com/swimsuit/ilona-maher-guide-rugby-family-achievements",
+      "observedAt": "2026-07-29",
+      "sourceType": "major_media",
+      "sourceTitle": "From face of USA rugby to winning bronze: everything to know about Ilona Maher"
+     }
+    ],
+    "components": [
+     {
+      "key": "athletic_authority.role_importance",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "value": 75,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 91.5,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:51:57.666Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.role_importance",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.competition_level",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.achievement_recency",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.performance_results",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.rankings_recognition",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.national_international_status"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.role_importance",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.competition_level",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.achievement_recency",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.performance_results",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.rankings_recognition",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.national_international_status",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.audience_scale",
+    "direction": "strength",
+    "rationale": {
+     "value": "With over 9.2 million combined followers across Instagram and TikTok, Maher boasts an audience that dwarfs typical rugby players and rivals top-tier global athletes. She possesses the single largest social media presence in the sport of rugby. Her digital footprint also includes a highly engaged podcast, 'House of Maher,' making her reach both expansive and diversified.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:51:57.666Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E4",
+      "E9"
+     ],
+     "rationale": "Publicly observable follower counts across platforms and verified podcast chart data provide clear, unequivocal scale metrics.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Publicly observable follower counts across platforms and verified podcast chart data provide clear, unequivocal scale metrics.",
+    "citedEvidence": [
+     {
+      "id": "E4",
+      "claim": "Maher boasts approximately 5.64 million Instagram followers as of September 2026 and over 3.6 million TikTok followers, totaling over 9.2 million combined.",
+      "sourceUrl": "https://hypeauditor.com/instagram/ilonamaher/",
+      "observedAt": "2026-09-01",
+      "sourceType": "secondary",
+      "sourceTitle": "Ilona Maher (@ilonamaher) Instagram Influencer Report"
+     },
+     {
+      "id": "E9",
+      "claim": "Maher co-hosts the weekly podcast 'House of Maher' with her sisters, which holds a 4.9 rating on Apple Podcasts and is presented by Samsung Galaxy.",
+      "sourceUrl": "https://podcasts.apple.com/us/podcast/house-of-maher/id1802929394",
+      "observedAt": "2026-09-15",
+      "sourceType": "official",
+      "sourceTitle": "House of Maher on Apple Podcasts"
+     }
+    ],
+    "components": [
+     {
+      "key": "audience_scale.audience_growth",
+      "value": 82,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "value": 88,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "value": 92,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 92.1,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:51:57.666Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.audience_growth",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.platform_breadth",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.cross_platform_effective_reach",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.sport_level_audience_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 4
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.audience_growth",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.platform_breadth",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.engagement_quality",
+    "direction": "unknown",
+    "rationale": {
+     "value": "Maher's audience is exceptionally active, frequently driving her self-produced reels and TikToks into multi-million view viral loops. Her brand of unvarnished honesty fosters deep, organic community trust, yielding high comment-to-follower ratios. Because her growth is self-generated rather than driven by artificial campaigns, her audience authenticity is superb.",
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-09-13T22:51:57.666Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E4",
+      "E5",
+      "E9"
+     ],
+     "rationale": "Public-facing metrics like views and comments are highly visible, but specific private engagement data like shares, saves, and retention rates remain unobserved.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Public-facing metrics like views and comments are highly visible, but specific private engagement data like shares, saves, and retention rates remain unobserved.",
+    "citedEvidence": [
+     {
+      "id": "E4",
+      "claim": "Maher boasts approximately 5.64 million Instagram followers as of September 2026 and over 3.6 million TikTok followers, totaling over 9.2 million combined.",
+      "sourceUrl": "https://hypeauditor.com/instagram/ilonamaher/",
+      "observedAt": "2026-09-01",
+      "sourceType": "secondary",
+      "sourceTitle": "Ilona Maher (@ilonamaher) Instagram Influencer Report"
+     },
+     {
+      "id": "E5",
+      "claim": "Maher won the 2025 ESPY for Best Breakthrough Athlete, finished as runner-up on Season 33 of ABC's Dancing with the Stars, and was named one of USA Today's Women of the Year.",
+      "sourceUrl": "https://www.si.com/swimsuit/ilona-maher-guide-rugby-family-achievements",
+      "observedAt": "2026-07-29",
+      "sourceType": "major_media",
+      "sourceTitle": "From face of USA rugby to winning bronze: everything to know about Ilona Maher"
+     },
+     {
+      "id": "E9",
+      "claim": "Maher co-hosts the weekly podcast 'House of Maher' with her sisters, which holds a 4.9 rating on Apple Podcasts and is presented by Samsung Galaxy.",
+      "sourceUrl": "https://podcasts.apple.com/us/podcast/house-of-maher/id1802929394",
+      "observedAt": "2026-09-15",
+      "sourceType": "official",
+      "sourceTitle": "House of Maher on Apple Podcasts"
+     }
+    ],
+    "components": [
+     {
+      "key": "engagement_quality.video_retention",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "value": 88,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "value": 88,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 86.62,
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-09-13T22:51:57.666Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#engagement_quality.video_retention",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#engagement_quality.reach_efficiency",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#engagement_quality.story_efficiency",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#engagement_quality.shares_saves_quality",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#engagement_quality.audience_authenticity",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#engagement_quality.engagement_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 3,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#engagement_quality.video_retention",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#engagement_quality.reach_efficiency",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#engagement_quality.story_efficiency",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#engagement_quality.shares_saves_quality",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#engagement_quality.audience_authenticity",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#engagement_quality.engagement_percentile",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.cultural_relevance",
+    "direction": "strength",
+    "rationale": {
+     "value": "Maher has achieved rare crossover fame, transcending rugby to become a household pop culture name in the United States. Her mainstream visibility is sustained by major milestones, including a runner-up finish on Dancing with the Stars and a Sports Illustrated Swimsuit cover. She serves as a cultural lightning rod for conversations around body positivity, beauty, and female strength.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:51:57.666Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E4",
+      "E5",
+      "E6"
+     ],
+     "rationale": "Her extensive mainstream media coverage, television appearances, and prestigious awards (like the 2025 ESPY) are heavily documented.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her extensive mainstream media coverage, television appearances, and prestigious awards (like the 2025 ESPY) are heavily documented.",
+    "citedEvidence": [
+     {
+      "id": "E4",
+      "claim": "Maher boasts approximately 5.64 million Instagram followers as of September 2026 and over 3.6 million TikTok followers, totaling over 9.2 million combined.",
+      "sourceUrl": "https://hypeauditor.com/instagram/ilonamaher/",
+      "observedAt": "2026-09-01",
+      "sourceType": "secondary",
+      "sourceTitle": "Ilona Maher (@ilonamaher) Instagram Influencer Report"
+     },
+     {
+      "id": "E5",
+      "claim": "Maher won the 2025 ESPY for Best Breakthrough Athlete, finished as runner-up on Season 33 of ABC's Dancing with the Stars, and was named one of USA Today's Women of the Year.",
+      "sourceUrl": "https://www.si.com/swimsuit/ilona-maher-guide-rugby-family-achievements",
+      "observedAt": "2026-07-29",
+      "sourceType": "major_media",
+      "sourceTitle": "From face of USA rugby to winning bronze: everything to know about Ilona Maher"
+     },
+     {
+      "id": "E6",
+      "claim": "Maher is developing and producing a self-titled docuseries following her life both on and off the rugby pitch with Reese Witherspoon's production company Hello Sunshine.",
+      "sourceUrl": "https://justwomenssports.com/reads/ilona-maher-hello-sunshine-docuseries-usa-rugby-news/",
+      "observedAt": "2025-06-17",
+      "sourceType": "secondary",
+      "sourceTitle": "New Docuseries Spotlights USA Rugby Star Ilona Maher"
+     }
+    ],
+    "components": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "value": 96,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 93,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:51:57.666Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.search_interest",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.social_conversation",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.media_source_quality",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.crossover_recognition",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.media_volume_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.search_interest",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.social_conversation",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.media_source_quality",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.crossover_recognition",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.media_volume_percentile",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.narrative_power",
+    "direction": "strength",
+    "rationale": {
+     "value": "Her story is incredibly distinctive, memorable, and rooted in the slogan '#BeastBeautyBrains.' By showing that female athletes do not have to sacrifice femininity to excel in a physical contact sport, she has built a powerful, durable narrative. Media outlets actively amplify this perspective, and she has proven it commercially viable through her own cosmetics co-founding and brand campaigns.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:51:57.666Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+     ],
+     "rationale": "The narrative is highly coherent and consistently echoed across years of interviews, media features, and her personal content.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "The narrative is highly coherent and consistently echoed across years of interviews, media features, and her personal content.",
+    "citedEvidence": [
+     {
+      "id": "E3",
+      "claim": "Maher has been taking a competitive break since late 2025, but confirmed in July 2026 her desire to return to the US Rugby Sevens program for the 2026–2027 season and target the 2028 Los Angeles Olympics.",
+      "sourceUrl": "https://www.ruck.co.uk/ilona-maher-eager-to-get-back-on-the-pitch/",
+      "observedAt": "2026-07-28",
+      "sourceType": "major_media",
+      "sourceTitle": "Ilona Maher eager to get back on the pitch"
+     },
+     {
+      "id": "E4",
+      "claim": "Maher boasts approximately 5.64 million Instagram followers as of September 2026 and over 3.6 million TikTok followers, totaling over 9.2 million combined.",
+      "sourceUrl": "https://hypeauditor.com/instagram/ilonamaher/",
+      "observedAt": "2026-09-01",
+      "sourceType": "secondary",
+      "sourceTitle": "Ilona Maher (@ilonamaher) Instagram Influencer Report"
+     },
+     {
+      "id": "E5",
+      "claim": "Maher won the 2025 ESPY for Best Breakthrough Athlete, finished as runner-up on Season 33 of ABC's Dancing with the Stars, and was named one of USA Today's Women of the Year.",
+      "sourceUrl": "https://www.si.com/swimsuit/ilona-maher-guide-rugby-family-achievements",
+      "observedAt": "2026-07-29",
+      "sourceType": "major_media",
+      "sourceTitle": "From face of USA rugby to winning bronze: everything to know about Ilona Maher"
+     },
+     {
+      "id": "E6",
+      "claim": "Maher is developing and producing a self-titled docuseries following her life both on and off the rugby pitch with Reese Witherspoon's production company Hello Sunshine.",
+      "sourceUrl": "https://justwomenssports.com/reads/ilona-maher-hello-sunshine-docuseries-usa-rugby-news/",
+      "observedAt": "2025-06-17",
+      "sourceType": "secondary",
+      "sourceTitle": "New Docuseries Spotlights USA Rugby Star Ilona Maher"
+     },
+     {
+      "id": "E7",
+      "claim": "Maher became the first-ever brand ambassador for Unilever-owned Paula's Choice in late 2024 and signed a multi-year partnership with Adidas in March 2025.",
+      "sourceUrl": "https://www.sportspromedia.com/news/ilona-maher-paulas-choice-endorsement-deal/",
+      "observedAt": "2025-01-02",
+      "sourceType": "major_media",
+      "sourceTitle": "Ilona Maher scores Paula's Choice endorsement deal"
+     },
+     {
+      "id": "E8",
+      "claim": "Maher co-founded Medalist Skin, an active skincare brand designed specifically for the unique dermatological needs of female athletes.",
+      "sourceUrl": "https://www.thegistsports.com/article/gold-in-a-bottle-medalist-skincare/",
+      "observedAt": "2024-07-01",
+      "sourceType": "secondary",
+      "sourceTitle": "U.S. Olympic rugby star Ilona Maher launches Medalist skincare"
+     }
+    ],
+    "components": [
+     {
+      "key": "narrative_power.durability",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 95.35,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:51:57.666Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.durability",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.story_depth",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.distinctiveness",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.media_resonance",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.evidence_authenticity",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.commercial_applicability"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.durability",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.story_depth",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.distinctiveness",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.media_resonance",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.evidence_authenticity",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.commercial_applicability",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.brand_fit",
+    "direction": "strength",
+    "rationale": {
+     "value": "Maher represents a highly attractive partner for brands seeking to align with female empowerment, authenticity, and health. Her versatile content style allows her to seamlessly transition from low-fi comedic skits to high-production luxury beauty campaigns. Her audience represents a highly coveted demographic of younger, socially conscious women.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:51:57.666Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E2",
+      "E3",
+      "E4",
+      "E6",
+      "E7",
+      "E8",
+      "E9"
+     ],
+     "rationale": "Her extensive brand portfolio demonstrates proven success across disparate market sectors like clinical skincare, athletics, and retail.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her extensive brand portfolio demonstrates proven success across disparate market sectors like clinical skincare, athletics, and retail.",
+    "citedEvidence": [
+     {
+      "id": "E2",
+      "claim": "Maher played for the Bristol Bears in England's Premiership Women's Rugby (PWR) on a short-term contract starting in January 2025, generating massive ticket-demand surges that forced the game to Ashton Gate in front of a club record crowd of 9,240.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ilona_Maher",
+      "observedAt": "2026-07-29",
+      "sourceType": "secondary",
+      "sourceTitle": "Ilona Maher Wikipedia Profile"
+     },
+     {
+      "id": "E3",
+      "claim": "Maher has been taking a competitive break since late 2025, but confirmed in July 2026 her desire to return to the US Rugby Sevens program for the 2026–2027 season and target the 2028 Los Angeles Olympics.",
+      "sourceUrl": "https://www.ruck.co.uk/ilona-maher-eager-to-get-back-on-the-pitch/",
+      "observedAt": "2026-07-28",
+      "sourceType": "major_media",
+      "sourceTitle": "Ilona Maher eager to get back on the pitch"
+     },
+     {
+      "id": "E4",
+      "claim": "Maher boasts approximately 5.64 million Instagram followers as of September 2026 and over 3.6 million TikTok followers, totaling over 9.2 million combined.",
+      "sourceUrl": "https://hypeauditor.com/instagram/ilonamaher/",
+      "observedAt": "2026-09-01",
+      "sourceType": "secondary",
+      "sourceTitle": "Ilona Maher (@ilonamaher) Instagram Influencer Report"
+     },
+     {
+      "id": "E6",
+      "claim": "Maher is developing and producing a self-titled docuseries following her life both on and off the rugby pitch with Reese Witherspoon's production company Hello Sunshine.",
+      "sourceUrl": "https://justwomenssports.com/reads/ilona-maher-hello-sunshine-docuseries-usa-rugby-news/",
+      "observedAt": "2025-06-17",
+      "sourceType": "secondary",
+      "sourceTitle": "New Docuseries Spotlights USA Rugby Star Ilona Maher"
+     },
+     {
+      "id": "E7",
+      "claim": "Maher became the first-ever brand ambassador for Unilever-owned Paula's Choice in late 2024 and signed a multi-year partnership with Adidas in March 2025.",
+      "sourceUrl": "https://www.sportspromedia.com/news/ilona-maher-paulas-choice-endorsement-deal/",
+      "observedAt": "2025-01-02",
+      "sourceType": "major_media",
+      "sourceTitle": "Ilona Maher scores Paula's Choice endorsement deal"
+     },
+     {
+      "id": "E8",
+      "claim": "Maher co-founded Medalist Skin, an active skincare brand designed specifically for the unique dermatological needs of female athletes.",
+      "sourceUrl": "https://www.thegistsports.com/article/gold-in-a-bottle-medalist-skincare/",
+      "observedAt": "2024-07-01",
+      "sourceType": "secondary",
+      "sourceTitle": "U.S. Olympic rugby star Ilona Maher launches Medalist skincare"
+     },
+     {
+      "id": "E9",
+      "claim": "Maher co-hosts the weekly podcast 'House of Maher' with her sisters, which holds a 4.9 rating on Apple Podcasts and is presented by Samsung Galaxy.",
+      "sourceUrl": "https://podcasts.apple.com/us/podcast/house-of-maher/id1802929394",
+      "observedAt": "2026-09-15",
+      "sourceType": "official",
+      "sourceTitle": "House of Maher on Apple Podcasts"
+     }
+    ],
+    "components": [
+     {
+      "key": "brand_fit.brand_safety",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "value": 92,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 93.95,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:51:57.666Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.brand_safety",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.category_breadth",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.content_versatility",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.geographic_relevance",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.audience_attractiveness",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.identity_values_coherence"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.brand_safety",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.category_breadth",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.content_versatility",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.geographic_relevance",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.audience_attractiveness",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.identity_values_coherence",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.commercial_proof",
+    "direction": "strength",
+    "rationale": {
+     "value": "Maher has built one of the most robust, blue-chip commercial portfolios in women's sports, highlighted by major partnerships with Adidas, Secret, L'Oreal, and Paula's Choice. Her ability to co-found a successful skincare line (Medalist) further illustrates her entrepreneurial capability. The immediate ticket surges surrounding her club rugby appearances prove her direct, real-world economic influence.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:51:57.666Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E7",
+      "E8",
+      "E9"
+     ],
+     "rationale": "Her verified roster of global brand campaigns and business ventures provides overwhelming concrete evidence of her high commercial value.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her verified roster of global brand campaigns and business ventures provides overwhelming concrete evidence of her high commercial value.",
+    "citedEvidence": [
+     {
+      "id": "E7",
+      "claim": "Maher became the first-ever brand ambassador for Unilever-owned Paula's Choice in late 2024 and signed a multi-year partnership with Adidas in March 2025.",
+      "sourceUrl": "https://www.sportspromedia.com/news/ilona-maher-paulas-choice-endorsement-deal/",
+      "observedAt": "2025-01-02",
+      "sourceType": "major_media",
+      "sourceTitle": "Ilona Maher scores Paula's Choice endorsement deal"
+     },
+     {
+      "id": "E8",
+      "claim": "Maher co-founded Medalist Skin, an active skincare brand designed specifically for the unique dermatological needs of female athletes.",
+      "sourceUrl": "https://www.thegistsports.com/article/gold-in-a-bottle-medalist-skincare/",
+      "observedAt": "2024-07-01",
+      "sourceType": "secondary",
+      "sourceTitle": "U.S. Olympic rugby star Ilona Maher launches Medalist skincare"
+     },
+     {
+      "id": "E9",
+      "claim": "Maher co-hosts the weekly podcast 'House of Maher' with her sisters, which holds a 4.9 rating on Apple Podcasts and is presented by Samsung Galaxy.",
+      "sourceUrl": "https://podcasts.apple.com/us/podcast/house-of-maher/id1802929394",
+      "observedAt": "2026-09-15",
+      "sourceType": "official",
+      "sourceTitle": "House of Maher on Apple Podcasts"
+     }
+    ],
+    "components": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "value": 94,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "value": 96,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 85.05,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:51:57.666Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.brand_quality",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.pricing_power",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.deal_frequency",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.renewals_repeat",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.campaign_performance",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.verified_commercial_value"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 2,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.brand_quality",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.pricing_power",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.deal_frequency",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.renewals_repeat",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.campaign_performance",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.verified_commercial_value",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.momentum",
+    "direction": "strength",
+    "rationale": {
+     "value": "While her athletic momentum is temporarily flat due to her competitive hiatus, her cultural and commercial trajectory is accelerating. The development of her Hello Sunshine docuseries and her ongoing high-profile fashion campaigns keep her in the public eye. Her commercial deals continue to scale in prestige and duration, pointing to sustained long-term relevance leading into the 2028 Olympics.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:51:57.666Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E3",
+      "E4",
+      "E6",
+      "E7",
+      "E8",
+      "E9"
+     ],
+     "rationale": "Recent mid-2026 media announcements and brand contract details confirm her commercial and cultural acceleration.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Recent mid-2026 media announcements and brand contract details confirm her commercial and cultural acceleration.",
+    "citedEvidence": [
+     {
+      "id": "E3",
+      "claim": "Maher has been taking a competitive break since late 2025, but confirmed in July 2026 her desire to return to the US Rugby Sevens program for the 2026–2027 season and target the 2028 Los Angeles Olympics.",
+      "sourceUrl": "https://www.ruck.co.uk/ilona-maher-eager-to-get-back-on-the-pitch/",
+      "observedAt": "2026-07-28",
+      "sourceType": "major_media",
+      "sourceTitle": "Ilona Maher eager to get back on the pitch"
+     },
+     {
+      "id": "E4",
+      "claim": "Maher boasts approximately 5.64 million Instagram followers as of September 2026 and over 3.6 million TikTok followers, totaling over 9.2 million combined.",
+      "sourceUrl": "https://hypeauditor.com/instagram/ilonamaher/",
+      "observedAt": "2026-09-01",
+      "sourceType": "secondary",
+      "sourceTitle": "Ilona Maher (@ilonamaher) Instagram Influencer Report"
+     },
+     {
+      "id": "E6",
+      "claim": "Maher is developing and producing a self-titled docuseries following her life both on and off the rugby pitch with Reese Witherspoon's production company Hello Sunshine.",
+      "sourceUrl": "https://justwomenssports.com/reads/ilona-maher-hello-sunshine-docuseries-usa-rugby-news/",
+      "observedAt": "2025-06-17",
+      "sourceType": "secondary",
+      "sourceTitle": "New Docuseries Spotlights USA Rugby Star Ilona Maher"
+     },
+     {
+      "id": "E7",
+      "claim": "Maher became the first-ever brand ambassador for Unilever-owned Paula's Choice in late 2024 and signed a multi-year partnership with Adidas in March 2025.",
+      "sourceUrl": "https://www.sportspromedia.com/news/ilona-maher-paulas-choice-endorsement-deal/",
+      "observedAt": "2025-01-02",
+      "sourceType": "major_media",
+      "sourceTitle": "Ilona Maher scores Paula's Choice endorsement deal"
+     },
+     {
+      "id": "E8",
+      "claim": "Maher co-founded Medalist Skin, an active skincare brand designed specifically for the unique dermatological needs of female athletes.",
+      "sourceUrl": "https://www.thegistsports.com/article/gold-in-a-bottle-medalist-skincare/",
+      "observedAt": "2024-07-01",
+      "sourceType": "secondary",
+      "sourceTitle": "U.S. Olympic rugby star Ilona Maher launches Medalist skincare"
+     },
+     {
+      "id": "E9",
+      "claim": "Maher co-hosts the weekly podcast 'House of Maher' with her sisters, which holds a 4.9 rating on Apple Podcasts and is presented by Samsung Galaxy.",
+      "sourceUrl": "https://podcasts.apple.com/us/podcast/house-of-maher/id1802929394",
+      "observedAt": "2026-09-15",
+      "sourceType": "official",
+      "sourceTitle": "House of Maher on Apple Podcasts"
+     }
+    ],
+    "components": [
+     {
+      "key": "momentum.audience_growth",
+      "value": 78,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "value": 60,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "value": 92,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "value": 82,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 77,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:51:57.666Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.audience_growth",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.media_trajectory",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.athletic_trajectory",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.commercial_acceleration",
+      "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.search_social_trajectory"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.audience_growth",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.media_trajectory",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.athletic_trajectory",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.commercial_acceleration",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     },
+     {
+      "source": "mia",
+      "locator": "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.search_social_trajectory",
+      "asOf": "2026-09-13T22:51:57.666Z"
+     }
+    ]
+   }
+  ],
+  "audienceTrajectory": {
+   "value": null,
+   "owner": "athlete_intelligence",
+   "asOf": "2026-09-25T17:53:34.146Z",
+   "evidenceClass": "MISSING",
+   "reason": "no growth measurement on any platform"
+  },
+  "commercialPosition": {
+   "closedDeals": {
+    "value": 0,
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-25T17:53:34.146Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "count_deals_at_earned_status"
+   },
+   "activeRelationships": {
+    "value": [],
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-25T17:53:34.146Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "distinct_brand_at_earned_status"
+   },
+   "demonstratedEconomics": {
+    "value": null,
+    "owner": "athlete_state",
+    "asOf": "2026-09-25T17:53:34.146Z",
+    "evidenceClass": "MISSING",
+    "reason": "no closed deal carries an amount"
+   },
+   "pricingEvidence": "none",
+   "pipeline": {
+    "value": {
+     "detected": 0,
+     "negotiating": 0,
+     "rejected": 0,
+     "accepted": 0,
+     "completed": 0
+    },
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-25T17:53:34.146Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "count_deals_by_status"
+   },
+   "inbound": []
+  },
+  "constraints": [],
+  "preferences": [],
+  "audience": [],
+  "contentPerformance": [],
+  "representation": null,
+  "dates": [],
+  "materialGaps": [
+   "Private platform engagement metrics (exact video retention rates, saves, and shares ratios).",
+   "Specific financial valuations and ROI metrics for her corporate endorsement campaigns."
+  ],
+  "overallConfidence": "MEDIUM",
+  "sources": [
+   {
+    "owner": "marketability",
+    "present": true,
+    "asOf": "2026-09-13T22:51:57.666Z"
+   },
+   {
+    "owner": "athlete_intelligence",
+    "present": false,
+    "asOf": null
+   },
+   {
+    "owner": "athlete_state",
+    "present": true,
+    "asOf": "2026-09-25T17:53:34.146Z"
+   }
+  ]
+ },
+ "map": {
+  "athleteId": "77bbebfe-697f-4eb1-bcdf-5fb97f74cb0c",
+  "asOf": "2026-09-25T17:54:32.544Z",
+  "version": "opportunity-map/1.0.0",
+  "specVersion": "opportunity-eval-spec/1.0.0",
+  "stateAsOf": "2026-09-25T17:53:34.146Z",
+  "opportunities": [
+   {
+    "key": "unlock-private-audience-engagement",
+    "kind": "UNLOCK",
+    "domain": "evidence",
+    "statement": {
+     "value": "Connect Ilona's primary social accounts (Instagram and TikTok) to capture her true private engagement metrics.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-25T17:53:34.146Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "findings[mia.engagement_quality]",
+      "materialGaps[0]"
+     ],
+     "rationale": "While her public scale is massive, her engagement quality is currently marked as UNKNOWN with assumed video retention and share/save metrics. Linking these accounts instantly unlocks verified data to validate her brand value to premium partners.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "findings[mia.engagement_quality]",
+      "how": "Shows her engagement quality is marked UNKNOWN with 3 out of 6 signals (video retention, story efficiency, and share/save quality) currently imputed as assumed values."
+     },
+     {
+      "statePath": "materialGaps[0]",
+      "how": "Explicitly identifies exact video retention rates, saves, and shares ratios as a missing material gap."
+     }
+    ],
+    "impact": {
+     "level": "high",
+     "claim": "Replaces assumed metrics with verified audience depth and retention data, giving partners empirical proof of her high-performance content delivery."
+    },
+    "feasibility": {
+     "level": "high",
+     "claim": "Requires a one-time connection of her Instagram and TikTok profiles through Nomila's platform."
+    },
+    "urgency": null,
+    "confidence": "HIGH"
+   },
+   {
+    "key": "grow-commercial-contract-registry",
+    "kind": "GROW",
+    "domain": "evidence",
+    "statement": {
+     "value": "Build a comprehensive historical registry of Ilona’s active and past brand endorsements, contract terms, and exclusivity parameters.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-25T17:53:34.146Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "commercialPosition.closedDeals",
+      "commercialPosition.activeRelationships",
+      "findings[mia.commercial_proof]",
+      "materialGaps[1]"
+     ],
+     "rationale": "M.I.A. identifies massive commercial strength with campaigns for Adidas, Paula's Choice, Secret, and L'Oreal. However, Nomila's commercial registry currently lists zero closed deals and active relationships. Building this registry is required to resolve this database weakness and protect her commercial operations.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "commercialPosition.closedDeals",
+      "how": "Shows zero measured closed deals on file, illustrating a major gap between her documented career and our structured tracking."
+     },
+     {
+      "statePath": "commercialPosition.activeRelationships",
+      "how": "Shows an empty list of active relationships, failing to reflect her confirmed brand partnerships."
+     },
+     {
+      "statePath": "findings[mia.commercial_proof]",
+      "how": "Lists her active, high-profile commercial roster (Adidas, Paula's Choice, Secret, L'Oreal) which are currently unmapped in her core profile."
+     },
+     {
+      "statePath": "materialGaps[1]",
+      "how": "Identifies missing financial valuations and ROI metrics for her corporate campaigns as a key blind spot."
+     }
+    ],
+    "impact": {
+     "level": "high",
+     "claim": "Eliminates category conflict risks, establishes her actual market pricing baseline, and equips her team for renewals and new inbound negotiations."
+    },
+    "feasibility": {
+     "level": "high",
+     "claim": "Requires her management team to securely supply past contracts, active agreement terms, and historical pricing values."
+    },
+    "urgency": null,
+    "confidence": "HIGH"
+   },
+   {
+    "key": "maintain-athletic-pathway-reentry",
+    "kind": "MAINTAIN",
+    "domain": "athletic",
+    "statement": {
+     "value": "Protect her competitive selection pathway back into the US Rugby Sevens program by formalizing her training and reintegration schedule.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-25T17:53:34.146Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "findings[mia.athletic_authority]",
+      "findings[mia.momentum]"
+     ],
+     "rationale": "Her elite sporting standing is anchored by a planned return for the LA 2028 Olympic cycle, but she has been on a competitive sabbatical since late 2025. With a target return set for the 2026–2027 season, she faces the risk that prolonged competitive inactivity could complicate physical readiness and national team selection.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "findings[mia.athletic_authority]",
+      "how": "Details her competitive sabbatical since late 2025 and her confirmed July 2026 desire to return to the US Rugby Sevens program for the 2026–2027 season."
+     },
+     {
+      "statePath": "findings[mia.momentum]",
+      "how": "Notes that her athletic trajectory is temporarily flat due to her competitive hiatus."
+     }
+    ],
+    "impact": {
+     "level": "high",
+     "claim": "Safeguards her core athletic authority and selection status as she transitions back from a high-profile media sabbatical."
+    },
+    "feasibility": {
+     "level": "medium",
+     "claim": "Requires managing her intensive physical conditioning and rugby-specific training around her accelerating commercial and media schedule."
+    },
+    "urgency": {
+     "level": "high",
+     "claim": "As of September 2026, the 2026–2027 season is beginning immediately, making her formal reentry timeline with USA Rugby time-sensitive."
+    },
+    "confidence": "HIGH"
+   },
+   {
+    "key": "amplify-hello-sunshine-docuseries",
+    "kind": "AMPLIFY",
+    "domain": "career",
+    "statement": {
+     "value": "Integrate her upcoming competitive return to national team rugby as the central narrative arc of her Hello Sunshine docuseries.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-25T17:53:34.146Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "findings[mia.cultural_relevance]",
+      "findings[mia.athletic_authority]"
+     ],
+     "rationale": "She is already developing a self-titled docuseries with Reese Witherspoon's Hello Sunshine. Aligning this active entertainment vehicle with her high-stakes physical and mental journey back to the US Rugby Sevens program provides a compelling, real-time sports narrative.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "findings[mia.cultural_relevance]",
+      "how": "Confirms she is developing and producing a self-titled docuseries following her life both on and off the pitch with Hello Sunshine."
+     },
+     {
+      "statePath": "findings[mia.athletic_authority]",
+      "how": "Notes her planned transition back to the rugby pitch for the 2026–2027 season."
+     }
+    ],
+    "impact": {
+     "level": "high",
+     "claim": "Maximizes the cultural impact, viewer engagement, and distribution value of her co-produced media venture by leveraging a high-stakes athletic comeback."
+    },
+    "feasibility": {
+     "level": "medium",
+     "claim": "Requires coordinating production access with USA Rugby, ensuring filming does not disrupt her competitive preparation."
+    },
+    "urgency": {
+     "level": "medium",
+     "claim": "Filming and narrative pre-production must align with the onset of her 2026-2027 competitive return."
+    },
+    "confidence": "HIGH"
+   },
+   {
+    "key": "amplify-medalist-skin-growth",
+    "kind": "AMPLIFY",
+    "domain": "owned_venture",
+    "statement": {
+     "value": "Leverage her massive social audience and body-positivity narrative to drive growth for her co-founded brand, Medalist Skin.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-25T17:53:34.146Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "findings[mia.narrative_power]",
+      "findings[mia.audience_scale]",
+      "findings[mia.commercial_proof]"
+     ],
+     "rationale": "Rather than relying entirely on renting her audience to third-party beauty brands, she can drive higher enterprise value through Medalist Skin. This active skincare venture is highly aligned with her #BeastBeautyBrains narrative and represents an established product ready for scale.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "findings[mia.narrative_power]",
+      "how": "Highlights her distinctive '#BeastBeautyBrains' slogan and her role co-founding Medalist Skin in late 2024 to address the dermatological needs of female athletes."
+     },
+     {
+      "statePath": "findings[mia.audience_scale]",
+      "how": "Confirms she has over 9.2 million combined followers across Instagram and TikTok."
+     },
+     {
+      "statePath": "findings[mia.commercial_proof]",
+      "how": "Cites her co-founding of Medalist Skin as clear proof of her entrepreneurial capability and direct economic influence."
+     }
+    ],
+    "impact": {
+     "level": "high",
+     "claim": "Builds long-term business equity and direct enterprise wealth that outlasts her active playing career."
+    },
+    "feasibility": {
+     "level": "medium",
+     "claim": "Requires balancing brand promotion and operational oversight with her athletic training schedule."
+    },
+    "urgency": null,
+    "confidence": "HIGH"
+   },
+   {
+    "key": "amplify-house-of-maher-sponsorship",
+    "kind": "AMPLIFY",
+    "domain": "content",
+    "statement": {
+     "value": "Scale the commercial sponsorship model of the 'House of Maher' podcast following its validated integration with Samsung Galaxy.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-25T17:53:34.146Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "findings[mia.audience_scale]",
+      "findings[mia.brand_fit]"
+     ],
+     "rationale": "Her weekly podcast is already highly rated and backed by a major presenting partner. Given her massive social reach, this audio format is a working, authenticated content asset that can support expanded, multi-year secondary sponsor integrations.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "findings[mia.audience_scale]",
+      "how": "Cites 'House of Maher' as a highly engaged weekly podcast with a 4.9 Apple rating, presented by Samsung Galaxy."
+     },
+     {
+      "statePath": "findings[mia.brand_fit]",
+      "how": "Highlights her high category versatility and proven capability to deliver high-quality integrations for major brands like Samsung."
+     }
+    ],
+    "impact": {
+     "level": "medium",
+     "claim": "Increases recurring content revenue and diversifies her media portfolio through structured audio sponsorships."
+    },
+    "feasibility": {
+     "level": "high",
+     "claim": "The podcast is already operational and highly rated, meaning commercial expansion requires minimal additional creative or operational setup."
+    },
+    "urgency": null,
+    "confidence": "HIGH"
+   }
+  ],
+  "notes": [
+   "audience: No dedicated opportunity is listed because her direct audience scale is already outstanding (9.2M+) and self-generating. Her audience strategy is best served by feeding it through her active content and owned ventures rather than trying to build audience scale from weakness.",
+   "positioning: Her '#BeastBeautyBrains' and body-positivity positioning is exceptionally strong, coherent, and widely recognized. There are no positioning conflicts or narrative gaps that require a FIX or GROW strategy; instead, her positioning is utilized to power her career and owned venture opportunities.",
+   "relationships: While she has worked with high-profile organizations (such as USA Rugby, English Premiership's Bristol Bears, and Hello Sunshine), her recorded commercial profile lacks granular relationship data, meaning any relationship-specific introduction strategy is speculative until her core registries are resolved under the evidence domain.",
+   "impact: There are no specific philanthropic preferences, causes, or community ambitions recorded under her stated words, making any impact-focused opportunity highly speculative in this version.",
+   "commercial: Rather than proposing new outbound commercial brand partnerships under the commercial domain, we prioritized resolving the database evidence gap first (grow-commercial-contract-registry) to ensure future commercial opportunities are structured safely and without category conflicts."
+  ],
+  "inputs": [
+   {
+    "kind": "athlete_state",
+    "version": "athlete-state/1.2.0",
+    "present": true
+   },
+   {
+    "kind": "strategy_intelligence",
+    "version": null,
+    "present": false
+   },
+   {
+    "kind": "targeted_research",
+    "version": null,
+    "present": false
+   }
+  ],
+  "overallConfidence": "MEDIUM"
+ },
+ "record": {
+  "evaluatorSpec": "objective-eval-spec/1.0.4",
+  "canonicalSha256": "99773087c1e89821a457e2a5a13c0e5399164a4118d626e1c715446d219ac116",
+  "manifest": {
+   "evaluatorSpec": "objective-eval-spec/1.0.4",
+   "promptDigest": "99773087c1e89821a457e2a5a13c0e5399164a4118d626e1c715446d219ac116"
+  },
+  "promptSha256": "2140f9a81e63bd31896a0fc37f73c033567b96ae69a8adeb2e18830a4f8af4e4",
+  "athlete": {
+   "id": "77bbebfe-697f-4eb1-bcdf-5fb97f74cb0c",
+   "name": "Ilona Maher"
+  },
+  "stateAsOf": "2026-09-25T17:53:34.146Z",
+  "opportunityMapAsOf": "2026-09-25T17:54:32.544Z",
+  "stateBlock": "Nomila's account of this athlete as of 2026-09-25T17:53:34.146Z (athlete-state/1.2.0).\nOverall confidence in this picture: MEDIUM.\n\nCite any line below by the path shown at its left.\n\nIDENTITY\n    identity.name                             Ilona Maher\n    identity.sport                            rugby\n    identity.competitionContext               not recorded\n    identity.careerStatus                     active\n\nFINDINGS — marketability dimensions, each judged by M.I.A. and read here unchanged.\n  STRENGTH  measured, above the band\n  GAP       measured, below the band\n  NEUTRAL   MEASURED and unremarkable. We know; it is simply ordinary. This is NOT missing evidence.\n  UNKNOWN   evidence is genuinely insufficient — no score, or mostly imputed signals. A statement about\n            what Nomila has measured, never about the athlete.\n\n  Each finding may carry WHY M.I.A. concluded it and WHICH SOURCES it relied on. Read those as the\n  evaluator's interpretation and the evidence behind it — NOT as established fact about the athlete.\n\n    findings[mia.athletic_authority]          STRENGTH  score 91.5    HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Maher possesses premier international athletic credentials as a two-time Olympian and historic\n          2024 Olympic bronze medalist. Her brief transition to XVs rugby saw her debut with the English\n          Premiership's Bristol Bears and represent the US in the 2025 World Cup. Although she is\n          currently taking a competitive sabbatical, her elite sporting standing remains completely\n          legitimate and is anchored by a planned return for the LA 2028 cycle.\n          confidence HIGH — Her international match history, Olympic results, and career transitions are fully documented by official federation and news sources.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  official · 2026-02-24  Ilona Maher is a two-time Olympian who won a historic Bronze Medal with the US Women's National Rugby Sevens team at the 2024 Paris Olympics.\n              https://www.teamusa.com/profiles/ilona-maher\n          E2  secondary · 2026-07-29  Maher played for the Bristol Bears in England's Premiership Women's Rugby (PWR) on a short-term contract starting in January 2025, generating massive ticket-demand surges that forced the game to Ashton Gate in front of a club record crowd of 9,240.\n              https://en.wikipedia.org/wiki/Ilona_Maher\n          E3  major_media · 2026-07-28  Maher has been taking a competitive break since late 2025, but confirmed in July 2026 her desire to return to the US Rugby Sevens program for the 2026–2027 season and target the 2028 Los Angeles Olympics.\n              https://www.ruck.co.uk/ilona-maher-eager-to-get-back-on-the-pitch/\n          E5  major_media · 2026-07-29  Maher won the 2025 ESPY for Best Breakthrough Athlete, finished as runner-up on Season 33 of ABC's Dancing with the Stars, and was named one of USA Today's Women of the Year.\n              https://www.si.com/swimsuit/ilona-maher-guide-rugby-family-achievements\n        COMPONENTS  role_importance=85 [EVALUATED]  competition_level=100 [EVALUATED]  achievement_recency=75 [EVALUATED]  performance_results=85 [EVALUATED]  rankings_recognition=95 [EVALUATED]  national_international_status=100 [EVALUATED]\n\n    findings[mia.audience_scale]              STRENGTH  score 92.1    HIGH    0/4 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          With over 9.2 million combined followers across Instagram and TikTok, Maher boasts an audience\n          that dwarfs typical rugby players and rivals top-tier global athletes. She possesses the single\n          largest social media presence in the sport of rugby. Her digital footprint also includes a\n          highly engaged podcast, 'House of Maher,' making her reach both expansive and diversified.\n          confidence HIGH — Publicly observable follower counts across platforms and verified podcast chart data provide clear, unequivocal scale metrics.\n        SOURCE EVIDENCE M.I.A. CITED\n          E4  secondary · 2026-09-01  Maher boasts approximately 5.64 million Instagram followers as of September 2026 and over 3.6 million TikTok followers, totaling over 9.2 million combined.\n              https://hypeauditor.com/instagram/ilonamaher/\n          E9  official · 2026-09-15  Maher co-hosts the weekly podcast 'House of Maher' with her sisters, which holds a 4.9 rating on Apple Podcasts and is presented by Samsung Galaxy.\n              https://podcasts.apple.com/us/podcast/house-of-maher/id1802929394\n        COMPONENTS  audience_growth=82 [EVALUATED]  platform_breadth=88 [EVALUATED]  cross_platform_effective_reach=92 [EVALUATED]  sport_level_audience_percentile=100 [EVALUATED]\n\n    findings[mia.engagement_quality]          UNKNOWN   score 86.62   MEDIUM  3/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Maher's audience is exceptionally active, frequently driving her self-produced reels and TikToks\n          into multi-million view viral loops. Her brand of unvarnished honesty fosters deep, organic\n          community trust, yielding high comment-to-follower ratios. Because her growth is self-generated\n          rather than driven by artificial campaigns, her audience authenticity is superb.\n          confidence MEDIUM — Public-facing metrics like views and comments are highly visible, but specific private engagement data like shares, saves, and retention rates remain unobserved.\n        SOURCE EVIDENCE M.I.A. CITED\n          E4  secondary · 2026-09-01  Maher boasts approximately 5.64 million Instagram followers as of September 2026 and over 3.6 million TikTok followers, totaling over 9.2 million combined.\n              https://hypeauditor.com/instagram/ilonamaher/\n          E5  major_media · 2026-07-29  Maher won the 2025 ESPY for Best Breakthrough Athlete, finished as runner-up on Season 33 of ABC's Dancing with the Stars, and was named one of USA Today's Women of the Year.\n              https://www.si.com/swimsuit/ilona-maher-guide-rugby-family-achievements\n          E9  official · 2026-09-15  Maher co-hosts the weekly podcast 'House of Maher' with her sisters, which holds a 4.9 rating on Apple Podcasts and is presented by Samsung Galaxy.\n              https://podcasts.apple.com/us/podcast/house-of-maher/id1802929394\n        COMPONENTS  video_retention=50 [ASSUMED]  reach_efficiency=88 [EVALUATED]  story_efficiency=50 [ASSUMED]  shares_saves_quality=50 [ASSUMED]  audience_authenticity=88 [EVALUATED]  engagement_percentile=85 [EVALUATED]\n\n    findings[mia.cultural_relevance]          STRENGTH  score 93      HIGH    0/5 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Maher has achieved rare crossover fame, transcending rugby to become a household pop culture\n          name in the United States. Her mainstream visibility is sustained by major milestones, including\n          a runner-up finish on Dancing with the Stars and a Sports Illustrated Swimsuit cover. She serves\n          as a cultural lightning rod for conversations around body positivity, beauty, and female\n          strength.\n          confidence HIGH — Her extensive mainstream media coverage, television appearances, and prestigious awards (like the 2025 ESPY) are heavily documented.\n        SOURCE EVIDENCE M.I.A. CITED\n          E4  secondary · 2026-09-01  Maher boasts approximately 5.64 million Instagram followers as of September 2026 and over 3.6 million TikTok followers, totaling over 9.2 million combined.\n              https://hypeauditor.com/instagram/ilonamaher/\n          E5  major_media · 2026-07-29  Maher won the 2025 ESPY for Best Breakthrough Athlete, finished as runner-up on Season 33 of ABC's Dancing with the Stars, and was named one of USA Today's Women of the Year.\n              https://www.si.com/swimsuit/ilona-maher-guide-rugby-family-achievements\n          E6  secondary · 2025-06-17  Maher is developing and producing a self-titled docuseries following her life both on and off the rugby pitch with Reese Witherspoon's production company Hello Sunshine.\n              https://justwomenssports.com/reads/ilona-maher-hello-sunshine-docuseries-usa-rugby-news/\n        COMPONENTS  search_interest=85 [EVALUATED]  social_conversation=90 [EVALUATED]  media_source_quality=98 [EVALUATED]  crossover_recognition=96 [EVALUATED]  media_volume_percentile=95 [EVALUATED]\n\n    findings[mia.narrative_power]             STRENGTH  score 95.35   HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Her story is incredibly distinctive, memorable, and rooted in the slogan '#BeastBeautyBrains.'\n          By showing that female athletes do not have to sacrifice femininity to excel in a physical\n          contact sport, she has built a powerful, durable narrative. Media outlets actively amplify this\n          perspective, and she has proven it commercially viable through her own cosmetics co-founding and\n          brand campaigns.\n          confidence HIGH — The narrative is highly coherent and consistently echoed across years of interviews, media features, and her personal content.\n        SOURCE EVIDENCE M.I.A. CITED\n          E3  major_media · 2026-07-28  Maher has been taking a competitive break since late 2025, but confirmed in July 2026 her desire to return to the US Rugby Sevens program for the 2026–2027 season and target the 2028 Los Angeles Olympics.\n              https://www.ruck.co.uk/ilona-maher-eager-to-get-back-on-the-pitch/\n          E4  secondary · 2026-09-01  Maher boasts approximately 5.64 million Instagram followers as of September 2026 and over 3.6 million TikTok followers, totaling over 9.2 million combined.\n              https://hypeauditor.com/instagram/ilonamaher/\n          E5  major_media · 2026-07-29  Maher won the 2025 ESPY for Best Breakthrough Athlete, finished as runner-up on Season 33 of ABC's Dancing with the Stars, and was named one of USA Today's Women of the Year.\n              https://www.si.com/swimsuit/ilona-maher-guide-rugby-family-achievements\n          E6  secondary · 2025-06-17  Maher is developing and producing a self-titled docuseries following her life both on and off the rugby pitch with Reese Witherspoon's production company Hello Sunshine.\n              https://justwomenssports.com/reads/ilona-maher-hello-sunshine-docuseries-usa-rugby-news/\n          E7  major_media · 2025-01-02  Maher became the first-ever brand ambassador for Unilever-owned Paula's Choice in late 2024 and signed a multi-year partnership with Adidas in March 2025.\n              https://www.sportspromedia.com/news/ilona-maher-paulas-choice-endorsement-deal/\n          E8  secondary · 2024-07-01  Maher co-founded Medalist Skin, an active skincare brand designed specifically for the unique dermatological needs of female athletes.\n              https://www.thegistsports.com/article/gold-in-a-bottle-medalist-skincare/\n        COMPONENTS  durability=90 [EVALUATED]  story_depth=90 [EVALUATED]  distinctiveness=100 [EVALUATED]  media_resonance=95 [EVALUATED]  evidence_authenticity=98 [EVALUATED]  commercial_applicability=95 [EVALUATED]\n\n    findings[mia.brand_fit]                   STRENGTH  score 93.95   HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Maher represents a highly attractive partner for brands seeking to align with female\n          empowerment, authenticity, and health. Her versatile content style allows her to seamlessly\n          transition from low-fi comedic skits to high-production luxury beauty campaigns. Her audience\n          represents a highly coveted demographic of younger, socially conscious women.\n          confidence HIGH — Her extensive brand portfolio demonstrates proven success across disparate market sectors like clinical skincare, athletics, and retail.\n        SOURCE EVIDENCE M.I.A. CITED\n          E2  secondary · 2026-07-29  Maher played for the Bristol Bears in England's Premiership Women's Rugby (PWR) on a short-term contract starting in January 2025, generating massive ticket-demand surges that forced the game to Ashton Gate in front of a club record crowd of 9,240.\n              https://en.wikipedia.org/wiki/Ilona_Maher\n          E3  major_media · 2026-07-28  Maher has been taking a competitive break since late 2025, but confirmed in July 2026 her desire to return to the US Rugby Sevens program for the 2026–2027 season and target the 2028 Los Angeles Olympics.\n              https://www.ruck.co.uk/ilona-maher-eager-to-get-back-on-the-pitch/\n          E4  secondary · 2026-09-01  Maher boasts approximately 5.64 million Instagram followers as of September 2026 and over 3.6 million TikTok followers, totaling over 9.2 million combined.\n              https://hypeauditor.com/instagram/ilonamaher/\n          E6  secondary · 2025-06-17  Maher is developing and producing a self-titled docuseries following her life both on and off the rugby pitch with Reese Witherspoon's production company Hello Sunshine.\n              https://justwomenssports.com/reads/ilona-maher-hello-sunshine-docuseries-usa-rugby-news/\n          E7  major_media · 2025-01-02  Maher became the first-ever brand ambassador for Unilever-owned Paula's Choice in late 2024 and signed a multi-year partnership with Adidas in March 2025.\n              https://www.sportspromedia.com/news/ilona-maher-paulas-choice-endorsement-deal/\n          E8  secondary · 2024-07-01  Maher co-founded Medalist Skin, an active skincare brand designed specifically for the unique dermatological needs of female athletes.\n              https://www.thegistsports.com/article/gold-in-a-bottle-medalist-skincare/\n          E9  official · 2026-09-15  Maher co-hosts the weekly podcast 'House of Maher' with her sisters, which holds a 4.9 rating on Apple Podcasts and is presented by Samsung Galaxy.\n              https://podcasts.apple.com/us/podcast/house-of-maher/id1802929394\n        COMPONENTS  brand_safety=90 [EVALUATED]  category_breadth=95 [EVALUATED]  content_versatility=92 [EVALUATED]  geographic_relevance=90 [EVALUATED]  audience_attractiveness=95 [EVALUATED]  identity_values_coherence=100 [EVALUATED]\n\n    findings[mia.commercial_proof]            STRENGTH  score 85.05   HIGH    2/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Maher has built one of the most robust, blue-chip commercial portfolios in women's sports,\n          highlighted by major partnerships with Adidas, Secret, L'Oreal, and Paula's Choice. Her ability\n          to co-found a successful skincare line (Medalist) further illustrates her entrepreneurial\n          capability. The immediate ticket surges surrounding her club rugby appearances prove her direct,\n          real-world economic influence.\n          confidence HIGH — Her verified roster of global brand campaigns and business ventures provides overwhelming concrete evidence of her high commercial value.\n        SOURCE EVIDENCE M.I.A. CITED\n          E7  major_media · 2025-01-02  Maher became the first-ever brand ambassador for Unilever-owned Paula's Choice in late 2024 and signed a multi-year partnership with Adidas in March 2025.\n              https://www.sportspromedia.com/news/ilona-maher-paulas-choice-endorsement-deal/\n          E8  secondary · 2024-07-01  Maher co-founded Medalist Skin, an active skincare brand designed specifically for the unique dermatological needs of female athletes.\n              https://www.thegistsports.com/article/gold-in-a-bottle-medalist-skincare/\n          E9  official · 2026-09-15  Maher co-hosts the weekly podcast 'House of Maher' with her sisters, which holds a 4.9 rating on Apple Podcasts and is presented by Samsung Galaxy.\n              https://podcasts.apple.com/us/podcast/house-of-maher/id1802929394\n        COMPONENTS  brand_quality=98 [EVALUATED]  pricing_power=50 [ASSUMED]  deal_frequency=94 [EVALUATED]  renewals_repeat=85 [EVALUATED]  campaign_performance=50 [ASSUMED]  verified_commercial_value=96 [EVALUATED]\n\n    findings[mia.momentum]                    STRENGTH  score 77      HIGH    0/5 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          While her athletic momentum is temporarily flat due to her competitive hiatus, her cultural and\n          commercial trajectory is accelerating. The development of her Hello Sunshine docuseries and her\n          ongoing high-profile fashion campaigns keep her in the public eye. Her commercial deals continue\n          to scale in prestige and duration, pointing to sustained long-term relevance leading into the\n          2028 Olympics.\n          confidence HIGH — Recent mid-2026 media announcements and brand contract details confirm her commercial and cultural acceleration.\n        SOURCE EVIDENCE M.I.A. CITED\n          E3  major_media · 2026-07-28  Maher has been taking a competitive break since late 2025, but confirmed in July 2026 her desire to return to the US Rugby Sevens program for the 2026–2027 season and target the 2028 Los Angeles Olympics.\n              https://www.ruck.co.uk/ilona-maher-eager-to-get-back-on-the-pitch/\n          E4  secondary · 2026-09-01  Maher boasts approximately 5.64 million Instagram followers as of September 2026 and over 3.6 million TikTok followers, totaling over 9.2 million combined.\n              https://hypeauditor.com/instagram/ilonamaher/\n          E6  secondary · 2025-06-17  Maher is developing and producing a self-titled docuseries following her life both on and off the rugby pitch with Reese Witherspoon's production company Hello Sunshine.\n              https://justwomenssports.com/reads/ilona-maher-hello-sunshine-docuseries-usa-rugby-news/\n          E7  major_media · 2025-01-02  Maher became the first-ever brand ambassador for Unilever-owned Paula's Choice in late 2024 and signed a multi-year partnership with Adidas in March 2025.\n              https://www.sportspromedia.com/news/ilona-maher-paulas-choice-endorsement-deal/\n          E8  secondary · 2024-07-01  Maher co-founded Medalist Skin, an active skincare brand designed specifically for the unique dermatological needs of female athletes.\n              https://www.thegistsports.com/article/gold-in-a-bottle-medalist-skincare/\n          E9  official · 2026-09-15  Maher co-hosts the weekly podcast 'House of Maher' with her sisters, which holds a 4.9 rating on Apple Podcasts and is presented by Samsung Galaxy.\n              https://podcasts.apple.com/us/podcast/house-of-maher/id1802929394\n        COMPONENTS  audience_growth=78 [EVALUATED]  media_trajectory=90 [EVALUATED]  athletic_trajectory=60 [EVALUATED]  commercial_acceleration=92 [EVALUATED]  search_social_trajectory=82 [EVALUATED]\n\nAUDIENCE TRAJECTORY — follower growth only. It says nothing about athletic or commercial direction.\n    audienceTrajectory                        not known (no growth measurement on any platform)\n\nCOMMERCIAL POSITION — what the market has actually paid. Counted, never estimated.\n    commercialPosition.closedDeals            0  [measured · HIGH confidence]\n    commercialPosition.activeRelationships    []  [measured · HIGH confidence]\n    commercialPosition.demonstratedEconomics  not known (no closed deal carries an amount)\n    commercialPosition.pricingEvidence        none\n\nCOMMERCIAL PIPELINE — counts by state. `detected` means a brand made contact and nothing more.\n  Inbound interest is NOT a deal, NOT revenue and NOT an active relationship.\n    commercialPosition.pipeline               detected 0 · negotiating 0 · rejected 0 · accepted 0 · completed 0\n\nINBOUND SIGNALS — the athlete's own classified inbox, most recent first, capped. Demonstrated interest,\n  as classified by Nomila's inbox pipeline. A category is the classifier's label, not a commitment.\n    (no classified inbound threads)\n\nCONSTRAINTS — only what has been explicitly recorded as a bound on what the athlete can do.\n  An empty list means Nomila has recorded none. It does NOT mean none exist.\n    (none recorded)\n\nAUDIENCE — composition per platform, latest observation. Top buckets only.\n    (no audience composition is recorded on any platform)\n\nCONTENT PERFORMANCE — cadence and format, per platform, from Nomila's own measurement.\n    (no content performance is measured on any platform)\n\nREPRESENTATION & FLOORS — as the athlete stated them. A FLOOR IS NOT A MARKET VALUE; it is the least\n  she has said she would accept.\n    (the athlete has stated nothing about representation or floors)\n\nWHAT THE ATHLETE HAS SAID — their own words. A refusal bears on an opportunity; an ambition can generate one.\n  Never infer a preference or an ambition that is not listed here.\n  A stance is one of: wants | open | avoids | refuses — cite it in exactly that spelling.\n  A line marked ONBOARDING CHOICE was selected from a fixed set when the athlete joined. It is evidence of\n  intent at that time — she actually chose it — and it is NOT a current strategic objective.\n    (the athlete has stated nothing)\n\nDATES — recorded real-world dates that can bear on strategy, each with what it means. Only what is\n  populated; an empty list means none are recorded, not that none exist.\n    (none recorded)\n\nWHAT NOMILA CANNOT SEE — evidence we looked for and could not find. A research task, not a caveat.\n    materialGaps[0]                           Private platform engagement metrics (exact video retention rates, saves, and shares ratios).\n    materialGaps[1]                           Specific financial valuations and ROI metrics for her corporate endorsement campaigns.\n\nSOURCES CONSULTED\n    marketability            present · as of 2026-09-13T22:51:57.666Z\n    athlete_intelligence     ABSENT\n    athlete_state            present · as of 2026-09-25T17:53:34.146Z",
+  "opportunityBlock": "Strategic openings identified as of 2026-09-25T17:54:32.544Z (opportunity-eval-spec/1.0.0), judged from the athlete state as of 2026-09-25T17:53:34.146Z.\nOverall confidence in this map: MEDIUM.\n\nCite an opportunity by the key shown at its left. Every key below must appear exactly once in your output —\nin a proposal's from_opportunities, or in notes as consolidated (into a named proposal) or not_carried.\n\n    unlock-private-audience-engagement\n        UNLOCK · evidence · confidence HIGH\n        Connect Ilona's primary social accounts (Instagram and TikTok) to capture her true private engagement metrics.\n        impact(high): Replaces assumed metrics with verified audience depth and retention data, giving partners empirical proof of her high-performance content delivery.\n        feasibility(high): Requires a one-time connection of her Instagram and TikTok profiles through Nomila's platform.\n        rests on: findings[mia.engagement_quality], materialGaps[0]\n\n    grow-commercial-contract-registry\n        GROW · evidence · confidence HIGH\n        Build a comprehensive historical registry of Ilona’s active and past brand endorsements, contract terms, and exclusivity parameters.\n        impact(high): Eliminates category conflict risks, establishes her actual market pricing baseline, and equips her team for renewals and new inbound negotiations.\n        feasibility(high): Requires her management team to securely supply past contracts, active agreement terms, and historical pricing values.\n        rests on: commercialPosition.closedDeals, commercialPosition.activeRelationships, findings[mia.commercial_proof], materialGaps[1]\n\n    maintain-athletic-pathway-reentry\n        MAINTAIN · athletic · confidence HIGH\n        Protect her competitive selection pathway back into the US Rugby Sevens program by formalizing her training and reintegration schedule.\n        impact(high): Safeguards her core athletic authority and selection status as she transitions back from a high-profile media sabbatical.\n        feasibility(medium): Requires managing her intensive physical conditioning and rugby-specific training around her accelerating commercial and media schedule.\n        urgency(high): As of September 2026, the 2026–2027 season is beginning immediately, making her formal reentry timeline with USA Rugby time-sensitive.\n        rests on: findings[mia.athletic_authority], findings[mia.momentum]\n\n    amplify-hello-sunshine-docuseries\n        AMPLIFY · career · confidence HIGH\n        Integrate her upcoming competitive return to national team rugby as the central narrative arc of her Hello Sunshine docuseries.\n        impact(high): Maximizes the cultural impact, viewer engagement, and distribution value of her co-produced media venture by leveraging a high-stakes athletic comeback.\n        feasibility(medium): Requires coordinating production access with USA Rugby, ensuring filming does not disrupt her competitive preparation.\n        urgency(medium): Filming and narrative pre-production must align with the onset of her 2026-2027 competitive return.\n        rests on: findings[mia.cultural_relevance], findings[mia.athletic_authority]\n\n    amplify-medalist-skin-growth\n        AMPLIFY · owned_venture · confidence HIGH\n        Leverage her massive social audience and body-positivity narrative to drive growth for her co-founded brand, Medalist Skin.\n        impact(high): Builds long-term business equity and direct enterprise wealth that outlasts her active playing career.\n        feasibility(medium): Requires balancing brand promotion and operational oversight with her athletic training schedule.\n        rests on: findings[mia.narrative_power], findings[mia.audience_scale], findings[mia.commercial_proof]\n\n    amplify-house-of-maher-sponsorship\n        AMPLIFY · content · confidence HIGH\n        Scale the commercial sponsorship model of the 'House of Maher' podcast following its validated integration with Samsung Galaxy.\n        impact(medium): Increases recurring content revenue and diversifies her media portfolio through structured audio sponsorships.\n        feasibility(high): The podcast is already operational and highly rated, meaning commercial expansion requires minimal additional creative or operational setup.\n        rests on: findings[mia.audience_scale], findings[mia.brand_fit]\n\nWhy other domains yielded nothing, per the Opportunity evaluator:\n    - audience: No dedicated opportunity is listed because her direct audience scale is already outstanding (9.2M+) and self-generating. Her audience strategy is best served by feeding it through her active content and owned ventures rather than trying to build audience scale from weakness.\n    - positioning: Her '#BeastBeautyBrains' and body-positivity positioning is exceptionally strong, coherent, and widely recognized. There are no positioning conflicts or narrative gaps that require a FIX or GROW strategy; instead, her positioning is utilized to power her career and owned venture opportunities.\n    - relationships: While she has worked with high-profile organizations (such as USA Rugby, English Premiership's Bristol Bears, and Hello Sunshine), her recorded commercial profile lacks granular relationship data, meaning any relationship-specific introduction strategy is speculative until her core registries are resolved under the evidence domain.\n    - impact: There are no specific philanthropic preferences, causes, or community ambitions recorded under her stated words, making any impact-focused opportunity highly speculative in this version.\n    - commercial: Rather than proposing new outbound commercial brand partnerships under the commercial domain, we prioritized resolving the database evidence gap first (grow-commercial-contract-registry) to ensure future commercial opportunities are structured safely and without category conflicts.",
+  "startedAt": "2026-09-27T05:27:05.761Z",
+  "latencyMs": 44211,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+   "promptTokens": 10127,
+   "outputTokens": 1805,
+   "thoughtTokens": 7558
+  },
+  "costUsd": 0.0264456,
+  "rawText": "```json\n{\n  \"proposals\": [\n    {\n      \"key\": \"athletic-reentry-sevens\",\n      \"desired_state\": \"She is active in the US Rugby Sevens national team training and competition pool.\",\n      \"current_state\": \"She is a two-time Olympian and 2024 Olympic bronze medalist who has been on a competitive break from rugby since late 2025.\",\n      \"rationale\": \"Her athletic authority is the foundation of her cultural relevance and brand. Re-entering active national team training for the 2026-2027 season protects her status as an elite active competitor ahead of the LA 2028 Olympic cycle.\",\n      \"domain\": \"athletic\",\n      \"from_opportunities\": [\n        {\n          \"opportunity_key\": \"maintain-athletic-pathway-reentry\",\n          \"how\": \"Translates the training reintegration opportunity into the outcome of active national squad status.\"\n        }\n      ],\n      \"from_athlete_intent\": [],\n      \"current_state_evidence\": [\n        {\n          \"state_path\": \"findings[mia.athletic_authority]\",\n          \"how\": \"Establishes her elite status as a two-time Olympian and her competitive break since late 2025, alongside her planned return.\"\n        },\n        {\n          \"state_path\": \"findings[mia.momentum]\",\n          \"how\": \"Confirms her athletic momentum is temporarily flat due to her competitive hiatus.\"\n        }\n      ],\n      \"success\": {\n        \"observable_condition\": \"She is officially named to a US Rugby Sevens active roster or national training squad list.\",\n        \"quantified\": null\n      },\n      \"horizon\": {\n        \"period\": \"this_season\",\n        \"why\": \"The 2026-2027 competitive season is commencing immediately as of September 2026, making her active reintegration time-sensitive.\"\n      },\n      \"athlete_stance\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"hello-sunshine-docuseries-release\",\n      \"desired_state\": \"The Hello Sunshine docuseries is a greenlit or distributed media property centering on her competitive return to rugby.\",\n      \"current_state\": \"She is co-producing and developing a self-titled docuseries following her life on and off the pitch with Hello Sunshine.\",\n      \"rationale\": \"Integrating her real-time competitive comeback into the Hello Sunshine docuseries maximizes the commercial and cultural impact of the venture, leveraging her high-profile return to the national team.\",\n      \"domain\": \"career\",\n      \"from_opportunities\": [\n        {\n          \"opportunity_key\": \"amplify-hello-sunshine-docuseries\",\n          \"how\": \"Translates the docuseries narrative alignment opportunity into a structured, high-impact media release outcome.\"\n        }\n      ],\n      \"from_athlete_intent\": [],\n      \"current_state_evidence\": [\n        {\n          \"state_path\": \"findings[mia.cultural_relevance]\",\n          \"how\": \"Confirms she is developing and producing a self-titled docuseries with Reese Witherspoon's company Hello Sunshine.\"\n        },\n        {\n          \"state_path\": \"findings[mia.athletic_authority]\",\n          \"how\": \"Establishes her elite sporting background and planned competitive return to national team rugby.\"\n        }\n      ],\n      \"success\": {\n        \"observable_condition\": \"The docuseries is officially scheduled for distribution or premiered with a narrative centered on her competitive rugby return.\",\n        \"quantified\": null\n      },\n      \"horizon\": {\n        \"period\": \"next_12_months\",\n        \"why\": \"The production and development of the docuseries must align with her return for the 2026-2027 competitive season.\"\n      },\n      \"athlete_stance\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"medalist-skin-market-expansion\",\n      \"desired_state\": \"Medalist Skin operates with expanded retail distribution or an increased active product line.\",\n      \"current_state\": \"She is the co-founder of Medalist Skin, an active skincare brand designed specifically for female athletes.\",\n      \"rationale\": \"Leveraging her massive digital footprint and strong body-positivity positioning to scale her co-founded venture builds long-term business equity and enterprise value that extends beyond her active playing career.\",\n      \"domain\": \"owned_venture\",\n      \"from_opportunities\": [\n        {\n          \"opportunity_key\": \"amplify-medalist-skin-growth\",\n          \"how\": \"Converts her digital influence and positioning into tangible business growth and retail expansion for her brand.\"\n        }\n      ],\n      \"from_athlete_intent\": [],\n      \"current_state_evidence\": [\n        {\n          \"state_path\": \"findings[mia.commercial_proof]\",\n          \"how\": \"Documents her co-founding of Medalist Skin.\"\n        },\n        {\n          \"state_path\": \"findings[mia.audience_scale]\",\n          \"how\": \"Establishes her social media reach of over 9.2 million combined followers as a promotional leverage point.\"\n        },\n        {\n          \"state_path\": \"findings[mia.narrative_power]\",\n          \"how\": \"Details her #BeastBeautyBrains positioning and its commercial applicability.\"\n        }\n      ],\n      \"success\": {\n        \"observable_condition\": \"The brand secures at least one new major retail partner or launches an expanded product line.\",\n        \"quantified\": null\n      },\n      \"horizon\": null,\n      \"athlete_stance\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"house-of-maher-sponsorship-expansion\",\n      \"desired_state\": \"The 'House of Maher' podcast operates with an expanded, multi-partner commercial sponsorship model.\",\n      \"current_state\": \"She co-hosts the weekly podcast 'House of Maher,' which holds a 4.9 rating on Apple Podcasts and is presented by Samsung Galaxy.\",\n      \"rationale\": \"Expanding the commercial model of an already active and highly rated podcast allows her to scale recurring media revenue with minimal incremental operational or creative overhead.\",\n      \"domain\": \"content\",\n      \"from_opportunities\": [\n        {\n          \"opportunity_key\": \"amplify-house-of-maher-sponsorship\",\n          \"how\": \"Moves the podcast from a single-presenter model to a diversified multi-partner sponsorship structure.\"\n        }\n      ],\n      \"from_athlete_intent\": [],\n      \"current_state_evidence\": [\n        {\n          \"state_path\": \"findings[mia.audience_scale]\",\n          \"how\": \"Documents her co-hosting of the weekly podcast 'House of Maher' and its presenter relationship with Samsung Galaxy.\"\n        },\n        {\n          \"state_path\": \"findings[mia.brand_fit]\",\n          \"how\": \"Establishes her category breadth, brand fit, and appeal to commercial partners.\"\n        }\n      ],\n      \"success\": {\n        \"observable_condition\": \"The podcast integrates recurring ad placements or sponsorships from brands other than or in addition to Samsung Galaxy.\",\n        \"quantified\": null\n      },\n      \"horizon\": null,\n      \"athlete_stance\": null,\n      \"confidence\": \"HIGH\"\n    }\n  ],\n  \"notes\": [\n    {\n      \"opportunity_key\": \"unlock-private-audience-engagement\",\n      \"outcome\": \"not_carried\",\n      \"into\": null,\n      \"why\": \"Information acquisition, not an outcome.\"\n    },\n    {\n      \"opportunity_key\": \"grow-commercial-contract-registry\",\n      \"outcome\": \"not_carried\",\n      \"into\": null,\n      \"why\": \"Information acquisition, not an outcome.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+   "proposals": [
+    {
+     "key": "athletic-reentry-sevens",
+     "desired_state": "She is active in the US Rugby Sevens national team training and competition pool.",
+     "current_state": "She is a two-time Olympian and 2024 Olympic bronze medalist who has been on a competitive break from rugby since late 2025.",
+     "rationale": "Her athletic authority is the foundation of her cultural relevance and brand. Re-entering active national team training for the 2026-2027 season protects her status as an elite active competitor ahead of the LA 2028 Olympic cycle.",
+     "domain": "athletic",
+     "from_opportunities": [
+      {
+       "opportunity_key": "maintain-athletic-pathway-reentry",
+       "how": "Translates the training reintegration opportunity into the outcome of active national squad status."
+      }
+     ],
+     "from_athlete_intent": [],
+     "current_state_evidence": [
+      {
+       "state_path": "findings[mia.athletic_authority]",
+       "how": "Establishes her elite status as a two-time Olympian and her competitive break since late 2025, alongside her planned return."
+      },
+      {
+       "state_path": "findings[mia.momentum]",
+       "how": "Confirms her athletic momentum is temporarily flat due to her competitive hiatus."
+      }
+     ],
+     "success": {
+      "observable_condition": "She is officially named to a US Rugby Sevens active roster or national training squad list.",
+      "quantified": null
+     },
+     "horizon": {
+      "period": "this_season",
+      "why": "The 2026-2027 competitive season is commencing immediately as of September 2026, making her active reintegration time-sensitive."
+     },
+     "athlete_stance": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "hello-sunshine-docuseries-release",
+     "desired_state": "The Hello Sunshine docuseries is a greenlit or distributed media property centering on her competitive return to rugby.",
+     "current_state": "She is co-producing and developing a self-titled docuseries following her life on and off the pitch with Hello Sunshine.",
+     "rationale": "Integrating her real-time competitive comeback into the Hello Sunshine docuseries maximizes the commercial and cultural impact of the venture, leveraging her high-profile return to the national team.",
+     "domain": "career",
+     "from_opportunities": [
+      {
+       "opportunity_key": "amplify-hello-sunshine-docuseries",
+       "how": "Translates the docuseries narrative alignment opportunity into a structured, high-impact media release outcome."
+      }
+     ],
+     "from_athlete_intent": [],
+     "current_state_evidence": [
+      {
+       "state_path": "findings[mia.cultural_relevance]",
+       "how": "Confirms she is developing and producing a self-titled docuseries with Reese Witherspoon's company Hello Sunshine."
+      },
+      {
+       "state_path": "findings[mia.athletic_authority]",
+       "how": "Establishes her elite sporting background and planned competitive return to national team rugby."
+      }
+     ],
+     "success": {
+      "observable_condition": "The docuseries is officially scheduled for distribution or premiered with a narrative centered on her competitive rugby return.",
+      "quantified": null
+     },
+     "horizon": {
+      "period": "next_12_months",
+      "why": "The production and development of the docuseries must align with her return for the 2026-2027 competitive season."
+     },
+     "athlete_stance": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "medalist-skin-market-expansion",
+     "desired_state": "Medalist Skin operates with expanded retail distribution or an increased active product line.",
+     "current_state": "She is the co-founder of Medalist Skin, an active skincare brand designed specifically for female athletes.",
+     "rationale": "Leveraging her massive digital footprint and strong body-positivity positioning to scale her co-founded venture builds long-term business equity and enterprise value that extends beyond her active playing career.",
+     "domain": "owned_venture",
+     "from_opportunities": [
+      {
+       "opportunity_key": "amplify-medalist-skin-growth",
+       "how": "Converts her digital influence and positioning into tangible business growth and retail expansion for her brand."
+      }
+     ],
+     "from_athlete_intent": [],
+     "current_state_evidence": [
+      {
+       "state_path": "findings[mia.commercial_proof]",
+       "how": "Documents her co-founding of Medalist Skin."
+      },
+      {
+       "state_path": "findings[mia.audience_scale]",
+       "how": "Establishes her social media reach of over 9.2 million combined followers as a promotional leverage point."
+      },
+      {
+       "state_path": "findings[mia.narrative_power]",
+       "how": "Details her #BeastBeautyBrains positioning and its commercial applicability."
+      }
+     ],
+     "success": {
+      "observable_condition": "The brand secures at least one new major retail partner or launches an expanded product line.",
+      "quantified": null
+     },
+     "horizon": null,
+     "athlete_stance": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "house-of-maher-sponsorship-expansion",
+     "desired_state": "The 'House of Maher' podcast operates with an expanded, multi-partner commercial sponsorship model.",
+     "current_state": "She co-hosts the weekly podcast 'House of Maher,' which holds a 4.9 rating on Apple Podcasts and is presented by Samsung Galaxy.",
+     "rationale": "Expanding the commercial model of an already active and highly rated podcast allows her to scale recurring media revenue with minimal incremental operational or creative overhead.",
+     "domain": "content",
+     "from_opportunities": [
+      {
+       "opportunity_key": "amplify-house-of-maher-sponsorship",
+       "how": "Moves the podcast from a single-presenter model to a diversified multi-partner sponsorship structure."
+      }
+     ],
+     "from_athlete_intent": [],
+     "current_state_evidence": [
+      {
+       "state_path": "findings[mia.audience_scale]",
+       "how": "Documents her co-hosting of the weekly podcast 'House of Maher' and its presenter relationship with Samsung Galaxy."
+      },
+      {
+       "state_path": "findings[mia.brand_fit]",
+       "how": "Establishes her category breadth, brand fit, and appeal to commercial partners."
+      }
+     ],
+     "success": {
+      "observable_condition": "The podcast integrates recurring ad placements or sponsorships from brands other than or in addition to Samsung Galaxy.",
+      "quantified": null
+     },
+     "horizon": null,
+     "athlete_stance": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [
+    {
+     "opportunity_key": "unlock-private-audience-engagement",
+     "outcome": "not_carried",
+     "into": null,
+     "why": "Information acquisition, not an outcome."
+    },
+    {
+     "opportunity_key": "grow-commercial-contract-registry",
+     "outcome": "not_carried",
+     "into": null,
+     "why": "Information acquisition, not an outcome."
+    }
+   ]
+  },
+  "structuralProblems": [],
+  "groundingProblems": [],
+  "set": {
+   "athleteId": "77bbebfe-697f-4eb1-bcdf-5fb97f74cb0c",
+   "asOf": "2026-09-27T05:27:49.971Z",
+   "version": "objective-proposal/1.0.0",
+   "specVersion": "objective-eval-spec/1.0.4",
+   "stateAsOf": "2026-09-25T17:53:34.146Z",
+   "opportunityMapAsOf": "2026-09-25T17:54:32.544Z",
+   "proposals": [
+    {
+     "key": "athletic-reentry-sevens",
+     "desiredState": {
+      "value": "She is active in the US Rugby Sevens national team training and competition pool.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T17:53:34.146Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.achievement_recency",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.competition_level",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.national_international_status",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.performance_results",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.rankings_recognition",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.role_importance",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.athletic_trajectory",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.audience_growth",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.commercial_acceleration",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.media_trajectory",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.search_social_trajectory",
+       "E1",
+       "E2",
+       "E3",
+       "E4",
+       "E5",
+       "E6",
+       "E7",
+       "E8",
+       "E9"
+      ],
+      "rationale": "Her athletic authority is the foundation of her cultural relevance and brand. Re-entering active national team training for the 2026-2027 season protects her status as an elite active competitor ahead of the LA 2028 Olympic cycle.",
+      "falsifiedBy": null
+     },
+     "currentState": {
+      "value": "She is a two-time Olympian and 2024 Olympic bronze medalist who has been on a competitive break from rugby since late 2025.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T17:53:34.146Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.achievement_recency",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.competition_level",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.national_international_status",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.performance_results",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.rankings_recognition",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.role_importance",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.athletic_trajectory",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.audience_growth",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.commercial_acceleration",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.media_trajectory",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#momentum.search_social_trajectory",
+       "E1",
+       "E2",
+       "E3",
+       "E4",
+       "E5",
+       "E6",
+       "E7",
+       "E8",
+       "E9"
+      ],
+      "rationale": "Read from: findings[mia.athletic_authority], findings[mia.momentum]",
+      "falsifiedBy": null
+     },
+     "domain": "athletic",
+     "provenance": {
+      "origin": "nomila",
+      "fromOpportunities": [
+       {
+        "opportunityKey": "maintain-athletic-pathway-reentry",
+        "how": "Translates the training reintegration opportunity into the outcome of active national squad status."
+       }
+      ],
+      "fromAthleteIntent": [],
+      "currentStateEvidence": [
+       {
+        "statePath": "findings[mia.athletic_authority]",
+        "how": "Establishes her elite status as a two-time Olympian and her competitive break since late 2025, alongside her planned return."
+       },
+       {
+        "statePath": "findings[mia.momentum]",
+        "how": "Confirms her athletic momentum is temporarily flat due to her competitive hiatus."
+       }
+      ]
+     },
+     "success": {
+      "observableCondition": "She is officially named to a US Rugby Sevens active roster or national training squad list."
+     },
+     "horizon": {
+      "kind": "period",
+      "period": "this_season",
+      "why": "The 2026-2027 competitive season is commencing immediately as of September 2026, making her active reintegration time-sensitive."
+     },
+     "confidence": "HIGH"
+    },
+    {
+     "key": "hello-sunshine-docuseries-release",
+     "desiredState": {
+      "value": "The Hello Sunshine docuseries is a greenlit or distributed media property centering on her competitive return to rugby.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T17:53:34.146Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.achievement_recency",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.competition_level",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.national_international_status",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.performance_results",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.rankings_recognition",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.role_importance",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.crossover_recognition",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.media_source_quality",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.media_volume_percentile",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.search_interest",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.social_conversation",
+       "E1",
+       "E2",
+       "E3",
+       "E4",
+       "E5",
+       "E6"
+      ],
+      "rationale": "Integrating her real-time competitive comeback into the Hello Sunshine docuseries maximizes the commercial and cultural impact of the venture, leveraging her high-profile return to the national team.",
+      "falsifiedBy": null
+     },
+     "currentState": {
+      "value": "She is co-producing and developing a self-titled docuseries following her life on and off the pitch with Hello Sunshine.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T17:53:34.146Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.achievement_recency",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.competition_level",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.national_international_status",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.performance_results",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.rankings_recognition",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#athletic_authority.role_importance",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.crossover_recognition",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.media_source_quality",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.media_volume_percentile",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.search_interest",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#cultural_relevance.social_conversation",
+       "E1",
+       "E2",
+       "E3",
+       "E4",
+       "E5",
+       "E6"
+      ],
+      "rationale": "Read from: findings[mia.cultural_relevance], findings[mia.athletic_authority]",
+      "falsifiedBy": null
+     },
+     "domain": "career",
+     "provenance": {
+      "origin": "nomila",
+      "fromOpportunities": [
+       {
+        "opportunityKey": "amplify-hello-sunshine-docuseries",
+        "how": "Translates the docuseries narrative alignment opportunity into a structured, high-impact media release outcome."
+       }
+      ],
+      "fromAthleteIntent": [],
+      "currentStateEvidence": [
+       {
+        "statePath": "findings[mia.cultural_relevance]",
+        "how": "Confirms she is developing and producing a self-titled docuseries with Reese Witherspoon's company Hello Sunshine."
+       },
+       {
+        "statePath": "findings[mia.athletic_authority]",
+        "how": "Establishes her elite sporting background and planned competitive return to national team rugby."
+       }
+      ]
+     },
+     "success": {
+      "observableCondition": "The docuseries is officially scheduled for distribution or premiered with a narrative centered on her competitive rugby return."
+     },
+     "horizon": {
+      "kind": "period",
+      "period": "next_12_months",
+      "why": "The production and development of the docuseries must align with her return for the 2026-2027 competitive season."
+     },
+     "confidence": "HIGH"
+    },
+    {
+     "key": "medalist-skin-market-expansion",
+     "desiredState": {
+      "value": "Medalist Skin operates with expanded retail distribution or an increased active product line.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T17:53:34.146Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.audience_growth",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.cross_platform_effective_reach",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.platform_breadth",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.sport_level_audience_percentile",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.brand_quality",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.campaign_performance",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.deal_frequency",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.pricing_power",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.renewals_repeat",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.verified_commercial_value",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.commercial_applicability",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.distinctiveness",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.durability",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.evidence_authenticity",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.media_resonance",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.story_depth",
+       "E3",
+       "E4",
+       "E5",
+       "E6",
+       "E7",
+       "E8",
+       "E9"
+      ],
+      "rationale": "Leveraging her massive digital footprint and strong body-positivity positioning to scale her co-founded venture builds long-term business equity and enterprise value that extends beyond her active playing career.",
+      "falsifiedBy": null
+     },
+     "currentState": {
+      "value": "She is the co-founder of Medalist Skin, an active skincare brand designed specifically for female athletes.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T17:53:34.146Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.audience_growth",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.cross_platform_effective_reach",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.platform_breadth",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.sport_level_audience_percentile",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.brand_quality",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.campaign_performance",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.deal_frequency",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.pricing_power",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.renewals_repeat",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#commercial_proof.verified_commercial_value",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.commercial_applicability",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.distinctiveness",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.durability",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.evidence_authenticity",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.media_resonance",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#narrative_power.story_depth",
+       "E3",
+       "E4",
+       "E5",
+       "E6",
+       "E7",
+       "E8",
+       "E9"
+      ],
+      "rationale": "Read from: findings[mia.commercial_proof], findings[mia.audience_scale], findings[mia.narrative_power]",
+      "falsifiedBy": null
+     },
+     "domain": "owned_venture",
+     "provenance": {
+      "origin": "nomila",
+      "fromOpportunities": [
+       {
+        "opportunityKey": "amplify-medalist-skin-growth",
+        "how": "Converts her digital influence and positioning into tangible business growth and retail expansion for her brand."
+       }
+      ],
+      "fromAthleteIntent": [],
+      "currentStateEvidence": [
+       {
+        "statePath": "findings[mia.commercial_proof]",
+        "how": "Documents her co-founding of Medalist Skin."
+       },
+       {
+        "statePath": "findings[mia.audience_scale]",
+        "how": "Establishes her social media reach of over 9.2 million combined followers as a promotional leverage point."
+       },
+       {
+        "statePath": "findings[mia.narrative_power]",
+        "how": "Details her #BeastBeautyBrains positioning and its commercial applicability."
+       }
+      ]
+     },
+     "success": {
+      "observableCondition": "The brand secures at least one new major retail partner or launches an expanded product line."
+     },
+     "horizon": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "house-of-maher-sponsorship-expansion",
+     "desiredState": {
+      "value": "The 'House of Maher' podcast operates with an expanded, multi-partner commercial sponsorship model.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T17:53:34.146Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.audience_growth",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.cross_platform_effective_reach",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.platform_breadth",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.sport_level_audience_percentile",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.audience_attractiveness",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.brand_safety",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.category_breadth",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.content_versatility",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.geographic_relevance",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.identity_values_coherence",
+       "E2",
+       "E3",
+       "E4",
+       "E6",
+       "E7",
+       "E8",
+       "E9"
+      ],
+      "rationale": "Expanding the commercial model of an already active and highly rated podcast allows her to scale recurring media revenue with minimal incremental operational or creative overhead.",
+      "falsifiedBy": null
+     },
+     "currentState": {
+      "value": "She co-hosts the weekly podcast 'House of Maher,' which holds a 4.9 rating on Apple Podcasts and is presented by Samsung Galaxy.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T17:53:34.146Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.audience_growth",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.cross_platform_effective_reach",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.platform_breadth",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#audience_scale.sport_level_audience_percentile",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.audience_attractiveness",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.brand_safety",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.category_breadth",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.content_versatility",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.geographic_relevance",
+       "73536fc5-15b1-49ba-8aa9-e766c384a35f#brand_fit.identity_values_coherence",
+       "E2",
+       "E3",
+       "E4",
+       "E6",
+       "E7",
+       "E8",
+       "E9"
+      ],
+      "rationale": "Read from: findings[mia.audience_scale], findings[mia.brand_fit]",
+      "falsifiedBy": null
+     },
+     "domain": "content",
+     "provenance": {
+      "origin": "nomila",
+      "fromOpportunities": [
+       {
+        "opportunityKey": "amplify-house-of-maher-sponsorship",
+        "how": "Moves the podcast from a single-presenter model to a diversified multi-partner sponsorship structure."
+       }
+      ],
+      "fromAthleteIntent": [],
+      "currentStateEvidence": [
+       {
+        "statePath": "findings[mia.audience_scale]",
+        "how": "Documents her co-hosting of the weekly podcast 'House of Maher' and its presenter relationship with Samsung Galaxy."
+       },
+       {
+        "statePath": "findings[mia.brand_fit]",
+        "how": "Establishes her category breadth, brand fit, and appeal to commercial partners."
+       }
+      ]
+     },
+     "success": {
+      "observableCondition": "The podcast integrates recurring ad placements or sponsorships from brands other than or in addition to Samsung Galaxy."
+     },
+     "horizon": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [
+    {
+     "opportunityKey": "unlock-private-audience-engagement",
+     "outcome": "not_carried",
+     "why": "Information acquisition, not an outcome."
+    },
+    {
+     "opportunityKey": "grow-commercial-contract-registry",
+     "outcome": "not_carried",
+     "why": "Information acquisition, not an outcome."
+    }
+   ],
+   "overallConfidence": "MEDIUM"
+  }
+ }
+}

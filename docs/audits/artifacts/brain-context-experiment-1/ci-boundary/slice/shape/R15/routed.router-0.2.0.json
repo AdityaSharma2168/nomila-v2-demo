@@ -1,0 +1,269 @@
+{
+ "version": "execution-router/0.1.0-exp",
+ "runId": "R15:47b50da0",
+ "routed": [
+  {
+   "recommendationId": "rec_94b6d20dee8c9b5a",
+   "decision": {
+    "source": "her agent, through Mila",
+    "subject": {
+     "kind": "deal",
+     "id": "ctl-r2-northlight-termsheet"
+    },
+    "question": "Should this negotiation be advanced, countered or accepted?",
+    "objectiveIds": []
+   },
+   "what": "Counter the Northlight Learning ambassador term sheet to bring the commercial compensation in line with her established per-deliverable floor.",
+   "why": "The Northlight Learning ambassador term sheet offers a per-deliverable value of USD 1,250, which is below Mia's established ambassador floor of USD 3,602. A counter is required to align the terms with her financial requirements.",
+   "executionPath": "direct_action",
+   "relation": "advances_existing_work",
+   "advances": "deal[ctl-r2-northlight-termsheet]",
+   "intent": "counter",
+   "notSeen": [],
+   "cites": [
+    "deal[ctl-r2-northlight-termsheet].basis",
+    "representation.floors[ambassador]",
+    "deal[ctl-r2-northlight-termsheet].band"
+   ],
+   "governance": {
+    "response": "accepted",
+    "authorization": "prepare_authorized",
+    "execution": "none",
+    "simulated": [
+     "accept",
+     "prepare_authorized"
+    ]
+   },
+   "route": {
+    "ok": true,
+    "handoff": {
+     "shape": "direct_action",
+     "intent": {
+      "version": "execution-intent/0.1.0-exp",
+      "recommendationId": "rec_94b6d20dee8c9b5a",
+      "subject": "deal[ctl-r2-northlight-termsheet]",
+      "dealId": "ctl-r2-northlight-termsheet",
+      "intent": "counter",
+      "why": "The Northlight Learning ambassador term sheet offers a per-deliverable value of USD 1,250, which is below Mia's established ambassador floor of USD 3,602. A counter is required to align the terms with her financial requirements.",
+      "considerations": [],
+      "constraints": [],
+      "objectiveIds": []
+     }
+    },
+    "dedup": {
+     "attachedTo": null
+    }
+   }
+  },
+  {
+   "recommendationId": "rec_9feaeb54fb19c6b1",
+   "decision": {
+    "source": "the Objective loop",
+    "subject": {
+     "kind": "objective",
+     "id": "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+    },
+    "question": "what should Nomila do about this Objective now?",
+    "objectiveIds": [
+     "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+    ]
+   },
+   "what": "Initiate outreach to global brand CSR departments to secure partnerships co-funding her work with the Yuwa girls empowerment program.",
+   "why": "Mia has a highly compelling narrative around her philanthropy and leadership with the Yuwa Academy, which is currently uncommercialized. Initiating outreach to global brand CSR departments can secure co-funded partnerships that expand her impact.",
+   "executionPath": "specialized_plan",
+   "relation": "new_work",
+   "advances": null,
+   "intent": null,
+   "notSeen": [
+    "Budget parameters and alignment criteria of target corporate social responsibility funds"
+   ],
+   "cites": [
+    "objective[b1c799e3-59fc-4986-b3ab-a0b7b4869601]",
+    "opportunity[amplify-yuwa-philanthropic-work]",
+    "findings[mia.narrative_power]",
+    "findings[mia.brand_fit]"
+   ],
+   "governance": {
+    "response": "accepted",
+    "authorization": "prepare_authorized",
+    "execution": "none",
+    "simulated": [
+     "accept",
+     "prepare_authorized"
+    ]
+   },
+   "route": {
+    "ok": true,
+    "dedup": {
+     "attachedTo": null
+    },
+    "handoff": {
+     "version": "execution-router/0.2.0-exp",
+     "shape": "specialized_plan",
+     "recommendationId": "rec_9feaeb54fb19c6b1",
+     "domain": "impact",
+     "what": "Initiate outreach to global brand CSR departments to secure partnerships co-funding her work with the Yuwa girls empowerment program.",
+     "why": "Mia has a highly compelling narrative around her philanthropy and leadership with the Yuwa Academy, which is currently uncommercialized. Initiating outreach to global brand CSR departments can secure co-funded partnerships that expand her impact.",
+     "subject": "objective[b1c799e3-59fc-4986-b3ab-a0b7b4869601]",
+     "objectiveIds": [
+      "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+     ],
+     "advances": null,
+     "intent": null,
+     "notSeen": [
+      "Budget parameters and alignment criteria of target corporate social responsibility funds"
+     ],
+     "runId": "R15:47b50da0"
+    }
+   }
+  },
+  {
+   "recommendationId": "rec_bb66435c91ced059",
+   "decision": {
+    "source": "the Objective loop",
+    "subject": {
+     "kind": "objective",
+     "id": "c0f587e4-750f-4575-a4e8-fd4cfa6e078e"
+    },
+    "question": "what should Nomila do about this Objective now?",
+    "objectiveIds": [
+     "c0f587e4-750f-4575-a4e8-fd4cfa6e078e"
+    ]
+   },
+   "what": "Target premium brand partnerships and ambassador roles within the EdTech, STEM, and technology venture capital sectors.",
+   "why": "Mia's elite academic credentials and studies in technology and management science at Stanford offer a unique, peer-free positioning. Actively targeting partnerships in EdTech, STEM, and technology ventures will establish her commercial presence in these core domains.",
+   "executionPath": "specialized_plan",
+   "relation": "new_work",
+   "advances": null,
+   "intent": null,
+   "notSeen": [
+    "Specific partnership structures and criteria preferred by technology and venture capital firms"
+   ],
+   "cites": [
+    "objective[c0f587e4-750f-4575-a4e8-fd4cfa6e078e]",
+    "opportunity[grow-academic-tech-partnerships]",
+    "findings[mia.narrative_power]",
+    "findings[mia.brand_fit]"
+   ],
+   "governance": {
+    "response": "accepted",
+    "authorization": "prepare_authorized",
+    "execution": "none",
+    "simulated": [
+     "accept",
+     "prepare_authorized"
+    ]
+   },
+   "route": {
+    "ok": true,
+    "dedup": {
+     "attachedTo": null
+    },
+    "handoff": {
+     "version": "execution-router/0.2.0-exp",
+     "shape": "specialized_plan",
+     "recommendationId": "rec_bb66435c91ced059",
+     "domain": "outreach",
+     "what": "Target premium brand partnerships and ambassador roles within the EdTech, STEM, and technology venture capital sectors.",
+     "why": "Mia's elite academic credentials and studies in technology and management science at Stanford offer a unique, peer-free positioning. Actively targeting partnerships in EdTech, STEM, and technology ventures will establish her commercial presence in these core domains.",
+     "subject": "objective[c0f587e4-750f-4575-a4e8-fd4cfa6e078e]",
+     "objectiveIds": [
+      "c0f587e4-750f-4575-a4e8-fd4cfa6e078e"
+     ],
+     "advances": null,
+     "intent": null,
+     "notSeen": [
+      "Specific partnership structures and criteria preferred by technology and venture capital firms"
+     ],
+     "runId": "R15:47b50da0"
+    }
+   }
+  },
+  {
+   "recommendationId": "rec_116a86b109346a5c",
+   "decision": {
+    "source": "the Objective loop",
+    "subject": {
+     "kind": "objective",
+     "id": "feb62891-8b9f-44e4-8c1f-677d6947334b"
+    },
+    "question": "what should Nomila do about this Objective now?",
+    "objectiveIds": [
+     "feb62891-8b9f-44e4-8c1f-677d6947334b"
+    ]
+   },
+   "what": "Reactivate her dormant TikTok channel by cross-posting short-form video content to expand her platform breadth and reverse audience contraction.",
+   "why": "Mia's audience scale is in a minor contraction phase, and her TikTok has been idle for over 500 days. Reactivating TikTok by leveraging existing short-form content can re-engage video audiences and expand her reach with minimal overhead.",
+   "executionPath": "direct_action",
+   "relation": "new_work",
+   "advances": null,
+   "intent": null,
+   "notSeen": [
+    "TikTok-specific audience demographics and video retention benchmarks for her category"
+   ],
+   "cites": [
+    "objective[feb62891-8b9f-44e4-8c1f-677d6947334b]",
+    "opportunity[unlock-tiktok-channel]",
+    "contentPerformance[tiktok]",
+    "findings[mia.audience_scale]"
+   ],
+   "governance": {
+    "response": "accepted",
+    "authorization": "prepare_authorized",
+    "execution": "none",
+    "simulated": [
+     "accept",
+     "prepare_authorized"
+    ]
+   },
+   "route": {
+    "ok": false,
+    "stage": "shape",
+    "refused": "direct_action must advance an in-motion subject"
+   }
+  },
+  {
+   "recommendationId": "rec_d177e302bc3157f8",
+   "decision": {
+    "source": "the Objective loop",
+    "subject": {
+     "kind": "objective",
+     "id": "ctl-obj-matchday-series"
+    },
+    "question": "what should Nomila do about this Objective now?",
+    "objectiveIds": [
+     "ctl-obj-matchday-series"
+    ]
+   },
+   "what": "Launch a recurring match-day social media series across her channels for each remaining Stanford women's soccer fixture of the season.",
+   "why": "Stanford's soccer season is underway, and establishing a consistent match-day series will capitalize on her strong audience engagement. With the next matches scheduled (Syracuse on Oct 8 and Cal on Oct 16), a recurring campaign through the end of the season will satisfy her athletic narrative.",
+   "executionPath": "campaign",
+   "relation": "new_work",
+   "advances": null,
+   "intent": null,
+   "notSeen": [
+    "Specific content creation and editing support available to Mia during travel matches"
+   ],
+   "cites": [
+    "objective[ctl-obj-matchday-series]",
+    "ctx[0]",
+    "ctx[1]",
+    "findings[mia.engagement_quality]"
+   ],
+   "governance": {
+    "response": "accepted",
+    "authorization": "prepare_authorized",
+    "execution": "none",
+    "simulated": [
+     "accept",
+     "prepare_authorized"
+    ]
+   },
+   "route": {
+    "ok": false,
+    "stage": "shape",
+    "refused": "campaign without a typed reason to end (`ends`) — refused, not downgraded (#570 invariant 2)"
+   }
+  }
+ ]
+}

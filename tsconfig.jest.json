@@ -1,0 +1,20 @@
+{
+  // The tsconfig Jest compiles with (jest.config.cjs → ts-jest) AND the one CI type-checks
+  // test files against (`npx tsc --noEmit -p tsconfig.jest.json` in ci-checks.yml). One file
+  // for both, so what Jest runs and what tsc verifies can never drift apart.
+  //
+  // `isolatedModules` is the load-bearing line. Without it ts-jest builds a full TypeScript
+  // language service inside every Jest process — for this repo that program (drizzle's
+  // schema types, 69 tables) is ~3.3 GB and 20–30 s per suite, which is what was killing
+  // the 7 GB CI runner. With it ts-jest uses per-file transpileModule: no type information,
+  // ~200 MB, ~1 s. Type errors in tests are still caught — by the tsc step in CI, once per
+  // run instead of once per worker. See docs/audits/ci-test-harness-memory.md.
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["jest", "node"],
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "build", "dist", "server_dist", "media", "tools/mila-studio"]
+}

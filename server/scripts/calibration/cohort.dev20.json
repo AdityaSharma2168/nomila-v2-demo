@@ -1,0 +1,190 @@
+{
+  "version": "dev-cohort-20/2026-09-12",
+  "note": "The 20-athlete development pilot cohort approved 12 Sep 2026: identity/research inputs ONLY. `anchor` is the identity text BOTH providers receive verbatim. Minimal anchors for the four identity-resolution stress tests are deliberate: do not enrich them. Frozen target scores live in cohort.dev20.targets.json (evaluation layer) and must never be added here. The 21-athlete holdout is not represented here and must never be added to this file.",
+  "athletes": [
+    {
+      "key": "cristiano-ronaldo",
+      "fullName": "Cristiano Ronaldo",
+      "sport": "soccer",
+      "group": "high_data",
+      "anchor": "Portuguese footballer, forward, Al Nassr (Saudi Pro League) and Portugal captain, born 1985 Madeira",
+      "currentAffiliation": "Al Nassr",
+      "hometown": "Madeira, Portugal"
+    },
+    {
+      "key": "caitlin-clark",
+      "fullName": "Caitlin Clark",
+      "sport": "basketball",
+      "group": "high_data",
+      "anchor": "American basketball guard, Indiana Fever (WNBA, #1 pick 2024), formerly Iowa Hawkeyes, born 2002 West Des Moines, Iowa",
+      "currentAffiliation": "Indiana Fever",
+      "hometown": "West Des Moines, Iowa"
+    },
+    {
+      "key": "juju-watkins",
+      "fullName": "JuJu Watkins",
+      "sport": "basketball",
+      "group": "high_data",
+      "anchor": "Judea \"JuJu\" Watkins, USC Trojans women's basketball guard, Los Angeles (Sierra Canyon), born 2005",
+      "aliases": [
+        "Judea Watkins"
+      ],
+      "currentAffiliation": "USC Trojans",
+      "hometown": "Los Angeles, California"
+    },
+    {
+      "key": "alex-morgan",
+      "fullName": "Alex Morgan",
+      "sport": "soccer",
+      "group": "high_data",
+      "anchor": "American soccer forward, retired September 2024 (San Diego Wave, USWNT), born 1989 San Dimas, California",
+      "currentAffiliation": null,
+      "hometown": "San Dimas, California"
+    },
+    {
+      "key": "ilona-maher",
+      "fullName": "Ilona Maher",
+      "sport": "rugby",
+      "group": "medium_data",
+      "anchor": "USA Rugby sevens center, Olympic bronze 2024, Bristol Bears (England) 2025, born 1996 Burlington, Vermont",
+      "currentAffiliation": "Bristol Bears",
+      "hometown": "Burlington, Vermont"
+    },
+    {
+      "key": "bethany-hamilton",
+      "fullName": "Bethany Hamilton",
+      "sport": "surfing",
+      "group": "medium_data",
+      "anchor": "Professional surfer and advocate, Kauai, Hawaii, born 1990, shark attack survivor 2003",
+      "currentAffiliation": null,
+      "hometown": "Kauai, Hawaii"
+    },
+    {
+      "key": "flaujae-johnson",
+      "fullName": "Flau'jae Johnson",
+      "sport": "basketball",
+      "group": "medium_data",
+      "anchor": "LSU Tigers women's basketball guard and recording artist, born 2003 Savannah, Georgia, 2025–26 senior",
+      "currentAffiliation": "LSU Tigers",
+      "hometown": "Savannah, Georgia"
+    },
+    {
+      "key": "ben-shelton",
+      "fullName": "Ben Shelton",
+      "sport": "tennis",
+      "group": "medium_data",
+      "anchor": "American ATP tennis player, born 2002 Atlanta, former Florida Gators NCAA champion 2022, Toronto Masters champion 2025",
+      "currentAffiliation": null,
+      "hometown": "Atlanta, Georgia"
+    },
+    {
+      "key": "jimmer-fredette",
+      "fullName": "Jimmer Fredette",
+      "sport": "basketball",
+      "group": "medium_data",
+      "anchor": "Former BYU guard (2011 national player of the year), NBA and CBA, USA 3x3 basketball Paris 2024, born 1989 Glens Falls, New York",
+      "currentAffiliation": null,
+      "hometown": "Glens Falls, New York"
+    },
+    {
+      "key": "carlin-isles",
+      "fullName": "Carlin Isles",
+      "sport": "rugby",
+      "group": "niche",
+      "anchor": "USA Rugby sevens winger, former sprinter, born 1989 Akron, Ohio",
+      "currentAffiliation": null,
+      "hometown": "Akron, Ohio"
+    },
+    {
+      "key": "jordyn-listro",
+      "fullName": "Jordyn Listro",
+      "sport": "soccer",
+      "group": "niche",
+      "anchor": "Canadian soccer midfielder, born 1995 Toronto, formerly Orlando Pride (NWSL) and South Florida Bulls",
+      "currentAffiliation": null,
+      "hometown": "Toronto, Ontario"
+    },
+    {
+      "key": "zippy-fish",
+      "fullName": "Zippy Fish",
+      "sport": "australian rules football",
+      "group": "niche",
+      "anchor": "Australian rules footballer, Sydney Swans AFLW, born 2006 Western Australia, AFLW Rising Star nominee 2024",
+      "currentAffiliation": "Sydney Swans",
+      "hometown": "Western Australia"
+    },
+    {
+      "key": "picabo-street",
+      "fullName": "Picabo Street",
+      "sport": "alpine skiing",
+      "group": "niche",
+      "anchor": "American alpine skier, Olympic super-G gold 1998 and downhill silver 1994, born 1971 Triumph, Idaho, retired 2002",
+      "currentAffiliation": null,
+      "hometown": "Triumph, Idaho"
+    },
+    {
+      "key": "ukko-pekka-luukkonen",
+      "fullName": "Ukko-Pekka Luukkonen",
+      "sport": "ice hockey",
+      "group": "niche",
+      "anchor": "Finnish NHL goaltender, Buffalo Sabres, born 1999 Espoo",
+      "currentAffiliation": "Buffalo Sabres",
+      "hometown": "Espoo, Finland"
+    },
+    {
+      "key": "mia-bhuta",
+      "fullName": "Mia Bhuta",
+      "sport": "soccer",
+      "group": "sparse",
+      "anchor": "American soccer midfielder/defender, Stanford Cardinal women's soccer, United States U-17 Women's National Team at the 2022 FIFA U-17 Women's World Cup, from Pittsburgh, Pennsylvania",
+      "currentAffiliation": "Stanford Cardinal",
+      "hometown": "Pittsburgh, Pennsylvania"
+    },
+    {
+      "key": "lilia-bhuta",
+      "fullName": "Lilia Bhuta",
+      "sport": "soccer",
+      "group": "sparse",
+      "isMinor": true,
+      "anchor": "American youth soccer player, high-school age, Pittsburgh/Pennsylvania area. Sister of Stanford soccer player Mia Bhuta.",
+      "currentAffiliation": null,
+      "hometown": "Pittsburgh, Pennsylvania"
+    },
+    {
+      "key": "hannah-yu",
+      "fullName": "Hannah Yu",
+      "sport": "soccer",
+      "group": "sparse",
+      "anchor": "soccer athlete",
+      "currentAffiliation": null,
+      "hometown": null
+    },
+    {
+      "key": "moh-bility",
+      "fullName": "Moh Bility",
+      "sport": "football",
+      "group": "sparse",
+      "anchor": "football athlete",
+      "currentAffiliation": null,
+      "hometown": null
+    },
+    {
+      "key": "ellie-lebe",
+      "fullName": "Ellie Lebe",
+      "sport": "soccer",
+      "group": "sparse",
+      "anchor": "soccer athlete",
+      "currentAffiliation": null,
+      "hometown": null
+    },
+    {
+      "key": "riya-mehta",
+      "fullName": "Riya Mehta",
+      "sport": "gymnastics",
+      "group": "sparse",
+      "anchor": "gymnastics athlete",
+      "currentAffiliation": null,
+      "hometown": null
+    }
+  ]
+}

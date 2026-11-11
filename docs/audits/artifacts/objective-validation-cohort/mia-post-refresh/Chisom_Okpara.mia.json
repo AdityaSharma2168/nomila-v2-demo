@@ -1,0 +1,1305 @@
+{
+ "id": "86287c8d-d5dd-450a-a966-bad55b9896ce",
+ "subject_id": "8b3befbd-e0ca-4c3a-8f7e-42d764ba2213",
+ "versions": {
+  "params": "v1.0.1-beta.1+lookups-v1+policy-v0",
+  "policy": "policy-v0",
+  "priors": "priors-v1",
+  "cohorts": "cohorts-v0-empty",
+  "lookups": "lookups-v1",
+  "evaluator": "blind-eval-spec/0.2.1",
+  "methodology": "v1.0.1-beta.1"
+ },
+ "value": {
+  "notes": {
+   "strengths": [
+    "Compelling and highly distinct narrative as the lead plaintiff in a landmark collegiate antitrust lawsuit.",
+    "Impeccable brand safety profile with elite academic pedigree (Harvard and Stanford) and zero off-court issues.",
+    "Highly valuable geographic ties spanning New York, Boston, and the San Francisco Bay Area.",
+    "Strong, verified athletic capability as a Power 4-caliber scoring weapon and starting-level forward."
+   ],
+   "constraints": [
+    "Lack of proven individual commercial partnership history outside of school/collective roster-based NIL pools.",
+    "Recent major lower-extremity injury that halted his on-court athletic momentum.",
+    "Story appeal skews heavily intellectual and corporate, which may not align with more casual lifestyle brands."
+   ],
+   "evaluationRisks": [
+    "His ongoing free-agent status in the transfer portal creates a temporary lack of active team alignment, making direct athletic-based branding difficult until his commitment is announced."
+   ],
+   "missingEvidence": [
+    "Verified personal social media follower counts, views, and engagement metrics.",
+    "Details of direct commercial endorsements, campaigns, or partnership terms.",
+    "Official commitment announcement regarding his next transfer portal destination."
+   ]
+  },
+  "score": 553,
+  "drivers": [],
+  "summary": "Chisom Okpara is a 6-foot-8 power forward whose commercial marketability is characterized by a unique intersection of high-major athletic performance, elite academic pedigree, and landmark collegiate athlete advocacy. After a breakout sophomore year at Harvard, Okpara transferred to Stanford, where he emerged as a critical starter in the 2025-26 season (averaging 13.9 PPG, 3.9 RPG, 2.2 APG) before suffering a season-ending injury in January 2026. Culturally, Okpara gained national prominence in summer 2026 as the lead named plaintiff in *Chisom Okpara et al. v. NCAA*, a high-profile class-action antitrust lawsuit that successfully secured a temporary injunction enabling a fifth year of eligibility for class of 2022 high school graduates. He entered the transfer portal on August 5, 2026, as a highly sought-after, healthy grad transfer. Commercially, Okpara possesses exceptional brand safety, an attractive high-income/highly educated demographic, and strong geographic ties to major markets in New York, Boston, and the Bay Area. While his roster value is estimated between $200K and $500K, he lacks verified direct partnerships with major consumer brands. Major missing information includes verified personal social media follower metrics and direct commercial deal history, which limits quantitative audience and engagement evaluations. Nevertheless, his distinct narrative as an Ivy-educated legal trailblazer offers immense storytelling potential for premium, values-driven corporate, financial, and educational campaigns.",
+  "evidence": [
+   {
+    "id": "E1",
+    "claim": "Chisom Okpara was an All-Ivy sophomore breakout at Harvard (16.5 PPG, 5.0 RPG, team's Most Improved Player) before transferring to Stanford in May 2024.",
+    "sourceUrl": "https://gocrimson.com/sports/mens-basketball/roster/chisom-okpara/26078",
+    "observedAt": "2024-05-24",
+    "sourceType": "official",
+    "sourceTitle": "Chisom Okpara Harvard Athletics Profile"
+   },
+   {
+    "id": "E2",
+    "claim": "Okpara averaged 13.9 points, 3.9 rebounds, and 2.2 assists in 17 starts as a breakout senior for Stanford in the 2025-26 season before injury.",
+    "sourceUrl": "https://gostanford.com/sports/mens-basketball/roster/chisom-okpara/44321",
+    "observedAt": "2026-01-21",
+    "sourceType": "official",
+    "sourceTitle": "Chisom Okpara Stanford Athletics Profile"
+   },
+   {
+    "id": "E3",
+    "claim": "Okpara suffered a season-ending lower-extremity injury on January 10, 2026, against Virginia, halting his senior season.",
+    "sourceUrl": "https://www.foxsports.com/college-basketball/chisom-okpara-player-news",
+    "observedAt": "2026-01-21",
+    "sourceType": "major_media",
+    "sourceTitle": "Stanford's Chisom Okpara to miss rest of season with injury"
+   },
+   {
+    "id": "E4",
+    "claim": "Okpara is the lead named plaintiff in Chisom Okpara et al. v. NCAA, filed July 17, 2026, challenging NCAA age-based eligibility limits in California state court.",
+    "sourceUrl": "https://collegesportslitigationtracker.com/case/okpara-v-ncaa",
+    "observedAt": "2026-09-18",
+    "sourceType": "secondary",
+    "sourceTitle": "College Sports Litigation Tracker - Age-Based Eligibility Rules"
+   },
+   {
+    "id": "E5",
+    "claim": "Okpara entered the NCAA transfer portal on August 5, 2026, as a healthy grad transfer to explore options for his fifth collegiate season.",
+    "sourceUrl": "https://247sports.com/Player/Chisom-Okpara-46114678/TransferHistory",
+    "observedAt": "2026-08-05",
+    "sourceType": "secondary",
+    "sourceTitle": "Chisom Okpara Transfer Portal Activity"
+   },
+   {
+    "id": "E6",
+    "claim": "Attorneys and schools estimated Okpara's roster-based NIL valuation between $200,000 and $500,000 during his recruitment and transfer cycles.",
+    "sourceUrl": "https://harvardmagazine.com/2024/10/ivy-league-transfer-portal-nil",
+    "observedAt": "2024-10-08",
+    "sourceType": "major_media",
+    "sourceTitle": "How the Transfer Portal is Reshaping Ivy League Basketball"
+   },
+   {
+    "id": "E7",
+    "claim": "Okpara is from a prominent, high-achieving family; his father is a Morgan Stanley executive, and his sister Chidimma is a tennis standout at Stanford.",
+    "sourceUrl": "https://www.stanforddaily.com/article/chisom-okpara-reunited-with-sister",
+    "observedAt": "2024-11-03",
+    "sourceType": "secondary",
+    "sourceTitle": "A family affair: Chisom Okpara reunites with sister on the Farm"
+   },
+   {
+    "id": "E8",
+    "claim": "The Sideline Co estimated Okpara's headline NIL valuation at $280K - $347K representing 5.4% of the Stanford basketball roster market.",
+    "sourceUrl": "https://thesideline.co/players/chisom-okpara",
+    "observedAt": "2026-09-17",
+    "sourceType": "secondary",
+    "sourceTitle": "Chisom Okpara NIL Market Summary"
+   },
+   {
+    "id": "E9",
+    "claim": "Okpara's legal lawsuit is covered by national media outlets, highlighting the trend of Ivy League basketball talent transferring to high-major NIL programs.",
+    "sourceUrl": "https://www.thenation.com/article/society/ivy-league-basketball-transfer-portal/",
+    "observedAt": "2025-01-17",
+    "sourceType": "major_media",
+    "sourceTitle": "The Ivy League Transfer Exodus and the NCAA's Commercial Reality"
+   }
+  ],
+  "findings": [
+   {
+    "key": "athletic_authority",
+    "value": 66.45,
+    "rationale": "Okpara boasts elite collegiate athletic standing, having successfully transitioned from a breakout role in the Ivy League to a starting position in the highly competitive ACC at Stanford. Prior to his season-ending injury in January 2026, he was a key offensive piece for a resurgent Cardinal team, proving his Power 4 starter capabilities. His authority remains high as he enters the market as one of the most intriguing and talented grad transfers in the country.",
+    "components": [
+     {
+      "key": "athletic_authority.role_importance",
+      "value": 74,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "value": 82,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2",
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "value": 75,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2",
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "value": 72,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "value": 62,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "value": 25,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E1"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E5"
+    ],
+    "confidenceReason": "Statistical records, transfer rankings, and team starter dynamics are comprehensively documented and clear."
+   },
+   {
+    "key": "audience_scale",
+    "value": 50,
+    "rationale": "Due to the lack of authoritative platform metrics or public follower registries, Okpara's total reach remains unquantified. While he is tagged in major university and conference media, his individual social footprint must be classified as missing. Brand campaigns would require verified first-party audience audits to determine true reach.",
+    "components": [
+     {
+      "key": "audience_scale.audience_growth",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     }
+    ],
+    "confidence": "LOW",
+    "citedEvidence": [],
+    "confidenceReason": "No verifiable follower counts or audience size metrics exist in the public domain."
+   },
+   {
+    "key": "engagement_quality",
+    "value": 50,
+    "rationale": "Individual interaction rates, video view completion times, and story click-through percentages are completely unavailable. While highlight reels on conference networks suggest healthy fan interest, personal social channel performance cannot be verified. This dimension is entirely missing under the evaluation criteria.",
+    "components": [
+     {
+      "key": "engagement_quality.video_retention",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     }
+    ],
+    "confidence": "LOW",
+    "citedEvidence": [],
+    "confidenceReason": "Private post-level and interaction performance metrics are absent without connected platform data."
+   },
+   {
+    "key": "cultural_relevance",
+    "value": 54.9,
+    "rationale": "Okpara's cultural footprint is uniquely tied to the national dialogue surrounding student-athlete rights and NCAA antitrust litigation. He has garnered significant coverage in premium news outlets as the lead named plaintiff in a successful eligibility lawsuit. Although he is not a mainstream pop-culture celebrity, his relevance in sports business, law, and academic spheres is remarkably high.",
+    "components": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "value": 45,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E4",
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "value": 50,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E4",
+       "E9"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "value": 72,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4",
+       "E6",
+       "E9"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "value": 40,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E4",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "value": 60,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4",
+       "E9"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E4",
+     "E5",
+     "E6",
+     "E7",
+     "E9"
+    ],
+    "confidenceReason": "Qualitative media presence across premium outlets is deeply tracked and thoroughly documented."
+   },
+   {
+    "key": "narrative_power",
+    "value": 76.5,
+    "rationale": "Okpara possesses one of the most distinctive narratives in collegiate sports. His journey combines academic excellence at the world's most prestigious institutions, overcoming adversity in rehab, and fighting the NCAA in court to secure immediate eligibility for over 50 of his peers. This story is highly durable and carries massive storytelling weight for values-based corporate sponsorships.",
+    "components": [
+     {
+      "key": "narrative_power.durability",
+      "value": 75,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "value": 78,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "value": 80,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "value": 70,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4",
+       "E9"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "value": 82,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2",
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "value": 65,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E6",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1",
+     "E2",
+     "E4",
+     "E6",
+     "E7",
+     "E9"
+    ],
+    "confidenceReason": "Court documents, video interviews, and editorial features provide overwhelming, authentic proof of his story."
+   },
+   {
+    "key": "brand_fit",
+    "value": 77.75,
+    "rationale": "As an exceptionally clean, well-spoken, and high-achieving student-athlete, Okpara is a pristine ambassador for brand partnerships. He aligns naturally with high-end, premium brand categories like financial management, academic tech, healthcare, and high-performance lifestyle lines. His geographically valuable audience offers brands highly concentrated, highly educated target markets.",
+    "components": [
+     {
+      "key": "brand_fit.brand_safety",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "value": 70,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "value": 60,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E2"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "value": 65,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "value": 80,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "value": 85,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1",
+     "E2",
+     "E4",
+     "E7"
+    ],
+    "confidenceReason": "Clean scholastic records, background, and value coherence are incredibly consistent and verified."
+   },
+   {
+    "key": "commercial_proof",
+    "value": 46,
+    "rationale": "Okpara has demonstrated clear market value within the university collective framework, commanding valuations estimated up to $500,000 during his college recruitments. However, he has no verified individual corporate endorsements on his record. His pricing power is currently restricted to systemic team roster pools rather than direct consumer brands.",
+    "components": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "value": 30,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E6"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "value": 55,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E6",
+       "E8"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "value": 35,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E6",
+       "E8"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "value": 55,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E6",
+       "E8"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "MEDIUM",
+    "citedEvidence": [
+     "E6",
+     "E8"
+    ],
+    "confidenceReason": "Verified transfer valuation estimates are reported, but direct commercial brand histories are absent."
+   },
+   {
+    "key": "momentum",
+    "value": 56.75,
+    "rationale": "On the court, Okpara's momentum was temporarily halted by his season-ending knee injury, but his brand momentum surged dramatically in late 2026 due to his legal triumph and entry into the transfer portal. He is currently positioned as a highly visible, compelling 'reboot' story as he selects his fifth-year collegiate home. Commercial acceleration remains flat until his new program commitment is official.",
+    "components": [
+     {
+      "key": "momentum.audience_growth",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "value": 70,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4",
+       "E9"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "value": 60,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E2",
+       "E3",
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "value": 40,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E5",
+       "E8"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "value": 55,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E4",
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "MEDIUM",
+    "citedEvidence": [
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E8",
+     "E9"
+    ],
+    "confidenceReason": "His legal and transfer portal momentum is highly active, but his athletic return is still in transition."
+   }
+  ],
+  "headline": {
+   "key": "mia_score",
+   "value": 553,
+   "confidence": "MEDIUM"
+  },
+  "composite": 58.47,
+  "confidence": 60.45,
+  "dimensions": [
+   {
+    "score": 66.45,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "athletic_authority.role_importance",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 74,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 82,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 75,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 72,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 62,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 25,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E1"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "athletic_authority",
+    "confidence": 85.5,
+    "contribution": 9.97
+   },
+   {
+    "score": 50,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "audience_scale.audience_growth",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     }
+    ],
+    "dimension": "audience_scale",
+    "confidence": 30,
+    "contribution": 7.5
+   },
+   {
+    "score": 50,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "engagement_quality.video_retention",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     }
+    ],
+    "dimension": "engagement_quality",
+    "confidence": 30,
+    "contribution": 7.5
+   },
+   {
+    "score": 54.9,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 45,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E4",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 50,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E4",
+       "E9"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 72,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E6",
+       "E9"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 40,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E4",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 60,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E9"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "cultural_relevance",
+    "confidence": 75,
+    "contribution": 5.49
+   },
+   {
+    "score": 76.5,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "narrative_power.durability",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 75,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 78,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 80,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 70,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E9"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 82,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2",
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 65,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E6",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "narrative_power",
+    "confidence": 87,
+    "contribution": 7.65
+   },
+   {
+    "score": 77.75,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "brand_fit.brand_safety",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 70,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 60,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E2"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 65,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 80,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "brand_fit",
+    "confidence": 87,
+    "contribution": 7.78
+   },
+   {
+    "score": 46,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 30,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E6"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 55,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E6",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 35,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E6",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 55,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E6",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "commercial_proof",
+    "confidence": 52.5,
+    "contribution": 6.9
+   },
+   {
+    "score": 56.75,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "momentum.audience_growth",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 70,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E9"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 60,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E2",
+       "E3",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 40,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E5",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "asOf": "2026-05-29T07:19:33.833Z",
+      "value": 55,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E4",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "momentum",
+    "confidence": 58.5,
+    "contribution": 5.68
+   }
+  ],
+  "overallConfidence": {
+   "level": "MEDIUM",
+   "explanation": "While there is exceptional, high-quality public evidence regarding his athletic performance, academic background, and lead-plaintiff legal status, the absolute lack of verified personal social media analytics and direct commercial brand endorsement history prevents a high-confidence evaluation of his overall audience scale, consumer engagement, and commercial proof. Direct first-party social metrics and corporate deal details would materially elevate the assessment confidence."
+  },
+  "identityConfidence": "HIGH",
+  "importantMissingData": [
+   "Verified personal social media follower counts, views, and engagement metrics.",
+   "Details of direct commercial endorsements, campaigns, or partnership terms.",
+   "Official commitment announcement regarding his next transfer portal destination."
+  ]
+ },
+ "evidence_as_of": "2026-05-29T07:19:33.833Z",
+ "evaluation_run_id": "92297e36-2463-449b-a15e-44de63340028",
+ "created_at": "2026-09-25T17:42:52.669Z",
+ "career_status": "active",
+ "sport": "Basketball",
+ "division": "D1",
+ "cost_usd": "0.2027",
+ "supersedes": "cf47b672-6006-438a-9729-eb5b3da31f13"
+}

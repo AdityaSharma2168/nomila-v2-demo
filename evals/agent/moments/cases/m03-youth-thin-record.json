@@ -1,0 +1,155 @@
+{
+  "id": "m03-youth-thin-record",
+  "reviewed": false,
+  "description": "A high-school athlete with a thin record and no deals: three sourced moments sized to an early career, nothing commercial, and a searched moment whose page the scan never saw is held.",
+  "mock_today": "2026-10-10",
+  "athlete": {
+    "name": "Leah Brandt",
+    "sport": "swimming"
+  },
+  "stage": {
+    "label": "High school varsity swimmer",
+    "band": "early"
+  },
+  "fixture": {
+    "facts": [
+      {
+        "key": "f1",
+        "subject_kind": "athlete",
+        "subject_name": "Leah Brandt",
+        "claim": "Leah Brandt swims for the Westbrook High varsity team.",
+        "type": "found",
+        "date": "-30",
+        "topic": "team",
+        "field": "school",
+        "field_value": "Westbrook High"
+      },
+      {
+        "key": "f2",
+        "subject_kind": "athlete",
+        "subject_name": "Leah Brandt",
+        "claim": "Leah Brandt missed a month of training with a shoulder injury.",
+        "type": "found",
+        "date": "-120",
+        "topic": "status",
+        "care": true
+      }
+    ],
+    "moments": [],
+    "deals": []
+  },
+  "expect": {
+    "min_moments": 3,
+    "max_moments": 5,
+    "retired": [],
+    "kept": [],
+    "golden": [
+      {
+        "id": "g1",
+        "match": "regional",
+        "why": "The regional meet is the athlete's next dated competition."
+      }
+    ],
+    "min_recall": 1,
+    "must_not": [
+      {
+        "match": "sponsored|paid partnership|discount code",
+        "why": "An early-career athlete with no partners: nothing commercial."
+      },
+      {
+        "match": "shoulder|injury",
+        "why": "A care fact never appears in content."
+      }
+    ]
+  },
+  "mock": {
+    "sources": [
+      "https://example.org/m03-youth-thin-record/regionals",
+      "https://example.org/m03-youth-thin-record/safety-week",
+      "https://example.org/m03-youth-thin-record/spirit-week"
+    ],
+    "moments": [
+      {
+        "name": "Regional championship meet",
+        "description": "The regional championship meet takes place in twelve days.",
+        "date": "+12",
+        "date_precision": "day",
+        "category": "schedule",
+        "why_now": "The biggest meet of the season so far.",
+        "source_url": "https://example.org/m03-youth-thin-record/regionals",
+        "source_title": "Regional schedule",
+        "confidence": 0.85,
+        "based_on": [
+          "$F:f1"
+        ],
+        "refreshes": null,
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "Twelve days to regionals.",
+          "angle": "The work before the meet."
+        }
+      },
+      {
+        "name": "Water safety week",
+        "description": "A national water safety week runs this month.",
+        "date": "+20",
+        "date_precision": "day",
+        "category": "holiday_awareness",
+        "why_now": "A swimmer sharing one safety tip fits the week naturally.",
+        "source_url": "https://example.org/m03-youth-thin-record/safety-week",
+        "source_title": "Safety week",
+        "confidence": 0.8,
+        "based_on": [],
+        "refreshes": null,
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "One tip that keeps everyone safe in the water.",
+          "angle": "Safety first."
+        }
+      },
+      {
+        "name": "Westbrook spirit week",
+        "description": "Westbrook High holds its spirit week before homecoming.",
+        "date": "+8",
+        "date_precision": "day",
+        "category": "cultural_trend",
+        "why_now": "The whole school is posting; a team photo fits right in.",
+        "source_url": "https://example.org/m03-youth-thin-record/spirit-week",
+        "source_title": "School news",
+        "confidence": 0.8,
+        "based_on": [
+          "$F:f1"
+        ],
+        "refreshes": null,
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "Spirit week, swim team edition.",
+          "angle": "School pride."
+        }
+      },
+      {
+        "name": "Holiday swim clinic",
+        "description": "A holiday swim clinic.",
+        "date": "+30",
+        "date_precision": "day",
+        "category": "cultural_trend",
+        "why_now": "Seasonal.",
+        "source_url": "https://unseen.example/clinic",
+        "source_title": "Clinic",
+        "confidence": 0.5,
+        "based_on": [],
+        "refreshes": null,
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "Clinic day.",
+          "angle": "Learning."
+        }
+      }
+    ],
+    "retire": []
+  }
+}

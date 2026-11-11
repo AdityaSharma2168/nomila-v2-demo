@@ -1,0 +1,25 @@
+-- 0093_drop_brand_backfill_bak_tables.sql — drop the three rollback snapshots of the June brand-identity backfill.
+--
+-- Applied only because scripts/db-migrate.sh names it in the step-3 list. The same commit removes db-migrate step 6
+-- (server/scripts/backfillBrandIdentityWrite.ts), which CREATEd these snapshots whenever they were missing — so
+-- once this file has run they cannot come back. Its dry-run siblings (backfillBrandIdentity.ts,
+-- backfillBrandThreadsDryRun.ts) go too; nothing referenced any of the three scripts.
+--
+-- ── WHAT THIS REMOVES ─────────────────────────────────────────────────────────────────────────────
+-- inbox_brands_bak   — SELECT * FROM inbox_brands, as of the first backfill run (56 rows on dev).
+-- threads_brand_bak  — inbox_threads (id, brand_id, classification) at that time (91 rows on dev).
+-- deals_brand_bak    — deals (id, brand_name) at that time (89 rows on dev).
+--   CREATE TABLE … AS copies: no keys, no foreign keys in or out, no view reads them, and they sit outside
+--   shared/schema.ts and the athlete-data manifest — so they held deal brand names and thread classifications
+--   (athlete data) that account deletion and export could not reach. The backfill they could roll back ran once on
+--   2026-06-29 (brand_identity_backfill_marker) and has been superseded.
+--
+-- NOT touched: brand_identity_backfill_marker (one applied_at row; not approved for removal here), and the schema
+-- effects the backfill had on inbox_brands (normalized_name, is_agency, nullable domain) — those are already in
+-- place wherever the step ran and are part of the current schema.
+--
+-- No CASCADE: if anything ever came to depend on one of these, this file fails rather than dropping it silently.
+-- DESTRUCTIVE: the snapshot rows are discarded (the live tables are unaffected). Re-runs as a no-op. No transaction
+-- control here (migrationsGuard): dry-run this file ON ITS OWN in BEGIN … ROLLBACK.
+
+DROP TABLE IF EXISTS inbox_brands_bak, threads_brand_bak, deals_brand_bak;

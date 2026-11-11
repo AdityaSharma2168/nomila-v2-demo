@@ -1,0 +1,59 @@
+{
+  "status": "assessed",
+  "version": "objective-change-assessment/0.1.1-exp",
+  "by": "rule",
+  "signals": {
+    "fieldsChanged": [
+      "desiredState"
+    ],
+    "mechanicalOnly": true,
+    "bypassBecause": "spelling correction \"audiance\" → \"audience\", a word the Objective already uses",
+    "termsAdded": [
+      "audience"
+    ],
+    "termsRemoved": [
+      "audiance"
+    ],
+    "successTermsDropped": [],
+    "quantifiedPresent": false
+  },
+  "assessment": {
+    "change": {
+      "class": "wording",
+      "reason": "mechanical edit (rule)",
+      "evidence": {
+        "present": [],
+        "absent": []
+      }
+    },
+    "success": {
+      "verdict": "still_coherent",
+      "reason": "mechanical edit (rule)",
+      "evidence": {
+        "present": [],
+        "absent": []
+      }
+    },
+    "horizon": {
+      "verdict": "not_applicable",
+      "reason": "mechanical edit (rule)",
+      "evidence": {
+        "present": [],
+        "absent": []
+      }
+    },
+    "openings": [
+      {
+        "key": "grow-instagram-posting-cadence",
+        "verdict": "still_supports",
+        "reason": "mechanical edit (rule)",
+        "evidence": {
+          "present": [],
+          "absent": []
+        }
+      }
+    ]
+  },
+  "model": null,
+  "promptSha256": null
+}

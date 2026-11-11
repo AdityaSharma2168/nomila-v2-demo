@@ -1,0 +1,39 @@
+{
+  "athlete": {
+    "key": "cristiano-ronaldo",
+    "name": "Cristiano Ronaldo",
+    "sport": "Soccer"
+  },
+  "accounts": [],
+  "unavailable": [
+    {
+      "platform": "instagram",
+      "reason": "no confidently resolved account"
+    },
+    {
+      "platform": "youtube",
+      "reason": "no confidently resolved account"
+    },
+    {
+      "platform": "tiktok",
+      "reason": "no authoritative route"
+    },
+    {
+      "platform": "x",
+      "reason": "no authoritative route"
+    }
+  ],
+  "candidates": [
+    {
+      "platform": "instagram",
+      "handle": "cristiano",
+      "outcome": "discovery: (#10) Application does not have permission for this action"
+    },
+    {
+      "platform": "youtube",
+      "handle": "cristiano",
+      "outcome": "NOT supplied: identity not certain (channel \"UR · Cristiano\")"
+    }
+  ],
+  "text": ""
+}

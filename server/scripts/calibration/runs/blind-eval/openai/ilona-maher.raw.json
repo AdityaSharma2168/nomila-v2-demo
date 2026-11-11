@@ -1,0 +1,323 @@
+{
+  "specVersion": "blind-eval-spec/0.1",
+  "provider": "openai",
+  "athlete": {
+    "key": "ilona-maher",
+    "name": "Ilona Maher",
+    "sport": "Rugby"
+  },
+  "conditions": "gpt-5.4-mini Responses API; web_search (medium) + action.sources; default reasoning; text output with fenced JSON",
+  "startedAt": "2026-09-14T01:56:26.228Z",
+  "attempts": 1,
+  "model": "gpt-5.4-mini",
+  "modelVersion": "gpt-5.4-mini-2026-03-17",
+  "responseId": "resp_07f0205e07bf36fb006aa7544a597c87d2980289b0dac24083",
+  "latencyMs": 120056,
+  "finishReason": "completed",
+  "truncated": false,
+  "usage": {
+    "promptTokens": 19133,
+    "outputTokens": 6801,
+    "thoughtTokens": 260,
+    "totalTokens": 25934,
+    "searchCalls": 3
+  },
+  "costUsd": 0.05495425,
+  "text": "```json\n{\n  \"athlete\": {\n    \"name\": \"Ilona Maher\",\n    \"sport\": \"Rugby\",\n    \"identity_confidence\": \"HIGH\"\n  },\n  \"marketability_summary\": \"Ilona Maher is a U.S. rugby sevens Olympian whose marketability is driven by an unusual blend of elite-sport credibility and mass social reach. She helped the United States win its first Olympic rugby sevens bronze medal in Paris, later won the 2025 ESPY for Best Breakthrough Athlete, and returned to the fifteens game with Bristol Bears, keeping her competitive profile current. Publicly, she is one of the most visible rugby players in the world, with a social presence that major outlets describe as far beyond most athletes in her sport and broad enough to spill into mainstream pop culture through appearances such as Dancing with the Stars, Sports Illustrated Swimsuit, and magazine and talk-show coverage. Her narrative is highly legible: a powerful, body-positive, charismatic female athlete using humor and authenticity to raise rugby’s profile. Commercially, she has clear proof of demand, including confirmed partnerships with Adidas, Maybelline, Paula’s Choice, Secret, and other brand activity tied to her post-Olympic momentum. The main uncertainty is that public sources do not consistently expose detailed platform analytics, audience demographics, or campaign performance data, so some engagement and economics signals remain only partially observable.\",\n  \"evidence\": [\n    {\n      \"id\": \"E1\",\n      \"claim\": \"Ilona Maher helped the U.S. women win bronze in rugby sevens at the 2024 Paris Olympics, the first Olympic rugby sevens medal for the United States.\",\n      \"source_title\": \"Olympic History: Ilona Maher & Team USA Win First Rugby Bronze in Epic Match | Paris Olympics - YouTube\",\n      \"source_url\": \"https://www.youtube.com/watch?v=yKJsij4qBi8\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2024-08\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports recent elite athletic achievement and Olympic-level status.\"\n    },\n    {\n      \"id\": \"E2\",\n      \"claim\": \"Maher won the 2025 ESPY for Best Breakthrough Athlete.\",\n      \"source_title\": \"Maher Wins ESPY for Best Breakthrough Athlete - Quinnipiac University Athletics\",\n      \"source_url\": \"https://gobobcats.com/news/2025/7/17/womens-rugby-ilona-maher-wins-2025-espy-for-best-breakthrough-athlete\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2025-07-17\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports formal recognition and recency of commercial/cultural momentum.\"\n    },\n    {\n      \"id\": \"E3\",\n      \"claim\": \"USA Rugby lists Maher as returning to the USA Women's Eagles fifteens player pool and identifies her as a sevens star.\",\n      \"source_title\": \"USA Women’s Eagles Launch 2025 Campaign with Spring Player Pool Selections\",\n      \"source_url\": \"https://usa.rugby/news/usa-womens-eagles-launch-2025-campaign-with-spring-player-pool-selections-2025325\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2025-03-25\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports national-team status, current relevance, and role across formats.\"\n    },\n    {\n      \"id\": \"E4\",\n      \"claim\": \"USA Rugby's official sevens coverage notes Maher opened scoring in a medal-round win in Paris.\",\n      \"source_title\": \"USA Women's Rugby Sevens advance to medal rounds after Quarterfinal win\",\n      \"source_url\": \"https://usa.rugby/news/usa-womens-rugby-sevens-advance-to-medal-rounds-after-quarterfinal-win-2024729\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2024-07-29\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports importance in a key Olympic match.\"\n    },\n    {\n      \"id\": \"E5\",\n      \"claim\": \"World Rugby/USA Rugby-related sources and major media describe Maher as a highly followed rugby player and a breakout media figure for the sport.\",\n      \"source_title\": \"Ilona Maher: how a US rugby sevens player became one of the biggest stars of the Games | The Guardian\",\n      \"source_url\": \"https://www.theguardian.com/sport/article/2024/jul/29/ilona-maher-how-a-us-rugby-sevens-player-became-one-of-the-biggest-stars-of-the-games\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2024-07-29\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports audience scale and cross-sport visibility.\"\n    },\n    {\n      \"id\": \"E6\",\n      \"claim\": \"TIME reported that Maher’s combined Instagram and TikTok following exceeded that of several established Olympic stars during the Paris period.\",\n      \"source_title\": \"Olympian Ilona Maher Is Raising Rugby's Profile Through TikTok-and Her Own\",\n      \"source_url\": \"https://time.com/7004592/ilona-maher-rugby-tiktok-paris-olympics-interview/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2024-07\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports audience scale and crossover recognition.\"\n    },\n    {\n      \"id\": \"E7\",\n      \"claim\": \"Forbes reported that Maher had more than 9 million social media followers and that her Instagram following rose sharply after Paris.\",\n      \"source_title\": \"Ilona Maher\",\n      \"source_url\": \"https://www.forbes.com/profile/ilona-maher/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2026-09-12\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports current effective reach and momentum.\"\n    },\n    {\n      \"id\": \"E8\",\n      \"claim\": \"Forbes reported Maher’s Instagram follower count rose from about 1 million to 5 million by mid-2025.\",\n      \"source_title\": \"Rugby Star Ilona Maher Sets Sights On World Cup Glory\",\n      \"source_url\": \"https://www.forbes.com/sites/andyfrye/2025/06/05/ilona-maher-focused-on-world-cup-glory/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2025-06-05\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports audience growth trajectory.\"\n    },\n    {\n      \"id\": \"E9\",\n      \"claim\": \"Sports Business Journal reported confirmed brand deals and noted Maher’s nearly 9 million social media followers after Paris, including Adidas and T.J. Maxx.\",\n      \"source_title\": \"Rugby’s Ilona Maher builds her business while boosting women\",\n      \"source_url\": \"https://www.sportsbusinessjournal.com/Articles/2025/08/18/rugbys-ilona-maher-builds-her-business-while-raising-the-confidence-of-girls-and-women/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2025-08-18\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports commercial proof, brand quality, and repeat demand.\"\n    },\n    {\n      \"id\": \"E10\",\n      \"claim\": \"Sports Business Journal reported Paula’s Choice signed Maher as its first ambassador and that Maybelline re-upped its deal with her.\",\n      \"source_title\": \"Rugby’s Ilona Maher builds her business while boosting women\",\n      \"source_url\": \"https://www.sportsbusinessjournal.com/Articles/2025/08/18/rugbys-ilona-maher-builds-her-business-while-raising-the-confidence-of-girls-and-women/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2025-08-18\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports repeated partnerships and category fit.\"\n    },\n    {\n      \"id\": \"E11\",\n      \"claim\": \"The PWR official site announced Maher would join Bristol Bears on a three-month deal and described her as one of rugby's biggest names.\",\n      \"source_title\": \"Ilona Maher joins the PWR and signs for Bristol Bears\",\n      \"source_url\": \"https://www.thepwr.com/ilonamaher\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2025-01\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports current competition level and role importance.\"\n    },\n    {\n      \"id\": \"E12\",\n      \"claim\": \"Forbes and other coverage highlighted Maher's role in mainstream entertainment and lifestyle media, including Sports Illustrated Swimsuit and Dancing with the Stars.\",\n      \"source_title\": \"Ilona Maher And USA Rugby Want To Wow Olympic Sports Fans\",\n      \"source_url\": \"https://www.forbes.com/sites/andyfrye/2024/06/16/ilona-maher-and-usa-rugby-want-to-wow-olympic-sports-fans/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2024-06-16\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports cultural relevance, crossover recognition, and brand versatility.\"\n    },\n    {\n      \"id\": \"E13\",\n      \"claim\": \"Official DWTS materials identified Maher as an Olympian and viral social media star with a body-positive, authentic public persona.\",\n      \"source_title\": \"abc ENTERTAINMENT DWTS contestant bio\",\n      \"source_url\": \"https://www.detpress.com/storage/uploads/C6/0F/C60F604C-571B-A15E-BB24-9E8384A5FAEB/DWTS_S33_Ilona_Maher_Contestant_Bio_2024.pdf\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2024-09\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports narrative power, persona clarity, and mainstream fit.\"\n    },\n    {\n      \"id\": \"E14\",\n      \"claim\": \"USA Rugby and other sources place Maher within the Olympic and national-team ecosystem, with Paris and Tokyo representation.\",\n      \"source_title\": \"USA Women’s Eagles Launch 2025 Campaign with Spring Player Pool Selections\",\n      \"source_url\": \"https://usa.rugby/news/usa-womens-eagles-launch-2025-campaign-with-spring-player-pool-selections-2025325\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2025-03-25\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports national/international status and ongoing relevance.\"\n    }\n  ],\n  \"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 86,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\", \"E11\", \"E14\"],\n        \"rationale\": \"Fact: Maher competes at Olympic and top national-team levels and also joined a professional club environment in the PWR; interpretation: this places her in a highly prestigious competitive tier.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\", \"E3\"],\n        \"rationale\": \"Fact: she contributed to the U.S. bronze-medal run and scored in key Olympic matches; interpretation: those are elite, commercially meaningful results in a relatively niche sport.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 74,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E1\"],\n        \"rationale\": \"Fact: she won the 2025 ESPY for Best Breakthrough Athlete and is associated with Olympic medal recognition; interpretation: formal recognition is strong even if not based on world rankings.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E14\", \"E1\"],\n        \"rationale\": \"Fact: USA Rugby places her in the national team player pool and she has Olympic representation for Team USA; interpretation: her international standing is exceptional for a rugby athlete.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 79,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E11\", \"E3\"],\n        \"rationale\": \"Fact: official coverage highlights her as a decisive contributor and a major name for Bristol Bears/USA Rugby; interpretation: she is central both athletically and commercially within her teams.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\", \"E11\"],\n        \"rationale\": \"Fact: her biggest achievements and formal recognition occurred in 2024–2025 and she remains active in 2025; interpretation: the achievement set is very current and commercially live.\"\n      }\n    },\n    \"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E7\", \"E8\", \"E6\", \"E5\"],\n        \"rationale\": \"Fact: major media report a multi-million follower base and broad cross-platform visibility; interpretation: her effective reach is category-leading for rugby.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 97,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\", \"E7\"],\n        \"rationale\": \"Fact: outlets explicitly describe her as one of the biggest stars in rugby and note follower counts that exceed many higher-profile Olympians; interpretation: she sits at the extreme top end of her sport's audience ecosystem.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E8\", \"E7\"],\n        \"rationale\": \"Fact: Forbes reported rapid follower growth from about 1 million to 5 million on Instagram by mid-2025 and later profile data cited more than 9 million across platforms; interpretation: the audience has shown sustained expansion.\"\n      },\n      \"platform_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E12\", \"E13\", \"E5\"],\n        \"rationale\": \"Fact: Maher appears across Instagram, TikTok, major broadcast/streaming entertainment, and editorial media; interpretation: her presence is meaningfully multi-platform rather than account-only.\"\n      }\n    },\n    \"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Reliable public platform metrics for like/comment/share ratios relative to follower size were not available in the sources reviewed.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"scored\",\n        \"score\": 89,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E6\", \"E12\", \"E9\"],\n        \"rationale\": \"Fact: her content and appearances have moved far beyond rugby-native audiences into mainstream media and entertainment; interpretation: her content is unusually efficient at extending reach outside her sport.\"\n      },\n      \"shares_saves_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No reliable public evidence was found for high-value share/save metrics.\"\n      },\n      \"video_retention\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No public retention/completion data was available.\"\n      },\n      \"story_efficiency\": {\n        \"status\": \"scored\",\n        \"score\": 86,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E12\", \"E13\", \"E2\"],\n        \"rationale\": \"Fact: her story travels well in short-form video, TV, and lifestyle media; interpretation: the narrative is highly efficient for social storytelling.\"\n      },\n      \"audience_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 77,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E13\", \"E12\", \"E7\"],\n        \"rationale\": \"Fact: her public persona is repeatedly framed as authentic, body-positive, and athlete-led; interpretation: the audience appears commercially useful rather than purely inflated by one-off virality.\"\n      }\n    },\n    \"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 91,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\", \"E9\", \"E12\"],\n        \"rationale\": \"Fact: Maher has sustained coverage across major sports, business, and mainstream entertainment outlets; interpretation: her cultural footprint is unusually large for a rugby player.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 93,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\", \"E9\", \"E12\"],\n        \"rationale\": \"Fact: coverage appears in TIME, Forbes, The Guardian, Sports Business Journal, USA Rugby, and similar high-visibility outlets; interpretation: source quality is very strong.\"\n      },\n      \"search_interest\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No direct search-demand dataset or trend tool was available in the reviewed evidence.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E12\", \"E5\", \"E9\"],\n        \"rationale\": \"Fact: she is repeatedly described as a breakout topic across sports and lifestyle coverage; interpretation: she generates conversation beyond her own posts.\"\n      },\n      \"crossover_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E12\", \"E2\", \"E5\", \"E6\"],\n        \"rationale\": \"Fact: she appears in entertainment and lifestyle formats such as DWTS and SI Swimsuit and is compared with mainstream Olympic stars; interpretation: her recognition extends well beyond rugby.\"\n      }\n    },\n    \"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 93,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E13\", \"E12\", \"E2\"],\n        \"rationale\": \"Fact: she is framed as a charismatic, body-positive rugby star and viral social creator; interpretation: this is an exceptionally distinctive and easily communicated story.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\", \"E13\", \"E11\"],\n        \"rationale\": \"Fact: the story includes Olympic success, national-team status, pro-club movement, and entertainment crossover; interpretation: the narrative has multiple layers beyond a single viral moment.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\", \"E13\"],\n        \"rationale\": \"Fact: the narrative is backed by real medals, national-team selection, and documented public behavior; interpretation: the identity is strongly grounded in observable life events.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\", \"E9\", \"E12\"],\n        \"rationale\": \"Fact: media outlets consistently amplify her persona and use her as a story about rugby's growth; interpretation: the narrative clearly resonates with editors and audiences.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E9\", \"E10\", \"E12\", \"E13\"],\n        \"rationale\": \"Fact: brands and media repeatedly frame her around confidence, body positivity, and modern female-athlete identity; interpretation: the story is naturally brand-usable.\"\n      },\n      \"durability\": {\n        \"status\": \"scored\",\n        \"score\": 84,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E2\", \"E3\", \"E9\", \"E12\"],\n        \"rationale\": \"Fact: her story is tied to both ongoing competition and a broader identity rather than one event; interpretation: it should remain relevant beyond a single tournament cycle.\"\n      }\n    },\n    \"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E9\", \"E10\", \"E12\", \"E13\"],\n        \"rationale\": \"Fact: her partnerships and appearances span beauty, skincare, apparel, and lifestyle/entertainment; interpretation: she can credibly fit a wide range of brands.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 91,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E13\", \"E10\", \"E12\"],\n        \"rationale\": \"Fact: the reviewed sources show no confirmed serious brand-safety issue and emphasize positive, mainstream positioning; interpretation: she is highly suitable for mainstream partnerships.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 86,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E7\", \"E9\", \"E12\"],\n        \"rationale\": \"Fact: her audience is large, youthful, and spans sports and lifestyle interest according to major media; interpretation: that composition is commercially attractive.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E13\", \"E12\", \"E9\"],\n        \"rationale\": \"Fact: her public persona consistently centers on authenticity, confidence, strength, and body positivity; interpretation: the identity is coherent and easy for brands to understand.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E12\", \"E13\", \"E9\"],\n        \"rationale\": \"Fact: she has appeared in sports, fashion, beauty, and entertainment formats; interpretation: her content can flex across many campaign types.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E3\", \"E11\", \"E9\"],\n        \"rationale\": \"Fact: she has U.S. national-team relevance and U.K. club relevance through Bristol Bears; interpretation: her marketable geography is broader than a single country, though still strongest in the U.S./English-speaking markets.\"\n      }\n    },\n    \"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E9\", \"E10\", \"E12\"],\n        \"rationale\": \"Fact: major sources confirm meaningful brand partnerships and paid commercial activity; interpretation: there is clear evidence of real market value.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 84,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E9\", \"E10\", \"E12\"],\n        \"rationale\": \"Fact: multiple brands and media partnerships are publicly documented over a short period; interpretation: demand appears repeated rather than one-off.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 89,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E9\", \"E10\", \"E12\"],\n        \"rationale\": \"Fact: confirmed partners include Adidas, Maybelline, Paula’s Choice, Secret, and other mainstream names; interpretation: the partner mix is strategically strong.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E10\", \"E9\"],\n        \"rationale\": \"Fact: Maybelline reportedly re-upped its deal and SBJ described repeated/ongoing brand activity; interpretation: there is evidence of relationship depth.\"\n      },\n      \"campaign_performance\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No public source reviewed provided campaign performance metrics or conversion results.\"\n      },\n      \"pricing_power\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Public sources did not provide enough evidence to assess premium pricing power directly.\"\n      }\n    },\n    \"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\", \"E11\"],\n        \"rationale\": \"Fact: she moved from Olympic bronze to a new club stint and continued national-team relevance; interpretation: sporting visibility is trending positively.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E8\", \"E7\"],\n        \"rationale\": \"Fact: follower counts and profile reporting indicate substantial recent expansion; interpretation: the audience trajectory is clearly upward.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\", \"E9\", \"E12\"],\n        \"rationale\": \"Fact: coverage broadened from sports to business, fashion, and entertainment; interpretation: media visibility is still accelerating rather than fading.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No direct search-trend or platform trend dataset was available to verify direction cleanly.\"\n      },\n      \"commercial_acceleration\": {\n        \"status\": \"scored\",\n        \"score\": 91,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E9\", \"E10\", \"E12\"],\n        \"rationale\": \"Fact: the volume and quality of documented brand activity increased after her Olympic breakout; interpretation: commercial momentum is strong and rising.\"\n      }\n    }\n  },\n  \"key_strengths\": [\n    \"Elite Olympic and national-team credibility in rugby sevens.\",\n    \"Exceptional social reach for a rugby athlete, with mainstream crossover beyond sport.\",\n    \"Strong, coherent narrative centered on authenticity, strength, and body positivity.\",\n    \"Clear commercial proof through major brand partnerships and repeat demand.\",\n    \"Very strong momentum from Olympic breakout to awards, media, and entertainment appearances.\"\n  ],\n  \"key_constraints\": [\n    \"Public engagement-quality metrics such as retention, shares, saves, and conversion are not directly visible.\",\n    \"Pricing power and campaign performance are not publicly quantified in the reviewed sources.\",\n    \"Rugby remains a niche sport relative to global marquee leagues, so athletic scale is partly mediated through her personal brand rather than sport infrastructure.\"\n  ],\n  \"important_missing_data\": [\n    \"Direct platform analytics on engagement rate, retention, and audience authenticity.\",\n    \"Demographic breakdown of followers and buyers.\",\n    \"Verified campaign performance data from brand partners.\",\n    \"Publicly disclosed deal values or pricing terms.\"\n  ],\n  \"identity_or_evidence_risks\": [\n    \"Some follower-count figures vary by source and date, so precise totals should be treated as approximate snapshots rather than fixed truth.\",\n    \"A portion of the public discussion around Maher is media-driven and entertainment-adjacent, which may overstate athletic-only audience depth if read without context.\",\n    \"There is no confirmed serious brand-safety issue in the reviewed sources, but absence of evidence is not proof of absence.\"\n  ]\n}\n```",
+  "native": {
+    "annotations": [],
+    "sources": [
+      {
+        "url": "https://www.sportsbusinessjournal.com/Articles/2025/08/18/rugbys-ilona-maher-builds-her-business-while-raising-the-confidence-of-girls-and-women/",
+        "title": null
+      },
+      {
+        "url": "https://www.forbes.com/sites/jamiegutfreund/2025/06/02/cannes-lions-2025-the-business-of-influence-takes-the-stage/",
+        "title": null
+      },
+      {
+        "url": "https://www.forbes.com/sites/andyfrye/2025/10/06/ilona-maher-gets-her-own-barbie-doll/",
+        "title": null
+      },
+      {
+        "url": "https://www.forbes.com/sites/andyfrye/2024/06/16/ilona-maher-and-usa-rugby-want-to-wow-olympic-sports-fans/",
+        "title": null
+      },
+      {
+        "url": "https://www.forbes.com/sites/jennnelson/2025/11/13/how-gen-z-is-redefining-roi-in-womens-sports-marketing/",
+        "title": null
+      },
+      {
+        "url": "https://www.forbes.com/profile/ilona-maher/",
+        "title": null
+      },
+      {
+        "url": "https://www.sportsbusinessjournal.com/Articles/2024/07/29/ilona-maher-usa-rugby-chase-jackson-paris-olympics/",
+        "title": null
+      },
+      {
+        "url": "https://www.forbes.com/sites/amandamarcovitch1/2024/08/12/the-tiktok-olympics-how-social-media-changed-the-way-olympians-make-money/",
+        "title": null
+      },
+      {
+        "url": "https://library.olympics.com/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=3416736&parentDocumentId=3416735&skipCopyright=true&skipWatermark=true",
+        "title": null
+      },
+      {
+        "url": "https://usa.rugby/about",
+        "title": null
+      },
+      {
+        "url": "https://www.sportsbusinessjournal.com/Articles/2025/03/10/adidas-signs-us-rugby-star-ilona-maher-to-multiyear-deal/",
+        "title": null
+      },
+      {
+        "url": "https://usa.rugby/news/usa-womens-eagles-launch-2025-campaign-with-spring-player-pool-selections-2025325",
+        "title": null
+      },
+      {
+        "url": "https://usa.rugby/news/usa-womens-rugby-sevens-advance-to-medal-rounds-after-quarterfinal-win-2024729",
+        "title": null
+      },
+      {
+        "url": "https://library.olympics.com/network/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=3704582&parentDocumentId=3704581&skipCopyright=true&skipWatermark=true",
+        "title": null
+      },
+      {
+        "url": "https://images.forbes.com/forbesinsights/StudyPDFs/RBSC_MiddleMarket_M%26A2011.pdf",
+        "title": null
+      },
+      {
+        "url": "https://www.forbes.com/assets/newsletters/pdfs/forbes-sportsmoney-playbook-newsletter.pdf?v=0",
+        "title": null
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=VcCJwXYQrtY",
+        "title": null
+      },
+      {
+        "url": "https://www.espn.com/rugby/story/_/id/46028268/ilona-maher-rugby-biggest-star-transform-women-rugby-world-cup",
+        "title": null
+      },
+      {
+        "url": "https://www.espn.com/video/clip/_/id/45758598",
+        "title": null
+      },
+      {
+        "url": "https://www.espn.com/video/clip/_/id/45763268",
+        "title": null
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=v7W-SS5N680",
+        "title": null
+      },
+      {
+        "url": "https://gobobcats.com/news/2025/7/17/womens-rugby-ilona-maher-wins-2025-espy-for-best-breakthrough-athlete",
+        "title": null
+      },
+      {
+        "url": "https://espnpressroom.com/press-release/the-2024-espys-celebrated-caitlin-clark-patrick-mahomes-prince-harry-dawn-staley-steve-gleason-lamar-jackson-more/",
+        "title": null
+      },
+      {
+        "url": "https://www.sportscasting.com/news/ilona-maher-how-a-womens-rugby-player-outshined-the-usual-espy-stars/",
+        "title": null
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Best_Breakthrough_Athlete_ESPY_Award",
+        "title": null
+      },
+      {
+        "url": "https://kiwix.drnathanhutchins.com/content/wikipedia_en_all_maxi_2026-02/Best_Breakthrough_Athlete_ESPY_Award",
+        "title": null
+      },
+      {
+        "url": "https://www.espn.com/rugby/story/_/id/43306765/ilona-maher-hungrier-ever-promote-rugby-bears-debut",
+        "title": null
+      },
+      {
+        "url": "https://www.theguardian.com/sport/2025/jul/18/ilona-maher-espys-win-rugby-world-cup-usa-england",
+        "title": null
+      },
+      {
+        "url": "https://linktr.ee/ilonamaher_demo",
+        "title": null
+      },
+      {
+        "url": "https://learnsth.icu/wiki/Best_Breakthrough_Athlete_ESPY_Award",
+        "title": null
+      },
+      {
+        "url": "https://library.olympics.com/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=3416736&parentDocumentId=3416735&skipCopyright=true&skipWatermark=true",
+        "title": null
+      },
+      {
+        "url": "https://www.wcax.com/2025/07/17/maher-takes-home-espy-award/",
+        "title": null
+      },
+      {
+        "url": "https://ufdcimages.uflib.ufl.edu/UF/00/02/82/95/02493/2024-12-25.pdf",
+        "title": null
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ilona_Maher",
+        "title": null
+      },
+      {
+        "url": "https://www.dgepress.com/storage/uploads/95/27/9527E88E-30EF-3A31-94A7-B5FC7AE0BDA8/press-release-11-1379809.pdf",
+        "title": null
+      },
+      {
+        "url": "https://ufdcimages.uflib.ufl.edu/UF/00/02/83/15/08621/2024-08-14.pdf",
+        "title": null
+      },
+      {
+        "url": "https://www.gulf-times.com/pdf/2024/07/31/sport-20240731-1.pdf?ts=005515",
+        "title": null
+      },
+      {
+        "url": "https://www.detpress.com/storage/uploads/C6/0F/C60F604C-571B-A15E-BB24-9E8384A5FAEB/DWTS_S33_Ilona_Maher_Contestant_Bio_2024.pdf",
+        "title": null
+      },
+      {
+        "url": "https://www.reddit.com/r/popculturechat/comments/1m238n8",
+        "title": null
+      },
+      {
+        "url": "https://www.reddit.com/r/USArugby/comments/1m280ru",
+        "title": null
+      },
+      {
+        "url": "https://www.forbes.com/profile/ilona-maher/",
+        "title": null
+      },
+      {
+        "url": "https://www.forbes.com/sites/andyfrye/2025/06/05/ilona-maher-focused-on-world-cup-glory/",
+        "title": null
+      },
+      {
+        "url": "https://www.forbes.com/sites/andyfrye/2024/06/16/ilona-maher-and-usa-rugby-want-to-wow-olympic-sports-fans/",
+        "title": null
+      },
+      {
+        "url": "https://www.womenshistory.org/education-resources/biographies/ilona-maher",
+        "title": null
+      },
+      {
+        "url": "https://www.ilonamaher.com/home",
+        "title": null
+      },
+      {
+        "url": "https://linktr.ee/IlonaMaher_demo",
+        "title": null
+      },
+      {
+        "url": "https://www.forbes.com/sites/andyfrye/2023/06/07/is-ilona-maher-rugbys-most-exciting-player/",
+        "title": null
+      },
+      {
+        "url": "https://hypeauditor.com/instagram/ilonamaher/",
+        "title": null
+      },
+      {
+        "url": "https://www.theguardian.com/sport/article/2024/jul/29/ilona-maher-how-a-us-rugby-sevens-player-became-one-of-the-biggest-stars-of-the-games",
+        "title": null
+      },
+      {
+        "url": "https://www.linkedin.com/posts/press-upload_how-ilona-maher-built-the-worlds-biggest-activity-7289567818474225664-Sc-I",
+        "title": null
+      },
+      {
+        "url": "https://www.thepwr.com/ilonamaher",
+        "title": null
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ilona_Maher",
+        "title": null
+      },
+      {
+        "url": "https://www.forbesargentina.com/lifestyle/ilona-maher-rugbier-viral-esta-redefiniendo-lo-significa-ser-una-estrella-deporte-era-digital-n59803/amp",
+        "title": null
+      },
+      {
+        "url": "https://resources.worldrugby-rims.pulselive.com/worldrugby/document/2026/04/07/174692c6-dc42-41a7-9b92-1286a6d1a99a/A-Blueprint-For-Growth-Report-Second-Edition-FINAL-Spring-2026.pdf",
+        "title": null
+      },
+      {
+        "url": "https://library.olympics.com/digitalCollection/DigitalCollectionAttachmentDownloadHandler.ashx?documentId=3416736&parentDocumentId=3416735&skipCopyright=true&skipWatermark=true",
+        "title": null
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=yKJsij4qBi8",
+        "title": null
+      },
+      {
+        "url": "https://www.yorkvision.co.uk/wp-content/uploads/2025/10/Vision-288.pdf",
+        "title": null
+      },
+      {
+        "url": "https://www.womenssporttrust.com/wp-content/uploads/2025/06/WST-June-2025-Visibility-FULL-Report-FINAL2.pdf",
+        "title": null
+      },
+      {
+        "url": "https://s3.amazonaws.com/smdp_backissues/080224.pdf",
+        "title": null
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ilona_Maher",
+        "title": null
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Bristol_Bears",
+        "title": null
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=6DNDSjKLSbo",
+        "title": null
+      },
+      {
+        "url": "https://time.com/7004592/ilona-maher-rugby-tiktok-paris-olympics-interview/",
+        "title": null
+      },
+      {
+        "url": "https://www.lemonde.fr/sport/article/2025/08/22/ilona-maher-visage-du-rugby-sur-les-reseaux-sociaux-a-l-assaut-de-la-coupe-du-monde-feminine_6633521_3242.html",
+        "title": null
+      },
+      {
+        "url": "https://as.com/masdeporte/ilona-maher-y-lo-que-el-rugby-masculino-puede-aprender-del-femenino-n/",
+        "title": null
+      },
+      {
+        "url": "https://ufdcimages.uflib.ufl.edu/AA/00/06/85/31/01803/2024-07-31.pdf",
+        "title": null
+      },
+      {
+        "url": "https://apnews.com/article/70d96fb20ec96e11f9a670074e316b77",
+        "title": null
+      },
+      {
+        "url": "https://fr.wikipedia.org/wiki/Ilona_Maher",
+        "title": null
+      },
+      {
+        "url": "https://es.wikipedia.org/wiki/Ilona_Maher",
+        "title": null
+      },
+      {
+        "url": "https://pt.wikipedia.org/wiki/Ilona_Maher",
+        "title": null
+      },
+      {
+        "url": "https://www.reddit.com/r/GMFST/comments/1h8k6mw",
+        "title": null
+      }
+    ],
+    "searchQueries": [
+      "Ilona Maher official Instagram rugby USA Olympic athlete site:instagram.com",
+      "site:instagram.com ilonamaher followers",
+      "Ilona Maher official website about"
+    ],
+    "reasoning": "default"
+  },
+  "error": null
+}

@@ -1,0 +1,233 @@
+{
+  "version": "objective-change-assessment/0.2.0-exp",
+  "promptSha256": "4e9d2581cbea299c355527d2469c5f356d808f8b3770cfdc80a0d83d78125456",
+  "stage": [
+    "F1"
+  ],
+  "providerCalls": 3,
+  "spentUsd": 0.01387,
+  "cap": 0.2293,
+  "stopped": null,
+  "bypassChecks": {
+    "F6": {
+      "providerCalls": 0,
+      "status": "assessed",
+      "by": "rule",
+      "because": "spelling correction \"audiance\" → \"audience\", a word the Objective already uses",
+      "mismatches": []
+    }
+  },
+  "calibrationDraws": {
+    "F1": {
+      "agree": true,
+      "fingerprints": [
+        "{\"s\":\"needs_review\",\"o\":[[\"grow-academic-tech-partnerships\",\"part\"]]}"
+      ],
+      "runs": [
+        {
+          "draw": 1,
+          "status": "assessed",
+          "by": "model",
+          "usage": {
+            "promptTokens": 819,
+            "outputTokens": 1730,
+            "reasoningTokens": 1497
+          },
+          "costUsd": 0.00457,
+          "mismatches": [],
+          "fingerprint": "{\"s\":\"needs_review\",\"o\":[[\"grow-academic-tech-partnerships\",\"part\"]]}",
+          "parts": {
+            "grow-academic-tech-partnerships": "secure partnerships that align with that identity"
+          },
+          "result": {
+            "status": "assessed",
+            "version": "objective-change-assessment/0.2.0-exp",
+            "by": "model",
+            "assessment": {
+              "success": {
+                "verdict": "needs_review",
+                "reason": "The success condition is narrower than the current wording because it focuses only on EdTech, STEM, and tech venture sectors without addressing the athletic or AI components of her desired positioning.",
+                "objectiveQuote": "Build my positioning at the intersection of athletics, technology, AI, innovation and entrepreneurship, and secure partnerships that align with that identity.",
+                "successQuote": "She has signed at least one brand partnership or ambassador role with a company in the EdTech, STEM, or tech venture sectors."
+              },
+              "openings": [
+                {
+                  "key": "grow-academic-tech-partnerships",
+                  "supports": "part",
+                  "openingQuote": "target premium brand partnerships in EdTech, STEM, and enterprise venture spaces.",
+                  "reason": "The opening supports securing partnerships in tech-related fields but does not address the athletic dimension of her positioning.",
+                  "part": "secure partnerships that align with that identity"
+                }
+              ]
+            },
+            "model": "gemini-3.5-flash",
+            "promptSha256": "4e9d2581cbea299c355527d2469c5f356d808f8b3770cfdc80a0d83d78125456",
+            "usage": {
+              "promptTokens": 819,
+              "outputTokens": 1730,
+              "reasoningTokens": 1497
+            },
+            "raw": {
+              "success": {
+                "verdict": "needs_review",
+                "reason": "The success condition is narrower than the current wording because it focuses only on EdTech, STEM, and tech venture sectors without addressing the athletic or AI components of her desired positioning.",
+                "objectiveQuote": "Build my positioning at the intersection of athletics, technology, AI, innovation and entrepreneurship, and secure partnerships that align with that identity.",
+                "successQuote": "She has signed at least one brand partnership or ambassador role with a company in the EdTech, STEM, or tech venture sectors."
+              },
+              "openings": [
+                {
+                  "key": "grow-academic-tech-partnerships",
+                  "supports": "part",
+                  "openingQuote": "target premium brand partnerships in EdTech, STEM, and enterprise venture spaces.",
+                  "reason": "The opening supports securing partnerships in tech-related fields but does not address the athletic dimension of her positioning.",
+                  "part": "secure partnerships that align with that identity"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "draw": 2,
+          "status": "assessed",
+          "by": "model",
+          "usage": {
+            "promptTokens": 819,
+            "outputTokens": 1794,
+            "reasoningTokens": 1542
+          },
+          "costUsd": 0.00473,
+          "mismatches": [],
+          "fingerprint": "{\"s\":\"needs_review\",\"o\":[[\"grow-academic-tech-partnerships\",\"part\"]]}",
+          "parts": {
+            "grow-academic-tech-partnerships": "secure partnerships that align with that identity"
+          },
+          "result": {
+            "status": "assessed",
+            "version": "objective-change-assessment/0.2.0-exp",
+            "by": "model",
+            "assessment": {
+              "success": {
+                "verdict": "needs_review",
+                "reason": "The success condition is narrower than the current wording because it focuses only on signing partnerships in EdTech, STEM, or tech venture sectors, omitting the broader positioning goals and the specific intersection of athletics, AI, innovation, and entrepreneurship.",
+                "objectiveQuote": "Build my positioning at the intersection of athletics, technology, AI, innovation and entrepreneurship, and secure partnerships that align with that identity.",
+                "successQuote": "She has signed at least one brand partnership or ambassador role with a company in the EdTech, STEM, or tech venture sectors."
+              },
+              "openings": [
+                {
+                  "key": "grow-academic-tech-partnerships",
+                  "supports": "part",
+                  "openingQuote": "target premium brand partnerships in EdTech, STEM, and enterprise venture spaces.",
+                  "reason": "The opening supports securing partnerships in tech-related fields but does not address the athletic, AI, or entrepreneurship aspects of her desired positioning.",
+                  "part": "secure partnerships that align with that identity"
+                }
+              ]
+            },
+            "model": "gemini-3.5-flash",
+            "promptSha256": "4e9d2581cbea299c355527d2469c5f356d808f8b3770cfdc80a0d83d78125456",
+            "usage": {
+              "promptTokens": 819,
+              "outputTokens": 1794,
+              "reasoningTokens": 1542
+            },
+            "raw": {
+              "success": {
+                "verdict": "needs_review",
+                "reason": "The success condition is narrower than the current wording because it focuses only on signing partnerships in EdTech, STEM, or tech venture sectors, omitting the broader positioning goals and the specific intersection of athletics, AI, innovation, and entrepreneurship.",
+                "objectiveQuote": "Build my positioning at the intersection of athletics, technology, AI, innovation and entrepreneurship, and secure partnerships that align with that identity.",
+                "successQuote": "She has signed at least one brand partnership or ambassador role with a company in the EdTech, STEM, or tech venture sectors."
+              },
+              "openings": [
+                {
+                  "key": "grow-academic-tech-partnerships",
+                  "supports": "part",
+                  "openingQuote": "target premium brand partnerships in EdTech, STEM, and enterprise venture spaces.",
+                  "reason": "The opening supports securing partnerships in tech-related fields but does not address the athletic, AI, or entrepreneurship aspects of her desired positioning.",
+                  "part": "secure partnerships that align with that identity"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "draw": 3,
+          "status": "assessed",
+          "by": "model",
+          "usage": {
+            "promptTokens": 819,
+            "outputTokens": 1730,
+            "reasoningTokens": 1497
+          },
+          "costUsd": 0.00457,
+          "mismatches": [],
+          "fingerprint": "{\"s\":\"needs_review\",\"o\":[[\"grow-academic-tech-partnerships\",\"part\"]]}",
+          "parts": {
+            "grow-academic-tech-partnerships": "secure partnerships that align with that identity"
+          },
+          "result": {
+            "status": "assessed",
+            "version": "objective-change-assessment/0.2.0-exp",
+            "by": "model",
+            "assessment": {
+              "success": {
+                "verdict": "needs_review",
+                "reason": "The success condition is narrower than the current wording because it focuses only on EdTech, STEM, and tech venture sectors without addressing the athletic or AI components of her desired positioning.",
+                "objectiveQuote": "Build my positioning at the intersection of athletics, technology, AI, innovation and entrepreneurship, and secure partnerships that align with that identity.",
+                "successQuote": "She has signed at least one brand partnership or ambassador role with a company in the EdTech, STEM, or tech venture sectors."
+              },
+              "openings": [
+                {
+                  "key": "grow-academic-tech-partnerships",
+                  "supports": "part",
+                  "openingQuote": "target premium brand partnerships in EdTech, STEM, and enterprise venture spaces.",
+                  "reason": "The opening supports securing partnerships in tech-related fields but does not address the athletic dimension of her positioning.",
+                  "part": "secure partnerships that align with that identity"
+                }
+              ]
+            },
+            "model": "gemini-3.5-flash",
+            "promptSha256": "4e9d2581cbea299c355527d2469c5f356d808f8b3770cfdc80a0d83d78125456",
+            "usage": {
+              "promptTokens": 819,
+              "outputTokens": 1730,
+              "reasoningTokens": 1497
+            },
+            "raw": {
+              "success": {
+                "verdict": "needs_review",
+                "reason": "The success condition is narrower than the current wording because it focuses only on EdTech, STEM, and tech venture sectors without addressing the athletic or AI components of her desired positioning.",
+                "objectiveQuote": "Build my positioning at the intersection of athletics, technology, AI, innovation and entrepreneurship, and secure partnerships that align with that identity.",
+                "successQuote": "She has signed at least one brand partnership or ambassador role with a company in the EdTech, STEM, or tech venture sectors."
+              },
+              "openings": [
+                {
+                  "key": "grow-academic-tech-partnerships",
+                  "supports": "part",
+                  "openingQuote": "target premium brand partnerships in EdTech, STEM, and enterprise venture spaces.",
+                  "reason": "The opening supports securing partnerships in tech-related fields but does not address the athletic dimension of her positioning.",
+                  "part": "secure partnerships that align with that identity"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "cumulativeSpentUsd": 0.03457,
+  "priorFindings": [
+    {
+      "version": "objective-change-assessment/0.1.0-exp",
+      "artifacts": "../0.1.0-finding",
+      "providerCalls": 1,
+      "spentUsd": 0.0112,
+      "finding": "F1 draw 1: opening key returned as \"opening:<key>\" (verifier refused)"
+    },
+    {
+      "version": "objective-change-assessment/0.1.1-exp",
+      "artifacts": "../0.1.1",
+      "providerCalls": 1,
+      "spentUsd": 0.0095,
+      "finding": "F1 draw 1: success still_coherent + opening still_supports — no partial support in the vocabulary"
+    }
+  ]
+}

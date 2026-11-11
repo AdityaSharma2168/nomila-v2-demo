@@ -1,0 +1,605 @@
+{
+  "specVersion": "blind-eval-spec/0.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "riya-mehta",
+    "name": "Riya Mehta",
+    "sport": "Gymnastics"
+  },
+  "parseError": null,
+  "identityConfidence": "LOW",
+  "summary": "Riya Mehta is a junior-level, amateur gymnast who has competed at the club/developmental level, notably representing SGA Gymnastics as a Level 7 (Junior A) competitor in events such as the 2025 Hilton Head Island Invitational. She does not hold elite, professional, or national team status, nor is there a unified public persona or significant media footprint associated with her. Her athletic performance, while respectable within regional developmental pipelines, places her in the lower tiers of competitive authority.\n\nFrom an audience and cultural perspective, Mehta has no discernible public social media footprint or commercial presence. Quantitative metrics for cross-platform reach, engagement, and audience growth are entirely missing, reflecting her status as an amateur student-athlete rather than a public figure. Consequently, there is no cultural relevance, crossover recognition, or narrative power to analyze, and her commercial proof is non-existent with zero verified brand partnerships or endorsement deals.\n\nUltimately, Mehta represents a standard youth/developmental athlete with low current commercial marketability. Key constraints include the complete absence of public-facing audience channels, zero commercial infrastructure, and a low level of competitive athletic authority. This evaluation is limited by highly fragmented identity data and an overall lack of verifiable public metrics.",
+  "summaryWords": 195,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Riya Mehta competed as a Level 7 (Junior A) gymnast for SGA Gymnastics at the 2025 Hilton Head Island Invitational, achieving an all-around score of 37.175.",
+      "sourceTitle": "2025 Hilton Head Island Invitational Results - Jan. 16 - 20, 2025",
+      "sourceUrl": "https://competemymeet.com/awards/HiltonHeadIslandInvitational2025",
+      "sourceType": "official",
+      "date": "2025-01-16"
+    },
+    {
+      "id": "E2",
+      "claim": "Riya Mehta has an incomplete profile on Meet Scores Online, with no listed video links, complete bio, or high-level elite scores.",
+      "sourceTitle": "Riya Mehta - Athlete Profile",
+      "sourceUrl": "https://meetscoresonline.com/athlete/Riya_Mehta",
+      "sourceType": "secondary",
+      "date": "2025-01-16"
+    },
+    {
+      "id": "E3",
+      "claim": "High school records show Riya Mehta as a cross-country runner (Menlo-Atherton Class of 2026) and student journalist, illustrating the fragmented amateur profile of individuals with this name.",
+      "sourceTitle": "Riya Mehta '26 Recruiting Profile",
+      "sourceUrl": "https://ncsasports.org/womens-track-recruiting/california/atherton/menlo-atherton-high-school/riya-mehta4",
+      "sourceType": "official",
+      "date": "2026-08-31"
+    },
+    {
+      "id": "E4",
+      "claim": "General web and social searches show no verified, high-reach public social media channels or brand partnerships associated with Riya Mehta in gymnastics.",
+      "sourceTitle": "Google Search Results for 'Riya Mehta' Gymnast",
+      "sourceUrl": "https://www.google.com",
+      "sourceType": "secondary",
+      "date": "2026-09-14"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 30,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Riya Mehta competes at a regional, junior club developmental level (USA Gymnastics Level 7 Jr A) rather than elite, professional, or national tiers.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 35,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "She has recorded respectable amateur scores such as an all-around 37.175 at a 2025 invitational, but lacks distinguished high-level athletic results.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 15,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "There is no evidence of elite national/international rankings, major awards, or high-level athletic honors.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 5,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "The athlete has no verified history of representing any national federation or competing on an international scale.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 20,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "As one of many developmental club gymnasts, she does not occupy a central or highly visible role within the sport.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 25,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "Her most notable documented competition occurred in early 2025, which, while relatively recent, carries very low commercial weight.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "There are no verified public social media accounts or recorded audience reach figures available for this athlete.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Due to the absence of public social profiles, her reach cannot be measured against comparable athletes in gymnastics.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "No longitudinal public metrics exist to track or verify any audience growth trajectory over time.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "There is no evidence of active or meaningful cross-platform presence across social media channels.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "The absence of public-facing social media channels makes it impossible to calculate audience interaction metrics.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Content distribution metrics and reach efficiency cannot be verified without active public profiles.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "High-value platform interactions like shares and saves are unobservable due to a lack of public content channels.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "No public video performance data exists to measure audience watch time or completion rates.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Story metrics such as reach and tap-forward/back rates are completely unavailable for this athlete.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Without a measurable follower base, audience quality and authenticity cannot be assessed.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 5,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E4"
+      ],
+      "rationale": "Media coverage is essentially non-existent, limited purely to local meet scoring archives rather than editorial press.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 5,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "She has no coverage in premium national sports publications, major news sites, or elite gymnastics journals.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 5,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Public search volume and organic digital curiosity for her gymnastics career are negligible.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 5,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "She is not a subject of public conversation, fan discussions, or social mentions on open platforms.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 2,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Recognition is entirely restricted to local club participants and does not cross over into broader culture.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 10,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "The athlete lacks any public-facing personal brand, making her narrative indistinguishable from any other junior developmental gymnast.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 5,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "There is no accessible, multi-dimensional backstory or thematic depth behind her athletic participation.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 5,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Because there is no active public narrative, there is no real-life evidence tracking to support it.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 2,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "There is no media footprint that reflects or amplifies her personal story or achievements.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 5,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "The absence of a defined public story prevents natural alignment with brand marketing campaigns.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 5,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Without any public profile, there is no narrative substance to remain relevant over time.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 15,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "As a minor amateur athlete, credible commercial categories are limited primarily to local gymnastics equipment or youth apparel.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "Her record is clean, with no public controversies, regulatory issues, or reputational risks, presenting a highly safe profile.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "The lack of public demographics or follower data prevents any assessment of audience spending power or brand alignment.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 10,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Her values and persona are unarticulated publicly, offering no coherent brand identity for corporate alignment.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "A complete absence of public content prevents evaluating her capability to support visual or storytelling brand campaigns.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 15,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Her geographic relevance is extremely narrow, limited to the localized vicinity of her junior athletic club.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "There is no evidence of any historical or current commercial market valuation or financial sponsorships.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 0,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "The athlete has zero documented corporate sponsorships, brand partnerships, or endorsement campaigns.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Evaluating partner quality is impossible as she has no past or current commercial sponsors.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "No commercial baseline exists to evaluate her ability to secure repeat or extended brand deals.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "There are no historical marketing activations or brand campaigns to analyze for performance.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "No commercial demand exists to establish her pricing leverage or market compensation rates.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 25,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "She is active in youth regional development (Level 7) with no current indicators of elite transition or national team selection.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Audience growth cannot be assessed over time due to the lack of any verified public follower tracking.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 5,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Her editorial press and media footprint are non-existent, remaining completely flat.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 5,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Public queries and social interest show no signs of upward trajectory or digital acceleration.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 0,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Commercial momentum remains at zero with no upcoming, newly signed, or expanding corporate sponsorships.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Extreme brand safety with zero past public controversies or negative reputational risks.",
+    "Stable local participation in structured club development programs (USA Gymnastics Level 7)."
+  ],
+  "keyConstraints": [
+    "Total absence of public audience scale, preventing national or digital reach.",
+    "Lack of elite athletic achievements or international competitive standing.",
+    "Zero commercial history or corporate brand relationships to establish market value."
+  ],
+  "importantMissingData": [
+    "Verified athlete-owned social media handles (Instagram, TikTok, YouTube).",
+    "Social follower demographics, reach efficiency, and audience engagement statistics.",
+    "Verified brand partnerships, endorsement deals, or past marketing campaign metrics."
+  ],
+  "identityOrEvidenceRisks": [
+    "High risk of identity fragmentation due to multiple amateur athletes sharing the name Riya Mehta across gymnastics and high school track.",
+    "Sparsity of primary public data, forcing reliance on automated meet score registries and secondary lookups."
+  ]
+}

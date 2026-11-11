@@ -1,0 +1,19 @@
+{
+  "id": "pr05-skipped-budget",
+  "description": "The refresh was skipped for this week's plan budget. The line says the current plan still stands and when the next plan comes, with no invented cause.",
+  "reviewed": true,
+  "facts": {
+    "outcome": "skipped", "skippedWhy": "weekly_budget", "forGoal": null,
+    "posts": [
+      { "format": "reel", "hook": "Nobody sees the early part.", "timedFor": null, "pillar": "Behind the scenes", "due": "Thu 15 Oct", "kit": "built", "preview": "ready", "mediaNeeds": null }
+    ],
+    "counts": { "posts": 1, "kitsBuilt": 1, "kitsNeedMedia": 0, "kitsHeld": 0, "kitsNotBuilt": 0, "previewsReady": 1, "previewsPreparing": 0, "previewsFailed": 0, "otherActions": 0, "newGoalIdeas": 0 },
+    "kitsStep": "off", "heldWhy": [], "nextPlanOn": "Mon 19 Oct"
+  },
+  "mock_line": "I couldn't refresh your plan this time: this week's planning budget is used up. Your current plan still stands, and a fresh one comes on its own on Mon 19 Oct.",
+  "expect": {
+    "numbers": ["Mon 19 Oct"],
+    "reason": ["still stands|stays in place", "budget"],
+    "must_not": ["posted", "sent", "error", "something went wrong", "your plan's ready"]
+  }
+}

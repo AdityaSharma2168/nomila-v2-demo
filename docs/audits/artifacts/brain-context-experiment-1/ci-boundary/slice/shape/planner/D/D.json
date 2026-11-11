@@ -1,0 +1,53 @@
+{
+ "label": "D",
+ "plannerDigest": "130d10d38e331dc9d75561cfc437b70f3ef08ee8d69cbdb36a1cd8077cb2f182",
+ "planner": "content",
+ "handoff": {
+  "version": "execution-router/0.2.0-exp",
+  "shape": "specialized_plan",
+  "recommendationId": "rec_764257cd61ef9777",
+  "domain": "content",
+  "what": "Create a specialized plan to reactivate her dormant TikTok channel by cross-posting existing video formats like Reels and carousels.",
+  "why": "Mia's audience growth is currently cooling, and her TikTok has been dormant for over 500 days. Reactivating TikTok through cross-posting Instagram content is highly feasible and directly addresses her growth objective.",
+  "subject": "objective[feb62891-8b9f-44e4-8c1f-677d6947334b]",
+  "objectiveIds": [
+   "feb62891-8b9f-44e4-8c1f-677d6947334b"
+  ],
+  "advances": null,
+  "intent": null,
+  "notSeen": [],
+  "runId": "A3:488f2740"
+ },
+ "run": {
+  "file": "docs/audits/artifacts/brain-context-experiment-1/ci-boundary/slice/arm-070/A3/A3.json",
+  "promptSha256": "488f2740afbce3bbd09345de60dabe507433ecc13d8265e67212b107fc9b8fc6",
+  "evaluatorSpec": "brain-eval-spec/0.7.0-exp"
+ },
+ "workItems": 10,
+ "call": null,
+ "problems": [],
+ "result": {
+  "version": "planner-eval-spec/0.1.0-exp",
+  "recommendationId": "rec_764257cd61ef9777",
+  "planner": "content",
+  "result": "attached",
+  "rationale": "existing work deal[ctl-r1-tiktok-series] already executes this Recommendation (TikTok reactivation series in production since 20 September 2026: eight short-fo…) — attach, plan nothing",
+  "dependencies": [
+   {
+    "ref": "deal[ctl-r1-tiktok-series]",
+    "why": "the work in motion"
+   }
+  ],
+  "completion": {
+   "planningCompleteWhen": "immediately — no planning was needed",
+   "doesNotImply": "that the existing work will succeed; its own owner reports that"
+  },
+  "output": null,
+  "escalation": null,
+  "attachedTo": {
+   "kind": "deal",
+   "id": "ctl-r1-tiktok-series"
+  }
+ },
+ "projection": null
+}

@@ -1,0 +1,565 @@
+{
+ "asOf": "2026-09-26T23:12:56.083Z",
+ "deal": {
+  "id": "9acd1d50-0a84-4974-b3fc-bb965c8b5541",
+  "brand_name": "gorjana",
+  "deal_type": "social_post",
+  "status": "accepted",
+  "amount": "14000",
+  "amount_cash": "7500",
+  "amount_product": "6500",
+  "commission_pct": "15",
+  "term_start": null,
+  "term_end": null,
+  "created_at": "2026-07-29T17:38:50.609Z",
+  "brand_id": 164
+ },
+ "thread": {
+  "id": "c315aa62-2e20-4180-b2ae-b298914659d0",
+  "status": "deal_detected",
+  "created_at": "2026-07-29T05:02:49.048Z",
+  "classification": {
+   "category": "GIFTING",
+   "deadline": null,
+   "brand_name": "gorjana",
+   "confidence": 1,
+   "brand_domain": "gorjana.com",
+   "contact_name": "Michelle Garcia",
+   "deliverables": [
+    "Select top 5 fashion jewelry pieces"
+   ],
+   "offer_amount": null,
+   "gmail_thread_id": "19fac4092f65b464"
+  },
+  "conversation_state": {
+   "summary": "After negotiating, gorjana offered $7.5k cash + $6.5k product for 6 posts and 6 stories with affiliate commission. Though Mia never explicitly accepted in writing, she is actively posting content and receiving deliverables from the brand, indicating the partnership is agreed and in execution phase. The first announcement post was completed on 8/25, and September deliverables were sent on 9/8.",
+   "deal_stage": "agreed",
+   "key_details": {
+    "ask": "College Roster partnership with social media deliverables",
+    "offer": "Final offer: $7.5k cash + $6.5k product credit, 6 posts + 6 stories, plus affiliate commission structure",
+    "amounts": [
+     7500,
+     6500
+    ],
+    "deadlines": [
+     "2026-08-24",
+     "2026-09-30"
+    ],
+    "last_contact": "2026-09-08",
+    "offer_struct": {
+     "unit": "total",
+     "amount": 7500,
+     "recurring": false,
+     "product_value": 6500,
+     "commission_pct": null,
+     "deliverable_counts": {
+      "posts": 6,
+      "stories": 6
+     }
+    },
+    "awaiting_response_from": "athlete"
+   },
+   "offer_display": "$7.5K cash + $6.5K product · 6 posts, 6 stories, affiliate commission",
+   "conversation_state": "gorjana is sending monthly deliverables and Mia is actively posting content, indicating partnership is underway."
+  },
+  "score": {
+   "factors": {
+    "exclusivity": "No exclusivity terms mentioned in the offer, leaving Mia free for other partnerships.",
+    "brandRelevance": "Fashion jewelry brand with lifestyle crossover appeal to Mia's college and soccer audience; strong fit for personal brand expansion.",
+    "rateComparison": "At ~$2.3K per post equivalent, this offer is 133% above Mia's $1K floor and exceptional against her own rate.",
+    "deliverableScope": "6 posts and 6 stories represents a moderate-heavy content load, but well-compensated by the $14K total value."
+   },
+   "fitRead": {
+    "label": "Strong lifestyle fit",
+    "rating": "good"
+   },
+   "reasons": [
+    "Total value of $7.5K cash + $6.5K product equates to ~$2.3K per post, significantly exceeding Mia's $1K floor",
+    "Established jewelry brand with clear lifestyle fit for college athlete audience",
+    "Affiliate commission provides ongoing revenue upside beyond initial payment",
+    "Partnership already in execution phase with content being delivered since August"
+   ],
+   "urgency": "medium",
+   "verdict": "great",
+   "redFlags": [],
+   "dollarAmount": 14000,
+   "draft_points": [
+    "$7.5K cash + $6.5K product for 6 posts and 6 stories",
+    "Partnership already active since August 25th",
+    "Value per post is 133% above your $1K floor"
+   ],
+   "rateVsMarket": null,
+   "scoreNumeric": 8,
+   "brandAnalysis": {
+    "category": "Fashion Jewelry",
+    "sportFit": {
+     "label": "Lifestyle crossover",
+     "rating": "fair"
+    },
+    "brandTier": "established",
+    "audienceFit": {
+     "label": "College/female fit",
+     "rating": "good"
+    },
+    "brandSummary": "gorjana is an established fashion jewelry brand offering strong cash-plus-product compensation with affiliate commission structure, providing lifestyle crossover appeal for a college soccer athlete.",
+    "capitalContribution": "brand",
+    "capitalContributionLabel": "Builds brand capital",
+    "portfolioDiversification": {
+     "label": "First jewelry deal",
+     "rating": "good"
+    }
+   },
+   "factorRatings": {
+    "exclusivity": {
+     "label": "None stated",
+     "rating": "great"
+    },
+    "brandRelevance": {
+     "label": "Lifestyle crossover",
+     "rating": "good"
+    },
+    "rateComparison": {
+     "label": "133% above floor",
+     "rating": "great"
+    },
+    "deliverableScope": {
+     "label": "6 posts + 6 stories",
+     "rating": "good"
+    }
+   },
+   "autopilot_safe": false,
+   "economicsState": {
+    "read": "$7.5K cash + $6.5K product for 6 posts",
+    "state": "priced"
+   },
+   "recommendation": "accept",
+   "negotiate_terms": null,
+   "recommendation_ui": "Accept and formalize",
+   "recommendation_agent": "This deal is already in execution and delivers exceptional value at 133% above Mia's per-post floor. The $7.5K cash plus $6.5K product for 6 posts and 6 stories is strong economics, and the affiliate commission adds upside. Since Mia is actively posting and receiving deliverables, formalizing the agreement is the priority. Request a written contract confirming deliverables, payment schedule, usage rights, and affiliate terms to protect the relationship. No renegotiation needed given the favorable rate and active partnership status.",
+   "recommendation_confidence": "high"
+  },
+  "summary": "Requesting the athlete's top five fashion jewelry selections to ship out as part of the Sports Club partnership."
+ },
+ "messages": [
+  {
+   "direction": "inbound",
+   "received_at": "2026-07-29T05:02:08.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-07-30T05:27:18.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-07-30T05:27:28.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-07-30T05:27:42.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-07-30T05:32:15.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-07-30T05:32:28.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-07-30T05:33:31.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-07-30T05:33:40.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-07-30T05:59:07.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-07-30T23:04:17.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-07-30T23:04:53.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-07-31T13:42:03.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-07-31T13:42:16.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-07-31T13:42:27.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-07-31T13:42:39.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-07-31T13:43:03.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-07-31T13:43:17.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-07-31T13:43:28.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-07-31T13:43:39.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-07-31T13:43:54.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-05T20:50:39.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-08-06T03:48:33.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-10T22:30:18.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-08-11T07:04:07.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-11T20:29:52.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-08-12T15:28:47.377Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-12T15:39:20.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-12T21:12:39.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-13T19:05:08.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-08-14T01:05:17.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-14T21:32:30.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-08-14T22:46:32.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-15T00:05:53.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-15T00:12:15.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-08-15T01:13:20.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-15T01:38:07.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-08-15T02:03:34.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-15T02:59:06.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-15T03:09:25.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-08-17T00:51:42.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-17T18:03:56.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-08-17T20:04:01.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-17T20:15:30.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-08-17T20:27:59.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-17T20:32:21.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-08-19T17:40:54.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-19T17:57:36.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-21T14:10:00.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-08-21T14:49:32.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-21T14:56:29.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-21T20:43:41.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-08-21T22:55:05.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-21T22:57:07.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-08-22T00:17:09.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-22T01:04:48.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-24T13:39:35.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-24T18:11:30.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-08-25T01:19:40.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-25T01:26:15.000Z"
+  },
+  {
+   "direction": "outbound",
+   "received_at": "2026-08-25T03:02:05.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-09-08T23:44:25.000Z"
+  }
+ ],
+ "brand": {
+  "name": "gorjana",
+  "category": "Luxury Goods",
+  "description": "Luxury Goods. gorjana is a rapidly growing, Southern California-based jewelry brand known for its 'jewelry you'll live in' philosophy. Established as a family-driven business in 2004, it has scaled into a major omnichannel player with a strong direct-to-consumer and retail footprint, embodying a laid-back, coastal-cool California aesthetic.",
+  "brand_tier": "established",
+  "enriched_at": "2026-07-29T05:03:27.004Z",
+  "origin": "detected"
+ },
+ "floors": {
+  "autograph": 465,
+  "licensing": 1049,
+  "ambassador": 3602,
+  "appearance": 1213,
+  "socialPost": 1000
+ },
+ "rateCard": {
+  "pav": {
+   "low": 17870,
+   "mid": 22338,
+   "high": 27922
+  },
+  "social": [
+   {
+    "source": "connected",
+    "platform": "instagram",
+    "followers": 21957,
+    "confidence": 0.7,
+    "ratePerPost": {
+     "low": 413,
+     "mid": 516,
+     "high": 645
+    }
+   },
+   {
+    "source": "connected",
+    "platform": "tiktok",
+    "followers": 15486,
+    "confidence": 0.7,
+    "ratePerPost": {
+     "low": 689,
+     "mid": 862,
+     "high": 1077
+    }
+   }
+  ],
+  "version": "v3.1.0-calibrated",
+  "autograph": {
+   "tier": "collegeStd",
+   "batch": 25,
+   "perItem": {
+    "ultra": 50,
+    "premium": 25,
+    "standard": 15
+   },
+   "confidence": 0.8,
+   "ratePerDeal": {
+    "low": 308,
+    "mid": 385,
+    "high": 482
+   }
+  },
+  "licensing": {
+   "category": "default",
+   "confidence": 0.6,
+   "royaltyPct": {
+    "low": 0.08,
+    "mid": 0.1,
+    "high": 0.12
+   },
+   "guaranteedMinimum": {
+    "low": 518,
+    "mid": 740,
+    "high": 1035
+   }
+  },
+  "ambassador": {
+   "confidence": 0.6,
+   "monthlyRetainer": {
+    "low": 1859,
+    "mid": 2656,
+    "high": 3718
+   },
+   "annualEquivalent": {
+    "low": 22308,
+    "mid": 31872,
+    "high": 44616
+   }
+  },
+  "appearance": {
+   "confidence": 0.8,
+   "prestigeTier": "P5",
+   "ratePerEvent": {
+    "low": 804,
+    "mid": 1005,
+    "high": 1256
+   }
+  },
+  "headlineSocial": {
+   "deal": "socialPost",
+   "source": "connected",
+   "platform": "tiktok",
+   "followers": 15486,
+   "confidence": 0.7,
+   "ratePerPost": {
+    "low": 689,
+    "mid": 862,
+    "high": 1077
+   }
+  }
+ },
+ "rateCardVersion": "v3.1.0-calibrated",
+ "periods": [],
+ "deliverableRows": 0,
+ "observed": {
+  "accounts": [
+   {
+    "platform": "instagram",
+    "status": "revoked"
+   },
+   {
+    "platform": "instagram",
+    "status": "revoked"
+   },
+   {
+    "platform": "youtube",
+    "status": "active"
+   },
+   {
+    "platform": "tiktok",
+    "status": "active"
+   },
+   {
+    "platform": "instagram",
+    "status": "revoked"
+   },
+   {
+    "platform": "youtube",
+    "status": "expired"
+   },
+   {
+    "platform": "gmail",
+    "status": "revoked"
+   },
+   {
+    "platform": "gmail",
+    "status": "active"
+   },
+   {
+    "platform": "gmail",
+    "status": "active"
+   },
+   {
+    "platform": "outlook",
+    "status": "pending"
+   },
+   {
+    "platform": "gmail",
+    "status": "revoked"
+   },
+   {
+    "platform": "instagram",
+    "status": "revoked"
+   },
+   {
+    "platform": "instagram",
+    "status": "active"
+   }
+  ],
+  "dealCounts": {
+   "rejected": 2,
+   "negotiating": 7,
+   "detected": 201,
+   "accepted": 1
+  },
+  "researchRuns": 0
+ }
+}

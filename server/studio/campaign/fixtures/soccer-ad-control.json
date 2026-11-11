@@ -1,0 +1,18 @@
+{
+  "_note": "The ad-brief control, as the Agent planner receives it today (server/routes/studio.agent.test.ts P5: POST /studio/agent/plan with this prompt and objective), and the campaign brief it becomes. Her sentence stays PlanAsk.prompt and is NOT in the brief. The brief records only what the sentence says: an ad, with her in it, about soccer. No brand, product, look or format is named, so those are null or empty and never guessed.",
+  "planAsk": {
+    "prompt": "a soccer ad with me in it",
+    "objective": "grow-following"
+  },
+  "brief": {
+    "schema": "campaign-brief/1",
+    "objective": { "type": "ad", "goal": "grow-following" },
+    "story": null,
+    "brand": null,
+    "subject": { "identity_priority": "maximum", "sport": "soccer" },
+    "product": null,
+    "creative_direction": { "tone": [], "style": null, "energy": null },
+    "references": [],
+    "output": { "type": null, "aspect_ratio": null, "platform": null }
+  }
+}

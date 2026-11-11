@@ -1,0 +1,150 @@
+name: Deploy to Cloud Run (dev)
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for manual trigger'
+        required: false
+        default: 'Manual deploy'
+
+# DEV. Every push to main lands here; production is promote.yml → deploy-prod.yml.
+#
+# Serialize deploys. The schema step (scripts/db-migrate.sh) applies DDL with DROP CONSTRAINT IF EXISTS
+# followed by ADD CONSTRAINT — idempotent when run alone, but NOT safe against a
+# second copy of itself. Two merges 14s apart (PRs #140 + #141, 2026-08-06) ran the
+# payments block concurrently: run A dropped payments_status_check, run B's DROP then
+# reported "does not exist, skipping", A re-added it, and B's ADD died with
+# "constraint already exists" — failing the deploy before the image was ever built.
+#
+# cancel-in-progress is deliberately FALSE: cancelling would kill a run mid-DDL,
+# between a DROP and its matching ADD, leaving the constraint missing in prod. Queue
+# instead, so each deploy sees a settled schema.
+concurrency:
+  group: deploy-cloud-run-main
+  cancel-in-progress: false
+
+env:
+  PROJECT_ID: gamechanger-pocket-agent
+  REGION: us-central1
+  REGISTRY: us-central1-docker.pkg.dev
+  REPOSITORY: gamechanger
+  IMAGE: nomila-v2
+  SERVICE: nomila-v2
+
+jobs:
+  build-and-deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_DEPLOYER_SERVICE_ACCOUNT }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v3
+
+      - name: Configure Docker to use gcloud credentials
+        run: gcloud auth configure-docker ${{ env.REGISTRY }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.22'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Run schema migration via Cloud SQL Auth Proxy
+        # The whole schema path lives in scripts/db-migrate.sh — legacy DDL, the drizzle
+        # journal, the hand-written 0031–0042 files, triggers, the HARD drift gate, the
+        # brand backfill — so that production (deploy-prod.yml) runs the identical recipe
+        # against its own instance. See docs/plans/production-environment-split.md, PR B.
+        #
+        # Plain env + a one-line run on purpose: no ${{ }} expression may appear in a large
+        # run block (it makes GitHub compile the whole block as one expression and trips
+        # the 21000-char limit — the workflow then parses to 0 jobs with no error).
+        env:
+          CLOUD_SQL_INSTANCE: gamechanger-pocket-agent:us-central1:nomila-v2-db
+          DB_URL_SECRET: NOMILA_V2_DATABASE_URL
+        run: bash scripts/db-migrate.sh
+
+      - name: Build and push Docker image
+        env:
+          DOCKER_BUILDKIT: "1"
+        run: |
+          IMAGE_TAG="${{ env.REGISTRY }}/${{ env.PROJECT_ID }}/${{ env.REPOSITORY }}/${{ env.IMAGE }}"
+          SHORT_SHA="${{ github.sha }}"
+          SHORT_SHA="${SHORT_SHA:0:8}"
+          IMAGE_URI="${IMAGE_TAG}:${SHORT_SHA}"
+
+          docker build \
+            --no-cache \
+            --tag "${IMAGE_URI}" \
+            --tag "${IMAGE_TAG}:latest" \
+            .
+
+          docker push "${IMAGE_URI}"
+          docker push "${IMAGE_TAG}:latest"
+
+          echo "IMAGE_URI=${IMAGE_URI}" >> $GITHUB_ENV
+          echo "SHORT_SHA=${SHORT_SHA}" >> $GITHUB_ENV
+
+      - name: Deploy to Cloud Run
+        run: |
+          sed -i "s|image: .*|image: ${{ env.IMAGE_URI }}|" gcp/cloud-run-dev.yaml
+          echo "Deploying image: ${{ env.IMAGE_URI }}"
+
+          gcloud run services replace gcp/cloud-run-dev.yaml \
+            --region=${{ env.REGION }} \
+            --project=${{ env.PROJECT_ID }} || DEPLOY_FAILED=true
+
+          echo "=== REVISIONS ==="
+          gcloud run revisions list \
+            --service=${{ env.SERVICE }} \
+            --region=${{ env.REGION }} \
+            --project=${{ env.PROJECT_ID }} \
+            --limit=5 \
+            --format="table(name,status.conditions[0].status,metadata.creationTimestamp)"
+
+          echo "=== STARTUP LOGS ==="
+          gcloud logging read \
+            "resource.type=cloud_run_revision AND resource.labels.service_name=${{ env.SERVICE }}" \
+            --project=${{ env.PROJECT_ID }} \
+            --freshness=10m \
+            --limit=50 \
+            --order=asc \
+            --format="value(textPayload)" | grep -v "^$" || true
+
+          if [ "${DEPLOY_FAILED}" = "true" ]; then
+            echo "Deploy failed — see revision list and logs above"
+            exit 1
+          fi
+
+      - name: Allow unauthenticated access
+        run: |
+          gcloud run services add-iam-policy-binding ${{ env.SERVICE }} \
+            --member="allUsers" \
+            --role="roles/run.invoker" \
+            --region=${{ env.REGION }} \
+            --project=${{ env.PROJECT_ID }}
+
+      - name: Get service URL
+        run: |
+          URL=$(gcloud run services describe ${{ env.SERVICE }} \
+            --region=${{ env.REGION }} \
+            --project=${{ env.PROJECT_ID }} \
+            --format="value(status.url)")
+          echo "Deployed to: ${URL}"

@@ -1,0 +1,721 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "cristiano-ronaldo",
+    "name": "Cristiano Ronaldo",
+    "sport": "Soccer"
+  },
+  "parseError": null,
+  "dimensionAssessments": {
+    "athletic_authority": {
+      "prose": "Cristiano Ronaldo maintains a highly prestigious sporting presence, recently captaining Al-Nassr to the 2025/26 Saudi Pro League championship and representing Portugal in his sixth FIFA World Cup. His absolute standing is reinforced by legendary career honors, including five Ballon d'Or awards and the record for most international appearances and goals in football history. Despite his age of 41, his performance remains central to his team's strategies and in the global athletic spotlight.",
+      "confidence": "HIGH",
+      "confidenceReason": "Based on official club and international match sheets, title records, and recent World Cup performance data."
+    },
+    "audience_scale": {
+      "prose": "Ronaldo holds the largest digital audience in the world, with his personal reach exceeding 1 billion cross-platform followers. His Instagram account sits at the top of individual rankings with 679 million followers, and his YouTube platform broke global subscriber speed records. The immense size of his digital community functions as a self-sustaining global broadcasting network.",
+      "confidence": "HIGH",
+      "confidenceReason": "Corroborated by independent, major platform ranking indices and documented social media analytics."
+    },
+    "engagement_quality": {
+      "prose": "His massive audience exhibits exceptional interaction volume, with video reels and promotional campaigns consistently attracting hundreds of millions of views. Although private analytics (such as story tap-throughs and saves) are missing, his public interaction volume indicates an extraordinarily active fan base. This high level of active engagement translates directly into major consumer action.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "Public engagement numbers are extremely visible and massive, though private platform dashboard diagnostics are unavailable."
+    },
+    "cultural_relevance": {
+      "prose": "Ronaldo is a universal cultural icon whose relevance extends far beyond the pitch into fashion, fitness, and luxury lifestyle. Spikes in public search interest, constant top-tier media profiling, and his integration into pop culture memes keep him at the center of the global conversation. His retirement announcement has only served to solidify his legacy as a historic figure in sports culture.",
+      "confidence": "HIGH",
+      "confidenceReason": "Validated by widespread, persistent mainstream media coverage and high global search demand spikes."
+    },
+    "narrative_power": {
+      "prose": "His brand narrative is exceptionally deep and distinctive, built on the pillars of relentless work ethic, physical perfection, and peak performance longevity. The story is highly authenticated by his real-life performance and strict discipline, making it perfectly applicable for fitness and premium brands. This established identity is durable enough to remain highly relevant long after his retirement.",
+      "confidence": "HIGH",
+      "confidenceReason": "Supported by a clear, consistent public persona and continuous media reinforcement over more than two decades."
+    },
+    "brand_fit": {
+      "prose": "Ronaldo offers high commercial applicability across premium sportswear, luxury goods, wellness, and lifestyle categories. His values of hard work and physical perfection are deeply coherent, making him a versatile partner for global marketing campaigns. Minor brand safety risks are present due to past high-risk cryptocurrency collaborations, but his commercial professionalism remains highly regarded.",
+      "confidence": "HIGH",
+      "confidenceReason": "Grounded in a diverse, stable history of major commercial campaigns across multiple business sectors."
+    },
+    "commercial_proof": {
+      "prose": "His status as the world's highest-paid athlete in 2026, with an estimated $300 million in total earnings, provides definitive proof of his commercial power. This is anchored by long-term corporate relationships, most notably his lifetime contract with Nike, alongside high-value equity stakes in tech-fitness brands. His exceptional pricing power and verified campaign results confirm his position as an elite marketing asset.",
+      "confidence": "HIGH",
+      "confidenceReason": "Directly backed by verified financial disclosures from the 2026 Forbes rich list and reported corporate structures."
+    },
+    "momentum": {
+      "prose": "While Ronaldo's on-field athletic career is winding down toward his declared retirement at the end of the 2026-27 season, his overall brand momentum remains highly elevated. Spikes in public search interest and media coverage surrounding his 'farewell tour' are keeping his brand highly active. His commercial transition toward equity ownership and personal media networks ensures strong long-term commercial acceleration.",
+      "confidence": "HIGH",
+      "confidenceReason": "Derived from his clear, recent public retirement declarations and ongoing digital expansion metrics."
+    }
+  },
+  "overallConfidence": {
+    "level": "HIGH",
+    "explanation": "Ronaldo's identity is completely clear, and the available evidence directly supports his exceptional global marketability. The extensive data from Forbes, major media, and public platform follower counts is highly consistent and up to date for 2026. While private platform engagement metrics are missing, having access to them would not materially change his overall marketability assessment."
+  },
+  "identityConfidence": "HIGH",
+  "summary": "Cristiano Ronaldo remains the preeminent commercial force in global sports. At 41 years old and captaining both Al-Nassr and the Portuguese national team, Ronaldo recently led Al-Nassr to the 2025/26 Saudi Pro League title and competed in his record sixth FIFA World Cup. His recent announcement that the 2026–27 season will likely be his final year of football has ignited a powerful 'farewell tour' narrative that continues to dominate global headlines. Ronaldo's digital footprint is unmatched; he is the most-followed individual on Instagram with over 679 million followers, and his 'UR - Cristiano' YouTube channel set historic speed records, bringing his total cross-platform reach past 1 billion. Commercially, he topped the 2026 Forbes highest-paid athletes list with a record-tying $300 million, leveraging an endorsement portfolio anchored by a lifetime Nike contract alongside major long-term partners like Clear, Herbalife, and Binance. His newer commercial deals feature highly lucrative equity and revenue-sharing structures with brands like WHOOP and Therabody, cementing his transition from active athlete to global enterprise. While his physical playing career is entering its final months, his brand equity, narrative power, and global cultural footprint show no signs of recession, securing his status as an exceptional, multi-generational marketing asset.",
+  "summaryWords": 199,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Cristiano Ronaldo (41 years old) captains both the Saudi Pro League club Al-Nassr and the Portugal national team, holding the record as history's most-capped male player (233+ caps) and top international goalscorer (146+ goals).",
+      "sourceTitle": "Cristiano Ronaldo Wikipedia Profile",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+      "sourceType": "secondary",
+      "date": "2026-09-14"
+    },
+    {
+      "id": "E2",
+      "claim": "In an August 2026 interview with Vogue, Ronaldo stated that the 2026-27 season with Al-Nassr (under contract until June 2027) will 'probably' be his final year as a professional footballer.",
+      "sourceTitle": "Cristiano Ronaldo Declares 2026-27 Season Will 'Probably' Be His Last Year of Football",
+      "sourceUrl": "https://hypebeast.com/2026/8/cristiano-ronaldo-retirement-al-nassr-portugal-football-news",
+      "sourceType": "major_media",
+      "date": "2026-08-16"
+    },
+    {
+      "id": "E3",
+      "claim": "Ronaldo captained Portugal to the Round of 16 at the 2026 FIFA World Cup in July 2026 (his sixth World Cup appearance), where they were eliminated 1-0 by Spain. During the tournament, he became the first player to score in six different World Cups.",
+      "sourceTitle": "Portugal's Heartbreaking Exit of the 2026 FIFA World Cup Sees Cristiano Ronaldo Take a Tearful Final Bow",
+      "sourceUrl": "https://hypebeast.com/2026/7/portugal-spain-round-of-16-2026-fifa-world-cup-cristiano-ronaldo-tearful-final-bow",
+      "sourceType": "major_media",
+      "date": "2026-07-06"
+    },
+    {
+      "id": "E4",
+      "claim": "Ronaldo captained Al-Nassr to the 2025/26 Saudi Pro League title on May 21, 2026, clinching the trophy with a final-day brace in a 4-1 victory over Damac, marking his first league title in Saudi Arabia.",
+      "sourceTitle": "Cristiano Ronaldo is the world's highest paid athlete in 2026",
+      "sourceUrl": "https://www.pulsesports.ng/football/story/cristiano-ronaldo-highest-paid-athlete-2026-forbes-rich-list-2026052206412151522",
+      "sourceType": "secondary",
+      "date": "2026-05-22"
+    },
+    {
+      "id": "E5",
+      "claim": "As of late August/September 2026, Ronaldo is the most-followed individual on Instagram with 679 million followers, holding a massive lead over second-placed Lionel Messi (516 million).",
+      "sourceTitle": "Ranked: The Most Followed People on Instagram in 2026",
+      "sourceUrl": "https://www.visualcapitalist.com/most-followed-people-on-instagram-2026/",
+      "sourceType": "secondary",
+      "date": "2026-09-06"
+    },
+    {
+      "id": "E6",
+      "claim": "Ronaldo launched his YouTube channel 'UR - Cristiano' in August 2024, which shattered multiple digital records, hitting 1 million subscribers in 90 minutes and 50 million in less than a week.",
+      "sourceTitle": "Cristiano Ronaldo Smashes Records With YouTube Channel Launch",
+      "sourceUrl": "https://www.forbes.com/sites/ianshepherd/2024/08/21/cristiano-ronaldo-smashes-records-with-youtube-channel-launch/",
+      "sourceType": "major_media",
+      "date": "2024-08-21"
+    },
+    {
+      "id": "E7",
+      "claim": "Ronaldo topped the Forbes highest-paid athletes list for 2026 for the fourth consecutive year, earning an estimated $300 million over the past 12 months, split between $235 million on-field and $65 million off-field.",
+      "sourceTitle": "Cristiano Ronaldo Leads Forbes' 2026 List of the World's Highest-Paid Athletes",
+      "sourceUrl": "https://www.forbes.com/sites/forbespr/2026/05/22/cristiano-ronaldo-leads-forbes-2026-list-of-the-worlds-highest-paid-athletes/",
+      "sourceType": "official",
+      "date": "2026-05-22"
+    },
+    {
+      "id": "E8",
+      "claim": "His extensive sponsorship portfolio features a lifetime contract with Nike (reported at >$1B overall, €16m-20m annually), long-term associations with Clear, Herbalife, TAG Heuer, and newer equity-based deals with WHOOP (ambassador and investor since 2024) and Therabody.",
+      "sourceTitle": "Cristiano Ronaldo's Endorsement Portfolio",
+      "sourceUrl": "https://ronaldonetworth.com/endorsements/",
+      "sourceType": "secondary",
+      "date": "2026-08-05"
+    },
+    {
+      "id": "E9",
+      "claim": "The LEGO 'Everyone Wants a Piece' marketing campaign featuring Ronaldo alongside Messi, Mbappé, and Vinicius Jr. generated over 314 million Instagram views within 24 hours of release in June 2026.",
+      "sourceTitle": "Why footballers are so valuable to brands off the pitch",
+      "sourceUrl": "https://onclusive.com/insights/blog/footballer-endorsements-world-cup-2026/",
+      "sourceType": "secondary",
+      "date": "2026-06-17"
+    },
+    {
+      "id": "E10",
+      "claim": "In July 2026, Al-Nassr hired Ange Postecoglou as head coach on a two-year deal, while Portugal named Jorge Jesus as their head coach following the 2026 World Cup.",
+      "sourceTitle": "Soccer-Postecoglou appointed new coach of Al-Nassr on two-year deal",
+      "sourceUrl": "https://www.thestar.com.my/sport/football/2026/07/04/soccer-postecoglou-appointed-new-coach-of-al-nassr-on-two-year-deal",
+      "sourceType": "secondary",
+      "date": "2026-07-04"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3"
+      ],
+      "rationale": "Ronaldo competes in the highly well-funded Saudi Pro League and represents Portugal in elite international fixtures like the 2026 FIFA World Cup.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "He recently captained Al-Nassr to the 2025/26 Saudi Pro League championship and scored on his 2026-27 season debut, pushing his career total to 977 goals.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "His career features five Ballon d'Or awards, four European Golden Shoes, and three UEFA Men's Player of the Year awards, sealing his status as an all-time great.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3"
+      ],
+      "rationale": "He is history's most-capped male international player (233+ caps) and captained Portugal at the 2026 FIFA World Cup, scoring in his sixth separate tournament.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E10"
+      ],
+      "rationale": "He is the starting captain and primary attacking focus for both Al-Nassr and Portugal, with managers carefully structuring play and squad workload around him.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4"
+      ],
+      "rationale": "His major trophy victory occurred in May 2026, followed immediately by captaining Portugal in the FIFA World Cup during June-July 2026.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "With 679 million Instagram followers and over 50 million YouTube subscribers, Ronaldo has the largest verified cross-platform audience of any individual globally.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Ronaldo is the most-followed soccer player in history, sitting 163 million followers ahead of his closest rival, Lionel Messi.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "His audience continues to grow rapidly, highlighted by his YouTube channel breaking records for the fastest growth in digital history since its 2024 launch.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "He possesses massive, record-breaking audiences across Instagram, YouTube, Facebook, and X, rather than relying on a single platform.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "scored",
+      "score": 95,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5",
+        "E9"
+      ],
+      "rationale": "Despite his massive follower count, his posts routinely secure millions of likes and views, with custom campaigns generating hundreds of millions of interactions.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "scored",
+      "score": 96,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6",
+        "E9"
+      ],
+      "rationale": "His high-production video reels routinely achieve viral reach far beyond his follower base, including record-breaking view counts across YouTube and Instagram.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Private platform interaction metrics such as saves and shares are not publicly available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Detailed video completion and retention curves are not disclosed publicly by his digital team or platforms.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Story-specific reach and tap-through rates remain private to the athlete's account analytics.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "scored",
+      "score": 90,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6",
+        "E7",
+        "E9"
+      ],
+      "rationale": "While a massive account inevitably contains non-active profiles, his real-world impact in driving millions of paid product sales and subscriptions confirms high authenticity.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3",
+        "E7"
+      ],
+      "rationale": "He is consistently one of the most covered figures in global journalism, across both dedicated sports press and lifestyle, business, and mainstream news.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E7"
+      ],
+      "rationale": "His career developments, family milestones, and retirement updates are published by top-tier publications including Vogue, Forbes, ESPN, and Reuters.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "Global search engines report massive spikes in search interest surrounding his World Cup campaign and his 2026 retirement announcement.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E9"
+      ],
+      "rationale": "He is a constant topic of public discourse; his signature 'Siuuu' celebration and on-field emotional moments are integrated into global pop culture.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E7",
+        "E8"
+      ],
+      "rationale": "Ronaldo is universally recognized globally, transcending soccer to influence fashion, luxury lifestyle, fitness, and luxury hospitality.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E8"
+      ],
+      "rationale": "His story of relentless work ethic, physical perfection, and peak performance longevity into his 40s is instantly recognizable and unique.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "rationale": "His narrative has over two decades of depth, charting his rise from Madeira, multiple European triumphs, the Messi rivalry, and his upcoming retirement.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3",
+        "E7"
+      ],
+      "rationale": "His extreme physical conditioning, unparalleled career statistics, and continuous record-breaking performance directly validate his 'relentless' branding.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "Global media consistently adopts and amplifies his narratives, framing his final club campaign as an iconic 'last dance' in football history.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8"
+      ],
+      "rationale": "The core pillars of his story—longevity, peak performance, and discipline—seamlessly support fitness, wellness, and luxury brand alignments.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E8"
+      ],
+      "rationale": "The 'CR7' brand has been carefully structured to outlast his playing career, transitioning smoothly into business ownership and digital media.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8"
+      ],
+      "rationale": "He naturally fits premium sportswear, luxury watches, wellness, technology, hospitality, cryptocurrency, lifestyle, and FMCG brands.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8"
+      ],
+      "rationale": "While he is a highly professional, dedicated partner, past legal matters and controversy around high-risk partners (e.g. Binance) present minor risks.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E7"
+      ],
+      "rationale": "His global audience possesses immense purchasing power, spanning diverse regional markets and actively investing in lifestyle, fitness, and luxury products.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 96,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E8"
+      ],
+      "rationale": "His public values—unyielding discipline, family, fitness, and premium living—have remained exceptionally consistent for over two decades.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 94,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E9"
+      ],
+      "rationale": "He is highly capable of driving diverse campaign formats, from professional high-concept commercial shoots to direct, intimate YouTube formats.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E7"
+      ],
+      "rationale": "He holds massive commercial relevance across Europe, the Middle East, Asia, and Latin America, with growing traction in North America.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7"
+      ],
+      "rationale": "His off-field earnings of $65 million represent a massive, verified commercial footprint, making him the world's highest-paid athlete overall in 2026.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8"
+      ],
+      "rationale": "He maintains a highly active portfolio of concurrent, major endorsements across sports, tech, lifestyle, and nutrition sectors.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8"
+      ],
+      "rationale": "His portfolio is anchored by global industry leaders, most notably Nike, alongside premium brands like TAG Heuer, Herbalife, and WHOOP.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8"
+      ],
+      "rationale": "Ronaldo has sustained a lifetime partnership with Nike since 2016 and decade-plus relationships with partners like Clear and Herbalife.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E9"
+      ],
+      "rationale": "Sponsorship campaigns like the 2026 LEGO project and his YouTube channel launch have driven record-breaking global view and interaction metrics.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E7",
+        "E8"
+      ],
+      "rationale": "He commands an estimated $3 million per sponsored post and secured a historic lifetime Nike contract valued at over $1 billion.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 70,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "While he recently won the 2025/26 Saudi Pro League, his overall playing trajectory is entering its final months due to his impending retirement.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "Digital momentum remains exceptionally high, fueled by the ongoing expansion of his YouTube platform and a rising Instagram follower base.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "Media coverage is highly elevated and stable, driven by the narrative around his final World Cup and his retirement farewell tour.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "Public interest has spiked significantly due to his retirement timeline announcement and quest for 1,000 career goals.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8"
+      ],
+      "rationale": "His commercial model is accelerating away from flat endorsement fees toward high-value equity stakes (WHOOP, Therabody) and digital networks.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Unmatched global digital reach with over 679 million Instagram followers and cross-platform followings exceeding 1 billion.",
+    "Category-leading commercial proof, highlighted by ranking #1 on the 2026 Forbes highest-paid athletes list with $300 million in total earnings.",
+    "Deep, coherent personal narrative built around elite athletic longevity, physical perfection, and relentless work ethic.",
+    "Long-standing, highly stable corporate partnerships, including a lifetime contract with Nike and decade-plus deals with Clear and Herbalife."
+  ],
+  "keyConstraints": [
+    "Impending retirement at the end of the 2026-27 season, which will conclude his active playing career and transition him to a post-on-field status.",
+    "Age of 41, which naturally limits on-field athletic trajectory and limits his participation in future elite international cycles.",
+    "Minor brand-safety concerns stemming from past legal settlements and involvement with high-risk digital asset partners like Binance."
+  ],
+  "importantMissingData": [
+    "Private platform performance metrics, such as Instagram Stories reach/interaction rates, content saves, and share counts.",
+    "Detailed video retention and completion rate curves for his YouTube platform content."
+  ],
+  "identityOrEvidenceRisks": [
+    "There are no identity resolution risks; Cristiano Ronaldo is one of the most recognizable individuals in global pop-culture history, with fully verified public accounts."
+  ],
+  "socialBlockSupplied": false
+}

@@ -1,0 +1,717 @@
+{
+  "specVersion": "blind-eval-spec/0.1",
+  "provider": "openai",
+  "athlete": {
+    "key": "ben-shelton",
+    "name": "Ben Shelton",
+    "sport": "Tennis"
+  },
+  "parseError": null,
+  "identityConfidence": "HIGH",
+  "summary": "Ben Shelton is a current top-tier American men’s tennis player whose marketability is built on a blend of elite competitive standing, an explosive serve, and a highly legible personal story: late-ish tennis specialization, a father-coach relationship, and rapid rise from college star to Grand Slam contender. Publicly available ATP and tournament sources place him inside the sport’s upper echelon, with a career-high ATP singles ranking of No. 5 and major results including a 2023 US Open semifinal, a 2025 Australian Open semifinal, and a 2025 Masters 1000 title in Toronto. He also entered 2026 as a consistent high-seed-level presence and reached the US Open quarterfinals in September 2026. He appears to have a meaningful public audience and visible commercial appeal, supported by branded partnerships with On, Yonex, and Thorne, plus agency representation by WME. His image is young, energetic, and commercially versatile, with clear appeal to sports/performance, apparel, wellness, and youth-oriented brands. The main uncertainty is that platform-native audience and engagement data are limited in the public record here, so some audience and engagement sub-signals must remain missing or low-confidence rather than inferred.",
+  "summaryWords": 183,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "ATP player bio states Shelton turned pro in 2022, won the 2021 NCAA team title and 2022 NCAA singles title, and reached career-high ATP singles ranking No. 5 in November 2025.",
+      "sourceTitle": "Ben Shelton | Bio | ATP Tour | Tennis",
+      "sourceUrl": "https://www.atptour.com/en/players/b.-shelton/s0s1/bio",
+      "sourceType": "official",
+      "date": "2026-06-29"
+    },
+    {
+      "id": "E2",
+      "claim": "ATP and official tournament sources note Shelton reached the 2025 Australian Open semifinal, Wimbledon quarterfinal, and won his first Masters 1000 title in Toronto in 2025.",
+      "sourceTitle": "Ben SHELTON - Tennis Titles, Ranking & Profile / ATP and Roland Garros player card",
+      "sourceUrl": "https://www.rolandgarros.com/en-us/players/47345-b.shelton",
+      "sourceType": "official",
+      "date": "2025-08-??"
+    },
+    {
+      "id": "E3",
+      "claim": "ATP Tour and US Open sources show Shelton remained a major contender in 2026, including a US Open quarterfinal run in September 2026.",
+      "sourceTitle": "Ben Shelton | Tennis.com / US Open official article",
+      "sourceUrl": "https://www.tennis.com/players-rankings/ben-shelton",
+      "sourceType": "major_media",
+      "date": "2026-09-09"
+    },
+    {
+      "id": "E4",
+      "claim": "Shelton's official site describes him as the face of American men's tennis, the current No. 1 American singles ranking holder into tournaments, and a player with a left-handed serve topping 149 mph.",
+      "sourceTitle": "About Ben Shelton",
+      "sourceUrl": "https://bensheltontennis.com/bio",
+      "sourceType": "official",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "E5",
+      "claim": "Yonex USA describes Shelton as a charismatic player and lists multiple recent achievements including the 2023 US Open semifinal, 2025 National Bank Open title, and 2026 results.",
+      "sourceTitle": "Ben Shelton – Yonex USA",
+      "sourceUrl": "https://us.yonex.com/pages/athlete/ben-shelton",
+      "sourceType": "official",
+      "date": "2026-09-12"
+    },
+    {
+      "id": "E6",
+      "claim": "On's athlete page features Shelton as a brand athlete and highlights his serve speed and energetic profile.",
+      "sourceTitle": "Ben Shelton | Tennis | On United States",
+      "sourceUrl": "https://www.on.com/en-us/explore/athletes/ben-shelton",
+      "sourceType": "official",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "E7",
+      "claim": "Thorne announced a sports performance campaign featuring Shelton in April 2025 and described him as a top-ranked American professional tennis player.",
+      "sourceTitle": "THORNE launches on-the-go sports performance product line via new campaign with tennis star Ben Shelton",
+      "sourceUrl": "https://www.thorne.com/press-releases/thorne-launches-on-the-go-sports-performance-product-line-via-new-campaign-with-tennis-star-ben-shelton",
+      "sourceType": "official",
+      "date": "2025-04-14"
+    },
+    {
+      "id": "E8",
+      "claim": "Sports Business Journal reported Shelton joined WME's tennis roster in June 2025.",
+      "sourceTitle": "Ben Shelton joins WME’s tennis roster",
+      "sourceUrl": "https://www.sportsbusinessjournal.com/Articles/2025/06/13/ben-shelton-joins-wmes-tennis-roster/",
+      "sourceType": "major_media",
+      "date": "2025-06-13"
+    },
+    {
+      "id": "E9",
+      "claim": "HypeAuditor publicly observed Shelton's Instagram follower count around 1.33 million in early September 2026 and noted recent growth.",
+      "sourceTitle": "Ben Shelton (@benshelton) Instagram Stats, Analytics, Net Worth and Earnings – HypeAuditor",
+      "sourceUrl": "https://hypeauditor.com/instagram/benshelton/",
+      "sourceType": "secondary",
+      "date": "2026-09-03"
+    },
+    {
+      "id": "E10",
+      "claim": "ATP Tour bio notes Shelton began playing tennis at age 10 with his father Bryan, who is also his coach, and that he broke into the Top 200 in 2022, Top 100 in 2022, and Top 20 in 2023.",
+      "sourceTitle": "Ben Shelton | Bio | ATP Tour | Tennis",
+      "sourceUrl": "https://www.atptour.com/en/players/b.-shelton/s0s1/bio",
+      "sourceType": "official",
+      "date": "2026-06-29"
+    },
+    {
+      "id": "E11",
+      "claim": "ATP and Wimbledon coverage framed Shelton as a compelling young star and noted his 2025 season included second-week runs at every major he played.",
+      "sourceTitle": "Entertainer at heart, Ben Shelton steps onto his biggest stage",
+      "sourceUrl": "https://www.atptour.com/en/news/shelton-us-open-2025-pre-tournament-interview",
+      "sourceType": "official",
+      "date": "2025-08-??"
+    },
+    {
+      "id": "E12",
+      "claim": "US Open official coverage on Sept. 12, 2026 confirmed Shelton's quarterfinal run at the 2026 US Open.",
+      "sourceTitle": "Ben Shelton closes in on history at 2026 US Open: From ecstasy to serenity",
+      "sourceUrl": "https://www.usopen.org/amp/en_US/news/articles/2026-09-12/ben_shelton_closes_in_on_history_at_2026_us_open_from_ecstasy_to_serenity.html",
+      "sourceType": "official",
+      "date": "2026-09-12"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E12"
+      ],
+      "rationale": "He competes at the highest ATP Tour level and has recent Grand Slam and Masters 1000 results, which places him firmly in elite international professional tennis.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 86,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E12",
+        "E5"
+      ],
+      "rationale": "Recent semifinal, quarterfinal, and Masters 1000 title results show strong competitive output, though not sustained dominance over the very top tier.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 84,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "A career-high ATP No. 5 and repeated top-level recognition indicate strong formal standing within the sport.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4",
+        "E5"
+      ],
+      "rationale": "He is a leading American man on tour and has recurring Grand Slam/ATP recognition, giving him clear national and international visibility.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Sources position him as a leading American figure and a top seed-level player, signaling major importance in the current U.S. tennis landscape.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E12",
+        "E5"
+      ],
+      "rationale": "His most meaningful results are very recent, including 2025 and 2026 deep runs and titles that are highly commercially relevant right now.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 72,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E9",
+        "E4",
+        "E5"
+      ],
+      "rationale": "Third-party Instagram analytics suggest a sizable public audience, and official brand pages imply meaningful mainstream visibility, though platform-native reach data is limited.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 80,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E4",
+        "E5"
+      ],
+      "rationale": "Within men’s tennis, a top-ranked American Grand Slam contender with brand-backed visibility likely sits well above average among peers at his stage.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 68,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E9",
+        "E12"
+      ],
+      "rationale": "Observed Instagram follower growth and continued high-profile results suggest audience expansion, but the public longitudinal data is incomplete.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 66,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8"
+      ],
+      "rationale": "He has meaningful presence across official athlete site, ATP, brand pages, and mainstream media, indicating breadth beyond a single platform.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Reliable engagement-rate or interaction quality data from first-party platforms was not publicly available in the research set.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No dependable post-level reach data or distribution analytics were available to judge how efficiently his content travels beyond followers.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Public evidence of share/save performance was not available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No public retention or completion metrics were available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No story analytics or comparable first-party data were available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There is no sufficient public evidence to assess audience authenticity beyond broad platform estimates.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 76,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E11",
+        "E12"
+      ],
+      "rationale": "He receives sustained coverage from ATP, Grand Slam, and major media environments, with especially strong attention around big events.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E11",
+        "E12",
+        "E8"
+      ],
+      "rationale": "Coverage and references come from premium tennis authorities, Grand Slam official channels, and respected sports business media.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No direct search-interest index or trend data was available in the retrieved sources.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 58,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E11",
+        "E12",
+        "E8"
+      ],
+      "rationale": "He generates discussion in tennis media and business contexts, but publicly observable evidence of broader off-platform conversation is moderate rather than overwhelming.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 67,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E8",
+        "E11"
+      ],
+      "rationale": "He has spillover recognition into fashion, business, and broader sports branding contexts, though not yet at a universally recognizable celebrity level.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 84,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E10",
+        "E1",
+        "E4"
+      ],
+      "rationale": "The late specialization, father-coach dynamic, explosive serve, and rapid rise combine into a clearly differentiated and memorable narrative.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E10",
+        "E1",
+        "E2"
+      ],
+      "rationale": "His story has multiple layers: college success, family coaching, fast professional ascent, and evolving elite ambitions.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 86,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E10",
+        "E1",
+        "E3"
+      ],
+      "rationale": "The narrative is strongly grounded in verifiable career history and repeated public confirmation, not just marketing copy.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 74,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E11",
+        "E12",
+        "E2"
+      ],
+      "rationale": "Media consistently picks up the rise-from-college-to-contender arc and the spectacle of his game style.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 79,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E6",
+        "E7",
+        "E5"
+      ],
+      "rationale": "His story naturally supports performance, youth, family, and ambition messaging without feeling forced.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 72,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E10",
+        "E1",
+        "E12"
+      ],
+      "rationale": "Because the core narrative is tied to an enduring career arc and identity rather than a single moment, it should remain usable for several years.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E6",
+        "E7",
+        "E5"
+      ],
+      "rationale": "He credibly fits apparel, footwear, wellness, performance nutrition, sports gear, and youth/ambition-oriented brands.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 81,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E5",
+        "E6",
+        "E7",
+        "E8"
+      ],
+      "rationale": "The public record here shows mainstream, low-risk partnerships and no confirmed serious brand-safety issue in the sourced material.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 74,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E9",
+        "E4",
+        "E5"
+      ],
+      "rationale": "His likely audience appears commercially attractive: tennis, sports performance, and aspirational young-fan segments, though precise demographics are not public here.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E10",
+        "E6"
+      ],
+      "rationale": "His public persona is coherent across sources: energetic, powerful, young, and performance-focused.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 77,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E6",
+        "E7",
+        "E11"
+      ],
+      "rationale": "He can support performance-led, lifestyle, fashion, and educational storytelling formats.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E1",
+        "E5"
+      ],
+      "rationale": "As a leading American tennis player, he has clear relevance for U.S. brands while still carrying international appeal through the ATP Tour.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 84,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7",
+        "E8",
+        "E5"
+      ],
+      "rationale": "Confirmed partnerships with On, Thorne, Yonex, and WME demonstrate meaningful real-world commercial demand.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 73,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7",
+        "E8",
+        "E5"
+      ],
+      "rationale": "The sourced record shows multiple distinct commercial relationships and representation changes, indicating repeated market demand.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 79,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7",
+        "E5",
+        "E8"
+      ],
+      "rationale": "On, Yonex, Thorne, and WME are credible, strategically relevant partners rather than low-tier or purely local sponsors.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Public evidence of renewal terms or repeated deepening of specific brand relationships was not available.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No reliable public performance metrics for campaigns were available.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No credible public pricing data or fee disclosures were available.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E12"
+      ],
+      "rationale": "His results have trended upward from college standout to top-five ATP player and recent Grand Slam contender, indicating strong sporting momentum.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 67,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E9"
+      ],
+      "rationale": "Observed Instagram follower growth suggests expansion, but the evidence base is thin and third-party.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 79,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E11",
+        "E12",
+        "E2"
+      ],
+      "rationale": "Media visibility appears stable-to-rising because each major event continues to generate premium coverage.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No direct search or social trend series was available to confirm the direction of public attention.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E8",
+        "E6",
+        "E5"
+      ],
+      "rationale": "Commercial activity is visibly broadening through high-quality brand deals and agency representation, which indicates upward acceleration.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Elite ATP standing with recent Grand Slam and Masters 1000 results",
+    "Clear, memorable narrative built on rapid rise and father-coach background",
+    "Strong fit for performance, apparel, wellness, and youth-focused brands",
+    "Confirmed commercial relationships with credible partners",
+    "Current momentum is strong both on court and in media"
+  ],
+  "keyConstraints": [
+    "Publicly verifiable platform engagement data is limited",
+    "Direct evidence of campaign performance and pricing power is unavailable",
+    "Audience demographics are not well documented in the retrieved sources",
+    "Some commercial judgments rely on brand-page and third-party evidence rather than first-party analytics"
+  ],
+  "importantMissingData": [
+    "First-party social analytics and post-level engagement metrics",
+    "Search-interest trend data",
+    "Campaign performance reporting",
+    "Renewal/repeat contract evidence",
+    "Verified audience demographic breakdowns"
+  ],
+  "identityOrEvidenceRisks": [
+    "Several commercial sources are self-promotional brand pages and should be interpreted as partnership confirmation, not independent performance proof",
+    "One audience metric source is third-party analytics, not first-party platform data",
+    "No confirmed serious brand-safety issue appeared in the sourced record, but absence of evidence is not proof of absence"
+  ]
+}

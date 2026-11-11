@@ -1,0 +1,26 @@
+{
+  "version": "dev-cohort-20-gold/2026-09-12",
+  "note": "EVALUATION LAYER ONLY. Nothing in this file is ever sent to a research provider. `confirmed` values are accepted forms of the anchor fields (normalized containment match); `negativeAnchors` are namesakes / conflation traps known independently — none are recorded yet (12 Sep 2026); add them here, never to cohort.dev20.json. The four minimal-anchor athletes have no confirmed fields on purpose: any resolution they produce is judged on internal consistency and abstention, not against a truth we do not hold.",
+  "athletes": [
+    { "key": "cristiano-ronaldo", "confirmed": { "sport": ["soccer", "football"], "affiliation": ["al nassr", "portugal"], "nationality": ["portugal", "portuguese"], "hometown": ["madeira", "funchal"], "career_status": ["active"] }, "negativeAnchors": [] },
+    { "key": "caitlin-clark", "confirmed": { "sport": ["basketball"], "affiliation": ["indiana fever", "iowa"], "nationality": ["united states", "american"], "hometown": ["west des moines", "iowa"], "career_status": ["active"] }, "negativeAnchors": [] },
+    { "key": "juju-watkins", "confirmed": { "sport": ["basketball"], "affiliation": ["usc", "southern california", "trojans", "sierra canyon"], "nationality": ["united states", "american"], "hometown": ["los angeles", "california"] }, "negativeAnchors": [] },
+    { "key": "alex-morgan", "confirmed": { "sport": ["soccer"], "affiliation": ["san diego wave", "uswnt", "united states"], "nationality": ["united states", "american"], "hometown": ["san dimas", "diamond bar", "california"], "career_status": ["retired"] }, "negativeAnchors": [] },
+    { "key": "ilona-maher", "confirmed": { "sport": ["rugby"], "affiliation": ["bristol bears", "usa rugby", "united states"], "nationality": ["united states", "american"], "hometown": ["burlington", "vermont"], "career_status": ["active"] }, "negativeAnchors": [] },
+    { "key": "bethany-hamilton", "confirmed": { "sport": ["surf"], "nationality": ["united states", "american"], "hometown": ["kauai", "hawaii", "lihue"] }, "negativeAnchors": [] },
+    { "key": "flaujae-johnson", "confirmed": { "sport": ["basketball"], "affiliation": ["lsu", "louisiana state"], "nationality": ["united states", "american"], "hometown": ["savannah", "georgia"], "career_status": ["active"] }, "negativeAnchors": [] },
+    { "key": "ben-shelton", "confirmed": { "sport": ["tennis"], "affiliation": ["florida", "gators"], "nationality": ["united states", "american"], "hometown": ["atlanta", "georgia", "gainesville"], "career_status": ["active"] }, "negativeAnchors": [] },
+    { "key": "jimmer-fredette", "confirmed": { "sport": ["basketball"], "affiliation": ["byu", "brigham young"], "nationality": ["united states", "american"], "hometown": ["glens falls", "new york"] }, "negativeAnchors": [] },
+    { "key": "carlin-isles", "confirmed": { "sport": ["rugby"], "affiliation": ["usa rugby", "united states", "eagles"], "nationality": ["united states", "american"], "hometown": ["akron", "massillon", "ohio"] }, "negativeAnchors": [] },
+    { "key": "jordyn-listro", "confirmed": { "sport": ["soccer"], "affiliation": ["orlando pride", "south florida", "usf", "canada"], "nationality": ["canada", "canadian"], "hometown": ["toronto", "ontario"] }, "negativeAnchors": [] },
+    { "key": "zippy-fish", "confirmed": { "sport": ["australian rules", "afl", "aflw", "football"], "affiliation": ["sydney swans"], "nationality": ["australia", "australian"], "hometown": ["western australia", "perth"], "career_status": ["active"] }, "negativeAnchors": [] },
+    { "key": "picabo-street", "confirmed": { "sport": ["alpine", "ski"], "nationality": ["united states", "american"], "hometown": ["triumph", "idaho", "sun valley"], "career_status": ["retired"] }, "negativeAnchors": [] },
+    { "key": "ukko-pekka-luukkonen", "confirmed": { "sport": ["ice hockey", "hockey"], "affiliation": ["buffalo sabres"], "nationality": ["finland", "finnish"], "hometown": ["espoo", "finland"], "career_status": ["active"] }, "negativeAnchors": [] },
+    { "key": "mia-bhuta", "confirmed": { "sport": ["soccer"], "affiliation": ["stanford"], "nationality": ["united states", "american"], "hometown": ["pittsburgh", "pennsylvania"], "national_team_participation": ["u-17", "u17", "under-17"], "career_status": ["active"] }, "negativeAnchors": [] },
+    { "key": "lilia-bhuta", "confirmed": { "sport": ["soccer"], "hometown": ["pittsburgh", "pennsylvania"] }, "negativeAnchors": [] },
+    { "key": "hannah-yu", "confirmed": {}, "negativeAnchors": [] },
+    { "key": "moh-bility", "confirmed": {}, "negativeAnchors": [] },
+    { "key": "ellie-lebe", "confirmed": {}, "negativeAnchors": [] },
+    { "key": "riya-mehta", "confirmed": {}, "negativeAnchors": [] }
+  ]
+}

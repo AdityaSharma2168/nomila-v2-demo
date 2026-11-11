@@ -1,0 +1,135 @@
+{
+ "version": "execution-router/0.1.0-exp",
+ "runId": "A3:488f2740",
+ "routed": [
+  {
+   "recommendationId": "rec_94b6d20dee8c9b5a",
+   "decision": {
+    "source": "her agent, through Mila",
+    "subject": {
+     "kind": "deal",
+     "id": "ctl-r2-northlight-termsheet"
+    },
+    "question": "Should this negotiation be advanced, countered or accepted?",
+    "objectiveIds": []
+   },
+   "what": "Counter the Northlight Learning ambassador term sheet to bring the commercial compensation in line with her established per-deliverable floor.",
+   "why": "The Northlight Learning ambassador term sheet offers a per-deliverable value of USD 1,250, which is below Mia's established ambassador floor of USD 3,602. A counter is required to align the terms with her financial requirements.",
+   "executionPath": "direct_action",
+   "relation": "advances_existing_work",
+   "advances": "deal[ctl-r2-northlight-termsheet]",
+   "intent": "counter",
+   "notSeen": [],
+   "cites": [
+    "deal[ctl-r2-northlight-termsheet].basis",
+    "representation.floors[ambassador]",
+    "deal[ctl-r2-northlight-termsheet].band"
+   ],
+   "governance": {
+    "response": "none",
+    "authorization": "none",
+    "execution": "none",
+    "simulated": []
+   },
+   "route": {
+    "ok": false,
+    "stage": "governance",
+    "refused": "preparation not authorized (response none, authorization none)"
+   }
+  },
+  {
+   "recommendationId": "rec_9feaeb54fb19c6b1",
+   "decision": {
+    "source": "the Objective loop",
+    "subject": {
+     "kind": "objective",
+     "id": "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+    },
+    "question": "what should Nomila do about this Objective now?",
+    "objectiveIds": [
+     "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+    ]
+   },
+   "what": "Develop a specialized CSR commercial pitch deck highlighting Mia's leadership and deep involvement with the Yuwa girls empowerment program.",
+   "why": "Mia has a powerful personal narrative featuring elite athletics and active philanthropic work with Yuwa, but it remains uncommercialized. Developing a CSR-specific deck leverages her narrative to attract aligned brand sponsorships.",
+   "executionPath": "specialized_plan",
+   "relation": "new_work",
+   "advances": null,
+   "intent": null,
+   "notSeen": [],
+   "cites": [
+    "objective[b1c799e3-59fc-4986-b3ab-a0b7b4869601]",
+    "findings[mia.narrative_power]",
+    "opportunity[amplify-yuwa-philanthropic-work]"
+   ],
+   "governance": {
+    "response": "none",
+    "authorization": "none",
+    "execution": "none",
+    "simulated": []
+   },
+   "route": {
+    "ok": false,
+    "stage": "governance",
+    "refused": "preparation not authorized (response none, authorization none)"
+   }
+  },
+  {
+   "recommendationId": "rec_764257cd61ef9777",
+   "decision": {
+    "source": "the Objective loop",
+    "subject": {
+     "kind": "objective",
+     "id": "feb62891-8b9f-44e4-8c1f-677d6947334b"
+    },
+    "question": "what should Nomila do about this Objective now?",
+    "objectiveIds": [
+     "feb62891-8b9f-44e4-8c1f-677d6947334b"
+    ]
+   },
+   "what": "Create a specialized plan to reactivate her dormant TikTok channel by cross-posting existing video formats like Reels and carousels.",
+   "why": "Mia's audience growth is currently cooling, and her TikTok has been dormant for over 500 days. Reactivating TikTok through cross-posting Instagram content is highly feasible and directly addresses her growth objective.",
+   "executionPath": "specialized_plan",
+   "relation": "new_work",
+   "advances": null,
+   "intent": null,
+   "notSeen": [],
+   "cites": [
+    "objective[feb62891-8b9f-44e4-8c1f-677d6947334b]",
+    "contentPerformance[tiktok]",
+    "opportunity[unlock-tiktok-channel]"
+   ],
+   "governance": {
+    "response": "accepted",
+    "authorization": "prepare_authorized",
+    "execution": "none",
+    "simulated": [
+     "accept",
+     "prepare_authorized"
+    ]
+   },
+   "route": {
+    "ok": true,
+    "dedup": {
+     "attachedTo": null
+    },
+    "handoff": {
+     "version": "execution-router/0.2.0-exp",
+     "shape": "specialized_plan",
+     "recommendationId": "rec_764257cd61ef9777",
+     "domain": "content",
+     "what": "Create a specialized plan to reactivate her dormant TikTok channel by cross-posting existing video formats like Reels and carousels.",
+     "why": "Mia's audience growth is currently cooling, and her TikTok has been dormant for over 500 days. Reactivating TikTok through cross-posting Instagram content is highly feasible and directly addresses her growth objective.",
+     "subject": "objective[feb62891-8b9f-44e4-8c1f-677d6947334b]",
+     "objectiveIds": [
+      "feb62891-8b9f-44e4-8c1f-677d6947334b"
+     ],
+     "advances": null,
+     "intent": null,
+     "notSeen": [],
+     "runId": "A3:488f2740"
+    }
+   }
+  }
+ ]
+}

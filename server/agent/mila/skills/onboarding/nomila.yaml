@@ -1,0 +1,9 @@
+# Nomila's own fields for the onboarding playbook, validated by load.ts (sidecarSchema). Not part of the Agent Skills spec.
+version: 1.1.0
+register_id: mila.playbook.onboarding
+surfaces: [chat, voice]
+flag: null
+tools: []
+sends_externally: false
+model_tier: athlete-facing
+evals: evals/agent/mila-v2/scenarios.json

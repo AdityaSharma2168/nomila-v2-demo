@@ -1,0 +1,695 @@
+{
+  "specVersion": "blind-eval-spec/0.1",
+  "provider": "openai",
+  "athlete": {
+    "key": "caitlin-clark",
+    "name": "Caitlin Clark",
+    "sport": "Basketball"
+  },
+  "parseError": null,
+  "identityConfidence": "HIGH",
+  "summary": "Caitlin Clark is an elite current WNBA guard for the Indiana Fever and one of the most commercially visible players in women’s basketball. She entered the league as the No. 1 overall pick in 2024, won WNBA Rookie of the Year, and has already earned strong league recognition, including All-WNBA First Team honors and multiple All-Star selections in her early pro career. Her college résumé at Iowa was historically distinctive: she finished as the NCAA Division I women’s all-time leading scorer and became one of the most recognizable figures in the sport. Publicly, she sits at the center of a large mainstream audience that extends beyond core basketball fans, helped by heavy media attention, record-setting interest around women’s basketball, and a highly legible narrative about shooting, stardom, and breakout influence. Her brand position is unusually strong for a young athlete because she already has major endorsement validation, including Nike naming her a signature athlete and launching a signature logo. The main uncertainties are private commercial deal terms, true platform-level engagement metrics, and current follower growth, which are not fully public here.",
+  "summaryWords": 181,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Clark was selected No. 1 overall by the Indiana Fever in the 2024 WNBA Draft and is listed as a Fever guard on the official WNBA player bio.",
+      "sourceTitle": "Caitlin Clark Stats, Height, Weight, Position, Draft Status and More | WNBA",
+      "sourceUrl": "https://www.wnba.com/player/1642286/caitlin-clark/bio",
+      "sourceType": "official",
+      "date": "2024-2026 observed"
+    },
+    {
+      "id": "E2",
+      "claim": "Clark won the 2024 WNBA Rookie of the Year award and started all 40 regular-season games while averaging 19.2 points and a WNBA-high 8.4 assists per game.",
+      "sourceTitle": "Indiana Fever's Caitlin Clark Wins 2024 Kia WNBA Rookie of the Year Award",
+      "sourceUrl": "https://www.wnba.com/webview/news/2024-kia-rookie-of-the-year",
+      "sourceType": "official",
+      "date": "2024-10-04"
+    },
+    {
+      "id": "E3",
+      "claim": "The WNBA official awards page lists Caitlin Clark as the 2024 Rookie of the Year.",
+      "sourceTitle": "2024 Season Awards | WNBA",
+      "sourceUrl": "https://www.wnba.com/awards2024",
+      "sourceType": "official",
+      "date": "2024-2026 observed"
+    },
+    {
+      "id": "E4",
+      "claim": "Nike announced Caitlin Clark as a signature athlete and unveiled her signature logo, with branded product availability in North America.",
+      "sourceTitle": "Nike Basketball Introduces Caitlin Clark as a Signature Athlete and Unveils Her New Signature Logo",
+      "sourceUrl": "https://about.nike.com/en/newsroom/releases/caitlin-clark-nike-signature-athlete-logo-announcement",
+      "sourceType": "official",
+      "date": "2025-2026 observed"
+    },
+    {
+      "id": "E5",
+      "claim": "The WNBA described Clark as part of a highly touted 2024 draft class that was a potential turning point for the league, with GMs voting her as the rookie they would most want to start a franchise with and best player in five years.",
+      "sourceTitle": "2024 WNBA GM Survey",
+      "sourceUrl": "https://www.wnba.com/webview/news/2024-wnba-gm-survey",
+      "sourceType": "official",
+      "date": "2024-2026 observed"
+    },
+    {
+      "id": "E6",
+      "claim": "AP reported Clark became the all-time leading scorer in NCAA Division I history and was named AP female athlete of the year in 2024.",
+      "sourceTitle": "Caitlin Clark joining NBC's 'Sunday Night Basketball' for Lakers-Knicks pregame at MSG",
+      "sourceUrl": "https://apnews.com/article/c163164fbd96d77d2dda6a0511d3c029",
+      "sourceType": "major_media",
+      "date": "2026-02 (published 7 months before 2026-09-14)"
+    },
+    {
+      "id": "E7",
+      "claim": "AP reported Clark's 2024 NCAA tournament run drew historic attention, including sellouts, historic TV ratings, and significant commercials; coverage framed her as a central face of women’s basketball.",
+      "sourceTitle": "The NCAA women's tourney had everything: stars, upsets, an undefeated champion. It's just the start",
+      "sourceUrl": "https://apnews.com/article/e319ccd78930442d1d83582b930dcae7",
+      "sourceType": "major_media",
+      "date": "2024-04-08"
+    },
+    {
+      "id": "E8",
+      "claim": "The WNBA draft board listed Clark's Iowa statistics at 28.4 PPG, 7.1 RPG, and 8.2 APG.",
+      "sourceTitle": "2024 Draft Board | WNBA",
+      "sourceUrl": "https://www.wnba.com/draft/2024/board",
+      "sourceType": "official",
+      "date": "2024-2026 observed"
+    },
+    {
+      "id": "E9",
+      "claim": "The WNBA official current players material described Clark as the greatest collegiate scorer and among the most accomplished careers in college basketball history.",
+      "sourceTitle": "CURRENT PLAYERS | WNBA PDF",
+      "sourceUrl": "https://cdn.wnba.com/sites/1611661330/2024/08/vs.-ATL-8_26_24.pdf",
+      "sourceType": "official",
+      "date": "2024-08-26"
+    },
+    {
+      "id": "E10",
+      "claim": "The WNBA stated Clark had a jersey retired by Iowa in 2025, one of only three in program history to receive that honor.",
+      "sourceTitle": "Caitlin Clark Stats, Height, Weight, Position, Draft Status and More | WNBA",
+      "sourceUrl": "https://www.wnba.com/player/1642286/caitlin-clark/bio",
+      "sourceType": "official",
+      "date": "2025-2026 observed"
+    },
+    {
+      "id": "E11",
+      "claim": "A WNBA impact report stated Clark was only exceeded globally in the Fanatics network by MLB star Shohei Ohtani, indicating very large commercial reach.",
+      "sourceTitle": "2024 WNBA Impact Report",
+      "sourceUrl": "https://cdn.wnba.com/sites/4/2025/03/2024-WNBA-Impact-Report.pdf",
+      "sourceType": "official",
+      "date": "2025-03"
+    },
+    {
+      "id": "E12",
+      "claim": "AP reported Clark has already become a two-time WNBA All-Star and was an All-WNBA First Team pick in 2024.",
+      "sourceTitle": "Caitlin Clark joining NBC's 'Sunday Night Basketball' for Lakers-Knicks pregame at MSG",
+      "sourceUrl": "https://apnews.com/article/c163164fbd96d77d2dda6a0511d3c029",
+      "sourceType": "major_media",
+      "date": "2026-02"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E12"
+      ],
+      "rationale": "She competes in the WNBA, the top professional women's basketball league, and her current role is at the league's highest level.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E12",
+        "E8"
+      ],
+      "rationale": "Her rookie season production, league-leading assists, and immediate All-WNBA recognition indicate elite on-court performance rather than just visibility.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3",
+        "E12",
+        "E10"
+      ],
+      "rationale": "Rookie of the Year, All-WNBA First Team, All-Star selections, and major historical Iowa recognition show strong formal standing.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 72,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E9",
+        "E10"
+      ],
+      "rationale": "The evidence shows major U.S. college and pro recognition, but public international representation evidence is not fully established here.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 84,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E5"
+      ],
+      "rationale": "She is a franchise-level guard, started every game as a rookie, and was viewed by GMs as a top franchise-building piece.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3",
+        "E4",
+        "E12"
+      ],
+      "rationale": "Her major achievements and signature-brand milestone are recent and commercially current.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 92,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E11",
+        "E7",
+        "E6"
+      ],
+      "rationale": "Public evidence points to very large reach and mainstream attention, though exact platform totals are not fully public in the sources used.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E11",
+        "E7",
+        "E6"
+      ],
+      "rationale": "Within women’s basketball and among peers at her level, the available evidence suggests audience scale at the very top tier.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Reliable longitudinal follower or audience-growth data was not publicly available in the sources reviewed.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 76,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E6",
+        "E11"
+      ],
+      "rationale": "She has meaningful presence across league, news, and brand channels, but precise multi-platform account metrics were not fully verified here.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No reliable public engagement-rate benchmark or post-level interaction data was available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There was no authoritative platform analytics source to show how efficiently her content converts to reach.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Share/save data is not publicly available in the sources reviewed.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No reliable video retention or completion data was available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Story-level analytics were not publicly verifiable.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There was no credible public evidence to evaluate audience authenticity quantitatively.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7",
+        "E12"
+      ],
+      "rationale": "Her coverage is broad, persistent, and often centered in major sports media rather than niche outlets.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 94,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7",
+        "E12"
+      ],
+      "rationale": "The cited coverage comes from AP and official league sources, indicating high-prestige media attention.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 90,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E7",
+        "E6"
+      ],
+      "rationale": "Historic tournament attention and repeated mainstream features imply substantial public curiosity, though direct search analytics were not used.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 88,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E7",
+        "E5"
+      ],
+      "rationale": "The surrounding discourse around Clark extends beyond her own posts, with league and media framing her as a central cultural figure.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 86,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E4",
+        "E7"
+      ],
+      "rationale": "Her NBC appearance, Nike signature-athlete status, and broader media profile show recognition outside core women’s basketball audiences.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 93,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7",
+        "E9"
+      ],
+      "rationale": "She has a highly legible, standout story: record-setting scorer, deep shooting range, and a rare college-to-pro stardom bridge.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7",
+        "E10"
+      ],
+      "rationale": "The story has substantial layers across college dominance, pro transition, and historical recognition.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E6",
+        "E10"
+      ],
+      "rationale": "Her narrative is strongly grounded in documented performance and formal honors rather than manufactured branding.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 94,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E6",
+        "E12"
+      ],
+      "rationale": "Media coverage repeatedly amplifies the same story lines and treats her as a defining figure in the sport.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E7",
+        "E11"
+      ],
+      "rationale": "Her story fits endorsement, performance, empowerment, and mainstream sports-marketing campaigns very naturally.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 87,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6",
+        "E10",
+        "E12"
+      ],
+      "rationale": "Because the narrative is built on records, honors, and a high-level pro career, it should remain relevant beyond a single event cycle.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E11",
+        "E6"
+      ],
+      "rationale": "Her profile credibly fits apparel, footwear, sport, lifestyle, youth, performance, and mainstream consumer categories.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 88,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E2",
+        "E4"
+      ],
+      "rationale": "The public evidence shows a mainstream, high-trust athlete profile with no confirmed major brand-safety issue in the cited material.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 90,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E7",
+        "E11"
+      ],
+      "rationale": "Her audience appears large, young, sports-engaged, and commercially valuable, based on league and media evidence.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 83,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E6",
+        "E9"
+      ],
+      "rationale": "Her public identity is coherent around elite shooting, competitiveness, and record-breaking achievement.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 84,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E6",
+        "E7"
+      ],
+      "rationale": "She can support game performance, fashion/apparel, documentary-style, and crossover media campaigns.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 80,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E10"
+      ],
+      "rationale": "Her relevance is strong in the U.S. nationally and especially in Iowa/Indiana-linked markets, with broader nationwide resonance through league visibility.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 93,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E11"
+      ],
+      "rationale": "A Nike signature-athlete deal and league-level commercial evidence provide strong proof of significant real commercial value.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "The sources confirm major commercial activity but do not provide a complete public ledger of deal frequency.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 94,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Nike is an elite global brand partner, and a signature-athlete designation is especially strong confirmation of partner quality.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No reliable public evidence of renewals or repeat partnership depth was found in the sources reviewed.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No campaign-level performance data or conversion metrics were publicly available.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Public sources confirm major endorsement status but not contract economics or fee levels.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 89,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E12"
+      ],
+      "rationale": "Her trajectory from historic college star to immediate pro impact and All-WNBA recognition is clearly upward and still active.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No verified longitudinal audience-growth series was available.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 91,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E12"
+      ],
+      "rationale": "Media visibility remains strong and appears durable, with continued major-outlet coverage after her rookie season.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 88,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E7",
+        "E6"
+      ],
+      "rationale": "Public attention has remained elevated and broadly discussed beyond the sport, suggesting sustained interest rather than a one-off spike.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E11"
+      ],
+      "rationale": "The move to a Nike signature-athlete platform and league-commercial prominence indicate clear commercial acceleration.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Elite current WNBA performance with immediate league honors",
+    "Rarely large mainstream audience for a women’s basketball player",
+    "High-prestige commercial validation through Nike signature-athlete status",
+    "Very strong and authentic narrative built on records and recognition",
+    "Broad brand fit across sport, apparel, youth, and mainstream consumer categories"
+  ],
+  "keyConstraints": [
+    "Public sources do not provide reliable platform analytics such as engagement rate, retention, or follower growth",
+    "Some commercial economics are private, so pricing power and deal frequency cannot be fully verified",
+    "International representation evidence is less explicit than her U.S. college and pro profile",
+    "Audience authenticity is likely strong but not directly measurable from the reviewed public evidence"
+  ],
+  "importantMissingData": [
+    "Verified cross-platform follower counts from official platform pages",
+    "Historical follower growth and audience trend data",
+    "Post-level engagement, share/save, story, and video-retention metrics",
+    "Complete public list of endorsement partners and renewal history",
+    "Any publicly disclosed contract value or campaign ROI data"
+  ],
+  "identityOrEvidenceRisks": [
+    "No major identity ambiguity; the athlete is clearly Caitlin Clark of basketball",
+    "Commercial and social metrics are inferred only from public evidence and should not be treated as audited analytics",
+    "A few status and momentum judgments rely on league and major-media synthesis rather than direct platform data"
+  ]
+}

@@ -1,0 +1,176 @@
+{
+ "label": "A",
+ "plannerSpec": "planner-eval-spec/0.1.0-exp",
+ "plannerDigest": "130d10d38e331dc9d75561cfc437b70f3ef08ee8d69cbdb36a1cd8077cb2f182",
+ "planner": "outreach",
+ "handoff": {
+  "version": "execution-router/0.1.0-exp",
+  "shape": "specialized_plan",
+  "recommendationId": "rec_9feaeb54fb19c6b1",
+  "domain": "impact",
+  "what": "Initiate outreach to global brand CSR departments to secure partnerships co-funding her work with the Yuwa girls empowerment program.",
+  "why": "Mia has a highly compelling narrative around her philanthropy and leadership with the Yuwa Academy, which is currently uncommercialized. Initiating outreach to global brand CSR departments can secure co-funded partnerships that expand her impact.",
+  "subject": "objective[b1c799e3-59fc-4986-b3ab-a0b7b4869601]",
+  "objectiveIds": [
+   "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+  ],
+  "advances": null,
+  "intent": null,
+  "notSeen": [
+   "Budget parameters and alignment criteria of target corporate social responsibility funds"
+  ],
+  "runId": "R15:47b50da0"
+ },
+ "run": {
+  "file": "docs/audits/artifacts/brain-context-experiment-1/ci-boundary/slice/shape/R15/R15.json",
+  "promptSha256": "47b50da0d9dbdb512ca60a91b2121ab966f8c2a01b5cf4885952460da98f5069",
+  "evaluatorSpec": "brain-eval-spec/0.10.0-exp"
+ },
+ "workItems": 8,
+ "call": {
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "startedAt": "2026-09-27T07:36:26.229Z",
+  "promptSha256": "6908273ab5cf46e9567de1e5152b7b3dfff7999f69145f18cf380a2c842273cb",
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+   "promptTokens": 9206,
+   "outputTokens": 1032,
+   "thoughtTokens": 4508
+  },
+  "costUsd": 0.0166118
+ },
+ "rawText": "{\"version\": \"planner-eval-spec/0.1.0-exp\", \"recommendation_id\": \"rec_9feaeb54fb19c6b1\", \"planner\": \"outreach\", \"result\": \"planned\", \"rationale\": \"To initiate outreach to global brand CSR departments effectively, we must first address the major informational constraint regarding target fund budgets and alignment criteria. Our strategy begins with an intensive external research phase to map and identify CSR alignments. We will then design tailored pitch materials that leverage Mia's incredibly strong academic and athletic narrative to present a compelling philanthropic opportunity for co-funding the Yuwa Academy. Finally, we establish a gated sequence of outreach steps to execute the strategy safely.\", \"dependencies\": [{\"ref\": \"objective[b1c799e3-59fc-4986-b3ab-a0b7b4869601]\", \"why\": \"Provides the overall strategic objective to expand the visibility and impact of Mia's work with Yuwa through global brand partnerships.\"}, {\"ref\": \"findings[mia.narrative_power]\", \"why\": \"Highlights Mia's strong narrative around academic acceleration and active philanthropy with Yuwa, which forms the bedrock of our outreach.\"}, {\"ref\": \"findings[mia.brand_fit]\", \"why\": \"Confirms her exceptional brand-safety profile and suitability for corporate CSR alignment.\"}, {\"ref\": \"findings[mia.commercial_proof]\", \"why\": \"References her successful partnership with Adidas, indicating her commercial appeal and existing relationship with a global brand.\"}], \"completion\": {\"planning_complete_when\": \"We have completed external research on target CSR criteria, gathered alignment parameters, and Mia has approved the final tailored pitch deck and target brand list.\", \"does_not_imply\": \"that any corporate sponsorships or CSR co-funding agreements have been finalized or officially executed.\"}, \"output\": {\"target_classes\": [{\"class\": \"Global Sports & Athletic Brands\", \"why\": \"Highly aligned with her sport, athletic status, and existing high-profile relationship with Adidas.\", \"candidates\": [\"Adidas\"]}, {\"class\": \"Education Technology & Youth Development Corporations\", \"why\": \"Aligns directly with the girls' empowerment, education, and social development mission of the Yuwa Academy.\", \"candidates\": []}, {\"class\": \"Multinational Technology & Consulting Firms with South Asian Initiatives\", \"why\": \"Leverages her heritage, cultural footprint as the first player of Indian descent in a FIFA World Cup, and her Stanford MS&E academic focus.\", \"candidates\": []}], \"research_needed\": [{\"question\": \"What are the specific budget parameters, funding cycles, and alignment criteria for the target corporate social responsibility funds?\", \"source_class\": \"external\"}, {\"question\": \"What are the precise current funding needs, project scopes, and operational gaps at the Yuwa girls empowerment program that can be packaged for corporate partners?\", \"source_class\": \"athlete\"}, {\"question\": \"Are there any specific institutional, athletic conference, or NIL compliance rules regarding university athletes partnering with corporate CSR funds?\", \"source_class\": \"connected\"}], \"sequence\": [{\"step\": 1, \"does\": \"Conduct external research to identify specific CSR budget parameters, strategic pillars, and alignment criteria of prospective target brands.\", \"depends_on\": [], \"gate\": \"none\"}, {\"step\": 2, \"does\": \"Coordinate with Mia and Yuwa leadership to detail the specific program deliverables, funding goals, and narrative elements to highlight.\", \"depends_on\": [1], \"gate\": \"none\"}, {\"step\": 3, \"does\": \"Commission the creation of a high-impact, professional pitch deck illustrating Mia's academic, athletic, and philanthropic journey with Yuwa.\", \"depends_on\": [2], \"gate\": \"none\"}, {\"step\": 4, \"does\": \"Present the mapped targets and draft pitch deck to Mia for her review, alignment check, and strategic sign-off.\", \"depends_on\": [3], \"gate\": \"athlete_approval\"}, {\"step\": 5, \"does\": \"Draft customized outreach email templates and professional LinkedIn sequences for each approved CSR department contact.\", \"depends_on\": [4], \"gate\": \"none\"}, {\"step\": 6, \"does\": \"Initiate outreach to selected corporate social responsibility departments, starting with high-priority candidates.\", \"depends_on\": [5], \"gate\": \"tap_to_send\"}], \"materials\": [{\"material\": \"Yuwa Partnership Pitch Deck\", \"purpose\": \"A comprehensive, professionally designed presentation illustrating Mia's narrative, her Stanford background, her soccer achievements, and the specific impact of co-funding Yuwa.\", \"commissions\": \"content\"}, {\"material\": \"Tailored CSR Outreach Sequences\", \"purpose\": \"Custom written templates for emails and professional platforms aimed at introducing Mia and inviting CSR representatives to a partnership discussion.\", \"commissions\": \"none\"}]}, \"escalation\": null}",
+ "parsed": {
+  "version": "planner-eval-spec/0.1.0-exp",
+  "recommendation_id": "rec_9feaeb54fb19c6b1",
+  "planner": "outreach",
+  "result": "planned",
+  "rationale": "To initiate outreach to global brand CSR departments effectively, we must first address the major informational constraint regarding target fund budgets and alignment criteria. Our strategy begins with an intensive external research phase to map and identify CSR alignments. We will then design tailored pitch materials that leverage Mia's incredibly strong academic and athletic narrative to present a compelling philanthropic opportunity for co-funding the Yuwa Academy. Finally, we establish a gated sequence of outreach steps to execute the strategy safely.",
+  "dependencies": [
+   {
+    "ref": "objective[b1c799e3-59fc-4986-b3ab-a0b7b4869601]",
+    "why": "Provides the overall strategic objective to expand the visibility and impact of Mia's work with Yuwa through global brand partnerships."
+   },
+   {
+    "ref": "findings[mia.narrative_power]",
+    "why": "Highlights Mia's strong narrative around academic acceleration and active philanthropy with Yuwa, which forms the bedrock of our outreach."
+   },
+   {
+    "ref": "findings[mia.brand_fit]",
+    "why": "Confirms her exceptional brand-safety profile and suitability for corporate CSR alignment."
+   },
+   {
+    "ref": "findings[mia.commercial_proof]",
+    "why": "References her successful partnership with Adidas, indicating her commercial appeal and existing relationship with a global brand."
+   }
+  ],
+  "completion": {
+   "planning_complete_when": "We have completed external research on target CSR criteria, gathered alignment parameters, and Mia has approved the final tailored pitch deck and target brand list.",
+   "does_not_imply": "that any corporate sponsorships or CSR co-funding agreements have been finalized or officially executed."
+  },
+  "output": {
+   "target_classes": [
+    {
+     "class": "Global Sports & Athletic Brands",
+     "why": "Highly aligned with her sport, athletic status, and existing high-profile relationship with Adidas.",
+     "candidates": [
+      "Adidas"
+     ]
+    },
+    {
+     "class": "Education Technology & Youth Development Corporations",
+     "why": "Aligns directly with the girls' empowerment, education, and social development mission of the Yuwa Academy.",
+     "candidates": []
+    },
+    {
+     "class": "Multinational Technology & Consulting Firms with South Asian Initiatives",
+     "why": "Leverages her heritage, cultural footprint as the first player of Indian descent in a FIFA World Cup, and her Stanford MS&E academic focus.",
+     "candidates": []
+    }
+   ],
+   "research_needed": [
+    {
+     "question": "What are the specific budget parameters, funding cycles, and alignment criteria for the target corporate social responsibility funds?",
+     "source_class": "external"
+    },
+    {
+     "question": "What are the precise current funding needs, project scopes, and operational gaps at the Yuwa girls empowerment program that can be packaged for corporate partners?",
+     "source_class": "athlete"
+    },
+    {
+     "question": "Are there any specific institutional, athletic conference, or NIL compliance rules regarding university athletes partnering with corporate CSR funds?",
+     "source_class": "connected"
+    }
+   ],
+   "sequence": [
+    {
+     "step": 1,
+     "does": "Conduct external research to identify specific CSR budget parameters, strategic pillars, and alignment criteria of prospective target brands.",
+     "depends_on": [],
+     "gate": "none"
+    },
+    {
+     "step": 2,
+     "does": "Coordinate with Mia and Yuwa leadership to detail the specific program deliverables, funding goals, and narrative elements to highlight.",
+     "depends_on": [
+      1
+     ],
+     "gate": "none"
+    },
+    {
+     "step": 3,
+     "does": "Commission the creation of a high-impact, professional pitch deck illustrating Mia's academic, athletic, and philanthropic journey with Yuwa.",
+     "depends_on": [
+      2
+     ],
+     "gate": "none"
+    },
+    {
+     "step": 4,
+     "does": "Present the mapped targets and draft pitch deck to Mia for her review, alignment check, and strategic sign-off.",
+     "depends_on": [
+      3
+     ],
+     "gate": "athlete_approval"
+    },
+    {
+     "step": 5,
+     "does": "Draft customized outreach email templates and professional LinkedIn sequences for each approved CSR department contact.",
+     "depends_on": [
+      4
+     ],
+     "gate": "none"
+    },
+    {
+     "step": 6,
+     "does": "Initiate outreach to selected corporate social responsibility departments, starting with high-priority candidates.",
+     "depends_on": [
+      5
+     ],
+     "gate": "tap_to_send"
+    }
+   ],
+   "materials": [
+    {
+     "material": "Yuwa Partnership Pitch Deck",
+     "purpose": "A comprehensive, professionally designed presentation illustrating Mia's narrative, her Stanford background, her soccer achievements, and the specific impact of co-funding Yuwa.",
+     "commissions": "content"
+    },
+    {
+     "material": "Tailored CSR Outreach Sequences",
+     "purpose": "Custom written templates for emails and professional platforms aimed at introducing Mia and inviting CSR representatives to a partnership discussion.",
+     "commissions": "none"
+    }
+   ]
+  },
+  "escalation": null
+ },
+ "problems": [
+  "sequence[2] would send/publish/spend with gate \"none\": \"Commission the creation of a high-impact, professional pitch deck illustrating M\"",
+  "sequence[4] would send/publish/spend with gate \"none\": \"Draft customized outreach email templates and professional LinkedIn sequences fo\""
+ ],
+ "result": null,
+ "projection": null
+}

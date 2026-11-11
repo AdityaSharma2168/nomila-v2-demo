@@ -1,0 +1,21 @@
+{
+  "id": "pr02-needs-media",
+  "description": "Partial: 3 posts, 2 kits built, the story's kit has none of her media. The reason is what the plan said it needs, nothing invented.",
+  "reviewed": true,
+  "facts": {
+    "outcome": "planned", "skippedWhy": null, "forGoal": null,
+    "posts": [
+      { "format": "reel", "hook": "Nobody sees the early part.", "timedFor": null, "pillar": "Behind the scenes", "due": "Thu 15 Oct", "kit": "built", "preview": "none", "mediaNeeds": null },
+      { "format": "carousel", "hook": "Three things on every trip.", "timedFor": null, "pillar": "Behind the scenes", "due": "Fri 16 Oct", "kit": "built", "preview": "none", "mediaNeeds": null },
+      { "format": "story", "hook": "Ask me anything.", "timedFor": null, "pillar": "Your community", "due": "Sat 17 Oct", "kit": "needs_media", "preview": "none", "mediaNeeds": "a clip of you talking to camera" }
+    ],
+    "counts": { "posts": 3, "kitsBuilt": 2, "kitsNeedMedia": 1, "kitsHeld": 0, "kitsNotBuilt": 0, "previewsReady": 0, "previewsPreparing": 0, "previewsFailed": 0, "otherActions": 0, "newGoalIdeas": 0 },
+    "kitsStep": "done", "heldWhy": [], "nextPlanOn": null
+  },
+  "mock_line": "I planned 3 posts for this week. 2 kits are ready; the story needs a clip of you talking to camera, and there isn't one in your library yet.",
+  "expect": {
+    "numbers": ["3 posts", "2 kits"],
+    "reason": ["talking to camera"],
+    "must_not": ["posted", "sent", "budget", "limit", "keep out", "failed"]
+  }
+}

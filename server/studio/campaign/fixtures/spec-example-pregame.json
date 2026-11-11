@@ -1,0 +1,28 @@
+{
+  "_note": "The spec's own §4 + §5 example (docs/specs/creative-architecture.md), in campaign-brief/1. Two of its values are not in the spec's own vocabularies and are mapped here; both go to Mia. (1) §5 objective.goal 'product_awareness' is not in the house BriefObjective, so it maps to 'showcase-product'. (2) §5 creative_direction.style 'premium_sports' is not in §8's Commercial styles, so it maps to 'sports_campaign', with 'premium' kept as a tone. athlete_id and campaign_id are dropped by design. The reference's intent is filled at test time from reference/fixtures/stadium-tunnel-night.json.",
+  "brief": {
+    "schema": "campaign-brief/1",
+    "objective": { "type": "brand_campaign", "goal": "showcase-product" },
+    "story": "pre-game preparation",
+    "brand": {
+      "name": "Adidas",
+      "brand_attributes": ["premium", "athletic", "confident"],
+      "profile": null
+    },
+    "subject": { "identity_priority": "maximum", "sport": null },
+    "product": { "ref": "product_1", "fidelity": "maximum" },
+    "creative_direction": {
+      "tone": ["cinematic", "premium", "focused"],
+      "style": "sports_campaign",
+      "energy": "controlled"
+    },
+    "references": [
+      { "ref": "ref_1", "role": "style_reference", "intent": null }
+    ],
+    "output": {
+      "type": "video",
+      "aspect_ratio": "9:16",
+      "platform": "instagram"
+    }
+  }
+}

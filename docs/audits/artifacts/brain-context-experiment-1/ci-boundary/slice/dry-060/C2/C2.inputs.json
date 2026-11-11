@@ -1,0 +1,1337 @@
+{
+ "athlete": {
+  "id": "967cda83-6beb-4233-ba20-126246443e33",
+  "name": "Cristiano Ronaldo"
+ },
+ "live": [],
+ "deferred": [],
+ "declined": [],
+ "state": {
+  "athleteId": "967cda83-6beb-4233-ba20-126246443e33",
+  "asOf": "2026-09-26T23:13:01.421Z",
+  "version": "athlete-state/1.2.0",
+  "identity": {
+   "name": "Cristiano Ronaldo",
+   "sport": "soccer",
+   "competitionContext": null,
+   "careerStatus": "active"
+  },
+  "findings": [
+   {
+    "key": "mia.athletic_authority",
+    "direction": "strength",
+    "rationale": {
+     "value": "Your athletic authority is highly secure, sustained by your active captaincy of Al-Nassr and the Portugal National Team at age 41. Although the domestic Saudi Pro League is positioned beneath European top-flight football, your participation in a historic sixth World Cup and pursuit of 1,000 career goals maintain your elite sports status.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:07.563Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1"
+     ],
+     "rationale": "Ronaldo's competitive status, starting lineups, international caps, and goals are rigorously documented across verified athletic bodies.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Ronaldo's competitive status, starting lineups, international caps, and goals are rigorously documented across verified athletic bodies.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "At age 41, Cristiano Ronaldo captains Al-Nassr and Portugal, competed in his historic sixth FIFA World Cup in 2026 (reaching the round of 16 and scoring three goals), and was selected for Portugal's Nations League campaign in September 2026.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+      "observedAt": "2026-09-24",
+      "sourceType": "secondary",
+      "sourceTitle": "Cristiano Ronaldo - Wikipedia"
+     }
+    ],
+    "components": [
+     {
+      "key": "athletic_authority.role_importance",
+      "value": 96,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 89.55,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:07.563Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#athletic_authority.role_importance",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#athletic_authority.competition_level",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#athletic_authority.achievement_recency",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#athletic_authority.performance_results",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#athletic_authority.rankings_recognition",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#athletic_authority.national_international_status"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#athletic_authority.role_importance",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#athletic_authority.competition_level",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#athletic_authority.achievement_recency",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#athletic_authority.performance_results",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#athletic_authority.rankings_recognition",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#athletic_authority.national_international_status",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.audience_scale",
+    "direction": "strength",
+    "rationale": {
+     "value": "You command an unmatched digital empire with over 1.02 billion combined followers across major social media networks. This massive audience scale is further cemented by the unprecedented speed and growth of your YouTube channel, securing your position as the most-followed individual on the planet.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:07.563Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E3",
+      "E4"
+     ],
+     "rationale": "Platform follower counts and independent analytics consensus highly verify his digital reach and top-percentile ranking.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Platform follower counts and independent analytics consensus highly verify his digital reach and top-percentile ranking.",
+    "citedEvidence": [
+     {
+      "id": "E3",
+      "claim": "Ronaldo is the most-followed individual on social media, commanding an audience of over 1.02 billion combined followers, including approximately 679 million on Instagram, 113 million on X, and 171 million on Facebook.",
+      "sourceUrl": "https://www.visualcapitalist.com/",
+      "observedAt": "2026-09-21",
+      "sourceType": "secondary",
+      "sourceTitle": "Most Followed Social Media Accounts in 2026"
+     },
+     {
+      "id": "E4",
+      "claim": "Ronaldo's official YouTube channel 'UR · Cristiano' broke platform speed records upon launch in late 2024 and boasts over 83.3 million subscribers and 1.65 billion cumulative views as of September 2026.",
+      "sourceUrl": "https://hypeauditor.com/",
+      "observedAt": "2026-09-15",
+      "sourceType": "secondary",
+      "sourceTitle": "UR Cristiano YouTube Channel Stats & Reports"
+     }
+    ],
+    "components": [
+     {
+      "key": "audience_scale.audience_growth",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "value": 92,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 98.9,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:07.563Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#audience_scale.audience_growth",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#audience_scale.platform_breadth",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#audience_scale.cross_platform_effective_reach",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#audience_scale.sport_level_audience_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 4
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#audience_scale.audience_growth",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#audience_scale.platform_breadth",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.engagement_quality",
+    "direction": "unknown",
+    "rationale": {
+     "value": "Your public engagement rate of 4.3% is highly impressive, nearly tripling the sports category median and confirming a passionate core fanbase. While exact private metrics like story interactions and video retention rates are unavailable, your immense volume of public interactions reflects exceptionally active audience loyalty.",
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-09-13T22:41:07.563Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E3",
+      "E4",
+      "E5"
+     ],
+     "rationale": "Public engagement statistics are verified by marketing agencies, but private story and retention analytics remain unobservable.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Public engagement statistics are verified by marketing agencies, but private story and retention analytics remain unobservable.",
+    "citedEvidence": [
+     {
+      "id": "E3",
+      "claim": "Ronaldo is the most-followed individual on social media, commanding an audience of over 1.02 billion combined followers, including approximately 679 million on Instagram, 113 million on X, and 171 million on Facebook.",
+      "sourceUrl": "https://www.visualcapitalist.com/",
+      "observedAt": "2026-09-21",
+      "sourceType": "secondary",
+      "sourceTitle": "Most Followed Social Media Accounts in 2026"
+     },
+     {
+      "id": "E4",
+      "claim": "Ronaldo's official YouTube channel 'UR · Cristiano' broke platform speed records upon launch in late 2024 and boasts over 83.3 million subscribers and 1.65 billion cumulative views as of September 2026.",
+      "sourceUrl": "https://hypeauditor.com/",
+      "observedAt": "2026-09-15",
+      "sourceType": "secondary",
+      "sourceTitle": "UR Cristiano YouTube Channel Stats & Reports"
+     },
+     {
+      "id": "E5",
+      "claim": "Ronaldo's commercial portfolio includes a landmark lifetime deal with Nike, long-term partnerships with Binance, Herbalife, Clear, and his return as Global Ambassador for the Esports World Cup 2026.",
+      "sourceUrl": "https://creatordb.app/",
+      "observedAt": "2026-09-24",
+      "sourceType": "secondary",
+      "sourceTitle": "Athlete Endorsement Portfolios and Renewals"
+     }
+    ],
+    "components": [
+     {
+      "key": "engagement_quality.video_retention",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "value": 92,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 92.08,
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-09-13T22:41:07.563Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#engagement_quality.video_retention",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#engagement_quality.reach_efficiency",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#engagement_quality.story_efficiency",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#engagement_quality.shares_saves_quality",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#engagement_quality.audience_authenticity",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#engagement_quality.engagement_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 3,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#engagement_quality.video_retention",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#engagement_quality.reach_efficiency",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#engagement_quality.story_efficiency",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#engagement_quality.shares_saves_quality",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#engagement_quality.audience_authenticity",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#engagement_quality.engagement_percentile",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.cultural_relevance",
+    "direction": "strength",
+    "rationale": {
+     "value": "Your crossover cultural relevance is extraordinary, transcending soccer to make you a global, household brand. Constant premier media coverage and massive digital conversations secure your status as an influential cultural phenomenon across multiple continents.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:07.563Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E6"
+     ],
+     "rationale": "Daily global media volume, high-prestige press coverage, and top-tier public search metrics provide unquestionable verification of his cultural footprint.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Daily global media volume, high-prestige press coverage, and top-tier public search metrics provide unquestionable verification of his cultural footprint.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "At age 41, Cristiano Ronaldo captains Al-Nassr and Portugal, competed in his historic sixth FIFA World Cup in 2026 (reaching the round of 16 and scoring three goals), and was selected for Portugal's Nations League campaign in September 2026.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+      "observedAt": "2026-09-24",
+      "sourceType": "secondary",
+      "sourceTitle": "Cristiano Ronaldo - Wikipedia"
+     },
+     {
+      "id": "E2",
+      "claim": "Cristiano Ronaldo is the highest-paid athlete in the world in 2026, earning an estimated $300 million pre-tax over the past 12 months ($235 million on-field, $65 million off-field).",
+      "sourceUrl": "https://www.forbes.com/lists/athletes/",
+      "observedAt": "2026-05-22",
+      "sourceType": "major_media",
+      "sourceTitle": "The World's Highest-Paid Athletes 2026"
+     },
+     {
+      "id": "E3",
+      "claim": "Ronaldo is the most-followed individual on social media, commanding an audience of over 1.02 billion combined followers, including approximately 679 million on Instagram, 113 million on X, and 171 million on Facebook.",
+      "sourceUrl": "https://www.visualcapitalist.com/",
+      "observedAt": "2026-09-21",
+      "sourceType": "secondary",
+      "sourceTitle": "Most Followed Social Media Accounts in 2026"
+     },
+     {
+      "id": "E4",
+      "claim": "Ronaldo's official YouTube channel 'UR · Cristiano' broke platform speed records upon launch in late 2024 and boasts over 83.3 million subscribers and 1.65 billion cumulative views as of September 2026.",
+      "sourceUrl": "https://hypeauditor.com/",
+      "observedAt": "2026-09-15",
+      "sourceType": "secondary",
+      "sourceTitle": "UR Cristiano YouTube Channel Stats & Reports"
+     },
+     {
+      "id": "E6",
+      "claim": "Cristiano Ronaldo is facing a proposed $1 billion class-action lawsuit in a Florida federal court over his promotion of Binance NFT collections, alleging promotion of unregistered securities without proper paid disclosures.",
+      "sourceUrl": "https://www.cbsnews.com/",
+      "observedAt": "2023-11-30",
+      "sourceType": "major_media",
+      "sourceTitle": "Ronaldo Faces $1 Billion Class Action Over Binance NFT Promotions"
+     }
+    ],
+    "components": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 98.9,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:07.563Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#cultural_relevance.search_interest",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#cultural_relevance.social_conversation",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#cultural_relevance.media_source_quality",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#cultural_relevance.crossover_recognition",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#cultural_relevance.media_volume_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#cultural_relevance.search_interest",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#cultural_relevance.social_conversation",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#cultural_relevance.media_source_quality",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#cultural_relevance.crossover_recognition",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#cultural_relevance.media_volume_percentile",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.narrative_power",
+    "direction": "strength",
+    "rationale": {
+     "value": "The 'CR7' narrative of relentless dedication, elite fitness, and longevity is one of the most distinctive and authentic stories in sports history. This deep, well-established persona easily supports brand alignments and remains highly durable, paving the way for a powerful legacy post-retirement.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:07.563Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E4",
+      "E5"
+     ],
+     "rationale": "The core thematic pillars of his brand are deeply backed by his physical longevity and a two-decade-long career history.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "The core thematic pillars of his brand are deeply backed by his physical longevity and a two-decade-long career history.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "At age 41, Cristiano Ronaldo captains Al-Nassr and Portugal, competed in his historic sixth FIFA World Cup in 2026 (reaching the round of 16 and scoring three goals), and was selected for Portugal's Nations League campaign in September 2026.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+      "observedAt": "2026-09-24",
+      "sourceType": "secondary",
+      "sourceTitle": "Cristiano Ronaldo - Wikipedia"
+     },
+     {
+      "id": "E4",
+      "claim": "Ronaldo's official YouTube channel 'UR · Cristiano' broke platform speed records upon launch in late 2024 and boasts over 83.3 million subscribers and 1.65 billion cumulative views as of September 2026.",
+      "sourceUrl": "https://hypeauditor.com/",
+      "observedAt": "2026-09-15",
+      "sourceType": "secondary",
+      "sourceTitle": "UR Cristiano YouTube Channel Stats & Reports"
+     },
+     {
+      "id": "E5",
+      "claim": "Ronaldo's commercial portfolio includes a landmark lifetime deal with Nike, long-term partnerships with Binance, Herbalife, Clear, and his return as Global Ambassador for the Esports World Cup 2026.",
+      "sourceUrl": "https://creatordb.app/",
+      "observedAt": "2026-09-24",
+      "sourceType": "secondary",
+      "sourceTitle": "Athlete Endorsement Portfolios and Renewals"
+     }
+    ],
+    "components": [
+     {
+      "key": "narrative_power.durability",
+      "value": 96,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 96.45,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:07.563Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#narrative_power.durability",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#narrative_power.story_depth",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#narrative_power.distinctiveness",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#narrative_power.media_resonance",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#narrative_power.evidence_authenticity",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#narrative_power.commercial_applicability"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#narrative_power.durability",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#narrative_power.story_depth",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#narrative_power.distinctiveness",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#narrative_power.media_resonance",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#narrative_power.evidence_authenticity",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#narrative_power.commercial_applicability",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.brand_fit",
+    "direction": "strength",
+    "rationale": {
+     "value": "You present a versatile brand fit across luxury, wellness, and tech categories, appealing directly to a highly lucrative global consumer base. While your ongoing $1 billion Binance class-action lawsuit presents a moderate brand-safety hurdle, your coherent identity and immense geographic reach keep you highly attractive to mainstream partners.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:07.563Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E3",
+      "E4",
+      "E5",
+      "E6"
+     ],
+     "rationale": "Mainstream commercial alignments and detailed demographic appeal are verified by current, active, high-prestige contracts.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Mainstream commercial alignments and detailed demographic appeal are verified by current, active, high-prestige contracts.",
+    "citedEvidence": [
+     {
+      "id": "E3",
+      "claim": "Ronaldo is the most-followed individual on social media, commanding an audience of over 1.02 billion combined followers, including approximately 679 million on Instagram, 113 million on X, and 171 million on Facebook.",
+      "sourceUrl": "https://www.visualcapitalist.com/",
+      "observedAt": "2026-09-21",
+      "sourceType": "secondary",
+      "sourceTitle": "Most Followed Social Media Accounts in 2026"
+     },
+     {
+      "id": "E4",
+      "claim": "Ronaldo's official YouTube channel 'UR · Cristiano' broke platform speed records upon launch in late 2024 and boasts over 83.3 million subscribers and 1.65 billion cumulative views as of September 2026.",
+      "sourceUrl": "https://hypeauditor.com/",
+      "observedAt": "2026-09-15",
+      "sourceType": "secondary",
+      "sourceTitle": "UR Cristiano YouTube Channel Stats & Reports"
+     },
+     {
+      "id": "E5",
+      "claim": "Ronaldo's commercial portfolio includes a landmark lifetime deal with Nike, long-term partnerships with Binance, Herbalife, Clear, and his return as Global Ambassador for the Esports World Cup 2026.",
+      "sourceUrl": "https://creatordb.app/",
+      "observedAt": "2026-09-24",
+      "sourceType": "secondary",
+      "sourceTitle": "Athlete Endorsement Portfolios and Renewals"
+     },
+     {
+      "id": "E6",
+      "claim": "Cristiano Ronaldo is facing a proposed $1 billion class-action lawsuit in a Florida federal court over his promotion of Binance NFT collections, alleging promotion of unregistered securities without proper paid disclosures.",
+      "sourceUrl": "https://www.cbsnews.com/",
+      "observedAt": "2023-11-30",
+      "sourceType": "major_media",
+      "sourceTitle": "Ronaldo Faces $1 Billion Class Action Over Binance NFT Promotions"
+     }
+    ],
+    "components": [
+     {
+      "key": "brand_fit.brand_safety",
+      "value": 72,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "value": 92,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "value": 96,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 89.85,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:07.563Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#brand_fit.brand_safety",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#brand_fit.category_breadth",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#brand_fit.content_versatility",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#brand_fit.geographic_relevance",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#brand_fit.audience_attractiveness",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#brand_fit.identity_values_coherence"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#brand_fit.brand_safety",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#brand_fit.category_breadth",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#brand_fit.content_versatility",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#brand_fit.geographic_relevance",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#brand_fit.audience_attractiveness",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#brand_fit.identity_values_coherence",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.commercial_proof",
+    "direction": "strength",
+    "rationale": {
+     "value": "You represent absolute commercial proof-of-concept, leading all global athletes with $300 million in annual income. Your cornerstone lifetime Nike contract, major concurrent activations, and premium pricing power confirm your unparalleled value to commercial partners.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:07.563Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+     ],
+     "rationale": "Off-field earnings, brand contracts, and sponsor histories are thoroughly reported and verified by major economic trackers.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Off-field earnings, brand contracts, and sponsor histories are thoroughly reported and verified by major economic trackers.",
+    "citedEvidence": [
+     {
+      "id": "E2",
+      "claim": "Cristiano Ronaldo is the highest-paid athlete in the world in 2026, earning an estimated $300 million pre-tax over the past 12 months ($235 million on-field, $65 million off-field).",
+      "sourceUrl": "https://www.forbes.com/lists/athletes/",
+      "observedAt": "2026-05-22",
+      "sourceType": "major_media",
+      "sourceTitle": "The World's Highest-Paid Athletes 2026"
+     },
+     {
+      "id": "E3",
+      "claim": "Ronaldo is the most-followed individual on social media, commanding an audience of over 1.02 billion combined followers, including approximately 679 million on Instagram, 113 million on X, and 171 million on Facebook.",
+      "sourceUrl": "https://www.visualcapitalist.com/",
+      "observedAt": "2026-09-21",
+      "sourceType": "secondary",
+      "sourceTitle": "Most Followed Social Media Accounts in 2026"
+     },
+     {
+      "id": "E4",
+      "claim": "Ronaldo's official YouTube channel 'UR · Cristiano' broke platform speed records upon launch in late 2024 and boasts over 83.3 million subscribers and 1.65 billion cumulative views as of September 2026.",
+      "sourceUrl": "https://hypeauditor.com/",
+      "observedAt": "2026-09-15",
+      "sourceType": "secondary",
+      "sourceTitle": "UR Cristiano YouTube Channel Stats & Reports"
+     },
+     {
+      "id": "E5",
+      "claim": "Ronaldo's commercial portfolio includes a landmark lifetime deal with Nike, long-term partnerships with Binance, Herbalife, Clear, and his return as Global Ambassador for the Esports World Cup 2026.",
+      "sourceUrl": "https://creatordb.app/",
+      "observedAt": "2026-09-24",
+      "sourceType": "secondary",
+      "sourceTitle": "Athlete Endorsement Portfolios and Renewals"
+     }
+    ],
+    "components": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "value": 96,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "value": 92,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 97.3,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:07.563Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#commercial_proof.brand_quality",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#commercial_proof.pricing_power",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#commercial_proof.deal_frequency",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#commercial_proof.renewals_repeat",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#commercial_proof.campaign_performance",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#commercial_proof.verified_commercial_value"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#commercial_proof.brand_quality",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#commercial_proof.pricing_power",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#commercial_proof.deal_frequency",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#commercial_proof.renewals_repeat",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#commercial_proof.campaign_performance",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#commercial_proof.verified_commercial_value",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.momentum",
+    "direction": "strength",
+    "rationale": {
+     "value": "While your physical on-field trajectory is naturally slowing down, your digital growth and commercial reach continue to show strong upward momentum. Transitions into equity-based investments and massive YouTube expansion showcase a shifting but highly positive commercial direction.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:07.563Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E3",
+      "E4",
+      "E5"
+     ],
+     "rationale": "Recent record-breaking YouTube metrics and active 2026 commercial expansions provide strong, objective evidence of positive momentum.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Recent record-breaking YouTube metrics and active 2026 commercial expansions provide strong, objective evidence of positive momentum.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "At age 41, Cristiano Ronaldo captains Al-Nassr and Portugal, competed in his historic sixth FIFA World Cup in 2026 (reaching the round of 16 and scoring three goals), and was selected for Portugal's Nations League campaign in September 2026.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
+      "observedAt": "2026-09-24",
+      "sourceType": "secondary",
+      "sourceTitle": "Cristiano Ronaldo - Wikipedia"
+     },
+     {
+      "id": "E3",
+      "claim": "Ronaldo is the most-followed individual on social media, commanding an audience of over 1.02 billion combined followers, including approximately 679 million on Instagram, 113 million on X, and 171 million on Facebook.",
+      "sourceUrl": "https://www.visualcapitalist.com/",
+      "observedAt": "2026-09-21",
+      "sourceType": "secondary",
+      "sourceTitle": "Most Followed Social Media Accounts in 2026"
+     },
+     {
+      "id": "E4",
+      "claim": "Ronaldo's official YouTube channel 'UR · Cristiano' broke platform speed records upon launch in late 2024 and boasts over 83.3 million subscribers and 1.65 billion cumulative views as of September 2026.",
+      "sourceUrl": "https://hypeauditor.com/",
+      "observedAt": "2026-09-15",
+      "sourceType": "secondary",
+      "sourceTitle": "UR Cristiano YouTube Channel Stats & Reports"
+     },
+     {
+      "id": "E5",
+      "claim": "Ronaldo's commercial portfolio includes a landmark lifetime deal with Nike, long-term partnerships with Binance, Herbalife, Clear, and his return as Global Ambassador for the Esports World Cup 2026.",
+      "sourceUrl": "https://creatordb.app/",
+      "observedAt": "2026-09-24",
+      "sourceType": "secondary",
+      "sourceTitle": "Athlete Endorsement Portfolios and Renewals"
+     }
+    ],
+    "components": [
+     {
+      "key": "momentum.audience_growth",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "value": 88,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "value": 65,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "value": 88,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 83.15,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:07.563Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#momentum.audience_growth",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#momentum.media_trajectory",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#momentum.athletic_trajectory",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#momentum.commercial_acceleration",
+      "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#momentum.search_social_trajectory"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#momentum.audience_growth",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#momentum.media_trajectory",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#momentum.athletic_trajectory",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#momentum.commercial_acceleration",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     },
+     {
+      "source": "mia",
+      "locator": "a5f3e6f3-d0e4-42c2-9d4c-67ba200cf2b2#momentum.search_social_trajectory",
+      "asOf": "2026-09-13T22:41:07.563Z"
+     }
+    ]
+   }
+  ],
+  "audienceTrajectory": {
+   "value": null,
+   "owner": "athlete_intelligence",
+   "asOf": "2026-09-26T23:13:01.421Z",
+   "evidenceClass": "MISSING",
+   "reason": "no growth measurement on any platform"
+  },
+  "commercialPosition": {
+   "closedDeals": {
+    "value": 0,
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-26T23:13:01.421Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "count_deals_at_earned_status"
+   },
+   "activeRelationships": {
+    "value": [],
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-26T23:13:01.421Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "distinct_brand_at_earned_status"
+   },
+   "demonstratedEconomics": {
+    "value": null,
+    "owner": "athlete_state",
+    "asOf": "2026-09-26T23:13:01.421Z",
+    "evidenceClass": "MISSING",
+    "reason": "no closed deal carries an amount"
+   },
+   "pricingEvidence": "none",
+   "pipeline": {
+    "value": {
+     "detected": 0,
+     "negotiating": 0,
+     "rejected": 0,
+     "accepted": 0,
+     "completed": 0
+    },
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-26T23:13:01.421Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "count_deals_by_status"
+   },
+   "inbound": []
+  },
+  "constraints": [],
+  "preferences": [],
+  "audience": [],
+  "contentPerformance": [],
+  "representation": null,
+  "dates": [],
+  "materialGaps": [
+   "Private platform-specific engagement metrics, including video completion (retention) rates, story interactions, and content share/save counts."
+  ],
+  "overallConfidence": "MEDIUM",
+  "sources": [
+   {
+    "owner": "marketability",
+    "present": true,
+    "asOf": "2026-09-13T22:41:07.563Z"
+   },
+   {
+    "owner": "athlete_intelligence",
+    "present": false,
+    "asOf": null
+   },
+   {
+    "owner": "athlete_state",
+    "present": true,
+    "asOf": "2026-09-26T23:13:01.421Z"
+   }
+  ]
+ },
+ "map": null,
+ "work": {
+  "version": "existing-work/0.4.0-exp",
+  "asOf": "2026-09-26T23:13:02.362Z",
+  "items": [
+   {
+    "id": "ctl-c-lumen-termsheet",
+    "kind": "negotiating",
+    "brand": "Lumen Language",
+    "since": "2026-09-22T00:00:00Z",
+    "statement": "Lumen Language (online language learning) sent a term sheet on 22 September 2026: USD 5,000 for an ambassador agreement covering one year, four Instagram posts, no category exclusivity. No response has been sent.",
+    "amount": {
+     "total": 5000,
+     "cash": 5000,
+     "product": null
+    },
+    "termStart": "2026-10-01",
+    "termEnd": "2027-09-30",
+    "deliverablesRecorded": 4,
+    "ref": {
+     "kind": "deal",
+     "id": "ctl-c-lumen-termsheet"
+    },
+    "controlled": true
+   }
+  ]
+ },
+ "context": null,
+ "research": [],
+ "requests": [
+  {
+   "id": "D2k-C",
+   "askedBy": "the athlete's agent, through Mila",
+   "question": "Should this negotiation be advanced, countered or accepted?",
+   "about": {
+    "kind": "deal",
+    "id": "ctl-c-lumen-termsheet"
+   }
+  }
+ ],
+ "subjects": [],
+ "commercial": {
+  "placement": "work",
+  "assessment": {
+   "version": "commercial-assessment/0.1.0-exp",
+   "subject": "ctl-c-lumen-termsheet",
+   "subjectRef": "deal[ctl-c-lumen-termsheet]",
+   "condition": "C2",
+   "assembledBy": "code+hand",
+   "asOf": "2026-09-26T23:13:02.104Z",
+   "lines": [
+    {
+     "key": "offer",
+     "text": "USD 5,000 cash · stated product value: not stated (null is not zero) · commission: not stated · unit total · 4 deliverables (4 instagram_posts) · deal type ambassador · term months / counts basis: not set (Nomila's extraction does not set them)",
+     "source": "code"
+    },
+    {
+     "key": "value",
+     "text": "guaranteed value USD 5,000 = cash + stated product (a product value not stated contributes nothing); commission is excluded; the components of ONE offer add",
+     "source": "code"
+    },
+    {
+     "key": "basis",
+     "text": "governs: ambassador — USD 1,250 per deliverable (USD 5,000 ÷ 4). The offer's deal type maps to the ambassador rate; a floor or rate for another type does not apply to this offer",
+     "source": "code"
+    },
+    {
+     "key": "range",
+     "text": "NOT_ESTABLISHED — no rate card is held for this athlete (unknown-rate athlete); stated floors: none stated",
+     "source": "code"
+    },
+    {
+     "key": "band",
+     "text": "NOT_ESTABLISHED (NA_CASH) — no rate card (unknown-rate athlete)",
+     "source": "code"
+    },
+    {
+     "key": "absent",
+     "text": "established as not stated, of the terms Nomila reads (price · deliverables · timeline, where timeline means a deadline): timeline",
+     "source": "code"
+    },
+    {
+     "key": "unknown",
+     "text": "usage rights: UNKNOWN — not established by this evidence path (Nomila's extraction does not read usage rights; whether the terms state them is not known)",
+     "source": "code"
+    },
+    {
+     "key": "exclusivity",
+     "text": "as the source states it: no category exclusivity",
+     "source": "code"
+    },
+    {
+     "key": "observed",
+     "text": "commercial history observed by Nomila: no connected account and no mailbox; no deal recorded by Nomila; a researched public profile is held (2 research runs). A count of Nomila's records is not a count of real-world history; what Nomila has not observed is not evidence of absence",
+     "source": "hand",
+     "rule": "MISSING ≠ NONE (checkpoint §2 epistemic discipline); rate-eval-spec/2.0.0 §5: a detected inbound email is not a partnership or a transaction"
+    }
+   ],
+   "values": {
+    "offer": {
+     "amount": 5000,
+     "product_value": null,
+     "commission_pct": null,
+     "unit": "total",
+     "deliverable_counts": {
+      "instagram_posts": 4
+     },
+     "deal_type": "ambassador"
+    },
+    "value": 5000,
+    "basis": {
+     "perUnit": 1250,
+     "key": "ambassador"
+    },
+    "annualized": null,
+    "range": null,
+    "card": null,
+    "band": {
+     "band": "NA_CASH",
+     "detail": "no rate card (unknown-rate athlete)"
+    },
+    "absent": [
+     "timeline"
+    ]
+   },
+   "provenance": {
+    "functions": [
+     "totalGuaranteedValue",
+     "annualizedValue",
+     "matchRate",
+     "withFloors",
+     "deriveDealTypeRates",
+     "economicsBand",
+     "computeMissingTerms",
+     "resolveDealValue"
+    ],
+    "rules": [
+     "MISSING ≠ NONE (checkpoint §2 epistemic discipline); rate-eval-spec/2.0.0 §5: a detected inbound email is not a partnership or a transaction"
+    ],
+    "transcription": "hand-transcribed from the overlay statement in the shape the thread summariser produces and the scorer consumes (amount, product_value, unit, deliverable_counts, deal_type; commission_pct null). term_months and counts_basis are never set by the production path (grep: no writer), so they are left unset here too — the per-deliverable path therefore runs."
+   }
+  }
+ }
+}

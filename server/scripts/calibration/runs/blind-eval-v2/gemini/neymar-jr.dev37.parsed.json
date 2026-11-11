@@ -1,0 +1,711 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "neymar-jr",
+    "name": "Neymar Jr.",
+    "sport": "Soccer"
+  },
+  "parseError": null,
+  "dimensionAssessments": {
+    "athletic_authority": {
+      "prose": "Neymar Jr. remains one of soccer’s greatest living legends, recently capping his international career by playing in his fourth FIFA World Cup in July 2026. While his day-to-day competitive environment at Santos FC is a step down from his European prime, his record-breaking status as Brazil's all-time top scorer ensures elite standing. However, persistent physical injuries and his recent retirement from international football limit his current on-field authority.",
+      "confidence": "HIGH",
+      "confidenceReason": "His historical record, recent World Cup call-up, and retirement are heavily documented by official and major sports media."
+    },
+    "audience_scale": {
+      "prose": "Neymar possesses one of the largest personal audiences in the world, with over 242 million Instagram followers alone. His reach spans multiple platforms and continents, making his brand scale matched only by a tiny handful of elite global athletes. Although his explosive growth phase has leveled off, his sheer footprint remains at the absolute top tier of the sports entertainment landscape.",
+      "confidence": "HIGH",
+      "confidenceReason": "Public social media followers and global rankings are consistently tracked and verified by secondary and platform metrics."
+    },
+    "engagement_quality": {
+      "prose": "Neymar's public post engagement is robust, routinely attracting millions of interactions per post due to his global notoriety. However, like many legacy accounts of this size, his engagement rate relative to total followers is moderate rather than highly concentrated. Because private platform metrics such as story completions and saves are unavailable, a complete picture of his direct conversion efficiency remains partially obscured.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "While public likes and comment volume are easily observable, private interaction data is missing."
+    },
+    "cultural_relevance": {
+      "prose": "Neymar is a permanent fixture in global media, with his athletic, personal, and commercial choices generating massive search interest and social conversation. His crossover appeal is exceptional, successfully bridging football, high fashion, professional poker, and digital entertainment. The global discussion surrounding his international retirement and club maneuvers in late 2026 reinforces his status as a mainstream pop-culture icon.",
+      "confidence": "HIGH",
+      "confidenceReason": "His broad media coverage and high public interest are thoroughly supported across diverse global publications."
+    },
+    "narrative_power": {
+      "prose": "The narrative arc of Neymar is highly distinct, characterized by the 'prodigal son' returning to his boyhood club Santos to seek a final moment of redemption. His identity is built on artistic flare, rebellion, and overcoming physical vulnerability, offering a deep and authentic emotional story that resonates with millions. This powerful lore translates effortlessly into compelling, premium brand campaigns that celebrate legacy and personal expression.",
+      "confidence": "HIGH",
+      "confidenceReason": "His career narrative is highly defined and consistently echoed across years of mainstream sports journalism."
+    },
+    "brand_fit": {
+      "prose": "Neymar’s brand fits an incredibly broad range of commercial categories, from performance footwear to high technology and content licensing. While his flamboyant lifestyle and past controversies introduce mild brand-safety friction for conservative partners, his immense geographic reach and content versatility make him highly attractive. His clear alignment with expressive and premium values yields strong campaign chemistry.",
+      "confidence": "HIGH",
+      "confidenceReason": "His extensive commercial history and public-facing lifestyle provide clear parameters of his brand fit and safety."
+    },
+    "commercial_proof": {
+      "prose": "Neymar continues to command elite commercial economics, drawing a reported $28 million off-field in 2026 alongside a massive, long-term Puma partnership. His strategic move to Santos has directly catalyzed historic commercial growth for the club, demonstrating his immense pricing power and value generation. A consistent history of high-tier, multi-year endorsements provides bulletproof validation of his marketability.",
+      "confidence": "HIGH",
+      "confidenceReason": "Multiple verified reports detail his current earnings, major active campaigns, and commercial impact on his club."
+    },
+    "momentum": {
+      "prose": "Neymar’s athletic momentum is in a clear downward trajectory as injuries continue to disrupt his playing time, culminating in his retirement from international football in mid-2026. Commercially, his momentum is stable and mature, pivoting toward innovative formats like licensing his AI likeness rather than rapid partner acquisition. His attention-generating power remains exceptionally high, but it is driven by legacy and narrative rather than ascending athletic performance.",
+      "confidence": "HIGH",
+      "confidenceReason": "His recent physical setbacks, international retirement, and late-career commercial shifts are clearly established in 2026."
+    }
+  },
+  "overallConfidence": {
+    "level": "HIGH",
+    "explanation": "Neymar is a global sports icon with an extremely well-documented commercial and athletic footprint up through late 2026. While the lack of private social metrics restricts deep engagement quality analysis, the abundance of high-quality primary, secondary, and media sources on his current Santos contract, international retirement, and global endorsements provides a highly accurate evaluation."
+  },
+  "identityConfidence": "HIGH",
+  "summary": "Neymar Jr. enters late 2026 as a mature, legendary global brand transitioning into the final chapter of his athletic career. Following a mutual termination with Al Hilal in early 2025, his return to boyhood club Santos FC sparked a romantic redemption arc, culminating in a surprise call-up to Brazil’s 2026 World Cup squad. Despite retiring from international football following Brazil’s round-of-16 exit and currently battling a thigh injury, Neymar’s commercial power remains world-class. Boasting over 242 million Instagram followers and a historic partnership with Puma, he commands elite off-field earnings estimated at $28 million in 2026. His marketability is anchored in a highly distinct, authentic narrative of artistic flare, physical resilience, and cultural crossover—bridging sports, fashion, gaming, and professional poker. While physical durability and international retirement represent clear athletic headwinds, his commercial proof, geographic reach, and pricing power remain exceptional. Main areas of uncertainty include private social performance metrics (retention, saves/shares) and his long-term post-playing commercial strategy.",
+  "summaryWords": 157,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Neymar mutually terminated his Al Hilal contract in January 2025 and returned to his boyhood club Santos FC, extending his contract there until the end of 2026.",
+      "sourceTitle": "Football: Brazil star Neymar targets FIFA World Cup 2026 after extending contract with Santos",
+      "sourceUrl": "https://olympics.com/en/news/football-brazil-neymar-santos-contract-extension-2026-world-cup",
+      "sourceType": "official",
+      "date": "2026-01-07"
+    },
+    {
+      "id": "E2",
+      "claim": "Neymar was named to Brazil's final 2026 World Cup squad after proving his fitness with 9 appearances in Santos' final 12 matches prior to the announcement.",
+      "sourceTitle": "Neymar Included In Brazil's Preliminary 2026 World Cup Roster",
+      "sourceUrl": "https://www.foxsports.com/stories/soccer/neymar-included-in-brazils-preliminary-2026-world-cup-roster",
+      "sourceType": "major_media",
+      "date": "2026-05-19"
+    },
+    {
+      "id": "E3",
+      "claim": "Neymar officially retired from international football in July 2026 after Brazil's World Cup exit; Carlo Ancelotti confirmed the decision in September 2026.",
+      "sourceTitle": "Ancelotti: Neymar cannot be replaced, and I reject the one-star policy",
+      "sourceUrl": "https://www.livescore.com/en/native/news/ancelotti-neymar-cannot-be-replaced-and-i-reject-the-one-star-policy-2026091410145610813/",
+      "sourceType": "secondary",
+      "date": "2026-09-14"
+    },
+    {
+      "id": "E4",
+      "claim": "Neymar suffered a thigh injury on September 2, 2026 during a Brazilian Cup quarter-final match against Palmeiras and is currently sidelined.",
+      "sourceTitle": "Neymar has continued to make his influence felt at Santos despite being sidelined with injury",
+      "sourceUrl": "https://economictimes.indiatimes.com/news/sports/neymar-helps-santos-escape-transfer-ban-brings-in-arthur-melo-coutinho/articleshow/113292415.cms",
+      "sourceType": "major_media",
+      "date": "2026-09-12"
+    },
+    {
+      "id": "E5",
+      "claim": "Neymar's marketing company, NR Sports, paid €2 million to AS Monaco to lift Santos' FIFA transfer ban, allowing the club to register new players.",
+      "sourceTitle": "Neymar's marketing company reportedly paid €2m to lift Santos' ban",
+      "sourceUrl": "https://economictimes.indiatimes.com/news/sports/neymar-helps-santos-escape-transfer-ban-brings-in-arthur-melo-coutinho/articleshow/113292415.cms",
+      "sourceType": "major_media",
+      "date": "2026-09-12"
+    },
+    {
+      "id": "E6",
+      "claim": "Neymar possesses approximately 242 million Instagram followers as of late August/September 2026, ranking as the 14th most-followed person globally.",
+      "sourceTitle": "Sixteen years after Instagram launched, its biggest personal accounts have audiences numbering in the hundreds of millions",
+      "sourceUrl": "https://www.visualcapitalist.com/ranked-the-most-followed-people-on-instagram-in-2026/",
+      "sourceType": "secondary",
+      "date": "2026-09-06"
+    },
+    {
+      "id": "E7",
+      "claim": "Neymar maintains a massive long-term partnership with Puma worth a reported €25-€30 million annually, alongside other top-tier sponsors.",
+      "sourceTitle": "PUMA signs long-term Partnership with Football Star Neymar Jr.",
+      "sourceUrl": "https://about.puma.com/en/newsroom/brand-and-product-news/2020/12-09-2020-neymar",
+      "sourceType": "official",
+      "date": "2020-09-12"
+    },
+    {
+      "id": "E8",
+      "claim": "Neymar licensed his AI likeness to FlareFlow, a Chinese vertical entertainment platform, for a 16-title microdrama franchise premiering globally during the 2026 World Cup.",
+      "sourceTitle": "The off-pitch game: How World Cup players became brands worth billions",
+      "sourceUrl": "https://onclusive.com/en-gb/resources/blog/world-cup-player-endorsements-2026-report/",
+      "sourceType": "secondary",
+      "date": "2026-06-17"
+    },
+    {
+      "id": "E9",
+      "claim": "Neymar's off-field earnings are estimated at $28 million in 2026, and his move to Santos directly catalyzed the largest sponsorship deal in the club's history (R$105M).",
+      "sourceTitle": "Neymar's Net Worth In 2026: Salary, Sponsorships And Investments Explained",
+      "sourceUrl": "https://www.sportstiger.com/news/neymars-net-worth-in-2026-salary-sponsorships-and-investments-explained",
+      "sourceType": "secondary",
+      "date": "2026-07-08"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 72,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "Neymar currently competes in Campeonato Brasileiro Série A with Santos FC, a prestigious national league, but a step down from Europe's UEFA Champions League.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 68,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E4"
+      ],
+      "rationale": "He achieved 9 goal contributions in 13 matches with Santos and scored Brazil's lone Round of 16 World Cup goal, but his output is repeatedly limited by severe injuries.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E9"
+      ],
+      "rationale": "As Brazil's all-time top scorer who recently surpassed Pelé, his historical ranking status is legacy-defining, even though his current individual player rankings are lower.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "He was called up to his fourth World Cup and retired from international duty as the country's ultimate modern icon, maintaining peak national status.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "Neymar is the absolute centerpiece of Santos FC, holding massive influence both on the pitch and in restructuring the club's broader operations.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 70,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "rationale": "While his participation in the June/July 2026 World Cup is very recent, his immediate international retirement and thigh injury limit current athletic momentum.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Neymar holds over 242 million Instagram followers and over 340 million total followers across other major networks, placing him in the highest tier of global reach.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 99,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "In the world of soccer, only Cristiano Ronaldo and Lionel Messi command a larger social footprint than Neymar.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 52,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "As an established global brand, his follower count is plateauing, showing slow and steady mature growth punctuated by World Cup spikes.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E8"
+      ],
+      "rationale": "His digital footprint spans Instagram, Facebook, X, YouTube, Twitch, and cutting-edge licensing distribution on Chinese microdrama apps.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "scored",
+      "score": 70,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Evaluated based on public metrics where posts consistently gather millions of likes, though his overall engagement percentage is slightly diluted by his massive legacy follower base.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "scored",
+      "score": 68,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "His content penetrates the mainstream globally via syndication, but algorithmically is bound by the passive behavior of old followers.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No authoritative platform data is available to evaluate private sharing and saving rates.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Private video retention and completion curves are not publicly available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Authoritative Instagram story reach and interaction rates are private metrics.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "scored",
+      "score": 76,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "His core demographic consists of highly passionate sports fans, although a legacy account of this scale naturally attracts a portion of inactive bot accounts.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 96,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "rationale": "Neymar is a constant focus of global sports and lifestyle press, with his injury status, retirement, and club rescue efforts keeping him in daily news cycles.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 97,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3",
+        "E5"
+      ],
+      "rationale": "He is covered continuously by premium global media organizations such as CNN, ESPN, L'Equipe, and Forbes.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 94,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E5"
+      ],
+      "rationale": "Global search volume for his name remains exceptionally high, peaking sharply during major events like his international retirement.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E5"
+      ],
+      "rationale": "Neymar generates immense social media discussion, debate, and meme culture entirely independent of his own direct posts.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 94,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8",
+        "E9"
+      ],
+      "rationale": "He is a universally recognized cultural figure, heavily crossing over into gaming, poker (competing in the WSOP), fashion, and entertainment.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E9"
+      ],
+      "rationale": "The highly distinct 'prodigal son returns to save Santos' narrative separates him from the more structured, polished branding of his peers.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 96,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3",
+        "E9"
+      ],
+      "rationale": "His journey is rich in complexity—transitioning from teenage prodigy to Champions League winner, record transfer holder, and finally, home-town hero.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "His narrative is backed by highly tangible real-world actions, such as taking a massive pay cut to return to Santos and using his family company to lift their transfer ban.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E5"
+      ],
+      "rationale": "Media outlets globally actively respond to and amplify his romanticized and highly dramatic late-career narrative.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 86,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E8"
+      ],
+      "rationale": "His expressive, rebellious, and artistic persona is easily translated into compelling campaigns for lifestyle, tech, and entertainment brands.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 84,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3"
+      ],
+      "rationale": "Even as his playing career winds down, his status as a legendary historical figure ensures his narrative remains commercially viable for decades.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E8",
+        "E9"
+      ],
+      "rationale": "He naturally fits diverse brand partnerships, comfortably spanning sportswear, luxury fashion, energy drinks, gaming, digital licensing, and fintech.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 55,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E9"
+      ],
+      "rationale": "His polarizing public lifestyle, past tax controversies, and focus on poker can present mild friction for highly conservative brand partners.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E9"
+      ],
+      "rationale": "His audience is highly global, young, and intensely passionate, offering exceptional market entry into the massive Latin American consumer market.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 70,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E9"
+      ],
+      "rationale": "His public persona is consistently built around charisma, self-expression, and enjoyment rather than rigid discipline, which is highly coherent if unconventional.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8"
+      ],
+      "rationale": "Neymar excels across diverse mediums, from high-production apparel modeling to streaming on Twitch and pioneering AI likeness licensing.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 94,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E8"
+      ],
+      "rationale": "He offers supreme commercial relevance in South America, massive legacy appeal in Europe and the Middle East, and growing relevance in Asian media.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 96,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E9"
+      ],
+      "rationale": "Neymar commands a verified $28 million off-field income in 2026, anchored by a historic, multi-million dollar annual Puma partnership.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E8",
+        "E9"
+      ],
+      "rationale": "He consistently manages a large portfolio of active commercial campaigns, ranging from legacy partners to highly innovative digital start-ups.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E9"
+      ],
+      "rationale": "He is partnered with globally prestigious brands, including Puma, Red Bull, Beats by Dre, and Mondeléz.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E9"
+      ],
+      "rationale": "He exhibits long-term commercial relationships, with multiple brands retaining him as a key ambassador for a decade or longer.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Granular conversion rates, internal brand ROI, and direct campaign sales metrics are kept private.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E9"
+      ],
+      "rationale": "His return to Santos immediately drove the largest sponsorship in the club's history, showcasing unmatched commercial pricing power.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 42,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4"
+      ],
+      "rationale": "Neymar is on a clear athletic downslope, having exited elite European football, retired from Brazil's national team, and currently dealing with a thigh injury.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 50,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "As a highly saturated, mature global personal brand, his audience growth is stable and plateauing rather than accelerating.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 65,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E5"
+      ],
+      "rationale": "His media coverage remains highly active but has naturally transitioned from on-pitch dominance to legacy framing, retirement, and business endeavors.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 68,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3"
+      ],
+      "rationale": "His general public search volume remains consistently strong, driven heavily by his recent, highly-publicized international retirement.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 52,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8",
+        "E9"
+      ],
+      "rationale": "He is not signing massive new waves of global sponsors, but is successfully optimizing his earnings through high-value, innovative licensing (AI microdramas).",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Unmatched global audience scale, trailing only Cristiano Ronaldo and Lionel Messi in the soccer world.",
+    "Highly distinct and deeply authentic late-career 'prodigal son' narrative centered around Santos FC.",
+    "Exceptional crossover appeal spanning high fashion, gaming, professional poker, and cutting-edge digital media (AI likeness).",
+    "Proven, top-tier commercial performance with elite pricing power and verified $28 million in off-field earnings."
+  ],
+  "keyConstraints": [
+    "Clear decline in athletic trajectory due to persistent physical setbacks, playing in a non-European domestic league, and international retirement.",
+    "Mild brand-safety concerns for conservative partners stemming from a highly public lifestyle, past tax issues, and gaming/poker associations.",
+    "Plateauing audience growth, which is natural for highly saturated, mature personal brands."
+  ],
+  "importantMissingData": [
+    "Private social media metrics, including story retention curves, share/save rates, and precise audience demographics.",
+    "Verified performance/ROI metrics for his active campaigns with Puma, Red Bull, and other primary sponsors."
+  ],
+  "identityOrEvidenceRisks": [
+    "None identified; the player's identity, current team (Santos FC), injury status, and commercial portfolio are heavily corroborated across multiple highly reputable platforms."
+  ],
+  "socialBlockSupplied": false
+}

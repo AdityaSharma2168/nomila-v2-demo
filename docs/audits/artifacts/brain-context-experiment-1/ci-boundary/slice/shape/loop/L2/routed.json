@@ -1,0 +1,283 @@
+{
+ "version": "execution-router/0.2.0-exp",
+ "runId": "L2:2ffcf452",
+ "persisted": false,
+ "campaignStore": null,
+ "campaigns": [],
+ "routed": [
+  {
+   "recommendationId": "rec_94b6d20dee8c9b5a",
+   "decision": {
+    "source": "her agent, through Mila",
+    "subject": {
+     "kind": "deal",
+     "id": "ctl-r2-northlight-termsheet"
+    },
+    "question": "Should this negotiation be advanced, countered or accepted?",
+    "objectiveIds": []
+   },
+   "what": "Counter the Northlight Learning ambassador term sheet to bring the commercial compensation in line with her established per-deliverable floor.",
+   "why": "The Northlight Learning ambassador term sheet offers a per-deliverable value of USD 1,250, which is below Mia's established ambassador floor of USD 3,602. A counter is required to align the terms with her financial requirements.",
+   "executionPath": "direct_action",
+   "relation": "advances_existing_work",
+   "advances": "deal[ctl-r2-northlight-termsheet]",
+   "intent": "counter",
+   "ends": null,
+   "notSeen": [],
+   "cites": [
+    "deal[ctl-r2-northlight-termsheet].basis",
+    "representation.floors[ambassador]",
+    "deal[ctl-r2-northlight-termsheet].band"
+   ],
+   "governance": {
+    "response": "accepted",
+    "authorization": "prepare_authorized",
+    "execution": "none",
+    "refs": [],
+    "simulated": []
+   },
+   "route": {
+    "ok": true,
+    "handoff": {
+     "shape": "direct_action",
+     "intent": {
+      "version": "execution-intent/0.1.0-exp",
+      "recommendationId": "rec_94b6d20dee8c9b5a",
+      "subject": "deal[ctl-r2-northlight-termsheet]",
+      "dealId": "ctl-r2-northlight-termsheet",
+      "intent": "counter",
+      "why": "The Northlight Learning ambassador term sheet offers a per-deliverable value of USD 1,250, which is below Mia's established ambassador floor of USD 3,602. A counter is required to align the terms with her financial requirements.",
+      "considerations": [],
+      "constraints": [],
+      "objectiveIds": []
+     }
+    },
+    "dedup": {
+     "attachedTo": null
+    }
+   },
+   "campaign": null
+  },
+  {
+   "recommendationId": "rec_9feaeb54fb19c6b1",
+   "decision": {
+    "source": "the Objective loop",
+    "subject": {
+     "kind": "objective",
+     "id": "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+    },
+    "question": "what should Nomila do about this Objective now?",
+    "objectiveIds": [
+     "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+    ]
+   },
+   "what": "Initiate targeted outreach to prospective global brand and CSR partners to secure sponsorships co-promoting or co-funding her work with the Yuwa Academy.",
+   "why": "Mia Bhuta's extensive philanthropic leadership with the Yuwa program remains uncommercialized, presenting a high-impact opportunity to attract global CSR brand partnerships leveraging her exceptional narrative power.",
+   "executionPath": "specialized_plan",
+   "relation": "new_work",
+   "advances": null,
+   "intent": null,
+   "ends": null,
+   "notSeen": [],
+   "cites": [
+    "opportunity[amplify-yuwa-philanthropic-work]",
+    "findings[mia.narrative_power]"
+   ],
+   "governance": {
+    "response": "accepted",
+    "authorization": "prepare_authorized",
+    "execution": "none",
+    "refs": [],
+    "simulated": []
+   },
+   "route": {
+    "ok": true,
+    "dedup": {
+     "attachedTo": null
+    },
+    "handoff": {
+     "version": "execution-router/0.2.0-exp",
+     "shape": "specialized_plan",
+     "recommendationId": "rec_9feaeb54fb19c6b1",
+     "domain": "impact",
+     "what": "Initiate targeted outreach to prospective global brand and CSR partners to secure sponsorships co-promoting or co-funding her work with the Yuwa Academy.",
+     "why": "Mia Bhuta's extensive philanthropic leadership with the Yuwa program remains uncommercialized, presenting a high-impact opportunity to attract global CSR brand partnerships leveraging her exceptional narrative power.",
+     "subject": "objective[b1c799e3-59fc-4986-b3ab-a0b7b4869601]",
+     "objectiveIds": [
+      "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+     ],
+     "advances": null,
+     "intent": null,
+     "notSeen": [],
+     "runId": "L2:2ffcf452"
+    }
+   },
+   "campaign": null
+  },
+  {
+   "recommendationId": "rec_764257cd61ef9777",
+   "decision": {
+    "source": "the Objective loop",
+    "subject": {
+     "kind": "objective",
+     "id": "feb62891-8b9f-44e4-8c1f-677d6947334b"
+    },
+    "question": "what should Nomila do about this Objective now?",
+    "objectiveIds": [
+     "feb62891-8b9f-44e4-8c1f-677d6947334b"
+    ]
+   },
+   "what": "Reactivate her dormant TikTok channel to expand platform breadth and re-engage short-form video audiences by leveraging her existing Instagram short-form content.",
+   "why": "Mia's social media audience is in a minor contraction phase with her TikTok channel dormant for over 550 days, and reactivating TikTok by cross-posting her existing short-form content will expand her platform breadth.",
+   "executionPath": "specialized_plan",
+   "relation": "new_work",
+   "advances": null,
+   "intent": null,
+   "ends": null,
+   "notSeen": [],
+   "cites": [
+    "opportunity[unlock-tiktok-channel]",
+    "contentPerformance[tiktok]",
+    "findings[mia.audience_scale]"
+   ],
+   "governance": {
+    "response": "accepted",
+    "authorization": "prepare_authorized",
+    "execution": "none",
+    "refs": [],
+    "simulated": []
+   },
+   "route": {
+    "ok": true,
+    "dedup": {
+     "attachedTo": null
+    },
+    "handoff": {
+     "version": "execution-router/0.2.0-exp",
+     "shape": "specialized_plan",
+     "recommendationId": "rec_764257cd61ef9777",
+     "domain": "content",
+     "what": "Reactivate her dormant TikTok channel to expand platform breadth and re-engage short-form video audiences by leveraging her existing Instagram short-form content.",
+     "why": "Mia's social media audience is in a minor contraction phase with her TikTok channel dormant for over 550 days, and reactivating TikTok by cross-posting her existing short-form content will expand her platform breadth.",
+     "subject": "objective[feb62891-8b9f-44e4-8c1f-677d6947334b]",
+     "objectiveIds": [
+      "feb62891-8b9f-44e4-8c1f-677d6947334b"
+     ],
+     "advances": null,
+     "intent": null,
+     "notSeen": [],
+     "runId": "L2:2ffcf452"
+    }
+   },
+   "campaign": null
+  },
+  {
+   "recommendationId": "rec_a75314b6d8834e05",
+   "decision": {
+    "source": "the Objective loop",
+    "subject": {
+     "kind": "objective",
+     "id": "c0f587e4-750f-4575-a4e8-fd4cfa6e078e"
+    },
+    "question": "what should Nomila do about this Objective now?",
+    "objectiveIds": [
+     "c0f587e4-750f-4575-a4e8-fd4cfa6e078e"
+    ]
+   },
+   "what": "Target brand partnerships and ambassador roles in the EdTech, STEM, and tech venture sectors that align with her academic background.",
+   "why": "Mia has zero active commercial relationships in her core academic and tech domains despite strong narrative alignment from her Stanford undergraduate degree in Symbolic Systems and master's in Management Science and Engineering.",
+   "executionPath": "specialized_plan",
+   "relation": "new_work",
+   "advances": null,
+   "intent": null,
+   "ends": null,
+   "notSeen": [],
+   "cites": [
+    "opportunity[grow-academic-tech-partnerships]",
+    "findings[mia.narrative_power]"
+   ],
+   "governance": {
+    "response": "accepted",
+    "authorization": "prepare_authorized",
+    "execution": "none",
+    "refs": [],
+    "simulated": []
+   },
+   "route": {
+    "ok": true,
+    "dedup": {
+     "attachedTo": null
+    },
+    "handoff": {
+     "version": "execution-router/0.2.0-exp",
+     "shape": "specialized_plan",
+     "recommendationId": "rec_a75314b6d8834e05",
+     "domain": "outreach",
+     "what": "Target brand partnerships and ambassador roles in the EdTech, STEM, and tech venture sectors that align with her academic background.",
+     "why": "Mia has zero active commercial relationships in her core academic and tech domains despite strong narrative alignment from her Stanford undergraduate degree in Symbolic Systems and master's in Management Science and Engineering.",
+     "subject": "objective[c0f587e4-750f-4575-a4e8-fd4cfa6e078e]",
+     "objectiveIds": [
+      "c0f587e4-750f-4575-a4e8-fd4cfa6e078e"
+     ],
+     "advances": null,
+     "intent": null,
+     "notSeen": [],
+     "runId": "L2:2ffcf452"
+    }
+   },
+   "campaign": null
+  },
+  {
+   "recommendationId": "rec_c373ce1d5f9cbfb8",
+   "decision": {
+    "source": "the Objective loop",
+    "subject": {
+     "kind": "objective",
+     "id": "ctl-obj-matchday-series"
+    },
+    "question": "what should Nomila do about this Objective now?",
+    "objectiveIds": [
+     "ctl-obj-matchday-series"
+    ]
+   },
+   "what": "Execute a match-day content campaign across her Instagram and TikTok channels for every Stanford women's soccer match through the end of the season.",
+   "why": "To enable her audience to follow her Stanford season, a dedicated match-day content campaign should be established on her channels, especially given her upcoming schedule containing long gaps between home matches and key fixtures.",
+   "executionPath": "campaign",
+   "relation": "new_work",
+   "advances": null,
+   "intent": null,
+   "ends": {
+    "source": "objective_horizon",
+    "ref": "objective[ctl-obj-matchday-series]"
+   },
+   "notSeen": [
+    "Match-day media access permissions and content guidelines from Stanford Athletics"
+   ],
+   "cites": [
+    "objective[ctl-obj-matchday-series]",
+    "ctx[0]",
+    "ctx[1]",
+    "contentPerformance[instagram]"
+   ],
+   "governance": {
+    "response": "accepted",
+    "authorization": "prepare_authorized",
+    "execution": "proposed",
+    "refs": [
+     {
+      "kind": "campaign",
+      "id": "b18e8e39-2d97-492a-8318-b89fa35d57ab",
+      "at": "2026-09-27T17:25:39.942Z"
+     }
+    ],
+    "simulated": []
+   },
+   "route": {
+    "ok": false,
+    "stage": "dedup",
+    "refused": "already in execution: campaign:b18e8e39-2d97-492a-8318-b89fa35d57ab — attach, do not create"
+   },
+   "campaign": null
+  }
+ ]
+}

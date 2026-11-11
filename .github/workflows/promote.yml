@@ -1,0 +1,93 @@
+name: Promote main to production
+
+# The only way `production` moves. Fast-forwards the `production` branch to `main`,
+# tags the release, then dispatches deploy-prod.yml — which waits for the required
+# reviewer on the GitHub Environment "production" before it touches anything.
+#
+# Why dispatch instead of relying on the push: a push made with GITHUB_TOKEN does not
+# fire other workflows' `push` triggers (GitHub's anti-recursion rule); workflow_dispatch
+# is the documented exception, so the promotion calls the deploy explicitly.
+#
+# Fast-forward ONLY. If `production` ever carries a commit that is not on `main` (a
+# hotfix pushed straight to production), this refuses until that commit is merged back —
+# otherwise the promotion would silently drop the hotfix.
+#
+# WHO MAY PROMOTE: the `promoters` job below is the approval gate. GitHub's own
+# "required reviewers" rule on Environments needs the Enterprise plan for a private
+# repository (the API refuses it on Team), so the gate is an allow-list of GitHub logins
+# instead: anyone else who presses Run gets a refusal before anything happens. Add a
+# login to PROMOTERS to grant the right; deploy-prod.yml carries the same list.
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type "promote" to fast-forward production to main and deploy'
+        required: true
+
+concurrency:
+  group: promote-production
+  cancel-in-progress: false
+
+env:
+  PROMOTERS: miabhuta-code aaronsongnguyen
+
+jobs:
+  promote:
+    name: Fast-forward production to main
+    runs-on: ubuntu-latest
+    if: github.event.inputs.confirm == 'promote'
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - name: Only a listed promoter may run this
+        run: |
+          for u in ${PROMOTERS}; do [ "$u" = "${GITHUB_ACTOR}" ] && exit 0; done
+          echo "::error::${GITHUB_ACTOR} is not a promoter (allowed: ${PROMOTERS}). Ask one of them."
+          exit 1
+
+      - name: Checkout (full history, for the ancestry check)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Fast-forward and tag
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git fetch origin production || true
+
+          MAIN_SHA="$(git rev-parse origin/main)"
+          if git rev-parse --verify --quiet origin/production >/dev/null; then
+            if ! git merge-base --is-ancestor origin/production origin/main; then
+              echo "::error::production has commits that are not on main — merge them back first (fast-forward only)."
+              exit 1
+            fi
+            if [ "$(git rev-parse origin/production)" = "${MAIN_SHA}" ]; then
+              echo "production already at ${MAIN_SHA:0:8}; nothing to promote (re-dispatching the deploy anyway)."
+            fi
+          fi
+
+          VERSION="$(node -p "require('./app.json').expo.version")"
+          TAG="v${VERSION}-$(date -u +%F)"
+          if git rev-parse --verify --quiet "refs/tags/${TAG}" >/dev/null || git ls-remote --exit-code --tags origin "${TAG}" >/dev/null 2>&1; then
+            TAG="${TAG}-${MAIN_SHA:0:8}"
+          fi
+
+          git push origin "${MAIN_SHA}:refs/heads/production"
+          git tag -a "${TAG}" -m "Promote ${MAIN_SHA:0:8} to production" "${MAIN_SHA}"
+          git push origin "refs/tags/${TAG}"
+          echo "Promoted ${MAIN_SHA:0:8} → production as ${TAG}"
+
+          echo "Dispatching deploy-prod.yml on production…"
+          # The dispatched run's actor is github-actions[bot], so the human promoter travels
+          # as an input; deploy-prod.yml checks it against the same PROMOTERS list.
+          gh workflow run deploy-prod.yml --ref production \
+            -f reason="promote ${TAG} (${MAIN_SHA:0:8})" -f promoter="${GITHUB_ACTOR}"
+          echo "Approve it under Actions → Deploy to production → Review deployments."

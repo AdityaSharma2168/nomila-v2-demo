@@ -1,0 +1,129 @@
+{
+  "specVersion": "blind-eval-spec/0.1",
+  "provider": "openai",
+  "athlete": {
+    "key": "riya-mehta",
+    "name": "Riya Mehta",
+    "sport": "Gymnastics"
+  },
+  "conditions": "gpt-5.4-mini Responses API; web_search (medium) + action.sources; default reasoning; text output with fenced JSON",
+  "startedAt": "2026-09-14T02:00:43.580Z",
+  "attempts": 1,
+  "model": "gpt-5.4-mini",
+  "modelVersion": "gpt-5.4-mini-2026-03-17",
+  "responseId": "resp_0fb3059e1d6df44f006aa7554bbc9487d28f6d2669d7415b12",
+  "latencyMs": 25296,
+  "finishReason": "completed",
+  "truncated": false,
+  "usage": {
+    "promptTokens": 10918,
+    "outputTokens": 4470,
+    "thoughtTokens": 69,
+    "totalTokens": 15388,
+    "searchCalls": 1
+  },
+  "costUsd": 0.038303500000000004,
+  "text": "```json\n{\n  \"athlete\": {\n    \"name\": \"Riya Mehta\",\n    \"sport\": \"Gymnastics\",\n    \"identity_confidence\": \"LOW\"\n  },\n  \"marketability_summary\": \"Public evidence for \\\"Riya Mehta\\\" in gymnastics is fragmented and may refer to more than one athlete, so identity confidence is low. The strongest match I found is an FIG profile for a young Indian rhythmic gymnast, Bafna Riya, with 2025 Junior Asian Championships results; I also found separate Khelo India and meet-result records for other gymnasts named Riya Mehta/related variants, but not enough to confidently unify them as one person. Based on the most plausible gymnastics identity, the athlete appears to be a developing junior-level competitor with some official competition exposure but limited evidence of elite senior achievements, broad audience reach, media footprint, or commercial partnerships. There is no strong public proof of major endorsements, repeated brand demand, or a sizable cross-platform presence. The main uncertainty is identity: the public record suggests multiple similarly named athletes across different regions, disciplines, and competition levels, which materially limits confidence in any marketability assessment.\",\n  \"evidence\": [\n    {\n      \"id\": \"E1\",\n      \"claim\": \"FIG athlete profile for BAFNA Riya from India in rhythmic gymnastics shows a junior-level international competition record, including the 2025 Junior Asian Championships in Singapore.\",\n      \"source_title\": \"BAFNA Riya - FIG Athlete Profile\",\n      \"source_url\": \"https://www.gymnastics.sport/site/athletes/bio_detail.php?id=94619\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2025\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Official federation profile with identity, discipline, country, and junior continental results.\"\n    },\n    {\n      \"id\": \"E2\",\n      \"claim\": \"Khelo India 2025 merit certificate lists RIYA M from Karnataka in gymnastics, artistic individual apparatus floor, placing third.\",\n      \"source_title\": \"KIYG 2k25 Athlete Merit Certificate Master\",\n      \"source_url\": \"https://kheloindia.gov.in/uploads/KIYG%202k25%20Athlete%20Merit%20Certificate%20Master.pdf\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2025\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Official Indian youth-sport record showing a different RIYA M entry; useful as evidence of name ambiguity and developmental competition level.\"\n    },\n    {\n      \"id\": \"E3\",\n      \"claim\": \"Khelo India Youth Games 2023 participation certificate lists Riya Sharma in gymnastics floor, indicating youth-level participation under a similar first name but different surname.\",\n      \"source_title\": \"Khelo India Youth Games 2023 - Participation\",\n      \"source_url\": \"https://youth.kheloindia.gov.in/assets/landing_new/participation_certificate.pdf\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2023\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Shows another gymnastics athlete with a similar first name but different surname; reinforces identity uncertainty.\"\n    },\n    {\n      \"id\": \"E4\",\n      \"claim\": \"A meet-results page lists 'Mehta, Riya' in gymnastics with junior division scores, indicating local or developmental competition participation.\",\n      \"source_title\": \"mymeetscores.com meet result for Riya Mehta\",\n      \"source_url\": \"https://www.mymeetscores.com/meet.pl?gymnastid=21653598&meetid=90958&session=7\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2024\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Private meet-results aggregator; suggests competitive participation but not elite-level stature.\"\n    },\n    {\n      \"id\": \"E5\",\n      \"claim\": \"Another meet-results page lists 'Mehta, Riya' in gymnastics with junior results, again suggesting participation at a developmental level.\",\n      \"source_title\": \"mymeetscores.com meet result for Riya Mehta\",\n      \"source_url\": \"https://www.mymeetscores.com/meet.pl?gymnastid=21600635&meetid=1000004031&session=07D\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2023\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Second independent meet-result reference with similar naming, but not enough to confirm identity.\"\n    },\n    {\n      \"id\": \"E6\",\n      \"claim\": \"LinkedIn search results show profiles for Riya Mehta, but they do not provide reliable athlete-specific public audience or commercial evidence.\",\n      \"source_title\": \"LinkedIn results for Riya Mehta\",\n      \"source_url\": \"https://www.linkedin.com/in/riyam.../ / https://www.linkedin.com/posts/riyalizations_mba-newbeginnings-activity-7248534985106698241-MLom\",\n      \"source_type\": \"platform\",\n      \"published_or_observed_date\": \"2026\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Not useful as athlete-marketability proof; included only as evidence of name ambiguity and lack of athlete-specific public presence.\"\n    }\n  ],\n  \"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 35,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E4\", \"E5\"],\n        \"rationale\": \"The evidence points to junior/developmental gymnastics participation and some official youth competition exposure, but not to a major professional or senior international environment.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 30,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E4\", \"E5\"],\n        \"rationale\": \"Available results show participation and a third-place youth result in floor, but the record does not show elite or dominant competitive outcomes.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"I found no reliable rankings, major awards, or widely recognized honors tied confidently to this athlete identity.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 40,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"The FIG profile shows official international junior competition exposure, but there is no evidence of senior national team status or major global representation.\"\n      },\n      \"role_importance\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E1\", \"E4\", \"E5\"],\n        \"rationale\": \"The sources do not establish whether the athlete is a key team member, captain, or central figure within a squad or program.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 45,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"The most concrete competition evidence is recent, from 2025, but it reflects developmental-level achievement rather than a breakout elite result.\"\n      }\n    },\n    \"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E6\"],\n        \"rationale\": \"I did not find reliable public follower counts, platform metrics, or a clear multi-platform audience footprint for this athlete.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E1\", \"E4\", \"E5\"],\n        \"rationale\": \"There is not enough evidence to compare her audience against other gymnasts at the same level.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No longitudinal audience data or reliable growth trend was available.\"\n      },\n      \"platform_breadth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E6\"],\n        \"rationale\": \"I found no verified athlete-managed presence across multiple public platforms.\"\n      }\n    },\n    \"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No reliable engagement metrics were available.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"There is insufficient evidence to assess how efficiently content reaches beyond the current audience.\"\n      },\n      \"shares_saves_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No public data on shares, saves, or similar high-value interactions was found.\"\n      },\n      \"video_retention\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No retention or completion data was available.\"\n      },\n      \"story_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No story analytics or comparable metrics were available.\"\n      },\n      \"audience_authenticity\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E6\"],\n        \"rationale\": \"Without public audience metrics or platform analytics, audience authenticity cannot be assessed.\"\n      }\n    },\n    \"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 15,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E1\", \"E4\", \"E5\"],\n        \"rationale\": \"The public footprint appears very limited, with only sparse official and meet-result traces rather than sustained media coverage.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 35,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Coverage exists from official federation and sports-program sources, but not from major mainstream media.\"\n      },\n      \"search_interest\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"I found no reliable search-interest evidence such as trend data or consistent public curiosity indicators.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No evidence of broader public discussion beyond isolated records.\"\n      },\n      \"crossover_recognition\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"There is no evidence of recognition outside gymnastics.\"\n      }\n    },\n    \"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 35,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"The only clearly supported narrative is a young Indian gymnast in developmental competition, which is real but not especially distinctive or uniquely memorable.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 25,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E4\"],\n        \"rationale\": \"There is enough evidence to confirm participation, but not enough depth to show a rich public story arc.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 40,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E4\", \"E5\"],\n        \"rationale\": \"The competitions and results are genuine, but the identity ambiguity prevents full confidence in a single coherent narrative.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 15,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E4\", \"E5\"],\n        \"rationale\": \"The available sources do not show broad media amplification of her story.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 30,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"A youth-athlete development story could fit some local or inspirational campaigns, but there is limited proof of broader campaign-ready resonance.\"\n      },\n      \"durability\": {\n        \"status\": \"scored\",\n        \"score\": 30,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"The narrative is likely tied to an early-career stage and current competition cycle, making it less durable unless stronger achievements emerge.\"\n      }\n    },\n    \"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 35,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"As a young gymnast, she could plausibly fit a limited set of categories such as youth sports, training gear, education, or local wellness brands.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"I found no confirmed serious brand-safety issues in the sources reviewed.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No verified audience demographic or purchasing-profile data was available.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 30,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\", \"E6\"],\n        \"rationale\": \"The identity is not yet coherent in public data because multiple similar names and records make the athlete persona hard to pin down.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"There is not enough public content to judge versatility across campaign formats.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 45,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"The strongest evidence points to India-based competition, which creates some regional relevance, but the commercial reach appears limited.\"\n      }\n    },\n    \"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"I found no credible public evidence of paid endorsements or meaningful commercial activity.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No repeat brand or commercial demand was publicly verifiable.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"There were no confirmed brand partners to evaluate.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No renewal or repeat-partnership evidence was found.\"\n      },\n      \"campaign_performance\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No public campaign-performance evidence was available.\"\n      },\n      \"pricing_power\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"There is no public evidence supporting premium pricing power.\"\n      }\n    },\n    \"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 45,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E4\", \"E5\"],\n        \"rationale\": \"The athlete appears active and still developing competitively, but the evidence does not show a clear breakout trajectory.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No reliable audience-growth data was available.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"There is insufficient media history to determine acceleration or decline.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No trustworthy search or social trend evidence was found.\"\n      },\n      \"commercial_acceleration\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No public evidence of accelerating brand activity was found.\"\n      }\n    }\n  },\n  \"key_strengths\": [\n    \"Official federation-level evidence suggests real competitive participation in gymnastics.\",\n    \"Recent youth competition activity indicates the athlete is still active and developing.\",\n    \"Brand-safety risk appears low based on the available public record.\"\n  ],\n  \"key_constraints\": [\n    \"Identity is not confidently resolved; multiple similar names appear across different gymnastics records.\",\n    \"No reliable public social audience metrics were found.\",\n    \"No confirmed endorsements, paid partnerships, or repeat commercial relationships were found.\",\n    \"Public media footprint appears limited and mostly administrative or results-based.\"\n  ],\n  \"important_missing_data\": [\n    \"Verified athlete-owned social accounts and follower counts.\",\n    \"Official biography confirming exact identity, discipline, age, and current level.\",\n    \"Senior national/international rankings and major medals.\",\n    \"Documented brand partnerships, sponsorships, or NIL/commercial deals.\",\n    \"Audience demographics, engagement, and growth trends.\"\n  ],\n  \"identity_or_evidence_risks\": [\n    \"There is a substantial risk of conflating multiple different people named Riya Mehta, Riya Sharma, or similar variants.\",\n    \"At least one strong official source found is for BAFNA Riya rather than Riya Mehta, so the evidence may not describe the same athlete.\",\n    \"Because of identity ambiguity, several scores should be treated as provisional and low-confidence.\"\n  ]\n}\n```",
+  "native": {
+    "annotations": [],
+    "sources": [
+      {
+        "url": "https://www.gymnastics.sport/site/athletes/bio_detail.php?id=94619",
+        "title": null
+      },
+      {
+        "url": "https://kheloindia.gov.in/uploads/KIYG%202k25%20Athlete%20Merit%20Certificate%20Master.pdf",
+        "title": null
+      },
+      {
+        "url": "https://members.usagym.org/PDFs/Results/2019/r_19jo_l6_age.pdf",
+        "title": null
+      },
+      {
+        "url": "https://www.linkedin.com/posts/riyalizations_mba-newbeginnings-activity-7248534985106698241-MLom",
+        "title": null
+      },
+      {
+        "url": "https://www.sportsauthorityofindia.gov.in/sai/assets/news/1631699942_List%20-%2022%20-%20KIYG_compressed.pdf",
+        "title": null
+      },
+      {
+        "url": "https://www.kheloindia.gov.in/uploads/Final_Players_List_KIYG_2020.pdf",
+        "title": null
+      },
+      {
+        "url": "https://www.mymeetscores.com/meet.pl?gymnastid=21653598&meetid=90958&session=7",
+        "title": null
+      },
+      {
+        "url": "https://queenmaryschool.edu.in/ach-sports.php",
+        "title": null
+      },
+      {
+        "url": "https://youth.kheloindia.gov.in/assets/landing_new/participation_certificate.pdf",
+        "title": null
+      },
+      {
+        "url": "https://www.ncsasports.org/womens-track-recruiting/california/atherton/menlo-atherton-high-school/riya-mehta4",
+        "title": null
+      },
+      {
+        "url": "https://www.mymeetscores.com/meet.pl?gymnastid=21600635&meetid=1000004031&session=07D",
+        "title": null
+      },
+      {
+        "url": "https://kiyg2021.kheloindia.gov.in/assets/img/KIYG_2021_Participation.pdf",
+        "title": null
+      },
+      {
+        "url": "https://in.linkedin.com/in/riyalizations",
+        "title": null
+      },
+      {
+        "url": "https://www.igci.indiangymnastics.live/displayallround/Category%20A/90/F",
+        "title": null
+      },
+      {
+        "url": "https://www.hindustantimes.com/pune-news/pune-s-kelkar-wins-three-medals-at-gymnastics-sub-junior-nationals/story-zGYbbMgsZy4zQeCMKWnkkI.html",
+        "title": null
+      },
+      {
+        "url": "https://gigaprogym.com/gymnast-index",
+        "title": null
+      },
+      {
+        "url": "https://www.linkedin.com/in/riyamehtaluddy27",
+        "title": null
+      },
+      {
+        "url": "https://scarletknights.com/news/2014/11/20/Gymnastics_Signs_Three",
+        "title": null
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Akshata_Shete",
+        "title": null
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Rin_Keys",
+        "title": null
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Riley_Loos",
+        "title": null
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Kaliya_Lincoln",
+        "title": null
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Pooja_Surve",
+        "title": null
+      }
+    ],
+    "searchQueries": [
+      "Riya Mehta gymnastics athlete official profile"
+    ],
+    "reasoning": "default"
+  },
+  "error": null
+}

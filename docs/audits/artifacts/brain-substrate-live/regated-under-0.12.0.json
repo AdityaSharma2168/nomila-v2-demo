@@ -1,0 +1,114 @@
+{
+ "attempt-2-refused": {
+  "candidates": 4,
+  "preF5": {
+   "ok": false,
+   "structural": [
+    "decisions[2]: what opens with a production verb (\"design\") — that is HOW, not WHAT",
+    "decisions[2]: what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "decisions[2]: what names an execution mechanic the planner owns (\"posting frequency\", in a purpose clause) — that is HOW, not WHAT",
+    "decisions[2]: what names an execution artefact the planner owns (\"assets\", in a instrumental clause) — that is the planner's output, not the strategic move",
+    "decisions[2]: what names an execution mechanic the planner owns (\"repurposing\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "grounding": 0
+  },
+  "perDecision": {
+   "runRefused": false,
+   "setProblems": [],
+   "accepted": 3,
+   "rejected": 1,
+   "detail": [
+    {
+     "claims": "b1c799e3-59fc-4986-b3ab-a0b7b4869601",
+     "accepted": true,
+     "what": "Initiate a target brand list and positioning strategy for global corporate social responsibility partnerships that co-fund her philanthropic work with Yuwa.",
+     "structural": [],
+     "grounding": [],
+     "strategicRemainder": null
+    },
+    {
+     "claims": "c0f587e4-750f-4575-a4e8-fd4cfa6e078e",
+     "accepted": true,
+     "what": "Develop a B2B outreach strategy targeting EdTech and STEM-related brands to secure technology ambassador partnerships.",
+     "structural": [],
+     "grounding": [],
+     "strategicRemainder": null
+    },
+    {
+     "claims": "feb62891-8b9f-44e4-8c1f-677d6947334b",
+     "accepted": false,
+     "what": "Design an integrated content plan to reactivate her dormant TikTok channel and increase her Instagram posting frequency by repurposing existing video assets.",
+     "structural": [
+      "decisions[2]: what opens with a production verb (\"design\") — that is HOW, not WHAT",
+      "decisions[2]: what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+      "decisions[2]: what names an execution mechanic the planner owns (\"posting frequency\", in a purpose clause) — that is HOW, not WHAT",
+      "decisions[2]: what names an execution artefact the planner owns (\"assets\", in a instrumental clause) — that is the planner's output, not the strategic move",
+      "decisions[2]: what names an execution mechanic the planner owns (\"repurposing\", in a instrumental clause) — that is HOW, not WHAT"
+     ],
+     "grounding": [],
+     "strategicRemainder": null
+    },
+    {
+     "claims": "2d199757-6e12-4a6b-bade-df05c587e849",
+     "accepted": true,
+     "what": null,
+     "structural": [],
+     "grounding": [],
+     "strategicRemainder": null
+    }
+   ]
+  }
+ },
+ "attempt-3-accepted": {
+  "candidates": 4,
+  "preF5": {
+   "ok": false,
+   "structural": [
+    "decisions[2]: what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "grounding": 0
+  },
+  "perDecision": {
+   "runRefused": false,
+   "setProblems": [],
+   "accepted": 3,
+   "rejected": 1,
+   "detail": [
+    {
+     "claims": "b1c799e3-59fc-4986-b3ab-a0b7b4869601",
+     "accepted": true,
+     "what": "Develop a targeted commercial outreach strategy to present Mia's leadership with the Yuwa girls empowerment program to global brands for corporate social responsibility sponsorships.",
+     "structural": [],
+     "grounding": [],
+     "strategicRemainder": null
+    },
+    {
+     "claims": "c0f587e4-750f-4575-a4e8-fd4cfa6e078e",
+     "accepted": true,
+     "what": "Target premium brand partnerships in EdTech, STEM, and enterprise venture spaces by leveraging Mia's Stanford engineering and academic credentials.",
+     "structural": [],
+     "grounding": [],
+     "strategicRemainder": null
+    },
+    {
+     "claims": "feb62891-8b9f-44e4-8c1f-677d6947334b",
+     "accepted": false,
+     "what": "Reactivate her dormant TikTok channel by cross-posting short-form video content to expand her digital reach and reverse the cooling audience trajectory.",
+     "structural": [
+      "decisions[2]: what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT"
+     ],
+     "grounding": [],
+     "strategicRemainder": "Reactivate her dormant TikTok channel to expand her digital reach and reverse the cooling audience trajectory."
+    },
+    {
+     "claims": "2d199757-6e12-4a6b-bade-df05c587e849",
+     "accepted": true,
+     "what": null,
+     "structural": [],
+     "grounding": [],
+     "strategicRemainder": null
+    }
+   ]
+  }
+ }
+}

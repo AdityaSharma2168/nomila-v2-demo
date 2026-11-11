@@ -1,0 +1,1688 @@
+{
+ "state": {
+  "athleteId": "0ab6c9fc-9cad-40cd-8245-0cd69f8bf331",
+  "asOf": "2026-09-25T20:34:09.496Z",
+  "version": "athlete-state/1.2.0",
+  "identity": {
+   "name": "Picabo Street",
+   "sport": "alpine skiing",
+   "competitionContext": null,
+   "careerStatus": "active"
+  },
+  "findings": [
+   {
+    "key": "mia.athletic_authority",
+    "direction": "strength",
+    "rationale": {
+     "value": "Picabo Street maintains an exceptional legacy of athletic authority. Although retired since 2002, her historical achievements as an Olympic gold medalist and back-to-back downhill World Cup champion command enduring respect. Her ongoing authority is preserved and refreshed through her prominent broadcasting role as NBC's women's hill reporter during the Milano Cortina 2026 Olympic Winter Games.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:10.473Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E3"
+     ],
+     "rationale": "Her extensive historical record and her highly active 2026 NBC broadcasting role are thoroughly documented by official Olympic and network channels.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her extensive historical record and her highly active 2026 NBC broadcasting role are thoroughly documented by official Olympic and network channels.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Picabo Street debuted as an NBC sports analyst and women's hill reporter for the Milano Cortina 2026 Olympic Winter Games.",
+      "sourceUrl": "https://www.nbcsports.com",
+      "observedAt": "February 2026",
+      "sourceType": "official",
+      "sourceTitle": "PICABO STREET (Olympics) - Women's Hill Reporter"
+     },
+     {
+      "id": "E2",
+      "claim": "The career-spanning documentary 'PICABO', co-directed by Frank Marshall and Lindsey Vonn, premiered on Peacock in January 2022.",
+      "sourceUrl": "https://www.staytunedmag.com",
+      "observedAt": "January 21, 2022",
+      "sourceType": "major_media",
+      "sourceTitle": "From codirectors and executive producers Frank Marshall and Lindsey Vonn, this is the first career-spanning documentary film chronicling the life of Picabo Street..."
+     },
+     {
+      "id": "E3",
+      "claim": "Picabo Street won Olympic gold in the 1998 Super-G, silver in the 1994 Downhill, and consecutive World Cup downhill season titles in 1995 and 1996.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Picabo_Street",
+      "observedAt": "August 2026",
+      "sourceType": "secondary",
+      "sourceTitle": "Picabo Street Wikipedia"
+     }
+    ],
+    "components": [
+     {
+      "key": "athletic_authority.role_importance",
+      "value": 80,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "value": 30,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "value": 88,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 80.5,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:10.473Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.role_importance",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.competition_level",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.achievement_recency",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.performance_results",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.rankings_recognition",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.national_international_status"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.role_importance",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.competition_level",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.achievement_recency",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.performance_results",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.rankings_recognition",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.national_international_status",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.audience_scale",
+    "direction": "gap",
+    "rationale": {
+     "value": "Street operates with a highly limited direct personal social media footprint. Her combined audience across Instagram and Facebook is small, representing a modest niche compared to modern, active alpine stars. However, she gains massive indirect reach through major television broadcasts and national media coverage.",
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-09-13T22:41:10.473Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E3",
+      "E4"
+     ],
+     "rationale": "Her public social profile follower counts are clear, but her lack of presence on key digital platforms like TikTok and X limits full platform visibility.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her public social profile follower counts are clear, but her lack of presence on key digital platforms like TikTok and X limits full platform visibility.",
+    "citedEvidence": [
+     {
+      "id": "E3",
+      "claim": "Picabo Street won Olympic gold in the 1998 Super-G, silver in the 1994 Downhill, and consecutive World Cup downhill season titles in 1995 and 1996.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Picabo_Street",
+      "observedAt": "August 2026",
+      "sourceType": "secondary",
+      "sourceTitle": "Picabo Street Wikipedia"
+     },
+     {
+      "id": "E4",
+      "claim": "Picabo Street runs the Picabo Street Academy in Park City, Utah, partnering with major brands like Stifel, Hydro Flask, Comcast/Xfinity, Wildhorn, Kappa, and Cloudflare.",
+      "sourceUrl": "https://mn2s.com",
+      "observedAt": "September 2026",
+      "sourceType": "secondary",
+      "sourceTitle": "Picabo Street MN2S Booking Bio & Partners"
+     }
+    ],
+    "components": [
+     {
+      "key": "audience_scale.audience_growth",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "value": 25,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "value": 35,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "value": 40,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 37.5,
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-09-13T22:41:10.473Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#audience_scale.audience_growth",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#audience_scale.platform_breadth",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#audience_scale.cross_platform_effective_reach",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#audience_scale.sport_level_audience_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 1,
+     "total": 4
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#audience_scale.audience_growth",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#audience_scale.platform_breadth",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.engagement_quality",
+    "direction": "unknown",
+    "rationale": {
+     "value": "A lack of private and detailed analytic data prevents a precise evaluation of Street's direct digital audience engagement. Qualitatively, her small following is highly organic, consisting of dedicated winter sports fans and generational admirers, though she is not a digital-first content creator.",
+     "owner": "marketability",
+     "confidence": "LOW",
+     "asOf": "2026-09-13T22:41:10.473Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E4"
+     ],
+     "rationale": "Essential back-end engagement data is completely missing due to the lack of connected social media platforms.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Essential back-end engagement data is completely missing due to the lack of connected social media platforms.",
+    "citedEvidence": [
+     {
+      "id": "E4",
+      "claim": "Picabo Street runs the Picabo Street Academy in Park City, Utah, partnering with major brands like Stifel, Hydro Flask, Comcast/Xfinity, Wildhorn, Kappa, and Cloudflare.",
+      "sourceUrl": "https://mn2s.com",
+      "observedAt": "September 2026",
+      "sourceType": "secondary",
+      "sourceTitle": "Picabo Street MN2S Booking Bio & Partners"
+     }
+    ],
+    "components": [
+     {
+      "key": "engagement_quality.video_retention",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "value": 50,
+      "evidenceClass": "EVALUATED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 50,
+     "owner": "marketability",
+     "confidence": "LOW",
+     "asOf": "2026-09-13T22:41:10.473Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#engagement_quality.video_retention",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#engagement_quality.reach_efficiency",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#engagement_quality.story_efficiency",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#engagement_quality.shares_saves_quality",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#engagement_quality.audience_authenticity",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#engagement_quality.engagement_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 5,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#engagement_quality.video_retention",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#engagement_quality.reach_efficiency",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#engagement_quality.story_efficiency",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#engagement_quality.shares_saves_quality",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#engagement_quality.audience_authenticity",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#engagement_quality.engagement_percentile",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.cultural_relevance",
+    "direction": "neutral",
+    "rationale": {
+     "value": "Street holds strong, enduring cultural relevance in the American landscape. Her unique name and charismatic personality have cemented her as a household name from the 1990s, which is regularly reactivated during Winter Olympic cycles. The launch of her 2022 career documentary and her highly-publicized NBC broadcast segments in 2026 keep her culturally visible.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:10.473Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E3",
+      "E7"
+     ],
+     "rationale": "Persistent national coverage from major outlets, along with recent prime-time Olympic broadcasts, provides deep and consistent evidence of her cultural footprint.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Persistent national coverage from major outlets, along with recent prime-time Olympic broadcasts, provides deep and consistent evidence of her cultural footprint.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Picabo Street debuted as an NBC sports analyst and women's hill reporter for the Milano Cortina 2026 Olympic Winter Games.",
+      "sourceUrl": "https://www.nbcsports.com",
+      "observedAt": "February 2026",
+      "sourceType": "official",
+      "sourceTitle": "PICABO STREET (Olympics) - Women's Hill Reporter"
+     },
+     {
+      "id": "E2",
+      "claim": "The career-spanning documentary 'PICABO', co-directed by Frank Marshall and Lindsey Vonn, premiered on Peacock in January 2022.",
+      "sourceUrl": "https://www.staytunedmag.com",
+      "observedAt": "January 21, 2022",
+      "sourceType": "major_media",
+      "sourceTitle": "From codirectors and executive producers Frank Marshall and Lindsey Vonn, this is the first career-spanning documentary film chronicling the life of Picabo Street..."
+     },
+     {
+      "id": "E3",
+      "claim": "Picabo Street won Olympic gold in the 1998 Super-G, silver in the 1994 Downhill, and consecutive World Cup downhill season titles in 1995 and 1996.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Picabo_Street",
+      "observedAt": "August 2026",
+      "sourceType": "secondary",
+      "sourceTitle": "Picabo Street Wikipedia"
+     },
+     {
+      "id": "E7",
+      "claim": "Street engaged in high-visibility promotional content for NBC during the Milano Cortina 2026 Olympics, including a featured skiing lesson segment with Snoop Dogg.",
+      "sourceUrl": "https://www.youtube.com",
+      "observedAt": "February 10, 2026",
+      "sourceType": "official",
+      "sourceTitle": "Snoop Dogg learns how to ski with Picabo Street at the Milan Cortina Winter Olympics"
+     }
+    ],
+    "components": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "value": 60,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "value": 55,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "value": 75,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "value": 70,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 69.5,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:10.473Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#cultural_relevance.search_interest",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#cultural_relevance.social_conversation",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#cultural_relevance.media_source_quality",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#cultural_relevance.crossover_recognition",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#cultural_relevance.media_volume_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#cultural_relevance.search_interest",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#cultural_relevance.social_conversation",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#cultural_relevance.media_source_quality",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#cultural_relevance.crossover_recognition",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#cultural_relevance.media_volume_percentile",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.narrative_power",
+    "direction": "strength",
+    "rationale": {
+     "value": "Her narrative power is exceptionally strong, characterized by an instantly memorable identity, deep personal struggles, and incredible resilience. Her transition from a rebellious, unnamed child in Idaho to a legendary Olympic champion who overcame severe physical trauma is highly compelling. This authentic and deep story translates seamlessly into powerful, inspirational brand messaging.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:10.473Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6"
+     ],
+     "rationale": "The narrative is thoroughly detailed in her autobiography and was the centerpiece of a major career-spanning feature documentary co-produced by Lindsey Vonn.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "The narrative is thoroughly detailed in her autobiography and was the centerpiece of a major career-spanning feature documentary co-produced by Lindsey Vonn.",
+    "citedEvidence": [
+     {
+      "id": "E2",
+      "claim": "The career-spanning documentary 'PICABO', co-directed by Frank Marshall and Lindsey Vonn, premiered on Peacock in January 2022.",
+      "sourceUrl": "https://www.staytunedmag.com",
+      "observedAt": "January 21, 2022",
+      "sourceType": "major_media",
+      "sourceTitle": "From codirectors and executive producers Frank Marshall and Lindsey Vonn, this is the first career-spanning documentary film chronicling the life of Picabo Street..."
+     },
+     {
+      "id": "E3",
+      "claim": "Picabo Street won Olympic gold in the 1998 Super-G, silver in the 1994 Downhill, and consecutive World Cup downhill season titles in 1995 and 1996.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Picabo_Street",
+      "observedAt": "August 2026",
+      "sourceType": "secondary",
+      "sourceTitle": "Picabo Street Wikipedia"
+     },
+     {
+      "id": "E4",
+      "claim": "Picabo Street runs the Picabo Street Academy in Park City, Utah, partnering with major brands like Stifel, Hydro Flask, Comcast/Xfinity, Wildhorn, Kappa, and Cloudflare.",
+      "sourceUrl": "https://mn2s.com",
+      "observedAt": "September 2026",
+      "sourceType": "secondary",
+      "sourceTitle": "Picabo Street MN2S Booking Bio & Partners"
+     },
+     {
+      "id": "E5",
+      "claim": "Domestic violence and assault charges against Picabo Street were fully dismissed by a Utah judge in March 2016.",
+      "sourceUrl": "https://www.cbsnews.com",
+      "observedAt": "March 28, 2016",
+      "sourceType": "major_media",
+      "sourceTitle": "Judge dismisses charges against skier Picabo Street"
+     },
+     {
+      "id": "E6",
+      "claim": "Picabo Street commands keynotes and speaking engagement fees ranging from $20,000 to $50,000.",
+      "sourceUrl": "https://www.allamericanspeakers.com",
+      "observedAt": "September 17, 2026",
+      "sourceType": "secondary",
+      "sourceTitle": "Picabo Street Speaker Booking Details"
+     }
+    ],
+    "components": [
+     {
+      "key": "narrative_power.durability",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "value": 78,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 88.8,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:10.473Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#narrative_power.durability",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#narrative_power.story_depth",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#narrative_power.distinctiveness",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#narrative_power.media_resonance",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#narrative_power.evidence_authenticity",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#narrative_power.commercial_applicability"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#narrative_power.durability",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#narrative_power.story_depth",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#narrative_power.distinctiveness",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#narrative_power.media_resonance",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#narrative_power.evidence_authenticity",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#narrative_power.commercial_applicability",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.brand_fit",
+    "direction": "neutral",
+    "rationale": {
+     "value": "Street is a highly attractive partner for brands seeking to align with themes of resilience, active lifestyle longevity, and youth development. She represents highly clear, coherent values and is geographically powerful in affluent winter sports hubs. Her 2015 arrest has been fully resolved and integrated into her personal development story, leaving her as a safe, mainstream-cleared asset.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:10.473Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E4",
+      "E5",
+      "E6"
+     ],
+     "rationale": "The court's dismissal of her 2015 charges is a matter of public record, and her active corporate partners and NBC analyst role confirm her commercial safety.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "The court's dismissal of her 2015 charges is a matter of public record, and her active corporate partners and NBC analyst role confirm her commercial safety.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Picabo Street debuted as an NBC sports analyst and women's hill reporter for the Milano Cortina 2026 Olympic Winter Games.",
+      "sourceUrl": "https://www.nbcsports.com",
+      "observedAt": "February 2026",
+      "sourceType": "official",
+      "sourceTitle": "PICABO STREET (Olympics) - Women's Hill Reporter"
+     },
+     {
+      "id": "E2",
+      "claim": "The career-spanning documentary 'PICABO', co-directed by Frank Marshall and Lindsey Vonn, premiered on Peacock in January 2022.",
+      "sourceUrl": "https://www.staytunedmag.com",
+      "observedAt": "January 21, 2022",
+      "sourceType": "major_media",
+      "sourceTitle": "From codirectors and executive producers Frank Marshall and Lindsey Vonn, this is the first career-spanning documentary film chronicling the life of Picabo Street..."
+     },
+     {
+      "id": "E4",
+      "claim": "Picabo Street runs the Picabo Street Academy in Park City, Utah, partnering with major brands like Stifel, Hydro Flask, Comcast/Xfinity, Wildhorn, Kappa, and Cloudflare.",
+      "sourceUrl": "https://mn2s.com",
+      "observedAt": "September 2026",
+      "sourceType": "secondary",
+      "sourceTitle": "Picabo Street MN2S Booking Bio & Partners"
+     },
+     {
+      "id": "E5",
+      "claim": "Domestic violence and assault charges against Picabo Street were fully dismissed by a Utah judge in March 2016.",
+      "sourceUrl": "https://www.cbsnews.com",
+      "observedAt": "March 28, 2016",
+      "sourceType": "major_media",
+      "sourceTitle": "Judge dismisses charges against skier Picabo Street"
+     },
+     {
+      "id": "E6",
+      "claim": "Picabo Street commands keynotes and speaking engagement fees ranging from $20,000 to $50,000.",
+      "sourceUrl": "https://www.allamericanspeakers.com",
+      "observedAt": "September 17, 2026",
+      "sourceType": "secondary",
+      "sourceTitle": "Picabo Street Speaker Booking Details"
+     }
+    ],
+    "components": [
+     {
+      "key": "brand_fit.brand_safety",
+      "value": 68,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "value": 75,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "value": 65,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "value": 75,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "value": 75,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 74.1,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:10.473Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.brand_safety",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.category_breadth",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.content_versatility",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.geographic_relevance",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.audience_attractiveness",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.identity_values_coherence"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.brand_safety",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.category_breadth",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.content_versatility",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.geographic_relevance",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.audience_attractiveness",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.identity_values_coherence",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.commercial_proof",
+    "direction": "neutral",
+    "rationale": {
+     "value": "Street provides robust commercial proof through premium speaking fees and long-term brand integrations. She consistently commands between $20,000 and $50,000 for live speaking engagements. Additionally, her educational venture, the Picabo Street Academy, maintains strategic sponsorships with premium corporations.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:10.473Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E4",
+      "E6"
+     ],
+     "rationale": "Her standardized speaking rates are clearly documented by booking bureaus, and her academy's active brand partnerships are openly listed.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her standardized speaking rates are clearly documented by booking bureaus, and her academy's active brand partnerships are openly listed.",
+    "citedEvidence": [
+     {
+      "id": "E4",
+      "claim": "Picabo Street runs the Picabo Street Academy in Park City, Utah, partnering with major brands like Stifel, Hydro Flask, Comcast/Xfinity, Wildhorn, Kappa, and Cloudflare.",
+      "sourceUrl": "https://mn2s.com",
+      "observedAt": "September 2026",
+      "sourceType": "secondary",
+      "sourceTitle": "Picabo Street MN2S Booking Bio & Partners"
+     },
+     {
+      "id": "E6",
+      "claim": "Picabo Street commands keynotes and speaking engagement fees ranging from $20,000 to $50,000.",
+      "sourceUrl": "https://www.allamericanspeakers.com",
+      "observedAt": "September 17, 2026",
+      "sourceType": "secondary",
+      "sourceTitle": "Picabo Street Speaker Booking Details"
+     }
+    ],
+    "components": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "value": 75,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "value": 70,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "value": 60,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "value": 65,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "value": 70,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 66,
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-09-13T22:41:10.473Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.brand_quality",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.pricing_power",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.deal_frequency",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.renewals_repeat",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.campaign_performance",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.verified_commercial_value"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 1,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.brand_quality",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.pricing_power",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.deal_frequency",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.renewals_repeat",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.campaign_performance",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.verified_commercial_value",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.momentum",
+    "direction": "neutral",
+    "rationale": {
+     "value": "Street is experiencing a positive cyclical wave of momentum, catalyzed by her prominent broadcasting debut during the Milano Cortina 2026 Winter Olympics. This role significantly elevated her cultural visibility and generated notable public interest. Her commercial standing remains highly stable, anchored by her established legacy and educational initiatives.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:41:10.473Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E3",
+      "E4",
+      "E7"
+     ],
+     "rationale": "Her recent high-profile NBC analyst work and public media presence in 2026 are highly fresh and strongly verified.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her recent high-profile NBC analyst work and public media presence in 2026 are highly fresh and strongly verified.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Picabo Street debuted as an NBC sports analyst and women's hill reporter for the Milano Cortina 2026 Olympic Winter Games.",
+      "sourceUrl": "https://www.nbcsports.com",
+      "observedAt": "February 2026",
+      "sourceType": "official",
+      "sourceTitle": "PICABO STREET (Olympics) - Women's Hill Reporter"
+     },
+     {
+      "id": "E3",
+      "claim": "Picabo Street won Olympic gold in the 1998 Super-G, silver in the 1994 Downhill, and consecutive World Cup downhill season titles in 1995 and 1996.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Picabo_Street",
+      "observedAt": "August 2026",
+      "sourceType": "secondary",
+      "sourceTitle": "Picabo Street Wikipedia"
+     },
+     {
+      "id": "E4",
+      "claim": "Picabo Street runs the Picabo Street Academy in Park City, Utah, partnering with major brands like Stifel, Hydro Flask, Comcast/Xfinity, Wildhorn, Kappa, and Cloudflare.",
+      "sourceUrl": "https://mn2s.com",
+      "observedAt": "September 2026",
+      "sourceType": "secondary",
+      "sourceTitle": "Picabo Street MN2S Booking Bio & Partners"
+     },
+     {
+      "id": "E7",
+      "claim": "Street engaged in high-visibility promotional content for NBC during the Milano Cortina 2026 Olympics, including a featured skiing lesson segment with Snoop Dogg.",
+      "sourceUrl": "https://www.youtube.com",
+      "observedAt": "February 10, 2026",
+      "sourceType": "official",
+      "sourceTitle": "Snoop Dogg learns how to ski with Picabo Street at the Milan Cortina Winter Olympics"
+     }
+    ],
+    "components": [
+     {
+      "key": "momentum.audience_growth",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "value": 75,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "value": 40,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "value": 60,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "value": 65,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 55.25,
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-09-13T22:41:10.473Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.audience_growth",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.media_trajectory",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.athletic_trajectory",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.commercial_acceleration",
+      "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.search_social_trajectory"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 1,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.audience_growth",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.media_trajectory",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.athletic_trajectory",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.commercial_acceleration",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     },
+     {
+      "source": "mia",
+      "locator": "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.search_social_trajectory",
+      "asOf": "2026-09-13T22:41:10.473Z"
+     }
+    ]
+   }
+  ],
+  "audienceTrajectory": {
+   "value": null,
+   "owner": "athlete_intelligence",
+   "asOf": "2026-09-25T20:34:09.496Z",
+   "evidenceClass": "MISSING",
+   "reason": "no growth measurement on any platform"
+  },
+  "commercialPosition": {
+   "closedDeals": {
+    "value": 0,
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-25T20:34:09.496Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "count_deals_at_earned_status"
+   },
+   "activeRelationships": {
+    "value": [],
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-25T20:34:09.496Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "distinct_brand_at_earned_status"
+   },
+   "demonstratedEconomics": {
+    "value": null,
+    "owner": "athlete_state",
+    "asOf": "2026-09-25T20:34:09.496Z",
+    "evidenceClass": "MISSING",
+    "reason": "no closed deal carries an amount"
+   },
+   "pricingEvidence": "none",
+   "pipeline": {
+    "value": {
+     "detected": 0,
+     "negotiating": 0,
+     "rejected": 0,
+     "accepted": 0,
+     "completed": 0
+    },
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-25T20:34:09.496Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "count_deals_by_status"
+   },
+   "inbound": []
+  },
+  "constraints": [],
+  "preferences": [],
+  "audience": [],
+  "contentPerformance": [],
+  "representation": null,
+  "dates": [],
+  "materialGaps": [
+   "Private social media metrics (engagement rates, video retention, reach efficiency, and audience demographics).",
+   "Direct ROI and conversion performance data for her commercial campaigns."
+  ],
+  "overallConfidence": "LOW",
+  "sources": [
+   {
+    "owner": "marketability",
+    "present": true,
+    "asOf": "2026-09-13T22:41:10.473Z"
+   },
+   {
+    "owner": "athlete_intelligence",
+    "present": false,
+    "asOf": null
+   },
+   {
+    "owner": "athlete_state",
+    "present": true,
+    "asOf": "2026-09-25T20:34:09.496Z"
+   }
+  ]
+ },
+ "map": {
+  "athleteId": "0ab6c9fc-9cad-40cd-8245-0cd69f8bf331",
+  "asOf": "2026-09-25T20:34:49.614Z",
+  "version": "opportunity-map/1.0.0",
+  "specVersion": "opportunity-eval-spec/1.0.0",
+  "stateAsOf": "2026-09-25T20:34:09.496Z",
+  "opportunities": [
+   {
+    "key": "unlock-private-audience-metrics",
+    "kind": "UNLOCK",
+    "domain": "evidence",
+    "statement": {
+     "value": "Secure connection to Picabo's private social media analytics to resolve the data gap regarding her audience engagement and demographics.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-25T20:34:09.496Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "findings[mia.engagement_quality]",
+      "materialGaps[0]"
+     ],
+     "rationale": "Nomila cannot currently evaluate her direct audience engagement quality (marked UNKNOWN) due to a complete lack of connected social media platforms and backend metrics, which is a key material gap. Unlocking this data will allow for evidence-backed brand pitching.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "findings[mia.engagement_quality]",
+      "how": "Documents that backend engagement data is completely missing and rated UNKNOWN due to the lack of connected social media platforms."
+     },
+     {
+      "statePath": "materialGaps[0]",
+      "how": "Explicitly lists private social media metrics (engagement, demographics) as a primary material gap."
+     }
+    ],
+    "impact": {
+     "level": "high",
+     "claim": "Resolves a major blind spot, transforming her digital profile from UNKNOWN to a verified, pitchable asset for data-driven commercial opportunities."
+    },
+    "feasibility": {
+     "level": "high",
+     "claim": "Requires only a secure Oauth connection of her existing Instagram and Facebook accounts to Nomila, asking minimal time from the athlete."
+    },
+    "urgency": null,
+    "confidence": "HIGH"
+   },
+   {
+    "key": "amplify-academy-commercial-partnerships",
+    "kind": "AMPLIFY",
+    "domain": "owned_venture",
+    "statement": {
+     "value": "Expand and scale corporate sponsorship integrations through her established Picabo Street Academy.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-25T20:34:09.496Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "findings[mia.commercial_proof]",
+      "findings[mia.brand_fit]"
+     ],
+     "rationale": "The academy is a highly successful, active owned venture that already acts as a robust commercial vehicle, successfully partnering with premium sponsors like Stifel, Hydro Flask, and Comcast/Xfinity.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "findings[mia.commercial_proof]",
+      "how": "Confirms the academy maintains strategic, premium corporate sponsorships."
+     },
+     {
+      "statePath": "findings[mia.brand_fit]",
+      "how": "Lists her active blue-chip academy partners including Stifel, Hydro Flask, Comcast/Xfinity, Wildhorn, Kappa, and Cloudflare."
+     }
+    ],
+    "impact": {
+     "level": "high",
+     "claim": "Scales her largest active owned enterprise, driving higher revenue and deeper commercial integration with top-tier brands."
+    },
+    "feasibility": {
+     "level": "medium",
+     "claim": "Requires coordinating with her existing academy administrative structure to develop new corporate sponsorship tiers or activation opportunities."
+    },
+    "urgency": null,
+    "confidence": "HIGH"
+   },
+   {
+    "key": "amplify-olympic-broadcasting-momentum",
+    "kind": "AMPLIFY",
+    "domain": "career",
+    "statement": {
+     "value": "Leverage her high-profile 2026 Olympic broadcasting momentum to secure year-round winter sports analyst and media commentator roles.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-25T20:34:09.496Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "findings[mia.athletic_authority]",
+      "findings[mia.cultural_relevance]",
+      "findings[mia.momentum]"
+     ],
+     "rationale": "Her highly successful broadcast debut and promotional segments (such as the viral lesson with Snoop Dogg) during the Milano Cortina 2026 Winter Olympics refreshed her cultural relevance and demonstrated her strong on-camera performance.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "findings[mia.athletic_authority]",
+      "how": "Documents her successful debut and active role as NBC's women's hill reporter during the Milano Cortina 2026 Olympic Winter Games."
+     },
+     {
+      "statePath": "findings[mia.cultural_relevance]",
+      "how": "Details her high-visibility promotional content for NBC, including the featured skiing lesson segment with Snoop Dogg."
+     },
+     {
+      "statePath": "findings[mia.momentum]",
+      "how": "Explains that she is experiencing a positive cyclical wave of momentum catalyzed by this broadcasting role."
+     }
+    ],
+    "impact": {
+     "level": "high",
+     "claim": "Establishes a sustainable, recurring media presence that maintains her cultural visibility outside of cyclical Olympic years."
+    },
+    "feasibility": {
+     "level": "medium",
+     "claim": "Requires proactive outreach to sports networks and winter sports broadcasters to pitch her for year-round commentary, leveraging her proven 2026 NBC success."
+    },
+    "urgency": {
+     "level": "medium",
+     "claim": "Her 2026 Olympic media presence is highly fresh but represents a cyclical wave that will naturally cool without prompt post-games capitalization."
+    },
+    "confidence": "HIGH"
+   },
+   {
+    "key": "grow-direct-audience-footprint",
+    "kind": "GROW",
+    "domain": "audience",
+    "statement": {
+     "value": "Establish a structured presence on missing high-reach digital platforms like TikTok and X to grow her direct social footprint.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-25T20:34:09.496Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "findings[mia.audience_scale]"
+     ],
+     "rationale": "While she commands massive indirect reach via national television, her direct personal social media scale is a GAP, constrained by her small Instagram/Facebook following and absence on other key networks.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "findings[mia.audience_scale]",
+      "how": "Identifies her limited direct personal social media footprint and absence on TikTok and X as key factors limiting her platform breadth and digital scale."
+     }
+    ],
+    "impact": {
+     "level": "medium",
+     "claim": "Bridges the gap between her massive television audience and modest personal digital following, making her a more versatile partner for modern digital campaigns."
+    },
+    "feasibility": {
+     "level": "low",
+     "claim": "The athlete is not a digital-first creator, meaning setting up and consistently content-producing for multiple new platforms requires high effort or dedicated management."
+    },
+    "urgency": null,
+    "confidence": "HIGH"
+   }
+  ],
+  "notes": [
+   "positioning: Her positioning is exceptionally strong, clear, and durable. Her historical legacy is well-complemented by her resolved 2015 legal matter, leaving her as a safe, mainstream-cleared household name that requires no immediate positioning fixes or strategic realignments.",
+   "athletic: Her athletic career is inactive (retired from competition since 2002), meaning athletic performance, selection, or competitive trajectory are not active strategic domains for her enterprise.",
+   "commercial: While her speaking engagement pricing power is robust, Nomila cannot confidently recommend new personal commercial deals due to a complete lack of active closed deals, pipeline data, and ROI performance metrics (materialGaps[1]). Commercial expansion is gated by resolving evidence gaps.",
+   "relationships: There are no active relationships or inbound signals recorded in the athlete's current state to support targeted opportunities in this domain.",
+   "impact: No separate philanthropic initiatives are recorded in her profile, outside of her youth development academy which is already captured under owned_venture.",
+   "content: No social content metrics or formats are monitored by Nomila, meaning we cannot make content recommendations until audience insights (evidence) are unlocked."
+  ],
+  "inputs": [
+   {
+    "kind": "athlete_state",
+    "version": "athlete-state/1.2.0",
+    "present": true
+   },
+   {
+    "kind": "strategy_intelligence",
+    "version": null,
+    "present": false
+   },
+   {
+    "kind": "targeted_research",
+    "version": null,
+    "present": false
+   }
+  ],
+  "overallConfidence": "LOW"
+ },
+ "record": {
+  "evaluatorSpec": "objective-eval-spec/1.0.3",
+  "canonicalSha256": "16627fb2e54e6a905c57b7a7fe631659ca517a7aacd7f2b59c13a4d7c772ef4d",
+  "manifest": {
+   "evaluatorSpec": "objective-eval-spec/1.0.3",
+   "promptDigest": "16627fb2e54e6a905c57b7a7fe631659ca517a7aacd7f2b59c13a4d7c772ef4d"
+  },
+  "promptSha256": "74b0f35743203a7deee46f03e3c52539c921ba4514e2883177e4ae6787cf3b69",
+  "athlete": {
+   "id": "0ab6c9fc-9cad-40cd-8245-0cd69f8bf331",
+   "name": "Picabo Street"
+  },
+  "stateAsOf": "2026-09-25T20:34:09.496Z",
+  "opportunityMapAsOf": "2026-09-25T20:34:49.614Z",
+  "stateBlock": "Nomila's account of this athlete as of 2026-09-25T20:34:09.496Z (athlete-state/1.2.0).\nOverall confidence in this picture: LOW.\n\nCite any line below by the path shown at its left.\n\nIDENTITY\n    identity.name                             Picabo Street\n    identity.sport                            alpine skiing\n    identity.competitionContext               not recorded\n    identity.careerStatus                     active\n\nFINDINGS — marketability dimensions, each judged by M.I.A. and read here unchanged.\n  STRENGTH  measured, above the band\n  GAP       measured, below the band\n  NEUTRAL   MEASURED and unremarkable. We know; it is simply ordinary. This is NOT missing evidence.\n  UNKNOWN   evidence is genuinely insufficient — no score, or mostly imputed signals. A statement about\n            what Nomila has measured, never about the athlete.\n\n  Each finding may carry WHY M.I.A. concluded it and WHICH SOURCES it relied on. Read those as the\n  evaluator's interpretation and the evidence behind it — NOT as established fact about the athlete.\n\n    findings[mia.athletic_authority]          STRENGTH  score 80.5    HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Picabo Street maintains an exceptional legacy of athletic authority. Although retired since\n          2002, her historical achievements as an Olympic gold medalist and back-to-back downhill World\n          Cup champion command enduring respect. Her ongoing authority is preserved and refreshed through\n          her prominent broadcasting role as NBC's women's hill reporter during the Milano Cortina 2026\n          Olympic Winter Games.\n          confidence HIGH — Her extensive historical record and her highly active 2026 NBC broadcasting role are thoroughly documented by official Olympic and network channels.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  official · February 2026  Picabo Street debuted as an NBC sports analyst and women's hill reporter for the Milano Cortina 2026 Olympic Winter Games.\n              https://www.nbcsports.com\n          E2  major_media · January 21, 2022  The career-spanning documentary 'PICABO', co-directed by Frank Marshall and Lindsey Vonn, premiered on Peacock in January 2022.\n              https://www.staytunedmag.com\n          E3  secondary · August 2026  Picabo Street won Olympic gold in the 1998 Super-G, silver in the 1994 Downhill, and consecutive World Cup downhill season titles in 1995 and 1996.\n              https://en.wikipedia.org/wiki/Picabo_Street\n        COMPONENTS  role_importance=80 [EVALUATED]  competition_level=85 [EVALUATED]  achievement_recency=30 [EVALUATED]  performance_results=88 [EVALUATED]  rankings_recognition=85 [EVALUATED]  national_international_status=90 [EVALUATED]\n\n    findings[mia.audience_scale]              GAP       score 37.5    MEDIUM  1/4 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Street operates with a highly limited direct personal social media footprint. Her combined\n          audience across Instagram and Facebook is small, representing a modest niche compared to modern,\n          active alpine stars. However, she gains massive indirect reach through major television\n          broadcasts and national media coverage.\n          confidence MEDIUM — Her public social profile follower counts are clear, but her lack of presence on key digital platforms like TikTok and X limits full platform visibility.\n        SOURCE EVIDENCE M.I.A. CITED\n          E3  secondary · August 2026  Picabo Street won Olympic gold in the 1998 Super-G, silver in the 1994 Downhill, and consecutive World Cup downhill season titles in 1995 and 1996.\n              https://en.wikipedia.org/wiki/Picabo_Street\n          E4  secondary · September 2026  Picabo Street runs the Picabo Street Academy in Park City, Utah, partnering with major brands like Stifel, Hydro Flask, Comcast/Xfinity, Wildhorn, Kappa, and Cloudflare.\n              https://mn2s.com\n        COMPONENTS  audience_growth=50 [ASSUMED]  platform_breadth=25 [EVALUATED]  cross_platform_effective_reach=35 [EVALUATED]  sport_level_audience_percentile=40 [EVALUATED]\n\n    findings[mia.engagement_quality]          UNKNOWN   score 50      LOW     5/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          A lack of private and detailed analytic data prevents a precise evaluation of Street's direct\n          digital audience engagement. Qualitatively, her small following is highly organic, consisting of\n          dedicated winter sports fans and generational admirers, though she is not a digital-first\n          content creator.\n          confidence LOW — Essential back-end engagement data is completely missing due to the lack of connected social media platforms.\n        SOURCE EVIDENCE M.I.A. CITED\n          E4  secondary · September 2026  Picabo Street runs the Picabo Street Academy in Park City, Utah, partnering with major brands like Stifel, Hydro Flask, Comcast/Xfinity, Wildhorn, Kappa, and Cloudflare.\n              https://mn2s.com\n        COMPONENTS  video_retention=50 [ASSUMED]  reach_efficiency=50 [ASSUMED]  story_efficiency=50 [ASSUMED]  shares_saves_quality=50 [ASSUMED]  audience_authenticity=50 [EVALUATED]  engagement_percentile=50 [ASSUMED]\n\n    findings[mia.cultural_relevance]          NEUTRAL   score 69.5    HIGH    0/5 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Street holds strong, enduring cultural relevance in the American landscape. Her unique name and\n          charismatic personality have cemented her as a household name from the 1990s, which is regularly\n          reactivated during Winter Olympic cycles. The launch of her 2022 career documentary and her\n          highly-publicized NBC broadcast segments in 2026 keep her culturally visible.\n          confidence HIGH — Persistent national coverage from major outlets, along with recent prime-time Olympic broadcasts, provides deep and consistent evidence of her cultural footprint.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  official · February 2026  Picabo Street debuted as an NBC sports analyst and women's hill reporter for the Milano Cortina 2026 Olympic Winter Games.\n              https://www.nbcsports.com\n          E2  major_media · January 21, 2022  The career-spanning documentary 'PICABO', co-directed by Frank Marshall and Lindsey Vonn, premiered on Peacock in January 2022.\n              https://www.staytunedmag.com\n          E3  secondary · August 2026  Picabo Street won Olympic gold in the 1998 Super-G, silver in the 1994 Downhill, and consecutive World Cup downhill season titles in 1995 and 1996.\n              https://en.wikipedia.org/wiki/Picabo_Street\n          E7  official · February 10, 2026  Street engaged in high-visibility promotional content for NBC during the Milano Cortina 2026 Olympics, including a featured skiing lesson segment with Snoop Dogg.\n              https://www.youtube.com\n        COMPONENTS  search_interest=60 [EVALUATED]  social_conversation=55 [EVALUATED]  media_source_quality=85 [EVALUATED]  crossover_recognition=75 [EVALUATED]  media_volume_percentile=70 [EVALUATED]\n\n    findings[mia.narrative_power]             STRENGTH  score 88.8    HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Her narrative power is exceptionally strong, characterized by an instantly memorable identity,\n          deep personal struggles, and incredible resilience. Her transition from a rebellious, unnamed\n          child in Idaho to a legendary Olympic champion who overcame severe physical trauma is highly\n          compelling. This authentic and deep story translates seamlessly into powerful, inspirational\n          brand messaging.\n          confidence HIGH — The narrative is thoroughly detailed in her autobiography and was the centerpiece of a major career-spanning feature documentary co-produced by Lindsey Vonn.\n        SOURCE EVIDENCE M.I.A. CITED\n          E2  major_media · January 21, 2022  The career-spanning documentary 'PICABO', co-directed by Frank Marshall and Lindsey Vonn, premiered on Peacock in January 2022.\n              https://www.staytunedmag.com\n          E3  secondary · August 2026  Picabo Street won Olympic gold in the 1998 Super-G, silver in the 1994 Downhill, and consecutive World Cup downhill season titles in 1995 and 1996.\n              https://en.wikipedia.org/wiki/Picabo_Street\n          E4  secondary · September 2026  Picabo Street runs the Picabo Street Academy in Park City, Utah, partnering with major brands like Stifel, Hydro Flask, Comcast/Xfinity, Wildhorn, Kappa, and Cloudflare.\n              https://mn2s.com\n          E5  major_media · March 28, 2016  Domestic violence and assault charges against Picabo Street were fully dismissed by a Utah judge in March 2016.\n              https://www.cbsnews.com\n          E6  secondary · September 17, 2026  Picabo Street commands keynotes and speaking engagement fees ranging from $20,000 to $50,000.\n              https://www.allamericanspeakers.com\n        COMPONENTS  durability=85 [EVALUATED]  story_depth=90 [EVALUATED]  distinctiveness=95 [EVALUATED]  media_resonance=85 [EVALUATED]  evidence_authenticity=90 [EVALUATED]  commercial_applicability=78 [EVALUATED]\n\n    findings[mia.brand_fit]                   NEUTRAL   score 74.1    HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Street is a highly attractive partner for brands seeking to align with themes of resilience,\n          active lifestyle longevity, and youth development. She represents highly clear, coherent values\n          and is geographically powerful in affluent winter sports hubs. Her 2015 arrest has been fully\n          resolved and integrated into her personal development story, leaving her as a safe,\n          mainstream-cleared asset.\n          confidence HIGH — The court's dismissal of her 2015 charges is a matter of public record, and her active corporate partners and NBC analyst role confirm her commercial safety.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  official · February 2026  Picabo Street debuted as an NBC sports analyst and women's hill reporter for the Milano Cortina 2026 Olympic Winter Games.\n              https://www.nbcsports.com\n          E2  major_media · January 21, 2022  The career-spanning documentary 'PICABO', co-directed by Frank Marshall and Lindsey Vonn, premiered on Peacock in January 2022.\n              https://www.staytunedmag.com\n          E4  secondary · September 2026  Picabo Street runs the Picabo Street Academy in Park City, Utah, partnering with major brands like Stifel, Hydro Flask, Comcast/Xfinity, Wildhorn, Kappa, and Cloudflare.\n              https://mn2s.com\n          E5  major_media · March 28, 2016  Domestic violence and assault charges against Picabo Street were fully dismissed by a Utah judge in March 2016.\n              https://www.cbsnews.com\n          E6  secondary · September 17, 2026  Picabo Street commands keynotes and speaking engagement fees ranging from $20,000 to $50,000.\n              https://www.allamericanspeakers.com\n        COMPONENTS  brand_safety=68 [EVALUATED]  category_breadth=75 [EVALUATED]  content_versatility=65 [EVALUATED]  geographic_relevance=75 [EVALUATED]  audience_attractiveness=75 [EVALUATED]  identity_values_coherence=85 [EVALUATED]\n\n    findings[mia.commercial_proof]            NEUTRAL   score 66      MEDIUM  1/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Street provides robust commercial proof through premium speaking fees and long-term brand\n          integrations. She consistently commands between $20,000 and $50,000 for live speaking\n          engagements. Additionally, her educational venture, the Picabo Street Academy, maintains\n          strategic sponsorships with premium corporations.\n          confidence HIGH — Her standardized speaking rates are clearly documented by booking bureaus, and her academy's active brand partnerships are openly listed.\n        SOURCE EVIDENCE M.I.A. CITED\n          E4  secondary · September 2026  Picabo Street runs the Picabo Street Academy in Park City, Utah, partnering with major brands like Stifel, Hydro Flask, Comcast/Xfinity, Wildhorn, Kappa, and Cloudflare.\n              https://mn2s.com\n          E6  secondary · September 17, 2026  Picabo Street commands keynotes and speaking engagement fees ranging from $20,000 to $50,000.\n              https://www.allamericanspeakers.com\n        COMPONENTS  brand_quality=75 [EVALUATED]  pricing_power=70 [EVALUATED]  deal_frequency=60 [EVALUATED]  renewals_repeat=65 [EVALUATED]  campaign_performance=50 [ASSUMED]  verified_commercial_value=70 [EVALUATED]\n\n    findings[mia.momentum]                    NEUTRAL   score 55.25   MEDIUM  1/5 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Street is experiencing a positive cyclical wave of momentum, catalyzed by her prominent\n          broadcasting debut during the Milano Cortina 2026 Winter Olympics. This role significantly\n          elevated her cultural visibility and generated notable public interest. Her commercial standing\n          remains highly stable, anchored by her established legacy and educational initiatives.\n          confidence HIGH — Her recent high-profile NBC analyst work and public media presence in 2026 are highly fresh and strongly verified.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  official · February 2026  Picabo Street debuted as an NBC sports analyst and women's hill reporter for the Milano Cortina 2026 Olympic Winter Games.\n              https://www.nbcsports.com\n          E3  secondary · August 2026  Picabo Street won Olympic gold in the 1998 Super-G, silver in the 1994 Downhill, and consecutive World Cup downhill season titles in 1995 and 1996.\n              https://en.wikipedia.org/wiki/Picabo_Street\n          E4  secondary · September 2026  Picabo Street runs the Picabo Street Academy in Park City, Utah, partnering with major brands like Stifel, Hydro Flask, Comcast/Xfinity, Wildhorn, Kappa, and Cloudflare.\n              https://mn2s.com\n          E7  official · February 10, 2026  Street engaged in high-visibility promotional content for NBC during the Milano Cortina 2026 Olympics, including a featured skiing lesson segment with Snoop Dogg.\n              https://www.youtube.com\n        COMPONENTS  audience_growth=50 [ASSUMED]  media_trajectory=75 [EVALUATED]  athletic_trajectory=40 [EVALUATED]  commercial_acceleration=60 [EVALUATED]  search_social_trajectory=65 [EVALUATED]\n\nAUDIENCE TRAJECTORY — follower growth only. It says nothing about athletic or commercial direction.\n    audienceTrajectory                        not known (no growth measurement on any platform)\n\nCOMMERCIAL POSITION — what the market has actually paid. Counted, never estimated.\n    commercialPosition.closedDeals            0  [measured · HIGH confidence]\n    commercialPosition.activeRelationships    []  [measured · HIGH confidence]\n    commercialPosition.demonstratedEconomics  not known (no closed deal carries an amount)\n    commercialPosition.pricingEvidence        none\n\nCOMMERCIAL PIPELINE — counts by state. `detected` means a brand made contact and nothing more.\n  Inbound interest is NOT a deal, NOT revenue and NOT an active relationship.\n    commercialPosition.pipeline               detected 0 · negotiating 0 · rejected 0 · accepted 0 · completed 0\n\nINBOUND SIGNALS — the athlete's own classified inbox, most recent first, capped. Demonstrated interest,\n  as classified by Nomila's inbox pipeline. A category is the classifier's label, not a commitment.\n    (no classified inbound threads)\n\nCONSTRAINTS — only what has been explicitly recorded as a bound on what the athlete can do.\n  An empty list means Nomila has recorded none. It does NOT mean none exist.\n    (none recorded)\n\nAUDIENCE — composition per platform, latest observation. Top buckets only.\n    (no audience composition is recorded on any platform)\n\nCONTENT PERFORMANCE — cadence and format, per platform, from Nomila's own measurement.\n    (no content performance is measured on any platform)\n\nREPRESENTATION & FLOORS — as the athlete stated them. A FLOOR IS NOT A MARKET VALUE; it is the least\n  she has said she would accept.\n    (the athlete has stated nothing about representation or floors)\n\nWHAT THE ATHLETE HAS SAID — their own words. A refusal bears on an opportunity; an ambition can generate one.\n  Never infer a preference or an ambition that is not listed here.\n  A stance is one of: wants | open | avoids | refuses — cite it in exactly that spelling.\n  A line marked ONBOARDING CHOICE was selected from a fixed set when the athlete joined. It is evidence of\n  intent at that time — she actually chose it — and it is NOT a current strategic objective.\n    (the athlete has stated nothing)\n\nDATES — recorded real-world dates that can bear on strategy, each with what it means. Only what is\n  populated; an empty list means none are recorded, not that none exist.\n    (none recorded)\n\nWHAT NOMILA CANNOT SEE — evidence we looked for and could not find. A research task, not a caveat.\n    materialGaps[0]                           Private social media metrics (engagement rates, video retention, reach efficiency, and audience demographics).\n    materialGaps[1]                           Direct ROI and conversion performance data for her commercial campaigns.\n\nSOURCES CONSULTED\n    marketability            present · as of 2026-09-13T22:41:10.473Z\n    athlete_intelligence     ABSENT\n    athlete_state            present · as of 2026-09-25T20:34:09.496Z",
+  "opportunityBlock": "Strategic openings identified as of 2026-09-25T20:34:49.614Z (opportunity-eval-spec/1.0.0), judged from the athlete state as of 2026-09-25T20:34:09.496Z.\nOverall confidence in this map: LOW.\n\nCite an opportunity by the key shown at its left. Every key below must appear exactly once in your output —\nin a proposal's from_opportunities, or in notes as consolidated (into a named proposal) or not_carried.\n\n    unlock-private-audience-metrics\n        UNLOCK · evidence · confidence HIGH\n        Secure connection to Picabo's private social media analytics to resolve the data gap regarding her audience engagement and demographics.\n        impact(high): Resolves a major blind spot, transforming her digital profile from UNKNOWN to a verified, pitchable asset for data-driven commercial opportunities.\n        feasibility(high): Requires only a secure Oauth connection of her existing Instagram and Facebook accounts to Nomila, asking minimal time from the athlete.\n        rests on: findings[mia.engagement_quality], materialGaps[0]\n\n    amplify-academy-commercial-partnerships\n        AMPLIFY · owned_venture · confidence HIGH\n        Expand and scale corporate sponsorship integrations through her established Picabo Street Academy.\n        impact(high): Scales her largest active owned enterprise, driving higher revenue and deeper commercial integration with top-tier brands.\n        feasibility(medium): Requires coordinating with her existing academy administrative structure to develop new corporate sponsorship tiers or activation opportunities.\n        rests on: findings[mia.commercial_proof], findings[mia.brand_fit]\n\n    amplify-olympic-broadcasting-momentum\n        AMPLIFY · career · confidence HIGH\n        Leverage her high-profile 2026 Olympic broadcasting momentum to secure year-round winter sports analyst and media commentator roles.\n        impact(high): Establishes a sustainable, recurring media presence that maintains her cultural visibility outside of cyclical Olympic years.\n        feasibility(medium): Requires proactive outreach to sports networks and winter sports broadcasters to pitch her for year-round commentary, leveraging her proven 2026 NBC success.\n        urgency(medium): Her 2026 Olympic media presence is highly fresh but represents a cyclical wave that will naturally cool without prompt post-games capitalization.\n        rests on: findings[mia.athletic_authority], findings[mia.cultural_relevance], findings[mia.momentum]\n\n    grow-direct-audience-footprint\n        GROW · audience · confidence HIGH\n        Establish a structured presence on missing high-reach digital platforms like TikTok and X to grow her direct social footprint.\n        impact(medium): Bridges the gap between her massive television audience and modest personal digital following, making her a more versatile partner for modern digital campaigns.\n        feasibility(low): The athlete is not a digital-first creator, meaning setting up and consistently content-producing for multiple new platforms requires high effort or dedicated management.\n        rests on: findings[mia.audience_scale]\n\nWhy other domains yielded nothing, per the Opportunity evaluator:\n    - positioning: Her positioning is exceptionally strong, clear, and durable. Her historical legacy is well-complemented by her resolved 2015 legal matter, leaving her as a safe, mainstream-cleared household name that requires no immediate positioning fixes or strategic realignments.\n    - athletic: Her athletic career is inactive (retired from competition since 2002), meaning athletic performance, selection, or competitive trajectory are not active strategic domains for her enterprise.\n    - commercial: While her speaking engagement pricing power is robust, Nomila cannot confidently recommend new personal commercial deals due to a complete lack of active closed deals, pipeline data, and ROI performance metrics (materialGaps[1]). Commercial expansion is gated by resolving evidence gaps.\n    - relationships: There are no active relationships or inbound signals recorded in the athlete's current state to support targeted opportunities in this domain.\n    - impact: No separate philanthropic initiatives are recorded in her profile, outside of her youth development academy which is already captured under owned_venture.\n    - content: No social content metrics or formats are monitored by Nomila, meaning we cannot make content recommendations until audience insights (evidence) are unlocked.",
+  "startedAt": "2026-09-27T04:39:03.087Z",
+  "latencyMs": 31724,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+   "promptTokens": 7941,
+   "outputTokens": 1041,
+   "thoughtTokens": 5114
+  },
+  "costUsd": 0.0177698,
+  "rawText": "```json\n{\n  \"proposals\": [\n    {\n      \"key\": \"academy-sponsorship-expansion\",\n      \"desired_state\": \"The Picabo Street Academy operates with an expanded portfolio of corporate sponsorships integrated into a formalized multi-tier partnership structure.\",\n      \"current_state\": \"Picabo Street runs the Picabo Street Academy in Park City, Utah, partnering with major brands like Stifel, Hydro Flask, Comcast/Xfinity, Wildhorn, Kappa, and Cloudflare.\",\n      \"rationale\": \"Scaling her established academy's corporate partnerships leverages her deep category credibility and strong regional alignment with affluent winter sports hubs to generate sustainable commercial value.\",\n      \"domain\": \"owned_venture\",\n      \"from_opportunities\": [\n        {\n          \"opportunity_key\": \"amplify-academy-commercial-partnerships\",\n          \"how\": \"Transforms her existing academy partnerships into a scalable corporate sponsorship program.\"\n        }\n      ],\n      \"from_athlete_intent\": [],\n      \"current_state_evidence\": [\n        {\n          \"state_path\": \"findings[mia.commercial_proof]\",\n          \"how\": \"Confirms her active role running the Picabo Street Academy and lists its premium corporate partners.\"\n        },\n        {\n          \"state_path\": \"findings[mia.brand_fit]\",\n          \"how\": \"Notes her geographic strength in affluent winter sports hubs and her attractiveness to brands focused on youth development.\"\n        }\n      ],\n      \"success\": {\n        \"observable_condition\": \"The Picabo Street Academy secures new active corporate sponsors or transitions existing ones into formalized multi-tier partnership agreements.\",\n        \"quantified\": null\n      },\n      \"horizon\": null,\n      \"athlete_stance\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"year-round-media-commentary\",\n      \"desired_state\": \"Picabo Street holds a recurring, year-round winter sports analyst or media commentator role with a major sports network.\",\n      \"current_state\": \"Picabo Street recently completed a prominent broadcasting role as NBC's women's hill reporter during the Milano Cortina 2026 Olympic Winter Games.\",\n      \"rationale\": \"Transitioning her cyclical Olympic broadcasting presence into year-round network placement preserves her high athletic authority and maintains national cultural visibility outside of Winter Olympic years.\",\n      \"domain\": \"career\",\n      \"from_opportunities\": [\n        {\n          \"opportunity_key\": \"amplify-olympic-broadcasting-momentum\",\n          \"how\": \"Capitalizes on her fresh 2026 Olympic broadcasting success to establish a sustainable, year-round commentator career.\"\n        }\n      ],\n      \"from_athlete_intent\": [],\n      \"current_state_evidence\": [\n        {\n          \"state_path\": \"findings[mia.athletic_authority]\",\n          \"how\": \"Documents her historical athletic legacy and her recent prominent role as NBC's women's hill reporter for the 2026 Winter Games.\"\n        },\n        {\n          \"state_path\": \"findings[mia.momentum]\",\n          \"how\": \"Highlights her positive cyclical momentum catalyzed by her high-visibility 2026 Olympic broadcasting debut.\"\n        }\n      ],\n      \"success\": {\n        \"observable_condition\": \"She is signed to a multi-event or year-round broadcast commentary contract with a national sports network.\",\n        \"quantified\": null\n      },\n      \"horizon\": {\n        \"period\": \"this_season\",\n        \"why\": \"Requires immediate strategic action to leverage her fresh 2026 Olympic media presence before the cyclical post-games momentum naturally cools.\"\n      },\n      \"athlete_stance\": null,\n      \"confidence\": \"HIGH\"\n    }\n  ],\n  \"notes\": [\n    {\n      \"opportunity_key\": \"unlock-private-audience-metrics\",\n      \"outcome\": \"not_carried\",\n      \"into\": null,\n      \"why\": \"Information acquisition, not an outcome. Securing Oauth credentials to resolve missing engagement data is an operational baseline update that does not change the athlete's real-world position, though it remains a necessary upstream step for future commercial campaigns.\"\n    },\n    {\n      \"opportunity_key\": \"grow-direct-audience-footprint\",\n      \"outcome\": \"not_carried\",\n      \"into\": null,\n      \"why\": \"The athlete is not a digital-first creator, and her direct digital audience is highly limited. Establishing and maintaining entirely new social channels on TikTok and X has low feasibility and diverts focus from her proven, high-impact broadcast and academy-led commercial strengths.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+   "proposals": [
+    {
+     "key": "academy-sponsorship-expansion",
+     "desired_state": "The Picabo Street Academy operates with an expanded portfolio of corporate sponsorships integrated into a formalized multi-tier partnership structure.",
+     "current_state": "Picabo Street runs the Picabo Street Academy in Park City, Utah, partnering with major brands like Stifel, Hydro Flask, Comcast/Xfinity, Wildhorn, Kappa, and Cloudflare.",
+     "rationale": "Scaling her established academy's corporate partnerships leverages her deep category credibility and strong regional alignment with affluent winter sports hubs to generate sustainable commercial value.",
+     "domain": "owned_venture",
+     "from_opportunities": [
+      {
+       "opportunity_key": "amplify-academy-commercial-partnerships",
+       "how": "Transforms her existing academy partnerships into a scalable corporate sponsorship program."
+      }
+     ],
+     "from_athlete_intent": [],
+     "current_state_evidence": [
+      {
+       "state_path": "findings[mia.commercial_proof]",
+       "how": "Confirms her active role running the Picabo Street Academy and lists its premium corporate partners."
+      },
+      {
+       "state_path": "findings[mia.brand_fit]",
+       "how": "Notes her geographic strength in affluent winter sports hubs and her attractiveness to brands focused on youth development."
+      }
+     ],
+     "success": {
+      "observable_condition": "The Picabo Street Academy secures new active corporate sponsors or transitions existing ones into formalized multi-tier partnership agreements.",
+      "quantified": null
+     },
+     "horizon": null,
+     "athlete_stance": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "year-round-media-commentary",
+     "desired_state": "Picabo Street holds a recurring, year-round winter sports analyst or media commentator role with a major sports network.",
+     "current_state": "Picabo Street recently completed a prominent broadcasting role as NBC's women's hill reporter during the Milano Cortina 2026 Olympic Winter Games.",
+     "rationale": "Transitioning her cyclical Olympic broadcasting presence into year-round network placement preserves her high athletic authority and maintains national cultural visibility outside of Winter Olympic years.",
+     "domain": "career",
+     "from_opportunities": [
+      {
+       "opportunity_key": "amplify-olympic-broadcasting-momentum",
+       "how": "Capitalizes on her fresh 2026 Olympic broadcasting success to establish a sustainable, year-round commentator career."
+      }
+     ],
+     "from_athlete_intent": [],
+     "current_state_evidence": [
+      {
+       "state_path": "findings[mia.athletic_authority]",
+       "how": "Documents her historical athletic legacy and her recent prominent role as NBC's women's hill reporter for the 2026 Winter Games."
+      },
+      {
+       "state_path": "findings[mia.momentum]",
+       "how": "Highlights her positive cyclical momentum catalyzed by her high-visibility 2026 Olympic broadcasting debut."
+      }
+     ],
+     "success": {
+      "observable_condition": "She is signed to a multi-event or year-round broadcast commentary contract with a national sports network.",
+      "quantified": null
+     },
+     "horizon": {
+      "period": "this_season",
+      "why": "Requires immediate strategic action to leverage her fresh 2026 Olympic media presence before the cyclical post-games momentum naturally cools."
+     },
+     "athlete_stance": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [
+    {
+     "opportunity_key": "unlock-private-audience-metrics",
+     "outcome": "not_carried",
+     "into": null,
+     "why": "Information acquisition, not an outcome. Securing Oauth credentials to resolve missing engagement data is an operational baseline update that does not change the athlete's real-world position, though it remains a necessary upstream step for future commercial campaigns."
+    },
+    {
+     "opportunity_key": "grow-direct-audience-footprint",
+     "outcome": "not_carried",
+     "into": null,
+     "why": "The athlete is not a digital-first creator, and her direct digital audience is highly limited. Establishing and maintaining entirely new social channels on TikTok and X has low feasibility and diverts focus from her proven, high-impact broadcast and academy-led commercial strengths."
+    }
+   ]
+  },
+  "structuralProblems": [],
+  "groundingProblems": [],
+  "set": {
+   "athleteId": "0ab6c9fc-9cad-40cd-8245-0cd69f8bf331",
+   "asOf": "2026-09-27T04:39:34.811Z",
+   "version": "objective-proposal/1.0.0",
+   "specVersion": "objective-eval-spec/1.0.3",
+   "stateAsOf": "2026-09-25T20:34:09.496Z",
+   "opportunityMapAsOf": "2026-09-25T20:34:49.614Z",
+   "proposals": [
+    {
+     "key": "academy-sponsorship-expansion",
+     "desiredState": {
+      "value": "The Picabo Street Academy operates with an expanded portfolio of corporate sponsorships integrated into a formalized multi-tier partnership structure.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T20:34:09.496Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.audience_attractiveness",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.brand_safety",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.category_breadth",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.content_versatility",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.geographic_relevance",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.identity_values_coherence",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.brand_quality",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.campaign_performance",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.deal_frequency",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.pricing_power",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.renewals_repeat",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.verified_commercial_value",
+       "E1",
+       "E2",
+       "E4",
+       "E5",
+       "E6"
+      ],
+      "rationale": "Scaling her established academy's corporate partnerships leverages her deep category credibility and strong regional alignment with affluent winter sports hubs to generate sustainable commercial value.",
+      "falsifiedBy": null
+     },
+     "currentState": {
+      "value": "Picabo Street runs the Picabo Street Academy in Park City, Utah, partnering with major brands like Stifel, Hydro Flask, Comcast/Xfinity, Wildhorn, Kappa, and Cloudflare.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T20:34:09.496Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.audience_attractiveness",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.brand_safety",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.category_breadth",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.content_versatility",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.geographic_relevance",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#brand_fit.identity_values_coherence",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.brand_quality",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.campaign_performance",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.deal_frequency",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.pricing_power",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.renewals_repeat",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#commercial_proof.verified_commercial_value",
+       "E1",
+       "E2",
+       "E4",
+       "E5",
+       "E6"
+      ],
+      "rationale": "Read from: findings[mia.commercial_proof], findings[mia.brand_fit]",
+      "falsifiedBy": null
+     },
+     "domain": "owned_venture",
+     "provenance": {
+      "origin": "nomila",
+      "fromOpportunities": [
+       {
+        "opportunityKey": "amplify-academy-commercial-partnerships",
+        "how": "Transforms her existing academy partnerships into a scalable corporate sponsorship program."
+       }
+      ],
+      "fromAthleteIntent": [],
+      "currentStateEvidence": [
+       {
+        "statePath": "findings[mia.commercial_proof]",
+        "how": "Confirms her active role running the Picabo Street Academy and lists its premium corporate partners."
+       },
+       {
+        "statePath": "findings[mia.brand_fit]",
+        "how": "Notes her geographic strength in affluent winter sports hubs and her attractiveness to brands focused on youth development."
+       }
+      ]
+     },
+     "success": {
+      "observableCondition": "The Picabo Street Academy secures new active corporate sponsors or transitions existing ones into formalized multi-tier partnership agreements."
+     },
+     "horizon": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "year-round-media-commentary",
+     "desiredState": {
+      "value": "Picabo Street holds a recurring, year-round winter sports analyst or media commentator role with a major sports network.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T20:34:09.496Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.achievement_recency",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.competition_level",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.national_international_status",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.performance_results",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.rankings_recognition",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.role_importance",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.athletic_trajectory",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.audience_growth",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.commercial_acceleration",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.media_trajectory",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.search_social_trajectory",
+       "E1",
+       "E2",
+       "E3",
+       "E4",
+       "E7"
+      ],
+      "rationale": "Transitioning her cyclical Olympic broadcasting presence into year-round network placement preserves her high athletic authority and maintains national cultural visibility outside of Winter Olympic years.",
+      "falsifiedBy": null
+     },
+     "currentState": {
+      "value": "Picabo Street recently completed a prominent broadcasting role as NBC's women's hill reporter during the Milano Cortina 2026 Olympic Winter Games.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T20:34:09.496Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.achievement_recency",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.competition_level",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.national_international_status",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.performance_results",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.rankings_recognition",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#athletic_authority.role_importance",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.athletic_trajectory",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.audience_growth",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.commercial_acceleration",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.media_trajectory",
+       "14b5a206-43d2-429e-bd7b-3a29ddac641c#momentum.search_social_trajectory",
+       "E1",
+       "E2",
+       "E3",
+       "E4",
+       "E7"
+      ],
+      "rationale": "Read from: findings[mia.athletic_authority], findings[mia.momentum]",
+      "falsifiedBy": null
+     },
+     "domain": "career",
+     "provenance": {
+      "origin": "nomila",
+      "fromOpportunities": [
+       {
+        "opportunityKey": "amplify-olympic-broadcasting-momentum",
+        "how": "Capitalizes on her fresh 2026 Olympic broadcasting success to establish a sustainable, year-round commentator career."
+       }
+      ],
+      "fromAthleteIntent": [],
+      "currentStateEvidence": [
+       {
+        "statePath": "findings[mia.athletic_authority]",
+        "how": "Documents her historical athletic legacy and her recent prominent role as NBC's women's hill reporter for the 2026 Winter Games."
+       },
+       {
+        "statePath": "findings[mia.momentum]",
+        "how": "Highlights her positive cyclical momentum catalyzed by her high-visibility 2026 Olympic broadcasting debut."
+       }
+      ]
+     },
+     "success": {
+      "observableCondition": "She is signed to a multi-event or year-round broadcast commentary contract with a national sports network."
+     },
+     "horizon": {
+      "kind": "period",
+      "period": "this_season",
+      "why": "Requires immediate strategic action to leverage her fresh 2026 Olympic media presence before the cyclical post-games momentum naturally cools."
+     },
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [
+    {
+     "opportunityKey": "unlock-private-audience-metrics",
+     "outcome": "not_carried",
+     "why": "Information acquisition, not an outcome. Securing Oauth credentials to resolve missing engagement data is an operational baseline update that does not change the athlete's real-world position, though it remains a necessary upstream step for future commercial campaigns."
+    },
+    {
+     "opportunityKey": "grow-direct-audience-footprint",
+     "outcome": "not_carried",
+     "why": "The athlete is not a digital-first creator, and her direct digital audience is highly limited. Establishing and maintaining entirely new social channels on TikTok and X has low feasibility and diverts focus from her proven, high-impact broadcast and academy-led commercial strengths."
+    }
+   ],
+   "overallConfidence": "LOW"
+  }
+ }
+}

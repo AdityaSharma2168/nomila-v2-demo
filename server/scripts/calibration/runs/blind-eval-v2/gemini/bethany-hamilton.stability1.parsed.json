@@ -1,0 +1,691 @@
+{
+  "specVersion": "blind-eval-spec/0.2",
+  "provider": "gemini",
+  "athlete": {
+    "key": "bethany-hamilton",
+    "name": "Bethany Hamilton",
+    "sport": "Surfing"
+  },
+  "parseError": null,
+  "dimensionAssessments": {
+    "athletic_authority": {
+      "prose": "Bethany Hamilton's current athletic authority is shaped by her 2023 decision to boycott World Surf League (WSL) events, which transitioned her from an active elite competitor to a retired or self-excluded athlete. While her historical legacy as a world-class competitor remains prestigious and widely respected, she is no longer active in formal professional leagues. Her current physical engagement with surfing is focused on hosting private retreats and community-driven events rather than ranking-oriented competition.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her formal boycott and departure from professional league competition are highly documented, and her lack of active athletic results over the past three years is verified."
+    },
+    "audience_scale": {
+      "prose": "Her audience scale is exceptionally large within her sport, anchored by a reported legacy following of over 2 million on Instagram and a verified YouTube channel with over 92,000 subscribers. Although her unverified channels make up the vast majority of her reach, her footprint remains highly competitive relative to other professional surfers. The main limitation is the lack of current longitudinal tracking to measure growth.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "While legacy follower counts are widely reported, direct and verified first-party platform data is restricted to her YouTube channel, introducing some analytical uncertainty."
+    },
+    "engagement_quality": {
+      "prose": "Detailed analytical metrics on how her audience interacts with her content are currently unavailable across her major social media platforms. While her highly focused community suggests a passionate follower base, no platform-verified engagement, retention, or sharing rates are public. For this reason, her quantitative engagement quality must be classified as missing.",
+      "confidence": "LOW",
+      "confidenceReason": "No authoritative first-party platform engagement metrics are available to support an objective, data-driven rating."
+    },
+    "cultural_relevance": {
+      "prose": "Hamilton's cultural relevance is remarkably strong and extends far beyond surfing into mainstream global consciousness. Her name is synonymous with overcoming adversity, a narrative kept alive through books, feature films, and regular media coverage. Furthermore, her controversial stance on sports policies and her 2024 appearance on 'The Masked Singer' ensure she remains a frequent subject of national public conversation.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her sustained presence in major news outlets, mainstream television, and public debates provides clear, diverse evidence of persistent cultural relevance."
+    },
+    "narrative_power": {
+      "prose": "Her personal narrative is one of the most powerful, distinct, and durable stories in modern sports history. The chronicle of surviving a life-altering shark attack, returning to the water in under a month, and achieving elite professional status is universally resonant and authentic. While her recent activism has polarized her marketability, her core story of resilience remains deeply compelling and highly durable.",
+      "confidence": "HIGH",
+      "confidenceReason": "The core tenets of her story are permanently documented in autobiographies, films, and historical archives, leaving no room for narrative ambiguity."
+    },
+    "brand_fit": {
+      "prose": "Hamilton possesses a highly specialized brand fit that offers exceptional alignment for faith-based, family-oriented, and conservative organizations, but carries elevated risk for progressive, secular corporations. Her unwavering public values make her an incredibly coherent, high-trust partner within her chosen niche. However, this tight alignment restricts her versatility and limits her appeal to a segmented slice of the broader consumer market.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her public messaging, corporate partnerships (such as EveryLife), and departure from Rip Curl clearly map out her segmented commercial boundaries."
+    },
+    "commercial_proof": {
+      "prose": "She demonstrates solid commercial proof, primarily driven by her active motivational speaking career, book publishing, and sponsorships with niche, value-aligned brands. Hamilton commands premium speaking fees ($20k-$50k) that reflect persistent demand in the corporate wellness and faith sectors. While she has lost major mass-market partners, she has successfully monetized her dedicated, values-based ecosystem.",
+      "confidence": "HIGH",
+      "confidenceReason": "There is reliable public evidence documenting her speaker pricing, published books, active brand partnerships, and commercial retreats."
+    },
+    "momentum": {
+      "prose": "Her overall marketability momentum is stable but structurally changed, characterized by a negative athletic trajectory offset by steady activity in her personal network. With no active return to professional surfing on the horizon, her trajectory is defined by a lateral shift into podcasting, book releases, and public speaking. This represents a consolidation of a highly loyal, niche audience rather than rapid upward expansion.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "Her competitive athletic decline is clear, but her commercial and media trajectories represent a shift in focus that lacks precise longitudinal metric tracking."
+    }
+  },
+  "overallConfidence": {
+    "level": "MEDIUM",
+    "explanation": "Her overall identity and career transitions are highly documented, and her narrative power is fully verified. However, the evaluation is limited by the absence of authoritative social media metrics for her primary channels (such as Instagram and TikTok), which prevent a complete analysis of current audience growth and engagement quality."
+  },
+  "identityConfidence": "HIGH",
+  "summary": "Bethany Hamilton remains one of the most culturally recognizable figures in surfing, though her current standing has evolved significantly from competitive athletics to values-driven advocacy. Following her high-profile boycott of the World Surf League (WSL) in early 2023 over its transgender athlete policies, Hamilton stepped away from professional tour surfing, ending a 15-year career. This pivotal moment led to her departure from long-time secular sponsors like Rip Curl and prompted a strategic realignment. Today, her commercial presence is anchored by a highly segmented, values-aligned ecosystem including partnerships with conservative and pro-life brands such as Brave Books, PublicSq, and EveryLife, alongside highly lucrative keynote speaking tours ($20,000–$50,000 per engagement) and her own 'All Things Possible' podcast. While her athletic momentum is in structural decline due to her competitive inactivity, her narrative power remains exceptionally high, rooted in her historic comeback as a shark attack survivor. Her marketability is characterized by a strong duality: she is a highly polarizing figure in progressive or secular mainstream spaces, but represents an exceptionally safe, deeply authentic, and high-converting asset for family-focused, Christian, and conservative demographics.",
+  "summaryWords": 180,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Bethany Hamilton survived a shark attack in 2003, losing her left arm, and returned to competitive surfing, culminating in a 15-year professional career, multiple books, and films (Soul Surfer, Unstoppable).",
+      "sourceTitle": "Bethany Hamilton - Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bethany_Hamilton",
+      "sourceType": "secondary",
+      "date": "2026-09-14"
+    },
+    {
+      "id": "E2",
+      "claim": "In February 2023, Hamilton announced a boycott of all World Surf League (WSL) events due to their policy allowing transgender women to compete in the female category, which effectively marked her departure from active professional competition.",
+      "sourceTitle": "Surfer Bethany Hamilton threatens boycott over WSL transgender policy",
+      "sourceUrl": "https://www.washingtonpost.com/sports/2023/02/07/bethany-hamilton-world-surf-league-transgender-policy/",
+      "sourceType": "major_media",
+      "date": "2023-02-07"
+    },
+    {
+      "id": "E3",
+      "claim": "Hamilton ended her two-decade relationship with Rip Curl in late 2023 and partnered with values-aligned brands such as EveryLife, PublicSq, and Brave Books.",
+      "sourceTitle": "Surfer Bethany Hamilton says the World Surf League forced athletes to sign a contract...",
+      "sourceUrl": "https://www.outkick.com/sports/bethany-hamilton-wsl-transgender-silenced-contract-rip-curl",
+      "sourceType": "secondary",
+      "date": "2025-12-10"
+    },
+    {
+      "id": "E4",
+      "claim": "Hamilton commands premium speaking fees of $20,000–$50,000 per engagement and regularly keynotes high-profile advocacy galas such as the March for Life and Texas Alliance for Life events.",
+      "sourceTitle": "Bethany Hamilton Speaking Fee and Booking Info",
+      "sourceUrl": "https://www.allamericanspeakers.com/speakers/389510/Bethany-Hamilton",
+      "sourceType": "secondary",
+      "date": "2026-09-14"
+    },
+    {
+      "id": "E5",
+      "claim": "YouTube channel @TheBethanyHamilton holds 92,400 subscribers, 425 videos, and 11,712,609 total views as of September 2026.",
+      "sourceTitle": "YouTube Data API - @TheBethanyHamilton",
+      "sourceUrl": "https://www.youtube.com/@TheBethanyHamilton",
+      "sourceType": "platform",
+      "date": "2026-09-14"
+    },
+    {
+      "id": "E6",
+      "claim": "Hamilton achieved crossover cultural footprint by competing on Season 12 of Fox's 'The Masked Singer' as 'Macaron' in late 2024.",
+      "sourceTitle": "Bethany Hamilton - Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bethany_Hamilton",
+      "sourceType": "secondary",
+      "date": "2026-09-14"
+    },
+    {
+      "id": "E7",
+      "claim": "Hamilton hosts 'All Things Possible with Bethany Hamilton,' a faith-focused weekly podcast that has published over 73 episodes since founding.",
+      "sourceTitle": "All Things Possible with Bethany Hamilton",
+      "sourceUrl": "https://rephonic.com/podcasts/all-things-possible-with-bethany-hamilton",
+      "sourceType": "secondary",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "E8",
+      "claim": "Hamilton was reported by media to have a 2.4 million Instagram fanbase in early 2025, reflecting a deep legacy social footprint.",
+      "sourceTitle": "Bethany Hamilton Net Worth ($2 Million)",
+      "sourceUrl": "https://www.surfer.com/trending-news/surfing-net-worths-kelly-slater-john-john-florence-bethany-hamilton",
+      "sourceType": "secondary",
+      "date": "2025-02-27"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 35,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2"
+      ],
+      "rationale": "Hamilton formally boycotted and stepped away from the World Surf League (WSL) in 2023, meaning her current active competitive level in elite professional sport is inactive, though she continues to host private surfing retreats.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 25,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "She has no active professional performance results since early 2023 due to her ongoing tour boycott, although her historical competitive record includes elite world-class performances.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 45,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Hamilton currently holds no active professional competitive rankings, though she is an inductee of the Surfer's Hall of Fame and a multi-time ESPY nominee/winner.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 65,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "While she does not currently represent any active national team, she maintains global prestige as an iconic international representative of the sport.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 50,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Her institutional role within the official league structure is nil due to her active boycott, but she remains a highly influential, central voice within surfing culture.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 20,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Her major competitive athletic achievements are historical, with her current public standing driven by activism, media, and motivational platforms rather than active athletic results.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 70,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5",
+        "E8"
+      ],
+      "rationale": "Her authoritative platform data shows 92.4k YouTube subscribers, but historical media reports indicate a massive legacy Instagram audience of ~2.4M followers, suggesting a large overall but partially unverified footprint.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 92,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5",
+        "E8"
+      ],
+      "rationale": "Within the niche sport of surfing, an audience size of over 2 million legacy followers places her in the absolute upper tier alongside icons like Kelly Slater.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There is no reliable longitudinal data available to evaluate the trajectory or expansion rate of her social channels.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 50,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5",
+        "E7",
+        "E8"
+      ],
+      "rationale": "She commands presence across YouTube, podcasting, and legacy Instagram, but several major platforms (TikTok, X) lack authoritative verification in the audit.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Quantitative engagement data relative to her overall follower base is missing or unavailable across her primary unverified accounts.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Insufficient data exists to measure her content's organic algorithmic expansion beyond her follower baseline.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "High-value platform metrics, such as content shares and saves, are completely private and missing from the public audit.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Audience video completion and retention metrics are not publicly available or verified.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Platform metrics for story reach and interaction are private and unavailable.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There is no authoritative quantitative audit data available to assess the ratio of genuine to inactive followers across her social platforms.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "rationale": "She commands substantial and persistent media interest across news, sports, and entertainment outlets, sustained by her high-profile boycott and advocacy.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Her actions and statements are regularly covered by elite national and international publications, including The Washington Post, Newsweek, and NBC.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E6"
+      ],
+      "rationale": "Her name remains a steady search query due to her permanent legacy as the 'Soul Surfer' and occasional broadcast appearances like 'The Masked Singer'.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "Hamilton regularly generates intense public debate and community conversation surrounding her vocal stances on sports equity and gender policies.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E6"
+      ],
+      "rationale": "Her story of survival and resilience is universally recognized outside of surfing, amplified by a Hollywood film, several bestselling books, and mainstream television appearances.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "The narrative of a one-armed shark attack survivor returning to dominate professional surfing is one of the most unique and instantly articulable stories in global sports.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E7"
+      ],
+      "rationale": "Her story has immense dimensionality, evolving from childhood survival to elite athleticism, motherhood of four, deep spiritual faith, and sociopolitical activism.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "Her narrative is intensely authentic, fully verified by her physical limb loss, real-world competitive history, and lived personal values.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Media coverage heavily mirrors her messaging of resilience and faith, actively reinforcing her established public identity over more than two decades.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 70,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4"
+      ],
+      "rationale": "Her story seamlessly supports family, faith-based, wellness, and motivational campaigns, though her polarizing stances restrict natural integration with secular mass-market brands.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 96,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "Her story has proven exceptionally durable, remaining culturally and commercially relevant for more than twenty years with no signs of fading.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 55,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4",
+        "E7"
+      ],
+      "rationale": "She is highly credible across specialized niches—such as faith, family, children's literature, parenting, and wellness—but she is no longer a natural fit for mainstream commercial categories.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 50,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "While her personal conduct is highly wholesome, her outspoken socio-political stances on transgender inclusion create a dual brand-safety profile: highly polarizing for progressive corporate brands, but exceptionally safe and celebrated by values-aligned conservative networks.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 65,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E7"
+      ],
+      "rationale": "Her audience comprises highly dedicated, values-driven Christian families and conservative consumers, a valuable but distinctly segmented market segment.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3",
+        "E7"
+      ],
+      "rationale": "She exhibits world-class clarity and consistency in her public values, willing to prioritize her core convictions even at the cost of lucrative commercial partnerships.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 60,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E7"
+      ],
+      "rationale": "She can support diverse formats including books, speeches, and podcasts, but her content is heavily bounded by religious and family-oriented themes.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 68,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E7"
+      ],
+      "rationale": "Her geographic appeal is highly concentrated in the US market, especially within suburban and conservative regions, with some legacy international reach as a surfing icon.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 72,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4"
+      ],
+      "rationale": "She drives verified commercial value through her high-demand speaking tours, book publishing, private network subscriptions, and endorsement deals within her values-aligned ecosystem.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 68,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4"
+      ],
+      "rationale": "Hamilton maintains a consistent schedule of commercial engagements, primarily driven by recurring keynote speeches, book releases, and product endorsements.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 60,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3"
+      ],
+      "rationale": "Her current portfolio features values-driven partners (EveryLife, Brave Books, PublicSq) which, while highly focused, lack the premier global status of her historical partners like Rip Curl and Oakley.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "scored",
+      "score": 70,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E3",
+        "E4"
+      ],
+      "rationale": "Her historical relationship with Rip Curl lasted over two decades, and she demonstrates strong repeat demand on the speaking circuit, though her newer alignments are still maturing.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There is no publicly available quantitative data regarding the performance, sales conversions, or ROI of her recent commercial campaigns.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Hamilton commands exceptional pricing power in the motivational speaking market, securing reported fees of $20,000 to $50,000 per live appearance.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 18,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2"
+      ],
+      "rationale": "Her athletic trajectory is in structural decline as she has stepped away from professional competitive surfing in 2023, shifting her focus away from elite leagues.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Due to the lack of longitudinal platform data, her audience growth rate over the past 12 months cannot be evaluated.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 55,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "rationale": "Her visibility in mainstream athletic press is declining, but it remains stable and highly concentrated in values-oriented, faith-based, and conservative media.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 58,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6",
+        "E7"
+      ],
+      "rationale": "Her social and search interest is relatively flat but stable, sustained by recurring speaking tours and podcast content with occasional mainstream broadcast spikes.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 52,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E3",
+        "E4"
+      ],
+      "rationale": "Her commercial roster is stable, representing a lateral shift to value-aligned sponsors rather than a sharp acceleration in overall brand sponsorships.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Unparalleled narrative power and story distinctiveness as the globally recognized 'Soul Surfer'.",
+    "Deep and highly coherent alignment of personal values, establishing exceptional trust with niche faith, family, and conservative demographics.",
+    "Sustained crossover recognition across general pop culture, kept active through mainstream media and TV appearances.",
+    "Strong pricing power and recurring commercial demand within the high-value motivational speaking and Christian book markets."
+  ],
+  "keyConstraints": [
+    "Complete absence of active professional athletic competition or rankings due to her ongoing tour boycott.",
+    "Highly polarizing public stances on transgender athlete participation that restrict her natural fit with mainstream secular and global corporate brands.",
+    "Lack of authoritative, platform-verified analytics across her primary social media reach channels."
+  ],
+  "importantMissingData": [
+    "Authoritative first-party platform data for Instagram, TikTok, and X, including active follower counts and growth metrics.",
+    "Detailed audience engagement statistics (such as engagement rates, reach efficiency, video retention, shares, and saves) across all digital channels.",
+    "Quantitative campaign conversion and ROI data for her partnerships with values-aligned brands."
+  ],
+  "identityOrEvidenceRisks": [
+    "The heavy reliance on legacy media reports and secondary sources for major platform stats (like Instagram) introduces a risk of outdated or overstated reach metrics.",
+    "Her active transition from mainstream athletics to specialized cultural advocacy creates a risk of analytical misalignment if evaluated under traditional sporting metrics."
+  ],
+  "socialBlockSupplied": true
+}

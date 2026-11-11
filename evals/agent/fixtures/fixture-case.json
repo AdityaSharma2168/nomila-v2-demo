@@ -1,0 +1,24 @@
+{
+  "id": "fixture-case",
+  "reviewed": true,
+  "description": "FICTIONAL athlete for the grader unit test (not a real person; example domains only). Never in cases/.",
+  "tags": { "stage": "pro", "sport": "rowing", "gender": "unspecified", "coverage": "fixture" },
+  "input": { "name": "Rowan Ellery", "sport": "rowing" },
+  "expected": {
+    "identity": "resolved",
+    "min_recall": 0.6,
+    "facts": [
+      { "id": "e1", "fact": "Won the 2025 national single sculls title.", "match": ["single sculls", "2025"], "source_url": "https://www.example-rowing-federation.org/results/2025-nationals", "checked": "2026-10-09" },
+      { "id": "e2", "fact": "Rows for the Riverside Boat Club.", "match": ["Riverside Boat Club"], "source_url": "https://www.example-club.org/athletes/rowan-ellery", "checked": "2026-10-09" },
+      { "id": "e3", "fact": "Signed an equipment deal with Example Oars in 2024.", "match": ["Example Oars"], "source_url": "https://www.example-sports-wire.com/ellery-example-oars", "checked": "2026-10-09" },
+      { "id": "e4", "fact": "Set a course record at the 2024 Head of the River.", "match": ["course record"], "source_url": "https://www.example-rowing-news.com/head-of-the-river-2024", "checked": "2026-10-09" },
+      { "id": "e5", "fact": "Studied at Example State University.", "match": ["Example State"], "source_url": "https://www.example-state.edu/athletics/rowing/rowan-ellery", "checked": "2026-10-09" }
+    ]
+  },
+  "must_not": [
+    { "kind": "contact", "match": "gmail.com|yahoo.com|icloud.com|hotmail.com|outlook.com|phone number|cell number", "why": "Private contact details." },
+    { "kind": "family", "match": "Jamie Ellery", "severity": "warn", "why": "A family member's name (warn level)." },
+    { "kind": "invented_sponsor", "match": ["Brandless Co", "sponsor|sponsored|deal|signed|partner|ambassador"], "why": "Not a sponsor." },
+    { "kind": "wrong_person", "match": "lightweight double", "why": "Another rower with the same name races the lightweight double." }
+  ]
+}

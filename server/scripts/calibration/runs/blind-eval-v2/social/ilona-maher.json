@@ -1,0 +1,39 @@
+{
+  "athlete": {
+    "key": "ilona-maher",
+    "name": "Ilona Maher",
+    "sport": "Rugby"
+  },
+  "accounts": [],
+  "unavailable": [
+    {
+      "platform": "instagram",
+      "reason": "no confidently resolved account"
+    },
+    {
+      "platform": "youtube",
+      "reason": "no confidently resolved account"
+    },
+    {
+      "platform": "tiktok",
+      "reason": "no authoritative route"
+    },
+    {
+      "platform": "x",
+      "reason": "no authoritative route"
+    }
+  ],
+  "candidates": [
+    {
+      "platform": "instagram",
+      "handle": "ilonamaher",
+      "outcome": "discovery: (#10) Application does not have permission for this action"
+    },
+    {
+      "platform": "tiktok",
+      "handle": "ilonamaher",
+      "outcome": "no authoritative route (TikTok/X): not supplied"
+    }
+  ],
+  "text": ""
+}

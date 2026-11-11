@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<title>Your booking · Nomila</title>
+<!--
+  booking-status.html — the buyer's private booking page (/b/:token). Bookings v2, "Bookings, end to end" PR1.
+
+  Served by server/routes/bookingStatusPage.ts with a per-response CSP: one nonce'd style block, one nonce'd script,
+  Google Fonts, and fetches to this origin only. Nothing is interpolated into this file except the nonce; every value
+  shown comes from the JSON API (/api/v1/book/b/:token…) and is written with textContent.
+
+  The access key: the first email code returns it; it is kept in this tab's sessionStorage only (never a cookie, never
+  localStorage), so a forwarded link opens nothing without a fresh code.
+
+  Group sessions (0153): the summary shows the people the booking covers (and her per-person price); an open group's
+  spot is confirmed by itself once the hold goes through; a paid private group gets "Invite your friends" (up to
+  party size − 1 emails, each friend gets their own call link; remove frees the place).
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" nonce="__NONCE__" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Outfit:wght@300..700&display=swap">
+<style nonce="__NONCE__">
+  :root { --ink:#15110D; --ink2:#221C16; --line:rgba(201,164,92,.28); --ivory:#F3EDE3; --paper:#FBF7F0; --text:#F3EDE3; --soft:rgba(243,237,227,.72);
+          --mute:rgba(243,237,227,.55); --gold:#C9A45C; --pink:#E84591; --dark:#15110D; --darkmute:#6B5F52; --green:#2DC87C; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--ink); color: var(--text); font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; -webkit-tap-highlight-color: transparent; }
+  main { max-width: 520px; margin: 0 auto; padding: 20px 16px 48px; }
+  .top { display: flex; justify-content: space-between; align-items: center; font-size: 11px; letter-spacing: .28em; font-weight: 600; text-transform: uppercase; margin-bottom: 24px; }
+  .top .ref { letter-spacing: .08em; color: var(--mute); font-weight: 500; }
+  .eyebrow { display: flex; align-items: center; gap: 10px; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin: 0 0 10px; }
+  .eyebrow::before { content: ""; width: 28px; height: 1px; background: var(--gold); }
+  h1 { font-family: 'Bodoni Moda', Georgia, serif; font-weight: 500; font-size: 34px; line-height: 1.08; letter-spacing: -.01em; margin: 0 0 10px; text-wrap: balance; }
+  h1 em { font-style: italic; color: var(--gold); }
+  .lede { font-size: 16px; line-height: 1.5; color: var(--soft); margin: 0 0 20px; }
+  .card { background: var(--paper); color: var(--dark); border-radius: 18px; padding: 18px; margin: 0 0 14px; }
+  .card h2 { font-family: 'Bodoni Moda', Georgia, serif; font-weight: 500; font-size: 22px; margin: 0 0 4px; }
+  .card p { margin: 0 0 10px; font-size: 15px; line-height: 1.45; color: #3A3129; }
+  .row { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid rgba(21,17,13,.08); font-size: 15px; }
+  .row:first-of-type { border-top: 0; }
+  .row span:first-child { color: var(--darkmute); }
+  .row b { font-weight: 600; text-align: right; }
+  .total b { font-size: 18px; }
+  .fine { font-size: 13px; color: var(--darkmute); line-height: 1.45; margin: 8px 0 0; }
+  .btn { display: block; width: 100%; border: 0; border-radius: 999px; padding: 15px 18px; font: 600 16px 'Outfit', sans-serif; cursor: pointer; text-align: center; text-decoration: none; margin-top: 10px; }
+  .btn.primary { background: var(--pink); color: #fff; }
+  .btn.quiet { background: transparent; color: var(--dark); border: 1px solid rgba(21,17,13,.18); }
+  .btn.ghost { background: transparent; color: var(--text); border: 1px solid var(--line); }
+  .btn[disabled] { opacity: .5; cursor: default; }
+  .btn:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  label { display: block; font-size: 13px; color: var(--darkmute); margin: 10px 0 6px; }
+  input, textarea { width: 100%; font: 16px 'Outfit', sans-serif; padding: 13px 14px; border-radius: 12px; border: 1px solid rgba(21,17,13,.18); background: #fff; color: var(--dark); }
+  input.code { font-size: 24px; letter-spacing: .4em; text-align: center; }
+  textarea { min-height: 84px; resize: vertical; }
+  .times { display: grid; gap: 8px; margin-top: 8px; }
+  .msg { padding: 10px 12px; border-radius: 14px; margin: 6px 0; font-size: 15px; line-height: 1.4; max-width: 86%; }
+  .msg.you { background: #EFE6D6; margin-left: auto; }
+  .msg.them, .msg.nomila { background: #fff; border: 1px solid rgba(21,17,13,.08); }
+  .msg small { display: block; font-size: 12px; color: var(--darkmute); margin-top: 4px; }
+  .err { color: #B3261E; font-size: 14px; margin: 8px 0 0; min-height: 1em; }
+  .chip { display: inline-block; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--gold); margin-bottom: 14px; }
+  .chip.ok { color: var(--green); border-color: rgba(45,200,124,.4); }
+  .guest { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 0; border-top: 1px solid rgba(21,17,13,.08); font-size: 15px; }
+  .guest span { overflow: hidden; text-overflow: ellipsis; }
+  .guest small { display: block; font-size: 12px; color: var(--darkmute); }
+  .guest .btn { width: auto; margin: 0; padding: 8px 14px; font-size: 14px; }
+  footer { margin-top: 28px; font-size: 13px; color: var(--mute); line-height: 1.5; }
+  footer a { color: var(--soft); }
+  [hidden] { display: none !important; }
+  @media (prefers-reduced-motion: no-preference) { .card { animation: rise .35s ease both; } @keyframes rise { from { opacity: 0; transform: translateY(8px); } } }
+</style>
+</head>
+<body>
+<main>
+  <div class="top"><span>Nomila</span><span class="ref" id="ref"></span></div>
+  <div id="view" aria-live="polite"><p class="lede">Loading your booking…</p></div>
+  <footer id="foot"></footer>
+</main>
+<script nonce="__NONCE__">
+(function () {
+  "use strict";
+  var token = decodeURIComponent((location.pathname.split("/b/")[1] || "").split("/")[0]);
+  var API = "/api/v1/book/b/" + encodeURIComponent(token);
+  var KEY = "nb-access:" + token;
+  var view = document.getElementById("view");
+  var state = { booking: null, messages: null, preview: null, codeSent: false };
+
+  function access() { try { return sessionStorage.getItem(KEY); } catch (e) { return null; } }
+  function setAccess(a) { try { sessionStorage.setItem(KEY, a); } catch (e) { /* private mode: this tab only */ } }
+
+  function api(method, path, body) {
+    var h = { "accept": "application/json" };
+    var a = access(); if (a) h["x-booking-access"] = a;
+    if (body !== undefined) h["content-type"] = "application/json";
+    return fetch(API + path, { method: method, headers: h, body: body !== undefined ? JSON.stringify(body) : undefined, credentials: "omit" })
+      .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { j.__status = r.status; return j; }); });
+  }
+
+  // ── tiny DOM helpers (textContent only) ──
+  function el(tag, attrs, kids) {
+    var n = document.createElement(tag);
+    if (attrs) for (var k in attrs) { if (k === "text") n.textContent = attrs[k]; else if (k === "on") { for (var e in attrs.on) n.addEventListener(e, attrs.on[e]); } else n.setAttribute(k, attrs[k]); }
+    (kids || []).forEach(function (c) { if (c) n.appendChild(typeof c === "string" ? document.createTextNode(c) : c); });
+    return n;
+  }
+  function clear() { while (view.firstChild) view.removeChild(view.firstChild); }
+  function money(c, cur) { return (c / 100).toLocaleString("en-US", { style: "currency", currency: (cur || "usd").toUpperCase() }); }
+  function when(iso) {
+    if (!iso) return "a time to be confirmed";
+    return new Date(iso).toLocaleString(undefined, { weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit", timeZoneName: "short" });
+  }
+  function heading(eyebrow, title, lede) {
+    return [el("p", { "class": "eyebrow", text: eyebrow }), el("h1", { text: title }), lede ? el("p", { "class": "lede", text: lede }) : null];
+  }
+  function btn(label, cls, onClick) { return el("button", { "class": "btn " + cls, type: "button", text: label, on: { click: onClick } }); }
+  function busy(b, on) { b.disabled = on; }
+  function errLine() { return el("p", { "class": "err", role: "alert" }); }
+
+  // A first visit or a new tab sends the code by itself (no "Email me a code" tap first). Not again within a minute in
+  // this tab, so a reload doesn't send a second code; "Send a new code" is always there.
+  var AUTO_KEY = "nb-autosent:" + token;
+  function recentlyAutoSent() { try { return Date.now() - Number(sessionStorage.getItem(AUTO_KEY) || 0) < 60000; } catch (e) { return false; } }
+  function markAutoSent() { try { sessionStorage.setItem(AUTO_KEY, String(Date.now())); } catch (e) { /* private mode */ } }
+
+  // ── the code screen (first visit, or a new tab) ──
+  function renderCode(intro, opts) {
+    clear();
+    var err = errLine();
+    var input = el("input", { "class": "code", inputmode: "numeric", autocomplete: "one-time-code", maxlength: "6", "aria-label": "6-digit code" });
+    var auto = !!(opts && opts.autoSend);
+    if (auto && recentlyAutoSent()) state.codeSent = true;
+    var autoNow = auto && !state.codeSent;
+    function sendCode() {
+      busy(send, true); err.textContent = "";
+      return api("POST", "/access/send").then(function (r) {
+        busy(send, false);
+        if (r.__status >= 400) { err.textContent = r.error || "Couldn't send the code."; send.textContent = "Email me a code"; return; }
+        state.codeSent = true; send.textContent = "Send a new code"; input.focus();
+      });
+    }
+    var send = btn(state.codeSent || autoNow ? "Send a new code" : "Email me a code", "quiet", sendCode);
+    var go = btn("Open my booking", "primary", function () {
+      var code = (input.value || "").replace(/\D/g, "");
+      if (code.length < 6) { err.textContent = "Enter the 6-digit code."; return; }
+      busy(go, true); err.textContent = "";
+      api("POST", "/access", { code: code }).then(function (r) {
+        busy(go, false);
+        if (r.__status >= 400 || !r.access) { err.textContent = r.error || "That code didn't match."; return; }
+        setAccess(r.access); load();
+      });
+    });
+    var lede = intro || (auto ? "We've emailed a 6-digit code to the address you booked with. It keeps this page private." : "We email a 6-digit code to the address you booked with. It keeps this page private.");
+    heading("Your booking", "Confirm it's you", lede).forEach(function (n) { if (n) view.appendChild(n); });
+    view.appendChild(el("div", { "class": "card" }, [el("label", { text: "Code from your email" }), input, go, send, err]));
+    if (autoNow) { markAutoSent(); sendCode(); }
+  }
+
+  // ── the booking ──
+  function people(n) { return n + (n === 1 ? " person" : " people"); }
+  function isOpenGroup(b) { return b.audience === "open_group"; }
+  /** An open-group spot confirms itself once the hold is placed, unless the athlete approves each spot (0154). */
+  function confirmsItself(b) { return isOpenGroup(b) && !b.approveEachSpot; }
+  /** "Group session · 3 people" / "Group session · 1 of 10 spots" / null for a 1:1. */
+  function groupText(b) {
+    if (b.audience === "private_group") return "Group session · " + people(b.partySize || 1);
+    if (isOpenGroup(b)) return "Group session · " + (b.partySize || 1) + " of " + (b.groupSpots || "?") + " spots";
+    return null;
+  }
+  function summary(b) {
+    var q = b.quote, g = groupText(b), multi = (b.partySize || 1) > 1;
+    var rows = [
+      el("h2", { text: b.title }),
+      el("div", { "class": "row" }, [el("span", { text: "With" }), el("b", { text: b.athleteFirstName })]),
+      g ? el("div", { "class": "row" }, [el("span", { text: "Group" }), el("b", { text: g })]) : null,
+      el("div", { "class": "row" }, [el("span", { text: "When" }), el("b", { text: when(b.startsAt) })]),
+      el("div", { "class": "row" }, [el("span", { text: "Where" }), el("b", { text: b.locationMode === "in_person" ? (b.venue || "Shown once " + b.athleteFirstName + " accepts") : "Video call" })]),
+      el("div", { "class": "row total" }, [el("span", { text: "All-in" }), el("b", { text: money(q.buyerTotalCents, q.currency) })]),
+      el("p", { "class": "fine", text: "Includes " + b.athleteFirstName + "'s " + money(q.priceCents, q.currency) + (multi ? " (" + money(b.unitPriceCents, q.currency) + " × " + b.partySize + ")" : "") + " and the " + money(q.serviceFeeCents, q.currency) + " Nomila service fee." })
+    ];
+    return el("div", { "class": "card" }, rows);
+  }
+
+  // ── a private group's friends ──
+  function guestsCard(b) {
+    var box = el("div", { "class": "card" }, [el("h2", { text: "Invite your friends" })]);
+    var err = errLine();
+    box.appendChild(el("p", { text: b.guestsLeft > 0
+      ? "Add up to " + b.guestsLeft + (b.guestsLeft === 1 ? " friend" : " friends") + ". Each gets their own link to the call by email. " + b.athleteFirstName + " never sees their email."
+      : "Everyone in your group is added. Remove someone to invite a different friend." }));
+    (b.guests || []).forEach(function (g) {
+      var rm = btn("Remove", "quiet", function () {
+        if (!rm.dataset.sure) { rm.dataset.sure = "1"; rm.textContent = "Tap to confirm"; return; }
+        busy(rm, true);
+        api("DELETE", "/guests/" + encodeURIComponent(g.id)).then(function (r) {
+          if (r.guests) { state.booking.guests = r.guests; state.booking.guestsLeft = Math.max(0, (state.booking.partySize || 1) - 1 - r.guests.length); render(); }
+          else { busy(rm, false); err.textContent = r.error || "Try again."; }
+        });
+      });
+      box.appendChild(el("div", { "class": "guest" }, [el("span", null, [g.name || g.email, g.name ? el("small", { text: g.email }) : null]), rm]));
+    });
+    if (b.guestsLeft > 0) {
+      var email = el("input", { type: "email", autocomplete: "off", inputmode: "email", "aria-label": "Friend's email" });
+      var name = el("input", { autocomplete: "off", "aria-label": "Friend's first name (optional)" });
+      var add = btn("Send them a link", "primary", function () {
+        var v = (email.value || "").trim();
+        if (!v) { err.textContent = "Add your friend's email."; return; }
+        busy(add, true); err.textContent = "";
+        api("POST", "/guests", { email: v, name: (name.value || "").trim() || undefined }).then(function (r) {
+          busy(add, false);
+          if (r.guests) { state.booking.guests = r.guests; state.booking.guestsLeft = Math.max(0, (state.booking.partySize || 1) - 1 - r.guests.length); render(); }
+          else err.textContent = r.error || "Try again.";
+        });
+      });
+      box.appendChild(el("label", { text: "Friend's email" })); box.appendChild(email);
+      box.appendChild(el("label", { text: "First name (optional, shown in the call)" })); box.appendChild(name);
+      box.appendChild(add);
+    }
+    box.appendChild(err);
+    return box;
+  }
+
+  function nextStepCard(b) {
+    var err = errLine();
+    if (b.nextStep === "email") {
+      return (renderCode("Enter the code we emailed you to send your request."), null);
+    }
+    if (b.nextStep === "phone") {
+      return el("div", { "class": "card" }, [el("h2", { text: "One more check" }), el("p", { text: "Meeting in person needs a confirmed mobile number. Finish this step in the booking sheet you started from." })]);
+    }
+    if (b.nextStep === "identity") {
+      var idb = btn("Start the ID check", "primary", function () {
+        busy(idb, true);
+        api("POST", "/identity").then(function (r) { if (r.url) location.href = r.url; else { busy(idb, false); err.textContent = r.error || "Try again."; } });
+      });
+      return el("div", { "class": "card" }, [el("h2", { text: "Check your ID" }), el("p", { text: "In-person sessions need a quick ID check. It takes about a minute." }), idb, err]);
+    }
+    if (b.nextStep === "card") {
+      var hold = btn("Place the hold · " + money(b.quote.buyerTotalCents, b.quote.currency), "primary", function () {
+        busy(hold, true); err.textContent = "";
+        api("POST", "/hold").then(function (r) {
+          if (r.url) { location.href = r.url; return; }
+          if (r.alreadyHeld) { load(); return; }
+          busy(hold, false); err.textContent = r.error || "Couldn't open the payment page.";
+        });
+      });
+      return el("div", { "class": "card" }, [
+        el("h2", { text: "Hold your spot" }),
+        el("p", { text: confirmsItself(b)
+          ? "We'll place a hold of " + money(b.quote.buyerTotalCents, b.quote.currency) + " on your card and charge it as soon as your spot is confirmed. If the session fills up first, the hold is released."
+          : "We'll place a hold of " + money(b.quote.buyerTotalCents, b.quote.currency) + " on your card. You're only charged if " + b.athleteFirstName + " accepts. If they don't, the hold is released." }),
+        hold, err]);
+    }
+    return null;
+  }
+
+  function cancelCard(b) {
+    var box = el("div", { "class": "card" }, [el("h2", { text: "Need to cancel?" })]);
+    var err = errLine();
+    var show = btn("See what you'd get back", "quiet", function () {
+      busy(show, true);
+      api("GET", "/cancel-preview").then(function (p) {
+        busy(show, false);
+        if (p.__status >= 400) { err.textContent = p.error || "Try again."; return; }
+        show.hidden = true;
+        var line = p.inWindow
+          ? "You'd get " + money(p.refundCents, state.booking.quote.currency) + " back. The Nomila service fee isn't refundable."
+          : "It's inside " + state.booking.athleteFirstName + "'s cancellation window, so no refund. " + money(p.keptCents, state.booking.quote.currency) + " goes to them.";
+        var confirm = btn("Cancel the booking", "quiet", function () {
+          busy(confirm, true);
+          api("POST", "/cancel").then(function (r) { if (r.booking) { state.booking = r.booking; render(); } else { busy(confirm, false); err.textContent = r.error || "Try again."; } });
+        });
+        box.insertBefore(el("p", { text: line }), err); box.insertBefore(confirm, err);
+      });
+    });
+    box.appendChild(el("p", { "class": "fine", text: state.booking.freeCancelUntil ? "Free to cancel until " + when(state.booking.freeCancelUntil) + "." : "" }));
+    box.appendChild(show); box.appendChild(err);
+    return box;
+  }
+
+  function withdrawButton() {
+    var b = btn("Withdraw my request", "ghost", function () {
+      if (!b.dataset.sure) { b.dataset.sure = "1"; b.textContent = "Tap again to withdraw"; return; }
+      busy(b, true);
+      api("POST", "/withdraw").then(function (r) { if (r.booking) { state.booking = r.booking; render(); } else busy(b, false); });
+    });
+    return b;
+  }
+
+  function pickTimeCard(b) {
+    var err = errLine();
+    var list = el("div", { "class": "times" });
+    b.athleteProposedTimes.forEach(function (t) {
+      var x = btn(when(t.start), "quiet", function () {
+        busy(x, true);
+        api("POST", "/pick-time", { start: t.start }).then(function (r) { if (r.booking) { state.booking = r.booking; render(); } else { busy(x, false); err.textContent = r.error || "Try again."; } });
+      });
+      list.appendChild(x);
+    });
+    return el("div", { "class": "card" }, [el("h2", { text: b.athleteFirstName + " suggested other times" }), el("p", { text: "Pick one that works. " + b.athleteFirstName + " then confirms." }), list, err]);
+  }
+
+  function payCard(b) {
+    var err = errLine();
+    var pay = btn("Pay " + money(b.quote.buyerTotalCents, b.quote.currency), "primary", function () {
+      busy(pay, true);
+      api("POST", "/pay").then(function (r) { if (r.url) location.href = r.url; else { busy(pay, false); err.textContent = r.error || "Try again."; } });
+    });
+    return el("div", { "class": "card" }, [el("h2", { text: b.athleteFirstName + " accepted" }), el("p", { text: "Your earlier hold ran out, so the payment needs one more tap" + (b.payBy ? " before " + when(b.payBy) : "") + "." }), pay, err]);
+  }
+
+  function messagesCard() {
+    var box = el("div", { "class": "card" }, [el("h2", { text: "Messages" })]);
+    var list = el("div");
+    (state.messages || []).forEach(function (m) {
+      var who = m.from === "you" ? "You" : m.from === "nomila" ? "Nomila" : state.booking.athleteFirstName;
+      var note = m.held ? "Not delivered. " + (m.heldReason === "contact_details" ? "It included contact details." : m.heldReason === "link" ? "It included a link." : m.heldReason === "off_platform_payment" ? "Payments stay on Nomila." : "It's being reviewed.") : who;
+      list.appendChild(el("div", { "class": "msg " + m.from }, [m.body || "", el("small", { text: note })]));
+    });
+    if (!state.messages || !state.messages.length) list.appendChild(el("p", { "class": "fine", text: "Messages go through Nomila. Contact details and links aren't shared." }));
+    var input = el("textarea", { "aria-label": "Message", placeholder: "Write to " + state.booking.athleteFirstName });
+    var err = errLine();
+    var send = btn("Send", "quiet", function () {
+      var body = (input.value || "").trim(); if (!body) return;
+      busy(send, true);
+      api("POST", "/messages", { body: body }).then(function (r) {
+        busy(send, false);
+        if (r.messages) { state.messages = r.messages; input.value = ""; render(); } else err.textContent = r.error || "Try again.";
+      });
+    });
+    box.appendChild(list); box.appendChild(input); box.appendChild(send); box.appendChild(err);
+    return box;
+  }
+
+  // An .ics made here from what the page already shows (no extra request, no contact details in it).
+  function calendarFile(b) {
+    function stamp(iso) { return new Date(iso).toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, ""); }
+    function esc(s) { return String(s).replace(/[\\;,]/g, function (c) { return "\\" + c; }).replace(/\n/g, "\\n"); }
+    var lines = [
+      "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Nomila//Bookings//EN", "BEGIN:VEVENT",
+      "UID:" + b.ref + "@nomila.co", "DTSTAMP:" + stamp(new Date().toISOString()),
+      "DTSTART:" + stamp(b.startsAt), "DTEND:" + stamp(b.endsAt),
+      "SUMMARY:" + esc(b.title + " with " + b.athleteFirstName),
+      "DESCRIPTION:" + esc("Your booking: " + location.origin + location.pathname),
+      "LOCATION:" + esc(b.locationMode === "in_person" ? (b.venue || "") : "Video call (join from your booking page)"),
+      "END:VEVENT", "END:VCALENDAR",
+    ];
+    var url = URL.createObjectURL(new Blob([lines.join("\r\n")], { type: "text/calendar" }));
+    var a = el("a", { href: url, download: "nomila-booking.ics" });
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 5000);
+  }
+
+  function render() {
+    var b = state.booking; if (!b) return;
+    document.getElementById("ref").textContent = b.ref;
+    clear();
+    var first = b.athleteFirstName;
+    var top = [], cards = [];
+    switch (b.phase) {
+      case "verifying": {
+        var step = nextStepCard(b);
+        if (step === null && b.nextStep === "email") return; // the code screen is up
+        top = heading("Your request", "Almost there", "A couple of quick steps and your request goes to " + first + ".");
+        if (step) cards.push(step);
+        cards.push(summary(b));
+        break;
+      }
+      case "waiting":
+        if (confirmsItself(b)) {   // an open group confirms the spot by itself: this is only the moment the card is charged
+          top = heading("Almost in", "Confirming your spot", "Your hold is placed. We're confirming your spot now; refresh in a moment.");
+          cards.push(el("span", { "class": "chip", text: "Hold placed" }));
+          cards.push(summary(b));
+          break;
+        }
+        top = heading("Request sent", first + " has your request", b.respondBy ? first + " answers by " + when(b.respondBy) + ". Nothing is charged until then." : "Nothing is charged until " + first + " accepts.");
+        cards.push(el("span", { "class": "chip", text: b.holdPlaced ? "Hold placed · not charged" : "Waiting" }));
+        cards.push(summary(b));
+        if (b.actions.withdraw) cards.push(withdrawButton());
+        break;
+      case "pick_time":
+        top = heading("Pick a time", first + " suggested a different time", null);
+        cards.push(pickTimeCard(b)); cards.push(summary(b));
+        if (b.actions.withdraw) cards.push(withdrawButton());
+        break;
+      case "pay":
+        top = heading("Accepted", "You're nearly booked", null);
+        cards.push(payCard(b)); cards.push(summary(b));
+        break;
+      case "booked":
+        top = heading(isOpenGroup(b) ? "You're in" : "You're booked", "See you " + (b.startsAt ? when(b.startsAt) : "soon"), b.locationMode === "in_person" ? "The address is below." : "Join from this page when it's time. The call opens a few minutes before.");
+        cards.push(el("span", { "class": "chip ok", text: groupText(b) ? "Confirmed · " + groupText(b) : "Confirmed" }));
+        if (b.sessionUrl) cards.push(el("a", { "class": "btn primary", href: b.sessionUrl, text: "Go to your call" }));
+        if (b.meetingLink) cards.push(el("a", { "class": "btn ghost", href: b.meetingLink, rel: "noopener noreferrer", target: "_blank", text: "Open the meeting link" }));
+        if (b.startsAt && b.endsAt) cards.push(btn("Add to calendar", "ghost", function () { calendarFile(b); }));
+        cards.push(summary(b));
+        if (b.actions.guests) cards.push(guestsCard(b));
+        if (b.actions.cancel) cards.push(cancelCard(b));
+        break;
+      case "after":
+        top = heading("After your session", "How did it go?", "Tell us it happened and " + first + " is paid. If something went wrong, report it" + (b.releaseDueAt ? " before " + when(b.releaseDueAt) : "") + ".");
+        if (b.sessionUrl) cards.push(el("a", { "class": "btn primary", href: b.sessionUrl, text: "It happened · or report a problem" }));
+        cards.push(summary(b));
+        break;
+      case "on_hold":
+        top = heading("Under review", "A person at Nomila is looking at this", "We'll email you. The money stays put until it's sorted.");
+        cards.push(summary(b));
+        break;
+      default: {
+        var why = b.status === "declined" ? first + " couldn't take this one." : b.status === "expired" ? first + " didn't answer in time." : b.status === "withdrawn" ? "You withdrew this request." : b.status === "released" ? "All done. Thanks for booking." : b.status === "canceled" ? (b.canceledBy === "buyer" ? "You canceled this booking." : "This booking was canceled.") : "This booking is closed.";
+        var money2 = b.refundOutcome === "full" ? " You get a full refund." : b.refundOutcome === "price_only" ? " " + first + "'s price is refunded; the service fee isn't." : b.holdPlaced === false && !b.charged ? " Your card was never charged." : "";
+        top = heading("Your booking", b.status === "released" ? "Thanks for booking " + first : "Closed", why + money2);
+        cards.push(summary(b));
+      }
+    }
+    top.concat(cards).forEach(function (n) { if (n) view.appendChild(n); });
+    if (b.actions.message) {
+      if (state.messages === null) api("GET", "/messages").then(function (r) { state.messages = r.messages || []; render(); });
+      else view.appendChild(messagesCard());
+    }
+    var foot = document.getElementById("foot"); foot.textContent = "";
+    foot.appendChild(document.createTextNode("Questions or safety concerns? "));
+    foot.appendChild(el("a", { href: "mailto:" + b.supportEmail, text: b.supportEmail }));
+    foot.appendChild(document.createTextNode(" · Nomila doesn't record calls."));
+  }
+
+  function load() {
+    var q = new URLSearchParams(location.search);
+    var after = q.get("hold") === "done" ? "/hold/confirm" : null;
+    (after && access() ? api("POST", after) : api("GET", "")).then(function (r) {
+      if (r.__status === 401) { renderCode(null, { autoSend: true }); return; }
+      if (r.__status === 404) { clear(); heading("Your booking", "Link not found", r.error || "Open your booking email for the right link.").forEach(function (n) { if (n) view.appendChild(n); }); return; }
+      if (!r.booking) { clear(); view.appendChild(el("p", { "class": "lede", text: r.error || "Something went wrong. Refresh to try again." })); return; }
+      if (after) history.replaceState(null, "", location.pathname);
+      state.booking = r.booking; state.messages = null; render();
+    });
+  }
+  load();
+})();
+</script>
+</body>
+</html>

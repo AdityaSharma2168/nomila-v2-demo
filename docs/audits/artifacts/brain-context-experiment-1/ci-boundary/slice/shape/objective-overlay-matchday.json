@@ -1,0 +1,16 @@
+{
+ "id": "ctl-obj-matchday-series",
+ "athleteId": "dc8f37f1-deff-43f8-8c02-e37a5cc20d4f",
+ "version": "objective/1.1.0",
+ "domain": "audience",
+ "desiredState": { "value": "My audience follows my Stanford season with me — a match-day presence on my own channels for every match, through the end of the season.", "owner": "objectives", "confidence": "HIGH", "asOf": "2026-09-27T00:00:00Z", "evidenceClass": "EVALUATED", "evidenceIds": [], "rationale": "CONTROLLED forcing case (Case 3): an Objective shaped as a bounded activation with an external reason to end — the season.", "falsifiedBy": null },
+ "currentState": { "value": "She posts on Instagram under once every ten days and her TikTok has been idle for over 550 days; her engagement on what she does post is strong.", "owner": "objectives", "confidence": "HIGH", "asOf": "2026-09-27T00:00:00Z", "evidenceClass": "EVALUATED", "evidenceIds": [], "rationale": "Read from: contentPerformance[instagram], contentPerformance[tiktok], findings[mia.engagement_quality]", "falsifiedBy": null },
+ "provenance": { "origin": "athlete", "fromOpportunities": [], "fromAthleteIntent": [{ "statePath": "preferences[onboarding_goal.grow_my_following]", "how": "her stated ambition to grow her following" }], "currentStateEvidence": [{ "statePath": "contentPerformance[instagram]", "how": "posting frequency" }, { "statePath": "contentPerformance[tiktok]", "how": "idle channel" }] },
+ "success": { "observableCondition": "A match-day post appears on her own channels for each Stanford match, home and away, through the last match of the season." },
+ "horizon": { "kind": "period", "period": "this_season", "why": "The series is the season's; it ends when the season ends." },
+ "confidence": "HIGH",
+ "disposition": "accepted",
+ "lifecycle": "active",
+ "createdAt": "2026-09-27T00:00:00Z",
+ "lineage": { "opportunityKeys": [], "evidencePaths": ["contentPerformance[instagram]", "contentPerformance[tiktok]"] }
+}

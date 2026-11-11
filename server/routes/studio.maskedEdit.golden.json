@@ -1,0 +1,26 @@
+{
+  "masked — the quoted prompt": [
+    "Retouch the supplied frame. Change ONLY what the direction asks for; every other pixel, the framing, the grain, the lighting and the resolution must stay exactly as they are. Any person in the frame keeps their exact face, body, pose and clothing. This is a retouch, not a new photograph.",
+    "",
+    "REFERENCES — the images attached to this request, in order. Each has exactly one job, and only that job:",
+    "Image 1 — THE FRAME being edited. Every pixel outside the marked regions stays exactly as it is.",
+    "",
+    "This image is a 688x687 pixel crop taken from a larger photograph. CHANGE ONLY: black and green shorts (at 256,256, 176x175). Those coordinates are in THIS image's space, measured from its top-left corner, and they are authoritative — change what is AT them. Where a label names a side, it describes position in the image as given (left means nearer the left edge), never the subject's own left or right. Reconstruct what sits underneath from the surrounding surface. Any straight line, pole, bar, cable, edge, horizon or other continuous structure that passes through this image must come back UNBROKEN and in exactly its original position, angle and thickness — do not straighten it, re-draw it, thicken it, or shift it by even a few pixels. Where such a structure runs behind or past the thing you are changing, it must still line up perfectly with itself on both sides. Everything else in this crop must come back exactly as it is: same framing, same grain, same lighting.",
+    "",
+    "GOAL: Grow her audience with something that reads as hers, not as an ad",
+    "",
+    "DIRECTION: black and green shorts"
+  ],
+  "masked — the prompt sent for crop 0": [
+    "Retouch the supplied frame. Change ONLY what the direction asks for; every other pixel, the framing, the grain, the lighting and the resolution must stay exactly as they are. Any person in the frame keeps their exact face, body, pose and clothing. This is a retouch, not a new photograph.",
+    "",
+    "REFERENCES — the images attached to this request, in order. Each has exactly one job, and only that job:",
+    "Image 1 — THE FRAME being edited. Every pixel outside the marked regions stays exactly as it is.",
+    "",
+    "This image is a 688x687 pixel crop taken from a larger photograph. CHANGE ONLY: black and green shorts (at 256,256, 176x175). Those coordinates are in THIS image's space, measured from its top-left corner, and they are authoritative — change what is AT them. Where a label names a side, it describes position in the image as given (left means nearer the left edge), never the subject's own left or right. Reconstruct what sits underneath from the surrounding surface. Any straight line, pole, bar, cable, edge, horizon or other continuous structure that passes through this image must come back UNBROKEN and in exactly its original position, angle and thickness — do not straighten it, re-draw it, thicken it, or shift it by even a few pixels. Where such a structure runs behind or past the thing you are changing, it must still line up perfectly with itself on both sides. Everything else in this crop must come back exactly as it is: same framing, same grain, same lighting.",
+    "",
+    "GOAL: Grow her audience with something that reads as hers, not as an ad",
+    "",
+    "DIRECTION: black and green shorts"
+  ]
+}

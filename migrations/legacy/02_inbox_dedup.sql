@@ -1,0 +1,42 @@
+-- inbox_messages dedup by Message-ID + the unique index (runs in ONE transaction).
+--
+-- Extracted VERBATIM from .github/workflows/deploy.yml on 2026-09-08 (PR B of the
+-- environment split). This was the inline `psql -c` block that every deploy re-ran;
+-- it is idempotent and now runs from this file, in the same order, via
+-- scripts/db-migrate.sh — in dev and in prod alike. Nothing here is in the drizzle
+-- journal; the re-baseline (docs/plans/production-environment-split.md, Track D)
+-- folds it into 0000_baseline.
+-- One conversation delivered to two connected inboxes arrives as two Gmail
+-- messages with the SAME RFC 2822 Message-ID. detectDeal's echo gate catches
+-- that, but it is a check-then-insert and the Pub/Sub webhook (unlike the cron)
+-- holds no advisory lock — so both mailboxes' webhooks raced and both rows
+-- landed, which is the duplicate-reply report. Every insert site uses ON CONFLICT
+-- DO NOTHING, so a unique index is the whole fix: it makes the database, not a
+-- prior SELECT, the arbiter.
+--
+-- Backfill first — the index cannot be built while duplicates exist.
+--
+-- SURVIVOR RULE, copied from server/scripts/mergeDuplicateDealThreads.ts: an
+-- OUTBOUND row always beats an inbound one. A mixed-direction pair is the app-sent
+-- echo of the athlete's own reply, and the inbound copy is timestamped EARLIER
+-- (Gmail's internalDate is when it accepted the send; the outbound row is written
+-- after the readback returns). Keeping the earliest would therefore delete the
+-- athlete's own reply on every deploy, flip the deal back to "your turn", and drop
+-- its Message-ID out of the References chain. Then oldest-first, then id — NULLS
+-- LAST because received_at is nullable and a NULL comparison would match neither
+-- row, leaving the duplicate in place and failing the index build below.
+--
+-- --single-transaction: the DELETE and the index build must commit together. This
+-- step runs BEFORE the new revision is deployed, so the old code — which still has
+-- the check-then-insert race — is live and could land a fresh duplicate in between,
+-- which would fail CREATE UNIQUE INDEX and abort the deploy.
+--
+-- message_count is a denormalised counter that must not be left counting rows this
+-- DELETE removed. LEFT JOIN so a thread the DELETE emptied is still recomputed (an
+-- inner join skips exactly those). Gated on a count mismatch, so on a healthy
+-- database it updates nothing; last_message_at rides along because deleting a
+-- thread's newest row would otherwise leave it pointing at a deleted timestamp.
+
+WITH ranked AS (SELECT id, row_number() OVER (PARTITION BY athlete_id, gmail_message_id_header ORDER BY (direction = 'outbound') DESC, received_at ASC NULLS LAST, id ASC) AS rn FROM inbox_messages WHERE gmail_message_id_header IS NOT NULL) DELETE FROM inbox_messages m USING ranked r WHERE m.id = r.id AND r.rn > 1;
+CREATE UNIQUE INDEX IF NOT EXISTS inbox_messages_athlete_msgid_uniq ON inbox_messages (athlete_id, gmail_message_id_header) WHERE gmail_message_id_header IS NOT NULL;
+UPDATE inbox_threads t SET message_count = c.n, last_message_at = COALESCE(c.last_at, t.last_message_at) FROM (SELECT th.id AS tid, count(m.id) AS n, max(m.received_at) AS last_at FROM inbox_threads th LEFT JOIN inbox_messages m ON m.thread_id = th.id GROUP BY th.id) c WHERE c.tid = t.id AND t.message_count IS DISTINCT FROM c.n;

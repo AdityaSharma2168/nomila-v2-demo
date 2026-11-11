@@ -1,0 +1,79 @@
+-- 0058_media_assets_duration_precise.sql — a video's REAL length, in fractional seconds (video V8).
+--
+-- A file is only ever applied because scripts/db-migrate.sh names it in the step-3 list — there is
+-- no glob — so this file, that line, and the shared/schema.ts declaration ship in ONE commit, or
+-- the HARD drift gate (step 5, server/scripts/checkSchemaDrift.ts) reds the deploy that merged half
+-- of them.
+--
+-- ── WHAT THIS ADDS ──────────────────────────────────────────────────────────────────────────────
+--
+-- ONE nullable column on media_assets and nothing else. No DROP, no UPDATE, no backfill, no data
+-- movement, and — the point of the whole file — NO ALTER OF AN EXISTING COLUMN'S TYPE. The pre-0058
+-- image does not read this column and is completely unaffected by its existence, which makes the
+-- rollback story "do nothing".
+--
+-- ── WHY A SECOND COLUMN RATHER THAN WIDENING duration_seconds ───────────────────────────────────
+--
+-- media_assets.duration_seconds is INTEGER. It was added for the client's upload picker, which
+-- reports whole seconds, and three writers round a fraction away to fit it:
+--
+--     routes/media.ts        Math.round(durationSeconds)   — on a fraction the client already sent
+--     video/materialize.ts   Math.round(input.durationSeconds) in publishStitchOutput
+--     studio/jobs.ts         no round at all — Postgres's int4 assignment cast rounds it silently
+--
+-- The obvious fix is `ALTER COLUMN duration_seconds TYPE double precision`. It was rejected, and
+-- the reason is not taste:
+--
+--   1. THE DRIFT GATE IS NAME-ONLY. checkSchemaDrift.ts reads information_schema.columns and
+--      compares table_name and column_name. It never looks at a TYPE. So an ALTER that failed to
+--      apply somewhere would pass the gate clean, and the new code would then write fractions into
+--      an int4 column where Postgres rounds them — wrong data, no signal, gate green. An ADDITIVE
+--      column has the opposite failure mode: a column in schema.ts that is missing from the DB
+--      breaks every insert AND every bare select on the table, which is exactly what the gate is
+--      built to catch, and it catches it before the image serves a request.
+--
+--   2. int4 -> float8 IS A FULL TABLE REWRITE under ACCESS EXCLUSIVE. media_assets is the hottest
+--      table in the app — every library read, every rehost, every stitch resolve — and this runs
+--      inside a deploy against a live database. Adding a NULLABLE column with NO DEFAULT is a
+--      catalog-only change in PG 11+: instant, no rewrite, no long lock.
+--
+--   3. IT IS UNGUARDABLE. There is no `ALTER COLUMN ... TYPE IF ...`, so an in-place widen needs a
+--      DO block to be re-runnable. `ADD COLUMN IF NOT EXISTS` is idempotent by its own existence
+--      test — the same property that makes 0057's `CREATE TABLE IF NOT EXISTS` safe to re-run on
+--      every deploy — rather than by a guard someone has to write correctly.
+--
+--   4. ROLLBACK. Rolling back an additive column is a no-op: the previous image never names it.
+--      Rolling back a widened column is a SECOND rewrite, and it destroys the fractions on the way.
+--
+-- The cost is two columns for one fact, and it is paid deliberately. duration_seconds keeps its
+-- meaning and its readers EXACTLY as they are — the picker, the library grid's `fmtDur`, the client
+-- contract — and this column is read only where precision is the point (the V8 timeline, and
+-- video/materialize.ts's `effectiveSeconds` cap estimate). Neither is backfilled from the other:
+-- a rounded integer is not evidence about a fraction, and writing one as if it were would put a
+-- made-up number in a column whose whole purpose is to be measured.
+--
+-- ── double precision, NOT numeric ───────────────────────────────────────────────────────────────
+--
+-- drizzle maps `numeric` to a JAVASCRIPT STRING (that is what deals.amount is), and every reader
+-- here does arithmetic on the value — `end - start` in effectiveSeconds, `Math.floor(s / 60)` in
+-- the client's fmtDur. A string there is a silent wrong answer, not a type error. doublePrecision
+-- maps to a number, and there is already a fractional-seconds column in this schema that uses it:
+-- social_platform_metrics.avg_watch_time_sec.
+--
+-- ── SHAPE: THE SAME PATTERN 0044 USED ON THIS TABLE ─────────────────────────────────────────────
+--
+-- 0044_social_substrate added five columns to media_assets with bare `ADD COLUMN IF NOT EXISTS` —
+-- no DO block, no transaction control — and that is the precedent this file follows.
+--
+-- 0056 needed DO-block guards because WIDENING A CHECK is a DROP + ADD pair: Postgres has no
+-- ADD CONSTRAINT IF NOT EXISTS, db-migrate.sh applies each file with `psql -f` and NO
+-- --single-transaction, so every statement autocommits alone and the gap between the two is
+-- durable. That gap cost this repo two outages (PRs #140 + #141, and 9038d5d/#357).
+--
+-- THIS FILE WRITES NO SUCH PAIR. It is one self-guarded statement. There is no intermediate state
+-- for a concurrent run or a mid-DDL death to catch, because there is no second statement to be
+-- between. server/studio/mediaDuration.migration.test.ts fails if a DROP, an ALTER ... TYPE or a
+-- data-movement statement is ever added below.
+
+ALTER TABLE media_assets
+  ADD COLUMN IF NOT EXISTS duration_seconds_precise double precision;

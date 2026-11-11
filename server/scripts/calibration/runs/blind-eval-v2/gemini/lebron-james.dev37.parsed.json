@@ -1,0 +1,666 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "lebron-james",
+    "name": "LeBron James",
+    "sport": "Basketball"
+  },
+  "parseError": null,
+  "dimensionAssessments": {
+    "athletic_authority": {
+      "prose": "Despite being in his 24th NBA season, LeBron James remains an elite competitive force, recently averaging 20.9 PPG and earning his 22nd All-Star selection in 2026. His leadership was further cemented internationally as the MVP of the 2024 Olympic tournament. His recent move to the Philadelphia 76ers in July 2026 ensures he remains at the epicenter of championship contention.",
+      "confidence": "HIGH",
+      "confidenceReason": "Supported by extensive, verified historical and current 2025-26 NBA season performance statistics and recent league-official career developments."
+    },
+    "audience_scale": {
+      "prose": "James commands one of the largest social media audiences of any athlete globally, with over 154 million Instagram followers and nearly 53 million X followers. He represents the absolute benchmark for basketball audience scale, dwarfing peers like Stephen Curry by over threefold. This massive scale is highly diversified and international, spanning multiple generations and platforms.",
+      "confidence": "HIGH",
+      "confidenceReason": "Follower counts are widely documented across mainstream databases, Wikipedia, and live social media pages."
+    },
+    "engagement_quality": {
+      "prose": "Due to the scale of his follower base, his absolute engagement volume is staggering, with Instagram posts regularly receiving millions of likes and comments. However, detailed private metrics such as video completion, story click-through rates, and share metrics remain inaccessible. The public metrics nevertheless confirm a highly active, commercially responsive, and genuine global audience.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "While public engagement indicators (likes, comments, views) are highly visible and corroborated, precise private retention and conversion metrics are unavailable."
+    },
+    "cultural_relevance": {
+      "prose": "LeBron James transcends the sport of basketball, existing as a household name globally with unparalleled cultural relevance. He is a frequent subject of elite business, lifestyle, and sports media coverage, commanding immense search and public interest. His crossover appeal is verified by major Hollywood productions, significant philanthropy through his foundation, and extensive off-court business ventures.",
+      "confidence": "HIGH",
+      "confidenceReason": "Supported by an abundance of mainstream media coverage, Hollywood achievements, and global public interest data."
+    },
+    "narrative_power": {
+      "prose": "The narrative of 'The Chosen One' fulfilling his promise and transitioning into a billionaire business mogul is one of the most compelling and durable in sports history. His narrative power is currently amplified by unprecedented career longevity, including playing alongside his son Bronny, and embarking on a final championship chase in Philadelphia. This story is highly authentic, deeply respected by the public, and exceptionally attractive to global brands.",
+      "confidence": "HIGH",
+      "confidenceReason": "The athletic and entrepreneurial narrative is deeply documented, consistently reinforced by his actions, and highly resonant in the media."
+    },
+    "brand_fit": {
+      "prose": "With a mature, highly managed public image, James is an exceptionally safe and lucrative partner for brands ranging from luxury fashion to mainstream consumer products. His personal values—encapsulated by 'More Than an Athlete' and his 'I Promise' school—cohere perfectly with corporate social responsibility campaigns. His commercial versatility allows him to seamlessly lead multi-million-dollar global marketing campaigns.",
+      "confidence": "HIGH",
+      "confidenceReason": "His two-decade-long pristine record with top-tier corporate sponsors provides strong historical proof of brand fit."
+    },
+    "commercial_proof": {
+      "prose": "James is the undisputed gold standard for commercial proof in basketball, with a total off-court empire that recently pushed him past the $1.4 billion net worth milestone. Headlined by his historic lifetime Nike contract and multi-million-dollar partnerships with PepsiCo, AT&T, and GMC, he has demonstrated unrivaled pricing power. His tendency to structure deals with equity (e.g., Beats by Dre, Blaze Pizza) further solidifies his standing as a master commercial partner.",
+      "confidence": "HIGH",
+      "confidenceReason": "Backed by comprehensive, verified economic reports from Forbes and other financial media outlets."
+    },
+    "momentum": {
+      "prose": "Even at age 41, James' commercial and cultural momentum shows no signs of stagnation, boosted by his high-profile July 2026 signing with the Philadelphia 76ers. New endorsement deals, such as his September 2026 partnership with Polymarket, demonstrate that premium brands continue to seek his influence. His media coverage and social attention are currently accelerating as he enters his historic 24th NBA season.",
+      "confidence": "HIGH",
+      "confidenceReason": "Highly current news cycles from mid-to-late 2026 confirm a strong upward trajectory in public interest and fresh business deals."
+    }
+  },
+  "overallConfidence": {
+    "level": "HIGH",
+    "explanation": "LeBron James represents a rare case where public data is incredibly robust, highly consistent, and verified by major economic and athletic institutions. While private social engagement details are missing, his commercial earnings, follower counts, and athletic status are so definitive that missing data does not materially affect the assessment."
+  },
+  "identityConfidence": "HIGH",
+  "summary": "LeBron James represents the absolute zenith of modern athlete marketability, transcending basketball to exist as a global cultural and commercial institution. Athletically, James maintains elite standing even in his 24th season, recently averaging 20.9 points, 7.2 assists, and 6.1 rebounds, capped by his high-profile July 2026 signing with the Philadelphia 76ers. Socially, his audience scale is mammoth, commanding over 200 million cross-platform followers—including 154 million on Instagram—dwarfing his nearest NBA peers. Culturally, he is a household name whose narrative of self-made billionaire status, multi-generational athletic excellence, and community philanthropy makes him a universally compelling figure. Commercially, James is in a class of his own, with a verified net worth of $1.4 billion and an off-court empire anchored by a lifetime Nike contract, alongside blue-chip partners like AT&T, PepsiCo, and a newly signed September 2026 deal with Polymarket. His momentum remains remarkably stable at the peak, propelled by a fresh championship pursuit in Philadelphia. The primary areas of uncertainty are private-level social analytics, such as detailed content retention and conversion metrics, though his macroscopic commercial proof and cultural footprint overwhelmingly compensate for these omissions.",
+  "summaryWords": 183,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "LeBron James is estimated to have a net worth of $1.4 billion as of 2026, making him the first active NBA player to achieve billionaire status.",
+      "sourceTitle": "Forbes",
+      "sourceUrl": "https://www.forbes.com/profile/lebron-james/",
+      "sourceType": "major_media",
+      "date": "2026-03-10"
+    },
+    {
+      "id": "E2",
+      "claim": "LeBron James signed a two-year, $8 million contract with the Philadelphia 76ers in July 2026, framing it as his 'last decision' to chase another championship.",
+      "sourceTitle": "ESPN / Hot97",
+      "sourceUrl": "https://www.hot97.com",
+      "sourceType": "major_media",
+      "date": "2026-09-11"
+    },
+    {
+      "id": "E3",
+      "claim": "During the 2025-26 NBA regular season, James averaged 20.9 points, 7.2 assists, and 6.1 rebounds per game over 60 games and secured his 22nd All-Star selection.",
+      "sourceTitle": "StatMuse / RotoWire",
+      "sourceUrl": "https://www.statmuse.com",
+      "sourceType": "secondary",
+      "date": "2026-08-01"
+    },
+    {
+      "id": "E4",
+      "claim": "LeBron James has over 154 million followers on Instagram (@kingjames) and 52.9 million followers on X (@KingJames), ranking as the 5th most-followed athlete globally.",
+      "sourceTitle": "HypeAuditor / Fox Sports",
+      "sourceUrl": "https://www.foxsports.com",
+      "sourceType": "major_media",
+      "date": "2026-09-02"
+    },
+    {
+      "id": "E5",
+      "claim": "James possesses a massive brand portfolio featuring a lifetime Nike deal ($1B+), AT&T ($20-25M/yr), PepsiCo ($15-20M/yr), GMC ($10-15M/yr), Walmart ($5-10M/yr), and a new partnership with Polymarket in September 2026.",
+      "sourceTitle": "Hot97 / Adweek / Facebook",
+      "sourceUrl": "https://www.hot97.com",
+      "sourceType": "major_media",
+      "date": "2026-09-11"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "LeBron competes at the absolute peak of basketball in the NBA and represents elite global standards.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3"
+      ],
+      "rationale": "Averages of 20.9 PPG, 7.2 APG, and 6.1 RPG in his 23rd/24th year confirm elite performance results.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4"
+      ],
+      "rationale": "As a 22-time All-Star, 4-time MVP, and the NBA's all-time leading scorer, his formal standing is unrivaled.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "He is a three-time Olympic Gold medalist, recently earning MVP honors at the Paris 2024 Games.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "He remains a focal point and starter on a championship-contending team (Philadelphia 76ers) and a global ambassador for his sport.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "His elite 2025-26 performance and July 2026 move to a major championship contender keep him immediately relevant.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Over 200 million cross-platform followers establish him as one of the most visible public figures on earth.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "His social audience is roughly three times larger than his closest basketball contemporary, Stephen Curry.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 70,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "His audience is highly mature, resulting in steady but incremental percentage growth rather than rapid spikes.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Maintains massive, dominant hubs across Instagram, X, and Facebook, supported by his Uninterrupted media network.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "scored",
+      "score": 85,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Regularly averages over 1.5 million likes per post on Instagram, demonstrating robust interaction for his scale.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "scored",
+      "score": 90,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Social posts instantly go viral and feed directly into mainstream sports and lifestyle news cycles.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Private platform metrics measuring exact share and save rates are not publicly available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Private video completion and retention curves are not publicly available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Private Instagram Story reach and interaction rates are not publicly available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "scored",
+      "score": 85,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Third-party audit estimates show standard high authenticity, indicating a highly genuine and commercial audience base.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E5"
+      ],
+      "rationale": "Commands constant, daily coverage across global sports, business, lifestyle, and news outlets.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Covered prominently by elite, prestigious outlets including Forbes, The New York Times, and ESPN.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Consistently ranks as one of the top five most-searched athletes globally, sustaining extreme public curiosity.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Every post, game performance, or business move sparks widespread public debate across major online communities.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "Household name globally, recognized as an actor, media producer, philanthropist, and entrepreneurial icon.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E4"
+      ],
+      "rationale": "His journey from 'The Chosen One' to a billionaire champion with unparalleled longevity is entirely unique.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "Two decades of highly documented triumph, philanthropy, family dedication, and business acumen offer immense depth.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "His narrative is backed by real, highly audited milestones, including his family foundation's school and verifiable wealth.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E4"
+      ],
+      "rationale": "The media deeply amplifies his self-made billionaire narrative, the father-son pairing, and his late-career championship pursuits.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "His story seamlessly integrates with high-end luxury, lifestyle, family-oriented, and hyper-competitive corporate campaigns.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "His narrative is structured for permanent relevance, scaling from athlete to team owner and global icon.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Credibly endorses brands from telecommunications and finance to luxury watches, apparel, and entertainment.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "Highly curated and family-focused image with no major personal scandals over a twenty-year career.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "His audience is incredibly diverse and possesses high purchasing power, appealing to mainstream and premium brands alike.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Consistently aligns with messages of social equality, child education, work ethic, and family focus.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Proved his capability as a cinematic actor, veteran commercial spokesperson, and engaging podcast host.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Maintains highly valuable commercial appeal across North America, Europe, Asia, and Latin America.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "His status as a billionaire and $100M+ annual off-court earnings provide indisputable commercial proof.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Dozens of simultaneous high-value endorsements across multiple global industries are actively maintained.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Partners primarily with top-tier global market leaders like Nike, AT&T, PepsiCo, GMC, and Amazon.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Demonstrated by a historic lifetime Nike commitment and long-term multi-year partnerships with AT&T and Beats.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Campaigns like Nike's 'Forever King' achieve viral acclaim and drive record-breaking athletic product sales.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Commands premium multi-million-dollar fees and often mandates equity stakes as a condition of partnership.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "While in the sunset of his career, his July 2026 trade/move to the 76ers injects huge competitive energy and a fresh championship narrative.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 70,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Follower counts continue to steadily climb but reflect the slow growth typical of highly saturated, mature accounts.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E4"
+      ],
+      "rationale": "Media coverage has spiked considerably due to his 2026 offseason move and upcoming record-breaking 24th NBA season.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E5"
+      ],
+      "rationale": "Public search and social discussion are trending upward due to the 76ers roster consolidation and Polymarket deal.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Continues to expand his portfolio in late 2026 with new-age sectors like prediction markets (Polymarket).",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Unparalleled audience scale, leading all basketball players globally with over 200M+ cross-platform followers.",
+    "Unprecedented athletic authority and career longevity, remaining highly productive in his 24th NBA season.",
+    "Exceptional commercial track record, verified by billionaire status and a lifetime Nike deal.",
+    "Strong narrative power backed by authentic philanthropy and major business ventures like SpringHill Company."
+  ],
+  "keyConstraints": [
+    "Extremely high pricing threshold, which may exclude small or mid-tier brands from partnering with him.",
+    "Mature audience growth phase; due to saturation, rapid exponential expansion of his follower base is unlikely.",
+    "Age-related athletic decline risks; though Father Time has been deferred, his remaining career window is short."
+  ],
+  "importantMissingData": [
+    "Private social analytics including Instagram Story click-through rates, video retention times, and direct shares/saves."
+  ],
+  "identityOrEvidenceRisks": [
+    "No material identity or evidence risks present; the subject is globally famous and extensively audited by elite financial and sports organizations."
+  ],
+  "socialBlockSupplied": false
+}

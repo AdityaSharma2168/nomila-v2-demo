@@ -1,0 +1,196 @@
+{
+  "id": "m01-college-home-season",
+  "reviewed": false,
+  "description": "A college starter in season: refresh the home opener on file (never a second copy), retire a passed moment and one that no longer fits, add the partner's launch from the deal (no page needed) and a sourced awareness game.",
+  "mock_today": "2026-10-10",
+  "athlete": {
+    "name": "Marisol Okafor",
+    "sport": "volleyball"
+  },
+  "stage": {
+    "label": "College starter, first local partner",
+    "band": "developing"
+  },
+  "fixture": {
+    "facts": [
+      {
+        "key": "f1",
+        "subject_kind": "athlete",
+        "subject_name": "Marisol Okafor",
+        "claim": "Marisol Okafor starts at outside hitter for Lakeshore University.",
+        "type": "found",
+        "date": "-40",
+        "topic": "team",
+        "field": "team",
+        "field_value": "Lakeshore University"
+      },
+      {
+        "key": "f2",
+        "subject_kind": "organization",
+        "subject_name": "Lakeshore University",
+        "claim": "Lakeshore University plays in the North Lakes Conference.",
+        "type": "found",
+        "date": "-60",
+        "topic": "team"
+      },
+      {
+        "key": "f3",
+        "subject_kind": "athlete",
+        "subject_name": "Marisol Okafor",
+        "claim": "I want to grow my local following first.",
+        "type": "said",
+        "date": "-3"
+      }
+    ],
+    "moments": [
+      {
+        "key": "m1",
+        "name": "Conference home opener",
+        "claim": "Lakeshore University hosts its conference home opener.",
+        "date": "+6",
+        "topic": "moment",
+        "idea": {
+          "hook": "First serve at home.",
+          "format": "reel",
+          "platform": "instagram"
+        }
+      },
+      {
+        "key": "m2",
+        "name": "Fall media day",
+        "claim": "The team held its fall media day.",
+        "date": "-5",
+        "topic": "upcoming",
+        "idea": {
+          "hook": "Media day looks.",
+          "format": "carousel",
+          "platform": "instagram"
+        }
+      },
+      {
+        "key": "m3",
+        "name": "Alumni gala",
+        "claim": "The athletics department holds an alumni gala.",
+        "date": "+20",
+        "topic": "moment"
+      }
+    ],
+    "deals": [
+      {
+        "key": "d1",
+        "brand": "Harbor Coffee Roasters",
+        "category": "coffee",
+        "status": "accepted",
+        "term_start": "-20",
+        "term_end": "+70",
+        "signed": true
+      }
+    ]
+  },
+  "expect": {
+    "min_moments": 3,
+    "max_moments": 5,
+    "retired": [
+      "m2",
+      "m3"
+    ],
+    "kept": [
+      "m1"
+    ],
+    "golden": [
+      {
+        "id": "g1",
+        "match": "home opener",
+        "why": "The athlete's own home opener, six days out, is the clearest moment on file."
+      },
+      {
+        "id": "g2",
+        "match": "Harbor Coffee",
+        "why": "The current partner's launch falls inside the window."
+      }
+    ],
+    "min_recall": 1,
+    "must_not": [
+      {
+        "match": "Summit Espresso",
+        "why": "A coffee brand competing with the current partner."
+      }
+    ]
+  },
+  "mock": {
+    "sources": [
+      "https://example.org/m01-college-home-season/opener-news",
+      "https://example.org/m01-college-home-season/awareness"
+    ],
+    "moments": [
+      {
+        "name": "Conference home opener",
+        "description": "Lakeshore University opens conference play at home.",
+        "date": "+6",
+        "date_precision": "day",
+        "category": "schedule",
+        "why_now": "The first home crowd of conference play, and the local following is the goal.",
+        "source_url": "https://example.org/m01-college-home-season/opener-news",
+        "source_title": "Lakeshore athletics",
+        "confidence": 0.9,
+        "based_on": [
+          "$F:f1"
+        ],
+        "refreshes": "$M:m1",
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "First serve at home, and the stands are yours.",
+          "angle": "Home court, home crowd."
+        }
+      },
+      {
+        "name": "Harbor Coffee Roasters autumn blend launch",
+        "description": "The partner launches its autumn blend inside the deal's term.",
+        "date": "+16",
+        "date_precision": "day",
+        "category": "partner_campaign",
+        "why_now": "The partner's launch is the deal's first big moment.",
+        "source_url": "",
+        "source_title": "",
+        "confidence": 0.7,
+        "based_on": [
+          "$D:d1"
+        ],
+        "refreshes": null,
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "Early practice, autumn blend.",
+          "angle": "The routine before the work."
+        }
+      },
+      {
+        "name": "Awareness night game",
+        "description": "The conference marks an awareness night at a home game.",
+        "date": "+13",
+        "date_precision": "day",
+        "category": "holiday_awareness",
+        "why_now": "The team wears awareness kit at home, a real angle for the local community.",
+        "source_url": "https://example.org/m01-college-home-season/awareness",
+        "source_title": "Conference news",
+        "confidence": 0.8,
+        "based_on": [],
+        "refreshes": null,
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "Playing for something bigger tonight.",
+          "angle": "Community first."
+        }
+      }
+    ],
+    "retire": [
+      {
+        "key": "$M:m3",
+        "why": "cancelled",
+        "reason": "The alumni gala was cancelled this year."
+      }
+    ]
+  }
+}

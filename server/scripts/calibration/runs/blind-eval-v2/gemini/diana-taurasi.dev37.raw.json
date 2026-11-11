@@ -1,0 +1,288 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "diana-taurasi",
+    "name": "Diana Taurasi",
+    "sport": "Basketball"
+  },
+  "conditions": "gemini-3.5-flash via Vertex; Google Search grounding; default thinking; temperature 1.0; text output with fenced JSON; spec v0.2 additions; social block none",
+  "startedAt": "2026-09-14T12:37:29.352Z",
+  "attempts": 1,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "responseId": "ieqnap7OO8f4sbwPitjUoAU",
+  "latencyMs": 101352,
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+    "promptTokens": 3510,
+    "outputTokens": 7197,
+    "thoughtTokens": 9909,
+    "totalTokens": 20616,
+    "searchCalls": 12
+  },
+  "costUsd": 0.194219,
+  "text": "```json\n{\n  \"athlete\": {\n    \"name\": \"Diana Taurasi\",\n    \"sport\": \"Basketball\",\n    \"identity_confidence\": \"HIGH\"\n  },\n\n  \"marketability_summary\": \"Diana Taurasi is widely regarded as the Greatest of All Time (GOAT) in women's basketball, cementing her marketability around an unparalleled narrative of competitive excellence and franchise loyalty. Following her official retirement in February 2025 after a legendary 20-season WNBA career with the Phoenix Mercury, and her subsequent jersey retirement and Ring of Honor induction in August 2026, Taurasi has successfully transitioned into a premier post-retirement brand ambassador. Although her personal social media reach is modest relative to active, younger superstars—with her Instagram totaling around 406K followers and lacking highly active presences on TikTok or X—her derivative reach through league, media, and corporate channels remains massive. Her commercial portfolio is exceptionally high-caliber, highlighted by long-term partnerships with Nike and State Farm, 2024 campaign rollouts for Capital One and AT&T, and new 2026 ambassador roles for Mars Petcare's GREENIES and Dick's Sporting Goods. While she is no longer competing actively on the court, which naturally caps her athletic trajectory, her narrative power remains highly durable, making her an attractive, brand-safe partner for mainstream companies aiming to align with themes of legacy, loyalty, family, and historic achievement. The primary missing data centers around private campaign ROI metrics, but public indicators confirm she commands elite pricing power and repeat corporate demand.\",\n\n  \"evidence\": [\n    {\n      \"id\": \"E1\",\n      \"claim\": \"Diana Taurasi retired from professional basketball in February 2025 after a 20-year WNBA career spent entirely with the Phoenix Mercury.\",\n      \"source_title\": \"After an Unparalleled Career, WNBA Star Diana Taurasi Announces Her Retirement\",\n      \"source_url\": \"https://time.com/6822247/diana-taurasi-retirement-wnba-interview/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2025-02-25\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Exclusive retirement announcement interview.\"\n    },\n    {\n      \"id\": \"E2\",\n      \"claim\": \"Taurasi is the WNBA's all-time leader in points (10,646), made field goals, three-point field goals, and free throws, and was voted the WNBA's Greatest Player of All-Time in 2021.\",\n      \"source_title\": \"Phoenix Mercury Announce Diana Taurasi Mercury Ring of Honor Induction for Summer 2026\",\n      \"source_url\": \"https://mercury.wnba.com/news/phoenix-mercury-announce-diana-taurasi-mercury-ring-of-honor-induction-for-summer-2026/\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2025-03-13\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Official team and league history registry.\"\n    },\n    {\n      \"id\": \"E3\",\n      \"claim\": \"Taurasi is the most decorated Olympic basketball player of all time, winning six consecutive Olympic gold medals representing Team USA (2004-2024).\",\n      \"source_title\": \"Diana Taurasi | Team USA Athlete Profile\",\n      \"source_url\": \"https://www.teamusa.com/profiles/diana-taurasi\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2024-08-11\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Olympic history archive.\"\n    },\n    {\n      \"id\": \"E4\",\n      \"claim\": \"The Phoenix Mercury officially retired Taurasi's No. 3 jersey and inducted her into the Ring of Honor on August 16, 2026.\",\n      \"source_title\": \"Mercury Retire Diana Taurasi's No. 3, Welcome WNBA Legend to Ring of Honor\",\n      \"source_url\": \"https://www.theathletic.com/wnba/mercury-retire-diana-taurasi-jersey\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2026-08-17\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Covers the tribute night ceremonies at the Phoenix arena.\"\n    },\n    {\n      \"id\": \"E5\",\n      \"claim\": \"Taurasi's official personal Instagram account holds approximately 406,000 followers.\",\n      \"source_title\": \"diana taurasi (@dianataurasi) — Instagram Stats & Profile Insights\",\n      \"source_url\": \"https://zaver.one/creator/dianataurasi\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-07-15\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Public social metrics tracking.\"\n    },\n    {\n      \"id\": \"E6\",\n      \"claim\": \"Taurasi signed a brand partnership with Mars Petcare's GREENIES in March 2026 to front their national 'Be Your Dog's Mouthguard' dental hygiene campaign.\",\n      \"source_title\": \"Diana Taurasi & The UConn Huskies Front GREENIES Dog Health Campaign\",\n      \"source_url\": \"https://bookingagentinfo.com/blog/diana-taurasi-greenies-dog-health-campaign/\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-03-16\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Detailed overview of the pet dental health campaign timing and activations.\"\n    },\n    {\n      \"id\": \"E7\",\n      \"claim\": \"Taurasi co-starred with Lil Dicky in a co-branded Dick's Sporting Goods x Nike national campaign titled 'Scouts Are Out' in March 2026.\",\n      \"source_title\": \"Lil Dicky & Diana Taurasi Star In DICK'S x Nike Scouts Are Out Campaign\",\n      \"source_url\": \"https://bookingagentinfo.com/blog/lildicky-diana-taurasi-dicks-nike-campaign/\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-03-17\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Multi-platform brand campaign release.\"\n    },\n    {\n      \"id\": \"E8\",\n      \"claim\": \"Taurasi maintains high-profile brand relationships and endorsements with Nike, State Farm, Capital One, AT&T, and a historic $1.35 million endorsement with BodyArmor.\",\n      \"source_title\": \"Diana Taurasi Net Worth and Endorsement Portfolio Details\",\n      \"source_url\": \"https://www.celebritynetworth.com/richest-athletes/nba/diana-taurasi-net-worth/\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-03-14\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Comprehensive breakdown of commercial deals, career earnings, and sponsors.\"\n    }\n  ],\n\n  \"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Spent her entire 20-year professional career at the highest levels of global women's basketball, including the WNBA and the Olympic Games.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"An exceptionally dominant historical competitor, retiring as the WNBA's all-time leading scorer with 10,646 points and three championships.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"Formally voted the Greatest Player of All Time (GOAT) in WNBA history during the league's 25th anniversary fan vote.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"Unprecedented international status as the only basketball player in Olympic history to win six consecutive gold medals.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Served as the definitive centerpiece and team leader of the Phoenix Mercury franchise for two decades, as well as a senior anchor for Team USA.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\", \"E4\"],\n        \"rationale\": \"Though retired since early 2025, her sixth Olympic gold was won in late 2024, and her historic jersey retirement was celebrated in August 2026.\"\n      }\n    },\n    \"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 55,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Direct personal social media reach is modest (~406K on Instagram) relative to her legendary status, with no active TikTok or X accounts.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 60,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Her direct follower count falls in a moderate percentile, below younger, digital-native superstars like Caitlin Clark but remains strong among veterans.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 30,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Audience growth has largely stabilized post-retirement, experiencing minor, localized lifts during major legacy celebration events.\"\n      },\n      \"platform_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 40,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Maintains a highly selective social footprint, primarily focusing on her verified Instagram account while skipping personal profiles on TikTok and X.\"\n      }\n    },\n    \"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 50,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Organic personal interaction rates are moderate, which is typical of retired sports icons who do not utilize high-frequency, creator-style posting.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\", \"E6\", \"E7\"],\n        \"rationale\": \"Taurasi's media and co-branded commercial content reaches far beyond her direct followers, finding massive distribution via brand and league channels.\"\n      },\n      \"shares_saves_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Granular private platform metric data regarding post shares and saves is not publicly available.\"\n      },\n      \"video_retention\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Audience video retention and completion rates on her social media channels are private and untracked.\"\n      },\n      \"story_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"First-party performance metrics for temporary Instagram Stories are private and not publicly reported.\"\n      },\n      \"audience_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Her audience is highly authentic, comprising real-world sports enthusiasts, WNBA loyalists, and local fans from the Phoenix and Connecticut markets.\"\n      }\n    },\n    \"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"Commanded heavy national media attention during her early 2025 retirement and her historic Ring of Honor weekend in August 2026.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"Consistently featured in elite mainstream publications including TIME, ESPN, The Athletic, and major national network broadcasts.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"Public search curiosity shows highly defined peaks aligned with career milestones like her retirement announcement and jersey ceremony.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E4\"],\n        \"rationale\": \"Frequently discussed across sports platforms as the definitive 'GOAT' and standard of comparison for all women's basketball legacy debates.\"\n      },\n      \"crossover_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\", \"E8\"],\n        \"rationale\": \"Holds widespread recognition outside of basketball due to prominent national ad campaigns for State Farm, Capital One, and pet wellness.\"\n      }\n    },\n    \"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\", \"E4\"],\n        \"rationale\": \"Instantly recognizable, distinctive persona as the 'White Mamba' defined by fierce competitiveness, extreme franchise loyalty, and historic titles.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\", \"E8\"],\n        \"rationale\": \"A richly layered narrative spanning her UConn collegiate dynasty, lucrative Russian overseas career, and her life with her wife and children.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\", \"E4\"],\n        \"rationale\": \"Her story is fully authenticated by extensive, unassailable physical records, public milestones, and peer testimonials.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"Mainstream sports media highly reinforces and actively celebrates her narrative of unmatched grit and competitive loyalty.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"Her brand identity easily matches themes of elite defense, reliable leadership, loyalty, and organic pet parenting.\"\n      },\n      \"durability\": {\n        \"status\": \"scored\",\n        \"score\": 96,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Her status as a legendary basketball pioneer guarantees her permanent cultural relevance and long-term marketing durability.\"\n      }\n    },\n    \"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\", \"E8\"],\n        \"rationale\": \"Credibly fits across sports apparel, personal finance, telecommunications, pet wellness, and automotive-adjacent categories.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"Her fiery playing style has settled into a highly respected elder stateswoman role, carrying excellent reputation ratings and no safety concerns.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"Her demographic target is exceptionally premium, comprising highly dedicated sports fans, active families, and affluent pet parents.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"Consistently displays a cohesive public identity centered on hard work, dedication, family loyalty, and authentic passion for basketball.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"Performs very well in direct-to-camera broadcast television ads, comedic commercial sketches, and structured sports media appearances.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"Holds powerful local dominance in the Southwest (Phoenix) and New England (Connecticut/UConn) paired with national American prestige.\"\n      }\n    },\n    \"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E8\"],\n        \"rationale\": \"Maintains highly lucrative real-world endorsements, highlighted by multi-year Nike apparel contracts and a historic $1.35 million BodyArmor deal.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\", \"E8\"],\n        \"rationale\": \"Continues to secure fresh, major campaigns, actively launching multiple prominent ambassador activations in 2026.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\", \"E8\"],\n        \"rationale\": \"Roster consists exclusively of world-leading corporate brands, including Nike, State Farm, Capital One, AT&T, and Mars Petcare.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E8\"],\n        \"rationale\": \"Her historic, multi-decade relationship with Nike serves as a prime testament to her client retention and repeat brand demand.\"\n      },\n      \"campaign_performance\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Specific sales conversion, click-through rates, or direct ROI metrics for her campaigns are not publicly disclosed.\"\n      },\n      \"pricing_power\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E8\"],\n        \"rationale\": \"Commands premium six-to-seven-figure endorsement valuations, representing the pinnacle tier of female basketball talent marketing power.\"\n      }\n    },\n    \"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 40,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"Her physical playing career is complete following her 2025 retirement, though her athletic prestige remains highly celebrated.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 35,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Personal follower growth has plateaued in her retirement era, experiencing brief, isolated spikes during major public ceremonies.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her media exposure remains highly robust and overwhelmingly positive, refreshed recently by her massive August 2026 tribute celebrations.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 68,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Public search interest is stable overall, spiking cleanly around key milestones such as her August 2026 Ring of Honor induction.\"\n      },\n      \"commercial_acceleration\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"Shows excellent post-retirement commercial strength, securing prominent national brand campaigns with GREENIES and Dick's in early 2026.\"\n      }\n    }\n  },\n\n  \"dimension_assessments\": {\n    \"athletic_authority\": {\n      \"prose\": \"Diana Taurasi holds maximum historical athletic authority as one of the most decorated players in basketball history. Across 20 professional seasons, she secured three WNBA titles, three NCAA championships, and a record-breaking six consecutive Olympic gold medals. Even in retirement, her legacy as the league's all-time leading scorer remains a prominent and deeply respected standard of comparison.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Backed by exhaustive and unassailable league, national team, and international Olympic competitive registries spanning more than two decades.\"\n    },\n    \"audience_scale\": {\n      \"prose\": \"Taurasi's audience scale is moderate and highly concentrated relative to her legendary status. While she has around 406K followers on Instagram, she does not maintain active accounts on newer platforms like TikTok or X. Consequently, she lacks the direct social reach of active, younger superstars, though she regularly gains massive secondary reach via corporate partners and league channels.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Based on public platform audits directly tracking her official follower tallies and social media footprints.\"\n    },\n    \"engagement_quality\": {\n      \"prose\": \"Her direct audience engagement is respectable but typical of a veteran post-career athlete who does not post on a high-frequency, creator-style schedule. Her public audience represents a highly authentic, real-world community of sports fans. When featured in major campaigns or league ceremonies, her content regularly goes viral across media, multiplying her organic reach.\",\n      \"confidence\": \"MEDIUM\",\n      \"confidence_reason\": \"In-depth private metrics like story completion and share rates are unavailable, but public post interactions and secondary media amplification are highly visible.\"\n    },\n    \"cultural_relevance\": {\n      \"prose\": \"Taurasi retains an elite cultural footprint that spans both the basketball world and mainstream American sports culture. Her retirement in early 2025 and her August 2026 Ring of Honor ceremony generated massive, persistent media coverage. She is widely recognized as a cross-generational sports icon, making her a primary cultural touchstone.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Corroborated by high-quality mainstream media volume and widespread public peer-to-peer discourse surrounding her career milestones.\"\n    },\n    \"narrative_power\": {\n      \"prose\": \"Taurasi possesses an exceptionally powerful, authentic, and durable narrative as the ultimate competitor and loyal franchise icon. Known as the 'White Mamba,' her story has deep substance, ranging from collegiate dominance to two decades with a single professional club, to her role in a prominent queer family. This narrative translates cleanly to brand campaigns focusing on legacy, trust, and family life.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Grounded in highly documented personal and professional milestones that are actively validated and amplified by major media and corporate campaigns.\"\n    },\n    \"brand_fit\": {\n      \"prose\": \"Her brand fit is highly versatile, safe, and attractive for premium mainstream corporate partners. Her transition from a fiery on-court competitor to a respected post-career ambassador has elevated her corporate appeal, allowing her to credibly endorse pet care, finance, and automotive brands. Her identity aligns seamlessly with core corporate values of consistency, leadership, and community.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Demonstrated by her diverse real-world endorsements across multiple distinct categories, with a flawless off-court reputation.\"\n    },\n    \"commercial_proof\": {\n      \"prose\": \"Taurasi's commercial proof is elite, with a proven history of securing high-value, long-term deals with blue-chip brands like Nike and State Farm. Her commercial viability has continued strongly into her retirement, evidenced by major new campaign rollouts with GREENIES and Dick's Sporting Goods in early 2026. She continues to command top-tier pricing power and client renewals.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Backed by public announcements of major commercial campaigns and historical partnership longevity with world-leading brands.\"\n    },\n    \"momentum\": {\n      \"prose\": \"While her on-court athletic career has concluded, Taurasi's commercial and media momentum remains surprisingly robust for a retired athlete. Her brand activity accelerated significantly in early 2026 with multiple high-profile national campaigns, and her August 2026 tribute weekend in Phoenix generated a fresh wave of public attention. Her direct social growth has plateaued, but her overall corporate trajectory is upward.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Supported by the recent timing of her jersey retirement in August 2026 and her brand campaigns launched in early 2026.\"\n    }\n  },\n\n  \"overall_confidence\": {\n    \"level\": \"HIGH\",\n    \"explanation\": \"Diana Taurasi's identity and professional basketball career are fully documented with no outstanding ambiguities. The marketability assessment is backed by extensive, highly reliable data from official leagues, international sports bodies, and prominent corporate campaigns up to late 2026. The only minor missing elements are private platform interaction metrics, which are typical for athletes without connected accounts.\"\n  },\n\n  \"key_strengths\": [\n    \"Voted the undisputed WNBA Greatest of All Time (GOAT) with an unassailable on-court legacy including 3 championships and 6 Olympic gold medals.\",\n    \"Exceptional commercial track record with prestigious, blue-chip partners (Nike, Capital One, State Farm, AT&T) that spans over two decades.\",\n    \"Strong post-retirement commercial momentum, as shown by major new campaigns launched in early 2026 with Mars Petcare (GREENIES) and Dick's Sporting Goods.\",\n    \"Highly compelling, authentic personal narrative rooted in extreme loyalty (20 years with Phoenix Mercury) and representation as a high-profile queer family.\"\n  ],\n  \"key_constraints\": [\n    \"Active playing career has fully concluded, meaning she no longer generates weekly highlight reels or active performance news cycles.\",\n    \"Personal social media audience scale (406K on IG) is modest compared to the multi-million followings of younger active WNBA superstars, limiting direct digital-only campaigns.\",\n    \"Virtually non-existent presence on critical modern engagement platforms like TikTok and X, reducing direct reach to younger, tech-native demographics.\"\n  ],\n  \"important_missing_data\": [\n    \"Granular, first-party digital platform metrics such as average Instagram Story completion rates, save/share ratios, and audience location demographics.\",\n    \"Quantitative campaign ROI, direct sales lift, or conversion metrics for her recent corporate partnerships (e.g., GREENIES or Capital One).\"\n  ],\n  \"identity_or_evidence_risks\": [\n    \"None. Diana Taurasi is a universally recognized sports figure with highly verified, consistent personal history and zero material identity confusion or brand-safety risks.\"\n  ]\n}\n```",
+  "native": {
+    "groundingChunks": [
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFRu7wdTiVdf8kZu0z9cmLz7c1XQTjnixDixWygi-eNyIZ94mT-jLFX6lmtSt95gNpZrEfwga3yZz7ERwPla8ySPqGo-1fTei6TvRmekY0aoLcwUxyHSomRyx8I8lDUFwXSOhHh4IjNPeV_TCE",
+          "title": "britannica.com",
+          "domain": "britannica.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsKIZI6CabofkHCN8w2dGNmWRRzgC5jVN7h9wKgL_eTCpDPkgPpbdI5Avdfa3vl1x3evFxEqJSkhgwVW40wDg00g4nHCREFvOTzPMix5VO9bg_vn3MFbmtqIw2x28NCSVleo70yi4=",
+          "title": "wikipedia.org",
+          "domain": "wikipedia.org"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFVJ1Mkc3GqLpnDjRY-HoHzAA-kp54a6wVBFRuUXNQu-Vn8NjEBOJMowhq8ec1-DNvfHEoByNaQRI9AaNuTYh4sXlQ7HV3DvfZ0TyJz-C1ZIe32E0nW4bYVbQ1dznzqa7TUm2XDmrxy8zEs1Sd6wDimbcSjmpUwjUwf4S4q",
+          "title": "time.com",
+          "domain": "time.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFp_8Ozji3Edf431s2EROfKQ5HitbK-1P8z7O2bVUR9SrnHHs618owoTowGu9ou_QDas-Ssio9HraG47rLkuK-IGhYgFCSlrBz9poCGqUxmtHl-g347Y5jlPhRKwfZkKysru5xHCxGjbDgV5y5NFlJdEQ==",
+          "title": "slamonline.com",
+          "domain": "slamonline.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfFctdLaowusypSlK_0Z3e6cBcDV-gYTi68Kb2XOsfILJht4fkOPHzOXzb9lGmvgZMhNst-xgM83M3Amts-FrM1rFYElU1-tHBkKuJ_jYFiZTMd0ehmB7JylWX-uc656lgdeyxbVbe5s10YI62yAg0Fk3vGAdkJnRwvCeOuZLiuGNSow==",
+          "title": "wnba.com",
+          "domain": "wnba.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUege2jXgK2swnj1aMf7hOUa9DzqWUChylvBQmHocPbSF9I_3pePp_-SjE1h5GY9QzBY9232vp792PuxHoKCJlRtTt0Yqy3mHIG4b3Nvo5oNdsRV2hX2zQ1BecJBhgb4uYmztwPBDoj1Nj_KBEnbnoDdhn5_-5ercnQm6j_nrou43IdlDK5l1J_kxFaWG4",
+          "title": "justwomenssports.com",
+          "domain": "justwomenssports.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzOA9IMoa-w6o-OIsNLFUmVZTsZV7AzMh_I3EbwKI0Mj8cDORd4CkpGH-GAkKxSloa17USWw6Qs_ZYpUaLN9egnxwAohpFEZM0PGpLtmNvOw54etGSOuKZj7tsx9ewEpKyXYUbVYXNKH9d3-Y=",
+          "title": "zaver.one",
+          "domain": "zaver.one"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFL0c8JvNGa9_qOZ-GhDKPTdTbM8eX4EWbmdh2fey3Dl2F-WOUBauHdzkTdQm8qXQ_WdbAX27QtkwO7wmgw-qz6f0547AJdkdvpt0ceN8N-HBhNxaEVhD0PKLktGeUZgSTyH3TX7tLTg1aqa4SVnfxJsbsflNBe19A6YJ2b9_dVw100VTLyC80Mb1l2IpBVT6g5uXc2_FufHx8YcSaJxtSJ8JwHF0U5EW7sy0Nn-qjVM7J7KiM1hXmI25o5ZviOJmqUnBt8urGX095M9w==",
+          "title": "theixsports.com",
+          "domain": "theixsports.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFb534Si-WUoaXXgbu8lSOQjv786FBkdzFm67vjPb1zEC0ZJ0jz_c-SkOKpnu3HJIl7-dVWPa0kzM7qJcFN5x4wz_APs5a7J9vA423bhXGgNgyDp0Tt3E8oUtvVphcIPUKegZp1RK2bIVa6MR1U_qrx6LOY5T1HFHwUOEwDJUbxc7KOSDikZtrgaKs=",
+          "title": "celebritynetworth.com",
+          "domain": "celebritynetworth.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNmEO-WvsAZLcFHth0_gN6FabSKNRpePxxkQWcrhjQiImN8KaojWUpQieFlDX-dxQALA4KSMySTGD_nRv722D3oQxfZuXny1JOJI1qzT9vgTmqgCl7LObDrPbqt5AZ4xAt8V9DxCEoR_ZA5pBk7XRcCU7H9_PYZovZIvLtJDJT8qB_NduLTdk5vlC0wxZ4h0A5-UrL-u40ZcdydSUQtoqe4OPFvHoMTa4DD10P",
+          "title": "crisesnotes.com",
+          "domain": "crisesnotes.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQELdWYoWoOEBv-HBJzA-1rYvSwT9g71v0wL3L0O_8UBnxvbhOiVYafnJbp_r5-jktcacF-hF6z7Ja9b2ICp5rqbHRGJqewB4ymDZ1np8tpnjxkxutmncxv0greW5r8K9efA4Vx5L_ZTy7HxLp5j41U9_5Z-84tPJAu_Fn_7xg==",
+          "title": "bookingagentinfo.com",
+          "domain": "bookingagentinfo.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGp9k0FFmenvg7K7c0WpCt1bQ6vZyVnCIimAinXDXiJievakPjdlCKUR-ziAnYLxLqcMj4yNyU_pg4L4UkCfgBpu7rrjXsVYVUwc4g1UkVwedUoWsZ9I6qFW1aRmzbZOs5IKJezpjswqatXCtshsL8RAriW98r1FosHtNzhtxy4SmO0bR3OXm2aDtodlprDhvz7DRAavBsZiqZVgpoX0O5c",
+          "title": "bookingagentinfo.com",
+          "domain": "bookingagentinfo.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE30Cue1DxpWu1BIYajS7sjDgiQuJF6A3nmIl6VM0wB59rs8SwRPCT_-_uvgsNaFTQ47MduyYahE4joa2aYp4j7da_pOZq1QN-tgRNVs_8cPrrcfk4G5seqMK7f2lgbeufC4omiGNbQW4L7dmN0Ll6RezGJfsOmpxcuNjdm-NeI43mhJ2dbeSZTAg==",
+          "title": "heavy.com",
+          "domain": "heavy.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5HtzWi8SHw6gUl4Hx77OLdnyG8PVbe2zzUiPiWsp3Ofyh8B-JDvr1nntM92E099Vi3Mkup_vvzbDQyMpPAlL9CMbhhoEip4r_exq5J4whVpLJIdKGmgK9M9pLBderWpktRpxCGt9DuxpiKPrbEktJYsjxeBjD2_QYLIo6Kr4rfSWs2fCbXMQshCxte8K0kk6dEWqNu0MHTmOz5FQTtyS5O_sMd3mMlgk0ZqR1MRces-G8P1dx28rJ9WvzMMwnYHwygNTfvanX7hk=",
+          "title": "facebook.com",
+          "domain": "facebook.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzv8gFqWSQd46RkzAJVm6wyZ63saXjMzWFCwNMAsN-K4ThTkk5PxnL6OxJM85SPfdXNxEu7ApyZh9pg60TUCfmjub4VBtBJ8kXexAsFRM80-v1EHkz2YqrjsNqb3X3G4-edeyN-A0=",
+          "title": "youtube.com",
+          "domain": "youtube.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFCibcWylTZ9FAimkJUUEiz-ZcLFx6bv-gkrspOoKZUAQYNqptIQR8FIsA4AByKFh4c3UVOdFE_bZ1ZBOZFcp6wmDZE6xZmDcyMwf9q0ysZQfJcUZ7b4jLvS6R_rNCk2rDV_R3icptpmLtMZBaBqdPboutRPC1U2tY_3PG1ZQSiJha0TwJ6WxFvtQzPRkwiapfU90n3e4xjpAMLN9Bu986LVOqE",
+          "title": "stellantis.com",
+          "domain": "stellantis.com"
+        }
+      }
+    ],
+    "groundingSupports": [
+      {
+        "segment": {
+          "startIndex": 123,
+          "endIndex": 348,
+          "text": "\"marketability_summary\": \"Diana Taurasi is widely regarded as the Greatest of All Time (GOAT) in women's basketball, cementing her marketability around an unparalleled narrative of competitive excellence and franchise loyalty"
+        },
+        "groundingChunkIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 350,
+          "endIndex": 465,
+          "text": "Following her official retirement in February 2025 after a legendary 20-season WNBA career with the Phoenix Mercury"
+        },
+        "groundingChunkIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 350,
+          "endIndex": 546,
+          "text": "Following her official retirement in February 2025 after a legendary 20-season WNBA career with the Phoenix Mercury, and her subsequent jersey retirement and Ring of Honor induction in August 2026"
+        },
+        "groundingChunkIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 635,
+          "endIndex": 827,
+          "text": "Although her personal social media reach is modest relative to active, younger superstars—with her Instagram totaling around 406K followers and lacking highly active presences on TikTok or X"
+        },
+        "groundingChunkIndices": [
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 635,
+          "endIndex": 912,
+          "text": "Although her personal social media reach is modest relative to active, younger superstars—with her Instagram totaling around 406K followers and lacking highly active presences on TikTok or X—her derivative reach through league, media, and corporate channels remains massive"
+        },
+        "groundingChunkIndices": [
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 914,
+          "endIndex": 1032,
+          "text": "Her commercial portfolio is exceptionally high-caliber, highlighted by long-term partnerships with Nike and State Farm"
+        },
+        "groundingChunkIndices": [
+          8,
+          9
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 914,
+          "endIndex": 1081,
+          "text": "Her commercial portfolio is exceptionally high-caliber, highlighted by long-term partnerships with Nike and State Farm, 2024 campaign rollouts for Capital One and AT&T"
+        },
+        "groundingChunkIndices": [
+          10
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 914,
+          "endIndex": 1166,
+          "text": "Her commercial portfolio is exceptionally high-caliber, highlighted by long-term partnerships with Nike and State Farm, 2024 campaign rollouts for Capital One and AT&T, and new 2026 ambassador roles for Mars Petcare's GREENIES and Dick's Sporting Goods"
+        },
+        "groundingChunkIndices": [
+          11,
+          10
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1168,
+          "endIndex": 1312,
+          "text": "While she is no longer competing actively on the court, which naturally caps her athletic trajectory, her narrative power remains highly durable"
+        },
+        "groundingChunkIndices": [
+          12
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1168,
+          "endIndex": 1464,
+          "text": "While she is no longer competing actively on the court, which naturally caps her athletic trajectory, her narrative power remains highly durable, making her an attractive, brand-safe partner for mainstream companies aiming to align with themes of legacy, loyalty, family, and historic achievement"
+        },
+        "groundingChunkIndices": [
+          13,
+          14
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1466,
+          "endIndex": 1626,
+          "text": "The primary missing data centers around private campaign ROI metrics, but public indicators confirm she commands elite pricing power and repeat corporate demand"
+        },
+        "groundingChunkIndices": [
+          8,
+          15
+        ]
+      }
+    ],
+    "webSearchQueries": [
+      "\"Diana Taurasi\" current team 2025 2026",
+      "\"Diana Taurasi\" retired",
+      "Diana Taurasi news 2025 2026",
+      "Diana Taurasi social media followers Instagram Twitter",
+      "\"Diana Taurasi\" endorsements brands sponsors",
+      "\"Diana Taurasi\" Net Worth salary",
+      "\"Diana Taurasi\" Greenies partnership March 2026",
+      "\"Diana Taurasi\" Nike contract deal",
+      "\"Diana Taurasi\" \"Ring of Honor\" August 16 2026",
+      "\"Diana Taurasi\" retirement August 2026",
+      "\"Diana Taurasi\" news \"August 2026\"",
+      "\"Diana Taurasi\" 406K followers instagram"
+    ],
+    "config": {
+      "tools": [
+        {
+          "googleSearch": {}
+        }
+      ],
+      "temperature": 1,
+      "maxOutputTokens": 65536,
+      "thinking": "default"
+    }
+  },
+  "error": null,
+  "promptSocialBlock": null
+}

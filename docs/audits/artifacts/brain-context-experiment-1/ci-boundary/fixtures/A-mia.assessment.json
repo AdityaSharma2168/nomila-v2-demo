@@ -1,0 +1,60 @@
+{
+ "subject": "ctl-r2-northlight-termsheet",
+ "offer": {
+  "amount": 5000,
+  "product_value": null,
+  "commission_pct": null,
+  "unit": "total",
+  "deliverable_counts": {
+   "instagram_posts": 4
+  },
+  "deal_type": "ambassador"
+ },
+ "transcription": "hand-transcribed from the overlay statement in the shape the thread summariser produces and the scorer consumes (amount, product_value, unit, deliverable_counts, deal_type; commission_pct null). term_months and counts_basis are never set by the production path (grep: no writer), so they are left unset here too — the per-deliverable path therefore runs.",
+ "classification": {
+  "offer_amount": 5000,
+  "deliverables": [
+   "four Instagram posts"
+  ],
+  "deadline": null
+ },
+ "keyDetails": {
+  "deadlines": []
+ },
+ "exclusivity": {
+  "stated": true,
+  "text": "no category exclusivity"
+ },
+ "contracts": [
+  {
+   "workId": "9acd1d50-0a84-4974-b3fc-bb965c8b5541",
+   "label": "gorjana"
+  }
+ ],
+ "history": [
+  {
+   "workId": "9acd1d50-0a84-4974-b3fc-bb965c8b5541",
+   "label": "gorjana, accepted: USD 14,000 — cash 7,500 / stated product 6,500 · 6 posts + 6 stories",
+   "commercialState": "AGREED",
+   "comparability": "INDIRECT",
+   "reason": "Instagram content by the same athlete, but a twelve-deliverable campaign with 46% of its value in product, against a four-post ambassador term; the package price is not the observed price of one post, and the product component is not evidence of cash pricing",
+   "rule": "rate-eval-spec/2.0.0 §5 (product or in-kind compensation is not equivalent to cash; do not apply the price of one activity to a different one) · rate-v0-design §12.4 (INDIRECT: related but non-equivalent evidence; a package price does not become the observed price of one component)"
+  },
+  {
+   "workId": "",
+   "label": "the seven negotiating items in EXISTING WORK — TITAD (USD 300 per deliverable), IRON Peptides (commission-only), Pillar (gifting), Musugy, ProBand, AEGISLAB, Connect Me (no economics stated)",
+   "commercialState": "INTEREST",
+   "comparability": "NOT_COMPARABLE",
+   "reason": "open negotiations establish commercial contact; none is agreed economics, and a figure proposed in an open negotiation is not an accepted price",
+   "rule": "rate-eval-spec/2.0.0 §5 (negotiating: INTEREST; ASK or OFFER only where the economics and the proposer are both evidenced; an offer is not an accepted deal)"
+  }
+ ],
+ "high": {
+  "text": "demonstratedEconomics high USD 14,000 is the total of one agreed deal (gorjana, including USD 6,500 stated product); it is an observation of what was once agreed — not a benchmark and not a floor",
+  "rule": "rate-eval-spec/2.0.0 §5 · rate-v0-design §12 (an accepted price is what was accepted, not what can be commanded; pricing power is observed, never inferred)"
+ },
+ "observed": {
+  "text": "commercial history observed by Nomila: a connected Gmail mailbox (active) and Instagram (active); 211 deal rows recorded by Nomila — 1 accepted, 7 negotiating, 2 rejected, 201 detected inbound. A count of Nomila's records is not a count of real-world history; what Nomila has not observed is not evidence of absence",
+  "rule": "MISSING ≠ NONE (checkpoint §2 epistemic discipline); rate-eval-spec/2.0.0 §5: a detected inbound email is not a partnership or a transaction"
+ }
+}

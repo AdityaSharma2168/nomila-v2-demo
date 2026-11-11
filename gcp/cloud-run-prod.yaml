@@ -1,0 +1,664 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+# ─────────────────────────────────────────────────────────────────────────────
+# PRODUCTION — nomila-v2-prod, serving api.nomila.co.
+#
+# The sibling of gcp/cloud-run-dev.yaml. Every difference between the two files is
+# deliberate and listed in docs/plans/production-environment-split.md §5. When you add
+# a variable to one file, add it to the other (or write down why not).
+#
+# This file is applied ONLY by .github/workflows/deploy-prod.yml, which runs only by
+# workflow_dispatch on the `production` branch (normally from promote.yml; no push
+# trigger), gated by the promoter allow-list in both workflows (GitHub Environment
+# reviewers are not available on this plan). Merging a change to this file into main
+# deploys nothing to production. It never builds: the
+# image line is replaced with the SHA-tagged image that deploy-dev already built and ran
+# in dev.
+#
+# Every secretKeyRef below must exist in Secret Manager BEFORE the first deploy — a
+# YAML that names a missing secret fails the whole `services replace`.
+# ─────────────────────────────────────────────────────────────────────────────
+metadata:
+  name: nomila-v2-prod
+  annotations:
+    run.googleapis.com/launch-stage: BETA
+    run.googleapis.com/ingress: all
+spec:
+  template:
+    metadata:
+      annotations:
+        run.googleapis.com/cloudsql-instances: gamechanger-pocket-agent:us-central1:nomila-prod-db
+        # CPU always allocated + the 3600 s request timeout below: the workflow runner
+        # executes successor steps inline after a response, and voice/onboarding depend
+        # on it. Same posture as dev, on purpose.
+        run.googleapis.com/cpu-throttling: "false"
+        run.googleapis.com/execution-environment: gen2
+        run.googleapis.com/startup-cpu-boost: "true"
+        # min 1 so a Cloud Run cold start never stacks on the LiveKit worker's own
+        # scale-from-zero. max is bounded by the database, not the bill:
+        # maxScale × (DB_POOL_MAX + MILA_MASTRA_POOL_MAX) must stay under nomila-prod-db's
+        # max_connections (db-g1-small, no flag set → 50, minus 3 reserved for superuser
+        # = 47; the budget cap is 45, leaving 2 for the deploy-time migrate proxy).
+        # 4 × (7 + 4) = 44 ≤ 45, with Mastra on. server/lib/dbPoolBudget.test.ts fails CI
+        # if it stops fitting. To go higher, first set max_connections=100 on the instance
+        # (restart), then raise the cap in that test and DB_POOL_MAX / maxScale together.
+        autoscaling.knative.dev/minScale: "1"
+        autoscaling.knative.dev/maxScale: "4"
+    spec:
+      containerConcurrency: 80
+      timeoutSeconds: 3600
+      serviceAccountName: gamechanger-runtime@gamechanger-pocket-agent.iam.gserviceaccount.com
+      containers:
+        - image: us-central1-docker.pkg.dev/gamechanger-pocket-agent/gamechanger/nomila-v2:REPLACED_BY_DEPLOY_PROD
+          ports:
+            - name: http1
+              containerPort: 8080
+          resources:
+            limits:
+              cpu: "2"
+              memory: 2Gi
+          env:
+            - name: NODE_ENV
+              value: "production"
+            - name: LOG_LEVEL
+              value: "info"
+            - name: GCP_PROJECT_ID
+              value: "gamechanger-pocket-agent"
+
+            # ── Identity: the production hosts ───────────────────────────────────
+            # No dev-host fallback exists in code (server/lib/baseUrls.ts); a missing
+            # value here stops the boot (server/lib/envGuards.ts) rather than sending
+            # OAuth callbacks, share links or payment returns to dev.
+            - name: API_BASE_URL
+              value: "https://api.nomila.co"
+            - name: WEB_APP_URL
+              value: "https://app.nomila.co"
+            - name: ALLOWED_ORIGINS
+              value: "https://app.nomila.co,https://nomila.co,https://www.nomila.co"
+            - name: PUBLIC_BASE_URL
+              value: "https://api.nomila.co"
+            - name: PUBLIC_CARD_BASE_URL
+              value: "https://nomila.co"
+
+            # ── Gmail push ───────────────────────────────────────────────────────
+            # Production has its own topic and push subscription (nomila-gmail-push-prod).
+            # AUDIENCE MUST MATCH that subscription's --push-auth-token-audience exactly,
+            # or every genuine push 403s and Gmail ingestion stops. The raw Cloud Run URL
+            # is used (as in dev) so the pair keeps working if a domain mapping moves.
+            - name: GMAIL_PUBSUB_TOPIC
+              value: "projects/gamechanger-pocket-agent/topics/nomila-gmail-notifications-prod"
+            - name: PUBSUB_PUSH_SA
+              value: "gmail-push@gamechanger-pocket-agent.iam.gserviceaccount.com"
+            - name: PUBSUB_PUSH_AUDIENCE
+              value: "https://nomila-v2-prod-241621020090.us-central1.run.app"
+
+            # ── Storage: production buckets. Unset would mean writing into dev's. ──
+            - name: MEDIA_BUCKET
+              value: "nomila-prod-athlete-media"
+            - name: INBOX_ATTACHMENT_BUCKET
+              value: "nomila-prod-inbox-attachments"
+
+            # ── Production-only secrets ──────────────────────────────────────────
+            - name: DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: NOMILA_PROD_DATABASE_URL
+                  key: latest
+            # Per-instance pg pool size (server/db.ts). See the maxScale note above:
+            # maxScale × (this + MILA_MASTRA_POOL_MAX) must fit the instance's max_connections.
+            # 7 (was 10 until Nov 2026) so Mastra's pool fits: 4 × (7 + 4) = 44 ≤ 45.
+            - name: DB_POOL_MAX
+              value: "7"
+            # Mastra's own pg pool per instance (server/agent/engine/mastra/runtime.ts), built lazily on
+            # the first Mila turn. Mila always runs on Mastra (no engine switch), so it is always in use.
+            - name: MILA_MASTRA_POOL_MAX
+              value: "4"
+            # NOMILA_MCP_PASS_KEY — signs and checks the athlete pass every Mila turn's tools run under
+            # (server/agent/engine/tools/pass.ts; at least 32 bytes). Without it EVERY Mila turn fails, and
+            # scripts/prod-flag-guard.ts (REQUIRED_ENV) refuses the deploy. Prod's OWN key, never dev's:
+            # Secret Manager NOMILA_MCP_PASS_KEY_PROD, created by the owner before the promote (only this
+            # service signs and checks the pass, so a prod-only key breaks nothing). The name is from the
+            # removed /mcp server; renaming the env is a config change of its own.
+            - name: NOMILA_MCP_PASS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: NOMILA_MCP_PASS_KEY_PROD
+                  key: latest
+            - name: CRON_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: PROD_CRON_SECRET
+                  key: latest
+            # SESSION_SECRET — the server-only HMAC key behind OAuth state (server/lib/oauthState.ts),
+            # partner-intake tokens, booking session links and the Ask Mila visitor salt. Until now
+            # nothing mounted it, so all of those signed with CRON_SECRET — the bearer secret Cloud
+            # Scheduler sends in a header, the wrong key to sign with (one leak forges all of them).
+            # SESSION_SECRET_PROD was created 2026-10-09 (48 random bytes), production-only; dev
+            # mounts its own SESSION_SECRET. The runtime account reads it through its project-level
+            # secretAccessor grant.
+            - name: SESSION_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: SESSION_SECRET_PROD
+                  key: latest
+            # OpenRouter — b-roll (seedance) and bridges (Kling) submit through it
+            # (server/studio/adapters/openrouter.ts). One key for dev and prod (ADI-S20-HOLD2, flip
+            # checklist 1b settled as one); the runtime account reads it through its project-level
+            # secretAccessor (checked by Adi, 25 Sep 2026). Inert while Studio video is off.
+            - name: OPENROUTER_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: OPENROUTER_API_KEY
+                  key: latest
+            - name: VOICE_SERVICE_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: VOICE_SERVICE_SECRET_PROD
+                  key: latest
+            # Stripe LIVE keys (decision 7 in the plan; beta-launch-checklist §9). Test/live
+            # mode is inferred from the key prefix, so these must never be the sk_test_ secrets
+            # dev mounts. Three secrets, because there are TWO webhook endpoints (server/lib/
+            # stripe.ts): the platform one (/api/webhooks/stripe — Checkout, PaymentIntents,
+            # charges, disputes, transfers) and the Connect-type one (/api/webhooks/stripe/connect
+            # — account.updated on the athletes' connected accounts, #830/#839).
+            # COMMENTED OUT until the STRIPE_*_LIVE secrets exist: a YAML that names a
+            # missing secret fails the whole deploy. Unmounted, every payment path answers
+            # "STRIPE_SECRET_KEY is not set — payments are unavailable", which is honest.
+            # - name: STRIPE_SECRET_KEY
+            #   valueFrom:
+            #     secretKeyRef:
+            #       name: STRIPE_SECRET_KEY_LIVE
+            #       key: latest
+            # - name: STRIPE_WEBHOOK_SECRET
+            #   valueFrom:
+            #     secretKeyRef:
+            #       name: STRIPE_WEBHOOK_SECRET_LIVE
+            #       key: latest
+            # - name: STRIPE_CONNECT_WEBHOOK_SECRET
+            #   valueFrom:
+            #     secretKeyRef:
+            #       name: STRIPE_CONNECT_WEBHOOK_SECRET_LIVE
+            #       key: latest
+
+            # ── Shared secrets (one registration per provider; same values as dev) ──
+            - name: MOONSHOT_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: MOONSHOT_API_KEY
+                  key: latest
+            - name: ANTHROPIC_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: ANTHROPIC_API_KEY
+                  key: latest
+            - name: IG_PAGE_ACCESS_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: IG_PAGE_ACCESS_TOKEN
+                  key: latest
+            - name: IG_BUSINESS_ACCOUNT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: IG_BUSINESS_ACCOUNT_ID
+                  key: latest
+            - name: DISCOVERY_IG_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: DISCOVERY_IG_TOKEN
+                  key: latest
+            - name: DISCOVERY_IG_BUSINESS_ID
+              valueFrom:
+                secretKeyRef:
+                  name: DISCOVERY_IG_BUSINESS_ID
+                  key: latest
+            # Meta: production keeps the LIVE app's credentials (the ones dev used until
+            # the split). Dev moves to a test app of the live app — Track C in the plan.
+            - name: INSTAGRAM_APP_ID
+              valueFrom:
+                secretKeyRef:
+                  name: INSTAGRAM_APP_ID
+                  key: latest
+            - name: INSTAGRAM_APP_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: INSTAGRAM_APP_SECRET
+                  key: latest
+            - name: INSTAGRAM_LOGIN_APP_ID
+              valueFrom:
+                secretKeyRef:
+                  name: INSTAGRAM_LOGIN_APP_ID
+                  key: latest
+            - name: INSTAGRAM_LOGIN_APP_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: INSTAGRAM_LOGIN_APP_SECRET
+                  key: latest
+            - name: META_WEBHOOK_VERIFY_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: META_WEBHOOK_VERIFY_TOKEN
+                  key: latest
+            - name: GOOGLE_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: GOOGLE_CLIENT_ID
+                  key: latest
+            - name: GOOGLE_OAUTH_CLIENT_SECRET_WEB
+              valueFrom:
+                secretKeyRef:
+                  name: GOOGLE_OAUTH_CLIENT_SECRET_WEB
+                  key: latest
+            - name: TIKTOK_CLIENT_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: TIKTOK_CLIENT_KEY
+                  key: latest
+            - name: TIKTOK_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: TIKTOK_CLIENT_SECRET
+                  key: latest
+            - name: YOUTUBE_DATA_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: YOUTUBE_DATA_API_KEY
+                  key: latest
+            - name: MICROSOFT_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: MICROSOFT_CLIENT_ID
+                  key: latest
+            - name: MICROSOFT_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: MICROSOFT_CLIENT_SECRET
+                  key: latest
+            - name: LIVEKIT_URL
+              valueFrom:
+                secretKeyRef:
+                  name: LIVEKIT_URL
+                  key: latest
+            - name: LIVEKIT_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: LIVEKIT_API_KEY
+                  key: latest
+            - name: LIVEKIT_API_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: LIVEKIT_API_SECRET
+                  key: latest
+
+            # ── Mila ─────────────────────────────────────────────────────────────
+            # SOCIAL_SUBSTRATE_WRITE — Phase A Step 1a. When true the nightly collectors, the media
+            # backfill and the top-post enrichment ALSO write sanitized raw payloads, canonical
+            # observations and features beside their existing rows. Nothing reads the substrate
+            # in production yet (Step 4 does). Off = the pre-Step-1a code path, byte for byte.
+            # SOCIAL_STORIES_WRITE — Phase A Step 1b. Its own flag: Instagram Story sweeps (every 8 h)
+            # and the hourly last-look tick write observations only when true. Off at the Step 1b merge
+            # in both environments; dev is flipped by a later PR after review, prod stays off.
+            # RESEARCH_SUBSTRATE_WRITE — Phase A Step 2a, D3 (a). When true persistResearchRun may write the
+            # research substrate (runs, sanitized payloads, cited evidence, facts, state). It turns nothing
+            # else on: not the legacy dual-write, not planner execution. Off in both environments.
+            # Stage 1 ON in prod (owner, 25 Oct 2026).
+            - name: RESEARCH_SUBSTRATE_WRITE
+              value: "true"
+            # RESEARCH_REFRESH_ENABLED — Phase A Step 2b. Half of the ONE execution gate
+            # (researchPlannerExecutionEnabled = RESEARCH_REFRESH_ENABLED && RESEARCH_SUBSTRATE_WRITE).
+            # Only when BOTH are true may the planner enqueue refresh runs, apply lifecycle transitions,
+            # suppress the dev monthly re-enrich or route admin re-research to the planner. Either false
+            # ⇒ the planner is dry-run (telemetry row only) and legacy behaviour is untouched.
+            - name: RESEARCH_REFRESH_ENABLED
+              value: "false"
+            # SHOP_V1 — Her picks (docs/design/shop-her-picks.md): her shelf routes, the /go/:code redirect and the
+            # Mila shop tools. Off in production until the owner turns it on.
+            - name: SHOP_V1
+              value: "false"
+            # SHOP_SHOPIFY_APP — the catalog-only Shopify app for Her picks (docs/design/shop-her-picks.md §12): /shopify/*,
+            # the webhook receiver, the reconcile cron and "From your brands". Needs SHOP_V1. Off in production until the owner turns it on.
+            - name: SHOP_SHOPIFY_APP
+              value: "false"
+            # BOOKINGS_ENABLED — Bookings v2 (paid bookings from her card; server/services/bookings/config.ts). OFF. Even when
+            # on, only athletes on BOOKINGS_PILOT_ATHLETE_IDS see it, and the buyer side needs BOOKING_HASH_SECRET (Secret
+            # Manager) and email delivery on (EMAIL_PROVIDER=gmail). Turning it on is the owner's call after the pilot checklist.
+            - name: BOOKINGS_ENABLED
+              value: "false"
+            # PUBLIC_CARD — the public Nomi Card (design-public-card-v3 §15 PR 1–2): the snapshot/publish service, the
+            # public reader and her /me/public-card routes. Off by default; turning it on is the owner's call.
+            - name: PUBLIC_CARD
+              value: "false"
+            # ASK_MILA_PUBLIC — public Mila mode on /p/:handle (design-public-card-v3 §4, PR 5): a visitor's chat with Mila
+            # over her published card, its two taps, and the free-text box in the page's Mila sheet. Needs PUBLIC_CARD too.
+            # Limits are DB-backed; ASK_MILA_DAILY_SPEND_CAP_USD (default 20, "0" = off) caps the spend. Off by default.
+            - name: ASK_MILA_PUBLIC
+              value: "false"
+            # OUTLOOK_SEND — Outlook replies sent from the app through Microsoft Graph (/me/messages/{id}/reply), only on
+            # her tap via the approved pending action (body hash, claim-once). OFF: Outlook reply cards say to reply in
+            # Outlook. Even when on, a connection must have granted Mail.Send, which the live OAuth request does not ask
+            # for yet; without it the card says to reconnect Outlook. Azure checklist: docs/plans/outlook-send-azure-checklist.md.
+            - name: OUTLOOK_SEND
+              value: "false"
+            # AGENT_V3 — ON in prod (owner, 25 Oct 2026) and dev. It does not pick the chat's engine (Mila always runs on
+            # Mastra). It gates the app's new layout (EXPO_PUBLIC_AGENT_V3), including the Studio v3 tab root, and on the server the
+            # Studio library route and the onboarding content capability. Studio's own server features use STUDIO_ALL_ON.
+            - name: AGENT_V3
+              value: "true"
+            # ── Stage 1: the new app in prod (owner, 25 Oct 2026) ────────────────────────────────────────────────────
+            # Switched on for everyone let in (status 'active'; the waitlist gate refuses everyone else). Same values as
+            # dev. Release-by-group is deferred: these are global. Each line's full note is in cloud-run-dev.yaml.
+            # AGENT_PLAN — plan step + Goals API. AGENT_LEARNING_LOOP — post outcomes judged against her usual ($0).
+            - name: AGENT_PLAN
+              value: "true"
+            - name: AGENT_LEARNING_LOOP
+              value: "true"
+            # AGENT_ONBOARDING — the agent onboarding front + API (server/agent/onboarding).
+            - name: AGENT_ONBOARDING
+              value: "true"
+            # Mila runs on Mastra, always (server/agent/engine; schema "mastra", migration 0147; model through
+            # OPENAI_API_KEY; tools in-process with the athlete pass, NOMILA_MCP_PASS_KEY above). There is no engine switch
+            # and no flag rollback: MILA_ENGINE, MILA_MASTRA_ATHLETES, MILA_TF_CHAT and NOMILA_MCP_ENABLED are read by
+            # nothing and are gone from this file. Going back means the previous revision (the prod promote runbook).
+            # MILA_TF_WAITLIST — Mila hosts the landing's waitlist join flow (routes/waitlistMila.ts; needs only this flag
+            # and the pass key; off ⇒ the landing runs the plain screens). OFF in prod (owner, 10 Nov 2026: the waitlist
+            # uses the plain screens, no Mila chat, for cost). Guarded (prod-flag-guard.ts).
+            - name: MILA_TF_WAITLIST
+              value: "false"
+            # Mila starts the conversation (server/agent/proactive; needs only this flag): OFF in prod (prod flag guard).
+            - name: MILA_PROACTIVE
+              value: "false"
+            # The AI SDK chat route for Mila (routes/chatV2.ts): OFF in prod (not mounted). Dev only until the owner says so.
+            - name: MILA_CHAT_V2
+              value: "false"
+            # The welcome flow's capability choices (server/agent/welcome): OFF in prod (on in dev since 6 Nov 2026, owner).
+            # Guarded (prod-flag-guard.ts): a deploy can never switch this on; only the owner's explicit live flip can.
+            - name: MILA_WELCOME
+              value: "false"
+            # Mila's read tools (server/agent/reads: media_search, posts_performance, money_summary, whats_next): OFF in
+            # prod. Dev only until the owner says so.
+            - name: MILA_READ_TOOLS
+              value: "false"
+            # The card system v2's producers and tap route (agent/milaCards): OFF in prod. Dev only until the owner says so.
+            - name: MILA_CARDS_V2
+              value: "false"
+            # AGENT_RESEARCH_REFRESH — the agent research refresh for ONE athlete at a time (caps $1.50 a refresh,
+            # $10 a day). The daily cohort sweep (AGENT_RESEARCH_REFRESH_COHORT) stays OFF.
+            - name: AGENT_RESEARCH_REFRESH
+              value: "true"
+            # Post kits from her own media (a few cents a kit, capped per day/week) and their preview render (ffmpeg on
+            # the stitch queue, $0 but CPU). No Remotion renderer in prod: ffmpeg is the path (REMOTION_RENDER_URL unset).
+            - name: AGENT_POST_KITS
+              value: "true"
+            - name: AGENT_POST_KIT_RENDER
+              value: "true"
+            # Deals with Mila (as dev since 13 Oct 2026). DEALS_PARTITION_FLASH (on in dev since 2 Nov 2026) and DEALS_MAYBE stay OFF.
+            - name: DEALS_READ_MODEL
+              value: "true"
+            - name: DEALS_REPLY_V2
+              value: "true"
+            - name: DEALS_SUMMARY_FLASH
+              value: "true"
+            # The Nomi Card on the brand book's engine, the copywriter (Fable 5.1 + editor), the brand book, the pitch
+            # concept and "Your rates". All model spend here happens only on her tap or a capped build.
+            - name: COPYWRITER_V1
+              value: "true"
+            - name: PITCH_CONCEPT_V1
+              value: "true"
+            # AGENT_MOMENTS — the weekly moments scan (server/agent/moments): the 12:00 UTC sweep enqueues moments_scan runs
+            # (fast tier + web search; needs OPENAI_API_KEY, mounted below from OPENAI_API_KEY_PROD).
+            # Stage 1 ON in prod (owner, 25 Oct 2026).
+            - name: AGENT_MOMENTS
+              value: "true"
+            # AGENT_PLAYBOOK — the shared content playbook (server/agent/playbook; design "Moments → post kits" §5):
+            # the daily sweep enqueues no per-athlete work, only a fast-tier + web_search call per STALE
+            # (sport, stage, platform) key — each key only roughly once a month (triggers.ts isStale); needs
+            # OPENAI_API_KEY (mounted below from OPENAI_API_KEY_PROD).
+            # Stage 1 ON in prod (owner, 25 Oct 2026).
+            - name: AGENT_PLAYBOOK
+              value: "true"
+            # AGENT_POST_KIT_PREVIEW_CLEANUP — the daily clean-up of superseded post-kit preview renders
+            # (server/agent/postKit/render/cleanup.ts). Off: post kits do not run in production yet.
+            # Stage 1 ON in prod (owner, 25 Oct 2026).
+            - name: AGENT_POST_KIT_PREVIEW_CLEANUP
+              value: "true"
+            # ATMOSPHERE_IMAGERY — atmosphere images for everything not about the athlete (DESIGN.md §9; POST
+            # /me/atmosphere/pick, server/services/atmosphere). Off in production until the owner turns it on. When on it
+            # needs PIXABAY_API_KEY (Secret Manager secret of the same name, mounted with secretKeyRef) and OPENAI_API_KEY
+            # (mounted from OPENAI_API_KEY_PROD); without Pixabay it falls back to generation (~$0.07 an image), then to the
+            # category default. Caps: ATMOSPHERE_ATHLETE_DAY_CAP_USD (0.50), ATMOSPHERE_ATHLETE_TOTAL_CAP_USD (2),
+            # ATMOSPHERE_DAY_CAP_USD (10), ATMOSPHERE_GENERATIONS_PER_ATHLETE_DAY (3).
+            - name: ATMOSPHERE_IMAGERY
+              value: "false"
+            # PARTNER_INTAKE — the Partner door of her public profile (brand + press requests, the Nomila relay thread on the
+            # opportunity, the visitor status page, "Your requests", email replies and the Serious offer hold). Needs
+            # PUBLIC_CARD too (both must be "true"). Off in production until the owner turns it on. Email delivery also needs EMAIL_PROVIDER=gmail.
+            - name: PARTNER_INTAKE
+              value: "false"
+            # RESEARCH_REFRESH_PROVIDER — D3 (b). Provider binding for research_refresh: "kimi" (v2, default) or
+            # "direct" (v3, not built yet — fails closed). Read only when a refresh run executes.
+            # Stage 1 ON in prod (owner, 25 Oct 2026).
+            - name: RESEARCH_REFRESH_PROVIDER
+              value: "direct"
+            # RESEARCH_PIPELINE_V2_SHADOW — the narrow research pipeline's shadow run (agent/research/v2). OFF in
+            # production: it is proven on dev first and changes nothing for athletes until it beats today's research.
+            - name: RESEARCH_PIPELINE_V2_SHADOW
+              value: "false"
+            # ATHLETE_INDEX_CLAIM — Phase A Step 2c. When true the creation paths (signup, Microsoft,
+            # waitlist) search the Athlete Index first and link ONLY on claim proof (existing auth, a
+            # unique provider-verified email); every match tier alone creates + records. Off ⇒ the
+            # pre-Step-2c creation paths byte for byte. The view, admin ?q= and the dark candidates
+            # endpoint mutate nothing and do not depend on this flag.
+            # Stage 1 ON in prod (owner, 25 Oct 2026).
+            - name: ATHLETE_INDEX_CLAIM
+              value: "true"
+            # SIGNUPS_OPEN — the sign-ups kill switch (server/lib/signups.ts). Only exactly "true" lets the
+            # auth paths (signup, Microsoft, waitlist) create a NEW athlete; anything else answers 403
+            # { error: "signups_closed" }. Existing users (a matching auth_id) sign in either way.
+            # Opened for the nomila.co waitlist launch (owner, 24 Oct 2026).
+            - name: NOTIFY_FROM_EMAIL
+              value: "Nomila <hello@nomila.co>"
+            - name: MEDIA_VIDEO_FIXES
+              value: "true"
+            - name: ENRICH_CAROUSEL_FRAMES
+              value: "true"
+            # Live-path parity with dev (owner, 24 Oct 2026): Instagram measurements + stories feed the sign-up M.I.A.;
+            # the score-ready email sends from hello@nomila.co; the media fixes dev already runs.
+            - name: SIGNUPS_OPEN
+              value: "true"
+            # WAITLIST_ALL_SIGNUPS (owner, 24 Oct 2026): every NEW account joins the waitlist, from every door (the app's
+            # /auth/signup, /auth/microsoft, the landing's /waitlist) — signing into app.nomila.co or the store app no
+            # longer hands out the whole app. Existing accounts untouched; the admin's promote lets people in.
+            - name: WAITLIST_ALL_SIGNUPS
+              value: "true"
+            # DAILY_RESEARCH_CAP_USD — the daily cap on sign-up research spend (agent/onboarding/dailyCap.ts).
+            # Past it a sign-up still joins the waitlist; its research is held until there is budget again.
+            # A BACKSTOP, not a throttle (owner, 24 Oct 2026, anti-fake plan): every real sign-up is scored; the cheap
+            # gates in front (verified sign-in, App Check, the admin flags) keep fakes from costing money.
+            # 200 (was 300; owner, prod catch-up 10 Nov 2026: research must queue, never fail). PLATFORM_DAY_COST_CAP_USD
+            # (next) counts this spend too and is clamped to at most $250, so this cap must sit under it for the queue to
+            # engage first. Research queues first only while the rest of the day's paid work (Mila chat, moments, the
+            # playbook, deal replies, Studio, voice) stays under ~$50; watch the platform_spend_cap_reached alert. Keep
+            # this at least $25 under the platform cap (prodSignupResearchConfig.test.ts enforces it).
+            - name: DAILY_RESEARCH_CAP_USD
+              value: "200"
+            # PLATFORM_DAY_COST_CAP_USD — ONE daily ceiling over ALL paid AI work, every athlete (server/lib/
+            # platformSpend.ts: agent_runs + Studio generations + estimated voice). NEW in prod with this release; unset it
+            # means $25 a day (about 20–40 researched sign-ups), and the code clamps any value to at most $250 (owner,
+            # 5 Nov 2026). Past it every new paid call is refused for everyone until UTC midnight: sign-up research then
+            # FAILS (she stays on the waitlist, GET /waitlist/progress says "failed", nothing re-runs it by itself) and
+            # Mila chat turns are refused. Set to the code maximum for the most sign-ups (prod catch-up, 10 Nov 2026:
+            # the owner's goal is as many sign-ups as possible), with DAILY_RESEARCH_CAP_USD above set under it so
+            # research queues before this binds. Watch the platform_spend_cap_reached alert.
+            # Not in cloud-run-dev.yaml on purpose: dev keeps the $25 default (test traffic only).
+            - name: PLATFORM_DAY_COST_CAP_USD
+              value: "250"
+            # SIGNUP_PASS_BUDGET_MS — the per-pass time budget for sign-up research (#1105). OFF in production (owner,
+            # 24 Oct 2026): a cut pass keeps none of its facts (the model writes only after it finishes thinking), so the
+            # score would lose its audience/commercial evidence. Quality first; the score-ready email covers the wait.
+            - name: SIGNUP_PASS_BUDGET_MS
+              value: "0"
+            # OAuth tokens at rest (server/lib/tokenCrypto.ts; launch board f05, 25 Oct 2026). TOKEN_KMS=true seals every
+            # new connected_accounts access/refresh token as a Cloud KMS envelope ("kms1:…"); reads accept sealed AND
+            # legacy plain text whatever the flag says, so turning it off again is safe. Prod has its OWN cryptoKey
+            # (oauth-tokens-prod), separate from dev's oauth-tokens: its own rotation, audit trail and disable switch.
+            # The runtime SA needs roles/cloudkms.cryptoKeyEncrypterDecrypter on it BEFORE this deploys, or every
+            # Instagram connect fails to save. Existing plain-text rows: server/scripts/security/encryptExistingTokens.ts.
+            - name: KMS_TOKEN_KEY
+              value: "projects/gamechanger-pocket-agent/locations/us-central1/keyRings/nomila-tokens/cryptoKeys/oauth-tokens-prod"
+            - name: TOKEN_KMS
+              value: "true"
+            # ATHLETE_FOOTPRINT_CHECK — the "real athlete?" check (agent/onboarding/footprintCheck.ts; anti-fake plan,
+            # owner, 24 Oct 2026): ONE fast-tier OpenAI call with ONE web search (skill onboarding/athlete-footprint,
+            # ≤ $0.05, counted in the daily cap above) before the full sign-up research. Not found ⇒ she joins the
+            # waitlist, no full research, the landing asks for a team or Instagram (which re-check); the admin list shows
+            # no_athlete_footprint. A model error counts as found (fail open).
+            - name: ATHLETE_FOOTPRINT_CHECK
+              value: "true"
+            # ── The waitlist's agent research path (design: one research route for every sign-up, §4). ──
+            # OPENAI_API_KEY — prod's own OpenAI key (Secret Manager OPENAI_API_KEY_PROD, its own OpenAI project with a
+            # provider-side hard spend limit; owner, 24 Oct 2026). Used by every Mila turn (Mastra), the sign-up research
+            # and its "real athlete?" check, the quick score, moments and the playbook (several of those are on here).
+            # An exhausted quota fails that athlete's research (she stays on the waitlist; GET /waitlist/progress says
+            # "failed"), never her sign-up.
+            - name: OPENAI_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: OPENAI_API_KEY_PROD
+                  key: latest
+            # SIGNUP_RESEARCH_AGENT — the landing waitlist and the app sign-up start the agent's research-only run
+            # (signup_research: sourced facts + the M.I.A. score) instead of legacy research. ON from 24 Oct 2026 (owner,
+            # option a). AGENT_ONBOARDING and the agent app front are live in prod (Stage 1, 25 Oct 2026), so an admin
+            # promotion reuses this research (routes/admin.ts) rather than researching her again.
+            - name: SIGNUP_RESEARCH_AGENT
+              value: "true"
+            # QUICK_SCORE_ONE_CALL — the one-call quick score at sign-up (server/services/quickScore; OpenAI web search
+            # with clickable citations since 4 Nov 2026; the old grounding hold, QUICK_SCORE_STORE_GROUNDED, is gone from
+            # the code). LEAN_SIGNUP_RESEARCH — lean sign-up research (signup_research v4: one find-and-verify pass, then
+            # the quick score and the full M.I.A.), the handle "Is this you?" rows and Mila's refresh_research tool.
+            # Both are the owner's optimized waitlist set for prod (10 Nov 2026; the plain screens, no Mila host). Guarded
+            # (prod-flag-guard.ts): the owner switched them on on the live service after the promote's smoke test
+            # (--update-env-vars); these lines match. Kill switch: --update-env-vars FLAG=false live, then "false" here.
+            - name: QUICK_SCORE_ONE_CALL
+              value: "true"
+            - name: LEAN_SIGNUP_RESEARCH
+              value: "true"
+            # RESEARCH_MERGE_COMPACT — the compact research merge (~45% cheaper; passed its equivalence check on dev,
+            # #1068). Only agent research runs read it. Flip to "true" with the switch.
+            - name: RESEARCH_MERGE_COMPACT
+              value: "true"
+            # IDENTITY_MEMBERSHIP_READ — Phase A Step 3a. When true requireAuth/requireAdmin resolve the caller through
+            # users + athlete_users (design step3 §3.2: exactly one membership ⇒ auto; more ⇒ X-Athlete-Id or 409).
+            # Off ⇒ today's athletes.auth_id lookup byte for byte.
+            # Stage 1 ON in prod (owner, 25 Oct 2026).
+            - name: IDENTITY_MEMBERSHIP_READ
+              value: "true"
+            - name: SOCIAL_STORIES_WRITE
+              value: "true"
+            - name: SOCIAL_SUBSTRATE_WRITE
+              value: "true"
+            # Voice is OFF until production has its own LiveKit worker (Track C in the
+            # plan). With it on and no worker registered under the name below, rooms
+            # simply never get an agent — no error, just silence. Flip to "true" in the
+            # same change that lands the worker; beta is meant to include voice.
+            - name: MILA_VOICE_WEB
+              value: "false"
+            - name: MILA_VOICE_WEB_SEARCH
+              value: "true"
+            # Production's OWN LiveKit worker name. Dev leaves this unset and gets the
+            # default dispatch name; prod must name its worker or its rooms get dev's
+            # agent, which calls the dev API with the dev secret. Create the second agent
+            # in the mila-voice repo under exactly this name.
+            - name: MILA_VOICE_AGENT_NAME
+              value: "mila-voice-prod"
+            - name: CHAT_RATE_LIMIT_PER_HOUR
+              value: "60"
+
+            # ── Studio: OFF at beta launch (decision 5). Paid generation with no ─────
+            # per-athlete cap yet; the cap below is the per-job ceiling, kept low on
+            # purpose and raised deliberately later. Turning it on also needs a client
+            # build with EXPO_PUBLIC_STUDIO_ENABLED baked in.
+            # Stage 1 (owner, 25 Oct 2026): Studio library AND Create are on in prod. The master turns every boolean
+            # Studio flag on unless its own line says exactly "false" (server/studio/studioFlag.ts) — which is why the
+            # old `STUDIO_ENABLED: "false"` line is gone. Governance flags (STUDIO_CREATIVE_INTENTS,
+            # STUDIO_CAMPAIGN_GOVERNANCE) and the value flags (STUDIO_PUBLISH_MODE) are never moved by the master.
+            # The caps travel with it: the per-job ceiling stays at prod's 5 USD; STUDIO_ENRICH_DAILY_CAP_USD bounds
+            # the background video enrichment per athlete per UTC day. The client half is EXPO_PUBLIC_STUDIO_ALL_ON
+            # in eas.json's production profile. Needs the studio-*-tick-prod schedulers RESUMED (paused today).
+            - name: STUDIO_ALL_ON
+              value: "true"
+            - name: STUDIO_MAX_JOB_USD
+              value: "5"
+            - name: STUDIO_ENRICH_DAILY_CAP_USD
+              value: "5"
+            - name: STUDIO_SHOT_DETECT
+              value: "true"
+            - name: STUDIO_VIDEO_ENRICH
+              value: "true"
+
+            # ── Langfuse: OFF until roadmap decision D1 (where trace data lives). ───
+            # Traces carry inbox bodies, contract text and chat transcripts unmasked;
+            # production must not send those to the dev project or to the free tier.
+            # When D1 is decided: create LANGFUSE_*_PROD secrets, mount them here, and
+            # flip both flags. PROMPT_REGISTRY additionally needs the `prompts` table
+            # populated in prod (it is empty even in dev today).
+            - name: LANGFUSE_TRACING
+              value: "false"
+            # Stage 1 ON in prod (owner, 25 Oct 2026).
+            - name: PROMPT_REGISTRY
+              value: "true"
+
+
+            # Transactional email: "gmail" (Google Workspace Gmail API, the only provider — server/lib/gmailSender.ts)
+            # delivers; "off" delivers nothing. Production stays "off" (it has never delivered email)
+            # until the owner turns it on.
+            - name: EMAIL_PROVIDER
+              value: "gmail"
+            # EMAIL_CODE_SIGNIN — sign in with a 6-digit email code (server/routes/authEmailCode.ts). ON in production
+            # (owner, 24 Oct 2026, anti-fake plan: verified sign-in only — Google / Apple / Microsoft or the emailed code;
+            # the landing offers no email + password sign-up while this is on). The code goes out through EMAIL_PROVIDER
+            # (gmail, above). EMAIL_CODE_SECRET keys the HMACs of the address, the code and the IP: prod's OWN secret,
+            # Secret Manager EMAIL_CODE_SECRET_PROD, created by the owner on 24 Oct 2026 (never in the repo; the runtime
+            # service account reads it through its project-level secretAccessor).
+            - name: EMAIL_CODE_SIGNIN
+              value: "true"
+            - name: EMAIL_CODE_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: EMAIL_CODE_SECRET_PROD
+                  key: latest
+            # REVIEW_LOGIN_EMAIL / REVIEW_LOGIN_CODE — app-review login (lib/emailCode.ts reviewLoginCode): this one address
+            # signs in with "Continue with Email" and a FIXED code, emailed to nobody, so TikTok / Google reviewers can get
+            # in (tester@ is an alias of the owner's mailbox). The code is Secret Manager REVIEW_LOGIN_CODE_PROD. Every
+            # other address is unaffected; all the code's limits still apply. Remove both once the reviews are done.
+            - name: REVIEW_LOGIN_EMAIL
+              value: "tester@nomila.co"
+            - name: REVIEW_LOGIN_CODE
+              valueFrom:
+                secretKeyRef:
+                  name: REVIEW_LOGIN_CODE_PROD
+                  key: latest
+            # APP_CHECK_ENFORCE — Firebase App Check (reCAPTCHA Enterprise) on requests that would CREATE an account
+            # (lib/appCheck.ts): "off" | "monitor" (verify and log a missing or invalid token, allow) | "enforce" (refuse
+            # it, 403 app_check_failed). Monitor first; enforce only once the logs show real sign-ups carry tokens (the
+            # native app sends none yet, so enforce would refuse new accounts made in the app).
+            - name: APP_CHECK_ENFORCE
+              value: "monitor"
+
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 30
+            failureThreshold: 3
+
+          startupProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            failureThreshold: 12
+
+  traffic:
+    - percent: 100
+      latestRevision: true

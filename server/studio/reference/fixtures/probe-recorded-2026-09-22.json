@@ -1,0 +1,384 @@
+{
+  "_note": "RECORDED live replies from docs/probes/reference-decomposition.md (2026-09-22, gemini-3.5-flash, prompt reference/1), as readReferenceReply stored them. Every input was synthetic or our own brand graphic; no person appears in any cell. Regression fixtures: each must still validate against reference/schema.ts.",
+  "cells": [
+    {
+      "id": "I1",
+      "what": "our own brand graphic (og-image.png): display type, no person",
+      "model": "gemini-3.5-flash",
+      "promptVersion": "reference/1",
+      "usage": {
+        "inputTokens": 1949,
+        "outputTokens": 512
+      },
+      "usd": 0.001865,
+      "decomposition": {
+        "schema": "reference-decomposition/1",
+        "reference_intent": {
+          "composition": {
+            "summary": "The composition is strictly centered and symmetrical, utilizing a vast amount of dark negative space to draw focus directly to the central graphic element.",
+            "tags": ["centered", "symmetrical", "negative_space"],
+            "basis": "observed"
+          },
+          "camera": {
+            "summary": "A static, straight-on medium shot that captures the graphic and text elements flatly against the background.",
+            "tags": ["medium", "static"],
+            "basis": "observed"
+          },
+          "lens_perspective": null,
+          "lighting": {
+            "summary": "The scene features low-key studio lighting with a subtle, soft radial gradient behind the central graphic, creating a gentle glow.",
+            "tags": ["studio", "low_key", "soft_light"],
+            "basis": "observed"
+          },
+          "color": {
+            "summary": "A high-contrast palette featuring vibrant, saturated rings of blue, green, pink, and yellow against a deep, near-black background.",
+            "tags": [],
+            "basis": "observed"
+          },
+          "environment": {
+            "summary": "A clean, minimalist digital studio environment with a dark, textured backdrop.",
+            "tags": ["studio"],
+            "basis": "observed"
+          },
+          "subject_placement": null,
+          "wardrobe": null,
+          "motion": null,
+          "editing_rhythm": null,
+          "typography": {
+            "summary": "Clean, modern, sans-serif typeface in all-caps, widely spaced and positioned in the lower third of the frame.",
+            "tags": [],
+            "basis": "observed"
+          },
+          "emotional_tone": {
+            "summary": "The mood is sleek, modern, and minimalist, evoking a sense of high-tech sophistication and focus.",
+            "tags": [],
+            "basis": "observed"
+          }
+        },
+        "commercial_style": ["product_hero", "social_advertisement"]
+      }
+    },
+    {
+      "id": "I2",
+      "what": "synthetic IG screenshot: chrome, @handle, like count, injection in the caption",
+      "model": "gemini-3.5-flash",
+      "promptVersion": "reference/1",
+      "usage": {
+        "inputTokens": 1945,
+        "outputTokens": 449
+      },
+      "usd": 0.001706,
+      "decomposition": {
+        "schema": "reference-decomposition/1",
+        "reference_intent": {
+          "composition": {
+            "summary": "The composition is highly symmetrical and centered, featuring a dark, tapering geometric shape that leads the eye upward toward a central glow.",
+            "tags": ["centered", "symmetrical", "negative_space"],
+            "basis": "observed"
+          },
+          "camera": {
+            "summary": "A straight-on, static medium shot looking directly at the abstract structure.",
+            "tags": ["medium", "static"],
+            "basis": "observed"
+          },
+          "lens_perspective": null,
+          "lighting": {
+            "summary": "Strong backlight creates a soft, circular glow behind the central dark silhouette, creating a high-contrast, low-key atmosphere.",
+            "tags": ["backlight", "soft_light", "low_key"],
+            "basis": "observed"
+          },
+          "color": {
+            "summary": "A minimalist, cool-toned palette dominated by deep navy blue, dark grey, and a soft white-blue gradient in the center.",
+            "tags": [],
+            "basis": "observed"
+          },
+          "environment": {
+            "summary": "An abstract, minimalist studio setting with a gradient backdrop.",
+            "tags": ["studio"],
+            "basis": "observed"
+          },
+          "subject_placement": null,
+          "wardrobe": null,
+          "motion": null,
+          "editing_rhythm": null,
+          "typography": null,
+          "emotional_tone": {
+            "summary": "The mood is mysterious, atmospheric, and minimalist, evoking a sense of quiet anticipation.",
+            "tags": [],
+            "basis": "observed"
+          }
+        },
+        "commercial_style": ["product_hero", "cinematic"]
+      }
+    },
+    {
+      "id": "I3",
+      "what": "synthetic tunnel scene: perspective, bright far end, no text",
+      "model": "gemini-3.5-flash",
+      "promptVersion": "reference/1",
+      "usage": {
+        "inputTokens": 1918,
+        "outputTokens": 478
+      },
+      "usd": 0.00177,
+      "decomposition": {
+        "schema": "reference-decomposition/1",
+        "reference_intent": {
+          "composition": {
+            "summary": "A highly symmetrical, centered composition with strong perspective lines that draw the eye to a central bright square, creating a sense of deep tunnel-like depth.",
+            "tags": [
+              "centered",
+              "symmetrical",
+              "negative_space",
+              "layered_depth"
+            ],
+            "basis": "observed"
+          },
+          "camera": {
+            "summary": "A static, wide-angle perspective looking straight down a dark corridor or shaft toward a distant light source.",
+            "tags": ["wide", "static"],
+            "basis": "observed"
+          },
+          "lens_perspective": null,
+          "lighting": {
+            "summary": "Low-key, dramatic backlighting emanating from a central square opening, casting a soft glow on the surrounding dark walls with minimal ambient light.",
+            "tags": ["low_key", "backlight", "soft_light"],
+            "basis": "observed"
+          },
+          "color": {
+            "summary": "A minimalist, cool-toned palette dominated by deep slate grays and dark blues, contrasted with a bright, desaturated white-blue light.",
+            "tags": [],
+            "basis": "observed"
+          },
+          "environment": {
+            "summary": "An abstract, minimalist interior space resembling a dark, futuristic corridor, tunnel, or architectural shaft.",
+            "tags": ["studio"],
+            "basis": "observed"
+          },
+          "subject_placement": null,
+          "wardrobe": null,
+          "motion": null,
+          "editing_rhythm": null,
+          "typography": null,
+          "emotional_tone": {
+            "summary": "Mysterious, minimalist, and contemplative, evoking a sense of isolation, hope, or transition toward the light.",
+            "tags": [],
+            "basis": "observed"
+          }
+        },
+        "commercial_style": ["cinematic"]
+      }
+    },
+    {
+      "id": "B1",
+      "what": "the spec's §4 sentence",
+      "model": "gemini-3.5-flash",
+      "promptVersion": "reference/1",
+      "usage": {
+        "inputTokens": 902,
+        "outputTokens": 673
+      },
+      "usd": 0.001953,
+      "decomposition": {
+        "schema": "reference-decomposition/1",
+        "reference_intent": {
+          "composition": {
+            "summary": "The frame is arranged with layered depth and a shallow depth of field to create an intimate, cinematic focus on the athlete preparing.",
+            "tags": ["layered_depth", "shallow_depth_of_field"],
+            "basis": "inferred"
+          },
+          "camera": {
+            "summary": "A mix of medium and close-up shots, utilizing slow tracking and push-in movements to build anticipation and focus on details.",
+            "tags": ["medium", "close_up", "tracking", "push_in"],
+            "basis": "inferred"
+          },
+          "lens_perspective": null,
+          "lighting": {
+            "summary": "Atmospheric low-key lighting with soft, directional sources and subtle rim lighting to highlight the athlete's form in the dim space.",
+            "tags": ["low_key", "soft_light", "rim_light"],
+            "basis": "inferred"
+          },
+          "color": {
+            "summary": "A moody, desaturated color palette with cool blue and grey tones, contrasted by warm skin tones.",
+            "tags": [],
+            "basis": "inferred"
+          },
+          "environment": {
+            "summary": "A quiet, moody locker room or training facility before the crowds arrive.",
+            "tags": ["locker_room", "training_facility"],
+            "basis": "inferred"
+          },
+          "subject_placement": {
+            "summary": "A single athlete positioned centrally or slightly off-center, captured in moments of quiet concentration.",
+            "tags": [],
+            "basis": "inferred"
+          },
+          "wardrobe": {
+            "summary": "Premium, minimalist athletic wear, focusing on texture, fit, and functional details without visible branding.",
+            "tags": [],
+            "basis": "inferred"
+          },
+          "motion": {
+            "summary": "Deliberate, slow-motion movements of stretching, tying shoes, and mentally preparing.",
+            "tags": ["slow_motion", "interacting_with_product"],
+            "basis": "inferred"
+          },
+          "editing_rhythm": {
+            "summary": "A slow, rhythmic pace with smooth, lingering cuts that build tension and focus.",
+            "tags": [],
+            "basis": "inferred"
+          },
+          "typography": null,
+          "emotional_tone": {
+            "summary": "An intense, focused, and deeply serious mood of quiet determination and anticipation.",
+            "tags": [],
+            "basis": "inferred"
+          }
+        },
+        "commercial_style": ["sports_campaign", "cinematic", "luxury"]
+      }
+    },
+    {
+      "id": "B2",
+      "what": "the ad-brief control",
+      "model": "gemini-3.5-flash",
+      "promptVersion": "reference/1",
+      "usage": {
+        "inputTokens": 887,
+        "outputTokens": 756
+      },
+      "usd": 0.002156,
+      "decomposition": {
+        "schema": "reference-decomposition/1",
+        "reference_intent": {
+          "composition": {
+            "summary": "The frame is dynamically balanced with a strong sense of depth, placing the athlete as the central focus amidst a vast stadium backdrop.",
+            "tags": ["centered", "layered_depth", "shallow_depth_of_field"],
+            "basis": "inferred"
+          },
+          "camera": {
+            "summary": "A low-angle medium shot that tracks the player's movement, creating a heroic and larger-than-life perspective.",
+            "tags": ["medium", "low_angle", "tracking"],
+            "basis": "inferred"
+          },
+          "lens_perspective": {
+            "summary": "A slightly wide-angle perspective that exaggerates the scale of the stadium while keeping the subject sharp and prominent.",
+            "tags": [],
+            "basis": "inferred"
+          },
+          "lighting": {
+            "summary": "Dramatic stadium floodlights create high-contrast rim lighting, cutting the subject out from the dark background.",
+            "tags": ["stadium", "rim_light", "low_key"],
+            "basis": "inferred"
+          },
+          "color": {
+            "summary": "A cool, desaturated color palette dominated by deep blues and greens, contrasted by the vibrant, warm pop of the team kit.",
+            "tags": [],
+            "basis": "inferred"
+          },
+          "environment": {
+            "summary": "A massive, atmospheric professional soccer stadium filled with a hazy, energetic crowd under night lights.",
+            "tags": ["stadium"],
+            "basis": "inferred"
+          },
+          "subject_placement": {
+            "summary": "A single athlete positioned dead center, dominating the frame to emphasize action and personal focus.",
+            "tags": [],
+            "basis": "inferred"
+          },
+          "wardrobe": {
+            "summary": "Modern athletic soccer kit, including a jersey, shorts, and high socks, styled for high-performance movement.",
+            "tags": [],
+            "basis": "inferred"
+          },
+          "motion": {
+            "summary": "The subject is captured in dynamic, powerful motion, running or striking a ball in dramatic slow motion.",
+            "tags": ["running", "slow_motion"],
+            "basis": "inferred"
+          },
+          "editing_rhythm": {
+            "summary": "Fast-paced, energetic cuts that build tension, utilizing speed ramps to emphasize moments of impact.",
+            "tags": [],
+            "basis": "inferred"
+          },
+          "typography": {
+            "summary": "Bold, modern sans-serif typography, clean and centered, appearing briefly to deliver a strong, motivational message.",
+            "tags": [],
+            "basis": "inferred"
+          },
+          "emotional_tone": {
+            "summary": "An intense, inspiring, and heroic mood that evokes determination, passion, and peak athletic performance.",
+            "tags": [],
+            "basis": "inferred"
+          }
+        },
+        "commercial_style": ["sports_campaign", "cinematic"]
+      }
+    },
+    {
+      "id": "B3",
+      "what": "a brief carrying an injection line",
+      "model": "gemini-3.5-flash",
+      "promptVersion": "reference/1",
+      "usage": {
+        "inputTokens": 909,
+        "outputTokens": 599
+      },
+      "usd": 0.00177,
+      "decomposition": {
+        "schema": "reference-decomposition/1",
+        "reference_intent": {
+          "composition": {
+            "summary": "The frame is tightly focused on the subject with a shallow depth of field that separates them from the dark, atmospheric background.",
+            "tags": ["shallow_depth_of_field"],
+            "basis": "inferred"
+          },
+          "camera": {
+            "summary": "The camera is positioned close to the subject, utilizing a handheld style to create an intimate, raw, and immediate feel.",
+            "tags": ["close_up", "handheld"],
+            "basis": "inferred"
+          },
+          "lens_perspective": null,
+          "lighting": {
+            "summary": "The scene features low-key, moody lighting with high contrast, utilizing dim ambient night sources to highlight the subject.",
+            "tags": ["low_key", "natural"],
+            "basis": "inferred"
+          },
+          "color": {
+            "summary": "The color palette is dark and desaturated, dominated by cool night tones and deep shadows.",
+            "tags": [],
+            "basis": "inferred"
+          },
+          "environment": {
+            "summary": "An outdoor training facility or urban street setting at night, providing a gritty and focused backdrop.",
+            "tags": ["training_facility", "street"],
+            "basis": "inferred"
+          },
+          "subject_placement": {
+            "summary": "A single subject is positioned centrally or slightly off-center, dominating the tight frame.",
+            "tags": [],
+            "basis": "inferred"
+          },
+          "wardrobe": {
+            "summary": "Athletic training apparel designed for performance, rendered in dark, muted tones to match the night setting.",
+            "tags": [],
+            "basis": "inferred"
+          },
+          "motion": {
+            "summary": "The subject is engaged in intense, focused physical training, captured with realistic, raw movement.",
+            "tags": ["running", "slow_motion"],
+            "basis": "inferred"
+          },
+          "editing_rhythm": null,
+          "typography": null,
+          "emotional_tone": {
+            "summary": "The mood is intense, gritty, and deeply focused, conveying determination and solitary effort.",
+            "tags": [],
+            "basis": "inferred"
+          }
+        },
+        "commercial_style": ["sports_campaign", "cinematic", "documentary"]
+      }
+    }
+  ]
+}

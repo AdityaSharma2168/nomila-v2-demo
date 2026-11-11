@@ -1,0 +1,30 @@
+{
+  "extends": "expo/tsconfig.base.json",
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@/*": ["./client/*"],
+      "@shared/*": ["./shared/*"]
+    },
+    "types": ["node"]
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  // ⚠️ BOTH TEST EXTENSIONS. Tests are type-checked by tsconfig.jest.json — the only config with
+  // `"types": ["jest", ...]` — and are excluded HERE so the production check never needs a test
+  // runner's globals. That split held for as long as `.test.ts` was the only test extension there
+  // was. Video V4 added the first `.test.tsx` files, which this glob did not match, so they fell
+  // into the production check and it failed on `describe`, `it`, `expect` and `jest` — green under
+  // `tsc -p tsconfig.jest.json` and red under `tsc -p tsconfig.json`, which CI runs as two
+  // separate steps (ci-checks.yml).
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "server_dist",
+    "media",
+    "tools/mila-studio",
+    "**/*.test.ts",
+    "**/*.test.tsx"
+  ]
+}

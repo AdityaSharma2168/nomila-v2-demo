@@ -1,0 +1,51 @@
+{
+  "T1 — a still from her words, nothing attached": {
+    "prompt": [
+      "Generate a single photorealistic photograph of an athlete. Output an IMAGE, not text or a caption. Do not describe or plan the shot; render it. The output is the photograph itself — never a screenshot of one, never a phone or a laptop screen, never an app or social-media interface, a post frame, a caption bar, a username, or like, comment and share icons.",
+      "",
+      "AUDIENCE: core. Register: college · Soccer.",
+      "",
+      "TEXT AND NAMES: Do not write any person's name, surname, username or handle anywhere in the image — not on kit, not on signage, not on a screen. No captions, watermarks or interface elements. Apart from a brand's own mark where the brief calls for it, the only words in the image are ones the direction asks for.",
+      "",
+      "GOAL: Grow her audience with something that reads as hers, not as an ad",
+      "",
+      "DIRECTION: me sprinting out of the blocks at golden hour"
+    ],
+    "slots": []
+  },
+  "T2 — her pick, the pack's face and body, her product": {
+    "prompt": [
+      "Generate a single photorealistic photograph of an athlete. Output an IMAGE, not text or a caption. Do not describe or plan the shot; render it. The output is the photograph itself — never a screenshot of one, never a phone or a laptop screen, never an app or social-media interface, a post frame, a caption bar, a username, or like, comment and share icons.",
+      "",
+      "REFERENCES — the images attached to this request, in order. Each has exactly one job, and only that job:",
+      "Images 1–3 — HER LIKENESS: three photographs of the SAME person — her — taken on different days, in different light and from different angles. They show ONE person, not three. Build her identity from all of them together: her face, hair and build come from these images. Preserve her exact face and features — the output must be recognisably the same person. Take nothing else from these photographs: not their backgrounds, their clothing, their lighting or their framing.",
+      "Image 4 — PRODUCT: \"product 1\". Render this exact object. Do not substitute it, restyle it or redesign it.",
+      "",
+      "AUDIENCE: core. Register: college · Soccer.",
+      "",
+      "TEXT AND NAMES: Do not write any person's name, surname, username or handle anywhere in the image — not on kit, not on signage, not on a screen. No captions, watermarks or interface elements. Apart from a brand's own mark where the brief calls for it, the only words in the image are ones the direction asks for.",
+      "",
+      "GOAL: Grow her audience with something that reads as hers, not as an ad",
+      "",
+      "DIRECTION: me sprinting out of the blocks at golden hour"
+    ],
+    "slots": ["character", "character", "character", "object"]
+  },
+  "T6 — flag-off: her one pick, no pack, no fence": {
+    "prompt": [
+      "Generate a single photorealistic photograph of an athlete. Output an IMAGE, not text or a caption. Do not describe or plan the shot; render it. The output is the photograph itself — never a screenshot of one, never a phone or a laptop screen, never an app or social-media interface, a post frame, a caption bar, a username, or like, comment and share icons.",
+      "",
+      "REFERENCES — the images attached to this request, in order. Each has exactly one job, and only that job:",
+      "Image 1 — HER LIKENESS. This is the person to render; her face, hair and build come from this image. Preserve her exact face and features — the output must be recognisably the same person. Take nothing else from this photograph: not its background, its clothing, its lighting or its framing.",
+      "",
+      "AUDIENCE: core. Register: college · Soccer.",
+      "",
+      "TEXT AND NAMES: Do not write any person's name, surname, username or handle anywhere in the image — not on kit, not on signage, not on a screen. No captions, watermarks or interface elements. Apart from a brand's own mark where the brief calls for it, the only words in the image are ones the direction asks for.",
+      "",
+      "GOAL: Grow her audience with something that reads as hers, not as an ad",
+      "",
+      "DIRECTION: me sprinting out of the blocks at golden hour"
+    ],
+    "slots": ["character"]
+  }
+}

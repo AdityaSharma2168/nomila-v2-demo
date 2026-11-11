@@ -1,0 +1,16 @@
+{
+  "id": "pk05-made-here-decoy",
+  "description": "A generated still matches the brief perfectly but is not the athlete's own footage: the real camera photo is used.",
+  "reviewed": false,
+  "library": [
+    { "key": "generated", "kind": "photo", "description": "a polished image of the athlete in the new kit under stadium lights", "provenance": "made-here" },
+    { "key": "camera", "kind": "photo", "description": "the athlete trying on the new kit in the locker room", "setting": "locker room" }
+  ],
+  "post": {
+    "what": "New kit",
+    "body": "Caption: New season, new kit.\nShots: the athlete in the new kit.",
+    "platform": "instagram"
+  },
+  "expect": { "any_of": ["camera"], "must_not": ["generated"], "ai_needed": false },
+  "mock": { "picks": [{ "key": "camera" }], "look": "natural", "mood": "bright" }
+}

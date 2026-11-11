@@ -1,0 +1,1444 @@
+{
+  "caseId": "fixture-case",
+  "mode": "mock",
+  "stages": [
+    "research",
+    "onboarding",
+    "understand",
+    "mia",
+    "plan"
+  ],
+  "stagesDone": [
+    "research",
+    "understand",
+    "mia",
+    "onboarding",
+    "plan"
+  ],
+  "startedAt": "2026-10-09T12:00:00.000Z",
+  "wallMs": 1234,
+  "stopped": null,
+  "runs": [
+    {
+      "runId": "625fb8a8-cd79-4b93-9830-bb8ddba12baf",
+      "role": "research_a",
+      "skillId": "research",
+      "skillVersion": "1.11.0",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "status": "completed",
+      "stopReason": null,
+      "error": null,
+      "costMicroUsd": 282400,
+      "inputTokens": 60000,
+      "cachedInputTokens": 4000,
+      "outputTokens": 9000,
+      "webSearchCalls": 8,
+      "durationMs": 5,
+      "modelMs": 6,
+      "json": {
+        "identity": {
+          "resolved": true,
+          "description": "Rowan Ellery, rowing",
+          "ambiguity": ""
+        },
+        "facts": [
+          {
+            "subject_kind": "athlete",
+            "subject_name": "Rowan Ellery",
+            "claim": "Won the 2025 national single sculls title.",
+            "topic": "career",
+            "source_url": "https://www.example-rowing-federation.org/results/2025-nationals",
+            "source_title": "source",
+            "source_type": "official",
+            "date": "",
+            "confidence": 0.9,
+            "sensitivity": "none",
+            "care_kind": "none",
+            "never_reason": "none"
+          },
+          {
+            "subject_kind": "athlete",
+            "subject_name": "Rowan Ellery",
+            "claim": "Rows for the Riverside Boat Club.",
+            "topic": "career",
+            "source_url": "https://www.example-club.org/athletes/rowan-ellery",
+            "source_title": "source",
+            "source_type": "official",
+            "date": "",
+            "confidence": 0.9,
+            "sensitivity": "none",
+            "care_kind": "none",
+            "never_reason": "none"
+          },
+          {
+            "subject_kind": "athlete",
+            "subject_name": "Rowan Ellery",
+            "claim": "Signed an equipment deal with Example Oars in 2024.",
+            "topic": "career",
+            "source_url": "https://www.example-sports-wire.com/ellery-example-oars",
+            "source_title": "source",
+            "source_type": "official",
+            "date": "",
+            "confidence": 0.9,
+            "sensitivity": "none",
+            "care_kind": "none",
+            "never_reason": "none"
+          },
+          {
+            "subject_kind": "athlete",
+            "subject_name": "Rowan Ellery",
+            "claim": "Studied at Example State University.",
+            "topic": "career",
+            "source_url": "https://www.example-state.edu/athletics/rowing/rowan-ellery",
+            "source_title": "source",
+            "source_type": "official",
+            "date": "",
+            "confidence": 0.9,
+            "sensitivity": "none",
+            "care_kind": "none",
+            "never_reason": "none"
+          }
+        ],
+        "gaps": [
+          "eligibility rules for this athlete's school/association"
+        ],
+        "narrative": "Rowan Ellery (rowing)."
+      },
+      "sources": [
+        {
+          "url": "https://www.example-rowing-federation.org/results/2025-nationals",
+          "title": "source"
+        },
+        {
+          "url": "https://www.example-club.org/athletes/rowan-ellery",
+          "title": "source"
+        },
+        {
+          "url": "https://www.example-sports-wire.com/ellery-example-oars",
+          "title": "source"
+        },
+        {
+          "url": "https://www.example-rowing-news.com/head-of-the-river-2024",
+          "title": "source"
+        },
+        {
+          "url": "https://www.example-state.edu/athletics/rowing/rowan-ellery",
+          "title": "source"
+        }
+      ],
+      "policy": []
+    },
+    {
+      "runId": "0049f8e0-c6a8-4459-bc4b-7e2b3531569c",
+      "role": "research_b",
+      "skillId": "research",
+      "skillVersion": "1.11.0",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "status": "completed",
+      "stopReason": null,
+      "error": null,
+      "costMicroUsd": 282400,
+      "inputTokens": 60000,
+      "cachedInputTokens": 4000,
+      "outputTokens": 9000,
+      "webSearchCalls": 8,
+      "durationMs": 4,
+      "modelMs": 5,
+      "json": {
+        "identity": {
+          "resolved": true,
+          "description": "Rowan Ellery, rowing",
+          "ambiguity": ""
+        },
+        "facts": [
+          {
+            "subject_kind": "athlete",
+            "subject_name": "Rowan Ellery",
+            "claim": "Won the 2025 national single sculls title.",
+            "topic": "career",
+            "source_url": "https://www.example-rowing-federation.org/results/2025-nationals",
+            "source_title": "source",
+            "source_type": "official",
+            "date": "",
+            "confidence": 0.9,
+            "sensitivity": "none",
+            "care_kind": "none",
+            "never_reason": "none"
+          },
+          {
+            "subject_kind": "athlete",
+            "subject_name": "Rowan Ellery",
+            "claim": "Rows for the Riverside Boat Club.",
+            "topic": "career",
+            "source_url": "https://www.example-club.org/athletes/rowan-ellery",
+            "source_title": "source",
+            "source_type": "official",
+            "date": "",
+            "confidence": 0.9,
+            "sensitivity": "none",
+            "care_kind": "none",
+            "never_reason": "none"
+          },
+          {
+            "subject_kind": "athlete",
+            "subject_name": "Rowan Ellery",
+            "claim": "Set a course record at the 2024 Head of the River.",
+            "topic": "career",
+            "source_url": "https://www.example-rowing-news.com/head-of-the-river-2024",
+            "source_title": "source",
+            "source_type": "official",
+            "date": "",
+            "confidence": 0.9,
+            "sensitivity": "none",
+            "care_kind": "none",
+            "never_reason": "none"
+          }
+        ],
+        "gaps": [
+          "eligibility rules for this athlete's school/association"
+        ],
+        "narrative": "Rowan Ellery (rowing)."
+      },
+      "sources": [
+        {
+          "url": "https://www.example-rowing-federation.org/results/2025-nationals",
+          "title": "source"
+        },
+        {
+          "url": "https://www.example-club.org/athletes/rowan-ellery",
+          "title": "source"
+        },
+        {
+          "url": "https://www.example-sports-wire.com/ellery-example-oars",
+          "title": "source"
+        },
+        {
+          "url": "https://www.example-rowing-news.com/head-of-the-river-2024",
+          "title": "source"
+        },
+        {
+          "url": "https://www.example-state.edu/athletics/rowing/rowan-ellery",
+          "title": "source"
+        }
+      ],
+      "policy": []
+    },
+    {
+      "runId": "2f4e752a-114e-4ea9-9cd1-da1312b83689",
+      "role": "merge",
+      "skillId": "research/merge",
+      "skillVersion": "1.11.0",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "status": "completed",
+      "stopReason": null,
+      "error": null,
+      "costMicroUsd": 78000,
+      "inputTokens": 14000,
+      "cachedInputTokens": 0,
+      "outputTokens": 5000,
+      "webSearchCalls": 0,
+      "durationMs": -4,
+      "modelMs": 0,
+      "json": {
+        "facts": [
+          {
+            "from": [
+              "a1",
+              "b1"
+            ],
+            "subject_kind": "athlete",
+            "subject_name": "",
+            "claim": "Won the 2025 national single sculls title.",
+            "topic": "career",
+            "date": "",
+            "confidence": 0.9,
+            "sensitivity": "none",
+            "care_kind": "none",
+            "never_reason": "none",
+            "conflicts_with": "",
+            "duplicate_of": "",
+            "note": "",
+            "field": "none",
+            "field_value": ""
+          },
+          {
+            "from": [
+              "a2",
+              "b2"
+            ],
+            "subject_kind": "athlete",
+            "subject_name": "",
+            "claim": "Rows for the Riverside Boat Club.",
+            "topic": "career",
+            "date": "",
+            "confidence": 0.9,
+            "sensitivity": "none",
+            "care_kind": "none",
+            "never_reason": "none",
+            "conflicts_with": "",
+            "duplicate_of": "",
+            "note": "",
+            "field": "none",
+            "field_value": ""
+          },
+          {
+            "from": [
+              "a3"
+            ],
+            "subject_kind": "athlete",
+            "subject_name": "",
+            "claim": "Signed an equipment deal with Example Oars in 2024.",
+            "topic": "career",
+            "date": "",
+            "confidence": 0.9,
+            "sensitivity": "none",
+            "care_kind": "none",
+            "never_reason": "none",
+            "conflicts_with": "",
+            "duplicate_of": "",
+            "note": "",
+            "field": "none",
+            "field_value": ""
+          },
+          {
+            "from": [
+              "a4"
+            ],
+            "subject_kind": "athlete",
+            "subject_name": "",
+            "claim": "Studied at Example State University.",
+            "topic": "career",
+            "date": "",
+            "confidence": 0.9,
+            "sensitivity": "none",
+            "care_kind": "none",
+            "never_reason": "none",
+            "conflicts_with": "",
+            "duplicate_of": "",
+            "note": "",
+            "field": "none",
+            "field_value": ""
+          },
+          {
+            "from": [
+              "b3"
+            ],
+            "subject_kind": "athlete",
+            "subject_name": "",
+            "claim": "Set a course record at the 2024 Head of the River.",
+            "topic": "career",
+            "date": "",
+            "confidence": 0.9,
+            "sensitivity": "none",
+            "care_kind": "none",
+            "never_reason": "none",
+            "conflicts_with": "",
+            "duplicate_of": "",
+            "note": "",
+            "field": "none",
+            "field_value": ""
+          }
+        ],
+        "dropped": [],
+        "narrative": "Merged."
+      },
+      "sources": [],
+      "policy": []
+    },
+    {
+      "runId": "a48d7004-ac3e-4ace-b801-d3bd1237b601",
+      "role": "turn:opening",
+      "skillId": "onboarding",
+      "skillVersion": "1.8.0",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "status": "completed",
+      "stopReason": null,
+      "error": null,
+      "costMicroUsd": 33000,
+      "inputTokens": 9000,
+      "cachedInputTokens": 0,
+      "outputTokens": 1500,
+      "webSearchCalls": 0,
+      "durationMs": -9,
+      "modelMs": 1,
+      "json": {
+        "message": "Here is what I found. Tell me if anything's off.",
+        "cards": {
+          "quick_questions": [],
+          "reveal": {
+            "headline": "Your record is your pitch.",
+            "highlights": [
+              {
+                "text": "A documented result brands notice.",
+                "refs": [
+                  "f3"
+                ]
+              },
+              {
+                "text": "A documented result brands notice.",
+                "refs": [
+                  "f4"
+                ]
+              },
+              {
+                "text": "A documented result brands notice.",
+                "refs": [
+                  "f5"
+                ]
+              },
+              {
+                "text": "A documented result brands notice.",
+                "refs": [
+                  "f6"
+                ]
+              }
+            ],
+            "standing": {
+              "text": "Established in your sport.",
+              "refs": [
+                "f3"
+              ]
+            },
+            "windows": []
+          },
+          "rate_ranges": false,
+          "insights": [],
+          "fact_review": null,
+          "show_recommended_goals": false,
+          "connect": [],
+          "capabilities": [],
+          "consent": false,
+          "age_band": false,
+          "order": []
+        },
+        "checkpoints_addressed": [
+          "reveal"
+        ],
+        "path_note": "opened with the reveal"
+      },
+      "sources": [],
+      "policy": []
+    },
+    {
+      "runId": "f08d7647-7bb1-4439-8313-18822ff21316",
+      "role": "understand",
+      "skillId": "understand",
+      "skillVersion": "1.11.0",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "status": "completed",
+      "stopReason": null,
+      "error": null,
+      "costMicroUsd": 156200,
+      "inputTokens": 30000,
+      "cachedInputTokens": 2000,
+      "outputTokens": 10000,
+      "webSearchCalls": 0,
+      "durationMs": -10,
+      "modelMs": 0,
+      "json": {
+        "stage": {
+          "label": "pro",
+          "band": "established",
+          "confidence": 0.7,
+          "why": "From the facts.",
+          "refs": [
+            "f3",
+            "f4",
+            "f5"
+          ]
+        },
+        "thesis": {
+          "big_idea": "A proven competitor with a clear story.",
+          "verdict": "Marketable today on the strength of the record."
+        },
+        "sections": [
+          {
+            "key": "brand_now_next",
+            "title": "brand_now_next",
+            "so_what": "This shapes the partners you should approach first.",
+            "lines": [
+              {
+                "text": "The record is documented by the sources.",
+                "kind": "fact",
+                "refs": [
+                  "f3",
+                  "f4",
+                  "f5"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "commercial_readiness",
+            "title": "commercial_readiness",
+            "so_what": "This shapes the partners you should approach first.",
+            "lines": [
+              {
+                "text": "The record is documented by the sources.",
+                "kind": "fact",
+                "refs": [
+                  "f3",
+                  "f4",
+                  "f5"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "rate_logic",
+            "title": "rate_logic",
+            "so_what": "This shapes the partners you should approach first.",
+            "lines": [
+              {
+                "text": "The record is documented by the sources.",
+                "kind": "fact",
+                "refs": [
+                  "f3",
+                  "f4",
+                  "f5"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "context_timing",
+            "title": "context_timing",
+            "so_what": "This shapes the partners you should approach first.",
+            "lines": [
+              {
+                "text": "The record is documented by the sources.",
+                "kind": "fact",
+                "refs": [
+                  "f3",
+                  "f4",
+                  "f5"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "content_direction",
+            "title": "content_direction",
+            "so_what": "This shapes the partners you should approach first.",
+            "lines": [
+              {
+                "text": "The record is documented by the sources.",
+                "kind": "fact",
+                "refs": [
+                  "f3",
+                  "f4",
+                  "f5"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "risks_upside",
+            "title": "risks_upside",
+            "so_what": "This shapes the partners you should approach first.",
+            "lines": [
+              {
+                "text": "The record is documented by the sources.",
+                "kind": "fact",
+                "refs": [
+                  "f3",
+                  "f4",
+                  "f5"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "could_not_confirm",
+            "title": "could_not_confirm",
+            "so_what": "This shapes the partners you should approach first.",
+            "lines": [
+              {
+                "text": "The record is documented by the sources.",
+                "kind": "fact",
+                "refs": [
+                  "f3",
+                  "f4",
+                  "f5"
+                ]
+              }
+            ]
+          },
+          {
+            "key": "refresh_cadence",
+            "title": "refresh_cadence",
+            "so_what": "This shapes the partners you should approach first.",
+            "lines": [
+              {
+                "text": "The record is documented by the sources.",
+                "kind": "fact",
+                "refs": [
+                  "f3",
+                  "f4",
+                  "f5"
+                ]
+              }
+            ]
+          }
+        ],
+        "positioning": {
+          "from": "Known for results.",
+          "to": "Known for results and the story behind them.",
+          "statement": "A competitor brands can trust.",
+          "pillars": [
+            {
+              "name": "Pillar 1",
+              "line": "Rests on the record.",
+              "refs": [
+                "f3",
+                "f4",
+                "f5"
+              ]
+            },
+            {
+              "name": "Pillar 2",
+              "line": "Rests on the record.",
+              "refs": [
+                "f3",
+                "f4",
+                "f5"
+              ]
+            },
+            {
+              "name": "Pillar 3",
+              "line": "Rests on the record.",
+              "refs": [
+                "f3",
+                "f4",
+                "f5"
+              ]
+            }
+          ],
+          "refs": [
+            "f3",
+            "f4",
+            "f5"
+          ]
+        },
+        "content_pillars": [
+          {
+            "key": "P1",
+            "name": "Training and the work behind results",
+            "why_this_athlete": "The record is built in training the sources document.",
+            "refs": [
+              "f3"
+            ]
+          },
+          {
+            "key": "P2",
+            "name": "Competition days",
+            "why_this_athlete": "Each documented result is a moment followers can share.",
+            "refs": [
+              "f3",
+              "f4"
+            ]
+          }
+        ],
+        "internal": {
+          "current_sponsors": [],
+          "past_sponsors": [],
+          "exclusivity_conflicts": []
+        },
+        "narrative": "You have a documented record that brands can build on.",
+        "carry_forward": null,
+        "rate_ranges": []
+      },
+      "sources": [],
+      "policy": []
+    },
+    {
+      "runId": "85a9f463-d500-4d00-9f90-15848e8ba452",
+      "role": "turn:insights",
+      "skillId": "onboarding",
+      "skillVersion": "1.8.0",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "status": "completed",
+      "stopReason": null,
+      "error": null,
+      "costMicroUsd": 33000,
+      "inputTokens": 9000,
+      "cachedInputTokens": 0,
+      "outputTokens": 1500,
+      "webSearchCalls": 0,
+      "durationMs": -12,
+      "modelMs": 0,
+      "json": {
+        "message": "Here is what stands out now that the Brief is ready.",
+        "cards": {
+          "quick_questions": [],
+          "reveal": null,
+          "rate_ranges": false,
+          "insights": [
+            {
+              "angle": "brand",
+              "text": "Your results give brands a clear reason to say yes.",
+              "refs": [
+                "f3"
+              ],
+              "mia_dimension": null
+            },
+            {
+              "angle": "brand",
+              "text": "Your results give brands a clear reason to say yes.",
+              "refs": [
+                "f4"
+              ],
+              "mia_dimension": null
+            }
+          ],
+          "fact_review": null,
+          "show_recommended_goals": false,
+          "connect": [],
+          "capabilities": [],
+          "consent": false,
+          "age_band": false,
+          "order": []
+        },
+        "checkpoints_addressed": [],
+        "path_note": "insights after the Brief"
+      },
+      "sources": [],
+      "policy": []
+    },
+    {
+      "runId": "ed844847-29db-461a-8a84-923031f696f2",
+      "role": "plan",
+      "skillId": "plan",
+      "skillVersion": "1.3.0",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "status": "completed",
+      "stopReason": null,
+      "error": null,
+      "costMicroUsd": 46250,
+      "inputTokens": 13000,
+      "cachedInputTokens": 2500,
+      "outputTokens": 2500,
+      "webSearchCalls": 0,
+      "durationMs": -12,
+      "modelMs": 1,
+      "json": {
+        "contract": "plan/1",
+        "stage_read": {
+          "band": "established",
+          "why": "From the record in the facts."
+        },
+        "recommended_goals": [
+          {
+            "key": "R1",
+            "goal": "Land a first local partner this season",
+            "horizon": "next",
+            "domain": "commercial",
+            "why_now": "Your record gives brands a clear reason to say yes now.",
+            "value": {
+              "text": "A first deal on record, and a story brands can follow.",
+              "low": null,
+              "high": null,
+              "currency": null,
+              "drivers": []
+            },
+            "value_confidence": "low",
+            "next_decision": "Pick two local brands to approach.",
+            "fact_keys": [
+              "F1",
+              "F2"
+            ],
+            "similar_to_goal_id": null,
+            "repeats": "once"
+          },
+          {
+            "key": "R2",
+            "goal": "Share one training story a week",
+            "horizon": "now",
+            "domain": "content",
+            "why_now": "Your results are documented; the story behind them is not yet.",
+            "value": {
+              "text": "A first deal on record, and a story brands can follow.",
+              "low": null,
+              "high": null,
+              "currency": null,
+              "drivers": []
+            },
+            "value_confidence": "low",
+            "next_decision": "Choose the day you post.",
+            "fact_keys": [
+              "F1"
+            ],
+            "similar_to_goal_id": null,
+            "repeats": "once"
+          }
+        ],
+        "game_plans": [
+          {
+            "goal_ref": "R1",
+            "domain": "commercial",
+            "lines": [
+              "Lead with your record; pitch two brands that already back your sport locally."
+            ],
+            "kept_athlete_text": false
+          },
+          {
+            "goal_ref": "R2",
+            "domain": "content",
+            "lines": [
+              "One short clip a week from training you already film."
+            ],
+            "kept_athlete_text": false
+          }
+        ],
+        "actions": [
+          {
+            "goal_ref": "R2",
+            "kind": "post",
+            "what": "A training clip with your result",
+            "why": "It turns the record into a story.",
+            "due_on": "2026-10-09",
+            "event_ref": null,
+            "button": "post",
+            "deliverable": {
+              "type": "post_brief",
+              "title": "Training clip",
+              "body": "Caption: The work behind the result.\nShots: warm-up, one hard set, the finish.",
+              "target": null,
+              "platform": "instagram",
+              "thread_ref": null,
+              "connector": null,
+              "caption": "The work behind the result.",
+              "hashtags": [
+                "#training"
+              ],
+              "shots": [
+                "warm-up",
+                "one hard set",
+                "the finish"
+              ]
+            },
+            "fact_keys": [
+              "F1"
+            ],
+            "post": {
+              "hook": "The work behind the result.",
+              "format": "reel",
+              "show": "Warm-up, one hard set, the finish.",
+              "caption_angle": "The result came from the work.",
+              "avoid": "Anything staged.",
+              "media_needs": "a training clip"
+            },
+            "idea_ref": null,
+            "pillar_ref": null
+          },
+          {
+            "goal_ref": "R1",
+            "kind": "connect",
+            "what": "Connect instagram",
+            "why": "So your real audience backs the pitch.",
+            "due_on": null,
+            "event_ref": null,
+            "button": "connect",
+            "deliverable": {
+              "type": "connect_request",
+              "title": "Connect instagram",
+              "body": "Measured reach makes a pitch credible.",
+              "target": null,
+              "platform": null,
+              "thread_ref": null,
+              "connector": "instagram",
+              "caption": null,
+              "hashtags": [],
+              "shots": []
+            },
+            "fact_keys": [
+              "F1"
+            ],
+            "post": null,
+            "idea_ref": null,
+            "pillar_ref": null
+          }
+        ],
+        "goal_notes": [],
+        "missing": [],
+        "idea_moves": [],
+        "week": {
+          "posts": 1,
+          "target": null,
+          "stories": 0,
+          "why": "No playbook and no limit of the athlete's yet: one post where it serves a goal."
+        },
+        "path_note": "planned from the record"
+      },
+      "sources": [],
+      "policy": []
+    }
+  ],
+  "identity": {
+    "resolved": true,
+    "description": "Rowan Ellery, rowing",
+    "ambiguity": ""
+  },
+  "facts": [
+    {
+      "id": "412bcdb0-222c-43aa-80b7-756e15807d3e",
+      "claim": "The athlete's name is Rowan Ellery.",
+      "type": "said",
+      "status": "active",
+      "subject": {
+        "kind": "athlete",
+        "name": "Rowan Ellery"
+      },
+      "sourceUrl": null,
+      "sourceRef": "onboarding/cebd61e1-120a-41b8-b0ce-db058261ecd4#name",
+      "sensitive": false,
+      "runId": null
+    },
+    {
+      "id": "e13db476-7712-412c-a6fc-b275128425a3",
+      "claim": "Rowan Ellery's sport is rowing.",
+      "type": "said",
+      "status": "active",
+      "subject": {
+        "kind": "athlete",
+        "name": "Rowan Ellery"
+      },
+      "sourceUrl": null,
+      "sourceRef": "onboarding/cebd61e1-120a-41b8-b0ce-db058261ecd4#sport",
+      "sensitive": false,
+      "runId": null
+    },
+    {
+      "id": "39b17b1f-684b-40da-b039-3ddb16ac2b1c",
+      "claim": "Won the 2025 national single sculls title.",
+      "type": "found",
+      "status": "active",
+      "subject": {
+        "kind": "athlete",
+        "name": "Rowan Ellery"
+      },
+      "sourceUrl": "https://www.example-rowing-federation.org/results/2025-nationals",
+      "sourceRef": null,
+      "sensitive": false,
+      "runId": "2f4e752a-114e-4ea9-9cd1-da1312b83689"
+    },
+    {
+      "id": "620d36a8-1db5-4f02-9675-e5e31a59b2db",
+      "claim": "Rows for the Riverside Boat Club.",
+      "type": "found",
+      "status": "active",
+      "subject": {
+        "kind": "athlete",
+        "name": "Rowan Ellery"
+      },
+      "sourceUrl": "https://www.example-club.org/athletes/rowan-ellery",
+      "sourceRef": null,
+      "sensitive": false,
+      "runId": "2f4e752a-114e-4ea9-9cd1-da1312b83689"
+    },
+    {
+      "id": "beca4dc8-f6b4-4139-8f78-dc9890f52ad5",
+      "claim": "Signed an equipment deal with Example Oars in 2024.",
+      "type": "found",
+      "status": "active",
+      "subject": {
+        "kind": "athlete",
+        "name": "Rowan Ellery"
+      },
+      "sourceUrl": "https://www.example-sports-wire.com/ellery-example-oars",
+      "sourceRef": null,
+      "sensitive": false,
+      "runId": "2f4e752a-114e-4ea9-9cd1-da1312b83689"
+    },
+    {
+      "id": "67ea57c0-f54a-4d46-9084-b7aaad6831d3",
+      "claim": "Studied at Example State University.",
+      "type": "found",
+      "status": "active",
+      "subject": {
+        "kind": "athlete",
+        "name": "Rowan Ellery"
+      },
+      "sourceUrl": "https://www.example-state.edu/athletics/rowing/rowan-ellery",
+      "sourceRef": null,
+      "sensitive": false,
+      "runId": "2f4e752a-114e-4ea9-9cd1-da1312b83689"
+    },
+    {
+      "id": "90e22f22-b7a1-4978-923a-e9a0b89eb4c6",
+      "claim": "Set a course record at the 2024 Head of the River.",
+      "type": "found",
+      "status": "active",
+      "subject": {
+        "kind": "athlete",
+        "name": "Rowan Ellery"
+      },
+      "sourceUrl": "https://www.example-rowing-news.com/head-of-the-river-2024",
+      "sourceRef": null,
+      "sensitive": false,
+      "runId": "2f4e752a-114e-4ea9-9cd1-da1312b83689"
+    }
+  ],
+  "brief": {
+    "summary": "You have a documented record that brands can build on.",
+    "sections": [
+      {
+        "key": "thesis",
+        "title": "The big idea",
+        "lines": [
+          {
+            "text": "A proven competitor with a clear story.",
+            "kind": "inference",
+            "factIds": []
+          },
+          {
+            "text": "Marketable today on the strength of the record.",
+            "kind": "inference",
+            "factIds": []
+          }
+        ]
+      },
+      {
+        "key": "stage",
+        "title": "Career stage",
+        "lines": [
+          {
+            "text": "pro — From the facts.",
+            "kind": "inference",
+            "factIds": [
+              "39b17b1f-684b-40da-b039-3ddb16ac2b1c",
+              "620d36a8-1db5-4f02-9675-e5e31a59b2db",
+              "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "positioning",
+        "title": "Positioning",
+        "lines": [
+          {
+            "text": "From: Known for results.",
+            "kind": "inference",
+            "factIds": [
+              "39b17b1f-684b-40da-b039-3ddb16ac2b1c",
+              "620d36a8-1db5-4f02-9675-e5e31a59b2db",
+              "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+            ]
+          },
+          {
+            "text": "To: Known for results and the story behind them.",
+            "kind": "inference",
+            "factIds": [
+              "39b17b1f-684b-40da-b039-3ddb16ac2b1c",
+              "620d36a8-1db5-4f02-9675-e5e31a59b2db",
+              "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+            ]
+          },
+          {
+            "text": "A competitor brands can trust.",
+            "kind": "inference",
+            "factIds": [
+              "39b17b1f-684b-40da-b039-3ddb16ac2b1c",
+              "620d36a8-1db5-4f02-9675-e5e31a59b2db",
+              "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+            ]
+          },
+          {
+            "text": "Pillar 1: Rests on the record.",
+            "kind": "inference",
+            "factIds": [
+              "39b17b1f-684b-40da-b039-3ddb16ac2b1c",
+              "620d36a8-1db5-4f02-9675-e5e31a59b2db",
+              "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+            ]
+          },
+          {
+            "text": "Pillar 2: Rests on the record.",
+            "kind": "inference",
+            "factIds": [
+              "39b17b1f-684b-40da-b039-3ddb16ac2b1c",
+              "620d36a8-1db5-4f02-9675-e5e31a59b2db",
+              "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+            ]
+          },
+          {
+            "text": "Pillar 3: Rests on the record.",
+            "kind": "inference",
+            "factIds": [
+              "39b17b1f-684b-40da-b039-3ddb16ac2b1c",
+              "620d36a8-1db5-4f02-9675-e5e31a59b2db",
+              "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "brand_now_next",
+        "title": "Brand: now → next",
+        "lines": [
+          {
+            "text": "The record is documented by the sources.",
+            "kind": "fact",
+            "factIds": [
+              "39b17b1f-684b-40da-b039-3ddb16ac2b1c",
+              "620d36a8-1db5-4f02-9675-e5e31a59b2db",
+              "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+            ]
+          }
+        ],
+        "soWhat": "This shapes the partners you should approach first."
+      },
+      {
+        "key": "commercial_readiness",
+        "title": "Commercial readiness",
+        "lines": [
+          {
+            "text": "The record is documented by the sources.",
+            "kind": "fact",
+            "factIds": [
+              "39b17b1f-684b-40da-b039-3ddb16ac2b1c",
+              "620d36a8-1db5-4f02-9675-e5e31a59b2db",
+              "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+            ]
+          }
+        ],
+        "soWhat": "This shapes the partners you should approach first."
+      },
+      {
+        "key": "rate_logic",
+        "title": "Rate logic",
+        "lines": [
+          {
+            "text": "The record is documented by the sources.",
+            "kind": "fact",
+            "factIds": [
+              "39b17b1f-684b-40da-b039-3ddb16ac2b1c",
+              "620d36a8-1db5-4f02-9675-e5e31a59b2db",
+              "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+            ]
+          }
+        ],
+        "soWhat": "This shapes the partners you should approach first."
+      },
+      {
+        "key": "context_timing",
+        "title": "Timing and tentpoles",
+        "lines": [
+          {
+            "text": "The record is documented by the sources.",
+            "kind": "fact",
+            "factIds": [
+              "39b17b1f-684b-40da-b039-3ddb16ac2b1c",
+              "620d36a8-1db5-4f02-9675-e5e31a59b2db",
+              "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+            ]
+          }
+        ],
+        "soWhat": "This shapes the partners you should approach first."
+      },
+      {
+        "key": "content_direction",
+        "title": "Content: today → direction",
+        "lines": [
+          {
+            "text": "The record is documented by the sources.",
+            "kind": "fact",
+            "factIds": [
+              "39b17b1f-684b-40da-b039-3ddb16ac2b1c",
+              "620d36a8-1db5-4f02-9675-e5e31a59b2db",
+              "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+            ]
+          }
+        ],
+        "soWhat": "This shapes the partners you should approach first."
+      },
+      {
+        "key": "risks_upside",
+        "title": "Biggest risk and biggest upside",
+        "lines": [
+          {
+            "text": "The record is documented by the sources.",
+            "kind": "fact",
+            "factIds": [
+              "39b17b1f-684b-40da-b039-3ddb16ac2b1c",
+              "620d36a8-1db5-4f02-9675-e5e31a59b2db",
+              "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+            ]
+          }
+        ],
+        "soWhat": "This shapes the partners you should approach first."
+      },
+      {
+        "key": "could_not_confirm",
+        "title": "What I couldn't confirm",
+        "lines": [
+          {
+            "text": "The record is documented by the sources.",
+            "kind": "fact",
+            "factIds": [
+              "39b17b1f-684b-40da-b039-3ddb16ac2b1c",
+              "620d36a8-1db5-4f02-9675-e5e31a59b2db",
+              "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+            ]
+          }
+        ],
+        "soWhat": "This shapes the partners you should approach first."
+      },
+      {
+        "key": "refresh_cadence",
+        "title": "Refresh cadence",
+        "lines": [
+          {
+            "text": "The record is documented by the sources.",
+            "kind": "fact",
+            "factIds": [
+              "39b17b1f-684b-40da-b039-3ddb16ac2b1c",
+              "620d36a8-1db5-4f02-9675-e5e31a59b2db",
+              "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+            ]
+          }
+        ],
+        "soWhat": "This shapes the partners you should approach first."
+      }
+    ],
+    "contentPillars": [
+      {
+        "key": "P1",
+        "name": "Training and the work behind results",
+        "whyThisAthlete": "The record is built in training the sources document.",
+        "factIds": [
+          "39b17b1f-684b-40da-b039-3ddb16ac2b1c"
+        ]
+      },
+      {
+        "key": "P2",
+        "name": "Competition days",
+        "whyThisAthlete": "Each documented result is a moment followers can share.",
+        "factIds": [
+          "39b17b1f-684b-40da-b039-3ddb16ac2b1c",
+          "620d36a8-1db5-4f02-9675-e5e31a59b2db"
+        ]
+      }
+    ],
+    "internal": {
+      "currentSponsors": [],
+      "pastSponsors": []
+    }
+  },
+  "turns": [
+    {
+      "key": "opening",
+      "runId": "a48d7004-ac3e-4ace-b801-d3bd1237b601",
+      "message": "Here is what I found. Tell me if anything's off.",
+      "cards": [
+        {
+          "kind": "reveal",
+          "title": "Here's what I found",
+          "payload": {
+            "headline": "Your record is your pitch.",
+            "highlights": [
+              {
+                "text": "A documented result brands notice.",
+                "factIds": [
+                  "39b17b1f-684b-40da-b039-3ddb16ac2b1c"
+                ],
+                "sources": [
+                  {
+                    "label": "source",
+                    "url": "https://www.example-rowing-federation.org/results/2025-nationals"
+                  }
+                ]
+              },
+              {
+                "text": "A documented result brands notice.",
+                "factIds": [
+                  "620d36a8-1db5-4f02-9675-e5e31a59b2db"
+                ],
+                "sources": [
+                  {
+                    "label": "source",
+                    "url": "https://www.example-club.org/athletes/rowan-ellery"
+                  }
+                ]
+              },
+              {
+                "text": "A documented result brands notice.",
+                "factIds": [
+                  "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+                ],
+                "sources": [
+                  {
+                    "label": "source",
+                    "url": "https://www.example-sports-wire.com/ellery-example-oars"
+                  }
+                ]
+              },
+              {
+                "text": "A documented result brands notice.",
+                "factIds": [
+                  "67ea57c0-f54a-4d46-9084-b7aaad6831d3"
+                ],
+                "sources": [
+                  {
+                    "label": "source",
+                    "url": "https://www.example-state.edu/athletics/rowing/rowan-ellery"
+                  }
+                ]
+              }
+            ],
+            "standing": {
+              "text": "Established in your sport.",
+              "factIds": [
+                "39b17b1f-684b-40da-b039-3ddb16ac2b1c"
+              ],
+              "sources": [
+                {
+                  "label": "source",
+                  "url": "https://www.example-rowing-federation.org/results/2025-nationals"
+                }
+              ]
+            },
+            "windows": []
+          }
+        }
+      ],
+      "held": []
+    },
+    {
+      "key": "insights",
+      "runId": "85a9f463-d500-4d00-9f90-15848e8ba452",
+      "message": "Here is what stands out now that the Brief is ready.",
+      "cards": [
+        {
+          "kind": "insight",
+          "title": "Insight",
+          "payload": {
+            "angle": "brand",
+            "text": "Your results give brands a clear reason to say yes.",
+            "factIds": [
+              "39b17b1f-684b-40da-b039-3ddb16ac2b1c"
+            ],
+            "sources": [
+              {
+                "label": "source",
+                "url": "https://www.example-rowing-federation.org/results/2025-nationals"
+              }
+            ],
+            "miaDimension": null
+          }
+        },
+        {
+          "kind": "insight",
+          "title": "Insight",
+          "payload": {
+            "angle": "brand",
+            "text": "Your results give brands a clear reason to say yes.",
+            "factIds": [
+              "620d36a8-1db5-4f02-9675-e5e31a59b2db"
+            ],
+            "sources": [
+              {
+                "label": "source",
+                "url": "https://www.example-club.org/athletes/rowan-ellery"
+              }
+            ],
+            "miaDimension": null
+          }
+        }
+      ],
+      "held": []
+    }
+  ],
+  "mia": {
+    "status": "ready",
+    "score": 500,
+    "preliminary": true,
+    "computed": "mock",
+    "costMicroUsd": 0,
+    "latencyMs": 0
+  },
+  "judge": {
+    "provider": "mock",
+    "model": "mock",
+    "costMicroUsd": 0,
+    "latencyMs": 0,
+    "positioning_supported": {
+      "pass": true,
+      "reason": "mock judge"
+    },
+    "no_unsupported_facts": {
+      "pass": true,
+      "reason": "mock judge",
+      "statements": []
+    }
+  },
+  "plan": {
+    "status": "planned",
+    "stageBand": "established",
+    "recommended": [
+      {
+        "goal": "Land a first local partner this season",
+        "horizon": "next",
+        "whyNow": "Your record gives brands a clear reason to say yes now.",
+        "value": "A first deal on record, and a story brands can follow.",
+        "valueConfidence": "low",
+        "factIds": [
+          "beca4dc8-f6b4-4139-8f78-dc9890f52ad5",
+          "620d36a8-1db5-4f02-9675-e5e31a59b2db"
+        ]
+      },
+      {
+        "goal": "Share one training story a week",
+        "horizon": "now",
+        "whyNow": "Your results are documented; the story behind them is not yet.",
+        "value": "A first deal on record, and a story brands can follow.",
+        "valueConfidence": "low",
+        "factIds": [
+          "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+        ]
+      }
+    ],
+    "gamePlans": [
+      "Lead with your record; pitch two brands that already back your sport locally.",
+      "One short clip a week from training you already film."
+    ],
+    "actions": [
+      {
+        "what": "A training clip with your result",
+        "why": "It turns the record into a story.",
+        "kind": "post",
+        "button": "post",
+        "dueOn": "2026-10-09",
+        "eventDate": null,
+        "deliverableTitle": "Training clip",
+        "deliverableBody": "Caption: The work behind the result.\nShots: warm-up, one hard set, the finish.",
+        "factIds": [
+          "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+        ]
+      },
+      {
+        "what": "Connect instagram",
+        "why": "So your real audience backs the pitch.",
+        "kind": "connect",
+        "button": "connect",
+        "dueOn": null,
+        "eventDate": null,
+        "deliverableTitle": "Connect instagram",
+        "deliverableBody": "Measured reach makes a pitch credible.",
+        "factIds": [
+          "beca4dc8-f6b4-4139-8f78-dc9890f52ad5"
+        ]
+      }
+    ],
+    "held": [],
+    "missing": []
+  }
+}

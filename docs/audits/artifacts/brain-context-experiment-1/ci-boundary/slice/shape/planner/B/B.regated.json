@@ -1,0 +1,197 @@
+{
+ "label": "B",
+ "plannerSpec": "planner-eval-spec/0.1.0-exp",
+ "plannerDigest": "130d10d38e331dc9d75561cfc437b70f3ef08ee8d69cbdb36a1cd8077cb2f182",
+ "planner": "outreach",
+ "handoff": {
+  "version": "execution-router/0.1.0-exp",
+  "shape": "specialized_plan",
+  "recommendationId": "rec_bb66435c91ced059",
+  "domain": "outreach",
+  "what": "Target premium brand partnerships and ambassador roles within the EdTech, STEM, and technology venture capital sectors.",
+  "why": "Mia's elite academic credentials and studies in technology and management science at Stanford offer a unique, peer-free positioning. Actively targeting partnerships in EdTech, STEM, and technology ventures will establish her commercial presence in these core domains.",
+  "subject": "objective[c0f587e4-750f-4575-a4e8-fd4cfa6e078e]",
+  "objectiveIds": [
+   "c0f587e4-750f-4575-a4e8-fd4cfa6e078e"
+  ],
+  "advances": null,
+  "intent": null,
+  "notSeen": [
+   "Specific partnership structures and criteria preferred by technology and venture capital firms"
+  ],
+  "runId": "R15:47b50da0"
+ },
+ "run": {
+  "file": "docs/audits/artifacts/brain-context-experiment-1/ci-boundary/slice/shape/R15/R15.json",
+  "promptSha256": "47b50da0d9dbdb512ca60a91b2121ab966f8c2a01b5cf4885952460da98f5069",
+  "evaluatorSpec": "brain-eval-spec/0.10.0-exp"
+ },
+ "workItems": 8,
+ "call": {
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "startedAt": "2026-09-27T07:36:57.741Z",
+  "promptSha256": "1ac0ffb7a55d78ea127a41b9e00605510205cdf1d0f3f3d6795b149520914efa",
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+   "promptTokens": 9214,
+   "outputTokens": 1071,
+   "thoughtTokens": 5351
+  },
+  "costUsd": 0.0188192
+ },
+ "rawText": "{\"version\": \"planner-eval-spec/0.1.0-exp\", \"recommendation_id\": \"rec_bb66435c91ced059\", \"planner\": \"outreach\", \"result\": \"planned\", \"rationale\": \"By utilizing Mia's unique academic positioning at Stanford and direct inbound interest from StartX1, we can create a highly targeted outreach campaign. The strategy addresses the unknown partnership preferences of VC/tech firms through structured research, then transitions to drafting a tailored pitch highlighting her academic acceleration and brand safety, culminating in direct outreach.\", \"dependencies\": [{\"ref\": \"objective[c0f587e4-750f-4575-a4e8-fd4cfa6e078e]\", \"why\": \"Defines the core goal of establishing active partnerships in EdTech, STEM, and tech venture sectors within a 12-month horizon.\"}, {\"ref\": \"findings[mia.narrative_power]\", \"why\": \"Provides the evidence for her Stanford Symbolic Systems undergraduate degree, MS&E master's pursuit, and academic acceleration.\"}, {\"ref\": \"commercialPosition.inbound[3]\", \"why\": \"Identifies StartX1 inbound interest on 2026-09-14 as a warm candidate.\"}, {\"ref\": \"commercialPosition.inbound[6]\", \"why\": \"Identifies StartX1 inbound interest on 2026-09-04 as a warm candidate.\"}, {\"ref\": \"commercialPosition.inbound[9]\", \"why\": \"Identifies StartX1 inbound interest on 2026-09-02 as a warm candidate.\"}], \"completion\": {\"planning_complete_when\": \"The target brand classes are approved by Mia, the tech-focused narrative materials are finalized, and first-contact draft sequences are queued for her team to dispatch.\", \"does_not_imply\": \"The successful acquisition of partnerships, final agreement on deal terms, or active posting of sponsored content.\"}, \"output\": {\"target_classes\": [{\"class\": \"Stanford-affiliated Tech Startups and Accelerators\", \"why\": \"Directly leverages Mia's active status at Stanford and the multiple inbound signals from StartX1 to secure high-alignment tech sector roles.\", \"candidates\": [\"StartX1\"]}, {\"class\": \"Premium STEM & Educational Technology Platforms\", \"why\": \"Aligns with her rapid academic acceleration (completing her undergrad in 2.5 years) and philanthropic work with educational programs like Yuwa.\", \"candidates\": []}, {\"class\": \"Technology Venture Capital Firms\", \"why\": \"Fits her master's studies in Management Science and Engineering and positions her as an ambassador for innovation and entrepreneurship.\", \"candidates\": []}], \"research_needed\": [{\"question\": \"What specific partnership structures, compliance rules, and criteria do tech startup accelerators and venture capital firms require when engaging student-athletes?\", \"source_class\": \"external\"}, {\"question\": \"What are Mia's specific boundaries regarding representation of speculative technology sectors (e.g., specific AI subfields or cryptocurrency)?\", \"source_class\": \"athlete\"}], \"sequence\": [{\"step\": 1, \"does\": \"Conduct external research on common sponsorship structures, activation models, and expectations within tech and venture capital sectors.\", \"depends_on\": [], \"gate\": \"none\"}, {\"step\": 2, \"does\": \"Review the context of the three StartX1 inbound signals to determine their specific organizational focus and interest.\", \"depends_on\": [], \"gate\": \"none\"}, {\"step\": 3, \"does\": \"Draft a positioning narrative highlighting Mia's academic milestones, tech studies at Stanford, and brand safety profile.\", \"depends_on\": [1, 2], \"gate\": \"none\"}, {\"step\": 4, \"does\": \"Present target classes, specific StartX1 follow-up strategy, and the positioning narrative to Mia for approval.\", \"depends_on\": [3], \"gate\": \"athlete_approval\"}, {\"step\": 5, \"does\": \"Develop a professional one-pager/pitch deck tailored to tech and venture partners.\", \"depends_on\": [4], \"gate\": \"none\"}, {\"step\": 6, \"does\": \"Draft custom outreach and follow-up templates for StartX1 and selected EdTech/STEM prospects.\", \"depends_on\": [5], \"gate\": \"none\"}, {\"step\": 7, \"does\": \"Queue and prepare final outreach messages for approved targets in the communications pipeline.\", \"depends_on\": [6], \"gate\": \"tap_to_send\"}], \"materials\": [{\"material\": \"STEM & Tech Positioning One-Pager\", \"purpose\": \"To briefly introduce Mia's academic credentials, athletic status, and philanthropic impact to corporate decision-makers.\", \"commissions\": \"none\"}, {\"material\": \"Tailored Outreach Pitch Deck\", \"purpose\": \"A comprehensive presentation deck demonstrating her brand-safety profile, past commercial success, and ideas for tech-sector partnerships.\", \"commissions\": \"none\"}]}, \"escalation\": null}",
+ "parsed": {
+  "version": "planner-eval-spec/0.1.0-exp",
+  "recommendation_id": "rec_bb66435c91ced059",
+  "planner": "outreach",
+  "result": "planned",
+  "rationale": "By utilizing Mia's unique academic positioning at Stanford and direct inbound interest from StartX1, we can create a highly targeted outreach campaign. The strategy addresses the unknown partnership preferences of VC/tech firms through structured research, then transitions to drafting a tailored pitch highlighting her academic acceleration and brand safety, culminating in direct outreach.",
+  "dependencies": [
+   {
+    "ref": "objective[c0f587e4-750f-4575-a4e8-fd4cfa6e078e]",
+    "why": "Defines the core goal of establishing active partnerships in EdTech, STEM, and tech venture sectors within a 12-month horizon."
+   },
+   {
+    "ref": "findings[mia.narrative_power]",
+    "why": "Provides the evidence for her Stanford Symbolic Systems undergraduate degree, MS&E master's pursuit, and academic acceleration."
+   },
+   {
+    "ref": "commercialPosition.inbound[3]",
+    "why": "Identifies StartX1 inbound interest on 2026-09-14 as a warm candidate."
+   },
+   {
+    "ref": "commercialPosition.inbound[6]",
+    "why": "Identifies StartX1 inbound interest on 2026-09-04 as a warm candidate."
+   },
+   {
+    "ref": "commercialPosition.inbound[9]",
+    "why": "Identifies StartX1 inbound interest on 2026-09-02 as a warm candidate."
+   }
+  ],
+  "completion": {
+   "planning_complete_when": "The target brand classes are approved by Mia, the tech-focused narrative materials are finalized, and first-contact draft sequences are queued for her team to dispatch.",
+   "does_not_imply": "The successful acquisition of partnerships, final agreement on deal terms, or active posting of sponsored content."
+  },
+  "output": {
+   "target_classes": [
+    {
+     "class": "Stanford-affiliated Tech Startups and Accelerators",
+     "why": "Directly leverages Mia's active status at Stanford and the multiple inbound signals from StartX1 to secure high-alignment tech sector roles.",
+     "candidates": [
+      "StartX1"
+     ]
+    },
+    {
+     "class": "Premium STEM & Educational Technology Platforms",
+     "why": "Aligns with her rapid academic acceleration (completing her undergrad in 2.5 years) and philanthropic work with educational programs like Yuwa.",
+     "candidates": []
+    },
+    {
+     "class": "Technology Venture Capital Firms",
+     "why": "Fits her master's studies in Management Science and Engineering and positions her as an ambassador for innovation and entrepreneurship.",
+     "candidates": []
+    }
+   ],
+   "research_needed": [
+    {
+     "question": "What specific partnership structures, compliance rules, and criteria do tech startup accelerators and venture capital firms require when engaging student-athletes?",
+     "source_class": "external"
+    },
+    {
+     "question": "What are Mia's specific boundaries regarding representation of speculative technology sectors (e.g., specific AI subfields or cryptocurrency)?",
+     "source_class": "athlete"
+    }
+   ],
+   "sequence": [
+    {
+     "step": 1,
+     "does": "Conduct external research on common sponsorship structures, activation models, and expectations within tech and venture capital sectors.",
+     "depends_on": [],
+     "gate": "none"
+    },
+    {
+     "step": 2,
+     "does": "Review the context of the three StartX1 inbound signals to determine their specific organizational focus and interest.",
+     "depends_on": [],
+     "gate": "none"
+    },
+    {
+     "step": 3,
+     "does": "Draft a positioning narrative highlighting Mia's academic milestones, tech studies at Stanford, and brand safety profile.",
+     "depends_on": [
+      1,
+      2
+     ],
+     "gate": "none"
+    },
+    {
+     "step": 4,
+     "does": "Present target classes, specific StartX1 follow-up strategy, and the positioning narrative to Mia for approval.",
+     "depends_on": [
+      3
+     ],
+     "gate": "athlete_approval"
+    },
+    {
+     "step": 5,
+     "does": "Develop a professional one-pager/pitch deck tailored to tech and venture partners.",
+     "depends_on": [
+      4
+     ],
+     "gate": "none"
+    },
+    {
+     "step": 6,
+     "does": "Draft custom outreach and follow-up templates for StartX1 and selected EdTech/STEM prospects.",
+     "depends_on": [
+      5
+     ],
+     "gate": "none"
+    },
+    {
+     "step": 7,
+     "does": "Queue and prepare final outreach messages for approved targets in the communications pipeline.",
+     "depends_on": [
+      6
+     ],
+     "gate": "tap_to_send"
+    }
+   ],
+   "materials": [
+    {
+     "material": "STEM & Tech Positioning One-Pager",
+     "purpose": "To briefly introduce Mia's academic credentials, athletic status, and philanthropic impact to corporate decision-makers.",
+     "commissions": "none"
+    },
+    {
+     "material": "Tailored Outreach Pitch Deck",
+     "purpose": "A comprehensive presentation deck demonstrating her brand-safety profile, past commercial success, and ideas for tech-sector partnerships.",
+     "commissions": "none"
+    }
+   ]
+  },
+  "escalation": null
+ },
+ "problems": [
+  "version planner-eval-spec/0.1.0-exp",
+  "candidate \"StartX1\" — objective[2d199757-6e12-4a6b-bade-df05c587e849] is deferred by the athlete (\"When u know more about this\") — not the planner's to advance",
+  "dependency commercialPosition.inbound[3] resolves to \"StartX1\" — objective[2d199757-6e12-4a6b-bade-df05c587e849] is deferred by the athlete (\"When u know more about this\") — not the planner's to advance",
+  "dependency commercialPosition.inbound[6] resolves to \"StartX1\" — objective[2d199757-6e12-4a6b-bade-df05c587e849] is deferred by the athlete (\"When u know more about this\") — not the planner's to advance",
+  "dependency commercialPosition.inbound[9] resolves to \"StartX1\" — objective[2d199757-6e12-4a6b-bade-df05c587e849] is deferred by the athlete (\"When u know more about this\") — not the planner's to advance",
+  "sequence step 2 acts toward \"StartX1\" — objective[2d199757-6e12-4a6b-bade-df05c587e849] is deferred by the athlete (\"When u know more about this\") — not the planner's to advance",
+  "sequence step 4 acts toward \"StartX1\" — objective[2d199757-6e12-4a6b-bade-df05c587e849] is deferred by the athlete (\"When u know more about this\") — not the planner's to advance",
+  "sequence step 6 acts toward \"StartX1\" — objective[2d199757-6e12-4a6b-bade-df05c587e849] is deferred by the athlete (\"When u know more about this\") — not the planner's to advance",
+  "candidate \"StartX1\" — \"StartX1\" is in motion (commercialPosition.inbound[9], inbound deal_detected) — Existing Work owned by Deals, not a new outreach target; attach or omit it",
+  "sequence step 2 acts toward \"StartX1\" — \"StartX1\" is in motion (commercialPosition.inbound[9], inbound deal_detected) — Existing Work owned by Deals, not a new outreach target; attach or omit it",
+  "sequence step 4 acts toward \"StartX1\" — \"StartX1\" is in motion (commercialPosition.inbound[9], inbound deal_detected) — Existing Work owned by Deals, not a new outreach target; attach or omit it",
+  "sequence step 6 acts toward \"StartX1\" — \"StartX1\" is in motion (commercialPosition.inbound[9], inbound deal_detected) — Existing Work owned by Deals, not a new outreach target; attach or omit it"
+ ],
+ "result": null,
+ "projection": null,
+ "regatedAt": "2026-09-27T15:20:51.559Z",
+ "problemsBefore": [
+  "sequence[4] would send/publish/spend with gate \"none\": \"Develop a professional one-pager/pitch deck tailored to tech and venture partner\""
+ ]
+}

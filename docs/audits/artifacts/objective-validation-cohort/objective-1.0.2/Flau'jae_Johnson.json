@@ -1,0 +1,1860 @@
+{
+ "state": {
+  "athleteId": "16ea6f12-4574-4f73-9a41-c81fb6e0b508",
+  "asOf": "2026-09-25T17:54:32.554Z",
+  "version": "athlete-state/1.2.0",
+  "identity": {
+   "name": "Flau'jae Johnson",
+   "sport": "basketball",
+   "competitionContext": null,
+   "careerStatus": "active"
+  },
+  "findings": [
+   {
+    "key": "mia.athletic_authority",
+    "direction": "strength",
+    "rationale": {
+     "value": "Flau'jae Johnson operates at the absolute pinnacle of women's basketball. She transitioned from being a core piece of a national championship-winning LSU team to the 8th overall pick in the 2026 WNBA Draft. Her rookie season with the Seattle Storm has been highly impressive, establishing herself as an elite defensive guard and a key contributor on both ends of the floor.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:56:41.975Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "rationale": "Her performance records, league-level changes, and freshman-to-rookie transitions are thoroughly documented by official WNBA and LSU databases.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her performance records, league-level changes, and freshman-to-rookie transitions are thoroughly documented by official WNBA and LSU databases.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Flau'jae Johnson was selected 8th overall in the 2026 WNBA Draft by the Golden State Valkyries and was immediately traded to the Seattle Storm on draft night.",
+      "sourceUrl": "https://justwomenssports.com",
+      "observedAt": "2026-04-14",
+      "sourceType": "major_media",
+      "sourceTitle": "Golden State Trades Flau'jae Johnson to Seattle in Surprise 1st-Round Swap"
+     },
+     {
+      "id": "E2",
+      "claim": "In her 2026 WNBA rookie season, Johnson is averaging 10.8 to 11.5 PPG, 5.3 RPG, and has become the fastest rookie guard in Seattle Storm history to reach 15 blocks.",
+      "sourceUrl": "https://theixsports.com",
+      "observedAt": "2026-06-14",
+      "sourceType": "secondary",
+      "sourceTitle": "Flau'jae Johnson is growing toward stardom in rookie season"
+     },
+     {
+      "id": "E3",
+      "claim": "Johnson led LSU to the 2023 NCAA National Championship and completed her collegiate career as a two-time Third-Team All-American and two-time First-Team All-SEC selection, surpassing 2,000 career points.",
+      "sourceUrl": "https://lsusports.net",
+      "observedAt": "2026-05-15",
+      "sourceType": "official",
+      "sourceTitle": "Flau'jae Johnson - Women's Basketball 2025-26 - LSU Athletics"
+     },
+     {
+      "id": "E4",
+      "claim": "Johnson represented USA Basketball at the 2025 FIBA Women's AmeriCup, securing a gold medal.",
+      "sourceUrl": "https://allamericanspeakers.com",
+      "observedAt": "2026-04-15",
+      "sourceType": "secondary",
+      "sourceTitle": "Flau'jae Johnson WNBA Draft Profile and Bio"
+     }
+    ],
+    "components": [
+     {
+      "key": "athletic_authority.role_importance",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "value": 96,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "value": 88,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "value": 86,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "value": 82,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 89.05,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:56:41.975Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#athletic_authority.role_importance",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#athletic_authority.competition_level",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#athletic_authority.achievement_recency",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#athletic_authority.performance_results",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#athletic_authority.rankings_recognition",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#athletic_authority.national_international_status"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#athletic_authority.role_importance",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#athletic_authority.competition_level",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#athletic_authority.achievement_recency",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#athletic_authority.performance_results",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#athletic_authority.rankings_recognition",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#athletic_authority.national_international_status",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.audience_scale",
+    "direction": "strength",
+    "rationale": {
+     "value": "Flau'jae's social audience is exceptionally large, with a combined following of nearly 5 million across Instagram, TikTok, YouTube, and X. She ranks in the highest percentiles of women's basketball players, driven by her dual presence as an elite athlete and an active hip-hop artist. Her platform breadth is particularly strong, as she maintains highly engaged communities across both sports and entertainment channels.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:56:41.975Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E12",
+      "E5",
+      "E6",
+      "E7"
+     ],
+     "rationale": "Her individual platform counts are well corroborated across multiple public influencer and business media reports.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her individual platform counts are well corroborated across multiple public influencer and business media reports.",
+    "citedEvidence": [
+     {
+      "id": "E12",
+      "claim": "Johnson's NIL value was estimated at $1.5 million by On3, making her the highest-valued player in college women's basketball before she graduated.",
+      "sourceUrl": "https://on3.com",
+      "observedAt": "2025-02-11",
+      "sourceType": "secondary",
+      "sourceTitle": "Top 10 On3 NIL Valuations"
+     },
+     {
+      "id": "E5",
+      "claim": "Johnson commands nearly 5 million combined followers across Instagram, TikTok, YouTube, X, Facebook, and Snapchat.",
+      "sourceUrl": "https://sproutsocial.com",
+      "observedAt": "2026-04-15",
+      "sourceType": "major_media",
+      "sourceTitle": "LSU's Flau'jae Johnson social media footprint"
+     },
+     {
+      "id": "E6",
+      "claim": "Individually, her platforms include 1.9M followers on Instagram, 1.6M on TikTok, 267k YouTube subscribers, and 104k followers on X.",
+      "sourceUrl": "https://frontofficesports.com",
+      "observedAt": "2024-12-06",
+      "sourceType": "major_media",
+      "sourceTitle": "Flau'jae Johnson signs with Unrivaled"
+     },
+     {
+      "id": "E7",
+      "claim": "Johnson is signed to Jay-Z's Roc Nation record label, releasing albums 'Best of Both Worlds' (2024) and 'Flau & B' (2025) featuring Lil Wayne and NLE Choppa.",
+      "sourceUrl": "https://olympics.com",
+      "observedAt": "2025-03-19",
+      "sourceType": "official",
+      "sourceTitle": "Flau'jae Johnson - Rapper and Athlete"
+     }
+    ],
+    "components": [
+     {
+      "key": "audience_scale.audience_growth",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "value": 94,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "value": 86,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "value": 92,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 82.9,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:56:41.975Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#audience_scale.audience_growth",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#audience_scale.platform_breadth",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#audience_scale.cross_platform_effective_reach",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#audience_scale.sport_level_audience_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 1,
+     "total": 4
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#audience_scale.audience_growth",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#audience_scale.platform_breadth",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.engagement_quality",
+    "direction": "unknown",
+    "rationale": {
+     "value": "While her overall public engagement rate sits at a moderate 1.87% due to her massive follower count, her content achieves exceptionally high view rates that surpass standard creator benchmarks. Her community, known as 'The Flauk,' demonstrates strong brand loyalty and organic interaction, though deeper private metrics like shares, saves, and story retention remain undocumented.",
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-09-13T22:56:41.975Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E12",
+      "E5",
+      "E8"
+     ],
+     "rationale": "While public metrics like views and community names are known, highly granular and private engagement data is absent.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "While public metrics like views and community names are known, highly granular and private engagement data is absent.",
+    "citedEvidence": [
+     {
+      "id": "E12",
+      "claim": "Johnson's NIL value was estimated at $1.5 million by On3, making her the highest-valued player in college women's basketball before she graduated.",
+      "sourceUrl": "https://on3.com",
+      "observedAt": "2025-02-11",
+      "sourceType": "secondary",
+      "sourceTitle": "Top 10 On3 NIL Valuations"
+     },
+     {
+      "id": "E5",
+      "claim": "Johnson commands nearly 5 million combined followers across Instagram, TikTok, YouTube, X, Facebook, and Snapchat.",
+      "sourceUrl": "https://sproutsocial.com",
+      "observedAt": "2026-04-15",
+      "sourceType": "major_media",
+      "sourceTitle": "LSU's Flau'jae Johnson social media footprint"
+     },
+     {
+      "id": "E8",
+      "claim": "Her music career honors her late father, Savannah rapper Camoflauge, and her backstory includes winning the Golden Buzzer on America's Got Talent as a teen.",
+      "sourceUrl": "https://olympics.com",
+      "observedAt": "2025-03-19",
+      "sourceType": "official",
+      "sourceTitle": "Turning tragedy into inspiration: Flau'jae Johnson's story"
+     }
+    ],
+    "components": [
+     {
+      "key": "engagement_quality.video_retention",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "value": 78,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "value": 80,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "value": 52,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 66.31,
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-09-13T22:56:41.975Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#engagement_quality.video_retention",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#engagement_quality.reach_efficiency",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#engagement_quality.story_efficiency",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#engagement_quality.shares_saves_quality",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#engagement_quality.audience_authenticity",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#engagement_quality.engagement_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 3,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#engagement_quality.video_retention",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#engagement_quality.reach_efficiency",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#engagement_quality.story_efficiency",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#engagement_quality.shares_saves_quality",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#engagement_quality.audience_authenticity",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#engagement_quality.engagement_percentile",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.cultural_relevance",
+    "direction": "strength",
+    "rationale": {
+     "value": "Flau'jae's cultural relevance is category-leading and transcends traditional sports boundaries. As a Roc Nation-signed artist who has performed at the ESPYs and released multiple albums alongside her professional basketball career, she commands an unmatched crossover appeal. This dual identity makes her a household name covered by major lifestyle, music, and sports publications alike.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:56:41.975Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E14",
+      "E15",
+      "E2",
+      "E3",
+      "E7",
+      "E8"
+     ],
+     "rationale": "Her presence on lists like Forbes 30 Under 30 and Billboard's Power Players firmly validates her immense cultural footprint.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her presence on lists like Forbes 30 Under 30 and Billboard's Power Players firmly validates her immense cultural footprint.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Flau'jae Johnson was selected 8th overall in the 2026 WNBA Draft by the Golden State Valkyries and was immediately traded to the Seattle Storm on draft night.",
+      "sourceUrl": "https://justwomenssports.com",
+      "observedAt": "2026-04-14",
+      "sourceType": "major_media",
+      "sourceTitle": "Golden State Trades Flau'jae Johnson to Seattle in Surprise 1st-Round Swap"
+     },
+     {
+      "id": "E14",
+      "claim": "Johnson starred in Prime Video's Emmy-nominated docuseries 'The Money Game: LSU' and ESPN+'s series 'Full Court Press'.",
+      "sourceUrl": "https://allamericanspeakers.com",
+      "observedAt": "2026-04-15",
+      "sourceType": "secondary",
+      "sourceTitle": "The Money Game: LSU and WNBA Profile"
+     },
+     {
+      "id": "E15",
+      "claim": "Johnson was named to the Forbes 30 Under 30 list in 2024 and Billboard's Sports & Music Power Players list, highlighting her crossover cultural footprint.",
+      "sourceUrl": "https://daytonainternationalspeedway.com",
+      "observedAt": "2025-08-20",
+      "sourceType": "official",
+      "sourceTitle": "Flau'jae Johnson Named Honorary Starter for Coke Zero Sugar 400"
+     },
+     {
+      "id": "E2",
+      "claim": "In her 2026 WNBA rookie season, Johnson is averaging 10.8 to 11.5 PPG, 5.3 RPG, and has become the fastest rookie guard in Seattle Storm history to reach 15 blocks.",
+      "sourceUrl": "https://theixsports.com",
+      "observedAt": "2026-06-14",
+      "sourceType": "secondary",
+      "sourceTitle": "Flau'jae Johnson is growing toward stardom in rookie season"
+     },
+     {
+      "id": "E3",
+      "claim": "Johnson led LSU to the 2023 NCAA National Championship and completed her collegiate career as a two-time Third-Team All-American and two-time First-Team All-SEC selection, surpassing 2,000 career points.",
+      "sourceUrl": "https://lsusports.net",
+      "observedAt": "2026-05-15",
+      "sourceType": "official",
+      "sourceTitle": "Flau'jae Johnson - Women's Basketball 2025-26 - LSU Athletics"
+     },
+     {
+      "id": "E7",
+      "claim": "Johnson is signed to Jay-Z's Roc Nation record label, releasing albums 'Best of Both Worlds' (2024) and 'Flau & B' (2025) featuring Lil Wayne and NLE Choppa.",
+      "sourceUrl": "https://olympics.com",
+      "observedAt": "2025-03-19",
+      "sourceType": "official",
+      "sourceTitle": "Flau'jae Johnson - Rapper and Athlete"
+     },
+     {
+      "id": "E8",
+      "claim": "Her music career honors her late father, Savannah rapper Camoflauge, and her backstory includes winning the Golden Buzzer on America's Got Talent as a teen.",
+      "sourceUrl": "https://olympics.com",
+      "observedAt": "2025-03-19",
+      "sourceType": "official",
+      "sourceTitle": "Turning tragedy into inspiration: Flau'jae Johnson's story"
+     }
+    ],
+    "components": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "value": 88,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "value": 92,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 92.4,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:56:41.975Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.search_interest",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.social_conversation",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.media_source_quality",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.crossover_recognition",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.media_volume_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.search_interest",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.social_conversation",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.media_source_quality",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.crossover_recognition",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.media_volume_percentile",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.narrative_power",
+    "direction": "strength",
+    "rationale": {
+     "value": "Flau'jae has one of the most compelling and highly differentiated stories in all of sports. Her narrative as an elite guard balancing a music career signed to Jay-Z's Roc Nation—while honoring her late father's legacy—is completely authentic and highly resonant. This provides a deep, multi-dimensional backdrop that brands can seamlessly integrate into without feeling forced.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:56:41.975Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E10",
+      "E14",
+      "E15",
+      "E2",
+      "E3",
+      "E7",
+      "E8"
+     ],
+     "rationale": "Her personal history is thoroughly documented via major documentaries, talent competitions, and official athletic publications.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her personal history is thoroughly documented via major documentaries, talent competitions, and official athletic publications.",
+    "citedEvidence": [
+     {
+      "id": "E10",
+      "claim": "In early 2026, Johnson launched major national campaigns for Samsung & Google Gemini ('Basketball Couture') and a year-long partnership with e.l.f. Cosmetics.",
+      "sourceUrl": "https://bookingagentinfo.com",
+      "observedAt": "2026-03-24",
+      "sourceType": "secondary",
+      "sourceTitle": "Flau'jae Johnson Brand Partnerships and Campaigns"
+     },
+     {
+      "id": "E14",
+      "claim": "Johnson starred in Prime Video's Emmy-nominated docuseries 'The Money Game: LSU' and ESPN+'s series 'Full Court Press'.",
+      "sourceUrl": "https://allamericanspeakers.com",
+      "observedAt": "2026-04-15",
+      "sourceType": "secondary",
+      "sourceTitle": "The Money Game: LSU and WNBA Profile"
+     },
+     {
+      "id": "E15",
+      "claim": "Johnson was named to the Forbes 30 Under 30 list in 2024 and Billboard's Sports & Music Power Players list, highlighting her crossover cultural footprint.",
+      "sourceUrl": "https://daytonainternationalspeedway.com",
+      "observedAt": "2025-08-20",
+      "sourceType": "official",
+      "sourceTitle": "Flau'jae Johnson Named Honorary Starter for Coke Zero Sugar 400"
+     },
+     {
+      "id": "E2",
+      "claim": "In her 2026 WNBA rookie season, Johnson is averaging 10.8 to 11.5 PPG, 5.3 RPG, and has become the fastest rookie guard in Seattle Storm history to reach 15 blocks.",
+      "sourceUrl": "https://theixsports.com",
+      "observedAt": "2026-06-14",
+      "sourceType": "secondary",
+      "sourceTitle": "Flau'jae Johnson is growing toward stardom in rookie season"
+     },
+     {
+      "id": "E3",
+      "claim": "Johnson led LSU to the 2023 NCAA National Championship and completed her collegiate career as a two-time Third-Team All-American and two-time First-Team All-SEC selection, surpassing 2,000 career points.",
+      "sourceUrl": "https://lsusports.net",
+      "observedAt": "2026-05-15",
+      "sourceType": "official",
+      "sourceTitle": "Flau'jae Johnson - Women's Basketball 2025-26 - LSU Athletics"
+     },
+     {
+      "id": "E7",
+      "claim": "Johnson is signed to Jay-Z's Roc Nation record label, releasing albums 'Best of Both Worlds' (2024) and 'Flau & B' (2025) featuring Lil Wayne and NLE Choppa.",
+      "sourceUrl": "https://olympics.com",
+      "observedAt": "2025-03-19",
+      "sourceType": "official",
+      "sourceTitle": "Flau'jae Johnson - Rapper and Athlete"
+     },
+     {
+      "id": "E8",
+      "claim": "Her music career honors her late father, Savannah rapper Camoflauge, and her backstory includes winning the Golden Buzzer on America's Got Talent as a teen.",
+      "sourceUrl": "https://olympics.com",
+      "observedAt": "2025-03-19",
+      "sourceType": "official",
+      "sourceTitle": "Turning tragedy into inspiration: Flau'jae Johnson's story"
+     }
+    ],
+    "components": [
+     {
+      "key": "narrative_power.durability",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "value": 96,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 97.55,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:56:41.975Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.durability",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.story_depth",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.distinctiveness",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.media_resonance",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.evidence_authenticity",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.commercial_applicability"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.durability",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.story_depth",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.distinctiveness",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.media_resonance",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.evidence_authenticity",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.commercial_applicability",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.brand_fit",
+    "direction": "strength",
+    "rationale": {
+     "value": "Flau'jae's brand fit is exceptionally strong and versatile, allowing her to represent categories ranging from sports performance to beauty and high-tech consumer electronics. Her public persona is highly aligned with empowerment, authenticity, and dedication, making her an incredibly safe and attractive bet for mainstream global brands looking to reach a diverse Gen Z demographic.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:56:41.975Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E10",
+      "E14",
+      "E3",
+      "E5",
+      "E8",
+      "E9"
+     ],
+     "rationale": "Her seamless execution of widely diverse commercial genres, from Puma to e.l.f. Cosmetics, confirms her versatile brand fit.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her seamless execution of widely diverse commercial genres, from Puma to e.l.f. Cosmetics, confirms her versatile brand fit.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Flau'jae Johnson was selected 8th overall in the 2026 WNBA Draft by the Golden State Valkyries and was immediately traded to the Seattle Storm on draft night.",
+      "sourceUrl": "https://justwomenssports.com",
+      "observedAt": "2026-04-14",
+      "sourceType": "major_media",
+      "sourceTitle": "Golden State Trades Flau'jae Johnson to Seattle in Surprise 1st-Round Swap"
+     },
+     {
+      "id": "E10",
+      "claim": "In early 2026, Johnson launched major national campaigns for Samsung & Google Gemini ('Basketball Couture') and a year-long partnership with e.l.f. Cosmetics.",
+      "sourceUrl": "https://bookingagentinfo.com",
+      "observedAt": "2026-03-24",
+      "sourceType": "secondary",
+      "sourceTitle": "Flau'jae Johnson Brand Partnerships and Campaigns"
+     },
+     {
+      "id": "E14",
+      "claim": "Johnson starred in Prime Video's Emmy-nominated docuseries 'The Money Game: LSU' and ESPN+'s series 'Full Court Press'.",
+      "sourceUrl": "https://allamericanspeakers.com",
+      "observedAt": "2026-04-15",
+      "sourceType": "secondary",
+      "sourceTitle": "The Money Game: LSU and WNBA Profile"
+     },
+     {
+      "id": "E3",
+      "claim": "Johnson led LSU to the 2023 NCAA National Championship and completed her collegiate career as a two-time Third-Team All-American and two-time First-Team All-SEC selection, surpassing 2,000 career points.",
+      "sourceUrl": "https://lsusports.net",
+      "observedAt": "2026-05-15",
+      "sourceType": "official",
+      "sourceTitle": "Flau'jae Johnson - Women's Basketball 2025-26 - LSU Athletics"
+     },
+     {
+      "id": "E5",
+      "claim": "Johnson commands nearly 5 million combined followers across Instagram, TikTok, YouTube, X, Facebook, and Snapchat.",
+      "sourceUrl": "https://sproutsocial.com",
+      "observedAt": "2026-04-15",
+      "sourceType": "major_media",
+      "sourceTitle": "LSU's Flau'jae Johnson social media footprint"
+     },
+     {
+      "id": "E8",
+      "claim": "Her music career honors her late father, Savannah rapper Camoflauge, and her backstory includes winning the Golden Buzzer on America's Got Talent as a teen.",
+      "sourceUrl": "https://olympics.com",
+      "observedAt": "2025-03-19",
+      "sourceType": "official",
+      "sourceTitle": "Turning tragedy into inspiration: Flau'jae Johnson's story"
+     },
+     {
+      "id": "E9",
+      "claim": "Johnson's endorsement portfolio includes raising Cane's, Puma, JBL Audio, Tinder, Tampax, Cox Communications, Apple Cash, JanSport, Powerade, and Mondelez.",
+      "sourceUrl": "https://sponsorunited.com",
+      "observedAt": "2024-11-19",
+      "sourceType": "secondary",
+      "sourceTitle": "Top College Basketball Players by Endorsements"
+     }
+    ],
+    "components": [
+     {
+      "key": "brand_fit.brand_safety",
+      "value": 92,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "value": 94,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "value": 94,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 93.6,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:56:41.975Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#brand_fit.brand_safety",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#brand_fit.category_breadth",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#brand_fit.content_versatility",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#brand_fit.geographic_relevance",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#brand_fit.audience_attractiveness",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#brand_fit.identity_values_coherence"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#brand_fit.brand_safety",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#brand_fit.category_breadth",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#brand_fit.content_versatility",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#brand_fit.geographic_relevance",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#brand_fit.audience_attractiveness",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#brand_fit.identity_values_coherence",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.commercial_proof",
+    "direction": "strength",
+    "rationale": {
+     "value": "Flau'jae is a proven commercial powerhouse, commanding millions in brand deals and an equity stake in the Unrivaled women's basketball league. Her portfolio is stacked with blue-chip global brands such as Samsung, Google, Puma, and Amazon, proving her immense corporate appeal. The repeated campaigns and high pricing tier reflect strong marketplace trust in her marketing power.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:56:41.975Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E10",
+      "E11",
+      "E12",
+      "E13",
+      "E9"
+     ],
+     "rationale": "Her deal totals, estimated valuations, and exact pricing lists are well-documented across multiple business databases.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her deal totals, estimated valuations, and exact pricing lists are well-documented across multiple business databases.",
+    "citedEvidence": [
+     {
+      "id": "E10",
+      "claim": "In early 2026, Johnson launched major national campaigns for Samsung & Google Gemini ('Basketball Couture') and a year-long partnership with e.l.f. Cosmetics.",
+      "sourceUrl": "https://bookingagentinfo.com",
+      "observedAt": "2026-03-24",
+      "sourceType": "secondary",
+      "sourceTitle": "Flau'jae Johnson Brand Partnerships and Campaigns"
+     },
+     {
+      "id": "E11",
+      "claim": "Johnson signed with the new women's 3-on-3 professional league, Unrivaled, which included securing an equity ownership stake in the league.",
+      "sourceUrl": "https://frontofficesports.com",
+      "observedAt": "2024-12-06",
+      "sourceType": "major_media",
+      "sourceTitle": "Flau'jae Johnson joins Unrivaled as equity partner"
+     },
+     {
+      "id": "E12",
+      "claim": "Johnson's NIL value was estimated at $1.5 million by On3, making her the highest-valued player in college women's basketball before she graduated.",
+      "sourceUrl": "https://on3.com",
+      "observedAt": "2025-02-11",
+      "sourceType": "secondary",
+      "sourceTitle": "Top 10 On3 NIL Valuations"
+     },
+     {
+      "id": "E13",
+      "claim": "OpenSponsorship reports Johnson's estimated pricing at $12,000 for a social media post, $30,000 for live appearances, and $90,000 for long-term campaigns.",
+      "sourceUrl": "https://opensponsorship.com",
+      "observedAt": "2026-01-01",
+      "sourceType": "platform",
+      "sourceTitle": "Sponsor Flau'jae Johnson - OpenSponsorship pricing"
+     },
+     {
+      "id": "E9",
+      "claim": "Johnson's endorsement portfolio includes raising Cane's, Puma, JBL Audio, Tinder, Tampax, Cox Communications, Apple Cash, JanSport, Powerade, and Mondelez.",
+      "sourceUrl": "https://sponsorunited.com",
+      "observedAt": "2024-11-19",
+      "sourceType": "secondary",
+      "sourceTitle": "Top College Basketball Players by Endorsements"
+     }
+    ],
+    "components": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "value": 96,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "value": 88,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "value": 94,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 89.3,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:56:41.975Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.brand_quality",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.pricing_power",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.deal_frequency",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.renewals_repeat",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.campaign_performance",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.verified_commercial_value"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 1,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.brand_quality",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.pricing_power",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.deal_frequency",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.renewals_repeat",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.campaign_performance",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.verified_commercial_value",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.momentum",
+    "direction": "strength",
+    "rationale": {
+     "value": "Flau'jae's current momentum is exceptional as she navigates her first year in the WNBA. Her successful transition from college national prominence to a record-setting rookie campaign with the Seattle Storm has kept her in the sports spotlight. Simultaneously, her commercial and musical footprints continue to accelerate with high-profile releases and major campaign launches throughout 2026.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:56:41.975Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E10",
+      "E11",
+      "E14",
+      "E2"
+     ],
+     "rationale": "Her ongoing WNBA rookie achievements and newly launched 2026 corporate campaigns provide recent, active proof of forward momentum.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her ongoing WNBA rookie achievements and newly launched 2026 corporate campaigns provide recent, active proof of forward momentum.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Flau'jae Johnson was selected 8th overall in the 2026 WNBA Draft by the Golden State Valkyries and was immediately traded to the Seattle Storm on draft night.",
+      "sourceUrl": "https://justwomenssports.com",
+      "observedAt": "2026-04-14",
+      "sourceType": "major_media",
+      "sourceTitle": "Golden State Trades Flau'jae Johnson to Seattle in Surprise 1st-Round Swap"
+     },
+     {
+      "id": "E10",
+      "claim": "In early 2026, Johnson launched major national campaigns for Samsung & Google Gemini ('Basketball Couture') and a year-long partnership with e.l.f. Cosmetics.",
+      "sourceUrl": "https://bookingagentinfo.com",
+      "observedAt": "2026-03-24",
+      "sourceType": "secondary",
+      "sourceTitle": "Flau'jae Johnson Brand Partnerships and Campaigns"
+     },
+     {
+      "id": "E11",
+      "claim": "Johnson signed with the new women's 3-on-3 professional league, Unrivaled, which included securing an equity ownership stake in the league.",
+      "sourceUrl": "https://frontofficesports.com",
+      "observedAt": "2024-12-06",
+      "sourceType": "major_media",
+      "sourceTitle": "Flau'jae Johnson joins Unrivaled as equity partner"
+     },
+     {
+      "id": "E14",
+      "claim": "Johnson starred in Prime Video's Emmy-nominated docuseries 'The Money Game: LSU' and ESPN+'s series 'Full Court Press'.",
+      "sourceUrl": "https://allamericanspeakers.com",
+      "observedAt": "2026-04-15",
+      "sourceType": "secondary",
+      "sourceTitle": "The Money Game: LSU and WNBA Profile"
+     },
+     {
+      "id": "E2",
+      "claim": "In her 2026 WNBA rookie season, Johnson is averaging 10.8 to 11.5 PPG, 5.3 RPG, and has become the fastest rookie guard in Seattle Storm history to reach 15 blocks.",
+      "sourceUrl": "https://theixsports.com",
+      "observedAt": "2026-06-14",
+      "sourceType": "secondary",
+      "sourceTitle": "Flau'jae Johnson is growing toward stardom in rookie season"
+     }
+    ],
+    "components": [
+     {
+      "key": "momentum.audience_growth",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "value": 92,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "value": 92,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "value": 88,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 80.5,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:56:41.975Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#momentum.audience_growth",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#momentum.media_trajectory",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#momentum.athletic_trajectory",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#momentum.commercial_acceleration",
+      "1666a371-a6dd-409e-82b4-f8eeb5763280#momentum.search_social_trajectory"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 1,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#momentum.audience_growth",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#momentum.media_trajectory",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#momentum.athletic_trajectory",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#momentum.commercial_acceleration",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     },
+     {
+      "source": "mia",
+      "locator": "1666a371-a6dd-409e-82b4-f8eeb5763280#momentum.search_social_trajectory",
+      "asOf": "2026-09-13T22:56:41.975Z"
+     }
+    ]
+   }
+  ],
+  "audienceTrajectory": {
+   "value": null,
+   "owner": "athlete_intelligence",
+   "asOf": "2026-09-25T17:54:32.554Z",
+   "evidenceClass": "MISSING",
+   "reason": "no growth measurement on any platform"
+  },
+  "commercialPosition": {
+   "closedDeals": {
+    "value": 0,
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-25T17:54:32.554Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "count_deals_at_earned_status"
+   },
+   "activeRelationships": {
+    "value": [],
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-25T17:54:32.554Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "distinct_brand_at_earned_status"
+   },
+   "demonstratedEconomics": {
+    "value": null,
+    "owner": "athlete_state",
+    "asOf": "2026-09-25T17:54:32.554Z",
+    "evidenceClass": "MISSING",
+    "reason": "no closed deal carries an amount"
+   },
+   "pricingEvidence": "none",
+   "pipeline": {
+    "value": {
+     "detected": 0,
+     "negotiating": 0,
+     "rejected": 0,
+     "accepted": 0,
+     "completed": 0
+    },
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-25T17:54:32.554Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "count_deals_by_status"
+   },
+   "inbound": []
+  },
+  "constraints": [],
+  "preferences": [],
+  "audience": [],
+  "contentPerformance": [],
+  "representation": null,
+  "dates": [],
+  "materialGaps": [
+   "Private social media metrics including story performance, save/share rates, and video retention.",
+   "Granular campaign performance metrics such as conversion rates and direct ROI from her major partnerships.",
+   "Reliable longitudinal follower growth metrics tracking her exact daily or weekly audience trajectory throughout late 2025 and 2026."
+  ],
+  "overallConfidence": "MEDIUM",
+  "sources": [
+   {
+    "owner": "marketability",
+    "present": true,
+    "asOf": "2026-09-13T22:56:41.975Z"
+   },
+   {
+    "owner": "athlete_intelligence",
+    "present": false,
+    "asOf": null
+   },
+   {
+    "owner": "athlete_state",
+    "present": true,
+    "asOf": "2026-09-25T17:54:32.554Z"
+   }
+  ]
+ },
+ "map": {
+  "athleteId": "16ea6f12-4574-4f73-9a41-c81fb6e0b508",
+  "asOf": "2026-09-25T17:55:20.481Z",
+  "version": "opportunity-map/1.0.0",
+  "specVersion": "opportunity-eval-spec/1.0.0",
+  "stateAsOf": "2026-09-25T17:54:32.554Z",
+  "opportunities": [
+   {
+    "key": "fix-missing-commercial-records",
+    "kind": "FIX",
+    "domain": "commercial",
+    "statement": {
+     "value": "Reconcile and record her history of high-profile brand partnerships within Nomila's transactional database to correct her zero-deal baseline representation.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-25T17:54:32.554Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "commercialPosition.closedDeals",
+      "commercialPosition.activeRelationships",
+      "findings[mia.commercial_proof]"
+     ],
+     "rationale": "Although her commercial proof is recognized as a major strength, Nomila's ledger records zero closed deals and zero active relationships. This gap actively costs her today because automated matching engines and agency partners cannot see her verified pricing history or brand experience, leading to potential under-representation during database-driven talent selections.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "commercialPosition.closedDeals",
+      "how": "Registers a baseline of zero closed deals."
+     },
+     {
+      "statePath": "commercialPosition.activeRelationships",
+      "how": "Registers an empty list of active commercial relationships."
+     },
+     {
+      "statePath": "findings[mia.commercial_proof]",
+      "how": "Proves she has an active, blue-chip commercial portfolio including Puma, Samsung, Google, and e.l.f. Cosmetics, exposing a major tracking discrepancy."
+     }
+    ],
+    "impact": {
+     "level": "medium",
+     "claim": "Establishes a verified transactional history that validates her pricing tiers and qualifies her for automated premium campaigns."
+    },
+    "feasibility": {
+     "level": "high",
+     "claim": "Requires her representatives to share basic historical contract terms and active brand relationship parameters with Nomila."
+    },
+    "urgency": null,
+    "confidence": "HIGH"
+   },
+   {
+    "key": "unlock-private-performance-metrics",
+    "kind": "UNLOCK",
+    "domain": "evidence",
+    "statement": {
+     "value": "Connect and authenticate her private social platform metrics to leverage her hidden story retention, saves, and video view-through rates.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-25T17:54:32.554Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "findings[mia.engagement_quality]",
+      "materialGaps[0]"
+     ],
+     "rationale": "While her audience scale is vast, her engagement quality is labeled as UNKNOWN due to missing granular private data. Because these metrics already exist but are completely unused by Nomila, linking her accounts will unlock the empirical evidence needed to back up her premium pricing floors.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "findings[mia.engagement_quality]",
+      "how": "Highlights that her engagement score contains highly assumed/imputed signals due to a lack of granular private platform metrics."
+     },
+     {
+      "statePath": "materialGaps[0]",
+      "how": "Identifies the exact missing private social metrics, including story performance and save/share rates, as an unaddressed gap."
+     }
+    ],
+    "impact": {
+     "level": "high",
+     "claim": "Converts estimated public metrics into verified creator data, giving brands concrete proof of her high-view efficiency and Gen Z audience loyalty."
+    },
+    "feasibility": {
+     "level": "high",
+     "claim": "Requires the athlete to perform a one-time secure authentication of her primary social channels via Nomila's portal."
+    },
+    "urgency": null,
+    "confidence": "HIGH"
+   },
+   {
+    "key": "amplify-crossover-cultural-narrative",
+    "kind": "AMPLIFY",
+    "domain": "positioning",
+    "statement": {
+     "value": "Scale her category-defining dual identity as both an elite WNBA rookie and a signed Roc Nation artist into integrated lifestyle and performance campaigns.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-25T17:54:32.554Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "findings[mia.narrative_power]",
+      "findings[mia.cultural_relevance]",
+      "findings[mia.brand_fit]"
+     ],
+     "rationale": "Her narrative power is an exceptional category-leading strength, backed by her active music career and high-profile rookie transition. Since this crossover positioning has already proven commercially viable in major campaigns like 'Basketball Couture', amplifying this specific intersection is her most powerful market differentiator.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "findings[mia.narrative_power]",
+      "how": "Details her highly resonant dual identity as an elite WNBA guard and a Roc Nation-signed artist honoring her late father's legacy."
+     },
+     {
+      "statePath": "findings[mia.cultural_relevance]",
+      "how": "Cites her cross-industry cultural recognition, including Forbes 30 Under 30 and Billboard Power Players lists."
+     },
+     {
+      "statePath": "findings[mia.brand_fit]",
+      "how": "Confirms her highly versatile brand fit across sports, high-tech consumer electronics, and cosmetics."
+     }
+    ],
+    "impact": {
+     "level": "high",
+     "claim": "Elevates her out of traditional sports sponsorship tiers and places her in premium crossover lifestyle, entertainment, and fashion categories."
+    },
+    "feasibility": {
+     "level": "medium",
+     "claim": "Requires coordinated planning between her Seattle Storm playing commitments and her Roc Nation musical release and promotional obligations."
+    },
+    "urgency": null,
+    "confidence": "HIGH"
+   },
+   {
+    "key": "amplify-unrivaled-ownership-influence",
+    "kind": "AMPLIFY",
+    "domain": "owned_venture",
+    "statement": {
+     "value": "Leverage her combined social fanbase and cultural footprint to drive direct audience engagement toward her equity venture in the Unrivaled league.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-25T17:54:32.554Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "findings[mia.commercial_proof]",
+      "findings[mia.audience_scale]",
+      "findings[mia.engagement_quality]"
+     ],
+     "rationale": "She holds an equity ownership stake in the Unrivaled 3-on-3 league. Rather than renting her brand to a corporate third party, she has a working, high-value asset she owns. Directing her highly loyal fan base, 'The Flauk', toward Unrivaled will build the enterprise value of her actual equity holding.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "findings[mia.commercial_proof]",
+      "how": "Cites evidence (E11) that she secured an equity ownership stake in the new Unrivaled professional league."
+     },
+     {
+      "statePath": "findings[mia.audience_scale]",
+      "how": "Establishes her massive combined social audience of nearly 5 million followers spanning both sports and entertainment channels."
+     },
+     {
+      "statePath": "findings[mia.engagement_quality]",
+      "how": "Identifies her dedicated, organic fan community known as 'The Flauk'."
+     }
+    ],
+    "impact": {
+     "level": "high",
+     "claim": "Directly increases the long-term valuation and visibility of her equity stake, transitioning her from a contracted endorser to a league builder."
+    },
+    "feasibility": {
+     "level": "medium",
+     "claim": "Requires strategic offseason content integration that positions her as both an owner and a player without conflicting with WNBA regulations."
+    },
+    "urgency": null,
+    "confidence": "HIGH"
+   }
+  ],
+  "notes": [
+   "athletic: No opportunities are proposed because she operates at the absolute athletic pinnacle as a recent 8th overall draft pick, an active Seattle Storm contributor, and a former LSU national champion, meaning her athletic trajectory requires maintenance rather than commercial intervention.",
+   "impact: No opportunities are proposed because the athlete state contains no recorded information regarding philanthropic preferences, foundations, or community causes.",
+   "career: No opportunities are proposed because she is in her first active rookie season in the WNBA and the state does not record any specific long-term post-playing, broadcasting, or coaching ambitions.",
+   "relationships: No opportunities are proposed because she is already aligned with top-tier agencies (Roc Nation, Seattle Storm, Unrivaled) and there are no recorded gaps or desired introductions in the current athlete state."
+  ],
+  "inputs": [
+   {
+    "kind": "athlete_state",
+    "version": "athlete-state/1.2.0",
+    "present": true
+   },
+   {
+    "kind": "strategy_intelligence",
+    "version": null,
+    "present": false
+   },
+   {
+    "kind": "targeted_research",
+    "version": null,
+    "present": false
+   }
+  ],
+  "overallConfidence": "MEDIUM"
+ },
+ "record": {
+  "evaluatorSpec": "objective-eval-spec/1.0.2",
+  "canonicalSha256": "92b803536195bc3ddaeb2ae0d66a2a35149dd3d63f3f0add147fcfeda277aa74",
+  "manifest": {
+   "evaluatorSpec": "objective-eval-spec/1.0.2",
+   "promptDigest": "92b803536195bc3ddaeb2ae0d66a2a35149dd3d63f3f0add147fcfeda277aa74"
+  },
+  "promptSha256": "4c9d0c42d1b271f1436bef663c0e6828f242a39b82af7628323f875432981577",
+  "athlete": {
+   "id": "16ea6f12-4574-4f73-9a41-c81fb6e0b508",
+   "name": "Flau'jae Johnson"
+  },
+  "stateAsOf": "2026-09-25T17:54:32.554Z",
+  "opportunityMapAsOf": "2026-09-25T17:55:20.481Z",
+  "stateBlock": "Nomila's account of this athlete as of 2026-09-25T17:54:32.554Z (athlete-state/1.2.0).\nOverall confidence in this picture: MEDIUM.\n\nCite any line below by the path shown at its left.\n\nIDENTITY\n    identity.name                             Flau'jae Johnson\n    identity.sport                            basketball\n    identity.competitionContext               not recorded\n    identity.careerStatus                     active\n\nFINDINGS — marketability dimensions, each judged by M.I.A. and read here unchanged.\n  STRENGTH  measured, above the band\n  GAP       measured, below the band\n  NEUTRAL   MEASURED and unremarkable. We know; it is simply ordinary. This is NOT missing evidence.\n  UNKNOWN   evidence is genuinely insufficient — no score, or mostly imputed signals. A statement about\n            what Nomila has measured, never about the athlete.\n\n  Each finding may carry WHY M.I.A. concluded it and WHICH SOURCES it relied on. Read those as the\n  evaluator's interpretation and the evidence behind it — NOT as established fact about the athlete.\n\n    findings[mia.athletic_authority]          STRENGTH  score 89.05   HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Flau'jae Johnson operates at the absolute pinnacle of women's basketball. She transitioned from\n          being a core piece of a national championship-winning LSU team to the 8th overall pick in the\n          2026 WNBA Draft. Her rookie season with the Seattle Storm has been highly impressive,\n          establishing herself as an elite defensive guard and a key contributor on both ends of the\n          floor.\n          confidence HIGH — Her performance records, league-level changes, and freshman-to-rookie transitions are thoroughly documented by official WNBA and LSU databases.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  major_media · 2026-04-14  Flau'jae Johnson was selected 8th overall in the 2026 WNBA Draft by the Golden State Valkyries and was immediately traded to the Seattle Storm on draft night.\n              https://justwomenssports.com\n          E2  secondary · 2026-06-14  In her 2026 WNBA rookie season, Johnson is averaging 10.8 to 11.5 PPG, 5.3 RPG, and has become the fastest rookie guard in Seattle Storm history to reach 15 blocks.\n              https://theixsports.com\n          E3  official · 2026-05-15  Johnson led LSU to the 2023 NCAA National Championship and completed her collegiate career as a two-time Third-Team All-American and two-time First-Team All-SEC selection, surpassing 2,000 career points.\n              https://lsusports.net\n          E4  secondary · 2026-04-15  Johnson represented USA Basketball at the 2025 FIBA Women's AmeriCup, securing a gold medal.\n              https://allamericanspeakers.com\n        COMPONENTS  role_importance=85 [EVALUATED]  competition_level=95 [EVALUATED]  achievement_recency=96 [EVALUATED]  performance_results=88 [EVALUATED]  rankings_recognition=86 [EVALUATED]  national_international_status=82 [EVALUATED]\n\n    findings[mia.audience_scale]              STRENGTH  score 82.9    HIGH    1/4 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Flau'jae's social audience is exceptionally large, with a combined following of nearly 5 million\n          across Instagram, TikTok, YouTube, and X. She ranks in the highest percentiles of women's\n          basketball players, driven by her dual presence as an elite athlete and an active hip-hop\n          artist. Her platform breadth is particularly strong, as she maintains highly engaged communities\n          across both sports and entertainment channels.\n          confidence HIGH — Her individual platform counts are well corroborated across multiple public influencer and business media reports.\n        SOURCE EVIDENCE M.I.A. CITED\n          E12  secondary · 2025-02-11  Johnson's NIL value was estimated at $1.5 million by On3, making her the highest-valued player in college women's basketball before she graduated.\n              https://on3.com\n          E5  major_media · 2026-04-15  Johnson commands nearly 5 million combined followers across Instagram, TikTok, YouTube, X, Facebook, and Snapchat.\n              https://sproutsocial.com\n          E6  major_media · 2024-12-06  Individually, her platforms include 1.9M followers on Instagram, 1.6M on TikTok, 267k YouTube subscribers, and 104k followers on X.\n              https://frontofficesports.com\n          E7  official · 2025-03-19  Johnson is signed to Jay-Z's Roc Nation record label, releasing albums 'Best of Both Worlds' (2024) and 'Flau & B' (2025) featuring Lil Wayne and NLE Choppa.\n              https://olympics.com\n        COMPONENTS  audience_growth=50 [ASSUMED]  platform_breadth=94 [EVALUATED]  cross_platform_effective_reach=86 [EVALUATED]  sport_level_audience_percentile=92 [EVALUATED]\n\n    findings[mia.engagement_quality]          UNKNOWN   score 66.31   MEDIUM  3/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          While her overall public engagement rate sits at a moderate 1.87% due to her massive follower\n          count, her content achieves exceptionally high view rates that surpass standard creator\n          benchmarks. Her community, known as 'The Flauk,' demonstrates strong brand loyalty and organic\n          interaction, though deeper private metrics like shares, saves, and story retention remain\n          undocumented.\n          confidence MEDIUM — While public metrics like views and community names are known, highly granular and private engagement data is absent.\n        SOURCE EVIDENCE M.I.A. CITED\n          E12  secondary · 2025-02-11  Johnson's NIL value was estimated at $1.5 million by On3, making her the highest-valued player in college women's basketball before she graduated.\n              https://on3.com\n          E5  major_media · 2026-04-15  Johnson commands nearly 5 million combined followers across Instagram, TikTok, YouTube, X, Facebook, and Snapchat.\n              https://sproutsocial.com\n          E8  official · 2025-03-19  Her music career honors her late father, Savannah rapper Camoflauge, and her backstory includes winning the Golden Buzzer on America's Got Talent as a teen.\n              https://olympics.com\n        COMPONENTS  video_retention=50 [ASSUMED]  reach_efficiency=78 [EVALUATED]  story_efficiency=50 [ASSUMED]  shares_saves_quality=50 [ASSUMED]  audience_authenticity=80 [EVALUATED]  engagement_percentile=52 [EVALUATED]\n\n    findings[mia.cultural_relevance]          STRENGTH  score 92.4    HIGH    0/5 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Flau'jae's cultural relevance is category-leading and transcends traditional sports boundaries.\n          As a Roc Nation-signed artist who has performed at the ESPYs and released multiple albums\n          alongside her professional basketball career, she commands an unmatched crossover appeal. This\n          dual identity makes her a household name covered by major lifestyle, music, and sports\n          publications alike.\n          confidence HIGH — Her presence on lists like Forbes 30 Under 30 and Billboard's Power Players firmly validates her immense cultural footprint.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  major_media · 2026-04-14  Flau'jae Johnson was selected 8th overall in the 2026 WNBA Draft by the Golden State Valkyries and was immediately traded to the Seattle Storm on draft night.\n              https://justwomenssports.com\n          E14  secondary · 2026-04-15  Johnson starred in Prime Video's Emmy-nominated docuseries 'The Money Game: LSU' and ESPN+'s series 'Full Court Press'.\n              https://allamericanspeakers.com\n          E15  official · 2025-08-20  Johnson was named to the Forbes 30 Under 30 list in 2024 and Billboard's Sports & Music Power Players list, highlighting her crossover cultural footprint.\n              https://daytonainternationalspeedway.com\n          E2  secondary · 2026-06-14  In her 2026 WNBA rookie season, Johnson is averaging 10.8 to 11.5 PPG, 5.3 RPG, and has become the fastest rookie guard in Seattle Storm history to reach 15 blocks.\n              https://theixsports.com\n          E3  official · 2026-05-15  Johnson led LSU to the 2023 NCAA National Championship and completed her collegiate career as a two-time Third-Team All-American and two-time First-Team All-SEC selection, surpassing 2,000 career points.\n              https://lsusports.net\n          E7  official · 2025-03-19  Johnson is signed to Jay-Z's Roc Nation record label, releasing albums 'Best of Both Worlds' (2024) and 'Flau & B' (2025) featuring Lil Wayne and NLE Choppa.\n              https://olympics.com\n          E8  official · 2025-03-19  Her music career honors her late father, Savannah rapper Camoflauge, and her backstory includes winning the Golden Buzzer on America's Got Talent as a teen.\n              https://olympics.com\n        COMPONENTS  search_interest=88 [EVALUATED]  social_conversation=90 [EVALUATED]  media_source_quality=95 [EVALUATED]  crossover_recognition=98 [EVALUATED]  media_volume_percentile=92 [EVALUATED]\n\n    findings[mia.narrative_power]             STRENGTH  score 97.55   HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Flau'jae has one of the most compelling and highly differentiated stories in all of sports. Her\n          narrative as an elite guard balancing a music career signed to Jay-Z's Roc Nation—while honoring\n          her late father's legacy—is completely authentic and highly resonant. This provides a deep,\n          multi-dimensional backdrop that brands can seamlessly integrate into without feeling forced.\n          confidence HIGH — Her personal history is thoroughly documented via major documentaries, talent competitions, and official athletic publications.\n        SOURCE EVIDENCE M.I.A. CITED\n          E10  secondary · 2026-03-24  In early 2026, Johnson launched major national campaigns for Samsung & Google Gemini ('Basketball Couture') and a year-long partnership with e.l.f. Cosmetics.\n              https://bookingagentinfo.com\n          E14  secondary · 2026-04-15  Johnson starred in Prime Video's Emmy-nominated docuseries 'The Money Game: LSU' and ESPN+'s series 'Full Court Press'.\n              https://allamericanspeakers.com\n          E15  official · 2025-08-20  Johnson was named to the Forbes 30 Under 30 list in 2024 and Billboard's Sports & Music Power Players list, highlighting her crossover cultural footprint.\n              https://daytonainternationalspeedway.com\n          E2  secondary · 2026-06-14  In her 2026 WNBA rookie season, Johnson is averaging 10.8 to 11.5 PPG, 5.3 RPG, and has become the fastest rookie guard in Seattle Storm history to reach 15 blocks.\n              https://theixsports.com\n          E3  official · 2026-05-15  Johnson led LSU to the 2023 NCAA National Championship and completed her collegiate career as a two-time Third-Team All-American and two-time First-Team All-SEC selection, surpassing 2,000 career points.\n              https://lsusports.net\n          E7  official · 2025-03-19  Johnson is signed to Jay-Z's Roc Nation record label, releasing albums 'Best of Both Worlds' (2024) and 'Flau & B' (2025) featuring Lil Wayne and NLE Choppa.\n              https://olympics.com\n          E8  official · 2025-03-19  Her music career honors her late father, Savannah rapper Camoflauge, and her backstory includes winning the Golden Buzzer on America's Got Talent as a teen.\n              https://olympics.com\n        COMPONENTS  durability=95 [EVALUATED]  story_depth=98 [EVALUATED]  distinctiveness=100 [EVALUATED]  media_resonance=95 [EVALUATED]  evidence_authenticity=98 [EVALUATED]  commercial_applicability=96 [EVALUATED]\n\n    findings[mia.brand_fit]                   STRENGTH  score 93.6    HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Flau'jae's brand fit is exceptionally strong and versatile, allowing her to represent categories\n          ranging from sports performance to beauty and high-tech consumer electronics. Her public persona\n          is highly aligned with empowerment, authenticity, and dedication, making her an incredibly safe\n          and attractive bet for mainstream global brands looking to reach a diverse Gen Z demographic.\n          confidence HIGH — Her seamless execution of widely diverse commercial genres, from Puma to e.l.f. Cosmetics, confirms her versatile brand fit.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  major_media · 2026-04-14  Flau'jae Johnson was selected 8th overall in the 2026 WNBA Draft by the Golden State Valkyries and was immediately traded to the Seattle Storm on draft night.\n              https://justwomenssports.com\n          E10  secondary · 2026-03-24  In early 2026, Johnson launched major national campaigns for Samsung & Google Gemini ('Basketball Couture') and a year-long partnership with e.l.f. Cosmetics.\n              https://bookingagentinfo.com\n          E14  secondary · 2026-04-15  Johnson starred in Prime Video's Emmy-nominated docuseries 'The Money Game: LSU' and ESPN+'s series 'Full Court Press'.\n              https://allamericanspeakers.com\n          E3  official · 2026-05-15  Johnson led LSU to the 2023 NCAA National Championship and completed her collegiate career as a two-time Third-Team All-American and two-time First-Team All-SEC selection, surpassing 2,000 career points.\n              https://lsusports.net\n          E5  major_media · 2026-04-15  Johnson commands nearly 5 million combined followers across Instagram, TikTok, YouTube, X, Facebook, and Snapchat.\n              https://sproutsocial.com\n          E8  official · 2025-03-19  Her music career honors her late father, Savannah rapper Camoflauge, and her backstory includes winning the Golden Buzzer on America's Got Talent as a teen.\n              https://olympics.com\n          E9  secondary · 2024-11-19  Johnson's endorsement portfolio includes raising Cane's, Puma, JBL Audio, Tinder, Tampax, Cox Communications, Apple Cash, JanSport, Powerade, and Mondelez.\n              https://sponsorunited.com\n        COMPONENTS  brand_safety=92 [EVALUATED]  category_breadth=95 [EVALUATED]  content_versatility=94 [EVALUATED]  geographic_relevance=90 [EVALUATED]  audience_attractiveness=94 [EVALUATED]  identity_values_coherence=95 [EVALUATED]\n\n    findings[mia.commercial_proof]            STRENGTH  score 89.3    HIGH    1/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Flau'jae is a proven commercial powerhouse, commanding millions in brand deals and an equity\n          stake in the Unrivaled women's basketball league. Her portfolio is stacked with blue-chip global\n          brands such as Samsung, Google, Puma, and Amazon, proving her immense corporate appeal. The\n          repeated campaigns and high pricing tier reflect strong marketplace trust in her marketing\n          power.\n          confidence HIGH — Her deal totals, estimated valuations, and exact pricing lists are well-documented across multiple business databases.\n        SOURCE EVIDENCE M.I.A. CITED\n          E10  secondary · 2026-03-24  In early 2026, Johnson launched major national campaigns for Samsung & Google Gemini ('Basketball Couture') and a year-long partnership with e.l.f. Cosmetics.\n              https://bookingagentinfo.com\n          E11  major_media · 2024-12-06  Johnson signed with the new women's 3-on-3 professional league, Unrivaled, which included securing an equity ownership stake in the league.\n              https://frontofficesports.com\n          E12  secondary · 2025-02-11  Johnson's NIL value was estimated at $1.5 million by On3, making her the highest-valued player in college women's basketball before she graduated.\n              https://on3.com\n          E13  platform · 2026-01-01  OpenSponsorship reports Johnson's estimated pricing at $12,000 for a social media post, $30,000 for live appearances, and $90,000 for long-term campaigns.\n              https://opensponsorship.com\n          E9  secondary · 2024-11-19  Johnson's endorsement portfolio includes raising Cane's, Puma, JBL Audio, Tinder, Tampax, Cox Communications, Apple Cash, JanSport, Powerade, and Mondelez.\n              https://sponsorunited.com\n        COMPONENTS  brand_quality=96 [EVALUATED]  pricing_power=95 [EVALUATED]  deal_frequency=95 [EVALUATED]  renewals_repeat=88 [EVALUATED]  campaign_performance=50 [ASSUMED]  verified_commercial_value=94 [EVALUATED]\n\n    findings[mia.momentum]                    STRENGTH  score 80.5    HIGH    1/5 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Flau'jae's current momentum is exceptional as she navigates her first year in the WNBA. Her\n          successful transition from college national prominence to a record-setting rookie campaign with\n          the Seattle Storm has kept her in the sports spotlight. Simultaneously, her commercial and\n          musical footprints continue to accelerate with high-profile releases and major campaign launches\n          throughout 2026.\n          confidence HIGH — Her ongoing WNBA rookie achievements and newly launched 2026 corporate campaigns provide recent, active proof of forward momentum.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  major_media · 2026-04-14  Flau'jae Johnson was selected 8th overall in the 2026 WNBA Draft by the Golden State Valkyries and was immediately traded to the Seattle Storm on draft night.\n              https://justwomenssports.com\n          E10  secondary · 2026-03-24  In early 2026, Johnson launched major national campaigns for Samsung & Google Gemini ('Basketball Couture') and a year-long partnership with e.l.f. Cosmetics.\n              https://bookingagentinfo.com\n          E11  major_media · 2024-12-06  Johnson signed with the new women's 3-on-3 professional league, Unrivaled, which included securing an equity ownership stake in the league.\n              https://frontofficesports.com\n          E14  secondary · 2026-04-15  Johnson starred in Prime Video's Emmy-nominated docuseries 'The Money Game: LSU' and ESPN+'s series 'Full Court Press'.\n              https://allamericanspeakers.com\n          E2  secondary · 2026-06-14  In her 2026 WNBA rookie season, Johnson is averaging 10.8 to 11.5 PPG, 5.3 RPG, and has become the fastest rookie guard in Seattle Storm history to reach 15 blocks.\n              https://theixsports.com\n        COMPONENTS  audience_growth=50 [ASSUMED]  media_trajectory=90 [EVALUATED]  athletic_trajectory=92 [EVALUATED]  commercial_acceleration=92 [EVALUATED]  search_social_trajectory=88 [EVALUATED]\n\nAUDIENCE TRAJECTORY — follower growth only. It says nothing about athletic or commercial direction.\n    audienceTrajectory                        not known (no growth measurement on any platform)\n\nCOMMERCIAL POSITION — what the market has actually paid. Counted, never estimated.\n    commercialPosition.closedDeals            0  [measured · HIGH confidence]\n    commercialPosition.activeRelationships    []  [measured · HIGH confidence]\n    commercialPosition.demonstratedEconomics  not known (no closed deal carries an amount)\n    commercialPosition.pricingEvidence        none\n\nCOMMERCIAL PIPELINE — counts by state. `detected` means a brand made contact and nothing more.\n  Inbound interest is NOT a deal, NOT revenue and NOT an active relationship.\n    commercialPosition.pipeline               detected 0 · negotiating 0 · rejected 0 · accepted 0 · completed 0\n\nINBOUND SIGNALS — the athlete's own classified inbox, most recent first, capped. Demonstrated interest,\n  as classified by Nomila's inbox pipeline. A category is the classifier's label, not a commitment.\n    (no classified inbound threads)\n\nCONSTRAINTS — only what has been explicitly recorded as a bound on what the athlete can do.\n  An empty list means Nomila has recorded none. It does NOT mean none exist.\n    (none recorded)\n\nAUDIENCE — composition per platform, latest observation. Top buckets only.\n    (no audience composition is recorded on any platform)\n\nCONTENT PERFORMANCE — cadence and format, per platform, from Nomila's own measurement.\n    (no content performance is measured on any platform)\n\nREPRESENTATION & FLOORS — as the athlete stated them. A FLOOR IS NOT A MARKET VALUE; it is the least\n  she has said she would accept.\n    (the athlete has stated nothing about representation or floors)\n\nWHAT THE ATHLETE HAS SAID — their own words. A refusal bears on an opportunity; an ambition can generate one.\n  Never infer a preference or an ambition that is not listed here.\n  A stance is one of: wants | open | avoids | refuses — cite it in exactly that spelling.\n  A line marked ONBOARDING CHOICE was selected from a fixed set when the athlete joined. It is evidence of\n  intent at that time — she actually chose it — and it is NOT a current strategic objective.\n    (the athlete has stated nothing)\n\nDATES — recorded real-world dates that can bear on strategy, each with what it means. Only what is\n  populated; an empty list means none are recorded, not that none exist.\n    (none recorded)\n\nWHAT NOMILA CANNOT SEE — evidence we looked for and could not find. A research task, not a caveat.\n    materialGaps[0]                           Private social media metrics including story performance, save/share rates, and video retention.\n    materialGaps[1]                           Granular campaign performance metrics such as conversion rates and direct ROI from her major partnerships.\n    materialGaps[2]                           Reliable longitudinal follower growth metrics tracking her exact daily or weekly audience trajectory throughout late 2025 and 2026.\n\nSOURCES CONSULTED\n    marketability            present · as of 2026-09-13T22:56:41.975Z\n    athlete_intelligence     ABSENT\n    athlete_state            present · as of 2026-09-25T17:54:32.554Z",
+  "opportunityBlock": "Strategic openings identified as of 2026-09-25T17:55:20.481Z (opportunity-eval-spec/1.0.0), judged from the athlete state as of 2026-09-25T17:54:32.554Z.\nOverall confidence in this map: MEDIUM.\n\nCite an opportunity by the key shown at its left. Every key below must appear exactly once in your output —\nin a proposal's from_opportunities, or in notes as consolidated (into a named proposal) or not_carried.\n\n    fix-missing-commercial-records\n        FIX · commercial · confidence HIGH\n        Reconcile and record her history of high-profile brand partnerships within Nomila's transactional database to correct her zero-deal baseline representation.\n        impact(medium): Establishes a verified transactional history that validates her pricing tiers and qualifies her for automated premium campaigns.\n        feasibility(high): Requires her representatives to share basic historical contract terms and active brand relationship parameters with Nomila.\n        rests on: commercialPosition.closedDeals, commercialPosition.activeRelationships, findings[mia.commercial_proof]\n\n    unlock-private-performance-metrics\n        UNLOCK · evidence · confidence HIGH\n        Connect and authenticate her private social platform metrics to leverage her hidden story retention, saves, and video view-through rates.\n        impact(high): Converts estimated public metrics into verified creator data, giving brands concrete proof of her high-view efficiency and Gen Z audience loyalty.\n        feasibility(high): Requires the athlete to perform a one-time secure authentication of her primary social channels via Nomila's portal.\n        rests on: findings[mia.engagement_quality], materialGaps[0]\n\n    amplify-crossover-cultural-narrative\n        AMPLIFY · positioning · confidence HIGH\n        Scale her category-defining dual identity as both an elite WNBA rookie and a signed Roc Nation artist into integrated lifestyle and performance campaigns.\n        impact(high): Elevates her out of traditional sports sponsorship tiers and places her in premium crossover lifestyle, entertainment, and fashion categories.\n        feasibility(medium): Requires coordinated planning between her Seattle Storm playing commitments and her Roc Nation musical release and promotional obligations.\n        rests on: findings[mia.narrative_power], findings[mia.cultural_relevance], findings[mia.brand_fit]\n\n    amplify-unrivaled-ownership-influence\n        AMPLIFY · owned_venture · confidence HIGH\n        Leverage her combined social fanbase and cultural footprint to drive direct audience engagement toward her equity venture in the Unrivaled league.\n        impact(high): Directly increases the long-term valuation and visibility of her equity stake, transitioning her from a contracted endorser to a league builder.\n        feasibility(medium): Requires strategic offseason content integration that positions her as both an owner and a player without conflicting with WNBA regulations.\n        rests on: findings[mia.commercial_proof], findings[mia.audience_scale], findings[mia.engagement_quality]\n\nWhy other domains yielded nothing, per the Opportunity evaluator:\n    - athletic: No opportunities are proposed because she operates at the absolute athletic pinnacle as a recent 8th overall draft pick, an active Seattle Storm contributor, and a former LSU national champion, meaning her athletic trajectory requires maintenance rather than commercial intervention.\n    - impact: No opportunities are proposed because the athlete state contains no recorded information regarding philanthropic preferences, foundations, or community causes.\n    - career: No opportunities are proposed because she is in her first active rookie season in the WNBA and the state does not record any specific long-term post-playing, broadcasting, or coaching ambitions.\n    - relationships: No opportunities are proposed because she is already aligned with top-tier agencies (Roc Nation, Seattle Storm, Unrivaled) and there are no recorded gaps or desired introductions in the current athlete state.",
+  "startedAt": "2026-09-26T01:22:28.127Z",
+  "latencyMs": 32349,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+   "promptTokens": 8807,
+   "outputTokens": 1088,
+   "thoughtTokens": 6207
+  },
+  "costUsd": 0.0208796,
+  "rawText": "{\n  \"proposals\": [\n    {\n      \"key\": \"amplify-crossover-cultural-narrative\",\n      \"desired_state\": \"Her commercial brand portfolio is anchored by major, multi-dimensional partnerships that integrate her elite athletic status with her crossover music career.\",\n      \"current_state\": \"Her recorded active commercial relationships stand at zero (commercialPosition.activeRelationships) despite holding category-leading cultural relevance as both a professional athlete and a signed musician (findings[mia.cultural_relevance]).\",\n      \"rationale\": \"She possesses an exceptionally rare and authentic dual identity as a WNBA rookie guard and a Roc Nation-signed artist. Capitalizing on this distinct narrative will elevate her brand beyond standard athletic sponsorships into premium, high-value crossover lifestyle and entertainment partnerships.\",\n      \"domain\": \"positioning\",\n      \"from_opportunities\": [\n        {\n          \"opportunity_key\": \"amplify-crossover-cultural-narrative\",\n          \"how\": \"Transforms the opportunity of scaling her dual-identity into a concrete, long-term commercial positioning outcome.\"\n        }\n      ],\n      \"from_athlete_intent\": [],\n      \"current_state_evidence\": [\n        {\n          \"state_path\": \"commercialPosition.activeRelationships\",\n          \"how\": \"Confirms she currently has zero active commercial relationships recorded in her profile.\"\n        },\n        {\n          \"state_path\": \"findings[mia.cultural_relevance]\",\n          \"how\": \"Establishes her exceptionally strong, category-leading crossover footprint.\"\n        },\n        {\n          \"state_path\": \"findings[mia.narrative_power]\",\n          \"how\": \"Highlights her highly differentiated and authentic story of balancing basketball and music.\"\n        }\n      ],\n      \"success\": {\n        \"observable_condition\": \"She executes a new commercial partnership agreement that explicitly outlines deliverables across both sports performance and lifestyle or entertainment media.\",\n        \"quantified\": null\n      },\n      \"horizon\": null,\n      \"athlete_stance\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"amplify-unrivaled-ownership-influence\",\n      \"desired_state\": \"Her equity ownership in the Unrivaled league is activated through dedicated campaigns that establish her as a prominent co-builder of the league.\",\n      \"current_state\": \"She holds an equity stake in the Unrivaled league (findings[mia.commercial_proof]), but she has zero active commercial relationships or co-branded campaigns recorded (commercialPosition.activeRelationships) that leverage her audience to drive the venture's growth.\",\n      \"rationale\": \"Leveraging her massive 5-million-follower fanbase (findings[mia.audience_scale]) to actively promote her equity venture in the Unrivaled league moves her from a traditional paid endorser to a strategic business builder, directly appreciating the value of her ownership stake.\",\n      \"domain\": \"owned_venture\",\n      \"from_opportunities\": [\n        {\n          \"opportunity_key\": \"amplify-unrivaled-ownership-influence\",\n          \"how\": \"Converts the opening of leveraging her fanbase for Unrivaled into an active partnership and marketing state.\"\n        }\n      ],\n      \"from_athlete_intent\": [],\n      \"current_state_evidence\": [\n        {\n          \"state_path\": \"findings[mia.commercial_proof]\",\n          \"how\": \"Documents her equity ownership stake in the Unrivaled women's 3-on-3 basketball league.\"\n        },\n        {\n          \"state_path\": \"commercialPosition.activeRelationships\",\n          \"how\": \"Shows she currently has zero active commercial relationships or structured venture campaigns.\"\n        },\n        {\n          \"state_path\": \"findings[mia.audience_scale]\",\n          \"how\": \"Establishes her exceptionally large audience of nearly 5 million followers.\"\n        }\n      ],\n      \"success\": {\n        \"observable_condition\": \"She launches a co-branded campaign or content initiative that explicitly promotes the Unrivaled league, linking her personal audience directly to the venture.\",\n        \"quantified\": null\n      },\n      \"horizon\": null,\n      \"athlete_stance\": null,\n      \"confidence\": \"HIGH\"\n    }\n  ],\n  \"notes\": [\n    {\n      \"opportunity_key\": \"fix-missing-commercial-records\",\n      \"outcome\": \"not_carried\",\n      \"into\": null,\n      \"why\": \"This opportunity represents internal database reconciliation and information acquisition rather than a change in the athlete's real-world commercial position.\"\n    },\n    {\n      \"opportunity_key\": \"unlock-private-performance-metrics\",\n      \"outcome\": \"not_carried\",\n      \"into\": null,\n      \"why\": \"Information acquisition in the evidence domain, which does not constitute a real-world strategic outcome for the athlete.\"\n    }\n  ]\n}",
+  "parsed": {
+   "proposals": [
+    {
+     "key": "amplify-crossover-cultural-narrative",
+     "desired_state": "Her commercial brand portfolio is anchored by major, multi-dimensional partnerships that integrate her elite athletic status with her crossover music career.",
+     "current_state": "Her recorded active commercial relationships stand at zero (commercialPosition.activeRelationships) despite holding category-leading cultural relevance as both a professional athlete and a signed musician (findings[mia.cultural_relevance]).",
+     "rationale": "She possesses an exceptionally rare and authentic dual identity as a WNBA rookie guard and a Roc Nation-signed artist. Capitalizing on this distinct narrative will elevate her brand beyond standard athletic sponsorships into premium, high-value crossover lifestyle and entertainment partnerships.",
+     "domain": "positioning",
+     "from_opportunities": [
+      {
+       "opportunity_key": "amplify-crossover-cultural-narrative",
+       "how": "Transforms the opportunity of scaling her dual-identity into a concrete, long-term commercial positioning outcome."
+      }
+     ],
+     "from_athlete_intent": [],
+     "current_state_evidence": [
+      {
+       "state_path": "commercialPosition.activeRelationships",
+       "how": "Confirms she currently has zero active commercial relationships recorded in her profile."
+      },
+      {
+       "state_path": "findings[mia.cultural_relevance]",
+       "how": "Establishes her exceptionally strong, category-leading crossover footprint."
+      },
+      {
+       "state_path": "findings[mia.narrative_power]",
+       "how": "Highlights her highly differentiated and authentic story of balancing basketball and music."
+      }
+     ],
+     "success": {
+      "observable_condition": "She executes a new commercial partnership agreement that explicitly outlines deliverables across both sports performance and lifestyle or entertainment media.",
+      "quantified": null
+     },
+     "horizon": null,
+     "athlete_stance": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "amplify-unrivaled-ownership-influence",
+     "desired_state": "Her equity ownership in the Unrivaled league is activated through dedicated campaigns that establish her as a prominent co-builder of the league.",
+     "current_state": "She holds an equity stake in the Unrivaled league (findings[mia.commercial_proof]), but she has zero active commercial relationships or co-branded campaigns recorded (commercialPosition.activeRelationships) that leverage her audience to drive the venture's growth.",
+     "rationale": "Leveraging her massive 5-million-follower fanbase (findings[mia.audience_scale]) to actively promote her equity venture in the Unrivaled league moves her from a traditional paid endorser to a strategic business builder, directly appreciating the value of her ownership stake.",
+     "domain": "owned_venture",
+     "from_opportunities": [
+      {
+       "opportunity_key": "amplify-unrivaled-ownership-influence",
+       "how": "Converts the opening of leveraging her fanbase for Unrivaled into an active partnership and marketing state."
+      }
+     ],
+     "from_athlete_intent": [],
+     "current_state_evidence": [
+      {
+       "state_path": "findings[mia.commercial_proof]",
+       "how": "Documents her equity ownership stake in the Unrivaled women's 3-on-3 basketball league."
+      },
+      {
+       "state_path": "commercialPosition.activeRelationships",
+       "how": "Shows she currently has zero active commercial relationships or structured venture campaigns."
+      },
+      {
+       "state_path": "findings[mia.audience_scale]",
+       "how": "Establishes her exceptionally large audience of nearly 5 million followers."
+      }
+     ],
+     "success": {
+      "observable_condition": "She launches a co-branded campaign or content initiative that explicitly promotes the Unrivaled league, linking her personal audience directly to the venture.",
+      "quantified": null
+     },
+     "horizon": null,
+     "athlete_stance": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [
+    {
+     "opportunity_key": "fix-missing-commercial-records",
+     "outcome": "not_carried",
+     "into": null,
+     "why": "This opportunity represents internal database reconciliation and information acquisition rather than a change in the athlete's real-world commercial position."
+    },
+    {
+     "opportunity_key": "unlock-private-performance-metrics",
+     "outcome": "not_carried",
+     "into": null,
+     "why": "Information acquisition in the evidence domain, which does not constitute a real-world strategic outcome for the athlete."
+    }
+   ]
+  },
+  "structuralProblems": [],
+  "groundingProblems": [],
+  "set": {
+   "athleteId": "16ea6f12-4574-4f73-9a41-c81fb6e0b508",
+   "asOf": "2026-09-26T01:23:00.475Z",
+   "version": "objective-proposal/1.0.0",
+   "specVersion": "objective-eval-spec/1.0.2",
+   "stateAsOf": "2026-09-25T17:54:32.554Z",
+   "opportunityMapAsOf": "2026-09-25T17:55:20.481Z",
+   "proposals": [
+    {
+     "key": "amplify-crossover-cultural-narrative",
+     "desiredState": {
+      "value": "Her commercial brand portfolio is anchored by major, multi-dimensional partnerships that integrate her elite athletic status with her crossover music career.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T17:54:32.554Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.crossover_recognition",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.media_source_quality",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.media_volume_percentile",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.search_interest",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.social_conversation",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.commercial_applicability",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.distinctiveness",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.durability",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.evidence_authenticity",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.media_resonance",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.story_depth",
+       "E1",
+       "E10",
+       "E14",
+       "E15",
+       "E2",
+       "E3",
+       "E7",
+       "E8"
+      ],
+      "rationale": "She possesses an exceptionally rare and authentic dual identity as a WNBA rookie guard and a Roc Nation-signed artist. Capitalizing on this distinct narrative will elevate her brand beyond standard athletic sponsorships into premium, high-value crossover lifestyle and entertainment partnerships.",
+      "falsifiedBy": null
+     },
+     "currentState": {
+      "value": "Her recorded active commercial relationships stand at zero (commercialPosition.activeRelationships) despite holding category-leading cultural relevance as both a professional athlete and a signed musician (findings[mia.cultural_relevance]).",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T17:54:32.554Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.crossover_recognition",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.media_source_quality",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.media_volume_percentile",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.search_interest",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#cultural_relevance.social_conversation",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.commercial_applicability",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.distinctiveness",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.durability",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.evidence_authenticity",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.media_resonance",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#narrative_power.story_depth",
+       "E1",
+       "E10",
+       "E14",
+       "E15",
+       "E2",
+       "E3",
+       "E7",
+       "E8"
+      ],
+      "rationale": "Read from: commercialPosition.activeRelationships, findings[mia.cultural_relevance], findings[mia.narrative_power]",
+      "falsifiedBy": null
+     },
+     "domain": "positioning",
+     "provenance": {
+      "origin": "nomila",
+      "fromOpportunities": [
+       {
+        "opportunityKey": "amplify-crossover-cultural-narrative",
+        "how": "Transforms the opportunity of scaling her dual-identity into a concrete, long-term commercial positioning outcome."
+       }
+      ],
+      "fromAthleteIntent": [],
+      "currentStateEvidence": [
+       {
+        "statePath": "commercialPosition.activeRelationships",
+        "how": "Confirms she currently has zero active commercial relationships recorded in her profile."
+       },
+       {
+        "statePath": "findings[mia.cultural_relevance]",
+        "how": "Establishes her exceptionally strong, category-leading crossover footprint."
+       },
+       {
+        "statePath": "findings[mia.narrative_power]",
+        "how": "Highlights her highly differentiated and authentic story of balancing basketball and music."
+       }
+      ]
+     },
+     "success": {
+      "observableCondition": "She executes a new commercial partnership agreement that explicitly outlines deliverables across both sports performance and lifestyle or entertainment media."
+     },
+     "horizon": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "amplify-unrivaled-ownership-influence",
+     "desiredState": {
+      "value": "Her equity ownership in the Unrivaled league is activated through dedicated campaigns that establish her as a prominent co-builder of the league.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T17:54:32.554Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#audience_scale.audience_growth",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#audience_scale.cross_platform_effective_reach",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#audience_scale.platform_breadth",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#audience_scale.sport_level_audience_percentile",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.brand_quality",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.campaign_performance",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.deal_frequency",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.pricing_power",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.renewals_repeat",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.verified_commercial_value",
+       "E10",
+       "E11",
+       "E12",
+       "E13",
+       "E5",
+       "E6",
+       "E7",
+       "E9"
+      ],
+      "rationale": "Leveraging her massive 5-million-follower fanbase (findings[mia.audience_scale]) to actively promote her equity venture in the Unrivaled league moves her from a traditional paid endorser to a strategic business builder, directly appreciating the value of her ownership stake.",
+      "falsifiedBy": null
+     },
+     "currentState": {
+      "value": "She holds an equity stake in the Unrivaled league (findings[mia.commercial_proof]), but she has zero active commercial relationships or co-branded campaigns recorded (commercialPosition.activeRelationships) that leverage her audience to drive the venture's growth.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T17:54:32.554Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#audience_scale.audience_growth",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#audience_scale.cross_platform_effective_reach",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#audience_scale.platform_breadth",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#audience_scale.sport_level_audience_percentile",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.brand_quality",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.campaign_performance",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.deal_frequency",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.pricing_power",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.renewals_repeat",
+       "1666a371-a6dd-409e-82b4-f8eeb5763280#commercial_proof.verified_commercial_value",
+       "E10",
+       "E11",
+       "E12",
+       "E13",
+       "E5",
+       "E6",
+       "E7",
+       "E9"
+      ],
+      "rationale": "Read from: findings[mia.commercial_proof], commercialPosition.activeRelationships, findings[mia.audience_scale]",
+      "falsifiedBy": null
+     },
+     "domain": "owned_venture",
+     "provenance": {
+      "origin": "nomila",
+      "fromOpportunities": [
+       {
+        "opportunityKey": "amplify-unrivaled-ownership-influence",
+        "how": "Converts the opening of leveraging her fanbase for Unrivaled into an active partnership and marketing state."
+       }
+      ],
+      "fromAthleteIntent": [],
+      "currentStateEvidence": [
+       {
+        "statePath": "findings[mia.commercial_proof]",
+        "how": "Documents her equity ownership stake in the Unrivaled women's 3-on-3 basketball league."
+       },
+       {
+        "statePath": "commercialPosition.activeRelationships",
+        "how": "Shows she currently has zero active commercial relationships or structured venture campaigns."
+       },
+       {
+        "statePath": "findings[mia.audience_scale]",
+        "how": "Establishes her exceptionally large audience of nearly 5 million followers."
+       }
+      ]
+     },
+     "success": {
+      "observableCondition": "She launches a co-branded campaign or content initiative that explicitly promotes the Unrivaled league, linking her personal audience directly to the venture."
+     },
+     "horizon": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [
+    {
+     "opportunityKey": "fix-missing-commercial-records",
+     "outcome": "not_carried",
+     "why": "This opportunity represents internal database reconciliation and information acquisition rather than a change in the athlete's real-world commercial position."
+    },
+    {
+     "opportunityKey": "unlock-private-performance-metrics",
+     "outcome": "not_carried",
+     "why": "Information acquisition in the evidence domain, which does not constitute a real-world strategic outcome for the athlete."
+    }
+   ],
+   "overallConfidence": "MEDIUM"
+  }
+ }
+}

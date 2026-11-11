@@ -1,0 +1,46 @@
+{
+  "status": "assessed",
+  "version": "objective-change-assessment/0.2.0-exp",
+  "by": "model",
+  "assessment": {
+    "success": {
+      "verdict": "needs_review",
+      "reason": "The success condition is narrower than the current wording because it focuses only on signing partnerships in EdTech, STEM, or tech venture sectors, omitting the broader positioning goals and the specific intersection of athletics, AI, innovation, and entrepreneurship.",
+      "objectiveQuote": "Build my positioning at the intersection of athletics, technology, AI, innovation and entrepreneurship, and secure partnerships that align with that identity.",
+      "successQuote": "She has signed at least one brand partnership or ambassador role with a company in the EdTech, STEM, or tech venture sectors."
+    },
+    "openings": [
+      {
+        "key": "grow-academic-tech-partnerships",
+        "supports": "part",
+        "openingQuote": "target premium brand partnerships in EdTech, STEM, and enterprise venture spaces.",
+        "reason": "The opening supports securing partnerships in tech-related fields but does not address the athletic, AI, or entrepreneurship aspects of her desired positioning.",
+        "part": "secure partnerships that align with that identity"
+      }
+    ]
+  },
+  "model": "gemini-3.5-flash",
+  "promptSha256": "4e9d2581cbea299c355527d2469c5f356d808f8b3770cfdc80a0d83d78125456",
+  "usage": {
+    "promptTokens": 819,
+    "outputTokens": 1794,
+    "reasoningTokens": 1542
+  },
+  "raw": {
+    "success": {
+      "verdict": "needs_review",
+      "reason": "The success condition is narrower than the current wording because it focuses only on signing partnerships in EdTech, STEM, or tech venture sectors, omitting the broader positioning goals and the specific intersection of athletics, AI, innovation, and entrepreneurship.",
+      "objectiveQuote": "Build my positioning at the intersection of athletics, technology, AI, innovation and entrepreneurship, and secure partnerships that align with that identity.",
+      "successQuote": "She has signed at least one brand partnership or ambassador role with a company in the EdTech, STEM, or tech venture sectors."
+    },
+    "openings": [
+      {
+        "key": "grow-academic-tech-partnerships",
+        "supports": "part",
+        "openingQuote": "target premium brand partnerships in EdTech, STEM, and enterprise venture spaces.",
+        "reason": "The opening supports securing partnerships in tech-related fields but does not address the athletic, AI, or entrepreneurship aspects of her desired positioning.",
+        "part": "secure partnerships that align with that identity"
+      }
+    ]
+  }
+}

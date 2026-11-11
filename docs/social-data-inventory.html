@@ -1,0 +1,343 @@
+<title>Social Data Inventory</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#FCFBF9; --bg2:#F1EEE9; --ink:#17150F; --ink2:#585245; --ink3:#8C8577;
+  --line:#E3DED4; --line2:#EFEBE3; --card:#FFF;
+  --ig:#C13584; --ig-bg:#FBEBF4; --yt:#C4302B; --yt-bg:#FBEAE9;
+  --tt:#1A1A1A; --tt-bg:#EFEFEF;
+  --ok:#2C6E49; --ok-bg:#E4F1E9; --no:#9E2B2B; --no-bg:#F9E6E6;
+  --pub:#0E6E6B; --pub-bg:#DFEFEE; --warn:#A05A00; --warn-bg:#FBF0DE;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#131109; --bg2:#1C1A14; --ink:#F3EFE6; --ink2:#B0A99B; --ink3:#847D6F;
+  --line:#2C2820; --line2:#221F19; --card:#191710;
+  --ig:#E872B4; --ig-bg:#2B1424; --yt:#E88C88; --yt-bg:#2B1514;
+  --tt:#E8E4DC; --tt-bg:#242219;
+  --ok:#74C596; --ok-bg:#14291D; --no:#E08383; --no-bg:#2B1A1A;
+  --pub:#5FC3BF; --pub-bg:#0E2928; --warn:#E0A550; --warn-bg:#2A2013;}}
+:root[data-theme="dark"]{
+  --bg:#131109; --bg2:#1C1A14; --ink:#F3EFE6; --ink2:#B0A99B; --ink3:#847D6F;
+  --line:#2C2820; --line2:#221F19; --card:#191710;
+  --ig:#E872B4; --ig-bg:#2B1424; --yt:#E88C88; --yt-bg:#2B1514;
+  --tt:#E8E4DC; --tt-bg:#242219;
+  --ok:#74C596; --ok-bg:#14291D; --no:#E08383; --no-bg:#2B1A1A;
+  --pub:#5FC3BF; --pub-bg:#0E2928; --warn:#E0A550; --warn-bg:#2A2013;}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Outfit,system-ui,sans-serif;
+     -webkit-font-smoothing:antialiased}
+.w{max-width:1000px;margin:0 auto;padding:3.5rem 1.5rem 6rem}
+.eyebrow{font-family:"JetBrains Mono",monospace;font-size:.64rem;letter-spacing:.16em;
+         text-transform:uppercase;color:var(--pub);margin:0 0 .8rem}
+h1{font-size:clamp(2rem,4.6vw,2.9rem);font-weight:800;letter-spacing:-.03em;line-height:1.03;margin:0 0 .9rem}
+.lede{font-size:1.02rem;line-height:1.6;color:var(--ink2);max-width:64ch;margin:0}
+.lede b{color:var(--ink);font-weight:600}
+h2{font-size:1.35rem;font-weight:700;letter-spacing:-.02em;margin:0 0 .2rem;display:flex;
+   align-items:center;gap:.6rem}
+h2 .b{width:9px;height:9px;border-radius:2px;flex:0 0 auto}
+h3{font-size:.94rem;font-weight:700;margin:1.9rem 0 .45rem;letter-spacing:-.01em}
+h4{font-size:.78rem;font-weight:700;margin:1.3rem 0 .4rem;color:var(--ink2);
+   font-family:"JetBrains Mono",monospace;letter-spacing:.05em;text-transform:uppercase}
+section{margin-top:3.2rem;padding-top:2rem;border-top:1px solid var(--line)}
+p{line-height:1.65;color:var(--ink2);max-width:70ch}
+p b{color:var(--ink);font-weight:600}
+code{font-family:"JetBrains Mono",monospace;font-size:.84em;background:var(--bg2);
+     padding:.08rem .3rem;border-radius:4px;color:var(--ink);white-space:nowrap}
+pre{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:.9rem 1rem;
+    overflow-x:auto;font-family:"JetBrains Mono",monospace;font-size:.74rem;line-height:1.6;color:var(--ink)}
+pre code{background:none;padding:0;white-space:pre}
+table{width:100%;border-collapse:collapse;font-size:.86rem}
+th{text-align:left;font-size:.62rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink3);
+   font-weight:600;padding:0 .6rem .5rem;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:.55rem .6rem;border-bottom:1px solid var(--line2);color:var(--ink2);line-height:1.5;
+   vertical-align:top}
+td b{color:var(--ink);font-weight:600}
+td code{font-size:.8em}
+.tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:.9rem .4rem .2rem;margin:.7rem 0 0}
+.p{display:inline-block;font-family:"JetBrains Mono",monospace;font-size:.58rem;letter-spacing:.06em;
+   padding:.14rem .38rem;border-radius:4px;white-space:nowrap}
+.p-oauth{background:var(--warn-bg);color:var(--warn)}
+.p-pub{background:var(--pub-bg);color:var(--pub)}
+.p-drv{background:var(--ok-bg);color:var(--ok)}
+.p-no{background:var(--no-bg);color:var(--no)}
+.p-ig{background:var(--ig-bg);color:var(--ig)}
+.p-yt{background:var(--yt-bg);color:var(--yt)}
+.p-tt{background:var(--tt-bg);color:var(--tt)}
+.note{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--pub);
+      border-radius:0 10px 10px 0;padding:.85rem 1rem;margin:1.1rem 0}
+.note.w{border-left-color:var(--warn)} .note.n{border-left-color:var(--no)}
+.note p{margin:0;max-width:none;font-size:.92rem}
+.note .k{font-family:"JetBrains Mono",monospace;font-size:.58rem;letter-spacing:.1em;
+         text-transform:uppercase;color:var(--pub);display:block;margin-bottom:.3rem}
+.note.w .k{color:var(--warn)} .note.n .k{color:var(--no)}
+.legend{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.2rem 0 0}
+.legend span{font-size:.76rem;color:var(--ink2)}
+ul{padding-left:1.05rem;max-width:70ch} li{line-height:1.6;color:var(--ink2);margin-bottom:.35rem}
+.foot{margin-top:3.5rem;padding-top:1.4rem;border-top:1px solid var(--line);font-size:.82rem;color:var(--ink3)}
+</style>
+
+<div class="w">
+<p class="eyebrow">Reference · current implementation</p>
+<h1>Social data inventory</h1>
+<p class="lede">Exactly what Nomila collects today from Instagram, YouTube and TikTok — raw provider fields, where each lands, and what only exists after the athlete connects. <b>Documentation only; nothing here proposes a change.</b> Every field was read from the integration modules on 9 Sep 2026.</p>
+
+<div class="legend">
+  <span class="p p-pub">PUBLIC</span><span>no athlete auth — Nomila's own credentials</span>
+  <span class="p p-oauth">OAUTH</span><span>requires the athlete to connect</span>
+  <span class="p p-drv">DERIVED</span><span>computed by us, not returned by the provider</span>
+</div>
+
+<!-- ══════════════════ INSTAGRAM ══════════════════ -->
+<section>
+<h2><span class="b" style="background:var(--ig)"></span>Instagram</h2>
+<p>Two entirely separate paths. <b>Discovery</b> uses Nomila's own business account to read any public Business/Creator handle. <b>Connected</b> uses the athlete's own token and returns roughly ten times more.</p>
+
+<h3>1 · Endpoints</h3>
+<div class="tw"><table>
+<thead><tr><th style="width:15%">Path</th><th style="width:34%">Endpoint</th><th style="width:12%">Auth</th><th>Purpose</th></tr></thead>
+<tbody>
+<tr><td><span class="p p-pub">PUBLIC</span></td><td><code>GET graph.facebook.com/v22.0/{ig-id}</code><br><code>?fields=business_discovery.username(X){…}</code></td><td>Nomila's <code>DISCOVERY_IG_TOKEN</code></td><td>Any public Business/Creator handle. <code>server/lib/integrations/discovery.ts</code></td></tr>
+<tr><td><span class="p p-oauth">OAUTH</span></td><td><code>GET graph.instagram.com/{v}/me</code></td><td>athlete token</td><td>Identity at callback — <code>user_id, username, account_type</code></td></tr>
+<tr><td><span class="p p-oauth">OAUTH</span></td><td><code>GET /{ig-user-id}</code></td><td>athlete token</td><td>Profile — <code>id, username, followers_count, follows_count, media_count</code></td></tr>
+<tr><td><span class="p p-oauth">OAUTH</span></td><td><code>GET /{ig-user-id}/insights</code></td><td>athlete token</td><td>Account insights, <code>metric_type=total_value</code>, <code>period=day</code></td></tr>
+<tr><td><span class="p p-oauth">OAUTH</span></td><td><code>GET /{ig-user-id}/insights</code><br><code>?metric=follower_demographics</code></td><td>athlete token</td><td>Audience, <code>period=lifetime</code>, one call per <code>breakdown</code></td></tr>
+<tr><td><span class="p p-oauth">OAUTH</span></td><td><code>GET /{ig-user-id}/media</code></td><td>athlete token</td><td>Posts + per-post insights via field expansion, <code>limit=25</code></td></tr>
+<tr><td><span class="p p-oauth">OAUTH</span></td><td><code>GET /{ig-user-id}/conversations</code></td><td>athlete token</td><td>DMs → the deal-detection funnel (not analytics)</td></tr>
+</tbody></table></div>
+
+<h4>The exact parameter strings in code</h4>
+<pre><code>// discovery.ts — the ENTIRE public payload
+business_discovery.username(&lt;handle&gt;){
+  followers_count,
+  media_count,
+  media.limit(10){ like_count, comments_count, timestamp }
+}
+
+// instagram.ts — connected
+IG_ACCOUNT_METRICS = "reach,views,profile_links_taps"
+IG_MEDIA_METRICS   = "reach,saved,shares,total_interactions"
+media fields       = "id,permalink,media_type,caption,timestamp,media_url,
+                      thumbnail_url,like_count,comments_count,is_shared_to_feed,
+                      children{id,media_type,media_url,thumbnail_url}"
+                     + ",insights.metric(reach,saved,shares,total_interactions)"
+follower_demographics breakdowns = country · city · age · gender</code></pre>
+
+<h3>2 · Raw fields by level</h3>
+<div class="tw"><table>
+<thead><tr><th style="width:26%">Raw field</th><th style="width:10%">Type</th><th style="width:13%">Level</th><th style="width:13%">Public</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td><code>followers_count</code></td><td>number</td><td>account</td><td><span class="p p-pub">yes</span></td><td>Both paths</td></tr>
+<tr><td><code>media_count</code></td><td>number</td><td>account</td><td><span class="p p-pub">yes</span></td><td>Both paths</td></tr>
+<tr><td><code>follows_count</code></td><td>number</td><td>account</td><td><span class="p p-no">no</span></td><td>OAuth only</td></tr>
+<tr><td><code>account_type</code></td><td>string</td><td>account</td><td><span class="p p-no">no</span></td><td>BUSINESS / MEDIA_CREATOR / PERSONAL</td></tr>
+<tr><td><code>reach</code></td><td>number</td><td>account</td><td><span class="p p-no">no</span></td><td><code>period=day</code>, total_value</td></tr>
+<tr><td><code>views</code></td><td>number</td><td>account</td><td><span class="p p-no">no</span></td><td>Replaces <code>impressions</code>, deprecated on v22</td></tr>
+<tr><td><code>profile_links_taps</code></td><td>number</td><td>account</td><td><span class="p p-no">no</span></td><td>Stored as <code>profile_views</code></td></tr>
+<tr><td><code>id · permalink · media_type</code></td><td>string</td><td>content</td><td><span class="p p-no">no</span><sup>†</sup></td><td>Permalink is the durable key; CDN urls expire</td></tr>
+<tr><td><code>caption</code></td><td>string|null</td><td>content</td><td><span class="p p-no">no</span><sup>†</sup></td><td><b>Discovery supports it; our query omits it</b></td></tr>
+<tr><td><code>timestamp</code></td><td>ISO string</td><td>content</td><td><span class="p p-pub">yes</span></td><td>Both paths</td></tr>
+<tr><td><code>like_count · comments_count</code></td><td>number</td><td>content</td><td><span class="p p-pub">yes</span></td><td>Both paths</td></tr>
+<tr><td><code>media_url · thumbnail_url</code></td><td>string|null</td><td>content</td><td><span class="p p-no">no</span><sup>†</sup></td><td>Ephemeral CDN. <b>Discovery supports it; our query omits it</b></td></tr>
+<tr><td><code>is_shared_to_feed</code></td><td>boolean</td><td>content</td><td><span class="p p-no">no</span></td><td><code>false</code> = Reel not on grid → Trial/Discovery</td></tr>
+<tr><td><code>children{…}</code></td><td>array</td><td>content</td><td><span class="p p-no">no</span></td><td>Carousel items: id, media_type, media_url, thumbnail_url</td></tr>
+<tr><td><code>insights.reach</code></td><td>number</td><td>content</td><td><span class="p p-no">no</span></td><td rowspan="4">Per-post, OAuth only. <b>Never available for a peer.</b></td></tr>
+<tr><td><code>insights.saved</code></td><td>number</td><td>content</td><td><span class="p p-no">no</span></td></tr>
+<tr><td><code>insights.shares</code></td><td>number</td><td>content</td><td><span class="p p-no">no</span></td></tr>
+<tr><td><code>insights.total_interactions</code></td><td>number</td><td>content</td><td><span class="p p-no">no</span></td></tr>
+<tr><td><code>follower_demographics</code></td><td>breakdown[]</td><td>audience</td><td><span class="p p-no">no</span></td><td>country · city · age · gender. <b>Requires ≥100 followers</b> or Graph errors</td></tr>
+</tbody></table></div>
+<p style="font-size:.84rem"><sup>†</sup> The Graph API exposes these to <code>business_discovery</code>; <b>our query does not request them</b>, so today they are OAuth-only in practice.</p>
+
+<h3>3 · Historical window &amp; limits</h3>
+<div class="tw"><table><tbody>
+<tr><td style="width:26%"><b>Discovery media</b></td><td><code>media.limit(10)</code> — the last 10 posts, no pagination implemented</td></tr>
+<tr><td><b>Connected media</b></td><td><code>limit=25</code> per call; the sync paginates for backfill (<code>instagramSync.ts</code>)</td></tr>
+<tr><td><b>Account insights</b></td><td><code>period=day</code> — a point-in-time value, no history returned. <b>Our time series is reconstructed by snapshotting daily.</b></td></tr>
+<tr><td><b>Demographics</b></td><td><code>period=lifetime</code>, one API call <em>per breakdown</em> (4 calls)</td></tr>
+<tr><td><b>Token</b></td><td>60-day long-lived, refreshed via <code>ig_refresh_token</code></td></tr>
+<tr><td><b>Business Discovery</b></td><td>Business/Creator accounts only — a personal account returns <code>not_business_account</code></td></tr>
+</tbody></table></div>
+
+<h3>4 · What we derive</h3>
+<div class="tw"><table>
+<thead><tr><th style="width:24%">Derived</th><th>Formula as implemented</th></tr></thead>
+<tbody>
+<tr><td><code>avg_engagement_rate</code></td><td><b>Reach-based when per-post reach exists:</b> <code>Σ total_interactions ÷ Σ reach</code>. Falls back to <code>(avg_likes + avg_comments) ÷ followers</code>. <span class="p p-drv">DERIVED</span><br><span style="font-size:.9em">The comment gives the reason: a viral Reel put reach at ~8× followers and a follower-based rate read <b>54.6%</b> where the reach-based rate read ~7%.</span></td></tr>
+<tr><td><code>content_frequency</code></td><td><code>posts ÷ weeks</code> across the observed window, from sorted timestamps, ≥2 posts required</td></tr>
+<tr><td><code>posts_last_30d</code></td><td>Exact count within 30 days — <b>used by scoring</b>, unlike the display metrics</td></tr>
+<tr><td><code>avg_reach_per_post</code> · <code>avg_saves_per_post</code> · <code>avg_shares_per_post</code></td><td>Mean over posts that returned that insight</td></tr>
+<tr><td><code>avg_views_per_post</code></td><td><b><code>null</code></b> — needs a per-type video metric; marked future in code</td></tr>
+<tr><td><code>discovery.{reels,total_reach,avg_reach}</code></td><td>Trial/Discovery Reels segmented out: <code>is_shared_to_feed=false</code> AND <code>reach ≥ 2× followers</code>, so non-follower spikes don't inflate core reach</td></tr>
+<tr><td><code>top_audience_*</code></td><td>First row of each sorted demographic breakdown</td></tr>
+</tbody></table></div>
+</section>
+
+<!-- ══════════════════ YOUTUBE ══════════════════ -->
+<section>
+<h2><span class="b" style="background:var(--yt)"></span>YouTube</h2>
+
+<h3>1 · Endpoints</h3>
+<div class="tw"><table>
+<thead><tr><th style="width:15%">Path</th><th style="width:38%">Endpoint</th><th>Parameters</th></tr></thead>
+<tbody>
+<tr><td><span class="p p-pub">PUBLIC</span></td><td><code>GET youtube/v3/channels</code></td><td><code>part=snippet,statistics</code> · <code>forHandle=@x</code> or <code>id=UC…</code> · API key only — <b>no OAuth, works for anyone</b></td></tr>
+<tr><td><span class="p p-oauth">OAUTH</span></td><td><code>GET youtube/v3/channels</code></td><td><code>part=snippet,statistics</code> · <code>mine=true</code></td></tr>
+<tr><td><span class="p p-oauth">OAUTH</span></td><td><code>GET youtube/v3/videos</code></td><td><code>part=statistics,contentDetails,topicDetails,snippet</code></td></tr>
+<tr><td><span class="p p-oauth">OAUTH</span></td><td><code>GET youtubeanalytics/v2/reports</code></td><td><code>ids=channel==MINE</code> — five separate calls, see below</td></tr>
+</tbody></table></div>
+<p><b>Scopes:</b> <code>youtube.readonly</code> · <code>yt-analytics.readonly</code></p>
+
+<h3>2 · Raw fields by level</h3>
+<div class="tw"><table>
+<thead><tr><th style="width:30%">Raw field</th><th style="width:12%">Level</th><th style="width:12%">Public</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td><code>statistics.subscriberCount</code></td><td>account</td><td><span class="p p-pub">yes</span></td><td>string → parsed to number</td></tr>
+<tr><td><code>statistics.viewCount</code></td><td>account</td><td><span class="p p-pub">yes</span></td><td>Lifetime channel views</td></tr>
+<tr><td><code>statistics.videoCount</code></td><td>account</td><td><span class="p p-pub">yes</span></td><td>—</td></tr>
+<tr><td><code>snippet.*</code></td><td>account</td><td><span class="p p-pub">yes</span></td><td>Title, description, thumbnails</td></tr>
+<tr><td><code>videos.statistics.{viewCount,likeCount,commentCount}</code></td><td>content</td><td><span class="p p-no">no</span><sup>‡</sup></td><td>Per-video, summed by us</td></tr>
+<tr><td><code>contentDetails.duration</code></td><td>content</td><td><span class="p p-no">no</span><sup>‡</sup></td><td>ISO-8601, parsed for watch time</td></tr>
+<tr><td colspan="4" style="padding-top:.9rem"><b>YouTube Analytics API — OAuth only, five calls</b></td></tr>
+<tr><td><code>views · estimatedMinutesWatched · averageViewDuration · averageViewPercentage · subscribersGained · subscribersLost</code></td><td>account</td><td><span class="p p-no">no</span></td><td>30-day window. <code>averageViewPercentage</code> is retention.</td></tr>
+<tr><td><code>dimensions=ageGroup,gender</code> → <code>viewerPercentage</code></td><td>audience</td><td><span class="p p-no">no</span></td><td>→ <code>raw_metrics.youtube.age_gender</code></td></tr>
+<tr><td><code>dimensions=country</code> → <code>views</code></td><td>audience</td><td><span class="p p-no">no</span></td><td>Top 5</td></tr>
+<tr><td><code>dimensions=insightTrafficSourceType</code></td><td>audience</td><td><span class="p p-no">no</span></td><td>Top 6 — <b>where views come from</b></td></tr>
+<tr><td><code>dimensions=deviceType</code></td><td>audience</td><td><span class="p p-no">no</span></td><td>—</td></tr>
+</tbody></table></div>
+<p style="font-size:.84rem"><sup>‡</sup> <code>videos.list</code> accepts an API key, so per-video stats are technically public — <b>we only call it on the OAuth path</b>. The public path fetches channel statistics and nothing else.</p>
+
+<div class="note w"><span class="k">Historical window</span>
+<p>The Analytics API is the <b>only source with real history</b> — it accepts a start and end date and returns a 30-day window. Everything else across all three platforms is point-in-time, and our history exists only because we snapshot daily.</p></div>
+</section>
+
+<!-- ══════════════════ TIKTOK ══════════════════ -->
+<section>
+<h2><span class="b" style="background:var(--tt)"></span>TikTok</h2>
+
+<div class="note n"><span class="k">No public path</span>
+<p><b>There is no discovery equivalent.</b> <code>discovery.ts</code> states it: "TikTok has no free route (provider, later)." So <b>every TikTok field below requires the athlete to connect</b>, and TikTok peer benchmarking is impossible at any currently-approved cost.</p></div>
+
+<h3>1 · Endpoints — all OAuth</h3>
+<div class="tw"><table>
+<thead><tr><th style="width:34%">Endpoint</th><th style="width:18%">Scope</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td><code>GET open.tiktokapis.com/v2/user/info/</code></td><td><code>user.info.basic</code> · <code>.profile</code> · <code>.stats</code></td><td><code>fields</code> as a query param</td></tr>
+<tr><td><code>POST /v2/video/list/</code></td><td><code>video.list</code></td><td><b><code>fields</code> is a QUERY param</b>; only <code>max_count</code>/cursor go in the body — noted in code as a gotcha</td></tr>
+<tr><td><code>GET /v2/creator/info/</code></td><td><code>creator_info</code></td><td><b>Gated behind <code>DEMOGRAPHICS_ENABLED</code> and skipped today</b> — an unapproved scope can make TikTok reject the whole authorization</td></tr>
+</tbody></table></div>
+
+<h3>2 · Raw fields</h3>
+<div class="tw"><table>
+<thead><tr><th style="width:34%">Raw field</th><th style="width:14%">Level</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td><code>open_id · display_name · username</code></td><td>account</td><td>Identity</td></tr>
+<tr><td><code>follower_count · following_count</code></td><td>account</td><td>—</td></tr>
+<tr><td><code>likes_count</code></td><td>account</td><td><b>Lifetime</b> likes → <code>total_likes</code></td></tr>
+<tr><td><code>video_count · is_verified</code></td><td>account</td><td>—</td></tr>
+<tr><td><code>id · create_time</code></td><td>content</td><td>—</td></tr>
+<tr><td><code>view_count · like_count · comment_count · share_count</code></td><td>content</td><td><b>Share count is per-video and native</b> — Instagram gives shares only via insights</td></tr>
+<tr><td><code>duration</code></td><td>content</td><td>Seconds</td></tr>
+<tr><td><code>title · video_description</code></td><td>content</td><td>—</td></tr>
+<tr><td><code>cover_image_url · share_url</code></td><td>content</td><td>—</td></tr>
+<tr><td><code>audience_countries · audience_genders · audience_ages</code></td><td>audience</td><td><span class="p p-no">DISABLED</span> — <code>creator/info</code>, currently skipped</td></tr>
+</tbody></table></div>
+<div class="note"><span class="k">Notable</span>
+<p>TikTok returns <b>no reach or impressions at all</b> — <code>view_count</code> is the closest analogue. And unlike Instagram, per-video engagement needs no separate insights call: view/like/comment/share come back with the list.</p></div>
+</section>
+
+<!-- ══════════════════ STORAGE ══════════════════ -->
+<section>
+<h2>Where it lands</h2>
+
+<h4>TypeScript contracts</h4>
+<div class="tw"><table><tbody>
+<tr><td style="width:32%"><code>SocialAnalyticsResult</code></td><td><code>server/lib/integrations/types.ts</code> — the flat, cross-platform shape every provider returns. <b>"A DISPLAY/TREND layer — never read by scoringService."</b></td></tr>
+<tr><td><code>SocialAnalyticsRaw</code></td><td><code>shared/schema.ts</code> — the <code>raw_metrics</code> jsonb: <code>account</code>, <code>account_insights</code>, <code>demographics</code>, <code>recent_media[]</code>, <code>discovery</code>, <code>youtube</code></td></tr>
+<tr><td><code>AnalyticsProvider</code></td><td>Interface: <code>fetchAnalytics(connectionId)</code> + <code>refreshTokenIfNeeded()</code></td></tr>
+</tbody></table></div>
+
+<h4>Database models</h4>
+<div class="tw"><table>
+<thead><tr><th style="width:26%">Table</th><th>Columns</th></tr></thead>
+<tbody>
+<tr><td><code>social_analytics_snapshots</code></td><td><code>athlete_id · connected_account_id · source · platform · snapshot_date · snapshot_day · followers · following · post_count · total_likes · total_channel_views · is_verified · reach · impressions · profile_views · avg_engagement_rate · avg_reach_per_post · avg_views_per_post · avg_shares_per_post · avg_saves_per_post · avg_watch_time_sec · content_frequency · posts_last_30d · top_audience_country · top_audience_city · top_audience_age_range · top_audience_gender · raw_metrics</code><br><b><code>source</code> distinguishes <code>connected</code> from <code>discovery</code></b> — the code notes discovery rows use identical math so the two are comparable.</td></tr>
+<tr><td><code>media_assets</code></td><td>Per-post: <code>platform · origin · source_media_id · parent_media_id · media_type · permalink · caption · posted_at · like_count · comments_count · insights · gcs_path · gcs_thumb_path · width · height · duration_seconds · metadata · deal_id · deal_deliverable_id · approval_status</code></td></tr>
+<tr><td><code>connected_accounts</code></td><td><code>platform · alias · status · access_token · refresh_token · token_expires_at · platform_user_id · platform_username · ig_page_id · scopes · sync_cursor · last_fetched_at</code></td></tr>
+</tbody></table></div>
+
+<h4>Redacted example — one Instagram connected snapshot</h4>
+<pre><code>{
+  "platform": "instagram", "source": "connected",
+  "snapshot_date": "2026-09-08T04:30:02Z", "snapshot_day": "2026-09-08",
+  "followers": 22114, "following": ███, "post_count": ███,
+  "is_verified": false,
+  "reach": ██████, "impressions": ██████, "profile_views": ███,
+  "avg_engagement_rate": 4.9, "avg_reach_per_post": █████,
+  "avg_saves_per_post": 367, "avg_shares_per_post": 559,
+  "avg_views_per_post": null,            // not implemented
+  "content_frequency": 1.4, "posts_last_30d": ██,
+  "top_audience_country": "██", "top_audience_city": "████████",
+  "top_audience_age_range": "18-24", "top_audience_gender": "F",
+  "raw_metrics": {
+    "account": { "id": "████████", "username": "████████",
+                 "followers_count": 22114, "follows_count": ███, "media_count": ███ },
+    "account_insights": { "data": [ { "name": "reach", "total_value": { "value": ██████ } } ] },
+    "demographics": {
+      "country": [ { "key": "██", "value": █████, "pct": 71.2 } ],
+      "age":     [ { "key": "18-24", "value": ████, "pct": 44.8 } ]
+    },
+    "recent_media": [ {
+      "id": "████████████",
+      "permalink": "https://www.instagram.com/p/████████/",
+      "media_type": "VIDEO", "caption": "████████████",
+      "timestamp": "2026-09-02T17:41:00+0000",
+      "media_url": "https://scontent.cdninstagram.com/…",   // expires
+      "like_count": ████, "comments_count": ██,
+      "is_shared_to_feed": false,        // Reel not on grid
+      "is_discovery": true,              // DERIVED: reach ≥ 2× followers
+      "insights": { "reach": ██████, "saved": ███, "shares": ███,
+                    "total_interactions": ████ },
+      "children": null
+    } ],
+    "discovery": { "reels": █, "total_reach": ██████, "avg_reach": █████ }
+  }
+}</code></pre>
+</section>
+
+<!-- ══════════════════ THE OAUTH DELTA ══════════════════ -->
+<section>
+<h2>Every field that only exists after connection</h2>
+<p>The separate list you asked for — what an athlete unlocks by connecting, over what we can already see publicly.</p>
+
+<h4><span class="p p-ig">INSTAGRAM</span> — the largest delta</h4>
+<div class="tw"><table>
+<thead><tr><th style="width:22%">Level</th><th>Unlocked</th></tr></thead>
+<tbody>
+<tr><td>Account</td><td><code>follows_count</code> · <code>account_type</code> · <code>reach</code> · <code>views</code> · <code>profile_links_taps</code></td></tr>
+<tr><td>Content</td><td><code>insights.reach</code> · <code>insights.saved</code> · <code>insights.shares</code> · <code>insights.total_interactions</code> · <code>is_shared_to_feed</code> · <code>children{}</code> (carousel items)</td></tr>
+<tr><td>Content <span style="color:var(--ink3)">(in practice)</span></td><td><code>caption</code> · <code>media_url</code> · <code>thumbnail_url</code> · <code>permalink</code> · <code>media_type</code> — <b>the API offers these to discovery too; our query omits them</b></td></tr>
+<tr><td>Audience</td><td><code>follower_demographics</code>: country · city · age · gender <span style="color:var(--ink3)">(≥100 followers)</span></td></tr>
+<tr><td>Volume</td><td>25/page with pagination vs a flat 10 with none</td></tr>
+<tr><td>Messaging</td><td><code>conversations</code> / DMs — deal detection, not analytics</td></tr>
+</tbody></table></div>
+
+<h4><span class="p p-yt">YOUTUBE</span> — the whole Analytics API</h4>
+<div class="tw"><table>
+<thead><tr><th style="width:22%">Level</th><th>Unlocked</th></tr></thead>
+<tbody>
+<tr><td>Account</td><td><code>views</code> · <code>estimatedMinutesWatched</code> · <code>averageViewDuration</code> · <code>averageViewPercentage</code> · <code>subscribersGained</code> · <code>subscribersLost</code> — all 30-day</td></tr>
+<tr><td>Audience</td><td><code>ageGroup×gender</code> · <code>country</code> · <code>insightTrafficSourceType</code> · <code>deviceType</code></td></tr>
+<tr><td>Content</td><td>Per-video <code>statistics</code>, <code>contentDetails.duration</code>, <code>topicDetails</code> <span style="color:var(--ink3)">(key-accessible, but only called on the OAuth path)</span></td></tr>
+</tbody></table></div>
+
+<h4><span class="p p-tt">TIKTOK</span> — everything</h4>
+<p style="margin-top:.4rem">No public path exists, so <b>every field listed in the TikTok section is OAuth-only</b>. Audience demographics are unlocked in principle by the <code>creator_info</code> scope but are <b>disabled in code today</b>.</p>
+
+<div class="note w"><span class="k">The through-line</span>
+<p>Across all three platforms the split is the same: <b>likes, comments, follower counts and timestamps are public; reach, saves, shares, watch time and audience demographics are owner-only.</b> No amount of API work changes that — it is a platform privacy boundary, not a gap in our implementation.</p></div>
+</section>
+
+<p class="foot">Read from <code>server/lib/integrations/{instagram,discovery,youtube,tiktok,types}.ts</code>, <code>shared/schema.ts</code> and <code>server/lib/integrations/instagramSync.ts</code> on 9 Sep 2026. Example values redacted; nulls and zeroes shown as-is. Live values were unavailable at the time of writing — <code>DATABASE_URL</code> points at <code>127.0.0.1:5440</code> and the proxy was not running — so figures shown are those verified on 8 Sep.</p>
+</div>

@@ -1,0 +1,1393 @@
+{
+ "id": "1666a371-a6dd-409e-82b4-f8eeb5763280",
+ "subject_id": "16ea6f12-4574-4f73-9a41-c81fb6e0b508",
+ "versions": {
+  "params": "v1.0.1-beta.1+lookups-v1+policy-v0",
+  "policy": "policy-v0",
+  "priors": "priors-v1",
+  "cohorts": "cohorts-v0-empty",
+  "lookups": "lookups-v1",
+  "evaluator": "blind-eval-spec/0.2.1",
+  "methodology": "v1.0.1-beta.1"
+ },
+ "value": {
+  "notes": {
+   "strengths": [
+    "Unrivaled crossover appeal as an active, elite professional basketball player and a signed Roc Nation hip-hop artist.",
+    "Highly distinctive, emotionally resonant, and completely authentic personal narrative honoring her late father.",
+    "Elite commercial track record with blue-chip brands like Samsung, Google, Puma, and e.l.f. Cosmetics, commanding over $4.5M in cumulative brand deals.",
+    "Excellent current athletic momentum, successfully transitioning from college star to a record-setting defensive WNBA rookie with the Seattle Storm.",
+    "Forward-thinking business positioning, including direct equity ownership in the new Unrivaled 3-on-3 league."
+   ],
+   "constraints": [
+    "A lower baseline engagement percentage (1.87% per Forbes) compared to some pure-play content creators, though offset by very high overall view rates.",
+    "Extremely demanding dual-career schedule (balancing music recording/touring and pro sports seasons) which could restrict brand activation availability."
+   ],
+   "missingEvidence": [
+    "Private social media metrics including story performance, save/share rates, and video retention.",
+    "Granular campaign performance metrics such as conversion rates and direct ROI from her major partnerships.",
+    "Reliable longitudinal follower growth metrics tracking her exact daily or weekly audience trajectory throughout late 2025 and 2026."
+   ]
+  },
+  "score": 750,
+  "drivers": [],
+  "summary": "Flau'jae Johnson is a unique commercial powerhouse who effectively bridges the worlds of elite women's basketball and mainstream hip-hop culture. Having concluded an illustrious collegiate career at LSU—highlighted by a 2023 NCAA National Championship, multiple All-American honors, and over 2,000 career points—she successfully transitioned to the professional ranks as the 8th overall pick in the 2026 WNBA Draft. Now in her rookie WNBA season with the Seattle Storm, she is making immediate waves on the court, breaking franchise rookie defensive records. Beyond basketball, Johnson is signed to Jay-Z's Roc Nation label as a rapper, carrying a profound personal legacy honoring her late father, the rapper Camoflauge. Her massive crossover appeal translates into a combined social media audience of nearly 5 million followers and an exceptional endorsement portfolio with blue-chip brands like Samsung, Google, Puma, and e.l.f. Cosmetics. Her current commercial momentum is highly elevated, though detailed private platform metrics (such as video retention rates, story efficiency, and exact campaign conversion ROIs) remain undocumented in public sources.",
+  "evidence": [
+   {
+    "id": "E1",
+    "claim": "Flau'jae Johnson was selected 8th overall in the 2026 WNBA Draft by the Golden State Valkyries and was immediately traded to the Seattle Storm on draft night.",
+    "sourceUrl": "https://justwomenssports.com",
+    "observedAt": "2026-04-14",
+    "sourceType": "major_media",
+    "sourceTitle": "Golden State Trades Flau'jae Johnson to Seattle in Surprise 1st-Round Swap"
+   },
+   {
+    "id": "E2",
+    "claim": "In her 2026 WNBA rookie season, Johnson is averaging 10.8 to 11.5 PPG, 5.3 RPG, and has become the fastest rookie guard in Seattle Storm history to reach 15 blocks.",
+    "sourceUrl": "https://theixsports.com",
+    "observedAt": "2026-06-14",
+    "sourceType": "secondary",
+    "sourceTitle": "Flau'jae Johnson is growing toward stardom in rookie season"
+   },
+   {
+    "id": "E3",
+    "claim": "Johnson led LSU to the 2023 NCAA National Championship and completed her collegiate career as a two-time Third-Team All-American and two-time First-Team All-SEC selection, surpassing 2,000 career points.",
+    "sourceUrl": "https://lsusports.net",
+    "observedAt": "2026-05-15",
+    "sourceType": "official",
+    "sourceTitle": "Flau'jae Johnson - Women's Basketball 2025-26 - LSU Athletics"
+   },
+   {
+    "id": "E4",
+    "claim": "Johnson represented USA Basketball at the 2025 FIBA Women's AmeriCup, securing a gold medal.",
+    "sourceUrl": "https://allamericanspeakers.com",
+    "observedAt": "2026-04-15",
+    "sourceType": "secondary",
+    "sourceTitle": "Flau'jae Johnson WNBA Draft Profile and Bio"
+   },
+   {
+    "id": "E5",
+    "claim": "Johnson commands nearly 5 million combined followers across Instagram, TikTok, YouTube, X, Facebook, and Snapchat.",
+    "sourceUrl": "https://sproutsocial.com",
+    "observedAt": "2026-04-15",
+    "sourceType": "major_media",
+    "sourceTitle": "LSU's Flau'jae Johnson social media footprint"
+   },
+   {
+    "id": "E6",
+    "claim": "Individually, her platforms include 1.9M followers on Instagram, 1.6M on TikTok, 267k YouTube subscribers, and 104k followers on X.",
+    "sourceUrl": "https://frontofficesports.com",
+    "observedAt": "2024-12-06",
+    "sourceType": "major_media",
+    "sourceTitle": "Flau'jae Johnson signs with Unrivaled"
+   },
+   {
+    "id": "E7",
+    "claim": "Johnson is signed to Jay-Z's Roc Nation record label, releasing albums 'Best of Both Worlds' (2024) and 'Flau & B' (2025) featuring Lil Wayne and NLE Choppa.",
+    "sourceUrl": "https://olympics.com",
+    "observedAt": "2025-03-19",
+    "sourceType": "official",
+    "sourceTitle": "Flau'jae Johnson - Rapper and Athlete"
+   },
+   {
+    "id": "E8",
+    "claim": "Her music career honors her late father, Savannah rapper Camoflauge, and her backstory includes winning the Golden Buzzer on America's Got Talent as a teen.",
+    "sourceUrl": "https://olympics.com",
+    "observedAt": "2025-03-19",
+    "sourceType": "official",
+    "sourceTitle": "Turning tragedy into inspiration: Flau'jae Johnson's story"
+   },
+   {
+    "id": "E9",
+    "claim": "Johnson's endorsement portfolio includes raising Cane's, Puma, JBL Audio, Tinder, Tampax, Cox Communications, Apple Cash, JanSport, Powerade, and Mondelez.",
+    "sourceUrl": "https://sponsorunited.com",
+    "observedAt": "2024-11-19",
+    "sourceType": "secondary",
+    "sourceTitle": "Top College Basketball Players by Endorsements"
+   },
+   {
+    "id": "E10",
+    "claim": "In early 2026, Johnson launched major national campaigns for Samsung & Google Gemini ('Basketball Couture') and a year-long partnership with e.l.f. Cosmetics.",
+    "sourceUrl": "https://bookingagentinfo.com",
+    "observedAt": "2026-03-24",
+    "sourceType": "secondary",
+    "sourceTitle": "Flau'jae Johnson Brand Partnerships and Campaigns"
+   },
+   {
+    "id": "E11",
+    "claim": "Johnson signed with the new women's 3-on-3 professional league, Unrivaled, which included securing an equity ownership stake in the league.",
+    "sourceUrl": "https://frontofficesports.com",
+    "observedAt": "2024-12-06",
+    "sourceType": "major_media",
+    "sourceTitle": "Flau'jae Johnson joins Unrivaled as equity partner"
+   },
+   {
+    "id": "E12",
+    "claim": "Johnson's NIL value was estimated at $1.5 million by On3, making her the highest-valued player in college women's basketball before she graduated.",
+    "sourceUrl": "https://on3.com",
+    "observedAt": "2025-02-11",
+    "sourceType": "secondary",
+    "sourceTitle": "Top 10 On3 NIL Valuations"
+   },
+   {
+    "id": "E13",
+    "claim": "OpenSponsorship reports Johnson's estimated pricing at $12,000 for a social media post, $30,000 for live appearances, and $90,000 for long-term campaigns.",
+    "sourceUrl": "https://opensponsorship.com",
+    "observedAt": "2026-01-01",
+    "sourceType": "platform",
+    "sourceTitle": "Sponsor Flau'jae Johnson - OpenSponsorship pricing"
+   },
+   {
+    "id": "E14",
+    "claim": "Johnson starred in Prime Video's Emmy-nominated docuseries 'The Money Game: LSU' and ESPN+'s series 'Full Court Press'.",
+    "sourceUrl": "https://allamericanspeakers.com",
+    "observedAt": "2026-04-15",
+    "sourceType": "secondary",
+    "sourceTitle": "The Money Game: LSU and WNBA Profile"
+   },
+   {
+    "id": "E15",
+    "claim": "Johnson was named to the Forbes 30 Under 30 list in 2024 and Billboard's Sports & Music Power Players list, highlighting her crossover cultural footprint.",
+    "sourceUrl": "https://daytonainternationalspeedway.com",
+    "observedAt": "2025-08-20",
+    "sourceType": "official",
+    "sourceTitle": "Flau'jae Johnson Named Honorary Starter for Coke Zero Sugar 400"
+   }
+  ],
+  "findings": [
+   {
+    "key": "athletic_authority",
+    "value": 89.05,
+    "rationale": "Flau'jae Johnson operates at the absolute pinnacle of women's basketball. She transitioned from being a core piece of a national championship-winning LSU team to the 8th overall pick in the 2026 WNBA Draft. Her rookie season with the Seattle Storm has been highly impressive, establishing herself as an elite defensive guard and a key contributor on both ends of the floor.",
+    "components": [
+     {
+      "key": "athletic_authority.role_importance",
+      "value": 85,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2",
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "value": 96,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "value": 88,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2",
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "value": 86,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "value": 82,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4"
+    ],
+    "confidenceReason": "Her performance records, league-level changes, and freshman-to-rookie transitions are thoroughly documented by official WNBA and LSU databases."
+   },
+   {
+    "key": "audience_scale",
+    "value": 82.9,
+    "rationale": "Flau'jae's social audience is exceptionally large, with a combined following of nearly 5 million across Instagram, TikTok, YouTube, and X. She ranks in the highest percentiles of women's basketball players, driven by her dual presence as an elite athlete and an active hip-hop artist. Her platform breadth is particularly strong, as she maintains highly engaged communities across both sports and entertainment channels.",
+    "components": [
+     {
+      "key": "audience_scale.audience_growth",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "value": 94,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E6",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "value": 86,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E5",
+       "E6"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "value": 92,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E12"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E12",
+     "E5",
+     "E6",
+     "E7"
+    ],
+    "confidenceReason": "Her individual platform counts are well corroborated across multiple public influencer and business media reports."
+   },
+   {
+    "key": "engagement_quality",
+    "value": 66.31,
+    "rationale": "While her overall public engagement rate sits at a moderate 1.87% due to her massive follower count, her content achieves exceptionally high view rates that surpass standard creator benchmarks. Her community, known as 'The Flauk,' demonstrates strong brand loyalty and organic interaction, though deeper private metrics like shares, saves, and story retention remain undocumented.",
+    "components": [
+     {
+      "key": "engagement_quality.video_retention",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "value": 78,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "value": 80,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E5",
+       "E8"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "value": 52,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E12"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "MEDIUM",
+    "citedEvidence": [
+     "E12",
+     "E5",
+     "E8"
+    ],
+    "confidenceReason": "While public metrics like views and community names are known, highly granular and private engagement data is absent."
+   },
+   {
+    "key": "cultural_relevance",
+    "value": 92.4,
+    "rationale": "Flau'jae's cultural relevance is category-leading and transcends traditional sports boundaries. As a Roc Nation-signed artist who has performed at the ESPYs and released multiple albums alongside her professional basketball career, she commands an unmatched crossover appeal. This dual identity makes her a household name covered by major lifestyle, music, and sports publications alike.",
+    "components": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "value": 88,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E7",
+       "E8"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "value": 90,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E3",
+       "E14",
+       "E15"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "value": 98,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E7",
+       "E8",
+       "E15"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "value": 92,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E14",
+       "E15"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1",
+     "E14",
+     "E15",
+     "E2",
+     "E3",
+     "E7",
+     "E8"
+    ],
+    "confidenceReason": "Her presence on lists like Forbes 30 Under 30 and Billboard's Power Players firmly validates her immense cultural footprint."
+   },
+   {
+    "key": "narrative_power",
+    "value": 97.55,
+    "rationale": "Flau'jae has one of the most compelling and highly differentiated stories in all of sports. Her narrative as an elite guard balancing a music career signed to Jay-Z's Roc Nation—while honoring her late father's legacy—is completely authentic and highly resonant. This provides a deep, multi-dimensional backdrop that brands can seamlessly integrate into without feeling forced.",
+    "components": [
+     {
+      "key": "narrative_power.durability",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E7",
+       "E8"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "value": 98,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E8"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "value": 100,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E7",
+       "E8"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E14",
+       "E15"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "value": 98,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2",
+       "E3",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "value": 96,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E10"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E10",
+     "E14",
+     "E15",
+     "E2",
+     "E3",
+     "E7",
+     "E8"
+    ],
+    "confidenceReason": "Her personal history is thoroughly documented via major documentaries, talent competitions, and official athletic publications."
+   },
+   {
+    "key": "brand_fit",
+    "value": 93.6,
+    "rationale": "Flau'jae's brand fit is exceptionally strong and versatile, allowing her to represent categories ranging from sports performance to beauty and high-tech consumer electronics. Her public persona is highly aligned with empowerment, authenticity, and dedication, making her an incredibly safe and attractive bet for mainstream global brands looking to reach a diverse Gen Z demographic.",
+    "components": [
+     {
+      "key": "brand_fit.brand_safety",
+      "value": 92,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E3",
+       "E8"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E9",
+       "E10"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "value": 94,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E10",
+       "E14"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "value": 90,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "value": 94,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E8",
+       "E10"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1",
+     "E10",
+     "E14",
+     "E3",
+     "E5",
+     "E8",
+     "E9"
+    ],
+    "confidenceReason": "Her seamless execution of widely diverse commercial genres, from Puma to e.l.f. Cosmetics, confirms her versatile brand fit."
+   },
+   {
+    "key": "commercial_proof",
+    "value": 89.3,
+    "rationale": "Flau'jae is a proven commercial powerhouse, commanding millions in brand deals and an equity stake in the Unrivaled women's basketball league. Her portfolio is stacked with blue-chip global brands such as Samsung, Google, Puma, and Amazon, proving her immense corporate appeal. The repeated campaigns and high pricing tier reflect strong marketplace trust in her marketing power.",
+    "components": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "value": 96,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E10"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E11",
+       "E13"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E9",
+       "E10"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "value": 88,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E9",
+       "E10"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "value": 94,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E12"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E10",
+     "E11",
+     "E12",
+     "E13",
+     "E9"
+    ],
+    "confidenceReason": "Her deal totals, estimated valuations, and exact pricing lists are well-documented across multiple business databases."
+   },
+   {
+    "key": "momentum",
+    "value": 80.5,
+    "rationale": "Flau'jae's current momentum is exceptional as she navigates her first year in the WNBA. Her successful transition from college national prominence to a record-setting rookie campaign with the Seattle Storm has kept her in the sports spotlight. Simultaneously, her commercial and musical footprints continue to accelerate with high-profile releases and major campaign launches throughout 2026.",
+    "components": [
+     {
+      "key": "momentum.audience_growth",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "value": 90,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E14"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "value": 92,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "value": 92,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E10",
+       "E11"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "value": 88,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1",
+     "E10",
+     "E11",
+     "E14",
+     "E2"
+    ],
+    "confidenceReason": "Her ongoing WNBA rookie achievements and newly launched 2026 corporate campaigns provide recent, active proof of forward momentum."
+   }
+  ],
+  "headline": {
+   "key": "mia_score",
+   "value": 750,
+   "confidence": "HIGH"
+  },
+  "composite": 85.56,
+  "confidence": 81.52,
+  "dimensions": [
+   {
+    "score": 89.05,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "athletic_authority.role_importance",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 96,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 88,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 86,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 82,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "athletic_authority",
+    "confidence": 90,
+    "contribution": 13.36
+   },
+   {
+    "score": 82.9,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "audience_scale.audience_growth",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 94,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E6",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 86,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E5",
+       "E6"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 92,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E12"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "audience_scale",
+    "confidence": 81,
+    "contribution": 12.44
+   },
+   {
+    "score": 66.31,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "engagement_quality.video_retention",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 78,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 80,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E5",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 52,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E12"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "engagement_quality",
+    "confidence": 58.5,
+    "contribution": 9.95
+   },
+   {
+    "score": 92.4,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 88,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E7",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 90,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3",
+       "E14",
+       "E15"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E7",
+       "E8",
+       "E15"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 92,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E14",
+       "E15"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "cultural_relevance",
+    "confidence": 90,
+    "contribution": 9.24
+   },
+   {
+    "score": 97.55,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "narrative_power.durability",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E7",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 100,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E7",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E14",
+       "E15"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E3",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 96,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E10"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "narrative_power",
+    "confidence": 90,
+    "contribution": 9.76
+   },
+   {
+    "score": 93.6,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "brand_fit.brand_safety",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 92,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E9",
+       "E10"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 94,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E10",
+       "E14"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 90,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 94,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E8",
+       "E10"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "brand_fit",
+    "confidence": 90,
+    "contribution": 9.36
+   },
+   {
+    "score": 89.3,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 96,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E10"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E11",
+       "E13"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E9",
+       "E10"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 88,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E9",
+       "E10"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 94,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E12"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "commercial_proof",
+    "confidence": 84,
+    "contribution": 13.4
+   },
+   {
+    "score": 80.5,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "momentum.audience_growth",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 90,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E14"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 92,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 92,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E10",
+       "E11"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "asOf": "2026-09-13T22:56:41.975Z",
+      "value": 88,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "momentum",
+    "confidence": 75,
+    "contribution": 8.05
+   }
+  ],
+  "overallConfidence": {
+   "level": "HIGH",
+   "explanation": "The evaluation relies on a wealth of up-to-date and consistent public sources covering both her sports career and her high-profile musical path under Roc Nation. Her identity and commercial metrics are exceptionally well-documented up to September 2026. The only minor missing pieces are private platform insights such as video retention, stories performance, and exact corporate campaign ROIs."
+  },
+  "identityConfidence": "HIGH",
+  "importantMissingData": [
+   "Private social media metrics including story performance, save/share rates, and video retention.",
+   "Granular campaign performance metrics such as conversion rates and direct ROI from her major partnerships.",
+   "Reliable longitudinal follower growth metrics tracking her exact daily or weekly audience trajectory throughout late 2025 and 2026."
+  ]
+ },
+ "evidence_as_of": "2026-09-13T22:56:41.975Z",
+ "evaluation_run_id": "a2e8c9ad-a226-4b23-8944-f2db6f57be6a",
+ "created_at": "2026-09-25T17:51:12.832Z",
+ "career_status": "active",
+ "sport": "basketball",
+ "division": null,
+ "cost_usd": "0.2039",
+ "supersedes": "77246d1d-8e95-4cce-bfff-13810ed97f00"
+}

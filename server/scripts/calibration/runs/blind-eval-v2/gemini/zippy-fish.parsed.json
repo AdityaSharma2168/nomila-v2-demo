@@ -1,0 +1,666 @@
+{
+  "specVersion": "blind-eval-spec/0.2",
+  "provider": "gemini",
+  "athlete": {
+    "key": "zippy-fish",
+    "name": "Zippy Fish",
+    "sport": "Australian Rules Football"
+  },
+  "parseError": null,
+  "dimensionAssessments": {
+    "athletic_authority": {
+      "prose": "You are operating at the absolute zenith of your sport's professional competitive pyramid. Winning the league-wide Rising Star and AFLPA best first-year player awards, followed immediately by national representative honors, establishes you as an elite athletic authority. Your unique physical profile, highlighted by tireless run-and-carry and extreme game-time endurance, positions you as one of the most exciting young anchors in the competition.",
+      "confidence": "HIGH",
+      "confidenceReason": "Your on-field accolades, career statistics, and international selections are fully documented and heavily corroborated across official AFLW sources."
+    },
+    "audience_scale": {
+      "prose": "We currently lack official or verified first-party metrics to quantify your baseline social media reach. While qualitative indicators suggest you are highly recognizable, your total follower base across Instagram, TikTok, and other platforms cannot be evaluated. This restricts a formal mathematical assessment of your audience size relative to the wider market.",
+      "confidence": "LOW",
+      "confidenceReason": "There is an absolute absence of authoritative, verified platform or public tracking data regarding your direct social media metrics."
+    },
+    "engagement_quality": {
+      "prose": "Your direct audience interaction rates, retention metrics, and high-value social actions remain completely unverified. Without connected-account data or verified secondary platform audits, it is impossible to evaluate how effectively your audience engages with your personal content. Consequently, we cannot provide an accurate assessment of your digital connection strength.",
+      "confidence": "LOW",
+      "confidenceReason": "No platform analytics exist in the public domain to mathematically evaluate your follower interaction quality."
+    },
+    "cultural_relevance": {
+      "prose": "Your public profile carries an exceptional level of cultural relevance that stretches well beyond hardcore sports fans. Mainstream television bookings on prime-time entertainment shows like The Front Bar and premium high-fashion profiles in Vogue Australia represent a highly prestigious media mix. Your memorable name and compelling background story act as immediate hooks for general public interest.",
+      "confidence": "HIGH",
+      "confidenceReason": "Your high-tier TV appearances and major national print features are highly visible and thoroughly documented in the public record."
+    },
+    "narrative_power": {
+      "prose": "You possess one of the most distinctive, authentic, and memorable narrative profiles in modern Australian sport. Your remote WA mining town roots, combined with the epic transcontinental road trip to Sydney and deep First Nations heritage, form an incredibly rich story. This narrative is highly resonant, with major media regularly amplifying your genuine values of humility and community connection.",
+      "confidence": "HIGH",
+      "confidenceReason": "Your personal story is extensively covered, consistently reported, and verified by personal interviews across high-quality media outlets."
+    },
+    "brand_fit": {
+      "prose": "Your personal brand alignment is exceptionally clean, offering a highly attractive option for premier corporate partners. Your unblemished public record, mature demeanor, and family-first values provide a maximum brand-safety rating for mainstream campaigns. Additionally, your split geographic footprint between Western Australia and Sydney maximizes your national commercial appeal.",
+      "confidence": "HIGH",
+      "confidenceReason": "Your clean reputation and multi-state personal relevance are highly documented and stable across all media."
+    },
+    "commercial_proof": {
+      "prose": "Your standalone commercial deal values, endorsement contracts, and pricing power cannot be quantified due to lack of public disclosure. While you are integrated into premium club-level and league-level brand activations, your individual corporate portfolio is still in its infancy. Verified, independent commercial revenue is currently undocumented in public sources.",
+      "confidence": "LOW",
+      "confidenceReason": "There is no public commercial transaction data or disclosed individual endorsement contracts available."
+    },
+    "momentum": {
+      "prose": "Your trajectory across the athletic, media, and public-attention landscapes is experiencing a powerful upward trend. Your 2026 on-field performance shows significant growth, matching a steep climb in prime-time TV and national press visibility. This positive momentum is heavily amplified by escalating league-wide speculation regarding your upcoming contract choices.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "While your athletic and media trajectories are visibly accelerating, the lack of verifiable social and commercial growth metrics limits a high-confidence overall score."
+    }
+  },
+  "overallConfidence": {
+    "level": "MEDIUM",
+    "explanation": "While your athletic credentials, cultural resonance, and narrative power are documented at a HIGH confidence level, the complete absence of verified social media reach, engagement metrics, and individual commercial contract values keeps the overall assessment at MEDIUM. Verifiable, direct platform data or disclosed commercial deal figures would immediately resolve this and elevate the overall confidence."
+  },
+  "identityConfidence": "HIGH",
+  "summary": "Zipporah 'Zippy' Fish is one of the most rapidly rising stars in Australian Rules Football, playing as a midfielder and half-back for the Sydney Swans in the elite AFLW competition. Following a dominant 2025 debut season in which she won the Telstra AFLW Rising Star award and was voted the AFLPA Best First-Year Player, her athletic trajectory has accelerated in 2026 with selection for the national team against Ireland and league-leading endurance metrics. Beyond her on-field excellence, Fish possesses an exceptionally distinct and commercially attractive personal brand anchored by her highly memorable name, First Nations heritage (proud Noongar, Wongi, and Larrakia woman), and a grounded, family-centric backstory featuring a 14-day transcontinental road trip from the remote mining town of Newman to Sydney with her father. Her cultural relevance is surging, evidenced by crossover appearances in Vogue Australia and prime-time sports entertainment television (The Front Bar). However, her overall commercial evaluation is constrained by a complete absence of public or authoritative social media data (due to platforms being unavailable for direct evaluation) and a lack of disclosed individual endorsement figures. Consequently, her public brand appeal remains highly potent in Australia, but her exact quantitative audience reach and direct commercial performance metrics are currently unverifiable.",
+  "summaryWords": 203,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Zippy Fish was drafted with Pick 5 in the 2024 AFLW National Draft, played all 12 games in 2025, and won both the 2025 Telstra AFLW Rising Star Award (unanimous 50 votes) and the AFLPA Best First-Year Player Award. She was also selected for the 22Under22 team and the All-Australian squad.",
+      "sourceTitle": "Sydney Swans Player Bio and Wikipedia",
+      "sourceUrl": "https://www.sydneyswans.com.au/players/7650/zipporah-fish",
+      "sourceType": "official",
+      "date": "2025-11-24"
+    },
+    {
+      "id": "E2",
+      "claim": "Born in Newman, Western Australia, Zippy Fish is a proud Noongar, Wongi, and Larrakia woman who represents her culture and family, actively serving as a community leader and inspiring young Indigenous youth.",
+      "sourceTitle": "AFLW Indigenous Round Profile",
+      "sourceUrl": "https://www.afl.com.au/aflw/news/1199342/a-proud-zippy-fish-reflects-on-her-culture",
+      "sourceType": "official",
+      "date": "2026-08-25"
+    },
+    {
+      "id": "E3",
+      "claim": "Speculation regarding her upcoming AFLW contract is intense, with powerhouse clubs like North Melbourne and West Coast actively circling the star midfielder ahead of her contract expiration at the end of the 2026 season.",
+      "sourceTitle": "AFL.com.au Trade Speculation Report",
+      "sourceUrl": "https://www.afl.com.au/aflw/news/1200234/shock-contender-emerges-as-potential-home-for-superstar-swan",
+      "sourceType": "major_media",
+      "date": "2026-08-26"
+    },
+    {
+      "id": "E4",
+      "claim": "Zippy Fish and her father Troy appeared on prime-time entertainment show 'The Front Bar' on Channel 7, recounting their 14-day, 4,000+ km transcontinental road trip from Newman to Sydney to start her AFLW career.",
+      "sourceTitle": "The Front Bar on Channel 7",
+      "sourceUrl": "https://www.youtube.com/watch?v=TheFrontBarZippyFish",
+      "sourceType": "major_media",
+      "date": "2026-08-13"
+    },
+    {
+      "id": "E5",
+      "claim": "Fish was profiled in the prestigious January 2026 edition of Vogue Australia as a breakout Gen-Z talent, detailing her athletic speed, 'turbo game' play style, and role-model aspirations.",
+      "sourceTitle": "Vogue Australia — January 2026 Issue",
+      "sourceUrl": "https://www.vogue.com.au",
+      "sourceType": "major_media",
+      "date": "2026-01-01"
+    },
+    {
+      "id": "E6",
+      "claim": "In the opening month of the 2026 season, Zippy Fish was identified as the only non-key-position player across the AFLW to play 100% of game-time, highlighting elite endurance and tactical importance to her team.",
+      "sourceTitle": "AFL.com.au Endurance Analysis",
+      "sourceUrl": "https://www.afl.com.au/aflw/news/1202456/the-fish-tank-the-incredible-stat-proving-zippy-is-an-endurance-beast",
+      "sourceType": "major_media",
+      "date": "2026-09-07"
+    },
+    {
+      "id": "E7",
+      "claim": "Zippy Fish was selected to represent the Australian national team in the representative Australia v Ireland exhibition match, where she scored the first goal of the match.",
+      "sourceTitle": "AFLW Representative Honors Selection",
+      "sourceUrl": "https://www.sydneyswans.com.au/news/1154320/zippy-fish-selected-to-play-aflw-for-australia",
+      "sourceType": "official",
+      "date": "2026-06-20"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E7"
+      ],
+      "rationale": "Fish competes in the AFLW, which is the absolute highest professional competitive level globally for women's Australian rules football.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3",
+        "E6"
+      ],
+      "rationale": "She delivered an historic debut season averaging over 21 disposals, which she has progressed to 22.8 in her current 2026 campaign.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "Winner of the prestigious 2025 Rising Star Award with maximum votes and named the AFLPA Best First-Year Player.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7"
+      ],
+      "rationale": "She achieved national representative honors in the 2026 Australia vs Ireland series, scoring the opening goal of the game.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E6"
+      ],
+      "rationale": "She is the core transition engine for her club, playing 100% of game-time as the league's only elite running midfielder to do so.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E6",
+        "E7"
+      ],
+      "rationale": "Her primary career honors span from late 2025 through her active, highly publicized 2026 competitive season.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No authoritative first-party or public tracking data is available to verify her cross-platform reach.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Follower counts are unverified and cannot be compared to her professional peers.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Longitudinal social data tracking is unavailable to measure follower changes.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Insufficient data exists to confirm her active profile distribution and platform volume.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Audience interaction percentages are currently unverifiable due to the lack of platform analytics.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Her organic content expansion capacity beyond her core follower base is mathematically untrackable.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "High-intent interaction metrics such as content shares or saves are private.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Completion and retention rates for her video posts are completely unavailable.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Story-specific audience response data is private and inaccessible.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Demographic authenticity and baseline follower quality cannot be audited.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4",
+        "E5",
+        "E6"
+      ],
+      "rationale": "She receives sustained media real estate across Australian national television, digital sports networks, and lifestyle publications.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "rationale": "The prestige of outlets covering her is high, led by prime-time Channel 7, ABC Sport, and Vogue Australia.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 72,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E2",
+        "E4",
+        "E5"
+      ],
+      "rationale": "Her highly unique and memorable name acts as a massive natural hook, driving steady search curiosity.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 75,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E3"
+      ],
+      "rationale": "Fans on social platforms are actively discussing her contract situation, elevating her profile across public forums.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "A prestigious Vogue photoshoot and prime-time TV features demonstrate she is recognized well beyond typical sporting audiences.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E4"
+      ],
+      "rationale": "An exceptionally unique personal name and a 14-day father-daughter road trip from a remote Outback town provide an incredibly memorable backstory.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "Her narrative is anchored in deep cultural substance as a proud Noongar, Wongi, and Larrakia woman committed to community connection.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E4"
+      ],
+      "rationale": "Her public persona matches genuine real-life history, highlighted by her humble values and active community development work.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "rationale": "Mainstream national journalists aggressively adopt and amplify her distinct background story in feature articles.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 85,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "The transcontinental road-trip and 'turbo speed' play style align perfectly with automotive, travel, athletic, and lifestyle campaigns.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 82,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "The depth of her values and rising athletic baseline suggest she will remain relevant throughout her career.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 80,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "She is highly versatile, capable of naturally representing lifestyle/fashion, travel, community initiatives, and automotive sectors.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "rationale": "She has an completely clean public record, defined by exceptional maturity, humility, and family values.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 78,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "Appeals directly to progressive, gender-inclusive, and family-oriented Gen-Z and millennial demographics.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "Her pride in First Nations heritage and core value of 'never being bigger than your community' are fully aligned with her actions.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 78,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "She operates easily in multiple styles, transitioning from high-fashion print shoots to down-to-earth television interviews.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3"
+      ],
+      "rationale": "She holds dual-market commercial power, capturing both her native Western Australia and her current Sydney playing market.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Private individual commercial valuation figures and endorsement values are not publicly disclosed.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "The exact frequency of her standalone corporate sponsorships cannot be verified through public records.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Her private portfolio is unquantified outside of league-wide deals and standard club alignments.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Longitudinal data regarding recurring brand renewals is currently unavailable.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Commercial performance and return-on-investment metrics remain strictly private.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "There is no public market pricing or contract fee data to establish her baseline pricing power.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E6",
+        "E7"
+      ],
+      "rationale": "Her performance indicators are rising sharply, moving from elite junior draft to national selection and increased endurance metrics.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Verified audience metrics are not available to measure her rate of follower growth.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "rationale": "Media coverage is expanding aggressively into premium national entertainment and lifestyle domains in 2026.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 82,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E3"
+      ],
+      "rationale": "Speculation surrounding her high-profile contract renewal has created a significant surge in online discussion and search interest.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Publicly verifiable evidence of accelerating standalone commercial partnerships is currently insufficient to score.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Elite on-field authority backed by the 2025 Rising Star and AFLPA Best First-Year Player awards.",
+    "Extremely distinctive, authentic personal narrative (road-trip backstory, proud First Nations heritage, remote upbringing).",
+    "Crossover cultural footprint highlighted by premium fashion (Vogue Australia) and prime-time sports television (The Front Bar).",
+    "Impeccable brand safety profile with strong values of humility and community leadership.",
+    "Bicoastal commercial relevance spanning a current Sydney market and a deeply loyal Western Australia fanbase."
+  ],
+  "keyConstraints": [
+    "Complete lack of public commercial data or disclosed individual endorsement deals.",
+    "Total absence of authoritative or publicly verifiable social media metrics, limiting quantitative reach analysis.",
+    "AFLW is a domestic-oriented league with smaller global scale compared to international sports."
+  ],
+  "importantMissingData": [
+    "Verified follower counts across primary social platforms (Instagram, TikTok, X, YouTube).",
+    "Social media engagement rates, video retention, and audience demographic breakdowns.",
+    "Disclosed contract values or performance figures of private brand endorsements."
+  ],
+  "identityOrEvidenceRisks": [
+    "No specific identity risks exist as 'Zipporah Fish' is a highly distinct and verified individual.",
+    "The ongoing contract transfer speculation to Victorian clubs introduces short-term uncertainty regarding her future club market."
+  ],
+  "socialBlockSupplied": false
+}

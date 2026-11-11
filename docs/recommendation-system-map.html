@@ -1,0 +1,452 @@
+<title>Nomila Recommendation System Map</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#f6f5f1; --panel:#ffffff; --ink:#161b23; --ink-2:#4b525c; --mute:#767d88; --rule:#dad7cf; --rule-soft:#e9e7e1;
+  --code-bg:#eeede8; --risk:#c2412d; --risk-bg:#fbeae6; --ok:#2a7a4b; --ok-bg:#e6f3ea; --warn:#9a6a00; --warn-bg:#fbf1d9;
+  --accent:#1d4f8f; --inflight:#6b3fa0; --inflight-bg:#efe7f8;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#11151b; --panel:#181d25; --ink:#e7e5de; --ink-2:#b7bcc4; --mute:#8b929c; --rule:#2d343e; --rule-soft:#232a33;
+    --code-bg:#212832; --risk:#ef7a66; --risk-bg:#3a201b; --ok:#6cc48f; --ok-bg:#1c3326; --warn:#e2b64c; --warn-bg:#3a3117;
+    --accent:#7fb2f0; --inflight:#c9a6f0; --inflight-bg:#2c2140;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#11151b; --panel:#181d25; --ink:#e7e5de; --ink-2:#b7bcc4; --mute:#8b929c; --rule:#2d343e; --rule-soft:#232a33;
+  --code-bg:#212832; --risk:#ef7a66; --risk-bg:#3a201b; --ok:#6cc48f; --ok-bg:#1c3326; --warn:#e2b64c; --warn-bg:#3a3117;
+  --accent:#7fb2f0; --inflight:#c9a6f0; --inflight-bg:#2c2140;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1160px;margin:0 auto;padding:40px 24px 96px}
+.measure{max-width:74ch}
+h1,h2,h3{font-family:"Archivo","IBM Plex Sans",sans-serif;text-wrap:balance;margin:0}
+h1{font-size:40px;font-weight:800;letter-spacing:-.02em;line-height:1.05}
+h2{font-size:24px;font-weight:700;letter-spacing:-.01em;margin-top:64px;padding-top:20px;border-top:2px solid var(--ink)}
+h3{font-size:17px;font-weight:700;margin-top:28px}
+p{margin:12px 0}
+.eyebrow{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.lede{font-size:19px;color:var(--ink-2);max-width:70ch}
+.meta{display:flex;flex-wrap:wrap;gap:8px 24px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--mute);margin-top:16px}
+code,.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.9em}
+code{background:var(--code-bg);padding:1px 5px;border-radius:3px}
+pre{background:var(--code-bg);padding:14px 16px;border-radius:6px;overflow-x:auto;font-size:13px;line-height:1.5}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-numeric:tabular-nums}
+.tbl{overflow-x:auto;margin:16px 0;border:1px solid var(--rule);border-radius:6px;background:var(--panel)}
+th,td{text-align:left;padding:8px 11px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+th{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:500;background:var(--panel);white-space:nowrap}
+tr:last-child td{border-bottom:none}
+td.n{text-align:right;font-family:"IBM Plex Mono",monospace;white-space:nowrap}
+td.f{font-family:"IBM Plex Mono",monospace;font-size:12px;white-space:nowrap}
+ul,ol{padding-left:22px;margin:10px 0}
+li{margin:5px 0}
+.verdict{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:32px 0 8px}
+.v{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:16px 18px}
+.v .k{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.v .t{font-family:"Archivo",sans-serif;font-weight:700;font-size:18px;margin:6px 0 6px;line-height:1.25}
+.v p{margin:0;font-size:14px;color:var(--ink-2)}
+.pill{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid var(--rule);color:var(--ink-2);white-space:nowrap}
+.pill.risk{background:var(--risk-bg);color:var(--risk);border-color:transparent}
+.pill.ok{background:var(--ok-bg);color:var(--ok);border-color:transparent}
+.pill.warn{background:var(--warn-bg);color:var(--warn);border-color:transparent}
+.pill.fl{background:var(--inflight-bg);color:var(--inflight);border-color:transparent}
+figure{margin:24px 0;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:16px;overflow-x:auto}
+figure svg{max-width:100%;height:auto;display:block;color:var(--ink);min-width:900px}
+figcaption{font-size:13.5px;color:var(--ink-2);margin-top:10px;max-width:84ch}
+.callout{border-left:3px solid var(--accent);padding:10px 16px;background:var(--panel);margin:18px 0;border-radius:0 6px 6px 0}
+.callout p{margin:6px 0}
+.flow{display:grid;grid-template-columns:36px 1fr;gap:10px;align-items:start;margin:10px 0}
+.flow .num{font-family:"Archivo",sans-serif;font-weight:800;font-size:18px;color:var(--accent);line-height:1.3}
+.flow p{margin:2px 0}
+small{color:var(--mute)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+  <div class="eyebrow">nomila-v2 · current-state audit · 10 Sep 2026</div>
+  <h1 style="margin-top:10px">Nomila Recommendation System Map</h1>
+  <p class="lede">Everything that recommends, plans, ranks, drafts or advises today: the code, the tables and fields, the prompts, the workflows and the agents, traced from the athlete's goals through every reader. Current state only. No redesign.</p>
+  <div class="meta">
+    <span>read at local main 49b236d</span><span>origin/main 246a98c is 15 commits ahead (Studio + infra only; nothing in this map changed)</span><span>prod flags: MILA_AGENT_V2 · MILA_VOICE_WEB · MILA_VOICE_WEB_SEARCH · PROMPT_REGISTRY · LANGFUSE_TRACING all true</span>
+  </div>
+
+  <div class="verdict">
+    <div class="v"><div class="k">What actually recommends</div><div class="t">One engine: the inbox deal engine</div><p>Classify → score → summarize → rank → voice → draft, ending in a pending action the athlete taps. Every other "recommendation" is either a pitch narrative on a deck, a Mila answer grounded in read tools, or a client heuristic with no data behind it.</p></div>
+    <div class="v"><div class="k">Where goals go</div><div class="t">Collected in four places, read by one prompt line</div><p>Goal slugs are captured at the landing page, confirmed by Mila, proposable from chat and editable on Facts. Downstream, exactly one consumer uses them to decide anything: a "Goals:" line in the deal-scoring prompt.</p></div>
+    <div class="v"><div class="k">Weekly plans and schedules</div><div class="t">Not built. The spine is an open PR</div><p>PR #309 adds a pure occasion finder that reads posted media and live deals. Studio's posting-time and content suggestions are client functions waiting on a fixtures table that does not exist, so they return empty today.</p></div>
+  </div>
+
+  <h2 id="diagram">1 · The system in one picture</h2>
+  <figure>
+    <svg viewBox="0 0 1120 760" role="img" aria-label="Four columns: athlete data inputs on the left; the agents and rule engines that read them; the tables their outputs are written to; and the app surfaces that render those tables. Feedback edges at the bottom show the few outcome signals that flow back into inputs.">
+      <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+      <g font-family="IBM Plex Sans, sans-serif" font-size="11.5" fill="currentColor">
+        <!-- column headers -->
+        <text x="20" y="24" font-family="IBM Plex Mono, monospace" font-size="11" opacity=".6">INPUTS (tables read)</text>
+        <text x="270" y="24" font-family="IBM Plex Mono, monospace" font-size="11" opacity=".6">AGENTS + RULE ENGINES</text>
+        <text x="560" y="24" font-family="IBM Plex Mono, monospace" font-size="11" opacity=".6">PERSISTED OUTPUTS</text>
+        <text x="840" y="24" font-family="IBM Plex Mono, monospace" font-size="11" opacity=".6">SURFACES</text>
+
+        <!-- inputs -->
+        <g>
+          <rect x="20" y="40" width="210" height="46" rx="4" fill="none" stroke="currentColor"/><text x="30" y="58" font-weight="600">athletes</text><text x="30" y="74" font-size="10.5" opacity=".75">goal_archetype · secondary_goals · brand_voice · deal_preferences.minimum_rates</text>
+          <rect x="20" y="94" width="210" height="34" rx="4" fill="none" stroke="currentColor"/><text x="30" y="112" font-weight="600">athlete_asserted</text><text x="120" y="112" font-size="10.5" opacity=".75">ledger of what she said</text>
+          <rect x="20" y="136" width="210" height="34" rx="4" fill="none" stroke="currentColor"/><text x="30" y="154" font-weight="600">athletes_current</text><text x="140" y="154" font-size="10.5" opacity=".75">score · capitals · rate_card</text>
+          <rect x="20" y="178" width="210" height="34" rx="4" fill="none" stroke="currentColor"/><text x="30" y="196" font-weight="600">athlete_snapshots</text><text x="150" y="196" font-size="10.5" opacity=".75">research · first_look</text>
+          <rect x="20" y="220" width="210" height="34" rx="4" fill="none" stroke="currentColor"/><text x="30" y="238" font-weight="600">social_analytics_snapshots</text>
+          <rect x="20" y="262" width="210" height="34" rx="4" fill="none" stroke="currentColor"/><text x="30" y="280" font-weight="600">inbox_messages</text><text x="140" y="280" font-size="10.5" opacity=".75">Gmail · Outlook · IG DMs</text>
+          <rect x="20" y="304" width="210" height="34" rx="4" fill="none" stroke="currentColor"/><text x="30" y="322" font-weight="600">inbox_brands</text><text x="120" y="322" font-size="10.5" opacity=".75">176 brand profiles (139 enriched)</text>
+          <rect x="20" y="346" width="210" height="34" rx="4" fill="none" stroke="currentColor"/><text x="30" y="364" font-weight="600">media_assets</text><text x="120" y="364" font-size="10.5" opacity=".75">posts · uploads · generated</text>
+          <rect x="20" y="388" width="210" height="34" rx="4" fill="none" stroke="currentColor"/><text x="30" y="406" font-weight="600">deals · inbox_threads</text><text x="170" y="406" font-size="10.5" opacity=".75">(also outputs)</text>
+        </g>
+
+        <!-- agents -->
+        <g>
+          <rect x="270" y="40" width="250" height="34" rx="4" fill="none" stroke="currentColor"/><text x="280" y="54" font-weight="600">Pre-filters · senderMemory</text><text x="280" y="68" font-size="10.5" opacity=".75">code rules, no model</text>
+          <rect x="270" y="82" width="250" height="34" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="280" y="96" font-weight="600">Classifier</text><text x="350" y="96" font-size="10.5" opacity=".75">Gemini Flash · CLASSIFY_SYSTEM (locked)</text><text x="280" y="110" font-size="10.5" opacity=".75">category · confidence · advertiser · deliverables · deadline</text>
+          <rect x="270" y="124" width="250" height="34" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="280" y="138" font-weight="600">Scorer</text><text x="330" y="138" font-size="10.5" opacity=".75">Kimi SCORE_SYSTEM (locked) + dealScoreGrid</text><text x="280" y="152" font-size="10.5" opacity=".75">1–10 · verdict · recommendation · terms · flags</text>
+          <rect x="270" y="166" width="250" height="34" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="280" y="180" font-weight="600">Summarizer</text><text x="360" y="180" font-size="10.5" opacity=".75">Kimi · re-run on every message</text><text x="280" y="194" font-size="10.5" opacity=".75">offer_struct · deal_stage → deals.status · awaiting</text>
+          <rect x="270" y="208" width="250" height="34" rx="4" fill="none" stroke="currentColor"/><text x="280" y="222" font-weight="600">Auto-actions</text><text x="365" y="222" font-size="10.5" opacity=".75">code thresholds</text><text x="280" y="236" font-size="10.5" opacity=".75">demote · auto-file · junk receipt · 45-day archive · mute</text>
+          <rect x="270" y="250" width="250" height="34" rx="4" fill="none" stroke="currentColor"/><text x="280" y="264" font-weight="600">Rank + voice</text><text x="365" y="264" font-size="10.5" opacity=".75">dealRanking · composeDealVoice</text><text x="280" y="278" font-size="10.5" opacity=".75">pure code, templates, no model</text>
+          <rect x="270" y="292" width="250" height="34" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="280" y="306" font-weight="600">Draft core · ask-for-terms</text><text x="280" y="320" font-size="10.5" opacity=".75">dealDraft (model) · askTerms (template)</text>
+          <rect x="270" y="334" width="250" height="34" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="280" y="348" font-weight="600">Mila chat loop</text><text x="375" y="348" font-size="10.5" opacity=".75">Gemini · 12 read tools + 2 onboarding</text><text x="280" y="362" font-size="10.5" opacity=".75">persona prompt, no athlete data in prompt</text>
+          <rect x="270" y="376" width="250" height="34" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="280" y="390" font-weight="600">Mila voice worker</text><text x="390" y="390" font-size="10.5" opacity=".75">Gemini Live / Grok · 9 tools</text><text x="280" y="404" font-size="10.5" opacity=".75">separate repo; reads via /api/internal/voice</text>
+          <rect x="270" y="418" width="250" height="34" rx="4" fill="none" stroke="currentColor"/><text x="280" y="432" font-weight="600">Onboarding run · first look</text><text x="280" y="446" font-size="10.5" opacity=".75">workflow runner · research · greet · doors</text>
+          <rect x="270" y="460" width="250" height="34" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="280" y="474" font-weight="600">Deck Strategist · Narrator · Curator</text><text x="280" y="488" font-size="10.5" opacity=".75">rules + Gemini Pro shot list · 3-model copy · embeddings</text>
+          <rect x="270" y="502" width="250" height="34" rx="4" fill="none" stroke="currentColor"/><text x="280" y="516" font-weight="600">Studio brief + gate</text><text x="400" y="516" font-size="10.5" opacity=".75">assembleBrief (rules) → preview</text><text x="280" y="530" font-size="10.5" opacity=".75">objective chosen by the athlete, never inferred</text>
+          <rect x="270" y="544" width="250" height="34" rx="4" fill="none" stroke="var(--inflight)" stroke-dasharray="4 3"/><text x="280" y="558" font-weight="600" fill="var(--inflight)">deriveOccasions</text><text x="380" y="558" font-size="10.5" opacity=".75">PR #309, unmerged</text><text x="280" y="572" font-size="10.5" opacity=".75">cadence_gap · format_gap · deal_deliverable</text>
+        </g>
+
+        <!-- persisted -->
+        <g>
+          <rect x="560" y="82" width="250" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="570" y="98" font-weight="600">inbox_threads</text><text x="570" y="113" font-size="10.5" opacity=".75">classification · score (prose + enums) ·</text><text x="570" y="127" font-size="10.5" opacity=".75">conversation_state · latest_draft · status</text>
+          <rect x="560" y="150" width="250" height="34" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="570" y="166" font-weight="600">deals</text><text x="620" y="166" font-size="10.5" opacity=".75">status · amount split · deal_group_id · negotiation_state</text>
+          <rect x="560" y="192" width="250" height="34" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="570" y="208" font-weight="600">agent_actions</text><text x="670" y="208" font-size="10.5" opacity=".75">3,377 receipts · 0 undone</text>
+          <rect x="560" y="234" width="250" height="34" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="570" y="250" font-weight="600">pending_actions</text><text x="680" y="250" font-size="10.5" opacity=".75">send_reply · 53 pending</text>
+          <rect x="560" y="276" width="250" height="34" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="570" y="292" font-weight="600">chat_messages · conversations · voice_context</text>
+          <rect x="560" y="318" width="250" height="34" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="570" y="334" font-weight="600">athlete_asserted · agent_actions(profile_write)</text>
+          <rect x="560" y="360" width="250" height="46" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="570" y="376" font-weight="600">media_kits.data</text><text x="680" y="376" font-size="10.5" opacity=".75">deck plan · copy · whyFits ·</text><text x="570" y="391" font-size="10.5" opacity=".75">campaignConcept · activationPlan · card_shares/views</text>
+          <rect x="560" y="414" width="250" height="34" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="570" y="430" font-weight="600">brand_fit_narratives</text><text x="710" y="430" font-size="10.5" opacity=".75">19 rows (voice path only)</text>
+          <rect x="560" y="456" width="250" height="34" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="570" y="472" font-weight="600">generation_jobs · media_assets(generated)</text>
+          <rect x="560" y="544" width="250" height="34" rx="4" fill="none" stroke="var(--inflight)" stroke-dasharray="4 3"/><text x="570" y="558" fill="var(--inflight)" font-weight="600">nothing yet</text><text x="650" y="558" font-size="10.5" opacity=".75">trend_observations proposed (0034)</text><text x="570" y="572" font-size="10.5" opacity=".75">occasions returned, not stored</text>
+        </g>
+
+        <!-- surfaces -->
+        <g>
+          <rect x="850" y="82" width="250" height="60" rx="4" fill="none" stroke="currentColor"/><text x="860" y="98" font-weight="600">Opportunities</text><text x="860" y="113" font-size="10.5" opacity=".75">Brief (≤3 ranked asks) · Explore All ·</text><text x="860" y="127" font-size="10.5" opacity=".75">Your Week · Filtered · Ask-for-terms batch</text>
+          <rect x="850" y="150" width="250" height="34" rx="4" fill="none" stroke="currentColor"/><text x="860" y="166" font-weight="600">Deal detail</text><text x="940" y="166" font-size="10.5" opacity=".75">decision sheet · composer · thread</text>
+          <rect x="850" y="234" width="250" height="34" rx="4" fill="none" stroke="currentColor"/><text x="860" y="250" font-weight="600">Mila chat</text><text x="930" y="250" font-size="10.5" opacity=".75">cards · nav chips · draft card · suggestions</text>
+          <rect x="850" y="276" width="250" height="34" rx="4" fill="none" stroke="currentColor"/><text x="860" y="292" font-weight="600">Mila voice</text><text x="935" y="292" font-size="10.5" opacity=".75">score card · seed line · widgets</text>
+          <rect x="850" y="318" width="250" height="34" rx="4" fill="none" stroke="currentColor"/><text x="860" y="334" font-weight="600">Brand tab</text><text x="930" y="334" font-size="10.5" opacity=".75">Card · Story · Facts · Growth · Deck · Rates</text>
+          <rect x="850" y="360" width="250" height="46" rx="4" fill="none" stroke="currentColor"/><text x="860" y="376" font-weight="600">Nomi Card · Pitches</text><text x="860" y="391" font-size="10.5" opacity=".75">brand decks · signals · pitch insights · brands list ranked by deal warmth</text>
+          <rect x="850" y="456" width="250" height="46" rx="4" fill="none" stroke="currentColor"/><text x="860" y="472" font-weight="600">Studio</text><text x="915" y="472" font-size="10.5" opacity=".75">Now feed (owed + fixture suggestions) ·</text><text x="860" y="487" font-size="10.5" opacity=".75">Make it · Made shelf · brand/personal post</text>
+        </g>
+
+        <!-- main flow arrows -->
+        <line x1="230" y1="279" x2="270" y2="57" stroke="currentColor" opacity=".5" marker-end="url(#a)"/>
+        <line x1="230" y1="153" x2="270" y2="141" stroke="currentColor" opacity=".5" marker-end="url(#a)"/>
+        <line x1="230" y1="63" x2="270" y2="141" stroke="currentColor" opacity=".5" marker-end="url(#a)"/>
+        <line x1="230" y1="405" x2="270" y2="267" stroke="currentColor" opacity=".5" marker-end="url(#a)"/>
+        <line x1="230" y1="195" x2="270" y2="477" stroke="currentColor" opacity=".5" marker-end="url(#a)"/>
+        <line x1="230" y1="321" x2="270" y2="477" stroke="currentColor" opacity=".5" marker-end="url(#a)"/>
+        <line x1="230" y1="363" x2="270" y2="561" stroke="currentColor" opacity=".5" marker-end="url(#a)"/>
+        <line x1="230" y1="237" x2="270" y2="351" stroke="currentColor" opacity=".5" marker-end="url(#a)"/>
+        <text x="236" y="470" font-size="10" opacity=".6" transform="rotate(-90 236 470)">every input → tools</text>
+
+        <line x1="520" y1="99" x2="560" y2="99" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="520" y1="141" x2="560" y2="112" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="520" y1="183" x2="560" y2="167" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="520" y1="225" x2="560" y2="209" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="520" y1="309" x2="560" y2="251" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="520" y1="351" x2="560" y2="293" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="520" y1="435" x2="560" y2="335" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="520" y1="477" x2="560" y2="383" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="520" y1="393" x2="560" y2="431" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="520" y1="519" x2="560" y2="473" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="520" y1="561" x2="560" y2="561" stroke="var(--inflight)" stroke-dasharray="4 3" marker-end="url(#a)"/>
+
+        <line x1="810" y1="112" x2="850" y2="112" stroke="currentColor" marker-end="url(#a)"/><text x="815" y="106" font-size="9.5" opacity=".6">GET /deals/brief</text>
+        <line x1="810" y1="167" x2="850" y2="167" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="810" y1="209" x2="850" y2="130" stroke="currentColor" opacity=".6" marker-end="url(#a)"/>
+        <line x1="810" y1="293" x2="850" y2="251" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="810" y1="293" x2="850" y2="293" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="810" y1="335" x2="850" y2="335" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="810" y1="383" x2="850" y2="383" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="810" y1="473" x2="850" y2="479" stroke="currentColor" marker-end="url(#a)"/>
+        <line x1="520" y1="260" x2="850" y2="99" stroke="currentColor" opacity=".35" marker-end="url(#a)"/>
+
+        <!-- feedback edges -->
+        <text x="20" y="618" font-family="IBM Plex Mono, monospace" font-size="11" opacity=".6">FEEDBACK THAT FLOWS BACK (solid) · LOGGED BUT UNREAD (dashed)</text>
+        <path d="M975 142 V640 H115 V422" fill="none" stroke="currentColor" opacity=".7" marker-end="url(#a)"/><text x="130" y="636" font-size="10.5" opacity=".8">deal disposed twice by the athlete → senderMemory mutes the sender (2) / domain (3)</text>
+        <path d="M685 184 V664 H125 V422" fill="none" stroke="currentColor" opacity=".7" marker-end="url(#a)"/><text x="130" y="660" font-size="10.5" opacity=".8">deals.status accepted/completed (summarizer's own read) → Commercial capital + cold-start profile of the score</text>
+        <path d="M125 86 V688 H395 V578" fill="none" stroke="currentColor" opacity=".7" marker-end="url(#a)"/><text x="130" y="684" font-size="10.5" opacity=".8">minimum_rates floors → scoreDeal, drafts, economics bands · athlete_asserted → onboarding block, Narrator citations</text>
+        <path d="M685 226 V712 H395 V236" fill="none" stroke="currentColor" opacity=".7" stroke-dasharray="4 3" marker-end="url(#a)"/><text x="130" y="708" font-size="10.5" opacity=".8">agent_actions undo / "wrong" → flips thread status only; pending approve / dismiss → send only. No learner reads either. (Phase-2 doc defers this.)</text>
+        <path d="M685 406 V736 H975 V406" fill="none" stroke="currentColor" opacity=".7" marker-end="url(#a)"/><text x="130" y="732" font-size="10.5" opacity=".8">card_share_views → pitch status (sent/opened), Signals screen, voice get_share_signals · studio approve/reject → asset gate only</text>
+      </g>
+    </svg>
+    <figcaption>Left to right: the tables agents read, the agents and rule engines, what they persist, and the surfaces that render it. The deal engine (Classifier → Scorer → Summarizer → auto-actions → rank + voice → draft) is the one path that produces a recommendation, ranks it and proposes an action. Mila reads the same tables through tools and never writes a recommendation anywhere. The dashed spine at the bottom of the agent column is PR #309, not on main.</figcaption>
+  </figure>
+
+  <h2 id="goals">2 · Goals, from capture to every consumer</h2>
+  <div class="measure"><p>The vocabulary is one file, <code>shared/goals.ts</code>: five active-athlete slugs, four retired-athlete slugs, and four career statuses. The column is <code>athletes.goal_archetype</code> (text), plus <code>athletes.secondary_goals</code> (jsonb string array) and <code>athletes.brand_voice</code> (jsonb {tone, phrases, avoid}). There is no goals table and no history beyond the assertion ledger.</p></div>
+  <h3>Where a goal is written</h3>
+  <div class="tbl"><table>
+    <tr><th>Door</th><th>Code</th><th>What it writes</th><th>Validation</th></tr>
+    <tr><td>Landing page steps 3 to 5</td><td class="f">server/routes/waitlist.ts POST /api/v1/waitlist</td><td>goal_archetype, secondary_goals, career_status, coalesced per step</td><td>Slug or exact label only; unknown → 400</td></tr>
+    <tr><td>Mila first entry (greet step)</td><td class="f">server/mila/onboarding.ts recordAssertions · workflow step "greet"</td><td>athlete_asserted row + projects onto the column; receipted as agent_actions profile_write with Undo</td><td>AssertedColumn set: sport, school, goal_archetype, secondary_goals, brand_voice, career_status</td></tr>
+    <tr><td>Any Mila chat turn (v2 loop)</td><td class="f">server/mila/profileExtraction.ts → sse.profileUpdates → client MilaProfileConfirm → PATCH /me/profile/goal | secondary-goals | brand-voice</td><td>Proposes candidates; persists only on the athlete's Confirm tap</td><td>PROFILE_LIMITS caps (80 chars, list size); "achievement" candidate has no storage and is shown as not saved</td></tr>
+    <tr><td>Brand › Facts</td><td class="f">server/routes/record.ts PUT /record/:field · services/athleteRecord.ts</td><td>Same columns through the ledger ("said" facts)</td><td>Field whitelist</td></tr>
+  </table></div>
+  <h3>Who reads a goal</h3>
+  <div class="tbl"><table>
+    <tr><th>Reader</th><th>Code</th><th>What it does with it</th><th>Decides anything?</th></tr>
+    <tr><td>Deal scorer prompt</td><td class="f">server/skills/dealDetector.ts:1280</td><td>Appends <code>Goals: &lt;goal_archetype&gt;</code> to the ATHLETE block of SCORE_SYSTEM. secondary_goals and brand_voice are not passed.</td><td><span class="pill warn">prompt-only</span> the only algorithmic consumer, and the model decides how to weigh it</td></tr>
+    <tr><td>Mila get_profile tool</td><td class="f">server/mila/tools/getProfile.ts</td><td>Returns goal_archetype, secondary_goals, brand_voice as raw values when Mila calls the tool</td><td>Only if the model chooses to use them; the system prompt has no rule about goals</td></tr>
+    <tr><td>Voice get_athlete_profile</td><td class="f">server/voice/athleteProfile.ts · profileRoute.ts</td><td>Speakable goal + secondary goals, capped</td><td>Same as above</td></tr>
+    <tr><td>Onboarding context block</td><td class="f">server/mila/onboarding.ts renderOnboardingBlock</td><td>"TOLD US: goal = …" line once asserted</td><td>Conversation only</td></tr>
+    <tr><td>About you / Facts</td><td class="f">server/services/athleteRecord.ts:239</td><td>Displays goal label with provenance</td><td>Display</td></tr>
+    <tr><td>Client</td><td class="f">client/lib/auth-context.tsx · use-mila-chat.ts · MilaProfileConfirm.tsx</td><td>Carries and confirms</td><td>Display</td></tr>
+  </table></div>
+  <div class="callout"><p><b>Not read by:</b> the score engine, the rate card, deal ranking, the Brief, composeDealVoice, the draft prompt, the Narrator, the shot list, the deck plan, Studio's brief assembler, the weekly-plan spine, or the brands list. Retired-goal handling exists only at capture. Live data: 10 of 25 athletes have a goal_archetype; one secondary_goals value is free text ("only work with fitness and wellness brands") from before the vocabulary was enforced; brand_voice is non-null on 1 row.</p></div>
+
+  <h2 id="influence">3 · What influences which recommendation</h2>
+  <div class="measure"><p>Rows are the data sources the request named. Cells say how each source reaches a recommendation surface, with the file that reads it. An empty cell means no path exists.</p></div>
+  <div class="tbl"><table>
+    <tr><th>Source</th><th>Deal verdict + recommendation</th><th>Brief ranking + voice</th><th>Drafts + counters</th><th>Mila chat / voice</th><th>Nomi Card + pitches</th><th>Studio</th><th>Weekly spine (PR #309)</th></tr>
+    <tr><td><b>Research</b> (snapshot.research)</td><td>Not read</td><td>Not read</td><td>Not read</td><td>Onboarding block: achievements, brands seen, causes</td><td>Achievements, brand_mentions → commercial state, marquee credential, shot list, Narrator facts (athleteContext.ts, shotList.ts)</td><td>Through getAthleteContext into the brief's athlete half</td><td>Not read</td></tr>
+    <tr><td><b>M.I.A. score</b> (display_score, tier, capitals)</td><td>"M.I.A. Score: X (tier)" prompt line (dealDetector.ts:1276)</td><td>Not read</td><td>Not read</td><td>get_score, score widget, voice score card + history, onboarding block</td><td>Index card /850, mix rows, deck plan "achievements hero" rule uses signals not score; shot list prompt gets capitals + tier</td><td>Tier in the register line (brief.ts:571)</td><td>Not read</td></tr>
+    <tr><td><b>Rate card</b> (rate_card, floors)</td><td>Per-type ranges + floor → economics band (dealScoreGrid) and rateLine in prompt</td><td>Rate at render in composeDealVoice via resolveAthleteRate</td><td>Unit-matched market rate + floor scrubbing (dealDraft.ts, draftPrompt.ts)</td><td>get_rate_card, get_score summary, offerMoney rate multiple, voice profile</td><td>Rates card packages (post ×3 ×0.94, season, in-person), PAV</td><td>Not read</td><td>Not read</td></tr>
+    <tr><td><b>Social analytics</b></td><td>Not read</td><td>Not read</td><td>Not read</td><td>get_analytics (followers + 7/30-day deltas)</td><td>Audience card: gender, age, city, country % from raw_metrics; pitch audience descriptor (pitches.ts:190)</td><td>Not read</td><td>Not read (posted media_assets are read instead)</td></tr>
+    <tr><td><b>Athlete profile</b> (sport, school, teams, career, prefs)</td><td>Name, sport, teams line, goal, floors</td><td>Not read</td><td>Signature name, agent/agency names, reply_signature</td><td>get_profile; onboarding block; navigate</td><td>Identity line from primary affiliation; brand-fit categories derived from sport + audience gender</td><td>Athlete half of the brief</td><td>Not read</td></tr>
+    <tr><td><b>Deals</b></td><td>Existing thread's stored score guards auto-demote</td><td>Status, awaiting, deadline, score, age → rank; group collapse</td><td>Deal type → rate key; amount for counters</td><td>list_deals (top ~10), get_deal, voice get_deal_brief; onboarding "deals" door</td><td>confirmedPartnersFor (contract_upload/self_reported only) → commercial state; brands list ranked by deal warmth</td><td>Brand picker from deals (brandLogic.ts); owed deliverables (deal_deliverables, 0 rows today)</td><td>accepted/negotiating deals' classifier deliverables + deadline</td></tr>
+    <tr><td><b>Conversations</b> (threads, chat)</td><td>conversation_state offer feeds the offer struct; last message direction sets awaiting</td><td>conversation_state sentence is the "situation" half of the voice</td><td>Last 5 messages in the draft prompt; latest_draft persisted</td><td>Per-conversation rolling summary (conversations.summary); voice_context ids seed the next voice session</td><td>Not read</td><td>Not read</td><td>Not read</td></tr>
+    <tr><td><b>Connected accounts</b></td><td>Not read</td><td>Not read</td><td>Sendable flag (Gmail yes, Outlook no)</td><td>connected_platforms count in get_profile; first_look per platform</td><td>Not read</td><td>Not read</td><td>Not read</td></tr>
+    <tr><td><b>Brand profiles</b> (inbox_brands)</td><td>Not read; scorer uses Kimi's own brandAnalysis.brandTier from the email</td><td>Advertiser name + logo</td><td>Not read</td><td>get_brand (may research, ~35s), get_brand_fit (cache only)</td><td>getBrandContext → whyFits, concept, activation plan, competitors exclusion in Curator</td><td>Brand half of the brief: tone, palette, dos/donts, pieces, competitors</td><td>Not read</td></tr>
+  </table></div>
+
+  <h2 id="agents">4 · Every agent and rule engine</h2>
+  <div class="tbl"><table>
+    <tr><th>Agent</th><th>Kind</th><th>Trigger</th><th>Context it receives</th><th>Output</th><th>Persisted where</th><th>Consumed by</th></tr>
+    <tr><td>preFilterEmail · structuralNonDeal · senderProfile</td><td>Code rules</td><td>Every inbound email/DM, before any model</td><td>From address, subject, body</td><td>drop / file-with-receipt / pass</td><td class="f">agent_actions (file, kind junk)</td><td>Filtered view</td></tr>
+    <tr><td>senderMemory</td><td>SQL rule</td><td>After structural, before classify</td><td>Prior demotes for this sender/domain, engagement (outbound replies)</td><td>mute decision</td><td class="f">agent_actions (mute_sender)</td><td>Detection pipeline</td></tr>
+    <tr><td>Classifier</td><td>Gemini Flash, CLASSIFY_SYSTEM (locked prompt)</td><td>New message on a new or non-preserved thread</td><td>Fenced email text incl. PDF text</td><td>is_deal, category, confidence, brand/advertiser/agency, summary, offer_amount, deliverables, deadline, contacts</td><td class="f">inbox_threads.classification</td><td>scoreDeal, brief fact line, askTerms gap detection, weekly spine deliverables/deadline, auto-demote</td></tr>
+    <tr><td>Brand resolver + researchBrand + brandIntel</td><td>Gemini grounding (3 queries) + Kimi extraction</td><td>First detection of a brand; manual refresh cron (no schedule); athlete picks a brand</td><td>Brand name/domain</td><td>industry, description, tier, audience, sport categories, partnerships, safety, enrichment jsonb</td><td class="f">inbox_brands</td><td>Deck strategist, whyFits, Studio brief, brands list, get_brand, voice brand brief</td></tr>
+    <tr><td>Scorer</td><td>Kimi instant, SCORE_SYSTEM (locked) + dealScoreGrid (pure)</td><td>After classify and summarize; rescore endpoint; sweeps</td><td>ATHLETE block (name, sport, teams, score, rate or floor, goal) + fenced DEAL block (category, brand, summary, latest offer, deliverables, deadline)</td><td>verdict, 1–10 (grid), factors prose, fitRead, economicsState, recommendation (reconciled), recommendation_ui/agent, negotiate_terms, confidence, urgency, autopilot_safe, draft_points, brandAnalysis</td><td class="f">inbox_threads.score</td><td>Brief voice, ranking, auto-file, DecisionSheet, NegotiateComposer chips, Mila get_deal/list_deals, voice deal brief, Week buckets</td></tr>
+    <tr><td>Thread summarizer</td><td>Kimi</td><td>Every new inbound or outbound message</td><td>Last 6 messages + brief-bearing + offer-bearing messages</td><td>conversation_state sentence, offer_display, offer_struct, deal_stage, key_details, awaiting</td><td class="f">inbox_threads.conversation_state · advances deals.status</td><td>Scorer offer, ranking, voice, group collapse, snapshotDealsFor (score)</td></tr>
+    <tr><td>Deal grouping</td><td>LLM same-deal partition</td><td>New thread mint; bulk script</td><td>Brand, dates, raw_data within 45 days</td><td>deal_group_id</td><td class="f">deals.deal_group_id</td><td>collapseDealGroups in the deal loader</td></tr>
+    <tr><td>Auto-actions</td><td>Code thresholds</td><td>Inside detectDeal; daily archive cron</td><td>Classification, score, thread engagement</td><td>demote to NOISE/FAN; auto-file reject/delete at high confidence; junk receipt; 45-day archive</td><td class="f">agent_actions · inbox_threads.status</td><td>Your Week receipt, Filtered view, Undo/Wrong endpoints</td></tr>
+    <tr><td>Rank + voice</td><td>Pure code + templates</td><td>GET /deals, GET /deals/brief</td><td>awaiting, deadline, scoreNumeric, last_message_at; score + conversation_state fields</td><td>rank, thread_age_days, voice line (situation + position + math with fallback ladder A–E)</td><td>Not persisted</td><td>Brief, AskCard, Explore</td></tr>
+    <tr><td>Draft core</td><td>Model call in dealDraft.ts</td><td>Deal draft route, Mila draft_reply, voice open_draft</td><td>Intent (accept/negotiate/request_terms/decline), style, voice, last 5 messages, unit-matched market rate, scrubbed negotiate_terms/draft_points</td><td>Letter body framed in code; leak-linted</td><td class="f">inbox_threads.latest_draft · pending_actions</td><td>Composer, Draft Reply card; send only on approve</td></tr>
+    <tr><td>Ask-for-terms batch</td><td>Template, no model</td><td>POST /deals/ask-terms-batch</td><td>offer_struct units, deliverables, deadline → missing terms per deal; segment fresh/agency/quiet/old</td><td>request_terms bodies as pending_actions (7-day TTL)</td><td class="f">pending_actions</td><td>AskTermsBatch screen</td></tr>
+    <tr><td>Mila chat loop</td><td>Gemini via Vertex, up to MAX_TOOL_ITERATIONS</td><td>POST /chat with MILA_AGENT_V2 (on in prod)</td><td>Persona prompt (no athlete data) + screen hint + onboarding block when applicable + conversation summary + tool results</td><td>Answer, one widget directive, nav chips, follow-up suggestions (Gemini, registry key chat.suggestions), profile candidates</td><td class="f">chat_messages · conversations.summary · voice_context (ids only)</td><td>Chat UI</td></tr>
+    <tr><td>Mila voice worker</td><td>LiveKit agent, Gemini Live or Grok</td><td>Voice session</td><td>Same persona + seed line from voice_context + onboarding prompt</td><td>Speech; widgets pushed to the room</td><td class="f">chat_messages (transcript) · voice_context</td><td>Voice UI</td></tr>
+    <tr><td>Onboarding workflow v2</td><td>Postgres runner; research step is a model step</td><td>Signup / promote</td><td>Name, sport, known handles</td><td>research snapshot → greet (await) → doors (await) → wrap</td><td class="f">workflow_runs · athlete_asserted · agent_actions</td><td>Mila first entry gate</td></tr>
+    <tr><td>First look</td><td>One model call over 30 posts</td><td>OAuth connect</td><td>Captions, formats, cadence</td><td>themes, tone, posts/week, format mix, tagged handles</td><td class="f">athlete_snapshots.first_look</td><td>Onboarding block, get_first_look</td></tr>
+    <tr><td>Research athlete</td><td>Gemini grounding (4) + Kimi (4)</td><td>Onboarding, monthly, admin</td><td>Search name + typed handles</td><td>achievements, press, brand mentions, story_arc, teams, profile fields</td><td class="f">athlete_snapshots.research · athletes_current.story_arc · athlete_affiliations (found)</td><td>Score, deck, Story tab (story_arc), Facts</td></tr>
+    <tr><td>Deck Strategist</td><td>deriveDeckPlan (rules) + deriveShotList (Gemini Pro)</td><td>Kit build</td><td>Brand mode, signals (achievements count, national+, dated, causes, hasRate); name, sport, school, tier, arc, achievements, partners, capitals</td><td>Card order, roles, gallery target, facets, one image brief per photo card</td><td>Inside media_kits.data only</td><td>Curator, assembler</td></tr>
+    <tr><td>Curator</td><td>Embedding search over the media library</td><td>Kit build</td><td>Shot list briefs, brand exclusion, recency</td><td>hero, fit, audience, proof, gallery, video</td><td>Inside media_kits.data</td><td>Assembler</td></tr>
+    <tr><td>Narrator</td><td>Gemini Pro + Kimi + Fable, pooled, gated, judged by Gemini Pro</td><td>Kit build</td><td>Lean angle context: name, sport, school, tier, story arc, signal highlights, brand fit tags (hard-coded list in buildNarratorContext), commercial state</td><td>Eyebrow + tagline per card, alternates</td><td>Inside media_kits.data</td><td>Deck, editor copy picker</td></tr>
+    <tr><td>narrateWhyFits</td><td>Gemini Pro</td><td>Kit build (brand mode), pitch insights, get_brand_fit, voice brand fit fill</td><td>Athlete name, sport, audience descriptor, facts (kit: 4 signal highlights; pitch insights: empty), brand name/category/audience</td><td>audience, credibility, whitespace angles</td><td class="f">media_kits.data (kit) · brand_fit_narratives (voice) · not stored (pitch insights, get_brand_fit)</td><td>whyFits card, PitchDetail angles, Mila, voice</td></tr>
+    <tr><td>narrateCampaignConcept · narrateActivationPlan</td><td>Gemini Pro</td><td>Brand kit build</td><td>Facets hints (Athlete, Scholar), 4 signal highlights, brand positioning</td><td>Campaign title/line/note; 3–5 year-round activation buckets</td><td class="f">media_kits.data</td><td>Brand deck cards</td></tr>
+    <tr><td>Studio brief + preview gate</td><td>Rules (assembleBrief) + previewGeneration + generation router</td><td>Athlete taps Brand post / Personal post / Create anything</td><td>getAthleteContext, getBrandContext + brand extras, objective, deliverable, mode, references, typed direction</td><td>CreativeBrief → preview (cost, tiers) → job</td><td class="f">studio_generation_previews · generation_jobs · media_assets(generated, draft) · kit_content (0 rows)</td><td>Make it, Made shelf, deck embed</td></tr>
+    <tr><td>Camera roll review</td><td>Vision tag + embedding, env thresholds</td><td>Review my camera roll</td><td>Thumbnails</td><td>keep / more / drop with reasons</td><td>Nothing until import</td><td>Consent grid</td></tr>
+    <tr><td><span class="pill fl">in flight</span> deriveOccasions</td><td>Pure code, PR #309</td><td>Not wired to any route or cron</td><td>posted media_assets (365 days), accepted/negotiating deals with classifier deliverables + deadline</td><td>Occasions: kind, because, window, confidence, templated rationale, facts</td><td>Not persisted; trend_observations table in the same PR</td><td>Nothing yet (a "Strategist" model step is named in the docs, not written)</td></tr>
+  </table></div>
+
+  <h2 id="surfaces">5 · How each surface is generated</h2>
+  <h3>Opportunities · Brief</h3>
+  <div class="flow"><div class="num">1</div><div><p><code>GET /api/v1/me/deals/brief</code> (server/routes/deals.ts:560) calls the shared loader <code>loadRankedDeals</code>: one query joining deals, threads, brands; <code>collapseDealGroups</code> synthesizes one row per deal_group_id (most-advanced status wins, offer borrowed from the richest member, activity summed).</p></div></div>
+  <div class="flow"><div class="num">2</div><div><p><code>composeDealVoice</code> (server/lib/dealVoice.ts) writes Mila's sentence from conversation_state + recommendation_ui + negotiate_terms[0] + economicsState.read, through the A–E fallback ladder, then <code>assertNoUnbackedFigures</code> strips any dollar figure not backed by a structured field.</p></div></div>
+  <div class="flow"><div class="num">3</div><div><p><code>dealRanking</code> orders by awaiting-athlete, then deadline proximity, then scoreNumeric, then freshness. The route keeps detected/pending/negotiating, returns the top 3 and counts.</p></div></div>
+  <div class="flow"><div class="num">4</div><div><p>Client <code>BriefView</code> → <code>AskCard</code> → <code>DecisionSheet</code> (position, why, plan from negotiate_terms) → <code>NegotiateComposer</code> (three-number strip from rate card + floor, draft_points chips) → <code>pending_actions</code> proposal → approve sends through threadReply. Ask-for-terms batch and Your Week are pushed screens off the same tab.</p></div></div>
+  <h3>Opportunities · Your Week, Filtered, Explore</h3>
+  <div class="measure"><p>Your Week is a 30-day receipt built on the client from agent_actions (set-aside list, track record, Undo/Wrong) and deals (arrived / you moved / still waiting buckets in <code>weekLogic.ts</code> and <code>yourWeekOutcomeLogic.ts</code>). Filtered lists agent_actions rows with payload.kind = junk grouped by noise_reason. Explore All renders ClassicListV2 over the same ranked loader with archived threads hidden.</p></div>
+  <h3>Mila chat</h3>
+  <div class="measure"><p><code>POST /api/v1/me/chat</code> → <code>runMilaLoop</code>. The prompt (server/mila/prompt.ts) carries persona and rules only: lead with a take, one list_deals call for ranking questions, at most two deep dives, never a count, widget directive on the last line, draft never sends. Tools: get_score, get_profile, list_deals, get_deal, get_rate_card, list_tasks_threads, get_analytics, draft_reply, navigate, get_help, get_brand, get_brand_fit, plus get_first_look and complete_onboarding_step in onboarding. After the answer: a rolling conversation summary, a suggestions call, and profile-candidate extraction. Chat openers per screen are a static list in <code>client/screens/milaOpeners.ts</code>. The v1 inline prompt path (chat.ts:300–420, Kimi, score and last 10 deals stuffed into the system prompt) is still in the file behind the flag.</p></div>
+  <h3>Mila voice</h3>
+  <div class="measure"><p>Separate repo (nomila-co/mila-voice, LiveKit). Tools: get_score, open_draft, list_deals, get_athlete_profile, get_deal_brief (brand or campaign name, resolves deal → brand → fit in one call), get_thread, get_score_history, get_share_signals, web_search when MILA_VOICE_WEB_SEARCH, complete_onboarding_step in onboarding. Every read goes through <code>/api/internal/voice/*</code> routes that return closed enums and ids, never brand prose. Memory is <code>voice_context</code> (ids and enums only) rendered to one seed sentence by <code>voiceSeed.ts</code>; the text loop also writes it.</p></div>
+  <h3>Brand tab</h3>
+  <div class="measure"><p>Score screen and rings read <code>/athletes/:id/score</code>. Deck and Rates read the kit and the rate card. Facts reads <code>GET /me/record</code> (said / found / made with provenance). Story shows only <code>story_arc</code> from the record's numbers group; the tab's own comment says narrative, stories, voice and direction are not built. Growth is the analytics read API (deltas only, no advice).</p></div>
+  <h3>Pitches and brand recommendations</h3>
+  <div class="measure"><p>A pitch is a media_kits row with brand_id &gt; 0; status is derived (ready / sent / opened / stale) from card_shares and card_share_views (server/services/pitches.ts). Pitch insights recompute whyFits angles per request with an empty facts array and are not stored. The only brand ranking in the codebase is <code>GET /athletes/:id/brands</code> (server/index.ts:1183): brands from the athlete's own inbox threads, sorted by a hard-coded deal-warmth map (negotiating 100 … rejected 0) then recency. There is no brand discovery beyond what has already emailed her, and no brand-to-athlete matching.</p></div>
+  <h3>Studio</h3>
+  <div class="measure"><p>Now feed = what is rendering (made shelf) + owed deliverables (<code>listOutstandingDeliverables</code>, 0 rows today) + fixture suggestions (<code>personalLogic.suggestionsFrom</code>, which needs fixtures; <code>useFixtures</code> returns a stub empty array, so no suggestion ever renders). Make it = <code>assembleBrief</code> with an objective the athlete picks (announce, showcase-product, grow-following, concept, recap, thank-partner) and a deliverable (post, story, reel, carousel, ad, clip). Posting time = <code>scheduleLogic.recommendedSlot</code>, three hours before the next fixture, also fixture-dependent. Personal post concepts = a regex table (<code>CONCEPTS</code>) matching the athlete's typed purpose. Nothing schedules or publishes; every OAuth scope is read-only.</p></div>
+  <h3>Nomi Card</h3>
+  <div class="measure"><p><code>assembleMediaKit</code>: getAthleteContext → deriveDeckPlan (rules: brand mode adds whyFits, campaignConcept, activationPlan; achievements card when ≥3 achievements and ≥1 national) → shot list → in parallel: Curator, Narrator, whyFits, concept, activation plan → cards → cached in media_kits, invalidated only for the generic kit by onboarding. Rates card packages are computed from the headline post rate (series = 3 posts × 0.94). The "activation plan" is the closest thing to a content calendar in the product and it is a per-brand pitch card, not a plan for the athlete.</p></div>
+
+  <h2 id="plans">6 · Weekly plans, posting schedules, brand and content recommendations: status</h2>
+  <div class="tbl"><table>
+    <tr><th>Capability</th><th>Status</th><th>Where it lives</th><th>What exists today</th></tr>
+    <tr><td>Weekly plan / action plan</td><td><span class="pill fl">in flight</span></td><td class="f">PR #309 feat/weekly-plan-spine: server/skills/weeklyPlan.ts, weeklyPlanInputs.ts, migration 0034_trend_observations</td><td>deriveOccasions derives cadence_gap (14 days), format_gap (28 days, format used ≥3 times), deal_deliverable (from classifier deliverables, default 7-day window). game_day, post_game, term_expiring, milestone, trend, personal are declared and blocked on missing data. No route, cron, Strategist step or storage. Migration number collides with 0034_workflow_runner on main.</td></tr>
+    <tr><td>Posting schedule</td><td><span class="pill risk">not built</span></td><td class="f">client/screens/studio/scheduleLogic.ts recommendedSlot · client/hooks/use-studio-pending.ts useScheduledPosts/useFixtures</td><td>Pure client heuristic (3h before kickoff, clamped to slots) that needs fixtures; fixtures hook is a stub returning []. No scheduled_posts table, no runner, no publish scope on any platform.</td></tr>
+    <tr><td>Brand recommendations</td><td><span class="pill warn">partial</span></td><td class="f">server/index.ts:1183 GET /brands · services/pitches.ts · narrator.narrateWhyFits</td><td>Ranks brands already in her inbox by deal warmth; whyFits writes the pitch angle for a chosen brand. No discovery, no matching, no scoring of brand fit outside the deal scorer's per-email brandAnalysis.</td></tr>
+    <tr><td>Content recommendations</td><td><span class="pill warn">partial</span></td><td class="f">client/screens/studio/personalLogic.ts · nowLogic.ts · server/studio/brief.ts</td><td>Concept-by-regex on typed purpose; fixture-based suggestions that never fire; objectives chosen by the athlete. Kit-side: shot list and campaign concept are pitch content, not posting advice. The media-recommendation engine in docs/media-recommendation-engine-research.md is unbuilt (confirmed by docs/plans/social-media-manager.md §0).</td></tr>
+    <tr><td>Deal action plans</td><td><span class="pill ok">built</span></td><td class="f">dealDetector.scoreDeal · dealScoreGrid · dealRanking · dealVoice · dealDraft · askTerms · pendingActions</td><td>Per-deal recommendation with terms and a proposed reply; Brief top-3; batch ask-for-terms; all tap-to-send.</td></tr>
+    <tr><td>Score growth advice</td><td><span class="pill warn">prompt-only</span></td><td class="f">chat.ts v1 "Focus on the lowest capital" · milaOpeners.ts "How do I raise my score?"</td><td>No code computes growth advice; the v2 loop answers from get_score with the model's judgement. momentum and ptsToNextTier are stored and unread.</td></tr>
+  </table></div>
+
+  <h2 id="hardcoded">7 · Hard-coded rules and thresholds</h2>
+  <div class="tbl"><table>
+    <tr><th>Rule</th><th>Value</th><th>File</th></tr>
+    <tr><td>Deal detection confidence threshold</td><td class="n">0.6</td><td class="f">server/skills/dealDetector.ts:50</td></tr>
+    <tr><td>Auto-demote minimum classifier confidence; never when stored verdict is good/great</td><td class="n">0.8</td><td class="f">dealDetector.ts:1731</td></tr>
+    <tr><td>Auto-file requires recommendation reject/delete at "high" confidence, status detected, no outbound reply</td><td class="n">enum gates</td><td class="f">dealDetector.ts maybeAutoFileRejected</td></tr>
+    <tr><td>Junk receipt only when deal probability ≤</td><td class="n">0.35</td><td class="f">dealDetector.ts:1872</td></tr>
+    <tr><td>Sender mute after N demotes / domain after N; free-mail domains never muted by domain</td><td class="n">2 / 3</td><td class="f">server/lib/senderMemory.ts:55-57</td></tr>
+    <tr><td>Auto-archive dormant detected/pending deals after</td><td class="n">45 days</td><td class="f">server/skills/archiveStaleDeals.ts</td></tr>
+    <tr><td>Same-deal grouping window</td><td class="n">45 days</td><td class="f">server/skills/dealGrouping.ts</td></tr>
+    <tr><td>Brand profile staleness / researchBrand self-guard</td><td class="n">60 / 90 days</td><td class="f">services/brandIntel.ts · skills/researchBrand.ts</td></tr>
+    <tr><td>Economics × fit grid (6 bands × 4 fits → 1–10); red flag floors to 1 or 2; naturalAction accept ≥8, reject ≤3</td><td class="n">table</td><td class="f">server/skills/dealScoreGrid.ts:242-272</td></tr>
+    <tr><td>fitBand composition; premium tier rescues fair → good only</td><td class="n">rule</td><td class="f">dealScoreGrid.ts:230</td></tr>
+    <tr><td>Rank weights: awaiting ≫ deadline ≫ score ≫ freshness</td><td class="n">ordinal</td><td class="f">server/lib/dealRanking.ts</td></tr>
+    <tr><td>Minimum usable rate in scoring / minimum credible ask in drafts</td><td class="n">$25 / $100</td><td class="f">dealDetector.ts:1211 · lib/draftPrompt.ts</td></tr>
+    <tr><td>Ask-for-terms segments fresh/quiet; proposal TTL; batch cap</td><td class="n">30 / 90 days · 7 days · 100</td><td class="f">server/routes/askTerms.ts</td></tr>
+    <tr><td>Brands list deal-warmth map</td><td class="n">100/80/60/40/20/0</td><td class="f">server/index.ts:1183</td></tr>
+    <tr><td>Deck order and the achievements-hero rule (≥3 achievements, ≥1 national)</td><td class="n">array</td><td class="f">server/services/shotList.ts:161</td></tr>
+    <tr><td>Kit rate packages: series = post × 3 × 0.94</td><td class="n">0.94</td><td class="f">services/mediaKitService.ts:275</td></tr>
+    <tr><td>Kit capital grade labels 80/60/30 vs client ring labels 80/60/40/20</td><td class="n">two scales</td><td class="f">mediaKitService.ts:66 · client/components/score/ConcentricRingScore.tsx:23</td></tr>
+    <tr><td>Narrator brand-fit tags</td><td class="n">Apparel, Wellness, Beverage, Beauty</td><td class="f">mediaKitService.ts buildNarratorContext</td></tr>
+    <tr><td>Concept facets hints</td><td class="n">Athlete, Scholar</td><td class="f">mediaKitService.ts:150</td></tr>
+    <tr><td>Occasion thresholds (PR #309)</td><td class="n">14 / 28 days · 3 uses · 7-day window</td><td class="f">weeklyPlan.ts</td></tr>
+    <tr><td>Studio posting slot; personal-post concept regexes</td><td class="n">3 h before kickoff · 8 regexes</td><td class="f">client/screens/studio/scheduleLogic.ts · personalLogic.ts</td></tr>
+    <tr><td>Mila list window, deep-dive cap, tool iteration cap</td><td class="n">~10 rows · 2 · MILA.MAX_TOOL_ITERATIONS</td><td class="f">server/mila/prompt.ts · tools/listDeals.ts · config.ts</td></tr>
+  </table></div>
+
+  <h2 id="prompts">8 · Prompt-only logic</h2>
+  <div class="measure"><p>Decisions that exist only as instructions to a model. PROMPT_REGISTRY is on in prod, but the <code>prompts</code> table has 0 rows and only two call sites resolve through it (chat.suggestions, firstLook); classify, score and contract extraction are locked to code by LOCKED_PROMPTS. Langfuse tracing is on.</p></div>
+  <div class="tbl"><table>
+    <tr><th>Decision</th><th>Prompt</th><th>Model</th><th>Note</th></tr>
+    <tr><td>Is this a deal; which category; who is the advertiser; confidence calibration</td><td>CLASSIFY_SYSTEM (dealDetector.ts:882)</td><td>Gemini Flash</td><td>Long rubric of noise signals; locked</td></tr>
+    <tr><td>Fit ratings (sport, audience), brand tier, capital contribution, red flags, negotiate terms, draft points, urgency, autopilot_safe, recommendation prose</td><td>SCORE_SYSTEM (dealDetector.ts:1089)</td><td>Kimi instant</td><td>The 1–10 is grid-derived in code; the recommendation is reconciled in code; everything else is the model's. Known drift documented in docs/r1-scoring-followups.md</td></tr>
+    <tr><td>Latest offer, deal stage, who is awaiting</td><td>threadSummarizer SYSTEM</td><td>Kimi</td><td>deal_stage advances deals.status automatically; this is what makes "accepted" flow into the score</td></tr>
+    <tr><td>Reply intent behaviour</td><td>INTENT_INSTRUCTIONS + STYLE_INSTRUCTIONS (lib/draftPrompt.ts)</td><td>Draft core</td><td>Leak linter in code</td></tr>
+    <tr><td>Mila's advisory stance, tool discipline, honesty rules, "deals do NOT affect the score"</td><td>buildSystemPrompt (server/mila/prompt.ts)</td><td>Gemini</td><td>That last line contradicts Commercial capital</td></tr>
+    <tr><td>What Mila may say she found at first entry</td><td>onboardingGuidance + ONBOARDING_CONTEXT block</td><td>Gemini / voice model</td><td>Facts are data-fenced</td></tr>
+    <tr><td>Which chat statements become profile facts</td><td>PROFILE_EXTRACTION_SYSTEM</td><td>Model</td><td>Confirm tap gates persistence</td></tr>
+    <tr><td>Why she fits a brand; campaign concept; year-round activation plan</td><td>narrateWhyFits, narrateCampaignConcept, narrateActivationPlan</td><td>Gemini Pro</td><td>Grounded only in ≤4 signal highlights</td></tr>
+    <tr><td>Facets and shot list</td><td>shotList buildPrompt</td><td>Gemini Pro</td><td>Falls back to generic ranked selection</td></tr>
+    <tr><td>Deck copy</td><td>narrateKit</td><td>Gemini Pro, Kimi, Fable; judge Gemini Pro</td><td>Judge ranks only</td></tr>
+    <tr><td>Achievement levels, teams, story arc from research text</td><td>EXTRACTION_SCHEMA (researchAthlete.ts)</td><td>Kimi</td><td>Level drives Athletic capital keywords in code</td></tr>
+    <tr><td>Brand tier, industry, audience from the web</td><td>researchBrand EXTRACTION_SCHEMA</td><td>Kimi</td><td>Separate from the scorer's per-email brandTier</td></tr>
+    <tr><td>Conversation memory</td><td>SUMMARIZER_SYSTEM (mila/conversations.ts)</td><td>Model</td><td>Rolling summary replayed into the loop</td></tr>
+  </table></div>
+
+  <h2 id="dup">9 · Duplicated logic</h2>
+  <ul>
+    <li><b>Brand fit written three ways.</b> Kit build stores whyFits inside media_kits.data; the voice path stores the same three angles in brand_fit_narratives; pitchInsights and get_brand_fit recompute per call and store nothing. <span class="mono">mediaKitService.ts · voice/brandFitFill.ts · services/pitches.ts · mila/tools/getBrandFit.ts</span></li>
+    <li><b>Five readers of the athlete's current row assemble their own context.</b> getAthleteContext, buildNarratorContext, deriveShotList's fallback query, chat.ts v1 inline prompt, and loadOnboardingFacts each select from athletes + athletes_current + latest research snapshot.</li>
+    <li><b>Brand tier and category exist twice.</b> The scorer takes brandTier and category from Kimi's brandAnalysis of the email; inbox_brands carries a researched brand_tier and category that the scorer never reads.</li>
+    <li><b>Three ranking systems.</b> Server dealRanking for the Brief, the client's score-sort in use-deals.ts (noted in dealRanking's header), and the brands list warmth map.</li>
+    <li><b>Three memories.</b> Thread conversation_state (Kimi), Mila conversations.summary (model), voice_context (ids). Deal history for voice is rebuilt from structure by design.</li>
+    <li><b>Two chat implementations</b> in chat.ts: the v1 inline Kimi prompt and the v2 loop, switched by MILA_AGENT_V2.</li>
+    <li><b>Rate reads.</b> deriveDealTypeRates in dealDetector, dealDraft, dealValueStore; resolveAthleteRate in dealVoice and offerMoney; deckRateFigures in the kit.</li>
+    <li><b>Sender knowledge</b> was in three places (preFilterEmail, senderMemory, emailFilters) and is being consolidated into senderProfile; the header documents 25 of 46 muted senders never reached memory.</li>
+    <li><b>Capital grade thresholds</b> differ between the kit (80/60/30) and the client rings (80/60/40/20).</li>
+    <li><b>Deliverable parsing</b> exists in mila/deliverables.ts (voice) and in askTerms' missing-terms detection from offer_struct, on different fields.</li>
+  </ul>
+
+  <h2 id="unused">10 · Stored fields nothing reads, and legacy rows</h2>
+  <div class="tbl"><table>
+    <tr><th>Field / table</th><th>Live count</th><th>Writer</th><th>Reader</th></tr>
+    <tr><td class="f">athletes_current.insights · brand_stories</td><td class="n">0 · 0</td><td>None in server</td><td>None (schema comments describe them)</td></tr>
+    <tr><td class="f">athletes.brand_voice</td><td class="n">1</td><td>profile route, onboarding assertions</td><td>get_profile, voice profile, record display; no prompt or Narrator reads it</td></tr>
+    <tr><td class="f">onboarding_sessions</td><td class="n">0</td><td>None (account delete only)</td><td>None</td></tr>
+    <tr><td class="f">tasks</td><td class="n">5 (types research, media_kit, brand_stories)</td><td>Legacy; admin and platformDiscovery reference it</td><td>list_tasks_threads counts pending/running</td></tr>
+    <tr><td class="f">notification_log types score_milestone, new_deal, weekly_brief, brand_match</td><td class="n">0 (2 promotion rows)</td><td>Only promotion via notify.ts</td><td>None</td></tr>
+    <tr><td class="f">deals.pending_action · deals.saved</td><td class="n">0 · 0</td><td>None</td><td>None (pending_actions table replaced it)</td></tr>
+    <tr><td class="f">deals.negotiation_state</td><td class="n">23</td><td>PATCH /deals/:id</td><td>get_deal, voice deal routes (untyped)</td></tr>
+    <tr><td class="f">kit_content · content_posts · deal_periods · deal_deliverables</td><td class="n">0 each</td><td>Studio concept embed; contract extraction</td><td>Studio content, Now feed owed rows, weekly spine (all empty today)</td></tr>
+    <tr><td class="f">athlete_snapshots.score.momentum · ptsToNextTier · tierFillPct · coldStartProfile</td><td class="n">every row</td><td>Score engine</td><td>None</td></tr>
+    <tr><td class="f">brand_fit_narratives.updated_at</td><td class="n">19 rows</td><td>brandFitFill</td><td>Documented as unread; no staleness policy</td></tr>
+    <tr><td class="f">agent_actions.undone_at · result from "wrong"</td><td class="n">0 undone</td><td>Undo / wrong endpoints</td><td>Thread flip only; no learner</td></tr>
+    <tr><td class="f">inbox_threads.score.brandAnalysis.capitalContribution · portfolioDiversification</td><td class="n">268 scored</td><td>Scorer</td><td>Rendered on ScoreAnalysisSheet only; no ranking or plan reads them</td></tr>
+  </table></div>
+
+  <h2 id="fallbacks">11 · Fallbacks</h2>
+  <ul>
+    <li>Deal voice ladder: red flags → unscored ("haven't sized it up") → unpriced ("ask for their budget") → full → summary + verbified recommendation_ui. <span class="mono">dealVoice.ts:309</span></li>
+    <li>Scorer reconciliation: red flag floors to reject (delete only if Kimi also said delete); model more negative than grid → lifted to at most negotiate; more positive → kept; poor + explicit no-cash → reject. <span class="mono">dealScoreGrid.ts reconcileRecommendation</span></li>
+    <li>Unknown-rate athlete: prompt told to score on absolutes + fit, confidence low; NA bands in the grid.</li>
+    <li>get_brand_fit defers to get_brand when the brand is not enriched; voice brand brief answers enum-only and queues a fill.</li>
+    <li>Narrator: any model failing → templated copy; whyFits/concept/activation null → card templated or pruned; shot list failing → quality-ranked selection.</li>
+    <li>Prompt registry: published row → env var → in-code constant.</li>
+    <li>Kit cache: served until maxAge or forced refresh; brand kits never invalidated by data change.</li>
+    <li>Mila: null tool result → say you don't have it; MAX_TOOL_ITERATIONS → CAP_MESSAGE; draft failure → no workaround suggested.</li>
+    <li>Voice seed: no voice_context → silence by design, never reads chat_messages.</li>
+    <li>Studio: stub hooks (fixtures, scheduled posts, threads) return empty with isStub, and the PENDING list names the server work each needs.</li>
+    <li>Brief ranking: null score treated as neutral; missing timestamps → no age.</li>
+  </ul>
+
+  <h2 id="feedback">12 · Feedback and outcome data</h2>
+  <div class="tbl"><table>
+    <tr><th>Signal</th><th>Where it is recorded</th><th>Who reads it back into a recommendation</th></tr>
+    <tr><td>Athlete files or demotes a sender's mail (twice)</td><td class="f">agent_actions (reclassify / file), inbox_threads.status</td><td><span class="pill ok">read</span> senderMemory mutes the sender before the classifier runs</td></tr>
+    <tr><td>Athlete's outbound reply exists on a thread</td><td class="f">inbox_messages.direction</td><td><span class="pill ok">read</span> blocks auto-file, mute and archive; sets awaiting</td></tr>
+    <tr><td>Deal reaches accepted / completed</td><td class="f">deals.status (set by the summarizer's deal_stage, or by contract upload / self-report)</td><td><span class="pill ok">read</span> Commercial capital and cold-start profile; confirmedPartnersFor on the deck (athlete-confirmed sources only)</td></tr>
+    <tr><td>Per-type rate floors</td><td class="f">athletes.deal_preferences.minimum_rates (3 athletes)</td><td><span class="pill ok">read</span> scoreDeal rateLine, economics band, drafts, counters</td></tr>
+    <tr><td>Facts the athlete asserted</td><td class="f">athlete_asserted (1 row today)</td><td><span class="pill ok">read</span> onboarding block "TOLD US", Narrator may cite, record display</td></tr>
+    <tr><td>Card opened / forwarded</td><td class="f">card_share_views (75)</td><td><span class="pill ok">read</span> pitch status, Signals, voice get_share_signals; no effect on which brand to pitch next</td></tr>
+    <tr><td>Undo / "Wrong?" on an agent action</td><td class="f">agent_actions.undone_at, result</td><td><span class="pill risk">unread</span> flips the thread back; nothing learns (0 undos so far)</td></tr>
+    <tr><td>Approve / dismiss a pending action</td><td class="f">pending_actions.status (53 pending, 3 approved, 2 failed)</td><td><span class="pill risk">unread</span> send only; Phase-2 doc names this log as the future training data</td></tr>
+    <tr><td>Draft edited before send</td><td class="f">inbox_threads.latest_draft, notes history on the deal</td><td><span class="pill risk">unread</span></td></tr>
+    <tr><td>Studio approve / reject / reopen</td><td class="f">media_assets.approval_status</td><td><span class="pill risk">unread</span> gates embedding only</td></tr>
+    <tr><td>Deal outcomes, payments</td><td class="f">payments, payment_events</td><td><span class="pill risk">unread</span> by any recommender</td></tr>
+    <tr><td>Classifier precision harvest, Mila golden eval</td><td class="f">server/skills/__fixtures__/classifier-eval.*.jsonl · evals/mila/golden.jsonl · Langfuse traces</td><td>Offline gates only (evalClassifier.ts, scripts/run-mila-eval.ts)</td></tr>
+  </table></div>
+
+  <h2 id="inflight">13 · What is in flight</h2>
+  <div class="tbl"><table>
+    <tr><th>Item</th><th>State</th><th>What it touches in this map</th></tr>
+    <tr><td>PR #309 feat/weekly-plan-spine (2 Sep)</td><td>Open, 1 commit, unmerged; migration 0034 number collides with the merged workflow-runner 0034</td><td>Adds deriveOccasions + loader + trend_observations; docs/plans/social-media-manager.md and 00-roadmap.md</td></tr>
+    <tr><td>PR #243 fix/negotiated-deal-value (19 Aug)</td><td>Open</td><td>Deal money used by economics and voice</td></tr>
+    <tr><td>PR #124 docs/mila-agent-architecture (27 Jul)</td><td>Open, docs only</td><td>Agent architecture doc; not on main</td></tr>
+    <tr><td>PR #360 chore/prettier</td><td>Open</td><td>Formatting only</td></tr>
+    <tr><td>feat/opps-ws3-core · feat/opps-ws3-parse (24 Jul)</td><td>Worktree branches, 1 commit each, never merged; CHECKLIST.md lists 3.2 parse-confidence gate + amount reconciliation as "needs review/merge"</td><td>Deal engine parse gate; the main-tree dealVoice.ts superseded the ws3-core copy</td></tr>
+    <tr><td>Nine worktree-agent-* branches (25 to 27 Jul)</td><td>Design variants of the Brief, Your Week, ask-for-terms; 1 commit ahead each, stale</td><td>Opportunities UI prototypes</td></tr>
+    <tr><td>feat/brand-safe-lens, feat/media-multi-select, feat/camera-roll-review (4 Sep)</td><td>1 to 3 commits ahead in separate worktrees</td><td>Media library; not recommendation logic</td></tr>
+    <tr><td>feat/brand-image-ogimage, feat/android-voice, fix/deploy-yml-expression-length</td><td>1 commit ahead each</td><td>Brand imagery, voice platform gate, deploy</td></tr>
+    <tr><td>origin/main ahead of local main by 15 (#367–#382)</td><td>Merged upstream, not pulled here</td><td>Studio classify / segment / QA / routing and the dev-prod environment split; nothing in mila, skills, deals or services other than mediaEnrichment</td></tr>
+    <tr><td>docs/plans/* (social media manager, agent runtime, roadmap, services API)</td><td>Plans marked "nothing implemented"</td><td>The intended second half of this map; none of it is code</td></tr>
+  </table></div>
+
+  <h2 id="state">14 · Live state that shapes what the system can recommend</h2>
+  <div class="two">
+    <div class="tbl"><table>
+      <tr><th>Fact</th><th>Value</th></tr>
+      <tr><td>Inbox threads / scored</td><td class="n">288 / 268</td></tr>
+      <tr><td>Stored recommendations</td><td class="n">negotiate 237 · reject 24 · delete 4 · accept 3</td></tr>
+      <tr><td>Thread status</td><td class="n">archived 228 · deal_detected 38 · unread 22</td></tr>
+      <tr><td>Deals by status</td><td class="n">detected 256 · negotiating 11 · accepted 5 · completed 1 · rejected 2</td></tr>
+      <tr><td>Agent receipts</td><td class="n">file 3,147 · auto_archive 169 · reclassify 60 · profile_write 1 · undone 0</td></tr>
+      <tr><td>Pending replies</td><td class="n">53 pending · 3 approved · 2 failed</td></tr>
+      <tr><td>Brands / enriched / with tier</td><td class="n">176 / 139 / 121</td></tr>
+    </table></div>
+    <div class="tbl"><table>
+      <tr><th>Fact</th><th>Value</th></tr>
+      <tr><td>Chat messages / athletes chatting</td><td class="n">3,787 / 4</td></tr>
+      <tr><td>Conversations / voice contexts</td><td class="n">97 / 35 (2 athletes)</td></tr>
+      <tr><td>Media kits / brand kits / shares / views</td><td class="n">9 / 6 / 6 / 75</td></tr>
+      <tr><td>Brand-fit narratives</td><td class="n">19</td></tr>
+      <tr><td>Generated assets / jobs succeeded</td><td class="n">169 / 169</td></tr>
+      <tr><td>Athletes with a goal / with floors / with brand voice</td><td class="n">10 / 3 / 1</td></tr>
+      <tr><td>Deliverables, periods, scheduled posts, fixtures</td><td class="n">0 · 0 · none · none</td></tr>
+    </table></div>
+  </div>
+
+  <h3>Files index</h3>
+  <div class="tbl"><table>
+    <tr><th>Area</th><th>Files</th></tr>
+    <tr><td>Deal engine</td><td class="f">server/skills/dealDetector.ts · dealScoreGrid.ts · threadSummarizer.ts · dealGrouping.ts · archiveStaleDeals.ts · rescoreUnscoredDeals.ts · server/lib/emailFilters.ts · senderProfile.ts · senderMemory.ts · dealRanking.ts · dealVoice.ts · draftPrompt.ts · agentActions.ts · server/services/dealDraft.ts · dealValueStore.ts · brandIntel.ts · server/routes/deals.ts · askTerms.ts · pendingActions.ts · agentActions.ts · inbox.ts</td></tr>
+    <tr><td>Mila</td><td class="f">server/mila/loop.ts · prompt.ts · registry.ts · tools/* · onboarding.ts · profileExtraction.ts · profileFields.ts · conversations.ts · voiceMemory.ts · widgets.ts · navChips.ts · capabilities.ts · config.ts · server/routes/chat.ts · client/screens/milaOpeners.ts</td></tr>
+    <tr><td>Voice</td><td class="f">server/voice/* (scoreRoute, scoreHistoryRoute, dealBriefRoute, dealRoutes, brandBriefRoute, brandFitStore, brandFitFill, voiceContext, voiceSeed, profileRoute, threadRoutes, shareSignalsRoute) · C:/ClaudeProjects/mila-voice/src/agent.ts · readTools.ts · threadTool.ts · memory.ts · onboarding.ts</td></tr>
+    <tr><td>Goals and record</td><td class="f">shared/goals.ts · server/routes/waitlist.ts · profile.ts · record.ts · server/services/athleteRecord.ts · affiliations.ts</td></tr>
+    <tr><td>Deck and pitches</td><td class="f">server/services/mediaKitService.ts · athleteContext.ts · shotList.ts · curator.ts · narrator.ts · kitCache.ts · pitches.ts · server/index.ts (brands, pitches, card-signals, pitch-insights-stream)</td></tr>
+    <tr><td>Studio</td><td class="f">server/studio/brief.ts · concept.ts · content.ts · dealDeliverables.ts · preview.ts · generate.ts · server/routes/studio.ts · client/screens/studio/{nowLogic,scheduleLogic,personalLogic,planLogic,brandLogic,createAnythingLogic,madeShelfLogic}.ts · client/hooks/use-studio-pending.ts</td></tr>
+    <tr><td>Workflows and research</td><td class="f">server/workflow/definitions/{onboarding,firstLook,researchRefresh}.ts · server/skills/researchAthlete.ts · firstLook.ts · researchBrand.ts</td></tr>
+    <tr><td>In flight</td><td class="f">origin/feat/weekly-plan-spine: server/skills/weeklyPlan.ts · weeklyPlanInputs.ts · migrations/0034_trend_observations.sql · docs/plans/social-media-manager.md</td></tr>
+  </table></div>
+</div>

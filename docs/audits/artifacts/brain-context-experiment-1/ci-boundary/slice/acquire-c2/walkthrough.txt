@@ -1,0 +1,28 @@
+A · decision: the athlete's agent, through Mila · deal[ctl-c-lumen-termsheet] · "Should this negotiation be advanced, countered or accepted?"
+    proposition: A defined rate card or minimum floor price has been set by the athlete or agent for endorsement deliverables.
+    source_class: athlete · need: athlete_commercial_basis (fixture annotation — the recorded run predates 0.8.0 and emitted none)
+    materiality: An established pricing floor or rate card is required to perform the economic comparison necessary to decide whether to accept, counter, or advance the USD 5,000 offer.
+    → raised req_a0be3b1b7b2ea481 · key 1d836bb6a0a37db9
+B · capabilities: {"connectedAccounts":[],"subject":{"hasThread":false,"hasContractDocument":false,"hasStructuredOffer":true},"athlete":{"statedFloorForType":false,"researchBudgetAvailable":true},"existingEvidence":[]}
+    plan: mila_question
+    · need athlete_commercial_basis can be established by preferences_form · mila_question · document_request
+    · authority required: athlete
+    · chosen mila_question: available, authority athlete ≥ athlete, lowest athlete burden among the available
+C · await_human step input (workflow run input carries it; one completion door: chat · voice · form):
+    {"asks":"intelligence_request","request_id":"req_a0be3b1b7b2ea481","need":"athlete_commercial_basis","question":"For an ambassador deal like Lumen's, what's the least you'd accept — and per what: per post, per month, or for the whole term?","fields":["amount","currency","per"],"why":"An established pricing floor or rate card is required to perform the economic comparison necessary to decide whether to accept, counter, or advance the USD 5,000 offer."}
+    status now: acquiring
+D · fixture answer as the existing path would persist it (athlete_asserted):
+    {"id":"aa-fixture-1","athlete_id":"967cda83-6beb-4233-ba20-126246443e33","field":"commercial_basis.ambassador","value":{"amount":25000,"currency":"USD","per":"month"},"said":"For something like this I wouldn't go under twenty-five thousand a month.","source":"mila","mode":"chat","run_id":"wf-<runId>","agent_action_id":"aa-receipt-<id> (profile_write, reversible)","created_at":"2026-09-27T10:12:00Z"}
+E · before: acquiring · information_available false
+    evidence received: counted true — attributable, right class, after the request
+    after: evidenced · information_available true · acquisition.producedEvidence true
+    control · a new inbound from Lumen on the same deal, not attributable: counted false — not attributable to this request's acquisition → status acquiring
+    control · the same assertion, dated before the request: counted false — predates the request → status acquiring
+    control · research evidence (external) about peers' rates, attributed: counted false — class external below required athlete → status acquiring
+    control · an attributable athlete assertion for a different need: counted false — attributable, but for need existing_constraints, not athlete_commercial_basis → status acquiring
+    control · acquisition completed, nothing established → status open · events acquisition_completed_without_evidence
+F · eligible for reconsideration: true (no Brain invoked, no Decision created, no Recommendation)
+    after one attribution: eligible false · status evidenced (a second run finds nothing to reconsider)
+G · restated (new wording, class athlete→connected): restated_by_run · requests 1 · asking again: refused — already evidenced — never re-acquired
+H · parked question, deal withdrawn: status obsolete · acquisition cancelled at 2026-09-27T09:30:00Z · events raised → acquisition_planned → acquisition_started → obsolete
+    a late answer: counted true (kept as evidence about her) · status obsolete · eligible false (resurrects nothing)

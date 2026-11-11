@@ -1,0 +1,225 @@
+{
+ "version": "recommendation/0.2.0-exp",
+ "records": [
+  {
+   "version": "recommendation/0.2.0-exp",
+   "id": "rec_ac0ade506826aabe",
+   "key": "c81ff8144f65d35a",
+   "source": "the Objective loop",
+   "subject": {
+    "kind": "objective",
+    "id": "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+   },
+   "question": "what should Nomila do about this Objective now?",
+   "objectiveIds": [
+    "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+   ],
+   "value": {
+    "why": "Mia's philanthropic work with the Yuwa girls empowerment program is a key differentiator in her narrative, but has not yet been commercialized or translated into active brand sponsorships.",
+    "ends": null,
+    "what": "Develop a targeted commercial outreach strategy to present Mia's leadership with the Yuwa girls empowerment program to global brands for corporate social responsibility sponsorships.",
+    "cites": [
+     {
+      "how": "Objective to secure brand partnerships or global CSR sponsorships tied to her Yuwa Academy work.",
+      "ref": "objective[b1c799e3-59fc-4986-b3ab-a0b7b4869601]"
+     },
+     {
+      "how": "Her narrative is highly differentiated, combining athletic trailblazing with active philanthropy through Yuwa.",
+      "ref": "findings[mia.narrative_power]"
+     },
+     {
+      "how": "Opening to attract CSR sponsorships by integrating her active work with Yuwa.",
+      "ref": "opportunity[amplify-yuwa-philanthropic-work]"
+     }
+    ],
+    "intent": null,
+    "notSeen": [],
+    "advances": null,
+    "executionPath": "specialized_plan",
+    "relationToExistingWork": "new_work"
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.11.0-exp",
+    "runAt": "2026-09-27T21:44:45.355Z",
+    "runId": "153dda13-3603-4875-9e14-18fb8218f338"
+   },
+   "runs": [
+    "153dda13-3603-4875-9e14-18fb8218f338"
+   ],
+   "response": {
+    "at": null,
+    "actor": null,
+    "state": "none"
+   },
+   "authorization": {
+    "at": null,
+    "actor": null,
+    "state": "none"
+   },
+   "execution": {
+    "refs": [],
+    "state": "none"
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "reconsiders": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-27T21:44:45.355Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run 153dda13-3603-4875-9e14-18fb8218f338"
+    }
+   ]
+  },
+  {
+   "version": "recommendation/0.2.0-exp",
+   "id": "rec_91a9601812abc76a",
+   "key": "d9372f4f7e892e9b",
+   "source": "the Objective loop",
+   "subject": {
+    "kind": "objective",
+    "id": "c0f587e4-750f-4575-a4e8-fd4cfa6e078e"
+   },
+   "question": "what should Nomila do about this Objective now?",
+   "objectiveIds": [
+    "c0f587e4-750f-4575-a4e8-fd4cfa6e078e"
+   ],
+   "value": {
+    "why": "Mia has a strong narrative and academic background at Stanford in Symbolic Systems and Management Science but has no active commercial partnerships in the tech, STEM, or academic sectors.",
+    "ends": null,
+    "what": "Target premium brand partnerships in EdTech, STEM, and enterprise venture spaces by leveraging Mia's Stanford engineering and academic credentials.",
+    "cites": [
+     {
+      "how": "Objective to build positioning at the intersection of athletics and technology/entrepreneurship.",
+      "ref": "objective[c0f587e4-750f-4575-a4e8-fd4cfa6e078e]"
+     },
+     {
+      "how": "Her academic acceleration, completed in Symbolic Systems and pursuing MS&E, creates a unique story.",
+      "ref": "findings[mia.narrative_power]"
+     },
+     {
+      "how": "Opening to target premium partnerships in EdTech, STEM, and enterprise venture spaces.",
+      "ref": "opportunity[grow-academic-tech-partnerships]"
+     }
+    ],
+    "intent": null,
+    "notSeen": [],
+    "advances": null,
+    "executionPath": "specialized_plan",
+    "relationToExistingWork": "new_work"
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.11.0-exp",
+    "runAt": "2026-09-27T21:44:45.355Z",
+    "runId": "153dda13-3603-4875-9e14-18fb8218f338"
+   },
+   "runs": [
+    "153dda13-3603-4875-9e14-18fb8218f338"
+   ],
+   "response": {
+    "at": null,
+    "actor": null,
+    "state": "none"
+   },
+   "authorization": {
+    "at": null,
+    "actor": null,
+    "state": "none"
+   },
+   "execution": {
+    "refs": [],
+    "state": "none"
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "reconsiders": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-27T21:44:45.355Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run 153dda13-3603-4875-9e14-18fb8218f338"
+    }
+   ]
+  },
+  {
+   "version": "recommendation/0.2.0-exp",
+   "id": "rec_a435736e9f04847a",
+   "key": "8704ed12d2c29628",
+   "source": "the Objective loop",
+   "subject": {
+    "kind": "objective",
+    "id": "feb62891-8b9f-44e4-8c1f-677d6947334b"
+   },
+   "question": "what should Nomila do about this Objective now?",
+   "objectiveIds": [
+    "feb62891-8b9f-44e4-8c1f-677d6947334b"
+   ],
+   "value": {
+    "why": "Mia's TikTok account has been dormant for over 550 days, and her overall social audience trajectory is cooling, which can be reversed by reactivating TikTok via cross-posting of her existing Reels.",
+    "ends": null,
+    "what": "Reactivate her dormant TikTok channel by cross-posting short-form video content to expand her digital reach and reverse the cooling audience trajectory.",
+    "cites": [
+     {
+      "how": "Objective to build a stronger and more consistent presence across both Instagram and TikTok.",
+      "ref": "objective[feb62891-8b9f-44e4-8c1f-677d6947334b]"
+     },
+     {
+      "how": "TikTok has been dormant for 557.3 days.",
+      "ref": "contentPerformance[tiktok]"
+     },
+     {
+      "how": "Audience trajectory is classified as cooling.",
+      "ref": "audienceTrajectory"
+     },
+     {
+      "how": "Reactivating TikTok is highly feasible using existing content formats with minimal extra time.",
+      "ref": "opportunity[unlock-tiktok-channel]"
+     }
+    ],
+    "intent": null,
+    "notSeen": [],
+    "advances": null,
+    "executionPath": "specialized_plan",
+    "relationToExistingWork": "new_work"
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.11.0-exp",
+    "runAt": "2026-09-27T21:44:45.355Z",
+    "runId": "153dda13-3603-4875-9e14-18fb8218f338"
+   },
+   "runs": [
+    "153dda13-3603-4875-9e14-18fb8218f338"
+   ],
+   "response": {
+    "at": null,
+    "actor": null,
+    "state": "none"
+   },
+   "authorization": {
+    "at": null,
+    "actor": null,
+    "state": "none"
+   },
+   "execution": {
+    "refs": [],
+    "state": "none"
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "reconsiders": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-27T21:44:45.355Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run 153dda13-3603-4875-9e14-18fb8218f338"
+    }
+   ]
+  }
+ ]
+}

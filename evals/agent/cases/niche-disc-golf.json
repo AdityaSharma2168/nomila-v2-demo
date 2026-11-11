@@ -1,0 +1,113 @@
+{
+  "id": "niche-disc-golf",
+  "reviewed": false,
+  "description": "Niche sport: professional disc golf, with an unusually large equipment deal.",
+  "tags": {
+    "stage": "pro",
+    "sport": "disc golf",
+    "gender": "male",
+    "coverage": "medium"
+  },
+  "input": {
+    "name": "Paul McBeth",
+    "sport": "disc golf"
+  },
+  "expected": {
+    "identity": "resolved",
+    "min_recall": 0.6,
+    "facts": [
+      {
+        "id": "e1",
+        "fact": "Six-time PDGA World Champion (2012-2015, 2019, 2022).",
+        "match": [
+          "six|6|sixth",
+          "World Championships|World Championship|World Champion|world title|world titles|Worlds"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Paul_McBeth",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e2",
+        "fact": "Left Innova for a four-year Discraft deal at the end of 2018.",
+        "match": [
+          "Discraft",
+          "2018|four-year|4-year"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Paul_McBeth",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e3",
+        "fact": "10-year, $10 million Discraft contract (February 2021).",
+        "match": [
+          "Discraft",
+          "10 million|$10m|ten million|10-year|10 year"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Paul_McBeth",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e4",
+        "fact": "Founded the Paul McBeth Foundation (2021).",
+        "match": [
+          "McBeth Foundation"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Paul_McBeth",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e5",
+        "fact": "Won the United States Disc Golf Championship (2015, 2018, 2021).",
+        "match": [
+          "USDGC|United States Disc Golf Championship|US Disc Golf Championship|U.S. Disc Golf Championship"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Paul_McBeth",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e6",
+        "fact": "Sponsored by Innova Champion Discs from 2005 to 2018.",
+        "match": [
+          "Innova"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Paul_McBeth",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e7",
+        "fact": "Shot an 18-under round over 18 holes (July 2018).",
+        "match": [
+          "18 under|-18|18-under"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Paul_McBeth",
+        "checked": "2026-10-09"
+      }
+    ]
+  },
+  "must_not": [
+    {
+      "kind": "contact",
+      "match": "gmail.com|yahoo.com|icloud.com|hotmail.com|outlook.com|phone number|cell number",
+      "why": "Private contact details are never stored or shown (email and phone FORMATS are also checked by the never_content grader)."
+    },
+    {
+      "kind": "address",
+      "match": "home address|lives at|resides at|street address",
+      "why": "A home address is never stored or shown (street-address FORMATS are also checked by the never_content grader)."
+    },
+    {
+      "kind": "family",
+      "match": "Hannah McBeth|Hannah Croke",
+      "severity": "warn",
+      "why": "Names of his spouse. Listed per the eval brief (family names must not appear). WARN, not fail: the owner rule of 9 Oct allows family as the athlete publicly presents it as a 'care' fact. Owner to decide. No child's name is ever written in a case file."
+    },
+    {
+      "kind": "invented_sponsor",
+      "match": [
+        "MVP Disc Sports|Dynamic Discs",
+        "sponsor|sponsors|sponsored|sponsorship|endorse|endorses|endorsement|endorsements|deal|signed|partner|partnership|ambassador|contract"
+      ],
+      "why": "Plausible brands in the category that public sources do not tie to this athlete; any sponsorship claim with them is invented."
+    }
+  ]
+}

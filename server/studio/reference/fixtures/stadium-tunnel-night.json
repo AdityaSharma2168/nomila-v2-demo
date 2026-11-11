@@ -1,0 +1,62 @@
+{
+  "_note": "SYNTHETIC. Written from the spec's own §12 ShotSpec example (docs/specs/creative-architecture.md): an athlete hero walking a stadium tunnel at night, low angle, slow orbit, stadium practical light. Not a model's output and not a real image. The spec has no worked decomposition, so this is the shape filled in from its example.",
+  "source": { "kind": "image", "role": "style_reference" },
+  "decomposition": {
+    "schema": "reference-decomposition/1",
+    "reference_intent": {
+      "composition": {
+        "summary": "Subject centred in a long, symmetrical corridor, with the tunnel walls drawing the eye to her.",
+        "tags": ["centered", "symmetrical", "layered_depth"],
+        "basis": "observed"
+      },
+      "camera": {
+        "summary": "Medium-wide from a low angle, slowly orbiting left to right.",
+        "tags": ["medium_wide", "low_angle", "orbit"],
+        "basis": "observed"
+      },
+      "lens_perspective": {
+        "summary": "Moderately wide lens that exaggerates the tunnel's depth without distorting the subject.",
+        "tags": [],
+        "basis": "observed"
+      },
+      "lighting": {
+        "summary": "Cool stadium practicals at the far end backlight her, and the tunnel's own fixtures give a hard top light.",
+        "tags": ["stadium", "backlight", "hard_light", "low_key"],
+        "basis": "observed"
+      },
+      "color": {
+        "summary": "Desaturated concrete greys under a cool blue cast, with warm skin as the only warm note.",
+        "tags": [],
+        "basis": "observed"
+      },
+      "environment": {
+        "summary": "A stadium players' tunnel at night, empty except for her.",
+        "tags": ["stadium"],
+        "basis": "observed"
+      },
+      "subject_placement": {
+        "summary": "One athlete, full figure, in the centre third, walking toward camera.",
+        "tags": [],
+        "basis": "observed"
+      },
+      "wardrobe": {
+        "summary": "Training kit and boots, nothing branded legibly.",
+        "tags": [],
+        "basis": "observed"
+      },
+      "motion": {
+        "summary": "A steady, unhurried walk toward the camera.",
+        "tags": ["walking"],
+        "basis": "observed"
+      },
+      "editing_rhythm": null,
+      "typography": null,
+      "emotional_tone": {
+        "summary": "Focused and controlled: the calm before a big game.",
+        "tags": [],
+        "basis": "observed"
+      }
+    },
+    "commercial_style": ["sports_campaign", "cinematic"]
+  }
+}

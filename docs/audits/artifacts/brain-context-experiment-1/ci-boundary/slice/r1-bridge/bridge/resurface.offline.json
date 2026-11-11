@@ -1,0 +1,194 @@
+{
+ "request": {
+  "id": "req_4759de11f5f15e0f",
+  "need": "counterparty_terms",
+  "status": "evidenced",
+  "eligibility": {
+   "eligible": true,
+   "status": "evidenced",
+   "because": "responsive, attributable evidence arrived and no run has reconsidered with it",
+   "blocks": {
+    "kind": "deferred_objective",
+    "objectiveId": "2d199757-6e12-4a6b-bade-df05c587e849"
+   }
+  },
+  "decision": {
+   "source": "the Objective loop",
+   "subject": {
+    "kind": "objective",
+    "id": "2d199757-6e12-4a6b-bade-df05c587e849"
+   },
+   "question": "information condition"
+  },
+  "blocks": {
+   "kind": "deferred_objective",
+   "objectiveId": "2d199757-6e12-4a6b-bade-df05c587e849"
+  },
+  "evidenceRefs": [
+   {
+    "store": "inbox_messages",
+    "id": "msg-controlled-startx1-reply",
+    "at": "2026-09-27T14:05:00Z",
+    "sourceClass": "connected",
+    "need": "counterparty_terms",
+    "attributedTo": "req_4759de11f5f15e0f",
+    "asserts": "StartX1 replied to the request for terms: a three-month ambassador engagement (October–December 2026), USD 6,000 flat plus product, three Instagram posts and one campus event appearance, no category exclusivity, usage limited to StartX1's own channels for the term."
+   }
+  ],
+  "projection": [
+   {
+    "run": "R1-P",
+    "objectiveId": "2d199757-6e12-4a6b-bade-df05c587e849",
+    "requestId": "req_4759de11f5f15e0f"
+   }
+  ]
+ },
+ "run": {
+  "id": "25d7d68a4b4d87c5716d8121a6b23e7d9003d87ec287d7767fab95df6c8bef0e",
+  "structuralProblems": [],
+  "groundingProblems": [],
+  "entry": {
+   "objectiveId": "2d199757-6e12-4a6b-bade-df05c587e849",
+   "decision": "CONDITION_APPEARS_RESOLVED",
+   "why": "The athlete deferred this proposed partnership until more was known about the terms. StartX1 has now provided detailed proposed terms, including compensation, term length, content deliverables, and appearance obligations, resolving her information deferral.",
+   "cites": [
+    {
+     "ref": "deferred[2d199757-6e12-4a6b-bade-df05c587e849]",
+     "how": "indicates she deferred the StartX1 partnership until more information was available."
+    },
+    {
+     "ref": "research[0]",
+     "how": "documents StartX1's proposed terms, including a 3-month term, USD 6,000 compensation, three Instagram posts, and one campus event appearance."
+    }
+   ]
+  }
+ },
+ "verdict": {
+  "apply": true,
+  "citedBlock": 0,
+  "delta": {
+   "because": "information_available",
+   "requestId": "req_4759de11f5f15e0f",
+   "observedInRun": "25d7d68a4b4d87c5716d8121a6b23e7d9003d87ec287d7767fab95df6c8bef0e",
+   "evidenceRefs": [
+    {
+     "store": "inbox_messages",
+     "id": "msg-controlled-startx1-reply",
+     "at": "2026-09-27T14:05:00Z"
+    }
+   ],
+   "rationale": "The athlete deferred this proposed partnership until more was known about the terms. StartX1 has now provided detailed proposed terms, including compensation, term length, content deliverables, and appearance obligations, resolving her information deferral."
+  }
+ },
+ "before": {
+  "disposition": "deferred",
+  "lifecycle": "proposed",
+  "deferral": {
+   "kind": "information",
+   "said": "When u know more about this"
+  },
+  "events": [
+   {
+    "at": "2026-09-25T00:20:23.103Z",
+    "action": "presented",
+    "actor": {
+     "userId": null,
+     "role": "system"
+    },
+    "said": null,
+    "because": null
+   },
+   {
+    "at": "2026-09-25T01:33:04.891Z",
+    "action": "defer",
+    "actor": {
+     "userId": "cf021679-77f8-40b1-b485-bb2d08fec384",
+     "role": "athlete"
+    },
+    "said": "I don’t know enough about StartX1 yet to decide that securing a partnership with them should be one of my objectives. Evaluate the opportunity first.",
+    "because": null
+   },
+   {
+    "at": "2026-09-25T03:29:32.161Z",
+    "action": "re_surfaced",
+    "actor": {
+     "userId": null,
+     "role": "system"
+    },
+    "said": null,
+    "because": null
+   },
+   {
+    "at": "2026-09-25T15:19:52.333Z",
+    "action": "defer",
+    "actor": {
+     "userId": "cf021679-77f8-40b1-b485-bb2d08fec384",
+     "role": "athlete"
+    },
+    "said": "When u know more about this",
+    "because": null
+   },
+   {
+    "at": "2026-09-25T15:23:49.473Z",
+    "action": "reaffirmed_by_run",
+    "actor": {
+     "userId": null,
+     "role": "system"
+    },
+    "said": null,
+    "because": null
+   }
+  ]
+ },
+ "appended_event": {
+  "id": "offline-ev-resurface",
+  "objectiveId": "2d199757-6e12-4a6b-bade-df05c587e849",
+  "athleteId": "dc8f37f1-deff-43f8-8c02-e37a5cc20d4f",
+  "at": "2026-09-27T02:34:26.497Z",
+  "actor": {
+   "userId": null,
+   "role": "system"
+  },
+  "action": "re_surfaced",
+  "said": null,
+  "delta": {
+   "because": "information_available",
+   "requestId": "req_4759de11f5f15e0f",
+   "observedInRun": "25d7d68a4b4d87c5716d8121a6b23e7d9003d87ec287d7767fab95df6c8bef0e",
+   "evidenceRefs": [
+    {
+     "store": "inbox_messages",
+     "id": "msg-controlled-startx1-reply",
+     "at": "2026-09-27T14:05:00Z"
+    }
+   ],
+   "rationale": "The athlete deferred this proposed partnership until more was known about the terms. StartX1 has now provided detailed proposed terms, including compensation, term length, content deliverables, and appearance obligations, resolving her information deferral."
+  }
+ },
+ "after": {
+  "disposition": "unreviewed",
+  "lifecycle": "proposed",
+  "deferral": null,
+  "queueEligible": true,
+  "requestReconsideredInRun": "25d7d68a4b4d87c5716d8121a6b23e7d9003d87ec287d7767fab95df6c8bef0e"
+ },
+ "original_defer_event_preserved": {
+  "at": "2026-09-25T15:19:52.333Z",
+  "said": "When u know more about this",
+  "delta": {
+   "deferral": {
+    "kind": "information",
+    "said": "When u know more about this"
+   }
+  }
+ },
+ "second_application": {
+  "apply": false,
+  "because": "already reconsidered in run 25d7d68a4b4d87c5716d8121a6b23e7d9003d87ec287d7767fab95df6c8bef0e — one attribution per evidenced request"
+ },
+ "second_application_guards": {
+  "requestGuard": "already reconsidered in run 25d7d68a4b4d87c5716d8121a6b23e7d9003d87ec287d7767fab95df6c8bef0e — one attribution per evidenced request",
+  "ledgerGuard": "only a deferred objective is re-surfaced"
+ },
+ "wrote_to_db": false
+}

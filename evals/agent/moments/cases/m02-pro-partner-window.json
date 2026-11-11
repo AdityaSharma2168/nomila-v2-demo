@@ -1,0 +1,161 @@
+{
+  "id": "m02-pro-partner-window",
+  "reviewed": false,
+  "description": "An established pro with a kit partner whose term ends inside the window: link the championships research already holds (never rewrite it), add the season-opening race from the athlete's own schedule fact, and the partner window from the deal.",
+  "mock_today": "2026-10-10",
+  "athlete": {
+    "name": "Tomas Varga",
+    "sport": "track cycling"
+  },
+  "stage": {
+    "label": "Professional rider, national team",
+    "band": "established"
+  },
+  "fixture": {
+    "facts": [
+      {
+        "key": "f1",
+        "subject_kind": "athlete",
+        "subject_name": "Tomas Varga",
+        "claim": "Tomas Varga rides for the Danube Velo professional team.",
+        "type": "found",
+        "date": "-90",
+        "topic": "team",
+        "field": "team",
+        "field_value": "Danube Velo"
+      },
+      {
+        "key": "f2",
+        "subject_kind": "athlete",
+        "subject_name": "Tomas Varga",
+        "claim": "Tomas Varga opens the indoor season at the Riverside velodrome race in nine days.",
+        "type": "found",
+        "date": "-2",
+        "topic": "competition"
+      }
+    ],
+    "moments": [
+      {
+        "key": "m1",
+        "name": "National track championships",
+        "claim": "The national track championships are held at the end of the window.",
+        "date": "+30",
+        "topic": "competition"
+      }
+    ],
+    "deals": [
+      {
+        "key": "d1",
+        "brand": "Velo Kit Co",
+        "category": "cycling apparel",
+        "status": "accepted",
+        "term_start": "-300",
+        "term_end": "+25",
+        "signed": true
+      }
+    ]
+  },
+  "expect": {
+    "min_moments": 3,
+    "max_moments": 5,
+    "retired": [],
+    "kept": [
+      "m1"
+    ],
+    "golden": [
+      {
+        "id": "g1",
+        "match": "championships",
+        "why": "The national championships are the biggest dated moment in the window."
+      },
+      {
+        "id": "g2",
+        "match": "Velo Kit",
+        "why": "The kit partner's term closes inside the window: a renewal-season moment."
+      },
+      {
+        "id": "g3",
+        "match": "season|opening race|velodrome",
+        "why": "The athlete's own season opener is on file."
+      }
+    ],
+    "min_recall": 1,
+    "must_not": [
+      {
+        "match": "Apex Cycle Wear",
+        "why": "Apparel competing with the current kit partner."
+      }
+    ]
+  },
+  "mock": {
+    "sources": [
+      "https://example.org/m02-pro-partner-window/championships"
+    ],
+    "moments": [
+      {
+        "name": "National track championships",
+        "description": "The national track championships close the window.",
+        "date": "+30",
+        "date_precision": "day",
+        "category": "league",
+        "why_now": "The biggest stage of the window, and title footage outlasts the week.",
+        "source_url": "https://example.org/m02-pro-partner-window/championships",
+        "source_title": "Federation calendar",
+        "confidence": 0.9,
+        "based_on": [
+          "$M:m1"
+        ],
+        "refreshes": "$M:m1",
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "Thirty days to the line.",
+          "angle": "The work nobody sees."
+        }
+      },
+      {
+        "name": "Season-opening velodrome race",
+        "description": "The indoor season opens at the Riverside velodrome.",
+        "date": "+9",
+        "date_precision": "day",
+        "category": "schedule",
+        "why_now": "The first race back sets the season's story.",
+        "source_url": "",
+        "source_title": "",
+        "confidence": 0.8,
+        "based_on": [
+          "$F:f2"
+        ],
+        "refreshes": null,
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "Back on the boards.",
+          "angle": "Season one, lap one."
+        }
+      },
+      {
+        "name": "Velo Kit Co partnership window closes",
+        "description": "The kit partnership's current term ends inside the window.",
+        "date": "+25",
+        "date_precision": "day",
+        "category": "partner_campaign",
+        "why_now": "A strong post before the term ends supports the renewal; commercially sensitive, so keep it a thank-you, not a pitch.",
+        "source_url": "",
+        "source_title": "",
+        "confidence": 0.8,
+        "based_on": [
+          "$D:d1"
+        ],
+        "refreshes": null,
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "A season in this kit.",
+          "angle": "Gratitude for the season."
+        }
+      }
+    ],
+    "retire": []
+  }
+}

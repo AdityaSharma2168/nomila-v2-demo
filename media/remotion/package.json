@@ -1,0 +1,31 @@
+{
+  "name": "nomila-remotion",
+  "private": true,
+  "description": "Motion renderer: Remotion compositions (brand book reel, title card, countdown) and the Cloud Run render service that runs them.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "bundle": "tsx server/bundle.ts",
+    "start": "tsx server/index.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "render:sample": "tsx server/sample.ts"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.537",
+    "@remotion/google-fonts": "4.0.537",
+    "@remotion/layout-utils": "4.0.537",
+    "@remotion/renderer": "4.0.537",
+    "@remotion/transitions": "4.0.537",
+    "express": "^4.21.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.537",
+    "tsx": "^4.19.2"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.537",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.1.0",
+    "typescript": "^5.7.2"
+  }
+}

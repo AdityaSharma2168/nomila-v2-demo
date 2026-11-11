@@ -1,0 +1,156 @@
+{
+ "version": "intelligence-request/0.1.0-exp",
+ "requests": [
+  {
+   "version": "intelligence-request/0.1.0-exp",
+   "id": "req_41d994ca3ee36669",
+   "key": "66e8cc373a820cd2",
+   "decision": {
+    "source": "the athlete's agent, through Mila",
+    "subject": {
+     "kind": "athlete",
+     "id": "dd1a8a80-d31b-423a-a572-9d146716cb0f"
+    },
+    "question": "What posting cadence can she commit to for a partnership?"
+   },
+   "need": "athlete_capability_intent",
+   "proposition": "She can sustain a stated number of posts a week in season.",
+   "whyMaterial": "A partnership's deliverables must fit what she will actually post; only she can say what that is.",
+   "sourceClass": "athlete",
+   "raisedBy": {
+    "runId": "acquire-live:park",
+    "spec": "brain-eval-spec/0.8.1-exp",
+    "at": "2026-09-27T01:51:27.582Z"
+   },
+   "runs": [
+    "acquire-live:park"
+   ],
+   "acquisition": {
+    "mechanism": "mila_question",
+    "ref": {
+     "kind": "workflow_step",
+     "id": "c0aaaece-c21e-45c9-b665-10d90125078b"
+    },
+    "chosenBecause": [
+     "need athlete_capability_intent can be established by mila_question",
+     "authority required: athlete",
+     "chosen mila_question: available, authority athlete ≥ athlete, lowest athlete burden among the available"
+    ],
+    "at": "2026-09-27T01:51:28.196Z",
+    "completedAt": "2026-09-27T01:51:40.213Z",
+    "producedEvidence": true
+   },
+   "evidenceRefs": [
+    {
+     "store": "athlete_asserted",
+     "id": "aac861dd-7ca6-4298-a517-33643991d3b5",
+     "at": "2026-09-27T01:51:38.852Z",
+     "sourceClass": "athlete",
+     "need": "athlete_capability_intent",
+     "attributedTo": "req_41d994ca3ee36669",
+     "asserts": "cadence: 3 a week in season (test value) — she said \"Test answer: I can keep three a week during the season, more in the off-season.\""
+    }
+   ],
+   "reconsideredInRun": null,
+   "obsolete": null,
+   "events": [
+    {
+     "at": "2026-09-27T01:51:27.582Z",
+     "event": "raised",
+     "actor": "system",
+     "note": "run acquire-live:park"
+    },
+    {
+     "at": "2026-09-27T01:51:28.196Z",
+     "event": "acquisition_planned",
+     "actor": "resolver",
+     "note": "need athlete_capability_intent can be established by mila_question | authority required: athlete | chosen mila_question: available, authority athlete ≥ athlete, lowest athlete burden among the available"
+    },
+    {
+     "at": "2026-09-27T01:51:28.196Z",
+     "event": "acquisition_started",
+     "actor": "consumer",
+     "note": "workflow_step:c0aaaece-c21e-45c9-b665-10d90125078b"
+    },
+    {
+     "at": "2026-09-27T01:51:40.213Z",
+     "event": "evidence_received",
+     "actor": "store",
+     "note": "athlete_asserted:aac861dd-7ca6-4298-a517-33643991d3b5 — attributable, right class, after the request"
+    }
+   ]
+  },
+  {
+   "version": "intelligence-request/0.1.0-exp",
+   "id": "req_b7b35676175152b3",
+   "key": "6fc6fcdffaf84351",
+   "decision": {
+    "source": "the athlete's agent, through Mila",
+    "subject": {
+     "kind": "athlete",
+     "id": "dd1a8a80-d31b-423a-a572-9d146716cb0f"
+    },
+    "question": "Can she add a weekly Story for a partner?"
+   },
+   "need": "athlete_capability_intent",
+   "proposition": "She can sustain a stated number of posts a week in season.",
+   "whyMaterial": "A partnership's deliverables must fit what she will actually post; only she can say what that is.",
+   "sourceClass": "athlete",
+   "raisedBy": {
+    "runId": "acquire-live:obsolete",
+    "spec": "brain-eval-spec/0.8.1-exp",
+    "at": "2026-09-27T01:51:51.342Z"
+   },
+   "runs": [
+    "acquire-live:obsolete"
+   ],
+   "acquisition": {
+    "mechanism": "mila_question",
+    "ref": {
+     "kind": "workflow_step",
+     "id": "c7a4afa6-76ce-433f-8c62-e746a737b591"
+    },
+    "chosenBecause": [
+     "need athlete_capability_intent can be established by mila_question",
+     "authority required: athlete",
+     "chosen mila_question: available, authority athlete ≥ athlete, lowest athlete burden among the available"
+    ],
+    "at": "2026-09-27T01:51:51.934Z",
+    "completedAt": "2026-09-27T01:51:51.939Z",
+    "producedEvidence": false
+   },
+   "evidenceRefs": [],
+   "reconsideredInRun": null,
+   "obsolete": {
+    "at": "2026-09-27T01:51:51.939Z",
+    "because": "the decision was withdrawn in a later run (controlled)"
+   },
+   "events": [
+    {
+     "at": "2026-09-27T01:51:51.342Z",
+     "event": "raised",
+     "actor": "system",
+     "note": "run acquire-live:obsolete"
+    },
+    {
+     "at": "2026-09-27T01:51:51.934Z",
+     "event": "acquisition_planned",
+     "actor": "resolver",
+     "note": "need athlete_capability_intent can be established by mila_question | authority required: athlete | chosen mila_question: available, authority athlete ≥ athlete, lowest athlete burden among the available"
+    },
+    {
+     "at": "2026-09-27T01:51:51.934Z",
+     "event": "acquisition_started",
+     "actor": "consumer",
+     "note": "workflow_step:c7a4afa6-76ce-433f-8c62-e746a737b591"
+    },
+    {
+     "at": "2026-09-27T01:51:51.939Z",
+     "event": "obsolete",
+     "actor": "system",
+     "note": "the decision was withdrawn in a later run (controlled)"
+    }
+   ]
+  }
+ ]
+}

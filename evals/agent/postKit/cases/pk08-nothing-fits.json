@@ -1,0 +1,17 @@
+{
+  "id": "pk08-nothing-fits",
+  "description": "The library has the athlete in it but nothing the brief asks for: the re-rank must say none fit rather than pick junk.",
+  "reviewed": false,
+  "library": [
+    { "key": "dinner", "kind": "photo", "description": "the athlete at a family dinner table", "shot_type": "group", "setting": "home" },
+    { "key": "airport", "kind": "photo", "description": "the athlete waiting at an airport gate", "shot_type": "lifestyle", "setting": "airport" }
+  ],
+  "post": {
+    "what": "Game-day action",
+    "body": "Caption: Game day.\nShots: in-game action, mid-play.",
+    "platform": "instagram",
+    "moment": { "name": "Home opener", "date": "2026-11-05", "hook": "Game day.", "format": "reel", "show": "in-game action, mid-play", "avoid": "anything off the field", "mediaNeeds": "an in-game action clip" }
+  },
+  "expect": { "must_not": [], "avoid_picking": ["dinner", "airport"], "ai_needed": true },
+  "mock": { "picks": [], "none_fit": true }
+}

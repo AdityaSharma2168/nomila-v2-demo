@@ -1,0 +1,410 @@
+You are a specialized planner for one athlete. Nomila's Brain has recommended a strategic move on one of her Objectives;
+she has accepted the move and authorized preparation. Nothing has been authorized for execution.
+
+YOU OWN HOW. The move — its subject, its direction, its reason — is not yours. You may not restate it more narrowly or
+more widely, replace its reason, reinterpret the Objective, or rank it against her other moves. If the handoff's wording
+names a work product or a mechanic, that noun is not binding on you: the move is binding, the noun is one planner's guess.
+You decide the concrete strategy, the targets, the sequence, the channels, the work products, the dependencies, the
+cadence and the completion condition of your own work.
+
+READ BY REFERENCE. Below the handoff you are shown the Objective(s) it names and the record the Brain judged from, under
+the same references the Brain used. Cite those references in `dependencies`. Do not restate the Brain's evidence.
+
+CONSTRAINTS. The handoff's `notSeen` items are what the Brain could not see and judged anyway. Each is a constraint on
+you: plan to obtain it, or plan around it, and say which.
+
+STOP RATHER THAN REDEFINE. Return `result: "escalated"` with `output: null` when planning shows the work is a persistent
+activation with a purpose, a managed scope, an aggregate outcome and a reason to end owned by something outside it — a
+term, an Objective horizon, a finish she has stated. Name that source in `escalation.ends` as a reference (or null if
+none is on record) and stop: a campaign is opened only by a new Recommendation the athlete governs, never by you.
+Return `result: "refused"` when the move cannot be planned as stated without changing it; say why.
+
+GATES. You prepare; you never send, publish, post, spend or commit her to anything. Every step that would do so carries
+a gate other than "none": "tap_to_send" for a message or reply, "spend" for paid generation or media, "athlete_approval"
+for a scope she should see whole before work starts.
+
+COMPLETION. State when YOUR planning is complete, and state plainly what that does not imply — the Recommendation's
+outcome (partnerships secured, audience grown) is not yours to declare.
+
+GOVERNED EXCLUSIONS. Below you are shown subjects the athlete has deferred, declined or excluded. You do not advance them:
+not as a target, not as a warm lead, not as a follow-up, not as a dependency. Deferral is hers; you do not reinterpret it
+or decide the wait is over. Name what you saw and left alone under `omitted`, and move on.
+
+COUNTERPARTS IN MOTION. A counterpart already in a deal, a negotiation, an activation or an active inbound thread is
+Existing Work owned by Deals — not a new outreach target. You never reply, negotiate, counter, accept, decline or follow
+up with one. Reference it under `attachments` when your plan depends on it, or `omitted`, and leave it.
+
+CREATIVE WORK. You may commission it; you do not solve it. A commission carries purpose, audience role, channel or format
+class when execution needs it, timing at programme level, constraints, and why. It carries nothing about how the piece
+reads or looks — no hook, caption, treatment, tone, shot, edit, reference or concept; those are conceived after you, per
+commission, by creative intelligence. A commission has no field for them; if you find yourself with one, stop writing.
+
+OUTPUT, JSON only:
+{
+  "version":            "planner-eval-spec/0.2.0-exp",
+  "recommendation_id":  <exactly as in the handoff>,
+  "planner":            outreach | content,
+  "result":             planned | escalated | refused,
+  "rationale":          <why this shape of plan, in your words — not the Brain's why>,
+  "dependencies":       [ { "ref": <reference exactly as shown>, "why": <what it constrains or enables> } ],
+  "completion":         { "planning_complete_when": <string>, "does_not_imply": <string> },
+  "output":             <the planner's output below, or null>,
+  "escalation":         null | { "shape": "campaign", "why": <string>, "ends": null | { "source": objective_horizon | deal_term | athlete_stated, "ref": <reference> } }
+}
+
+OUTREACH PLANNER OUTPUT. You plan approaches to counterparts outside her: brands, departments, programmes, people.
+"output": {
+  "target_classes":  [ { "class": <who, as a class she can recognise>, "why": <fit to the move>, "candidates": [ <names only where the record supports them; otherwise empty> ] } ],
+  "research_needed": [ { "question": <what must be learned before a step can run>, "source_class": athlete | connected | external } ],
+  "sequence":        [ { "step": <n>, "does": <one action>, "depends_on": [ <steps> ], "gate": none | athlete_approval | tap_to_send | spend } ],
+  "materials":       [ { "material": <non-creative work product you prepare>, "purpose": <what it is for> } ],
+  "commissions":     [ { "purpose": <why the piece is needed>, "audience_role": <who it is for>, "channel_or_format_class": <string or null>, "timing": <string or null>, "constraints": [ <string> ], "why": <what the plan cannot do without it> } ],
+  "omitted":         [ { "subject": <the excluded or in-motion subject, by its name or reference>, "why": <deferred | declined | in motion — and nothing more> } ],
+  "attachments":     [ { "ref": <existing work reference>, "why": <what in this plan depends on it> } ]
+}
+
+=== HANDOFF (execution-router, unchanged) ===
+recommendation_id: rec_2507ecb0723f9dd8
+domain: impact
+subject: objective[b1c799e3-59fc-4986-b3ab-a0b7b4869601]
+objective_ids: b1c799e3-59fc-4986-b3ab-a0b7b4869601
+what (the move): Target global brand and corporate social responsibility partnerships that align with her philanthropic leadership at the Yuwa girls empowerment program.
+why (the reason): Mia has a strong narrative power and distinctiveness tied to her philanthropy, but her work with Yuwa has not yet been commercialized. Targeting CSR and global brands allows her to leverage this unique narrative.
+advances: —
+intent: —
+notSeen (your constraints): 
+  - Specific CSR contact list
+  - Yuwa academy's own corporate sponsorship guidelines
+evidence: run f9e00c6f-87b3-46be-82d9-a01300f4d4c1 (rendered below)
+
+=== OBJECTIVES NAMED BY THE HANDOFF ===
+{
+ "ref": "objective[b1c799e3-59fc-4986-b3ab-a0b7b4869601]",
+ "domain": "impact",
+ "desired": "Expand the impact and visibility of my work with Yuwa through aligned global brand and CSR partnerships.",
+ "current": "Her deep involvement with Yuwa is a key part of her personal narrative but has not yet been commercialized or translated into active CSR brand sponsorships.",
+ "success": "(awaiting her review after her rewrite — Nomila's earlier line is not current)",
+ "horizon": {
+  "why": "Building international philanthropic campaigns and aligning corporate CSR departments is a long-term strategic branding outcome.",
+  "kind": "period",
+  "period": "multi_year"
+ }
+}
+
+=== CITED EVIDENCE — what the Recommendation relied on, by reference ===
+The references the Recommendation cites, resolved against run f9e00c6f-87b3-46be-82d9-a01300f4d4c1 — the run it came from (planner-cited-evidence/0.2.0-exp; the run's State: athlete-state/1.2.0).
+This run's State predates citation-strength separation (athlete-state/1.5.0): the sources M.I.A. cited there are not split by whether they were retrieved.
+Each carries the Brain's own note on how it bears. Cite them in `dependencies` by the reference shown — never one marked NOT SUPPORT; do not restate them.
+
+    objective[b1c799e3-59fc-4986-b3ab-a0b7b4869601]
+        how it bears (the Brain's words): The objective is to expand the impact and visibility of her work with Yuwa through aligned global brand and CSR partnerships.
+        shown in this prompt under OBJECTIVES NAMED BY THE HANDOFF
+
+    findings[mia.narrative_power]
+        how it bears (the Brain's words): M.I.A. identified her philanthropy with Yuwa as a key pillar of her highly differentiated narrative.
+        shown in this prompt under THE RECORD
+
+    opportunity[amplify-yuwa-philanthropic-work]
+        how it bears (the Brain's words): This opportunity recommends elevating her Yuwa work to attract global CSR sponsorships.
+        | amplify-yuwa-philanthropic-work
+        |     AMPLIFY · impact · confidence HIGH
+        |     Elevate and integrate her active work with the Yuwa girls empowerment program in India to attract global Corporate Social Responsibility (CSR) sponsorships.
+        |     impact(high): Unlocks high-value, non-traditional corporate marketing budgets dedicated to global impact and gender equity, building her long-term legacy.
+        |     feasibility(medium): Requires creating specific digital assets or storytelling content around her work with Yuwa that her agent can present to corporate impact officers.
+        |     rests on: findings[mia.narrative_power], findings[mia.cultural_relevance], findings[mia.brand_fit]
+
+
+=== EXISTING WORK ===
+What is already in motion, from Nomila's own records as of 2026-09-27T23:11:26.199Z (existing-work/0.6.0-exp). Facts only. A lens on subjects, not a namespace: cite each item by the reference at its left.
+Where Nomila holds no deliverable records for an item, its actual deliverable obligations are NOT_ESTABLISHED — zero records is not zero obligations.
+
+    deal[e9469f1f-66b1-46c2-80ef-bb573bc11dd3]
+        negotiating · TITAD · since 2026-06-02
+        Negotiation open with TITAD.
+        amount 300 (cash 300 / product —) · term not recorded → not recorded · Nomila holds no deliverable records for this deal; actual deliverable obligations are NOT_ESTABLISHED
+
+    deal[b5d832ac-232a-44ea-bcc7-d195d92b4a51]
+        negotiating · Musugy · since 2026-06-02
+        Negotiation open with Musugy.
+        amount not recorded · term not recorded → not recorded · Nomila holds no deliverable records for this deal; actual deliverable obligations are NOT_ESTABLISHED
+
+    deal[797e1548-33cc-45b4-8bce-b496c7a721a7]
+        negotiating · ProBand · since 2026-06-02
+        Negotiation open with ProBand.
+        amount not recorded · term not recorded → not recorded · Nomila holds no deliverable records for this deal; actual deliverable obligations are NOT_ESTABLISHED
+
+    deal[c5c6069f-c60d-4525-8a2a-42ccef7c56b4]
+        negotiating · IRON Peptides · since 2026-06-02
+        Negotiation open with IRON Peptides.
+        amount not recorded · term not recorded → not recorded · Nomila holds no deliverable records for this deal; actual deliverable obligations are NOT_ESTABLISHED
+
+    deal[495ac373-0cc5-40e3-878d-213904ce33ef]
+        negotiating · AEGISLAB · since 2026-07-06
+        Negotiation open with AEGISLAB.
+        amount not recorded · term not recorded → not recorded · Nomila holds no deliverable records for this deal; actual deliverable obligations are NOT_ESTABLISHED
+
+    deal[801fe00a-dd34-4352-8ef7-f71116d2b1cf]
+        negotiating · Connect Me · since 2026-07-08
+        Negotiation open with Connect Me.
+        amount not recorded · term not recorded → not recorded · Nomila holds no deliverable records for this deal; actual deliverable obligations are NOT_ESTABLISHED
+
+    deal[1965332e-7bbc-4f7f-8c8a-cb7b3d56ee89]
+        negotiating · Pillar · since 2026-07-08
+        Negotiation open with Pillar.
+        amount not recorded · term not recorded → not recorded · Nomila holds no deliverable records for this deal; actual deliverable obligations are NOT_ESTABLISHED
+
+    deal[9acd1d50-0a84-4974-b3fc-bb965c8b5541]
+        accepted_deal · gorjana · since 2026-07-29
+        Deal with gorjana recorded as accepted.
+        amount 14000 (cash 7500 / product 6500) · term not recorded → not recorded · Nomila holds no deliverable records for this deal; actual deliverable obligations are NOT_ESTABLISHED
+
+
+=== GOVERNED EXCLUSIONS — subjects the athlete has deferred, declined or excluded. You must not advance them: no targeting, no
+warm-lead reasoning, no follow-up. Where one is relevant, name it under `omitted` with the reason and move on.
+  · objective[2d199757-6e12-4a6b-bade-df05c587e849] · deferred (she said: "When u know more about this") · She has an active, fully executed commercial partnership with StartX1. · counterparties: msg-biz.online, x1, ANAZE, StartX1
+  · objective[ca4976d6-c1a3-4660-a60f-c0926d7fcbe5] · declined · Her historical Adidas partnership terms and campaign performance metrics are fully documented and accessible to her team.
+
+=== COUNTERPARTS IN MOTION — owned by Deals. Not outreach targets: no approach, no reply, no follow-up, no terms. Reference one under
+`attachments` (existing work this plan depends on) or `omitted`, and leave it.
+  · TITAD · deal[e9469f1f-66b1-46c2-80ef-bb573bc11dd3] (negotiating)
+  · Musugy · deal[b5d832ac-232a-44ea-bcc7-d195d92b4a51] (negotiating)
+  · ProBand · deal[797e1548-33cc-45b4-8bce-b496c7a721a7] (negotiating)
+  · IRON Peptides · deal[c5c6069f-c60d-4525-8a2a-42ccef7c56b4] (negotiating)
+  · AEGISLAB · deal[495ac373-0cc5-40e3-878d-213904ce33ef] (negotiating)
+  · Connect Me · deal[801fe00a-dd34-4352-8ef7-f71116d2b1cf] (negotiating)
+  · Pillar · deal[1965332e-7bbc-4f7f-8c8a-cb7b3d56ee89] (negotiating)
+  · gorjana · deal[9acd1d50-0a84-4974-b3fc-bb965c8b5541] (accepted_deal), commercialPosition.inbound[4] (inbound deal_detected)
+  · Harrison Szep · commercialPosition.inbound[0] (inbound deal_detected)
+  · Stan Eats · commercialPosition.inbound[1] (inbound deal_detected)
+  · msg-biz.online · commercialPosition.inbound[2] (inbound deal_detected)
+  · StartX1 · commercialPosition.inbound[3] (inbound deal_detected), commercialPosition.inbound[6] (inbound deal_detected), commercialPosition.inbound[9] (inbound deal_detected)
+  · x1 · commercialPosition.inbound[5] (inbound deal_detected), commercialPosition.inbound[7] (inbound unread)
+  · MPG Performance Gummies · commercialPosition.inbound[10] (inbound deal_detected)
+  · NextGen Prospects · commercialPosition.inbound[11] (inbound deal_detected)
+
+=== THE RECORD (as the Brain read it; cite by the references shown) ===
+Nomila's account of this athlete as of 2026-09-27T23:11:25.281Z (athlete-state/1.2.0).
+Overall confidence in this picture: MEDIUM.
+
+Cite any line below by the path shown at its left.
+
+IDENTITY
+    identity.name                             Mia Bhuta
+    identity.sport                            soccer
+    identity.competitionContext               Stanford University · D1
+    identity.careerStatus                     active
+
+FINDINGS — marketability dimensions, each judged by M.I.A. and read here unchanged.
+  STRENGTH  measured, above the band
+  GAP       measured, below the band
+  NEUTRAL   MEASURED and unremarkable. We know; it is simply ordinary. This is NOT missing evidence.
+  UNKNOWN   evidence is genuinely insufficient — no score, or mostly imputed signals. A statement about
+            what Nomila has measured, never about the athlete.
+
+  Each finding may carry WHY M.I.A. concluded it and WHICH SOURCES it relied on. Read those as the
+  evaluator's interpretation and the evidence behind it — NOT as established fact about the athlete.
+
+    findings[mia.athletic_authority]          STRENGTH  score 80      HIGH    0/6 signals imputed
+        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)
+          Mia Bhuta enjoys an elite athletic standing within the collegiate ranks, playing for Stanford,
+          one of the premier programs in Division I women's soccer. Her performance has been highly
+          decorated with All-America and All-Region awards, alongside leadership experience as co-captain
+          of the US Under-17 Women's Youth National Team. She has demonstrated tactical versatility
+          playing both as a starting midfielder and defender on championship-caliber squads.
+          confidence HIGH — Her athletic record is fully documented through official Stanford University rosters, tournament results, and US Soccer federation records.
+        SOURCE EVIDENCE M.I.A. CITED
+          E1  official · 2026-09-21  Mia Bhuta helped guide Stanford to the ACC Championship and ACC Tournament Championship in 2025, and has received honors including United Soccer Coaches All-America fourth team (2024) and All-Region first team (2024).
+              https://gostanford.com/sports/womens-soccer/roster/mia-bhuta
+          E2  secondary · 2026-08-21  Mia Bhuta is the first player of Indian descent, male or female, to play for the United States at any FIFA World Cup tournament, co-captaining the U-17 team in 2022 in India.
+              https://en.wikipedia.org/wiki/Mia_Bhuta
+          E3  major_media · 2025-04-17  Mia Bhuta graduated from high school early, completed her Stanford undergraduate degree in Symbolic Systems in 2.5 years, began her master's in Management Science and Engineering, and is highly active in the Yuwa girls empowerment program in India.
+              https://trailblazehersinsports.org/mia-bhuta
+        COMPONENTS  role_importance=80 [EVALUATED]  competition_level=78 [EVALUATED]  achievement_recency=85 [EVALUATED]  performance_results=80 [EVALUATED]  rankings_recognition=82 [EVALUATED]  national_international_status=78 [EVALUATED]
+
+    findings[mia.audience_scale]              GAP       score 41      HIGH    0/4 signals imputed
+        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)
+          Bhuta maintains a solid, niche social media audience of over 37,000 combined followers across
+          Instagram and TikTok, which is above average for typical college athletes but smaller than major
+          national NIL influencers. Her active cross-platform effective reach of approximately 10,300
+          indicates a highly focused base. However, her audience growth is currently in a minor
+          contraction phase, reflecting a period of stable stabilization rather than explosive expansion.
+          confidence HIGH — Her follower counts, reach, and growth rates are supported directly by authoritative, verified platform analytics.
+        SOURCE EVIDENCE M.I.A. CITED
+          E5  platform · 2026-09-21  Authoritative platform data for Mia Bhuta across YouTube, TikTok, and Instagram, detailing followers, growth, and specific Instagram engagement metrics.
+              platform_direct
+        COMPONENTS  audience_growth=25 [EVALUATED]  platform_breadth=45 [EVALUATED]  cross_platform_effective_reach=38 [EVALUATED]  sport_level_audience_percentile=55 [EVALUATED]
+
+    findings[mia.engagement_quality]          NEUTRAL   score 67.06   HIGH    2/6 signals imputed
+        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)
+          Her social media presence is characterized by exceptionally healthy engagement, including an
+          impressive 4.07% median engagement rate and 47.03% median reach efficiency on Instagram. Her
+          audience is highly authentic, with 69% concentrated in the United States and strong organic
+          interaction metrics. While private video retention and story analytics are missing, her
+          public-facing interactions are highly efficient and genuine.
+          confidence HIGH — High-integrity, platform-verified engagement and reach metrics are supplied for her primary social account.
+        SOURCE EVIDENCE M.I.A. CITED
+          E5  platform · 2026-09-21  Authoritative platform data for Mia Bhuta across YouTube, TikTok, and Instagram, detailing followers, growth, and specific Instagram engagement metrics.
+              platform_direct
+        COMPONENTS  video_retention=50 [ASSUMED]  reach_efficiency=70 [EVALUATED]  story_efficiency=50 [ASSUMED]  shares_saves_quality=55 [EVALUATED]  audience_authenticity=75 [EVALUATED]  engagement_percentile=68 [EVALUATED]
+
+    findings[mia.cultural_relevance]          NEUTRAL   score 59.65   MEDIUM  0/5 signals imputed
+        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)
+          Bhuta holds a distinctive cultural footprint that extends beyond soccer due to her historic role
+          as the first Indian-American to play and score at a FIFA World Cup. This milestone, combined
+          with her rapid academic acceleration at Stanford and tech-entrepreneurial mindset, drives
+          recurring media coverage in both mainstream and niche sports outlets. She enjoys elevated social
+          conversation and crossover appeal within the South Asian diaspora and STEM advocacy groups.
+          confidence MEDIUM — While major media coverage is well-documented, public search volume and diaspora-specific sentiment metrics are estimated through secondary web trends.
+        SOURCE EVIDENCE M.I.A. CITED
+          E2  secondary · 2026-08-21  Mia Bhuta is the first player of Indian descent, male or female, to play for the United States at any FIFA World Cup tournament, co-captaining the U-17 team in 2022 in India.
+              https://en.wikipedia.org/wiki/Mia_Bhuta
+          E3  major_media · 2025-04-17  Mia Bhuta graduated from high school early, completed her Stanford undergraduate degree in Symbolic Systems in 2.5 years, began her master's in Management Science and Engineering, and is highly active in the Yuwa girls empowerment program in India.
+              https://trailblazehersinsports.org/mia-bhuta
+        COMPONENTS  search_interest=45 [EVALUATED]  social_conversation=58 [EVALUATED]  media_source_quality=68 [EVALUATED]  crossover_recognition=65 [EVALUATED]  media_volume_percentile=62 [EVALUATED]
+
+    findings[mia.narrative_power]             STRENGTH  score 88.9    HIGH    0/6 signals imputed
+        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)
+          Her narrative is exceptionally strong and highly differentiated, combining athletic trailblazing
+          with world-class academic acceleration (graduating high school early and Stanford in 2.5 years)
+          and active philanthropy. Her work with the Yuwa Academy in India and her pursuit of a master's
+          in Management Science and Engineering create a three-dimensional story of intelligence,
+          heritage, and service. This makes her an incredibly compelling, durable, and highly authentic
+          ambassador for brands looking to champion diverse, high-achieving leaders.
+          confidence HIGH — Her academic accomplishments, philanthropic involvement, and historic athletic milestones are extensively corroborated by reputable media profiles and Stanford institutional data.
+        SOURCE EVIDENCE M.I.A. CITED
+          E1  official · 2026-09-21  Mia Bhuta helped guide Stanford to the ACC Championship and ACC Tournament Championship in 2025, and has received honors including United Soccer Coaches All-America fourth team (2024) and All-Region first team (2024).
+              https://gostanford.com/sports/womens-soccer/roster/mia-bhuta
+          E2  secondary · 2026-08-21  Mia Bhuta is the first player of Indian descent, male or female, to play for the United States at any FIFA World Cup tournament, co-captaining the U-17 team in 2022 in India.
+              https://en.wikipedia.org/wiki/Mia_Bhuta
+          E3  major_media · 2025-04-17  Mia Bhuta graduated from high school early, completed her Stanford undergraduate degree in Symbolic Systems in 2.5 years, began her master's in Management Science and Engineering, and is highly active in the Yuwa girls empowerment program in India.
+              https://trailblazehersinsports.org/mia-bhuta
+          E4  major_media · 2024-06-12  Mia Bhuta signed a landmark name, image, and likeness (NIL) contract with Adidas as a first-year student at Stanford and was featured in their national back-to-school advertising campaign.
+              https://businessofcollegesports.com/mia-bhuta-adidas
+        COMPONENTS  durability=88 [EVALUATED]  story_depth=88 [EVALUATED]  distinctiveness=92 [EVALUATED]  media_resonance=80 [EVALUATED]  evidence_authenticity=95 [EVALUATED]  commercial_applicability=85 [EVALUATED]
+
+    findings[mia.brand_fit]                   STRENGTH  score 83.6    HIGH    0/6 signals imputed
+        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)
+          Bhuta represents a flawless brand-safety profile with virtually zero reputation risks and an
+          exemplary track record of leadership. Her diverse interests allow her to credibly fit a wide
+          range of brand categories, including high-performance sportswear, educational tech, and
+          international CSR campaigns. Her premium, highly educated audience further enhances her
+          desirability for commercial partnerships.
+          confidence HIGH — The clarity of her values, her pristine public record, and her clean brand history are highly consistent across all sources.
+        SOURCE EVIDENCE M.I.A. CITED
+          E1  official · 2026-09-21  Mia Bhuta helped guide Stanford to the ACC Championship and ACC Tournament Championship in 2025, and has received honors including United Soccer Coaches All-America fourth team (2024) and All-Region first team (2024).
+              https://gostanford.com/sports/womens-soccer/roster/mia-bhuta
+          E3  major_media · 2025-04-17  Mia Bhuta graduated from high school early, completed her Stanford undergraduate degree in Symbolic Systems in 2.5 years, began her master's in Management Science and Engineering, and is highly active in the Yuwa girls empowerment program in India.
+              https://trailblazehersinsports.org/mia-bhuta
+          E4  major_media · 2024-06-12  Mia Bhuta signed a landmark name, image, and likeness (NIL) contract with Adidas as a first-year student at Stanford and was featured in their national back-to-school advertising campaign.
+              https://businessofcollegesports.com/mia-bhuta-adidas
+          E5  platform · 2026-09-21  Authoritative platform data for Mia Bhuta across YouTube, TikTok, and Instagram, detailing followers, growth, and specific Instagram engagement metrics.
+              platform_direct
+        COMPONENTS  brand_safety=98 [EVALUATED]  category_breadth=82 [EVALUATED]  content_versatility=72 [EVALUATED]  geographic_relevance=75 [EVALUATED]  audience_attractiveness=78 [EVALUATED]  identity_values_coherence=88 [EVALUATED]
+
+    findings[mia.commercial_proof]            NEUTRAL   score 71.5    HIGH    2/6 signals imputed
+        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)
+          Her commercial marketability is backed by high-quality proof, most notably her major individual
+          NIL deal with Adidas which led to her being featured in national back-to-school marketing
+          campaigns. Her long-term relationship with Adidas showcases brand loyalty and renewal potential,
+          though her overall portfolio remains highly selective and focused. Precise financial figures and
+          campaign-specific conversion performance are private.
+          confidence HIGH — Her multi-year partnership with Adidas and her national campaign presence are confirmed by major media reports and brand announcements, despite confidential terms.
+        SOURCE EVIDENCE M.I.A. CITED
+          E1  official · 2026-09-21  Mia Bhuta helped guide Stanford to the ACC Championship and ACC Tournament Championship in 2025, and has received honors including United Soccer Coaches All-America fourth team (2024) and All-Region first team (2024).
+              https://gostanford.com/sports/womens-soccer/roster/mia-bhuta
+          E4  major_media · 2024-06-12  Mia Bhuta signed a landmark name, image, and likeness (NIL) contract with Adidas as a first-year student at Stanford and was featured in their national back-to-school advertising campaign.
+              https://businessofcollegesports.com/mia-bhuta-adidas
+        COMPONENTS  brand_quality=90 [EVALUATED]  pricing_power=50 [ASSUMED]  deal_frequency=60 [EVALUATED]  renewals_repeat=80 [EVALUATED]  campaign_performance=50 [ASSUMED]  verified_commercial_value=80 [EVALUATED]
+
+    findings[mia.momentum]                    NEUTRAL   score 57.7    HIGH    0/5 signals imputed
+        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)
+          Bhuta’s athletic and academic momentum is highly stable, marked by her transition into
+          Stanford's master's program while continuing to play key minutes for a top-10 national contender
+          in 2026. However, her commercial acceleration and audience growth are currently flat, reflecting
+          her prioritization of rigorous academic and athletic demands over rapid commercial expansion.
+          Her public interest remains stable with anticipated postseason spikes.
+          confidence HIGH — Her current 2026 Stanford participation and platform-verified social growth trends provide concrete, current evidence of her trajectory.
+        SOURCE EVIDENCE M.I.A. CITED
+          E1  official · 2026-09-21  Mia Bhuta helped guide Stanford to the ACC Championship and ACC Tournament Championship in 2025, and has received honors including United Soccer Coaches All-America fourth team (2024) and All-Region first team (2024).
+              https://gostanford.com/sports/womens-soccer/roster/mia-bhuta
+          E2  secondary · 2026-08-21  Mia Bhuta is the first player of Indian descent, male or female, to play for the United States at any FIFA World Cup tournament, co-captaining the U-17 team in 2022 in India.
+              https://en.wikipedia.org/wiki/Mia_Bhuta
+          E3  major_media · 2025-04-17  Mia Bhuta graduated from high school early, completed her Stanford undergraduate degree in Symbolic Systems in 2.5 years, began her master's in Management Science and Engineering, and is highly active in the Yuwa girls empowerment program in India.
+              https://trailblazehersinsports.org/mia-bhuta
+          E4  major_media · 2024-06-12  Mia Bhuta signed a landmark name, image, and likeness (NIL) contract with Adidas as a first-year student at Stanford and was featured in their national back-to-school advertising campaign.
+              https://businessofcollegesports.com/mia-bhuta-adidas
+          E5  platform · 2026-09-21  Authoritative platform data for Mia Bhuta across YouTube, TikTok, and Instagram, detailing followers, growth, and specific Instagram engagement metrics.
+              platform_direct
+        COMPONENTS  audience_growth=25 [EVALUATED]  media_trajectory=68 [EVALUATED]  athletic_trajectory=82 [EVALUATED]  commercial_acceleration=50 [EVALUATED]  search_social_trajectory=55 [EVALUATED]
+
+AUDIENCE TRAJECTORY — follower growth only. It says nothing about athletic or commercial direction.
+    audienceTrajectory                        "cooling"  [measured · MEDIUM confidence]
+
+COMMERCIAL POSITION — what the market has actually paid. Counted, never estimated.
+    commercialPosition.closedDeals            1  [measured · HIGH confidence]
+    commercialPosition.activeRelationships    ["gorjana"]  [measured · HIGH confidence]
+    commercialPosition.demonstratedEconomics  {"low":14000,"high":14000,"currency":"USD"}  [measured · HIGH confidence]
+    commercialPosition.cashShare              0.5357142857142857  [measured · HIGH confidence]
+    commercialPosition.pricingEvidence        athlete_transactions
+
+COMMERCIAL PIPELINE — counts by state. `detected` means a brand made contact and nothing more.
+  Inbound interest is NOT a deal, NOT revenue and NOT an active relationship.
+    commercialPosition.pipeline               detected 201 · negotiating 7 · rejected 2 · accepted 1 · completed 0
+
+INBOUND SIGNALS — the athlete's own classified inbox, most recent first, capped. Demonstrated interest,
+  as classified by Nomila's inbox pipeline. A category is the classifier's label, not a commitment.
+    commercialPosition.inbound[0]             MEDIA      Harrison Szep · 2026-09-25 · deal_detected
+    commercialPosition.inbound[1]             PAID       Stan Eats · 2026-09-22 · deal_detected
+    commercialPosition.inbound[2]             PAID       msg-biz.online · 2026-09-17 · deal_detected
+    commercialPosition.inbound[3]             PAID       StartX1 · 2026-09-14 · deal_detected
+    commercialPosition.inbound[4]             GIFTING    gorjana · 2026-09-08 · deal_detected
+    commercialPosition.inbound[5]             PAID       x1 · 2026-09-07 · deal_detected
+    commercialPosition.inbound[6]             PAID       StartX1 · 2026-09-04 · deal_detected
+    commercialPosition.inbound[7]             PAID       x1 · 2026-09-03 · unread
+    commercialPosition.inbound[8]             EDITORIAL  ANAZE · 2026-09-02 · archived
+    commercialPosition.inbound[9]             PAID       StartX1 · 2026-09-02 · deal_detected
+    commercialPosition.inbound[10]            GIFTING    MPG Performance Gummies · 2026-08-29 · deal_detected
+    commercialPosition.inbound[11]            GIFTING    NextGen Prospects · 2026-08-29 · deal_detected
+
+CONSTRAINTS — only what has been explicitly recorded as a bound on what the athlete can do.
+  An empty list means Nomila has recorded none. It does NOT mean none exist.
+    (none recorded)
+
+AUDIENCE — composition per platform, latest observation. Top buckets only.
+    audience[instagram]                       followers 21951  [measured · HIGH confidence] · top country US 69% · top age 18-24 30% · gender F 38% / U 35% / M 27% · observed 2026-09-27
+
+CONTENT PERFORMANCE — cadence and format, per platform, from Nomila's own measurement.
+    contentPerformance[instagram]             0.2333 posts/week · 14.1 days since last post · format mix {"carousel":1} · median reach by format {"carousel":{"n":1,"median":15681}} · top-decile share 0.4702 · breakout rate 0 · as of 2026-09-27
+    contentPerformance[tiktok]                557.3 days since last post · as of 2026-09-27
+
+REPRESENTATION & FLOORS — as the athlete stated them. A FLOOR IS NOT A MARKET VALUE; it is the least
+  she has said she would accept.
+    representation.agent                      Spencer Wasworth
+    representation.agency                     Bhuta Management
+    representation.floors[ambassador]         USD 3602
+    representation.floors[appearance]         USD 1213
+    representation.floors[autograph]          USD 465
+    representation.floors[licensing]          USD 1049
+    representation.floors[socialPost]         USD 1000
+
+WHAT THE ATHLETE HAS SAID — their own words. A refusal bears on an opportunity; an ambition can generate one.
+  Never infer a preference or an ambition that is not listed here.
+  A stance is one of: wants | open | avoids | refuses — cite it in exactly that spelling.
+  A line marked ONBOARDING CHOICE was selected from a fixed set when the athlete joined. It is evidence of
+  intent at that time — she actually chose it — and it is NOT a current strategic objective.
+    preferences[onboarding_goal.grow_my_following]  wants — "grow_my_following"  [ONBOARDING CHOICE · 2026-05-30]
+    preferences[onboarding_goal.get_my_first_deal]  wants — "get_my_first_deal"  [ONBOARDING CHOICE · 2026-05-30]
+
+DATES — recorded real-world dates that can bear on strategy, each with what it means. Only what is
+  populated; an empty list means none are recorded, not that none exist.
+    (none recorded)
+
+WHAT NOMILA CANNOT SEE — evidence we looked for and could not find. A research task, not a caveat.
+    materialGaps[0]                           Confidential financial terms and exact valuation of her NIL contract with Adidas.
+    materialGaps[1]                           Private campaign conversion, ROI, and audience retention metrics for her Adidas promotions.
+    materialGaps[2]                           Audience demographics outside of top country share, and performance metrics for Instagram Stories and video completion rates.
+
+SOURCES CONSULTED
+    marketability            present · as of 2026-09-21T00:00:00.000Z
+    athlete_intelligence     present · as of 2026-09-27T04:30:15.648Z
+    athlete_state            present · as of 2026-09-27T23:11:25.281Z

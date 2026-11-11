@@ -1,0 +1,508 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "lebron-james",
+    "name": "LeBron James",
+    "sport": "Basketball"
+  },
+  "conditions": "gemini-3.5-flash via Vertex; Google Search grounding; default thinking; temperature 1.0; text output with fenced JSON; spec v0.2 additions; social block none",
+  "startedAt": "2026-09-14T12:34:31.145Z",
+  "attempts": 1,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "responseId": "1-mnaqToLo3FsbwPxbmd-AE",
+  "latencyMs": 92909,
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+    "promptTokens": 3509,
+    "outputTokens": 6515,
+    "thoughtTokens": 13734,
+    "totalTokens": 23758,
+    "searchCalls": 6
+  },
+  "costUsd": 0.2225045,
+  "text": "```json\n{\n  \"athlete\": {\n    \"name\": \"LeBron James\",\n    \"sport\": \"Basketball\",\n    \"identity_confidence\": \"HIGH\"\n  },\n\n  \"marketability_summary\": \"LeBron James represents the absolute zenith of modern athlete marketability, transcending basketball to exist as a global cultural and commercial institution. Athletically, James maintains elite standing even in his 24th season, recently averaging 20.9 points, 7.2 assists, and 6.1 rebounds, capped by his high-profile July 2026 signing with the Philadelphia 76ers. Socially, his audience scale is mammoth, commanding over 200 million cross-platform followers—including 154 million on Instagram—dwarfing his nearest NBA peers. Culturally, he is a household name whose narrative of self-made billionaire status, multi-generational athletic excellence, and community philanthropy makes him a universally compelling figure. Commercially, James is in a class of his own, with a verified net worth of $1.4 billion and an off-court empire anchored by a lifetime Nike contract, alongside blue-chip partners like AT&T, PepsiCo, and a newly signed September 2026 deal with Polymarket. His momentum remains remarkably stable at the peak, propelled by a fresh championship pursuit in Philadelphia. The primary areas of uncertainty are private-level social analytics, such as detailed content retention and conversion metrics, though his macroscopic commercial proof and cultural footprint overwhelmingly compensate for these omissions.\",\n\n  \"evidence\": [\n    {\n      \"id\": \"E1\",\n      \"claim\": \"LeBron James is estimated to have a net worth of $1.4 billion as of 2026, making him the first active NBA player to achieve billionaire status.\",\n      \"source_title\": \"Forbes\",\n      \"source_url\": \"https://www.forbes.com/profile/lebron-james/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2026-03-10\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Highlights massive off-court earnings of over $1 billion pretax from endorsements and investments.\"\n    },\n    {\n      \"id\": \"E2\",\n      \"claim\": \"LeBron James signed a two-year, $8 million contract with the Philadelphia 76ers in July 2026, framing it as his 'last decision' to chase another championship.\",\n      \"source_title\": \"ESPN / Hot97\",\n      \"source_url\": \"https://www.hot97.com\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2026-09-11\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Represents a major shift in team alignment and a massive late-career media narrative.\"\n    },\n    {\n      \"id\": \"E3\",\n      \"claim\": \"During the 2025-26 NBA regular season, James averaged 20.9 points, 7.2 assists, and 6.1 rebounds per game over 60 games and secured his 22nd All-Star selection.\",\n      \"source_title\": \"StatMuse / RotoWire\",\n      \"source_url\": \"https://www.statmuse.com\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-08-01\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Confirms sustained elite athletic output and record-breaking longevity at age 41.\"\n    },\n    {\n      \"id\": \"E4\",\n      \"claim\": \"LeBron James has over 154 million followers on Instagram (@kingjames) and 52.9 million followers on X (@KingJames), ranking as the 5th most-followed athlete globally.\",\n      \"source_title\": \"HypeAuditor / Fox Sports\",\n      \"source_url\": \"https://www.foxsports.com\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2026-09-02\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Reflects his status as the absolute leader in basketball social media footprint.\"\n    },\n    {\n      \"id\": \"E5\",\n      \"claim\": \"James possesses a massive brand portfolio featuring a lifetime Nike deal ($1B+), AT&T ($20-25M/yr), PepsiCo ($15-20M/yr), GMC ($10-15M/yr), Walmart ($5-10M/yr), and a new partnership with Polymarket in September 2026.\",\n      \"source_title\": \"Hot97 / Adweek / Facebook\",\n      \"source_url\": \"https://www.hot97.com\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2026-09-11\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Demonstrates continuous demand and commercial diversification at the highest levels.\"\n    }\n  ],\n\n  \"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"LeBron competes at the absolute peak of basketball in the NBA and represents elite global standards.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"Averages of 20.9 PPG, 7.2 APG, and 6.1 RPG in his 23rd/24th year confirm elite performance results.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E4\"],\n        \"rationale\": \"As a 22-time All-Star, 4-time MVP, and the NBA's all-time leading scorer, his formal standing is unrivaled.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He is a three-time Olympic Gold medalist, recently earning MVP honors at the Paris 2024 Games.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"He remains a focal point and starter on a championship-contending team (Philadelphia 76ers) and a global ambassador for his sport.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"His elite 2025-26 performance and July 2026 move to a major championship contender keep him immediately relevant.\"\n      }\n    },\n    \"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Over 200 million cross-platform followers establish him as one of the most visible public figures on earth.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His social audience is roughly three times larger than his closest basketball contemporary, Stephen Curry.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His audience is highly mature, resulting in steady but incremental percentage growth rather than rapid spikes.\"\n      },\n      \"platform_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Maintains massive, dominant hubs across Instagram, X, and Facebook, supported by his Uninterrupted media network.\"\n      }\n    },\n    \"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"Regularly averages over 1.5 million likes per post on Instagram, demonstrating robust interaction for his scale.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Social posts instantly go viral and feed directly into mainstream sports and lifestyle news cycles.\"\n      },\n      \"shares_saves_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Private platform metrics measuring exact share and save rates are not publicly available.\"\n      },\n      \"video_retention\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Private video completion and retention curves are not publicly available.\"\n      },\n      \"story_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Private Instagram Story reach and interaction rates are not publicly available.\"\n      },\n      \"audience_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Third-party audit estimates show standard high authenticity, indicating a highly genuine and commercial audience base.\"\n      }\n    },\n    \"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E5\"],\n        \"rationale\": \"Commands constant, daily coverage across global sports, business, lifestyle, and news outlets.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Covered prominently by elite, prestigious outlets including Forbes, The New York Times, and ESPN.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"Consistently ranks as one of the top five most-searched athletes globally, sustaining extreme public curiosity.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"Every post, game performance, or business move sparks widespread public debate across major online communities.\"\n      },\n      \"crossover_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"Household name globally, recognized as an actor, media producer, philanthropist, and entrepreneurial icon.\"\n      }\n    },\n    \"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E4\"],\n        \"rationale\": \"His journey from 'The Chosen One' to a billionaire champion with unparalleled longevity is entirely unique.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"Two decades of highly documented triumph, philanthropy, family dedication, and business acumen offer immense depth.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"His narrative is backed by real, highly audited milestones, including his family foundation's school and verifiable wealth.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E4\"],\n        \"rationale\": \"The media deeply amplifies his self-made billionaire narrative, the father-son pairing, and his late-career championship pursuits.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"His story seamlessly integrates with high-end luxury, lifestyle, family-oriented, and hyper-competitive corporate campaigns.\"\n      },\n      \"durability\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"His narrative is structured for permanent relevance, scaling from athlete to team owner and global icon.\"\n      }\n    },\n    \"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Credibly endorses brands from telecommunications and finance to luxury watches, apparel, and entertainment.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"Highly curated and family-focused image with no major personal scandals over a twenty-year career.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"His audience is incredibly diverse and possesses high purchasing power, appealing to mainstream and premium brands alike.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"Consistently aligns with messages of social equality, child education, work ethic, and family focus.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Proved his capability as a cinematic actor, veteran commercial spokesperson, and engaging podcast host.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Maintains highly valuable commercial appeal across North America, Europe, Asia, and Latin America.\"\n      }\n    },\n    \"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"His status as a billionaire and $100M+ annual off-court earnings provide indisputable commercial proof.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Dozens of simultaneous high-value endorsements across multiple global industries are actively maintained.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Partners primarily with top-tier global market leaders like Nike, AT&T, PepsiCo, GMC, and Amazon.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Demonstrated by a historic lifetime Nike commitment and long-term multi-year partnerships with AT&T and Beats.\"\n      },\n      \"campaign_performance\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Campaigns like Nike's 'Forever King' achieve viral acclaim and drive record-breaking athletic product sales.\"\n      },\n      \"pricing_power\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Commands premium multi-million-dollar fees and often mandates equity stakes as a condition of partnership.\"\n      }\n    },\n    \"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"While in the sunset of his career, his July 2026 trade/move to the 76ers injects huge competitive energy and a fresh championship narrative.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Follower counts continue to steadily climb but reflect the slow growth typical of highly saturated, mature accounts.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E4\"],\n        \"rationale\": \"Media coverage has spiked considerably due to his 2026 offseason move and upcoming record-breaking 24th NBA season.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E5\"],\n        \"rationale\": \"Public search and social discussion are trending upward due to the 76ers roster consolidation and Polymarket deal.\"\n      },\n      \"commercial_acceleration\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Continues to expand his portfolio in late 2026 with new-age sectors like prediction markets (Polymarket).\"\n      }\n    }\n  },\n\n  \"dimension_assessments\": {\n    \"athletic_authority\": {\n      \"prose\": \"Despite being in his 24th NBA season, LeBron James remains an elite competitive force, recently averaging 20.9 PPG and earning his 22nd All-Star selection in 2026. His leadership was further cemented internationally as the MVP of the 2024 Olympic tournament. His recent move to the Philadelphia 76ers in July 2026 ensures he remains at the epicenter of championship contention.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Supported by extensive, verified historical and current 2025-26 NBA season performance statistics and recent league-official career developments.\"\n    },\n    \"audience_scale\": {\n      \"prose\": \"James commands one of the largest social media audiences of any athlete globally, with over 154 million Instagram followers and nearly 53 million X followers. He represents the absolute benchmark for basketball audience scale, dwarfing peers like Stephen Curry by over threefold. This massive scale is highly diversified and international, spanning multiple generations and platforms.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Follower counts are widely documented across mainstream databases, Wikipedia, and live social media pages.\"\n    },\n    \"engagement_quality\": {\n      \"prose\": \"Due to the scale of his follower base, his absolute engagement volume is staggering, with Instagram posts regularly receiving millions of likes and comments. However, detailed private metrics such as video completion, story click-through rates, and share metrics remain inaccessible. The public metrics nevertheless confirm a highly active, commercially responsive, and genuine global audience.\",\n      \"confidence\": \"MEDIUM\",\n      \"confidence_reason\": \"While public engagement indicators (likes, comments, views) are highly visible and corroborated, precise private retention and conversion metrics are unavailable.\"\n    },\n    \"cultural_relevance\": {\n      \"prose\": \"LeBron James transcends the sport of basketball, existing as a household name globally with unparalleled cultural relevance. He is a frequent subject of elite business, lifestyle, and sports media coverage, commanding immense search and public interest. His crossover appeal is verified by major Hollywood productions, significant philanthropy through his foundation, and extensive off-court business ventures.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Supported by an abundance of mainstream media coverage, Hollywood achievements, and global public interest data.\"\n    },\n    \"narrative_power\": {\n      \"prose\": \"The narrative of 'The Chosen One' fulfilling his promise and transitioning into a billionaire business mogul is one of the most compelling and durable in sports history. His narrative power is currently amplified by unprecedented career longevity, including playing alongside his son Bronny, and embarking on a final championship chase in Philadelphia. This story is highly authentic, deeply respected by the public, and exceptionally attractive to global brands.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"The athletic and entrepreneurial narrative is deeply documented, consistently reinforced by his actions, and highly resonant in the media.\"\n    },\n    \"brand_fit\": {\n      \"prose\": \"With a mature, highly managed public image, James is an exceptionally safe and lucrative partner for brands ranging from luxury fashion to mainstream consumer products. His personal values—encapsulated by 'More Than an Athlete' and his 'I Promise' school—cohere perfectly with corporate social responsibility campaigns. His commercial versatility allows him to seamlessly lead multi-million-dollar global marketing campaigns.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"His two-decade-long pristine record with top-tier corporate sponsors provides strong historical proof of brand fit.\"\n    },\n    \"commercial_proof\": {\n      \"prose\": \"James is the undisputed gold standard for commercial proof in basketball, with a total off-court empire that recently pushed him past the $1.4 billion net worth milestone. Headlined by his historic lifetime Nike contract and multi-million-dollar partnerships with PepsiCo, AT&T, and GMC, he has demonstrated unrivaled pricing power. His tendency to structure deals with equity (e.g., Beats by Dre, Blaze Pizza) further solidifies his standing as a master commercial partner.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Backed by comprehensive, verified economic reports from Forbes and other financial media outlets.\"\n    },\n    \"momentum\": {\n      \"prose\": \"Even at age 41, James' commercial and cultural momentum shows no signs of stagnation, boosted by his high-profile July 2026 signing with the Philadelphia 76ers. New endorsement deals, such as his September 2026 partnership with Polymarket, demonstrate that premium brands continue to seek his influence. His media coverage and social attention are currently accelerating as he enters his historic 24th NBA season.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Highly current news cycles from mid-to-late 2026 confirm a strong upward trajectory in public interest and fresh business deals.\"\n    }\n  },\n\n  \"overall_confidence\": {\n    \"level\": \"HIGH\",\n    \"explanation\": \"LeBron James represents a rare case where public data is incredibly robust, highly consistent, and verified by major economic and athletic institutions. While private social engagement details are missing, his commercial earnings, follower counts, and athletic status are so definitive that missing data does not materially affect the assessment.\"\n  },\n\n  \"key_strengths\": [\n    \"Unparalleled audience scale, leading all basketball players globally with over 200M+ cross-platform followers.\",\n    \"Unprecedented athletic authority and career longevity, remaining highly productive in his 24th NBA season.\",\n    \"Exceptional commercial track record, verified by billionaire status and a lifetime Nike deal.\",\n    \"Strong narrative power backed by authentic philanthropy and major business ventures like SpringHill Company.\"\n  ],\n\n  \"key_constraints\": [\n    \"Extremely high pricing threshold, which may exclude small or mid-tier brands from partnering with him.\",\n    \"Mature audience growth phase; due to saturation, rapid exponential expansion of his follower base is unlikely.\",\n    \"Age-related athletic decline risks; though Father Time has been deferred, his remaining career window is short.\"\n  ],\n\n  \"important_missing_data\": [\n    \"Private social analytics including Instagram Story click-through rates, video retention times, and direct shares/saves.\"\n  ],\n\n  \"identity_or_evidence_risks\": [\n    \"No material identity or evidence risks present; the subject is globally famous and extensively audited by elite financial and sports organizations.\"\n  ]\n}\n```",
+  "native": {
+    "groundingChunks": [
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGX4I3M0PYJ-HU1xxJDTonYJ7ndeIm61ZVNUhKDkrbld4YZMwGrhQCCmdyI9geyuqTGsiPCSBNQYxJystmB9VsEc666PtnQP3qgQt3oiLeH6-Og4u720-0SzzyG-JdmsIUsPZ5csYbmJN1REQfAV2FRqYPWvBBKISr_CtjOBb1PzLb_r00SplyjAgByKXr-aPTO6jqhQAVtTPw3lGA=",
+          "title": "hot97.com",
+          "domain": "hot97.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8xLIQ2fgJA7hBRr14YG-slBWwu9RiHzUPHgreukLzmRSdSjUIHE2HBHAk7WBPcGsnP4YM4zOR2n03d9qGMrK9lZpVRPWTrhkTAByFouLcHv6jrHm-mPWo5Q2_sRgH_sWwdOBqOKqh1VWxq4Kqb75lXkANLmgtww==",
+          "title": "rotowire.com",
+          "domain": "rotowire.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRRo6cm5-ASqIPXQTysyVMqyL1xCP8GGxjefiD2Kq8j5AsaK7R8CWROnVBL2GM4QE_CuvD-_kWI6nw-HSpDbaIYmHKQsz8uRGx1JRnEGP5zvLje-wYQJ1tUvwLsE0cb5BMUuD12k1qERJtim6nfIg1Xc2OlC-sxbXXQkF0iJ-hkXg=",
+          "title": "wikipedia.org",
+          "domain": "wikipedia.org"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSkKs0x5qLBdrlEjrZNRjmU2Gx8EchrfGiv079vtr-L42zB6Ic0d_vRmkls-DR8amR6hctcNjg3vqgrS6SrhGucYdOS7ogv7mnvufOeWjAYlli6Ts4tf9c0nPyv061N3284vsY9FpLsH0NwiOrOZGMfWMFKHPT1Q8eP57XSe6Ms9hoXTng1-w8ZCZFeylzZ0b14BX6pVPlsaACjq3dUwVVocMkcEd0Kg==",
+          "title": "basketballnetwork.net",
+          "domain": "basketballnetwork.net"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEb6pdmnHnV-VjvsJVA98eAaruKTsWqFXlmiBJ7Q1E_2To7XGwDuBrRsiTAw13Cctd7zDEf8ZkEPnQJqKi6CFO0IxHCyGa-iO50aCAhLJAjz_ZqRpnt7Kq_NR0oAdCBerGNb2yWqwpd1YVRJamWdABlCgnNsIpOh23F0BiwD86mnA-zvLAkb2LQ_7wVpih0unlk-LUiWxJJVFOY--J71kSrlJ8PfyNoNwvb-0s=",
+          "title": "si.com",
+          "domain": "si.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuHdp4puwhmjdTq3a-wNiHndJOstpVS9dGqxAuAXyC0PJ9LdBZn6SXkJeAZJkwTMnD9GwcXymhZFaqeRPh56VSdCov4YVvzwcd5Qcw0qb_RjtN5CZGzK5rlbx5d478B81POi-oUtVw",
+          "title": "forbes.com",
+          "domain": "forbes.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3DYBivGNDqpIbleMFLLGJlJJqnLRBay57jT-hkICVBn-NXVZpxn1LDYSSHAB2jrGDHG8BHAeRd7nbAA8dGt3_zC4seMsBrEzKQVjpsdg_UgVa2C254vSymhSjHtUauHmdJmyJ-HYzODlAFEPNaaUi_8nIh3YdYG08gWC74YJyt8x_bFo=",
+          "title": "facebook.com",
+          "domain": "facebook.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFO3PNW5qaQiBP7vSqX3DLhXOOeP5y1ciQW2ZP_dmWe1_UYUWxRlCNadktl0qmLCsZ9PES8HLjhUHh9HAtz_SitVLC6G8Fip7czZtptpYmM6Wm_M0x6pS2gpMjIWLojxbFbpn_qECU38-_0qq7hDZRoZjBCu3MhGiAIQZec368gl0VPqO1muA==",
+          "title": "facebook.com",
+          "domain": "facebook.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEXy507cX1b4_wUCSZDsv6bV0niL24O9bdxMqsU0p3O-WIIWS1YQvfHXmAjvjTes4udD_QcoXkGv_UnwPABjR0_niHh1bgjHiGHr_SF-cqIinnFX1WQhL0cZa1CMHb7d9VeAfDaFZhrW-xfi2cYsbNPwRPsTaj8rJC_",
+          "title": "statmuse.com",
+          "domain": "statmuse.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFY9AsrNTYeJ6LemyD3qYxPP_KxD8xRXh_Rjj5hqY4XlN06t6iC39xN6GeovolZ_qZ1DdgV6tn0j43xf-z_xwAtskUM9b796s4lOqn4FRF_bqXlQg2Gc8VgzjzGI3Cyd1_jMsJo_e6UwZKbyDd_QKfph_DskXL6hFY_A2-_zluNaRqo6KYcg4vCh5iDKb8QE90dYpNy",
+          "title": "foxsports.com",
+          "domain": "foxsports.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOVfLg6uWmkgwTnunST_Oi8Xuq278eR-SxZMURyvDAc5aFIHp1xc0A9V-Z4WmxUua8GRbUq93i0-e4pFrhFkLtak5Ou2AxU7Pr0L4uVGCPY3AzPBz3TQHa0D8No72Tkpe6HNarQBLUZzMT_42XWLmfeSUAqOb7arwXvSPea1vaVuikr__niozK0UrIGEvX8WfL3DPsP_sIPBYYIdMu_5LGXLWWtEIRig==",
+          "title": "basketballnetwork.net",
+          "domain": "basketballnetwork.net"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6PFdUpt5zquRm3RDdkXpL_duriKO6bjJtvg2Ja2iKHjqlVfw2wLU7mzCMJhGSBaEqsTkvzTqm7_145Spzfjoe0EkKH371zqcDd3Cosj5WRxiImJKwsVv34E17JNiH1FpsSWIJaK242EuMkTptKN8=",
+          "title": "analyticsig.com",
+          "domain": "analyticsig.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCgT24X-J2_jAm2k7Xnw84k4q1DmbHAyc9BURHyQ6hdTKtYPwrMc2RMehf6W2QcRy8YPQRb8DEh4GlMlo7ij1P_2X2rU24WObLpiNC_a3BzyLiTIPtaSkVtqoPsjv5zn1GWydXfX1inhcoRDrWAbFt4AENkv4vq4bIkmNn",
+          "title": "bookingagentinfo.com",
+          "domain": "bookingagentinfo.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGEpeRrvPcyKParuR5OUdhmpiyJyRmAmOkcEp-1vw3zjQ9yFGUX_E2QU52_QHWdXDCxlAAwJk7nouuVm2HCE6fY5JwC6XN-gNdFQMdME4KSVFDvuv187-3ruZ48qTGpiGq4E6aZvR_8eKLRUhnbaQw_-6olay4d7uZ5FwlljXCuQK9cHtHATvztiJtNPDQROr1nve4lOQ==",
+          "title": "forbes.com",
+          "domain": "forbes.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGOhG6d0s05MvIlzaWDVd1r1_4Ng0lwV-yA_cNgm6KJjvIb1esC7Y6el5mZWFtd9s6Yp9LQhDpI8lJhtMxgTwORdJHVBapkQk2hxwN0cf4JW6iuD8TfDzBbQUXCMkphnjEc38qvJrKNiNfIs_sVlsX7sFxPDOwcRtyJJVju2LpG5mvFseI4Qy6CMF4L_1xD5lREE24vc6j_d_VAl41Ju4aosLuUwPhwVeBB6OaRdYW3rBveTY7U98So7Th0Kvz1Pxa4A31oSEYLNTM=",
+          "title": "facebook.com",
+          "domain": "facebook.com"
+        }
+      }
+    ],
+    "groundingSupports": [
+      {
+        "segment": {
+          "startIndex": 307,
+          "endIndex": 512,
+          "text": "Athletically, James maintains elite standing even in his 24th season, recently averaging 20.9 points, 7.2 assists, and 6.1 rebounds, capped by his high-profile July 2026 signing with the Philadelphia 76ers"
+        },
+        "groundingChunkIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 514,
+          "endIndex": 677,
+          "text": "Socially, his audience scale is mammoth, commanding over 200 million cross-platform followers—including 154 million on Instagram—dwarfing his nearest NBA peers"
+        },
+        "groundingChunkIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 679,
+          "endIndex": 761,
+          "text": "Culturally, he is a household name whose narrative of self-made billionaire status"
+        },
+        "groundingChunkIndices": [
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 679,
+          "endIndex": 871,
+          "text": "Culturally, he is a household name whose narrative of self-made billionaire status, multi-generational athletic excellence, and community philanthropy makes him a universally compelling figure"
+        },
+        "groundingChunkIndices": [
+          5
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 873,
+          "endIndex": 960,
+          "text": "Commercially, James is in a class of his own, with a verified net worth of $1.4 billion"
+        },
+        "groundingChunkIndices": [
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 873,
+          "endIndex": 1021,
+          "text": "Commercially, James is in a class of his own, with a verified net worth of $1.4 billion and an off-court empire anchored by a lifetime Nike contract"
+        },
+        "groundingChunkIndices": [
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 873,
+          "endIndex": 1126,
+          "text": "Commercially, James is in a class of his own, with a verified net worth of $1.4 billion and an off-court empire anchored by a lifetime Nike contract, alongside blue-chip partners like AT&T, PepsiCo, and a newly signed September 2026 deal with Polymarket"
+        },
+        "groundingChunkIndices": [
+          7,
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1128,
+          "endIndex": 1237,
+          "text": "His momentum remains remarkably stable at the peak, propelled by a fresh championship pursuit in Philadelphia"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 17044,
+          "endIndex": 17277,
+          "text": "\"dimension_assessments\": {\n    \"athletic_authority\": {\n      \"prose\": \"Despite being in his 24th NBA season, LeBron James remains an elite competitive force, recently averaging 20.9 PPG and earning his 22nd All-Star selection in 2026"
+        },
+        "groundingChunkIndices": [
+          1,
+          8
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 17279,
+          "endIndex": 17372,
+          "text": "His leadership was further cemented internationally as the MVP of the 2024 Olympic tournament"
+        },
+        "groundingChunkIndices": [
+          9
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 17374,
+          "endIndex": 17491,
+          "text": "His recent move to the Philadelphia 76ers in July 2026 ensures he remains at the epicenter of championship contention"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 17374,
+          "endIndex": 17902,
+          "text": "His recent move to the Philadelphia 76ers in July 2026 ensures he remains at the epicenter of championship contention.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Supported by extensive, verified historical and current 2025-26 NBA season performance statistics and recent league-official career developments.\"\n    },\n    \"audience_scale\": {\n      \"prose\": \"James commands one of the largest social media audiences of any athlete globally, with over 154 million Instagram followers and nearly 53 million X followers"
+        },
+        "groundingChunkIndices": [
+          9
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 17904,
+          "endIndex": 18023,
+          "text": "He represents the absolute benchmark for basketball audience scale, dwarfing peers like Stephen Curry by over threefold"
+        },
+        "groundingChunkIndices": [
+          10
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 18025,
+          "endIndex": 18128,
+          "text": "This massive scale is highly diversified and international, spanning multiple generations and platforms"
+        },
+        "groundingChunkIndices": [
+          3
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 18025,
+          "endIndex": 18503,
+          "text": "This massive scale is highly diversified and international, spanning multiple generations and platforms.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Follower counts are widely documented across mainstream databases, Wikipedia, and live social media pages.\"\n    },\n    \"engagement_quality\": {\n      \"prose\": \"Due to the scale of his follower base, his absolute engagement volume is staggering, with Instagram posts regularly receiving millions of likes and comments"
+        },
+        "groundingChunkIndices": [
+          11
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19142,
+          "endIndex": 19269,
+          "text": "He is a frequent subject of elite business, lifestyle, and sports media coverage, commanding immense search and public interest"
+        },
+        "groundingChunkIndices": [
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19271,
+          "endIndex": 19426,
+          "text": "His crossover appeal is verified by major Hollywood productions, significant philanthropy through his foundation, and extensive off-court business ventures"
+        },
+        "groundingChunkIndices": [
+          5
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19271,
+          "endIndex": 19816,
+          "text": "His crossover appeal is verified by major Hollywood productions, significant philanthropy through his foundation, and extensive off-court business ventures.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Supported by an abundance of mainstream media coverage, Hollywood achievements, and global public interest data.\"\n    },\n    \"narrative_power\": {\n      \"prose\": \"The narrative of 'The Chosen One' fulfilling his promise and transitioning into a billionaire business mogul is one of the most compelling and durable in sports history"
+        },
+        "groundingChunkIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19818,
+          "endIndex": 19938,
+          "text": "His narrative power is currently amplified by unprecedented career longevity, including playing alongside his son Bronny"
+        },
+        "groundingChunkIndices": [
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19818,
+          "endIndex": 19999,
+          "text": "His narrative power is currently amplified by unprecedented career longevity, including playing alongside his son Bronny, and embarking on a final championship chase in Philadelphia"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 20001,
+          "endIndex": 20519,
+          "text": "This story is highly authentic, deeply respected by the public, and exceptionally attractive to global brands.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"The athletic and entrepreneurial narrative is deeply documented, consistently reinforced by his actions, and highly resonant in the media.\"\n    },\n    \"brand_fit\": {\n      \"prose\": \"With a mature, highly managed public image, James is an exceptionally safe and lucrative partner for brands ranging from luxury fashion to mainstream consumer products"
+        },
+        "groundingChunkIndices": [
+          12,
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 20521,
+          "endIndex": 20581,
+          "text": "His personal values—encapsulated by 'More Than an Athlete'"
+        },
+        "groundingChunkIndices": [
+          11
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 20521,
+          "endIndex": 20608,
+          "text": "His personal values—encapsulated by 'More Than an Athlete' and his 'I Promise' school"
+        },
+        "groundingChunkIndices": [
+          5
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 20676,
+          "endIndex": 21176,
+          "text": "His commercial versatility allows him to seamlessly lead multi-million-dollar global marketing campaigns.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"His two-decade-long pristine record with top-tier corporate sponsors provides strong historical proof of brand fit.\"\n    },\n    \"commercial_proof\": {\n      \"prose\": \"James is the undisputed gold standard for commercial proof in basketball, with a total off-court empire that recently pushed him past the $1.4 billion net worth milestone"
+        },
+        "groundingChunkIndices": [
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 21178,
+          "endIndex": 21292,
+          "text": "Headlined by his historic lifetime Nike contract and multi-million-dollar partnerships with PepsiCo, AT&T, and GMC"
+        },
+        "groundingChunkIndices": [
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 21339,
+          "endIndex": 21479,
+          "text": "His tendency to structure deals with equity (e.g., Beats by Dre, Blaze Pizza) further solidifies his standing as a master commercial partner"
+        },
+        "groundingChunkIndices": [
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 21339,
+          "endIndex": 21838,
+          "text": "His tendency to structure deals with equity (e.g., Beats by Dre, Blaze Pizza) further solidifies his standing as a master commercial partner.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Backed by comprehensive, verified economic reports from Forbes and other financial media outlets.\"\n    },\n    \"momentum\": {\n      \"prose\": \"Even at age 41, James' commercial and cultural momentum shows no signs of stagnation, boosted by his high-profile July 2026 signing with the Philadelphia 76ers"
+        },
+        "groundingChunkIndices": [
+          13,
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 21840,
+          "endIndex": 21917,
+          "text": "New endorsement deals, such as his September 2026 partnership with Polymarket"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 22716,
+          "endIndex": 22849,
+          "text": "\"key_strengths\": [\n    \"Unparalleled audience scale, leading all basketball players globally with over 200M+ cross-platform followers"
+        },
+        "groundingChunkIndices": [
+          10
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 22716,
+          "endIndex": 22963,
+          "text": "\"key_strengths\": [\n    \"Unparalleled audience scale, leading all basketball players globally with over 200M+ cross-platform followers.\",\n    \"Unprecedented athletic authority and career longevity, remaining highly productive in his 24th NBA season"
+        },
+        "groundingChunkIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 22716,
+          "endIndex": 23064,
+          "text": "\"key_strengths\": [\n    \"Unparalleled audience scale, leading all basketball players globally with over 200M+ cross-platform followers.\",\n    \"Unprecedented athletic authority and career longevity, remaining highly productive in his 24th NBA season.\",\n    \"Exceptional commercial track record, verified by billionaire status and a lifetime Nike deal"
+        },
+        "groundingChunkIndices": [
+          4,
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 22716,
+          "endIndex": 23180,
+          "text": "\"key_strengths\": [\n    \"Unparalleled audience scale, leading all basketball players globally with over 200M+ cross-platform followers.\",\n    \"Unprecedented athletic authority and career longevity, remaining highly productive in his 24th NBA season.\",\n    \"Exceptional commercial track record, verified by billionaire status and a lifetime Nike deal.\",\n    \"Strong narrative power backed by authentic philanthropy and major business ventures like SpringHill Company"
+        },
+        "groundingChunkIndices": [
+          5,
+          14
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 23191,
+          "endIndex": 23318,
+          "text": "\"key_constraints\": [\n    \"Extremely high pricing threshold, which may exclude small or mid-tier brands from partnering with him"
+        },
+        "groundingChunkIndices": [
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 23191,
+          "endIndex": 23555,
+          "text": "\"key_constraints\": [\n    \"Extremely high pricing threshold, which may exclude small or mid-tier brands from partnering with him.\",\n    \"Mature audience growth phase; due to saturation, rapid exponential expansion of his follower base is unlikely.\",\n    \"Age-related athletic decline risks; though Father Time has been deferred, his remaining career window is short"
+        },
+        "groundingChunkIndices": [
+          1
+        ]
+      }
+    ],
+    "webSearchQueries": [
+      "LeBron James Forbes net worth 2025 2026",
+      "LeBron James Instagram followers count 2026",
+      "LeBron James current teams stats 2025 2026",
+      "LeBron James brand endorsements list 2025 2026",
+      "\"kingjames\" instagram followers count 2026",
+      "Lebron james twitter followers count 2026"
+    ],
+    "config": {
+      "tools": [
+        {
+          "googleSearch": {}
+        }
+      ],
+      "temperature": 1,
+      "maxOutputTokens": 65536,
+      "thinking": "default"
+    }
+  },
+  "error": null,
+  "promptSocialBlock": null
+}

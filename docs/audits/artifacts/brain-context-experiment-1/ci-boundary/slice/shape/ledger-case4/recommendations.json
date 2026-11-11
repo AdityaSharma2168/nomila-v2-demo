@@ -1,0 +1,326 @@
+{
+ "version": "recommendation/0.1.0-exp",
+ "records": [
+  {
+   "version": "recommendation/0.1.0-exp",
+   "id": "rec_94b6d20dee8c9b5a",
+   "key": "b569363aa8fdc507",
+   "source": "her agent, through Mila",
+   "subject": {
+    "kind": "deal",
+    "id": "ctl-r2-northlight-termsheet"
+   },
+   "question": "Should this negotiation be advanced, countered or accepted?",
+   "objectiveIds": [],
+   "value": {
+    "what": "Counter the Northlight Learning ambassador term sheet to bring the commercial compensation in line with her established per-deliverable floor.",
+    "why": "The Northlight Learning ambassador term sheet offers a per-deliverable value of USD 1,250, which is below Mia's established ambassador floor of USD 3,602. A counter is required to align the terms with her financial requirements.",
+    "cites": [
+     {
+      "ref": "deal[ctl-r2-northlight-termsheet].basis",
+      "how": "Shows the offer value of USD 1,250 per deliverable"
+     },
+     {
+      "ref": "representation.floors[ambassador]",
+      "how": "Establishes her minimum floor of USD 3,602 for ambassador deals"
+     },
+     {
+      "ref": "deal[ctl-r2-northlight-termsheet].band",
+      "how": "Confirms the offer is below her established range"
+     }
+    ],
+    "executionPath": "direct_action",
+    "relationToExistingWork": "advances_existing_work",
+    "advances": "deal[ctl-r2-northlight-termsheet]",
+    "notSeen": [],
+    "intent": "counter"
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.7.0-exp",
+    "runId": "A3:488f2740",
+    "runAt": "2026-09-27T00:13:03.193Z"
+   },
+   "runs": [
+    "A3:488f2740"
+   ],
+   "response": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "authorization": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "execution": {
+    "state": "none",
+    "refs": []
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "reconsiders": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-27T00:13:03.193Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run A3:488f2740"
+    }
+   ]
+  },
+  {
+   "version": "recommendation/0.1.0-exp",
+   "id": "rec_9feaeb54fb19c6b1",
+   "key": "c81ff8144f65d35a",
+   "source": "the Objective loop",
+   "subject": {
+    "kind": "objective",
+    "id": "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+   },
+   "question": "what should Nomila do about this Objective now?",
+   "objectiveIds": [
+    "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+   ],
+   "value": {
+    "what": "Create a specialized digital storytelling proposal and outreach plan highlighting Mia's leadership at the Yuwa Academy to present to global corporate social responsibility (CSR) officers.",
+    "why": "Mia's leadership with the Yuwa girls empowerment program in India provides a highly distinctive narrative of heritage and service (findings[mia.narrative_power]) that is prime for elevation into global corporate social responsibility (CSR) sponsorships (opportunity[amplify-yuwa-philanthropic-work]).",
+    "cites": [
+     {
+      "ref": "objective[b1c799e3-59fc-4986-b3ab-a0b7b4869601]",
+      "how": "specifies the objective of expanding Yuwa's impact through global brand and CSR partnerships"
+     },
+     {
+      "ref": "opportunity[amplify-yuwa-philanthropic-work]",
+      "how": "outlines the strategic opening to target corporate impact budgets dedicated to gender equity and global impact"
+     },
+     {
+      "ref": "findings[mia.narrative_power]",
+      "how": "confirms her active philanthropy with Yuwa as a core, highly distinctive aspect of her narrative"
+     }
+    ],
+    "executionPath": "specialized_plan",
+    "relationToExistingWork": "new_work",
+    "advances": null,
+    "notSeen": [
+     "Specific high-resolution digital media or assets from Mia's on-the-ground work at the Yuwa Academy"
+    ],
+    "intent": null
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.7.0-exp",
+    "runId": "A3:488f2740",
+    "runAt": "2026-09-27T00:13:03.193Z"
+   },
+   "runs": [
+    "A3:488f2740",
+    "C4:fce84195"
+   ],
+   "response": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "authorization": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "execution": {
+    "state": "none",
+    "refs": []
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "reconsiders": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-27T00:13:03.193Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run A3:488f2740"
+    },
+    {
+     "at": "2026-09-27T06:34:49.700Z",
+     "event": "reworded_by_run",
+     "actor": "system",
+     "note": "run C4:fce84195"
+    }
+   ]
+  },
+  {
+   "version": "recommendation/0.1.0-exp",
+   "id": "rec_764257cd61ef9777",
+   "key": "8704ed12d2c29628",
+   "source": "the Objective loop",
+   "subject": {
+    "kind": "objective",
+    "id": "feb62891-8b9f-44e4-8c1f-677d6947334b"
+   },
+   "question": "what should Nomila do about this Objective now?",
+   "objectiveIds": [
+    "feb62891-8b9f-44e4-8c1f-677d6947334b"
+   ],
+   "value": {
+    "what": "Create a specialized plan to reactivate her dormant TikTok channel by cross-posting existing video formats like Reels and carousels.",
+    "why": "Mia's audience growth is currently cooling, and her TikTok has been dormant for over 500 days. Reactivating TikTok through cross-posting Instagram content is highly feasible and directly addresses her growth objective.",
+    "cites": [
+     {
+      "ref": "objective[feb62891-8b9f-44e4-8c1f-677d6947334b]",
+      "how": "Objective to grow audience across Instagram and TikTok"
+     },
+     {
+      "ref": "contentPerformance[tiktok]",
+      "how": "Shows TikTok is dormant with 556.3 days since last post"
+     },
+     {
+      "ref": "opportunity[unlock-tiktok-channel]",
+      "how": "Identifies highly feasible opening to cross-post existing content to TikTok"
+     }
+    ],
+    "executionPath": "specialized_plan",
+    "relationToExistingWork": "new_work",
+    "advances": null,
+    "notSeen": [],
+    "intent": null
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.7.0-exp",
+    "runId": "A3:488f2740",
+    "runAt": "2026-09-27T00:13:03.193Z"
+   },
+   "runs": [
+    "A3:488f2740"
+   ],
+   "response": {
+    "state": "accepted",
+    "at": "2026-09-21T00:00:00Z",
+    "actor": "athlete (SIMULATED)"
+   },
+   "authorization": {
+    "state": "prepare_authorized",
+    "at": "2026-09-21T00:00:00Z",
+    "actor": "athlete (SIMULATED)"
+   },
+   "execution": {
+    "state": "proposed",
+    "refs": [
+     {
+      "kind": "activation",
+      "id": "ctl-r1-tiktok-series",
+      "at": "2026-09-21T00:00:00Z"
+     }
+    ]
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "reconsiders": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-27T00:13:03.193Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run A3:488f2740"
+    },
+    {
+     "at": "2026-09-21T00:00:00Z",
+     "event": "accept",
+     "actor": "athlete (SIMULATED)"
+    },
+    {
+     "at": "2026-09-21T00:00:00Z",
+     "event": "prepare_authorized",
+     "actor": "athlete (SIMULATED)"
+    },
+    {
+     "at": "2026-09-21T00:00:00Z",
+     "event": "execution_proposed",
+     "actor": "consumer",
+     "note": "activation:ctl-r1-tiktok-series"
+    },
+    {
+     "at": "2026-09-27T06:34:49.700Z",
+     "event": "reconsidered_by_run",
+     "actor": "system",
+     "note": "run C4:fce84195 answered NO_ACTION; governed (accepted · prepare_authorized · proposed) — history kept, nothing closed"
+    }
+   ]
+  },
+  {
+   "version": "recommendation/0.1.0-exp",
+   "id": "rec_2daca3f5bb2362eb",
+   "key": "d9372f4f7e892e9b",
+   "source": "the Objective loop",
+   "subject": {
+    "kind": "objective",
+    "id": "c0f587e4-750f-4575-a4e8-fd4cfa6e078e"
+   },
+   "question": "what should Nomila do about this Objective now?",
+   "objectiveIds": [
+    "c0f587e4-750f-4575-a4e8-fd4cfa6e078e"
+   ],
+   "value": {
+    "what": "Develop a tailored commercial pitch deck and a targeted partner list focused on premium brands in the EdTech, STEM, and technology venture sectors.",
+    "why": "Mia's rapid academic acceleration, completing her Stanford Symbolic Systems undergraduate degree and pursuing a master's in Management Science and Engineering (findings[mia.narrative_power]), creates a premium brand-safe positioning to target high-value partnerships in STEM and tech venture spaces with virtually zero athletic peer competition (opportunity[grow-academic-tech-partnerships]).",
+    "cites": [
+     {
+      "ref": "objective[c0f587e4-750f-4575-a4e8-fd4cfa6e078e]",
+      "how": "specifies building her positioning at the intersection of athletics, tech, AI, and entrepreneurship"
+     },
+     {
+      "ref": "opportunity[grow-academic-tech-partnerships]",
+      "how": "highlights the opening to build a tailored commercial deck and target premium partners in EdTech, STEM, and enterprise venture"
+     },
+     {
+      "ref": "findings[mia.narrative_power]",
+      "how": "details her rapid academic completion of a Symbolic Systems degree and pursuit of her MS&E master's degree"
+     }
+    ],
+    "executionPath": "specialized_plan",
+    "relationToExistingWork": "new_work",
+    "advances": null,
+    "notSeen": [
+     "Specific brand categories or corporate alignments that Mia's academic advisors or team have already excluded"
+    ],
+    "intent": null
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.9.0-exp",
+    "runId": "C4:fce84195",
+    "runAt": "2026-09-27T06:34:49.700Z"
+   },
+   "runs": [
+    "C4:fce84195"
+   ],
+   "response": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "authorization": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "execution": {
+    "state": "none",
+    "refs": []
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "reconsiders": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-27T06:34:49.700Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run C4:fce84195"
+    }
+   ]
+  }
+ ]
+}

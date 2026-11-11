@@ -1,0 +1,1058 @@
+{
+ "state": {
+  "athleteId": "dc8f37f1-deff-43f8-8c02-e37a5cc20d4f",
+  "asOf": "2026-09-22T01:47:12.259Z",
+  "version": "athlete-state/1.0.0",
+  "identity": {
+   "name": "Mia Bhuta",
+   "sport": "soccer",
+   "competitionContext": "Stanford University · D1",
+   "careerStatus": "active"
+  },
+  "findings": [
+   {
+    "key": "mia.athletic_authority",
+    "direction": "strength",
+    "basis": {
+     "value": 79.4,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-16T00:00:00.000Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#athletic_authority.role_importance",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#athletic_authority.competition_level",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#athletic_authority.achievement_recency",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#athletic_authority.performance_results",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#athletic_authority.rankings_recognition",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#athletic_authority.national_international_status"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#athletic_authority.role_importance",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#athletic_authority.competition_level",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#athletic_authority.achievement_recency",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#athletic_authority.performance_results",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#athletic_authority.rankings_recognition",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#athletic_authority.national_international_status",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.audience_scale",
+    "direction": "neutral",
+    "basis": {
+     "value": 50,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-16T00:00:00.000Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#audience_scale.audience_growth",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#audience_scale.platform_breadth",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#audience_scale.cross_platform_effective_reach",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#audience_scale.sport_level_audience_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 4
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#audience_scale.audience_growth",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#audience_scale.platform_breadth",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.engagement_quality",
+    "direction": "neutral",
+    "basis": {
+     "value": 70.81,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-16T00:00:00.000Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#engagement_quality.video_retention",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#engagement_quality.reach_efficiency",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#engagement_quality.story_efficiency",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#engagement_quality.shares_saves_quality",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#engagement_quality.audience_authenticity",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#engagement_quality.engagement_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 2,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#engagement_quality.video_retention",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#engagement_quality.reach_efficiency",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#engagement_quality.story_efficiency",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#engagement_quality.shares_saves_quality",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#engagement_quality.audience_authenticity",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#engagement_quality.engagement_percentile",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.cultural_relevance",
+    "direction": "neutral",
+    "basis": {
+     "value": 63.7,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-16T00:00:00.000Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#cultural_relevance.search_interest",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#cultural_relevance.social_conversation",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#cultural_relevance.media_source_quality",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#cultural_relevance.crossover_recognition",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#cultural_relevance.media_volume_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#cultural_relevance.search_interest",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#cultural_relevance.social_conversation",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#cultural_relevance.media_source_quality",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#cultural_relevance.crossover_recognition",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#cultural_relevance.media_volume_percentile",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.narrative_power",
+    "direction": "strength",
+    "basis": {
+     "value": 88.65,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-16T00:00:00.000Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#narrative_power.durability",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#narrative_power.story_depth",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#narrative_power.distinctiveness",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#narrative_power.media_resonance",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#narrative_power.evidence_authenticity",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#narrative_power.commercial_applicability"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#narrative_power.durability",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#narrative_power.story_depth",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#narrative_power.distinctiveness",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#narrative_power.media_resonance",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#narrative_power.evidence_authenticity",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#narrative_power.commercial_applicability",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.brand_fit",
+    "direction": "strength",
+    "basis": {
+     "value": 84.8,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-16T00:00:00.000Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#brand_fit.brand_safety",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#brand_fit.category_breadth",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#brand_fit.content_versatility",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#brand_fit.geographic_relevance",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#brand_fit.audience_attractiveness",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#brand_fit.identity_values_coherence"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#brand_fit.brand_safety",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#brand_fit.category_breadth",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#brand_fit.content_versatility",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#brand_fit.geographic_relevance",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#brand_fit.audience_attractiveness",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#brand_fit.identity_values_coherence",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.commercial_proof",
+    "direction": "neutral",
+    "basis": {
+     "value": 70.35,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-16T00:00:00.000Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#commercial_proof.brand_quality",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#commercial_proof.pricing_power",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#commercial_proof.deal_frequency",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#commercial_proof.renewals_repeat",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#commercial_proof.campaign_performance",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#commercial_proof.verified_commercial_value"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 2,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#commercial_proof.brand_quality",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#commercial_proof.pricing_power",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#commercial_proof.deal_frequency",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#commercial_proof.renewals_repeat",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#commercial_proof.campaign_performance",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#commercial_proof.verified_commercial_value",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.momentum",
+    "direction": "neutral",
+    "basis": {
+     "value": 55.8,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-16T00:00:00.000Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#momentum.audience_growth",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#momentum.media_trajectory",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#momentum.athletic_trajectory",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#momentum.commercial_acceleration",
+      "f55ad374-8b87-41e5-9973-a77150b2e91e#momentum.search_social_trajectory"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#momentum.audience_growth",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#momentum.media_trajectory",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#momentum.athletic_trajectory",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#momentum.commercial_acceleration",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "f55ad374-8b87-41e5-9973-a77150b2e91e#momentum.search_social_trajectory",
+      "asOf": "2026-09-16T00:00:00.000Z"
+     }
+    ]
+   }
+  ],
+  "facts": [],
+  "audienceTrajectory": {
+   "value": "cooling",
+   "owner": "athlete_intelligence",
+   "confidence": "MEDIUM",
+   "asOf": "2026-09-21T04:30:14.644Z",
+   "evidenceClass": "MEASURED",
+   "evidenceIds": [
+    "social.followers_growth_pct[0]",
+    "social.followers_growth_pct[1]",
+    "social.followers_growth_pct[2]",
+    "social.followers_growth_pct[3]",
+    "social.followers_growth_pct[4]",
+    "social.followers_growth_pct[5]",
+    "social.followers_growth_pct[6]",
+    "social.followers_growth_pct[7]",
+    "social.followers_growth_pct[8]",
+    "social.followers_growth_pct[9]",
+    "social.followers_growth_pct[10]",
+    "social.followers_growth_pct[11]",
+    "social.followers_growth_pct[12]",
+    "social.followers_growth_pct[13]",
+    "social.followers_growth_pct[14]",
+    "social.followers_growth_pct[15]",
+    "social.followers_growth_pct[16]",
+    "social.followers_growth_pct[17]",
+    "social.followers_growth_pct[18]",
+    "social.followers_growth_pct[19]",
+    "social.followers_growth_pct[20]",
+    "social.followers_growth_pct[21]",
+    "social.followers_growth_pct[22]",
+    "social.followers_growth_pct[23]",
+    "social.followers_growth_pct[24]",
+    "social.followers_growth_pct[25]",
+    "social.followers_growth_pct[26]",
+    "social.followers_growth_pct[27]",
+    "social.followers_growth_pct[28]",
+    "social.followers_growth_pct[29]",
+    "social.followers_growth_pct[30]",
+    "social.followers_growth_pct[31]",
+    "social.followers_growth_pct[32]",
+    "social.followers_growth_pct[33]",
+    "social.followers_growth_pct[34]",
+    "social.followers_growth_pct[35]",
+    "social.followers_growth_pct[36]",
+    "social.followers_growth_pct[37]",
+    "social.followers_growth_pct[38]",
+    "social.followers_growth_pct[39]",
+    "social.followers_growth_pct[40]",
+    "social.followers_growth_pct[41]",
+    "social.followers_growth_pct[42]",
+    "social.followers_growth_pct[43]",
+    "social.followers_growth_pct[44]",
+    "social.followers_growth_pct[45]",
+    "social.followers_growth_pct[46]",
+    "social.followers_growth_pct[47]",
+    "social.followers_growth_pct[48]",
+    "social.followers_growth_pct[49]",
+    "social.followers_growth_pct[50]",
+    "social.followers_growth_pct[51]",
+    "social.followers_growth_pct[52]",
+    "social.followers_growth_pct[53]",
+    "social.followers_growth_pct[54]",
+    "social.followers_growth_pct[55]",
+    "social.followers_growth_pct[56]",
+    "social.followers_growth_pct[57]",
+    "social.followers_growth_pct[58]",
+    "social.followers_growth_pct[59]",
+    "social.followers_growth_pct[60]",
+    "social.followers_growth_pct[61]",
+    "social.followers_growth_pct[62]",
+    "social.followers_growth_pct[63]",
+    "social.followers_growth_pct[64]",
+    "social.followers_growth_pct[65]",
+    "social.followers_growth_pct[66]",
+    "social.followers_growth_pct[67]",
+    "social.followers_growth_pct[68]",
+    "social.followers_growth_pct[69]",
+    "social.followers_growth_pct[70]",
+    "social.followers_growth_pct[71]",
+    "social.followers_growth_pct[72]",
+    "social.followers_growth_pct[73]",
+    "social.followers_growth_pct[74]",
+    "social.followers_growth_pct[75]",
+    "social.followers_growth_pct[76]",
+    "social.followers_growth_pct[77]",
+    "social.followers_growth_pct[78]",
+    "social.followers_growth_pct[79]",
+    "social.followers_growth_pct[80]",
+    "social.followers_growth_pct[81]",
+    "social.followers_growth_pct[82]",
+    "social.followers_growth_pct[83]"
+   ],
+   "sourceMethod": "mean_followers_growth_pct"
+  },
+  "commercialPosition": {
+   "closedDeals": {
+    "value": 1,
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-22T01:47:12.259Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [
+     "9acd1d50-0a84-4974-b3fc-bb965c8b5541"
+    ],
+    "sourceMethod": "count_deals_at_earned_status"
+   },
+   "activeRelationships": {
+    "value": [
+     "gorjana"
+    ],
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-22T01:47:12.259Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [
+     "9acd1d50-0a84-4974-b3fc-bb965c8b5541"
+    ],
+    "sourceMethod": "distinct_brand_at_earned_status"
+   },
+   "demonstratedEconomics": {
+    "value": {
+     "low": 14000,
+     "high": 14000,
+     "currency": "USD"
+    },
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-22T01:47:12.259Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [
+     "9acd1d50-0a84-4974-b3fc-bb965c8b5541"
+    ],
+    "sourceMethod": "min_max_closed_deal_amount"
+   },
+   "cashShare": {
+    "value": 0.5357142857142857,
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-22T01:47:12.259Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [
+     "9acd1d50-0a84-4974-b3fc-bb965c8b5541"
+    ],
+    "sourceMethod": "cash_over_total_closed"
+   },
+   "pricingEvidence": "athlete_transactions"
+  },
+  "constraints": [],
+  "preferences": [],
+  "materialGaps": [
+   "Detailed video retention and story completion metrics on connected social accounts.",
+   "Exact financial figures, pricing power, and return-on-investment metrics for her Adidas NIL campaigns."
+  ],
+  "overallConfidence": "HIGH",
+  "sources": [
+   {
+    "owner": "marketability",
+    "present": true,
+    "asOf": "2026-09-16T00:00:00.000Z"
+   },
+   {
+    "owner": "athlete_intelligence",
+    "present": true,
+    "asOf": "2026-09-21T04:30:14.644Z"
+   },
+   {
+    "owner": "athlete_state",
+    "present": true,
+    "asOf": "2026-09-22T01:47:12.259Z"
+   }
+  ]
+ },
+ "record": {
+  "evaluatorSpec": "opportunity-eval-spec/1.0.0",
+  "canonicalSha256": "6bcf91ab36b5fb7d970f8e2eac304fc82b9d7427b2ce00d35a54e21de3ae3c2d",
+  "manifest": {
+   "evaluatorSpec": "opportunity-eval-spec/1.0.0",
+   "promptDigest": "6bcf91ab36b5fb7d970f8e2eac304fc82b9d7427b2ce00d35a54e21de3ae3c2d"
+  },
+  "promptSha256": "052fbea03ecdc0bc36b38c2f3e934f454ec7f8f7c3136ddb4d47c76b1f107428",
+  "athlete": {
+   "id": "dc8f37f1-deff-43f8-8c02-e37a5cc20d4f",
+   "name": "Mia Bhuta"
+  },
+  "stateAsOf": "2026-09-22T01:47:12.259Z",
+  "stateBlock": "Nomila's account of this athlete as of 2026-09-22T01:47:12.259Z (athlete-state/1.0.0).\nOverall confidence in this picture: HIGH.\n\nCite any line below by the path shown at its left.\n\nIDENTITY\n    identity.name                             Mia Bhuta\n    identity.sport                            soccer\n    identity.competitionContext               Stanford University · D1\n    identity.careerStatus                     active\n\nFINDINGS — marketability dimensions, each judged by M.I.A. and read here unchanged.\n  STRENGTH  measured, above the band\n  GAP       measured, below the band\n  NEUTRAL   MEASURED and unremarkable. We know; it is simply ordinary. This is NOT missing evidence.\n  UNKNOWN   evidence is genuinely insufficient — no score, or mostly imputed signals. A statement about\n            what Nomila has measured, never about the athlete.\n    findings[mia.athletic_authority]          STRENGTH  score 79.4    HIGH    0/6 signals imputed\n    findings[mia.audience_scale]              NEUTRAL   score 50      HIGH    0/4 signals imputed\n    findings[mia.engagement_quality]          NEUTRAL   score 70.81   HIGH    2/6 signals imputed\n    findings[mia.cultural_relevance]          NEUTRAL   score 63.7    HIGH    0/5 signals imputed\n    findings[mia.narrative_power]             STRENGTH  score 88.65   HIGH    0/6 signals imputed\n    findings[mia.brand_fit]                   STRENGTH  score 84.8    HIGH    0/6 signals imputed\n    findings[mia.commercial_proof]            NEUTRAL   score 70.35   HIGH    2/6 signals imputed\n    findings[mia.momentum]                    NEUTRAL   score 55.8    HIGH    0/5 signals imputed\n\nCANONICAL FACTS — evidence Nomila holds about this athlete, each cited by the ref at its left.\n  A FACT IS NOT AN INTERPRETATION. An endorsement establishes that a relationship exists. It does not\n  establish that the brand is premium, that the achievement is culturally significant, or that anything\n  here is underused. Those are judgments, and they need their own evidence.\n    (Nomila holds no canonical facts for this athlete)\n\nAUDIENCE TRAJECTORY — follower growth only. It says nothing about athletic or commercial direction.\n    audienceTrajectory                        \"cooling\"  [measured · MEDIUM confidence]\n\nCOMMERCIAL POSITION — what the market has actually paid. Counted, never estimated.\n    commercialPosition.closedDeals            1  [measured · HIGH confidence]\n    commercialPosition.activeRelationships    [\"gorjana\"]  [measured · HIGH confidence]\n    commercialPosition.demonstratedEconomics  {\"low\":14000,\"high\":14000,\"currency\":\"USD\"}  [measured · HIGH confidence]\n    commercialPosition.cashShare              0.5357142857142857  [measured · HIGH confidence]\n    commercialPosition.pricingEvidence        athlete_transactions\n\nCONSTRAINTS — only what has been explicitly recorded as a bound on what the athlete can do.\n  An empty list means Nomila has recorded none. It does NOT mean none exist.\n    (none recorded)\n\nWHAT THE ATHLETE HAS SAID — their own words. A refusal bears on an opportunity; an ambition can generate one.\n  Never infer a preference or an ambition that is not listed here.\n    (the athlete has stated nothing)\n\nWHAT NOMILA CANNOT SEE — the gaps that would most change this picture.\n    materialGaps[0]                           Detailed video retention and story completion metrics on connected social accounts.\n    materialGaps[1]                           Exact financial figures, pricing power, and return-on-investment metrics for her Adidas NIL campaigns.\n\nSOURCES CONSULTED\n    marketability            present · as of 2026-09-16T00:00:00.000Z\n    athlete_intelligence     present · as of 2026-09-21T04:30:14.644Z\n    athlete_state            present · as of 2026-09-22T01:47:12.259Z",
+  "startedAt": "2026-09-22T01:47:12.693Z",
+  "latencyMs": 29415,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+   "promptTokens": 3004,
+   "outputTokens": 1810,
+   "thoughtTokens": 3607
+  },
+  "costUsd": 0.014443699999999999,
+  "rawText": "{\n  \"opportunities\": [\n    {\n      \"key\": \"unlock-social-engagement-metrics\",\n      \"kind\": \"UNLOCK\",\n      \"domain\": \"evidence\",\n      \"statement\": \"Connect her social media accounts to unlock deep video retention and story completion metrics.\",\n      \"rationale\": \"Nomila currently lacks granular engagement data, relying on partially imputed signals for her engagement quality. Unlocking these native metrics will provide hard evidence of her true digital resonance, allowing us to accurately represent her audience's depth to prospective partners.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"materialGaps[0]\",\n          \"how\": \"Identifies that detailed video retention and story completion metrics on connected accounts are completely unseen by Nomila.\"\n        },\n        {\n          \"state_path\": \"findings[mia.engagement_quality]\",\n          \"how\": \"Shows her current engagement quality is neutral with 2 of 6 signals imputed, indicating a clear need for direct data access.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"high\",\n        \"claim\": \"Will eliminate analytical blind spots, establishing a verified baseline of her content engagement to strengthen commercial pitches.\"\n      },\n      \"feasibility\": {\n        \"level\": \"high\",\n        \"claim\": \"Requires the athlete to perform a one-time digital authentication of her social accounts via the Nomila platform.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"unlock-adidas-nil-campaign-data\",\n      \"kind\": \"UNLOCK\",\n      \"domain\": \"evidence\",\n      \"statement\": \"Retrieve exact financial and ROI performance data from her Adidas NIL campaigns.\",\n      \"rationale\": \"While Nomila has recorded only one closed deal worth $14k, her Adidas NIL campaigns represent an existing commercial footprint that remains unmeasured. Unlocking this data is critical to establishing her true market value and pricing power.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"materialGaps[1]\",\n          \"how\": \"Explicitly names the missing Adidas financial and ROI metrics as a material gap in her profile.\"\n        },\n        {\n          \"state_path\": \"commercialPosition.closedDeals\",\n          \"how\": \"Indicates only 1 closed deal is currently on record, underscoring that our commercial picture of her is significantly incomplete.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"high\",\n        \"claim\": \"Will immediately clarify her real pricing floor and prove her commercial ROI to premium brands looking for established partners.\"\n      },\n      \"feasibility\": {\n        \"level\": \"medium\",\n        \"claim\": \"Requires the athlete or her representation to locate and share campaign reports or contracts from her Adidas engagements.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"grow-cooling-audience-trajectory\",\n      \"kind\": \"GROW\",\n      \"domain\": \"audience\",\n      \"statement\": \"Reverse her cooling audience growth by leveraging her elite brand fit and narrative power.\",\n      \"rationale\": \"Mia's follower growth trajectory is currently cooling, yet she possesses outstanding narrative power and brand fit. There is a clear strategic opening to build her audience back up by systematically injecting her strong brand alignment and storytelling into her public channels.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"audienceTrajectory\",\n          \"how\": \"Establishes that her audience growth is currently in a cooling phase.\"\n        },\n        {\n          \"state_path\": \"findings[mia.narrative_power]\",\n          \"how\": \"Indicates her ability to tell compelling stories is a measured strength (score: 88.65), providing the creative engine to restart audience growth.\"\n        },\n        {\n          \"state_path\": \"findings[mia.brand_fit]\",\n          \"how\": \"Indicates she possesses an exceptional natural brand fit (score: 84.8), giving her a clean template for highly attractive content.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"medium\",\n        \"claim\": \"Will stabilize and re-accelerate her follower growth, converting neutral reach into an expanding active audience.\"\n      },\n      \"feasibility\": {\n        \"level\": \"medium\",\n        \"claim\": \"Requires her to actively coordinate content schedules alongside her demanding Stanford D1 athletic commitments.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"grow-commercial-partnerships\",\n      \"kind\": \"GROW\",\n      \"domain\": \"commercial\",\n      \"statement\": \"Expand her roster of active commercial partnerships beyond her single active relationship with gorjana.\",\n      \"rationale\": \"With only one active relationship and one closed deal on record, Mia's commercial footprint is underdeveloped relative to her profile. Given her high athletic authority and excellent brand fit as a Stanford D1 athlete, there is a substantial opening to source and secure new brand alignments.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"commercialPosition.activeRelationships\",\n          \"how\": \"Identifies that her active commercial portfolio is limited to a single relationship (gorjana).\"\n        },\n        {\n          \"state_path\": \"findings[mia.brand_fit]\",\n          \"how\": \"Proves she has elite-level brand compatibility (score: 84.8), making her highly attractive to premium corporate partners.\"\n        },\n        {\n          \"state_path\": \"findings[mia.athletic_authority]\",\n          \"how\": \"Confirms she has high sports credibility (score: 79.4) that can be leveraged to justify brand investments.\"\n        },\n        {\n          \"state_path\": \"identity.competitionContext\",\n          \"how\": \"Provides her premier competitive setting (Stanford University · D1) as a powerful, prestigious commercial hook.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"high\",\n        \"claim\": \"Will diversify her income sources and establish her as a prominent, multi-brand NIL ambassador.\"\n      },\n      \"feasibility\": {\n        \"level\": \"medium\",\n        \"claim\": \"Requires outbound pitching and partnership evaluation that must be carefully balanced against her collegiate eligibility and academic schedule.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    }\n  ],\n  \"notes\": [\n    {\n      \"domain\": \"content\",\n      \"note\": \"No content opportunities were identified because Nomila lacks detailed social media engagement metrics (materialGaps[0]), making specific content recommendations highly speculative.\"\n    },\n    {\n      \"domain\": \"positioning\",\n      \"note\": \"No positioning opportunities were identified because Mia has expressed no stated preferences, ambitions, or areas she wants to be known for, and her narrative power is already a measured strength.\"\n    },\n    {\n      \"domain\": \"athletic\",\n      \"note\": \"No athletic opportunities were identified as her athletic authority is already a measured strength (79.4) in a premier D1 environment, and her state lists no physical or team selection challenges.\"\n    },\n    {\n      \"domain\": \"relationships\",\n      \"note\": \"Beyond direct commercial sponsors, we hold no data on her personal, institutional, or alumni network, preventing the identification of specific strategic introductions.\"\n    },\n    {\n      \"domain\": \"owned_venture\",\n      \"note\": \"No owned venture opportunities were identified because she is currently an active collegiate student-athlete and has expressed no interest in launching her own business.\"\n    },\n    {\n      \"domain\": \"impact\",\n      \"note\": \"No impact or philanthropic opportunities were identified as she has not recorded any preferred causes or community ambitions.\"\n    },\n    {\n      \"domain\": \"career\",\n      \"note\": \"No career transition or educational opportunities were identified because she is actively competing in college and has not provided any statements regarding her life-after-sport or media ambitions.\"\n    }\n  ]\n}",
+  "parsed": {
+   "opportunities": [
+    {
+     "key": "unlock-social-engagement-metrics",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": "Connect her social media accounts to unlock deep video retention and story completion metrics.",
+     "rationale": "Nomila currently lacks granular engagement data, relying on partially imputed signals for her engagement quality. Unlocking these native metrics will provide hard evidence of her true digital resonance, allowing us to accurately represent her audience's depth to prospective partners.",
+     "rests_on": [
+      {
+       "state_path": "materialGaps[0]",
+       "how": "Identifies that detailed video retention and story completion metrics on connected accounts are completely unseen by Nomila."
+      },
+      {
+       "state_path": "findings[mia.engagement_quality]",
+       "how": "Shows her current engagement quality is neutral with 2 of 6 signals imputed, indicating a clear need for direct data access."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Will eliminate analytical blind spots, establishing a verified baseline of her content engagement to strengthen commercial pitches."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Requires the athlete to perform a one-time digital authentication of her social accounts via the Nomila platform."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "unlock-adidas-nil-campaign-data",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": "Retrieve exact financial and ROI performance data from her Adidas NIL campaigns.",
+     "rationale": "While Nomila has recorded only one closed deal worth $14k, her Adidas NIL campaigns represent an existing commercial footprint that remains unmeasured. Unlocking this data is critical to establishing her true market value and pricing power.",
+     "rests_on": [
+      {
+       "state_path": "materialGaps[1]",
+       "how": "Explicitly names the missing Adidas financial and ROI metrics as a material gap in her profile."
+      },
+      {
+       "state_path": "commercialPosition.closedDeals",
+       "how": "Indicates only 1 closed deal is currently on record, underscoring that our commercial picture of her is significantly incomplete."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Will immediately clarify her real pricing floor and prove her commercial ROI to premium brands looking for established partners."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires the athlete or her representation to locate and share campaign reports or contracts from her Adidas engagements."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "grow-cooling-audience-trajectory",
+     "kind": "GROW",
+     "domain": "audience",
+     "statement": "Reverse her cooling audience growth by leveraging her elite brand fit and narrative power.",
+     "rationale": "Mia's follower growth trajectory is currently cooling, yet she possesses outstanding narrative power and brand fit. There is a clear strategic opening to build her audience back up by systematically injecting her strong brand alignment and storytelling into her public channels.",
+     "rests_on": [
+      {
+       "state_path": "audienceTrajectory",
+       "how": "Establishes that her audience growth is currently in a cooling phase."
+      },
+      {
+       "state_path": "findings[mia.narrative_power]",
+       "how": "Indicates her ability to tell compelling stories is a measured strength (score: 88.65), providing the creative engine to restart audience growth."
+      },
+      {
+       "state_path": "findings[mia.brand_fit]",
+       "how": "Indicates she possesses an exceptional natural brand fit (score: 84.8), giving her a clean template for highly attractive content."
+      }
+     ],
+     "impact": {
+      "level": "medium",
+      "claim": "Will stabilize and re-accelerate her follower growth, converting neutral reach into an expanding active audience."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires her to actively coordinate content schedules alongside her demanding Stanford D1 athletic commitments."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "grow-commercial-partnerships",
+     "kind": "GROW",
+     "domain": "commercial",
+     "statement": "Expand her roster of active commercial partnerships beyond her single active relationship with gorjana.",
+     "rationale": "With only one active relationship and one closed deal on record, Mia's commercial footprint is underdeveloped relative to her profile. Given her high athletic authority and excellent brand fit as a Stanford D1 athlete, there is a substantial opening to source and secure new brand alignments.",
+     "rests_on": [
+      {
+       "state_path": "commercialPosition.activeRelationships",
+       "how": "Identifies that her active commercial portfolio is limited to a single relationship (gorjana)."
+      },
+      {
+       "state_path": "findings[mia.brand_fit]",
+       "how": "Proves she has elite-level brand compatibility (score: 84.8), making her highly attractive to premium corporate partners."
+      },
+      {
+       "state_path": "findings[mia.athletic_authority]",
+       "how": "Confirms she has high sports credibility (score: 79.4) that can be leveraged to justify brand investments."
+      },
+      {
+       "state_path": "identity.competitionContext",
+       "how": "Provides her premier competitive setting (Stanford University · D1) as a powerful, prestigious commercial hook."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Will diversify her income sources and establish her as a prominent, multi-brand NIL ambassador."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires outbound pitching and partnership evaluation that must be carefully balanced against her collegiate eligibility and academic schedule."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [
+    {
+     "domain": "content",
+     "note": "No content opportunities were identified because Nomila lacks detailed social media engagement metrics (materialGaps[0]), making specific content recommendations highly speculative."
+    },
+    {
+     "domain": "positioning",
+     "note": "No positioning opportunities were identified because Mia has expressed no stated preferences, ambitions, or areas she wants to be known for, and her narrative power is already a measured strength."
+    },
+    {
+     "domain": "athletic",
+     "note": "No athletic opportunities were identified as her athletic authority is already a measured strength (79.4) in a premier D1 environment, and her state lists no physical or team selection challenges."
+    },
+    {
+     "domain": "relationships",
+     "note": "Beyond direct commercial sponsors, we hold no data on her personal, institutional, or alumni network, preventing the identification of specific strategic introductions."
+    },
+    {
+     "domain": "owned_venture",
+     "note": "No owned venture opportunities were identified because she is currently an active collegiate student-athlete and has expressed no interest in launching her own business."
+    },
+    {
+     "domain": "impact",
+     "note": "No impact or philanthropic opportunities were identified as she has not recorded any preferred causes or community ambitions."
+    },
+    {
+     "domain": "career",
+     "note": "No career transition or educational opportunities were identified because she is actively competing in college and has not provided any statements regarding her life-after-sport or media ambitions."
+    }
+   ]
+  },
+  "structuralProblems": [],
+  "groundingProblems": [],
+  "citations": [
+   {
+    "index": 0,
+    "key": "unlock-social-engagement-metrics",
+    "statePath": "materialGaps[0]",
+    "resolved": true
+   },
+   {
+    "index": 0,
+    "key": "unlock-social-engagement-metrics",
+    "statePath": "findings[mia.engagement_quality]",
+    "resolved": true
+   },
+   {
+    "index": 1,
+    "key": "unlock-adidas-nil-campaign-data",
+    "statePath": "materialGaps[1]",
+    "resolved": true
+   },
+   {
+    "index": 1,
+    "key": "unlock-adidas-nil-campaign-data",
+    "statePath": "commercialPosition.closedDeals",
+    "resolved": true
+   },
+   {
+    "index": 2,
+    "key": "grow-cooling-audience-trajectory",
+    "statePath": "audienceTrajectory",
+    "resolved": true
+   },
+   {
+    "index": 2,
+    "key": "grow-cooling-audience-trajectory",
+    "statePath": "findings[mia.narrative_power]",
+    "resolved": true
+   },
+   {
+    "index": 2,
+    "key": "grow-cooling-audience-trajectory",
+    "statePath": "findings[mia.brand_fit]",
+    "resolved": true
+   },
+   {
+    "index": 3,
+    "key": "grow-commercial-partnerships",
+    "statePath": "commercialPosition.activeRelationships",
+    "resolved": true
+   },
+   {
+    "index": 3,
+    "key": "grow-commercial-partnerships",
+    "statePath": "findings[mia.brand_fit]",
+    "resolved": true
+   },
+   {
+    "index": 3,
+    "key": "grow-commercial-partnerships",
+    "statePath": "findings[mia.athletic_authority]",
+    "resolved": true
+   },
+   {
+    "index": 3,
+    "key": "grow-commercial-partnerships",
+    "statePath": "identity.competitionContext",
+    "resolved": true
+   }
+  ],
+  "map": {
+   "athleteId": "dc8f37f1-deff-43f8-8c02-e37a5cc20d4f",
+   "asOf": "2026-09-22T01:47:42.107Z",
+   "version": "opportunity-map/1.0.0",
+   "specVersion": "opportunity-eval-spec/1.0.0",
+   "stateAsOf": "2026-09-22T01:47:12.259Z",
+   "opportunities": [
+    {
+     "key": "unlock-social-engagement-metrics",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": {
+      "value": "Connect her social media accounts to unlock deep video retention and story completion metrics.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-22T01:47:12.259Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "materialGaps[0]",
+       "findings[mia.engagement_quality]"
+      ],
+      "rationale": "Nomila currently lacks granular engagement data, relying on partially imputed signals for her engagement quality. Unlocking these native metrics will provide hard evidence of her true digital resonance, allowing us to accurately represent her audience's depth to prospective partners.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "materialGaps[0]",
+       "how": "Identifies that detailed video retention and story completion metrics on connected accounts are completely unseen by Nomila."
+      },
+      {
+       "statePath": "findings[mia.engagement_quality]",
+       "how": "Shows her current engagement quality is neutral with 2 of 6 signals imputed, indicating a clear need for direct data access."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Will eliminate analytical blind spots, establishing a verified baseline of her content engagement to strengthen commercial pitches."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Requires the athlete to perform a one-time digital authentication of her social accounts via the Nomila platform."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "unlock-adidas-nil-campaign-data",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": {
+      "value": "Retrieve exact financial and ROI performance data from her Adidas NIL campaigns.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-22T01:47:12.259Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "materialGaps[1]",
+       "commercialPosition.closedDeals"
+      ],
+      "rationale": "While Nomila has recorded only one closed deal worth $14k, her Adidas NIL campaigns represent an existing commercial footprint that remains unmeasured. Unlocking this data is critical to establishing her true market value and pricing power.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "materialGaps[1]",
+       "how": "Explicitly names the missing Adidas financial and ROI metrics as a material gap in her profile."
+      },
+      {
+       "statePath": "commercialPosition.closedDeals",
+       "how": "Indicates only 1 closed deal is currently on record, underscoring that our commercial picture of her is significantly incomplete."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Will immediately clarify her real pricing floor and prove her commercial ROI to premium brands looking for established partners."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires the athlete or her representation to locate and share campaign reports or contracts from her Adidas engagements."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "grow-cooling-audience-trajectory",
+     "kind": "GROW",
+     "domain": "audience",
+     "statement": {
+      "value": "Reverse her cooling audience growth by leveraging her elite brand fit and narrative power.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-22T01:47:12.259Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "audienceTrajectory",
+       "findings[mia.narrative_power]",
+       "findings[mia.brand_fit]"
+      ],
+      "rationale": "Mia's follower growth trajectory is currently cooling, yet she possesses outstanding narrative power and brand fit. There is a clear strategic opening to build her audience back up by systematically injecting her strong brand alignment and storytelling into her public channels.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "audienceTrajectory",
+       "how": "Establishes that her audience growth is currently in a cooling phase."
+      },
+      {
+       "statePath": "findings[mia.narrative_power]",
+       "how": "Indicates her ability to tell compelling stories is a measured strength (score: 88.65), providing the creative engine to restart audience growth."
+      },
+      {
+       "statePath": "findings[mia.brand_fit]",
+       "how": "Indicates she possesses an exceptional natural brand fit (score: 84.8), giving her a clean template for highly attractive content."
+      }
+     ],
+     "impact": {
+      "level": "medium",
+      "claim": "Will stabilize and re-accelerate her follower growth, converting neutral reach into an expanding active audience."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires her to actively coordinate content schedules alongside her demanding Stanford D1 athletic commitments."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "grow-commercial-partnerships",
+     "kind": "GROW",
+     "domain": "commercial",
+     "statement": {
+      "value": "Expand her roster of active commercial partnerships beyond her single active relationship with gorjana.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-22T01:47:12.259Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "commercialPosition.activeRelationships",
+       "findings[mia.brand_fit]",
+       "findings[mia.athletic_authority]",
+       "identity.competitionContext"
+      ],
+      "rationale": "With only one active relationship and one closed deal on record, Mia's commercial footprint is underdeveloped relative to her profile. Given her high athletic authority and excellent brand fit as a Stanford D1 athlete, there is a substantial opening to source and secure new brand alignments.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "commercialPosition.activeRelationships",
+       "how": "Identifies that her active commercial portfolio is limited to a single relationship (gorjana)."
+      },
+      {
+       "statePath": "findings[mia.brand_fit]",
+       "how": "Proves she has elite-level brand compatibility (score: 84.8), making her highly attractive to premium corporate partners."
+      },
+      {
+       "statePath": "findings[mia.athletic_authority]",
+       "how": "Confirms she has high sports credibility (score: 79.4) that can be leveraged to justify brand investments."
+      },
+      {
+       "statePath": "identity.competitionContext",
+       "how": "Provides her premier competitive setting (Stanford University · D1) as a powerful, prestigious commercial hook."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Will diversify her income sources and establish her as a prominent, multi-brand NIL ambassador."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires outbound pitching and partnership evaluation that must be carefully balanced against her collegiate eligibility and academic schedule."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [],
+   "inputs": [
+    {
+     "kind": "athlete_state",
+     "version": "athlete-state/1.0.0",
+     "present": true
+    },
+    {
+     "kind": "strategy_intelligence",
+     "version": null,
+     "present": false
+    },
+    {
+     "kind": "targeted_research",
+     "version": null,
+     "present": false
+    }
+   ],
+   "overallConfidence": "HIGH"
+  }
+ }
+}

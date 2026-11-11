@@ -1,0 +1,24 @@
+{
+  "name": "mila-studio",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Local Mastra Studio for Mila (dev only; never part of the server install or image). See README.md.",
+  "type": "module",
+  "scripts": {
+    "studio": "npm --prefix ../.. run catalogue && node run.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "4.0.103",
+    "@mastra/core": "1.79.0",
+    "@mastra/deployer": "1.79.0",
+    "mastra": "1.35.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.0",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=22.22.0"
+  }
+}

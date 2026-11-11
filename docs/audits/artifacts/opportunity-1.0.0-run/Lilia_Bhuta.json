@@ -1,0 +1,858 @@
+{
+ "state": {
+  "athleteId": "3fd80f19-be44-4cb6-9075-a7e79c1924c4",
+  "asOf": "2026-09-21T19:22:14.623Z",
+  "version": "athlete-state/1.0.0",
+  "identity": {
+   "name": "Lilia Bhuta",
+   "sport": "soccer",
+   "competitionContext": "Century United · Class 4A",
+   "careerStatus": "active"
+  },
+  "findings": [
+   {
+    "key": "mia.athletic_authority",
+    "direction": "unknown",
+    "basis": {
+     "value": 70.7,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#athletic_authority.role_importance",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#athletic_authority.competition_level",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#athletic_authority.achievement_recency",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#athletic_authority.performance_results",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#athletic_authority.rankings_recognition",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#athletic_authority.national_international_status"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#athletic_authority.role_importance",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#athletic_authority.competition_level",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#athletic_authority.achievement_recency",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#athletic_authority.performance_results",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#athletic_authority.rankings_recognition",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#athletic_authority.national_international_status",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.audience_scale",
+    "direction": "gap",
+    "basis": {
+     "value": 13.8,
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#audience_scale.audience_growth",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#audience_scale.platform_breadth",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#audience_scale.cross_platform_effective_reach",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#audience_scale.sport_level_audience_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 1,
+     "total": 4
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#audience_scale.audience_growth",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#audience_scale.platform_breadth",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.engagement_quality",
+    "direction": "unknown",
+    "basis": {
+     "value": 50,
+     "owner": "marketability",
+     "confidence": "LOW",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#engagement_quality.video_retention",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#engagement_quality.reach_efficiency",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#engagement_quality.story_efficiency",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#engagement_quality.shares_saves_quality",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#engagement_quality.audience_authenticity",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#engagement_quality.engagement_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 6,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#engagement_quality.video_retention",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#engagement_quality.reach_efficiency",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#engagement_quality.story_efficiency",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#engagement_quality.shares_saves_quality",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#engagement_quality.audience_authenticity",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#engagement_quality.engagement_percentile",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.cultural_relevance",
+    "direction": "gap",
+    "basis": {
+     "value": 18.7,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#cultural_relevance.search_interest",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#cultural_relevance.social_conversation",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#cultural_relevance.media_source_quality",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#cultural_relevance.crossover_recognition",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#cultural_relevance.media_volume_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#cultural_relevance.search_interest",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#cultural_relevance.social_conversation",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#cultural_relevance.media_source_quality",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#cultural_relevance.crossover_recognition",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#cultural_relevance.media_volume_percentile",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.narrative_power",
+    "direction": "unknown",
+    "basis": {
+     "value": 67.7,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#narrative_power.durability",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#narrative_power.story_depth",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#narrative_power.distinctiveness",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#narrative_power.media_resonance",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#narrative_power.evidence_authenticity",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#narrative_power.commercial_applicability"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#narrative_power.durability",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#narrative_power.story_depth",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#narrative_power.distinctiveness",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#narrative_power.media_resonance",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#narrative_power.evidence_authenticity",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#narrative_power.commercial_applicability",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.brand_fit",
+    "direction": "unknown",
+    "basis": {
+     "value": 49.5,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#brand_fit.brand_safety",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#brand_fit.category_breadth",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#brand_fit.content_versatility",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#brand_fit.geographic_relevance",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#brand_fit.audience_attractiveness",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#brand_fit.identity_values_coherence"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#brand_fit.brand_safety",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#brand_fit.category_breadth",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#brand_fit.content_versatility",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#brand_fit.geographic_relevance",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#brand_fit.audience_attractiveness",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#brand_fit.identity_values_coherence",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.commercial_proof",
+    "direction": "unknown",
+    "basis": {
+     "value": 50,
+     "owner": "marketability",
+     "confidence": "LOW",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#commercial_proof.brand_quality",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#commercial_proof.pricing_power",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#commercial_proof.deal_frequency",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#commercial_proof.renewals_repeat",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#commercial_proof.campaign_performance",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#commercial_proof.verified_commercial_value"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 6,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#commercial_proof.brand_quality",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#commercial_proof.pricing_power",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#commercial_proof.deal_frequency",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#commercial_proof.renewals_repeat",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#commercial_proof.campaign_performance",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#commercial_proof.verified_commercial_value",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.momentum",
+    "direction": "unknown",
+    "basis": {
+     "value": 59.9,
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#momentum.audience_growth",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#momentum.media_trajectory",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#momentum.athletic_trajectory",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#momentum.commercial_acceleration",
+      "11f0faec-ebcd-4329-bb13-36a4101c772b#momentum.search_social_trajectory"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 2,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#momentum.audience_growth",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#momentum.media_trajectory",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#momentum.athletic_trajectory",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#momentum.commercial_acceleration",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "11f0faec-ebcd-4329-bb13-36a4101c772b#momentum.search_social_trajectory",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     }
+    ]
+   }
+  ],
+  "audienceTrajectory": {
+   "value": null,
+   "owner": "athlete_intelligence",
+   "asOf": "2026-09-21T19:22:14.623Z",
+   "evidenceClass": "MISSING",
+   "reason": "no growth measurement on any platform"
+  },
+  "commercialPosition": {
+   "closedDeals": {
+    "value": 0,
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-21T19:22:14.623Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "count_deals_at_earned_status"
+   },
+   "activeRelationships": {
+    "value": [],
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-21T19:22:14.623Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "distinct_brand_at_earned_status"
+   },
+   "demonstratedEconomics": {
+    "value": null,
+    "owner": "athlete_state",
+    "asOf": "2026-09-21T19:22:14.623Z",
+    "evidenceClass": "MISSING",
+    "reason": "no closed deal carries an amount"
+   },
+   "pricingEvidence": "none"
+  },
+  "constraints": [],
+  "preferences": [],
+  "materialGaps": [
+   "Consumer-facing public social media platform statistics (follower counts, reach, and engagement metrics).",
+   "Longitudinal audience growth tracking.",
+   "Commercial deal terms, pricing metrics, and NIL-specific historical data."
+  ],
+  "overallConfidence": "LOW",
+  "sources": [
+   {
+    "owner": "marketability",
+    "present": true,
+    "asOf": "2026-06-18T17:40:16.239Z"
+   },
+   {
+    "owner": "athlete_intelligence",
+    "present": false,
+    "asOf": null
+   },
+   {
+    "owner": "athlete_state",
+    "present": true,
+    "asOf": "2026-09-21T19:22:14.623Z"
+   }
+  ]
+ },
+ "record": {
+  "evaluatorSpec": "opportunity-eval-spec/1.0.0",
+  "canonicalSha256": "6bcf91ab36b5fb7d970f8e2eac304fc82b9d7427b2ce00d35a54e21de3ae3c2d",
+  "manifest": {
+   "evaluatorSpec": "opportunity-eval-spec/1.0.0",
+   "promptDigest": "6bcf91ab36b5fb7d970f8e2eac304fc82b9d7427b2ce00d35a54e21de3ae3c2d"
+  },
+  "promptSha256": "e0d17e731c3a2dc73f7a6e1d8635eef081f7d74c52246bba102c066bde2626db",
+  "athlete": {
+   "id": "3fd80f19-be44-4cb6-9075-a7e79c1924c4",
+   "name": "Lilia Bhuta"
+  },
+  "stateAsOf": "2026-09-21T19:22:14.623Z",
+  "stateBlock": "Nomila's account of this athlete as of 2026-09-21T19:22:14.623Z (athlete-state/1.0.0).\nOverall confidence in this picture: LOW.\n\nCite any line below by the path shown at its left.\n\nIDENTITY\n    identity.name                             Lilia Bhuta\n    identity.sport                            soccer\n    identity.competitionContext               Century United · Class 4A\n    identity.careerStatus                     active\n\nFINDINGS — marketability dimensions, each judged by M.I.A. and read here unchanged.\n  A dimension resting mostly on IMPUTED signals is reported UNKNOWN rather than as a weakness: that is a\n  statement about what Nomila has measured, not about the athlete.\n    findings[mia.athletic_authority]          UNKNOWN   score 70.7    HIGH    0/6 signals imputed\n    findings[mia.audience_scale]              GAP       score 13.8    MEDIUM  1/4 signals imputed\n    findings[mia.engagement_quality]          UNKNOWN   score 50      LOW     6/6 signals imputed\n    findings[mia.cultural_relevance]          GAP       score 18.7    HIGH    0/5 signals imputed\n    findings[mia.narrative_power]             UNKNOWN   score 67.7    HIGH    0/6 signals imputed\n    findings[mia.brand_fit]                   UNKNOWN   score 49.5    HIGH    0/6 signals imputed\n    findings[mia.commercial_proof]            UNKNOWN   score 50      LOW     6/6 signals imputed\n    findings[mia.momentum]                    UNKNOWN   score 59.9    MEDIUM  2/5 signals imputed\n\nAUDIENCE TRAJECTORY — follower growth only. It says nothing about athletic or commercial direction.\n    audienceTrajectory                        not known (no growth measurement on any platform)\n\nCOMMERCIAL POSITION — what the market has actually paid. Counted, never estimated.\n    commercialPosition.closedDeals            0  [measured · HIGH confidence]\n    commercialPosition.activeRelationships    []  [measured · HIGH confidence]\n    commercialPosition.demonstratedEconomics  not known (no closed deal carries an amount)\n    commercialPosition.pricingEvidence        none\n\nCONSTRAINTS — only what has been explicitly recorded as a bound on what the athlete can do.\n  An empty list means Nomila has recorded none. It does NOT mean none exist.\n    (none recorded)\n\nWHAT THE ATHLETE HAS SAID — their own words. A refusal bears on an opportunity; an ambition can generate one.\n  Never infer a preference or an ambition that is not listed here.\n    (the athlete has stated nothing)\n\nWHAT NOMILA CANNOT SEE — the gaps that would most change this picture.\n    materialGaps[0]                           Consumer-facing public social media platform statistics (follower counts, reach, and engagement metrics).\n    materialGaps[1]                           Longitudinal audience growth tracking.\n    materialGaps[2]                           Commercial deal terms, pricing metrics, and NIL-specific historical data.\n\nSOURCES CONSULTED\n    marketability            present · as of 2026-06-18T17:40:16.239Z\n    athlete_intelligence     ABSENT\n    athlete_state            present · as of 2026-09-21T19:22:14.623Z",
+  "startedAt": "2026-09-21T19:22:14.900Z",
+  "latencyMs": 35564,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+   "promptTokens": 2794,
+   "outputTokens": 1443,
+   "thoughtTokens": 4483
+  },
+  "costUsd": 0.0156532,
+  "rawText": "{\n  \"opportunities\": [\n    {\n      \"key\": \"unlock-social-audience-metrics\",\n      \"kind\": \"UNLOCK\",\n      \"domain\": \"evidence\",\n      \"statement\": \"Establish direct tracking of Lilia's public social media platforms to resolve missing statistics on audience reach and engagement.\",\n      \"rationale\": \"Nomila's overall confidence in Lilia's state is low, and her audience scale is identified as a gap. Connecting her social platform data is the critical first step to gain high-confidence audience metrics before any growth or content strategies can be advised.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"materialGaps[0]\",\n          \"how\": \"Identifies that consumer-facing public social media platform statistics are completely unseen.\"\n        },\n        {\n          \"state_path\": \"findings[mia.audience_scale]\",\n          \"how\": \"Demonstrates that her audience scale is recorded as a gap (score 13.8) based on incomplete metrics.\"\n        },\n        {\n          \"state_path\": \"audienceTrajectory\",\n          \"how\": \"Confirms that no growth measurements are currently possible due to missing platform data.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"high\",\n        \"claim\": \"Resolves our fundamental ignorance of Lilia's actual audience scale and engagement levels, enabling accurate, high-confidence strategic advice.\"\n      },\n      \"feasibility\": {\n        \"level\": \"high\",\n        \"claim\": \"Requires Lilia to link or authorize her social media platform accounts, demanding minimal time or administrative effort.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"unlock-nil-historical-data\",\n      \"kind\": \"UNLOCK\",\n      \"domain\": \"evidence\",\n      \"statement\": \"Gather and verify Lilia's historical and local NIL activities or past commercial terms to establish an accurate commercial baseline.\",\n      \"rationale\": \"Nomila currently registers zero closed deals and missing commercial proof. To rule out unrecorded local, regional, or youth agreements, we must unlock past NIL records directly from her.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"materialGaps[2]\",\n          \"how\": \"Specifies that NIL-specific historical data and pricing metrics are completely unmeasured.\"\n        },\n        {\n          \"state_path\": \"commercialPosition.closedDeals\",\n          \"how\": \"States a baseline of zero closed deals, which remains a low-confidence assumption without direct verification.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"medium\",\n        \"claim\": \"Establishes a solid commercial baseline and reveals whether Lilia has any historical market traction that can be built upon.\"\n      },\n      \"feasibility\": {\n        \"level\": \"high\",\n        \"claim\": \"Requires a simple disclosure or onboarding questionnaire regarding previous NIL or local partner relationships.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"amplify-athletic-narrative\",\n      \"kind\": \"AMPLIFY\",\n      \"domain\": \"positioning\",\n      \"statement\": \"Leverage Lilia's high athletic authority and narrative power to elevate her public positioning and counter her low cultural relevance.\",\n      \"rationale\": \"Lilia's competitive profile boasts strong, unimputed scores in athletic authority and narrative power. Consciously emphasizing these verified strengths in her public positioning provides her best path to address her cultural relevance gap.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"findings[mia.athletic_authority]\",\n          \"how\": \"Validates a highly strong athletic credential score (70.7) backed by unimputed signals.\"\n        },\n        {\n          \"state_path\": \"findings[mia.narrative_power]\",\n          \"how\": \"Identifies a strong narrative baseline score (67.7) that is currently underutilized.\"\n        },\n        {\n          \"state_path\": \"findings[mia.cultural_relevance]\",\n          \"how\": \"Highlights a low cultural relevance score (18.7) that can be directly addressed by showcasing her existing athletic strengths.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"medium\",\n        \"claim\": \"Aligns Lilia's public-facing identity with her actual competitive strengths, building a narrative foundation for organic audience growth.\"\n      },\n      \"feasibility\": {\n        \"level\": \"medium\",\n        \"claim\": \"Requires Lilia to actively center her competitive context and athletic achievements in her public storytelling and local engagements.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"MEDIUM\"\n    }\n  ],\n  \"notes\": [\n    {\n      \"domain\": \"commercial\",\n      \"explanation\": \"Zero closed deals and a lack of pricing evidence make commercial proposals premature until commercial evidence gaps are resolved.\"\n    },\n    {\n      \"domain\": \"audience\",\n      \"explanation\": \"No audience trajectory or platform statistics are available, preventing the formulation of any audience growth or acquisition tactics.\"\n    },\n    {\n      \"domain\": \"content\",\n      \"explanation\": \"Without visibility into social statistics or content channels, formulating content ownership or platform strategies is entirely speculative.\"\n    },\n    {\n      \"domain\": \"impact\",\n      \"explanation\": \"No philanthropic or cause-related preferences are recorded, and Lilia's low visibility makes active impact strategies a distraction at this stage.\"\n    },\n    {\n      \"domain\": \"career\",\n      \"explanation\": \"Lilia is an active athlete in a youth/high school competitive context (Century United Class 4A); post-playing career, coaching, or broadcasting strategies are highly premature.\"\n    },\n    {\n      \"domain\": \"owned_venture\",\n      \"explanation\": \"Given zero closed deals, zero commercial proof, and a thin overall profile, launching an owned venture is an unsupported strategic leap.\"\n    },\n    {\n      \"domain\": \"relationships\",\n      \"explanation\": \"No active commercial relationships or stated network interests exist, meaning specific outbound intros cannot yet be justified.\"\n    },\n    {\n      \"domain\": \"athletic\",\n      \"explanation\": \"While athletic authority is high, we lack competitive timeline details, scheduling, or selection goals to prescribe specific athletic management or selection opportunities.\"\n    }\n  ]\n}",
+  "parsed": {
+   "opportunities": [
+    {
+     "key": "unlock-social-audience-metrics",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": "Establish direct tracking of Lilia's public social media platforms to resolve missing statistics on audience reach and engagement.",
+     "rationale": "Nomila's overall confidence in Lilia's state is low, and her audience scale is identified as a gap. Connecting her social platform data is the critical first step to gain high-confidence audience metrics before any growth or content strategies can be advised.",
+     "rests_on": [
+      {
+       "state_path": "materialGaps[0]",
+       "how": "Identifies that consumer-facing public social media platform statistics are completely unseen."
+      },
+      {
+       "state_path": "findings[mia.audience_scale]",
+       "how": "Demonstrates that her audience scale is recorded as a gap (score 13.8) based on incomplete metrics."
+      },
+      {
+       "state_path": "audienceTrajectory",
+       "how": "Confirms that no growth measurements are currently possible due to missing platform data."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Resolves our fundamental ignorance of Lilia's actual audience scale and engagement levels, enabling accurate, high-confidence strategic advice."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Requires Lilia to link or authorize her social media platform accounts, demanding minimal time or administrative effort."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "unlock-nil-historical-data",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": "Gather and verify Lilia's historical and local NIL activities or past commercial terms to establish an accurate commercial baseline.",
+     "rationale": "Nomila currently registers zero closed deals and missing commercial proof. To rule out unrecorded local, regional, or youth agreements, we must unlock past NIL records directly from her.",
+     "rests_on": [
+      {
+       "state_path": "materialGaps[2]",
+       "how": "Specifies that NIL-specific historical data and pricing metrics are completely unmeasured."
+      },
+      {
+       "state_path": "commercialPosition.closedDeals",
+       "how": "States a baseline of zero closed deals, which remains a low-confidence assumption without direct verification."
+      }
+     ],
+     "impact": {
+      "level": "medium",
+      "claim": "Establishes a solid commercial baseline and reveals whether Lilia has any historical market traction that can be built upon."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Requires a simple disclosure or onboarding questionnaire regarding previous NIL or local partner relationships."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "amplify-athletic-narrative",
+     "kind": "AMPLIFY",
+     "domain": "positioning",
+     "statement": "Leverage Lilia's high athletic authority and narrative power to elevate her public positioning and counter her low cultural relevance.",
+     "rationale": "Lilia's competitive profile boasts strong, unimputed scores in athletic authority and narrative power. Consciously emphasizing these verified strengths in her public positioning provides her best path to address her cultural relevance gap.",
+     "rests_on": [
+      {
+       "state_path": "findings[mia.athletic_authority]",
+       "how": "Validates a highly strong athletic credential score (70.7) backed by unimputed signals."
+      },
+      {
+       "state_path": "findings[mia.narrative_power]",
+       "how": "Identifies a strong narrative baseline score (67.7) that is currently underutilized."
+      },
+      {
+       "state_path": "findings[mia.cultural_relevance]",
+       "how": "Highlights a low cultural relevance score (18.7) that can be directly addressed by showcasing her existing athletic strengths."
+      }
+     ],
+     "impact": {
+      "level": "medium",
+      "claim": "Aligns Lilia's public-facing identity with her actual competitive strengths, building a narrative foundation for organic audience growth."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires Lilia to actively center her competitive context and athletic achievements in her public storytelling and local engagements."
+     },
+     "urgency": null,
+     "confidence": "MEDIUM"
+    }
+   ],
+   "notes": [
+    {
+     "domain": "commercial",
+     "explanation": "Zero closed deals and a lack of pricing evidence make commercial proposals premature until commercial evidence gaps are resolved."
+    },
+    {
+     "domain": "audience",
+     "explanation": "No audience trajectory or platform statistics are available, preventing the formulation of any audience growth or acquisition tactics."
+    },
+    {
+     "domain": "content",
+     "explanation": "Without visibility into social statistics or content channels, formulating content ownership or platform strategies is entirely speculative."
+    },
+    {
+     "domain": "impact",
+     "explanation": "No philanthropic or cause-related preferences are recorded, and Lilia's low visibility makes active impact strategies a distraction at this stage."
+    },
+    {
+     "domain": "career",
+     "explanation": "Lilia is an active athlete in a youth/high school competitive context (Century United Class 4A); post-playing career, coaching, or broadcasting strategies are highly premature."
+    },
+    {
+     "domain": "owned_venture",
+     "explanation": "Given zero closed deals, zero commercial proof, and a thin overall profile, launching an owned venture is an unsupported strategic leap."
+    },
+    {
+     "domain": "relationships",
+     "explanation": "No active commercial relationships or stated network interests exist, meaning specific outbound intros cannot yet be justified."
+    },
+    {
+     "domain": "athletic",
+     "explanation": "While athletic authority is high, we lack competitive timeline details, scheduling, or selection goals to prescribe specific athletic management or selection opportunities."
+    }
+   ]
+  },
+  "structuralProblems": [],
+  "groundingProblems": [],
+  "citations": [
+   {
+    "index": 0,
+    "key": "unlock-social-audience-metrics",
+    "statePath": "materialGaps[0]",
+    "resolved": true
+   },
+   {
+    "index": 0,
+    "key": "unlock-social-audience-metrics",
+    "statePath": "findings[mia.audience_scale]",
+    "resolved": true
+   },
+   {
+    "index": 0,
+    "key": "unlock-social-audience-metrics",
+    "statePath": "audienceTrajectory",
+    "resolved": true
+   },
+   {
+    "index": 1,
+    "key": "unlock-nil-historical-data",
+    "statePath": "materialGaps[2]",
+    "resolved": true
+   },
+   {
+    "index": 1,
+    "key": "unlock-nil-historical-data",
+    "statePath": "commercialPosition.closedDeals",
+    "resolved": true
+   },
+   {
+    "index": 2,
+    "key": "amplify-athletic-narrative",
+    "statePath": "findings[mia.athletic_authority]",
+    "resolved": true
+   },
+   {
+    "index": 2,
+    "key": "amplify-athletic-narrative",
+    "statePath": "findings[mia.narrative_power]",
+    "resolved": true
+   },
+   {
+    "index": 2,
+    "key": "amplify-athletic-narrative",
+    "statePath": "findings[mia.cultural_relevance]",
+    "resolved": true
+   }
+  ],
+  "map": {
+   "athleteId": "3fd80f19-be44-4cb6-9075-a7e79c1924c4",
+   "asOf": "2026-09-21T19:22:50.463Z",
+   "version": "opportunity-map/1.0.0",
+   "specVersion": "opportunity-eval-spec/1.0.0",
+   "stateAsOf": "2026-09-21T19:22:14.623Z",
+   "opportunities": [
+    {
+     "key": "unlock-social-audience-metrics",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": {
+      "value": "Establish direct tracking of Lilia's public social media platforms to resolve missing statistics on audience reach and engagement.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-21T19:22:14.623Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "materialGaps[0]",
+       "findings[mia.audience_scale]",
+       "audienceTrajectory"
+      ],
+      "rationale": "Nomila's overall confidence in Lilia's state is low, and her audience scale is identified as a gap. Connecting her social platform data is the critical first step to gain high-confidence audience metrics before any growth or content strategies can be advised.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "materialGaps[0]",
+       "how": "Identifies that consumer-facing public social media platform statistics are completely unseen."
+      },
+      {
+       "statePath": "findings[mia.audience_scale]",
+       "how": "Demonstrates that her audience scale is recorded as a gap (score 13.8) based on incomplete metrics."
+      },
+      {
+       "statePath": "audienceTrajectory",
+       "how": "Confirms that no growth measurements are currently possible due to missing platform data."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Resolves our fundamental ignorance of Lilia's actual audience scale and engagement levels, enabling accurate, high-confidence strategic advice."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Requires Lilia to link or authorize her social media platform accounts, demanding minimal time or administrative effort."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "unlock-nil-historical-data",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": {
+      "value": "Gather and verify Lilia's historical and local NIL activities or past commercial terms to establish an accurate commercial baseline.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-21T19:22:14.623Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "materialGaps[2]",
+       "commercialPosition.closedDeals"
+      ],
+      "rationale": "Nomila currently registers zero closed deals and missing commercial proof. To rule out unrecorded local, regional, or youth agreements, we must unlock past NIL records directly from her.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "materialGaps[2]",
+       "how": "Specifies that NIL-specific historical data and pricing metrics are completely unmeasured."
+      },
+      {
+       "statePath": "commercialPosition.closedDeals",
+       "how": "States a baseline of zero closed deals, which remains a low-confidence assumption without direct verification."
+      }
+     ],
+     "impact": {
+      "level": "medium",
+      "claim": "Establishes a solid commercial baseline and reveals whether Lilia has any historical market traction that can be built upon."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Requires a simple disclosure or onboarding questionnaire regarding previous NIL or local partner relationships."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "amplify-athletic-narrative",
+     "kind": "AMPLIFY",
+     "domain": "positioning",
+     "statement": {
+      "value": "Leverage Lilia's high athletic authority and narrative power to elevate her public positioning and counter her low cultural relevance.",
+      "owner": "opportunity",
+      "confidence": "MEDIUM",
+      "asOf": "2026-09-21T19:22:14.623Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "findings[mia.athletic_authority]",
+       "findings[mia.narrative_power]",
+       "findings[mia.cultural_relevance]"
+      ],
+      "rationale": "Lilia's competitive profile boasts strong, unimputed scores in athletic authority and narrative power. Consciously emphasizing these verified strengths in her public positioning provides her best path to address her cultural relevance gap.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "findings[mia.athletic_authority]",
+       "how": "Validates a highly strong athletic credential score (70.7) backed by unimputed signals."
+      },
+      {
+       "statePath": "findings[mia.narrative_power]",
+       "how": "Identifies a strong narrative baseline score (67.7) that is currently underutilized."
+      },
+      {
+       "statePath": "findings[mia.cultural_relevance]",
+       "how": "Highlights a low cultural relevance score (18.7) that can be directly addressed by showcasing her existing athletic strengths."
+      }
+     ],
+     "impact": {
+      "level": "medium",
+      "claim": "Aligns Lilia's public-facing identity with her actual competitive strengths, building a narrative foundation for organic audience growth."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires Lilia to actively center her competitive context and athletic achievements in her public storytelling and local engagements."
+     },
+     "urgency": null,
+     "confidence": "MEDIUM"
+    }
+   ],
+   "notes": [],
+   "inputs": [
+    {
+     "kind": "athlete_state",
+     "version": "athlete-state/1.0.0",
+     "present": true
+    },
+    {
+     "kind": "strategy_intelligence",
+     "version": null,
+     "present": false
+    },
+    {
+     "kind": "targeted_research",
+     "version": null,
+     "present": false
+    }
+   ],
+   "overallConfidence": "LOW"
+  }
+ }
+}

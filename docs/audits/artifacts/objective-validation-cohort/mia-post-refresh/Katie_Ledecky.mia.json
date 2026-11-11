@@ -1,0 +1,1371 @@
+{
+ "id": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2",
+ "subject_id": "fa6e6373-bb4c-4e4f-ace2-8285a9510391",
+ "versions": {
+  "params": "v1.0.1-beta.1+lookups-v1+policy-v0",
+  "policy": "policy-v0",
+  "priors": "priors-v1",
+  "cohorts": "cohorts-v0-empty",
+  "lookups": "lookups-v1",
+  "evaluator": "blind-eval-spec/0.2.1",
+  "methodology": "v1.0.1-beta.1"
+ },
+ "value": {
+  "notes": {
+   "strengths": [
+    "Most decorated U.S. female Olympian in history, offering unparalleled athletic authority and prestige.",
+    "Flawless brand-safety profile with zero controversies and immense institutional respect.",
+    "Highly authentic, deeply resonant personal narrative highlighting academic success and managing her chronic POTS diagnosis.",
+    "Proven commercial record with long-term, multi-million dollar blue-chip relationships.",
+    "Clear strategic roadmap with active preparation for the highly anticipated Los Angeles 2028 Olympic Games."
+   ],
+   "constraints": [
+    "Audience growth is relatively flat during non-Olympic years, showing heavy dependency on major four-year games.",
+    "Lacks a native or highly active personal footprint on modern short-form video platforms such as TikTok.",
+    "Recent competitive losses at the 2026 Pan Pacific Championships indicate a stabilizing, rather than ascending, athletic trajectory."
+   ],
+   "evaluationRisks": [
+    "Minimal risk. The athlete's identity is completely secure, and public evidence from official, major media, and institutional sources is highly consistent and up-to-date."
+   ],
+   "missingEvidence": [
+    "Private social media metrics, including reel retention rates, shares, and content saves.",
+    "Direct return-on-investment and conversion analytics from her key commercial sponsors."
+   ]
+  },
+  "score": 740,
+  "drivers": [],
+  "summary": "Katie Ledecky is currently the most decorated female U.S. Olympian in history, possessing 14 total medals (9 gold) and 23 World Championship titles. Despite transitioning into a mature stage of her athletic career—marked by a historic gold-medal sweep at Paris 2024 and her first career defeats in her signature distance events at the August 2026 Pan Pacific Championships—she remains an elite global authority in competitive swimming. Off the pool deck, her audience is solid, commanding approximately 1.4 million followers across Instagram, Facebook, and X. Though she lacks a native presence on TikTok, her cultural relevance is highly elevated. She is a recipient of the Presidential Medal of Freedom (2024), a Yale honorary doctorate (2026), and has a New York Times best-selling memoir, Just Add Water, which revealed her battle with POTS. Financially, Ledecky is backed by blue-chip, multi-million dollar deals with TYR Sport, Athleta, and Visa. Her momentum is stable and mature, trending steadily as she targets her fifth Olympic games in Los Angeles 2028. The primary missing information is private social engagement performance (such as saves, shares, and video retention) and confidential brand campaign conversion data.",
+  "evidence": [
+   {
+    "id": "E1",
+    "claim": "Katie Ledecky has won 14 Olympic medals (9 gold, 4 silver, 1 bronze), making her the most decorated female U.S. Olympian in history across all sports.",
+    "sourceUrl": "https://olympics.com",
+    "observedAt": "2024-08-03",
+    "sourceType": "official",
+    "sourceTitle": "Katie Ledecky's Stats and Wins"
+   },
+   {
+    "id": "E2",
+    "claim": "Katie Ledecky won gold in the 1500m freestyle at the 2026 Pan Pacific Championships, but suffered her first-ever international defeats in the 800m and 400m freestyle events to Australia's Lani Pallister.",
+    "sourceUrl": "https://apnews.com",
+    "observedAt": "2026-08-17",
+    "sourceType": "major_media",
+    "sourceTitle": "Lani Pallister stuns Katie Ledecky with her first international 800 free loss at Pan Pacs"
+   },
+   {
+    "id": "E3",
+    "claim": "She currently holds the world records in both the 800m and 1500m freestyle and has won 23 World Championship long-course titles.",
+    "sourceUrl": "https://yale.edu",
+    "observedAt": "2026-05-18",
+    "sourceType": "official",
+    "sourceTitle": "Katie Ledecky – Yale 2026"
+   },
+   {
+    "id": "E4",
+    "claim": "Katie Ledecky was awarded the Presidential Medal of Freedom in May 2024 by President Joe Biden, and in May 2026 was awarded an Honorary Doctorate of Humane Letters from Yale University.",
+    "sourceUrl": "https://swimmingworldmagazine.com",
+    "observedAt": "2026-05-20",
+    "sourceType": "major_media",
+    "sourceTitle": "Katie Ledecky Given Honorary Degree by Yale University"
+   },
+   {
+    "id": "E5",
+    "claim": "She published her New York Times best-selling memoir, 'Just Add Water: My Swimming Life,' in June 2024, disclosing her battle with Postural Orthostatic Tachycardia Syndrome (POTS).",
+    "sourceUrl": "https://swimmingworldmagazine.com",
+    "observedAt": "2024-06-17",
+    "sourceType": "major_media",
+    "sourceTitle": "Katie Ledecky Memoir Details Battle with POTS, Incredible Family Bonds"
+   },
+   {
+    "id": "E6",
+    "claim": "Katie Ledecky possesses approximately 914K followers on Instagram as of mid-2026, representing macro-influencer scale within swimming.",
+    "sourceUrl": "https://zaver.one",
+    "observedAt": "2026-07-15",
+    "sourceType": "platform",
+    "sourceTitle": "Katie Ledecky on Instagram"
+   },
+   {
+    "id": "E7",
+    "claim": "She has approximately 192.7K followers on X (Twitter) and 289K followers on Facebook in 2026.",
+    "sourceUrl": "https://facebook.com",
+    "observedAt": "2026-09-12",
+    "sourceType": "platform",
+    "sourceTitle": "Katie Ledecky Official Facebook and SwimSwam Team Tracking"
+   },
+   {
+    "id": "E8",
+    "claim": "Ledecky gained over 213,000 followers on Instagram during the Paris 2024 Olympics, recording an exceptionally high post engagement rate of 23.13%.",
+    "sourceUrl": "https://metricool.com",
+    "observedAt": "2024-08-22",
+    "sourceType": "secondary",
+    "sourceTitle": "Social Media Soars for Ralph Lauren and Star Athletes"
+   },
+   {
+    "id": "E9",
+    "claim": "Her major commercial partnerships include a multi-million dollar contract with TYR Sport (reportedly worth $7 million) alongside Athleta, Visa, Panasonic, Hershey's, and Eggland's Best.",
+    "sourceUrl": "https://indiatimes.com",
+    "observedAt": "2025-10-12",
+    "sourceType": "major_media",
+    "sourceTitle": "Katie Ledecky Net Worth 2025: Earnings, endorsements, and record-breaking career"
+   },
+   {
+    "id": "E10",
+    "claim": "She deferred turning professional until 2018 to swim for Stanford University, prioritizing her education and graduating in 2020 with a Bachelor of Arts in psychology.",
+    "sourceUrl": "https://swimmingworldmagazine.com",
+    "observedAt": "2026-05-20",
+    "sourceType": "major_media",
+    "sourceTitle": "Katie Ledecky Given Honorary Degree by Yale University"
+   }
+  ],
+  "findings": [
+   {
+    "key": "athletic_authority",
+    "value": 97.45,
+    "rationale": "Katie Ledecky possesses peerless sporting authority as the most decorated female swimmer in history. Her status is anchored by sustained Olympic and world championship victories spanning more than a decade. While she recently faced her first career international defeats in the 800m and 400m freestyle at the 2026 Pan Pacific Championships, she remains at the absolute pinnacle of her sport and leads the national team heading toward Los Angeles 2028.",
+    "components": [
+     {
+      "key": "athletic_authority.role_importance",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "value": 100,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "value": 92,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "value": 100,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E3",
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "value": 100,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E4"
+    ],
+    "confidenceReason": "Her vast list of gold medals, world records, and continuous participation in elite-level events are completely verified by official Olympic and national governing bodies."
+   },
+   {
+    "key": "audience_scale",
+    "value": 74.8,
+    "rationale": "Ledecky commands a substantial, stable macro-influencer audience of approximately 1.4 million followers across Instagram, Facebook, and X. While her raw numbers are smaller than multi-sport professional league superstars, she sits at the absolute top of the competitive swimming ecosystem. Her audience exhibits massive, concentrated spikes during Olympic years with a steady, mature baseline during off-years.",
+    "components": [
+     {
+      "key": "audience_scale.audience_growth",
+      "value": 55,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E6",
+       "E8"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "value": 68,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E6",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "value": 72,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E6",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E6",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E6",
+     "E7",
+     "E8"
+    ],
+    "confidenceReason": "Follower metrics on her primary channels are publicly visible, audited, and consistently documented across swimming-specific media."
+   },
+   {
+    "key": "engagement_quality",
+    "value": 71.54,
+    "rationale": "Ledecky's engagement is highly organic and intensely authentic, with an exceptionally clean profile health score and negligible bot activity. Her typical post engagement rates are very healthy for a macro-creator, demonstrating a highly loyal and focused following. During major athletic spectacles, her engagement naturally skyrockets to viral, elite tiers.",
+    "components": [
+     {
+      "key": "engagement_quality.video_retention",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "value": 68,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E6",
+       "E8"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "value": 85,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E6"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "value": 70,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E6",
+       "E8"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "MEDIUM",
+    "citedEvidence": [
+     "E6",
+     "E8"
+    ],
+    "confidenceReason": "Public engagement rates and independent auditor data are clear, though private performance metrics such as video retention, shares, and saves remain unavailable."
+   },
+   {
+    "key": "cultural_relevance",
+    "value": 89.1,
+    "rationale": "Ledecky enjoys immense cultural crossover appeal that reaches far beyond the swimming community into mainstream American society. She is a recipient of top-tier institutional honors, such as the Presidential Medal of Freedom and an honorary doctorate from Yale. Her memoir has established her as an inspiring voice for health and wellness advocacy.",
+    "components": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "value": 82,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E4",
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "value": 80,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2",
+       "E8"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "value": 98,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2",
+       "E4",
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "value": 90,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4",
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "value": 92,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2",
+       "E4",
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1",
+     "E2",
+     "E4",
+     "E5",
+     "E8"
+    ],
+    "confidenceReason": "Her extensive coverage in elite mainstream news outlets and prestigious institutional recognitions are well-documented public facts."
+   },
+   {
+    "key": "narrative_power",
+    "value": 94.05,
+    "rationale": "Her narrative is incredibly deep, compelling, and structurally durable, focusing on the dichotomy of an 'unordinarily ordinary' persona paired with historic dominance. The public revelation of her POTS syndrome diagnosis has added an authentic layer of resilience that resonates powerfully with sports and lifestyle audiences alike. Her narrative authenticity is fully supported by her real-life actions, making her stories highly believable and commercial.",
+    "components": [
+     {
+      "key": "narrative_power.durability",
+      "value": 96,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2",
+       "E5",
+       "E10"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E5",
+       "E10"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "value": 93,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E5",
+       "E10"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "value": 92,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4",
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "value": 98,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E5",
+       "E10"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "value": 88,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E9"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E10",
+     "E2",
+     "E4",
+     "E5",
+     "E9"
+    ],
+    "confidenceReason": "Her narrative themes are thoroughly explored in her own best-selling memoir and consistently reinforced by media profiles over a 14-year period."
+   },
+   {
+    "key": "brand_fit",
+    "value": 89.75,
+    "rationale": "Ledecky is a category-leading example of flawless brand safety and moral integrity, making her exceptionally attractive to premium blue-chip sponsors. Her identity as a humble, academically accomplished champion translates beautifully across fitness, apparel, and institutional campaigns. Her highly educated, family-centric audience is a prime demographic for high-trust entities.",
+    "components": [
+     {
+      "key": "brand_fit.brand_safety",
+      "value": 100,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E5",
+       "E10"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "value": 85,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E9"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "value": 78,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E5",
+       "E9"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "value": 90,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E6"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "value": 85,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E6"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "value": 98,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E5",
+       "E10"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1",
+     "E10",
+     "E5",
+     "E6",
+     "E9"
+    ],
+    "confidenceReason": "A flawless long-term career track record with no negative incidents or controversies provides complete confidence in her pristine brand safety."
+   },
+   {
+    "key": "commercial_proof",
+    "value": 86.15,
+    "rationale": "She has established undeniable commercial proof, headlining major global campaigns and maintaining high-value contracts with sponsors like TYR Sport and Athleta. Her partnerships are characterized by long-term commitment, multi-year renewals, and premium pricing power. She has successfully parlayed her athletic success into a highly lucrative personal business empire.",
+    "components": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E9"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "value": 88,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E9"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "value": 85,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E9"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "value": 90,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E9"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "value": 92,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E9"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E9"
+    ],
+    "confidenceReason": "Her major multi-year partnerships with blue-chip brands like Visa and Athleta are publicly announced, and estimated contract values are verified by reputable business media."
+   },
+   {
+    "key": "momentum",
+    "value": 73.2,
+    "rationale": "Her current momentum is stable and mature as she progresses along a highly structured, long-term pathway toward the LA 2028 Olympics. While her sporting trajectory is showing minor, natural signs of vulnerability to younger challengers, her commercial and media standing remains highly secure. She continues to launch new lines and participate in prominent institutional events that keep her name fresh.",
+    "components": [
+     {
+      "key": "momentum.audience_growth",
+      "value": 55,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E6",
+       "E8"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "value": 82,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2",
+       "E4",
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "value": 80,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "value": 78,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E9"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "value": 75,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2",
+       "E6"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1",
+     "E2",
+     "E4",
+     "E5",
+     "E6",
+     "E8",
+     "E9"
+    ],
+    "confidenceReason": "Her current training status, recent participation in the 2026 Pan Pacs, and active brand activations are fully documented by fresh sports and media reports."
+   }
+  ],
+  "headline": {
+   "key": "mia_score",
+   "value": 740,
+   "confidence": "HIGH"
+  },
+  "composite": 84.1,
+  "confidence": 82.05,
+  "dimensions": [
+   {
+    "score": 97.45,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "athletic_authority.role_importance",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 100,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 92,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 100,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E3",
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 100,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "athletic_authority",
+    "confidence": 90,
+    "contribution": 14.62
+   },
+   {
+    "score": 74.8,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "audience_scale.audience_growth",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 55,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E6",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 68,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E6",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 72,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E6",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E6",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "audience_scale",
+    "confidence": 85.5,
+    "contribution": 11.22
+   },
+   {
+    "score": 71.54,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "engagement_quality.video_retention",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 68,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E6",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E6"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 70,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E6",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "engagement_quality",
+    "confidence": 52.5,
+    "contribution": 10.73
+   },
+   {
+    "score": 89.1,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 82,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E4",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 80,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E4",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 90,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 92,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2",
+       "E4",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "cultural_relevance",
+    "confidence": 90,
+    "contribution": 8.91
+   },
+   {
+    "score": 94.05,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "narrative_power.durability",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 96,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E5",
+       "E10"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E5",
+       "E10"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 93,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E5",
+       "E10"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 92,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E5",
+       "E10"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 88,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E9"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "narrative_power",
+    "confidence": 90,
+    "contribution": 9.4
+   },
+   {
+    "score": 89.75,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "brand_fit.brand_safety",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 100,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E5",
+       "E10"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E9"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 78,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E5",
+       "E9"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 90,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E6"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E6"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 98,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E5",
+       "E10"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "brand_fit",
+    "confidence": 90,
+    "contribution": 8.98
+   },
+   {
+    "score": 86.15,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E9"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 88,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E9"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E9"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 90,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E9"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 92,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E9"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "commercial_proof",
+    "confidence": 84,
+    "contribution": 12.92
+   },
+   {
+    "score": 73.2,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "momentum.audience_growth",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 55,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E6",
+       "E8"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 82,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E4",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 80,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 78,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E9"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "asOf": "2026-09-13T23:02:25.233Z",
+      "value": 75,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E6"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "momentum",
+    "confidence": 82.5,
+    "contribution": 7.32
+   }
+  ],
+  "overallConfidence": {
+   "level": "HIGH",
+   "explanation": "Ledecky's career standing, massive institutional awards, and key commercial partnerships are extensively documented by reliable public sources. The only unverified elements concern private digital analytics such as content save rates or direct campaign sales conversions, which do not materially alter her overall marketability assessment."
+  },
+  "identityConfidence": "HIGH",
+  "importantMissingData": [
+   "Private social media metrics, including reel retention rates, shares, and content saves.",
+   "Direct return-on-investment and conversion analytics from her key commercial sponsors."
+  ]
+ },
+ "evidence_as_of": "2026-09-13T23:02:25.233Z",
+ "evaluation_run_id": "34e11511-a0e7-4c84-aaae-677e9658051a",
+ "created_at": "2026-09-25T17:49:42.921Z",
+ "career_status": "active",
+ "sport": "swimming",
+ "division": null,
+ "cost_usd": "0.2087",
+ "supersedes": "8be54928-eab5-46eb-921a-cdbc01c3d888"
+}

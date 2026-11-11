@@ -1,0 +1,756 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "jim-thorpe",
+    "name": "Jim Thorpe",
+    "sport": "Football"
+  },
+  "parseError": null,
+  "dimensionAssessments": {
+    "athletic_authority": {
+      "prose": "Jim Thorpe's athletic authority is legendary and indisputable, spanning absolute dominance at the highest levels of both amateur and professional sports. He excelled in track and field, professional football, baseball, and basketball, with his 1912 Olympic gold medals formally reinstated to sole champion status in 2022. Though his active career has long concluded, his historical standing remains one of the absolute benchmarks of sports history.",
+      "confidence": "HIGH",
+      "confidenceReason": "Backed by extensive official sports archives, Pro Football Hall of Fame records, and IOC decisions."
+    },
+    "audience_scale": {
+      "prose": "Because Jim Thorpe has been deceased since 1953, he has no active direct social media profiles on platforms like Instagram, TikTok, or YouTube, making classic platform audience reach completely missing. While his general legacy brand has massive global recognition, there is no personal digital channel scale to evaluate. Therefore, these platform-based metrics are classified as missing to avoid artificial inflation of data.",
+      "confidence": "HIGH",
+      "confidenceReason": "The absence of active platform accounts for a deceased historical athlete is absolute, and no platform data exists to analyze."
+    },
+    "engagement_quality": {
+      "prose": "Without any official active personal social media platforms, direct metrics like engagement rate, reach efficiency, and video retention are entirely non-existent. The estate manages his name, image, and likeness (NIL), but does not operate active personal consumer channels with measurable public engagement. Consequently, all engagement sub-signals are marked as missing due to the lack of platform data.",
+      "confidence": "HIGH",
+      "confidenceReason": "Private and public social interaction metrics are structurally unavailable for this historical athlete."
+    },
+    "cultural_relevance": {
+      "prose": "Jim Thorpe continues to maintain an exceptionally strong cultural footprint, driven by ongoing media events, academic projects, and biographical works. He is the central subject of the July 2025 History Channel documentary Jim Thorpe: Lit by Lightning and has a major film in development, Bright Path. His name remains highly visible via the namesake town in Pennsylvania and the highly prestigious Paycom Jim Thorpe Award in college football.",
+      "confidence": "HIGH",
+      "confidenceReason": "Supported by clear, documented, and contemporary media releases, academic institutions, and national sports awards."
+    },
+    "narrative_power": {
+      "prose": "Thorpe's narrative is one of the most powerful, distinct, and enduring in sports history, capturing extraordinary triumphs alongside systemic racial injustice. His story covers his Carlisle Indian School days, his Olympic stripped-medals saga, and his eventual posthumous restoration by the IOC in 2022. It represents resilience, Native American pride, and the struggle for justice, holding massive appeal for highly respectful and high-integrity brand campaigns.",
+      "confidence": "HIGH",
+      "confidenceReason": "The narrative is thoroughly documented by Pulitzer Prize-winning authors, historians, and direct estate-approved media projects."
+    },
+    "brand_fit": {
+      "prose": "Jim Thorpe represents a highly secure, prestigious brand fit with exceptional values of resilience, diversity, and historical greatness. While his content versatility and category breadth are restricted by being deceased, he remains a perfect match for heritage sportswear, historical storytelling, and educational programs. Mainstream brands can engage with his legacy via the estate (Thorpe LLC) with very low brand safety risks, as his historic personal battles are viewed with universal sympathy.",
+      "confidence": "HIGH",
+      "confidenceReason": "Clear alignment of the estate's managed intellectual property and established institutional partnerships like the Paycom Award."
+    },
+    "commercial_proof": {
+      "prose": "Posthumous commercial proof is moderate but highly respectable, driven by the estate's licensing deals and institutional legacy partnerships. The Paycom Jim Thorpe Award celebrated its 40th anniversary in early 2026, showcasing deep historical commercial trust. Additionally, the estate successfully utilized equity crowdfunding in early 2026 to fund a multi-season series THORPE, demonstrating sustained, structured commercial interest in his likeness.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "Specific financial values of estate deals are private, but public crowdfunding results and major network partnerships provide strong proxy evidence."
+    },
+    "momentum": {
+      "prose": "Jim Thorpe's historical legacy is experiencing a meaningful resurgence, driven by strategic estate actions since the founding of Thorpe LLC in mid-2025. The release of the LeBron James-produced History Channel documentary in July 2025 and the funding of the THORPE series on Republic in February 2026 indicate clear commercial and media acceleration. While his actual athletic performance remains static, public and commercial momentum around his name is actively rising.",
+      "confidence": "HIGH",
+      "confidenceReason": "Recent, highly publicized historical media projects and active estate crowdfunding provide current evidence of accelerating momentum."
+    }
+  },
+  "overallConfidence": {
+    "level": "HIGH",
+    "explanation": "The evaluation benefits from highly certain athlete identity and abundant, high-quality historical and contemporary public sources. While direct social media platform metrics are correctly designated as missing, the historical athletic, narrative, and commercial evidence is deeply established and consistent, leaving very little room for material changes in evaluation outcomes."
+  },
+  "identityConfidence": "HIGH",
+  "summary": "Jim Thorpe, who passed away in 1953, is universally celebrated as one of the greatest and most versatile athletes of the 20th century. While he has no active athletic standing or personal social media platforms, his commercial marketability resides in his timeless legacy, managed primarily by his estate through Thorpe LLC (established in June 2025) and the Jim Thorpe Association. Historically, Thorpe dominated early professional football and won two Olympic gold medals in 1912, which were fully and solely restored to him by the IOC in 2022. Thorpe's narrative power is exceptional, characterized by unparalleled athletic versatility, systemic struggles, and a century-long road to justice and redemption. This narrative continues to drive significant cultural relevance and high-quality media attention, highlighted by the July 2025 premiere of the History Channel documentary Jim Thorpe: Lit by Lightning (executive produced by LeBron James) and the ongoing development of the feature film Bright Path. Financially, his name is cemented in college football via the prestigious Paycom Jim Thorpe Award, and his estate recently launched an equity crowdfunding campaign for a multi-season series THORPE (closing in February 2026). The major limitation to his marketability is the absolute lack of direct, real-time social media presence and active commercial campaign metrics, which are classified as missing, alongside the sensitive and complex nature of his posthumous legacy.",
+  "summaryWords": 219,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Jim Thorpe dominated professional football, baseball, and won Olympic gold medals, competing at the peak of sport.",
+      "sourceTitle": "Jim Thorpe Legacy",
+      "sourceUrl": "https://www.profootballhof.com/",
+      "sourceType": "official",
+      "date": "2025-10-27"
+    },
+    {
+      "id": "E2",
+      "claim": "The International Olympic Committee (IOC) restored Jim Thorpe's medals as the sole champion of the decathlon and pentathlon in 2022.",
+      "sourceTitle": "Jim Thorpe's Legacy Restored",
+      "sourceUrl": "https://www.facebook.com/",
+      "sourceType": "secondary",
+      "date": "2022-07-15"
+    },
+    {
+      "id": "E3",
+      "claim": "ABC Sports voted Jim Thorpe the Greatest Athlete of the 20th Century in a fan poll beating out other sports legends.",
+      "sourceTitle": "Jim Thorpe Body to be Moved?",
+      "sourceUrl": "https://theprobatepro.com/",
+      "sourceType": "secondary",
+      "date": "2023-11-01"
+    },
+    {
+      "id": "E4",
+      "claim": "Jim Thorpe served as the first president of the American Professional Football Association (which became the NFL) in 1920.",
+      "sourceTitle": "THORPE - An Epic Original Series from Verily Storyworks",
+      "sourceUrl": "https://republic.com/",
+      "sourceType": "official",
+      "date": "2026-02-04"
+    },
+    {
+      "id": "E5",
+      "claim": "Jim Thorpe passed away on March 28, 1953, meaning his competitive achievements occurred in the early 20th century.",
+      "sourceTitle": "Jim Thorpe's Legacy",
+      "sourceUrl": "https://www.facebook.com/",
+      "sourceType": "secondary",
+      "date": "2022-07-15"
+    },
+    {
+      "id": "E6",
+      "claim": "The History Channel documentary 'Jim Thorpe: Lit by Lightning' premiered on July 7, 2025, executive produced by LeBron James.",
+      "sourceTitle": "Jim Thorpe: Lit by Lightning on HISTORY Channel",
+      "sourceUrl": "https://www.youtube.com/",
+      "sourceType": "major_media",
+      "date": "2025-05-29"
+    },
+    {
+      "id": "E7",
+      "claim": "Dickinson College named the Jim Thorpe Center for the Futures of Native Peoples in November 2025 with permission from the estate.",
+      "sourceTitle": "Jim Thorpe Center for the Futures of Native Peoples",
+      "sourceUrl": "https://www.dickinson.edu/",
+      "sourceType": "official",
+      "date": "2025-11-01"
+    },
+    {
+      "id": "E8",
+      "claim": "Jim Thorpe PA drives significant tourism and cultural conversation due to the controversial renaming and burial site of the athlete.",
+      "sourceTitle": "Jim Thorpe, PA Tourism and Legacy",
+      "sourceUrl": "https://www.poconomountains.com/",
+      "sourceType": "official",
+      "date": "2026-06-12"
+    },
+    {
+      "id": "E9",
+      "claim": "Tribal leaders and descendants launched the Inaugural Jim Thorpe Memorial Classic golf tournament in November 2026.",
+      "sourceTitle": "Jim Thorpe Memorial Classic (JTMC)",
+      "sourceUrl": "https://triballeadershipcouncil.com/",
+      "sourceType": "official",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "E10",
+      "claim": "Upcoming feature film project 'Bright Path' tells the epic true story of Jim Thorpe with Todd Black and Angelina Jolie producing.",
+      "sourceTitle": "Bright Path Movie",
+      "sourceUrl": "https://www.brightpathstrong.org/",
+      "sourceType": "official",
+      "date": "2024-03-04"
+    },
+    {
+      "id": "E11",
+      "claim": "Pulitzer Prize-winner David Maraniss authored the definitive biography 'Path Lit by Lightning', detailing Thorpe's complex life.",
+      "sourceTitle": "Path Lit by Lightning: The Life of Jim Thorpe",
+      "sourceUrl": "https://www.davidmaraniss.com/",
+      "sourceType": "official",
+      "date": "2025-05-29"
+    },
+    {
+      "id": "E12",
+      "claim": "Thorpe LLC exists to manage, protect, and monetize the enduring legacy and image rights of Jim Thorpe.",
+      "sourceTitle": "Jim Thorpe Estate - Thorpe LLC",
+      "sourceUrl": "https://jimthorpe.ai/",
+      "sourceType": "official",
+      "date": "2026-05-04"
+    },
+    {
+      "id": "E13",
+      "claim": "The estate manages posthumous endorsement deals, heritage campaigns, and royalties on books, documentaries, and series.",
+      "sourceTitle": "Jim Thorpe Althe Net Worth",
+      "sourceUrl": "https://tv2lorry.dk/",
+      "sourceType": "secondary",
+      "date": "2026-05-04"
+    },
+    {
+      "id": "E14",
+      "claim": "Thorpe's audience consists of a highly respectful niche of sports history enthusiasts, Native American communities, and educational circles.",
+      "sourceTitle": "Jim Thorpe Memorial Classic Launch",
+      "sourceUrl": "https://triballeadershipcouncil.com/",
+      "sourceType": "official",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "E15",
+      "claim": "The Paycom Jim Thorpe Award Preseason Watchlist was announced in August 2026 to monitor elite college defensive backs.",
+      "sourceTitle": "Paycom Jim Thorpe Award Watchlist 2026",
+      "sourceUrl": "https://www.hailstate.com/",
+      "sourceType": "official",
+      "date": "2026-08-12"
+    },
+    {
+      "id": "E16",
+      "claim": "Thorpe LLC successfully closed an equity-crowdfunding round on Republic on February 4, 2026, raising funds for a scripted series.",
+      "sourceTitle": "THORPE - An Epic Original Series from Verily Storyworks",
+      "sourceUrl": "https://republic.com/",
+      "sourceType": "official",
+      "date": "2026-02-04"
+    },
+    {
+      "id": "E17",
+      "claim": "Historically, Thorpe licensed his name in the 1920s-1930s to brands like Wheaties and R.J. Reynolds, pioneering athlete trademarking.",
+      "sourceTitle": "Jim Thorpe Althe Net Worth",
+      "sourceUrl": "https://tv2lorry.dk/",
+      "sourceType": "secondary",
+      "date": "2026-05-04"
+    },
+    {
+      "id": "E18",
+      "claim": "The Paycom Jim Thorpe Award celebrated its 40th anniversary on February 10, 2026, demonstrating decades of institutional prestige.",
+      "sourceTitle": "The Thorpe Award Turns 40",
+      "sourceUrl": "https://www.facebook.com/",
+      "sourceType": "secondary",
+      "date": "2025-09-13"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "Jim Thorpe competed at the absolute pinnacle of sport, playing professional football, baseball, and winning gold at the 1912 Olympic Games.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "He dominated the 1912 Olympic decathlon and pentathlon, led historic professional football franchises, and is a charter Pro Football Hall of Fame member.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "Thorpe was voted the Greatest Athlete of the 20th Century by ABC Sports, and his status was fully reaffirmed by the IOC in 2022.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2"
+      ],
+      "rationale": "He represented the United States on the global Olympic stage and holds recognized international standing as a pioneering indigenous gold medalist.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Thorpe was the star player, captain, and first president of the professional football league that would become the NFL.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 20,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "As a deceased athlete who passed away in 1953, his competitive achievements are entirely historical, despite modern retro-active updates.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "The athlete is deceased and has no active personal social media platforms to evaluate public reach.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Without platform follower metrics, direct platform-based percentile comparisons to modern active football players are impossible.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Longitudinal platform data does not exist for this deceased historical icon.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "The athlete has no active, verified personal digital channels across major platforms.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Due to the absence of personal social media accounts, there are no measurable direct interaction metrics to calculate.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Content reach cannot be analyzed from direct platforms because the deceased athlete lacks personal handles.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "High-value platform metrics are completely unavailable because there are no managed active social accounts.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Video completion and retention metrics on active personal accounts do not exist.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Story reach and interactions cannot be measured in the absence of digital profiles.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Audience quality analysis is not applicable due to the lack of dedicated digital follower networks.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E11"
+      ],
+      "rationale": "Thorpe maintains a persistent, high-level media volume fueled by a 2025 History Channel documentary and acclaimed biographical works.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7",
+        "E11"
+      ],
+      "rationale": "He is covered by prestigious channels, major publishing houses, and top academic institutions like Dickinson College.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 65,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E8",
+        "E15"
+      ],
+      "rationale": "He maintains consistent search interest driven by his historical footprint, his namesake town in Pennsylvania, and collegiate award cycles.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 60,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E8",
+        "E9",
+        "E16"
+      ],
+      "rationale": "He sparks ongoing online conversation regarding his indigenous legacy, burial site debate, and modern crowdfunding campaigns.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3",
+        "E7"
+      ],
+      "rationale": "His fame goes far beyond football, recognized globally as a historic multi-sport titan and a key symbol of Native American history.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E10"
+      ],
+      "rationale": "His story is singularly unique as the world's first multi-sport indigenous superstar whose medals were stripped and posthumously restored over a century later.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E11"
+      ],
+      "rationale": "The narrative features profound substance, covering Carlisle Indian School trauma, supreme athletic heights, and personal battles with alcoholism and poverty.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E11",
+        "E12"
+      ],
+      "rationale": "His narrative is verified by extensive historical evidence, official sports archives, and the active backing of his descendants.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E10"
+      ],
+      "rationale": "Major media projects constantly resonate with and amplify his themes of resilience, justice, and Native American pride.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 70,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E13"
+      ],
+      "rationale": "His story serves as a highly powerful asset for prestige, historical, and socially conscious corporate branding, though it requires sensitive handling.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "His legacy has survived and grown in impact for over a century, proving immense durability far exceeding that of any modern active athlete.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 50,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E13",
+        "E14"
+      ],
+      "rationale": "Categories are naturally limited to heritage sportswear, educational sponsors, historical books/documentaries, and high-end collectibles.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E11",
+        "E12"
+      ],
+      "rationale": "He is an exceptionally safe brand partner, as his historical personal struggles are viewed strictly with deep sympathy and high respect.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 75,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E14"
+      ],
+      "rationale": "His audience is composed of highly engaged, culturally conscious, and highly respectful history and sports enthusiasts.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E12"
+      ],
+      "rationale": "Thorpe stands as a clear, unshakeable symbol of indigenous pride, universal athletic excellence, and perseverance against adversity.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 40,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E12",
+        "E13"
+      ],
+      "rationale": "Content campaigns are restricted to archival photography, legacy quotes, and estate-approved intellectual property instead of active creation.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 65,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8",
+        "E9",
+        "E15"
+      ],
+      "rationale": "His core geographic focus remains strongly national in the United States, specifically in Oklahoma, Pennsylvania, and collegiate football markets.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 55,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E13",
+        "E16"
+      ],
+      "rationale": "Monetization exists through the estate (Thorpe LLC), but the total revenue scale is moderate compared to active, top-tier professional athletes.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 50,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6",
+        "E16",
+        "E17"
+      ],
+      "rationale": "Deals are negotiated periodically, consisting of documentary rights, crowdfunding campaigns, and historical book publishing.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E18"
+      ],
+      "rationale": "He is associated with top-tier partners, including A+E Networks, Paycom, the NCFAA, and SpringHill Company.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "scored",
+      "score": 50,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E18"
+      ],
+      "rationale": "The collegiate Jim Thorpe Award demonstrates extreme longevity, operating continuously with partners for 40 years as of 2026.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Specific commercial conversion metrics for posthumous estate campaigns are kept strictly confidential.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Specific licensing fee structures and private estate economics are not published.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 20,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E19"
+      ],
+      "rationale": "His athletic standing is static due to his death, with the exception of the highly public, retroactive 2022 Olympic medal correction.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Longitudinal growth of direct social platforms does not apply to a deceased athlete.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 70,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E10"
+      ],
+      "rationale": "His media visibility has accelerated over the last two years due to major documentary releases and major feature films in production.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 55,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E8",
+        "E15"
+      ],
+      "rationale": "Search interest is highly stable, showing temporary spikes during Native American Heritage months and football awards season.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 60,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E12",
+        "E16"
+      ],
+      "rationale": "The establishment of Thorpe LLC in mid-2025 and its successful series crowdfunding raise in early 2026 show strategic acceleration.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Unparalleled historical athletic standing and global reputation as the Greatest Athlete of the 20th Century.",
+    "Singularly distinctive and authentic narrative of perseverance, Native American identity, and posthumous justice.",
+    "Strong and accelerating media relevance driven by major contemporary documentaries and upcoming feature films.",
+    "High institutional commercial prestige anchored by the 40-year legacy of the collegiate Jim Thorpe Award."
+  ],
+  "keyConstraints": [
+    "Posthumous status limits direct marketing activities, eliminating live event appearances and active personal endorsements.",
+    "Sensitive narrative elements, such as historical trauma, require careful, highly respectful brand alignment.",
+    "Lack of direct consumer channels and active personal social media platforms to deliver immediate digital content."
+  ],
+  "importantMissingData": [
+    "Private financial details regarding estate licensing revenues, brand royalties, and Paycom award sponsorship values.",
+    "Posthumous merchandise sales and campaign performance metrics managed confidentially by Thorpe LLC."
+  ],
+  "identityOrEvidenceRisks": [
+    "Potential naming confusion in public search records with active Champions Tour professional golfer Jim Thorpe (born 1949).",
+    "On-going familial disputes and legal debates regarding his burial location (Pennsylvania vs. tribal lands in Oklahoma) could create selective brand sensitivity."
+  ],
+  "socialBlockSupplied": false
+}

@@ -1,0 +1,447 @@
+<title>Step 1 Social Substrate</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--ground:#f6f5f1;--panel:#ffffff;--ink:#161b23;--ink-2:#4b525c;--mute:#767d88;--rule:#dad7cf;--rule-soft:#e9e7e1;--code-bg:#eeede8;--risk:#c2412d;--risk-bg:#fbeae6;--ok:#2a7a4b;--ok-bg:#e6f3ea;--warn:#9a6a00;--warn-bg:#fbf1d9;--accent:#1d4f8f;--keep:#2a7a4b;--keep-bg:#e6f3ea;--mod:#1d4f8f;--mod-bg:#e4edf8;--ext:#6b3fa0;--ext-bg:#efe7f8;--rep:#c2412d;--rep-bg:#fbeae6;--add:#9a6a00;--add-bg:#fbf1d9}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ground:#11151b;--panel:#181d25;--ink:#e7e5de;--ink-2:#b7bcc4;--mute:#8b929c;--rule:#2d343e;--rule-soft:#232a33;--code-bg:#212832;--risk:#ef7a66;--risk-bg:#3a201b;--ok:#6cc48f;--ok-bg:#1c3326;--warn:#e2b64c;--warn-bg:#3a3117;--accent:#7fb2f0;--keep:#6cc48f;--keep-bg:#1c3326;--mod:#7fb2f0;--mod-bg:#1d2a3d;--ext:#c9a6f0;--ext-bg:#2c2140;--rep:#ef7a66;--rep-bg:#3a201b;--add:#e2b64c;--add-bg:#3a3117}}
+:root[data-theme="dark"]{--ground:#11151b;--panel:#181d25;--ink:#e7e5de;--ink-2:#b7bcc4;--mute:#8b929c;--rule:#2d343e;--rule-soft:#232a33;--code-bg:#212832;--risk:#ef7a66;--risk-bg:#3a201b;--ok:#6cc48f;--ok-bg:#1c3326;--warn:#e2b64c;--warn-bg:#3a3117;--accent:#7fb2f0;--keep:#6cc48f;--keep-bg:#1c3326;--mod:#7fb2f0;--mod-bg:#1d2a3d;--ext:#c9a6f0;--ext-bg:#2c2140;--rep:#ef7a66;--rep-bg:#3a201b;--add:#e2b64c;--add-bg:#3a3117}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:16px;line-height:1.55}
+.wrap{max-width:1160px;margin:0 auto;padding:40px 24px 96px}
+.measure{max-width:76ch}
+h1,h2,h3,h4{font-family:"Archivo","IBM Plex Sans",sans-serif;text-wrap:balance;margin:0}
+h1{font-size:40px;font-weight:800;letter-spacing:-.02em;line-height:1.05}
+h2{font-size:24px;font-weight:700;margin-top:56px;padding-top:20px;border-top:2px solid var(--ink)}
+h3{font-size:17px;font-weight:700;margin-top:28px}
+h4{font-size:15px;font-weight:700;margin-top:18px;color:var(--ink-2)}
+p{margin:12px 0}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.lede{font-size:19px;color:var(--ink-2);max-width:70ch}
+.meta{display:flex;flex-wrap:wrap;gap:8px 24px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--mute);margin-top:16px}
+code{font-family:"IBM Plex Mono",monospace;font-size:.9em;background:var(--code-bg);padding:1px 5px;border-radius:3px}
+pre{background:var(--code-bg);padding:14px 16px;border-radius:6px;overflow-x:auto;font-size:12.5px;line-height:1.5;font-family:"IBM Plex Mono",monospace}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-numeric:tabular-nums}
+.tbl{overflow-x:auto;margin:16px 0;border:1px solid var(--rule);border-radius:6px;background:var(--panel)}
+th,td{text-align:left;padding:8px 11px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+th{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:500;background:var(--panel);white-space:nowrap}
+tr:last-child td{border-bottom:none}
+td.f{font-family:"IBM Plex Mono",monospace;font-size:12px}
+td.n{text-align:right;font-family:"IBM Plex Mono",monospace;white-space:nowrap}
+ul,ol{padding-left:22px;margin:10px 0}
+li{margin:5px 0}
+.d{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;white-space:nowrap;font-weight:500}
+.d.keep{background:var(--keep-bg);color:var(--keep)}.d.mod{background:var(--mod-bg);color:var(--mod)}.d.ext{background:var(--ext-bg);color:var(--ext)}.d.rep{background:var(--rep-bg);color:var(--rep)}.d.add{background:var(--add-bg);color:var(--add)}
+.pill{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid var(--rule);color:var(--ink-2);white-space:nowrap}
+.pill.ok{background:var(--ok-bg);color:var(--ok);border-color:transparent}.pill.warn{background:var(--warn-bg);color:var(--warn);border-color:transparent}.pill.risk{background:var(--risk-bg);color:var(--risk);border-color:transparent}
+.callout{border-left:3px solid var(--accent);padding:10px 16px;background:var(--panel);margin:18px 0;border-radius:0 6px 6px 0}
+.callout.raise{border-left-color:var(--risk)}
+.callout p{margin:6px 0}
+figure{margin:24px 0;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:16px;overflow-x:auto}
+figure svg{max-width:100%;height:auto;display:block;color:var(--ink);min-width:900px}
+figcaption{font-size:13.5px;color:var(--ink-2);margin-top:10px;max-width:84ch}
+.verdict{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:32px 0 8px}
+.v{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:16px 18px}
+.v .k{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.v .t{font-family:"Archivo",sans-serif;font-weight:700;font-size:18px;margin:6px 0;line-height:1.25}
+.v p{margin:0;font-size:14px;color:var(--ink-2)}
+.legend{display:flex;flex-wrap:wrap;gap:10px 18px;margin:14px 0;font-size:13.5px;color:var(--ink-2)}
+small{color:var(--mute)}
+</style>
+
+<div class="wrap">
+  <div class="eyebrow">nomila-v2 · phase A · step 1 · design proposal for review</div>
+  <h1 style="margin-top:10px">Step 1 Social Substrate</h1>
+  <p class="lede">The social intelligence data layer of spec §22, §26 and §28: identities, sync runs, sanitized raw payloads, durable content, metric observations, audience distributions and versioned features. Current → target, with every existing code path dispositioned. Additive and shadow: OAuth, fetch, display analytics and the v7 score keep running unchanged while the new pipeline writes beside them. No implementation until approved.</p>
+  <div class="meta"><span>base: main @ Step 0 merged (8371b26)</span><span>spec: §22.3, §26, §28.1–28.10, §29–31</span><span>next migration: 0044</span><span>flag: SOCIAL_SUBSTRATE_WRITE (off by default)</span></div>
+  <div class="legend">
+    <span><span class="d keep">keep</span></span><span><span class="d mod">modify</span></span><span><span class="d ext">extract</span></span><span><span class="d rep">replace</span></span><span><span class="d add">add</span></span>
+  </div>
+
+  <div class="verdict">
+    <div class="v"><div class="k">The shape</div><div class="t">Six new tables, one reused, one flag, zero behaviour change</div><p>The daily snapshot, the Growth tab, the media library and the v7 score are untouched. Every fetch that already runs gets a second, sanitized destination.</p></div>
+    <div class="v"><div class="k">What the data said</div><div class="t">Secrets are already in stored payloads</div><p>82 of 218 snapshot rows carry a token string in <code>raw_metrics</code>: 9 Instagram account-insight paging URLs with our access token, 73 TikTok cover URLs with a CDN <code>refresh_token</code> parameter. The sanitizer and a one-off scrub are in scope (section 3).</p></div>
+    <div class="v"><div class="k">The one architectural call</div><div class="t">Reuse media_assets as the durable content entity</div><p>Recommended with three additive columns and one rule change (counts stop being overwritten). The trade-off and the alternative are laid out in section 8 for your decision.</p></div>
+  </div>
+
+  <h2 id="pipeline">0 · The pipeline, current and target</h2>
+  <figure>
+    <svg viewBox="0 0 1120 420" role="img" aria-label="Current pipeline: three platform fetch functions produce a flat SocialAnalyticsResult that is written once a day to social_analytics_snapshots and read by both the Growth tab and the score refresh. Target pipeline: the same fetch returns a native envelope, which is sanitized, stored raw, adapted into canonical observations and distributions, from which versioned features are calculated; the daily snapshot continues as a projection for the Growth tab; scoring reads features from Step 4.">
+      <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+      <g font-family="IBM Plex Sans, sans-serif" font-size="11.5" fill="currentColor">
+        <text x="20" y="22" font-family="IBM Plex Mono, monospace" font-size="11" opacity=".6">CURRENT</text>
+        <rect x="20" y="34" width="170" height="52" rx="4" fill="none" stroke="currentColor"/><text x="105" y="54" text-anchor="middle" font-weight="600">fetchAnalytics ×3</text><text x="105" y="70" text-anchor="middle" font-size="10.5" opacity=".75">+ fetchForScoring ×3 + discovery</text>
+        <rect x="230" y="34" width="190" height="52" rx="4" fill="none" stroke="currentColor"/><text x="325" y="54" text-anchor="middle" font-weight="600">SocialAnalyticsResult</text><text x="325" y="70" text-anchor="middle" font-size="10.5" opacity=".75">means + top_* + raw_metrics blob</text>
+        <rect x="460" y="34" width="210" height="52" rx="4" fill="none" stroke="currentColor"/><text x="565" y="54" text-anchor="middle" font-weight="600">social_analytics_snapshots</text><text x="565" y="70" text-anchor="middle" font-size="10.5" opacity=".75">1 row / athlete × platform × day</text>
+        <rect x="710" y="34" width="170" height="52" rx="4" fill="none" stroke="currentColor"/><text x="795" y="54" text-anchor="middle" font-weight="600">Growth tab</text><text x="795" y="70" text-anchor="middle" font-size="10.5" opacity=".75">routes/analytics.ts</text>
+        <rect x="920" y="34" width="180" height="52" rx="4" fill="none" stroke="var(--risk)"/><text x="1010" y="54" text-anchor="middle" font-weight="600">refreshScores</text><text x="1010" y="70" text-anchor="middle" font-size="10.5" opacity=".75">scores off the display row</text>
+        <line x1="190" y1="60" x2="230" y2="60" stroke="currentColor" marker-end="url(#a)"/><line x1="420" y1="60" x2="460" y2="60" stroke="currentColor" marker-end="url(#a)"/><line x1="670" y1="60" x2="710" y2="60" stroke="currentColor" marker-end="url(#a)"/><line x1="670" y1="52" x2="920" y2="52" stroke="var(--risk)" marker-end="url(#a)"/>
+        <rect x="230" y="100" width="190" height="40" rx="4" fill="none" stroke="currentColor" stroke-dasharray="3 3"/><text x="325" y="117" text-anchor="middle" font-size="11">media_assets</text><text x="325" y="131" text-anchor="middle" font-size="10.5" opacity=".75">backfill + enrich, counts overwritten</text>
+        <line x1="105" y1="86" x2="230" y2="120" stroke="currentColor" opacity=".5" marker-end="url(#a)"/>
+
+        <text x="20" y="190" font-family="IBM Plex Mono, monospace" font-size="11" opacity=".6">TARGET (Step 1, shadow)</text>
+        <rect x="20" y="202" width="150" height="52" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="95" y="222" text-anchor="middle" font-weight="600">FETCH native</text><text x="95" y="238" text-anchor="middle" font-size="10.5" opacity=".75">same HTTP calls, envelope out</text>
+        <rect x="200" y="202" width="130" height="52" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="265" y="222" text-anchor="middle" font-weight="600">SANITIZE</text><text x="265" y="238" text-anchor="middle" font-size="10.5" opacity=".75">contract v1, tested</text>
+        <rect x="360" y="202" width="160" height="52" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="440" y="222" text-anchor="middle" font-weight="600">STORE RAW</text><text x="440" y="238" text-anchor="middle" font-size="10.5" opacity=".75">raw_source_payloads + sync run</text>
+        <rect x="550" y="202" width="180" height="52" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="640" y="222" text-anchor="middle" font-weight="600">ADAPT</text><text x="640" y="238" text-anchor="middle" font-size="10.5" opacity=".75">observations · distributions · content</text>
+        <rect x="760" y="202" width="160" height="52" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="840" y="222" text-anchor="middle" font-weight="600">FEATURES</text><text x="840" y="238" text-anchor="middle" font-size="10.5" opacity=".75">from stored rows only</text>
+        <rect x="950" y="202" width="150" height="52" rx="4" fill="none" stroke="currentColor" stroke-dasharray="4 3"/><text x="1025" y="222" text-anchor="middle" font-weight="600">Marketability</text><text x="1025" y="238" text-anchor="middle" font-size="10.5" opacity=".75">Step 4 reads features</text>
+        <line x1="170" y1="228" x2="200" y2="228" stroke="currentColor" marker-end="url(#a)"/><line x1="330" y1="228" x2="360" y2="228" stroke="currentColor" marker-end="url(#a)"/><line x1="520" y1="228" x2="550" y2="228" stroke="currentColor" marker-end="url(#a)"/><line x1="730" y1="228" x2="760" y2="228" stroke="currentColor" marker-end="url(#a)"/><line x1="920" y1="228" x2="950" y2="228" stroke="currentColor" stroke-dasharray="4 3" marker-end="url(#a)"/>
+        <!-- stores -->
+        <rect x="360" y="290" width="160" height="34" rx="4" fill="none" stroke="currentColor"/><text x="440" y="311" text-anchor="middle" font-size="11">social_identities · social_sync_runs</text>
+        <rect x="550" y="290" width="180" height="46" rx="4" fill="none" stroke="currentColor"/><text x="640" y="308" text-anchor="middle" font-size="11">social_metric_observations</text><text x="640" y="323" text-anchor="middle" font-size="11">social_audience_distributions</text>
+        <rect x="550" y="346" width="180" height="34" rx="4" fill="none" stroke="currentColor"/><text x="640" y="367" text-anchor="middle" font-size="11">media_assets (+ native, format)</text>
+        <rect x="760" y="290" width="160" height="34" rx="4" fill="none" stroke="currentColor"/><text x="840" y="311" text-anchor="middle" font-size="11">social_features</text>
+        <line x1="440" y1="254" x2="440" y2="290" stroke="currentColor" opacity=".6" marker-end="url(#a)"/><line x1="640" y1="254" x2="640" y2="290" stroke="currentColor" opacity=".6" marker-end="url(#a)"/><line x1="640" y1="336" x2="640" y2="346" stroke="currentColor" opacity=".6" marker-end="url(#a)"/><line x1="840" y1="254" x2="840" y2="290" stroke="currentColor" opacity=".6" marker-end="url(#a)"/>
+        <!-- projection keeps display -->
+        <path d="M95 254 V400 H565 V86" fill="none" stroke="currentColor" opacity=".5" stroke-dasharray="4 3" marker-end="url(#a)"/>
+        <text x="330" y="412" font-size="10.5" opacity=".7">the SocialAnalyticsResult projection is still computed from the same native envelope, so the daily row and the Growth tab do not change</text>
+      </g>
+    </svg>
+    <figcaption>Top: today one fetch produces a pre-averaged display row that both the Growth tab and the score read. Bottom: the same fetch keeps its HTTP calls, returns the native envelope, and that envelope is sanitized, stored, adapted into observations and distributions, and turned into versioned features. The display projection is derived from the same envelope, so nothing the athlete sees changes. Scoring moves to features in Step 4, not here.</figcaption>
+  </figure>
+
+  <h2 id="storage">1 · Canonical storage model</h2>
+  <div class="measure"><p>Seven logical entities from §28.3. Six are new tables; the seventh, durable content, reuses <code>media_assets</code> (section 8). All are athlete-scoped, additive, and written only behind the flag. Conventions shared by every table: <code>source_class</code> from the five-value <code>SourceClass</code>; <code>source_method</code> names the exact provider path; <code>observed_at</code> is the provider's or the fetch's instant; <code>window_start</code>/<code>window_end</code> are present only for windowed metrics; nothing is ever updated in place except the explicitly mutable status and pagination fields.</p></div>
+
+  <figure>
+    <svg viewBox="0 0 1120 470" role="img" aria-label="Schema diagram: social_identities hangs off athletes and connected_accounts; social_sync_runs references an identity; raw_source_payloads belong to a sync run; social_metric_observations, social_audience_distributions and media_assets reference the identity and the payload they came from; social_features reference the athlete and identity and carry observation lineage.">
+      <defs><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+      <g font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor">
+        <rect x="20" y="20" width="200" height="60" rx="4" fill="none" stroke="currentColor" stroke-dasharray="3 3"/><text x="30" y="38" font-weight="600">athletes (exists)</text><text x="30" y="54">id</text>
+        <rect x="20" y="100" width="200" height="60" rx="4" fill="none" stroke="currentColor" stroke-dasharray="3 3"/><text x="30" y="118" font-weight="600">connected_accounts (exists)</text><text x="30" y="134">id · platform · platform_user_id</text><text x="30" y="148">access_token (never leaves)</text>
+        <rect x="280" y="20" width="240" height="120" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="290" y="38" font-weight="600">social_identities</text><text x="290" y="54">id · athlete_id → · platform</text><text x="290" y="68">account_id · handle · handle_history</text><text x="290" y="82">source_class · source_method · confidence</text><text x="290" y="96">status · connected_account_id →</text><text x="290" y="110">discovered_at · last_verified_at</text><text x="290" y="128" opacity=".7">UQ (athlete_id, platform, account_id)</text>
+        <rect x="280" y="170" width="240" height="120" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="290" y="188" font-weight="600">social_sync_runs</text><text x="290" y="204">id · identity_id → · athlete_id</text><text x="290" y="218">provider · endpoint_family · api_version</text><text x="290" y="232">source_class · trigger · status</text><text x="290" y="246">started_at · finished_at · pages · items</text><text x="290" y="260">pagination_state (cursor only) · error</text><text x="290" y="278" opacity=".7">IX (athlete_id, platform, started_at)</text>
+        <rect x="280" y="320" width="240" height="120" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="290" y="338" font-weight="600">raw_source_payloads</text><text x="290" y="354">id · sync_run_id → · athlete_id</text><text x="290" y="368">endpoint_family · page_index · request</text><text x="290" y="382">payload (sanitized) · payload_hash · bytes</text><text x="290" y="396">sanitizer_version · fetched_at</text><text x="290" y="410">retained_until</text><text x="290" y="428" opacity=".7">IX (athlete_id, platform, fetched_at)</text>
+        <rect x="580" y="20" width="250" height="140" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="590" y="38" font-weight="600">social_metric_observations</text><text x="590" y="54">id · athlete_id · identity_id →</text><text x="590" y="68">entity_type · entity_id · asset_id →</text><text x="590" y="82">metric_key · value · unit</text><text x="590" y="96">source_class · source_method · confidence</text><text x="590" y="110">observed_at · window_start · window_end</text><text x="590" y="124">definition_version · sync_run_id → · payload_id →</text><text x="590" y="148" opacity=".7">UQ (identity_id, entity_type, entity_id, metric_key, observed_at, source_method)</text>
+        <rect x="580" y="190" width="250" height="110" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="590" y="208" font-weight="600">social_audience_distributions</text><text x="590" y="224">id · athlete_id · identity_id →</text><text x="590" y="238">dimension · bucket · value · pct · basis</text><text x="590" y="252">source_class · source_method · observed_at</text><text x="590" y="266">window_start · window_end · definition_version</text><text x="590" y="280">sync_run_id → · payload_id →</text><text x="590" y="296" opacity=".7">UQ (identity_id, dimension, bucket, observed_at, source_method)</text>
+        <rect x="580" y="330" width="250" height="110" rx="4" fill="none" stroke="currentColor" stroke-dasharray="3 3"/><text x="590" y="348" font-weight="600">media_assets (exists, reused)</text><text x="590" y="364">+ social_identity_id →</text><text x="590" y="378">+ native jsonb (platform-native, immutable)</text><text x="590" y="392">+ content_format · + native_version</text><text x="590" y="406">like_count / comments_count / insights</text><text x="590" y="420" opacity=".7">become display projections, not history</text>
+        <rect x="880" y="20" width="220" height="140" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="890" y="38" font-weight="600">social_features</text><text x="890" y="54">id · athlete_id · identity_id → (null = all)</text><text x="890" y="68">platform (null = cross-platform)</text><text x="890" y="82">feature_key · value · unit · n</text><text x="890" y="96">window_days · as_of · computed_at</text><text x="890" y="110">source_class · confidence · imputed</text><text x="890" y="124">calculation_version · inputs (lineage)</text><text x="890" y="148" opacity=".7">UQ (athlete_id, platform, feature_key, window_days, as_of, calculation_version)</text>
+        <!-- edges -->
+        <line x1="220" y1="50" x2="280" y2="50" stroke="currentColor" marker-end="url(#b)"/>
+        <line x1="220" y1="130" x2="280" y2="90" stroke="currentColor" opacity=".6" marker-end="url(#b)"/>
+        <line x1="400" y1="140" x2="400" y2="170" stroke="currentColor" marker-end="url(#b)"/>
+        <line x1="400" y1="290" x2="400" y2="320" stroke="currentColor" marker-end="url(#b)"/>
+        <line x1="520" y1="60" x2="580" y2="60" stroke="currentColor" marker-end="url(#b)"/>
+        <line x1="520" y1="80" x2="580" y2="230" stroke="currentColor" opacity=".6" marker-end="url(#b)"/>
+        <line x1="520" y1="100" x2="580" y2="370" stroke="currentColor" opacity=".6" marker-end="url(#b)"/>
+        <line x1="520" y1="360" x2="580" y2="120" stroke="currentColor" opacity=".6" marker-end="url(#b)"/>
+        <line x1="520" y1="380" x2="580" y2="275" stroke="currentColor" opacity=".6" marker-end="url(#b)"/>
+        <line x1="700" y1="330" x2="700" y2="160" stroke="currentColor" opacity=".6" marker-end="url(#b)"/>
+        <line x1="830" y1="90" x2="880" y2="90" stroke="currentColor" marker-end="url(#b)"/>
+        <line x1="830" y1="245" x2="880" y2="120" stroke="currentColor" opacity=".6" marker-end="url(#b)"/>
+        <text x="850" y="82" font-size="9.5" opacity=".7">lineage</text>
+      </g>
+    </svg>
+    <figcaption>Arrows point from the referencing table to the referenced one. Identity is the spine: every observation, distribution and content row names the account it belongs to; every stored fact names the sync run and sanitized payload it came from; every feature names the observations it was computed from.</figcaption>
+  </figure>
+
+  <h3>social_identities</h3>
+  <div class="measure"><p><b>Purpose.</b> One row per platform account an athlete has, is or was linked to. Today the only account identity is <code>connected_accounts.platform_user_id</code>, which is overwritten per connection row (Mia has five revoked Instagram rows across two accounts, one of them the shared <code>nomila.co</code> discovery account) and typed handles in <code>athletes.socials</code> with no id at all.</p></div>
+  <div class="tbl"><table>
+    <tr><th>Column</th><th>Type</th><th>Notes</th></tr>
+    <tr><td class="f">id</td><td>uuid pk</td><td></td></tr>
+    <tr><td class="f">athlete_id</td><td>uuid → athletes, cascade</td><td></td></tr>
+    <tr><td class="f">platform</td><td>text CHECK instagram | tiktok | youtube | x</td><td>x reserved (spec §4 asks to design for four)</td></tr>
+    <tr><td class="f">account_id</td><td>text NOT NULL</td><td>Platform-native, stable: IG user id, TikTok open_id, YouTube channel id. The identity key.</td></tr>
+    <tr><td class="f">handle · canonical_url</td><td>text</td><td>Current handle; updated in place, prior values appended to <code>handle_history</code></td></tr>
+    <tr><td class="f">handle_history</td><td>jsonb [{handle, seenAt}]</td><td>Preserves prior handles (§28.3)</td></tr>
+    <tr><td class="f">source_class · source_method</td><td>text</td><td>connected_verified / oauth_instagram_login · platform_public / meta_business_discovery · web_researched / research_extraction or athlete_typed</td></tr>
+    <tr><td class="f">confidence</td><td>numeric(3,2)</td><td>1.0 OAuth; 0.7 discovery match on the athlete's typed handle; research per evidence</td></tr>
+    <tr><td class="f">status</td><td>text CHECK active | superseded | unverified | rejected</td><td>A new account_id for the same platform supersedes the old row; the old row and its observations stay</td></tr>
+    <tr><td class="f">connected_account_id</td><td>uuid → connected_accounts, set null</td><td>The credential row that proved it; a disconnect nulls nothing here (see decision D5)</td></tr>
+    <tr><td class="f">discovered_at · last_verified_at</td><td>timestamptz</td><td></td></tr>
+    <tr><td class="f">evidence</td><td>jsonb</td><td>For web_researched rows: research snapshot id and the extracted handle evidence</td></tr>
+    <tr><td colspan="3"><b>Uniqueness</b> (athlete_id, platform, account_id) · <b>Indexes</b> (athlete_id, platform, status) · <b>Retention</b> forever</td></tr>
+  </table></div>
+
+  <h3>social_sync_runs</h3>
+  <div class="measure"><p><b>Purpose.</b> One row per provider sync of one identity through one endpoint family: the audit unit every payload and observation points back to. Today the only trace of a fetch is <code>toolsCalled[]</code> inside the snapshot and a log line.</p></div>
+  <div class="tbl"><table>
+    <tr><th>Column</th><th>Type</th><th>Notes</th></tr>
+    <tr><td class="f">id · athlete_id · identity_id →</td><td>uuid</td><td></td></tr>
+    <tr><td class="f">provider · endpoint_family · api_version</td><td>text</td><td>e.g. meta_graph / ig_media_insights / v24.0; tiktok_display / video_list / v2; youtube / data_videos or analytics_reports / v3; meta_graph / business_discovery</td></tr>
+    <tr><td class="f">source_class</td><td>text</td><td>connected_verified or platform_public</td></tr>
+    <tr><td class="f">trigger</td><td>text CHECK connect | nightly | backfill | discovery | manual | fixture</td><td></td></tr>
+    <tr><td class="f">status</td><td>text CHECK running | ok | partial | failed</td><td>partial = some pages or sub-calls failed; the run still counts</td></tr>
+    <tr><td class="f">started_at · finished_at · pages · items</td><td></td><td></td></tr>
+    <tr><td class="f">pagination_state</td><td>jsonb</td><td>Opaque cursor / pageToken / numeric cursor ONLY; never a paging URL (Graph paging URLs embed the token)</td></tr>
+    <tr><td class="f">error</td><td>jsonb</td><td>Sanitized provider error (code, subcode, message); never the request URL</td></tr>
+    <tr><td class="f">connected_account_id</td><td>uuid → set null</td><td></td></tr>
+    <tr><td colspan="3"><b>Indexes</b> (athlete_id, platform, started_at desc) · (identity_id, endpoint_family, started_at desc) · <b>Retention</b> forever (small rows)</td></tr>
+  </table></div>
+
+  <h3>raw_source_payloads</h3>
+  <div class="measure"><p><b>Purpose.</b> The sanitized provider response, page by page, sufficient to re-adapt later without refetching (§28.3, §28.10). Today <code>raw_metrics</code> is "the closest retained representation" (§29.1) but is already reshaped, carries secrets, and is copied whole into every daily row.</p></div>
+  <div class="tbl"><table>
+    <tr><th>Column</th><th>Type</th><th>Notes</th></tr>
+    <tr><td class="f">id · sync_run_id → (cascade) · athlete_id · platform</td><td></td><td>A payload cannot outlive its run</td></tr>
+    <tr><td class="f">endpoint_family · page_index</td><td>text · int</td><td></td></tr>
+    <tr><td class="f">request</td><td>jsonb</td><td>Path, non-secret params (fields, metric, period, limit, cursor), never the token or key</td></tr>
+    <tr><td class="f">payload</td><td>jsonb</td><td>The response envelope after the sanitizer (section 3). Full envelope by default (decision D3)</td></tr>
+    <tr><td class="f">payload_hash · bytes</td><td>text · int</td><td>sha256 of canonical JSON; dedupes identical re-fetches</td></tr>
+    <tr><td class="f">sanitizer_version</td><td>text NOT NULL</td><td>Every row says which contract cleaned it</td></tr>
+    <tr><td class="f">fetched_at · retained_until</td><td>timestamptz</td><td>retained_until from the retention parameter (decision D2)</td></tr>
+    <tr><td colspan="3"><b>Indexes</b> (athlete_id, platform, fetched_at desc) · (sync_run_id) · <b>Retention</b> a parameter; observations derived from a payload survive its deletion</td></tr>
+  </table></div>
+
+  <h3>Durable content: media_assets, reused</h3>
+  <div class="measure"><p>Analysis and trade-off in section 8. Additive columns: <code>social_identity_id</code> (uuid → social_identities), <code>native</code> (jsonb, the platform-native immutable fields the adapter preserves: TikTok title, video_description, duration, cover url stripped of query; Instagram media_product_type, is_shared_to_feed, children ids; YouTube title, description, duration, topic categories, definition), <code>content_format</code> (text, canonical: post | reel | story | carousel | carousel_frame | video | short | long_form), <code>native_version</code> (text, the adapter version that wrote <code>native</code>), <code>first_seen_at</code>. Rule change: <code>like_count</code>, <code>comments_count</code> and <code>insights</code> keep being refreshed for display, but history lives in observations and the feature calculator never reads these columns.</p></div>
+
+  <h3>social_metric_observations</h3>
+  <div class="measure"><p><b>Purpose.</b> The canonical fact table of §28.4: one row per metric per entity per observation instant per source. Account-level facts today live as flat columns on the daily row and are lost when the row is overwritten by a same-day re-run; content-level facts live in <code>media_assets.insights</code> and are overwritten on every re-see.</p></div>
+  <div class="tbl"><table>
+    <tr><th>Column</th><th>Type</th><th>Notes</th></tr>
+    <tr><td class="f">id</td><td>bigint identity pk</td><td>Volume table; a uuid buys nothing here</td></tr>
+    <tr><td class="f">athlete_id · platform · identity_id →</td><td></td><td></td></tr>
+    <tr><td class="f">entity_type</td><td>text CHECK account | content | audience</td><td></td></tr>
+    <tr><td class="f">entity_id</td><td>text</td><td>account_id for account; source_media_id for content; 'audience' for audience-level metrics</td></tr>
+    <tr><td class="f">asset_id</td><td>uuid → media_assets, set null</td><td>Set when the content row exists; observations may precede the asset (a Story) or outlive a deleted asset</td></tr>
+    <tr><td class="f">metric_key · value · unit</td><td>text · numeric · text</td><td>From the metric registry (section 4); unit is count | ratio | seconds | percent</td></tr>
+    <tr><td class="f">source_class · source_method · confidence</td><td></td><td></td></tr>
+    <tr><td class="f">observed_at</td><td>timestamptz NOT NULL</td><td>The provider's timestamp when it gives one (Analytics report end date), else the fetch instant</td></tr>
+    <tr><td class="f">window_start · window_end</td><td>timestamptz NULL</td><td>Only for windowed metrics (IG account reach "day", YouTube 30-day totals, demographics last_30_days). Point-in-time counts leave both null</td></tr>
+    <tr><td class="f">definition_version</td><td>text NOT NULL</td><td>The metric definition that produced it; a provider change bumps the version, never rewrites rows</td></tr>
+    <tr><td class="f">sync_run_id → · payload_id →</td><td>set null</td><td>Lineage to the run and the sanitized page</td></tr>
+    <tr><td colspan="3"><b>Uniqueness</b> (identity_id, entity_type, entity_id, metric_key, observed_at, source_method) so re-adapting the same payload is idempotent · <b>Indexes</b> (identity_id, metric_key, observed_at desc) · (asset_id, metric_key, observed_at desc) · <b>Retention</b> forever; never updated</td></tr>
+  </table></div>
+
+  <h3>social_audience_distributions</h3>
+  <div class="measure"><p><b>Purpose.</b> Full breakdowns (§26.4), not the top bucket. Today they exist only inside <code>raw_metrics.demographics</code> and <code>raw_metrics.youtube</code> and are unreachable by SQL.</p></div>
+  <div class="tbl"><table>
+    <tr><th>Column</th><th>Type</th><th>Notes</th></tr>
+    <tr><td class="f">id · athlete_id · platform · identity_id →</td><td></td><td></td></tr>
+    <tr><td class="f">dimension</td><td>text CHECK country | city | age | gender | age_gender | traffic_source | device</td><td>age_gender keeps YouTube's joint distribution rather than splitting it and losing the cross</td></tr>
+    <tr><td class="f">bucket · value · pct · basis</td><td>text · numeric · numeric · text</td><td>basis: followers (IG follower_demographics) | viewers (YouTube viewerPercentage) | views (YouTube country/traffic/device). Not comparable across bases and never merged</td></tr>
+    <tr><td class="f">source_class · source_method · observed_at · window_start · window_end · definition_version · sync_run_id → · payload_id →</td><td></td><td>IG demographics are lifetime-with-last_30_days timeframe; YouTube are 30-day reports</td></tr>
+    <tr><td colspan="3"><b>Uniqueness</b> (identity_id, dimension, bucket, observed_at, source_method) · <b>Retention</b> forever</td></tr>
+  </table></div>
+
+  <h3>social_features</h3>
+  <div class="measure"><p><b>Purpose.</b> Versioned, derived numbers the engines read (§28.3, §28.6). Computed from observations and distributions only; never from a provider call, never from the daily display row.</p></div>
+  <div class="tbl"><table>
+    <tr><th>Column</th><th>Type</th><th>Notes</th></tr>
+    <tr><td class="f">id · athlete_id</td><td></td><td></td></tr>
+    <tr><td class="f">platform · identity_id →</td><td>nullable</td><td>NULL platform = cross-platform feature (e.g. effective reach)</td></tr>
+    <tr><td class="f">feature_key · value · unit · n</td><td></td><td>n = sample size behind the number (posts, days)</td></tr>
+    <tr><td class="f">window_days · as_of</td><td>int · timestamptz</td><td>The feature is "the last window_days ending at as_of"</td></tr>
+    <tr><td class="f">source_class · confidence · imputed</td><td></td><td>source_class = the LOWEST authority among the inputs used; imputed is always false in Step 1 (priors are Step 4)</td></tr>
+    <tr><td class="f">calculation_version</td><td>text</td><td>The calculator version (section 5)</td></tr>
+    <tr><td class="f">inputs</td><td>jsonb</td><td>Lineage: observation id ranges or the exact list, counts, and the resolution decisions (which source won per metric)</td></tr>
+    <tr><td class="f">computed_at</td><td>timestamptz</td><td></td></tr>
+    <tr><td colspan="3"><b>Uniqueness</b> (athlete_id, coalesce(platform,'*'), feature_key, window_days, as_of, calculation_version) · <b>Retention</b> forever; a recompute under a new version adds rows</td></tr>
+  </table></div>
+
+  <h2 id="adapters">2 · Platform adapter architecture</h2>
+  <div class="measure"><p>The five stages, and where each existing function lands. The rule: the HTTP calls stay where they are and are not re-implemented; what changes is what they return (a native envelope instead of a pre-averaged result) and where it goes.</p></div>
+  <div class="tbl"><table>
+    <tr><th>Stage</th><th>Instagram</th><th>TikTok</th><th>YouTube</th><th>Discovery (public)</th></tr>
+    <tr><td><b>FETCH raw native</b></td><td><span class="d ext">extract</span> the Graph calls in <code>fetchAnalytics</code> (profile, account insights, media + insights, four demographic breakdowns) and <code>listMediaPage</code>, <code>fetchMediaInsights</code> into <code>fetchInstagramNative()</code> returning <code>{ profile, accountInsights, mediaPages[], demographics{} }</code> untouched</td><td><span class="d ext">extract</span> user/info + video/list (+ dormant creator/info) into <code>fetchTikTokNative()</code>; keep the 20-per-page cursor</td><td><span class="d ext">extract</span> channels, analytics reports (totals, age×gender, country, traffic, device), search+videos (or uploads playlist) into <code>fetchYouTubeNative()</code>; keep Analytics and Data responses separate</td><td><span class="d ext">extract</span> Business Discovery and public Data API calls into the same shape with source_class platform_public</td></tr>
+    <tr><td><b>SANITIZE</b></td><td colspan="4"><span class="d add">add</span> <code>server/lib/social/sanitize.ts</code>, one function for every provider, applied to the envelope before it touches a table (section 3)</td></tr>
+    <tr><td><b>STORE RAW</b></td><td colspan="4"><span class="d add">add</span> <code>server/services/social/ingest.ts</code>: opens a sync run, stores one payload row per page, closes the run with status and counts</td></tr>
+    <tr><td><b>ADAPT to canonical</b></td><td><span class="d add">add</span> <code>adapters/instagram.ts</code>: account observations (followers, following, media_count, account_reach_day, account_views_day, profile_link_taps_day), content upserts into media_assets with <code>native</code>, content observations (like_count, comments_count, reach, saved, shares, total_interactions, video_views, ig_reels_avg_watch_time), follower distributions; the "discovery reel" rule becomes an <code>inferred</code> content feature, not a fact</td><td><span class="d add">add</span> <code>adapters/tiktok.ts</code>: account (follower_count, following_count, likes_count, video_count, is_verified), content (view_count, like_count, comment_count, share_count) with duration, title and description kept in <code>native</code>; no reach, no saves: those keys are simply absent</td><td><span class="d add">add</span> <code>adapters/youtube.ts</code>: account (subscriber_count, view_count_total, video_count), 30-day windowed account metrics (views_30d, minutes_watched_30d, avg_view_pct_30d, subs_gained_30d, subs_lost_30d), content (view_count, like_count, comment_count) with duration and topics in <code>native</code>; viewer distributions with basis viewers/views</td><td>Same adapters, source_class platform_public, fewer metrics</td></tr>
+    <tr><td><b>CALCULATE features</b></td><td colspan="4"><span class="d add">add</span> <code>server/services/intelligence/social/features.ts</code>: pure, takes observation and distribution rows plus as_of and windows, returns feature rows with lineage (section 5)</td></tr>
+  </table></div>
+
+  <h3>Every existing code path, dispositioned</h3>
+  <div class="tbl"><table>
+    <tr><th>Code</th><th>Disposition</th><th>What happens in Step 1</th></tr>
+    <tr><td class="f">integrations/instagram.ts handleCallback · refreshTokenIfNeeded · sendDM · syncRecent</td><td><span class="d keep">keep</span></td><td>Untouched</td></tr>
+    <tr><td class="f">instagram.ts fetchAnalytics</td><td><span class="d ext">extract</span></td><td>Becomes <code>fetchInstagramNative</code> + <code>projectInstagramDisplay(native)</code>. The projection reproduces today's SocialAnalyticsResult byte-for-byte (pinned by a fixture test), so the daily row is unchanged</td></tr>
+    <tr><td class="f">instagram.ts fetchForScoring · tiktok.ts fetchForScoring · youtube.ts fetchForScoring · skills/fetchSocialData.ts</td><td><span class="d keep">keep</span> now, <span class="d rep">replace</span> in Step 4</td><td>Still runs at connect and still scores. Not touched in Step 1 so the v7 path is provably unchanged. Retired when the engine reads features</td></tr>
+    <tr><td class="f">instagram.ts listMediaPage · tiktok.ts listMediaPage · youtube.ts listMediaPage</td><td><span class="d mod">modify</span></td><td>Return the native page and the cursor; the backfill stores each page as a raw payload and emits content observations at fetch time (like/comment/view counts as of that page)</td></tr>
+    <tr><td class="f">instagram.ts fetchMediaInsights · skills/enrichTopPostInsights.ts</td><td><span class="d mod">modify</span></td><td>Each enrichment writes reach/saved/shares/views/watch-time observations with observed_at, then updates <code>insights</code> for display as today</td></tr>
+    <tr><td class="f">integrations/discovery.ts · lib/platformDiscovery.ts</td><td><span class="d ext">extract</span></td><td>Same calls; envelope stored with source_class platform_public; the discovery row on the daily table continues (dual-write)</td></tr>
+    <tr><td class="f">skills/collectSocialAnalytics.ts · collectDiscoveryAnalytics.ts</td><td><span class="d mod">modify</span></td><td>Call the native fetch once; write the display row from the projection (unchanged) AND, when the flag is on, run sanitize → store → adapt → features</td></tr>
+    <tr><td class="f">skills/mediaBackfill.ts · rehostAthleteMedia.ts ingestOne</td><td><span class="d mod">modify</span></td><td>ingestOne also writes <code>native</code>, <code>content_format</code>, <code>social_identity_id</code>; pixels and enrichment untouched</td></tr>
+    <tr><td class="f">skills/refreshScores.ts buildSocialFromAnalytics · pickBestPerPlatform</td><td><span class="d keep">keep</span> now, <span class="d ext">extract</span> in Step 4</td><td>Untouched in Step 1. Its precedence rule is re-implemented at metric level in the feature calculator (section 6) and compared against it in the Mia validation</td></tr>
+    <tr><td class="f">integrations/types.ts SocialAnalyticsResult · SocialAnalyticsRaw</td><td><span class="d keep">keep</span></td><td>Remain the display contract. Marked in a header comment as "projection, not a scoring input"</td></tr>
+    <tr><td class="f">routes/analytics.ts · client Growth tab · Mila get_analytics · deck audience card</td><td><span class="d keep">keep</span></td><td>Read the daily row as today (section 7)</td></tr>
+    <tr><td class="f">social_analytics_snapshots.raw_metrics.recent_media daily copy</td><td><span class="d mod">modify</span> later</td><td>Kept in Step 1 (the projection still writes it). Stops once the display readers of recent_media are pointed at media_assets (a follow-up, not Step 1)</td></tr>
+    <tr><td class="f">tiktok.ts DEMOGRAPHICS_ENABLED / creator_info</td><td><span class="d keep">keep</span> dormant</td><td>§28.5</td></tr>
+    <tr><td class="f">Instagram Stories</td><td><span class="d add">add</span> behind its own flag</td><td>A <code>stories</code> endpoint family (GET /{ig}/stories + per-story insights) with a capture cadence (decision D4); Story observations are content observations with content_format story and no media_assets row unless we choose to keep covers</td></tr>
+  </table></div>
+
+  <h2 id="sanitize">3 · Secret sanitization</h2>
+  <div class="measure"><p>Verified against the live dev database on 10 Sep: <b>82 of 218</b> daily rows already hold a token string inside <code>raw_metrics</code>. Every place a secret can appear, with what was found:</p></div>
+  <div class="tbl"><table>
+    <tr><th>Location</th><th>Provider</th><th>What appears</th><th>Found in prod data</th></tr>
+    <tr><td>Graph paging URLs <code>paging.next</code> / <code>paging.previous</code></td><td>Instagram (account insights, media, demographics, business discovery)</td><td>Our OAuth access token as a query parameter</td><td><span class="pill risk">yes</span> 9 rows, <code>raw_metrics.account_insights.paging.next</code></td></tr>
+    <tr><td>CDN media URLs with signed query strings</td><td>TikTok <code>cover_image_url</code>; Instagram <code>media_url</code> / <code>thumbnail_url</code></td><td>Provider CDN signature params, including one literally named <code>refresh_token</code> on TikTok covers. Not our credential, but indistinguishable by name and useless after expiry</td><td><span class="pill warn">yes</span> 73 rows, <code>recent_media[].thumbnail_url</code></td></tr>
+    <tr><td>Request query strings</td><td>All Graph calls (<code>access_token=</code>), YouTube public (<code>key=</code>), Business Discovery (<code>access_token=</code>)</td><td>Token or API key</td><td>Not persisted today; would be if <code>request</code> were stored naively</td></tr>
+    <tr><td>Request headers</td><td>TikTok, YouTube connected (<code>Authorization: Bearer</code>)</td><td>Token</td><td>Not persisted; log lines must never print headers</td></tr>
+    <tr><td>Provider error objects</td><td>Graph errors can echo the request; TikTok errors include <code>log_id</code></td><td>Possibly the URL</td><td>Not observed; covered by the same walk</td></tr>
+    <tr><td>Accidental spread of a <code>connected_accounts</code> row</td><td>Any adapter</td><td><code>access_token</code>, <code>refresh_token</code> columns</td><td>Not observed; the type system will forbid the row type in envelopes</td></tr>
+    <tr><td>Pagination cursors</td><td>IG <code>after</code>, YouTube <code>pageToken</code>, TikTok numeric</td><td>Opaque, no secret</td><td>Safe to persist in <code>pagination_state</code>; paging URLs are not</td></tr>
+  </table></div>
+  <h3>The contract (sanitizer v1)</h3>
+  <ol>
+    <li><b>Exact-value redaction first.</b> The sanitizer receives the set of live secrets for the call (the connection's access and refresh tokens, the discovery token, the YouTube API key) and replaces any string containing one of them with <code>&lt;redacted:secret&gt;</code>, everywhere in the tree. This catches a token wherever it lands, including inside a URL or an error message.</li>
+    <li><b>Key-name redaction.</b> Any object key matching <code>/^(access_token|refresh_token|id_token|client_secret|authorization|api_key|apikey|key|secret|password|signature|sig)$/i</code> has its value replaced, at any depth.</li>
+    <li><b>URL handling.</b> Any string that parses as a URL has its query string removed when it contains a parameter matching rule 2 or the provider's known signing parameters (<code>x-expires</code>, <code>x-signature</code>, <code>refresh_token</code>, <code>_nc_*</code>, <code>oh</code>, <code>oe</code>); the path is kept so the payload still says which media it was. Paging URLs are dropped entirely and replaced with the bare cursor.</li>
+    <li><b>Request records</b> store path and an allow-list of parameters (fields, metric, metric_type, period, breakdown, limit, since, cursor, pageToken, part, ids, dimensions, startDate, endDate). Nothing else.</li>
+    <li><b>Assert before insert.</b> The ingest function re-runs a detector over the final JSON text (<code>/access_token|refresh_token|Bearer\s|client_secret|key=AIza/</code> plus every live secret value) and refuses the insert if anything matches. A refused insert fails the sync run with status failed and reason <code>sanitizer_leak</code>; it never degrades to storing.</li>
+    <li><b>Versioned.</b> <code>sanitizer_version</code> is written on every payload row; a rule change bumps it.</li>
+  </ol>
+  <h3>Tests</h3>
+  <ul>
+    <li>Fixture per location above, built from redacted real responses, asserting the exact output and that the injected fake token strings are absent from the serialized result.</li>
+    <li>A property test: for random nesting depth and key placement, no injected secret survives.</li>
+    <li>A leak-detector test that the assertion in rule 5 refuses a payload with a token in a paging URL, a header echo and a nested error.</li>
+    <li>A boundary test that no adapter module imports <code>connectedAccounts</code>'s row type into an envelope.</li>
+    <li>A scheduled audit query (the one used for this finding) as a script, runnable in CI against a scratch database and by hand against dev.</li>
+  </ul>
+  <div class="callout raise"><p><b>Remediation of existing rows (decision D7).</b> The 82 <code>raw_metrics</code> rows are display-layer data. Proposal: a one-off, marker-guarded script that rewrites <code>raw_metrics</code> in place through the same sanitizer, and rotates the affected Instagram token by forcing a refresh. The display projection does not read paging URLs or cover query strings, so nothing the athlete sees changes.</p></div>
+
+  <h2 id="metrics">4 · Metric definitions</h2>
+  <div class="measure"><p>A metric registry in code (<code>server/services/intelligence/social/metrics.ts</code>) is the source of truth; <code>definition_version</code> on every observation points into it. Keys are platform-neutral names with a platform-availability matrix; a key present on one platform and absent on another is simply absent, never zero. Nothing is called "engagement rate".</p></div>
+  <h3>Observed metrics (facts a provider states)</h3>
+  <div class="tbl"><table>
+    <tr><th>metric_key</th><th>Entity</th><th>Unit</th><th>Instagram</th><th>TikTok</th><th>YouTube</th><th>Window</th></tr>
+    <tr><td class="f">followers</td><td>account</td><td>count</td><td>followers_count</td><td>follower_count</td><td>absent (see subscribers)</td><td>point</td></tr>
+    <tr><td class="f">subscribers</td><td>account</td><td>count</td><td>absent</td><td>absent</td><td>subscriberCount</td><td>point</td></tr>
+    <tr><td class="f">following · content_count · likes_total · views_total</td><td>account</td><td>count</td><td>follows_count · media_count</td><td>following_count · video_count · likes_count</td><td>videoCount · viewCount</td><td>point</td></tr>
+    <tr><td class="f">account_reach · account_views · profile_link_taps</td><td>account</td><td>count</td><td>insights reach / views / profile_links_taps</td><td>absent</td><td>absent</td><td>day (period=day)</td></tr>
+    <tr><td class="f">views_30d · minutes_watched_30d · avg_view_pct_30d · subs_gained_30d · subs_lost_30d</td><td>account</td><td>count · count · percent · count · count</td><td>absent</td><td>absent</td><td>Analytics report</td><td>30d</td></tr>
+    <tr><td class="f">like_count · comments_count</td><td>content</td><td>count</td><td>yes</td><td>yes (comment_count)</td><td>yes</td><td>point</td></tr>
+    <tr><td class="f">share_count · save_count</td><td>content</td><td>count</td><td>shares · saved (insights)</td><td>share_count · absent</td><td>absent · absent</td><td>point</td></tr>
+    <tr><td class="f">view_count</td><td>content</td><td>count</td><td>views (video/reel only)</td><td>view_count</td><td>viewCount</td><td>point</td></tr>
+    <tr><td class="f">reach · total_interactions</td><td>content</td><td>count</td><td>insights</td><td>absent</td><td>absent</td><td>point</td></tr>
+    <tr><td class="f">avg_watch_time_sec</td><td>content</td><td>seconds</td><td>ig_reels_avg_watch_time</td><td>absent</td><td>absent (channel-level only)</td><td>point</td></tr>
+    <tr><td class="f">duration_sec</td><td>content</td><td>seconds</td><td>absent in Graph media (native when known)</td><td>duration</td><td>contentDetails.duration</td><td>static</td></tr>
+  </table></div>
+  <h3>Derived metrics (features, section 5), each with its denominator named</h3>
+  <div class="tbl"><table>
+    <tr><th>feature_key</th><th>Formula</th><th>Comparable across</th></tr>
+    <tr><td class="f">engagement_per_follower</td><td>(like_count + comments_count) ÷ followers at the same observed_at, per content, then median over the window</td><td>Public-only proxy; IG and TikTok and YouTube each separately, never pooled</td></tr>
+    <tr><td class="f">interactions_per_reach</td><td>total_interactions ÷ reach per content (IG connected only)</td><td>IG connected only</td></tr>
+    <tr><td class="f">interactions_per_view</td><td>(like_count + comments_count + share_count) ÷ view_count per content</td><td>TikTok, YouTube, IG video separately</td></tr>
+    <tr><td class="f">views_per_follower · reach_per_follower</td><td>view_count ÷ followers; reach ÷ followers (reach efficiency, §22.4)</td><td>Per platform</td></tr>
+    <tr><td class="f">saves_per_1k_reach · shares_per_1k_reach · shares_per_1k_views</td><td>save_count × 1000 ÷ reach; share_count × 1000 ÷ reach; share_count × 1000 ÷ view_count</td><td>Per platform, per denominator</td></tr>
+    <tr><td class="f">completion_pct</td><td>IG: avg_watch_time_sec ÷ duration_sec when both known; YouTube: avg_view_pct_30d (account-level)</td><td>Not comparable; different entities</td></tr>
+    <tr><td class="f">story_reach_per_follower · story_completion</td><td>Once Stories are captured</td><td>IG only</td></tr>
+  </table></div>
+
+  <h2 id="features">5 · Feature calculator v1</h2>
+  <div class="measure"><p>Pure function: <code>calculateSocialFeatures({ observations, distributions, identities, asOf, windows })</code> → feature rows. It reads stored rows only, so a recompute for any past <code>as_of</code> is possible without a provider call (§28.10). Content-type segmentation uses <code>content_format</code>. Every feature carries <code>n</code> and lineage. Distinction: an <b>observation</b> is a provider fact with an <code>observed_at</code>; a <b>feature</b> is a number we computed from observations for a window ending at <code>as_of</code>.</p></div>
+  <div class="tbl"><table>
+    <tr><th>Family</th><th>Features (per platform unless marked)</th><th>Inputs</th></tr>
+    <tr><td>Follower level and growth</td><td>followers_latest · followers_growth_30d · followers_growth_90d (absolute and percent) · followers_growth_velocity (30d slope)</td><td>account followers or subscribers observations; growth needs ≥2 observations in the window else absent</td></tr>
+    <tr><td>Content performance distributions</td><td>views_median · views_p25 · views_p75 · views_p90 · reach_median · reach_p75 · reach_p90 · likes_median · comments_median, by content_format and overall</td><td>Latest observation per content within the window (posted_at inside the window)</td></tr>
+    <tr><td>Engagement distributions</td><td>engagement_per_follower_median · interactions_per_reach_median · interactions_per_view_median · saves_per_1k_reach_median · shares_per_1k_reach_median · shares_per_1k_views_median</td><td>Per-content ratios, then median; denominators as named in section 4</td></tr>
+    <tr><td>Distribution efficiency</td><td>reach_per_follower_median · views_per_follower_median · non_follower_reach_share (inferred, IG: share of posts whose reach ≥ 2× followers, replacing "is_discovery")</td><td>Marked inferred with evidence ids</td></tr>
+    <tr><td>Breakout and consistency</td><td>breakout_rate (share of posts with views or reach ≥ 3× the window median) · top_decile_share (share of total views from the top 10% of posts) · performance_cv (coefficient of variation of views or reach)</td><td>Same content set</td></tr>
+    <tr><td>Cadence</td><td>posts_per_week_30d · posts_per_week_90d · days_since_last_post · format_mix (share by content_format)</td><td>media_assets posted_at within the window, carousel frames excluded</td></tr>
+    <tr><td>Saves and shares</td><td>saves_median · shares_median · save_rate_median · share_rate_median</td><td>IG saved/shares; TikTok share_count</td></tr>
+    <tr><td>Story performance</td><td>story_reach_median · story_completion_median · story_reply_rate</td><td>Absent until Story capture exists; never zero</td></tr>
+    <tr><td>Audience</td><td>audience_share_top_country · audience_country_distribution (jsonb feature) · audience_gender_share · audience_age_distribution · audience_geo_concentration (HHI)</td><td>Latest distribution per dimension within the window, basis preserved</td></tr>
+    <tr><td>Cross-platform</td><td>effective_reach_cross_platform (sum of per-platform reach_median or views_median where present; platforms without a comparable metric are excluded and named in inputs) · platform_breadth</td><td>Per-platform features</td></tr>
+    <tr><td>Authority and confidence</td><td>Every feature: source_class = lowest authority used; confidence = f(n, authority, freshness); an explicit <code>coverage</code> input naming which metrics were absent</td><td>Section 6</td></tr>
+  </table></div>
+  <div class="callout"><p><b>Windows (decision D6).</b> Proposal: compute every distribution feature for 30 and 90 days, growth for 30 and 90, cadence for 30 and 90, with 7-day variants only for cadence and follower growth. as_of defaults to the latest observation; the Mia command takes it as an argument.</p></div>
+
+  <h2 id="precedence">6 · Source precedence at the metric and window level</h2>
+  <ol>
+    <li>For each (identity, entity, metric_key, window) the resolver collects every observation whose observed_at falls in the window, grouped by source_class.</li>
+    <li>Authority: <code>connected_verified &gt; platform_public &gt; web_researched &gt; imputed</code>. The highest class with at least one fresh observation (freshness per metric from the <code>research_freshness</code> family, social_public 7 days, social_connected 2 days) wins the window; lower-class observations are ignored for calculation but stay in the table.</li>
+    <li>Freshness does not fall through silently: a stale connected observation with a fresh public one yields the public value and a lower source_class on the feature, and the resolution is recorded in <code>inputs</code>.</li>
+    <li><code>inferred</code> never competes with observations. It is only ever a feature (non_follower_reach_share, content_format when the provider does not state it) and its row carries the evidence ids it was derived from.</li>
+    <li>Unknown stays unknown: if no observation of any class exists in the window, the feature row is not written. There is no zero. Step 4's priors fill the gap and set <code>imputed</code>.</li>
+    <li>Superseded observations are never deleted or flagged; supersession is a read-time decision that depends on the window and the freshness parameters, so it must be recomputable.</li>
+  </ol>
+  <div class="measure"><p>This is the same rule <code>refreshScores.pickBestPerPlatform</code> applies today at the level of a whole platform row (connected 4 &gt; provider 3 &gt; discovery 2 &gt; research 1, 45-day freshness), moved to the metric level and made explicit in lineage. The Mia validation compares the two.</p></div>
+
+  <h2 id="display">7 · The display analytics contract</h2>
+  <div class="measure"><p><code>social_analytics_snapshots</code>, <code>SocialAnalyticsResult</code>, the four <code>/analytics</code> routes, Mila's <code>get_analytics</code>, the deck's audience card and the score refresh's <code>buildSocialFromAnalytics</code> keep reading exactly what they read today. The projection that fills the daily row is computed from the native envelope by a function pinned to today's output with fixture tests, so the row is byte-identical to what the old code produced. The only new statement about it is a comment: it is a projection and stops being a scoring input in Step 4, when <code>refreshScores</code> reads <code>social_features</code>. No route, client or Mila change in Step 1.</p></div>
+
+  <h2 id="media">8 · media_assets: reuse or a new content table</h2>
+  <div class="measure"><p>What <code>media_assets</code> is today: the unified asset library (spec: docs/durable-media-rehosting.md), one row per owned pixel set, with content identity (<code>athlete_id</code>, <code>platform</code>, <code>source_media_id</code>, unique), content facts (permalink, caption, posted_at, media_type incl. CAROUSEL_CHILD frames, parent), mutable counters (like_count, comments_count, insights, refreshed on every re-see), pixel lifecycle (gcs paths, status stored | failed | skipped_size), enrichment (metadata.vision, embedding, pixel_grade), and product lifecycle (origin connected | discovery | upload | generated, deal_id, approval_status, deleted_at, generation_job_id). 569 rows for Mia; 561 connected, 21 uploads, 169 generated across all athletes; full backfill complete for her three platforms.</p></div>
+  <div class="tbl"><table>
+    <tr><th></th><th>Reuse media_assets (recommended)</th><th>New social_content table</th></tr>
+    <tr><td>Content identity</td><td>Already unique on (athlete, platform, source_media_id); carousel frames modelled</td><td>Would duplicate the same key and need a back-reference to media_assets for pixels and enrichment</td></tr>
+    <tr><td>Platform-native fields</td><td>Add <code>native jsonb</code> + <code>content_format</code> + <code>native_version</code>; TikTok title/description/duration, IG media_product_type/is_shared_to_feed, YouTube duration/topics stop being collapsed into <code>caption</code></td><td>Clean by construction, but every consumer (Curator, kit, Studio, weekly spine, first look) reads media_assets and would need a join or a sync</td></tr>
+    <tr><td>Mutable counters</td><td>Rule change: <code>like_count</code>, <code>comments_count</code>, <code>insights</code> become display projections; history and scoring inputs live in observations. No column removed</td><td>Same rule, one table further away</td></tr>
+    <tr><td>Non-social rows in the same table</td><td>origin upload | generated rows are excluded by <code>origin</code> in every social query; already the pattern (studio/content.ts)</td><td>Avoided</td></tr>
+    <tr><td>Pixel-status coupling</td><td>A content item whose pixels failed still has a row (status failed); the observation layer does not care about pixels. Stories, which have no durable pixels, get observations only (or a row with content_format story and no gcs path, decision D4)</td><td>Cleaner for Stories and for content we never re-host</td></tr>
+    <tr><td>Ownership and deletion</td><td>Cascade on athlete delete; soft delete via deleted_at; observations keep asset_id set null on hard delete</td><td>Same</td></tr>
+    <tr><td>Migration cost</td><td>Three nullable columns, one FK, a backfill of native from raw_metrics.recent_media where present</td><td>New table plus a backfill of 569+ rows and a lineage column on media_assets anyway</td></tr>
+  </table></div>
+  <div class="callout raise"><p><b>Recommendation.</b> Reuse, with the three additive columns, the counter rule, and the explicit convention that <code>media_assets</code> is the durable content entity for social platforms while pixels and product lifecycle remain its other roles. The one place reuse strains is Stories (no pixels); decision D4 covers it. Bring back if you would rather pay the duplication for a pure content table now.</p></div>
+
+  <h2 id="fixture">9 · The Mia validation fixture</h2>
+  <div class="measure"><p>One command, deterministic, no network:</p></div>
+<pre><code>npx tsx --require dotenv/config server/scripts/socialFeatureVector.ts --athlete dc8f37f1-… --as-of 2026-09-09T00:00:00Z --out ./out/mia-2026-09-09.json
+# or, without a database, from committed redacted fixtures:
+npx tsx server/scripts/socialFeatureVector.ts --fixtures server/services/intelligence/social/__fixtures__/mia --as-of 2026-09-09T00:00:00Z</code></pre>
+  <div class="measure"><p>Output is one JSON document with three sections and a lineage index: <b>raw</b> (the sanitized payloads used, by sync run and page, with hashes), <b>observations</b> (every row that fell inside any window, grouped by entity and metric, with source_class and observed_at), <b>features</b> (every feature row with value, n, window, source_class, confidence, calculation_version and the observation ids it used). A companion <code>--explain followers_growth_30d</code> prints the resolution for one feature: which observations were candidates, which class won, why the others were ignored. The jest suite runs the same calculator over the committed fixtures and asserts exact values for a hand-checked subset (medians, p75, cadence, growth), so a change in the calculator is a visible diff.</p></div>
+  <div class="measure"><p><b>Where the fixture data comes from.</b> Mia's 72 Instagram, 73 TikTok and 6 YouTube daily rows (30 Jun to 10 Sep) hold account facts, account insights, 18 to 20 recent media with counts per day, and demographics; her 569 media rows hold posted_at, formats, counts and enriched insights for 34 videos. The backfill (section 10) turns these into observations with source_method <code>legacy_snapshot</code> and <code>legacy_media_assets</code>; redacted copies of a few days plus one native envelope captured on the first flagged sync become the committed fixtures. Her YouTube connection is expired, which the command will report as coverage, not as zero (§29.1).</p></div>
+
+  <h2 id="rollout">10 · Rollout</h2>
+  <h3>Migrations</h3>
+  <ul>
+    <li><b>0044_social_substrate.sql</b>: the six tables with their CHECKs, unique constraints and indexes; the three columns, FK and index on media_assets. Pure DDL, idempotent, listed in <code>db-migrate.sh</code>. Applied only through the deploy path.</li>
+    <li>Parameter rows (drafts via <code>seedModelParams.ts</code>, family <code>signals</code>): metric registry version, sanitizer version, feature windows, freshness values already in <code>research_freshness</code>.</li>
+    <li>Migration numbering: 0044 next; PR #309's 0034 remains its own problem.</li>
+  </ul>
+  <h3>Dual write, behind a flag</h3>
+  <ul>
+    <li><code>SOCIAL_SUBSTRATE_WRITE</code> (default off in both YAMLs). Off: the code path is the old one, byte for byte. On: <code>collectSocialAnalytics</code>, <code>collectDiscoveryAnalytics</code>, the backfill tick and <code>enrichTopPostInsights</code> run sanitize → store → adapt → features after their existing writes; a failure in the new path is logged on the sync run and never fails the old write.</li>
+    <li>No reader of the new tables in production; the score, the Growth tab and Mila are unaffected by construction.</li>
+  </ul>
+  <h3>Backfill</h3>
+  <ol>
+    <li><code>backfillSocialIdentities.ts</code>: from connected_accounts (active, expired and revoked, so history is preserved) and athletes.socials; marker-guarded, idempotent.</li>
+    <li><code>backfillSocialObservations.ts</code>: walks social_analytics_snapshots (218 rows) and media_assets (~750 social rows) into observations and distributions with source_method legacy_*, observed_at = snapshot_date or metadata timestamps, definition_version legacy/1. Sanitizes raw_metrics on the way (decision D7 decides whether it also rewrites the source rows). Idempotent on the unique constraints.</li>
+    <li><code>socialFeatureVector.ts</code> for Mia at three as_of dates as the acceptance check.</li>
+  </ol>
+  <h3>Verification</h3>
+  <ul>
+    <li>Projection fixture tests: the display row produced from the native envelope equals today's output for Instagram, TikTok and YouTube fixtures.</li>
+    <li>Flag off: the byte-for-byte check from Step 0 repeated (dry-run score refresh and athletes_current export).</li>
+    <li>Flag on in dev for 3 nightly runs: sync runs status ok, zero sanitizer refusals, observation counts match items fetched, the audit query returns 0 rows for the new tables.</li>
+    <li>Mia feature vector at as_of = 9 Sep compared against the current display row and against <code>buildSocialFromAnalytics</code>'s resolution; differences classified as measurement improvement, definition mismatch or missing data (§23).</li>
+  </ul>
+  <h3>Rollback</h3>
+  <ul>
+    <li>Flag off stops all writes; nothing reads the tables, so rollback is a config flip. Tables and columns stay (dropping is a later, separate migration).</li>
+    <li>media_assets columns are nullable and unread by existing code; ingestOne's extra writes are inside the flag.</li>
+  </ul>
+  <h3>Storage and cost</h3>
+  <div class="tbl"><table>
+    <tr><th>Table</th><th>Estimate</th><th>Basis</th></tr>
+    <tr><td>raw_source_payloads</td><td>~50 KB per Instagram daily sync, ~20 KB TikTok, ~5 KB YouTube; ≈ 30 MB per athlete-year at today's cadence before retention</td><td>Measured raw_metrics sizes (50,028 / 19,410 / 280 bytes average)</td></tr>
+    <tr><td>social_metric_observations</td><td>≈ 25 content × 6 metrics + 10 account metrics ≈ 160 rows per platform per day ≈ 60k rows per athlete-year; tens of bytes each</td><td>Current recent-media size 18 to 20 per day</td></tr>
+    <tr><td>social_features</td><td>≈ 120 rows per athlete per computation; one per night</td><td>Feature list × windows × platforms</td></tr>
+    <tr><td>Provider calls</td><td>No new calls in Step 1 except Stories if enabled; discovery pagination increases are Step 1b</td><td>Same fetches, second destination</td></tr>
+  </table></div>
+
+  <h2 id="decisions">11 · Decisions needed before implementation</h2>
+  <div class="tbl"><table>
+    <tr><th>#</th><th>Decision</th><th>Options</th><th>Recommendation</th></tr>
+    <tr><td>D1</td><td>Durable content entity</td><td>Reuse media_assets with three additive columns and the counter rule; or a new social_content table with a lineage link</td><td>Reuse (section 8)</td></tr>
+    <tr><td>D2</td><td>Raw payload retention</td><td>Forever; 180 days; 90 days; 30 days. Observations survive deletion either way</td><td>180 days for connected, 90 for public, as a versioned parameter; revisit after the first cost report</td></tr>
+    <tr><td>D3</td><td>Full payloads or selected envelopes</td><td>Full sanitized response envelope per page; or a curated subset per endpoint family</td><td>Full envelope. The spec's acceptance test is "recompute without refetching", and a subset chosen today is exactly the "fields intentionally not collected" problem in reverse</td></tr>
+    <tr><td>D4</td><td>Story capture</td><td>Not in Step 1; every 6 hours; every 12 hours (a Story lives 24 h); and whether a Story gets a media_assets row (cover only) or observations only</td><td>Every 8 hours behind its own flag, observations only, in a Step 1b PR after the base lands</td></tr>
+    <tr><td>D5</td><td>Historical observations after OAuth disconnect or revoke</td><td>Keep everything, identity stays active with connected_account_id nulled; keep but mark the identity superseded; delete on athlete request only</td><td>Keep; identity status unchanged (the account is still hers); freshness alone makes old connected observations lose to newer public ones; deletion only through account deletion</td></tr>
+    <tr><td>D6</td><td>Initial feature windows</td><td>7/30/90; 30/90 only; 30/90/365</td><td>30 and 90 for everything, 7 additionally for cadence and follower growth</td></tr>
+    <tr><td>D7</td><td>Scrub existing raw_metrics rows and rotate the exposed Instagram token</td><td>Rewrite the 82 rows in place through the sanitizer; or leave display history untouched and only stop the bleeding</td><td>Rewrite and rotate. They are display rows; nothing reads the paging URLs</td></tr>
+    <tr><td>D8</td><td>Flag scope</td><td>One flag for the whole substrate; or per-platform flags</td><td>One flag; per-platform failures are isolated by sync run status</td></tr>
+  </table></div>
+
+  <h2 id="access">12 · Access model check (ADR-015, ADR-016)</h2>
+  <div class="measure"><p>Recorded after the design was written, against the two LOCKED decisions: a user is not an athlete, and affiliation does not imply access to private data. Nothing below changes Step 1 scope; it says where the proposal and the current code stand.</p></div>
+  <div class="tbl"><table>
+    <tr><th>Item</th><th>Status</th><th>Note</th></tr>
+    <tr><td>Domain owner of every new table</td><td><span class="pill ok">compliant</span></td><td>social_identities, sync runs, payloads, observations, distributions and features are owned by <code>athlete_id</code>, never by an auth user. No <code>organization_id</code> anywhere.</td></tr>
+    <tr><td>Consent linkage</td><td><span class="pill ok">compliant</span></td><td>Connected data is tied to the athlete's own <code>connected_accounts</code> row through <code>social_identities.connected_account_id</code> and <code>source_method</code>; that row is the consent record a future authorizer reads.</td></tr>
+    <tr><td>Private versus public separability</td><td><span class="pill ok">compliant</span></td><td><code>source_class</code> on every observation, distribution and feature distinguishes connected_verified (private, consented) from platform_public and web_researched (public). A feature's class is the lowest authority of its inputs, so a number derived from private data is never public by default.</td></tr>
+    <tr><td>media_assets reuse</td><td><span class="pill warn">flag</span></td><td>The table already mixes consented uploads (<code>origin = upload</code>, camera roll) with public-facing posts. Reuse does not worsen this, but <code>origin</code> becomes the access-relevant field for content and must be kept accurate; a Story row, if created, would be private content.</td></tr>
+    <tr><td>Current code: athletes doubles as the user table</td><td><span class="pill risk">flag</span></td><td><code>athletes.auth_id</code>, <code>account_roles → athletes.id</code>, and <code>requireAuth</code> setting <code>req.athleteId</code> all assume athlete = user. Step 1 does not touch this. Step 3 (identity confirmation) must link a user to an athlete rather than treating the signup row as the athlete; that is the first place ADR-015 changes a design.</td></tr>
+    <tr><td>Backfill of identities from connected_accounts</td><td><span class="pill ok">compliant</span></td><td>Identity rows are keyed by the platform account id, not by who logged in; a second user later acting for the same athlete needs no change here.</td></tr>
+  </table></div>
+
+  <h3>What the implementation PR would contain, once approved</h3>
+  <ul>
+    <li>0044 migration + schema.ts; metric registry + sanitizer + ingest + three adapters + projection functions + feature calculator + resolver; flag wiring in the four skills; two backfill scripts and the Mia command; fixtures and tests (sanitizer, projections byte-for-byte, adapters, calculator, precedence, boundary); build record at <code>docs/architecture/phase-a/step1-social-substrate.md</code>.</li>
+    <li>Likely two PRs: 1a the substrate and flag (no Stories), 1b Stories capture and the discovery pagination expansion (§26.2), so the base can be verified in shadow first.</li>
+  </ul>
+</div>

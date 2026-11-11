@@ -1,0 +1,62 @@
+{
+  "_note": "SYNTHETIC. Written from the spec's §4 example sentence (docs/specs/creative-architecture.md): 'I want an Adidas-style campaign showing me getting ready before a big game. Make it cinematic and premium.' A pasted brief shows no pixels, so every reading is basis 'inferred', and what a sentence cannot tell (lens, wardrobe) is null.",
+  "source": {
+    "kind": "brief",
+    "role": "style_reference",
+    "text": "An Adidas-style campaign showing me getting ready before a big game. Cinematic and premium."
+  },
+  "decomposition": {
+    "schema": "reference-decomposition/1",
+    "reference_intent": {
+      "composition": {
+        "summary": "Close, deliberate frames of preparation, with room around the subject for a premium feel.",
+        "tags": ["negative_space", "shallow_depth_of_field"],
+        "basis": "inferred"
+      },
+      "camera": {
+        "summary": "Close-ups and medium shots with slow, controlled movement.",
+        "tags": ["close_up", "medium", "push_in"],
+        "basis": "inferred"
+      },
+      "lens_perspective": null,
+      "lighting": {
+        "summary": "Low-key, directional light with a rim to separate her from a dark room.",
+        "tags": ["low_key", "rim_light"],
+        "basis": "inferred"
+      },
+      "color": {
+        "summary": "A restrained, premium palette: deep neutrals, little saturation.",
+        "tags": [],
+        "basis": "inferred"
+      },
+      "environment": {
+        "summary": "A locker room before a big game.",
+        "tags": ["locker_room"],
+        "basis": "inferred"
+      },
+      "subject_placement": {
+        "summary": "Her alone, the centre of every frame.",
+        "tags": [],
+        "basis": "inferred"
+      },
+      "wardrobe": null,
+      "motion": {
+        "summary": "Small preparation gestures, like lacing boots and a last breath.",
+        "tags": [],
+        "basis": "inferred"
+      },
+      "editing_rhythm": {
+        "summary": "Measured cuts that build toward the walk out.",
+        "tags": [],
+        "basis": "inferred"
+      },
+      "typography": null,
+      "emotional_tone": {
+        "summary": "Cinematic, premium, focused.",
+        "tags": [],
+        "basis": "inferred"
+      }
+    },
+    "commercial_style": ["sports_campaign", "cinematic", "luxury"]
+  }
+}

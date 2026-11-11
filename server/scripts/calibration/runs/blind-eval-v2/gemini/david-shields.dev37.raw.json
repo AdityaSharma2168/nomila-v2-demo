@@ -1,0 +1,199 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "david-shields",
+    "name": "David Shields",
+    "sport": "Baseball"
+  },
+  "conditions": "gemini-3.5-flash via Vertex; Google Search grounding; default thinking; temperature 1.0; text output with fenced JSON; spec v0.2 additions; social block none",
+  "startedAt": "2026-09-14T12:39:22.766Z",
+  "attempts": 1,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "responseId": "--qnaoXQF-nhsbwP3vOgyQw",
+  "latencyMs": 113132,
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+    "promptTokens": 3509,
+    "outputTokens": 6912,
+    "thoughtTokens": 13465,
+    "totalTokens": 23886,
+    "searchCalls": 14
+  },
+  "costUsd": 0.2236565,
+  "text": "```json\n{\n  \"athlete\": {\n    \"name\": \"David Shields\",\n    \"sport\": \"Baseball\",\n    \"identity_confidence\": \"HIGH\"\n  },\n\n  \"marketability_summary\": \"David Shields is a rapidly rising 19-year-old left-handed pitching prospect in the Kansas City Royals organization. Currently pitching for High-A Quad Cities, Shields has generated immense athletic momentum, entering the MLB Top 100 Prospects list (ranked No. 99) in July 2026 and holding the No. 4 ranking in the Royals system. His unique narrative is driven by an elite prep career at Mt. Lebanon High School (PA), where he was a star multi-sport quarterback and the Pennsylvania Gatorade Baseball Player of the Year. Shields demonstrated rare maturity by reclassifying to turn professional at age 17, signing an overslot $2.3 million bonus. In his 2025 pro debut, he won the Carolina league Pitcher of the Year award. While his athletic trajectory is highly promising, his commercial and social footprints remain in their infancy. He lacks any notable public endorsement partnerships or authoritative social media data, which is typical for teenage minor league prospects. Consequently, his current marketability is characterized by high developmental potential, exceptional brand safety (active Miracle League volunteer with a 3.3 GPA), and strong regional relevance in Pittsburgh and Kansas City, balanced by a lack of national crossover scale or verified commercial proof.\",\n\n  \"evidence\": [\n    {\n      \"id\": \"E1\",\n      \"claim\": \"David Shields was drafted 41st overall (2nd round) in the 2024 MLB Draft by the Kansas City Royals, signing for a $2.3 million bonus (slightly overslot from the $2.28 million slot value) and forgoing his college commitment to the University of Miami.\",\n      \"source_title\": \"Mt. Lebanon's David Shields goes 41st overall to the Kansas City Royals in the MLB Draft\",\n      \"source_url\": \"https://pabig56.com/lebanons-david-shields-goes-41st-overall-to-the-kansas-city-royals-in-the-mlb-draft/\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2024-07-15\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Shields signed slightly above the slot value of $2.28 million.\"\n    },\n    {\n      \"id\": \"E2\",\n      \"claim\": \"Shields was originally in the high school class of 2025 but reclassified to the class of 2024, graduating from Mt. Lebanon High School (Pittsburgh, PA) early to turn professional at age 17; he also starred as the starting quarterback on the varsity football team.\",\n      \"source_title\": \"David Shields Prospect Profile\",\n      \"source_url\": \"https://www.mlb.com/prospects/2026/royals/david-shields-815789\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-08-13\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Details about his reclassification, dual-sport high school career, and age on draft day.\"\n    },\n    {\n      \"id\": \"E3\",\n      \"claim\": \"Shields was named the 2023-24 Pennsylvania Gatorade Baseball Player of the Year after posting a 5-0 record and a 0.25 ERA while playing through mononucleosis. He also volunteered at the local Miracle League and maintained a 3.3 GPA.\",\n      \"source_title\": \"David Shields Pennsylvania Gatorade Player of the Year\",\n      \"source_url\": \"https://playeroftheyear.gatorade.com/winner/david-shields/40058\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2024-06-04\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Gatorade Player of the Year profile verifying his academic and volunteer records.\"\n    },\n    {\n      \"id\": \"E4\",\n      \"claim\": \"Shields won the 2025 Carolina League Pitcher of the Year and Royals' Paul Splittorff Pitcher of the Year awards after registering a 2.01 ERA, 1.02 WHIP, and 81 strikeouts over 71.2 innings for Low-A Columbia.\",\n      \"source_title\": \"Royals promising prospect cleans up in Carolina League awards after dominant 2025\",\n      \"source_url\": \"https://kingsofkauffman.com/posts/royals-promising-prospect-cleans-up-carolina-league-awards-dominant-2025\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2025-09-16\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Verifying first-year minor league awards and stats.\"\n    },\n    {\n      \"id\": \"E5\",\n      \"claim\": \"In July 2026, Shields was promoted to High-A Quad Cities and joined MLB's Top 100 Prospects list (No. 99 overall), ranking as the Royals' #4 prospect by Baseball America with solid 2026 season stats (11-6, 4.01 ERA, 139 strikeouts in 116.2 innings).\",\n      \"source_title\": \"LHP David Shields joins MLB's Top 100 Prospects list\",\n      \"source_url\": \"https://www.reddit.com/r/KCRoyals/comments/1e9m2v6/lhp_david_shields_has_joined_mlbs_top_100/\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-07-22\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Sourced from MLB Pipeline updates posted via Reddit and cross-referenced with Milb.com and Baseball America player profile pages in September 2026.\"\n    }\n  ],\n\n  \"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 68,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"David Shields currently competes in High-A professional baseball (Midwest League), which represents a highly competitive, full-season minor league environment.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"Shields followed up a dominant 2.01 ERA and Pitcher of the Year award in Low-A in 2025 with a solid 11-win season and 139 strikeouts in High-A in 2026.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E4\", \"E5\"],\n        \"rationale\": \"He is recognized as a Top 100 MLB prospect (No. 99) and the Royals' No. 4 prospect, in addition to holding a previous Gatorade State Player of the Year honor.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 50,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"Shields has participated in USA Baseball development events and high-profile amateur showcases, though he has not yet represented a senior national team.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 72,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"As a primary starting pitcher and a top-five organizational prospect, Shields is central to the future pitching plans of the Kansas City franchise.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Shields' promotion to High-A and his entry into the MLB Top 100 Prospects list both occurred recently in mid-2026.\"\n      }\n    },\n\n    \"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 28,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"As a minor league prospect who has not yet reached the Major Leagues, Shields' public audience is currently limited to die-hard baseball fans and local regional supporters.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 55,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"While small on an absolute scale, his audience is likely above average relative to standard High-A players due to his high prospect ranking and previous high-school acclaim.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"There is no reliable public longitudinal data available to track the growth rate of his social media following.\"\n      },\n      \"platform_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 35,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"Shields maintains a public Twitter/X profile under the handle @DavidShields643 but does not have a broad, highly-monetized multi-platform media operation.\"\n      }\n    },\n\n    \"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Public engagement metrics on his personal posts are not sufficiently documented in major public databases to establish a reliable percentile score.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Detailed public data mapping his post impressions against his follower base is unavailable.\"\n      },\n      \"shares_saves_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Saves and share rates require private platform analytics that are unavailable for this athlete.\"\n      },\n      \"video_retention\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Video retention and completion metrics require private platform analytics that are unavailable.\"\n      },\n      \"story_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Story performance and reach efficiency metrics require private platform analytics that are unavailable.\"\n      },\n      \"audience_authenticity\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Credible public audits or private demographics verifying the authenticity of his follower base are unavailable.\"\n      }\n    },\n\n    \"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 35,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"His media coverage is steady within niche prospect outlets and regional Pennsylvania/Missouri newspapers but is virtually absent from mainstream national pop culture.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"Shields receives coverage from highly prestigious sports-specific outlets such as MLB.com and Baseball America, alongside reputable regional outlets like the Pittsburgh Post-Gazette.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 30,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"Public search volume is highly episodic, spiking primarily during the 2024 MLB draft and his 2026 Top 100 prospect promotion, with a low baseline interest.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 32,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Social conversation around Shields is active but narrow, driven primarily by Kansas City Royals fan accounts, prospect analysts, and high school athletic networks.\"\n      },\n      \"crossover_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 28,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"His background as a star high school quarterback provides a minor hook, but he has very little recognition among the general public outside of baseball.\"\n      }\n    },\n\n    \"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"Shields' story of being a teenage multi-sport quarterback who reclassified to turn professional at just 17 years old is highly memorable and differentiated.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 74,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\", \"E4\"],\n        \"rationale\": \"His narrative contains rich thematic layers, including athletic versatility, overcoming a severe high school bout with mononucleosis, and rapidly proving himself as a professional Pitcher of the Year.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E4\"],\n        \"rationale\": \"Every facet of his athletic and personal narrative is thoroughly documented by official awards, scout reports, and journalistic profiles.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"Major baseball media outlets routinely highlight his advanced maturity and poise, consistently echoing and framing him around his fast-track prodigy narrative.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 58,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"His wholesome, high-achieving image (3.3 GPA, Miracle League volunteering) aligns perfectly with youth sports, local civic, or fitness brands, though its national utility is currently limited by his prospect status.\"\n      },\n      \"durability\": {\n        \"status\": \"scored\",\n        \"score\": 76,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"As a highly projectable 19-year-old on a clear path toward the major leagues, his narrative has substantial long-term durability and room to grow.\"\n      }\n    },\n\n    \"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 55,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"He could credibly represent athletic apparel, local automotive, regional retail, youth sports equipment, and academic/community initiatives.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"With a 3.3 GPA, an exemplary high school character record, and active community volunteer work at the Sean Casey Miracle League, Shields presents virtually zero brand risk.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 52,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"His current audience of baseball card collectors, Midwestern sports fans, and regional supporters holds moderate commercial value, though it lacks high-end luxury appeal.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E5\"],\n        \"rationale\": \"Shields' public persona is highly coherent, consistently projecting a mature, humble, hard-working, and community-minded athletic identity.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"scored\",\n        \"score\": 45,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"While physically versatile as a multi-sport athlete, his lack of structured public content limits his current ability to execute complex digital marketing campaigns.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 68,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"He possesses strong, dual-market regional relevance, serving as a hometown hero in the Pittsburgh metro area and a key future asset in the Kansas City market.\"\n      }\n    },\n\n    \"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"There is no public record of any paid commercial brand endorsements or sponsorship deals executed by Shields.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No repeat or historical commercial partnership data is available to assess his deal frequency.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"He does not currently have active partnerships with major commercial brands to evaluate partner quality.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Due to the absence of documented commercial campaigns, renewal rates cannot be assessed.\"\n      },\n      \"campaign_performance\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No performance data or ROAS metrics exist for non-existent commercial campaigns.\"\n      },\n      \"pricing_power\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"The athlete's ability to command premium endorsement fees remains unproven due to a lack of commercial market activity.\"\n      }\n    },\n\n    \"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"Shields' athletic trajectory is exceptionally steep, moving from a second-round draft pick to a minor league Pitcher of the Year in 2025, and a Top 100 MLB prospect in 2026.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No longitudinal social media follower tracking data is available to verify his audience growth trajectory.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"His media coverage has steadily expanded from localized Pennsylvania reporting to national prospect features on MLB.com as his professional standing has risen.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 60,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Public search and social interest are growing steadily in tandem with his rising prospect status, though they remain bound to baseball-specific cycles.\"\n      },\n      \"commercial_acceleration\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"There is no public evidence of accelerating commercial interest or newly signed brand deals in 2026.\"\n      }\n    }\n  },\n\n  \"dimension_assessments\": {\n    \"athletic_authority\": {\n      \"prose\": \"David Shields has established exceptional athletic authority for his age. A second-round draft pick in 2024, he quickly dominated Low-A in 2025 to win Carolina League Pitcher of the Year, and has continued his strong development in High-A in 2026. His recent entry into MLB's Top 100 Prospects list at just 19 years old solidifies his status as a premier young arm in professional baseball.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"His professional draft position, minor league accolades, 2026 season statistics, and top prospect rankings are fully documented by Major League Baseball and Baseball America.\"\n    },\n    \"audience_scale\": {\n      \"prose\": \"His audience scale is currently in a developmental stage, which is standard for minor league baseball prospects. Lacking major league service time or viral crossover fame, his reach is largely confined to dedicated prospect analysts, Kansas City Royals fans, and regional supporters. His platform breadth is basic, anchored by a minor personal Twitter/X presence without a highly coordinated commercial media strategy.\",\n      \"confidence\": \"MEDIUM\",\n      \"confidence_reason\": \"While exact cross-platform metrics are not publicly audited, his minor league status and lack of mainstream media fame provide clear, corroborated boundaries of his reach.\"\n    },\n    \"engagement_quality\": {\n      \"prose\": \"Engagement quality remains largely unmeasurable due to a total lack of authoritative platform analytics. While he generates moderate, passionate interactions among regional baseball fans on public social platforms, his private engagement metrics are completely unavailable. As a result, no definitive judgments can be made regarding high-value interactions, video completion rates, or story efficiency.\",\n      \"confidence\": \"LOW\",\n      \"confidence_reason\": \"No authoritative platform data or audited public engagement history is available to support a higher-confidence evaluation.\"\n    },\n    \"cultural_relevance\": {\n      \"prose\": \"Shields' cultural relevance is highly specialized, concentrated within the professional baseball community and his hometown markets. While he receives high-quality coverage from prestigious sports publications like MLB.com and Baseball America, his broader pop-culture footprint is minimal. His multi-sport background as a former star quarterback provides a compelling hook, but he does not yet command mainstream public curiosity.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"The limits and peaks of his search interest and media coverage are clearly visible and consistent across regional news and specialized sports outlets.\"\n    },\n    \"narrative_power\": {\n      \"prose\": \"Shields possesses immense narrative power, defined by an incredibly unique and compelling fast-track journey. His decisions to reclassify from high school, turn professional at just 17 years old, and play through a severe case of mononucleosis to lead his high school team showcase exceptional grit and dedication. Baseball media has strongly embraced this 'mature prodigy' persona, creating a highly authentic and durable storyline that is naturally primed for future commercial use.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"His personal history, high school challenges, and professional milestones are richly detailed and corroborated across multiple high-quality journalistic profiles.\"\n    },\n    \"brand_fit\": {\n      \"prose\": \"From a brand alignment perspective, Shields is an exceptional, highly secure partner. His squeaky-clean personal profile—including a strong high school academic record, community leadership, and volunteering at the Sean Casey Miracle League—makes him a zero-risk asset for major corporations. Although his current content versatility is underdeveloped, his strong values and dual-market relevance in Pittsburgh and Kansas City offer a highly attractive foundation for regional partnerships.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"His academic accomplishments, community volunteer work, and mature public persona are well-documented facts from high-school and professional sources.\"\n    },\n    \"commercial_proof\": {\n      \"prose\": \"There is currently no visible commercial proof for David Shields, as he has yet to enter the endorsement market. Although his $2.3 million signing bonus demonstrates immense athletic valuation, he does not yet possess active corporate sponsorships, repeating brand deals, or documented campaign performance. This lack of market activity is entirely typical for a teenage prospect working his way through the minor leagues.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"The total absence of documented commercial campaigns or brand partnerships in public records confirms he has not yet commercialized his brand.\"\n    },\n    \"momentum\": {\n      \"prose\": \"Shields' athletic momentum is extremely strong, characterized by a rapid ascent from high school to Low-A dominance and a 2026 promotion to High-A alongside a Top 100 ranking. His media trajectory is also climbing steadily as national outlets begin to focus on his future role in the Royals' rotation. However, this athletic surge has not yet translated into commercial or social media follower momentum, which remain on a more gradual developmental path.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"His career advancement milestones and the corresponding growth in specialized media attention are clearly verified by 2025 and 2026 professional records.\"\n    }\n  },\n\n  \"overall_confidence\": {\n    \"level\": \"HIGH\",\n    \"explanation\": \"The athlete's identity and career trajectory are highly verified across authoritative sports registries, Major League Baseball, and premium publications. While some private social analytics and commercial histories are missing, this is fully expected for a 19-year-old minor league player, and their absence does not undermine the validity of the overall marketability assessment.\"\n  },\n\n  \"key_strengths\": [\n    \"Elite athletic trajectory as a 19-year-old Top 100 MLB prospect (#99 overall) and the Kansas City Royals' No. 4 prospect.\",\n    \"Compelling multi-sport narrative as a former star high school quarterback who reclassified to turn professional at age 17.\",\n    \"Flawless brand-safety profile, supported by strong high school academic standing (3.3 GPA) and active local community service (Miracle League volunteer).\",\n    \"Exceptional early-career accolades, including 2025 Carolina League Pitcher of the Year and Royals' Paul Splittorff Pitcher of the Year.\",\n    \"Strong geographic relevance anchoring two high-value sports markets (hometown hero in Pittsburgh, future star in Kansas City).\"\n  ],\n\n  \"key_constraints\": [\n    \"Lack of major league service time, limiting his audience scale and national cultural relevance to specialized baseball circles.\",\n    \"Total absence of current commercial partnerships, leaving his pricing power and endorsement viability unproven.\",\n    \"Limited public social media footprint and content execution capabilities, restricting immediate digital brand integration.\",\n    \"Vulnerability of minor league pitching prospects to injury risks and long development timelines (ETA 2029) before reaching maximum commercial value.\"\n  ],\n\n  \"important_missing_data\": [\n    \"Authoritative cross-platform social media metrics (Instagram, YouTube, TikTok, X follower counts and growth rates).\",\n    \"Private engagement analytics, including video retention, story efficiency, and share/save rates.\",\n    \"Audience demographic breakdowns, preventing targeted brand-fit analysis.\"\n  ],\n\n  \"identity_or_evidence_risks\": [\n    \"No major risks identified. The athlete's identity, draft status, performance records, and personal background are highly verified and consistent across all reputable baseball databases and regional news sources.\"\n  ]\n}\n```",
+  "native": {
+    "groundingChunks": [
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFg3dYJJtXDPVIutj8wqj6lfmyVq0soR6I6Bz8UgkWsKG239115kz4QWU89ultCMF0ZJDj12o8D3thc2IeU4fSw98Z9lu8qnzl6EbGy6js4Npj7SsJC1dqptN9KJvcx9-E2tpesaH9QLDVxnWqwsOmPuLlx2YQTHlkTX43fU-05he6J",
+          "title": "baseball-reference.com",
+          "domain": "baseball-reference.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIKSnWn9hWyfB6ZD1ixmPpBKcbnRBsqUToR2o6bg4_yiWCAj-nCXhDhz8RHBMfO95xeuUvrYt-ihnjnx3hdJBqygCppUxmQP_RCobd-6aiyZLAidaCtpg8fdFETmYNqTRP1m8J3fsoBbsP-etgQSxlSJOyX0xaVOP6",
+          "title": "baseballamerica.com",
+          "domain": "baseballamerica.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERaLVVj0iKNnseYbw83ThSIUs1017g2TSvGkcZXBEGWNcMrhGOCUMMJAxnsgypRVT5Y9cotszj3KVpRO3AaAa0i34iM5fQYq6VqnVHCSNMl0HPLKmPH-zCvsrQI121L5TUZemWxVmIFA2_Y-dpXhKzPeo9Nwv-7erxZOVjGloJt0uYQw9R5TY_nQKVyQ0xk2L2Tdh-nGNzMw==",
+          "title": "reddit.com",
+          "domain": "reddit.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnBNNLS3QGGUxCoIOxgSWPSlZq4Alf13VcW0DgoUokORNE8h_HNG75eBi8xUk7p-Zjg3H3L85YDrJ-V-OW9_aeQdw6idFRBo0Su8HuIIuRxnA43mNYT12jxYUgnfYp6ovKrXOgyM8imBqBegm79TzFHfW0tHuZTh6kYLQPNZG41Flc9NnO8QAOxLGIlBF7bFgXtW5kOevNCcWo0WjDdDw8mJW8mPv37Au9icFV",
+          "title": "pabig56.com",
+          "domain": "pabig56.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_pI4KHBDhqxlSBsHKmGQ-LAKz0mCjjnACvFc8wOP3_AU2eA-FZCFGnMfP6CO5AiUxjZaX3BCombDgOHdxnvgQeZCS-wpWPbN46my4q-UtpQ-0ZRZ6I05LFEJTMmr0-MFCjgHsyPs44uBOE8EERPpfB5VQqdNZGRz_TqJZ_gj7Z5uBr1edsittRpAhQJAHuvVPZyobNDWjFHNHg-jX_F0gnDoO6nNnmeItxduZuyGZEw==",
+          "title": "triblive.com",
+          "domain": "triblive.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFcOzz7juKT-4YaBWXGLUnZsI3KrPlXzYW5no0u8qReACasJmwgJBrYmwDLCREqDLp5R06yXWrk8iH3bm6VRiAxHgjR2EcNKBv1-ZoE5I81io-NEc2BcPgJdZK0TIO63sMEIwq2862s8gbq_tl4nuPsTlxsFZzoBDBX8Z_Q",
+          "title": "mlb.com",
+          "domain": "mlb.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQzZR4X_rieo9r-Ecc7qf12nPNQ9MgI6cY1zlfxHe6ZrGnLr6oiYRxz2IwNCjaP8pzEk88z-bkB1rt4SRsJOMKjq_g_tA2lWyK0nHI6JMoNEze1ridVeZN3OUo_vaKgXSmChsxXETmV2znSjjhukg8PmjpddUNP-AGI7wlt1czf-9TQh8MB30QZgnRXyeLOPteCAVYPZyUJwWa1IrwihxY1W5V2ZgIhmmst8zxv50oZOrFesD7",
+          "title": "kingsofkauffman.com",
+          "domain": "kingsofkauffman.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLwCiEFJo3jK8PAjoXhvdvnohgqiTcK_906Ra88Q4f0nQPd0irJ-xgyljYI25M3QXEYWL729A6eDMK8c9pvM42_yH5vfB8C75TAm6oN5oP85zLqrym66wo2hrldo-QqtAZwt26TnAfUZefhRfp75m0fYbbQix3ybIsUYQeuUk=",
+          "title": "mlb.com",
+          "domain": "mlb.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWiuzwTUSg3GC1jzDznmjUAxpxUNkAsOLzH2De01sx4PNTV_9aAkcV4XQy_V8uAxJbOjCUkoZ8sQkR92K8z1iXj2JQfOrZlbrpqB0Pl8V84FKbQwmgP-_92orEH9bNZkj8kAs1iKODxWVGKUYdTIDww4dxIKV5V-VF",
+          "title": "gatorade.com",
+          "domain": "gatorade.com"
+        }
+      }
+    ],
+    "groundingSupports": [
+      {
+        "segment": {
+          "startIndex": 121,
+          "endIndex": 261,
+          "text": "\"marketability_summary\": \"David Shields is a rapidly rising 19-year-old left-handed pitching prospect in the Kansas City Royals organization"
+        },
+        "groundingChunkIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 444,
+          "endIndex": 474,
+          "text": "4 ranking in the Royals system"
+        },
+        "groundingChunkIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 538,
+          "endIndex": 665,
+          "text": "Lebanon High School (PA), where he was a star multi-sport quarterback and the Pennsylvania Gatorade Baseball Player of the Year"
+        },
+        "groundingChunkIndices": [
+          3,
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 667,
+          "endIndex": 789,
+          "text": "Shields demonstrated rare maturity by reclassifying to turn professional at age 17, signing an overslot $2.3 million bonus"
+        },
+        "groundingChunkIndices": [
+          1,
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 791,
+          "endIndex": 866,
+          "text": "In his 2025 pro debut, he won the Carolina league Pitcher of the Year award"
+        },
+        "groundingChunkIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 868,
+          "endIndex": 979,
+          "text": "While his athletic trajectory is highly promising, his commercial and social footprints remain in their infancy"
+        },
+        "groundingChunkIndices": [
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1123,
+          "endIndex": 1424,
+          "text": "Consequently, his current marketability is characterized by high developmental potential, exceptional brand safety (active Miracle League volunteer with a 3.3 GPA), and strong regional relevance in Pittsburgh and Kansas City, balanced by a lack of national crossover scale or verified commercial proof"
+        },
+        "groundingChunkIndices": [
+          8
+        ]
+      }
+    ],
+    "webSearchQueries": [
+      "David Shields baseball",
+      "David Shields baseball prospect",
+      "David Shields baseball draft",
+      "\"David Shields\" baseball stats 2026 OR 2025",
+      "\"David Shields\" Quad Cities stats",
+      "\"David Shields\" instagram baseball @DavidShields643",
+      "David Shields baseball twitter @DavidShields643",
+      "\"DavidShields643\" twitter OR instagram",
+      "David Shields baseball instagram",
+      " \"david_shields\" OR \"davidshields\" baseball",
+      "\"DavidShields643\" followers OR \"followers\"",
+      "\"David Shields\" baseball signing bonus contract",
+      "\"David Shields\" Gatorade Player of the Year",
+      "\"David Shields\" 2.3 million contract details"
+    ],
+    "config": {
+      "tools": [
+        {
+          "googleSearch": {}
+        }
+      ],
+      "temperature": 1,
+      "maxOutputTokens": 65536,
+      "thinking": "default"
+    }
+  },
+  "error": null,
+  "promptSocialBlock": null
+}

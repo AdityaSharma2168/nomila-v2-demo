@@ -1,0 +1,770 @@
+{
+ "state": {
+  "athleteId": "7bf15705-da50-4cf1-8034-0de604d5393a",
+  "asOf": "2026-09-22T01:47:42.109Z",
+  "version": "athlete-state/1.0.0",
+  "identity": {
+   "name": "Riya Mehta",
+   "sport": "gymnastics",
+   "competitionContext": null,
+   "careerStatus": "active"
+  },
+  "findings": [
+   {
+    "key": "mia.athletic_authority",
+    "direction": "gap",
+    "basis": {
+     "value": 21.5,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#athletic_authority.role_importance",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#athletic_authority.competition_level",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#athletic_authority.achievement_recency",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#athletic_authority.performance_results",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#athletic_authority.rankings_recognition",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#athletic_authority.national_international_status"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#athletic_authority.role_importance",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#athletic_authority.competition_level",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#athletic_authority.achievement_recency",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#athletic_authority.performance_results",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#athletic_authority.rankings_recognition",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#athletic_authority.national_international_status",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.audience_scale",
+    "direction": "gap",
+    "basis": {
+     "value": 11.75,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#audience_scale.audience_growth",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#audience_scale.platform_breadth",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#audience_scale.cross_platform_effective_reach",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#audience_scale.sport_level_audience_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 1,
+     "total": 4
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#audience_scale.audience_growth",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#audience_scale.platform_breadth",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.engagement_quality",
+    "direction": "unknown",
+    "basis": {
+     "value": 50,
+     "owner": "marketability",
+     "confidence": "LOW",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#engagement_quality.video_retention",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#engagement_quality.reach_efficiency",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#engagement_quality.story_efficiency",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#engagement_quality.shares_saves_quality",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#engagement_quality.audience_authenticity",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#engagement_quality.engagement_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 6,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#engagement_quality.video_retention",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#engagement_quality.reach_efficiency",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#engagement_quality.story_efficiency",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#engagement_quality.shares_saves_quality",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#engagement_quality.audience_authenticity",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#engagement_quality.engagement_percentile",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.cultural_relevance",
+    "direction": "gap",
+    "basis": {
+     "value": 3.25,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#cultural_relevance.search_interest",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#cultural_relevance.social_conversation",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#cultural_relevance.media_source_quality",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#cultural_relevance.crossover_recognition",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#cultural_relevance.media_volume_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#cultural_relevance.search_interest",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#cultural_relevance.social_conversation",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#cultural_relevance.media_source_quality",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#cultural_relevance.crossover_recognition",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#cultural_relevance.media_volume_percentile",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.narrative_power",
+    "direction": "gap",
+    "basis": {
+     "value": 7.5,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#narrative_power.durability",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#narrative_power.story_depth",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#narrative_power.distinctiveness",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#narrative_power.media_resonance",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#narrative_power.evidence_authenticity",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#narrative_power.commercial_applicability"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#narrative_power.durability",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#narrative_power.story_depth",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#narrative_power.distinctiveness",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#narrative_power.media_resonance",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#narrative_power.evidence_authenticity",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#narrative_power.commercial_applicability",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.brand_fit",
+    "direction": "gap",
+    "basis": {
+     "value": 30.5,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#brand_fit.brand_safety",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#brand_fit.category_breadth",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#brand_fit.content_versatility",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#brand_fit.geographic_relevance",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#brand_fit.audience_attractiveness",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#brand_fit.identity_values_coherence"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#brand_fit.brand_safety",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#brand_fit.category_breadth",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#brand_fit.content_versatility",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#brand_fit.geographic_relevance",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#brand_fit.audience_attractiveness",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#brand_fit.identity_values_coherence",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.commercial_proof",
+    "direction": "gap",
+    "basis": {
+     "value": 10,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#commercial_proof.brand_quality",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#commercial_proof.pricing_power",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#commercial_proof.deal_frequency",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#commercial_proof.renewals_repeat",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#commercial_proof.campaign_performance",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#commercial_proof.verified_commercial_value"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 2,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#commercial_proof.brand_quality",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#commercial_proof.pricing_power",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#commercial_proof.deal_frequency",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#commercial_proof.renewals_repeat",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#commercial_proof.campaign_performance",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#commercial_proof.verified_commercial_value",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.momentum",
+    "direction": "gap",
+    "basis": {
+     "value": 31.25,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#momentum.audience_growth",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#momentum.media_trajectory",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#momentum.athletic_trajectory",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#momentum.commercial_acceleration",
+      "63d8c081-3347-45f0-8b79-cee518e3d1a1#momentum.search_social_trajectory"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 1,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#momentum.audience_growth",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#momentum.media_trajectory",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#momentum.athletic_trajectory",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#momentum.commercial_acceleration",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "63d8c081-3347-45f0-8b79-cee518e3d1a1#momentum.search_social_trajectory",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     }
+    ]
+   }
+  ],
+  "facts": [
+   {
+    "ref": "f1",
+    "factKey": "achievement",
+    "label": "Achievement",
+    "text": "4th place all around 38 0500",
+    "origin": "research",
+    "sourceClass": "web_researched",
+    "authorityTier": 8,
+    "confidence": "MEDIUM",
+    "evidence": {
+     "source": "fact",
+     "locator": "29da1c4a-3d56-4a9d-9692-87ade2c4efa7",
+     "asOf": "2026-09-13T22:41:10.005Z"
+    }
+   },
+   {
+    "ref": "f2",
+    "factKey": "name",
+    "label": "Name",
+    "text": "riya mehta",
+    "origin": "backfill",
+    "sourceClass": "web_researched",
+    "authorityTier": 8,
+    "confidence": "MEDIUM",
+    "evidence": {
+     "source": "fact",
+     "locator": "ffc9c139-208c-42d9-b093-136d067a6431",
+     "asOf": "2026-09-13T22:41:10.005Z"
+    }
+   },
+   {
+    "ref": "f3",
+    "factKey": "nationality",
+    "label": "Nationality",
+    "text": "united states",
+    "origin": "backfill",
+    "sourceClass": "web_researched",
+    "authorityTier": 8,
+    "confidence": "MEDIUM",
+    "evidence": {
+     "source": "fact",
+     "locator": "9fad1e48-98e9-41f2-810b-d1a2df0eab82",
+     "asOf": "2026-09-13T22:41:10.005Z"
+    }
+   },
+   {
+    "ref": "f4",
+    "factKey": "sport",
+    "label": "Sport",
+    "text": "gymnastics",
+    "origin": "backfill",
+    "sourceClass": "web_researched",
+    "authorityTier": 8,
+    "confidence": "MEDIUM",
+    "evidence": {
+     "source": "fact",
+     "locator": "32445949-6d50-4efb-8e24-0564104cd575",
+     "asOf": "2026-09-13T22:41:10.005Z"
+    }
+   }
+  ],
+  "audienceTrajectory": {
+   "value": null,
+   "owner": "athlete_intelligence",
+   "asOf": "2026-09-22T01:47:42.109Z",
+   "evidenceClass": "MISSING",
+   "reason": "no growth measurement on any platform"
+  },
+  "commercialPosition": {
+   "closedDeals": {
+    "value": 0,
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-22T01:47:42.109Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "count_deals_at_earned_status"
+   },
+   "activeRelationships": {
+    "value": [],
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-22T01:47:42.109Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "distinct_brand_at_earned_status"
+   },
+   "demonstratedEconomics": {
+    "value": null,
+    "owner": "athlete_state",
+    "asOf": "2026-09-22T01:47:42.109Z",
+    "evidenceClass": "MISSING",
+    "reason": "no closed deal carries an amount"
+   },
+   "pricingEvidence": "none"
+  },
+  "constraints": [],
+  "preferences": [],
+  "materialGaps": [
+   "Social media performance data (all platforms unavailable).",
+   "Audience demographics and location analytics.",
+   "History of any commercial or local sponsor engagement."
+  ],
+  "overallConfidence": "LOW",
+  "sources": [
+   {
+    "owner": "marketability",
+    "present": true,
+    "asOf": "2026-09-13T22:50:50.992Z"
+   },
+   {
+    "owner": "athlete_intelligence",
+    "present": false,
+    "asOf": null
+   },
+   {
+    "owner": "athlete_state",
+    "present": true,
+    "asOf": "2026-09-22T01:47:42.109Z"
+   }
+  ]
+ },
+ "record": {
+  "evaluatorSpec": "opportunity-eval-spec/1.0.0",
+  "canonicalSha256": "6bcf91ab36b5fb7d970f8e2eac304fc82b9d7427b2ce00d35a54e21de3ae3c2d",
+  "manifest": {
+   "evaluatorSpec": "opportunity-eval-spec/1.0.0",
+   "promptDigest": "6bcf91ab36b5fb7d970f8e2eac304fc82b9d7427b2ce00d35a54e21de3ae3c2d"
+  },
+  "promptSha256": "780d4cfc5fd6204996cf2834887c6872042a39ed64c32ecedfb398de704dd767",
+  "athlete": {
+   "id": "7bf15705-da50-4cf1-8034-0de604d5393a",
+   "name": "Riya Mehta"
+  },
+  "stateAsOf": "2026-09-22T01:47:42.109Z",
+  "stateBlock": "Nomila's account of this athlete as of 2026-09-22T01:47:42.109Z (athlete-state/1.0.0).\nOverall confidence in this picture: LOW.\n\nCite any line below by the path shown at its left.\n\nIDENTITY\n    identity.name                             Riya Mehta\n    identity.sport                            gymnastics\n    identity.competitionContext               not recorded\n    identity.careerStatus                     active\n\nFINDINGS — marketability dimensions, each judged by M.I.A. and read here unchanged.\n  STRENGTH  measured, above the band\n  GAP       measured, below the band\n  NEUTRAL   MEASURED and unremarkable. We know; it is simply ordinary. This is NOT missing evidence.\n  UNKNOWN   evidence is genuinely insufficient — no score, or mostly imputed signals. A statement about\n            what Nomila has measured, never about the athlete.\n    findings[mia.athletic_authority]          GAP       score 21.5    HIGH    0/6 signals imputed\n    findings[mia.audience_scale]              GAP       score 11.75   HIGH    1/4 signals imputed\n    findings[mia.engagement_quality]          UNKNOWN   score 50      LOW     6/6 signals imputed\n    findings[mia.cultural_relevance]          GAP       score 3.25    HIGH    0/5 signals imputed\n    findings[mia.narrative_power]             GAP       score 7.5     HIGH    0/6 signals imputed\n    findings[mia.brand_fit]                   GAP       score 30.5    HIGH    0/6 signals imputed\n    findings[mia.commercial_proof]            GAP       score 10      HIGH    2/6 signals imputed\n    findings[mia.momentum]                    GAP       score 31.25   HIGH    1/5 signals imputed\n\nCANONICAL FACTS — evidence Nomila holds about this athlete, each cited by the ref at its left.\n  A FACT IS NOT AN INTERPRETATION. An endorsement establishes that a relationship exists. It does not\n  establish that the brand is premium, that the achievement is culturally significant, or that anything\n  here is underused. Those are judgments, and they need their own evidence.\n    facts[f1]                                 Achievement                4th place all around 38 0500   [research/web_researched · MEDIUM]\n    facts[f2]                                 Name                       riya mehta   [backfill/web_researched · MEDIUM]\n    facts[f3]                                 Nationality                united states   [backfill/web_researched · MEDIUM]\n    facts[f4]                                 Sport                      gymnastics   [backfill/web_researched · MEDIUM]\n\nAUDIENCE TRAJECTORY — follower growth only. It says nothing about athletic or commercial direction.\n    audienceTrajectory                        not known (no growth measurement on any platform)\n\nCOMMERCIAL POSITION — what the market has actually paid. Counted, never estimated.\n    commercialPosition.closedDeals            0  [measured · HIGH confidence]\n    commercialPosition.activeRelationships    []  [measured · HIGH confidence]\n    commercialPosition.demonstratedEconomics  not known (no closed deal carries an amount)\n    commercialPosition.pricingEvidence        none\n\nCONSTRAINTS — only what has been explicitly recorded as a bound on what the athlete can do.\n  An empty list means Nomila has recorded none. It does NOT mean none exist.\n    (none recorded)\n\nWHAT THE ATHLETE HAS SAID — their own words. A refusal bears on an opportunity; an ambition can generate one.\n  Never infer a preference or an ambition that is not listed here.\n    (the athlete has stated nothing)\n\nWHAT NOMILA CANNOT SEE — the gaps that would most change this picture.\n    materialGaps[0]                           Social media performance data (all platforms unavailable).\n    materialGaps[1]                           Audience demographics and location analytics.\n    materialGaps[2]                           History of any commercial or local sponsor engagement.\n\nSOURCES CONSULTED\n    marketability            present · as of 2026-09-13T22:50:50.992Z\n    athlete_intelligence     ABSENT\n    athlete_state            present · as of 2026-09-22T01:47:42.109Z",
+  "startedAt": "2026-09-22T01:47:42.470Z",
+  "latencyMs": 23598,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+   "promptTokens": 3013,
+   "outputTokens": 938,
+   "thoughtTokens": 3266
+  },
+  "costUsd": 0.011413900000000001,
+  "rawText": "{\n  \"opportunities\": [\n    {\n      \"key\": \"unlock-social-and-demographic-data\",\n      \"kind\": \"UNLOCK\",\n      \"domain\": \"evidence\",\n      \"statement\": \"Connect Riya's social media accounts to unlock her primary audience performance, demographic, and engagement analytics.\",\n      \"rationale\": \"Nomila's profile of Riya currently has low overall confidence due to completely missing social media performance, demographic, and engagement data. Because she is an active athlete, this valuable analytical asset already exists on her platforms but is completely unused by Nomila. Connecting these platforms will instantly resolve our most critical blind spots and replace low-confidence imputed scores with a verified baseline.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"materialGaps[0]\",\n          \"how\": \"Identifies that social media performance data is completely unavailable across all platforms.\"\n        },\n        {\n          \"state_path\": \"materialGaps[1]\",\n          \"how\": \"Identifies that audience demographics and location analytics are currently a major missing component of her profile.\"\n        },\n        {\n          \"state_path\": \"findings[mia.engagement_quality]\",\n          \"how\": \"Shows that our current measurement of her engagement quality is classified as UNKNOWN with low confidence because 100% of the signals are currently imputed.\"\n        },\n        {\n          \"state_path\": \"identity.careerStatus\",\n          \"how\": \"Confirms she is an active competitor, meaning her social platforms are likely generating real-time performance and audience data that can be immediately captured.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"high\",\n        \"claim\": \"It resolves the core blind spots in her profile, transforming her key audience scale and engagement quality metrics from highly speculative imputations into verified, strategic baseline data.\"\n      },\n      \"feasibility\": {\n        \"level\": \"high\",\n        \"claim\": \"Requires minimal effort from the athlete, needing only an administrative authorization to link her existing social accounts to Nomila.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    }\n  ],\n  \"notes\": [\n    {\n      \"domain\": \"audience\",\n      \"explanation\": \"No audience opportunities can be identified because all social media performance data is unavailable and the audience trajectory is completely unknown.\"\n    },\n    {\n      \"domain\": \"content\",\n      \"explanation\": \"No content opportunities can be identified because we lack any baseline data regarding what platforms she uses, her current output, or how her posts perform.\"\n    },\n    {\n      \"domain\": \"positioning\",\n      \"explanation\": \"No positioning opportunities are supported because her narrative power and cultural relevance are GAPs, and she has stated no personal preferences or ambitions to shape a distinct brand identity.\"\n    },\n    {\n      \"domain\": \"athletic\",\n      \"explanation\": \"While her 4th-place all-around achievement is noted, her competitive context is unrecorded and athletic authority is a GAP, making any athletic positioning or performance opportunities purely speculative.\"\n    },\n    {\n      \"domain\": \"commercial\",\n      \"explanation\": \"Commercial opportunities are premature because Riya has zero closed deals, zero active relationships, and no pricing evidence, meaning we must verify her audience scale and engagement quality before pursuing partnerships.\"\n    },\n    {\n      \"domain\": \"relationships\",\n      \"explanation\": \"No strategic relationship openings can be identified as we currently have no record of any past sponsor engagement, local networks, or institutional connections.\"\n    },\n    {\n      \"domain\": \"owned_venture\",\n      \"explanation\": \"No owned venture opportunities exist because there are no recorded business assets and Riya has not expressed any interest in building her own company.\"\n    },\n    {\n      \"domain\": \"impact\",\n      \"explanation\": \"No impact or philanthropic opportunities are supported because the athlete has not stated any personal interest in causes, community work, or charity.\"\n    },\n    {\n      \"domain\": \"career\",\n      \"explanation\": \"No career-transition or post-playing opportunities are identifiable because she is currently active and has expressed no preferences regarding broadcasting, coaching, or post-athletic business.\"\n    }\n  ]\n}",
+  "parsed": {
+   "opportunities": [
+    {
+     "key": "unlock-social-and-demographic-data",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": "Connect Riya's social media accounts to unlock her primary audience performance, demographic, and engagement analytics.",
+     "rationale": "Nomila's profile of Riya currently has low overall confidence due to completely missing social media performance, demographic, and engagement data. Because she is an active athlete, this valuable analytical asset already exists on her platforms but is completely unused by Nomila. Connecting these platforms will instantly resolve our most critical blind spots and replace low-confidence imputed scores with a verified baseline.",
+     "rests_on": [
+      {
+       "state_path": "materialGaps[0]",
+       "how": "Identifies that social media performance data is completely unavailable across all platforms."
+      },
+      {
+       "state_path": "materialGaps[1]",
+       "how": "Identifies that audience demographics and location analytics are currently a major missing component of her profile."
+      },
+      {
+       "state_path": "findings[mia.engagement_quality]",
+       "how": "Shows that our current measurement of her engagement quality is classified as UNKNOWN with low confidence because 100% of the signals are currently imputed."
+      },
+      {
+       "state_path": "identity.careerStatus",
+       "how": "Confirms she is an active competitor, meaning her social platforms are likely generating real-time performance and audience data that can be immediately captured."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "It resolves the core blind spots in her profile, transforming her key audience scale and engagement quality metrics from highly speculative imputations into verified, strategic baseline data."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Requires minimal effort from the athlete, needing only an administrative authorization to link her existing social accounts to Nomila."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [
+    {
+     "domain": "audience",
+     "explanation": "No audience opportunities can be identified because all social media performance data is unavailable and the audience trajectory is completely unknown."
+    },
+    {
+     "domain": "content",
+     "explanation": "No content opportunities can be identified because we lack any baseline data regarding what platforms she uses, her current output, or how her posts perform."
+    },
+    {
+     "domain": "positioning",
+     "explanation": "No positioning opportunities are supported because her narrative power and cultural relevance are GAPs, and she has stated no personal preferences or ambitions to shape a distinct brand identity."
+    },
+    {
+     "domain": "athletic",
+     "explanation": "While her 4th-place all-around achievement is noted, her competitive context is unrecorded and athletic authority is a GAP, making any athletic positioning or performance opportunities purely speculative."
+    },
+    {
+     "domain": "commercial",
+     "explanation": "Commercial opportunities are premature because Riya has zero closed deals, zero active relationships, and no pricing evidence, meaning we must verify her audience scale and engagement quality before pursuing partnerships."
+    },
+    {
+     "domain": "relationships",
+     "explanation": "No strategic relationship openings can be identified as we currently have no record of any past sponsor engagement, local networks, or institutional connections."
+    },
+    {
+     "domain": "owned_venture",
+     "explanation": "No owned venture opportunities exist because there are no recorded business assets and Riya has not expressed any interest in building her own company."
+    },
+    {
+     "domain": "impact",
+     "explanation": "No impact or philanthropic opportunities are supported because the athlete has not stated any personal interest in causes, community work, or charity."
+    },
+    {
+     "domain": "career",
+     "explanation": "No career-transition or post-playing opportunities are identifiable because she is currently active and has expressed no preferences regarding broadcasting, coaching, or post-athletic business."
+    }
+   ]
+  },
+  "structuralProblems": [],
+  "groundingProblems": [],
+  "citations": [
+   {
+    "index": 0,
+    "key": "unlock-social-and-demographic-data",
+    "statePath": "materialGaps[0]",
+    "resolved": true
+   },
+   {
+    "index": 0,
+    "key": "unlock-social-and-demographic-data",
+    "statePath": "materialGaps[1]",
+    "resolved": true
+   },
+   {
+    "index": 0,
+    "key": "unlock-social-and-demographic-data",
+    "statePath": "findings[mia.engagement_quality]",
+    "resolved": true
+   },
+   {
+    "index": 0,
+    "key": "unlock-social-and-demographic-data",
+    "statePath": "identity.careerStatus",
+    "resolved": true
+   }
+  ],
+  "map": {
+   "athleteId": "7bf15705-da50-4cf1-8034-0de604d5393a",
+   "asOf": "2026-09-22T01:48:06.067Z",
+   "version": "opportunity-map/1.0.0",
+   "specVersion": "opportunity-eval-spec/1.0.0",
+   "stateAsOf": "2026-09-22T01:47:42.109Z",
+   "opportunities": [
+    {
+     "key": "unlock-social-and-demographic-data",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": {
+      "value": "Connect Riya's social media accounts to unlock her primary audience performance, demographic, and engagement analytics.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-22T01:47:42.109Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "materialGaps[0]",
+       "materialGaps[1]",
+       "findings[mia.engagement_quality]",
+       "identity.careerStatus"
+      ],
+      "rationale": "Nomila's profile of Riya currently has low overall confidence due to completely missing social media performance, demographic, and engagement data. Because she is an active athlete, this valuable analytical asset already exists on her platforms but is completely unused by Nomila. Connecting these platforms will instantly resolve our most critical blind spots and replace low-confidence imputed scores with a verified baseline.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "materialGaps[0]",
+       "how": "Identifies that social media performance data is completely unavailable across all platforms."
+      },
+      {
+       "statePath": "materialGaps[1]",
+       "how": "Identifies that audience demographics and location analytics are currently a major missing component of her profile."
+      },
+      {
+       "statePath": "findings[mia.engagement_quality]",
+       "how": "Shows that our current measurement of her engagement quality is classified as UNKNOWN with low confidence because 100% of the signals are currently imputed."
+      },
+      {
+       "statePath": "identity.careerStatus",
+       "how": "Confirms she is an active competitor, meaning her social platforms are likely generating real-time performance and audience data that can be immediately captured."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "It resolves the core blind spots in her profile, transforming her key audience scale and engagement quality metrics from highly speculative imputations into verified, strategic baseline data."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Requires minimal effort from the athlete, needing only an administrative authorization to link her existing social accounts to Nomila."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [],
+   "inputs": [
+    {
+     "kind": "athlete_state",
+     "version": "athlete-state/1.0.0",
+     "present": true
+    },
+    {
+     "kind": "strategy_intelligence",
+     "version": null,
+     "present": false
+    },
+    {
+     "kind": "targeted_research",
+     "version": null,
+     "present": false
+    }
+   ],
+   "overallConfidence": "LOW"
+  }
+ }
+}

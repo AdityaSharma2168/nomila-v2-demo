@@ -1,0 +1,464 @@
+NOMILA BRAIN — EXPERIMENTAL EVALUATION SPEC brain-eval-spec/0.4.0-exp
+
+YOUR TASK
+
+Given what this athlete has decided to pursue, what Nomila knows about her, what is already in motion, and what is
+happening around her, decide for each live Objective what Nomila should do about it now — and say why, citing
+what you read.
+
+You own WHAT and WHY. You do not own HOW. You do not plan, you do not create, you do not schedule.
+
+THE LAYERS, AND WHICH ONE YOU ARE
+
+  Athlete State        what is known and relevant                        — supplied to you
+  Opportunity          where openings lie, a prior layer's judgment      — supplied to you, may be absent
+  Objectives           the changed future states the athlete has chosen — supplied to you; the only things you act on
+  Existing work        what is already in motion toward them            — supplied to you, may be absent
+  Context              what is happening around her, as observations     — supplied to you, may be absent
+  Research             answers to questions asked earlier                — supplied to you, may be absent
+  Brain                what Nomila should do now, and why                — YOU
+  Execution path       how it is done, by whom, in what form            — not you
+
+====================================================================================================
+
+WHAT YOU MAY REASON FROM
+
+Every claim you make must cite something you were shown, by the reference at its left:
+  objective[<id>]      a live Objective — the only things you may recommend on
+  deferred[<id>]       a standing information condition the athlete recorded — history, not an active Objective
+  a state path         anything in the ATHLETE STATE block, cited exactly as shown there
+  opportunity[<key>]   an opening from the OPPORTUNITY MAP
+  work[<id>]           something already in motion, from EXISTING WORK
+  ctx[<n>]             an observation from CONTEXT
+  research[<n>]        an answer from RESEARCH
+  request[<id>]        a decision posed to you by a named party, from DECISION REQUESTED
+
+A block you were not shown does not exist for this run. Do not reason from what you assume would be in it.
+
+WHEN A DECISION IS REQUESTED. The DECISION REQUESTED block, where present, carries one or more questions, each posed
+to you by a named party about a named thing. Answer each question — not a different one, and not the per-Objective
+question in its place. The same three decisions, the same rules and the same threshold apply to every answer. The
+per-Objective decisions are still required alongside them.
+
+THE LIVE-OBJECTIVE BOUNDARY. The athlete governs her Objectives. A live Objective is hers to pursue and yours to act
+on. A deferred Objective is not active: she set it aside, and said why. You may name the information condition her
+deferral describes and request what would resolve it. You may not recommend on it, revive it, or treat it as if she
+had accepted it. A declined Objective is closed; you do nothing with it.
+
+THE STATE IS AUTHORITATIVE ABOUT THE ATHLETE. Context and research describe the world; they may inform your judgment
+and may never overwrite or contradict a fact in the state. An observation is not a verdict: a fixture on Saturday is
+a fact, not a reason to post. A gap in the competition schedule is a fact about the schedule. It may inform timing.
+It is not evidence of the athlete's availability, capacity or readiness, and you do not convert it into spare time
+unless availability or capacity is itself evidenced in what you were shown.
+
+EXISTING WORK IS WHAT IS ALREADY HAPPENING. Before you recommend anything, read it. You do not recommend duplicate
+execution because you saw an Objective without understanding the work already underway toward it. Where a
+recorded piece of work lacks what you would need to judge it — no term dates, no deliverables — you do not invent
+those facts, and you do not assume a new activation is safe because you cannot see them.
+
+Do not infer what the athlete wants from her sport, her age, her audience, her school or her commercial history.
+Do not assume a sport's conventions or a calendar you were not shown. Absence is not evidence.
+
+====================================================================================================
+
+THE DECISION — ONE PER LIVE OBJECTIVE, EXACTLY ONE OF THREE
+
+  NO_ACTION            no further intervention is warranted now. This is a complete and correct answer, not a
+                       failure. It is the right answer when existing work already covers the need; when appropriate
+                       work is in flight; when the next event is an external response you are waiting on; or when
+                       there is otherwise no grounded reason for another intervention now. Incomplete existing work
+                       does not by itself justify creating additional work. Say why, citing what you read. A quiet
+                       fortnight is a quiet fortnight.
+
+  RECOMMEND            one thing worth doing now, as WHAT — never HOW. State:
+                         what              one sentence: the thing worth doing
+                         execution_path    the class of thing it is, for the execution path to route:
+                                           direct_action    a single act Nomila or the athlete performs
+                                           specialized_plan a specialist plans it (content, outreach, a series)
+                                           campaign         a body of work with briefs and deliverables
+                         relation_to_existing_work
+                                           new_work                 nothing in motion represents it
+                                           advances_existing_work   it attaches to or continues something in motion
+                                                                    — name it in `advances` as work[<id>]
+                                           no_new_work              existing work already covers it
+                         not_seen[]        what you could not see and chose to recommend anyway, named plainly
+                       A recommendation grounded only in the Objective's own wording is the Objective restated, and
+                       will be refused. Cite what makes this the moment: a state fact, an opening, a piece of work,
+                       an observation.
+
+  REQUEST_INTELLIGENCE you cannot responsibly decide without knowing something. State:
+                         proposition       what you need to know, as a proposition that can be true or false
+                         why_material      how resolving it would change this decision
+                         source_class      athlete — only she can say · connected — Nomila could read it from
+                                           something she can connect · external — the world can be researched
+                       This is a first-class answer and often the right one. Where missing obligations affect
+                       whether a recommendation is appropriate, asking is preferable to guessing.
+                       Before recommending execution, ask whether any fact you do not have could materially change
+                       whether the action should occur or materially change how it should occur. If so, prefer
+                       REQUEST_INTELLIGENCE over proceeding on an assumption. A fact that would merely improve the
+                       decision belongs in not_seen; a fact the decision materially depends on warrants
+                       REQUEST_INTELLIGENCE. A declared information condition is one way to learn that a fact is
+                       missing; your own reading of the decision is the other.
+                       The same test governs not acting. A decision cannot avoid material uncertainty by choosing
+                       NO_ACTION: if the justification for NO_ACTION depends on a fact that is materially unknown,
+                       prefer REQUEST_INTELLIGENCE rather than assuming the condition for NO_ACTION is satisfied.
+                       Before concluding that existing work covers the need or is appropriately in flight, ask
+                       whether any fact you do not have could materially change that judgment; if so, request the
+                       material information rather than treating the work as sufficient or appropriate by
+                       assumption. Material uncertainty applies to the justification for acting and to the
+                       justification for deliberately not acting.
+
+FOR EACH REQUESTED DECISION, where any were posed: exactly one answer, from the same three — NO_ACTION, RECOMMEND
+or REQUEST_INTELLIGENCE — carrying the same fields as a decision on a live Objective, keyed by the request.
+
+THE ANSWERS ARE ONE SET. Every decision in this evaluation — each live Objective's standing decision and each
+requested decision — is answered against the same evidence, and the answers are read together as one set.
+
+  Within one evaluation, two decisions must not independently propose or advance the same underlying next
+  execution step.
+
+  Where a requested decision and a standing Objective decision concern the same next step, the requested decision
+  answers the question that was posed. The standing decision may account for that answer — citing it — when
+  deciding whether additional work toward the Objective is warranted, and does not propose or advance the same
+  step on its own.
+
+  A request about another subject confers nothing on an Objective. It is not a reason for NO_ACTION on that
+  Objective and not a reason to change its standing decision.
+
+  Several requests may concern the same subject or next step. Each receives its own answer. If their answers
+  propose or advance the same underlying next execution step, they account for that shared step rather than
+  independently proposing it twice.
+
+FOR EACH DEFERRED OBJECTIVE, one of:
+  REQUEST_INTELLIGENCE          the information condition she named can be resolved; say what would resolve it
+  CONDITION_APPEARS_RESOLVED    what you were shown appears to answer her condition; say what and why. This is your
+                                observation only. It changes nothing.
+  NO_REQUEST                    nothing you were shown bears on it
+
+====================================================================================================
+
+WHAT YOU DO NOT DO
+
+You do not rank Objectives, order them, or say which comes first.
+You do not plan. No shots, formats, captions, scripts, schedules, cadences, posting plans, channel plans, budgets,
+dates or deadlines. A `what` that opens with a production verb — film, shoot, edit, design, storyboard, caption,
+script, produce, animate — has crossed into the plan and will be refused.
+You do not restate an Objective as advice.
+You do not recommend what is already in motion.
+You do not invent capacity, obligations, contract terms, dates, results or preferences.
+You do not manufacture urgency. A moment matters only where you can cite why it bears on a specific Objective.
+You do not recommend on a deferred or declined Objective.
+
+====================================================================================================
+
+REQUIRED OUTPUT
+
+Return ONLY a JSON object. No prose before or after.
+
+{
+  "decisions": [
+    {
+      "objective_id":  <live objective id, exactly as shown>,
+      "decision":      NO_ACTION | RECOMMEND | REQUEST_INTELLIGENCE,
+      "why":           <why, from what you read>,
+      "cites":         [ { "ref": <reference exactly as shown>, "how": <what it establishes> } ]   — never empty
+      // RECOMMEND only:
+      "what":          <one sentence>,
+      "execution_path": direct_action | specialized_plan | campaign,
+      "relation_to_existing_work": new_work | advances_existing_work | no_new_work,
+      "advances":      work[<id>] | null,
+      "not_seen":      [ <string> ],
+      // REQUEST_INTELLIGENCE only:
+      "proposition":   <string>,
+      "why_material":  <string>,
+      "source_class":  athlete | connected | external
+    }
+  ],
+  "requested": [
+    {
+      "request_id":    <request id, exactly as shown — one entry per DECISION REQUESTED; omit the array when none>,
+      "decision":      NO_ACTION | RECOMMEND | REQUEST_INTELLIGENCE,
+      "why":           <string>,
+      "cites":         [ { "ref": ..., "how": ... } ],
+      // RECOMMEND only: what, execution_path, relation_to_existing_work, advances, not_seen — as above
+      // REQUEST_INTELLIGENCE only: proposition, why_material, source_class — as above
+    }
+  ],
+  "deferred": [
+    {
+      "objective_id":  <deferred objective id, exactly as shown>,
+      "decision":      REQUEST_INTELLIGENCE | CONDITION_APPEARS_RESOLVED | NO_REQUEST,
+      "why":           <string>,
+      "cites":         [ { "ref": ..., "how": ... } ],
+      "proposition":   <string, REQUEST_INTELLIGENCE only>,
+      "why_material":  <string, REQUEST_INTELLIGENCE only>,
+      "source_class":  athlete | connected | external, REQUEST_INTELLIGENCE only
+    }
+  ]
+}
+
+Exactly one entry in "decisions" per live Objective. Exactly one entry in "deferred" per deferred Objective. Exactly
+one entry in "requested" per decision requested. Nothing for a declined Objective.
+
+====================================================================================================
+
+OBJECTIVES
+
+LIVE OBJECTIVES — what the athlete has decided to pursue. The only things you may recommend on.
+Cite as objective[<id>].
+
+    (none — the athlete has no live Objective. Every decision list will be empty.)
+DEFERRED — standing information conditions. NOT active. She set each aside and said why. You may name the
+condition and request what would resolve it; you may not recommend on it or revive it. Cite as deferred[<id>].
+
+    (none)
+DECLINED — closed. Nothing may be done with these; they are shown so nothing is re-proposed.
+
+    (none)
+
+====================================================================================================
+
+DECISION REQUESTED
+
+A question posed to you by a named party about a named thing. Answer that question. Cite as request[<id>].
+
+    request[D2k-D]
+        asked by: the athlete's agent, through Mila
+        about: work[ctl-d-fieldline-termsheet]
+        question: "Should this negotiation be advanced, countered or accepted?"
+
+====================================================================================================
+
+ATHLETE STATE
+
+Nomila's account of this athlete as of 2026-09-26T17:52:46.068Z (athlete-state/1.2.0).
+Overall confidence in this picture: LOW.
+
+Cite any line below by the path shown at its left.
+
+IDENTITY
+    identity.name                             Lilia Bhuta
+    identity.sport                            soccer
+    identity.competitionContext               Century United · Class 4A
+    identity.careerStatus                     active
+
+FINDINGS — marketability dimensions, each judged by M.I.A. and read here unchanged.
+  STRENGTH  measured, above the band
+  GAP       measured, below the band
+  NEUTRAL   MEASURED and unremarkable. We know; it is simply ordinary. This is NOT missing evidence.
+  UNKNOWN   evidence is genuinely insufficient — no score, or mostly imputed signals. A statement about
+            what Nomila has measured, never about the athlete.
+
+  Each finding may carry WHY M.I.A. concluded it and WHICH SOURCES it relied on. Read those as the
+  evaluator's interpretation and the evidence behind it — NOT as established fact about the athlete.
+
+    findings[mia.athletic_authority]          STRENGTH  score 77      HIGH    0/6 signals imputed
+        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)
+          As a member of the US U-15 Youth National Team who has already scored in international play, you
+          possess elite athletic authority for your developmental age. Being ranked the #1 player in
+          Pennsylvania for the Class of 2029 further establishes your high ceiling and standout status in
+          the Girls Academy circuit. While still in your youth career, your trajectory points toward
+          future NCAA and elite professional pathways.
+          confidence HIGH — Your national roster appearances, international goal, and state scouting rankings are thoroughly documented by official and reputable youth soccer media.
+        SOURCE EVIDENCE M.I.A. CITED
+          E1  secondary · 2026-05-18  Lilia Bhuta is a midfielder in the 2029 class, ranked as the #1 player in Pennsylvania’s class by Prep Soccer, and is praised by scouts for her elite finishing and soccer smarts.
+              https://www.prepsoccer.com/player/lilia-bhuta/
+          E2  major_media · 2026-04-18  Lilia Bhuta was selected to the 20-player U.S. Under-15 Girls' Youth National Team (USYNT) roster for an international training camp in England in April 2026.
+              https://pittsburghsoccernow.com/2026/04/18/century-united-fcs-lilia-bhuta-earns-usynt-call-up/
+          E3  official · 2026-06-01  Lilia Bhuta scored a goal in the 65th minute of the U.S. U-15 national team’s 4-0 victory against England during their April 2026 training camp.
+              https://en.wikipedia.org/wiki/United_States_girls%27_national_under-15_soccer_team
+          E4  secondary · 2025-03-19  Lilia Bhuta was previously named to the U.S. Soccer Under-14 Girls' Talent Identification Program regional mini-camp in March 2025, with media highlighting her as the sister of Stanford star Mia Bhuta.
+              https://wsoccerexpress.com/2025/03/19/u-14-talent-id-80-player-roster-for-the-2025-east-regional-mini-camp-announced/
+          E5  official · 2026-05-01  Lilia Bhuta details her development with Century United's 2010 Girls Academy team and her long-term goals of playing professionally and representing the full USWNT.
+              https://www.centurysoccer.org/news_article/show/1308307
+        COMPONENTS  role_importance=70 [EVALUATED]  competition_level=70 [EVALUATED]  achievement_recency=85 [EVALUATED]  performance_results=80 [EVALUATED]  rankings_recognition=75 [EVALUATED]  national_international_status=85 [EVALUATED]
+
+    findings[mia.audience_scale]              GAP       score 21      MEDIUM  1/4 signals imputed
+        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)
+          Your public audience scale is extremely limited, as you do not currently operate public-facing
+          personal brand channels. Outside of a family YouTube channel with low double-digit subscribers
+          and a Hudl scouting profile, you do not have a public social media footprint. This is standard
+          for a 14-year-old youth athlete, but represents an undeveloped public reach.
+          confidence HIGH — The complete lack of verified active personal social channels and very low public views on family highlights support a minimal public reach.
+        SOURCE EVIDENCE M.I.A. CITED
+          E6  platform · 2026-06-11  Lilia Bhuta has a minimal public digital footprint, represented primarily by a family YouTube channel with 42 subscribers and low highlight video views, and a Hudl profile with 14 followers.
+              https://www.youtube.com/@TheBhutas
+        COMPONENTS  audience_growth=50 [ASSUMED]  platform_breadth=10 [EVALUATED]  cross_platform_effective_reach=15 [EVALUATED]  sport_level_audience_percentile=20 [EVALUATED]
+
+    findings[mia.engagement_quality]          UNKNOWN   score 50      LOW     6/6 signals imputed
+        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)
+          Because you do not have active public personal social media channels, your audience engagement
+          quality cannot be calculated. There are no public metrics available to evaluate likes, comments,
+          shares, or video retention rates. This dimension remains currently missing as you prioritize
+          club soccer and developmental training over digital branding.
+          confidence LOW — All primary engagement metrics are completely unavailable due to the absence of active public personal accounts.
+        COMPONENTS  video_retention=50 [ASSUMED]  reach_efficiency=50 [ASSUMED]  story_efficiency=50 [ASSUMED]  shares_saves_quality=50 [ASSUMED]  audience_authenticity=50 [ASSUMED]  engagement_percentile=50 [ASSUMED]
+
+    findings[mia.cultural_relevance]          GAP       score 30.5    HIGH    0/5 signals imputed
+        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)
+          Your current cultural relevance is concentrated within the specialized US youth soccer ecosystem
+          and your local Western Pennsylvania community. While you generate celebratory local social media
+          chatter and have strong coverage in soccer-specific scouting publications, you are largely
+          unrecognized by the broader general public. However, your surname carries cultural heritage
+          equity because of your sister Mia's historic national team achievements.
+          confidence HIGH — Your press coverage is consistently limited to regional publications and youth soccer recruiting networks.
+        SOURCE EVIDENCE M.I.A. CITED
+          E1  secondary · 2026-05-18  Lilia Bhuta is a midfielder in the 2029 class, ranked as the #1 player in Pennsylvania’s class by Prep Soccer, and is praised by scouts for her elite finishing and soccer smarts.
+              https://www.prepsoccer.com/player/lilia-bhuta/
+          E2  major_media · 2026-04-18  Lilia Bhuta was selected to the 20-player U.S. Under-15 Girls' Youth National Team (USYNT) roster for an international training camp in England in April 2026.
+              https://pittsburghsoccernow.com/2026/04/18/century-united-fcs-lilia-bhuta-earns-usynt-call-up/
+          E4  secondary · 2025-03-19  Lilia Bhuta was previously named to the U.S. Soccer Under-14 Girls' Talent Identification Program regional mini-camp in March 2025, with media highlighting her as the sister of Stanford star Mia Bhuta.
+              https://wsoccerexpress.com/2025/03/19/u-14-talent-id-80-player-roster-for-the-2025-east-regional-mini-camp-announced/
+          E5  official · 2026-05-01  Lilia Bhuta details her development with Century United's 2010 Girls Academy team and her long-term goals of playing professionally and representing the full USWNT.
+              https://www.centurysoccer.org/news_article/show/1308307
+        COMPONENTS  search_interest=25 [EVALUATED]  social_conversation=30 [EVALUATED]  media_source_quality=45 [EVALUATED]  crossover_recognition=20 [EVALUATED]  media_volume_percentile=30 [EVALUATED]
+
+    findings[mia.narrative_power]             NEUTRAL   score 69.5    HIGH    0/6 signals imputed
+        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)
+          Your narrative is highly compelling and distinct, centered on a high-achieving athletic family
+          and the sisterly parallel with Mia Bhuta, Stanford's standout midfielder. Media coverage
+          naturally resonates with this storyline, framing your rise as the continuation of a notable
+          American soccer legacy. This rich, multi-cultural (Indian-American) and authentic narrative
+          holds significant long-term storytelling power.
+          confidence HIGH — Multiple scout analyses and club features explicitly leverage and document your family legacy and personal dedication.
+        SOURCE EVIDENCE M.I.A. CITED
+          E1  secondary · 2026-05-18  Lilia Bhuta is a midfielder in the 2029 class, ranked as the #1 player in Pennsylvania’s class by Prep Soccer, and is praised by scouts for her elite finishing and soccer smarts.
+              https://www.prepsoccer.com/player/lilia-bhuta/
+          E2  major_media · 2026-04-18  Lilia Bhuta was selected to the 20-player U.S. Under-15 Girls' Youth National Team (USYNT) roster for an international training camp in England in April 2026.
+              https://pittsburghsoccernow.com/2026/04/18/century-united-fcs-lilia-bhuta-earns-usynt-call-up/
+          E3  official · 2026-06-01  Lilia Bhuta scored a goal in the 65th minute of the U.S. U-15 national team’s 4-0 victory against England during their April 2026 training camp.
+              https://en.wikipedia.org/wiki/United_States_girls%27_national_under-15_soccer_team
+          E4  secondary · 2025-03-19  Lilia Bhuta was previously named to the U.S. Soccer Under-14 Girls' Talent Identification Program regional mini-camp in March 2025, with media highlighting her as the sister of Stanford star Mia Bhuta.
+              https://wsoccerexpress.com/2025/03/19/u-14-talent-id-80-player-roster-for-the-2025-east-regional-mini-camp-announced/
+          E5  official · 2026-05-01  Lilia Bhuta details her development with Century United's 2010 Girls Academy team and her long-term goals of playing professionally and representing the full USWNT.
+              https://www.centurysoccer.org/news_article/show/1308307
+        COMPONENTS  durability=75 [EVALUATED]  story_depth=65 [EVALUATED]  distinctiveness=70 [EVALUATED]  media_resonance=60 [EVALUATED]  evidence_authenticity=80 [EVALUATED]  commercial_applicability=65 [EVALUATED]
+
+    findings[mia.brand_fit]                   NEUTRAL   score 60.75   HIGH    0/6 signals imputed
+        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)
+          You present an exceptionally safe, values-coherent, and wholesome profile for mainstream
+          youth-focused and family-oriented brands. Your dedication to training, strong academic-athletic
+          balance, and clean public slate make you highly attractive to potential sponsors. However, your
+          category breadth and content versatility are currently constrained by your age and the lack of
+          an active personal publishing platform.
+          confidence HIGH — Your clean reputation and structured family environment are well-documented, though your actual content delivery remains unproven.
+        SOURCE EVIDENCE M.I.A. CITED
+          E1  secondary · 2026-05-18  Lilia Bhuta is a midfielder in the 2029 class, ranked as the #1 player in Pennsylvania’s class by Prep Soccer, and is praised by scouts for her elite finishing and soccer smarts.
+              https://www.prepsoccer.com/player/lilia-bhuta/
+          E2  major_media · 2026-04-18  Lilia Bhuta was selected to the 20-player U.S. Under-15 Girls' Youth National Team (USYNT) roster for an international training camp in England in April 2026.
+              https://pittsburghsoccernow.com/2026/04/18/century-united-fcs-lilia-bhuta-earns-usynt-call-up/
+          E4  secondary · 2025-03-19  Lilia Bhuta was previously named to the U.S. Soccer Under-14 Girls' Talent Identification Program regional mini-camp in March 2025, with media highlighting her as the sister of Stanford star Mia Bhuta.
+              https://wsoccerexpress.com/2025/03/19/u-14-talent-id-80-player-roster-for-the-2025-east-regional-mini-camp-announced/
+          E5  official · 2026-05-01  Lilia Bhuta details her development with Century United's 2010 Girls Academy team and her long-term goals of playing professionally and representing the full USWNT.
+              https://www.centurysoccer.org/news_article/show/1308307
+          E6  platform · 2026-06-11  Lilia Bhuta has a minimal public digital footprint, represented primarily by a family YouTube channel with 42 subscribers and low highlight video views, and a Hudl profile with 14 followers.
+              https://www.youtube.com/@TheBhutas
+        COMPONENTS  brand_safety=95 [EVALUATED]  category_breadth=50 [EVALUATED]  content_versatility=40 [EVALUATED]  geographic_relevance=50 [EVALUATED]  audience_attractiveness=45 [EVALUATED]  identity_values_coherence=75 [EVALUATED]
+
+    findings[mia.commercial_proof]            UNKNOWN   score 50      LOW     6/6 signals imputed
+        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)
+          There is no public evidence of any paid brand partnerships, commercial deals, or pricing power,
+          which is standard for an athlete of your age and amateur level. While your older sister has
+          secured high-profile NIL deals (e.g., Adidas), you have yet to enter the commercial market.
+          Consequently, this dimension remains completely missing but represents high future potential.
+          confidence LOW — There are no documented commercial transactions or endorsements for you at this stage of your youth career.
+        COMPONENTS  brand_quality=50 [ASSUMED]  pricing_power=50 [ASSUMED]  deal_frequency=50 [ASSUMED]  renewals_repeat=50 [ASSUMED]  campaign_performance=50 [ASSUMED]  verified_commercial_value=50 [ASSUMED]
+
+    findings[mia.momentum]                    NEUTRAL   score 62.75   MEDIUM  2/5 signals imputed
+        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)
+          Your athletic trajectory is experiencing rapid upward momentum, transitioning from U-14 Talent
+          ID camps to scoring for the USYNT U-15s within a single year. While your commercial and social
+          media momentum are non-existent, your media coverage is steadily climbing alongside your
+          national team achievements. Your on-field progress is highly visible and accelerating.
+          confidence HIGH — On-field athletic progression is clearly documented month-over-month through roster announcements and match reports.
+        SOURCE EVIDENCE M.I.A. CITED
+          E1  secondary · 2026-05-18  Lilia Bhuta is a midfielder in the 2029 class, ranked as the #1 player in Pennsylvania’s class by Prep Soccer, and is praised by scouts for her elite finishing and soccer smarts.
+              https://www.prepsoccer.com/player/lilia-bhuta/
+          E2  major_media · 2026-04-18  Lilia Bhuta was selected to the 20-player U.S. Under-15 Girls' Youth National Team (USYNT) roster for an international training camp in England in April 2026.
+              https://pittsburghsoccernow.com/2026/04/18/century-united-fcs-lilia-bhuta-earns-usynt-call-up/
+          E3  official · 2026-06-01  Lilia Bhuta scored a goal in the 65th minute of the U.S. U-15 national team’s 4-0 victory against England during their April 2026 training camp.
+              https://en.wikipedia.org/wiki/United_States_girls%27_national_under-15_soccer_team
+          E4  secondary · 2025-03-19  Lilia Bhuta was previously named to the U.S. Soccer Under-14 Girls' Talent Identification Program regional mini-camp in March 2025, with media highlighting her as the sister of Stanford star Mia Bhuta.
+              https://wsoccerexpress.com/2025/03/19/u-14-talent-id-80-player-roster-for-the-2025-east-regional-mini-camp-announced/
+          E5  official · 2026-05-01  Lilia Bhuta details her development with Century United's 2010 Girls Academy team and her long-term goals of playing professionally and representing the full USWNT.
+              https://www.centurysoccer.org/news_article/show/1308307
+        COMPONENTS  audience_growth=50 [ASSUMED]  media_trajectory=65 [EVALUATED]  athletic_trajectory=85 [EVALUATED]  commercial_acceleration=50 [ASSUMED]  search_social_trajectory=45 [EVALUATED]
+
+AUDIENCE TRAJECTORY — follower growth only. It says nothing about athletic or commercial direction.
+    audienceTrajectory                        not known (no growth measurement on any platform)
+
+COMMERCIAL POSITION — what the market has actually paid. Counted, never estimated.
+    commercialPosition.closedDeals            0  [measured · HIGH confidence]
+    commercialPosition.activeRelationships    []  [measured · HIGH confidence]
+    commercialPosition.demonstratedEconomics  not known (no closed deal carries an amount)
+    commercialPosition.pricingEvidence        none
+
+COMMERCIAL PIPELINE — counts by state. `detected` means a brand made contact and nothing more.
+  Inbound interest is NOT a deal, NOT revenue and NOT an active relationship.
+    commercialPosition.pipeline               detected 39 · negotiating 0 · rejected 0 · accepted 0 · completed 0
+
+INBOUND SIGNALS — the athlete's own classified inbox, most recent first, capped. Demonstrated interest,
+  as classified by Nomila's inbox pipeline. A category is the classifier's label, not a commitment.
+    commercialPosition.inbound[0]             PAID       counterparty unknown · 2026-07-14 · archived
+    commercialPosition.inbound[1]             SCHOOL_NIL Girls Academy League · 2026-07-14 · archived
+    commercialPosition.inbound[2]             GIFTING    Girls Academy League · 2026-07-13 · archived
+    commercialPosition.inbound[3]             GIFTING    SHEIN · 2026-07-12 · archived
+    commercialPosition.inbound[4]             GIFTING    Fleet Feet Milestones · 2026-07-09 · archived
+    commercialPosition.inbound[5]             GIFTING    Gracie Abrams · 2026-07-09 · archived
+    commercialPosition.inbound[6]             PAID       Follow Him Apparel · 2026-07-09 · archived
+    commercialPosition.inbound[7]             EDITORIAL  SHEIN · 2026-07-09 · archived
+    commercialPosition.inbound[8]             MEDIA      Girls Academy League · 2026-07-08 · archived
+    commercialPosition.inbound[9]             GIFTING    lululemon · 2026-07-08 · archived
+    commercialPosition.inbound[10]            SCHOOL_NIL Girls Academy League · 2026-07-07 · archived
+    commercialPosition.inbound[11]            PAID       Gotham FC · 2026-07-07 · archived
+
+CONSTRAINTS — only what has been explicitly recorded as a bound on what the athlete can do.
+  An empty list means Nomila has recorded none. It does NOT mean none exist.
+    (none recorded)
+
+AUDIENCE — composition per platform, latest observation. Top buckets only.
+    (no audience composition is recorded on any platform)
+
+CONTENT PERFORMANCE — cadence and format, per platform, from Nomila's own measurement.
+    (no content performance is measured on any platform)
+
+REPRESENTATION & FLOORS — as the athlete stated them. A FLOOR IS NOT A MARKET VALUE; it is the least
+  she has said she would accept.
+    representation.agent                      none stated
+    representation.agency                     none stated
+    representation.floors[appearance]         USD 612
+    representation.floors[autograph]          USD 579
+
+WHAT THE ATHLETE HAS SAID — their own words. A refusal bears on an opportunity; an ambition can generate one.
+  Never infer a preference or an ambition that is not listed here.
+  A stance is one of: wants | open | avoids | refuses — cite it in exactly that spelling.
+  A line marked ONBOARDING CHOICE was selected from a fixed set when the athlete joined. It is evidence of
+  intent at that time — she actually chose it — and it is NOT a current strategic objective.
+    preferences[onboarding_goal.grow_my_following]  wants — "grow_my_following"  [ONBOARDING CHOICE · 2026-06-18]
+    preferences[onboarding_goal.get_my_first_deal]  wants — "get_my_first_deal"  [ONBOARDING CHOICE · 2026-06-18]
+
+DATES — recorded real-world dates that can bear on strategy, each with what it means. Only what is
+  populated; an empty list means none are recorded, not that none exist.
+    (none recorded)
+
+WHAT NOMILA CANNOT SEE — evidence we looked for and could not find. A research task, not a caveat.
+    materialGaps[0]                           Personal public-facing social media accounts (Instagram, TikTok, X, etc.) and associated demographic or engagement metrics.
+    materialGaps[1]                           Longitudinal data tracking public search interest, digital audience growth, or social chatter trajectory over time.
+    materialGaps[2]                           Any preliminary regional or local commercial agreement details or NIL negotiations.
+
+SOURCES CONSULTED
+    marketability            present · as of 2026-06-18T17:40:16.239Z
+    athlete_intelligence     ABSENT
+    athlete_state            present · as of 2026-09-26T17:52:46.068Z
+
+====================================================================================================
+
+EXISTING WORK
+
+What is already in motion, from Nomila's own records as of 2026-09-26T17:52:47.023Z (existing-work/0.2.0-exp). Facts only. Cite as work[<id>].
+`deliverables recorded: 0` means Nomila holds no deliverable for it — not that there are none.
+
+    work[ctl-d-fieldline-termsheet]
+        negotiating · Fieldline Training · since 2026-09-22
+        Fieldline Training (youth sports training app) sent a term sheet on 22 September 2026: USD 5,000 for an ambassador agreement covering one year, four Instagram posts, no category exclusivity. No response has been sent.
+        amount 5000 (cash 5000 / product —) · term 2026-10-01 → 2027-09-30 · deliverables recorded: 4

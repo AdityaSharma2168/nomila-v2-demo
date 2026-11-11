@@ -1,0 +1,85 @@
+{
+ "version": "intelligence-request/0.1.0-exp",
+ "requests": [
+  {
+   "version": "intelligence-request/0.1.0-exp",
+   "id": "req_4759de11f5f15e0f",
+   "key": "67c30869b1bd5b63",
+   "decision": {
+    "source": "the Objective loop",
+    "subject": {
+     "kind": "objective",
+     "id": "2d199757-6e12-4a6b-bade-df05c587e849"
+    },
+    "question": "information condition"
+   },
+   "need": "counterparty_terms",
+   "proposition": "StartX1's proposed commercial terms — compensation, deliverables, term and exclusivity — are documented.",
+   "whyMaterial": "Her deferral says she does not know enough about StartX1 to decide whether a partnership should be an Objective; the terms they propose are the fact that condition turns on.",
+   "sourceClass": "connected",
+   "raisedBy": {
+    "runId": "R1-P:raise",
+    "spec": "brain-eval-spec/0.8.1-exp",
+    "at": "2026-09-26T00:00:00Z"
+   },
+   "runs": [
+    "R1-P:raise"
+   ],
+   "acquisition": {
+    "mechanism": "connected_read",
+    "ref": {
+     "kind": "pending_action",
+     "id": "pa-controlled-startx1-request-terms"
+    },
+    "chosenBecause": [
+     "need counterparty_terms can be established by connected_read · contract_extraction · ask_for_terms",
+     "authority required: connected",
+     "rejected contract_extraction: no contract document held",
+     "chosen connected_read: available, authority connected ≥ connected, lowest athlete burden among the available"
+    ],
+    "at": "2026-09-26T10:00:00Z",
+    "completedAt": "2026-09-27T14:05:01Z",
+    "producedEvidence": true
+   },
+   "evidenceRefs": [
+    {
+     "store": "inbox_messages",
+     "id": "msg-controlled-startx1-reply",
+     "at": "2026-09-27T14:05:00Z",
+     "sourceClass": "connected",
+     "need": "counterparty_terms",
+     "attributedTo": "req_4759de11f5f15e0f",
+     "asserts": "StartX1 replied to the request for terms: a three-month ambassador engagement (October–December 2026), USD 6,000 flat plus product, three Instagram posts and one campus event appearance, no category exclusivity, usage limited to StartX1's own channels for the term."
+    }
+   ],
+   "reconsideredInRun": null,
+   "obsolete": null,
+   "events": [
+    {
+     "at": "2026-09-26T00:00:00Z",
+     "event": "raised",
+     "actor": "system",
+     "note": "run R1-P:raise"
+    },
+    {
+     "at": "2026-09-26T10:00:00Z",
+     "event": "acquisition_planned",
+     "actor": "resolver",
+     "note": "need counterparty_terms can be established by connected_read · contract_extraction · ask_for_terms | authority required: connected | rejected contract_extraction: no contract document held | chosen connected_read: available, authority connected ≥ connected, lowest athlete burden among the available"
+    },
+    {
+     "at": "2026-09-26T10:00:00Z",
+     "event": "acquisition_started",
+     "actor": "consumer",
+     "note": "pending_action:pa-controlled-startx1-request-terms"
+    },
+    {
+     "at": "2026-09-27T14:05:01Z",
+     "event": "evidence_received",
+     "actor": "store",
+     "note": "inbox_messages:msg-controlled-startx1-reply — attributable, right class, after the request"
+    }
+   ]
+  }
+ ]
+}

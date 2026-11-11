@@ -1,0 +1,199 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "michael-phelps",
+    "name": "Michael Phelps",
+    "sport": "Swimming"
+  },
+  "conditions": "gemini-3.5-flash via Vertex; Google Search grounding; default thinking; temperature 1.0; text output with fenced JSON; spec v0.2 additions; social block none",
+  "startedAt": "2026-09-14T12:36:57.711Z",
+  "attempts": 1,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "responseId": "auqnarf8FZvBl7oP0uPN6Q8",
+  "latencyMs": 70282,
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+    "promptTokens": 3509,
+    "outputTokens": 6110,
+    "thoughtTokens": 7119,
+    "totalTokens": 16738,
+    "searchCalls": 7
+  },
+  "costUsd": 0.1593245,
+  "text": "```json\n{\n  \"athlete\": {\n    \"name\": \"Michael Phelps\",\n    \"sport\": \"Swimming\",\n    \"identity_confidence\": \"HIGH\"\n  },\n\n  \"marketability_summary\": \"Michael Phelps, widely regarded as the greatest swimmer and most decorated Olympian in history with 28 medals (23 gold), maintains an extraordinary commercial profile a decade after his retirement from competitive swimming. As of 2026, Phelps holds a strong digital footprint led by 3.78 million Instagram followers and over 2 million X followers, characterized by highly authentic, legacy audience engagement. Phelps has successfully transitioned his narrative from unprecedented athletic dominance to vulnerable, globally recognized advocacy for mental health and water safety. This transition is anchored by his work with the Michael Phelps Foundation and high-profile partnerships with digital therapy platform Talkspace and pharmaceutical giant Pfizer. His commercial portfolio remains elite, featuring long-term renewals with blue-chip brands like Under Armour, Visa, and Omega, demonstrating enduring pricing power and exceptional brand safety despite minor past controversies. While his athletic trajectory is retired and social growth is stable rather than explosive, his cultural relevance surges cyclically during Olympic periods. Major uncertainties include specific short-form video retention metrics and private campaign performance data. Ultimately, Phelps represents a rare tier of retired athletes whose legendary status and deeply resonant personal narrative provide long-term, premium marketing viability across global health, wellness, and lifestyle sectors.\",\n\n  \"evidence\": [\n    {\n      \"id\": \"E1\",\n      \"claim\": \"Michael Phelps is the most decorated Olympian of all time, with 28 medals, including 23 gold medals, and set 39 world records throughout his career.\",\n      \"source_title\": \"Michael Phelps - Wikipedia\",\n      \"source_url\": \"https://en.wikipedia.org/wiki/Michael_Phelps\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-09-14\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Historically verified career record.\"\n    },\n    {\n      \"id\": \"E2\",\n      \"claim\": \"Phelps maintains an active multi-million dollar endorsement portfolio featuring long-term brands such as Visa, Under Armour, Omega, Master Spas, and recent additions like Pfizer.\",\n      \"source_title\": \"How Michael Phelps turned Olympic glory into a multi million fortune\",\n      \"source_url\": \"https://m.indiatimes.com/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2026-08-04\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Outlines current post-retirement commercial standings as of 2026.\"\n    },\n    {\n      \"id\": \"E3\",\n      \"claim\": \"Phelps established the Michael Phelps Foundation using his $1 million Speedo performance bonus to focus on water safety, healthy living, and mental health.\",\n      \"source_title\": \"Michael Phelps - Conference Board Profile\",\n      \"source_url\": \"https://www.conference-board.org/\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-09-14\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Official profile detailing his charitable focus and foundation history.\"\n    },\n    {\n      \"id\": \"E4\",\n      \"claim\": \"Phelps reached approximately 3.78 million followers on Instagram with an average engagement rate of 2.77% as of August 2026.\",\n      \"source_title\": \"Michael Phelps Instagram Analytics - HypeAuditor\",\n      \"source_url\": \"https://hypeauditor.com/\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-08-15\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Verified public-facing metrics tracker.\"\n    },\n    {\n      \"id\": \"E5\",\n      \"claim\": \"Phelps continues to generate significant mainstream media attention, recently completing a featured CNN10 interview discussing his ongoing mental health journey.\",\n      \"source_title\": \"CNN10: Interview with 28-time Olympic medalist Michael Phelps\",\n      \"source_url\": \"https://www.youtube.com/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2026-05-26\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Demonstrates current active presence in prominent media programs.\"\n    },\n    {\n      \"id\": \"E6\",\n      \"claim\": \"Phelps has served as a key equity investor, brand ambassador, and mental health advocate for the online therapy company Talkspace since 2018.\",\n      \"source_title\": \"Talkspace and Michael Phelps Launch 'Celebrate Every Step' Campaign\",\n      \"source_url\": \"https://www.businesswire.com/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2023-05-03\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Press release highlighting the deep integration of Phelps with Talkspace.\"\n    }\n  ],\n\n  \"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Phelps competed at the absolute pinnacle of global sport, winning 28 medals across five Olympic Games.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"As the most decorated Olympian of all time with 23 gold medals, his competitive results are historically unmatched.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Phelps holds the all-time records for Olympic gold medals and individual event medals, and is an 8-time World Swimmer of the Year.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Phelps is a global sports icon who served as the flag bearer for the United States Olympic team in 2016.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"He served as US team captain, anchored legendary world-record relay teams, and single-handedly elevated the global profile of swimming.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"While he retired from competitive swimming in 2016, his historic achievements remain highly commercially foundational.\"\n      }\n    },\n    \"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Phelps commands a very large legacy audience with ~3.78M Instagram followers and over 2M followers on X.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He possesses one of the highest social media followings of any active or retired swimmer in history.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 40,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His audience growth is stable but slow, registering a modest 0.28% monthly growth rate in mid-2026.\"\n      },\n      \"platform_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He maintains a strong, verified presence across Instagram, X, and Facebook, though he is less active on newer short-form video platforms.\"\n      }\n    },\n    \"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 55,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His Instagram engagement rate of 2.77% is considered average for an established global celebrity profile of his scale.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"scored\",\n        \"score\": 55,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His organic reach is healthy but generally remains within his established follower base outside of peak Olympic cycles.\"\n      },\n      \"shares_saves_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Authoritative platform metrics regarding shares and saves are unavailable.\"\n      },\n      \"video_retention\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Authoritative video retention and completion metrics are unavailable.\"\n      },\n      \"story_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Authoritative story reach and efficiency metrics are unavailable.\"\n      },\n      \"audience_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His follower base consists of genuine global sports fans and health advocates, presenting a highly authentic profile with low bot indicators.\"\n      }\n    },\n    \"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Phelps maintains a persistent and prominent media presence, particularly surrounding mental health advocacy and Olympic cycles.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"He is consistently covered by premium, top-tier global outlets such as CNN, NBC, and Sports Illustrated.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"Public search interest remains high and durable, with significant spikes during Olympic games and major media campaigns.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"His public remarks on athlete pressure and mental well-being frequently drive wider conversation across sports and society.\"\n      },\n      \"crossover_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Phelps is a household name worldwide, easily recognized by casual observers outside of the swimming community.\"\n      }\n    },\n    \"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E6\"],\n        \"rationale\": \"His identity is highly differentiated as the ultimate Olympic champion who courageously humanized elite athletic pressure.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E6\"],\n        \"rationale\": \"His narrative has profound depth, covering extreme triumphs, personal mental health struggles, redemption, and post-career advocacy.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E6\"],\n        \"rationale\": \"His narrative is backed by real-world actions, including funding his foundation with a $1M bonus and investing in mental health platform Talkspace.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Major media outlets consistently amplify his story, treating his advocacy with deep respect and seriousness.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E6\"],\n        \"rationale\": \"His transition to a wellness and mental health advocate seamlessly fits modern health, lifestyle, and corporate campaigns.\"\n      },\n      \"durability\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"As an all-time sporting legend, his core narrative is immortal and entirely insulated from near-term decay.\"\n      }\n    },\n    \"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E6\"],\n        \"rationale\": \"He naturally fits diverse categories, including athletic wear, healthcare, pharmaceuticals, luxury goods, and environmental causes.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"Despite historical speedbumps like his 2009 suspension, his mature handling of personal struggles has evolved into a core narrative strength.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"His audience is highly attractive to commercial brands, skewing toward health-conscious adults and families with strong purchasing power.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E6\"],\n        \"rationale\": \"He maintains a highly coherent public persona focused on resilience, family, physical health, and mental well-being.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"He excels in high-production campaigns, documentaries, and public speaking, but is less active with trending short-form creator content.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"While globally recognized, his commercial relevance is strongest in key markets like North America and Europe.\"\n      }\n    },\n    \"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"Phelps has a proven record of earning over $10M annually in endorsements at his peak, and maintains high-value retirement deals.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E6\"],\n        \"rationale\": \"He maintains an active, extensive portfolio of active brand partnerships spanning corporate giants like Pfizer and Under Armour.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"His confirmed sponsors represent elite global brands including Visa, Omega, Under Armour, and Pfizer.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"He exhibits incredible relationship longevity, with Visa since 2002 and Master Spas since 2010.\"\n      },\n      \"campaign_performance\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Detailed quantitative data regarding specific campaign conversion rates or private ROI is not publicly available.\"\n      },\n      \"pricing_power\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"As a global sporting icon, he commands premium, tier-one ambassador economics for long-term partnerships.\"\n      }\n    },\n    \"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 60,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"His competitive career has concluded, leaving his performance trajectory fully stable at the absolute historical peak.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 35,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His follower acquisition has slowed to a mature, stable baseline with minimal rapid growth.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"His media visibility remains highly stable, with frequent high-profile appearances and interviews during key health and sport milestones.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Public search and social interest are stable, experiencing cyclical increases around major athletic and Olympic events.\"\n      },\n      \"commercial_acceleration\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E6\"],\n        \"rationale\": \"His commercial partnership velocity is stable and selective, maintaining elite partnerships rather than rapid expansion.\"\n      }\n    }\n  },\n\n  \"dimension_assessments\": {\n    \"athletic_authority\": {\n      \"prose\": \"Michael Phelps represents the absolute peak of historic athletic authority. As the most decorated Olympian of all time with 23 gold medals, his dominance in swimming is unparalleled and universally recognized. Although retired since 2016, his sporting legacy remains completely foundational to his commercial brand.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"His competitive career record is officially documented and globally verified beyond any doubt.\"\n    },\n    \"audience_scale\": {\n      \"prose\": \"Phelps commands a very large legacy audience of several million followers across established platforms like Instagram, X, and Facebook. While he is not actively cultivating a presence on newer creator platforms like TikTok, his reach remains elite compared to other retired athletes and Olympic swimmers. His audience represents a stable, global base of long-term supporters.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Public follower counts across his verified mainstream social channels are clearly visible and well-documented.\"\n    },\n    \"engagement_quality\": {\n      \"prose\": \"His audience engagement sits at a standard, healthy baseline for a global celebrity of his stature. On Instagram, his average engagement rate of 2.77% demonstrates consistent, genuine connection with his followers. However, detailed insights into private metrics like shares, saves, and story reach are absent from public view.\",\n      \"confidence\": \"MEDIUM\",\n      \"confidence_reason\": \"Publicly visible engagement rates are clear, but specific high-value metrics like saves and video retention are missing.\"\n    },\n    \"cultural_relevance\": {\n      \"prose\": \"Phelps remains highly relevant culturally, transcending his identity as a retired athlete to become a respected public figure. He is frequently featured in high-quality mainstream media and generates consistent organic conversation, particularly regarding mental health. His household-name status ensures a high level of global crossover recognition.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"His regular features in major media outlets and durable public search interest provide robust evidence of his cultural standing.\"\n    },\n    \"narrative_power\": {\n      \"prose\": \"The narrative power of Michael Phelps is incredibly strong and multidimensional. He successfully evolved from an unmatched competitive machine into a vulnerable, authentic champion of mental health and water safety. This dual narrative of physical dominance and personal resilience is deeply authentic, highly durable, and naturally matches premium brand values.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"His extensive public advocacy, documented charity foundation work, and long-standing partnership with Talkspace directly validate his narrative depth.\"\n    },\n    \"brand_fit\": {\n      \"prose\": \"Phelps offers exceptional brand alignment across diverse categories, from athletic wear to healthcare and luxury products. His clear personal focus on resilience, mental wellness, and family gives him a highly coherent public identity. While past controversies exist, his mature and honest framing of those challenges has turned them into brand-safe stories of personal growth.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"His current portfolio of active partnerships with blue-chip brands like Pfizer and Under Armour demonstrates his strong alignment with mainstream corporate values.\"\n    },\n    \"commercial_proof\": {\n      \"prose\": \"His commercial footprint provides undeniable evidence of high market value, characterized by multi-million dollar annual earnings at his peak and enduring post-retirement partnerships. Phelps possesses remarkable brand loyalty, maintaining relationships with companies like Visa and Master Spas for well over a decade. His commercial proof places him in an elite tier of retired sports ambassadors.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"There is abundant and consistent public documentation of his premium endorsements, multi-decade renewals, and corporate alignments.\"\n    },\n    \"momentum\": {\n      \"prose\": \"As a retired athlete, Phelps' sporting and social momentum has settled into a highly stable, premium baseline rather than an explosive upward trajectory. His media and search visibility remain steady, experiencing predictable, significant surges during Olympic cycles. His commercial momentum is defined by long-term maintenance and highly selective acquisition of top-tier partners.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"The stable patterns of his social media metrics, consistent media scheduling, and corporate deal announcements provide highly reliable indicators of his steady momentum.\"\n    }\n  },\n\n  \"overall_confidence\": {\n    \"level\": \"HIGH\",\n    \"explanation\": \"The overall confidence is high because of Michael Phelps' global renown, extensive documented history of endorsements, and clear, verified competitive achievements. Better information regarding private campaign ROIs or specific short-form video retention metrics would refine minor engagement details, but would not materially alter his status as an elite, tier-one legacy brand ambassador.\"\n  },\n\n  \"key_strengths\": [\n    \"Most decorated Olympian of all time with 23 gold medals, providing unparalleled athletic authority.\",\n    \"Successful transition into a highly respected mental health advocate, offering a deep and authentic narrative.\",\n    \"Exceptional commercial longevity and repeat partnerships with top-tier brands like Visa and Under Armour.\",\n    \"Universal global crossover recognition as a household name.\"\n  ],\n  \"key_constraints\": [\n    \"Retired from active athletic competition since 2016, limiting performance-related news cycles.\",\n    \"Low active engagement on newer, highly interactive social platforms like TikTok or YouTube.\",\n    \"Audience growth has reached a mature, stable plateau rather than rapid expansion.\"\n  ],\n  \"important_missing_data\": [\n    \"Quantitative metrics regarding private social media interactions (saves, shares, story performance).\",\n    \"Detailed video retention and completion rates for his digital content.\",\n    \"Verified financial ROI or conversion statistics for recent commercial campaigns.\"\n  ],\n  \"identity_or_evidence_risks\": [\n    \"None. Michael Phelps' identity is globally verified, and his career and commercial partnerships are heavily documented by authoritative sources.\"\n  ]\n}\n```",
+  "native": {
+    "groundingChunks": [
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-Qj8UJxn75d5jomp1s6OIqmtMrpu1OX_fm8b__02r8Ln-R9iekGpPIP3TT64Nq9bmSdIXiucMc9QUOKj-pYve8PIkZ2VAtki4XI3ln3RW_gWTxF8-bORNlbMd8eaUIZoLdsaN-KEQ",
+          "title": "wikipedia.org",
+          "domain": "wikipedia.org"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJ7ezEUpQRSyeSPAzQECBBMDI3uqeA5DXoV06rsBn48EPbtM8DvlkJ-4oDi7yVpLyI5CFl9YhYzJPgK3xCi_01vGU5L8BqhA1ZoaE2ce_qpeHDHRPKZPpAithUvWlY_I-eXi0yJCmoFwfshOGzbp5aSba6-jVkfjvs-Q34qtiXHeWc1ulFo_LoTRDzfvT8W9JDqo7JOQLXTA_pTMYa-obViVlvQvjWVnXTRAjUtdawyP7BBODjhqPExNha2p8UOq6xkhCXetE65SwyCzCq0S44lzIlLx_SLDMKC4kOW6OQ-5ztXmKRi1JcTbWY5JLkfO_IBFmeKzaqHSKWTZHbugfjQxjDmg==",
+          "title": "indiatimes.com",
+          "domain": "indiatimes.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE7EqjOT4qwpnAlt528UCAt9FSw_QDFv3Wp5d4AhObcq-GGjbyh7Ii_FYPt06J_NiJriSCg8Bq-sNBEVQp_QYIc9E48xRXP4-XW3nHsxmNm5-ud8tz34cGqTGf1ZDrqPwXzgss7Y8WX1YTed1sbcU8JoajRI3fyoZ14PHihke3fBvIPOfNYAHosNQH5U-2cNkf1suUG",
+          "title": "thewrap.com",
+          "domain": "thewrap.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdE1tHefbCJwrltVWdZKJOuMeJPZ3eeysDOkvqr76HanO8MKP1bfVwEZKNZJdlpo1CeOv-3dUsgdmv2Q9Ms-y_TRv3dYHm0a9IKpO5nIR7j44ALphH36JKRSmMIKWzpNH2h-7890jqpw==",
+          "title": "hypeauditor.com",
+          "domain": "hypeauditor.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEOyPUWuvrpe6_dxwkFCWxi-NOb-lL3r895I3agb1eBTHkJqcpvQWDoKdJyPrHSl_iFjs2SV2DBKSq3vxe5rcqtHJ01EqUZ4KB1OSJJwI2Z99_dQpXLQv9niTzPLzj_-wgJdXrnDqGl1QQehSNM",
+          "title": "conference-board.org",
+          "domain": "conference-board.org"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJjrfK6aDbWfg0Tosul3mQZnEDovsPNcrDzyYueNdyEWWRj4Q86yW0q2AhNAGLnrdayIt3OSM7sGvZjolcCx-a6FANF8kIT1iutkjW7l8XZQ-w6F5P-wpuk36TKUlB2WzKQqbLFg==",
+          "title": "youtube.com",
+          "domain": "youtube.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHlV6cF0BamEjqiQ7dWLJV6QgusnA752VXGBnxn9IaM01-g0bo8y4giaNXAcZ7KZxgiDcHrNaSPkYKsDfUSbs43lKUgh_LrELTT3ztrqZWzTmN53Rj03N5_CUN414G3yvr_13oLYxhr3ktnQTyZw2S893-mj3RzkLDCMMR2SxuZt0Iuur-xntaNuu4=",
+          "title": "sportskeeda.com",
+          "domain": "sportskeeda.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZrpfiZlqXXfd_D0FtlDIY7s43CRNC1q0gqzIkE-3NuwQEhvoCeqZaYFLYWS5v32etE_5TS8KlzyoCcExUHlCnGF4lm11xN5AW2bNtg_Vx3Yjk8pha8xInkmoK0-w4_QWd6OgVsFZBoh89hhe_-gsf8rWYvJVLEqkpi-bCnhudiA==",
+          "title": "facebook.com",
+          "domain": "facebook.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZFsbkASfTgnVdXba2EGXDf7x2mRpzRXr_sdAK0C4r0xyezH1KfqMRTeSvPCO3eXBOX9EPnNm2bs0ZwlKffg8bi9-RnO_orYvD4pLx2WnIDjxh3j3Q4-PsxhL-3hpQR09wal_2CUpke7F5X4tfKV4tal5bScklK9VeXhk2ZccWXGVq",
+          "title": "swimswam.com",
+          "domain": "swimswam.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGx9wGyu-shJklPgjty6QiF5a7AmzV7eVy34JHjDHbmsJijrgJpcroZFGnAXVBnTQX0Yrfyse3Gx2fKJ4-9IHYgzHY1xKiwRjo-1MfZwQwo1F2CJQ1yl1mr2_psD5rbRNtpewNR9VtIjtAFLEm74UHWRRQZL6MdZR8fKzKX",
+          "title": "worldsportsadvertising.com",
+          "domain": "worldsportsadvertising.com"
+        }
+      }
+    ],
+    "groundingSupports": [
+      {
+        "segment": {
+          "startIndex": 122,
+          "endIndex": 370,
+          "text": "\"marketability_summary\": \"Michael Phelps, widely regarded as the greatest swimmer and most decorated Olympian in history with 28 medals (23 gold), maintains an extraordinary commercial profile a decade after his retirement from competitive swimming"
+        },
+        "groundingChunkIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 372,
+          "endIndex": 557,
+          "text": "As of 2026, Phelps holds a strong digital footprint led by 3.78 million Instagram followers and over 2 million X followers, characterized by highly authentic, legacy audience engagement"
+        },
+        "groundingChunkIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 559,
+          "endIndex": 726,
+          "text": "Phelps has successfully transitioned his narrative from unprecedented athletic dominance to vulnerable, globally recognized advocacy for mental health and water safety"
+        },
+        "groundingChunkIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 728,
+          "endIndex": 904,
+          "text": "This transition is anchored by his work with the Michael Phelps Foundation and high-profile partnerships with digital therapy platform Talkspace and pharmaceutical giant Pfizer"
+        },
+        "groundingChunkIndices": [
+          6,
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 906,
+          "endIndex": 1131,
+          "text": "His commercial portfolio remains elite, featuring long-term renewals with blue-chip brands like Under Armour, Visa, and Omega, demonstrating enduring pricing power and exceptional brand safety despite minor past controversies"
+        },
+        "groundingChunkIndices": [
+          7,
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1133,
+          "endIndex": 1288,
+          "text": "While his athletic trajectory is retired and social growth is stable rather than explosive, his cultural relevance surges cyclically during Olympic periods"
+        },
+        "groundingChunkIndices": [
+          8
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1401,
+          "endIndex": 1625,
+          "text": "Ultimately, Phelps represents a rare tier of retired athletes whose legendary status and deeply resonant personal narrative provide long-term, premium marketing viability across global health, wellness, and lifestyle sectors"
+        },
+        "groundingChunkIndices": [
+          9
+        ]
+      }
+    ],
+    "webSearchQueries": [
+      "Michael Phelps current status brand endorsements 2025 2026",
+      "Michael Phelps Instagram follower count",
+      "Michael Phelps Twitter follower count",
+      "Michael Phelps brand endorsements list",
+      "Michael Phelps Twitter followers count 2025 2026",
+      "Michael Phelps X followers count",
+      "Michael Phelps mental health Pfizer Talkspace 2025 2026"
+    ],
+    "config": {
+      "tools": [
+        {
+          "googleSearch": {}
+        }
+      ],
+      "temperature": 1,
+      "maxOutputTokens": 65536,
+      "thinking": "default"
+    }
+  },
+  "error": null,
+  "promptSocialBlock": null
+}

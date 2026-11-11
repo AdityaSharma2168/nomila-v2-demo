@@ -1,0 +1,692 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "alex-morgan",
+    "name": "Alex Morgan",
+    "sport": "Soccer"
+  },
+  "parseError": null,
+  "dimensionAssessments": {
+    "athletic_authority": {
+      "prose": "Alex Morgan holds an elite and permanent historical legacy as a two-time World Cup winner and Olympic gold medalist. Although her playing career ended in late 2024, her standing as a legendary leader for the USWNT and San Diego Wave FC cements her sporting authority. Her post-retirement jersey celebration in 2025 further highlights her structural importance to the sport.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her extensive list of athletic achievements and official retirement dates are thoroughly and historically documented by governing bodies."
+    },
+    "audience_scale": {
+      "prose": "Morgan commands a massive, top-tier global audience that remains highly competitive with active global superstar athletes. Anchored by over 9 million followers on Instagram, her digital presence spans across multiple major channels. While her audience size has stabilized, she remains a primary reach vehicle.",
+      "confidence": "HIGH",
+      "confidenceReason": "Audience size is corroborated across numerous third-party analytics reports and secondary tracking databases through 2026."
+    },
+    "engagement_quality": {
+      "prose": "Her public engagement on Instagram remains average for her massive scale, averaging around 2.65%. Her community connection is organic and driven by her persistent values-based messaging and advocacy work. However, the lack of primary platform data obscures her specific private interaction parameters.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "Detailed public interaction metrics are accessible, but private metrics such as saves, shares, and story efficiency are completely absent."
+    },
+    "cultural_relevance": {
+      "prose": "Morgan remains a massive cultural icon whose footprint goes far beyond soccer. Her status as an advocate for working mothers, a best-selling kids' author, and an active sports venture capitalist secures constant top-tier coverage in major national publications. She generates consistent, long-term public conversation independent of her playing status.",
+      "confidence": "HIGH",
+      "confidenceReason": "Frequent, documented cultural coverage in premier general media outlets like Time and Forbes confirms her broad appeal."
+    },
+    "narrative_power": {
+      "prose": "Morgan's personal story is exceptionally powerful, multi-dimensional, and highly authentic. She successfully communicates a narrative that balances legendary soccer triumphs, landmark gender equality legal battles, elite motherhood, and a transition to business executive. This distinct narrative makes her highly resilient to the typical post-retirement visibility decay.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her personal narrative is highly consistent, visible, and deeply integrated into her public action and foundational work."
+    },
+    "brand_fit": {
+      "prose": "Morgan's clean public record and mature identity make her exceptionally brand-safe for top-tier sponsors. Her brand fit is highly versatile, appealing directly to family-focused consumer packaged goods, corporate inclusion initiatives, and investment groups. Her domestic geographic relevance is incredibly strong in the valuable US market.",
+      "confidence": "HIGH",
+      "confidenceReason": "A long-term track record of pristine public safety and a diverse roster of active corporate partners support this rating."
+    },
+    "commercial_proof": {
+      "prose": "Morgan has historically verified commercial power as one of the most-endorsed female athletes in history, once surpassing all male US professional athletes in deal volume. She continues to maintain active relationships with elite partners, including multi-year collaborations with Henkel and CVS. Her premium pricing power remains fully intact two years after retirement.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her extensive commercial portfolio and details of her high-profile multi-year contracts are widely documented in financial media."
+    },
+    "momentum": {
+      "prose": "Naturally, her active athletic performance trajectory is non-existent following her 2024 retirement, and her audience growth has leveled off. However, her commercial and media momentum remains remarkably stable, sustained by her active role as an investor and business builder. Her partnerships and business launches show no signs of dramatic post-career decline.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her post-playing venture capital investments and new brand partnerships through early 2026 clearly indicate her post-retirement trajectory."
+    }
+  },
+  "overallConfidence": {
+    "level": "HIGH",
+    "explanation": "Morgan's extensive public footprint and mature post-retirement status allow for a highly accurate assessment of her overall marketability. While private social engagement conversions remain missing, her well-documented legacy, clear commercial track record, and active business career provide complete evidence to define her elite commercial standing."
+  },
+  "identityConfidence": "HIGH",
+  "summary": "Alex Morgan is a legendary figure in global association football, widely recognized as one of the most prominent pioneers in the growth of women's soccer. Retired from professional play since September 2024, her status has transitioned into that of an iconic stateswoman and highly active sports business executive. Morgan holds an exceptional commercial footprint with a massive, highly loyal digital following of over 9 million on Instagram alone, rendering her one of the most visible female athletes in the United States. Her personal narrative is deeply layered, merging elite athletic achievement with dedicated advocacy for equal pay, active motherhood, and a rising career as a venture investor. Even post-playing career, her momentum has shifted into high-profile business ventures, including co-founding media group Togethxr, investing in professional women's sports, and securing major long-term brand relationships with brands like CVS Pharmacy, Henkel, and all Laundry. There is minor uncertainty regarding specific private social media performance rates, but her public commercial strength remains category-leading.",
+  "summaryWords": 161,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Alex Morgan officially retired from professional soccer in September 2024, playing her final career match on September 8, 2024 with San Diego Wave FC.",
+      "sourceTitle": "Alex Morgan Announces Retirement And Pregnancy Ahead Of Final Game",
+      "sourceUrl": "https://www.sandiegowavefc.com/news/alex-morgan-announces-retirement-and-pregnancy-ahead-of-final-game",
+      "sourceType": "official",
+      "date": "September 5, 2024"
+    },
+    {
+      "id": "E2",
+      "claim": "Morgan is a two-time FIFA Women's World Cup Champion (2015, 2019) and Olympic Gold Medalist (2012) with 224 international appearances and 123 goals for the USWNT.",
+      "sourceTitle": "Thank You, Alex!",
+      "sourceUrl": "https://www.ussoccer.com/players/m/alex-morgan",
+      "sourceType": "official",
+      "date": "September 5, 2024"
+    },
+    {
+      "id": "E3",
+      "claim": "San Diego Wave FC retired Morgan's iconic No. 13 jersey in September 2025, after she became a minority investor in the NWSL club in May 2025.",
+      "sourceTitle": "San Diego Wave FC Retires Alex Morgan's Iconic Jersey Number",
+      "sourceUrl": "https://www.forbes.com/sites/asif/2025/09/08/san-diego-wave-fc-retires-alex-morgans-iconic-jersey-number",
+      "sourceType": "major_media",
+      "date": "September 8, 2025"
+    },
+    {
+      "id": "E4",
+      "claim": "In 2026, Morgan maintains prestigious brand partnerships with Henkel (announced March 2026), CVS Pharmacy, and all Laundry.",
+      "sourceTitle": "Letter to a Soccer Nation - U.S. Soccer Legend, Alex Morgan and Henkel release inspirational rallying-cry",
+      "sourceUrl": "https://www.henkel-northamerica.com/press-and-media/press-releases-and-reports/2026-03-06-letter-to-a-soccer-nation",
+      "sourceType": "official",
+      "date": "March 6, 2026"
+    },
+    {
+      "id": "E5",
+      "claim": "Morgan's Instagram following sits at approximately 9.15 million with an average engagement rate of 2.65% as of August 2026.",
+      "sourceTitle": "Alex Morgan (@alexmorgan13) Instagram Influencer Profile",
+      "sourceUrl": "https://hypeauditor.com/instagram/alexmorgan13",
+      "sourceType": "secondary",
+      "date": "August 15, 2026"
+    },
+    {
+      "id": "E6",
+      "claim": "In early 2026, her venture-capital firm led investments in a new professional women's golf league, and she holds stakes in a professional flag-football league.",
+      "sourceTitle": "Alex Morgan's Venture Firm Leads Investment In Women's Golf League",
+      "sourceUrl": "https://www.time.com/article/alex-morgan-post-retirement-ventures-2026",
+      "sourceType": "major_media",
+      "date": "June 9, 2026"
+    },
+    {
+      "id": "E7",
+      "claim": "Morgan is the co-founder of the women-focused media and commerce company Togethxr.",
+      "sourceTitle": "Alex Morgan Talks Retirement, the NWSL, and Places to Play",
+      "sourceUrl": "https://www.theskimm.com/sports/alex-morgan-retirement-interview-2026",
+      "sourceType": "major_media",
+      "date": "March 18, 2026"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Before her retirement, Morgan competed at the absolute peak tier of the global sport, including the Olympic Games and FIFA Women's World Cups.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 70,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "She holds an elite historical record, though her final active season prior to her retirement in 2024 featured declining offensive statistics.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "She was a multi-time FIFA FIFPro World 11 selection and had her jersey number retired by San Diego Wave FC in 2025.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2"
+      ],
+      "rationale": "Morgan represented the USWNT 224 times, winning two World Cups and Olympic gold, making her internationally iconic.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Morgan served as co-captain of the national team and captain of her club, retaining central structural importance to soccer.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 60,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "While highly relevant to her brand identity, her ultimate active achievements occurred prior to her retirement in late 2024.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Morgan holds an exceptional digital scale, maintaining over 9 million followers on Instagram alone despite being out of active play.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "She stands as one of the top three most-followed female soccer players in history, leading nearly all other American players.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 30,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Her audience size has slightly contracted and stabilized post-retirement, reflecting a typical end-of-career plateau.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "She maintains an extensive, established public footprint across major channels including Instagram, X, Facebook, and TikTok.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "scored",
+      "score": 50,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Public audits indicate her average Instagram engagement rate sits around 2.65%, which is ordinary for an audience of her scale.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No authoritative platform reach metrics are publicly available to assess private reach ratios.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Platform saves and shares data are private and cannot be reliably estimated.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Direct first-party data regarding video completion rates is unavailable.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Social media story performance metrics are private and unrecorded in public sources.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "scored",
+      "score": 70,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Her real-world community backing and brand retention show a highly authentic, real-world connection with families and soccer fans.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "rationale": "She maintains high, persistent media coverage through her venture activities, public family milestones, and prominent endorsements.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E6",
+        "E7"
+      ],
+      "rationale": "Her work has been covered by top-tier publications including Time, Forbes, The New York Times, and major sports networks.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "She generates steady, lasting public search interest which elevates during key personal milestones or major soccer tournaments.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3",
+        "E7"
+      ],
+      "rationale": "Morgan is a frequent talking point in conversations regarding maternal sports policies, equal pay legacies, and women's soccer.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4",
+        "E7"
+      ],
+      "rationale": "As a published children's book author and general pop-culture figure, she is widely recognized by non-sports fans.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E4",
+        "E7"
+      ],
+      "rationale": "Morgan is the definitive face of the modern USWNT, combining athletic heroism with the highly distinct identity of a working mom and investor.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E4",
+        "E7"
+      ],
+      "rationale": "Her narrative goes beyond the pitch to include leading the equal pay movement, co-founding Togethxr, and raising a growing family.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3",
+        "E7"
+      ],
+      "rationale": "Her advocacy achievements and business structures are legally and publicly documented, reinforcing the legitimacy of her story.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "rationale": "Public and media outlets enthusiastically echo her transition into an investor and business builder.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Her status as a prominent mother and athletic icon allows corporate sponsors to build highly natural, non-forced family and wellness campaigns.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4",
+        "E6"
+      ],
+      "rationale": "Her narrative is not dependent on her active playing status, allowing her to stay commercially powerful long after her retirement.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E6",
+        "E7"
+      ],
+      "rationale": "Morgan easily fits categories like activewear, parenting, wellness, institutional finance, retail, and corporate advocacy campaigns.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "She maintains an exceptionally safe, highly professional public persona completely devoid of reputational controversies.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Her audience heavily skews toward families, young girls, and buying-empowered millennial and Gen Z women.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E7"
+      ],
+      "rationale": "There is a seamless alignment between her values of female empowerment, family care, and the brands she chooses to represent.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "She is highly capable of carrying prime-time national TV spots, high-level corporate speaking, and raw behind-the-scenes social posting.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E4"
+      ],
+      "rationale": "She is globally recognized, but maintains premium commercial focus within the highly lucrative United States consumer market.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Historically verified as one of the highest-earning female endorsers, she continues to capture multi-million dollar portfolios.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "She has consistently maintained dozens of active, diverse partnerships, including major post-retirement rollouts.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Her historical and current sponsors are elite-tier, including Nike, Coca-Cola, Google, AT&T, and Henkel.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Brands consistently renew and expand their agreements with Morgan, as seen with her ongoing multi-year relationships.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Specific, audited conversion data and campaign ROI metrics are not public.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Morgan commands premium, elite-tier pricing for her endorsements, outperforming almost all other female team-sport athletes.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 20,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "Because she has retired from professional sports, her active athletic performance trajectory has formally concluded.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 25,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Her audience size shows slight post-retirement consolidation, reflecting stable but non-growing follower trends.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 60,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4",
+        "E6"
+      ],
+      "rationale": "Her media presence is stable rather than accelerating, sustained by major business announcements rather than active games.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 50,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "Public curiosity has flattened into a stable baseline following her retirement news spikes.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 55,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E6"
+      ],
+      "rationale": "Her commercial activity is exceptionally strong but has reached a mature, stable plateau rather than rapid acceleration.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Permanent, iconic status as one of the most decorated and culturally significant female soccer players in history.",
+    "Elite commercial track record with a history of leading all women's sports in total brand partnerships.",
+    "Pristine, brand-safe family and wellness identity with high appeal for household consumer packaged goods.",
+    "Massive, established cross-platform digital audience of over 9 million followers on Instagram alone.",
+    "Successful and highly visible transition into sports business, venture investing, and maternal advocacy."
+  ],
+  "keyConstraints": [
+    "Retired from active professional play, resulting in zero athletic trajectory or competitive momentum.",
+    "Social media follower growth has plateaued and shown minor post-career consolidation.",
+    "Elite pricing power may price out smaller, local, or emerging brands."
+  ],
+  "importantMissingData": [
+    "Audited return-on-investment (ROI) data and conversion metrics for her post-retirement campaign rollouts.",
+    "First-party private social media analytics including saves, shares, and video completion rates."
+  ],
+  "identityOrEvidenceRisks": [
+    "Potential for gradual, long-term media visibility decay if her business and maternal advocacy actions remain out of direct live broadcasting streams over the coming years."
+  ],
+  "socialBlockSupplied": false
+}

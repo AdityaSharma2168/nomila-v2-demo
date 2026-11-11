@@ -1,0 +1,320 @@
+name: CI checks
+
+# Guardrails that run BEFORE code reaches main — the gap that let the analytics
+# white-screen (a react-hooks/rules-of-hooks violation) and several partial-data
+# crashes merge unnoticed. Gates:
+#   1. tsc --noEmit  → catches type regressions across client/server/shared.
+#   2. rules-of-hooks → the crash class (a hook called conditionally / after an
+#      early return) unmounts the whole screen at runtime; tsc can't see it, but
+#      eslint-plugin-react-hooks can. We fail ONLY on that rule so the many
+#      pre-existing cosmetic lint warnings don't block PRs.
+#   3. Jest, the FULL suite, discovered and partitioned by scripts/run-tests.ts.
+#
+# scripts/run-tests.ts replaces what used to be three Jest jobs here, each with a
+# hand-enumerated list of test file paths. Any file not on one of those lists never
+# ran in CI — that's how server/studio/composite.test.ts and server/voice/dealRoutes
+# .test.ts sat on main with 5 failing tests, invisible to CI. The runner globs the
+# filesystem instead and refuses to start if any discovered file isn't assigned to a
+# batch, so that class of gap can't come back. Discovery happens ONCE (discover-tests)
+# and each resulting batch gets its own matrix job — a fresh VM per batch, which is an
+# even stronger form of the "fresh process per batch" memory isolation the runner also
+# provides for local `npm test` runs (see scripts/testRunner/discovery.ts for why one
+# process for all PGlite suites blew past its 8 GB heap ceiling to 15.5 GB RSS).
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+# Newer pushes supersede in-flight runs for the same ref.
+concurrency:
+  group: ci-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Typecheck (tsc --noEmit)
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+        run: npx tsc --noEmit -p tsconfig.json
+
+      # Test files are excluded from tsconfig.json, and Jest compiles them transpile-only
+      # (isolatedModules via tsconfig.jest.json — the fix for the routes batch OOMing the
+      # runner), so Jest no longer type-checks them either. This is where test-file type
+      # errors are caught now: once per run here, instead of once per Jest worker at
+      # ~3.3 GB a time. Was 2.9 GB peak at first; it now exceeds 4 GB on the runner, so 6 GB (runner has 7).
+      - name: Typecheck test files (tsc --noEmit -p tsconfig.jest.json)
+        env:
+          NODE_OPTIONS: --max-old-space-size=6144
+        run: npx tsc --noEmit -p tsconfig.jest.json
+
+      - name: Rules of Hooks (crash-class lint)
+        run: |
+          npx eslint "client/**/*.{ts,tsx}" -f json -o eslint-report.json || true
+          node -e "
+            const report = require('./eslint-report.json');
+            const hooks = report.flatMap(f =>
+              (f.messages || [])
+                .filter(m => m.ruleId && m.ruleId.includes('rules-of-hooks'))
+                .map(m => ({ file: f.filePath, line: m.line, message: m.message }))
+            );
+            if (hooks.length) {
+              console.error('✖ react-hooks/rules-of-hooks violations (these white-screen the app at runtime):');
+              console.error(JSON.stringify(hooks, null, 2));
+              process.exit(1);
+            }
+            console.log('✓ No rules-of-hooks violations.');
+          "
+
+  discover-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      batches: ${{ steps.discover.outputs.batches }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      # This is the ONLY place the set of test batches is decided — from a filesystem
+      # glob, not a hand-written list. Each name in the JSON array becomes one matrix
+      # job below. If a new server/<area>/ ever exceeds the runner's suite cap it grows
+      # into #2, #3, ... automatically; nothing here needs editing either way.
+      - name: Discover test batches
+        id: discover
+        run: |
+          BATCHES=$(npm test -- --list-batches | tail -n 1)
+          echo "batches=$BATCHES" >> "$GITHUB_OUTPUT"
+
+  test:
+    needs: discover-tests
+    runs-on: ubuntu-latest
+    # A hung job used to sit for ~40 min (apt stalls in the ffmpeg step); fail fast instead.
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        batch: ${{ fromJson(needs.discover-tests.outputs.batches) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      # server/studio/video/stitch.test.ts drives real ffmpeg — the same binary the
+      # Dockerfile installs for the media-poster worker (Dockerfile:30), so "ffmpeg on
+      # PATH" is already the production contract. The runner image has none, and without
+      # this the whole server/studio#2 batch dies in beforeAll with `spawn ffmpeg ENOENT`
+      # — all 15 tests, including the three that never reach the binary, because the
+      # lavfi fixtures are generated with it. Installed for every batch rather than
+      # conditioned on the batch name: a conditional would silently skip the install the
+      # next time a suite somewhere else shells out to ffmpeg.
+      # The Ubuntu mirrors sometimes stall mid-download (the step hung for ~40 min, and
+      # later timed out on most batches of a run at once). So the SAME apt ffmpeg the
+      # mirrors serve (no static build: stitch tests are frame-exact and version-sensitive)
+      # is downloaded once per OS release and kept in the Actions cache; every other job
+      # installs those .debs with dpkg and never touches the network.
+      # ImageOS is a runner machine variable, not the workflow `env` context, so the key
+      # is built in a shell step. Keyed on the OS release only: runner image versions
+      # change weekly and several are live at once, which would split the cache; a set
+      # that no longer installs cleanly falls back to apt below.
+      - name: ffmpeg cache key
+        id: ffmpeg-key
+        run: echo "key=ffmpeg-debs-${ImageOS:-unknown}-v1" >> "$GITHUB_OUTPUT"
+
+      - name: Restore ffmpeg packages
+        id: ffmpeg-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/ffmpeg-debs
+          key: ${{ steps.ffmpeg-key.outputs.key }}
+
+      # Cache hit: install the kept .debs offline; if that ever fails (a package the
+      # image changed underneath), fall through to the network path below.
+      # Cache miss: bounded apt with retries, as before, keeping the downloaded .debs.
+      - name: Install ffmpeg
+        timeout-minutes: 12
+        run: |
+          DEBS="$HOME/ffmpeg-debs"
+          if ls "$DEBS"/*.deb >/dev/null 2>&1; then
+            if sudo dpkg -i "$DEBS"/*.deb >/dev/null && ffmpeg -version >/dev/null 2>&1; then
+              ffmpeg -version | head -1
+              echo "ffmpeg installed from the cache"
+              exit 0
+            fi
+            echo "cached .debs did not install; using apt"
+            rm -rf "$DEBS"
+          fi
+          mkdir -p "$DEBS/partial"
+          for i in 1 2 3; do
+            if sudo timeout 180 apt-get -o Acquire::Retries=3 -o Acquire::http::Timeout=30 update -q \
+              && sudo timeout 240 apt-get -o Acquire::Retries=3 -o Acquire::http::Timeout=30 \
+                   -o Dir::Cache::archives="$DEBS" -o APT::Keep-Downloaded-Packages=true \
+                   install -y --no-install-recommends ffmpeg; then
+              ffmpeg -version | head -1
+              sudo rm -rf "$DEBS/partial" "$DEBS/lock"
+              sudo chown -R "$(id -u):$(id -g)" "$DEBS"
+              echo "fresh=1" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "ffmpeg install attempt $i failed; retrying"
+            sleep 10
+          done
+          exit 1
+        id: ffmpeg-install
+
+      # Saved right away (not at job end), so a failing Jest batch still fills the cache.
+      # Many matrix jobs may try to save the same key at once; all but one get "unable to
+      # reserve", which is harmless.
+      - name: Save ffmpeg packages
+        if: steps.ffmpeg-install.outputs.fresh == '1' && steps.ffmpeg-cache.outputs.cache-hit != 'true'
+        continue-on-error: true
+        uses: actions/cache/save@v4
+        with:
+          path: ~/ffmpeg-debs
+          key: ${{ steps.ffmpeg-key.outputs.key }}
+
+      # --runInBand semantics are preserved inside the runner (PGlite contention needs
+      # sequential tests within a batch); the matrix gives every batch its own fresh
+      # process AND its own fresh VM.
+      - name: "Jest: ${{ matrix.batch }}"
+        run: npm test -- --batch "${{ matrix.batch }}"
+
+  # The ffmpeg-dependent suites again, on PROD'S ffmpeg. The matrix above runs Ubuntu's apt ffmpeg (6.x); the
+  # Dockerfile's runtime is node:22.22-bookworm-slim with Debian's apt ffmpeg (5.1.x). That gap hid a live bug:
+  # `ebur128=framelog=quiet` (an ffmpeg 6.0 option) passed every CI run while prod's 5.1 refused it, so Studio beds
+  # went unlevelled and clip loudness came out empty, silently (server/studio/video/ebur128.ts). So this job runs in
+  # the Dockerfile's own base image, installs ffmpeg the way the Dockerfile does, and runs only the suites that drive a
+  # real ffmpeg — found by grep, not listed by hand, so a new one is picked up — one at a time, as `npm test` expects.
+  # If the Dockerfile's base image changes, change `container.image` with it.
+  studio-ffmpeg-prod:
+    name: studio-ffmpeg-prod (ffmpeg 5.1)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    container:
+      image: node:22.22-bookworm-slim
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install ffmpeg (as the Dockerfile does)
+        timeout-minutes: 8
+        run: |
+          for i in 1 2 3; do
+            if timeout 180 apt-get -o Acquire::Retries=3 update -q \
+              && timeout 300 apt-get -o Acquire::Retries=3 install -y --no-install-recommends ffmpeg; then
+              ffmpeg -version | head -1
+              exit 0
+            fi
+            echo "ffmpeg install attempt $i failed; retrying"
+            sleep 10
+          done
+          exit 1
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: "Jest: the ffmpeg suites on ffmpeg 5.1"
+        run: |
+          ffmpeg -version | head -1 | grep -E '^ffmpeg version 5\.1\.' \
+            || { echo "::error::expected Debian bookworm's ffmpeg 5.1.x"; exit 1; }
+          SUITES=$(grep -rlE --include='*.test.ts' '"ffmpeg"|lavfi|makeFixtures|ebur128Filter' server \
+            | xargs grep -LE 'jest\.mock\("child_process"' | sort)
+          [ -n "$SUITES" ] || { echo "::error::no ffmpeg suites found"; exit 1; }
+          echo "$SUITES"
+          FAILED=""
+          for f in $SUITES; do
+            npm test -- "$f" || FAILED="$FAILED $f"
+          done
+          if [ -n "$FAILED" ]; then
+            echo "::error::failed on ffmpeg 5.1:$FAILED"
+            exit 1
+          fi
+
+  # The motion renderer (media/remotion) has its own package and tsconfig, which the root tsc excludes, so a type
+  # break in its server (transfer.ts: the only code that touches the signed URLs) would only surface at deploy. Its
+  # tests (server/services/remotionTransfer.test.ts, remotionRender.test.ts) run in the Jest matrix above.
+  # --ignore-scripts: no Chromium download, typecheck only.
+  render-service:
+    name: render-service (typecheck)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.22'
+          cache: npm
+          cache-dependency-path: media/remotion/package-lock.json
+
+      - name: Install dependencies
+        working-directory: media/remotion
+        run: npm ci --ignore-scripts
+
+      - name: Typecheck
+        working-directory: media/remotion
+        run: npm run typecheck
+
+  # The single context branch protection can require for the Jest matrix. Each
+  # `test (<batch>)` job is a dynamic matrix entry — its name is only known after
+  # discover-tests runs — so none of them can be named as a required check, and until
+  # now only `checks` was: a red Jest batch never blocked a merge. This job fans the
+  # matrix in and is red if any batch failed, was cancelled, or never ran (a skipped
+  # matrix is not a green matrix). Required in branch protection as `tests-passed`.
+  tests-passed:
+    name: tests-passed
+    needs: [discover-tests, test, studio-ffmpeg-prod, render-service]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Every Jest batch succeeded
+        env:
+          DISCOVER: ${{ needs.discover-tests.result }}
+          TESTS: ${{ needs.test.result }}
+          FFMPEG_PROD: ${{ needs.studio-ffmpeg-prod.result }}
+          RENDER: ${{ needs.render-service.result }}
+        run: |
+          echo "discover-tests: $DISCOVER"
+          echo "test (all batches): $TESTS"
+          echo "studio-ffmpeg-prod (ffmpeg 5.1): $FFMPEG_PROD"
+          echo "render-service (typecheck): $RENDER"
+          if [ "$DISCOVER" != "success" ] || [ "$TESTS" != "success" ] || [ "$FFMPEG_PROD" != "success" ] || [ "$RENDER" != "success" ]; then
+            echo "::error::A Jest batch did not succeed (see the test (...) jobs above)."
+            exit 1
+          fi
+          echo "✓ Every Jest batch passed."

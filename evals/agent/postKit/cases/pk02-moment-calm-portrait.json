@@ -1,0 +1,18 @@
+{
+  "id": "pk02-moment-calm-portrait",
+  "description": "A moment that asks for a calm portrait, not game action: the portrait is picked over stronger action shots, as a single feed post.",
+  "reviewed": false,
+  "library": [
+    { "key": "action_1", "kind": "photo", "description": "the athlete mid-jump in a crowded arena", "shot_type": "action", "setting": "arena" },
+    { "key": "action_2", "kind": "photo", "description": "the athlete celebrating a point with arms raised", "shot_type": "action", "setting": "arena" },
+    { "key": "portrait", "kind": "photo", "description": "a calm, quiet portrait of the athlete looking out of a window", "shot_type": "portrait", "setting": "home", "vibe": "calm, reflective" }
+  ],
+  "post": {
+    "what": "Before the final",
+    "body": "Caption: Quiet before the big one.\nShots: one still portrait.",
+    "platform": "instagram",
+    "moment": { "name": "Conference final", "date": "2026-11-02", "hook": "Quiet before the big one.", "format": "feed", "show": "a calm portrait, not game action", "captionAngle": "the calm before", "avoid": "loud celebration shots", "mediaNeeds": "a calm portrait" }
+  },
+  "expect": { "any_of": ["portrait"], "must_not": [], "avoid_picking": ["action_1", "action_2"], "ai_needed": false, "format": "feed" },
+  "mock": { "picks": [{ "key": "portrait" }], "look": "muted", "mood": "reflective" }
+}

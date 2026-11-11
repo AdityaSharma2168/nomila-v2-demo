@@ -1,0 +1,360 @@
+<title>Rate Card Grid</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@400;500&display=swap">
+<style>
+  :root {
+    --ink:      #141a21;
+    --ground:   #f4f6f8;
+    --surface:  #ffffff;
+    --line:     #e1e6ea;
+    --line-hi:  #cdd5dc;
+    --muted:    #67727f;
+    --faint:    #98a2ad;
+    --accent:   #0f5f66;
+    --accent-t: 15, 95, 102;
+    --flag:     #a4442b;
+    --flag-bg:  #f7ece8;
+    --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    --serif: "IBM Plex Serif", Georgia, serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink:      #e8edf2;
+      --ground:   #0c0f13;
+      --surface:  #141920;
+      --line:     #232932;
+      --line-hi:  #313a46;
+      --muted:    #8b95a1;
+      --faint:    #6b7581;
+      --accent:   #4fb3ac;
+      --accent-t: 79, 179, 172;
+      --flag:     #e08a6d;
+      --flag-bg:  #2a1d18;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink:      #e8edf2;
+    --ground:   #0c0f13;
+    --surface:  #141920;
+    --line:     #232932;
+    --line-hi:  #313a46;
+    --muted:    #8b95a1;
+    --faint:    #6b7581;
+    --accent:   #4fb3ac;
+    --accent-t: 79, 179, 172;
+    --flag:     #e08a6d;
+    --flag-bg:  #2a1d18;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 28px 22px 64px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1480px; margin: 0 auto; }
+
+  header { margin-bottom: 22px; }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(26px, 3.4vw, 36px);
+    letter-spacing: -0.015em;
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .sub { color: var(--muted); max-width: 66ch; margin: 0 0 16px; }
+  .meta {
+    display: flex; flex-wrap: wrap; gap: 8px 10px;
+    font-family: var(--mono); font-size: 11.5px; color: var(--muted);
+  }
+  .chip {
+    border: 1px solid var(--line); border-radius: 3px;
+    padding: 3px 8px; background: var(--surface);
+    white-space: nowrap;
+  }
+  .chip b { color: var(--ink); font-weight: 500; }
+
+  .controls {
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+    margin: 20px 0 12px;
+  }
+  .seg { display: inline-flex; border: 1px solid var(--line-hi); border-radius: 4px; overflow: hidden; }
+  .seg button {
+    font-family: var(--sans); font-size: 12.5px; font-weight: 500;
+    padding: 6px 14px; border: 0; cursor: pointer;
+    background: var(--surface); color: var(--muted);
+    border-right: 1px solid var(--line);
+  }
+  .seg button:last-child { border-right: 0; }
+  .seg button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+  .seg button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12px; color: var(--muted); align-items: center; }
+  .legend span { display: inline-flex; align-items: center; gap: 5px; }
+  .cf { font-family: var(--mono); color: var(--ink); }
+
+  .scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+  table { border-collapse: separate; border-spacing: 0; width: 100%; }
+  th, td { text-align: left; vertical-align: top; }
+
+  thead th {
+    position: sticky; top: 0; z-index: 3;
+    background: var(--surface);
+    border-bottom: 1px solid var(--line-hi);
+    padding: 11px 12px 9px;
+    font-weight: 600; font-size: 13px;
+    white-space: nowrap;
+  }
+  thead th .mia {
+    display: block; font-family: var(--mono); font-size: 11px;
+    color: var(--muted); font-weight: 400; margin-top: 2px;
+  }
+  thead th:first-child { left: 0; z-index: 4; border-right: 1px solid var(--line-hi); }
+
+  tbody th {
+    position: sticky; left: 0; z-index: 2;
+    background: var(--surface);
+    border-right: 1px solid var(--line-hi);
+    border-bottom: 1px solid var(--line);
+    padding: 10px 12px;
+    font-weight: 500; font-size: 12.5px;
+    white-space: nowrap; min-width: 172px;
+  }
+  tbody th .basis {
+    display: block; font-family: var(--mono); font-size: 10.5px;
+    color: var(--faint); font-weight: 400; margin-top: 1px;
+  }
+  tbody td {
+    border-bottom: 1px solid var(--line);
+    padding: 9px 12px;
+    min-width: 116px;
+  }
+  tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
+  tbody tr.rule-above th, tbody tr.rule-above td { border-top: 1px solid var(--line-hi); }
+
+  .ex {
+    font-family: var(--mono); font-variant-numeric: tabular-nums;
+    font-size: 14px; font-weight: 500; letter-spacing: -0.01em;
+    display: block;
+  }
+  .rng {
+    font-family: var(--mono); font-variant-numeric: tabular-nums;
+    font-size: 11px; color: var(--muted); margin-top: 1px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .ne { color: var(--faint); font-size: 11.5px; font-style: italic; }
+  .partial { color: var(--muted); font-size: 10.5px; font-family: var(--mono); }
+  .spread {
+    font-family: var(--mono); font-size: 10px; color: var(--flag);
+    border: 1px solid currentColor; border-radius: 2px; padding: 0 3px;
+  }
+  td.flagged { background: var(--flag-bg) !important; box-shadow: inset 2px 0 0 var(--flag); }
+  td.flagged .ex { color: var(--flag); }
+
+  .notes { margin-top: 30px; display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .note { border-top: 2px solid var(--line-hi); padding-top: 11px; }
+  .note h2 {
+    font-family: var(--sans); font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.06em;
+    margin: 0 0 6px; color: var(--muted);
+  }
+  .note p { margin: 0 0 8px; font-size: 13px; }
+  .note p:last-child { margin-bottom: 0; }
+  .note code, code.k {
+    font-family: var(--mono); font-size: 0.9em;
+    background: var(--ground); border: 1px solid var(--line);
+    border-radius: 2px; padding: 0 3px;
+  }
+  .note strong { font-weight: 600; }
+  footer { margin-top: 34px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--faint); font-size: 11.5px; font-family: var(--mono); }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Rate Card Grid</h1>
+    <p class="sub">Eight athletes across eleven commercial products, priced by the Rate evaluator. Two runs each on identical inputs — use the toggle to see either run alone, or how far apart they landed.</p>
+    <div class="meta">
+      <span class="chip"><b>rate-eval-spec/2.0.0</b></span>
+      <span class="chip">terms bases <b>1.0.0</b></span>
+      <span class="chip">sources <b>rate-benchmarks/2026-09</b></span>
+      <span class="chip">Gemini 3.5 Flash · Google Search grounding · temp 1.0</span>
+      <span class="chip">16 calls · <b>$0.48</b></span>
+      <span class="chip">19 Sep 2026</span>
+    </div>
+  </header>
+
+  <div class="controls">
+    <div class="seg" role="group" aria-label="Which figure to show">
+      <button id="b-mean" aria-pressed="true">Mean of runs</button>
+      <button id="b-r1" aria-pressed="false">Run 1</button>
+      <button id="b-r2" aria-pressed="false">Run 2</button>
+      <button id="b-spread" aria-pressed="false">Run spread</button>
+    </div>
+    <div class="legend">
+      <span><span class="cf">●</span> high confidence</span>
+      <span><span class="cf">◐</span> medium</span>
+      <span><span class="cf">○</span> low</span>
+      <span>tint = magnitude, log-scaled</span>
+    </div>
+  </div>
+
+  <div class="scroll">
+    <table id="grid"><thead></thead><tbody></tbody></table>
+  </div>
+
+  <div class="notes">
+    <div class="note">
+      <h2>One cell is a defect, not a price</h2>
+      <p><strong>Carlin Isles · Instagram Story · run 1</strong> returned <code>low $4,500 / expected $750 / high $1,200</code>. LOW above EXPECTED is malformed output, and it reached the artifact because the structural validator was imported into the runner but never called.</p>
+      <p>It is now wired in. Across all 16 responses this was the only failure — 1 malformed estimate in 176.</p>
+    </div>
+    <div class="note">
+      <h2>What the refusals mean</h2>
+      <p><strong>Riya Mehta</strong> declines all eleven in both runs. She is a real private youth gymnast with no public commercial footprint, so any number would restate the general market rather than price her. That is the intended behaviour, not a gap.</p>
+      <p><strong>Mia's YouTube</strong> was sent — she has a channel — and the evaluator declined it. The applicability layer and the pricing judgment each did their own job.</p>
+    </div>
+    <div class="note">
+      <h2>Where to be sceptical</h2>
+      <p><strong>LeBron</strong> is the least stable athlete here and the least plausible. His autograph session reads $1.2M in one run and $450k in the other; camp/clinic $1.2M then $350k. A $1.2M two-hour youth clinic is not a real price.</p>
+      <p><strong>Mia</strong> moved up roughly 3× from the previous spec on Instagram — $800 to $2.25k — on identical evidence. The change is the prompt, not the data.</p>
+    </div>
+    <div class="note">
+      <h2>How to read it</h2>
+      <p>The large figure is EXPECTED; beneath it the LOW–HIGH range and the confidence mark. Tint depth tracks magnitude on a log scale, so the shape of a card is visible across five orders of magnitude.</p>
+      <p><code class="k">1 of 2</code> means only one run produced a figure. <strong>Run spread</strong> shows how far the two runs diverged — blank where they agreed closely.</p>
+    </div>
+  </div>
+
+  <footer>Not production. No ledger writes, no triggers, no athlete-facing surface. Comparison artifact for review.</footer>
+</div>
+
+<script>
+const DATA = {"slots":["social_feed_post/instagram","social_short_video/instagram","social_story/instagram","social_short_video/tiktok","social_short_video/youtube","ugc","appearance_in_person","appearance_virtual","autograph_session","camp_clinic","annual_partnership"],"athletes":[{"name":"LeBron James","mia":800,"sport":"basketball","cells":{"social_feed_post/instagram":{"lo":425000,"ex":575000,"hi":750000,"cf":"HIGH","runs":[700000,450000],"n":2,"ne":0},"social_short_video/instagram":{"lo":525000,"ex":725000,"hi":950000,"cf":"HIGH","runs":[850000,600000],"n":2,"ne":0},"social_story/instagram":{"lo":175000,"ex":250000,"hi":350000,"cf":"HIGH","runs":[350000,150000],"n":2,"ne":0},"social_short_video/tiktok":{"lo":300000,"ex":450000,"hi":600000,"cf":"LOW","runs":[450000],"n":2,"ne":1},"social_short_video/youtube":{"lo":150000,"ex":250000,"hi":375000,"cf":"MEDIUM","runs":[250000,250000],"n":2,"ne":0},"ugc":{"lo":175000,"ex":300000,"hi":450000,"cf":"MEDIUM","runs":[350000,250000],"n":2,"ne":0},"appearance_in_person":{"lo":575000,"ex":750000,"hi":1125000,"cf":"HIGH","runs":[1000000,500000],"n":2,"ne":0},"appearance_virtual":{"lo":250000,"ex":375000,"hi":550000,"cf":"MEDIUM","runs":[500000,250000],"n":2,"ne":0},"autograph_session":{"lo":550000,"ex":825000,"hi":1175000,"cf":"MEDIUM","runs":[1200000,450000],"n":2,"ne":0},"camp_clinic":{"lo":550000,"ex":775000,"hi":1050000,"cf":"MEDIUM","runs":[1200000,350000],"n":2,"ne":0},"annual_partnership":{"lo":6000000,"ex":9000000,"hi":13500000,"cf":"HIGH","runs":[10000000,8000000],"n":2,"ne":0}}},{"name":"Ben Shelton","mia":777,"sport":"tennis","cells":{"social_feed_post/instagram":{"lo":20000,"ex":30000,"hi":47500,"cf":"MEDIUM","runs":[25000,35000],"n":2,"ne":0},"social_short_video/instagram":{"lo":27500,"ex":40000,"hi":62500,"cf":"MEDIUM","runs":[30000,50000],"n":2,"ne":0},"social_story/instagram":{"lo":8000,"ex":12500,"hi":20000,"cf":"MEDIUM","runs":[10000,15000],"n":2,"ne":0},"social_short_video/tiktok":{"lo":12000,"ex":19000,"hi":29000,"cf":"MEDIUM","runs":[20000,18000],"n":2,"ne":0},"social_short_video/youtube":{"lo":3500,"ex":5500,"hi":9250,"cf":"LOW","runs":[6000,5000],"n":2,"ne":0},"ugc":{"lo":9000,"ex":13500,"hi":21500,"cf":"MEDIUM","runs":[15000,12000],"n":2,"ne":0},"appearance_in_person":{"lo":50000,"ex":75000,"hi":100000,"cf":"HIGH","runs":[75000,75000],"n":2,"ne":0},"appearance_virtual":{"lo":22500,"ex":32500,"hi":47500,"cf":"MEDIUM","runs":[35000,30000],"n":2,"ne":0},"autograph_session":{"lo":32500,"ex":45000,"hi":67500,"cf":"MEDIUM","runs":[50000,40000],"n":2,"ne":0},"camp_clinic":{"lo":60000,"ex":82500,"hi":115000,"cf":"HIGH","runs":[80000,85000],"n":2,"ne":0},"annual_partnership":{"lo":250000,"ex":400000,"hi":625000,"cf":"HIGH","runs":[500000,300000],"n":2,"ne":0}}},{"name":"Livvy Dunne","mia":696,"sport":"Gymnastics","cells":{"social_feed_post/instagram":{"lo":80000,"ex":115000,"hi":162500,"cf":"HIGH","runs":[120000,110000],"n":2,"ne":0},"social_short_video/instagram":{"lo":97500,"ex":137500,"hi":197500,"cf":"HIGH","runs":[150000,125000],"n":2,"ne":0},"social_story/instagram":{"lo":27500,"ex":40000,"hi":60000,"cf":"HIGH","runs":[45000,35000],"n":2,"ne":0},"social_short_video/tiktok":{"lo":87500,"ex":122500,"hi":170000,"cf":"HIGH","runs":[130000,115000],"n":2,"ne":0},"social_short_video/youtube":{"lo":3750,"ex":6500,"hi":11000,"cf":"MEDIUM","runs":[6000,7000],"n":2,"ne":0},"ugc":{"lo":13500,"ex":22500,"hi":36500,"cf":"MEDIUM","runs":[20000,25000],"n":2,"ne":0},"appearance_in_person":{"lo":62500,"ex":90000,"hi":135000,"cf":"MEDIUM","runs":[80000,100000],"n":2,"ne":0},"appearance_virtual":{"lo":27500,"ex":42500,"hi":65000,"cf":"MEDIUM","runs":[35000,50000],"n":2,"ne":0},"autograph_session":{"lo":27500,"ex":40000,"hi":60000,"cf":"MEDIUM","runs":[30000,50000],"n":2,"ne":0},"camp_clinic":{"lo":32500,"ex":45000,"hi":65000,"cf":"MEDIUM","runs":[35000,55000],"n":2,"ne":0},"annual_partnership":{"lo":275000,"ex":400000,"hi":600000,"cf":"HIGH","runs":[400000,400000],"n":2,"ne":0}}},{"name":"Zippy Fish","mia":666,"sport":"australian rules football","cells":{"social_feed_post/instagram":{"lo":250,"ex":400,"hi":625,"cf":"MEDIUM","runs":[400,400],"n":2,"ne":0},"social_short_video/instagram":{"lo":400,"ex":625,"hi":1000,"cf":"MEDIUM","runs":[600,650],"n":2,"ne":0},"social_story/instagram":{"lo":120,"ex":200,"hi":350,"cf":"MEDIUM","runs":[200,200],"n":2,"ne":0},"social_short_video/tiktok":{"lo":325,"ex":500,"hi":800,"cf":"MEDIUM","runs":[450,550],"n":2,"ne":0},"social_short_video/youtube":{"lo":225,"ex":400,"hi":650,"cf":"LOW","runs":[300,500],"n":2,"ne":0},"ugc":{"lo":375,"ex":550,"hi":850,"cf":"MEDIUM","runs":[500,600],"n":2,"ne":0},"appearance_in_person":{"lo":1100,"ex":1750,"hi":3000,"cf":"MEDIUM","runs":[1500,2000],"n":2,"ne":0},"appearance_virtual":{"lo":550,"ex":875,"hi":1500,"cf":"MEDIUM","runs":[750,1000],"n":2,"ne":0},"autograph_session":{"lo":850,"ex":1350,"hi":2250,"cf":"MEDIUM","runs":[1200,1500],"n":2,"ne":0},"camp_clinic":{"lo":950,"ex":1500,"hi":2300,"cf":"HIGH","runs":[1200,1800],"n":2,"ne":0},"annual_partnership":{"lo":13500,"ex":22500,"hi":37500,"cf":"MEDIUM","runs":[20000,25000],"n":2,"ne":0}}},{"name":"Mia Bhuta","mia":638,"sport":"soccer","cells":{"social_feed_post/instagram":{"lo":1100,"ex":2250,"hi":4750,"cf":"HIGH","runs":[2500,2000],"n":2,"ne":0},"social_short_video/instagram":{"lo":1650,"ex":3250,"hi":6250,"cf":"HIGH","runs":[3500,3000],"n":2,"ne":0},"social_story/instagram":{"lo":550,"ex":1100,"hi":2400,"cf":"HIGH","runs":[1200,1000],"n":2,"ne":0},"social_short_video/tiktok":{"lo":300,"ex":700,"hi":1600,"cf":"LOW","runs":[800,600],"n":2,"ne":0},"social_short_video/youtube":{"ne":2,"n":2},"ugc":{"lo":800,"ex":1650,"hi":3250,"cf":"MEDIUM","runs":[1800,1500],"n":2,"ne":0},"appearance_in_person":{"lo":3000,"ex":5250,"hi":10000,"cf":"MEDIUM","runs":[6000,4500],"n":2,"ne":0},"appearance_virtual":{"lo":1750,"ex":3000,"hi":5750,"cf":"MEDIUM","runs":[3500,2500],"n":2,"ne":0},"autograph_session":{"lo":2250,"ex":4000,"hi":7500,"cf":"MEDIUM","runs":[4500,3500],"n":2,"ne":0},"camp_clinic":{"lo":2250,"ex":3750,"hi":7000,"cf":"HIGH","runs":[4000,3500],"n":2,"ne":0},"annual_partnership":{"lo":27500,"ex":50000,"hi":92500,"cf":"HIGH","runs":[55000,45000],"n":2,"ne":0}}},{"name":"Carlin Isles","mia":564,"sport":"rugby","cells":{"social_feed_post/instagram":{"lo":1850,"ex":2750,"hi":4000,"cf":"MEDIUM","runs":[2000,3500],"n":2,"ne":0},"social_short_video/instagram":{"lo":2650,"ex":4000,"hi":6000,"cf":"MEDIUM","runs":[3000,5000],"n":2,"ne":0},"social_story/instagram":{"lo":2750,"ex":1125,"hi":1600,"cf":"MEDIUM","runs":[750,1500],"n":2,"ne":0},"social_short_video/tiktok":{"lo":1000,"ex":1750,"hi":2750,"cf":"MEDIUM","runs":[2500,1000],"n":2,"ne":0},"social_short_video/youtube":{"lo":750,"ex":1250,"hi":2000,"cf":"LOW","runs":[1500,1000],"n":2,"ne":0},"ugc":{"lo":1400,"ex":2350,"hi":3750,"cf":"MEDIUM","runs":[2200,2500],"n":2,"ne":0},"appearance_in_person":{"lo":6250,"ex":9000,"hi":13500,"cf":"MEDIUM","runs":[8000,10000],"n":2,"ne":0},"appearance_virtual":{"lo":3000,"ex":4750,"hi":7250,"cf":"MEDIUM","runs":[4500,5000],"n":2,"ne":0},"autograph_session":{"lo":4000,"ex":6500,"hi":10000,"cf":"MEDIUM","runs":[5000,8000],"n":2,"ne":0},"camp_clinic":{"lo":2500,"ex":4000,"hi":6000,"cf":"HIGH","runs":[4000,4000],"n":2,"ne":0},"annual_partnership":{"lo":40000,"ex":57500,"hi":87500,"cf":"MEDIUM","runs":[55000,60000],"n":2,"ne":0}}},{"name":"Lilia Bhuta","mia":467,"sport":"soccer","cells":{"social_feed_post/instagram":{"lo":50,"ex":100,"hi":150,"cf":"LOW","runs":[100],"n":2,"ne":1},"social_short_video/instagram":{"lo":75,"ex":125,"hi":200,"cf":"LOW","runs":[125],"n":2,"ne":1},"social_story/instagram":{"lo":30,"ex":50,"hi":80,"cf":"LOW","runs":[50],"n":2,"ne":1},"social_short_video/tiktok":{"lo":75,"ex":125,"hi":200,"cf":"LOW","runs":[125],"n":2,"ne":1},"social_short_video/youtube":{"lo":75,"ex":125,"hi":200,"cf":"LOW","runs":[125],"n":2,"ne":1},"ugc":{"lo":150,"ex":275,"hi":450,"cf":"MEDIUM","runs":[250,300],"n":2,"ne":0},"appearance_in_person":{"lo":275,"ex":450,"hi":700,"cf":"MEDIUM","runs":[400,500],"n":2,"ne":0},"appearance_virtual":{"lo":150,"ex":250,"hi":400,"cf":"MEDIUM","runs":[250,250],"n":2,"ne":0},"autograph_session":{"lo":175,"ex":300,"hi":500,"cf":"MEDIUM","runs":[250,350],"n":2,"ne":0},"camp_clinic":{"lo":225,"ex":375,"hi":600,"cf":"MEDIUM","runs":[350,400],"n":2,"ne":0},"annual_partnership":{"lo":1200,"ex":2250,"hi":4250,"cf":"LOW","runs":[2000,2500],"n":2,"ne":0}}},{"name":"Riya Mehta","mia":246,"sport":"gymnastics","cells":{"social_feed_post/instagram":{"ne":2,"n":2},"social_short_video/instagram":{"ne":2,"n":2},"social_story/instagram":{"ne":2,"n":2},"social_short_video/tiktok":{"ne":2,"n":2},"social_short_video/youtube":{"ne":2,"n":2},"ugc":{"ne":2,"n":2},"appearance_in_person":{"ne":2,"n":2},"appearance_virtual":{"ne":2,"n":2},"autograph_session":{"ne":2,"n":2},"camp_clinic":{"ne":2,"n":2},"annual_partnership":{"ne":2,"n":2}}}]};
+
+const LABELS = {
+  "social_feed_post/instagram":   ["Instagram feed post", "social/1.0.0"],
+  "social_short_video/instagram": ["Instagram Reel", "social/1.0.0"],
+  "social_story/instagram":       ["Instagram Story", "social/1.0.0"],
+  "social_short_video/tiktok":    ["TikTok video", "social/1.0.0"],
+  "social_short_video/youtube":   ["YouTube Short", "social/1.0.0"],
+  "ugc":                          ["UGC", "ugc/1.0.0 · 90d owned organic"],
+  "appearance_in_person":         ["Appearance, in person", "appearance/1.0.0 · 2h"],
+  "appearance_virtual":           ["Appearance, virtual", "virtual/1.0.0 · 1h"],
+  "autograph_session":            ["Autograph session", "autograph/1.0.0 · 2h"],
+  "camp_clinic":                  ["Camp / clinic", "clinic/1.0.0 · 2h"],
+  "annual_partnership":           ["Annual partnership", "annual/1.0.0 · 12 months"],
+};
+const RULE_ABOVE = new Set(["ugc", "appearance_in_person", "annual_partnership"]);
+const CF_MARK = { HIGH: "●", MEDIUM: "◐", LOW: "○" };
+const FLAGGED = { "Carlin Isles": new Set(["social_story/instagram"]) };
+
+const money = (v) => {
+  if (v == null) return "—";
+  if (v >= 1e6) return "$" + (v / 1e6).toFixed(v % 1e6 ? 1 : 0) + "M";
+  if (v >= 1000) return "$" + (v / 1000).toFixed(v % 1000 ? 1 : 0) + "k";
+  return "$" + Math.round(v);
+};
+const short = (v) => {
+  if (v == null) return "—";
+  if (v >= 1e6) return (v / 1e6).toFixed(v % 1e6 ? 1 : 0) + "M";
+  if (v >= 1000) return (v / 1000).toFixed(v % 1000 ? 1 : 0) + "k";
+  return String(Math.round(v));
+};
+
+// magnitude tint, log-scaled across the whole grid so a card's shape reads at a glance
+let MIN = Infinity, MAX = 0;
+for (const a of DATA.athletes) for (const s of DATA.slots) {
+  const c = a.cells[s];
+  if (c && c.ex != null) { MIN = Math.min(MIN, c.ex); MAX = Math.max(MAX, c.ex); }
+}
+const tint = (v) => {
+  if (v == null) return "transparent";
+  const t = (Math.log10(v) - Math.log10(MIN)) / (Math.log10(MAX) - Math.log10(MIN));
+  return `rgba(var(--accent-t), ${(0.04 + t * 0.20).toFixed(3)})`;
+};
+
+let mode = "mean";
+
+function cellFor(cell, mode) {
+  if (!cell || cell.ex == null) return { html: '<span class="ne">not established</span>', v: null };
+  const runs = cell.runs || [];
+  if (mode === "r1" || mode === "r2") {
+    const i = mode === "r1" ? 0 : 1;
+    const v = runs[i];
+    if (v == null) return { html: '<span class="ne">no figure</span>', v: null };
+    return { html: `<span class="ex">${money(v)}</span>`, v };
+  }
+  if (mode === "spread") {
+    if (runs.length < 2) return { html: '<span class="ne">one run</span>', v: null };
+    const [a, b] = runs;
+    const pct = Math.abs(a - b) / ((a + b) / 2);
+    if (pct < 0.15) return { html: `<span class="rng">${(pct * 100).toFixed(0)}%</span>`, v: cell.ex };
+    const cls = pct >= 0.5 ? "spread" : "";
+    return { html: `<span class="ex"${pct >= 0.5 ? ' style="color:var(--flag)"' : ""}>${(pct * 100).toFixed(0)}%</span>
+      <span class="rng">${short(Math.min(a, b))} → ${short(Math.max(a, b))}</span>`, v: cell.ex };
+  }
+  const mark = CF_MARK[cell.cf] || "";
+  const partial = cell.ne ? `<span class="partial">1 of 2</span>` : "";
+  return {
+    html: `<span class="ex">${money(cell.ex)}</span>
+      <span class="rng">${short(cell.lo)}–${short(cell.hi)} <span class="cf" title="${cell.cf || ""}">${mark}</span> ${partial}</span>`,
+    v: cell.ex,
+  };
+}
+
+function render() {
+  const thead = document.querySelector("#grid thead");
+  const tbody = document.querySelector("#grid tbody");
+  thead.innerHTML = "";
+  tbody.innerHTML = "";
+
+  const hr = document.createElement("tr");
+  const corner = document.createElement("th");
+  corner.textContent = "Product";
+  hr.appendChild(corner);
+  for (const a of DATA.athletes) {
+    const th = document.createElement("th");
+    th.innerHTML = `${a.name}<span class="mia">MIA ${a.mia} · ${a.sport}</span>`;
+    hr.appendChild(th);
+  }
+  thead.appendChild(hr);
+
+  for (const slot of DATA.slots) {
+    const tr = document.createElement("tr");
+    if (RULE_ABOVE.has(slot)) tr.className = "rule-above";
+    const [label, basis] = LABELS[slot] || [slot, ""];
+    const th = document.createElement("th");
+    th.innerHTML = `${label}<span class="basis">${basis}</span>`;
+    tr.appendChild(th);
+    for (const a of DATA.athletes) {
+      const td = document.createElement("td");
+      const { html, v } = cellFor(a.cells[slot], mode);
+      td.innerHTML = html;
+      if (mode !== "spread") td.style.background = tint(v);
+      if (FLAGGED[a.name] && FLAGGED[a.name].has(slot)) {
+        td.classList.add("flagged");
+        td.title = "Malformed output: LOW above EXPECTED in run 1";
+      }
+      tr.appendChild(td);
+    }
+    tbody.appendChild(tr);
+  }
+}
+
+const BUTTONS = { mean: "b-mean", r1: "b-r1", r2: "b-r2", spread: "b-spread" };
+for (const [m, id] of Object.entries(BUTTONS)) {
+  document.getElementById(id).addEventListener("click", () => {
+    mode = m;
+    for (const [mm, ii] of Object.entries(BUTTONS)) {
+      document.getElementById(ii).setAttribute("aria-pressed", String(mm === m));
+    }
+    render();
+  });
+}
+render();
+</script>

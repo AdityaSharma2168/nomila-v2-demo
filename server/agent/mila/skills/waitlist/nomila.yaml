@@ -1,0 +1,9 @@
+# Nomila's own fields for the waitlist playbook, validated by load.ts (sidecarSchema). Not part of the Agent Skills spec.
+version: 1.0.0
+register_id: mila.playbook.waitlist
+surfaces: [waitlist]
+flag: MILA_TF_WAITLIST
+tools: [waitlist_status, start_research, show_waitlist_card]
+sends_externally: false
+model_tier: athlete-facing
+evals: evals/agent/mila-v2/scenarios.json   # area "waitlist" (8 scenarios): offline in CI (flows.json), live by hand (run.ts)

@@ -1,0 +1,27 @@
+-- 0124_athlete_agent_onboarding_required.sql — who the agent onboarding gate applies to (10 Oct 2026).
+--
+-- athletes.agent_onboarding_required   true only for an athlete created through the NEW agent-onboarding front
+--                                      (POST /auth/signup with body.front === "agent") or who later opts in
+--                                      explicitly (POST /agent/onboarding/start with optIn: true). Written once at
+--                                      signup (server/routes/auth.ts, both row-creating branches); never changed
+--                                      afterwards by the gate itself.
+--
+--                                      DEFAULT FALSE on every existing row: an athlete who signed up before this
+--                                      column existed never went through the new front, so defaulting false is
+--                                      exactly "existing users skip the new onboarding" — no backfill needed, the
+--                                      column's own default does it.
+--
+--                                      The gate (GET /agent/onboarding, when no agent_onboarding run exists yet)
+--                                      reads this column to decide whether a fresh launch should still land on
+--                                      today's app (false) or on Mila's conversation (true). An athlete who has
+--                                      ALREADY STARTED an agent_onboarding run is read from that run instead and
+--                                      this column is never consulted for them — see server/agent/onboarding/service.ts.
+--
+-- Additive only: one column with a constant default (a metadata-only change on Postgres 11+, no table rewrite),
+-- nothing renamed, dropped or backfilled. Re-runs as a no-op (IF NOT EXISTS). Written exactly as a shared/schema.ts
+-- push produces it. No transaction control here (migrationsGuard): dry-run this file ON ITS OWN in BEGIN … ROLLBACK.
+-- Applied only because scripts/db-migrate.sh names it in the step-3 list; this file, that line and the
+-- shared/schema.ts declaration ship in ONE commit or the drift gate reds the deploy. Nothing here names an athlete,
+-- sport, school or brand.
+
+ALTER TABLE athletes ADD COLUMN IF NOT EXISTS agent_onboarding_required boolean DEFAULT false NOT NULL;

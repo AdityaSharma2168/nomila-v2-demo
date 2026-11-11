@@ -1,0 +1,20 @@
+{
+  "id": "pr03-held",
+  "description": "A kit held back because the post touches something she asked to keep out of her posts. The line keeps that reason in plain words.",
+  "reviewed": true,
+  "facts": {
+    "outcome": "planned", "skippedWhy": null, "forGoal": null,
+    "posts": [
+      { "format": "reel", "hook": "Game day, start to finish.", "timedFor": "[Event B]", "pillar": null, "due": "Fri 16 Oct", "kit": "built", "preview": "ready", "mediaNeeds": null },
+      { "format": "feed", "hook": "One photo, one thank-you.", "timedFor": null, "pillar": null, "due": "Sun 18 Oct", "kit": "not_built", "preview": "none", "mediaNeeds": null }
+    ],
+    "counts": { "posts": 2, "kitsBuilt": 1, "kitsNeedMedia": 0, "kitsHeld": 1, "kitsNotBuilt": 1, "previewsReady": 1, "previewsPreparing": 0, "previewsFailed": 0, "otherActions": 0, "newGoalIdeas": 0 },
+    "kitsStep": "done", "heldWhy": ["it touches something you asked to keep out of your posts"], "nextPlanOn": null
+  },
+  "mock_line": "Your plan's ready: 2 posts this week. 1 kit is built; I held the other back because it touches something you asked to keep out of your posts.",
+  "expect": {
+    "numbers": ["2 posts", "1 kit"],
+    "reason": ["keep out of your posts|asked me to keep out|asked to keep out"],
+    "must_not": ["posted", "sent", "budget", "limit", "clip"]
+  }
+}

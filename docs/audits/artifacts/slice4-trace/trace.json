@@ -1,0 +1,50 @@
+{
+  "at": "2026-09-30T04:06:46.330Z",
+  "athleteId": "dc8f37f1-deff-43f8-8c02-e37a5cc20d4f",
+  "recommendationId": "rec_2507ecb0723f9dd8",
+  "providerCalls": 0,
+  "writes": 0,
+  "result": "STOPPED at: governance: preparation not authorized (response none, authorization none)",
+  "steps": [
+    {
+      "step": 1,
+      "stage": "Recommendation",
+      "id": "rec_2507ecb0723f9dd8",
+      "what": "Target global brand and corporate social responsibility partnerships that align with her philanthropic leadership at the Yuwa girls empowerment program.",
+      "executionPath": "specialized_plan",
+      "objectiveIds": [
+        "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+      ],
+      "response": {
+        "at": null,
+        "actor": null,
+        "state": "none"
+      },
+      "authorization": {
+        "at": null,
+        "actor": null,
+        "state": "none"
+      },
+      "execution": {
+        "refs": [],
+        "state": "none"
+      },
+      "closed": false
+    },
+    {
+      "step": 2,
+      "stage": "execution-path hand-off (route)",
+      "result": {
+        "ok": false,
+        "stage": "governance",
+        "refused": "preparation not authorized (response none, authorization none)"
+      }
+    },
+    {
+      "step": 3,
+      "stopped": true,
+      "boundary": "governance: preparation not authorized (response none, authorization none)",
+      "note": "The router refuses before any planner; nothing downstream is reachable without her decision."
+    }
+  ]
+}

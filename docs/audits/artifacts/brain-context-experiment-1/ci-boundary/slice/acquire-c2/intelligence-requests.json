@@ -1,0 +1,90 @@
+{
+ "version": "intelligence-request/0.1.0-exp",
+ "requests": [
+  {
+   "version": "intelligence-request/0.1.0-exp",
+   "id": "req_a0be3b1b7b2ea481",
+   "key": "1d836bb6a0a37db9",
+   "decision": {
+    "source": "the athlete's agent, through Mila",
+    "subject": {
+     "kind": "deal",
+     "id": "ctl-c-lumen-termsheet"
+    },
+    "question": "Should this negotiation be advanced, countered or accepted?"
+   },
+   "need": "athlete_commercial_basis",
+   "proposition": "A defined rate card or minimum floor price has been set by the athlete or agent for endorsement deliverables.",
+   "whyMaterial": "An established pricing floor or rate card is required to perform the economic comparison necessary to decide whether to accept, counter, or advance the USD 5,000 offer.",
+   "sourceClass": "athlete",
+   "raisedBy": {
+    "runId": "C2:0.6.1",
+    "spec": "brain-eval-spec/0.6.1-exp",
+    "at": "2026-09-26T21:00:00Z"
+   },
+   "runs": [
+    "C2:0.6.1"
+   ],
+   "acquisition": {
+    "mechanism": "mila_question",
+    "ref": {
+     "kind": "workflow_step",
+     "id": "wf-<runId>:ask_intelligence"
+    },
+    "chosenBecause": [
+     "need athlete_commercial_basis can be established by preferences_form · mila_question · document_request",
+     "authority required: athlete",
+     "chosen mila_question: available, authority athlete ≥ athlete, lowest athlete burden among the available"
+    ],
+    "at": "2026-09-27T09:00:00Z",
+    "completedAt": "2026-09-27T10:12:01Z",
+    "producedEvidence": true
+   },
+   "evidenceRefs": [
+    {
+     "store": "athlete_asserted",
+     "id": "aa-fixture-1",
+     "at": "2026-09-27T10:12:00Z",
+     "sourceClass": "athlete",
+     "need": "athlete_commercial_basis",
+     "attributedTo": "req_a0be3b1b7b2ea481",
+     "asserts": "commercial_basis.ambassador = {\"amount\":25000,\"currency\":\"USD\",\"per\":\"month\"} (said: For something like this I wouldn't go under twenty-five thousand a month.)"
+    }
+   ],
+   "reconsideredInRun": "run-next",
+   "obsolete": null,
+   "events": [
+    {
+     "at": "2026-09-26T21:00:00Z",
+     "event": "raised",
+     "actor": "system",
+     "note": "run C2:0.6.1"
+    },
+    {
+     "at": "2026-09-27T09:00:00Z",
+     "event": "acquisition_planned",
+     "actor": "resolver",
+     "note": "need athlete_commercial_basis can be established by preferences_form · mila_question · document_request | authority required: athlete | chosen mila_question: available, authority athlete ≥ athlete, lowest athlete burden among the available"
+    },
+    {
+     "at": "2026-09-27T09:00:00Z",
+     "event": "acquisition_started",
+     "actor": "consumer",
+     "note": "workflow_step:wf-<runId>:ask_intelligence"
+    },
+    {
+     "at": "2026-09-27T10:12:01Z",
+     "event": "evidence_received",
+     "actor": "store",
+     "note": "athlete_asserted:aa-fixture-1 — attributable, right class, after the request"
+    },
+    {
+     "at": "2026-09-28T00:00:00Z",
+     "event": "reconsideration_attributed",
+     "actor": "system",
+     "note": "run run-next"
+    }
+   ]
+  }
+ ]
+}

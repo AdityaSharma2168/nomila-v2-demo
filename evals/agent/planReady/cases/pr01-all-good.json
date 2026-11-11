@@ -1,0 +1,21 @@
+{
+  "id": "pr01-all-good",
+  "description": "Everything built: 3 posts, 3 kits, 2 previews ready and 1 still being made. The line gives the counts right and says nothing went out.",
+  "reviewed": true,
+  "facts": {
+    "outcome": "planned", "skippedWhy": null, "forGoal": "Grow my audience before the season",
+    "posts": [
+      { "format": "reel", "hook": "Nobody sees the early part.", "timedFor": "[Event A]", "pillar": "Behind the scenes", "due": "Sun 18 Oct", "kit": "built", "preview": "ready", "mediaNeeds": null },
+      { "format": "carousel", "hook": "Three things on every trip.", "timedFor": null, "pillar": "Behind the scenes", "due": "Thu 15 Oct", "kit": "built", "preview": "preparing", "mediaNeeds": null },
+      { "format": "story", "hook": "Ask me anything.", "timedFor": null, "pillar": "Your community", "due": "Sat 17 Oct", "kit": "built", "preview": "ready", "mediaNeeds": null }
+    ],
+    "counts": { "posts": 3, "kitsBuilt": 3, "kitsNeedMedia": 0, "kitsHeld": 0, "kitsNotBuilt": 0, "previewsReady": 2, "previewsPreparing": 1, "previewsFailed": 0, "otherActions": 1, "newGoalIdeas": 0 },
+    "kitsStep": "done", "heldWhy": [], "nextPlanOn": null
+  },
+  "mock_line": "Your plan's ready: 3 posts this week, and all 3 kits are built. 2 previews are ready to watch; the carousel's is still being made.",
+  "expect": {
+    "numbers": ["3 posts", "3 kits"],
+    "reason": ["ready to watch|previews are ready|2 previews"],
+    "must_not": ["posted", "sent", "published", "4 posts"]
+  }
+}

@@ -1,0 +1,9 @@
+# Nomila's own fields for the public-page playbook, validated by load.ts (sidecarSchema). Not part of the Agent Skills spec.
+version: 1.0.0
+register_id: mila.playbook.public-page
+surfaces: [chat, voice]
+flag: null
+tools: []
+sends_externally: false
+model_tier: athlete-facing
+evals: null   # no athlete-facing eval cases for this playbook yet

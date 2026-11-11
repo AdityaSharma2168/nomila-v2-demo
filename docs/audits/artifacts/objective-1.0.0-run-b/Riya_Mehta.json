@@ -1,0 +1,1447 @@
+{
+ "state": {
+  "athleteId": "7bf15705-da50-4cf1-8034-0de604d5393a",
+  "asOf": "2026-09-23T18:06:58.296Z",
+  "version": "athlete-state/1.2.0",
+  "identity": {
+   "name": "Riya Mehta",
+   "sport": "gymnastics",
+   "competitionContext": null,
+   "careerStatus": "active"
+  },
+  "findings": [
+   {
+    "key": "mia.athletic_authority",
+    "direction": "gap",
+    "rationale": {
+     "value": "Riya Mehta is a regional developmental gymnast with competitive appearances restricted to local youth levels (USAG Level 7) or local collegiate club divisions. While she is actively participating, her athletic results are modest and far below elite or top-tier collegiate standards. She holds no national team standing or recognized sports awards, framing her athletic authority as strictly grassroots.",
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2"
+     ],
+     "rationale": "While her amateur status is supported by competition databases, the potential for name collisions across different regional athletes of the same name introduces slight identity uncertainty.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "While her amateur status is supported by competition databases, the potential for name collisions across different regional athletes of the same name introduces slight identity uncertainty.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "A gymnast named Riya Mehta competed as a Level 7 junior athlete for SGA Gymnastics at the 2025 Hilton Head Island Invitational.",
+      "sourceUrl": "https://competemymeet.com",
+      "observedAt": "2025-01-16",
+      "sourceType": "secondary",
+      "sourceTitle": "2025 Hilton Head Island Invitational Results"
+     },
+     {
+      "id": "E2",
+      "claim": "An athlete named Riya Mehta represented Veer Narmad South Gujarat University (VNSGU) in gymnastics and yoga, earning state-level recognition.",
+      "sourceUrl": "http://spbemcc.com",
+      "observedAt": "2023-12-18",
+      "sourceType": "official",
+      "sourceTitle": "SPB College Sports Achievement Report"
+     }
+    ],
+    "components": [
+     {
+      "key": "athletic_authority.role_importance",
+      "value": 25,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "value": 30,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "value": 45,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "value": 35,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "value": 15,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "value": 10,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 27,
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.role_importance",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.competition_level",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.achievement_recency",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.performance_results",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.rankings_recognition",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.national_international_status"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.role_importance",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.competition_level",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.achievement_recency",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.performance_results",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.rankings_recognition",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.national_international_status",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.audience_scale",
+    "direction": "gap",
+    "rationale": {
+     "value": "Mehta does not possess any public-facing or professional social media presence, meaning her digital reach is currently non-existent. Compared to mainstream gymnasts, she lacks the platform scale necessary to engage fans or project commercial visibility. No longitudinal audience data exists to demonstrate growth.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E3"
+     ],
+     "rationale": "A comprehensive web search confirms the complete absence of any verified or public-facing athlete channels for her.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "A comprehensive web search confirms the complete absence of any verified or public-facing athlete channels for her.",
+    "citedEvidence": [
+     {
+      "id": "E3",
+      "claim": "No professional, public-facing, or verified social media accounts (Instagram, YouTube, TikTok, X) are registered or active for the gymnast Riya Mehta.",
+      "sourceUrl": "N/A",
+      "observedAt": "2026-09-22",
+      "sourceType": "platform",
+      "sourceTitle": "Authoritative Social Data Statement"
+     }
+    ],
+    "components": [
+     {
+      "key": "audience_scale.audience_growth",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "value": 5,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "value": 5,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "value": 5,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 11.75,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#audience_scale.audience_growth",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#audience_scale.platform_breadth",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#audience_scale.cross_platform_effective_reach",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#audience_scale.sport_level_audience_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 1,
+     "total": 4
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#audience_scale.audience_growth",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#audience_scale.platform_breadth",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.engagement_quality",
+    "direction": "unknown",
+    "rationale": {
+     "value": "Because Riya Mehta lacks any public digital platforms, standard metrics for audience interaction cannot be calculated. Indicators like engagement rates, reach efficiency, and shares remain completely speculative. Her digital footprint does not support an active or addressable fan base.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [],
+     "rationale": "Without active public accounts, engagement metrics are fundamentally missing rather than poorly performing.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Without active public accounts, engagement metrics are fundamentally missing rather than poorly performing.",
+    "components": [
+     {
+      "key": "engagement_quality.video_retention",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 50,
+     "owner": "marketability",
+     "confidence": "LOW",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#engagement_quality.video_retention",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#engagement_quality.reach_efficiency",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#engagement_quality.story_efficiency",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#engagement_quality.shares_saves_quality",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#engagement_quality.audience_authenticity",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#engagement_quality.engagement_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 6,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#engagement_quality.video_retention",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#engagement_quality.reach_efficiency",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#engagement_quality.story_efficiency",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#engagement_quality.shares_saves_quality",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#engagement_quality.audience_authenticity",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#engagement_quality.engagement_percentile",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.cultural_relevance",
+    "direction": "gap",
+    "rationale": {
+     "value": "Mehta operates entirely outside the cultural mainstream, with zero coverage in prominent media or social discourse. Public search interest in her name is negligible, and she generates no organic fan conversation. She possesses no crossover recognition outside of local, amateur gymnastics circles.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E3"
+     ],
+     "rationale": "The absolute absence of mainstream media mentions or search trends confirms her extremely localized relevance.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "The absolute absence of mainstream media mentions or search trends confirms her extremely localized relevance.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "A gymnast named Riya Mehta competed as a Level 7 junior athlete for SGA Gymnastics at the 2025 Hilton Head Island Invitational.",
+      "sourceUrl": "https://competemymeet.com",
+      "observedAt": "2025-01-16",
+      "sourceType": "secondary",
+      "sourceTitle": "2025 Hilton Head Island Invitational Results"
+     },
+     {
+      "id": "E2",
+      "claim": "An athlete named Riya Mehta represented Veer Narmad South Gujarat University (VNSGU) in gymnastics and yoga, earning state-level recognition.",
+      "sourceUrl": "http://spbemcc.com",
+      "observedAt": "2023-12-18",
+      "sourceType": "official",
+      "sourceTitle": "SPB College Sports Achievement Report"
+     },
+     {
+      "id": "E3",
+      "claim": "No professional, public-facing, or verified social media accounts (Instagram, YouTube, TikTok, X) are registered or active for the gymnast Riya Mehta.",
+      "sourceUrl": "N/A",
+      "observedAt": "2026-09-22",
+      "sourceType": "platform",
+      "sourceTitle": "Authoritative Social Data Statement"
+     }
+    ],
+    "components": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "value": 5,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "value": 5,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "value": 5,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "value": 5,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "value": 5,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 5,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#cultural_relevance.search_interest",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#cultural_relevance.social_conversation",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#cultural_relevance.media_source_quality",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#cultural_relevance.crossover_recognition",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#cultural_relevance.media_volume_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#cultural_relevance.search_interest",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#cultural_relevance.social_conversation",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#cultural_relevance.media_source_quality",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#cultural_relevance.crossover_recognition",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#cultural_relevance.media_volume_percentile",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.narrative_power",
+    "direction": "gap",
+    "rationale": {
+     "value": "There is no public brand narrative or personal backstory established for Mehta. Her public presence is defined solely by transactional tournament scores, leaving her without a distinctive or durable story. This absence of depth makes her narrative difficult for brands to naturally integrate into campaigns.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E3"
+     ],
+     "rationale": "Public records show no editorial articles or promotional assets that articulate a personal brand identity.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Public records show no editorial articles or promotional assets that articulate a personal brand identity.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "A gymnast named Riya Mehta competed as a Level 7 junior athlete for SGA Gymnastics at the 2025 Hilton Head Island Invitational.",
+      "sourceUrl": "https://competemymeet.com",
+      "observedAt": "2025-01-16",
+      "sourceType": "secondary",
+      "sourceTitle": "2025 Hilton Head Island Invitational Results"
+     },
+     {
+      "id": "E2",
+      "claim": "An athlete named Riya Mehta represented Veer Narmad South Gujarat University (VNSGU) in gymnastics and yoga, earning state-level recognition.",
+      "sourceUrl": "http://spbemcc.com",
+      "observedAt": "2023-12-18",
+      "sourceType": "official",
+      "sourceTitle": "SPB College Sports Achievement Report"
+     },
+     {
+      "id": "E3",
+      "claim": "No professional, public-facing, or verified social media accounts (Instagram, YouTube, TikTok, X) are registered or active for the gymnast Riya Mehta.",
+      "sourceUrl": "N/A",
+      "observedAt": "2026-09-22",
+      "sourceType": "platform",
+      "sourceTitle": "Authoritative Social Data Statement"
+     }
+    ],
+    "components": [
+     {
+      "key": "narrative_power.durability",
+      "value": 10,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "value": 10,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "value": 10,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "value": 5,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "value": 40,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "value": 10,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 15.25,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#narrative_power.durability",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#narrative_power.story_depth",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#narrative_power.distinctiveness",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#narrative_power.media_resonance",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#narrative_power.evidence_authenticity",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#narrative_power.commercial_applicability"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#narrative_power.durability",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#narrative_power.story_depth",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#narrative_power.distinctiveness",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#narrative_power.media_resonance",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#narrative_power.evidence_authenticity",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#narrative_power.commercial_applicability",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.brand_fit",
+    "direction": "gap",
+    "rationale": {
+     "value": "Mehta represents a pristine, highly safe option for brand partners, as she has a completely clean reputation with no controversies. However, her commercial appeal is constrained by her lack of geographic scale, content creation history, and audience reach. She is best suited for hyper-local grassroots sponsorships.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E3"
+     ],
+     "rationale": "Her clean amateur record and lack of digital channels make her fit highly predictable as a safe but very low-impact partner.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her clean amateur record and lack of digital channels make her fit highly predictable as a safe but very low-impact partner.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "A gymnast named Riya Mehta competed as a Level 7 junior athlete for SGA Gymnastics at the 2025 Hilton Head Island Invitational.",
+      "sourceUrl": "https://competemymeet.com",
+      "observedAt": "2025-01-16",
+      "sourceType": "secondary",
+      "sourceTitle": "2025 Hilton Head Island Invitational Results"
+     },
+     {
+      "id": "E2",
+      "claim": "An athlete named Riya Mehta represented Veer Narmad South Gujarat University (VNSGU) in gymnastics and yoga, earning state-level recognition.",
+      "sourceUrl": "http://spbemcc.com",
+      "observedAt": "2023-12-18",
+      "sourceType": "official",
+      "sourceTitle": "SPB College Sports Achievement Report"
+     },
+     {
+      "id": "E3",
+      "claim": "No professional, public-facing, or verified social media accounts (Instagram, YouTube, TikTok, X) are registered or active for the gymnast Riya Mehta.",
+      "sourceUrl": "N/A",
+      "observedAt": "2026-09-22",
+      "sourceType": "platform",
+      "sourceTitle": "Authoritative Social Data Statement"
+     }
+    ],
+    "components": [
+     {
+      "key": "brand_fit.brand_safety",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "value": 20,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "value": 15,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "value": 20,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "value": 20,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "value": 40,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 36.5,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#brand_fit.brand_safety",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#brand_fit.category_breadth",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#brand_fit.content_versatility",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#brand_fit.geographic_relevance",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#brand_fit.audience_attractiveness",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#brand_fit.identity_values_coherence"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#brand_fit.brand_safety",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#brand_fit.category_breadth",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#brand_fit.content_versatility",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#brand_fit.geographic_relevance",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#brand_fit.audience_attractiveness",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#brand_fit.identity_values_coherence",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.commercial_proof",
+    "direction": "gap",
+    "rationale": {
+     "value": "Mehta is a completely unproven commercial entity with no documented history of paid partnerships, endorsements, or campaigns. She command no pricing power and has no relationship history with recognized brand partners. Her commercial footprint is currently a blank slate.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E3"
+     ],
+     "rationale": "There are no public records or secondary reports of any commercial deals associated with her.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "There are no public records or secondary reports of any commercial deals associated with her.",
+    "citedEvidence": [
+     {
+      "id": "E3",
+      "claim": "No professional, public-facing, or verified social media accounts (Instagram, YouTube, TikTok, X) are registered or active for the gymnast Riya Mehta.",
+      "sourceUrl": "N/A",
+      "observedAt": "2026-09-22",
+      "sourceType": "platform",
+      "sourceTitle": "Authoritative Social Data Statement"
+     }
+    ],
+    "components": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "value": 5,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "value": 5,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "value": 5,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "value": 5,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "value": 5,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 9.5,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#commercial_proof.brand_quality",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#commercial_proof.pricing_power",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#commercial_proof.deal_frequency",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#commercial_proof.renewals_repeat",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#commercial_proof.campaign_performance",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#commercial_proof.verified_commercial_value"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 1,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#commercial_proof.brand_quality",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#commercial_proof.pricing_power",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#commercial_proof.deal_frequency",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#commercial_proof.renewals_repeat",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#commercial_proof.campaign_performance",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#commercial_proof.verified_commercial_value",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.momentum",
+    "direction": "gap",
+    "rationale": {
+     "value": "Mehta's public and commercial momentum is completely flat. Both her athletic trajectory and media coverage remain static within amateur tiers, showing no signs of acceleration. Public search interest and social footprint are similarly stagnant.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E3"
+     ],
+     "rationale": "The lack of new public-facing activities or sudden competitive changes confirms her flat trajectory.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "The lack of new public-facing activities or sudden competitive changes confirms her flat trajectory.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "A gymnast named Riya Mehta competed as a Level 7 junior athlete for SGA Gymnastics at the 2025 Hilton Head Island Invitational.",
+      "sourceUrl": "https://competemymeet.com",
+      "observedAt": "2025-01-16",
+      "sourceType": "secondary",
+      "sourceTitle": "2025 Hilton Head Island Invitational Results"
+     },
+     {
+      "id": "E2",
+      "claim": "An athlete named Riya Mehta represented Veer Narmad South Gujarat University (VNSGU) in gymnastics and yoga, earning state-level recognition.",
+      "sourceUrl": "http://spbemcc.com",
+      "observedAt": "2023-12-18",
+      "sourceType": "official",
+      "sourceTitle": "SPB College Sports Achievement Report"
+     },
+     {
+      "id": "E3",
+      "claim": "No professional, public-facing, or verified social media accounts (Instagram, YouTube, TikTok, X) are registered or active for the gymnast Riya Mehta.",
+      "sourceUrl": "N/A",
+      "observedAt": "2026-09-22",
+      "sourceType": "platform",
+      "sourceTitle": "Authoritative Social Data Statement"
+     }
+    ],
+    "components": [
+     {
+      "key": "momentum.audience_growth",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "value": 10,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "value": 30,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "value": 5,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "value": 10,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 25.5,
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-09-13T22:50:50.992Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#momentum.audience_growth",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#momentum.media_trajectory",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#momentum.athletic_trajectory",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#momentum.commercial_acceleration",
+      "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#momentum.search_social_trajectory"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 1,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#momentum.audience_growth",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#momentum.media_trajectory",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#momentum.athletic_trajectory",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#momentum.commercial_acceleration",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     },
+     {
+      "source": "mia",
+      "locator": "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#momentum.search_social_trajectory",
+      "asOf": "2026-09-13T22:50:50.992Z"
+     }
+    ]
+   }
+  ],
+  "audienceTrajectory": {
+   "value": null,
+   "owner": "athlete_intelligence",
+   "asOf": "2026-09-23T18:06:58.296Z",
+   "evidenceClass": "MISSING",
+   "reason": "no growth measurement on any platform"
+  },
+  "commercialPosition": {
+   "closedDeals": {
+    "value": 0,
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-23T18:06:58.296Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "count_deals_at_earned_status"
+   },
+   "activeRelationships": {
+    "value": [],
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-23T18:06:58.296Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "distinct_brand_at_earned_status"
+   },
+   "demonstratedEconomics": {
+    "value": null,
+    "owner": "athlete_state",
+    "asOf": "2026-09-23T18:06:58.296Z",
+    "evidenceClass": "MISSING",
+    "reason": "no closed deal carries an amount"
+   },
+   "pricingEvidence": "none",
+   "pipeline": {
+    "value": {
+     "detected": 0,
+     "negotiating": 0,
+     "rejected": 0,
+     "accepted": 0,
+     "completed": 0
+    },
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-23T18:06:58.296Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "count_deals_by_status"
+   },
+   "inbound": []
+  },
+  "constraints": [],
+  "preferences": [],
+  "audience": [],
+  "contentPerformance": [],
+  "representation": null,
+  "dates": [],
+  "materialGaps": [
+   "Confirmed identification linking the query to one specific candidate",
+   "First-party or public social media metrics"
+  ],
+  "overallConfidence": "LOW",
+  "sources": [
+   {
+    "owner": "marketability",
+    "present": true,
+    "asOf": "2026-09-13T22:50:50.992Z"
+   },
+   {
+    "owner": "athlete_intelligence",
+    "present": false,
+    "asOf": null
+   },
+   {
+    "owner": "athlete_state",
+    "present": true,
+    "asOf": "2026-09-23T18:06:58.296Z"
+   }
+  ]
+ },
+ "map": {
+  "athleteId": "7bf15705-da50-4cf1-8034-0de604d5393a",
+  "asOf": "2026-09-23T18:07:27.460Z",
+  "version": "opportunity-map/1.0.0",
+  "specVersion": "opportunity-eval-spec/1.0.0",
+  "stateAsOf": "2026-09-23T18:06:58.296Z",
+  "opportunities": [
+   {
+    "key": "resolve-athlete-identity-alignment",
+    "kind": "UNLOCK",
+    "domain": "evidence",
+    "statement": {
+     "value": "Resolve the identity discrepancy between regional profiles to establish a verified baseline of her gymnastics career.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-23T18:06:58.296Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "findings[mia.athletic_authority]",
+      "materialGaps[0]"
+     ],
+     "rationale": "There is potential identity confusion in Nomila's current data between a US-based Level 7 junior gymnast and an India-based state-level university gymnast. Unlocking her verified personal background represents the most foundational step before any positioning, athletic, or audience strategies can be built.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "findings[mia.athletic_authority]",
+      "how": "Identifies that her athletic results are strictly grassroots but notes potential for name collisions across different regional athletes of the same name, introducing identity uncertainty."
+     },
+     {
+      "statePath": "materialGaps[0]",
+      "how": "Explicitly highlights that Nomila has a material gap in confirming the identification linking the query to one specific candidate."
+     }
+    ],
+    "impact": {
+     "level": "medium",
+     "claim": "Provides an accurate baseline of her gymnastics profile, preventing misaligned marketing, wrong targeting, or incorrect record-keeping."
+    },
+    "feasibility": {
+     "level": "high",
+     "claim": "Requires a simple onboarding clarification or basic document upload from the client to confirm her location and competition history."
+    },
+    "urgency": null,
+    "confidence": "HIGH"
+   },
+   {
+    "key": "establish-foundational-digital-presence",
+    "kind": "GROW",
+    "domain": "audience",
+    "statement": {
+     "value": "Set up and launch a single, verified public digital channel to begin building an addressable audience.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-23T18:06:58.296Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "findings[mia.audience_scale]",
+      "materialGaps[1]"
+     ],
+     "rationale": "Mehta has zero public-facing digital footprint or verified social media channels. Starting from a blank slate means any public presence is buildable, which is necessary to capture local interest and establish baseline digital relevance.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "findings[mia.audience_scale]",
+      "how": "Confirms the complete absence of any verified or public-facing athlete channels, leaving her digital reach currently non-existent."
+     },
+     {
+      "statePath": "materialGaps[1]",
+      "how": "Identifies the lack of first-party or public social media metrics as a key material gap that Nomila cannot currently see."
+     }
+    ],
+    "impact": {
+     "level": "medium",
+     "claim": "Creates a digital home for her athletic journey, turning her currently invisible footprint into an addressable audience over time."
+    },
+    "feasibility": {
+     "level": "medium",
+     "claim": "Requires the athlete to select a preferred platform and commit to a basic posting schedule, which demands consistent effort."
+    },
+    "urgency": null,
+    "confidence": "HIGH"
+   }
+  ],
+  "notes": [
+   "content: Cannot recommend content strategies as the athlete has zero public digital channels and no measured content history, making any creative prescription purely speculative.",
+   "positioning: A public personal brand narrative does not exist, and until her identity profile is verified, establishing a positioning strategy risks misalignment.",
+   "athletic: No athletic trajectory opportunities can be proposed due to regional database identity uncertainty and her strictly grassroots amateur status.",
+   "commercial: With no existing deals, active relationships, or digital audience, Mehta is commercially unproven. Proposing sponsorship strategies is premature until a baseline audience is built.",
+   "relationships: Nomila has no recorded data on the athlete's current personal or professional network, making relational strategy impossible to formulate without inventing facts.",
+   "owned_venture: There is no evidence of business intent, capital, or market scale to support building an owned venture.",
+   "impact: The state contains no references to philanthropic interests or community causes, preventing any evidence-backed opportunity.",
+   "career: The athlete is an active amateur gymnast with no recorded goals regarding post-athletic careers, media, or coaching."
+  ],
+  "inputs": [
+   {
+    "kind": "athlete_state",
+    "version": "athlete-state/1.2.0",
+    "present": true
+   },
+   {
+    "kind": "strategy_intelligence",
+    "version": null,
+    "present": false
+   },
+   {
+    "kind": "targeted_research",
+    "version": null,
+    "present": false
+   }
+  ],
+  "overallConfidence": "LOW"
+ },
+ "record": {
+  "evaluatorSpec": "objective-eval-spec/1.0.0",
+  "canonicalSha256": "d3aba4b5b6f8f09d00313cc734671c31938ad18e9ca41f232007709512f33bbc",
+  "manifest": {
+   "evaluatorSpec": "objective-eval-spec/1.0.0",
+   "promptDigest": "d3aba4b5b6f8f09d00313cc734671c31938ad18e9ca41f232007709512f33bbc"
+  },
+  "promptSha256": "2bc3bef5b22bf8a25364a8ff3b435d6e69b25e67259ec9dee16968eaaa521506",
+  "athlete": {
+   "id": "7bf15705-da50-4cf1-8034-0de604d5393a",
+   "name": "Riya Mehta"
+  },
+  "stateAsOf": "2026-09-23T18:06:58.296Z",
+  "opportunityMapAsOf": "2026-09-23T18:07:27.460Z",
+  "stateBlock": "Nomila's account of this athlete as of 2026-09-23T18:06:58.296Z (athlete-state/1.2.0).\nOverall confidence in this picture: LOW.\n\nCite any line below by the path shown at its left.\n\nIDENTITY\n    identity.name                             Riya Mehta\n    identity.sport                            gymnastics\n    identity.competitionContext               not recorded\n    identity.careerStatus                     active\n\nFINDINGS — marketability dimensions, each judged by M.I.A. and read here unchanged.\n  STRENGTH  measured, above the band\n  GAP       measured, below the band\n  NEUTRAL   MEASURED and unremarkable. We know; it is simply ordinary. This is NOT missing evidence.\n  UNKNOWN   evidence is genuinely insufficient — no score, or mostly imputed signals. A statement about\n            what Nomila has measured, never about the athlete.\n\n  Each finding may carry WHY M.I.A. concluded it and WHICH SOURCES it relied on. Read those as the\n  evaluator's interpretation and the evidence behind it — NOT as established fact about the athlete.\n\n    findings[mia.athletic_authority]          GAP       score 27      MEDIUM  0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Riya Mehta is a regional developmental gymnast with competitive appearances restricted to local\n          youth levels (USAG Level 7) or local collegiate club divisions. While she is actively\n          participating, her athletic results are modest and far below elite or top-tier collegiate\n          standards. She holds no national team standing or recognized sports awards, framing her athletic\n          authority as strictly grassroots.\n          confidence MEDIUM — While her amateur status is supported by competition databases, the potential for name collisions across different regional athletes of the same name introduces slight identity uncertainty.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  secondary · 2025-01-16  A gymnast named Riya Mehta competed as a Level 7 junior athlete for SGA Gymnastics at the 2025 Hilton Head Island Invitational.\n              https://competemymeet.com\n          E2  official · 2023-12-18  An athlete named Riya Mehta represented Veer Narmad South Gujarat University (VNSGU) in gymnastics and yoga, earning state-level recognition.\n              http://spbemcc.com\n        COMPONENTS  role_importance=25 [EVALUATED]  competition_level=30 [EVALUATED]  achievement_recency=45 [EVALUATED]  performance_results=35 [EVALUATED]  rankings_recognition=15 [EVALUATED]  national_international_status=10 [EVALUATED]\n\n    findings[mia.audience_scale]              GAP       score 11.75   HIGH    1/4 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Mehta does not possess any public-facing or professional social media presence, meaning her\n          digital reach is currently non-existent. Compared to mainstream gymnasts, she lacks the platform\n          scale necessary to engage fans or project commercial visibility. No longitudinal audience data\n          exists to demonstrate growth.\n          confidence HIGH — A comprehensive web search confirms the complete absence of any verified or public-facing athlete channels for her.\n        SOURCE EVIDENCE M.I.A. CITED\n          E3  platform · 2026-09-22  No professional, public-facing, or verified social media accounts (Instagram, YouTube, TikTok, X) are registered or active for the gymnast Riya Mehta.\n              N/A\n        COMPONENTS  audience_growth=50 [ASSUMED]  platform_breadth=5 [EVALUATED]  cross_platform_effective_reach=5 [EVALUATED]  sport_level_audience_percentile=5 [EVALUATED]\n\n    findings[mia.engagement_quality]          UNKNOWN   score 50      LOW     6/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Because Riya Mehta lacks any public digital platforms, standard metrics for audience interaction\n          cannot be calculated. Indicators like engagement rates, reach efficiency, and shares remain\n          completely speculative. Her digital footprint does not support an active or addressable fan\n          base.\n          confidence HIGH — Without active public accounts, engagement metrics are fundamentally missing rather than poorly performing.\n        COMPONENTS  video_retention=50 [ASSUMED]  reach_efficiency=50 [ASSUMED]  story_efficiency=50 [ASSUMED]  shares_saves_quality=50 [ASSUMED]  audience_authenticity=50 [ASSUMED]  engagement_percentile=50 [ASSUMED]\n\n    findings[mia.cultural_relevance]          GAP       score 5       HIGH    0/5 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Mehta operates entirely outside the cultural mainstream, with zero coverage in prominent media\n          or social discourse. Public search interest in her name is negligible, and she generates no\n          organic fan conversation. She possesses no crossover recognition outside of local, amateur\n          gymnastics circles.\n          confidence HIGH — The absolute absence of mainstream media mentions or search trends confirms her extremely localized relevance.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  secondary · 2025-01-16  A gymnast named Riya Mehta competed as a Level 7 junior athlete for SGA Gymnastics at the 2025 Hilton Head Island Invitational.\n              https://competemymeet.com\n          E2  official · 2023-12-18  An athlete named Riya Mehta represented Veer Narmad South Gujarat University (VNSGU) in gymnastics and yoga, earning state-level recognition.\n              http://spbemcc.com\n          E3  platform · 2026-09-22  No professional, public-facing, or verified social media accounts (Instagram, YouTube, TikTok, X) are registered or active for the gymnast Riya Mehta.\n              N/A\n        COMPONENTS  search_interest=5 [EVALUATED]  social_conversation=5 [EVALUATED]  media_source_quality=5 [EVALUATED]  crossover_recognition=5 [EVALUATED]  media_volume_percentile=5 [EVALUATED]\n\n    findings[mia.narrative_power]             GAP       score 15.25   HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          There is no public brand narrative or personal backstory established for Mehta. Her public\n          presence is defined solely by transactional tournament scores, leaving her without a distinctive\n          or durable story. This absence of depth makes her narrative difficult for brands to naturally\n          integrate into campaigns.\n          confidence HIGH — Public records show no editorial articles or promotional assets that articulate a personal brand identity.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  secondary · 2025-01-16  A gymnast named Riya Mehta competed as a Level 7 junior athlete for SGA Gymnastics at the 2025 Hilton Head Island Invitational.\n              https://competemymeet.com\n          E2  official · 2023-12-18  An athlete named Riya Mehta represented Veer Narmad South Gujarat University (VNSGU) in gymnastics and yoga, earning state-level recognition.\n              http://spbemcc.com\n          E3  platform · 2026-09-22  No professional, public-facing, or verified social media accounts (Instagram, YouTube, TikTok, X) are registered or active for the gymnast Riya Mehta.\n              N/A\n        COMPONENTS  durability=10 [EVALUATED]  story_depth=10 [EVALUATED]  distinctiveness=10 [EVALUATED]  media_resonance=5 [EVALUATED]  evidence_authenticity=40 [EVALUATED]  commercial_applicability=10 [EVALUATED]\n\n    findings[mia.brand_fit]                   GAP       score 36.5    HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Mehta represents a pristine, highly safe option for brand partners, as she has a completely\n          clean reputation with no controversies. However, her commercial appeal is constrained by her\n          lack of geographic scale, content creation history, and audience reach. She is best suited for\n          hyper-local grassroots sponsorships.\n          confidence HIGH — Her clean amateur record and lack of digital channels make her fit highly predictable as a safe but very low-impact partner.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  secondary · 2025-01-16  A gymnast named Riya Mehta competed as a Level 7 junior athlete for SGA Gymnastics at the 2025 Hilton Head Island Invitational.\n              https://competemymeet.com\n          E2  official · 2023-12-18  An athlete named Riya Mehta represented Veer Narmad South Gujarat University (VNSGU) in gymnastics and yoga, earning state-level recognition.\n              http://spbemcc.com\n          E3  platform · 2026-09-22  No professional, public-facing, or verified social media accounts (Instagram, YouTube, TikTok, X) are registered or active for the gymnast Riya Mehta.\n              N/A\n        COMPONENTS  brand_safety=90 [EVALUATED]  category_breadth=20 [EVALUATED]  content_versatility=15 [EVALUATED]  geographic_relevance=20 [EVALUATED]  audience_attractiveness=20 [EVALUATED]  identity_values_coherence=40 [EVALUATED]\n\n    findings[mia.commercial_proof]            GAP       score 9.5     HIGH    1/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Mehta is a completely unproven commercial entity with no documented history of paid\n          partnerships, endorsements, or campaigns. She command no pricing power and has no relationship\n          history with recognized brand partners. Her commercial footprint is currently a blank slate.\n          confidence HIGH — There are no public records or secondary reports of any commercial deals associated with her.\n        SOURCE EVIDENCE M.I.A. CITED\n          E3  platform · 2026-09-22  No professional, public-facing, or verified social media accounts (Instagram, YouTube, TikTok, X) are registered or active for the gymnast Riya Mehta.\n              N/A\n        COMPONENTS  brand_quality=5 [EVALUATED]  pricing_power=5 [EVALUATED]  deal_frequency=5 [EVALUATED]  renewals_repeat=5 [EVALUATED]  campaign_performance=50 [ASSUMED]  verified_commercial_value=5 [EVALUATED]\n\n    findings[mia.momentum]                    GAP       score 25.5    MEDIUM  1/5 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Mehta's public and commercial momentum is completely flat. Both her athletic trajectory and\n          media coverage remain static within amateur tiers, showing no signs of acceleration. Public\n          search interest and social footprint are similarly stagnant.\n          confidence HIGH — The lack of new public-facing activities or sudden competitive changes confirms her flat trajectory.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  secondary · 2025-01-16  A gymnast named Riya Mehta competed as a Level 7 junior athlete for SGA Gymnastics at the 2025 Hilton Head Island Invitational.\n              https://competemymeet.com\n          E2  official · 2023-12-18  An athlete named Riya Mehta represented Veer Narmad South Gujarat University (VNSGU) in gymnastics and yoga, earning state-level recognition.\n              http://spbemcc.com\n          E3  platform · 2026-09-22  No professional, public-facing, or verified social media accounts (Instagram, YouTube, TikTok, X) are registered or active for the gymnast Riya Mehta.\n              N/A\n        COMPONENTS  audience_growth=50 [ASSUMED]  media_trajectory=10 [EVALUATED]  athletic_trajectory=30 [EVALUATED]  commercial_acceleration=5 [EVALUATED]  search_social_trajectory=10 [EVALUATED]\n\nAUDIENCE TRAJECTORY — follower growth only. It says nothing about athletic or commercial direction.\n    audienceTrajectory                        not known (no growth measurement on any platform)\n\nCOMMERCIAL POSITION — what the market has actually paid. Counted, never estimated.\n    commercialPosition.closedDeals            0  [measured · HIGH confidence]\n    commercialPosition.activeRelationships    []  [measured · HIGH confidence]\n    commercialPosition.demonstratedEconomics  not known (no closed deal carries an amount)\n    commercialPosition.pricingEvidence        none\n\nCOMMERCIAL PIPELINE — counts by state. `detected` means a brand made contact and nothing more.\n  Inbound interest is NOT a deal, NOT revenue and NOT an active relationship.\n    commercialPosition.pipeline               detected 0 · negotiating 0 · rejected 0 · accepted 0 · completed 0\n\nINBOUND SIGNALS — the athlete's own classified inbox, most recent first, capped. Demonstrated interest,\n  as classified by Nomila's inbox pipeline. A category is the classifier's label, not a commitment.\n    (no classified inbound threads)\n\nCONSTRAINTS — only what has been explicitly recorded as a bound on what the athlete can do.\n  An empty list means Nomila has recorded none. It does NOT mean none exist.\n    (none recorded)\n\nAUDIENCE — composition per platform, latest observation. Top buckets only.\n    (no audience composition is recorded on any platform)\n\nCONTENT PERFORMANCE — cadence and format, per platform, from Nomila's own measurement.\n    (no content performance is measured on any platform)\n\nREPRESENTATION & FLOORS — as the athlete stated them. A FLOOR IS NOT A MARKET VALUE; it is the least\n  she has said she would accept.\n    (the athlete has stated nothing about representation or floors)\n\nWHAT THE ATHLETE HAS SAID — their own words. A refusal bears on an opportunity; an ambition can generate one.\n  Never infer a preference or an ambition that is not listed here.\n  A line marked ONBOARDING CHOICE was selected from a fixed set when the athlete joined. It is evidence of\n  intent at that time — she actually chose it — and it is NOT a current strategic objective.\n    (the athlete has stated nothing)\n\nDATES — recorded real-world dates that can bear on strategy, each with what it means. Only what is\n  populated; an empty list means none are recorded, not that none exist.\n    (none recorded)\n\nWHAT NOMILA CANNOT SEE — evidence we looked for and could not find. A research task, not a caveat.\n    materialGaps[0]                           Confirmed identification linking the query to one specific candidate\n    materialGaps[1]                           First-party or public social media metrics\n\nSOURCES CONSULTED\n    marketability            present · as of 2026-09-13T22:50:50.992Z\n    athlete_intelligence     ABSENT\n    athlete_state            present · as of 2026-09-23T18:06:58.296Z",
+  "opportunityBlock": "Strategic openings identified as of 2026-09-23T18:07:27.460Z (opportunity-eval-spec/1.0.0), judged from the athlete state as of 2026-09-23T18:06:58.296Z.\nOverall confidence in this map: LOW.\n\nCite an opportunity by the key shown at its left. Every key below must appear exactly once in your output —\nin a proposal's from_opportunities, or in notes as consolidated (into a named proposal) or not_carried.\n\n    resolve-athlete-identity-alignment\n        UNLOCK · evidence · confidence HIGH\n        Resolve the identity discrepancy between regional profiles to establish a verified baseline of her gymnastics career.\n        impact(medium): Provides an accurate baseline of her gymnastics profile, preventing misaligned marketing, wrong targeting, or incorrect record-keeping.\n        feasibility(high): Requires a simple onboarding clarification or basic document upload from the client to confirm her location and competition history.\n        rests on: findings[mia.athletic_authority], materialGaps[0]\n\n    establish-foundational-digital-presence\n        GROW · audience · confidence HIGH\n        Set up and launch a single, verified public digital channel to begin building an addressable audience.\n        impact(medium): Creates a digital home for her athletic journey, turning her currently invisible footprint into an addressable audience over time.\n        feasibility(medium): Requires the athlete to select a preferred platform and commit to a basic posting schedule, which demands consistent effort.\n        rests on: findings[mia.audience_scale], materialGaps[1]\n\nWhy other domains yielded nothing, per the Opportunity evaluator:\n    - content: Cannot recommend content strategies as the athlete has zero public digital channels and no measured content history, making any creative prescription purely speculative.\n    - positioning: A public personal brand narrative does not exist, and until her identity profile is verified, establishing a positioning strategy risks misalignment.\n    - athletic: No athletic trajectory opportunities can be proposed due to regional database identity uncertainty and her strictly grassroots amateur status.\n    - commercial: With no existing deals, active relationships, or digital audience, Mehta is commercially unproven. Proposing sponsorship strategies is premature until a baseline audience is built.\n    - relationships: Nomila has no recorded data on the athlete's current personal or professional network, making relational strategy impossible to formulate without inventing facts.\n    - owned_venture: There is no evidence of business intent, capital, or market scale to support building an owned venture.\n    - impact: The state contains no references to philanthropic interests or community causes, preventing any evidence-backed opportunity.\n    - career: The athlete is an active amateur gymnast with no recorded goals regarding post-athletic careers, media, or coaching.",
+  "startedAt": "2026-09-23T18:11:40.462Z",
+  "latencyMs": 26066,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+   "promptTokens": 5979,
+   "outputTokens": 761,
+   "thoughtTokens": 4112
+  },
+  "costUsd": 0.0139762,
+  "rawText": "```json\n{\n  \"proposals\": [\n    {\n      \"key\": \"verified-athlete-identity\",\n      \"desired_state\": \"The athlete's specific competitive record and identity are uniquely verified and distinguished from other regional competitors in her profile.\",\n      \"current_state\": \"The athlete's profile contains potential name collisions across regional databases, leaving her athletic baseline unconfirmed.\",\n      \"rationale\": \"Uniquely distinguishing her competitive history from other athletes with the same name ensures a correct and stable foundation for any future positioning or career mapping.\",\n      \"domain\": \"evidence\",\n      \"from_opportunities\": [\n        {\n          \"opportunity_key\": \"resolve-athlete-identity-alignment\",\n          \"how\": \"Resolves the identity ambiguity by confirming the athlete's specific competition history and location.\"\n        }\n      ],\n      \"from_athlete_intent\": [],\n      \"current_state_evidence\": [\n        {\n          \"state_path\": \"findings[mia.athletic_authority]\",\n          \"how\": \"The evaluation notes that her amateur status is supported but potential for name collisions across regional athletes of the same name introduces identity uncertainty.\"\n        },\n        {\n          \"state_path\": \"materialGaps[0]\",\n          \"how\": \"Confirms that linking the query to one specific candidate remains an outstanding material gap.\"\n        }\n      ],\n      \"success\": {\n        \"observable_condition\": \"A single, verified competitive history profile is confirmed and locked in the athlete's record, resolving any cross-regional identity ambiguity.\",\n        \"quantified\": null\n      },\n      \"horizon\": null,\n      \"athlete_stance\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"established-public-digital-channel\",\n      \"desired_state\": \"The athlete has a live, public-facing digital platform dedicated to her athletic journey that can receive public traffic.\",\n      \"current_state\": \"The athlete currently has no professional, verified, or public-facing social media accounts, making her digital footprint invisible.\",\n      \"rationale\": \"Establishing a single public destination is the necessary starting point to build an addressable audience and gain commercial visibility over time.\",\n      \"domain\": \"audience\",\n      \"from_opportunities\": [\n        {\n          \"opportunity_key\": \"establish-foundational-digital-presence\",\n          \"how\": \"Converts the opening of creating a digital channel into an active, verified destination state.\"\n        }\n      ],\n      \"from_athlete_intent\": [],\n      \"current_state_evidence\": [\n        {\n          \"state_path\": \"findings[mia.audience_scale]\",\n          \"how\": \"Identifies that the athlete does not possess any public-facing or professional social media presence, meaning her digital reach is currently non-existent.\"\n        },\n        {\n          \"state_path\": \"materialGaps[1]\",\n          \"how\": \"Identifies first-party or public social media metrics as a confirmed material gap.\"\n        }\n      ],\n      \"success\": {\n        \"observable_condition\": \"At least one public, verified digital channel under the athlete's name is live, active, and linked to her profile.\",\n        \"quantified\": null\n      },\n      \"horizon\": null,\n      \"athlete_stance\": null,\n      \"confidence\": \"HIGH\"\n    }\n  ],\n  \"notes\": []\n}\n```",
+  "parsed": {
+   "proposals": [
+    {
+     "key": "verified-athlete-identity",
+     "desired_state": "The athlete's specific competitive record and identity are uniquely verified and distinguished from other regional competitors in her profile.",
+     "current_state": "The athlete's profile contains potential name collisions across regional databases, leaving her athletic baseline unconfirmed.",
+     "rationale": "Uniquely distinguishing her competitive history from other athletes with the same name ensures a correct and stable foundation for any future positioning or career mapping.",
+     "domain": "evidence",
+     "from_opportunities": [
+      {
+       "opportunity_key": "resolve-athlete-identity-alignment",
+       "how": "Resolves the identity ambiguity by confirming the athlete's specific competition history and location."
+      }
+     ],
+     "from_athlete_intent": [],
+     "current_state_evidence": [
+      {
+       "state_path": "findings[mia.athletic_authority]",
+       "how": "The evaluation notes that her amateur status is supported but potential for name collisions across regional athletes of the same name introduces identity uncertainty."
+      },
+      {
+       "state_path": "materialGaps[0]",
+       "how": "Confirms that linking the query to one specific candidate remains an outstanding material gap."
+      }
+     ],
+     "success": {
+      "observable_condition": "A single, verified competitive history profile is confirmed and locked in the athlete's record, resolving any cross-regional identity ambiguity.",
+      "quantified": null
+     },
+     "horizon": null,
+     "athlete_stance": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "established-public-digital-channel",
+     "desired_state": "The athlete has a live, public-facing digital platform dedicated to her athletic journey that can receive public traffic.",
+     "current_state": "The athlete currently has no professional, verified, or public-facing social media accounts, making her digital footprint invisible.",
+     "rationale": "Establishing a single public destination is the necessary starting point to build an addressable audience and gain commercial visibility over time.",
+     "domain": "audience",
+     "from_opportunities": [
+      {
+       "opportunity_key": "establish-foundational-digital-presence",
+       "how": "Converts the opening of creating a digital channel into an active, verified destination state."
+      }
+     ],
+     "from_athlete_intent": [],
+     "current_state_evidence": [
+      {
+       "state_path": "findings[mia.audience_scale]",
+       "how": "Identifies that the athlete does not possess any public-facing or professional social media presence, meaning her digital reach is currently non-existent."
+      },
+      {
+       "state_path": "materialGaps[1]",
+       "how": "Identifies first-party or public social media metrics as a confirmed material gap."
+      }
+     ],
+     "success": {
+      "observable_condition": "At least one public, verified digital channel under the athlete's name is live, active, and linked to her profile.",
+      "quantified": null
+     },
+     "horizon": null,
+     "athlete_stance": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": []
+  },
+  "structuralProblems": [],
+  "groundingProblems": [],
+  "set": {
+   "athleteId": "7bf15705-da50-4cf1-8034-0de604d5393a",
+   "asOf": "2026-09-23T18:12:06.527Z",
+   "version": "objective-proposal/1.0.0",
+   "specVersion": "objective-eval-spec/1.0.0",
+   "stateAsOf": "2026-09-23T18:06:58.296Z",
+   "opportunityMapAsOf": "2026-09-23T18:07:27.460Z",
+   "proposals": [
+    {
+     "key": "verified-athlete-identity",
+     "desiredState": {
+      "value": "The athlete's specific competitive record and identity are uniquely verified and distinguished from other regional competitors in her profile.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-23T18:06:58.296Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.achievement_recency",
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.competition_level",
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.national_international_status",
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.performance_results",
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.rankings_recognition",
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.role_importance",
+       "E1",
+       "E2"
+      ],
+      "rationale": "Uniquely distinguishing her competitive history from other athletes with the same name ensures a correct and stable foundation for any future positioning or career mapping.",
+      "falsifiedBy": null
+     },
+     "currentState": {
+      "value": "The athlete's profile contains potential name collisions across regional databases, leaving her athletic baseline unconfirmed.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-23T18:06:58.296Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.achievement_recency",
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.competition_level",
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.national_international_status",
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.performance_results",
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.rankings_recognition",
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#athletic_authority.role_importance",
+       "E1",
+       "E2"
+      ],
+      "rationale": "Read from: findings[mia.athletic_authority], materialGaps[0]",
+      "falsifiedBy": null
+     },
+     "domain": "evidence",
+     "provenance": {
+      "origin": "nomila",
+      "fromOpportunities": [
+       {
+        "opportunityKey": "resolve-athlete-identity-alignment",
+        "how": "Resolves the identity ambiguity by confirming the athlete's specific competition history and location."
+       }
+      ],
+      "fromAthleteIntent": [],
+      "currentStateEvidence": [
+       {
+        "statePath": "findings[mia.athletic_authority]",
+        "how": "The evaluation notes that her amateur status is supported but potential for name collisions across regional athletes of the same name introduces identity uncertainty."
+       },
+       {
+        "statePath": "materialGaps[0]",
+        "how": "Confirms that linking the query to one specific candidate remains an outstanding material gap."
+       }
+      ]
+     },
+     "success": {
+      "observableCondition": "A single, verified competitive history profile is confirmed and locked in the athlete's record, resolving any cross-regional identity ambiguity."
+     },
+     "horizon": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "established-public-digital-channel",
+     "desiredState": {
+      "value": "The athlete has a live, public-facing digital platform dedicated to her athletic journey that can receive public traffic.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-23T18:06:58.296Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#audience_scale.audience_growth",
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#audience_scale.cross_platform_effective_reach",
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#audience_scale.platform_breadth",
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#audience_scale.sport_level_audience_percentile",
+       "E3"
+      ],
+      "rationale": "Establishing a single public destination is the necessary starting point to build an addressable audience and gain commercial visibility over time.",
+      "falsifiedBy": null
+     },
+     "currentState": {
+      "value": "The athlete currently has no professional, verified, or public-facing social media accounts, making her digital footprint invisible.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-23T18:06:58.296Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#audience_scale.audience_growth",
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#audience_scale.cross_platform_effective_reach",
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#audience_scale.platform_breadth",
+       "274b1cbf-774c-4d2e-8884-4ce4f8e30bed#audience_scale.sport_level_audience_percentile",
+       "E3"
+      ],
+      "rationale": "Read from: findings[mia.audience_scale], materialGaps[1]",
+      "falsifiedBy": null
+     },
+     "domain": "audience",
+     "provenance": {
+      "origin": "nomila",
+      "fromOpportunities": [
+       {
+        "opportunityKey": "establish-foundational-digital-presence",
+        "how": "Converts the opening of creating a digital channel into an active, verified destination state."
+       }
+      ],
+      "fromAthleteIntent": [],
+      "currentStateEvidence": [
+       {
+        "statePath": "findings[mia.audience_scale]",
+        "how": "Identifies that the athlete does not possess any public-facing or professional social media presence, meaning her digital reach is currently non-existent."
+       },
+       {
+        "statePath": "materialGaps[1]",
+        "how": "Identifies first-party or public social media metrics as a confirmed material gap."
+       }
+      ]
+     },
+     "success": {
+      "observableCondition": "At least one public, verified digital channel under the athlete's name is live, active, and linked to her profile."
+     },
+     "horizon": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [],
+   "overallConfidence": "LOW"
+  }
+ }
+}

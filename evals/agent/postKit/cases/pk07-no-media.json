@@ -1,0 +1,13 @@
+{
+  "id": "pk07-no-media",
+  "description": "An empty library: no model call, no asset, and the generation flag up for the athlete to decide (nothing is generated).",
+  "reviewed": false,
+  "library": [],
+  "post": {
+    "what": "First post",
+    "body": "Caption: Hello from the new season.\nShots: anything from training.",
+    "platform": "instagram"
+  },
+  "expect": { "must_not": [], "ai_needed": true },
+  "mock": { "picks": [] }
+}

@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<title>Your session · Nomila</title>
+<!--
+  booking-session.html — the buyer's session page (/s/:token). Bookings v2, screen B10 + B8 + B9.
+
+  The ONLY buyer page with a script. Served by server/routes/bookingSession.ts with a per-response CSP: scripts are this
+  page's own nonce'd block and ONE pinned livekit-client build (exact version, verified below by Subresource Integrity),
+  styles are the nonce'd block and Google Fonts, connections are this origin and LiveKit. Nothing is interpolated into
+  this file except the nonce; everything shown comes from GET /s/:token/state and is written with textContent.
+
+  Flow: pre-join device check → Join call (POST /s/:token/join, only inside the window) → the call (a tile per person,
+  mute, camera, flip — only on a device with more than one camera — leave, reconnecting) → "How did it go?" (It happened
+  / Report a problem). Calls are not recorded.
+
+  Group sessions (0153): the other people are a responsive grid of tiles — one fills the screen (a 1:1), two sit side by
+  side, three or more tile, and HER tile (state.video.athleteIdentity) comes first and spans the top row. Each tile
+  carries the name LiveKit has for that person (her first name; in an open group every fan is "Fan"). Your own camera
+  stays the small floating tile. A private-group friend opens the same page with their own link (state.you.role
+  "guest"): they can join, but "It happened" / "Report a problem" are the booker's.
+
+  Joining muted (0154): in a group call (state.video.joinMuted, and the join answer's startMuted) the mic starts OFF
+  in the pre-join check and in the call; the person turns it on themselves. A 1:1 is unchanged. If the athlete mutes
+  someone's mic or turns off their camera from her app (LiveKit mutes the published track), the page follows: the
+  button flips to "Unmute" / "Camera on" with a line saying so, and they can turn it back on.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" nonce="__NONCE__" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800;900&display=swap">
+<style nonce="__NONCE__">
+  :root { --ink:#0E0E0E; --ink2:#3A3A3A; --mute:#6B6B6B; --quiet:#9A9A98; --line:#E4E4E2; --ground:#F3F3F1; --paper:#FFFFFF; --act:#C8325A; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; -webkit-tap-highlight-color: transparent; }
+  main { max-width: 560px; margin: 0 auto; padding: 24px 16px 40px; }
+  .eyebrow { font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); margin: 0 0 8px; }
+  h1 { font-size: 26px; font-weight: 900; text-transform: uppercase; letter-spacing: -.5px; line-height: 1; margin: 0 0 8px; }
+  p { font-size: 15px; line-height: 1.45; color: var(--ink2); margin: 0 0 12px; }
+  .meta { font-size: 13px; color: var(--mute); }
+  /* The one look (DESIGN.md, client/constants/theme.ts Bold): raspberry is the ONE main action, buttons are pills,
+     cards 16, links ink. The call itself stays the dark full-bleed surface. */
+  .btn { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 48px; border-radius: 999px; border: 2px solid var(--act);
+         background: var(--act); color: #fff; font: 800 13px 'Outfit', sans-serif; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; padding: 0 18px; text-decoration: none; margin-top: 12px; }
+  .btn.secondary { background: var(--paper); color: var(--ink); border-color: var(--ink); }
+  .btn:disabled { background: var(--ground); border-color: var(--line); color: var(--quiet); cursor: not-allowed; }
+  .btn:focus-visible, .toggle:focus-visible, .link:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  .controls button:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+  .link { color: var(--ink); font-weight: 800; font-size: 13px; background: none; border: 0; padding: 12px 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; display: inline-block; }
+  .preview { position: relative; width: 100%; aspect-ratio: 4 / 3; background: #2A2A2A; border-radius: 16px; overflow: hidden; margin: 16px 0 8px; }
+  /* Every <video> fills its box. Her own camera (preview, self tile) fills it edge to edge (cover); the other person is
+     shown WHOLE (contain, on the dark call ground), so a landscape laptop camera on a portrait phone, or the reverse,
+     is letterboxed instead of cropped to a zoomed-in face. The front camera is mirrored, the back one is not. */
+  .preview video, .tile video, .self video { display: block; width: 100%; height: 100%; }
+  .preview video, .self video { object-fit: cover; }
+  .tile video { object-fit: contain; background: #0E0E0E; }
+  .mirror video { transform: scaleX(-1); }
+  .toggles { display: flex; gap: 8px; }
+  .toggle { flex: 1; min-height: 44px; border: 1.5px solid var(--ink); border-radius: 999px; background: var(--paper); color: var(--ink); font: 800 11px 'Outfit', sans-serif; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; }
+  .toggle[aria-pressed="false"] { background: var(--ground); color: var(--mute); border-color: var(--line); }
+  .call { position: fixed; inset: 0; background: #0E0E0E; color: #fff; display: flex; flex-direction: column; }
+  .call .remote { flex: 1; position: relative; min-height: 0; }
+  /* The other people: one fills the screen; two side by side (stacked on a tall phone); three or more tile, her first
+     and full width. Every tile shows the whole picture (contain, below). */
+  .grid { position: absolute; inset: 0; display: grid; gap: 6px; padding: 6px; grid-template-columns: 1fr; grid-auto-rows: minmax(0, 1fr); }
+  .grid[data-count="2"] { grid-template-columns: 1fr 1fr; }
+  .grid.many { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid.many .tile.lead { grid-column: 1 / -1; }
+  @media (min-width: 900px) { .grid.many { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-aspect-ratio: 3/4) { .grid[data-count="2"] { grid-template-columns: 1fr; } }
+  .tile { position: relative; display: flex; align-items: center; justify-content: center; min-height: 0; border-radius: 16px; overflow: hidden; background: #1A1A1A; }
+  .grid[data-count="1"] .tile { border-radius: 0; background: transparent; }
+  .tile.lead { box-shadow: inset 0 0 0 2px var(--act); }
+  .grid[data-count="1"] .tile.lead { box-shadow: none; }
+  .tile .name { position: absolute; left: 8px; bottom: 8px; max-width: calc(100% - 16px); background: rgba(0,0,0,.6); border-radius: 999px; padding: 4px 10px; font-size: 12px; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .waiting { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 16px; }
+  .waiting b { display: block; font-size: 20px; font-weight: 900; text-transform: uppercase; margin-bottom: 6px; }
+  .waiting span { color: rgba(255,255,255,.7); font-size: 13px; }
+  .self { position: absolute; right: 12px; bottom: 12px; width: 28%; max-width: 160px; aspect-ratio: 3 / 4; border-radius: 16px; overflow: hidden; background: #2A2A2A; border: 1px solid rgba(255,255,255,.14); }
+  .self.wide { width: 40%; max-width: 220px; }
+  .banner { position: absolute; left: 12px; right: 12px; top: 12px; background: rgba(0,0,0,.66); border: 1px solid rgba(255,255,255,.16); border-radius: 16px; padding: 10px 12px; font-size: 13px; }
+  .controls { display: flex; gap: 8px; padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); }
+  .controls button { flex: 1; min-height: 48px; border-radius: 999px; border: 1.5px solid rgba(255,255,255,.7); background: transparent; color: #fff; font: 800 11px 'Outfit', sans-serif; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; }
+  .controls button.leave { background: #fff; color: var(--ink); border-color: #fff; }
+  .controls button[aria-pressed="false"] { border-color: rgba(255,255,255,.3); color: rgba(255,255,255,.6); }
+  label { display: block; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); margin: 16px 0 6px; }
+  select, textarea { width: 100%; font: 400 16px 'Outfit', sans-serif; border: 1px solid var(--line); border-radius: 16px; padding: 12px; background: var(--paper); color: var(--ink); }
+  textarea { min-height: 96px; resize: vertical; }
+  .card { border: 1px solid var(--line); border-radius: 16px; padding: 14px; margin-top: 16px; }
+  .foot { font-size: 12px; color: var(--mute); margin-top: 32px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main id="page">
+  <section id="v-loading"><p class="meta">Loading your session…</p></section>
+
+  <section id="v-error" hidden>
+    <h1>Something went wrong</h1>
+    <p id="error-text">We couldn't load your session.</p>
+    <button class="btn secondary" id="retry" type="button">Try again</button>
+  </section>
+
+  <section id="v-prejoin" hidden>
+    <p class="eyebrow" id="pj-eyebrow">Video call</p>
+    <h1 id="pj-title">Ready to join?</h1>
+    <p class="meta" id="pj-when"></p>
+    <div class="preview" id="pj-preview" aria-label="Your camera preview"></div>
+    <div class="toggles">
+      <button class="toggle" id="t-mic" type="button" aria-pressed="true">Mic on</button>
+      <button class="toggle" id="t-cam" type="button" aria-pressed="true">Camera on</button>
+      <button class="toggle" id="t-flip" type="button" hidden>Flip</button>
+    </div>
+    <p class="meta" id="pj-status">Your browser will ask to use your camera and mic. Calls aren't recorded.</p>
+    <button class="btn" id="check" type="button">Check camera and mic</button>
+    <button class="btn" id="join" type="button" hidden disabled>Join call</button>
+    <a class="btn secondary" id="pj-fallback" hidden target="_blank" rel="noopener noreferrer">Use the backup link</a>
+  </section>
+
+  <section id="v-denied" hidden>
+    <h1>Camera or mic blocked</h1>
+    <p>Your browser didn't allow the camera or microphone. Allow them for this site in your browser's settings, then try again.</p>
+    <button class="btn" id="denied-retry" type="button">Try again</button>
+    <a class="btn secondary" id="denied-fallback" hidden target="_blank" rel="noopener noreferrer">Use the backup link</a>
+  </section>
+
+  <section id="v-link" hidden>
+    <p class="eyebrow">Video call</p>
+    <h1 id="lk-title"></h1>
+    <p class="meta" id="lk-when"></p>
+    <p id="lk-text">This call happens on the link below.</p>
+    <a class="btn" id="lk-open" target="_blank" rel="noopener noreferrer">Open the call link</a>
+  </section>
+
+  <section id="v-after" hidden>
+    <p class="eyebrow">After your session</p>
+    <h1 id="af-title">How did it go?</h1>
+    <p id="af-text"></p>
+    <button class="btn" id="happened" type="button" hidden>It happened</button>
+    <button class="btn secondary" id="open-report" type="button" hidden>Report a problem</button>
+    <button class="btn secondary" id="rejoin" type="button" hidden>Rejoin call</button>
+    <form class="card" id="report-form" hidden novalidate>
+      <label for="r-cat">What happened?</label>
+      <select id="r-cat" required>
+        <option value="no_show" id="r-noshow"></option>
+        <option value="not_as_described">It wasn't what was agreed</option>
+        <option value="safety">I felt unsafe</option>
+        <option value="harassment">Harassment</option>
+        <option value="other">Something else</option>
+      </select>
+      <label for="r-details">Tell us more (optional)</label>
+      <textarea id="r-details" maxlength="2000"></textarea>
+      <button class="btn" id="send-report" type="submit">Send report</button>
+      <p class="meta">In danger right now? Call 911.</p>
+    </form>
+  </section>
+
+  <p class="foot" id="foot">Questions or safety concerns? <span id="support"></span> · In danger? Call 911.</p>
+</main>
+
+<div class="call" id="v-call" hidden>
+  <div class="remote">
+    <div class="grid" id="grid" data-count="0" aria-label="People in the call"></div>
+    <div class="waiting" id="waiting"><b id="waiting-title">Waiting</b><span>They'll appear here when they join. Not recorded.</span></div>
+    <div class="self" id="self-tile" aria-label="You"></div>
+    <div class="banner" id="banner" role="status" aria-live="polite" hidden></div>
+  </div>
+  <div class="controls">
+    <button type="button" id="c-mic" aria-pressed="true">Mute</button>
+    <button type="button" id="c-cam" aria-pressed="true">Camera off</button>
+    <button type="button" id="c-flip" hidden>Flip</button>
+    <button type="button" class="leave" id="c-leave">Leave</button>
+  </div>
+</div>
+
+<script nonce="__NONCE__" src="https://cdn.jsdelivr.net/npm/livekit-client@2.21.0/dist/livekit-client.umd.js"
+        integrity="sha384-gDU80RlmAnHKgj4uOWIhnTIb6vAUef/+NqGPuIEfbEQYGfqzyeJDwC2XElesqctC" crossorigin="anonymous"></script>
+<script nonce="__NONCE__">
+(function () {
+  "use strict";
+  var token = location.pathname.split("/")[2] || "";
+  var base = "/s/" + encodeURIComponent(token);
+  var $ = function (id) { return document.getElementById(id); };
+  var VIEWS = ["v-loading", "v-error", "v-prejoin", "v-denied", "v-link", "v-after"];
+  var state = null, room = null, localTracks = [], micOn = true, camOn = true, left = false, pollTimer = null, tiles = [];
+  var facing = "user", multiCam = false, flipping = false, mutedDefault = false;
+
+  function show(id) {
+    VIEWS.forEach(function (v) { $(v).hidden = v !== id; });
+    $("v-call").hidden = true; $("page").hidden = false;
+  }
+  function fmt(iso) {
+    if (!iso) return "";
+    return new Date(iso).toLocaleString(undefined, { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+  }
+  function fmtTime(iso) { return iso ? new Date(iso).toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" }) : ""; }
+  function api(method, path, body) {
+    return fetch(base + path, { method: method, headers: body ? { "content-type": "application/json" } : {}, body: body ? JSON.stringify(body) : undefined, credentials: "omit" })
+      .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return { status: r.status, body: j }; }); });
+  }
+  function fail(text) { $("error-text").textContent = text; show("v-error"); }
+
+  function load() {
+    return api("GET", "/state").then(function (r) {
+      if (r.status === 404) { fail("This session link isn't valid any more. Open your booking email for a fresh one."); return; }
+      if (r.status !== 200) { fail("We couldn't load your session. Check your connection and try again."); return; }
+      state = r.body; render();
+    }, function () { fail("We couldn't reach Nomila. Check your connection and try again."); });
+  }
+
+  function setFallback(el) {
+    var link = state && state.video.fallbackLink;
+    el.hidden = !link; if (link) el.href = link;
+  }
+
+  function render() {
+    $("support").textContent = state.supportEmail;
+    var b = state.booking, v = state.video, a = state.after, name = b.athleteFirstName;
+    if (room) return; // in a call: the call UI owns the screen
+    // A group call: the mic starts off (once; their own tap after that is theirs).
+    if (v.joinMuted && !mutedDefault) { mutedDefault = true; micOn = false; applyToggles(); }
+    var ended = b.endsAt && new Date(state.serverNow) >= new Date(b.endsAt);
+    var afterMode = left || ended || v.joinState === "closed" || v.mode === "none" || b.status === "released" || a.reportOpen || a.itHappenedAt;
+    if (!afterMode && v.mode === "link") {
+      $("lk-title").textContent = b.title + " with " + name;
+      $("lk-when").textContent = fmt(b.startsAt);
+      $("lk-open").href = v.fallbackLink || "#"; $("lk-open").hidden = !v.fallbackLink;
+      $("lk-text").textContent = v.fallbackLink ? "This call happens on the link below." : name + " hasn't added the call link yet. It will appear here.";
+      show("v-link"); return;
+    }
+    if (!afterMode && v.mode === "livekit") {
+      $("pj-title").textContent = "Ready to join?";
+      $("pj-eyebrow").textContent = b.title + " with " + name;
+      $("pj-when").textContent = fmt(b.startsAt) + " · " + b.durationMinutes + " min";
+      var open = v.joinState === "open";
+      $("join").disabled = !open || !localTracks.length;
+      $("join").textContent = open ? "Join call" : v.joinState === "not_yet_open" ? "Join opens at " + fmtTime(v.joinOpensAt) : "Join call";
+      if (v.joinState === "unavailable") $("pj-status").textContent = "This call can't be joined from this link. Check your booking email.";
+      setFallback($("pj-fallback"));
+      show("v-prejoin"); return;
+    }
+    renderAfter();
+  }
+
+  function renderAfter() {
+    var b = state.booking, a = state.after, name = b.athleteFirstName, now = new Date(state.serverNow);
+    $("rejoin").hidden = !(state.video.mode === "livekit" && state.video.joinState === "open" && !a.reportOpen);
+    $("happened").hidden = !a.canSayItHappened;
+    $("open-report").hidden = !a.canReport || a.reportOpen;
+    var noShowFrom = a.canReportNoShowFrom ? new Date(a.canReportNoShowFrom) : null;
+    var noShowOpt = $("r-noshow");
+    noShowOpt.textContent = name + " didn't show";
+    noShowOpt.disabled = !noShowFrom || now < noShowFrom;
+    if (noShowOpt.disabled && $("r-cat").value === "no_show") $("r-cat").value = "not_as_described";
+    if (state.you && state.you.role === "guest") {
+      // A friend the booker invited: no money taps here (those are the booker's).
+      $("af-title").textContent = "Thanks for joining";
+      $("af-text").textContent = "Your " + b.title.toLowerCase() + " with " + name + ", " + fmt(b.startsAt) + ". Questions? Email " + state.supportEmail + ".";
+    } else if (b.status === "released" || a.releasedAt) {
+      $("af-title").textContent = "Thanks"; $("af-text").textContent = name + " has been paid. Thanks for booking.";
+    } else if (a.reportOpen) {
+      $("af-title").textContent = "We're looking into it"; $("af-text").textContent = "The payment is held while a person at Nomila reviews your report. We'll email you.";
+    } else if (a.itHappenedAt) {
+      $("af-title").textContent = "Thanks"; $("af-text").textContent = "You said it happened. " + name + " is being paid.";
+    } else if (a.markedYouNoShow) {
+      // Her mark is her word; the page only says "you didn't join" itself when Nomila's call has evidence (0154).
+      var by = (a.releaseDueAt ? " by " + fmt(a.releaseDueAt) : "") + ".";
+      $("af-title").textContent = "How did it go?";
+      $("af-text").textContent = a.attendance === "seen"
+        ? name + " marked this session as a no-show, but our call shows you joined. If something's wrong, report a problem" + by
+        : a.attendance === "unknown"
+          ? "We couldn't confirm attendance for this call. " + name + " marked it as a no-show. If you were there, report a problem" + by
+          : name + " says you didn't join. If that's wrong, report a problem" + by;
+    } else if (a.athleteMarkedDone) {
+      $("af-title").textContent = "Did it happen?"; $("af-text").textContent = name + " marked your session done. Tap It happened if it did.";
+    } else {
+      $("af-title").textContent = "How did it go?";
+      $("af-text").textContent = "Your " + b.title.toLowerCase() + " with " + name + ", " + fmt(b.startsAt) + "." + (a.canSayItHappened ? " Tapping It happened pays " + name + " now." : "");
+    }
+    show("v-after");
+  }
+
+  // ── Pre-join device check ──────────────────────────────────────────────────────────────────────────────────
+  function stopLocal() { localTracks.forEach(function (t) { try { t.stop(); } catch (e) {} }); localTracks = []; }
+  function check() {
+    if (!window.LivekitClient) { fail("Video couldn't load in this browser. Use the backup link if there is one, or report a problem."); return; }
+    stopLocal();
+    $("pj-status").textContent = "Asking your browser for the camera and mic…";
+    LivekitClient.createLocalTracks({ audio: true, video: { facingMode: "user" } }).then(function (tracks) {
+      localTracks = tracks;
+      facing = "user";
+      var pv = $("pj-preview"); pv.textContent = "";
+      tracks.forEach(function (t) { if (t.kind === "video") { var el = t.attach(); el.muted = true; el.setAttribute("playsinline", ""); pv.appendChild(el); } });
+      applyToggles(); detectCameras();
+      $("check").hidden = true; $("join").hidden = false;
+      $("pj-status").textContent = state.video.joinMuted && !micOn
+        ? "Looking good. You'll join with your mic off; turn it on when you want to talk. Calls aren't recorded."
+        : "Looking good. Calls aren't recorded.";
+      render();
+    }, function (err) {
+      var denied = err && (err.name === "NotAllowedError" || err.name === "SecurityError" || /permission/i.test(String(err.message)));
+      if (denied) { setFallback($("denied-fallback")); show("v-denied"); }
+      else { $("pj-status").textContent = "We couldn't find a camera or mic. Plug one in and try again, or use the backup link."; }
+    });
+  }
+  function applyToggles() {
+    localTracks.forEach(function (t) {
+      var on = t.kind === "audio" ? micOn : camOn;
+      if (room) { on ? t.unmute() : t.mute(); } else if (t.mediaStreamTrack) { t.mediaStreamTrack.enabled = on; }
+    });
+    $("t-mic").setAttribute("aria-pressed", String(micOn)); $("t-mic").textContent = micOn ? "Mic on" : "Mic off";
+    $("t-cam").setAttribute("aria-pressed", String(camOn)); $("t-cam").textContent = camOn ? "Camera on" : "Camera off";
+    $("c-mic").setAttribute("aria-pressed", String(micOn)); $("c-mic").textContent = micOn ? "Mute" : "Unmute";
+    $("c-cam").setAttribute("aria-pressed", String(camOn)); $("c-cam").textContent = camOn ? "Camera off" : "Camera on";
+    // Flip only where there is a second camera (phones; not a laptop), and not while the camera is off or mid-flip.
+    ["t-flip", "c-flip"].forEach(function (id) { $(id).hidden = !multiCam; $(id).disabled = !camOn || flipping; });
+    // Her own picture is mirrored on the front camera only, like a mirror; the back camera shows the world as it is.
+    $("pj-preview").classList.toggle("mirror", facing === "user");
+    $("self-tile").classList.toggle("mirror", facing === "user");
+  }
+
+  // Device labels and the full camera list are only exposed once the browser has granted the camera, so this runs
+  // after createLocalTracks succeeded.
+  function detectCameras() {
+    var md = navigator.mediaDevices;
+    if (!md || !md.enumerateDevices) return;
+    md.enumerateDevices().then(function (list) {
+      multiCam = list.filter(function (d) { return d.kind === "videoinput"; }).length > 1;
+      applyToggles();
+    }, function () {});
+  }
+  // Front ↔ back. restartTrack swaps the camera under the same LiveKit track, so the published track (and every <video>
+  // it is attached to) carries on; only the mirroring changes.
+  function flip() {
+    var cam = localTracks.filter(function (t) { return t.kind === "video"; })[0];
+    if (!cam || !camOn || flipping) return;
+    var next = facing === "user" ? "environment" : "user";
+    flipping = true; applyToggles();
+    Promise.resolve(cam.restartTrack({ facingMode: next })).then(function () { facing = next; }, function () {}).then(function () {
+      flipping = false;
+      if (!room && cam.mediaStreamTrack) cam.mediaStreamTrack.enabled = camOn; // pre-join: a fresh track starts enabled
+      applyToggles();
+    });
+  }
+  // The self tile follows her camera's shape: portrait on a phone held upright, landscape on a laptop.
+  function fitSelf(el) {
+    var tile = $("self-tile");
+    var fit = function () {
+      var w = el.videoWidth, h = el.videoHeight;
+      if (!w || !h) return;
+      tile.style.aspectRatio = w + " / " + h;
+      tile.classList.toggle("wide", w > h);
+    };
+    el.addEventListener("loadedmetadata", fit); el.addEventListener("resize", fit); fit();
+  }
+
+  // ── The call ───────────────────────────────────────────────────────────────────────────────────────────────
+  function banner(text) { $("banner").hidden = !text; $("banner").textContent = text || ""; }
+  function isAthlete(p) { return !!(state.video && state.video.athleteIdentity && p.identity === state.video.athleteIdentity); }
+  // One tile per other person, her first. Rebuilt on every change (join, leave, a track arriving): a call holds at
+  // most 21 people, and attach() hands back the same element for the same track.
+  function renderRemote() {
+    var grid = $("grid"), name = state.booking.athleteFirstName;
+    tiles.forEach(function (t) { t.remove(); }); tiles = [];
+    var remotes = room ? Array.from(room.remoteParticipants.values()) : [];
+    remotes.sort(function (x, y) { return Number(isAthlete(y)) - Number(isAthlete(x)); });
+    $("waiting").hidden = remotes.length > 0;
+    $("waiting-title").textContent = "Waiting for " + name;
+    grid.setAttribute("data-count", String(remotes.length));
+    grid.classList.toggle("many", remotes.length > 2);
+    remotes.forEach(function (p) {
+      var lead = isAthlete(p);
+      var tile = document.createElement("div");
+      tile.className = "tile" + (lead ? " lead" : "");
+      p.trackPublications.forEach(function (pub) {
+        if (pub.track && pub.isSubscribed) { var el = pub.track.attach(); el.setAttribute("playsinline", ""); tile.appendChild(el); }
+      });
+      var label = document.createElement("span");
+      label.className = "name";
+      label.textContent = lead ? name : (p.name || "Guest");
+      tile.appendChild(label);
+      grid.appendChild(tile); tiles.push(tile);
+    });
+  }
+  function join() {
+    $("join").disabled = true; $("join").textContent = "Joining…";
+    api("POST", "/join").then(function (r) {
+      if (r.status !== 200) {
+        var msg = { not_yet_open: "The call isn't open yet.", closed: "This call has closed.", buyer_not_verified: "Confirm your email from your booking email first.", video_not_configured: "Video isn't available right now. Use the backup link if there is one.", removed: "You were removed from this call." }[r.body && r.body.error] || "We couldn't start the call. Try again.";
+        $("pj-status").textContent = msg; return load();
+      }
+      var L = LivekitClient;
+      // The server's word for a group call (0154): join with the mic off.
+      if (r.body.startMuted && !mutedDefault) { mutedDefault = true; micOn = false; }
+      room = new L.Room({ adaptiveStream: true, dynacast: true });
+      room.on(L.RoomEvent.ParticipantConnected, renderRemote)
+          .on(L.RoomEvent.ParticipantDisconnected, function (p) {
+            renderRemote();
+            // Her leaving is worth a line; in a group, one of the others leaving is not.
+            if (!state.video.athleteIdentity || !p || isAthlete(p)) banner(state.booking.athleteFirstName + " left the call. They can rejoin until " + fmtTime(state.video.joinClosesAt) + ".");
+          })
+          .on(L.RoomEvent.TrackSubscribed, renderRemote)
+          .on(L.RoomEvent.TrackUnsubscribed, function (track) { track.detach().forEach(function (el) { el.remove(); }); renderRemote(); })
+          .on(L.RoomEvent.TrackMuted, function (pub, p) {
+            // The athlete muted this person's mic or camera from her app: follow it (they can turn it back on).
+            if (!room || !p || p !== room.localParticipant) return;
+            var audio = pub && pub.kind === "audio";
+            if (audio ? !micOn : !camOn) return;   // their own tap: nothing to say
+            if (audio) micOn = false; else camOn = false;
+            applyToggles();
+            banner(state.booking.athleteFirstName + (audio ? " muted your mic." : " turned off your camera.") + " You can turn it back on.");
+          })
+          .on(L.RoomEvent.Reconnecting, function () { banner("Reconnecting…"); })
+          .on(L.RoomEvent.Reconnected, function () { banner(""); })
+          .on(L.RoomEvent.Disconnected, function () { endCall(); });
+      return room.connect(r.body.wsUrl, r.body.token).then(function () {
+        $("page").hidden = true; $("v-call").hidden = false;
+        var self = $("self-tile"); self.textContent = "";
+        return Promise.all(localTracks.map(function (t) {
+          if (t.kind === "video") { var el = t.attach(); el.muted = true; el.setAttribute("playsinline", ""); self.appendChild(el); fitSelf(el); }
+          return room.localParticipant.publishTrack(t);
+        })).then(function () { applyToggles(); renderRemote(); });
+      });
+    }).catch(function () {
+      if (room) { try { room.disconnect(); } catch (e) {} room = null; }
+      $("pj-status").textContent = "We couldn't connect. Check your connection, try again, or use the backup link.";
+      $("join").disabled = false; $("join").textContent = "Join call";
+    });
+  }
+  function endCall() {
+    if (!room) return;
+    var r = room; room = null; left = true;
+    try { r.disconnect(); } catch (e) {}
+    stopLocal(); banner("");
+    $("v-call").hidden = true; $("page").hidden = false;
+    load();
+  }
+
+  // ── After the call ─────────────────────────────────────────────────────────────────────────────────────────
+  function happened() {
+    $("happened").disabled = true;
+    api("POST", "/happened").then(function (r) {
+      $("happened").disabled = false;
+      if (r.status !== 200) { $("af-text").textContent = r.body && r.body.error === "issue_open" ? "A problem was reported, so a person at Nomila will decide." : "That didn't go through. Try again."; return; }
+      load();
+    }, function () { $("happened").disabled = false; $("af-text").textContent = "That didn't go through. Check your connection and try again."; });
+  }
+  function sendReport(ev) {
+    ev.preventDefault();
+    $("send-report").disabled = true;
+    api("POST", "/report", { category: $("r-cat").value, details: $("r-details").value }).then(function (r) {
+      $("send-report").disabled = false;
+      if (r.status !== 200) { $("af-text").textContent = r.body && r.body.error === "too_early" ? "You can report a no-show once the 15-minute grace is over." : "Your report didn't go through. Try again, or email " + state.supportEmail + "."; return; }
+      $("report-form").hidden = true;
+      $("af-title").textContent = "Report sent";
+      $("af-text").textContent = "The payment is held while a person at Nomila looks. We'll reply by " + fmt(r.body.replyBy) + ".";
+      $("happened").hidden = true; $("open-report").hidden = true;
+    }, function () { $("send-report").disabled = false; $("af-text").textContent = "Your report didn't go through. Check your connection and try again."; });
+  }
+
+  $("retry").addEventListener("click", load);
+  $("check").addEventListener("click", check);
+  $("denied-retry").addEventListener("click", function () { show("v-prejoin"); check(); });
+  $("join").addEventListener("click", join);
+  $("t-mic").addEventListener("click", function () { micOn = !micOn; applyToggles(); });
+  $("t-cam").addEventListener("click", function () { camOn = !camOn; applyToggles(); });
+  $("c-mic").addEventListener("click", function () { micOn = !micOn; applyToggles(); });
+  $("c-cam").addEventListener("click", function () { camOn = !camOn; applyToggles(); });
+  $("t-flip").addEventListener("click", flip);
+  $("c-flip").addEventListener("click", flip);
+  $("c-leave").addEventListener("click", endCall);
+  $("rejoin").addEventListener("click", function () { left = false; render(); show("v-prejoin"); $("check").hidden = false; $("join").hidden = true; });
+  $("happened").addEventListener("click", happened);
+  $("open-report").addEventListener("click", function () { $("report-form").hidden = false; $("open-report").hidden = true; $("r-cat").focus(); });
+  $("report-form").addEventListener("submit", sendReport);
+  window.addEventListener("pagehide", function () { if (room) { try { room.disconnect(); } catch (e) {} } stopLocal(); });
+
+  // Keep the page's clock-driven states (join opens, the no-show option, after the end) in step with the server.
+  pollTimer = setInterval(function () { if (!room && $("report-form").hidden) load(); }, 15000);
+  load();
+})();
+</script>
+</body>
+</html>

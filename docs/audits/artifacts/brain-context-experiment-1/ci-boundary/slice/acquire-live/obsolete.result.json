@@ -1,0 +1,44 @@
+{
+ "request_status": "obsolete",
+ "run_status": "canceled",
+ "step_status": "skipped",
+ "late_completion": {
+  "refused": true,
+  "code": "not_waiting",
+  "status": 409,
+  "message": "Step \"ask\" is not waiting on input"
+ },
+ "evidence": {
+  "refs": [],
+  "lineage": {
+   "request_id": "req_b7b35676175152b3",
+   "need": "athlete_capability_intent",
+   "field": "cadence",
+   "run": {
+    "id": "ff9b2d16-f504-4d13-b1d2-b0b7e4b7c5ee",
+    "process": "intelligence_acquisition",
+    "status": "canceled",
+    "athlete_id": "dd1a8a80-d31b-423a-a572-9d146716cb0f",
+    "idempotency_key": "intelligence_acquisition:req_b7b35676175152b3",
+    "active_scope": "intelligence_acquisition:req_b7b35676175152b3",
+    "definition_version": 1
+   },
+   "step": {
+    "id": "c7a4afa6-76ce-433f-8c62-e746a737b591",
+    "step": "ask",
+    "status": "skipped",
+    "mode": null,
+    "finished_at": "2026-09-27T01:51:52.097Z",
+    "input_request_id": "req_b7b35676175152b3",
+    "output_request_id": null
+   },
+   "asserted": [],
+   "problems": [
+    "step is skipped, not done — no evidence yet"
+   ]
+  },
+  "problems": [
+   "step is skipped, not done — no evidence yet"
+  ]
+ }
+}

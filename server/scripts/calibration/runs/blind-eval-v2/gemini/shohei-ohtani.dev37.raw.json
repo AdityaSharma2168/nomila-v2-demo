@@ -1,0 +1,177 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "shohei-ohtani",
+    "name": "Shohei Ohtani",
+    "sport": "Baseball"
+  },
+  "conditions": "gemini-3.5-flash via Vertex; Google Search grounding; default thinking; temperature 1.0; text output with fenced JSON; spec v0.2 additions; social block none",
+  "startedAt": "2026-09-14T12:34:33.428Z",
+  "attempts": 1,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "responseId": "2umnaoqjAsncsbwPzJWPgQM",
+  "latencyMs": 70686,
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+    "promptTokens": 3512,
+    "outputTokens": 6354,
+    "thoughtTokens": 6484,
+    "totalTokens": 16350,
+    "searchCalls": 6
+  },
+  "costUsd": 0.15581,
+  "text": "```json\n{\n  \"athlete\": {\n    \"name\": \"Shohei Ohtani\",\n    \"sport\": \"Baseball\",\n    \"identity_confidence\": \"HIGH\"\n  },\n\n  \"marketability_summary\": \"Shohei Ohtani represents a truly historic commercial and athletic phenomenon. As a dual-threat superstar who dominates Major League Baseball as both an elite pitcher and hitter, he has achieved a level of sports cultural gravity not seen since Babe Ruth. Currently playing for the Los Angeles Dodgers, Ohtani is a four-time MVP (2021, 2023, 2024, 2025) and back-to-back World Series champion (2024, 2025). His commercial standing is unparalleled in active team sports, with a projected record-breaking $125 million in endorsement income in 2026, partnering with over 20 global brands including New Balance, Hugo Boss, Porsche, and Japan Airlines. Despite a brief period of brand uncertainty during his former interpreter's legal issues in 2024, federal investigations completely cleared Ohtani, reinforcing his market reputation as a highly disciplined, premium brand asset. Though his 2026 pitching campaign was cut short due to a September injured list placement for biceps inflammation, his massive global footprint—specifically spanning North America and East Asia—retains absolute tier-one marketability with steady public attention and immense pricing power.\",\n\n  \"evidence\": [\n    {\n      \"id\": \"E1\",\n      \"claim\": \"Shohei Ohtani has over 10.8 million followers on Instagram, averaging 160.6k likes and a 2.42% engagement rate.\",\n      \"source_title\": \"HypeAuditor / DolphinRadar Instagram Analysis (Shohei Ohtani)\",\n      \"source_url\": \"https://hypeauditor.com\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-08-16\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Reflects public metrics as of late summer 2026. Highly dominant relative to other baseball players.\"\n    },\n    {\n      \"id\": \"E2\",\n      \"claim\": \"Ohtani signed a historic 10-year, $700 million contract with the Dodgers in December 2023, with $680 million deferred to be paid starting in 2034.\",\n      \"source_title\": \"Shohei Ohtani Wikipedia / MLB Records\",\n      \"source_url\": \"https://en.wikipedia.org/wiki/Shohei_Ohtani\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-09-02\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Shows unique contract structure making him collect only $2 million annually in team salary.\"\n    },\n    {\n      \"id\": \"E3\",\n      \"claim\": \"Ohtani is projected to earn $125 million from endorsements in 2026, up from $100 million in 2025, partnering with 21 brands across multiple sectors.\",\n      \"source_title\": \"Sportico / Teams.one Endorsement Projections\",\n      \"source_url\": \"https://teams.one\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2026-08-26\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"This cements Ohtani as the highest-earning active athlete in terms of single-season endorsements, exceeding peak Tiger Woods and Roger Federer.\"\n    },\n    {\n      \"id\": \"E4\",\n      \"claim\": \"Ohtani won back-to-back World Series with the Dodgers (2024, 2025) and was unanimously voted the NL MVP in both seasons, raising his career total to four MVPs.\",\n      \"source_title\": \"MLB Official Player Profile / Baseball Reference\",\n      \"source_url\": \"https://www.mlb.com\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-09-02\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Solidifies his standing as the most dominant active baseball player, and one of only two players with four or more MVPs.\"\n    },\n    {\n      \"id\": \"E5\",\n      \"claim\": \"Ohtani went on the 15-day injured list on September 11, 2026, due to right biceps inflammation, following a 2026 season where he batted .277 with 30 HR and went 8-2 with a 1.79 ERA on the mound.\",\n      \"source_title\": \"RotoWire / FOX Sports Injury Report\",\n      \"source_url\": \"https://www.rotowire.com\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2026-09-11\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Updates his current athletic status in late 2026 as he approaches the postseason.\"\n    },\n    {\n      \"id\": \"E6\",\n      \"claim\": \"Ohtani was completely cleared of involvement in the gambling scandal of former interpreter Ippei Mizuhara, who was sentenced to 57 months in prison in February 2025.\",\n      \"source_title\": \"U.S. Department of Justice / Homeland Security Investigations Report\",\n      \"source_url\": \"https://www.ice.gov\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2025-06-13\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Confirms the formal closure of the betting scandal and official clearance of Ohtani's record.\"\n    }\n  ],\n\n  \"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Ohtani competes in Major League Baseball, the undisputed pinnacle of global professional baseball.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"He maintains historically dominant results as both a batter and a pitcher, leading to unanimous MVPs and championships.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Ohtani has won four unanimous league MVPs, Rookie of the Year, and consecutive World Series rings.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He is a legendary national hero in Japan and the global face of baseball, verified by his 2023 WBC MVP.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"As a two-way designated hitter and pitcher, he is the central marquee asset for both the Dodgers and the entire sport.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"He won the MVP and World Series in late 2025, with stellar dual-threat statistics achieved throughout the 2026 season.\"\n      }\n    },\n\n    \"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Ohtani's 10.8 million Instagram followers represent a massive global audience, though smaller than global soccer icons.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"His digital following is more than four times larger than the second most-followed active MLB player, Mike Trout.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"His following grew steadily from 9 million to 10.8 million since early 2025, though it experienced minor plateauing in mid-2026.\"\n      },\n      \"platform_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"His primary public social footprint is heavily concentrated on Instagram, with no active personal presence on other major platforms.\"\n      }\n    },\n\n    \"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"His 2.42% Instagram engagement rate is exceptionally strong for an account with over 10 million followers.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"His average of 160.6k likes per post indicates that his content spreads efficiently across and outside his follower base.\"\n      },\n      \"shares_saves_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Private platform save and share metrics are unavailable from public sources.\"\n      },\n      \"video_retention\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"First-party video retention and completion data are not accessible publicly.\"\n      },\n      \"story_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Private Instagram Story reach and interaction metrics are not available.\"\n      },\n      \"audience_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"His audience consists of deeply passionate, high-intent sports fans globally who heavily purchase verified merchandise and tickets.\"\n      }\n    },\n\n    \"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"Ohtani is subject to constant, daily media coverage across both North American and Asian news ecosystems.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"His actions are documented by premier outlets including ESPN, The Athletic, NHK, and major national newspapers.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Public curiosity consistently peaks during historical achievements like his 50-50 season or championship wins.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He is a viral driver of public discussion, with moments like his dog 'Decoy' or game-winning plays generating massive organic trends.\"\n      },\n      \"crossover_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"He has transcended baseball, recognized widely in pop culture and global fashion circles via premium campaigns.\"\n      }\n    },\n\n    \"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"The narrative of a modern, elite two-way player in baseball is entirely unique and instantly articulable.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"His story includes his international move, overcoming major arm surgeries, team transition, and betrayal by a close confidant.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"His legendary narrative is completely supported by documented statistics and verified legal exoneration.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Media coverage routinely focuses on his historic 'unicorn' status, amplifying his mythos with every performance.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"His narrative of quiet, disciplined excellence fits seamlessly into premium lifestyle, fashion, and corporate campaigns.\"\n      },\n      \"durability\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His achievements have secured him a spot as a legendary baseball figure whose legacy will outlast his active playing years.\"\n      }\n    },\n\n    \"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"Ohtani credibly endorses high-fashion luxury, technology, travel, lifestyle beverages, and heavy industrial machinery.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 96,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\"],\n        \"rationale\": \"Being entirely cleared of involvement in the interpreter's theft has reinforced his pristine, risk-free public image.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"His audience spans high-purchasing-power markets in the US and Japan, making him highly attractive to premium brands.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"His persona of humility, deep focus on craft, and quiet leadership remains completely clear and consistent.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"He is highly versatile for visual modeling and athletic showcases, though his direct English speaking content is kept minimal.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"He offers absolute commercial dominance in the Japanese domestic market alongside major influence in North America.\"\n      }\n    },\n\n    \"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"He earns a verified $125 million annually in endorsements, representing an all-time record for active team-sport athletes.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"With 21 major global corporate sponsors in 2026, he commands a highly active and diverse commercial portfolio.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"His portfolio consists of elite, blue-chip partnerships including Porsche, New Balance, Hugo Boss, and Japan Airlines.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"Brands like Hugo Boss and Seiko have maintained and expanded multi-year campaigns with him.\"\n      },\n      \"campaign_performance\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"His signing led to immediate commercial windfalls for the Dodgers in stadium ads, ticket demands, and international TV rights.\"\n      },\n      \"pricing_power\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"Ohtani commands maximum premium economics, earning far more off-field than any other baseball player in history.\"\n      }\n    },\n\n    \"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"He remains at the absolute top of the sport, though his recent September 2026 IL placement represents a minor physical setback.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 72,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"His following shows steady multi-year growth toward 10.8 million, though it has stabilized in the most recent quarter.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"Media coverage remains exceptionally intense, shifting from his MVP run to postseason preparations and his rehabilitation.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"Public interest is highly elevated, expected to spike further as the Dodgers head into the 2026 MLB playoffs.\"\n      },\n      \"commercial_acceleration\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"His off-field income grew from $100 million in 2025 to $125 million in 2026, demonstrating continued growth in corporate demand.\"\n      }\n    }\n  },\n\n  \"dimension_assessments\": {\n    \"athletic_authority\": {\n      \"prose\": \"Shohei Ohtani holds the ultimate tier of athletic authority as a four-time MVP and two-way icon. His ability to perform at a historic level as both an elite hitter and an elite pitcher makes him completely unique in the modern sporting landscape. Having won consecutive World Series titles with the Dodgers, his athletic accomplishments are as prestigious as any active athlete in the world.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"His stats, MVPs, championships, and athletic awards are completely verified by official Major League Baseball records.\"\n    },\n    \"audience_scale\": {\n      \"prose\": \"Ohtani has an incredibly vast audience, boasting over 10.8 million followers on Instagram, which dwarfs all other active baseball players. While his cross-platform reach is somewhat limited by his focus on a single personal social platform, his regional dominance in East Asia and massive North American footprint give him unparalleled reach in key commercial markets.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Independent social media tracking databases corroborate his current follower counts and growth history.\"\n    },\n    \"engagement_quality\": {\n      \"prose\": \"For an account of his scale, Ohtani's engagement rate remains highly robust, driven by a deeply loyal and active international fanbase. His posts receive immense support, reflecting genuine passion and high-intent fan alignment. However, precise internal metrics like saves, shares, and video completion rates are not available publicly.\",\n      \"confidence\": \"MEDIUM\",\n      \"confidence_reason\": \"Public engagement rates and average post likes are clearly documented, but granular, first-party data is missing.\"\n    },\n    \"cultural_relevance\": {\n      \"prose\": \"Ohtani operates at the very center of global sports culture, commanding continuous, high-quality media coverage across continents. He easily transcends the traditional boundaries of baseball, generating massive organic search volume and public conversation. His commercial and lifestyle partnerships reflect an athlete with supreme mainstream cultural resonance.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Extensive tracking of major media coverage, search trends, and public cultural integration provides overwhelming evidence.\"\n    },\n    \"narrative_power\": {\n      \"prose\": \"The 'two-way unicorn' narrative is arguably the most compelling and easily articulable story in modern sports. Ohtani's journey of overcoming severe injuries, moving across the globe, and rising above an intense personal betrayal has given his public identity immense depth and emotional resonance. This narrative makes him highly attractive to elite brands seeking a story of quiet, authentic focus.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"His life events, athletic challenges, and legal resolutions are widely documented and thoroughly detailed by first-party and federal sources.\"\n    },\n    \"brand_fit\": {\n      \"prose\": \"Ohtani possesses an exceptional brand fit, presenting a clean, highly disciplined public persona that carries virtually zero reputational risk. His appeal spans premium luxury, lifestyle, and industrial categories, and his dual-market dominance in the US and Japan is unmatched. He serves as an incredibly stable and prestigious ambassador for blue-chip companies.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"His clean legal record and history of securing conservative, high-end corporate partnerships are fully verified.\"\n    },\n    \"commercial_proof\": {\n      \"prose\": \"With a record-breaking $125 million in annual off-field endorsement earnings, Ohtani provides the strongest commercial proof of any active athlete in team sports. He commands unparalleled pricing power, and major brands consistently renew and expand their relationships with him. His commercial impact translates directly into massive real-world merchandise and ticket sales.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Authoritative financial tracking from Sportico and documented corporate rosters confirm his commercial magnitude.\"\n    },\n    \"momentum\": {\n      \"prose\": \"Ohtani's commercial momentum is strongly accelerating, highlighted by a 25% year-over-year increase in off-field sponsorship earnings. While his recent September 2026 injured list placement represents a minor sporting setback, his cultural and commercial trajectory remains firmly on an upward path as he prepares for another deep postseason run.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Year-over-year endorsement revenue growth and recent 2026 commercial campaign rollouts are clearly documented.\"\n    }\n  },\n\n  \"overall_confidence\": {\n    \"level\": \"HIGH\",\n    \"explanation\": \"Ohtani's identity, professional achievements, commercial earnings, and public image are heavily documented by authoritative global media, official sports organizations, and federal records. The only missing elements are private social media platform metrics, which do not materially impact the overall assessment of his historic, record-breaking marketability.\"\n  },\n\n  \"key_strengths\": [\n    \"Unmatched dual-market economic impact, leading to a record-breaking $125 million in annual off-field endorsement earnings.\",\n    \"Pristine, highly disciplined public image reinforced by official federal clearance from past legal scandals.\",\n    \"Unique 'two-way' sporting narrative that provides instant distinctiveness and unparalleled athletic authority.\"\n  ],\n  \"key_constraints\": [\n    \"Slight physical durability risks, as highlighted by his recent September 2026 placement on the 15-day injured list.\",\n    \"Limited personal presence and lack of content diversification outside of a singular, highly controlled Instagram account.\"\n  ],\n  \"important_missing_data\": [\n    \"First-party social metrics, including content saves, shares, video retention rates, and detailed audience demographics.\"\n  ],\n  \"identity_or_evidence_risks\": [\n    \"None identified; the athlete's public identity is completely verified and backed by consistent, high-integrity evidence.\"\n  ]\n}\n```",
+  "native": {
+    "groundingChunks": [
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhSGm6M--l6jo_6d4BzNZAZVtQpty0Xj4-ceg5Z_jdZkVnCYI42xckzY1uH1_8SW3AloAu1bAJQBIVdNe92KQRzF0skbWPDANg5QoZo6gEjwOQovEnzrMNOkoJLnQl_C0MK2f6r9oxlL_EnQ8IlN0K-U21xcoCqhh2m9kU7qZUSgId3ivgpX50i4UQ4LCbZlJiq6TsXgXPvuXylK2Cm1GNsLtLLrU-PFtRHRckjfwek4UJL_U=",
+          "title": "tuko.co.ke",
+          "domain": "tuko.co.ke"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_amNcimu6ifTnrQYaBV-qwZx3en5Gh78rUKWdmBdTWsrcgTX4h_zMgXuc27zmCNPUiSgDL7g_a8ivsvx4Cdx-TVRvkoz2RCAmY-HCyRkayJB9fU8fEyCKZ4F890LxVWzStCnYfCk=",
+          "title": "wikipedia.org",
+          "domain": "wikipedia.org"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsx83CxtUYm1WC4RMp4SFMl8ktHS1tyGp0ywXcTJ2qUO1J7ccOuMRQV5-GXd2Gy7PVrZzRwTW7OPwr1Z5edEfx9-6YTVIMEejlPEnHNiswv-ecEdNTZ0WiuBbKWTrsOxNmbi3-R07yz9GedV7D1TcBvD0fZUl_pA==",
+          "title": "baseball-reference.com",
+          "domain": "baseball-reference.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEn49dbeCvsEw_GjK1NbMETwFNjbLcHP5ZZmY9-_62nOdKzMQeMDnMq1RbncyC7g9h4KlezHXXjOHyz7bjp7mO-xG0LSCm3ccSxRFiQszOqbvpkJL1z3mDg1xWx-hwstwLj-kJ9q9-utyhUWYHP1aQjFZ9U4e_YhkOVE_Ig-6zF_oB8m9ZoUlvL29Kl0BvKJFhXiMC-",
+          "title": "teams.one",
+          "domain": "teams.one"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFz1xN8zdJaChn_zec4cxXS1axeUL9PJrjKO2DyH2bPMYbuEoXAeDVFKN21dj3_FxWpZXtZGLkKqZKnTUoMTL0XsxOyrRSLOwNYYIWc1wBYg994cAr1gqG2nXetalNtCYPeTLnbV3jakoxFTe_-vNBSaRaR8pRvfyu8fygbAYGb4RkQdJ4lZg6axTCzjKjruGNmFSz541d-6CVrJi-X8_g3kewAiSl5mlNE6_VVTGz7wg==",
+          "title": "ice.gov",
+          "domain": "ice.gov"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHP-KCvBFKQ3dIEuWEbXfxHK3zig9gP80E7ADPxCpIqn1K6MgC-uY8MPMsk8vGmL3iMAFWdYxJ-R2zayu1XXVOUvqpusRA76cwGvOFIFcW9MLckPhdMyNr4gGL7O-h921Woest0upZkz3NRNRMeIKIQfRNByX7hUeqlgQ-GaZuy_MF0BnHjM95lTNQCl3PF7E-vbIjJ9Dl7vT0PkwQgKg==",
+          "title": "reddit.com",
+          "domain": "reddit.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGTpKqAGXt1C6xk2in0h0Fgd-QK4QeUXF9MUd9AFTDvSqysocxjBz8pFsmhmeSGp4LbEPVfaXKPJcxbqBpGknUHfB1hLcIbL5RWLAz6bLYOqMY8cyx9M5OwkA2lMjYvcDWaIm3XWRDbYYU9Da6sPmveGx4piS25MA==",
+          "title": "rotowire.com",
+          "domain": "rotowire.com"
+        }
+      }
+    ],
+    "groundingSupports": [
+      {
+        "segment": {
+          "startIndex": 121,
+          "endIndex": 223,
+          "text": "\"marketability_summary\": \"Shohei Ohtani represents a truly historic commercial and athletic phenomenon"
+        },
+        "groundingChunkIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 225,
+          "endIndex": 400,
+          "text": "As a dual-threat superstar who dominates Major League Baseball as both an elite pitcher and hitter, he has achieved a level of sports cultural gravity not seen since Babe Ruth"
+        },
+        "groundingChunkIndices": [
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 402,
+          "endIndex": 551,
+          "text": "Currently playing for the Los Angeles Dodgers, Ohtani is a four-time MVP (2021, 2023, 2024, 2025) and back-to-back World Series champion (2024, 2025)"
+        },
+        "groundingChunkIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 553,
+          "endIndex": 792,
+          "text": "His commercial standing is unparalleled in active team sports, with a projected record-breaking $125 million in endorsement income in 2026, partnering with over 20 global brands including New Balance, Hugo Boss, Porsche, and Japan Airlines"
+        },
+        "groundingChunkIndices": [
+          0,
+          3
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 794,
+          "endIndex": 1020,
+          "text": "Despite a brief period of brand uncertainty during his former interpreter's legal issues in 2024, federal investigations completely cleared Ohtani, reinforcing his market reputation as a highly disciplined, premium brand asset"
+        },
+        "groundingChunkIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1022,
+          "endIndex": 1135,
+          "text": "Though his 2026 pitching campaign was cut short due to a September injured list placement for biceps inflammation"
+        },
+        "groundingChunkIndices": [
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1022,
+          "endIndex": 1314,
+          "text": "Though his 2026 pitching campaign was cut short due to a September injured list placement for biceps inflammation, his massive global footprint—specifically spanning North America and East Asia—retains absolute tier-one marketability with steady public attention and immense pricing power"
+        },
+        "groundingChunkIndices": [
+          0,
+          3
+        ]
+      }
+    ],
+    "webSearchQueries": [
+      "Shohei Ohtani baseball current status 2025 2026",
+      "Shohei Ohtani endorsements brand partnerships 2025 2026",
+      "Shohei Ohtani instagram followers count 2025 2026",
+      "Shohei Ohtani MLB career stats awards mvp 2024 2025 2026",
+      "\"Shohei Ohtani\" instagram engagement rate OR \"average likes\"",
+      "Shohei Ohtani scandal Ippei Mizuhara 2024 2025 2026"
+    ],
+    "config": {
+      "tools": [
+        {
+          "googleSearch": {}
+        }
+      ],
+      "temperature": 1,
+      "maxOutputTokens": 65536,
+      "thinking": "default"
+    }
+  },
+  "error": null,
+  "promptSocialBlock": null
+}

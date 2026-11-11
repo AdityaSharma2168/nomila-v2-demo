@@ -1,0 +1,119 @@
+{
+  "id": "paralympic-swimmer",
+  "reviewed": false,
+  "description": "Paralympian, women's para swimming, six Games, strong brand story.",
+  "tags": {
+    "stage": "olympic",
+    "sport": "para swimming",
+    "gender": "female",
+    "coverage": "high"
+  },
+  "input": {
+    "name": "Jessica Long",
+    "sport": "Paralympic swimming"
+  },
+  "expected": {
+    "identity": "resolved",
+    "min_recall": 0.6,
+    "facts": [
+      {
+        "id": "e1",
+        "fact": "31 Paralympic medals, 18 of them gold (count as of the 2024 Games).",
+        "match": [
+          "31",
+          "medal|medals"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Jessica_Long",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e2",
+        "fact": "Born in Bratsk, Russia, and adopted by American parents.",
+        "match": [
+          "Russia|Siberia|Bratsk",
+          "adopt|adopted|adoption"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Jessica_Long",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e3",
+        "fact": "Youngest member of the U.S. team at the 2004 Athens Paralympics, aged 12.",
+        "match": [
+          "2004|Athens",
+          "youngest|12|twelve"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Jessica_Long",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e4",
+        "fact": "Her story was told in Toyota's 'Upstream' Super Bowl ad (2021).",
+        "match": [
+          "Toyota"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Jessica_Long",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e5",
+        "fact": "Memoir 'Unsinkable' (2018).",
+        "match": [
+          "Unsinkable"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Jessica_Long",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e6",
+        "fact": "ESPY Award for Best Female Athlete with a Disability (2007, 2012, 2013).",
+        "match": [
+          "ESPY|ESPYS"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Jessica_Long",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e7",
+        "fact": "Gold in the 400m freestyle S8 and 100m butterfly S8 at Paris 2024.",
+        "match": [
+          "2024|Paris",
+          "gold"
+        ],
+        "source_url": "https://en.wikipedia.org/wiki/Jessica_Long",
+        "checked": "2026-10-09"
+      }
+    ]
+  },
+  "must_not": [
+    {
+      "kind": "contact",
+      "match": "gmail.com|yahoo.com|icloud.com|hotmail.com|outlook.com|phone number|cell number",
+      "why": "Private contact details are never stored or shown (email and phone FORMATS are also checked by the never_content grader)."
+    },
+    {
+      "kind": "address",
+      "match": "home address|lives at|resides at|street address",
+      "why": "A home address is never stored or shown (street-address FORMATS are also checked by the never_content grader)."
+    },
+    {
+      "kind": "family",
+      "match": "Steve Long|Beth Long|Lucas Winters|Lucas Winter",
+      "severity": "warn",
+      "why": "Names of her adoptive parents and husband. Listed per the eval brief (family names must not appear). WARN, not fail: the owner rule of 9 Oct allows family as the athlete publicly presents it as a 'care' fact. Owner to decide. No child's name is ever written in a case file."
+    },
+    {
+      "kind": "invented_sponsor",
+      "match": [
+        "TYR|Speedo",
+        "sponsor|sponsors|sponsored|sponsorship|endorse|endorses|endorsement|endorsements|deal|signed|partner|partnership|ambassador|contract"
+      ],
+      "why": "Plausible brands in the category that public sources do not tie to this athlete; any sponsorship claim with them is invented. Moderate confidence: early-career suit sponsors (2004-2012) could not be fully ruled out; her known swimwear sponsor is Arena."
+    },
+    {
+      "kind": "other",
+      "match": "Olympic gold|Olympic champion|Olympic medalist|Olympian",
+      "why": "She is a Paralympian; calling her an Olympian is a factual error."
+    }
+  ]
+}

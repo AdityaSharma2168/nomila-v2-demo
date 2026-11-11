@@ -1,0 +1,41 @@
+{
+ "version": "studio-direct-request/0.1.0-exp",
+ "ask": "Create a post about today's win",
+ "established_by_the_ask": {
+  "athleteId": "<from req.athleteId — never a body>",
+  "origin": "system",
+  "objective": "recap",
+  "deliverable": "post",
+  "mode": "generate",
+  "brandId": null
+ },
+ "left_to_studio_and_her": [
+  "references (her own media_assets — 'never generate from scratch'); a priced preview she approves for spend; clearance of the asset; publish mode"
+ ],
+ "strategic_loop_touched": {
+  "opportunity": false,
+  "objective": false,
+  "recommendation": false,
+  "plan": false,
+  "campaign": false
+ },
+ "attachable_later": "to a Campaign if one exists (#570 §3 'freeform attach', reversible) — never required",
+ "creative_intelligence_seam": {
+  "receives": [
+   "athlete intent (the ask, verbatim)",
+   "the moment (today's match/result — Context, if supplied)",
+   "her voice/brand layer (Athlete Record)",
+   "references"
+  ],
+  "does_not_receive": [
+   "a Recommendation",
+   "an Objective",
+   "a Campaign spec",
+   "any Brain judgment"
+  ],
+  "would_add_before_studio": [
+   "a creative interpretation the athlete confirms (angle, feeling, line — the direction tools' BriefProposal shape)",
+   "asset intents below the brief (AssetSpec/ShotSpec — not frozen here)"
+  ]
+ }
+}

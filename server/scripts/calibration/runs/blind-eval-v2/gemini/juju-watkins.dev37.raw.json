@@ -1,0 +1,201 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "juju-watkins",
+    "name": "JuJu Watkins",
+    "sport": "Basketball"
+  },
+  "conditions": "gemini-3.5-flash via Vertex; Google Search grounding; default thinking; temperature 1.0; text output with fenced JSON; spec v0.2 additions; social block none",
+  "startedAt": "2026-09-14T12:23:17.727Z",
+  "attempts": 1,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "responseId": "NuenasPYJNOWsbwPk_mVuAk",
+  "latencyMs": 94228,
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+    "promptTokens": 3510,
+    "outputTokens": 7073,
+    "thoughtTokens": 10480,
+    "totalTokens": 21063,
+    "searchCalls": 10
+  },
+  "costUsd": 0.19824199999999997,
+  "text": "```json\n{\n  \"athlete\": {\n    \"name\": \"JuJu Watkins\",\n    \"sport\": \"Basketball\",\n    \"identity_confidence\": \"HIGH\"\n  },\n\n  \"marketability_summary\": \"JuJu Watkins is one of the most commercially valuable collegiate athletes in the world, combining elite on-court dominance with unique cultural and lifestyle appeal. At USC, Watkins' freshman and sophomore campaigns were historic, earning her the 2025 John R. Wooden Award and Naismith Player of the Year. Although a right ACL tear in March 2025 sidelined her for the entire 2025–26 season, her brand momentum did not falter. Represented by Klutch Sports, her NIL portfolio is stellar and includes landmark partnerships with blue-chip brands like Nike (with whom she co-created her own 'Silver Lining' LeBron NXXT Gen shoe in May 2026), State Farm (only the second college athlete signed), Gatorade, and NYX Cosmetics (the first college basketball beauty line). With over 1.4 million cross-platform followers, Watkins commands immense Gen-Z appeal, symbolized by her viral 'JuJu Bun' hairstyle. Her narrative as an LA-born superstar restoring USC's legacy offers deep emotional resonance. As she returns to play for the 2026–27 season, Watkins possesses a trajectory poised for explosive growth, constrained only by her physical recovery period. Major missing information is limited to private platform analytics, but her public commercial and media footprint establishes her as a premier cultural and marketing force.\",\n\n  \"evidence\": [\n    {\n      \"id\": \"E1\",\n      \"claim\": \"JuJu Watkins officially returned to full-court practice with the USC Trojans in June 2026 following recovery from her March 2025 ACL injury, and she is expected to lead the team in the 2026–27 season.\",\n      \"source_title\": \"USC star Watkins back on court after ACL recovery\",\n      \"source_url\": \"https://www.tsn.ca/college-basketball/usc-star-juju-watkins-back-on-court-after-acl-recovery-1.2141979\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2026-06-29\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Confirms her active status, physical shape, and expectation for the upcoming season.\"\n    },\n    {\n      \"id\": \"E2\",\n      \"claim\": \"Watkins won the 2025 John R. Wooden Award, Naismith Women's College Player of the Year, AP Player of the Year, and USBWA National Player of the Year for her sophomore season.\",\n      \"source_title\": \"Judea 'JuJu' Watkins Wikipedia Profile\",\n      \"source_url\": \"https://en.wikipedia.org/wiki/JuJu_Watkins\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-07-01\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Chronicles her high school, college, and international accolades.\"\n    },\n    {\n      \"id\": \"E3\",\n      \"claim\": \"The Nike LeBron NXXT Gen By JuJu 'Silver Lining' shoe, co-created by Watkins, officially launched on May 27, 2026.\",\n      \"source_title\": \"Nike to Release JuJu Watkins' LeBron NXXT Gen Shoe Wednesday\",\n      \"source_url\": \"https://www.lasportsreport.com/usc-trojans/nike-to-release-juju-watkins-lebron-nxxt-gen-shoe-wednesday-ms1\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2026-05-25\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Details her design collaboration with Nike and LeBron James, noting her as the first athlete to co-create a shoe on this platform.\"\n    },\n    {\n      \"id\": \"E4\",\n      \"claim\": \"Watkins signed an NIL endorsement deal with State Farm in November 2024, becoming only the second college athlete ever to do so after Caitlin Clark.\",\n      \"source_title\": \"JuJu Watkins secures State Farm NIL endorsement\",\n      \"source_url\": \"https://www.sportspromedia.com/news/juju-watkins-state-farm-nil-endorsement/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2024-11-26\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Covers her role as the second-ever collegiate partner and her involvement in national campaigns.\"\n    },\n    {\n      \"id\": \"E5\",\n      \"claim\": \"According to SponsorUnited's report, Watkins had 20 active brand deals between March 2024 and March 2025, the most of any women's college athlete.\",\n      \"source_title\": \"Queens of the court: JuJu Watkins leads all women college athletes in NIL deals\",\n      \"source_url\": \"https://www.marketingbrew.com/stories/2025/04/14/queens-of-the-court-juju-watkins-leads-all-women-college-athletes-in-nil-deals\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2025-04-14\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Quantifies her market leadership and commercial volume.\"\n    },\n    {\n      \"id\": \"E6\",\n      \"claim\": \"Watkins possesses approximately 1.2 million Instagram followers on her handle @jujubballin, with an average engagement rate of 3.75% as of August 2026.\",\n      \"source_title\": \"JuJu Watkins (@jujubballin) Instagram Analysis & Influencer Profile\",\n      \"source_url\": \"https://hypeauditor.com/instagram/jujubballin/\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-08-15\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Reflects the verified reach and interaction rates during her redshirt rehabilitation season.\"\n    },\n    {\n      \"id\": \"E7\",\n      \"claim\": \"As of late 2024, Watkins had reached 197,400 followers on TikTok and 21,700 followers on X (formerly Twitter).\",\n      \"source_title\": \"My last hope for society: JuJu Watkins threatens social media exit\",\n      \"source_url\": \"https://www.sportskeeda.com/college-basketball/news-my-last-hope-society-juju-watkins-threatens-social-media-exit-after-tiktok-s-privacy-breach\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2024-12-23\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Quantifies secondary platforms and discusses her viral personality.\"\n    },\n    {\n      \"id\": \"E8\",\n      \"claim\": \"In 2025, Watkins joined the investor group for NWSL expansion team Boston Legacy FC, becoming the first NCAA athlete to directly invest in a pro women's sports team.\",\n      \"source_title\": \"JuJu Watkins (12) Guard - USC Trojans Biography\",\n      \"source_url\": \"https://usctrojans.com/sports/womens-basketball/roster/juju-watkins/14717\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-07-01\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Official university roster bio and achievements.\"\n    },\n    {\n      \"id\": \"E9\",\n      \"claim\": \"Watkins renewed and expanded her NIL partnership with Pottery Barn Teen in May 2025 for a college apartment makeover, demonstrating high repeat appeal.\",\n      \"source_title\": \"USC's JuJu Watkins secures Pottery Barn Teen apartment makeover NIL deal\",\n      \"source_url\": \"https://www.si.com/college/usc/womens-basketball/usc-juju-watkins-pottery-barn-teen-apartment-makeover-nil-deal-9092015\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2025-05-16\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Details her lifestyle and home decor integrations.\"\n    }\n  ],\n\n  \"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Watkins competes in the highly prestigious NCAA Division I Big Ten Conference, which is one of the most competitive collegiate environments globally.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E8\"],\n        \"rationale\": \"She has been historically dominant, setting the NCAA Division I freshman scoring record and logging multiple historic 30+ and 50+ point games.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"She swept the nation's highest awards in 2025, including the Wooden Award, Naismith Trophy, and AP Player of the Year.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E8\"],\n        \"rationale\": \"She is a two-time FIBA junior gold medalist and tournament MVP, though she has not yet competed on the senior Olympic team.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E8\"],\n        \"rationale\": \"She is the absolute focal point of the USC program and one of the premier faces of collegiate basketball.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"While her major awards date to mid-2025 due to a year-long injury sideline, her achievements remain commercially fresh ahead of her 2026 return.\"\n      }\n    },\n\n    \"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"With 1.2 million Instagram followers and nearly 200,000 on TikTok, Watkins holds an elite reach for a collegiate athlete.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E6\"],\n        \"rationale\": \"She sits in the top 1-2% of all women's collegiate basketball players in terms of public reach.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 50,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"Her audience grew steadily to 1.2 million, but growth has plateaued slightly due to her 14-month competitive absence.\"\n      },\n      \"platform_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 68,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"She has very strong presence on Instagram and TikTok, but lacks a highly active or visible YouTube channel.\"\n      }\n    },\n\n    \"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 52,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\"],\n        \"rationale\": \"Her public Instagram engagement rate of 3.75% is evaluated as average for an influencer account of her size.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E3\", \"E6\"],\n        \"rationale\": \"Her campaign posts, such as those with Nike, routinely gain wide secondary pickup and high visible impressions.\"\n      },\n      \"shares_saves_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Private sharing and saving metrics are not publicly available.\"\n      },\n      \"video_retention\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Video completion and retention metrics require private account access.\"\n      },\n      \"story_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Story reach and view efficiency metrics are private to the platform and unavailable.\"\n      },\n      \"audience_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"Her audience is highly organic, driven by basketball enthusiasts, LA locals, and Gen-Z lifestyle followers.\"\n      }\n    },\n\n    \"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"Watkins maintained a high volume of media coverage even while sidelined, peaking around her sneaker drop and her return to practice.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"She is consistently covered by top-tier global outlets like the Associated Press, LA Times, CNBC, and ESPN.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E3\", \"E4\"],\n        \"rationale\": \"Public search volume spikes significantly during major announcements like her Nike shoe release and commercial drops.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E7\"],\n        \"rationale\": \"She generates heavy conversational volume, particularly with lifestyle trends like the 'JuJu Bun' and public endorsements from LeBron James.\"\n      },\n      \"crossover_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E8\", \"E9\"],\n        \"rationale\": \"Her appeal crosses over strongly into fashion, beauty (NYX Cosmetics), home design (Pottery Barn Teen), and sports business.\"\n      }\n    },\n\n    \"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E8\"],\n        \"rationale\": \"Her story as a homegrown LA superstar leading USC's renaissance, styled with a distinct personal look, is highly memorable.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E8\"],\n        \"rationale\": \"Her deep community roots, local high school legacy, and her journey overcoming ACL rehab add compelling emotional layers.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E8\"],\n        \"rationale\": \"Her narrative is entirely genuine, backed by her real-life decisions to stay local and her deep community engagement.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"The media actively amplifies her storylines, branding her as the 'next generational superstar' of the women's game.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E4\", \"E9\"],\n        \"rationale\": \"Her narrative naturally supports diverse campaigns ranging from performance sports to high fashion and interior design.\"\n      },\n      \"durability\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E8\"],\n        \"rationale\": \"Her long-term career projection through college and the WNBA ensures her storytelling value will persist for years.\"\n      }\n    },\n\n    \"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E4\", \"E9\"],\n        \"rationale\": \"She easily bridges sports, beauty, insurance, aviation, home goods, and tech.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E8\"],\n        \"rationale\": \"Watkins possesses a highly professional, pristine public image with zero off-court controversies and strong academic standing.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"Her audience is heavily concentrated with high-value Gen-Z consumers, young female athletes, and highly engaged sports fans.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E8\", \"E9\"],\n        \"rationale\": \"Her public persona as an authentic, fashionable, and hard-working LA native is consistently presented.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E4\"],\n        \"rationale\": \"She is highly effective across diverse content mediums, from national television spots to highly curated fashion photography.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E8\"],\n        \"rationale\": \"Being based in Los Angeles, the second-largest media market in the US, drastically amplifies her local and global value.\"\n      }\n    },\n\n    \"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\", \"E9\"],\n        \"rationale\": \"Her estimated NIL valuation is among the top tier of college sports, verified by highly lucrative blue-chip contracts.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"SponsorUnited documented her leading all women's collegiate sports with 20 active brand partnerships.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E4\", \"E5\"],\n        \"rationale\": \"Her commercial partners are top-tier global giants: Nike, State Farm, Gatorade, Beats, and United Airlines.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E9\"],\n        \"rationale\": \"She has proven repeat commercial appeal, highlighted by her Nike contract extension and consecutive Pottery Barn Teen makeovers.\"\n      },\n      \"campaign_performance\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E3\", \"E4\"],\n        \"rationale\": \"Her commercial campaigns with State Farm and the release of her Nike 'Silver Lining' shoe generated exceptional public reception.\"\n      },\n      \"pricing_power\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E4\"],\n        \"rationale\": \"She commands top-tier economic values comparable to elite professional athletes, especially via her landmark Nike extension.\"\n      }\n    },\n\n    \"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Her athletic trajectory is poised to surge as she makes her long-awaited return to the court for the 2026–27 season.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 48,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"Follower growth was relatively flat during her rehab period, though she maintained her strong 1.2 million base.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"Media coverage is highly accelerating ahead of her competitive return, driven by high-profile summer practices and product launches.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E3\"],\n        \"rationale\": \"Public search and conversation are rising sharply as the college basketball season approaches and her signature shoes launch.\"\n      },\n      \"commercial_acceleration\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E9\"],\n        \"rationale\": \"Her commercial presence has accelerated with the high-profile launch of the 'Silver Lining' shoe in mid-2026.\"\n      }\n    }\n  },\n\n  \"dimension_assessments\": {\n    \"athletic_authority\": {\n      \"prose\": \"Watkins possesses elite athletic authority as a consensus All-American, John R. Wooden Award winner, and National Player of the Year. Though her physical activity was temporarily paused by her March 2025 injury, her historical record and imminent return to lead USC's national title campaign maintain her status as a premier sport authority.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Her athletic record, accolades, and active return to play are comprehensively documented by university and national sports databases.\"\n    },\n    \"audience_scale\": {\n      \"prose\": \"Watkins possesses an impressive, Gen-Z-heavy audience anchored by 1.2 million followers on Instagram. While her scale is naturally smaller than established professional superstars, she remains in the top tier of collegiate basketball players. Follower growth has plateaued slightly due to her recent year-long competitive absence.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Public follower counts across major networks are verified and stable.\"\n    },\n    \"engagement_quality\": {\n      \"prose\": \"She maintains a healthy connection with her core audience, yielding a solid 3.75% Instagram engagement rate. Her public content regularly drives organic trends and cultural conversations, like the viral adoption of the 'JuJu Bun' hairstyle. Complete engagement metrics are limited due to a lack of private story and retention data.\",\n      \"confidence\": \"MEDIUM\",\n      \"confidence_reason\": \"Verifiable public engagement metrics exist, but internal platform data is unavailable.\"\n    },\n    \"cultural_relevance\": {\n      \"prose\": \"Watkins is a genuine cultural crossover star whose media footprint spans lifestyle, beauty, and national news. Her NYX cosmetics deal, Pottery Barn home makeovers, and NWSL investment reflect immense relevance beyond the basketball court. She is heavily integrated into broader youth culture, which maintains her visibility even during injury rehab.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Extensive mainstream lifestyle coverage and major consumer partnerships are well-documented.\"\n    },\n    \"narrative_power\": {\n      \"prose\": \"Her narrative is highly compelling and distinct, portraying her as the homegrown savior of USC's basketball legacy. This local LA-centric identity is deeply authentic and is bolstered by her highly visible road to recovery from injury. This story is durable, highly relatable, and naturally translates into premium commercial campaigns.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Her narrative is supported by numerous biographical features and documented community ties.\"\n    },\n    \"brand_fit\": {\n      \"prose\": \"Watkins is an exceptionally safe and versatile partner for corporate sponsors, managed expertly by Klutch Sports. Her brand safety is pristine, and her strong geographic ties to the premier Los Angeles media market maximize her value. She seamlessly bridges sports performance and fashion, fitting almost any major brand category.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Her spotless off-court record, high-profile representation, and major-market alignment are clearly proven.\"\n    },\n    \"commercial_proof\": {\n      \"prose\": \"With 20 verified NIL deals, Watkins leads women's college basketball in commercial volume and variety. She has proven her capability to command premium professional-tier economics, highlighted by major Nike and State Farm partnerships. She has also successfully demonstrated repeat brand appeal with multiple partners.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Detailed industry reports from SponsorUnited and verified contract extensions provide firm proof.\"\n    },\n    \"momentum\": {\n      \"prose\": \"Her momentum is building rapidly as she returns to full on-court action after more than a year of rehab. While her social audience growth remained steady but flat during her recovery, her commercial momentum was strongly reinforced by the launch of her Nike 'Silver Lining' shoe. Her media trajectory is sharply accelerating heading into the 2026–27 season.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Recent mid-2026 press coverage and shoe-release tracking confirm her current upward trajectory.\"\n    }\n  },\n\n  \"overall_confidence\": {\n    \"level\": \"HIGH\",\n    \"explanation\": \"Watkins is a highly visible, top-tier collegiate athlete whose athletic career, commercial endorsements, and media footprint are thoroughly documented. The only missing data points consist of standard private platform engagement metrics, which do not detract from the high certainty of her overall marketability profile.\"\n  },\n\n  \"key_strengths\": [\n    \"Elite athletic pedigree backed by sweeping national awards (2025 Wooden, Naismith, AP Player of the Year)\",\n    \"Pristine brand safety and professional representation by Klutch Sports\",\n    \"Landmark, professional-tier brand relationships including a co-created Nike shoe line and State Farm campaign\",\n    \"Exceptional crossover appeal into Gen-Z fashion, beauty, and lifestyle\",\n    \"Highly valuable geographic alignment with the Los Angeles media market\"\n  ],\n\n  \"key_constraints\": [\n    \"A 14-month competitive absence due to injury, which temporarily slowed her social media growth\",\n    \"Yet to establish herself on the senior US Olympic/National team level\"\n  ],\n\n  \"important_missing_data\": [\n    \"Private platform metrics (average watch retention, shares and saves rates, story reach efficiency)\"\n  ],\n\n  \"identity_or_evidence_risks\": []\n}\n```",
+  "native": {
+    "groundingChunks": [
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdOd-zUCgirg-5Ssqi3w4PDttdIkW_A9MEP-CneX6icTla6HMVtz5jDHMPdU8QA3h2KdFDsydZBT-xtyamoAD4_oVp5Sh9bAPFR9ZZhss7hkPeYbmBuvFjWo1wg-lYo9NhM9FRSD7FlikuIr_766m7B-Ftol8xREVej1nk7xnzOw3J6lZkZPu7gEVK7UZb2X4KGh-2bIb4LmzBelLDkyd4Ud9QZI2H2nE6ynP9Bz1jpE-Dxtcb-g==",
+          "title": "essentiallysports.com",
+          "domain": "essentiallysports.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZX9Aije6MSglig3LaVG_DiSX8jZG1Rx1Ta-sqk8d2ezk2_3knTxI7scNGEjhrt-7VdXw6OQPhzy3csXaliHYj4qW2Nym12L297TAe6ovy0HCT4mLiPHDqAK-LQUWQ0PY2IOMJFA==",
+          "title": "wikipedia.org",
+          "domain": "wikipedia.org"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGk3Z_VjiuSxq_ZNGgDPs6_I8ZvZNpgUjnb_tk2ZljhSSc_iz7FItAUZhZwBAHKaYbV3vKRE_rLeL-J_UfRSVuWsYXhnHQM9CnRSwV87LvQppoj2KPkCRnB85IoxgJrkoFdgDMH0hgHTjEU5oz4D2ujTZ_8A8uFKZgmak1jMPXysyOgl1Y=",
+          "title": "theixsports.com",
+          "domain": "theixsports.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0y_fU9sd8eqEGrZwoKolCpJgrCYLLNF_uoJ9-bnzaDercp6LLZm1XQZabZhbpWNHgArRFV1Q7nFwG5l0dHGqjQqSsSgg72a_O1goDDwPNO6ZmrRQfXxDiv0wHhqX52FEOe6ZysI4pGn0uO1OpA6vIBcJoYdL08w==",
+          "title": "cassiuslife.com",
+          "domain": "cassiuslife.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBl9LkP6W2oJ_eaYbqPSSTu5pjy9NFZqoi7XGJlzbpz1umkeCN_pKif6PMbJd_jaQLspmiNeY6ic_MGlRpWaxv3oTWO98ZzqZO-TS6lnSVGUDI3qH-kqfAyPKm4GX5Ad1jabAFQ0i-87K1fEVCdvUR3ybhXdB4W4cz8sojpc-fd6Sn7G_T72nu3cxtn3FB_LcZOc1A2iR7j04xRpYxNPrOL_PkT1rC3gkSv-GRLrbJJQxNhIwp8oCR8xlQu6Zn4VpP7QUAJQmRTMGnUkbgf1SCx8Nb-Q4qOl67_A==",
+          "title": "si.com",
+          "domain": "si.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZwHAJR4cJw6tSGuQD1q3SxhkHzc1NITghmEiMdV7qgx-UmMk5xZYqtu7vOw6HVxCnTmeiUvz_Qy6sHHPEXmN3-It5ghA6aSclj7m3uzUhGHw74_ChL0tq3RqNX7FdByGkhwxNwFPaN7p43UpdFCtYk7uq6diWiNTEUSwoUyu0eSox8tgKkEHJKQmwPrYI9FivHCVEfebIsDpzkp8=",
+          "title": "lasportsreport.com",
+          "domain": "lasportsreport.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmxSDMsiWEe3q6d0irWq2UCSqmMX4aK6xOsoQLILHpAnsMgF1hVnNd0P7qZ5_BGnCY3hJBBeTlwWvv3sWiobCpkmmRMVcNc0q5oSVdIKeqdpAm32d_2T28BakBOnCe_Wt8bVrdtCZaJiZE0QXdcjQHot_EVdaOfP79kGOI8MwKHxCd1xlHDMO9KBS53VWeucBcbBRHzG5Qw1PaaskVIZ8qIpDpm0pbDEig6tg9BkP43brGfHEmXYHfwzHdwj0-nvO4rHoc2LnZBOY6wZa1FwinG51fHVX_yEc2rHlkz4q6nmPn8go=",
+          "title": "sportskeeda.com",
+          "domain": "sportskeeda.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHGkbUTc0IaycXfRvzj-A0SHRRiMabRpq_02D3ech5X8vyccngWV58RkkALwieJXtkeEs1K426CvCkQzeRnNs568YFex82EuVxRB8w-JP8ia5TkiYHsU6P_4p2aOstHBTB_a4p6Gw==",
+          "title": "youtube.com",
+          "domain": "youtube.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlygnliu55GPYa4dYJ9tXQPihkIpZ3AyPWAyLkpcF925YuZPdD_z4H_mrHNxKvZ3_MZH_0v99yZX1WlCcHGEJRNo9QsTZKEBN_2rL7HGdvwSbbTzKktM4jkk0VbqAJk9mBeVH5G2boPpraG9WJbI-mMIU7InqRIBpk6ztDUtBsAX-2bNUIdolC8O1gKr6Fiw==",
+          "title": "hoopshq.com",
+          "domain": "hoopshq.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGJwusPWGSu5YuqYoEktgXwHdsdYRPZWIy5OZyArdgSfcriISpjAvwA2o23EiG5k0zoh5SI79qzddoUIl5c42IGjQsQfddXU59VGJdfkjyPmAvCJOV39SAXZGihqCEVeCJN4AJRMvpS9oSkjpxuFc0hthV9jAtkc_0Udib_3oH29obfM_-kxA==",
+          "title": "apnews.com",
+          "domain": "apnews.com"
+        }
+      }
+    ],
+    "groundingSupports": [
+      {
+        "segment": {
+          "startIndex": 122,
+          "endIndex": 312,
+          "text": "\"marketability_summary\": \"JuJu Watkins is one of the most commercially valuable collegiate athletes in the world, combining elite on-court dominance with unique cultural and lifestyle appeal"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 408,
+          "endIndex": 452,
+          "text": "Wooden Award and Naismith Player of the Year"
+        },
+        "groundingChunkIndices": [
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 454,
+          "endIndex": 574,
+          "text": "Although a right ACL tear in March 2025 sidelined her for the entire 2025–26 season, her brand momentum did not falter"
+        },
+        "groundingChunkIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 576,
+          "endIndex": 910,
+          "text": "Represented by Klutch Sports, her NIL portfolio is stellar and includes landmark partnerships with blue-chip brands like Nike (with whom she co-created her own 'Silver Lining' LeBron NXXT Gen shoe in May 2026), State Farm (only the second college athlete signed), Gatorade, and NYX Cosmetics (the first college basketball beauty line)"
+        },
+        "groundingChunkIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 912,
+          "endIndex": 1043,
+          "text": "With over 1.4 million cross-platform followers, Watkins commands immense Gen-Z appeal, symbolized by her viral 'JuJu Bun' hairstyle"
+        },
+        "groundingChunkIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1045,
+          "endIndex": 1137,
+          "text": "Her narrative as an LA-born superstar restoring USC's legacy offers deep emotional resonance"
+        },
+        "groundingChunkIndices": [
+          3
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1139,
+          "endIndex": 1296,
+          "text": "As she returns to play for the 2026–27 season, Watkins possesses a trajectory poised for explosive growth, constrained only by her physical recovery period"
+        },
+        "groundingChunkIndices": [
+          8,
+          9
+        ]
+      }
+    ],
+    "webSearchQueries": [
+      "JuJu Watkins career status 2025 2026 basketball",
+      "JuJu Watkins social media followers Instagram TikTok",
+      "JuJu Watkins brand deals sponsors NIL",
+      "JuJu Watkins stats USC 2025 2026 awards",
+      "JuJu Watkins instagram followers 2026",
+      "JuJu Watkins tiktok followers 2026",
+      "JuJu Watkins shoes nike silver lining release date",
+      "JuJu Watkins state farm ad 2025 2026",
+      "JuJu Watkins recovery 2026",
+      "JuJu Watkins return 2026"
+    ],
+    "config": {
+      "tools": [
+        {
+          "googleSearch": {}
+        }
+      ],
+      "temperature": 1,
+      "maxOutputTokens": 65536,
+      "thinking": "default"
+    }
+  },
+  "error": null,
+  "promptSocialBlock": null
+}

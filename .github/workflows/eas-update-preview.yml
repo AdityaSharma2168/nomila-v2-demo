@@ -1,0 +1,88 @@
+name: EAS Update (preview)
+
+# Publishes an over-the-air JS bundle to the `preview` EAS Update channel on every push to
+# main that touches client/shared code. Every installed `preview` build (eas.json → build
+# profile "preview", channel "preview") pulls this on next launch — so the whole team sees
+# the merged app without a rebuild. Native/config changes still need a fresh `eas build`.
+#
+# Requires the repo secret EXPO_TOKEN (expo.dev → Account → Access Tokens, for the
+# `mia-bhuta-enterprise` org). Without it the job fails at the auth step.
+
+on:
+  push:
+    branches: [main]
+    # Only republish when something that ships in the JS bundle actually changed —
+    # server-only commits don't need an OTA update.
+    paths:
+      - 'client/**'
+      - 'shared/**'
+      - 'assets/**'
+      - 'app.json'
+      - 'app.config.*'
+      - 'eas.json'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'babel.config.js'
+      - 'metro.config.js'
+      - 'tsconfig*.json'
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Update message (defaults to the latest commit message)'
+        required: false
+
+# One publish at a time; a newer merge supersedes an in-flight run.
+concurrency:
+  group: eas-update-preview
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        # eas-cli is pulled at 'latest' below, and from 22.x its oclif dependency
+        # requires node >=22 — on node 20 the install fails outright with
+        # "@oclif/plugin-autocomplete ... Expected version >=22.0.0". This job silently
+        # became the only thing standing between a merged client change and the phones,
+        # so it tracks the CLI rather than the other workflows, which are fine on 20.
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Setup EAS
+        uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Client env from eas.json (preview profile)
+        # The OTA bundle must inline the same public config as the installed binary, so it reads
+        # the binary's own source — eas.json build.preview.env — instead of repeating it here
+        # (PR 20; these were five literal lines under a "MUST match eas.json" comment). What those
+        # keys are for:
+        #   EXPO_PUBLIC_MILA_VOICE_NATIVE — Ask Mila voice on iOS. Bundle-time only: an OTA published
+        #     without it ships a bundle where the mic button cannot render even though the binary has
+        #     the LiveKit native modules compiled in.
+        #   EXPO_PUBLIC_IDENTITY_CLAIM — Phase A Step 3b rollout step 1 (dev/preview only): the "Is this
+        #     you?" screen and the X-Athlete-Id header. Inert while the server ATHLETE_INDEX_CLAIM is
+        #     false; never set for production.
+        run: node scripts/eas-profile-env.cjs preview >> "$GITHUB_ENV"
+
+      - name: Publish EAS Update → preview
+        # --environment is required from Expo SDK 55. `preview` is the EAS environment the preview
+        # build profile reads by default, so the OTA sees the same EAS-hosted vars as the binary.
+        run: eas update --branch preview --environment preview --message "${MESSAGE:-$COMMIT_MSG}" --non-interactive
+        env:
+          # Passed via env (not inline ${{ }}) so commit messages with quotes/newlines
+          # can't break or inject into the shell command.
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
+          MESSAGE: ${{ github.event.inputs.message }}
+          # EXPO_PUBLIC_* come from eas.json build.preview.env (the step above), never from here.

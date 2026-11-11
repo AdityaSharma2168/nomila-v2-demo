@@ -1,0 +1,806 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "cristiano-ronaldo",
+    "name": "Cristiano Ronaldo",
+    "sport": "Soccer"
+  },
+  "conditions": "gemini-3.5-flash via Vertex; Google Search grounding; default thinking; temperature 1.0; text output with fenced JSON; spec v0.2 additions; social block none",
+  "startedAt": "2026-09-14T12:23:17.725Z",
+  "attempts": 1,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "responseId": "NuenasTQJI_csbwP-eHLMA",
+  "latencyMs": 144956,
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+    "promptTokens": 3509,
+    "outputTokens": 7274,
+    "thoughtTokens": 13041,
+    "totalTokens": 23824,
+    "searchCalls": 8
+  },
+  "costUsd": 0.2230985,
+  "text": "```json\n{\n  \"athlete\": {\n    \"name\": \"Cristiano Ronaldo\",\n    \"sport\": \"Soccer\",\n    \"identity_confidence\": \"HIGH\"\n  },\n\n  \"marketability_summary\": \"At 41 years old, Cristiano Ronaldo operates less like an individual athlete and more like a global commercial institution. On the pitch, he continues to play for Al-Nassr in the Saudi Pro League and captains the Portugal national team, recently leading them in the 2026 World Cup. His chase for an unprecedented 1,000 official career goals (standing at 979 as of September 2026) keeps his athletic relevance exceptionally high. Off the pitch, Ronaldo’s cultural footprint and audience scale are completely unmatched, as he became the first person to surpass 1 billion combined social media followers, supercharged by the record-shattering growth of his 'UR Cristiano' YouTube channel. His commercial portfolio is anchored by a lifetime Nike contract and multi-million-dollar partnerships with brands like WHOOP, Therabody, and Herbalife, shifting increasingly toward equity-based ventures. While he commands the industry’s highest pricing power and possesses a highly coherent narrative of self-made discipline and longevity, his brand fit is slightly complicated by significant legal and commercial risks, such as an ongoing $1 billion class-action lawsuit over his Binance NFT promotion. There is minor missing information regarding private campaign conversions and detailed story metrics, but the public evidence of his marketability is authoritative and vast, confirming his status as a category-leading commercial entity with enduring momentum.\",\n\n  \"evidence\": [\n    {\n      \"id\": \"E1\",\n      \"claim\": \"Cristiano Ronaldo's net worth is estimated at $1.24 billion in 2025, earning $225 million per year from Al-Nassr and $50 million to $65 million annually from endorsements, making him the highest-paid athlete in 2026. He signed a contract extension in June 2025 keeping him at Al-Nassr until June 2027.\",\n      \"source_title\": \"Cristiano Ronaldo's Net Worth and Al-Nassr Deal\",\n      \"source_url\": \"https://www.worldsoccertalk.com\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2026-07-29\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Verified by multiple major media reports, including Forbes and World Soccer Talk.\"\n    },\n    {\n      \"id\": \"E2\",\n      \"claim\": \"Cristiano Ronaldo is the first individual to reach 1 billion combined followers across social media platforms, including Instagram (639M+), Facebook (170M+), X (113M+), YouTube (83M+), and Chinese platforms Weibo and Kuaishou.\",\n      \"source_title\": \"Ronaldo becomes first individual with one billion social media followers\",\n      \"source_url\": \"https://www.aljazeera.com\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2024-09-13\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Milestone officially celebrated by Ronaldo across his handles with widespread global reporting.\"\n    },\n    {\n      \"id\": \"E3\",\n      \"claim\": \"Ronaldo's YouTube channel 'UR Cristiano' is the fastest-growing of all time, hitting 1M subscribers in 90 minutes and 50M in 7 days, and reaching over 83.2 million subscribers as of September 2026.\",\n      \"source_title\": \"UR Cristiano YouTube Channel Analytics\",\n      \"source_url\": \"https://hypeauditor.com\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-09-11\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Subscribers tracked at 83.2M with strong ongoing monthly views.\"\n    },\n    {\n      \"id\": \"E4\",\n      \"claim\": \"Ronaldo has an extensive brand portfolio with 43 confirmed partnerships across 25 categories, led by a lifetime Nike contract, alongside multi-year endorsements with WHOOP, Therabody, and Herbalife.\",\n      \"source_title\": \"Cristiano Ronaldo Endorsement Portfolio and Nike Boots Return\",\n      \"source_url\": \"https://www.footyheadlines.com\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-04-05\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Nike launched special signature remake boots for Ronaldo in April 2026, confirming their active alignment.\"\n    },\n    {\n      \"id\": \"E5\",\n      \"claim\": \"Ronaldo faces an active $1 billion class-action lawsuit filed in late 2023 over his promotion of Binance NFTs, which was stayed in mid-2024 pending arbitration. He has also faced criticism regarding false claims with his URSU9 alkaline water brand.\",\n      \"source_title\": \"Cristiano Ronaldo Faces $1 Billion Class-Action Lawsuit\",\n      \"source_url\": \"https://www.forbes.com\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2023-11-29\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Class-action lawsuit was filed in Florida federal court and continues to represent a brand safety consideration.\"\n    },\n    {\n      \"id\": \"E6\",\n      \"claim\": \"As of September 2026, Cristiano Ronaldo has scored 979 official career goals in 1,335 senior appearances for club and country, making him the top goalscorer in the history of men's football.\",\n      \"source_title\": \"Cristiano Ronaldo Goal Statistics\",\n      \"source_url\": \"https://www.messixronaldo.com\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-09-11\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Goal counts track official senior club and country matches.\"\n    },\n    {\n      \"id\": \"E7\",\n      \"claim\": \"Ronaldo is the most-capped (233 caps) and highest-scoring (146 goals) male player in international history, and captained Portugal at the 2026 FIFA World Cup, where they reached the Round of 16.\",\n      \"source_title\": \"Portugal National Football Team Records\",\n      \"source_url\": \"https://en.wikipedia.org\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-09-11\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Official team metrics verified via Portuguese Football Federation data.\"\n    }\n  ],\n\n  \"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E7\"],\n        \"rationale\": \"He captains the elite Portuguese national team and plays in the competitive, highly-funded Saudi Pro League at Al-Nassr.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\"],\n        \"rationale\": \"At 41 years old, he continues to score regularly, totaling 979 career goals and 22 goals in the 2026 calendar year as of September.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"He is a historic 5-time Ballon d'Or winner and holds the all-time international scoring and caps records.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E7\"],\n        \"rationale\": \"He has represented Portugal 233 times, scoring 146 goals, and captained them at the 2026 World Cup.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E7\"],\n        \"rationale\": \"He serves as captain and the central attacking focal point for both Al-Nassr and the Portugal national team.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"While his prime European and Ballon d'Or achievements are older, his 2026 World Cup appearance and ongoing pursuit of 1,000 goals maintain high current relevance.\"\n      }\n    },\n\n    \"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"He has a historic, world-leading reach exceeding 1 billion combined followers across major social networks.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"He is the most followed athlete in football, sitting at the absolute peak of global sports audience percentiles.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"His audience expansion has continued with the record-breaking launch of his YouTube channel, which gained over 83 million subscribers by September 2026.\"\n      },\n      \"platform_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"He possesses highly dominant accounts across Instagram, Facebook, X, and YouTube, alongside a presence on Chinese platforms Kuaishou and Weibo.\"\n      }\n    },\n\n    \"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"He commands massive total interaction volumes (likes/comments) across platforms, with his YouTube channel showing an estimated very good 5% engagement rate.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"His content routinely penetrates the global mainstream news ecosystem and spreads widely beyond his immediate follower base.\"\n      },\n      \"shares_saves_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Direct high-value interaction metrics like private shares and saves are not publicly available.\"\n      },\n      \"video_retention\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Detailed video retention and completion rates on platforms like YouTube are private platform metrics.\"\n      },\n      \"story_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Story reach and interaction efficiency metrics are private platform data and unavailable.\"\n      },\n      \"audience_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"While he possesses a highly passionate global fan base, a 1-billion-follower audience naturally includes duplicate accounts and automated bots.\"\n      }\n    },\n\n    \"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\", \"E4\", \"E6\"],\n        \"rationale\": \"He is a permanent fixture in global news, generating massive media volumes daily across sports and lifestyle sections.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"Coverage is regularly featured in top-tier global news, financial, and sports outlets such as Forbes, Al Jazeera, and The Guardian.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E6\"],\n        \"rationale\": \"He consistently maintains one of the highest baseline global search volumes of any living public figure.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E6\", \"E7\"],\n        \"rationale\": \"He is the subject of constant, massive peer-to-peer discourse and viral trends regarding the GOAT debate and his 1,000-goal chase.\"\n      },\n      \"crossover_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E4\"],\n        \"rationale\": \"He is universally recognized far beyond the sports world, serving as a global cultural icon and household name.\"\n      }\n    },\n\n    \"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"He has an instantly recognizable story of self-made discipline, extreme work ethic, and peerless athletic longevity.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"His narrative has immense depth, spanning over two decades of fierce rivalries, national heroism, family life, aging, and business ventures.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"His physical condition and high-level scoring output at age 41 provide authentic, undeniable proof of his legendary work ethic.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\"],\n        \"rationale\": \"Media and public conversations heavily reflect and amplify his core narrative themes of fitness, aging, and longevity.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His discipline narrative perfectly supports high-performance, health, and fitness brands naturally without feeling contrived.\"\n      },\n      \"durability\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"His narrative is historically immortalized, ensuring his commercial relevance will endure long after his active retirement.\"\n      }\n    },\n\n    \"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He has demonstrated high brand adaptability, endorsing across 25 distinct categories from luxury watches and travel to recovery tech and nutrition.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"While highly viable, he carries notable brand risks, including an active $1B Binance NFT lawsuit and false advertising claims surrounding his water brand URSU9.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"His highly global, active, and aspirational audience represents an incredibly attractive commercial target for both luxury and mass-market brands.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His public persona consistently projects absolute perfectionism, high status, physical fitness, and success.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E4\"],\n        \"rationale\": \"He easily moves from cinematic brand campaigns to personal vlog-style content on his YouTube channel.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"He holds massive commercial appeal in Europe, Latin America, Asia, and particularly the Middle East due to his Riyadh residency.\"\n      }\n    },\n\n    \"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Forbes estimates his off-pitch earnings at approximately $60M-$65M annually, placing him at the absolute pinnacle of athlete commercial power.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He continuously activates a portfolio of over 43 brand partnerships with frequent new campaign launches.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His portfolio features elite and category-defining global brands such as Nike, WHOOP, Jacob & Co., and Therabody.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He exhibits exceptional partner retention, demonstrated by his 12-year Herbalife partnership and lifetime Nike agreement.\"\n      },\n      \"campaign_performance\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Internal business metrics like return on ad spend (ROAS) and specific product sales conversions are proprietary brand data.\"\n      },\n      \"pricing_power\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"He commands the industry's highest premium economics, reportedly charging over $1.6M per sponsored post.\"\n      }\n    },\n\n    \"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"While his scoring rate remains impressive, his athletic trajectory is naturally on a downward slope as he plays in Saudi Arabia and is 41 years old.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"His digital footprint has experienced a massive recent acceleration, adding tens of millions of new followers through his YouTube channel.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E6\"],\n        \"rationale\": \"His media presence is highly stable and picks up momentum during major milestones like approaching 1,000 career goals.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E6\"],\n        \"rationale\": \"Public curiosity remains extremely high and is tracking upward as he moves closer to historic career milestones.\"\n      },\n      \"commercial_acceleration\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His commercial portfolio remains highly active and has seen a strategic shift toward lucrative equity and ownership-driven deals.\"\n      }\n    }\n  },\n\n  \"key_strengths\": [\n    \"Unparalleled audience scale of over 1 billion combined followers, ensuring absolute maximum reach.\",\n    \"Coherent, deeply authentic narrative of elite longevity, discipline, and work ethic that perfectly aligns with high-performance brands.\",\n    \"Undisputed pricing power and massive historical off-pitch commercial value verified by global financial trackers like Forbes.\"\n  ],\n  \"key_constraints\": [\n    \"Natural athletic age-related decline at 41 years old and transition to playing outside Europe's elite leagues (Saudi Pro League).\",\n    \"Extreme commercial premium price points that restrict brand associations to only the wealthiest global sponsors.\"\n  ],\n  \"important_missing_data\": [\n    \"Detailed internal first-party social metrics, including private shares, saves, story reach efficiency, and average video completion/retention rates.\",\n    \"Proprietary partner sales conversion metrics, return on ad spend (ROAS), and direct campaign conversion analytics.\"\n  ],\n  \"identity_or_evidence_risks\": [\n    \"Legal and reputation risk stemming from the active $1 billion class-action lawsuit regarding unregistered securities promotions with Binance.\",\n    \"Regulatory and scientific scrutiny regarding health and advertising claims, specifically controversies over his alkaline water brand URSU9 and criticism of Herbalife endorsements.\"\n  ],\n\n  \"dimension_assessments\": {\n    \"athletic_authority\": {\n      \"prose\": \"At 41 years old, Ronaldo maintains a remarkably high level of athletic authority. He captains the Portugal national team and Al-Nassr, and recently played at the 2026 World Cup. His position as the highest goalscorer in football history and his steady pursuit of 1,000 official career goals ensure his legacy remains an active, daily athletic narrative.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"His current goal counts, team roles, and historical records are fully verified by official national and international sporting databases.\"\n    },\n    \"audience_scale\": {\n      \"prose\": \"Ronaldo possesses a peerless global audience, representing the single largest individual digital footprint on Earth. Having crossed the 1 billion follower milestone, his reach spans massive, record-breaking communities on Instagram, Facebook, X, and YouTube. His scale remains unmatched, placing him in the highest percentile of all living public figures.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"His record follower counts are publicly visible across his official platforms and heavily corroborated by global media reports.\"\n    },\n    \"engagement_quality\": {\n      \"prose\": \"While Ronaldo's sheer scale naturally dilutes basic percentage-based interaction metrics on some platforms, his overall reach efficiency and viral amplification are unparalleled. His newly established YouTube channel exhibits very high engagement and viral velocity. However, highly detailed, private performance metrics such as video retention, saves, and shares remain unavailable.\",\n      \"confidence\": \"MEDIUM\",\n      \"confidence_reason\": \"While his public interaction counts and estimated YouTube engagement rates are strong, detailed first-party story and retention data are unavailable.\"\n    },\n    \"cultural_relevance\": {\n      \"prose\": \"Ronaldo's cultural relevance is category-defining, consistently driving mainstream media conversations, search volume, and peer-to-peer discussions globally. He is a household name even to non-sports fans, transcending football to exist as a permanent pop-culture icon. His every career milestone, lifestyle choice, and brand partnership is met with immense public curiosity and media volume.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"His persistent media volume, search interest dominance, and cross-over status are extensively documented by top-tier global outlets.\"\n    },\n    \"narrative_power\": {\n      \"prose\": \"The narrative of Cristiano Ronaldo is a highly compelling story of relentless self-discipline, unparalleled work ethic, and defiance against the physical constraints of age. This narrative of longevity is authenticated by his real-life performance at age 41. It resonates intensely across global media and provides an incredibly clean, powerful platform for health, wellness, and peak-performance brands.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"The core narrative themes are clearly observed in his career trajectory, physical regimen, and the consistent framing of his public identity.\"\n    },\n    \"brand_fit\": {\n      \"prose\": \"Ronaldo offers exceptional commercial breadth, with a proven ability to seamlessly align with luxury watches, fitness tech, hospitality, and mainstream consumer brands. His public identity projects elite status and high-performance values. However, his brand safety profile is slightly compromised by high-profile legal controversies, particularly the active $1 billion Binance class-action lawsuit and false claim disputes surrounding his alkaline water brand.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"His expansive list of category partnerships and public legal/commercial disputes are well-documented in legal filings and business reports.\"\n    },\n    \"commercial_proof\": {\n      \"prose\": \"Ronaldo presents undisputed commercial proof, generating tens of millions of dollars in off-pitch earnings and commanding the market's highest pricing premiums. His portfolio features category-leading brands, and he shows extraordinary commercial loyalty with decade-long partnerships. Specific campaign ROI metrics are private, but his long-term deal frequencies and renewals provide extensive commercial validation.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"His annual commercial earnings, long-standing brand partnerships, and lifetime contracts are consistently verified by authoritative business outlets like Forbes.\"\n    },\n    \"momentum\": {\n      \"prose\": \"While Ronaldo's athletic trajectory is on a natural competitive decline as he enters his 40s playing in Saudi Arabia, his digital and commercial momentum remains exceptionally high. The rapid ascension of his YouTube channel has brought a massive wave of new audience growth. Concurrently, his commercial portfolio continues to expand with premium equity deals, and public interest remains highly elevated as he approaches the 1,000-goal milestone.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"The launch and growth curves of his digital platforms and his recent brand activations in 2026 are highly visible and documented.\"\n    }\n  },\n\n  \"overall_confidence\": {\n    \"level\": \"HIGH\",\n    \"explanation\": \"Ronaldo's status as a global sports icon provides a vast, highly consistent body of public evidence across his athletic career, commercial earnings, and public digital reach. The only missing datasets are highly specific, private platform interaction metrics and internal campaign ROIs, which are structurally inaccessible for most public evaluations. Access to these private metrics would refine the engagement and performance assessments but would not alter his overall, category-leading marketability profile.\"\n  }\n}\n```",
+  "native": {
+    "groundingChunks": [
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGljqXkJsTOyTiQ9Y4m4z_ugXFVleTlomG6xMW2pwt-Azx-n98QYV2OIguk0sBPnFdix-ze69b5rkpf6s_WNJwOgTsAaO4ncHZHvFzbXqYpZkVc45JTpk_37Fo7ko3IhgwHsZQMYU4Eza8K6LikSTnyDmgZSovnXNk8z9veu5Lul-7hyzveKVfb_CJxjMY=",
+          "title": "thetrillionairelife.com",
+          "domain": "thetrillionairelife.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlfzIzUucNJu2poL-hcyFc4wPeTwRAOqXD4TjzaaxLj2rlN89A3w_to4_qBnGBIa-BUz3Y28SDj-hsoNi5A-nGUH7blAEBEH1RHmHLGkIOoYzADkBiY2EVYEF4rHre7JVt3x2dCxXBGJJmrZCleGeURnZ1v0VVl7GFhQbljqfyLFEoI7QrIStWdinFwWqXgCWpEt-d0LCzrw4n39YpGtVOMNkAsufR1V1iEnEql9htNUSLoSg9gGPyAaj-c1o6CKkJaOhTj827vzI7dlWHX_fylTvwP4xbntpSIFUD1bwM",
+          "title": "worldsoccertalk.com",
+          "domain": "worldsoccertalk.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7xklMy1lJW8WSpTf6sXNZKTWDz1Wd_hOZHBF_l5LupeoNUWWQqi9iUNNQWpBxrYCOKRKQwtmSWwl8skVBYyeeOEEQGsODg0F7gSjortWeN3aXAELOPkFG3VKl_GL2xLHY30GVqto=",
+          "title": "youtube.com",
+          "domain": "youtube.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrvyEMSGO_GTTNos7ZEoqMiRFOPC3SMAR7sJe8wCLRHJKtw8BWLjBV4LrEWGJjTQ9QmDEQsF3y7PUfD6j4sVFHKROIa0tVT_JR8MU3s149iBQLy9CF6-8TfhMjJmwxZy0Xb5KD76oHi6USeLid-wITuT5WQsZFChq8Fg==",
+          "title": "messixronaldo.com",
+          "domain": "messixronaldo.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSMEkphEaVcwgG5d-hHoyOIf0ukye1XpgDjVDyx-96eF-qkwqHN89beeoGG0r7Y-Fur6z4tY4X99lRhI309LUSauzBNurrDxxRk3_RNNem8tFLF-7TTuj2N6ObeVLfccyOAG-VxYSNIHHqRdVVmZ7oJxZb0JjYjfRlpzfTONbtK40gVSkH0nxygEPUoQjcOQpdm2cDQ9XyETNDuB2yUHjnIpzd8_4opoHnSXUP7sW58zxkFK-rVH2x4gimK-OaKaecWGsQ_Yuj00Ml1H0xZwAD1Q==",
+          "title": "beinsports.com",
+          "domain": "beinsports.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXhFD2Uuzxqcl53hLm1MuyHN4lgufroiUXTs9JzXQ2n_VccS1UutWSX8GJRKXVwGrTRYaDzPr6f77qCs7nw3QgZxzddBfBJfYoDA3lH-7aDOmL6uMPjKInCU1TRDNl8nPwBQAh-GCfQSUf8JNwM6JyeTzM6WhHYY6-JOr1MUd8s2r82tLNachvmZ1yFxwRiI_WbbURpe037VgrpyWjTI7K8gyrsAT_3pXbi5NmtwU=",
+          "title": "aljazeera.com",
+          "domain": "aljazeera.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcf8tSWJi3k0BlxCim3vjy3LpPDO8vYrh6YrC4O_HW5egdJb8y0UYaoKDK5PSjya_Me0WFldGAmhHaekJcLfHU3iM9S5UnTbVfz_tIOggCWZAp2TeHJxcBCMm0iwn6ZUQGIBTjxtUJLsrHeY3dWw==",
+          "title": "fandom.com",
+          "domain": "fandom.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH-68olsb52WW7Yh5mNQWkTTBzLIUfRYnEDKsMT08xk3c2Rjh5Orsml7mhtcmjHbLOkxVPgnBp_2om07MAA4fJywnphWNRwAjGO4cg6cjUyZC69DMbBZ85ZVKtkkMQUZQfdeOc=",
+          "title": "ronaldonetworth.com",
+          "domain": "ronaldonetworth.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHetdmTex7Afg6__ImxxRzyJ8sWhfE7PRClG18aUAi-chMbfXtroQoLocPdI2eBtWvVCxMRevo22ErEUnR36WF9oeWnPsIby798zwjw9YkOKw0cosiVD4yfJFS4ZbIYaHU07DQBTsAXJhUo0bzoUBJPdmhKrVTxesbTO3J4_fh6dVJz-1bYqhKHH2kB5Xif-2R0xcLsLwPDglQA_f5X2kmiIaOEs1nPsncORpD3aKGm1W-4GVRbY_SbwLNwAUM-TVOicmNmLf6qEMzq6A==",
+          "title": "facebook.com",
+          "domain": "facebook.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzWQivnJBtNmg8VvImsBlmd3Khj5wA1AMigTJg6G-zuOkCM1xixCtE3drui-HDjMUW-aJTyI9sPjS2Aau3FSWZJxfNbg2kCdfdhbah1OjR7PbFM3GCtWQzILl758kJ3MANqiG-fVSigpMi46dwNHeIt41hd0iYpDVWd7JEweX448aEMBYQ_fo4",
+          "title": "aslawsuit.com",
+          "domain": "aslawsuit.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSaCe08Im9ShNtT3eZ1vQKPpltCQuW-H2b0JijLHopzpljmmj8s7WcbrhMDt8d94qQTGeYimPcrGd_ogcdQHUY1jQF7IVt9aVcl5wrlEfhqnEaUX0FEROn9rTW8QEdZ_RU4YJFLJTknW9DQouvsj1XN-5y1mZg9zLW2pcGD98_3FbHW3iDw3oqYAA28A==",
+          "title": "wenewsenglish.com",
+          "domain": "wenewsenglish.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFobmpvLtlXLZYowIwukBUO_xOCDv54upPT5rq8KdDFzDNZSHeE7RWgOXyCspOl24RAjU3WfG24vA55TyCZYmM_kjHKXZqmdQTV1GTKnDt5sZ3mYrYlNHh5pTuo6NKvFwJ-Kfo24PF9zFaU5u3EhCFvIUF6FQ_MuVw=",
+          "title": "wikipedia.org",
+          "domain": "wikipedia.org"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSxqo1wkbu98WOecPehy5fOV4y6Vg7Uhcxivtt0OjaW2KIpbvaBF-Ag657QPe6-XL3OipRkebX0y7M5K6tOy6LnL4_gOmpat9F6Dsskfav8nli6BE=",
+          "title": "ronaldostats.app",
+          "domain": "ronaldostats.app"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGofnR61PA_Su3TUcWmvTBpf8Kps59MMp_G7WZOooHa-TYyW6aLsMumXHFdNdKRm4iR3otwtK84nnn5BZK5j8qK7uc0PWSZ6XzVtKhROGb79dnW--KPtP3njJ0UYlVq3KFWoMczMTxTRXqd",
+          "title": "wikipedia.org",
+          "domain": "wikipedia.org"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQENnGhVyEj175eewX2O-WS0aeQh0W2DP4y6t-4T2TVn9gsqHxADTKvS5cxxNoXufazNG7ksAHF8WAje_32_Y5PMHrUYRRLV2KFqXI6MYMAyyxU7HDyRu3trax951PCGa5t9QIgn0BBz4W3CaU4ggz_hQmKSgO7c0X7KzgGYKQI1ToQyvBcmOHjwYzteFS24d1ExrdmNEsgyoT0=",
+          "title": "theguardian.com",
+          "domain": "theguardian.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4qs2DE8P_J_la5ZusSEbxim94o_Bczl-84cvWFXc51Bo-2L7J6vmkjdHTUNAts3Mm1U9_Qw0hUG51mOtcWm5evalCio4gc6vXm4IhxJlP6p4VcwVMONoRaWwXrxxRY98mvs3QOTDK4TiwsEWdep9x4dEKggAUspJJwsyQMVxa0Q==",
+          "title": "theroadto1000goals.com",
+          "domain": "theroadto1000goals.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4D8dU9U6Xcf7xLpqr7E1Ur29gGCtoWFcNOjux2TVbLheejqKOT6oGgaRSNnTl7nIgmmYA1yrKzVpBMqHp8LpwJabYFZZhTljhaO03ls1O5uqc3MB5NqllKvLOse7BSwpNDLKIrzugkHHjE2VMDShqTSfH1_FkkW0s_w5wq1XCpZf3sZGxfHEm2A3qklab7G-R19FE-DQ4dhKwgDYE-P8KOmL7YFQJOtvtt3xe-bOEEVgQ_G11Oz2BVCauLWu5dFs=",
+          "title": "tribune.com.pk",
+          "domain": "tribune.com.pk"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIu_CTTT3vnGu8D4T8VCITUyYJfOgf_JSuoVJEJk6NE4p5AImb6YhNoigsHCdtn5BvFr_WrqgWBNLC8cBlc8a0LxcXgGfBKgQEGAF-vOlO24gqJ0XpUf6JiLW46wrQRkv5QCPVlNW_ZErZdVP7wMux4tmGODcB6MUFMYFpyJ7z0SrOsHka3JN3avGnNzAa69Ctx9d_Jt9Au4Fz8GyiVlTWDO_PWPR9i3HKAg9imwYFeiQsL8UJAN0mdlJkIyY=",
+          "title": "marketing4ecommerce.net",
+          "domain": "marketing4ecommerce.net"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHEn4flKXuaCOy049h_7XYz20teoXwYtUT9yfT9q9X2qiA_Ue2599QoHpZyntkZD5VGd7UN8bQBLMYLaeS8nuiFP2oHEYQaXLADUaUTHuyIQtRgkgCN23rHuZMuynsGckzPJrCAUO2CnF-PGyv5_pVBwTVMlA==",
+          "title": "hypeauditor.com",
+          "domain": "hypeauditor.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDNo6eDWG3ZxSXXZEzVt0DNBOT3LGwlRvV5LMJjYKkGnW1ZKNptFyP3usKbzFfqjfeaSaq7Zzd_7KpZT_d-k35a5IMfcVmZp2wZLoXAStrPgBw-RGG-t_VpUUFptl0fC8pOotuCOgjMb-nh06rxA==",
+          "title": "vidiq.com",
+          "domain": "vidiq.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGtMbuiQjt1wHBI60b7vankR16exBoi4v_ZZTTlM6Wcs4N6NV1WIEZO4cYS37YzsWUJcFOkCHbydNe8BY385G1gIZ9ng3Dlf-l8fJcGRAiBhoxCXHzrjcyrEPs0pZtL-qE4j9NeYq2tMpVdPfoGBOMyVL-QvgTc5gG1ite1As_uSF3FIjDuBqXNRGghL5pbvJdfNJZQD9KVzJLKCFxGaITIEcDwZZJyWvqa-tFZPVfbU8tDEvSjeZIP",
+          "title": "bhatnaturally.com",
+          "domain": "bhatnaturally.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHEP0mpNRLw9tr_Ho-Jte7QUoRb_fPNowb3UPjLnSEr7ZNgSmAFk41vCzkFff5_UwwXLNsVnmtwHoE_HfdEG77FkVapJfcmVhoIrQ1ueGbovdzToUmWNbE--MSpcro24auniPHBN2bN9-n6TL5bDtV2KXISy70cRhmsX2ZQQioeAaXX4zIk9Z1W4sGeaq__xgQb24CgNiYL250qpaSkioqRZniPjleULFtQ_FXymHpKkR6dmu_VYqoZZt6Nxq2-5oP0iA==",
+          "title": "thefederal.com",
+          "domain": "thefederal.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERvvyuOLu-GkXNYAB84Lwq3qWNF-_xHKFgq7g83XG49k4uVjjBkYTrQ7WYLApDRSE29znQ23LGiFXs5TuS06yhuVr0ccQa1SbojzX-nUqoLSs1CsJBchNhe2aAgGDonqEkma-NQ-0_npC1_1nrXcWHdPsH",
+          "title": "bizcommunity.com",
+          "domain": "bizcommunity.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEiBCYxWdjEusOjqKdiOBpF89DefWzmCSAmICX27FgMZffC7OF1loZ6y2PVEkTYMzqts512B6m-Zd-KD7vfQ84_NMvl67YbjOSPsoS13ehUumw8HoZbkDLmxFeTgRvJT3Jaw0w-cUAhMADuPiOJ6rQXJjad",
+          "title": "squawka.com",
+          "domain": "squawka.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG83HUsr1U1Bb32LGLkWp0v_aHVsg5hPFebD-nd3wAFKkvLn6FH-TDOuSZAIhF19guCHKz8BTAby8FUX40YFLlq2MsK5hnJONSMNYrzXqMAWs2U6asatHvY6MFjkWdh1ejIwZDEEJ85zFKENGHPmpNMEgH4_K1f9BZSDUc2YENaah0=",
+          "title": "bookingagentinfo.com",
+          "domain": "bookingagentinfo.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPIru_B7ifsQ5L4iLkyFv6ZNMjD-dINR0ofxpIfUaKGnvzoepVQELN0bREeW-BTyCIu4FFQh41aNFIn9prxxyOksqhRmenvWsEwExmtfS7U19zaRP62_yGADkXRCbhuQBnWYdQso1APG4YUxwWAIuCMe3vlCNoqBUYVV6u8XNiedNC2PWzUfF5YM0j-bPI--80Vz7NJorcJ2pijTeukmgVYCyzss9vv0_MPwbAK_CB41BjZKNBvnus",
+          "title": "as.com",
+          "domain": "as.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGX2_nPGSKNX-LNEO4l0oNNZzNqnFZlkIUG4BpTF0VjQP_bJX-Lm_B89O_KVR71iPnWgw-ckC2bHF1DaLnNjYSQAqB7mRWleqJ4QdUQ3YdD5AZMJQAtvaj-zut1WcB2qR6i1AC8O0oiGWjvhkzY_j2lCLKKoxKS2F9urss29_OE_qvekJbvMc3NPJif",
+          "title": "facebook.com",
+          "domain": "facebook.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYUb2gLINK0Jesn731_5QWoZf0bvYlc9kC-6WSO_LqQ0OkUmdfNFH2C4Fkw3Y16oPsboUdcUqaZsl7usNMePMyNQzseUtpkTFIkWZcA7VvgvhtjEzSu_9b7kCpJI8IxOBnmL5G8mg=",
+          "title": "youtube.com",
+          "domain": "youtube.com"
+        }
+      }
+    ],
+    "groundingSupports": [
+      {
+        "segment": {
+          "startIndex": 123,
+          "endIndex": 270,
+          "text": "\"marketability_summary\": \"At 41 years old, Cristiano Ronaldo operates less like an individual athlete and more like a global commercial institution"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 272,
+          "endIndex": 428,
+          "text": "On the pitch, he continues to play for Al-Nassr in the Saudi Pro League and captains the Portugal national team, recently leading them in the 2026 World Cup"
+        },
+        "groundingChunkIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 430,
+          "endIndex": 575,
+          "text": "His chase for an unprecedented 1,000 official career goals (standing at 979 as of September 2026) keeps his athletic relevance exceptionally high"
+        },
+        "groundingChunkIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 577,
+          "endIndex": 834,
+          "text": "Off the pitch, Ronaldo’s cultural footprint and audience scale are completely unmatched, as he became the first person to surpass 1 billion combined social media followers, supercharged by the record-shattering growth of his 'UR Cristiano' YouTube channel"
+        },
+        "groundingChunkIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 836,
+          "endIndex": 1039,
+          "text": "His commercial portfolio is anchored by a lifetime Nike contract and multi-million-dollar partnerships with brands like WHOOP, Therabody, and Herbalife, shifting increasingly toward equity-based ventures"
+        },
+        "groundingChunkIndices": [
+          7,
+          8
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1041,
+          "endIndex": 1341,
+          "text": "While he commands the industry’s highest pricing power and possesses a highly coherent narrative of self-made discipline and longevity, his brand fit is slightly complicated by significant legal and commercial risks, such as an ongoing $1 billion class-action lawsuit over his Binance NFT promotion"
+        },
+        "groundingChunkIndices": [
+          0,
+          9
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 5970,
+          "endIndex": 6301,
+          "text": "\"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E7\"],\n        \"rationale\": \"He captains the elite Portuguese national team and plays in the competitive, highly-funded Saudi Pro League at Al-Nassr"
+        },
+        "groundingChunkIndices": [
+          10,
+          11
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 5970,
+          "endIndex": 6607,
+          "text": "\"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E7\"],\n        \"rationale\": \"He captains the elite Portuguese national team and plays in the competitive, highly-funded Saudi Pro League at Al-Nassr.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\"],\n        \"rationale\": \"At 41 years old, he continues to score regularly, totaling 979 career goals and 22 goals in the 2026 calendar year as of September"
+        },
+        "groundingChunkIndices": [
+          12
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 5970,
+          "endIndex": 6894,
+          "text": "\"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E7\"],\n        \"rationale\": \"He captains the elite Portuguese national team and plays in the competitive, highly-funded Saudi Pro League at Al-Nassr.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\"],\n        \"rationale\": \"At 41 years old, he continues to score regularly, totaling 979 career goals and 22 goals in the 2026 calendar year as of September.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"He is a historic 5-time Ballon d'Or winner and holds the all-time international scoring and caps records"
+        },
+        "groundingChunkIndices": [
+          13
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 5970,
+          "endIndex": 7179,
+          "text": "\"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E7\"],\n        \"rationale\": \"He captains the elite Portuguese national team and plays in the competitive, highly-funded Saudi Pro League at Al-Nassr.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\"],\n        \"rationale\": \"At 41 years old, he continues to score regularly, totaling 979 career goals and 22 goals in the 2026 calendar year as of September.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"He is a historic 5-time Ballon d'Or winner and holds the all-time international scoring and caps records.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E7\"],\n        \"rationale\": \"He has represented Portugal 233 times, scoring 146 goals, and captained them at the 2026 World Cup"
+        },
+        "groundingChunkIndices": [
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 5970,
+          "endIndex": 7464,
+          "text": "\"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E7\"],\n        \"rationale\": \"He captains the elite Portuguese national team and plays in the competitive, highly-funded Saudi Pro League at Al-Nassr.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\"],\n        \"rationale\": \"At 41 years old, he continues to score regularly, totaling 979 career goals and 22 goals in the 2026 calendar year as of September.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"He is a historic 5-time Ballon d'Or winner and holds the all-time international scoring and caps records.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E7\"],\n        \"rationale\": \"He has represented Portugal 233 times, scoring 146 goals, and captained them at the 2026 World Cup.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E7\"],\n        \"rationale\": \"He serves as captain and the central attacking focal point for both Al-Nassr and the Portugal national team"
+        },
+        "groundingChunkIndices": [
+          14,
+          11
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 5970,
+          "endIndex": 7807,
+          "text": "\"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E7\"],\n        \"rationale\": \"He captains the elite Portuguese national team and plays in the competitive, highly-funded Saudi Pro League at Al-Nassr.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\"],\n        \"rationale\": \"At 41 years old, he continues to score regularly, totaling 979 career goals and 22 goals in the 2026 calendar year as of September.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"He is a historic 5-time Ballon d'Or winner and holds the all-time international scoring and caps records.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E7\"],\n        \"rationale\": \"He has represented Portugal 233 times, scoring 146 goals, and captained them at the 2026 World Cup.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E7\"],\n        \"rationale\": \"He serves as captain and the central attacking focal point for both Al-Nassr and the Portugal national team.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"While his prime European and Ballon d'Or achievements are older, his 2026 World Cup appearance and ongoing pursuit of 1,000 goals maintain high current relevance"
+        },
+        "groundingChunkIndices": [
+          15,
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 7830,
+          "endIndex": 8138,
+          "text": "\"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"He has a historic, world-leading reach exceeding 1 billion combined followers across major social networks"
+        },
+        "groundingChunkIndices": [
+          5,
+          16
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 7830,
+          "endIndex": 8438,
+          "text": "\"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"He has a historic, world-leading reach exceeding 1 billion combined followers across major social networks.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"He is the most followed athlete in football, sitting at the absolute peak of global sports audience percentiles"
+        },
+        "groundingChunkIndices": [
+          17
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 7830,
+          "endIndex": 8767,
+          "text": "\"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"He has a historic, world-leading reach exceeding 1 billion combined followers across major social networks.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"He is the most followed athlete in football, sitting at the absolute peak of global sports audience percentiles.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"His audience expansion has continued with the record-breaking launch of his YouTube channel, which gained over 83 million subscribers by September 2026"
+        },
+        "groundingChunkIndices": [
+          5,
+          18
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 7830,
+          "endIndex": 9082,
+          "text": "\"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"He has a historic, world-leading reach exceeding 1 billion combined followers across major social networks.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"He is the most followed athlete in football, sitting at the absolute peak of global sports audience percentiles.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"His audience expansion has continued with the record-breaking launch of his YouTube channel, which gained over 83 million subscribers by September 2026.\"\n      },\n      \"platform_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"He possesses highly dominant accounts across Instagram, Facebook, X, and YouTube, alongside a presence on Chinese platforms Kuaishou and Weibo"
+        },
+        "groundingChunkIndices": [
+          17
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 9105,
+          "endIndex": 9458,
+          "text": "\"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"He commands massive total interaction volumes (likes/comments) across platforms, with his YouTube channel showing an estimated very good 5% engagement rate"
+        },
+        "groundingChunkIndices": [
+          19
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 9105,
+          "endIndex": 9762,
+          "text": "\"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"He commands massive total interaction volumes (likes/comments) across platforms, with his YouTube channel showing an estimated very good 5% engagement rate.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"His content routinely penetrates the global mainstream news ecosystem and spreads widely beyond his immediate follower base"
+        },
+        "groundingChunkIndices": [
+          5,
+          20
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 9105,
+          "endIndex": 10882,
+          "text": "\"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"He commands massive total interaction volumes (likes/comments) across platforms, with his YouTube channel showing an estimated very good 5% engagement rate.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"His content routinely penetrates the global mainstream news ecosystem and spreads widely beyond his immediate follower base.\"\n      },\n      \"shares_saves_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Direct high-value interaction metrics like private shares and saves are not publicly available.\"\n      },\n      \"video_retention\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Detailed video retention and completion rates on platforms like YouTube are private platform metrics.\"\n      },\n      \"story_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Story reach and interaction efficiency metrics are private platform data and unavailable.\"\n      },\n      \"audience_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"While he possesses a highly passionate global fan base, a 1-billion-follower audience naturally includes duplicate accounts and automated bots"
+        },
+        "groundingChunkIndices": [
+          21
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 10905,
+          "endIndex": 11233,
+          "text": "\"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\", \"E4\", \"E6\"],\n        \"rationale\": \"He is a permanent fixture in global news, generating massive media volumes daily across sports and lifestyle sections"
+        },
+        "groundingChunkIndices": [
+          21,
+          20
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 10905,
+          "endIndex": 11547,
+          "text": "\"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\", \"E4\", \"E6\"],\n        \"rationale\": \"He is a permanent fixture in global news, generating massive media volumes daily across sports and lifestyle sections.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"Coverage is regularly featured in top-tier global news, financial, and sports outlets such as Forbes, Al Jazeera, and The Guardian"
+        },
+        "groundingChunkIndices": [
+          5,
+          14
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 10905,
+          "endIndex": 11829,
+          "text": "\"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\", \"E4\", \"E6\"],\n        \"rationale\": \"He is a permanent fixture in global news, generating massive media volumes daily across sports and lifestyle sections.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"Coverage is regularly featured in top-tier global news, financial, and sports outlets such as Forbes, Al Jazeera, and The Guardian.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E6\"],\n        \"rationale\": \"He consistently maintains one of the highest baseline global search volumes of any living public figure"
+        },
+        "groundingChunkIndices": [
+          22
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 10905,
+          "endIndex": 12147,
+          "text": "\"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\", \"E4\", \"E6\"],\n        \"rationale\": \"He is a permanent fixture in global news, generating massive media volumes daily across sports and lifestyle sections.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"Coverage is regularly featured in top-tier global news, financial, and sports outlets such as Forbes, Al Jazeera, and The Guardian.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E6\"],\n        \"rationale\": \"He consistently maintains one of the highest baseline global search volumes of any living public figure.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E6\", \"E7\"],\n        \"rationale\": \"He is the subject of constant, massive peer-to-peer discourse and viral trends regarding the GOAT debate and his 1,000-goal chase"
+        },
+        "groundingChunkIndices": [
+          15
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 10905,
+          "endIndex": 12442,
+          "text": "\"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\", \"E4\", \"E6\"],\n        \"rationale\": \"He is a permanent fixture in global news, generating massive media volumes daily across sports and lifestyle sections.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"Coverage is regularly featured in top-tier global news, financial, and sports outlets such as Forbes, Al Jazeera, and The Guardian.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E6\"],\n        \"rationale\": \"He consistently maintains one of the highest baseline global search volumes of any living public figure.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E6\", \"E7\"],\n        \"rationale\": \"He is the subject of constant, massive peer-to-peer discourse and viral trends regarding the GOAT debate and his 1,000-goal chase.\"\n      },\n      \"crossover_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E4\"],\n        \"rationale\": \"He is universally recognized far beyond the sports world, serving as a global cultural icon and household name"
+        },
+        "groundingChunkIndices": [
+          13
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 12465,
+          "endIndex": 12768,
+          "text": "\"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"He has an instantly recognizable story of self-made discipline, extreme work ethic, and peerless athletic longevity"
+        },
+        "groundingChunkIndices": [
+          0,
+          23
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 12465,
+          "endIndex": 13081,
+          "text": "\"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"He has an instantly recognizable story of self-made discipline, extreme work ethic, and peerless athletic longevity.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"His narrative has immense depth, spanning over two decades of fierce rivalries, national heroism, family life, aging, and business ventures"
+        },
+        "groundingChunkIndices": [
+          17,
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 12465,
+          "endIndex": 13391,
+          "text": "\"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"He has an instantly recognizable story of self-made discipline, extreme work ethic, and peerless athletic longevity.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"His narrative has immense depth, spanning over two decades of fierce rivalries, national heroism, family life, aging, and business ventures.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"His physical condition and high-level scoring output at age 41 provide authentic, undeniable proof of his legendary work ethic"
+        },
+        "groundingChunkIndices": [
+          0,
+          15
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 12465,
+          "endIndex": 13680,
+          "text": "\"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"He has an instantly recognizable story of self-made discipline, extreme work ethic, and peerless athletic longevity.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"His narrative has immense depth, spanning over two decades of fierce rivalries, national heroism, family life, aging, and business ventures.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"His physical condition and high-level scoring output at age 41 provide authentic, undeniable proof of his legendary work ethic.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\"],\n        \"rationale\": \"Media and public conversations heavily reflect and amplify his core narrative themes of fitness, aging, and longevity"
+        },
+        "groundingChunkIndices": [
+          0,
+          15
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 12465,
+          "endIndex": 13985,
+          "text": "\"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"He has an instantly recognizable story of self-made discipline, extreme work ethic, and peerless athletic longevity.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"His narrative has immense depth, spanning over two decades of fierce rivalries, national heroism, family life, aging, and business ventures.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"His physical condition and high-level scoring output at age 41 provide authentic, undeniable proof of his legendary work ethic.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\"],\n        \"rationale\": \"Media and public conversations heavily reflect and amplify his core narrative themes of fitness, aging, and longevity.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His discipline narrative perfectly supports high-performance, health, and fitness brands naturally without feeling contrived"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 12465,
+          "endIndex": 14280,
+          "text": "\"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"He has an instantly recognizable story of self-made discipline, extreme work ethic, and peerless athletic longevity.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"His narrative has immense depth, spanning over two decades of fierce rivalries, national heroism, family life, aging, and business ventures.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\"],\n        \"rationale\": \"His physical condition and high-level scoring output at age 41 provide authentic, undeniable proof of his legendary work ethic.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\"],\n        \"rationale\": \"Media and public conversations heavily reflect and amplify his core narrative themes of fitness, aging, and longevity.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His discipline narrative perfectly supports high-performance, health, and fitness brands naturally without feeling contrived.\"\n      },\n      \"durability\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"His narrative is historically immortalized, ensuring his commercial relevance will endure long after his active retirement"
+        },
+        "groundingChunkIndices": [
+          23,
+          13
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 14303,
+          "endIndex": 14625,
+          "text": "\"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He has demonstrated high brand adaptability, endorsing across 25 distinct categories from luxury watches and travel to recovery tech and nutrition"
+        },
+        "groundingChunkIndices": [
+          24
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 14303,
+          "endIndex": 14953,
+          "text": "\"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He has demonstrated high brand adaptability, endorsing across 25 distinct categories from luxury watches and travel to recovery tech and nutrition.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"While highly viable, he carries notable brand risks, including an active $1B Binance NFT lawsuit and false advertising claims surrounding his water brand URSU9"
+        },
+        "groundingChunkIndices": [
+          9,
+          25
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 14303,
+          "endIndex": 15278,
+          "text": "\"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He has demonstrated high brand adaptability, endorsing across 25 distinct categories from luxury watches and travel to recovery tech and nutrition.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"While highly viable, he carries notable brand risks, including an active $1B Binance NFT lawsuit and false advertising claims surrounding his water brand URSU9.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"His highly global, active, and aspirational audience represents an incredibly attractive commercial target for both luxury and mass-market brands"
+        },
+        "groundingChunkIndices": [
+          0,
+          16
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 14303,
+          "endIndex": 15567,
+          "text": "\"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He has demonstrated high brand adaptability, endorsing across 25 distinct categories from luxury watches and travel to recovery tech and nutrition.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"While highly viable, he carries notable brand risks, including an active $1B Binance NFT lawsuit and false advertising claims surrounding his water brand URSU9.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"His highly global, active, and aspirational audience represents an incredibly attractive commercial target for both luxury and mass-market brands.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His public persona consistently projects absolute perfectionism, high status, physical fitness, and success"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 14303,
+          "endIndex": 15849,
+          "text": "\"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He has demonstrated high brand adaptability, endorsing across 25 distinct categories from luxury watches and travel to recovery tech and nutrition.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"While highly viable, he carries notable brand risks, including an active $1B Binance NFT lawsuit and false advertising claims surrounding his water brand URSU9.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"His highly global, active, and aspirational audience represents an incredibly attractive commercial target for both luxury and mass-market brands.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His public persona consistently projects absolute perfectionism, high status, physical fitness, and success.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E4\"],\n        \"rationale\": \"He easily moves from cinematic brand campaigns to personal vlog-style content on his YouTube channel"
+        },
+        "groundingChunkIndices": [
+          17
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 14303,
+          "endIndex": 16159,
+          "text": "\"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He has demonstrated high brand adaptability, endorsing across 25 distinct categories from luxury watches and travel to recovery tech and nutrition.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"While highly viable, he carries notable brand risks, including an active $1B Binance NFT lawsuit and false advertising claims surrounding his water brand URSU9.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"His highly global, active, and aspirational audience represents an incredibly attractive commercial target for both luxury and mass-market brands.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His public persona consistently projects absolute perfectionism, high status, physical fitness, and success.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E4\"],\n        \"rationale\": \"He easily moves from cinematic brand campaigns to personal vlog-style content on his YouTube channel.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"He holds massive commercial appeal in Europe, Latin America, Asia, and particularly the Middle East due to his Riyadh residency"
+        },
+        "groundingChunkIndices": [
+          10
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 16182,
+          "endIndex": 16516,
+          "text": "\"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Forbes estimates his off-pitch earnings at approximately $60M-$65M annually, placing him at the absolute pinnacle of athlete commercial power"
+        },
+        "groundingChunkIndices": [
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 16182,
+          "endIndex": 16790,
+          "text": "\"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Forbes estimates his off-pitch earnings at approximately $60M-$65M annually, placing him at the absolute pinnacle of athlete commercial power.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He continuously activates a portfolio of over 43 brand partnerships with frequent new campaign launches"
+        },
+        "groundingChunkIndices": [
+          24
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 16182,
+          "endIndex": 17072,
+          "text": "\"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Forbes estimates his off-pitch earnings at approximately $60M-$65M annually, placing him at the absolute pinnacle of athlete commercial power.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He continuously activates a portfolio of over 43 brand partnerships with frequent new campaign launches.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His portfolio features elite and category-defining global brands such as Nike, WHOOP, Jacob & Co., and Therabody"
+        },
+        "groundingChunkIndices": [
+          7,
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 16182,
+          "endIndex": 17365,
+          "text": "\"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Forbes estimates his off-pitch earnings at approximately $60M-$65M annually, placing him at the absolute pinnacle of athlete commercial power.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He continuously activates a portfolio of over 43 brand partnerships with frequent new campaign launches.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His portfolio features elite and category-defining global brands such as Nike, WHOOP, Jacob & Co., and Therabody.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He exhibits exceptional partner retention, demonstrated by his 12-year Herbalife partnership and lifetime Nike agreement"
+        },
+        "groundingChunkIndices": [
+          7,
+          8
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 16182,
+          "endIndex": 17942,
+          "text": "\"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Forbes estimates his off-pitch earnings at approximately $60M-$65M annually, placing him at the absolute pinnacle of athlete commercial power.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He continuously activates a portfolio of over 43 brand partnerships with frequent new campaign launches.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His portfolio features elite and category-defining global brands such as Nike, WHOOP, Jacob & Co., and Therabody.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"He exhibits exceptional partner retention, demonstrated by his 12-year Herbalife partnership and lifetime Nike agreement.\"\n      },\n      \"campaign_performance\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Internal business metrics like return on ad spend (ROAS) and specific product sales conversions are proprietary brand data.\"\n      },\n      \"pricing_power\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"He commands the industry's highest premium economics, reportedly charging over $1.6M per sponsored post"
+        },
+        "groundingChunkIndices": [
+          26
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 17965,
+          "endIndex": 18296,
+          "text": "\"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"While his scoring rate remains impressive, his athletic trajectory is naturally on a downward slope as he plays in Saudi Arabia and is 41 years old"
+        },
+        "groundingChunkIndices": [
+          15,
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 17965,
+          "endIndex": 18611,
+          "text": "\"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"While his scoring rate remains impressive, his athletic trajectory is naturally on a downward slope as he plays in Saudi Arabia and is 41 years old.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"His digital footprint has experienced a massive recent acceleration, adding tens of millions of new followers through his YouTube channel"
+        },
+        "groundingChunkIndices": [
+          5,
+          27
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 17965,
+          "endIndex": 18907,
+          "text": "\"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"While his scoring rate remains impressive, his athletic trajectory is naturally on a downward slope as he plays in Saudi Arabia and is 41 years old.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"His digital footprint has experienced a massive recent acceleration, adding tens of millions of new followers through his YouTube channel.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E6\"],\n        \"rationale\": \"His media presence is highly stable and picks up momentum during major milestones like approaching 1,000 career goals"
+        },
+        "groundingChunkIndices": [
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 17965,
+          "endIndex": 19205,
+          "text": "\"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"While his scoring rate remains impressive, his athletic trajectory is naturally on a downward slope as he plays in Saudi Arabia and is 41 years old.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"His digital footprint has experienced a massive recent acceleration, adding tens of millions of new followers through his YouTube channel.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E6\"],\n        \"rationale\": \"His media presence is highly stable and picks up momentum during major milestones like approaching 1,000 career goals.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E6\"],\n        \"rationale\": \"Public curiosity remains extremely high and is tracking upward as he moves closer to historic career milestones"
+        },
+        "groundingChunkIndices": [
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 17965,
+          "endIndex": 19513,
+          "text": "\"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 65,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\"],\n        \"rationale\": \"While his scoring rate remains impressive, his athletic trajectory is naturally on a downward slope as he plays in Saudi Arabia and is 41 years old.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"His digital footprint has experienced a massive recent acceleration, adding tens of millions of new followers through his YouTube channel.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E6\"],\n        \"rationale\": \"His media presence is highly stable and picks up momentum during major milestones like approaching 1,000 career goals.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E6\"],\n        \"rationale\": \"Public curiosity remains extremely high and is tracking upward as he moves closer to historic career milestones.\"\n      },\n      \"commercial_acceleration\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"His commercial portfolio remains highly active and has seen a strategic shift toward lucrative equity and ownership-driven deals"
+        },
+        "groundingChunkIndices": [
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19538,
+          "endIndex": 19659,
+          "text": "\"key_strengths\": [\n    \"Unparalleled audience scale of over 1 billion combined followers, ensuring absolute maximum reach"
+        },
+        "groundingChunkIndices": [
+          16
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19538,
+          "endIndex": 19802,
+          "text": "\"key_strengths\": [\n    \"Unparalleled audience scale of over 1 billion combined followers, ensuring absolute maximum reach.\",\n    \"Coherent, deeply authentic narrative of elite longevity, discipline, and work ethic that perfectly aligns with high-performance brands"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19538,
+          "endIndex": 19935,
+          "text": "\"key_strengths\": [\n    \"Unparalleled audience scale of over 1 billion combined followers, ensuring absolute maximum reach.\",\n    \"Coherent, deeply authentic narrative of elite longevity, discipline, and work ethic that perfectly aligns with high-performance brands.\",\n    \"Undisputed pricing power and massive historical off-pitch commercial value verified by global financial trackers like Forbes"
+        },
+        "groundingChunkIndices": [
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19538,
+          "endIndex": 20099,
+          "text": "\"key_strengths\": [\n    \"Unparalleled audience scale of over 1 billion combined followers, ensuring absolute maximum reach.\",\n    \"Coherent, deeply authentic narrative of elite longevity, discipline, and work ethic that perfectly aligns with high-performance brands.\",\n    \"Undisputed pricing power and massive historical off-pitch commercial value verified by global financial trackers like Forbes.\"\n  ],\n  \"key_constraints\": [\n    \"Natural athletic age-related decline at 41 years old and transition to playing outside Europe's elite leagues (Saudi Pro League)"
+        },
+        "groundingChunkIndices": [
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19538,
+          "endIndex": 20219,
+          "text": "\"key_strengths\": [\n    \"Unparalleled audience scale of over 1 billion combined followers, ensuring absolute maximum reach.\",\n    \"Coherent, deeply authentic narrative of elite longevity, discipline, and work ethic that perfectly aligns with high-performance brands.\",\n    \"Undisputed pricing power and massive historical off-pitch commercial value verified by global financial trackers like Forbes.\"\n  ],\n  \"key_constraints\": [\n    \"Natural athletic age-related decline at 41 years old and transition to playing outside Europe's elite leagues (Saudi Pro League).\",\n    \"Extreme commercial premium price points that restrict brand associations to only the wealthiest global sponsors"
+        },
+        "groundingChunkIndices": [
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19538,
+          "endIndex": 20718,
+          "text": "\"key_strengths\": [\n    \"Unparalleled audience scale of over 1 billion combined followers, ensuring absolute maximum reach.\",\n    \"Coherent, deeply authentic narrative of elite longevity, discipline, and work ethic that perfectly aligns with high-performance brands.\",\n    \"Undisputed pricing power and massive historical off-pitch commercial value verified by global financial trackers like Forbes.\"\n  ],\n  \"key_constraints\": [\n    \"Natural athletic age-related decline at 41 years old and transition to playing outside Europe's elite leagues (Saudi Pro League).\",\n    \"Extreme commercial premium price points that restrict brand associations to only the wealthiest global sponsors.\"\n  ],\n  \"important_missing_data\": [\n    \"Detailed internal first-party social metrics, including private shares, saves, story reach efficiency, and average video completion/retention rates.\",\n    \"Proprietary partner sales conversion metrics, return on ad spend (ROAS), and direct campaign conversion analytics.\"\n  ],\n  \"identity_or_evidence_risks\": [\n    \"Legal and reputation risk stemming from the active $1 billion class-action lawsuit regarding unregistered securities promotions with Binance"
+        },
+        "groundingChunkIndices": [
+          9
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19538,
+          "endIndex": 20905,
+          "text": "\"key_strengths\": [\n    \"Unparalleled audience scale of over 1 billion combined followers, ensuring absolute maximum reach.\",\n    \"Coherent, deeply authentic narrative of elite longevity, discipline, and work ethic that perfectly aligns with high-performance brands.\",\n    \"Undisputed pricing power and massive historical off-pitch commercial value verified by global financial trackers like Forbes.\"\n  ],\n  \"key_constraints\": [\n    \"Natural athletic age-related decline at 41 years old and transition to playing outside Europe's elite leagues (Saudi Pro League).\",\n    \"Extreme commercial premium price points that restrict brand associations to only the wealthiest global sponsors.\"\n  ],\n  \"important_missing_data\": [\n    \"Detailed internal first-party social metrics, including private shares, saves, story reach efficiency, and average video completion/retention rates.\",\n    \"Proprietary partner sales conversion metrics, return on ad spend (ROAS), and direct campaign conversion analytics.\"\n  ],\n  \"identity_or_evidence_risks\": [\n    \"Legal and reputation risk stemming from the active $1 billion class-action lawsuit regarding unregistered securities promotions with Binance.\",\n    \"Regulatory and scientific scrutiny regarding health and advertising claims, specifically controversies over his alkaline water brand URSU9 and criticism of Herbalife endorsements"
+        },
+        "groundingChunkIndices": [
+          25,
+          8
+        ]
+      }
+    ],
+    "webSearchQueries": [
+      "Cristiano Ronaldo contract Al Nassr 2025 2026",
+      "Cristiano Ronaldo social media followers total 1 billion",
+      "Cristiano Ronaldo UR Cristiano subscribers 2025 2026",
+      "Cristiano Ronaldo brand endorsements recent deals 2025 2026",
+      "Cristiano Ronaldo total goals 2026",
+      "Cristiano Ronaldo Portugal team current status 2025 2026",
+      "Cristiano Ronaldo lawsuit Binance 2025 2026",
+      "Cristiano Ronaldo brand safety issues controversy"
+    ],
+    "config": {
+      "tools": [
+        {
+          "googleSearch": {}
+        }
+      ],
+      "temperature": 1,
+      "maxOutputTokens": 65536,
+      "thinking": "default"
+    }
+  },
+  "error": null,
+  "promptSocialBlock": null
+}

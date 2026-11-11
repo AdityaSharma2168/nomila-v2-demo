@@ -1,0 +1,15 @@
+{
+  "version": "context-block/0.1.0",
+  "asOf": "<ISO timestamp when assembled>",
+  "assembledBy": "hand",
+  "window": { "from": "<ISO date>", "to": "<ISO date, two weeks later>" },
+  "items": [
+    { "kind": "schedule", "statement": "<next fixture: date, opponent, home/away — from the official schedule>", "source": { "title": "<official schedule page>", "url": "<url>", "observedAt": "<ISO date>" }, "confidence": "HIGH" },
+    { "kind": "schedule", "statement": "<the fixture after that>", "source": { "title": "<official schedule page>", "url": "<url>", "observedAt": "<ISO date>" }, "confidence": "HIGH" },
+    { "kind": "recent_result", "statement": "<most recent result, and the athlete's part in it only if reported>", "source": { "title": "<official recap>", "url": "<url>", "observedAt": "<ISO date>" }, "confidence": "HIGH" },
+    { "kind": "upcoming_occasion", "statement": "<one relevant event in the window — programme, conference, awards, appearance>", "source": { "title": "<official source>", "url": "<url>", "observedAt": "<ISO date>" }, "confidence": "MEDIUM" },
+    { "kind": "sport_wide_hook", "statement": "<one current national-team or league moment in her sport>", "source": { "title": "<major outlet>", "url": "<url>", "observedAt": "<ISO date>" }, "confidence": "MEDIUM" },
+    { "kind": "brand_activity", "statement": "<the accepted-deal brand's current campaign or launch, from its own channels>", "source": { "title": "<brand channel>", "url": "<url>", "observedAt": "<ISO date>" }, "confidence": "MEDIUM" },
+    { "kind": "control", "control": true, "statement": "<one real, dated, plainly irrelevant world item — another sport, another country>", "source": { "title": "<source>", "url": "<url>", "observedAt": "<ISO date>" }, "confidence": "HIGH" }
+  ]
+}

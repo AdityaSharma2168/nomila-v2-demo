@@ -1,0 +1,153 @@
+{
+  "id": "ambiguous-name-anchored",
+  "reviewed": false,
+  "description": "Identity test: a common name shared with a far more famous player in the SAME sport. The athlete gives team and school; research must keep to them and never borrow the namesake's facts.",
+  "tags": {
+    "stage": "retired",
+    "sport": "american football",
+    "gender": "male",
+    "coverage": "medium",
+    "identity": "anchored"
+  },
+  "input": {
+    "name": "Adrian Peterson",
+    "sport": "American football",
+    "said": [
+      "I played running back for the Chicago Bears from 2002 to 2009.",
+      "I played college football at Georgia Southern."
+    ]
+  },
+  "expected": {
+    "identity": "resolved",
+    "min_recall": 0.5,
+    "facts": [
+      {
+        "id": "e1",
+        "fact": "First sophomore to win the Walter Payton Award (1999), at Georgia Southern.",
+        "match": [
+          "Walter Payton|Payton Award"
+        ],
+        "source_url": "https://cfbhall.com/inductees/adrian-peterson-2017",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e2",
+        "fact": "Led Georgia Southern to back-to-back Division I-AA national titles (1999, 2000).",
+        "match": [
+          "back-to-back|1999 and 2000|national championships|national titles|two national"
+        ],
+        "source_url": "https://cfbhall.com/inductees/adrian-peterson-2017",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e3",
+        "fact": "Division I career rushing record: 6,559 yards.",
+        "match": [
+          "6559"
+        ],
+        "source_url": "https://cfbhall.com/inductees/adrian-peterson-2017",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e4",
+        "fact": "Drafted by the Chicago Bears in the sixth round of the 2002 NFL Draft.",
+        "match": [
+          "sixth|6th",
+          "2002|draft|drafted"
+        ],
+        "source_url": "https://www.wtoc.com/story/36991184/georgia-southerns-adrian-peterson-to-be-inducted-into-the-college-football-hall-of-fame",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e5",
+        "fact": "Rushed for 1,283 yards over eight seasons with the Bears.",
+        "match": [
+          "1283"
+        ],
+        "source_url": "https://www.chicagobears.com/news/college-award-named-for-former-bear-12454385",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e6",
+        "fact": "Played in Super Bowl XLI with the Bears.",
+        "match": [
+          "Super Bowl",
+          "XLI|41"
+        ],
+        "source_url": "https://cfbhall.com/inductees/adrian-peterson-2017",
+        "checked": "2026-10-09"
+      },
+      {
+        "id": "e7",
+        "fact": "Elected to the College Football Hall of Fame (2017).",
+        "match": [
+          "Hall of Fame"
+        ],
+        "source_url": "https://www.wtoc.com/story/36991184/georgia-southerns-adrian-peterson-to-be-inducted-into-the-college-football-hall-of-fame",
+        "checked": "2026-10-09"
+      }
+    ]
+  },
+  "must_not": [
+    {
+      "kind": "contact",
+      "match": "gmail.com|yahoo.com|icloud.com|hotmail.com|outlook.com|phone number|cell number",
+      "why": "Private contact details are never stored or shown (email and phone FORMATS are also checked by the never_content grader)."
+    },
+    {
+      "kind": "address",
+      "match": "home address|lives at|resides at|street address",
+      "why": "A home address is never stored or shown (street-address FORMATS are also checked by the never_content grader)."
+    },
+    {
+      "kind": "wrong_person",
+      "match": "Vikings",
+      "why": "The namesake (born 1985) played for the Minnesota Vikings; this athlete never did. Source: https://en.wikipedia.org/wiki/Adrian_Peterson"
+    },
+    {
+      "kind": "wrong_person",
+      "match": "Oklahoma|Sooners",
+      "why": "The namesake played college football at Oklahoma."
+    },
+    {
+      "kind": "wrong_person",
+      "match": [
+        "MVP",
+        "2012"
+      ],
+      "why": "The namesake was the 2012 NFL MVP."
+    },
+    {
+      "kind": "wrong_person",
+      "match": "2097",
+      "why": "The namesake's 2,097-yard 2012 season."
+    },
+    {
+      "kind": "wrong_person",
+      "match": "All Day",
+      "why": "The namesake's nickname."
+    },
+    {
+      "kind": "wrong_person",
+      "match": [
+        "296",
+        "yards|rushing"
+      ],
+      "why": "The namesake's single-game rushing record (296 yards)."
+    },
+    {
+      "kind": "family",
+      "match": "Mike Peterson|Porter Peterson|Reatha Peterson",
+      "severity": "warn",
+      "why": "Names of his brother (a former NFL player) and parents. Listed per the eval brief (family names must not appear). WARN, not fail: the owner rule of 9 Oct allows family as the athlete publicly presents it as a 'care' fact. Owner to decide. No child's name is ever written in a case file."
+    },
+    {
+      "kind": "invented_sponsor",
+      "match": [
+        "Under Armour|Gatorade",
+        "sponsor|sponsors|sponsored|sponsorship|endorse|endorses|endorsement|endorsements|deal|signed|partner|partnership|ambassador|contract"
+      ],
+      "why": "Plausible brands in the category that public sources do not tie to this athlete; any sponsorship claim with them is invented. No endorsement appears in any fetched source; absence of evidence, not proof."
+    }
+  ]
+}

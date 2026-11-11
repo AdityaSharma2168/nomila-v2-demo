@@ -1,0 +1,220 @@
+<title>Step 0 Foundations</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--ground:#f6f5f1;--panel:#ffffff;--ink:#161b23;--ink-2:#4b525c;--mute:#767d88;--rule:#dad7cf;--rule-soft:#e9e7e1;--code-bg:#eeede8;--risk:#c2412d;--risk-bg:#fbeae6;--ok:#2a7a4b;--ok-bg:#e6f3ea;--warn:#9a6a00;--warn-bg:#fbf1d9;--accent:#1d4f8f}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ground:#11151b;--panel:#181d25;--ink:#e7e5de;--ink-2:#b7bcc4;--mute:#8b929c;--rule:#2d343e;--rule-soft:#232a33;--code-bg:#212832;--risk:#ef7a66;--risk-bg:#3a201b;--ok:#6cc48f;--ok-bg:#1c3326;--warn:#e2b64c;--warn-bg:#3a3117;--accent:#7fb2f0}}
+:root[data-theme="dark"]{--ground:#11151b;--panel:#181d25;--ink:#e7e5de;--ink-2:#b7bcc4;--mute:#8b929c;--rule:#2d343e;--rule-soft:#232a33;--code-bg:#212832;--risk:#ef7a66;--risk-bg:#3a201b;--ok:#6cc48f;--ok-bg:#1c3326;--warn:#e2b64c;--warn-bg:#3a3117;--accent:#7fb2f0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:16px;line-height:1.55}
+.wrap{max-width:1100px;margin:0 auto;padding:40px 24px 96px}
+.measure{max-width:74ch}
+h1,h2,h3{font-family:"Archivo","IBM Plex Sans",sans-serif;text-wrap:balance;margin:0}
+h1{font-size:40px;font-weight:800;letter-spacing:-.02em;line-height:1.05}
+h2{font-size:24px;font-weight:700;margin-top:56px;padding-top:20px;border-top:2px solid var(--ink)}
+h3{font-size:17px;font-weight:700;margin-top:26px}
+p{margin:12px 0}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.lede{font-size:19px;color:var(--ink-2);max-width:70ch}
+.meta{display:flex;flex-wrap:wrap;gap:8px 24px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--mute);margin-top:16px}
+code{font-family:"IBM Plex Mono",monospace;font-size:.9em;background:var(--code-bg);padding:1px 5px;border-radius:3px}
+pre{background:var(--code-bg);padding:14px 16px;border-radius:6px;overflow-x:auto;font-size:12.5px;line-height:1.5;font-family:"IBM Plex Mono",monospace}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-numeric:tabular-nums}
+.tbl{overflow-x:auto;margin:16px 0;border:1px solid var(--rule);border-radius:6px;background:var(--panel)}
+th,td{text-align:left;padding:8px 11px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+th{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:500;background:var(--panel);white-space:nowrap}
+tr:last-child td{border-bottom:none}
+td.f{font-family:"IBM Plex Mono",monospace;font-size:12px;white-space:nowrap}
+td.n{text-align:right;font-family:"IBM Plex Mono",monospace;white-space:nowrap}
+ul,ol{padding-left:22px;margin:10px 0}
+li{margin:5px 0}
+.pill{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid var(--rule);color:var(--ink-2);white-space:nowrap}
+.pill.ok{background:var(--ok-bg);color:var(--ok);border-color:transparent}.pill.warn{background:var(--warn-bg);color:var(--warn);border-color:transparent}.pill.risk{background:var(--risk-bg);color:var(--risk);border-color:transparent}
+.callout{border-left:3px solid var(--accent);padding:10px 16px;background:var(--panel);margin:18px 0;border-radius:0 6px 6px 0}
+.callout p{margin:6px 0}
+.verdict{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:32px 0 8px}
+.v{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:16px 18px}
+.v .k{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.v .t{font-family:"Archivo",sans-serif;font-weight:700;font-size:18px;margin:6px 0;line-height:1.25}
+.v p{margin:0;font-size:14px;color:var(--ink-2)}
+</style>
+
+<div class="wrap">
+  <div class="eyebrow">nomila-v2 · phase A · step 0 · proposal for review</div>
+  <h1 style="margin-top:10px">Step 0 Foundations</h1>
+  <p class="lede">One small pull request that lays the parameter store, the canonical types and the as-of columns every later step builds on. Nothing in production reads or writes any of it. Dev behaviour is byte-identical after deploy. Built only after you say go.</p>
+  <div class="meta"><span>base: main @ 246a98c (pulled from origin this morning)</span><span>schema flow: scripts/db-migrate.sh + drift gate (#375)</span><span>next free migration number: 0043</span></div>
+
+  <div class="verdict">
+    <div class="v"><div class="k">What ships</div><div class="t">1 migration · 1 schema table + 2 columns · 1 types module · 1 params helper · 1 guard · tests</div><p>About 12 files. No route, cron, prompt, engine or client file changes.</p></div>
+    <div class="v"><div class="k">What does not change</div><div class="t">scoring_weights, computeScore, rate card, refresh, APIs</div><p>The v7.2.0 row stays the only thing the live score reads. model_params is a new table with draft rows only; drafts are never returned by the active-lookup.</p></div>
+    <div class="v"><div class="k">What you review here</div><div class="t">Schemas, types, the parameter families, and four alpha value sets</div><p>Research TTLs and the commercial-proof source policy are proposals you asked for; they ship as draft rows or not at all, your call.</p></div>
+  </div>
+
+  <h2>1 · Exactly what the PR changes</h2>
+  <div class="tbl"><table>
+    <tr><th>File</th><th>Change</th><th>Production effect</th></tr>
+    <tr><td class="f">migrations/0043_intelligence_foundations.sql</td><td>New. Idempotent DDL: <code>model_params</code> table, partial unique index (one active row per family), two nullable columns on <code>athlete_snapshots</code>. No data rows.</td><td>None. Additive; no existing column or constraint touched.</td></tr>
+    <tr><td class="f">scripts/db-migrate.sh</td><td>Add <code>0043_intelligence_foundations</code> to the hand-written list (step 3); header range becomes 0031–0043.</td><td>Runs once on the next dev deploy; re-runs are no-ops.</td></tr>
+    <tr><td class="f">shared/schema.ts</td><td><code>modelParams</code> table definition; <code>as_of</code> and <code>engine_version</code> on <code>athleteSnapshots</code>. Types exported.</td><td>Drift gate: both land in the same deploy the migration runs in, so the gate passes. Existing inserts into athlete_snapshots keep working (nullable, no default needed).</td></tr>
+    <tr><td class="f">server/services/intelligence/types.ts</td><td>New, types only. The §17, §22.3 and §28.4 contracts, the eight-dimension enum, the deliverable taxonomy, the source-class vocabulary.</td><td>None. No runtime code, no imports from providers or the database.</td></tr>
+    <tr><td class="f">server/services/intelligence/params.ts</td><td>New. <code>getActiveParams(family)</code>, <code>listParams(family)</code>, <code>insertDraftParams(...)</code>, <code>activateParams(family, version)</code> (one transaction: deactivate current, activate target), <code>hashConfig</code>.</td><td>None. Nothing calls it. Deliberately no in-process cache yet; the first engine that reads it decides the cache policy.</td></tr>
+    <tr><td class="f">server/services/weightsService.ts</td><td>Guard the unconditional <code>config.rateEstimation.brackets</code> sort so a weights row without that dead block loads.</td><td>None for the live v7.2.0 row (it has the block). Removes a latent startup crash for any future row.</td></tr>
+    <tr><td class="f">server/services/intelligence/params.test.ts · weightsService.test.ts</td><td>PGlite tests: one-active-per-family enforced by the index; drafts invisible to getActive; activate swaps atomically; version unique per family; weights row without rateEstimation loads.</td><td>None.</td></tr>
+    <tr><td class="f">server/services/intelligence/README.md</td><td>Two screens: what the module is, the vocabulary, the rule that scoring imports nothing from integrations, pointer to the spec sections.</td><td>None.</td></tr>
+    <tr><td class="f">server/scripts/seedModelParams.ts</td><td>Optional, see section 4. Inserts the reviewed draft rows by hand in dev. Not run by any deploy.</td><td>None unless run.</td></tr>
+  </table></div>
+  <div class="callout"><p><b>Not in this PR, on purpose:</b> no writer sets <code>as_of</code> or <code>engine_version</code> (Step 1 and 2 writers do); no reader of <code>model_params</code>; no observation or feature tables (Step 1); no change to <code>scoring_weights</code> or to any cron; no environment variable; no client change. PR #309's <code>0034_trend_observations</code> is not touched and still needs its own renumber.</p></div>
+
+  <h2>2 · Schema</h2>
+  <h3>model_params: the versioned parameter store</h3>
+  <div class="measure"><p>Generalises the one-active-row pattern of <code>scoring_weights</code> to every parameter family the spec names: weights and sub-weights, lookup tables, priors, calibration functions, freshness TTLs, source policies, rate benchmarks. One table, one status machine, one activation rule, so every engine versions the same way (§15). <code>scoring_weights</code> is left exactly as it is; the marketability engine in Step 4 reads <code>model_params</code> and the two coexist until v7 is retired.</p></div>
+<pre><code>CREATE TABLE IF NOT EXISTS model_params (
+  id            uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  family        text NOT NULL,          -- 'marketability' | 'signals' | 'priors' | 'cohorts' | 'research_freshness'
+                                        -- | 'commercial_proof' | 'rates' | 'opportunity' | 'earnings'  (CHECK-free on purpose; closed in code)
+  version       text NOT NULL,          -- 'v1.0-beta.1', 'v0.1-alpha' — never edited in place
+  status        text NOT NULL DEFAULT 'draft',
+  config        jsonb NOT NULL,
+  hash          text NOT NULL,          -- first 12 of sha1(canonical JSON), for eyeballing against traces
+  note          text,                   -- why this version exists
+  created_by    text,
+  created_at    timestamptz NOT NULL DEFAULT now(),
+  activated_at  timestamptz,
+  CONSTRAINT model_params_status_check CHECK (status IN ('draft','active','inactive','archived')),
+  CONSTRAINT model_params_family_version_uq UNIQUE (family, version)
+);
+-- one live version per family, enforced by the database (same device as scoring_weights and prompts)
+CREATE UNIQUE INDEX IF NOT EXISTS model_params_one_active_uq ON model_params (family) WHERE status = 'active';
+CREATE INDEX IF NOT EXISTS model_params_family_idx ON model_params (family, created_at);</code></pre>
+  <div class="measure"><p>Why no CHECK on <code>family</code>: the same reason LOCKED_PROMPTS lives in code (0033's header). A family list a migration has to know about is one more place to keep in step with deploy DDL; the closed list lives in <code>types.ts</code> as <code>ParamFamily</code>. Why <code>status</code> and not a boolean: <code>draft</code> is the review state you asked for (never read), <code>inactive</code> is a superseded version kept for reruns (§15 "rerun historical profiles"), <code>archived</code> is retired.</p></div>
+
+  <h3>athlete_snapshots: two nullable columns</h3>
+<pre><code>ALTER TABLE athlete_snapshots ADD COLUMN IF NOT EXISTS as_of          timestamptz;  -- the instant the evidence set is "current at" (§21.1)
+ALTER TABLE athlete_snapshots ADD COLUMN IF NOT EXISTS engine_version text;         -- the model_params version(s) that produced `score`, e.g. 'marketability=v1.0-beta.1'</code></pre>
+  <div class="measure"><p>Both null for every existing row and for every row the current writers insert; the score audit's history reader (<code>scoreHistoryRoute</code>) ignores unknown columns. Semantics for later steps: <code>as_of</code> defaults to <code>created_at</code> when a reader finds it null, so legacy rows need no backfill; <code>engine_version</code> null means "v7 scoring_weights active row at that time". Not added: a separate features snapshot table. That is Step 1's <code>social_features</code> plus a Step 4 feature-vector snapshot; adding an empty table now would be architecture on paper.</p></div>
+
+  <h2>3 · Types (server/services/intelligence/types.ts)</h2>
+  <div class="measure"><p>Transcribed from §17, §22.3 and §28.4, with the three places the spec is internally inconsistent resolved as noted. Types only; the file imports nothing. The rule the README states: <b>nothing under <code>server/services/intelligence/</code> may import from <code>server/lib/integrations/</code></b> (LOCKED #9), enforced by a test that greps the import graph.</p></div>
+<pre><code>// Vocabulary
+export type ParamFamily = 'marketability' | 'signals' | 'priors' | 'cohorts' | 'research_freshness'
+                        | 'commercial_proof' | 'rates' | 'opportunity' | 'earnings';
+export type SourceClass = 'connected_verified' | 'platform_public' | 'web_researched' | 'inferred' | 'imputed';
+//  §28.4 vocabulary, plus 'inferred' from §22.3. §17's shorter set maps: verified→connected_verified,
+//  public→platform_public|web_researched, inferred→inferred, imputed→imputed.            (clarification C1)
+export type MarketabilityDimension = 'athletic_authority' | 'audience_scale' | 'engagement_quality'
+  | 'cultural_relevance' | 'narrative_power' | 'brand_fit' | 'commercial_proof' | 'momentum';
+export type MarketabilityTier = string;   // undefined in the spec; kept open until decided (clarification C2)
+
+// Evidence and signals (§5, §6, §17)
+export interface EvidenceRef { evidenceId: string; sourceClass: SourceClass; observedAt: string; confidence: number }
+export interface NormalizedSignal {
+  key: string; value: number; /* 0–100 */ confidence: number; /* 0–1 */
+  source: SourceClass; evidenceIds: string[]; modelVersion: string;
+  asOf: string; imputed: boolean;                       // imputed=true ⇒ value came from a prior, never zero
+}
+export interface DimensionScore { dimension: MarketabilityDimension; score: number; weight: number; contribution: number; signals: NormalizedSignal[] }
+export interface Driver { signalKey: string; dimension: MarketabilityDimension; delta: number; because: string }
+export interface MarketabilityResult {
+  score: number; /* 0–850 */ composite: number; /* 0–100 */ potential: number | null; /* §17 field, semantics undefined (C3) */
+  confidence: number; /* 0–100 */ tier: MarketabilityTier; dimensions: DimensionScore[]; drivers: Driver[];
+  version: string; asOf: string;
+}
+
+// Social observations (§22.3, §28.4) — the shape Step 1's tables persist
+export type MetricEntityType = 'account' | 'content' | 'audience';
+export interface SocialMetricObservation {
+  athleteId: string; platform: string; accountId: string; entityType: MetricEntityType; entityId: string;
+  metricKey: string; value: number; unit: string; sourceClass: SourceClass; provider: string;
+  observedAt: string; windowStart?: string; windowEnd?: string; confidence: number; definitionVersion: string; syncRunId: string;
+}
+
+// Rates, opportunity, earnings (§11, §12, §17)
+export type DeliverableType =
+  | 'instagram_post' | 'instagram_reel' | 'instagram_story' | 'tiktok_video' | 'youtube_integration' | 'x_post'
+  | 'ugc_video' | 'product_photography' | 'brand_photoshoot' | 'short_form_package' | 'long_form_video'
+  | 'appearance' | 'speaking' | 'meet_and_greet' | 'camp_clinic' | 'autograph_session'
+  | 'brand_ambassador' | 'season_partnership' | 'annual_partnership'
+  | 'licensing';                                       // current v3 type with no home in §11 (clarification C4)
+export type RateAddOn = 'paid_media' | 'organic_usage' | 'whitelisting' | 'exclusivity' | 'extended_usage' | 'production' | 'travel';
+export interface RateEstimate { deliverable: DeliverableType; low: number; expected: number; high: number; confidence: number; assumptions: string[]; drivers: Driver[]; version: string; asOf: string }
+export interface OpportunityRange { conservative: number; expected: number; upside: number }
+export interface EarningsPotential { conservative12m: number; expected12m: number; upside12m: number; optimizedExpected12m?: number; confidence: number; opportunityVolume: OpportunityRange; assumptions: string[]; version: string }</code></pre>
+
+  <h2>4 · Parameter families and the alpha values you asked to review</h2>
+  <div class="measure"><p>Three draft rows are ready to insert once you have looked at the values. They can ship inside the migration (as <code>status = 'draft'</code>, inert) or through the seed script by hand. I recommend the seed script: the migration stays pure DDL, and a rejected value never becomes a deploy artefact. Activation, when it happens, follows the 0040/0042 pattern (insert inactive, swap in one transaction).</p></div>
+
+  <h3>marketability · v1.0-beta.1 (frozen, transcribed from §7 and §9)</h3>
+  <div class="tbl"><table>
+    <tr><th>Dimension</th><th>Weight</th><th>Sub-signals (sub-weights)</th></tr>
+    <tr><td>athletic_authority</td><td class="n">.15</td><td>competition_level .25 · performance_results .25 · rankings_recognition .15 · national_international_status .15 · role_importance .10 · achievement_recency .10</td></tr>
+    <tr><td>audience_scale</td><td class="n">.15</td><td>cross_platform_effective_reach .50 · sport_level_audience_percentile .25 · audience_growth .15 · platform_breadth .10</td></tr>
+    <tr><td>engagement_quality</td><td class="n">.15</td><td>engagement_percentile .30 · reach_efficiency .25 · shares_saves_quality .15 · video_retention .10 · story_efficiency .10 · audience_authenticity .10</td></tr>
+    <tr><td>cultural_relevance</td><td class="n">.10</td><td>media_volume_percentile .30 · media_source_quality .20 · search_interest .20 · social_conversation .15 · crossover_recognition .15</td></tr>
+    <tr><td>narrative_power</td><td class="n">.10</td><td>distinctiveness .25 · story_depth .20 · evidence_authenticity .20 · media_resonance .15 · commercial_applicability .10 · durability .10</td></tr>
+    <tr><td>brand_fit</td><td class="n">.10</td><td>category_breadth .25 · brand_safety .20 · audience_attractiveness .20 · identity_values_coherence .15 · content_versatility .10 · geographic_relevance .10</td></tr>
+    <tr><td>commercial_proof</td><td class="n">.15</td><td>verified_commercial_value .30 · deal_frequency .20 · brand_quality .15 · renewals_repeat .15 · campaign_performance .10 · pricing_power .10</td></tr>
+    <tr><td>momentum</td><td class="n">.10</td><td>athletic_trajectory .30 · audience_growth .25 · media_trajectory .20 · search_social_trajectory .15 · commercial_acceleration .10</td></tr>
+    <tr><td colspan="3"><b>mapping</b> { kind: "power", max: 850, exponent: 0.8 } marked <code>alpha: true</code> per §9. Lookup tables, priors and cohort tables are separate families, empty until Step 4.</td></tr>
+  </table></div>
+
+  <h3>research_freshness · v0.1-alpha (proposal, decision 5)</h3>
+  <div class="measure"><p>TTL after which a signal family stops counting as "current" for signal computation. Evidence is never deleted; a stale item stays in history and can still feed recency-aware sub-signals (achievement_recency, durability) explicitly. Values are days.</p></div>
+  <div class="tbl"><table>
+    <tr><th>Family</th><th>TTL</th><th>Why this number</th></tr>
+    <tr><td>identity (name, sport, teams, career status)</td><td class="n">365</td><td>Changes on transfer, draft, retirement; athlete-asserted values override anyway.</td></tr>
+    <tr><td>competition_level</td><td class="n">180</td><td>A season.</td></tr>
+    <tr><td>achievements</td><td class="n">never expire; recency scored</td><td>A title is a fact forever; §7.1 already carries achievement_recency at 10%.</td></tr>
+    <tr><td>press_mentions (media volume, source quality)</td><td class="n">90</td><td>Cultural relevance is about current attention; GDELT itself is a 30-day window.</td></tr>
+    <tr><td>brand_mentions (public partnership evidence)</td><td class="n">180</td><td>Partnerships run seasons; older ones stay as history for repeat/renewal signals.</td></tr>
+    <tr><td>narrative (story, distinctiveness classifications)</td><td class="n">180</td><td>Re-classify twice a year or on a research event.</td></tr>
+    <tr><td>search_interest (Trends)</td><td class="n">30</td><td>Already a 30-day average.</td></tr>
+    <tr><td>social_public (discovery counts)</td><td class="n">7</td><td>Superseded by connected data whenever present (§28.9).</td></tr>
+    <tr><td>social_connected (owner analytics)</td><td class="n">2</td><td>Collected daily; two days tolerates a missed run.</td></tr>
+    <tr><td>commercial (validated deals, payments)</td><td class="n">never expire; recency scored</td><td>Handled by the commercial_proof policy below.</td></tr>
+  </table></div>
+
+  <h3>commercial_proof · v0.1-alpha (proposal, decision 4)</h3>
+  <div class="tbl"><table>
+    <tr><th>Rule</th><th>Proposal</th></tr>
+    <tr><td>Allowed sources for <code>verified_commercial_value</code> and <code>deal_frequency</code></td><td>deals where <code>source ∈ {contract_upload, self_reported}</code> AND <code>status ∈ {accepted, completed}</code>; OR any source with <code>payment_status = settled</code> (money moved through payments); OR any source with a <code>deal_periods</code> row (a contract schedule was extracted from a document).</td></tr>
+    <tr><td>Explicitly excluded</td><td><code>source = inbox_scan</code> with status set by the summarizer and no settlement; <code>detected / negotiating / pending</code> anything; brand mentions from research (those stay in cultural_relevance / brand_fit, never commercial_proof: signal ownership, §21.1).</td></tr>
+    <tr><td>Recency window</td><td>Deals with <code>term_end</code> or <code>detected_at</code> within 24 months count fully; 24 to 48 months at half weight for <code>renewals_repeat</code> only; older excluded.</td></tr>
+    <tr><td>Caps (anti-circularity, §14)</td><td>At most 12 deals counted; <code>verified_commercial_value</code> saturates at the sport × level cohort p90 (the percentile, not raw dollars, is the signal) and until cohorts exist at a fixed alpha ceiling of $50,000 per 12 months; per-deal value capped at $25,000 before summing.</td></tr>
+    <tr><td>Where the value comes from</td><td><code>deals.amount</code> (cash + stated product), never commission; the same rule <code>snapshotDealsFor</code> already applies.</td></tr>
+    <tr><td>What this means for the ten live athletes today</td><td>Mia keeps the gorjana agreement (self_reported / contract path) and the settled ones; the three <code>source = NULL</code> accepted rows and the inbox_scan accepted row would not count until settled or confirmed. Their scores do not move in Step 0; this policy is read only by the Step 4 engine.</td></tr>
+  </table></div>
+
+  <h3>Families created empty, filled by later steps</h3>
+  <div class="tbl"><table>
+    <tr><th>Family</th><th>Filled in</th><th>Holds</th></tr>
+    <tr><td>signals</td><td>Step 4</td><td>Categorical lookup tables (competition level points, award levels, national-team status), classification-to-number maps for the bounded taxonomies (§6).</td></tr>
+    <tr><td>priors · cohorts</td><td>Step 1 (social) and Step 4</td><td>The prior hierarchy of §8 and the sport × level × stage × platform percentile tables.</td></tr>
+    <tr><td>rates · opportunity · earnings</td><td>Steps 5 and 6</td><td>Benchmarks, factor tables, add-on multipliers, volume mixes (PAV_VOLUME_MIX moves here).</td></tr>
+  </table></div>
+
+  <h2>5 · How it rolls out</h2>
+  <ol>
+    <li>Dry run per the migration rule: <code>BEGIN; \i migrations/0043_intelligence_foundations.sql; ROLLBACK;</code> against the dev database through the proxy, then <code>checkSchemaDrift.ts</code> with the branch's schema.ts to confirm the only "missing" items are the three the migration creates.</li>
+    <li>PR to main: CI (typecheck, PGlite suites). Merge → <code>deploy-dev.yml</code> → <code>db-migrate.sh</code> applies 0043 → drift gate green → service replace. Watch it to green.</li>
+    <li>Verification after deploy: <code>GET /api/v1/athletes/&lt;mia&gt;/score</code> unchanged; the 04:30 refresh runs as before; <code>select count(*) from model_params</code> = 0 (or the drafts if you chose to seed).</li>
+    <li>Prod receives it on the next promotion through <code>promote.yml</code>; the same script runs there.</li>
+  </ol>
+
+  <h2>6 · Clarifications from the spec itself (small, non-blocking)</h2>
+  <ul>
+    <li><b>C1</b> Two source-class vocabularies (§17 vs §22.3/§28.4). Proposed canonical: the five-value set above, with §17's four mapped onto it.</li>
+    <li><b>C2</b> <code>MarketabilityTier</code> is used in §17 and never defined. Left as an open string type until the display policy is decided (your decision 2).</li>
+    <li><b>C3</b> <code>MarketabilityResult.potential</code> (0–100) has no definition anywhere in the document. Typed as nullable; nothing will populate it until it is defined.</li>
+    <li><b>C4</b> The v3 rate card prices <code>licensing</code>; the §11 taxonomy has no licensing deliverable (closest are the rights add-ons). Kept in the enum so the projection adapter can carry it; needs a home in Step 5.</li>
+    <li><b>C5</b> §28.4 <code>sourceClass</code> lists four values while §22.3 lists five (adds <code>inferred</code>). Using five.</li>
+  </ul>
+
+  <h3>Your go needs to cover</h3>
+  <ul>
+    <li>The <code>model_params</code> shape (family / version / status / config / hash, one active per family) and the two snapshot columns.</li>
+    <li>Whether the three draft rows ship in the migration, via the seed script, or wait.</li>
+    <li>The two alpha value sets, or edits to them. They are not read by anything until Step 4 either way.</li>
+    <li>The source-class vocabulary (C1) and leaving tier and potential open (C2, C3).</li>
+  </ul>
+</div>

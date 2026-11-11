@@ -1,0 +1,108 @@
+/* mila.css — the Mila sheet on the public athlete page (mila.js, PR 4a). Uses the tokens from front.css. */
+html.ml-open, html.ml-open body { overflow: hidden; }
+.ml[hidden] { display: none; }
+.ml { position: fixed; inset: 0; z-index: 40; }
+.ml-scrim { position: absolute; inset: 0; background: rgba(0,0,0,.55); }
+.ml-panel {
+  position: absolute; left: 0; right: 0; bottom: 0; top: env(safe-area-inset-top, 0px); display: flex; flex-direction: column;
+  background: var(--ink); color: #fff; border-top: 1px solid rgba(255,255,255,.3);
+}
+.ml-head { display: flex; align-items: center; gap: 10px; padding: 10px 12px 10px 8px; border-bottom: 1px solid var(--on-line); }
+.ml-back {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; border: 1px solid rgba(255,255,255,.3); border-radius: 4px;
+  background: transparent; color: var(--on-soft); font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; cursor: pointer; white-space: nowrap;
+}
+.ml-ttl { min-width: 0; flex: 1 1 auto; }
+.ml-ttl h2 { margin: 0; font-size: 17px; font-weight: 900; text-transform: uppercase; letter-spacing: .02em; line-height: 1.05; }
+.ml-ttl p { margin: 2px 0 0; font-size: 12px; color: var(--on-mute); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ml-av { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; background: #fff; flex: 0 0 auto; }
+.ml-log { flex: 1 1 auto; min-height: 0; overflow-y: auto; padding: 14px 12px 16px; display: flex; flex-direction: column; gap: 12px; outline: none; }
+.ml-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+.ml-msg { max-width: 88%; display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
+.ml-msg p { margin: 0; padding: 10px 12px; border-radius: 6px; font-size: 15px; line-height: 1.4; }
+.ml-msg--mila p { background: #1E1F23; }
+.ml-msg--visitor { align-self: flex-end; align-items: flex-end; }
+.ml-msg--visitor p { background: #fff; color: var(--ink); font-weight: 600; }
+.ml-cite { font-size: 12px; color: var(--on-mute); }
+.ml-w { display: flex; flex-direction: column; gap: 8px; }
+.ml-step { margin: 0 0 8px; font-size: 11px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; color: var(--blue-dark); }
+.ml-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.ml-chips--stack { flex-direction: column; align-items: stretch; }
+.ml-chip {
+  display: inline-flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 44px; padding: 10px 14px; text-align: left;
+  background: #fff; color: var(--ink); border: 0; border-radius: 4px; font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.ml-chip:active { background: var(--tile-press); }
+.ml-chip--door { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.35); font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.ml-chip--soon, .ml-chip--soon:active { background: #26272B; color: var(--on-mute); cursor: not-allowed; }
+.ml-soon { flex: 0 0 auto; font-size: 10px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; color: var(--blue-dark); }
+.ml-notyet { margin: 0; font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--blue-dark); }
+.ml-offers, .ml-grid, .ml-socials { list-style: none; margin: 0; padding: 0; }
+.ml-offers { display: flex; flex-direction: column; gap: 8px; }
+.ml-offer { display: flex; justify-content: space-between; align-items: center; gap: 12px; background: #fff; color: var(--ink); padding: 12px 14px; border-radius: 6px; }
+.ml-offer span { display: flex; flex-direction: column; }
+.ml-offer small { color: var(--mute); font-size: 12px; }
+.ml-price { font-size: 20px; font-weight: 900; }
+.ml-w--picks { margin: 0 -12px; }
+.ml-w--picks .ml-disc, .ml-w--picks .ml-fine, .ml-w--picks .ml-product { margin-left: 12px; margin-right: 12px; }
+.ml-disc { margin: 0 0 8px; font-size: 12px; font-weight: 700; color: var(--on-soft); }
+.ml-fine { margin: 8px 0 0; font-size: 11px; color: var(--on-mute); }
+.ml-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
+.ml-tile {
+  position: relative; display: flex; flex-direction: column; justify-content: flex-end; width: 100%; aspect-ratio: 1; min-height: 44px; padding: 6px;
+  border: 0; border-radius: 0; background: linear-gradient(200deg, #4a4438 0%, #222019 60%, #0b0b0b 100%); color: #fff; text-align: left; cursor: pointer; overflow: hidden;
+}
+.ml-tile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ml-tile-ph { position: absolute; inset: 0; }
+.ml-tile[aria-pressed="true"] { box-shadow: inset 0 0 0 3px #fff; }
+.ml-paid { position: relative; align-self: flex-start; font-size: 9px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; background: rgba(14,14,14,.75); color: #fff; padding: 2px 5px; border-radius: 3px; }
+.ml-tile .ml-paid { position: absolute; top: 5px; left: 5px; }
+.ml-tile-t { position: relative; font-size: 12px; font-weight: 800; line-height: 1.15; }
+.ml-product { margin-top: 10px; display: flex; flex-direction: column; gap: 6px; background: #fff; color: var(--ink); padding: 12px 14px; border-radius: 6px; outline: none; }
+.ml-product[hidden] { display: none; }
+.ml-product .ml-paid { background: var(--ground); color: var(--mute); }
+.ml-product-t { font-size: 16px; font-weight: 800; }
+.ml-product small { color: var(--mute); font-size: 12px; }
+.ml-product q { quotes: none; border-left: 2px solid var(--blue); padding-left: 8px; font-weight: 600; }
+.ml-btn {
+  display: inline-flex; align-items: center; justify-content: center; align-self: flex-start; min-height: 44px; padding: 10px 16px; border: 0; border-radius: 4px;
+  background: #fff; color: var(--ink); font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; cursor: pointer;
+}
+.ml-btn--ink { background: var(--ink); color: #fff; }
+.ml-btn--wide { align-self: stretch; width: 100%; }
+.ml-link { align-self: flex-start; min-height: 44px; padding: 0; border: 0; background: none; color: var(--blue); font-size: 13px; font-weight: 800; cursor: pointer; }
+.ml-link--soon { color: var(--quiet); cursor: not-allowed; }
+.ml-one { margin: 8px 0; font-size: 22px; font-weight: 900; text-transform: uppercase; letter-spacing: -.3px; line-height: 1.05; }
+.ml-socials { display: flex; flex-direction: column; gap: 8px; }
+.ml-social { display: flex; justify-content: space-between; align-items: center; min-height: 48px; padding: 10px 14px; border: 1px solid rgba(255,255,255,.3); border-radius: 4px; text-decoration: none; }
+.ml-social b { font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+.ml-social small { color: var(--on-mute); }
+.ml-foot { padding: 10px 12px calc(12px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid var(--on-line); display: flex; flex-direction: column; gap: 8px; }
+.ml-compose { display: flex; gap: 8px; }
+.ml-input { flex: 1 1 auto; min-width: 0; min-height: 44px; padding: 10px 12px; font: inherit; font-size: 16px; color: var(--ink); background: #fff; border: 0; border-radius: 4px; }
+.ml-input:disabled { background: #2A2B2F; color: var(--on-mute); }
+.ml-input:disabled::placeholder { color: var(--on-mute); }
+.ml-send { min-height: 44px; padding: 0 16px; border: 0; border-radius: 4px; background: var(--blue); color: #fff; font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; }
+.ml-send:disabled { background: #2A2B2F; color: var(--on-mute); cursor: not-allowed; }
+.ml-panel button:focus-visible, .ml-panel a:focus-visible, .ml-panel input:focus-visible { outline: 3px solid var(--blue-dark); outline-offset: 2px; }
+/* Create and Follow are short sheets, not a full chat. */
+.ml[data-intent="create"] .ml-panel, .ml[data-intent="follow"] .ml-panel { top: auto; max-height: 80vh; }
+.ml[data-intent="create"] .ml-log, .ml[data-intent="follow"] .ml-log { flex: 0 0 auto; }
+@media (min-width: 900px) {
+  /* On desktop the chat opens as a panel over the grid column, so the card stays visible. */
+  .ml-scrim { background: transparent; }
+  .ml-panel {
+    left: auto; right: 16px; top: 16px; bottom: 16px; width: max(340px, calc((100vw - 48px) / 2.5));
+    border: 1px solid rgba(255,255,255,.2); border-radius: 6px;
+  }
+  .ml[data-intent="create"] .ml-panel, .ml[data-intent="follow"] .ml-panel { top: auto; max-height: calc(100vh - 32px); }
+}
+
+/* Public Mila mode (PR 5): cards that come with an answer. Pick tiles reuse .ml-product; a prepared request is a white
+   card whose one button is the visitor's own tap. */
+.ml-picked { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.ml-picked .ml-product { margin-top: 0; }
+.ml-w--slots .ml-chips--stack { list-style: none; margin: 0; padding: 0; }
+.ml-w--request { background: #fff; color: var(--ink); padding: 12px 14px; border-radius: 6px; }
+.ml-w--request small { color: var(--mute); font-size: 12px; }
+.ml-w--request q { quotes: none; border-left: 2px solid var(--blue); padding-left: 8px; }

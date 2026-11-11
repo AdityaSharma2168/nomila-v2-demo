@@ -1,0 +1,126 @@
+{
+  "modifiedObjectives": [
+    {
+      "id": "b1c799e3-59fc-4986-b3ab-a0b7b4869601",
+      "domain": "impact",
+      "lineage": [
+        "amplify-yuwa-philanthropic-work"
+      ]
+    },
+    {
+      "id": "c0f587e4-750f-4575-a4e8-fd4cfa6e078e",
+      "domain": "positioning",
+      "lineage": [
+        "grow-academic-tech-partnerships"
+      ]
+    },
+    {
+      "id": "feb62891-8b9f-44e4-8c1f-677d6947334b",
+      "domain": "audience",
+      "lineage": [
+        "grow-instagram-posting-cadence",
+        "unlock-tiktok-channel"
+      ]
+    }
+  ],
+  "excludedOpenings": [
+    {
+      "key": "amplify-yuwa-philanthropic-work",
+      "objectiveId": "b1c799e3-59fc-4986-b3ab-a0b7b4869601",
+      "because": "not_assessed"
+    },
+    {
+      "key": "grow-academic-tech-partnerships",
+      "objectiveId": "c0f587e4-750f-4575-a4e8-fd4cfa6e078e",
+      "because": "not_assessed"
+    },
+    {
+      "key": "grow-instagram-posting-cadence",
+      "objectiveId": "feb62891-8b9f-44e4-8c1f-677d6947334b",
+      "because": "not_assessed"
+    },
+    {
+      "key": "unlock-tiktok-channel",
+      "objectiveId": "feb62891-8b9f-44e4-8c1f-677d6947334b",
+      "because": "not_assessed"
+    }
+  ],
+  "mapBefore": [
+    "grow-instagram-posting-cadence",
+    "unlock-tiktok-channel",
+    "grow-academic-tech-partnerships",
+    "amplify-inbound-startx1-interest",
+    "amplify-yuwa-philanthropic-work",
+    "unlock-adidas-historical-performance-data"
+  ],
+  "mapAfter": [
+    "amplify-inbound-startx1-interest",
+    "unlock-adidas-historical-performance-data"
+  ],
+  "restsOnLinesBefore": [
+    "        rests on openings: amplify-yuwa-philanthropic-work",
+    "        rests on openings: grow-academic-tech-partnerships",
+    "        rests on openings: grow-instagram-posting-cadence, unlock-tiktok-channel"
+  ],
+  "restsOnLinesAfter": [],
+  "leakChecks": [
+    {
+      "key": "amplify-yuwa-philanthropic-work",
+      "keyInPrompt": false,
+      "statementInPrompt": false,
+      "citable": false
+    },
+    {
+      "key": "grow-academic-tech-partnerships",
+      "keyInPrompt": false,
+      "statementInPrompt": false,
+      "citable": false
+    },
+    {
+      "key": "grow-instagram-posting-cadence",
+      "keyInPrompt": false,
+      "statementInPrompt": false,
+      "citable": false
+    },
+    {
+      "key": "unlock-tiktok-channel",
+      "keyInPrompt": false,
+      "statementInPrompt": false,
+      "citable": false
+    }
+  ],
+  "withheldSuccess": [
+    {
+      "objectiveId": "b1c799e3-59fc-4986-b3ab-a0b7b4869601",
+      "reason": "not_assessed"
+    },
+    {
+      "objectiveId": "c0f587e4-750f-4575-a4e8-fd4cfa6e078e",
+      "reason": "not_assessed"
+    },
+    {
+      "objectiveId": "feb62891-8b9f-44e4-8c1f-677d6947334b",
+      "reason": "not_assessed"
+    }
+  ],
+  "successLeakChecks": [
+    {
+      "objectiveId": "b1c799e3-59fc-4986-b3ab-a0b7b4869601",
+      "oldLineInPrompt": false
+    },
+    {
+      "objectiveId": "c0f587e4-750f-4575-a4e8-fd4cfa6e078e",
+      "oldLineInPrompt": false
+    },
+    {
+      "objectiveId": "feb62891-8b9f-44e4-8c1f-677d6947334b",
+      "oldLineInPrompt": false
+    }
+  ],
+  "herWordingRendered": true,
+  "snapshotUnchanged": true,
+  "promptChars": {
+    "before": 61156,
+    "after": 57810
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "specVersion": "blind-eval-spec/0.1",
+  "provider": "openai",
+  "athlete": {
+    "key": "ben-shelton",
+    "name": "Ben Shelton",
+    "sport": "Tennis"
+  },
+  "conditions": "gpt-5.4-mini Responses API; web_search (medium) + action.sources; default reasoning; text output with fenced JSON",
+  "startedAt": "2026-09-14T01:58:26.289Z",
+  "attempts": 1,
+  "model": "gpt-5.4-mini",
+  "modelVersion": "gpt-5.4-mini-2026-03-17",
+  "responseId": "resp_033a030d3923fd9e006aa754c26cec87d284126be973bff10d",
+  "latencyMs": 45646,
+  "finishReason": "completed",
+  "truncated": false,
+  "usage": {
+    "promptTokens": 19162,
+    "outputTokens": 5909,
+    "thoughtTokens": 183,
+    "totalTokens": 25071,
+    "searchCalls": 3
+  },
+  "costUsd": 0.05096199999999999,
+  "text": "```json\n{\n  \"athlete\": {\n    \"name\": \"Ben Shelton\",\n    \"sport\": \"Tennis\",\n    \"identity_confidence\": \"HIGH\"\n  },\n  \"marketability_summary\": \"Ben Shelton is a current top-tier American men’s tennis player whose marketability is built on a blend of elite competitive standing, an explosive serve, and a highly legible personal story: late-ish tennis specialization, a father-coach relationship, and rapid rise from college star to Grand Slam contender. Publicly available ATP and tournament sources place him inside the sport’s upper echelon, with a career-high ATP singles ranking of No. 5 and major results including a 2023 US Open semifinal, a 2025 Australian Open semifinal, and a 2025 Masters 1000 title in Toronto. He also entered 2026 as a consistent high-seed-level presence and reached the US Open quarterfinals in September 2026. He appears to have a meaningful public audience and visible commercial appeal, supported by branded partnerships with On, Yonex, and Thorne, plus agency representation by WME. His image is young, energetic, and commercially versatile, with clear appeal to sports/performance, apparel, wellness, and youth-oriented brands. The main uncertainty is that platform-native audience and engagement data are limited in the public record here, so some audience and engagement sub-signals must remain missing or low-confidence rather than inferred.\",\n  \"evidence\": [\n    {\n      \"id\": \"E1\",\n      \"claim\": \"ATP player bio states Shelton turned pro in 2022, won the 2021 NCAA team title and 2022 NCAA singles title, and reached career-high ATP singles ranking No. 5 in November 2025.\",\n      \"source_title\": \"Ben Shelton | Bio | ATP Tour | Tennis\",\n      \"source_url\": \"https://www.atptour.com/en/players/b.-shelton/s0s1/bio\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-06-29\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Primary source for career arc, college achievements, and ranking peak.\"\n    },\n    {\n      \"id\": \"E2\",\n      \"claim\": \"ATP and official tournament sources note Shelton reached the 2025 Australian Open semifinal, Wimbledon quarterfinal, and won his first Masters 1000 title in Toronto in 2025.\",\n      \"source_title\": \"Ben SHELTON - Tennis Titles, Ranking & Profile / ATP and Roland Garros player card\",\n      \"source_url\": \"https://www.rolandgarros.com/en-us/players/47345-b.shelton\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2025-08-??\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports recent performance, rankings recognition, and achievement recency.\"\n    },\n    {\n      \"id\": \"E3\",\n      \"claim\": \"ATP Tour and US Open sources show Shelton remained a major contender in 2026, including a US Open quarterfinal run in September 2026.\",\n      \"source_title\": \"Ben Shelton | Tennis.com / US Open official article\",\n      \"source_url\": \"https://www.tennis.com/players-rankings/ben-shelton\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2026-09-09\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Used for current standing and momentum, cross-checked by US Open official coverage.\"\n    },\n    {\n      \"id\": \"E4\",\n      \"claim\": \"Shelton's official site describes him as the face of American men's tennis, the current No. 1 American singles ranking holder into tournaments, and a player with a left-handed serve topping 149 mph.\",\n      \"source_title\": \"About Ben Shelton\",\n      \"source_url\": \"https://bensheltontennis.com/bio\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-09-13\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"First-party positioning useful for brand identity and commercial framing, though self-authored.\"\n    },\n    {\n      \"id\": \"E5\",\n      \"claim\": \"Yonex USA describes Shelton as a charismatic player and lists multiple recent achievements including the 2023 US Open semifinal, 2025 National Bank Open title, and 2026 results.\",\n      \"source_title\": \"Ben Shelton – Yonex USA\",\n      \"source_url\": \"https://us.yonex.com/pages/athlete/ben-shelton\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-09-12\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports commercial relationship and recent on-court accomplishments.\"\n    },\n    {\n      \"id\": \"E6\",\n      \"claim\": \"On's athlete page features Shelton as a brand athlete and highlights his serve speed and energetic profile.\",\n      \"source_title\": \"Ben Shelton | Tennis | On United States\",\n      \"source_url\": \"https://www.on.com/en-us/explore/athletes/ben-shelton\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-09-13\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Confirms a meaningful apparel partnership.\"\n    },\n    {\n      \"id\": \"E7\",\n      \"claim\": \"Thorne announced a sports performance campaign featuring Shelton in April 2025 and described him as a top-ranked American professional tennis player.\",\n      \"source_title\": \"THORNE launches on-the-go sports performance product line via new campaign with tennis star Ben Shelton\",\n      \"source_url\": \"https://www.thorne.com/press-releases/thorne-launches-on-the-go-sports-performance-product-line-via-new-campaign-with-tennis-star-ben-shelton\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2025-04-14\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Shows commercial proof and category fit in wellness/performance.\"\n    },\n    {\n      \"id\": \"E8\",\n      \"claim\": \"Sports Business Journal reported Shelton joined WME's tennis roster in June 2025.\",\n      \"source_title\": \"Ben Shelton joins WME’s tennis roster\",\n      \"source_url\": \"https://www.sportsbusinessjournal.com/Articles/2025/06/13/ben-shelton-joins-wmes-tennis-roster/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"2025-06-13\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports commercial representation and market demand.\"\n    },\n    {\n      \"id\": \"E9\",\n      \"claim\": \"HypeAuditor publicly observed Shelton's Instagram follower count around 1.33 million in early September 2026 and noted recent growth.\",\n      \"source_title\": \"Ben Shelton (@benshelton) Instagram Stats, Analytics, Net Worth and Earnings – HypeAuditor\",\n      \"source_url\": \"https://hypeauditor.com/instagram/benshelton/\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-09-03\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Used cautiously as third-party platform analytics rather than first-party data.\"\n    },\n    {\n      \"id\": \"E10\",\n      \"claim\": \"ATP Tour bio notes Shelton began playing tennis at age 10 with his father Bryan, who is also his coach, and that he broke into the Top 200 in 2022, Top 100 in 2022, and Top 20 in 2023.\",\n      \"source_title\": \"Ben Shelton | Bio | ATP Tour | Tennis\",\n      \"source_url\": \"https://www.atptour.com/en/players/b.-shelton/s0s1/bio\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-06-29\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports narrative origin, trajectory, and authenticity.\"\n    },\n    {\n      \"id\": \"E11\",\n      \"claim\": \"ATP and Wimbledon coverage framed Shelton as a compelling young star and noted his 2025 season included second-week runs at every major he played.\",\n      \"source_title\": \"Entertainer at heart, Ben Shelton steps onto his biggest stage\",\n      \"source_url\": \"https://www.atptour.com/en/news/shelton-us-open-2025-pre-tournament-interview\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2025-08-??\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Supports media resonance and cultural framing.\"\n    },\n    {\n      \"id\": \"E12\",\n      \"claim\": \"US Open official coverage on Sept. 12, 2026 confirmed Shelton's quarterfinal run at the 2026 US Open.\",\n      \"source_title\": \"Ben Shelton closes in on history at 2026 US Open: From ecstasy to serenity\",\n      \"source_url\": \"https://www.usopen.org/amp/en_US/news/articles/2026-09-12/ben_shelton_closes_in_on_history_at_2026_us_open_from_ecstasy_to_serenity.html\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-09-12\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Strong recency anchor for current competitive relevance.\"\n    }\n  ],\n  \"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E12\"],\n        \"rationale\": \"He competes at the highest ATP Tour level and has recent Grand Slam and Masters 1000 results, which places him firmly in elite international professional tennis.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 86,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E12\", \"E5\"],\n        \"rationale\": \"Recent semifinal, quarterfinal, and Masters 1000 title results show strong competitive output, though not sustained dominance over the very top tier.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 84,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"A career-high ATP No. 5 and repeated top-level recognition indicate strong formal standing within the sport.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\", \"E5\"],\n        \"rationale\": \"He is a leading American man on tour and has recurring Grand Slam/ATP recognition, giving him clear national and international visibility.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"Sources position him as a leading American figure and a top seed-level player, signaling major importance in the current U.S. tennis landscape.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E12\", \"E5\"],\n        \"rationale\": \"His most meaningful results are very recent, including 2025 and 2026 deep runs and titles that are highly commercially relevant right now.\"\n      }\n    },\n    \"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 72,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E9\", \"E4\", \"E5\"],\n        \"rationale\": \"Third-party Instagram analytics suggest a sizable public audience, and official brand pages imply meaningful mainstream visibility, though platform-native reach data is limited.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E4\", \"E5\"],\n        \"rationale\": \"Within men’s tennis, a top-ranked American Grand Slam contender with brand-backed visibility likely sits well above average among peers at his stage.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 68,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E9\", \"E12\"],\n        \"rationale\": \"Observed Instagram follower growth and continued high-profile results suggest audience expansion, but the public longitudinal data is incomplete.\"\n      },\n      \"platform_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 66,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\", \"E5\", \"E6\", \"E7\", \"E8\"],\n        \"rationale\": \"He has meaningful presence across official athlete site, ATP, brand pages, and mainstream media, indicating breadth beyond a single platform.\"\n      }\n    },\n    \"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Reliable engagement-rate or interaction quality data from first-party platforms was not publicly available in the research set.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No dependable post-level reach data or distribution analytics were available to judge how efficiently his content travels beyond followers.\"\n      },\n      \"shares_saves_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Public evidence of share/save performance was not available.\"\n      },\n      \"video_retention\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No public retention or completion metrics were available.\"\n      },\n      \"story_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No story analytics or comparable first-party data were available.\"\n      },\n      \"audience_authenticity\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"There is no sufficient public evidence to assess audience authenticity beyond broad platform estimates.\"\n      }\n    },\n    \"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 76,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E11\", \"E12\"],\n        \"rationale\": \"He receives sustained coverage from ATP, Grand Slam, and major media environments, with especially strong attention around big events.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E11\", \"E12\", \"E8\"],\n        \"rationale\": \"Coverage and references come from premium tennis authorities, Grand Slam official channels, and respected sports business media.\"\n      },\n      \"search_interest\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No direct search-interest index or trend data was available in the retrieved sources.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 58,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E11\", \"E12\", \"E8\"],\n        \"rationale\": \"He generates discussion in tennis media and business contexts, but publicly observable evidence of broader off-platform conversation is moderate rather than overwhelming.\"\n      },\n      \"crossover_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 67,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\", \"E8\", \"E11\"],\n        \"rationale\": \"He has spillover recognition into fashion, business, and broader sports branding contexts, though not yet at a universally recognizable celebrity level.\"\n      }\n    },\n    \"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 84,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E10\", \"E1\", \"E4\"],\n        \"rationale\": \"The late specialization, father-coach dynamic, explosive serve, and rapid rise combine into a clearly differentiated and memorable narrative.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E10\", \"E1\", \"E2\"],\n        \"rationale\": \"His story has multiple layers: college success, family coaching, fast professional ascent, and evolving elite ambitions.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 86,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E10\", \"E1\", \"E3\"],\n        \"rationale\": \"The narrative is strongly grounded in verifiable career history and repeated public confirmation, not just marketing copy.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 74,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E11\", \"E12\", \"E2\"],\n        \"rationale\": \"Media consistently picks up the rise-from-college-to-contender arc and the spectacle of his game style.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 79,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\", \"E7\", \"E5\"],\n        \"rationale\": \"His story naturally supports performance, youth, family, and ambition messaging without feeling forced.\"\n      },\n      \"durability\": {\n        \"status\": \"scored\",\n        \"score\": 72,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E10\", \"E1\", \"E12\"],\n        \"rationale\": \"Because the core narrative is tied to an enduring career arc and identity rather than a single moment, it should remain usable for several years.\"\n      }\n    },\n    \"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E6\", \"E7\", \"E5\"],\n        \"rationale\": \"He credibly fits apparel, footwear, wellness, performance nutrition, sports gear, and youth/ambition-oriented brands.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 81,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\", \"E5\", \"E6\", \"E7\", \"E8\"],\n        \"rationale\": \"The public record here shows mainstream, low-risk partnerships and no confirmed serious brand-safety issue in the sourced material.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 74,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E9\", \"E4\", \"E5\"],\n        \"rationale\": \"His likely audience appears commercially attractive: tennis, sports performance, and aspirational young-fan segments, though precise demographics are not public here.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E10\", \"E6\"],\n        \"rationale\": \"His public persona is coherent across sources: energetic, powerful, young, and performance-focused.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"scored\",\n        \"score\": 77,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E4\", \"E6\", \"E7\", \"E11\"],\n        \"rationale\": \"He can support performance-led, lifestyle, fashion, and educational storytelling formats.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E1\", \"E5\"],\n        \"rationale\": \"As a leading American tennis player, he has clear relevance for U.S. brands while still carrying international appeal through the ATP Tour.\"\n      }\n    },\n    \"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 84,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\", \"E8\", \"E5\"],\n        \"rationale\": \"Confirmed partnerships with On, Thorne, Yonex, and WME demonstrate meaningful real-world commercial demand.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 73,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\", \"E8\", \"E5\"],\n        \"rationale\": \"The sourced record shows multiple distinct commercial relationships and representation changes, indicating repeated market demand.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 79,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E6\", \"E7\", \"E5\", \"E8\"],\n        \"rationale\": \"On, Yonex, Thorne, and WME are credible, strategically relevant partners rather than low-tier or purely local sponsors.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Public evidence of renewal terms or repeated deepening of specific brand relationships was not available.\"\n      },\n      \"campaign_performance\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No reliable public performance metrics for campaigns were available.\"\n      },\n      \"pricing_power\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No credible public pricing data or fee disclosures were available.\"\n      }\n    },\n    \"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E12\"],\n        \"rationale\": \"His results have trended upward from college standout to top-five ATP player and recent Grand Slam contender, indicating strong sporting momentum.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"scored\",\n        \"score\": 67,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E9\"],\n        \"rationale\": \"Observed Instagram follower growth suggests expansion, but the evidence base is thin and third-party.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 79,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E11\", \"E12\", \"E2\"],\n        \"rationale\": \"Media visibility appears stable-to-rising because each major event continues to generate premium coverage.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No direct search or social trend series was available to confirm the direction of public attention.\"\n      },\n      \"commercial_acceleration\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E7\", \"E8\", \"E6\", \"E5\"],\n        \"rationale\": \"Commercial activity is visibly broadening through high-quality brand deals and agency representation, which indicates upward acceleration.\"\n      }\n    }\n  },\n  \"key_strengths\": [\n    \"Elite ATP standing with recent Grand Slam and Masters 1000 results\",\n    \"Clear, memorable narrative built on rapid rise and father-coach background\",\n    \"Strong fit for performance, apparel, wellness, and youth-focused brands\",\n    \"Confirmed commercial relationships with credible partners\",\n    \"Current momentum is strong both on court and in media\"\n  ],\n  \"key_constraints\": [\n    \"Publicly verifiable platform engagement data is limited\",\n    \"Direct evidence of campaign performance and pricing power is unavailable\",\n    \"Audience demographics are not well documented in the retrieved sources\",\n    \"Some commercial judgments rely on brand-page and third-party evidence rather than first-party analytics\"\n  ],\n  \"important_missing_data\": [\n    \"First-party social analytics and post-level engagement metrics\",\n    \"Search-interest trend data\",\n    \"Campaign performance reporting\",\n    \"Renewal/repeat contract evidence\",\n    \"Verified audience demographic breakdowns\"\n  ],\n  \"identity_or_evidence_risks\": [\n    \"Several commercial sources are self-promotional brand pages and should be interpreted as partnership confirmation, not independent performance proof\",\n    \"One audience metric source is third-party analytics, not first-party platform data\",\n    \"No confirmed serious brand-safety issue appeared in the sourced record, but absence of evidence is not proof of absence\"\n  ]\n}\n```",
+  "native": {
+    "annotations": [],
+    "sources": [
+      {
+        "url": "https://www.atptour.com/en/news/sinner-shelton-wimbledon-2025-qf",
+        "title": null
+      },
+      {
+        "url": "https://www.atptour.com/en/news/shelton-wimbledon-2025-thursday-play-suspended",
+        "title": null
+      },
+      {
+        "url": "https://www.atptour.com/-/media/files/media-guide/2026/2026-atp-media-guide-full.pdf",
+        "title": null
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ben_Shelton",
+        "title": null
+      },
+      {
+        "url": "https://www.atptour.com/en/news/shelton-us-open-2025-pre-tournament-interview",
+        "title": null
+      },
+      {
+        "url": "https://www.vogue.com/article/ben-shelton-profile-march-2025",
+        "title": null
+      },
+      {
+        "url": "https://www.vogue.com/article/us-open-2025-ben-shelton",
+        "title": null
+      },
+      {
+        "url": "https://www.atptour.com/en/news/shelton-wimbledon-2025-friday?gsid=6a261cb8-771c-42ee-ae9f-3b2e401f04c7",
+        "title": null
+      },
+      {
+        "url": "https://www.forbes.com/sites/timnewcomb/2025/02/07/the-strategy-behind-ons-tennis-ambassador-lineup/",
+        "title": null
+      },
+      {
+        "url": "https://www.rolandgarros.com/en-us/players/47345-b.shelton",
+        "title": null
+      },
+      {
+        "url": "https://www.puntodebreak.com/en/2025/08/22/sheltons-run-in-with-journalist-i-dont-like-that-question",
+        "title": null
+      },
+      {
+        "url": "https://www.sportsbusinessjournal.com/Articles/2025/06/13/ben-shelton-joins-wmes-tennis-roster/",
+        "title": null
+      },
+      {
+        "url": "https://www.atptour.com/-/media/sites/atp-tour/press/press-releases/2025-year-end-rankings-release.pdf",
+        "title": null
+      },
+      {
+        "url": "https://www.atptour.com/en/players/b.-shelton/s0s1/bio",
+        "title": null
+      },
+      {
+        "url": "https://www.essentiallysports.com/atp-tennis-news-how-rich-is-ben-shelton-in-two-zero-two-five-net-worth-prize-money-endorsements-and-more/",
+        "title": null
+      },
+      {
+        "url": "https://pgatourmedia.pgatourhq.com/static-assets/page/files/mediaguides/2025%20Media%20Guide_04.14.pdf",
+        "title": null
+      },
+      {
+        "url": "https://southernmiss.com/documents/download/2025/12/5/10_Southern_Miss.pdf",
+        "title": null
+      },
+      {
+        "url": "https://www.nittoatpfinals.com/-/media/sites/finals-new/programme/nitto-atp-finals-2025-official-programme.pdf",
+        "title": null
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/2026_ATP_Tour",
+        "title": null
+      },
+      {
+        "url": "https://www.reddit.com/r/FloridaGators/comments/1kwzcgz",
+        "title": null
+      },
+      {
+        "url": "https://www.wimbledon.com/pdf/2025_Wimbledon_Compendium_W_250617.pdf",
+        "title": null
+      },
+      {
+        "url": "https://es.wikipedia.org/wiki/Ben_Shelton",
+        "title": null
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ben_Shelton_career_statistics",
+        "title": null
+      },
+      {
+        "url": "https://it.wikipedia.org/wiki/Ben_Shelton",
+        "title": null
+      },
+      {
+        "url": "https://www.reddit.com/r/tennis/comments/1qmbd06/sheltons_explanation_of_his_camera_signature/",
+        "title": null
+      },
+      {
+        "url": "https://zh.wikipedia.org/wiki/%E6%9C%AC%C2%B7%E8%B0%A2%E5%B0%94%E9%A1%BF",
+        "title": null
+      },
+      {
+        "url": "https://www.reddit.com/r/tennis/comments/1n3ngom",
+        "title": null
+      },
+      {
+        "url": "https://apnews.com/article/afeabdc6a98d38b1c792a09ef9c70c49",
+        "title": null
+      },
+      {
+        "url": "https://www.tennis.com/players-rankings/ben-shelton",
+        "title": null
+      },
+      {
+        "url": "https://bensheltontennis.com/bio",
+        "title": null
+      },
+      {
+        "url": "https://bensheltontennis.com/",
+        "title": null
+      },
+      {
+        "url": "https://www.atptour.com/en/players/b.-shelton/s0s1/bio",
+        "title": null
+      },
+      {
+        "url": "https://bnpparibasopen.com/players/detail/ben-shelton",
+        "title": null
+      },
+      {
+        "url": "https://www.rolandgarros.com/en-us/players/47345-b.shelton",
+        "title": null
+      },
+      {
+        "url": "https://www.on.com/en-us/explore/athletes/ben-shelton",
+        "title": null
+      },
+      {
+        "url": "https://www.mubadaladcopen.com/en",
+        "title": null
+      },
+      {
+        "url": "https://www.yonex.co.jp/tennis/players/Ben-Shelton.html",
+        "title": null
+      },
+      {
+        "url": "https://www.atptour.com/-/media/files/media-guide/2024/2024-atp-media-guide-full.pdf",
+        "title": null
+      },
+      {
+        "url": "https://www.dallasopen.com/en/?trk=organization_guest_main-feed-card-text",
+        "title": null
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ben_Shelton",
+        "title": null
+      },
+      {
+        "url": "https://www.atptour.com/en/news/ben-shelton-bryan-shelton-june-2023-feature",
+        "title": null
+      },
+      {
+        "url": "https://www.usopen.org/amp/en_US/news/articles/2026-09-12/ben_shelton_closes_in_on_history_at_2026_us_open_from_ecstasy_to_serenity.html",
+        "title": null
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/2024_U.S._Men%27s_Clay_Court_Championships",
+        "title": null
+      },
+      {
+        "url": "https://de.wikipedia.org/wiki/Ben_Shelton",
+        "title": null
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Bryan_Shelton",
+        "title": null
+      },
+      {
+        "url": "https://es.wikipedia.org/wiki/Ben_Shelton",
+        "title": null
+      },
+      {
+        "url": "https://zh.wikipedia.org/wiki/%E6%9C%AC%C2%B7%E8%B0%A2%E5%B0%94%E9%A1%BF",
+        "title": null
+      },
+      {
+        "url": "https://asaptext.com/asap_media/media/1004/1323/transcripts/141568.pdf",
+        "title": null
+      },
+      {
+        "url": "https://cdn5.creativecirclemedia.com/baxter/files/20230124-145002-BB%202023-01-25.pdf",
+        "title": null
+      },
+      {
+        "url": "https://www.thorne.com/press-releases/thorne-launches-on-the-go-sports-performance-product-line-via-new-campaign-with-tennis-star-ben-shelton?locale=en-DO",
+        "title": null
+      },
+      {
+        "url": "https://www.thorne.com/partners",
+        "title": null
+      },
+      {
+        "url": "https://us.yonex.com/pages/athlete/ben-shelton",
+        "title": null
+      },
+      {
+        "url": "https://x.com/Sheltyb803/with_replies",
+        "title": null
+      },
+      {
+        "url": "https://www.yonex.com/news/us-open-2025-confidence-is-high-for-shelton-and-the-rest-of-team-yonex/",
+        "title": null
+      },
+      {
+        "url": "https://socialblade.com/instagram/user/benshelton",
+        "title": null
+      },
+      {
+        "url": "https://www.yonexmall.com/shop/proc/team_yonex.php?category=013003&player=golf",
+        "title": null
+      },
+      {
+        "url": "https://www.yonex.co.jp/news/2025/3339.html",
+        "title": null
+      },
+      {
+        "url": "https://www.yonex.co.jp/tennis/players/Ben-Shelton.html",
+        "title": null
+      },
+      {
+        "url": "https://www.forbes.com/sites/timnewcomb/2025/04/14/ben-shelton-on-business-and-being-the-face-of-thorne/",
+        "title": null
+      },
+      {
+        "url": "https://hypeauditor.com/instagram/benshelton/",
+        "title": null
+      },
+      {
+        "url": "https://www.yonex.cz/sponzorovani-hraci/tenis.html",
+        "title": null
+      },
+      {
+        "url": "https://www.yonex.co.jp/assets/pdf/catalog/tennis/2025_tennis_catalog.pdf",
+        "title": null
+      },
+      {
+        "url": "https://homeflocker.fr/wp-content/uploads/2024/02/Catalogue_International_Tennis_2024.pdf",
+        "title": null
+      },
+      {
+        "url": "https://assets.minkabu.jp/news/article_media_content/urn%3Anewsml%3Atdnet.info%3A20231109583407/140120231109583407.pdf",
+        "title": null
+      },
+      {
+        "url": "https://www.reddit.com/r/10s/comments/17998g8",
+        "title": null
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ben_Shelton",
+        "title": null
+      },
+      {
+        "url": "https://www.reddit.com/r/10s/comments/1kldr78",
+        "title": null
+      }
+    ],
+    "searchQueries": [
+      "Ben Shelton ATP official profile ranking titles 2026",
+      "site:instagram.com Ben Shelton followers",
+      "Ben Shelton Instagram official follower count"
+    ],
+    "reasoning": "default"
+  },
+  "error": null
+}

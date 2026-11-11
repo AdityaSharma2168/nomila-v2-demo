@@ -1,0 +1,35 @@
+{
+ "subject": "ctl-c-lumen-termsheet",
+ "offer": {
+  "amount": 5000,
+  "product_value": null,
+  "commission_pct": null,
+  "unit": "total",
+  "deliverable_counts": {
+   "instagram_posts": 4
+  },
+  "deal_type": "ambassador"
+ },
+ "transcription": "hand-transcribed from the overlay statement in the shape the thread summariser produces and the scorer consumes (amount, product_value, unit, deliverable_counts, deal_type; commission_pct null). term_months and counts_basis are never set by the production path (grep: no writer), so they are left unset here too — the per-deliverable path therefore runs.",
+ "classification": {
+  "offer_amount": 5000,
+  "deliverables": [
+   "four Instagram posts"
+  ],
+  "deadline": null
+ },
+ "keyDetails": {
+  "deadlines": []
+ },
+ "exclusivity": {
+  "stated": true,
+  "text": "no category exclusivity"
+ },
+ "contracts": [],
+ "history": [],
+ "high": null,
+ "observed": {
+  "text": "commercial history observed by Nomila: no connected account and no mailbox; no deal recorded by Nomila; a researched public profile is held (2 research runs). A count of Nomila's records is not a count of real-world history; what Nomila has not observed is not evidence of absence",
+  "rule": "MISSING ≠ NONE (checkpoint §2 epistemic discipline); rate-eval-spec/2.0.0 §5: a detected inbound email is not a partnership or a transaction"
+ }
+}

@@ -1,0 +1,1706 @@
+{
+ "state": {
+  "athleteId": "fa6e6373-bb4c-4e4f-ace2-8285a9510391",
+  "asOf": "2026-09-25T17:52:39.463Z",
+  "version": "athlete-state/1.2.0",
+  "identity": {
+   "name": "Katie Ledecky",
+   "sport": "swimming",
+   "competitionContext": null,
+   "careerStatus": "active"
+  },
+  "findings": [
+   {
+    "key": "mia.athletic_authority",
+    "direction": "strength",
+    "rationale": {
+     "value": "Katie Ledecky possesses peerless sporting authority as the most decorated female swimmer in history. Her status is anchored by sustained Olympic and world championship victories spanning more than a decade. While she recently faced her first career international defeats in the 800m and 400m freestyle at the 2026 Pan Pacific Championships, she remains at the absolute pinnacle of her sport and leads the national team heading toward Los Angeles 2028.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T23:02:25.233Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "rationale": "Her vast list of gold medals, world records, and continuous participation in elite-level events are completely verified by official Olympic and national governing bodies.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her vast list of gold medals, world records, and continuous participation in elite-level events are completely verified by official Olympic and national governing bodies.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Katie Ledecky has won 14 Olympic medals (9 gold, 4 silver, 1 bronze), making her the most decorated female U.S. Olympian in history across all sports.",
+      "sourceUrl": "https://olympics.com",
+      "observedAt": "2024-08-03",
+      "sourceType": "official",
+      "sourceTitle": "Katie Ledecky's Stats and Wins"
+     },
+     {
+      "id": "E2",
+      "claim": "Katie Ledecky won gold in the 1500m freestyle at the 2026 Pan Pacific Championships, but suffered her first-ever international defeats in the 800m and 400m freestyle events to Australia's Lani Pallister.",
+      "sourceUrl": "https://apnews.com",
+      "observedAt": "2026-08-17",
+      "sourceType": "major_media",
+      "sourceTitle": "Lani Pallister stuns Katie Ledecky with her first international 800 free loss at Pan Pacs"
+     },
+     {
+      "id": "E3",
+      "claim": "She currently holds the world records in both the 800m and 1500m freestyle and has won 23 World Championship long-course titles.",
+      "sourceUrl": "https://yale.edu",
+      "observedAt": "2026-05-18",
+      "sourceType": "official",
+      "sourceTitle": "Katie Ledecky – Yale 2026"
+     },
+     {
+      "id": "E4",
+      "claim": "Katie Ledecky was awarded the Presidential Medal of Freedom in May 2024 by President Joe Biden, and in May 2026 was awarded an Honorary Doctorate of Humane Letters from Yale University.",
+      "sourceUrl": "https://swimmingworldmagazine.com",
+      "observedAt": "2026-05-20",
+      "sourceType": "major_media",
+      "sourceTitle": "Katie Ledecky Given Honorary Degree by Yale University"
+     }
+    ],
+    "components": [
+     {
+      "key": "athletic_authority.role_importance",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "value": 92,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 97.45,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T23:02:25.233Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#athletic_authority.role_importance",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#athletic_authority.competition_level",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#athletic_authority.achievement_recency",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#athletic_authority.performance_results",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#athletic_authority.rankings_recognition",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#athletic_authority.national_international_status"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#athletic_authority.role_importance",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#athletic_authority.competition_level",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#athletic_authority.achievement_recency",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#athletic_authority.performance_results",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#athletic_authority.rankings_recognition",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#athletic_authority.national_international_status",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.audience_scale",
+    "direction": "neutral",
+    "rationale": {
+     "value": "Ledecky commands a substantial, stable macro-influencer audience of approximately 1.4 million followers across Instagram, Facebook, and X. While her raw numbers are smaller than multi-sport professional league superstars, she sits at the absolute top of the competitive swimming ecosystem. Her audience exhibits massive, concentrated spikes during Olympic years with a steady, mature baseline during off-years.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T23:02:25.233Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E6",
+      "E7",
+      "E8"
+     ],
+     "rationale": "Follower metrics on her primary channels are publicly visible, audited, and consistently documented across swimming-specific media.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Follower metrics on her primary channels are publicly visible, audited, and consistently documented across swimming-specific media.",
+    "citedEvidence": [
+     {
+      "id": "E6",
+      "claim": "Katie Ledecky possesses approximately 914K followers on Instagram as of mid-2026, representing macro-influencer scale within swimming.",
+      "sourceUrl": "https://zaver.one",
+      "observedAt": "2026-07-15",
+      "sourceType": "platform",
+      "sourceTitle": "Katie Ledecky on Instagram"
+     },
+     {
+      "id": "E7",
+      "claim": "She has approximately 192.7K followers on X (Twitter) and 289K followers on Facebook in 2026.",
+      "sourceUrl": "https://facebook.com",
+      "observedAt": "2026-09-12",
+      "sourceType": "platform",
+      "sourceTitle": "Katie Ledecky Official Facebook and SwimSwam Team Tracking"
+     },
+     {
+      "id": "E8",
+      "claim": "Ledecky gained over 213,000 followers on Instagram during the Paris 2024 Olympics, recording an exceptionally high post engagement rate of 23.13%.",
+      "sourceUrl": "https://metricool.com",
+      "observedAt": "2024-08-22",
+      "sourceType": "secondary",
+      "sourceTitle": "Social Media Soars for Ralph Lauren and Star Athletes"
+     }
+    ],
+    "components": [
+     {
+      "key": "audience_scale.audience_growth",
+      "value": 55,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "value": 68,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "value": 72,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 74.8,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T23:02:25.233Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#audience_scale.audience_growth",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#audience_scale.platform_breadth",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#audience_scale.cross_platform_effective_reach",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#audience_scale.sport_level_audience_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 4
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#audience_scale.audience_growth",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#audience_scale.platform_breadth",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.engagement_quality",
+    "direction": "unknown",
+    "rationale": {
+     "value": "Ledecky's engagement is highly organic and intensely authentic, with an exceptionally clean profile health score and negligible bot activity. Her typical post engagement rates are very healthy for a macro-creator, demonstrating a highly loyal and focused following. During major athletic spectacles, her engagement naturally skyrockets to viral, elite tiers.",
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-09-13T23:02:25.233Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E6",
+      "E8"
+     ],
+     "rationale": "Public engagement rates and independent auditor data are clear, though private performance metrics such as video retention, shares, and saves remain unavailable.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Public engagement rates and independent auditor data are clear, though private performance metrics such as video retention, shares, and saves remain unavailable.",
+    "citedEvidence": [
+     {
+      "id": "E6",
+      "claim": "Katie Ledecky possesses approximately 914K followers on Instagram as of mid-2026, representing macro-influencer scale within swimming.",
+      "sourceUrl": "https://zaver.one",
+      "observedAt": "2026-07-15",
+      "sourceType": "platform",
+      "sourceTitle": "Katie Ledecky on Instagram"
+     },
+     {
+      "id": "E8",
+      "claim": "Ledecky gained over 213,000 followers on Instagram during the Paris 2024 Olympics, recording an exceptionally high post engagement rate of 23.13%.",
+      "sourceUrl": "https://metricool.com",
+      "observedAt": "2024-08-22",
+      "sourceType": "secondary",
+      "sourceTitle": "Social Media Soars for Ralph Lauren and Star Athletes"
+     }
+    ],
+    "components": [
+     {
+      "key": "engagement_quality.video_retention",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "value": 68,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "value": 70,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 71.54,
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-09-13T23:02:25.233Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#engagement_quality.video_retention",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#engagement_quality.reach_efficiency",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#engagement_quality.story_efficiency",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#engagement_quality.shares_saves_quality",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#engagement_quality.audience_authenticity",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#engagement_quality.engagement_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 3,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#engagement_quality.video_retention",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#engagement_quality.reach_efficiency",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#engagement_quality.story_efficiency",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#engagement_quality.shares_saves_quality",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#engagement_quality.audience_authenticity",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#engagement_quality.engagement_percentile",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.cultural_relevance",
+    "direction": "strength",
+    "rationale": {
+     "value": "Ledecky enjoys immense cultural crossover appeal that reaches far beyond the swimming community into mainstream American society. She is a recipient of top-tier institutional honors, such as the Presidential Medal of Freedom and an honorary doctorate from Yale. Her memoir has established her as an inspiring voice for health and wellness advocacy.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T23:02:25.233Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E4",
+      "E5",
+      "E8"
+     ],
+     "rationale": "Her extensive coverage in elite mainstream news outlets and prestigious institutional recognitions are well-documented public facts.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her extensive coverage in elite mainstream news outlets and prestigious institutional recognitions are well-documented public facts.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Katie Ledecky has won 14 Olympic medals (9 gold, 4 silver, 1 bronze), making her the most decorated female U.S. Olympian in history across all sports.",
+      "sourceUrl": "https://olympics.com",
+      "observedAt": "2024-08-03",
+      "sourceType": "official",
+      "sourceTitle": "Katie Ledecky's Stats and Wins"
+     },
+     {
+      "id": "E2",
+      "claim": "Katie Ledecky won gold in the 1500m freestyle at the 2026 Pan Pacific Championships, but suffered her first-ever international defeats in the 800m and 400m freestyle events to Australia's Lani Pallister.",
+      "sourceUrl": "https://apnews.com",
+      "observedAt": "2026-08-17",
+      "sourceType": "major_media",
+      "sourceTitle": "Lani Pallister stuns Katie Ledecky with her first international 800 free loss at Pan Pacs"
+     },
+     {
+      "id": "E4",
+      "claim": "Katie Ledecky was awarded the Presidential Medal of Freedom in May 2024 by President Joe Biden, and in May 2026 was awarded an Honorary Doctorate of Humane Letters from Yale University.",
+      "sourceUrl": "https://swimmingworldmagazine.com",
+      "observedAt": "2026-05-20",
+      "sourceType": "major_media",
+      "sourceTitle": "Katie Ledecky Given Honorary Degree by Yale University"
+     },
+     {
+      "id": "E5",
+      "claim": "She published her New York Times best-selling memoir, 'Just Add Water: My Swimming Life,' in June 2024, disclosing her battle with Postural Orthostatic Tachycardia Syndrome (POTS).",
+      "sourceUrl": "https://swimmingworldmagazine.com",
+      "observedAt": "2024-06-17",
+      "sourceType": "major_media",
+      "sourceTitle": "Katie Ledecky Memoir Details Battle with POTS, Incredible Family Bonds"
+     },
+     {
+      "id": "E8",
+      "claim": "Ledecky gained over 213,000 followers on Instagram during the Paris 2024 Olympics, recording an exceptionally high post engagement rate of 23.13%.",
+      "sourceUrl": "https://metricool.com",
+      "observedAt": "2024-08-22",
+      "sourceType": "secondary",
+      "sourceTitle": "Social Media Soars for Ralph Lauren and Star Athletes"
+     }
+    ],
+    "components": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "value": 82,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "value": 80,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "value": 92,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 89.1,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T23:02:25.233Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#cultural_relevance.search_interest",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#cultural_relevance.social_conversation",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#cultural_relevance.media_source_quality",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#cultural_relevance.crossover_recognition",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#cultural_relevance.media_volume_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#cultural_relevance.search_interest",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#cultural_relevance.social_conversation",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#cultural_relevance.media_source_quality",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#cultural_relevance.crossover_recognition",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#cultural_relevance.media_volume_percentile",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.narrative_power",
+    "direction": "strength",
+    "rationale": {
+     "value": "Her narrative is incredibly deep, compelling, and structurally durable, focusing on the dichotomy of an 'unordinarily ordinary' persona paired with historic dominance. The public revelation of her POTS syndrome diagnosis has added an authentic layer of resilience that resonates powerfully with sports and lifestyle audiences alike. Her narrative authenticity is fully supported by her real-life actions, making her stories highly believable and commercial.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T23:02:25.233Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E10",
+      "E2",
+      "E4",
+      "E5",
+      "E9"
+     ],
+     "rationale": "Her narrative themes are thoroughly explored in her own best-selling memoir and consistently reinforced by media profiles over a 14-year period.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her narrative themes are thoroughly explored in her own best-selling memoir and consistently reinforced by media profiles over a 14-year period.",
+    "citedEvidence": [
+     {
+      "id": "E10",
+      "claim": "She deferred turning professional until 2018 to swim for Stanford University, prioritizing her education and graduating in 2020 with a Bachelor of Arts in psychology.",
+      "sourceUrl": "https://swimmingworldmagazine.com",
+      "observedAt": "2026-05-20",
+      "sourceType": "major_media",
+      "sourceTitle": "Katie Ledecky Given Honorary Degree by Yale University"
+     },
+     {
+      "id": "E2",
+      "claim": "Katie Ledecky won gold in the 1500m freestyle at the 2026 Pan Pacific Championships, but suffered her first-ever international defeats in the 800m and 400m freestyle events to Australia's Lani Pallister.",
+      "sourceUrl": "https://apnews.com",
+      "observedAt": "2026-08-17",
+      "sourceType": "major_media",
+      "sourceTitle": "Lani Pallister stuns Katie Ledecky with her first international 800 free loss at Pan Pacs"
+     },
+     {
+      "id": "E4",
+      "claim": "Katie Ledecky was awarded the Presidential Medal of Freedom in May 2024 by President Joe Biden, and in May 2026 was awarded an Honorary Doctorate of Humane Letters from Yale University.",
+      "sourceUrl": "https://swimmingworldmagazine.com",
+      "observedAt": "2026-05-20",
+      "sourceType": "major_media",
+      "sourceTitle": "Katie Ledecky Given Honorary Degree by Yale University"
+     },
+     {
+      "id": "E5",
+      "claim": "She published her New York Times best-selling memoir, 'Just Add Water: My Swimming Life,' in June 2024, disclosing her battle with Postural Orthostatic Tachycardia Syndrome (POTS).",
+      "sourceUrl": "https://swimmingworldmagazine.com",
+      "observedAt": "2024-06-17",
+      "sourceType": "major_media",
+      "sourceTitle": "Katie Ledecky Memoir Details Battle with POTS, Incredible Family Bonds"
+     },
+     {
+      "id": "E9",
+      "claim": "Her major commercial partnerships include a multi-million dollar contract with TYR Sport (reportedly worth $7 million) alongside Athleta, Visa, Panasonic, Hershey's, and Eggland's Best.",
+      "sourceUrl": "https://indiatimes.com",
+      "observedAt": "2025-10-12",
+      "sourceType": "major_media",
+      "sourceTitle": "Katie Ledecky Net Worth 2025: Earnings, endorsements, and record-breaking career"
+     }
+    ],
+    "components": [
+     {
+      "key": "narrative_power.durability",
+      "value": 96,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "value": 93,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "value": 92,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "value": 88,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 94.05,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T23:02:25.233Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#narrative_power.durability",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#narrative_power.story_depth",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#narrative_power.distinctiveness",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#narrative_power.media_resonance",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#narrative_power.evidence_authenticity",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#narrative_power.commercial_applicability"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#narrative_power.durability",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#narrative_power.story_depth",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#narrative_power.distinctiveness",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#narrative_power.media_resonance",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#narrative_power.evidence_authenticity",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#narrative_power.commercial_applicability",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.brand_fit",
+    "direction": "strength",
+    "rationale": {
+     "value": "Ledecky is a category-leading example of flawless brand safety and moral integrity, making her exceptionally attractive to premium blue-chip sponsors. Her identity as a humble, academically accomplished champion translates beautifully across fitness, apparel, and institutional campaigns. Her highly educated, family-centric audience is a prime demographic for high-trust entities.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T23:02:25.233Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E10",
+      "E5",
+      "E6",
+      "E9"
+     ],
+     "rationale": "A flawless long-term career track record with no negative incidents or controversies provides complete confidence in her pristine brand safety.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "A flawless long-term career track record with no negative incidents or controversies provides complete confidence in her pristine brand safety.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Katie Ledecky has won 14 Olympic medals (9 gold, 4 silver, 1 bronze), making her the most decorated female U.S. Olympian in history across all sports.",
+      "sourceUrl": "https://olympics.com",
+      "observedAt": "2024-08-03",
+      "sourceType": "official",
+      "sourceTitle": "Katie Ledecky's Stats and Wins"
+     },
+     {
+      "id": "E10",
+      "claim": "She deferred turning professional until 2018 to swim for Stanford University, prioritizing her education and graduating in 2020 with a Bachelor of Arts in psychology.",
+      "sourceUrl": "https://swimmingworldmagazine.com",
+      "observedAt": "2026-05-20",
+      "sourceType": "major_media",
+      "sourceTitle": "Katie Ledecky Given Honorary Degree by Yale University"
+     },
+     {
+      "id": "E5",
+      "claim": "She published her New York Times best-selling memoir, 'Just Add Water: My Swimming Life,' in June 2024, disclosing her battle with Postural Orthostatic Tachycardia Syndrome (POTS).",
+      "sourceUrl": "https://swimmingworldmagazine.com",
+      "observedAt": "2024-06-17",
+      "sourceType": "major_media",
+      "sourceTitle": "Katie Ledecky Memoir Details Battle with POTS, Incredible Family Bonds"
+     },
+     {
+      "id": "E6",
+      "claim": "Katie Ledecky possesses approximately 914K followers on Instagram as of mid-2026, representing macro-influencer scale within swimming.",
+      "sourceUrl": "https://zaver.one",
+      "observedAt": "2026-07-15",
+      "sourceType": "platform",
+      "sourceTitle": "Katie Ledecky on Instagram"
+     },
+     {
+      "id": "E9",
+      "claim": "Her major commercial partnerships include a multi-million dollar contract with TYR Sport (reportedly worth $7 million) alongside Athleta, Visa, Panasonic, Hershey's, and Eggland's Best.",
+      "sourceUrl": "https://indiatimes.com",
+      "observedAt": "2025-10-12",
+      "sourceType": "major_media",
+      "sourceTitle": "Katie Ledecky Net Worth 2025: Earnings, endorsements, and record-breaking career"
+     }
+    ],
+    "components": [
+     {
+      "key": "brand_fit.brand_safety",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "value": 78,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 89.75,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T23:02:25.233Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#brand_fit.brand_safety",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#brand_fit.category_breadth",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#brand_fit.content_versatility",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#brand_fit.geographic_relevance",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#brand_fit.audience_attractiveness",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#brand_fit.identity_values_coherence"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#brand_fit.brand_safety",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#brand_fit.category_breadth",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#brand_fit.content_versatility",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#brand_fit.geographic_relevance",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#brand_fit.audience_attractiveness",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#brand_fit.identity_values_coherence",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.commercial_proof",
+    "direction": "strength",
+    "rationale": {
+     "value": "She has established undeniable commercial proof, headlining major global campaigns and maintaining high-value contracts with sponsors like TYR Sport and Athleta. Her partnerships are characterized by long-term commitment, multi-year renewals, and premium pricing power. She has successfully parlayed her athletic success into a highly lucrative personal business empire.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T23:02:25.233Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E9"
+     ],
+     "rationale": "Her major multi-year partnerships with blue-chip brands like Visa and Athleta are publicly announced, and estimated contract values are verified by reputable business media.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her major multi-year partnerships with blue-chip brands like Visa and Athleta are publicly announced, and estimated contract values are verified by reputable business media.",
+    "citedEvidence": [
+     {
+      "id": "E9",
+      "claim": "Her major commercial partnerships include a multi-million dollar contract with TYR Sport (reportedly worth $7 million) alongside Athleta, Visa, Panasonic, Hershey's, and Eggland's Best.",
+      "sourceUrl": "https://indiatimes.com",
+      "observedAt": "2025-10-12",
+      "sourceType": "major_media",
+      "sourceTitle": "Katie Ledecky Net Worth 2025: Earnings, endorsements, and record-breaking career"
+     }
+    ],
+    "components": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "value": 88,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "value": 92,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 86.15,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T23:02:25.233Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#commercial_proof.brand_quality",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#commercial_proof.pricing_power",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#commercial_proof.deal_frequency",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#commercial_proof.renewals_repeat",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#commercial_proof.campaign_performance",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#commercial_proof.verified_commercial_value"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 1,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#commercial_proof.brand_quality",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#commercial_proof.pricing_power",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#commercial_proof.deal_frequency",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#commercial_proof.renewals_repeat",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#commercial_proof.campaign_performance",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#commercial_proof.verified_commercial_value",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.momentum",
+    "direction": "neutral",
+    "rationale": {
+     "value": "Her current momentum is stable and mature as she progresses along a highly structured, long-term pathway toward the LA 2028 Olympics. While her sporting trajectory is showing minor, natural signs of vulnerability to younger challengers, her commercial and media standing remains highly secure. She continues to launch new lines and participate in prominent institutional events that keep her name fresh.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T23:02:25.233Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E4",
+      "E5",
+      "E6",
+      "E8",
+      "E9"
+     ],
+     "rationale": "Her current training status, recent participation in the 2026 Pan Pacs, and active brand activations are fully documented by fresh sports and media reports.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her current training status, recent participation in the 2026 Pan Pacs, and active brand activations are fully documented by fresh sports and media reports.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Katie Ledecky has won 14 Olympic medals (9 gold, 4 silver, 1 bronze), making her the most decorated female U.S. Olympian in history across all sports.",
+      "sourceUrl": "https://olympics.com",
+      "observedAt": "2024-08-03",
+      "sourceType": "official",
+      "sourceTitle": "Katie Ledecky's Stats and Wins"
+     },
+     {
+      "id": "E2",
+      "claim": "Katie Ledecky won gold in the 1500m freestyle at the 2026 Pan Pacific Championships, but suffered her first-ever international defeats in the 800m and 400m freestyle events to Australia's Lani Pallister.",
+      "sourceUrl": "https://apnews.com",
+      "observedAt": "2026-08-17",
+      "sourceType": "major_media",
+      "sourceTitle": "Lani Pallister stuns Katie Ledecky with her first international 800 free loss at Pan Pacs"
+     },
+     {
+      "id": "E4",
+      "claim": "Katie Ledecky was awarded the Presidential Medal of Freedom in May 2024 by President Joe Biden, and in May 2026 was awarded an Honorary Doctorate of Humane Letters from Yale University.",
+      "sourceUrl": "https://swimmingworldmagazine.com",
+      "observedAt": "2026-05-20",
+      "sourceType": "major_media",
+      "sourceTitle": "Katie Ledecky Given Honorary Degree by Yale University"
+     },
+     {
+      "id": "E5",
+      "claim": "She published her New York Times best-selling memoir, 'Just Add Water: My Swimming Life,' in June 2024, disclosing her battle with Postural Orthostatic Tachycardia Syndrome (POTS).",
+      "sourceUrl": "https://swimmingworldmagazine.com",
+      "observedAt": "2024-06-17",
+      "sourceType": "major_media",
+      "sourceTitle": "Katie Ledecky Memoir Details Battle with POTS, Incredible Family Bonds"
+     },
+     {
+      "id": "E6",
+      "claim": "Katie Ledecky possesses approximately 914K followers on Instagram as of mid-2026, representing macro-influencer scale within swimming.",
+      "sourceUrl": "https://zaver.one",
+      "observedAt": "2026-07-15",
+      "sourceType": "platform",
+      "sourceTitle": "Katie Ledecky on Instagram"
+     },
+     {
+      "id": "E8",
+      "claim": "Ledecky gained over 213,000 followers on Instagram during the Paris 2024 Olympics, recording an exceptionally high post engagement rate of 23.13%.",
+      "sourceUrl": "https://metricool.com",
+      "observedAt": "2024-08-22",
+      "sourceType": "secondary",
+      "sourceTitle": "Social Media Soars for Ralph Lauren and Star Athletes"
+     },
+     {
+      "id": "E9",
+      "claim": "Her major commercial partnerships include a multi-million dollar contract with TYR Sport (reportedly worth $7 million) alongside Athleta, Visa, Panasonic, Hershey's, and Eggland's Best.",
+      "sourceUrl": "https://indiatimes.com",
+      "observedAt": "2025-10-12",
+      "sourceType": "major_media",
+      "sourceTitle": "Katie Ledecky Net Worth 2025: Earnings, endorsements, and record-breaking career"
+     }
+    ],
+    "components": [
+     {
+      "key": "momentum.audience_growth",
+      "value": 55,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "value": 82,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "value": 80,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "value": 78,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "value": 75,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 73.2,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T23:02:25.233Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#momentum.audience_growth",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#momentum.media_trajectory",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#momentum.athletic_trajectory",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#momentum.commercial_acceleration",
+      "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#momentum.search_social_trajectory"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#momentum.audience_growth",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#momentum.media_trajectory",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#momentum.athletic_trajectory",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#momentum.commercial_acceleration",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     },
+     {
+      "source": "mia",
+      "locator": "24e03829-ce1b-4c40-b01d-66dfda8f0ec2#momentum.search_social_trajectory",
+      "asOf": "2026-09-13T23:02:25.233Z"
+     }
+    ]
+   }
+  ],
+  "audienceTrajectory": {
+   "value": null,
+   "owner": "athlete_intelligence",
+   "asOf": "2026-09-25T17:52:39.463Z",
+   "evidenceClass": "MISSING",
+   "reason": "no growth measurement on any platform"
+  },
+  "commercialPosition": {
+   "closedDeals": {
+    "value": 0,
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-25T17:52:39.463Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "count_deals_at_earned_status"
+   },
+   "activeRelationships": {
+    "value": [],
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-25T17:52:39.463Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "distinct_brand_at_earned_status"
+   },
+   "demonstratedEconomics": {
+    "value": null,
+    "owner": "athlete_state",
+    "asOf": "2026-09-25T17:52:39.463Z",
+    "evidenceClass": "MISSING",
+    "reason": "no closed deal carries an amount"
+   },
+   "pricingEvidence": "none",
+   "pipeline": {
+    "value": {
+     "detected": 0,
+     "negotiating": 0,
+     "rejected": 0,
+     "accepted": 0,
+     "completed": 0
+    },
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-25T17:52:39.463Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "count_deals_by_status"
+   },
+   "inbound": []
+  },
+  "constraints": [],
+  "preferences": [],
+  "audience": [],
+  "contentPerformance": [],
+  "representation": null,
+  "dates": [],
+  "materialGaps": [
+   "Private social media metrics, including reel retention rates, shares, and content saves.",
+   "Direct return-on-investment and conversion analytics from her key commercial sponsors."
+  ],
+  "overallConfidence": "MEDIUM",
+  "sources": [
+   {
+    "owner": "marketability",
+    "present": true,
+    "asOf": "2026-09-13T23:02:25.233Z"
+   },
+   {
+    "owner": "athlete_intelligence",
+    "present": false,
+    "asOf": null
+   },
+   {
+    "owner": "athlete_state",
+    "present": true,
+    "asOf": "2026-09-25T17:52:39.463Z"
+   }
+  ]
+ },
+ "record": {
+  "evaluatorSpec": "opportunity-eval-spec/1.0.0",
+  "canonicalSha256": "6bcf91ab36b5fb7d970f8e2eac304fc82b9d7427b2ce00d35a54e21de3ae3c2d",
+  "manifest": {
+   "evaluatorSpec": "opportunity-eval-spec/1.0.0",
+   "promptDigest": "6bcf91ab36b5fb7d970f8e2eac304fc82b9d7427b2ce00d35a54e21de3ae3c2d"
+  },
+  "promptSha256": "a5dd72616677f75c33d0de56188bee1c99ed83393a892662be7b4180836e9ee6",
+  "athlete": {
+   "id": "fa6e6373-bb4c-4e4f-ace2-8285a9510391",
+   "name": "Katie Ledecky"
+  },
+  "stateAsOf": "2026-09-25T17:52:39.463Z",
+  "stateBlock": "Nomila's account of this athlete as of 2026-09-25T17:52:39.463Z (athlete-state/1.2.0).\nOverall confidence in this picture: MEDIUM.\n\nCite any line below by the path shown at its left.\n\nIDENTITY\n    identity.name                             Katie Ledecky\n    identity.sport                            swimming\n    identity.competitionContext               not recorded\n    identity.careerStatus                     active\n\nFINDINGS — marketability dimensions, each judged by M.I.A. and read here unchanged.\n  STRENGTH  measured, above the band\n  GAP       measured, below the band\n  NEUTRAL   MEASURED and unremarkable. We know; it is simply ordinary. This is NOT missing evidence.\n  UNKNOWN   evidence is genuinely insufficient — no score, or mostly imputed signals. A statement about\n            what Nomila has measured, never about the athlete.\n\n  Each finding may carry WHY M.I.A. concluded it and WHICH SOURCES it relied on. Read those as the\n  evaluator's interpretation and the evidence behind it — NOT as established fact about the athlete.\n\n    findings[mia.athletic_authority]          STRENGTH  score 97.45   HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Katie Ledecky possesses peerless sporting authority as the most decorated female swimmer in\n          history. Her status is anchored by sustained Olympic and world championship victories spanning\n          more than a decade. While she recently faced her first career international defeats in the 800m\n          and 400m freestyle at the 2026 Pan Pacific Championships, she remains at the absolute pinnacle\n          of her sport and leads the national team heading toward Los Angeles 2028.\n          confidence HIGH — Her vast list of gold medals, world records, and continuous participation in elite-level events are completely verified by official Olympic and national governing bodies.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  official · 2024-08-03  Katie Ledecky has won 14 Olympic medals (9 gold, 4 silver, 1 bronze), making her the most decorated female U.S. Olympian in history across all sports.\n              https://olympics.com\n          E2  major_media · 2026-08-17  Katie Ledecky won gold in the 1500m freestyle at the 2026 Pan Pacific Championships, but suffered her first-ever international defeats in the 800m and 400m freestyle events to Australia's Lani Pallister.\n              https://apnews.com\n          E3  official · 2026-05-18  She currently holds the world records in both the 800m and 1500m freestyle and has won 23 World Championship long-course titles.\n              https://yale.edu\n          E4  major_media · 2026-05-20  Katie Ledecky was awarded the Presidential Medal of Freedom in May 2024 by President Joe Biden, and in May 2026 was awarded an Honorary Doctorate of Humane Letters from Yale University.\n              https://swimmingworldmagazine.com\n        COMPONENTS  role_importance=95 [EVALUATED]  competition_level=100 [EVALUATED]  achievement_recency=92 [EVALUATED]  performance_results=95 [EVALUATED]  rankings_recognition=100 [EVALUATED]  national_international_status=100 [EVALUATED]\n\n    findings[mia.audience_scale]              NEUTRAL   score 74.8    HIGH    0/4 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Ledecky commands a substantial, stable macro-influencer audience of approximately 1.4 million\n          followers across Instagram, Facebook, and X. While her raw numbers are smaller than multi-sport\n          professional league superstars, she sits at the absolute top of the competitive swimming\n          ecosystem. Her audience exhibits massive, concentrated spikes during Olympic years with a\n          steady, mature baseline during off-years.\n          confidence HIGH — Follower metrics on her primary channels are publicly visible, audited, and consistently documented across swimming-specific media.\n        SOURCE EVIDENCE M.I.A. CITED\n          E6  platform · 2026-07-15  Katie Ledecky possesses approximately 914K followers on Instagram as of mid-2026, representing macro-influencer scale within swimming.\n              https://zaver.one\n          E7  platform · 2026-09-12  She has approximately 192.7K followers on X (Twitter) and 289K followers on Facebook in 2026.\n              https://facebook.com\n          E8  secondary · 2024-08-22  Ledecky gained over 213,000 followers on Instagram during the Paris 2024 Olympics, recording an exceptionally high post engagement rate of 23.13%.\n              https://metricool.com\n        COMPONENTS  audience_growth=55 [EVALUATED]  platform_breadth=68 [EVALUATED]  cross_platform_effective_reach=72 [EVALUATED]  sport_level_audience_percentile=95 [EVALUATED]\n\n    findings[mia.engagement_quality]          UNKNOWN   score 71.54   MEDIUM  3/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Ledecky's engagement is highly organic and intensely authentic, with an exceptionally clean\n          profile health score and negligible bot activity. Her typical post engagement rates are very\n          healthy for a macro-creator, demonstrating a highly loyal and focused following. During major\n          athletic spectacles, her engagement naturally skyrockets to viral, elite tiers.\n          confidence MEDIUM — Public engagement rates and independent auditor data are clear, though private performance metrics such as video retention, shares, and saves remain unavailable.\n        SOURCE EVIDENCE M.I.A. CITED\n          E6  platform · 2026-07-15  Katie Ledecky possesses approximately 914K followers on Instagram as of mid-2026, representing macro-influencer scale within swimming.\n              https://zaver.one\n          E8  secondary · 2024-08-22  Ledecky gained over 213,000 followers on Instagram during the Paris 2024 Olympics, recording an exceptionally high post engagement rate of 23.13%.\n              https://metricool.com\n        COMPONENTS  video_retention=50 [ASSUMED]  reach_efficiency=68 [EVALUATED]  story_efficiency=50 [ASSUMED]  shares_saves_quality=50 [ASSUMED]  audience_authenticity=85 [EVALUATED]  engagement_percentile=70 [EVALUATED]\n\n    findings[mia.cultural_relevance]          STRENGTH  score 89.1    HIGH    0/5 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Ledecky enjoys immense cultural crossover appeal that reaches far beyond the swimming community\n          into mainstream American society. She is a recipient of top-tier institutional honors, such as\n          the Presidential Medal of Freedom and an honorary doctorate from Yale. Her memoir has\n          established her as an inspiring voice for health and wellness advocacy.\n          confidence HIGH — Her extensive coverage in elite mainstream news outlets and prestigious institutional recognitions are well-documented public facts.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  official · 2024-08-03  Katie Ledecky has won 14 Olympic medals (9 gold, 4 silver, 1 bronze), making her the most decorated female U.S. Olympian in history across all sports.\n              https://olympics.com\n          E2  major_media · 2026-08-17  Katie Ledecky won gold in the 1500m freestyle at the 2026 Pan Pacific Championships, but suffered her first-ever international defeats in the 800m and 400m freestyle events to Australia's Lani Pallister.\n              https://apnews.com\n          E4  major_media · 2026-05-20  Katie Ledecky was awarded the Presidential Medal of Freedom in May 2024 by President Joe Biden, and in May 2026 was awarded an Honorary Doctorate of Humane Letters from Yale University.\n              https://swimmingworldmagazine.com\n          E5  major_media · 2024-06-17  She published her New York Times best-selling memoir, 'Just Add Water: My Swimming Life,' in June 2024, disclosing her battle with Postural Orthostatic Tachycardia Syndrome (POTS).\n              https://swimmingworldmagazine.com\n          E8  secondary · 2024-08-22  Ledecky gained over 213,000 followers on Instagram during the Paris 2024 Olympics, recording an exceptionally high post engagement rate of 23.13%.\n              https://metricool.com\n        COMPONENTS  search_interest=82 [EVALUATED]  social_conversation=80 [EVALUATED]  media_source_quality=98 [EVALUATED]  crossover_recognition=90 [EVALUATED]  media_volume_percentile=92 [EVALUATED]\n\n    findings[mia.narrative_power]             STRENGTH  score 94.05   HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Her narrative is incredibly deep, compelling, and structurally durable, focusing on the\n          dichotomy of an 'unordinarily ordinary' persona paired with historic dominance. The public\n          revelation of her POTS syndrome diagnosis has added an authentic layer of resilience that\n          resonates powerfully with sports and lifestyle audiences alike. Her narrative authenticity is\n          fully supported by her real-life actions, making her stories highly believable and commercial.\n          confidence HIGH — Her narrative themes are thoroughly explored in her own best-selling memoir and consistently reinforced by media profiles over a 14-year period.\n        SOURCE EVIDENCE M.I.A. CITED\n          E10  major_media · 2026-05-20  She deferred turning professional until 2018 to swim for Stanford University, prioritizing her education and graduating in 2020 with a Bachelor of Arts in psychology.\n              https://swimmingworldmagazine.com\n          E2  major_media · 2026-08-17  Katie Ledecky won gold in the 1500m freestyle at the 2026 Pan Pacific Championships, but suffered her first-ever international defeats in the 800m and 400m freestyle events to Australia's Lani Pallister.\n              https://apnews.com\n          E4  major_media · 2026-05-20  Katie Ledecky was awarded the Presidential Medal of Freedom in May 2024 by President Joe Biden, and in May 2026 was awarded an Honorary Doctorate of Humane Letters from Yale University.\n              https://swimmingworldmagazine.com\n          E5  major_media · 2024-06-17  She published her New York Times best-selling memoir, 'Just Add Water: My Swimming Life,' in June 2024, disclosing her battle with Postural Orthostatic Tachycardia Syndrome (POTS).\n              https://swimmingworldmagazine.com\n          E9  major_media · 2025-10-12  Her major commercial partnerships include a multi-million dollar contract with TYR Sport (reportedly worth $7 million) alongside Athleta, Visa, Panasonic, Hershey's, and Eggland's Best.\n              https://indiatimes.com\n        COMPONENTS  durability=96 [EVALUATED]  story_depth=95 [EVALUATED]  distinctiveness=93 [EVALUATED]  media_resonance=92 [EVALUATED]  evidence_authenticity=98 [EVALUATED]  commercial_applicability=88 [EVALUATED]\n\n    findings[mia.brand_fit]                   STRENGTH  score 89.75   HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Ledecky is a category-leading example of flawless brand safety and moral integrity, making her\n          exceptionally attractive to premium blue-chip sponsors. Her identity as a humble, academically\n          accomplished champion translates beautifully across fitness, apparel, and institutional\n          campaigns. Her highly educated, family-centric audience is a prime demographic for high-trust\n          entities.\n          confidence HIGH — A flawless long-term career track record with no negative incidents or controversies provides complete confidence in her pristine brand safety.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  official · 2024-08-03  Katie Ledecky has won 14 Olympic medals (9 gold, 4 silver, 1 bronze), making her the most decorated female U.S. Olympian in history across all sports.\n              https://olympics.com\n          E10  major_media · 2026-05-20  She deferred turning professional until 2018 to swim for Stanford University, prioritizing her education and graduating in 2020 with a Bachelor of Arts in psychology.\n              https://swimmingworldmagazine.com\n          E5  major_media · 2024-06-17  She published her New York Times best-selling memoir, 'Just Add Water: My Swimming Life,' in June 2024, disclosing her battle with Postural Orthostatic Tachycardia Syndrome (POTS).\n              https://swimmingworldmagazine.com\n          E6  platform · 2026-07-15  Katie Ledecky possesses approximately 914K followers on Instagram as of mid-2026, representing macro-influencer scale within swimming.\n              https://zaver.one\n          E9  major_media · 2025-10-12  Her major commercial partnerships include a multi-million dollar contract with TYR Sport (reportedly worth $7 million) alongside Athleta, Visa, Panasonic, Hershey's, and Eggland's Best.\n              https://indiatimes.com\n        COMPONENTS  brand_safety=100 [EVALUATED]  category_breadth=85 [EVALUATED]  content_versatility=78 [EVALUATED]  geographic_relevance=90 [EVALUATED]  audience_attractiveness=85 [EVALUATED]  identity_values_coherence=98 [EVALUATED]\n\n    findings[mia.commercial_proof]            STRENGTH  score 86.15   HIGH    1/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          She has established undeniable commercial proof, headlining major global campaigns and\n          maintaining high-value contracts with sponsors like TYR Sport and Athleta. Her partnerships are\n          characterized by long-term commitment, multi-year renewals, and premium pricing power. She has\n          successfully parlayed her athletic success into a highly lucrative personal business empire.\n          confidence HIGH — Her major multi-year partnerships with blue-chip brands like Visa and Athleta are publicly announced, and estimated contract values are verified by reputable business media.\n        SOURCE EVIDENCE M.I.A. CITED\n          E9  major_media · 2025-10-12  Her major commercial partnerships include a multi-million dollar contract with TYR Sport (reportedly worth $7 million) alongside Athleta, Visa, Panasonic, Hershey's, and Eggland's Best.\n              https://indiatimes.com\n        COMPONENTS  brand_quality=95 [EVALUATED]  pricing_power=88 [EVALUATED]  deal_frequency=85 [EVALUATED]  renewals_repeat=90 [EVALUATED]  campaign_performance=50 [ASSUMED]  verified_commercial_value=92 [EVALUATED]\n\n    findings[mia.momentum]                    NEUTRAL   score 73.2    HIGH    0/5 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Her current momentum is stable and mature as she progresses along a highly structured, long-term\n          pathway toward the LA 2028 Olympics. While her sporting trajectory is showing minor, natural\n          signs of vulnerability to younger challengers, her commercial and media standing remains highly\n          secure. She continues to launch new lines and participate in prominent institutional events that\n          keep her name fresh.\n          confidence HIGH — Her current training status, recent participation in the 2026 Pan Pacs, and active brand activations are fully documented by fresh sports and media reports.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  official · 2024-08-03  Katie Ledecky has won 14 Olympic medals (9 gold, 4 silver, 1 bronze), making her the most decorated female U.S. Olympian in history across all sports.\n              https://olympics.com\n          E2  major_media · 2026-08-17  Katie Ledecky won gold in the 1500m freestyle at the 2026 Pan Pacific Championships, but suffered her first-ever international defeats in the 800m and 400m freestyle events to Australia's Lani Pallister.\n              https://apnews.com\n          E4  major_media · 2026-05-20  Katie Ledecky was awarded the Presidential Medal of Freedom in May 2024 by President Joe Biden, and in May 2026 was awarded an Honorary Doctorate of Humane Letters from Yale University.\n              https://swimmingworldmagazine.com\n          E5  major_media · 2024-06-17  She published her New York Times best-selling memoir, 'Just Add Water: My Swimming Life,' in June 2024, disclosing her battle with Postural Orthostatic Tachycardia Syndrome (POTS).\n              https://swimmingworldmagazine.com\n          E6  platform · 2026-07-15  Katie Ledecky possesses approximately 914K followers on Instagram as of mid-2026, representing macro-influencer scale within swimming.\n              https://zaver.one\n          E8  secondary · 2024-08-22  Ledecky gained over 213,000 followers on Instagram during the Paris 2024 Olympics, recording an exceptionally high post engagement rate of 23.13%.\n              https://metricool.com\n          E9  major_media · 2025-10-12  Her major commercial partnerships include a multi-million dollar contract with TYR Sport (reportedly worth $7 million) alongside Athleta, Visa, Panasonic, Hershey's, and Eggland's Best.\n              https://indiatimes.com\n        COMPONENTS  audience_growth=55 [EVALUATED]  media_trajectory=82 [EVALUATED]  athletic_trajectory=80 [EVALUATED]  commercial_acceleration=78 [EVALUATED]  search_social_trajectory=75 [EVALUATED]\n\nAUDIENCE TRAJECTORY — follower growth only. It says nothing about athletic or commercial direction.\n    audienceTrajectory                        not known (no growth measurement on any platform)\n\nCOMMERCIAL POSITION — what the market has actually paid. Counted, never estimated.\n    commercialPosition.closedDeals            0  [measured · HIGH confidence]\n    commercialPosition.activeRelationships    []  [measured · HIGH confidence]\n    commercialPosition.demonstratedEconomics  not known (no closed deal carries an amount)\n    commercialPosition.pricingEvidence        none\n\nCOMMERCIAL PIPELINE — counts by state. `detected` means a brand made contact and nothing more.\n  Inbound interest is NOT a deal, NOT revenue and NOT an active relationship.\n    commercialPosition.pipeline               detected 0 · negotiating 0 · rejected 0 · accepted 0 · completed 0\n\nINBOUND SIGNALS — the athlete's own classified inbox, most recent first, capped. Demonstrated interest,\n  as classified by Nomila's inbox pipeline. A category is the classifier's label, not a commitment.\n    (no classified inbound threads)\n\nCONSTRAINTS — only what has been explicitly recorded as a bound on what the athlete can do.\n  An empty list means Nomila has recorded none. It does NOT mean none exist.\n    (none recorded)\n\nAUDIENCE — composition per platform, latest observation. Top buckets only.\n    (no audience composition is recorded on any platform)\n\nCONTENT PERFORMANCE — cadence and format, per platform, from Nomila's own measurement.\n    (no content performance is measured on any platform)\n\nREPRESENTATION & FLOORS — as the athlete stated them. A FLOOR IS NOT A MARKET VALUE; it is the least\n  she has said she would accept.\n    (the athlete has stated nothing about representation or floors)\n\nWHAT THE ATHLETE HAS SAID — their own words. A refusal bears on an opportunity; an ambition can generate one.\n  Never infer a preference or an ambition that is not listed here.\n  A stance is one of: wants | open | avoids | refuses — cite it in exactly that spelling.\n  A line marked ONBOARDING CHOICE was selected from a fixed set when the athlete joined. It is evidence of\n  intent at that time — she actually chose it — and it is NOT a current strategic objective.\n    (the athlete has stated nothing)\n\nDATES — recorded real-world dates that can bear on strategy, each with what it means. Only what is\n  populated; an empty list means none are recorded, not that none exist.\n    (none recorded)\n\nWHAT NOMILA CANNOT SEE — evidence we looked for and could not find. A research task, not a caveat.\n    materialGaps[0]                           Private social media metrics, including reel retention rates, shares, and content saves.\n    materialGaps[1]                           Direct return-on-investment and conversion analytics from her key commercial sponsors.\n\nSOURCES CONSULTED\n    marketability            present · as of 2026-09-13T23:02:25.233Z\n    athlete_intelligence     ABSENT\n    athlete_state            present · as of 2026-09-25T17:52:39.463Z",
+  "startedAt": "2026-09-25T17:52:39.807Z",
+  "latencyMs": 54336,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+   "promptTokens": 7343,
+   "outputTokens": 1897,
+   "thoughtTokens": 7552
+  },
+  "costUsd": 0.025825400000000002,
+  "rawText": "{\n  \"opportunities\": [\n    {\n      \"key\": \"unlock-private-engagement-metrics\",\n      \"kind\": \"UNLOCK\",\n      \"domain\": \"evidence\",\n      \"statement\": \"Connect Katie Ledecky's private social media accounts to access hidden engagement, retention, and audience trajectory metrics.\",\n      \"rationale\": \"Nomila currently flags her overall engagement quality as unknown because private performance data like reel retention and content saves are completely hidden. Unlocking these metrics will allow us to move past imputed baseline scores and accurately measure her off-year audience habits.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"findings[mia.engagement_quality]\",\n          \"how\": \"Confirms her engagement evaluation is restricted to medium confidence because private metrics like video retention, shares, and saves remain unavailable.\"\n        },\n        {\n          \"state_path\": \"materialGaps[0]\",\n          \"how\": \"Explicitly identifies private social media metrics as a key material gap in Nomila's current intelligence.\"\n        },\n        {\n          \"state_path\": \"audienceTrajectory\",\n          \"how\": \"Notes that her platform follower growth trajectories are completely unknown due to lack of measurement.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"high\",\n        \"claim\": \"Resolves key strategic blindspots, allowing Nomila to build a data-backed off-year content and posting plan.\"\n      },\n      \"feasibility\": {\n        \"level\": \"high\",\n        \"claim\": \"Only requires the athlete's team to grant secure, read-only authentication access to her primary social channels.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"unlock-active-commercial-contracts\",\n      \"kind\": \"UNLOCK\",\n      \"domain\": \"evidence\",\n      \"statement\": \"Integrate active multi-year commercial contract details into her Nomila profile to verify actual financial performance and sponsor ROI.\",\n      \"rationale\": \"Nomila's internal tracking currently registers zero closed deals and empty relationships, despite external evaluations confirming major multi-million dollar deals with TYR Sport, Visa, and Athleta. Logging these existing agreements will unlock our ability to analyze real economic value and track renewal windows.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"commercialPosition.closedDeals\",\n          \"how\": \"Shows that Nomila currently has zero closed deals recorded, representing a total lack of internal portfolio visibility.\"\n        },\n        {\n          \"state_path\": \"commercialPosition.activeRelationships\",\n          \"how\": \"Confirms no active corporate relationships are currently being tracked internally.\"\n        },\n        {\n          \"state_path\": \"findings[mia.commercial_proof]\",\n          \"how\": \"Cites external proof of high-value partnerships including TYR Sport, Athleta, and Visa that exist but are unmapped in her system.\"\n        },\n        {\n          \"state_path\": \"materialGaps[1]\",\n          \"how\": \"Identifies direct ROI and conversion analytics from key sponsors as a major missing piece of evidence.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"high\",\n        \"claim\": \"Enables precise valuation modeling, contract milestone alerts, and proactive planning for sponsor renewals ahead of LA 2028.\"\n      },\n      \"feasibility\": {\n        \"level\": \"medium\",\n        \"claim\": \"Requires her management team to share contract parameters and active brand alignment details.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"maintain-legacy-positioning-post-defeats\",\n      \"kind\": \"MAINTAIN\",\n      \"domain\": \"positioning\",\n      \"statement\": \"Protect and maintain her peerless historic legacy narrative by framing recent competitive defeats as lessons in late-career resilience.\",\n      \"rationale\": \"With Ledecky suffering her first-ever international defeats in the 800m and 400m freestyle at the 2026 Pan Pacs, her narrative of absolute dominance is vulnerable to rising younger challengers. We must actively protect her premium marketability by pivoting her public positioning from 'undefeated champion' to an inspiring, resilient veteran leader heading to LA 2028.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"findings[mia.athletic_authority]\",\n          \"how\": \"Highlights her historic status as the most decorated female swimmer, while documenting her first-ever international defeats in the 800m and 400m freestyle in 2026.\"\n        },\n        {\n          \"state_path\": \"findings[mia.momentum]\",\n          \"how\": \"Identifies natural athletic trajectory vulnerability to younger challengers as she progresses toward the LA 2028 Olympics.\"\n        },\n        {\n          \"state_path\": \"findings[mia.narrative_power]\",\n          \"how\": \"Supports this transition by highlighting her existing 'unordinarily ordinary' persona and established resilience themes.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"high\",\n        \"claim\": \"Insulates her premium commercial value, sponsorship appeal, and institutional standing from natural, late-career competitive volatility.\"\n      },\n      \"feasibility\": {\n        \"level\": \"high\",\n        \"claim\": \"Aligns perfectly with her mature public persona and requires no drastic behavioral changes, utilizing existing PR channels.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"amplify-health-and-wellness-advocacy\",\n      \"kind\": \"AMPLIFY\",\n      \"domain\": \"impact\",\n      \"statement\": \"Amplify her public advocacy around POTS and chronic health resilience to expand her cultural footprint beyond competitive swimming.\",\n      \"rationale\": \"Ledecky's disclosure of her POTS diagnosis in her NYT best-selling memoir is already a highly successful, authentic narrative pillar that drives immense cultural relevance. Amplifying this working strength into active community impact or health-focused partnerships will expand her long-term cultural reach.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"findings[mia.cultural_relevance]\",\n          \"how\": \"Notes her NYT best-selling memoir 'Just Add Water' established her as an inspiring voice for health and wellness advocacy.\"\n        },\n        {\n          \"state_path\": \"findings[mia.narrative_power]\",\n          \"how\": \"Shows her POTS disclosure created a deeply authentic layer of resilience that resonates powerfully across diverse, non-sports demographics.\"\n        },\n        {\n          \"state_path\": \"findings[mia.brand_fit]\",\n          \"how\": \"Points to her high-trust appeal and highly educated, family-centric audience which is ideal for wellness and health-related impact initiatives.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"medium\",\n        \"claim\": \"Establishes a legacy footprint in health advocacy that extends her relevance and value long past her active swimming career.\"\n      },\n      \"feasibility\": {\n        \"level\": \"medium\",\n        \"claim\": \"Requires curated alignments with health organizations and community advocacy, which must be carefully balanced against her training schedule.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    }\n  ],\n  \"notes\": [\n    \"audience: We did not propose active audience growth initiatives because Nomila currently lacks baseline performance metrics or platform trajectory data to track growth effectively.\",\n    \"content: No content creation opportunities are identified because her content cadence, formats, and performance across platforms remain unmeasured by Nomila.\",\n    \"athletic: No athletic-specific performance opportunities are identified because Ledecky's athletic coaching, training, and competition schedules are managed natively by elite national governing bodies.\",\n    \"commercial: No new commercial deals are proposed because her active commercial portfolio is already exceptionally strong and her true capacity for new sponsorships cannot be verified until existing agreements are logged.\",\n    \"relationships: No relationship introductions are proposed as her existing personal and corporate network is currently undocumented in her profile.\",\n    \"owned_venture: No owned venture opportunities are presented because Ledecky has not stated any entrepreneurial ambitions or business preferences.\",\n    \"career: No post-retirement or media career transition opportunities are formulated because Ledecky remains an active elite athlete focused entirely on her training cycle for LA 2028.\"\n  ]\n}",
+  "parsed": {
+   "opportunities": [
+    {
+     "key": "unlock-private-engagement-metrics",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": "Connect Katie Ledecky's private social media accounts to access hidden engagement, retention, and audience trajectory metrics.",
+     "rationale": "Nomila currently flags her overall engagement quality as unknown because private performance data like reel retention and content saves are completely hidden. Unlocking these metrics will allow us to move past imputed baseline scores and accurately measure her off-year audience habits.",
+     "rests_on": [
+      {
+       "state_path": "findings[mia.engagement_quality]",
+       "how": "Confirms her engagement evaluation is restricted to medium confidence because private metrics like video retention, shares, and saves remain unavailable."
+      },
+      {
+       "state_path": "materialGaps[0]",
+       "how": "Explicitly identifies private social media metrics as a key material gap in Nomila's current intelligence."
+      },
+      {
+       "state_path": "audienceTrajectory",
+       "how": "Notes that her platform follower growth trajectories are completely unknown due to lack of measurement."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Resolves key strategic blindspots, allowing Nomila to build a data-backed off-year content and posting plan."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Only requires the athlete's team to grant secure, read-only authentication access to her primary social channels."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "unlock-active-commercial-contracts",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": "Integrate active multi-year commercial contract details into her Nomila profile to verify actual financial performance and sponsor ROI.",
+     "rationale": "Nomila's internal tracking currently registers zero closed deals and empty relationships, despite external evaluations confirming major multi-million dollar deals with TYR Sport, Visa, and Athleta. Logging these existing agreements will unlock our ability to analyze real economic value and track renewal windows.",
+     "rests_on": [
+      {
+       "state_path": "commercialPosition.closedDeals",
+       "how": "Shows that Nomila currently has zero closed deals recorded, representing a total lack of internal portfolio visibility."
+      },
+      {
+       "state_path": "commercialPosition.activeRelationships",
+       "how": "Confirms no active corporate relationships are currently being tracked internally."
+      },
+      {
+       "state_path": "findings[mia.commercial_proof]",
+       "how": "Cites external proof of high-value partnerships including TYR Sport, Athleta, and Visa that exist but are unmapped in her system."
+      },
+      {
+       "state_path": "materialGaps[1]",
+       "how": "Identifies direct ROI and conversion analytics from key sponsors as a major missing piece of evidence."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Enables precise valuation modeling, contract milestone alerts, and proactive planning for sponsor renewals ahead of LA 2028."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires her management team to share contract parameters and active brand alignment details."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "maintain-legacy-positioning-post-defeats",
+     "kind": "MAINTAIN",
+     "domain": "positioning",
+     "statement": "Protect and maintain her peerless historic legacy narrative by framing recent competitive defeats as lessons in late-career resilience.",
+     "rationale": "With Ledecky suffering her first-ever international defeats in the 800m and 400m freestyle at the 2026 Pan Pacs, her narrative of absolute dominance is vulnerable to rising younger challengers. We must actively protect her premium marketability by pivoting her public positioning from 'undefeated champion' to an inspiring, resilient veteran leader heading to LA 2028.",
+     "rests_on": [
+      {
+       "state_path": "findings[mia.athletic_authority]",
+       "how": "Highlights her historic status as the most decorated female swimmer, while documenting her first-ever international defeats in the 800m and 400m freestyle in 2026."
+      },
+      {
+       "state_path": "findings[mia.momentum]",
+       "how": "Identifies natural athletic trajectory vulnerability to younger challengers as she progresses toward the LA 2028 Olympics."
+      },
+      {
+       "state_path": "findings[mia.narrative_power]",
+       "how": "Supports this transition by highlighting her existing 'unordinarily ordinary' persona and established resilience themes."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Insulates her premium commercial value, sponsorship appeal, and institutional standing from natural, late-career competitive volatility."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Aligns perfectly with her mature public persona and requires no drastic behavioral changes, utilizing existing PR channels."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "amplify-health-and-wellness-advocacy",
+     "kind": "AMPLIFY",
+     "domain": "impact",
+     "statement": "Amplify her public advocacy around POTS and chronic health resilience to expand her cultural footprint beyond competitive swimming.",
+     "rationale": "Ledecky's disclosure of her POTS diagnosis in her NYT best-selling memoir is already a highly successful, authentic narrative pillar that drives immense cultural relevance. Amplifying this working strength into active community impact or health-focused partnerships will expand her long-term cultural reach.",
+     "rests_on": [
+      {
+       "state_path": "findings[mia.cultural_relevance]",
+       "how": "Notes her NYT best-selling memoir 'Just Add Water' established her as an inspiring voice for health and wellness advocacy."
+      },
+      {
+       "state_path": "findings[mia.narrative_power]",
+       "how": "Shows her POTS disclosure created a deeply authentic layer of resilience that resonates powerfully across diverse, non-sports demographics."
+      },
+      {
+       "state_path": "findings[mia.brand_fit]",
+       "how": "Points to her high-trust appeal and highly educated, family-centric audience which is ideal for wellness and health-related impact initiatives."
+      }
+     ],
+     "impact": {
+      "level": "medium",
+      "claim": "Establishes a legacy footprint in health advocacy that extends her relevance and value long past her active swimming career."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires curated alignments with health organizations and community advocacy, which must be carefully balanced against her training schedule."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [
+    "audience: We did not propose active audience growth initiatives because Nomila currently lacks baseline performance metrics or platform trajectory data to track growth effectively.",
+    "content: No content creation opportunities are identified because her content cadence, formats, and performance across platforms remain unmeasured by Nomila.",
+    "athletic: No athletic-specific performance opportunities are identified because Ledecky's athletic coaching, training, and competition schedules are managed natively by elite national governing bodies.",
+    "commercial: No new commercial deals are proposed because her active commercial portfolio is already exceptionally strong and her true capacity for new sponsorships cannot be verified until existing agreements are logged.",
+    "relationships: No relationship introductions are proposed as her existing personal and corporate network is currently undocumented in her profile.",
+    "owned_venture: No owned venture opportunities are presented because Ledecky has not stated any entrepreneurial ambitions or business preferences.",
+    "career: No post-retirement or media career transition opportunities are formulated because Ledecky remains an active elite athlete focused entirely on her training cycle for LA 2028."
+   ]
+  },
+  "structuralProblems": [],
+  "groundingProblems": [],
+  "citations": [
+   {
+    "index": 0,
+    "key": "unlock-private-engagement-metrics",
+    "statePath": "findings[mia.engagement_quality]",
+    "resolved": true
+   },
+   {
+    "index": 0,
+    "key": "unlock-private-engagement-metrics",
+    "statePath": "materialGaps[0]",
+    "resolved": true
+   },
+   {
+    "index": 0,
+    "key": "unlock-private-engagement-metrics",
+    "statePath": "audienceTrajectory",
+    "resolved": true
+   },
+   {
+    "index": 1,
+    "key": "unlock-active-commercial-contracts",
+    "statePath": "commercialPosition.closedDeals",
+    "resolved": true
+   },
+   {
+    "index": 1,
+    "key": "unlock-active-commercial-contracts",
+    "statePath": "commercialPosition.activeRelationships",
+    "resolved": true
+   },
+   {
+    "index": 1,
+    "key": "unlock-active-commercial-contracts",
+    "statePath": "findings[mia.commercial_proof]",
+    "resolved": true
+   },
+   {
+    "index": 1,
+    "key": "unlock-active-commercial-contracts",
+    "statePath": "materialGaps[1]",
+    "resolved": true
+   },
+   {
+    "index": 2,
+    "key": "maintain-legacy-positioning-post-defeats",
+    "statePath": "findings[mia.athletic_authority]",
+    "resolved": true
+   },
+   {
+    "index": 2,
+    "key": "maintain-legacy-positioning-post-defeats",
+    "statePath": "findings[mia.momentum]",
+    "resolved": true
+   },
+   {
+    "index": 2,
+    "key": "maintain-legacy-positioning-post-defeats",
+    "statePath": "findings[mia.narrative_power]",
+    "resolved": true
+   },
+   {
+    "index": 3,
+    "key": "amplify-health-and-wellness-advocacy",
+    "statePath": "findings[mia.cultural_relevance]",
+    "resolved": true
+   },
+   {
+    "index": 3,
+    "key": "amplify-health-and-wellness-advocacy",
+    "statePath": "findings[mia.narrative_power]",
+    "resolved": true
+   },
+   {
+    "index": 3,
+    "key": "amplify-health-and-wellness-advocacy",
+    "statePath": "findings[mia.brand_fit]",
+    "resolved": true
+   }
+  ],
+  "map": {
+   "athleteId": "fa6e6373-bb4c-4e4f-ace2-8285a9510391",
+   "asOf": "2026-09-25T17:53:34.143Z",
+   "version": "opportunity-map/1.0.0",
+   "specVersion": "opportunity-eval-spec/1.0.0",
+   "stateAsOf": "2026-09-25T17:52:39.463Z",
+   "opportunities": [
+    {
+     "key": "unlock-private-engagement-metrics",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": {
+      "value": "Connect Katie Ledecky's private social media accounts to access hidden engagement, retention, and audience trajectory metrics.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T17:52:39.463Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "findings[mia.engagement_quality]",
+       "materialGaps[0]",
+       "audienceTrajectory"
+      ],
+      "rationale": "Nomila currently flags her overall engagement quality as unknown because private performance data like reel retention and content saves are completely hidden. Unlocking these metrics will allow us to move past imputed baseline scores and accurately measure her off-year audience habits.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "findings[mia.engagement_quality]",
+       "how": "Confirms her engagement evaluation is restricted to medium confidence because private metrics like video retention, shares, and saves remain unavailable."
+      },
+      {
+       "statePath": "materialGaps[0]",
+       "how": "Explicitly identifies private social media metrics as a key material gap in Nomila's current intelligence."
+      },
+      {
+       "statePath": "audienceTrajectory",
+       "how": "Notes that her platform follower growth trajectories are completely unknown due to lack of measurement."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Resolves key strategic blindspots, allowing Nomila to build a data-backed off-year content and posting plan."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Only requires the athlete's team to grant secure, read-only authentication access to her primary social channels."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "unlock-active-commercial-contracts",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": {
+      "value": "Integrate active multi-year commercial contract details into her Nomila profile to verify actual financial performance and sponsor ROI.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T17:52:39.463Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "commercialPosition.closedDeals",
+       "commercialPosition.activeRelationships",
+       "findings[mia.commercial_proof]",
+       "materialGaps[1]"
+      ],
+      "rationale": "Nomila's internal tracking currently registers zero closed deals and empty relationships, despite external evaluations confirming major multi-million dollar deals with TYR Sport, Visa, and Athleta. Logging these existing agreements will unlock our ability to analyze real economic value and track renewal windows.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "commercialPosition.closedDeals",
+       "how": "Shows that Nomila currently has zero closed deals recorded, representing a total lack of internal portfolio visibility."
+      },
+      {
+       "statePath": "commercialPosition.activeRelationships",
+       "how": "Confirms no active corporate relationships are currently being tracked internally."
+      },
+      {
+       "statePath": "findings[mia.commercial_proof]",
+       "how": "Cites external proof of high-value partnerships including TYR Sport, Athleta, and Visa that exist but are unmapped in her system."
+      },
+      {
+       "statePath": "materialGaps[1]",
+       "how": "Identifies direct ROI and conversion analytics from key sponsors as a major missing piece of evidence."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Enables precise valuation modeling, contract milestone alerts, and proactive planning for sponsor renewals ahead of LA 2028."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires her management team to share contract parameters and active brand alignment details."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "maintain-legacy-positioning-post-defeats",
+     "kind": "MAINTAIN",
+     "domain": "positioning",
+     "statement": {
+      "value": "Protect and maintain her peerless historic legacy narrative by framing recent competitive defeats as lessons in late-career resilience.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T17:52:39.463Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "findings[mia.athletic_authority]",
+       "findings[mia.momentum]",
+       "findings[mia.narrative_power]"
+      ],
+      "rationale": "With Ledecky suffering her first-ever international defeats in the 800m and 400m freestyle at the 2026 Pan Pacs, her narrative of absolute dominance is vulnerable to rising younger challengers. We must actively protect her premium marketability by pivoting her public positioning from 'undefeated champion' to an inspiring, resilient veteran leader heading to LA 2028.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "findings[mia.athletic_authority]",
+       "how": "Highlights her historic status as the most decorated female swimmer, while documenting her first-ever international defeats in the 800m and 400m freestyle in 2026."
+      },
+      {
+       "statePath": "findings[mia.momentum]",
+       "how": "Identifies natural athletic trajectory vulnerability to younger challengers as she progresses toward the LA 2028 Olympics."
+      },
+      {
+       "statePath": "findings[mia.narrative_power]",
+       "how": "Supports this transition by highlighting her existing 'unordinarily ordinary' persona and established resilience themes."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Insulates her premium commercial value, sponsorship appeal, and institutional standing from natural, late-career competitive volatility."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Aligns perfectly with her mature public persona and requires no drastic behavioral changes, utilizing existing PR channels."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "amplify-health-and-wellness-advocacy",
+     "kind": "AMPLIFY",
+     "domain": "impact",
+     "statement": {
+      "value": "Amplify her public advocacy around POTS and chronic health resilience to expand her cultural footprint beyond competitive swimming.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T17:52:39.463Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "findings[mia.cultural_relevance]",
+       "findings[mia.narrative_power]",
+       "findings[mia.brand_fit]"
+      ],
+      "rationale": "Ledecky's disclosure of her POTS diagnosis in her NYT best-selling memoir is already a highly successful, authentic narrative pillar that drives immense cultural relevance. Amplifying this working strength into active community impact or health-focused partnerships will expand her long-term cultural reach.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "findings[mia.cultural_relevance]",
+       "how": "Notes her NYT best-selling memoir 'Just Add Water' established her as an inspiring voice for health and wellness advocacy."
+      },
+      {
+       "statePath": "findings[mia.narrative_power]",
+       "how": "Shows her POTS disclosure created a deeply authentic layer of resilience that resonates powerfully across diverse, non-sports demographics."
+      },
+      {
+       "statePath": "findings[mia.brand_fit]",
+       "how": "Points to her high-trust appeal and highly educated, family-centric audience which is ideal for wellness and health-related impact initiatives."
+      }
+     ],
+     "impact": {
+      "level": "medium",
+      "claim": "Establishes a legacy footprint in health advocacy that extends her relevance and value long past her active swimming career."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires curated alignments with health organizations and community advocacy, which must be carefully balanced against her training schedule."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [
+    "audience: We did not propose active audience growth initiatives because Nomila currently lacks baseline performance metrics or platform trajectory data to track growth effectively.",
+    "content: No content creation opportunities are identified because her content cadence, formats, and performance across platforms remain unmeasured by Nomila.",
+    "athletic: No athletic-specific performance opportunities are identified because Ledecky's athletic coaching, training, and competition schedules are managed natively by elite national governing bodies.",
+    "commercial: No new commercial deals are proposed because her active commercial portfolio is already exceptionally strong and her true capacity for new sponsorships cannot be verified until existing agreements are logged.",
+    "relationships: No relationship introductions are proposed as her existing personal and corporate network is currently undocumented in her profile.",
+    "owned_venture: No owned venture opportunities are presented because Ledecky has not stated any entrepreneurial ambitions or business preferences.",
+    "career: No post-retirement or media career transition opportunities are formulated because Ledecky remains an active elite athlete focused entirely on her training cycle for LA 2028."
+   ],
+   "inputs": [
+    {
+     "kind": "athlete_state",
+     "version": "athlete-state/1.2.0",
+     "present": true
+    },
+    {
+     "kind": "strategy_intelligence",
+     "version": null,
+     "present": false
+    },
+    {
+     "kind": "targeted_research",
+     "version": null,
+     "present": false
+    }
+   ],
+   "overallConfidence": "MEDIUM"
+  }
+ }
+}

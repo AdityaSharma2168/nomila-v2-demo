@@ -1,0 +1,648 @@
+{
+  "specVersion": "blind-eval-spec/0.2",
+  "provider": "gemini",
+  "athlete": {
+    "key": "riya-mehta",
+    "name": "Riya Mehta",
+    "sport": "Gymnastics"
+  },
+  "parseError": null,
+  "dimensionAssessments": {
+    "athletic_authority": {
+      "prose": "The evidence shows that you are actively competing in USA Gymnastics Level 7 (Junior A) with solid meet results. While this demonstrates personal athletic commitment and steady participation in a structured regional league, it remains an amateur development level that does not carry professional, elite, or national athletic authority. Your current competitive focus is on local and regional club gymnastics.",
+      "confidence": "HIGH",
+      "confidenceReason": "Meet score sheets from 2025 and 2026 definitively confirm your active level and performance standing."
+    },
+    "audience_scale": {
+      "prose": "There is currently no public social media data or audience metrics available for you across any major platforms. Without a public digital footprint, your audience scale cannot be assessed, which is typical for a young junior club athlete who has not built a public-facing personal brand.",
+      "confidence": "LOW",
+      "confidenceReason": "The complete absence of public-facing profiles makes any audience measurement impossible."
+    },
+    "engagement_quality": {
+      "prose": "Because there are no active, public social media channels associated with your athletic career, your audience engagement quality cannot be observed. High-value interactions, reach efficiency, and video retention remain completely unmeasured as a result.",
+      "confidence": "LOW",
+      "confidenceReason": "No social data is available to assess or verify engagement behavior."
+    },
+    "cultural_relevance": {
+      "prose": "Your presence in public media is limited strictly to local gymnastics meet databases, with no coverage in mainstream or specialized sports outlets. You do not currently generate public discussion or search interest outside of your immediate gymnastics circle, leaving your broader cultural footprint essentially absent.",
+      "confidence": "HIGH",
+      "confidenceReason": "Thorough search of major and secondary sources yields zero cultural or mainstream media footprint."
+    },
+    "narrative_power": {
+      "prose": "Your public identity is defined purely by your status as a local club gymnast with no commercially framed personal story or brand narrative. While your participation in the sport is authentic, there is no public-facing angle or backstory being leveraged to connect with a wider audience or support marketing campaigns.",
+      "confidence": "HIGH",
+      "confidenceReason": "The lack of any public-facing bio, media interviews, or personal branding confirms a neutral narrative profile."
+    },
+    "brand_fit": {
+      "prose": "From a brand perspective, your digital safety is outstandingly high because your minimal online footprint is entirely clean and uncontroversial. However, because you do not project a distinct public persona, content style, or target demographic, your commercial fit is currently limited to highly local, community-focused associations.",
+      "confidence": "HIGH",
+      "confidenceReason": "Your database-only footprint guarantees safety while highlighting a lack of commercial versatility or target audience data."
+    },
+    "commercial_proof": {
+      "prose": "There is no evidence of past or present commercial partnerships, sponsorships, or brand campaigns in your profile. You have not yet entered the commercial marketplace, which means your strategic value and pricing power remain entirely untested.",
+      "confidence": "HIGH",
+      "confidenceReason": "Public and commercial records confirm a total absence of corporate sponsorships or endorsement deals."
+    },
+    "momentum": {
+      "prose": "Your momentum is characterized by steady, active progress as an amateur competitor in your local gymnastics circuit. While you are keeping up your training and competition, you do not have any rising trajectory in public visibility, media attention, or commercial demand.",
+      "confidence": "HIGH",
+      "confidenceReason": "Recent 2026 competition entries show ongoing sporting activity, contrasted by completely flat media and commercial indicators."
+    }
+  },
+  "overallConfidence": {
+    "level": "HIGH",
+    "explanation": "We have an extremely high level of confidence in this marketability assessment because the athlete is verified to be a local youth club gymnast with no public-facing brand, social media profiles, or commercial history. While the audience and engagement metrics themselves are missing, this lack of data is a definitive characteristic of her marketability profile, and better information would only confirm her status as a non-commercial amateur athlete."
+  },
+  "identityConfidence": "HIGH",
+  "summary": "Riya Mehta is an active amateur junior gymnast competing at USA Gymnastics (USAG) Level 7 with SGA Gymnastics. Her athletic standing is defined by solid, respectable performances in regional youth competitions—including an All-Around score of 37.175 at the 2025 Hilton Head Island Invitational and a peak of 38.050—but she does not possess national team, collegiate, or international elite standing. Commercially, she has no public-facing presence: there are no active, verified public social media profiles or audience metrics on Instagram, TikTok, YouTube, or X. Consequently, her cultural relevance and media footprint are virtually non-existent, limited entirely to local competition database registries. She has no articulated public narrative, personal branding, or history of commercial partnerships, rendering her current commercial proof and pricing power completely absent. While her digital footprint is exceptionally safe and free of controversy, her marketability is strictly confined to a hyper-local youth community. Major missing information includes all social media metrics and brand alignment data, resulting in a profile that has zero commercial readiness at this stage.",
+  "summaryWords": 168,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Riya Mehta competed as a Level 7 Junior A gymnast for SGA Gymnastics at the Hilton Head Island Invitational in January 2025, scoring 37.175 in the All-Around.",
+      "sourceTitle": "2025 Hilton Head Island Invitational Results",
+      "sourceUrl": "https://competemymeet.com",
+      "sourceType": "secondary",
+      "date": "2025-01-16"
+    },
+    {
+      "id": "E2",
+      "claim": "Riya Mehta is listed as an active Level 7 gymnast for SGA Gymnastics in competitive schedule documents from February 2026.",
+      "sourceTitle": "SGA Gymnastics Competition Schedule Sheet",
+      "sourceUrl": "https://squarespace.com",
+      "sourceType": "secondary",
+      "date": "2026-02-01"
+    },
+    {
+      "id": "E3",
+      "claim": "Meet Scores Online lists a profile for Riya Mehta competing with SGA Gymnastics with scores in Vault (9.500) and an All-Around high of 38.050.",
+      "sourceTitle": "Meet Scores Online - Riya Mehta Profile",
+      "sourceUrl": "https://meetscoresonline.com",
+      "sourceType": "secondary",
+      "date": "2026-02-01"
+    },
+    {
+      "id": "E4",
+      "claim": "A comprehensive public search across Google, Instagram, YouTube, TikTok, and X shows no active public athlete pages or commercial presence for gymnast Riya Mehta.",
+      "sourceTitle": "Google Search and Social Media Verification",
+      "sourceUrl": "https://google.com",
+      "sourceType": "secondary",
+      "date": "2026-09-14"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 35,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "rationale": "Riya Mehta competes at USAG Level 7, which represents a regional/developmental amateur youth tier well below elite or collegiate levels.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 40,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3"
+      ],
+      "rationale": "She achieves solid, respectable scores at her local level, with an All-Around high of 38.050, but these results are not globally or nationally distinguished.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 15,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3"
+      ],
+      "rationale": "Her rankings are confined to local meet sessions without any national or global athletic standing.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 0,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "There is no record of national or international team representation.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 10,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2"
+      ],
+      "rationale": "She acts as an individual club gymnast with no documented leadership role or team-wide central importance.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 25,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "While her athletic participation is active as of 2026, her local junior achievements hold no commercial weight.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "No verified public social media presence exists to evaluate reach metrics.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Audience size comparisons are impossible to compute due to lack of public social channels.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "No longitudinal audience tracking is available.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "No active platforms are registered or publicly visible for this athlete.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Engagement data is entirely unavailable due to the absence of public social profiles.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "No public social content exists to assess outreach capability.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "High-value social interactions cannot be measured.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Video performance metrics do not exist.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Ephemeral story performance metrics are completely unavailable.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Audience authenticity cannot be validated for non-existent profiles.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 5,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Her public media footprint is virtually non-existent, limited only to automated local competition databases.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 5,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "There is no coverage in regional, national, or specialized major gymnastics media.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 5,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Public search volume and curiosity are negligible.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 5,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "She generates no public or social conversation outside of immediate family and club circles.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 5,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "She is entirely unrecognized outside the niche of local junior gymnastics.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 10,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "She has no distinct or articulated commercial narrative in the public domain.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 10,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "There is no accessible backstory or dimensional branding beyond standard amateur participation.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 15,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Her basic athletic standing as a local club gymnast is authentic, but there is no commercial narrative to substantiate.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 5,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "The media does not respond to or amplify any personal narrative.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 10,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Her story is not commercially framed and has no natural campaign fit at this stage.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 15,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Without an established public persona, her marketability lacks long-term structural viability.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 10,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Without a public platform, she cannot credibly align with a broad spectrum of commercial categories.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Her digital footprint is entirely safe, consisting only of official sports databases, presenting no reputational risks.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Audience demographics and commercial value cannot be verified.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 15,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "No personal identity, values, or public persona are projected or documented.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "No content exists to evaluate creative versatility.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 20,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Her geographic relevance is strictly hyper-local to her club's immediate community.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 0,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "There is no public or private record of paid commercial partnerships or sponsorships.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 0,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "There are no documented brand relationships.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 0,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "She is not aligned with any brand partners.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "scored",
+      "score": 0,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "No repeat commercial relationships exist.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "No commercial campaigns have been run to evaluate performance.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "She holds no commercial pricing leverage due to lack of market history.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 50,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "She exhibits a stable and consistent trajectory within her amateur USAG Level 7 track.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "No audience tracking is available to establish a growth trend.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 10,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Her media visibility remains stagnant at zero, with no incoming coverage.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 10,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Public search and social interest are completely stagnant.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 0,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Commercial momentum is entirely absent.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Exceptional brand safety with a clean digital footprint consisting only of local athletic databases and zero public controversies.",
+    "Consistent athletic activity, maintaining a stable progression through junior USA Gymnastics levels (Level 7 Jr A) into 2026."
+  ],
+  "keyConstraints": [
+    "Total lack of public social media presence or visible audience, which prevents any digital brand activation or scaling.",
+    "Amateur youth competitive status (USAG Level 7) that provides zero commercial authority or national/international standing.",
+    "Geographic reach is restricted to a hyper-local level, offering no strategic value to regional or national brands."
+  ],
+  "importantMissingData": [
+    "Complete absence of social media follower, reach, growth, and demographic data across Instagram, TikTok, YouTube, and X.",
+    "No public personal backstory, values, or career goals to form a marketable narrative."
+  ],
+  "identityOrEvidenceRisks": [
+    "Potential risk of confusion with other individuals named Riya Mehta (such as students, researchers, or local professionals), though her athletic identity at SGA Gymnastics is clearly isolated in local meet databases."
+  ],
+  "socialBlockSupplied": false
+}

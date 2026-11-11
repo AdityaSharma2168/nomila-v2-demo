@@ -1,0 +1,341 @@
+{
+  "promptVersion": "interpret/6",
+  "model": "gemini-3.5-flash",
+  "menu": {
+    "text": true,
+    "exclusion": true
+  },
+  "recordedAt": "2026-09-18T03:56:26.750Z",
+  "entries": [
+    {
+      "sentence": "me on a beach",
+      "objects": 0,
+      "brand": null,
+      "text": "{\n  \"decline\": false,\n  \"newImage\": true,\n  \"spans\": [],\n  \"edits\": [],\n  \"constraints\": [],\n  \"visibleMarks\": [\n    {\n      \"brand\": \"nike\",\n      \"item\": \"jersey\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"socks\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"cleats\"\n    }\n  ]\n}",
+      "usage": {
+        "inputTokens": 3649,
+        "outputTokens": 116
+      },
+      "ms": 1771
+    },
+    {
+      "sentence": "make me look like im at the beach",
+      "objects": 0,
+      "brand": null,
+      "text": "{\"decline\":false,\"newImage\":true,\"spans\":[],\"edits\":[],\"constraints\":[],\"visibleMarks\":[{\"brand\":\"nike\",\"item\":\"jersey\"},{\"brand\":\"nike\",\"item\":\"cleats\"}]}",
+      "usage": {
+        "inputTokens": 3653,
+        "outputTokens": 43
+      },
+      "ms": 1187
+    },
+    {
+      "sentence": "picture of me running on a track at sunset",
+      "objects": 0,
+      "brand": null,
+      "text": "{\n  \"decline\": false,\n  \"newImage\": true,\n  \"spans\": [],\n  \"edits\": [],\n  \"constraints\": [],\n  \"visibleMarks\": [\n    {\"brand\": \"nike\", \"item\": \"jersey\"},\n    {\"brand\": \"nike\", \"item\": \"cleats\"}\n  ]\n}",
+      "usage": {
+        "inputTokens": 3654,
+        "outputTokens": 78
+      },
+      "ms": 1756
+    },
+    {
+      "sentence": "make a pic of me training in the gym",
+      "objects": 0,
+      "brand": null,
+      "text": "{\"decline\":false,\"newImage\":true,\"spans\":[],\"edits\":[],\"constraints\":[],\"visibleMarks\":[{\"brand\":\"nike\",\"item\":\"jersey\"},{\"brand\":\"nike\",\"item\":\"cleats\"}]}",
+      "usage": {
+        "inputTokens": 3654,
+        "outputTokens": 43
+      },
+      "ms": 1195
+    },
+    {
+      "sentence": "generate pic of me playing soccer",
+      "objects": 0,
+      "brand": null,
+      "text": "{\"decline\":false,\"newImage\":true,\"spans\":[],\"edits\":[],\"constraints\":[],\"visibleMarks\":[{\"brand\":\"nike\",\"item\":\"jersey\"},{\"brand\":\"nike\",\"item\":\"cleats\"}]}",
+      "usage": {
+        "inputTokens": 3651,
+        "outputTokens": 43
+      },
+      "ms": 1140
+    },
+    {
+      "sentence": "put me mid-air dunking",
+      "objects": 0,
+      "brand": null,
+      "text": "{\n  \"decline\": false,\n  \"newImage\": true,\n  \"spans\": [],\n  \"edits\": [],\n  \"constraints\": [],\n  \"visibleMarks\": [\n    {\n      \"brand\": \"nike\",\n      \"item\": \"jersey\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"socks\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"cleats\"\n    }\n  ]\n}",
+      "usage": {
+        "inputTokens": 3652,
+        "outputTokens": 116
+      },
+      "ms": 1473
+    },
+    {
+      "sentence": "me dunking in a stadium",
+      "objects": 0,
+      "brand": null,
+      "text": "{\n  \"decline\": false,\n  \"newImage\": true,\n  \"spans\": [],\n  \"edits\": [],\n  \"constraints\": [],\n  \"visibleMarks\": [\n    {\n      \"brand\": \"nike\",\n      \"item\": \"jersey\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"socks\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"cleats\"\n    }\n  ]\n}",
+      "usage": {
+        "inputTokens": 3651,
+        "outputTokens": 116
+      },
+      "ms": 1337
+    },
+    {
+      "sentence": "a photo of me celebrating a goal in the rain",
+      "objects": 0,
+      "brand": null,
+      "text": "{\"decline\":false,\"newImage\":true,\"spans\":[],\"edits\":[],\"constraints\":[],\"visibleMarks\":[{\"brand\":\"nike\",\"item\":\"jersey\"},{\"brand\":\"nike\",\"item\":\"cleats\"}]}",
+      "usage": {
+        "inputTokens": 3655,
+        "outputTokens": 43
+      },
+      "ms": 1288
+    },
+    {
+      "sentence": "me holding a trophy on stage",
+      "objects": 0,
+      "brand": null,
+      "text": "{\n  \"decline\": false,\n  \"newImage\": true,\n  \"spans\": [],\n  \"edits\": [],\n  \"constraints\": [],\n  \"visibleMarks\": [\n    {\"brand\": \"nike\", \"item\": \"jersey\"},\n    {\"brand\": \"nike\", \"item\": \"cleats\"}\n  ]\n}",
+      "usage": {
+        "inputTokens": 3651,
+        "outputTokens": 78
+      },
+      "ms": 1304
+    },
+    {
+      "sentence": "me doing a bicycle kick in a packed stadium",
+      "objects": 0,
+      "brand": null,
+      "text": "{\n  \"decline\": false,\n  \"newImage\": true,\n  \"spans\": [],\n  \"edits\": [],\n  \"constraints\": [],\n  \"visibleMarks\": [\n    {\n      \"brand\": \"nike\",\n      \"item\": \"jersey\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"socks\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"cleats\"\n    }\n  ]\n}",
+      "usage": {
+        "inputTokens": 3654,
+        "outputTokens": 116
+      },
+      "ms": 1380
+    },
+    {
+      "sentence": "me scoring a header in a cup final",
+      "objects": 0,
+      "brand": null,
+      "text": "{\n  \"decline\": false,\n  \"newImage\": true,\n  \"spans\": [],\n  \"edits\": [],\n  \"constraints\": [],\n  \"visibleMarks\": [\n    {\n      \"brand\": \"nike\",\n      \"item\": \"jersey\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"cleats\"\n    }\n  ]\n}",
+      "usage": {
+        "inputTokens": 3653,
+        "outputTokens": 94
+      },
+      "ms": 1376
+    },
+    {
+      "sentence": "a shot of me stretching before practice",
+      "objects": 0,
+      "brand": null,
+      "text": "{\n  \"decline\": false,\n  \"newImage\": true,\n  \"spans\": [],\n  \"edits\": [],\n  \"constraints\": [],\n  \"visibleMarks\": [\n    {\"brand\": \"nike\", \"item\": \"jersey\"},\n    {\"brand\": \"nike\", \"item\": \"socks\"},\n    {\"brand\": \"nike\", \"item\": \"cleats\"}\n  ]\n}",
+      "usage": {
+        "inputTokens": 3652,
+        "outputTokens": 92
+      },
+      "ms": 1308
+    },
+    {
+      "sentence": "change the scenery to a beach at sunset",
+      "objects": 0,
+      "brand": null,
+      "text": "{\n  \"decline\": false,\n  \"spans\": [\n    {\n      \"quote\": \"change the scenery to a beach at sunset\",\n      \"reads\": \"edit\",\n      \"edits\": [0]\n    }\n  ],\n  \"edits\": [\n    {\n      \"kind\": \"background\",\n      \"source\": \"yours\",\n      \"setting\": \"beach at sunset\"\n    }\n  ],\n  \"constraints\": [],\n  \"visibleMarks\": [\n    {\n      \"brand\": \"nike\",\n      \"item\": \"jersey\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"cleats\"\n    }\n  ]\n}",
+      "usage": {
+        "inputTokens": 3653,
+        "outputTokens": 163
+      },
+      "ms": 1789
+    },
+    {
+      "sentence": "change my shoes to adidas and the background to a stadium",
+      "objects": 0,
+      "brand": null,
+      "text": "{\"decline\":false,\"spans\":[{\"quote\":\"change my shoes to adidas\",\"reads\":\"edit\",\"edits\":[0]},{\"quote\":\"and\",\"reads\":\"filler\"},{\"quote\":\"the background to a stadium\",\"reads\":\"edit\",\"edits\":[1]}],\"edits\":[{\"kind\":\"brand_swap\",\"source\":\"yours\",\"item\":\"shoes\",\"descriptors\":[],\"brand\":\"adidas\"},{\"kind\":\"background\",\"source\":\"yours\",\"setting\":\"stadium\"}],\"constraints\":[],\"visibleMarks\":[{\"brand\":\"nike\",\"item\":\"jersey\"},{\"brand\":\"nike\",\"item\":\"socks\"},{\"brand\":\"nike\",\"item\":\"shoes\"}]}",
+      "usage": {
+        "inputTokens": 3656,
+        "outputTokens": 124
+      },
+      "ms": 1527
+    },
+    {
+      "sentence": "switch my jersey over to adidas",
+      "objects": 0,
+      "brand": null,
+      "text": "{\n  \"decline\": false,\n  \"spans\": [\n    {\n      \"quote\": \"switch my jersey over to adidas\",\n      \"reads\": \"edit\",\n      \"edits\": [0]\n    }\n  ],\n  \"edits\": [\n    {\n      \"kind\": \"brand_swap\",\n      \"source\": \"yours\",\n      \"item\": \"jersey\",\n      \"descriptors\": [],\n      \"brand\": \"adidas\"\n    }\n  ],\n  \"constraints\": [],\n  \"visibleMarks\": [\n    {\n      \"brand\": \"nike\",\n      \"item\": \"jersey\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"socks\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"cleats\"\n    }\n  ]\n}",
+      "usage": {
+        "inputTokens": 3651,
+        "outputTokens": 197
+      },
+      "ms": 1601
+    },
+    {
+      "sentence": "make her jersey blue and give the socks some stripes",
+      "objects": 0,
+      "brand": null,
+      "text": "{\n  \"decline\": false,\n  \"spans\": [\n    {\n      \"quote\": \"make her jersey blue\",\n      \"reads\": \"edit\",\n      \"edits\": [\n        0\n      ]\n    },\n    {\n      \"quote\": \"and\",\n      \"reads\": \"filler\"\n    },\n    {\n      \"quote\": \"give the socks some stripes\",\n      \"reads\": \"edit\",\n      \"edits\": [\n        1\n      ]\n    }\n  ],\n  \"edits\": [\n    {\n      \"kind\": \"recolor\",\n      \"source\": \"yours\",\n      \"target\": \"jersey\",\n      \"colour\": \"blue\"\n    },\n    {\n      \"kind\": \"design\",\n      \"source\": \"yours\",\n      \"design\": \"stripes\",\n      \"target\": \"socks\"\n    }\n  ],\n  \"constraints\": [],\n  \"visibleMarks\": [\n    {\n      \"brand\": \"nike\",\n      \"item\": \"jersey\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"socks\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"cleats\"\n    }\n  ]\n}",
+      "usage": {
+        "inputTokens": 3655,
+        "outputTokens": 293
+      },
+      "ms": 2055
+    },
+    {
+      "sentence": "no nike logos anywhere please, and make my socks white",
+      "objects": 0,
+      "brand": null,
+      "text": "{\n  \"decline\": false,\n  \"spans\": [\n    {\n      \"quote\": \"no nike logos anywhere\",\n      \"reads\": \"constraint\",\n      \"constraints\": [0]\n    },\n    {\n      \"quote\": \"please\",\n      \"reads\": \"filler\"\n    },\n    {\n      \"quote\": \", and\",\n      \"reads\": \"filler\"\n    },\n    {\n      \"quote\": \"make my socks white\",\n      \"reads\": \"edit\",\n      \"edits\": [0]\n    }\n  ],\n  \"edits\": [\n    {\n      \"kind\": \"recolor\",\n      \"source\": \"yours\",\n      \"target\": \"socks\",\n      \"colour\": \"white\"\n    }\n  ],\n  \"constraints\": [\n    {\n      \"kind\": \"exclude_marks\",\n      \"brand\": \"nike\"\n    }\n  ],\n  \"visibleMarks\": [\n    {\n      \"brand\": \"nike\",\n      \"item\": \"jersey\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"socks\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"cleats\"\n    }\n  ]\n}",
+      "usage": {
+        "inputTokens": 3656,
+        "outputTokens": 292
+      },
+      "ms": 2096
+    },
+    {
+      "sentence": "add a soccer ball between my cleats, keep everything else the same",
+      "objects": 0,
+      "brand": null,
+      "text": "{\"decline\":false,\"spans\":[{\"quote\":\"add a soccer ball between my cleats\",\"reads\":\"edit\",\"edits\":[0]},{\"quote\":\", \",\"reads\":\"filler\"},{\"quote\":\"keep everything else the same\",\"reads\":\"constraint\",\"constraints\":[0]}],\"edits\":[{\"kind\":\"add\",\"source\":\"yours\",\"thing\":\"soccer ball\",\"preposition\":\"between\",\"place\":\"my cleats\"}],\"constraints\":[{\"kind\":\"preserve_person\"}],\"visibleMarks\":[{\"brand\":\"nike\",\"item\":\"jersey\"},{\"brand\":\"nike\",\"item\":\"socks\"},{\"brand\":\"nike\",\"item\":\"cleats\"}]}",
+      "usage": {
+        "inputTokens": 3658,
+        "outputTokens": 120
+      },
+      "ms": 1571
+    },
+    {
+      "sentence": "add these gold hoops",
+      "objects": 1,
+      "brand": null,
+      "text": "{\"decline\":false,\"spans\":[{\"quote\":\"add these gold hoops\",\"reads\":\"edit\",\"edits\":[0]}],\"edits\":[{\"kind\":\"add\",\"source\":\"yours\",\"thing\":\"gold hoops\",\"preposition\":\"to\",\"place\":\"my ears\"}],\"constraints\":[],\"visibleMarks\":[{\"brand\":\"nike\",\"item\":\"jersey\"},{\"brand\":\"nike\",\"item\":\"socks\"},{\"brand\":\"nike\",\"item\":\"cleats\"}]}",
+      "usage": {
+        "inputTokens": 3693,
+        "outputTokens": 86
+      },
+      "ms": 1343
+    },
+    {
+      "sentence": "give me these gold hoops",
+      "objects": 1,
+      "brand": null,
+      "text": "{\"decline\":false,\"spans\":[{\"quote\":\"give me these gold hoops\",\"reads\":\"edit\",\"edits\":[0]}],\"edits\":[{\"kind\":\"add\",\"source\":\"yours\",\"thing\":\"gold hoops\",\"preposition\":\"to\",\"place\":\"my ears\"}],\"constraints\":[],\"visibleMarks\":[{\"brand\":\"nike\",\"item\":\"jersey\"},{\"brand\":\"nike\",\"item\":\"socks\"}]}",
+      "usage": {
+        "inputTokens": 3694,
+        "outputTokens": 78
+      },
+      "ms": 1260
+    },
+    {
+      "sentence": "put a baseball cap on my head",
+      "objects": 0,
+      "brand": null,
+      "text": "{\n  \"decline\": false,\n  \"spans\": [\n    {\n      \"quote\": \"put a baseball cap on my head\",\n      \"reads\": \"edit\",\n      \"edits\": [0]\n    }\n  ],\n  \"edits\": [\n    {\n      \"kind\": \"add\",\n      \"source\": \"yours\",\n      \"thing\": \"cap\",\n      \"preposition\": \"on\",\n      \"place\": \"my head\"\n    }\n  ],\n  \"constraints\": [],\n  \"visibleMarks\": [\n    {\n      \"brand\": \"nike\",\n      \"item\": \"jersey\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"socks\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"cleats\"\n    }\n  ]\n}",
+      "usage": {
+        "inputTokens": 3652,
+        "outputTokens": 200
+      },
+      "ms": 1713
+    },
+    {
+      "sentence": "make it pop",
+      "objects": 0,
+      "brand": null,
+      "text": "{\"decline\":false,\"spans\":[{\"quote\":\"make it pop\",\"reads\":\"edit\",\"edits\":[0]}],\"edits\":[{\"kind\":\"look\",\"source\":\"yours\",\"term\":\"punchy\"}],\"constraints\":[],\"visibleMarks\":[{\"brand\":\"nike\",\"item\":\"jersey\"},{\"brand\":\"nike\",\"item\":\"socks\"},{\"brand\":\"nike\",\"item\":\"shoes\"}]}",
+      "usage": {
+        "inputTokens": 3648,
+        "outputTokens": 74
+      },
+      "ms": 1333
+    },
+    {
+      "sentence": "swap the ball for a basketball",
+      "objects": 0,
+      "brand": null,
+      "text": "{\"decline\":true,\"spans\":[{\"quote\":\"swap the ball for a basketball\",\"reads\":\"unreadable\"}],\"edits\":[],\"constraints\":[],\"visibleMarks\":[{\"brand\":\"nike\",\"item\":\"jersey\"},{\"brand\":\"nike\",\"item\":\"cleats\"}]}",
+      "usage": {
+        "inputTokens": 3651,
+        "outputTokens": 52
+      },
+      "ms": 1567
+    },
+    {
+      "sentence": "add a soccer ball",
+      "objects": 0,
+      "brand": null,
+      "text": "{\"decline\":false,\"spans\":[{\"quote\":\"add a soccer ball\",\"reads\":\"edit\",\"edits\":[0]}],\"edits\":[{\"kind\":\"add\",\"source\":\"yours\",\"thing\":\"soccer ball\",\"preposition\":\"at\",\"place\":\"my feet\"}],\"constraints\":[],\"visibleMarks\":[{\"brand\":\"nike\",\"item\":\"jersey\"},{\"brand\":\"nike\",\"item\":\"cleats\"}]}",
+      "usage": {
+        "inputTokens": 3649,
+        "outputTokens": 78
+      },
+      "ms": 1321
+    },
+    {
+      "sentence": "take the logo off my sleeve",
+      "objects": 0,
+      "brand": null,
+      "text": "{\"decline\":false,\"spans\":[{\"quote\":\"take the logo off my sleeve\",\"reads\":\"edit\",\"edits\":[0]}],\"edits\":[{\"kind\":\"remove\",\"source\":\"yours\",\"target\":\"logo on sleeve\"}],\"constraints\":[],\"visibleMarks\":[{\"brand\":\"nike\",\"item\":\"jersey\"},{\"brand\":\"nike\",\"item\":\"socks\"},{\"brand\":\"nike\",\"item\":\"cleats\"}]}",
+      "usage": {
+        "inputTokens": 3651,
+        "outputTokens": 79
+      },
+      "ms": 1303
+    },
+    {
+      "sentence": "make the sky moodier",
+      "objects": 0,
+      "brand": null,
+      "text": "{\"decline\":false,\"spans\":[{\"quote\":\"make the sky moodier\",\"reads\":\"edit\",\"edits\":[0]}],\"edits\":[{\"kind\":\"look\",\"source\":\"yours\",\"term\":\"moodier\"}],\"constraints\":[],\"visibleMarks\":[{\"brand\":\"nike\",\"item\":\"jersey\"},{\"brand\":\"nike\",\"item\":\"cleats\"}]}",
+      "usage": {
+        "inputTokens": 3650,
+        "outputTokens": 69
+      },
+      "ms": 1268
+    },
+    {
+      "sentence": "a picture of me surfing a big wave",
+      "objects": 0,
+      "brand": null,
+      "text": "{\n  \"decline\": false,\n  \"newImage\": true,\n  \"spans\": [],\n  \"edits\": [],\n  \"constraints\": [],\n  \"visibleMarks\": [\n    {\n      \"brand\": \"nike\",\n      \"item\": \"jersey\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"socks\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"cleats\"\n    }\n  ]\n}",
+      "usage": {
+        "inputTokens": 3653,
+        "outputTokens": 116
+      },
+      "ms": 1362
+    },
+    {
+      "sentence": "me signing autographs after the game",
+      "objects": 0,
+      "brand": null,
+      "text": "{\"decline\":false,\"newImage\":true,\"spans\":[],\"edits\":[],\"constraints\":[],\"visibleMarks\":[{\"brand\":\"nike\",\"item\":\"jersey\"},{\"brand\":\"nike\",\"item\":\"socks\"},{\"brand\":\"nike\",\"item\":\"cleats\"}]}",
+      "usage": {
+        "inputTokens": 3651,
+        "outputTokens": 51
+      },
+      "ms": 1035
+    },
+    {
+      "sentence": "me celebrating with my team in the locker room",
+      "objects": 0,
+      "brand": null,
+      "text": "{\n  \"decline\": false,\n  \"newImage\": true,\n  \"spans\": [],\n  \"edits\": [],\n  \"constraints\": [],\n  \"visibleMarks\": [\n    {\n      \"brand\": \"nike\",\n      \"item\": \"jersey\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"socks\"\n    },\n    {\n      \"brand\": \"nike\",\n      \"item\": \"cleats\"\n    }\n  ]\n}",
+      "usage": {
+        "inputTokens": 3654,
+        "outputTokens": 116
+      },
+      "ms": 1202
+    },
+    {
+      "sentence": "a photo of me lifting weights",
+      "objects": 0,
+      "brand": null,
+      "text": "{\"decline\":false,\"newImage\":true,\"spans\":[],\"edits\":[],\"constraints\":[],\"visibleMarks\":[{\"brand\":\"nike\",\"item\":\"jersey\"},{\"brand\":\"nike\",\"item\":\"socks\"},{\"brand\":\"nike\",\"item\":\"cleats\"}]}",
+      "usage": {
+        "inputTokens": 3651,
+        "outputTokens": 51
+      },
+      "ms": 1146
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+<title>M.I.A. Score Engine Audit</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#f6f5f1; --panel:#ffffff; --ink:#161b23; --ink-2:#4b525c; --mute:#767d88; --rule:#dad7cf; --rule-soft:#e9e7e1;
+  --code-bg:#eeede8; --risk:#c2412d; --risk-bg:#fbeae6; --ok:#2a7a4b; --ok-bg:#e6f3ea; --warn:#9a6a00; --warn-bg:#fbf1d9;
+  --audience:#2D8EFF; --commercial:#2DC87C; --brand:#E84591; --athletic:#E8A215;
+  --accent:#1d4f8f;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#11151b; --panel:#181d25; --ink:#e7e5de; --ink-2:#b7bcc4; --mute:#8b929c; --rule:#2d343e; --rule-soft:#232a33;
+    --code-bg:#212832; --risk:#ef7a66; --risk-bg:#3a201b; --ok:#6cc48f; --ok-bg:#1c3326; --warn:#e2b64c; --warn-bg:#3a3117;
+    --accent:#7fb2f0;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#11151b; --panel:#181d25; --ink:#e7e5de; --ink-2:#b7bcc4; --mute:#8b929c; --rule:#2d343e; --rule-soft:#232a33;
+  --code-bg:#212832; --risk:#ef7a66; --risk-bg:#3a201b; --ok:#6cc48f; --ok-bg:#1c3326; --warn:#e2b64c; --warn-bg:#3a3117;
+  --accent:#7fb2f0;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:40px 24px 96px}
+.measure{max-width:72ch}
+h1,h2,h3{font-family:"Archivo","IBM Plex Sans",sans-serif;text-wrap:balance;margin:0}
+h1{font-size:40px;font-weight:800;letter-spacing:-.02em;line-height:1.05}
+h2{font-size:24px;font-weight:700;letter-spacing:-.01em;margin-top:64px;padding-top:20px;border-top:2px solid var(--ink)}
+h3{font-size:17px;font-weight:700;margin-top:28px}
+p{margin:12px 0}
+.eyebrow{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.lede{font-size:19px;color:var(--ink-2);max-width:68ch}
+.meta{display:flex;flex-wrap:wrap;gap:8px 24px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--mute);margin-top:16px}
+code,.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.9em}
+code{background:var(--code-bg);padding:1px 5px;border-radius:3px}
+pre{background:var(--code-bg);padding:14px 16px;border-radius:6px;overflow-x:auto;font-size:13px;line-height:1.5}
+pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+.tbl{overflow-x:auto;margin:16px 0;border:1px solid var(--rule);border-radius:6px;background:var(--panel)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+th{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:500;background:var(--panel);white-space:nowrap}
+tr:last-child td{border-bottom:none}
+td.n{text-align:right;font-family:"IBM Plex Mono",monospace;white-space:nowrap}
+ul,ol{padding-left:22px;margin:10px 0}
+li{margin:5px 0}
+.verdict{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:32px 0 8px}
+.v{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:16px 18px}
+.v .k{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.v .t{font-family:"Archivo",sans-serif;font-weight:700;font-size:18px;margin:6px 0 6px;line-height:1.25}
+.v p{margin:0;font-size:14px;color:var(--ink-2)}
+.pill{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid var(--rule);color:var(--ink-2);white-space:nowrap}
+.pill.risk{background:var(--risk-bg);color:var(--risk);border-color:transparent}
+.pill.ok{background:var(--ok-bg);color:var(--ok);border-color:transparent}
+.pill.warn{background:var(--warn-bg);color:var(--warn);border-color:transparent}
+.cap{display:inline-block;width:10px;height:10px;border-radius:50%;vertical-align:-1px;margin-right:6px}
+.cap.au{background:var(--audience)}.cap.co{background:var(--commercial)}.cap.br{background:var(--brand)}.cap.at{background:var(--athletic)}
+figure{margin:24px 0;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:16px;overflow-x:auto}
+figure svg{max-width:100%;height:auto;display:block;color:var(--ink)}
+figcaption{font-size:13.5px;color:var(--ink-2);margin-top:10px;max-width:80ch}
+.risklist li{margin:10px 0}
+.risklist b{font-weight:600}
+.callout{border-left:3px solid var(--accent);padding:10px 16px;background:var(--panel);margin:18px 0;border-radius:0 6px 6px 0}
+.callout p{margin:6px 0}
+.formula{font-family:"IBM Plex Mono",monospace;font-size:13.5px;background:var(--code-bg);padding:10px 14px;border-radius:6px;overflow-x:auto;white-space:nowrap}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.step{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:start;margin:14px 0}
+.step .num{font-family:"Archivo",sans-serif;font-weight:800;font-size:22px;color:var(--accent);line-height:1.2}
+.step p{margin:4px 0}
+small{color:var(--mute)}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+  <div class="eyebrow">nomila-v2 · audit · 10 Sep 2026</div>
+  <h1 style="margin-top:10px">M.I.A. Score Engine Audit</h1>
+  <p class="lede">How an athlete comes into existence, what feeds the marketability score and the rate card, how they are computed, and every process that reads them. Written so the scoring methodology can be replaced with the least possible disturbance downstream.</p>
+  <div class="meta">
+    <span>branch main @ 49b236d</span><span>engine scoringService v7 · weights v7.2.0</span><span>rate model v3.1.0-calibrated</span><span>10 scored athletes in prod</span>
+  </div>
+
+  <div class="verdict">
+    <div class="v"><div class="k">The core finding</div><div class="t">The score is well-contained on the way in, loosely coupled on the way out</div><p>One pure function computes it, one writer persists it. But 40+ readers consume the stored columns by shape, and most of them fail silently rather than loudly if the shape changes.</p></div>
+    <div class="v"><div class="k">The contract to protect</div><div class="t">displayScore 200–850 · five tier words · four capitals /100</div><p>Those three things are read by the app, Mila, the voice worker, the deal scorer, the Nomi Card and the rate model. Keep them and a new algorithm is a weights-row swap. Change them and it is a cross-cutting migration.</p></div>
+    <div class="v"><div class="k">The hidden coupling</div><div class="t">Rates are a function of the score</div><p>The v3 rate card multiplies market benchmarks by a modifier built from the capitals and the tier word. A new score changes every rate, every deal verdict and every draft counter unless the rate side is re-calibrated with it.</p></div>
+  </div>
+
+  <h2 id="map">The pipeline in one picture</h2>
+  <figure>
+    <svg viewBox="0 0 1080 470" role="img" aria-label="Athlete creation and scoring pipeline: three entry doors create an athletes row; the onboarding workflow runs research, connections run first_look, the nightly cron runs refreshScores; each path computes a score and writes one athlete_snapshots row and the athletes_current row through one writer, which also computes the v3 rate card; readers consume athletes_current and the snapshot history.">
+      <defs>
+        <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker>
+      </defs>
+      <g font-family="IBM Plex Sans, sans-serif" font-size="12" fill="currentColor">
+        <!-- Entry doors -->
+        <text x="20" y="28" font-family="IBM Plex Mono, monospace" font-size="11" fill="currentColor" opacity=".6">A · ENTRY</text>
+        <rect x="20" y="40" width="150" height="40" rx="4" fill="none" stroke="currentColor"/><text x="95" y="58" text-anchor="middle">Landing waitlist</text><text x="95" y="72" text-anchor="middle" font-size="10.5" opacity=".7">status waitlisted</text>
+        <rect x="20" y="92" width="150" height="40" rx="4" fill="none" stroke="currentColor"/><text x="95" y="110" text-anchor="middle">App signup</text><text x="95" y="124" text-anchor="middle" font-size="10.5" opacity=".7">Firebase · status raw</text>
+        <rect x="20" y="144" width="150" height="40" rx="4" fill="none" stroke="currentColor"/><text x="95" y="162" text-anchor="middle">Admin promote</text><text x="95" y="176" text-anchor="middle" font-size="10.5" opacity=".7">waitlisted → active</text>
+
+        <rect x="215" y="88" width="120" height="48" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="275" y="108" text-anchor="middle" font-weight="600">athletes</text><text x="275" y="124" text-anchor="middle" font-size="10.5" opacity=".7">identity · segment</text>
+        <line x1="170" y1="60" x2="215" y2="104" stroke="currentColor" marker-end="url(#arr)"/>
+        <line x1="170" y1="112" x2="215" y2="112" stroke="currentColor" marker-end="url(#arr)"/>
+        <line x1="170" y1="164" x2="215" y2="120" stroke="currentColor" marker-end="url(#arr)"/>
+
+        <!-- Triggers -->
+        <text x="390" y="28" font-family="IBM Plex Mono, monospace" font-size="11" opacity=".6">B · TRIGGERS (three writers)</text>
+        <rect x="390" y="40" width="190" height="52" rx="4" fill="none" stroke="currentColor"/><text x="485" y="58" text-anchor="middle" font-weight="600">researchAthlete</text><text x="485" y="73" text-anchor="middle" font-size="10.5" opacity=".7">onboarding run · monthly · admin</text><text x="485" y="86" text-anchor="middle" font-size="10.5" opacity=".7">Gemini · Kimi · Trends · GDELT · discovery</text>
+        <rect x="390" y="104" width="190" height="52" rx="4" fill="none" stroke="currentColor"/><text x="485" y="122" text-anchor="middle" font-weight="600">fetchSocialData</text><text x="485" y="137" text-anchor="middle" font-size="10.5" opacity=".7">first_look run at OAuth connect</text><text x="485" y="150" text-anchor="middle" font-size="10.5" opacity=".7">IG · TikTok · YouTube fetchForScoring</text>
+        <rect x="390" y="168" width="190" height="52" rx="4" fill="none" stroke="currentColor"/><text x="485" y="186" text-anchor="middle" font-weight="600">refreshScores</text><text x="485" y="201" text-anchor="middle" font-size="10.5" opacity=".7">04:30 UTC in-process cron</text><text x="485" y="214" text-anchor="middle" font-size="10.5" opacity=".7">from social_analytics_snapshots</text>
+        <line x1="335" y1="104" x2="390" y2="66" stroke="currentColor" marker-end="url(#arr)"/>
+        <line x1="335" y1="112" x2="390" y2="130" stroke="currentColor" marker-end="url(#arr)"/>
+        <line x1="335" y1="120" x2="390" y2="194" stroke="currentColor" marker-end="url(#arr)"/>
+        <text x="345" y="56" font-size="10" opacity=".7">workflow</text>
+
+        <!-- Nightly analytics -->
+        <rect x="390" y="250" width="190" height="44" rx="4" fill="none" stroke="currentColor" stroke-dasharray="4 3"/><text x="485" y="268" text-anchor="middle">social_analytics_snapshots</text><text x="485" y="283" text-anchor="middle" font-size="10.5" opacity=".7">connected + discovery, daily</text>
+        <line x1="485" y1="250" x2="485" y2="220" stroke="currentColor" marker-end="url(#arr)"/>
+        <text x="495" y="238" font-size="10" opacity=".7">best row per platform</text>
+
+        <!-- Engine -->
+        <text x="630" y="28" font-family="IBM Plex Mono, monospace" font-size="11" opacity=".6">C · ENGINE (pure)</text>
+        <rect x="630" y="40" width="170" height="60" rx="4" fill="none" stroke="var(--accent)" stroke-width="2"/><text x="715" y="62" text-anchor="middle" font-weight="600">computeScore</text><text x="715" y="78" text-anchor="middle" font-size="10.5" opacity=".7">snapshot + 6 prior → ScoreResult</text><text x="715" y="92" text-anchor="middle" font-size="10.5" opacity=".7">weights: scoring_weights active row</text>
+        <line x1="580" y1="66" x2="630" y2="66" stroke="currentColor" marker-end="url(#arr)"/>
+        <line x1="580" y1="130" x2="630" y2="80" stroke="currentColor" marker-end="url(#arr)"/>
+        <line x1="580" y1="194" x2="630" y2="92" stroke="currentColor" marker-end="url(#arr)"/>
+
+        <rect x="630" y="124" width="170" height="60" rx="4" fill="none" stroke="var(--accent)" stroke-width="2"/><text x="715" y="146" text-anchor="middle" font-weight="600">writeAthletesCurrent</text><text x="715" y="162" text-anchor="middle" font-size="10.5" opacity=".7">the ONE writer · computes</text><text x="715" y="176" text-anchor="middle" font-size="10.5" opacity=".7">computeRateCard (v3) from score</text>
+        <line x1="715" y1="100" x2="715" y2="124" stroke="currentColor" marker-end="url(#arr)"/>
+
+        <!-- Stores -->
+        <text x="850" y="28" font-family="IBM Plex Mono, monospace" font-size="11" opacity=".6">D · STORES</text>
+        <rect x="850" y="40" width="210" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="955" y="60" text-anchor="middle" font-weight="600">athlete_snapshots</text><text x="955" y="76" text-anchor="middle" font-size="10.5" opacity=".7">append-only · research, social, deals,</text><text x="955" y="90" text-anchor="middle" font-size="10.5" opacity=".7">score JSON (whole ScoreResult)</text>
+        <rect x="850" y="124" width="210" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="955" y="144" text-anchor="middle" font-weight="600">athletes_current</text><text x="955" y="160" text-anchor="middle" font-size="10.5" opacity=".7">display_score · tier · capitals ·</text><text x="955" y="174" text-anchor="middle" font-size="10.5" opacity=".7">rate_card · pav · deal_type_rates</text>
+        <line x1="800" y1="70" x2="850" y2="70" stroke="currentColor" marker-end="url(#arr)"/><text x="808" y="62" font-size="10" opacity=".7">insert</text>
+        <line x1="800" y1="154" x2="850" y2="154" stroke="currentColor" marker-end="url(#arr)"/><text x="808" y="146" font-size="10" opacity=".7">upsert</text>
+
+        <!-- Readers -->
+        <text x="20" y="330" font-family="IBM Plex Mono, monospace" font-size="11" opacity=".6">E · READERS of athletes_current (and the snapshot score history)</text>
+        <rect x="20" y="342" width="190" height="52" rx="4" fill="none" stroke="currentColor"/><text x="115" y="360" text-anchor="middle" font-weight="600">App</text><text x="115" y="375" text-anchor="middle" font-size="10.5" opacity=".7">Brand tab · rings · Rate card ·</text><text x="115" y="388" text-anchor="middle" font-size="10.5" opacity=".7">Rates floor · About you</text>
+        <rect x="230" y="342" width="190" height="52" rx="4" fill="none" stroke="currentColor"/><text x="325" y="360" text-anchor="middle" font-weight="600">Mila (chat + voice)</text><text x="325" y="375" text-anchor="middle" font-size="10.5" opacity=".7">get_score · get_rate_card · widgets ·</text><text x="325" y="388" text-anchor="middle" font-size="10.5" opacity=".7">onboarding greet · score history</text>
+        <rect x="440" y="342" width="190" height="52" rx="4" fill="none" stroke="currentColor"/><text x="535" y="360" text-anchor="middle" font-weight="600">Deal pipeline</text><text x="535" y="375" text-anchor="middle" font-size="10.5" opacity=".7">scoreDeal grid · drafts · counters ·</text><text x="535" y="388" text-anchor="middle" font-size="10.5" opacity=".7">economics bands · offer reads</text>
+        <rect x="650" y="342" width="190" height="52" rx="4" fill="none" stroke="currentColor"/><text x="745" y="360" text-anchor="middle" font-weight="600">Nomi Card / kit</text><text x="745" y="375" text-anchor="middle" font-size="10.5" opacity=".7">index card /850 · mix rows ·</text><text x="745" y="388" text-anchor="middle" font-size="10.5" opacity=".7">rates card · Narrator · Studio brief</text>
+        <rect x="860" y="342" width="200" height="52" rx="4" fill="none" stroke="currentColor"/><text x="960" y="360" text-anchor="middle" font-weight="600">Admin + calibration</text><text x="960" y="375" text-anchor="middle" font-size="10.5" opacity=".7">waitlist dashboard pills ·</text><text x="960" y="388" text-anchor="middle" font-size="10.5" opacity=".7">golden_athletes · evaluateRates</text>
+        <path d="M955 184 V300 H115 V342" fill="none" stroke="currentColor" marker-end="url(#arr)"/>
+        <path d="M955 184 V300 H325 V342" fill="none" stroke="currentColor" marker-end="url(#arr)"/>
+        <path d="M955 184 V300 H535 V342" fill="none" stroke="currentColor" marker-end="url(#arr)"/>
+        <path d="M955 184 V300 H745 V342" fill="none" stroke="currentColor" marker-end="url(#arr)"/>
+        <path d="M955 184 V300 H960 V342" fill="none" stroke="currentColor" marker-end="url(#arr)"/>
+        <text x="600" y="294" font-size="10" opacity=".7" text-anchor="middle">read by column: display_score · tier · capitals · rate_card (pav, deal_type_rates as fallbacks)</text>
+
+        <!-- Feedback: deals into score -->
+        <path d="M535 394 V430 H1040 V100 H1060" fill="none" stroke="currentColor" stroke-dasharray="4 3" marker-end="url(#arr)"/>
+        <text x="790" y="446" font-size="10.5" opacity=".7" text-anchor="middle">deals with status accepted/completed flow BACK into the next snapshot (Commercial capital, cold-start profile)</text>
+      </g>
+    </svg>
+    <figcaption>Three entry doors make an athletes row. Three writers each build a scoring snapshot, call the same pure engine, insert an append-only snapshot, and upsert the current row through one writer that also derives the rate card. Everything downstream reads the stored columns, and signed deals feed the next score.</figcaption>
+  </figure>
+
+  <h2 id="creation">A · How an athlete comes into the system</h2>
+  <div class="measure">
+    <p>There is no "create user" service. An athlete is an <code>athletes</code> row plus an <code>account_roles</code> row, and three doors create or claim one. Auth is Firebase everywhere (Google, Apple, Microsoft code exchange); the server never stores a password.</p>
+  </div>
+  <div class="tbl"><table>
+    <tr><th>Door</th><th>Route</th><th>What it writes</th><th>Status after</th><th>What starts</th></tr>
+    <tr><td>Landing page waitlist</td><td class="mono">POST /api/v1/waitlist</td><td>Upserts by Firebase uid, one partial payload per step: name, school, sport, goals, career status, typed social handles, referral code</td><td class="mono">waitlisted</td><td>An <b>onboarding</b> workflow run the moment a sport is known (idempotent key <code>onboarding:&lt;id&gt;</code>)</td></tr>
+    <tr><td>App signup</td><td class="mono">POST /api/v1/auth/signup</td><td>Returns the existing row for the uid; else claims a row by e-mail; else claims an unclaimed pre-seeded profile by name (+sport) in status raw/enriched; else inserts a new row. Sets Firebase custom claims.</td><td class="mono">raw or claimed</td><td>Onboarding run only for a brand-new row with a sport (the app sends name only today, so usually nothing)</td></tr>
+    <tr><td>Admin promote</td><td class="mono">POST /api/v1/admin/waitlist/:id/promote</td><td>Flips status to active</td><td class="mono">active</td><td>Onboarding run if none exists; a <b>research_refresh</b> run when re-research is requested</td></tr>
+  </table></div>
+  <div class="measure">
+    <h3>What the onboarding run does (workflow v2)</h3>
+    <p>The Postgres workflow runner ticks every minute from Cloud Scheduler. The onboarding run is: <b>research</b> (skipped if a research snapshot is under 7 days old) → <b>context_ready</b> (drops the cached generic Nomi Card) → <b>greet</b> (parks until the athlete reacts in chat, voice or form) → <b>doors</b> → <b>wrap</b>. The research step is the first place a score is computed. It also flips status raw → enriched and fills any empty sport, school, conference or division from what research found.</p>
+    <h3>What connecting a platform does</h3>
+    <p>The OAuth callback starts a <b>first_look</b> run per connection: <b>fetch_social</b> (the connect-time fetch, which computes a second score with the platform's real numbers), <b>backfill_recent</b> (30 posts) and <b>compute_first_look</b> (what the posts say, not a scoring input). Gmail and Outlook never score; Spotify keeps an identity-only fetch.</p>
+    <p>Research and connect are the only two event-driven scorings. After that the athlete is re-scored nightly and re-researched monthly, and nothing else ever touches the score.</p>
+  </div>
+
+  <h2 id="inputs">B · What feeds the score and rates</h2>
+  <div class="measure"><p>Every input lands on an <code>athlete_snapshots</code> row before it is scored. The engine never queries the database; it receives one snapshot, up to six prior snapshots, and the athlete's level record.</p></div>
+  <div class="tbl"><table>
+    <tr><th>Input</th><th>Source / API</th><th>Where it is stored</th><th>Refreshed</th><th>Consumed by</th></tr>
+    <tr><td>Followers, engagement rate, posts in last 30 days, verified flag, per platform</td><td>Instagram Graph (Instagram Login), TikTok, YouTube Data + Analytics APIs via the athlete's OAuth; public Business Discovery + YouTube Data API for unconnected handles</td><td><code>social_analytics_snapshots</code> (one row per athlete × platform × day, source connected / discovery / research) → copied into <code>snapshot.social</code> with a <code>_computed</code> block</td><td>Daily 04:30 UTC; at connect</td><td>Audience capital, cold-start profile, rate card social base, engagement adjustment, provenance confidence</td></tr>
+    <tr><td>Achievements, press mentions, brand mentions, sentiment, media assets, story arc, teams</td><td>Gemini with Google Search grounding (4 queries) → Kimi extraction (4 parallel) → union with the last 5 research snapshots</td><td><code>snapshot.research</code></td><td>At onboarding; monthly on the 1st at 05:00; admin re-research</td><td>Athletic capital (achievements), Brand capital (press, mentions, media), safety fallback (sentiment), cold-start "hasResearch"</td></tr>
+    <tr><td>Google Trends interest score 0–100 and related queries</td><td>google-trends-api (unofficial scraper)</td><td><code>snapshot.google_trends_score</code></td><td>With research</td><td>Brand capital baseline + spike; narrative capital for rates</td></tr>
+    <tr><td>GDELT article count and average tone</td><td>GDELT free API</td><td><code>snapshot.gdelt_article_count</code>; tone only in <code>snapshot.sources.enrichment.gdelt_avg_tone</code></td><td>With research</td><td>Athletic baseline press, Brand press quality + delta, Brand Safety multiplier, narrative capital</td></tr>
+    <tr><td>Signed deals (status accepted or completed) with total guaranteed value and settled flag</td><td><code>deals</code> table, written by the inbox summarizer, contract upload or self-report</td><td><code>snapshot.deals</code> (re-read on every write)</td><td>Every scoring</td><td>Commercial capital; the cold-start profile switch</td></tr>
+    <tr><td>Segment, division, conference</td><td><code>athlete_affiliations</code> via <code>levelRecordFor</code> (teams, not the school column)</td><td>Passed as the level record</td><td>Every scoring</td><td>Athletic competition + institutional tier; rate prestige and autograph tiers; PAV floors</td></tr>
+    <tr><td>Snapshot history (up to 6 prior rows)</td><td><code>athlete_snapshots</code> ordered by created_at</td><td>—</td><td>Every scoring</td><td>Content consistency, engagement stability, audience growth (each needs ≥3 rows), trends and GDELT deltas, momentum block</td></tr>
+    <tr><td>Weights</td><td><code>scoring_weights</code> active row (v7.2.0), cached in process at startup</td><td>—</td><td>On deploy or reload</td><td>Every threshold and point value in the engine; the rate model reads none of it (its constants live in <code>rateModelConfig.ts</code>)</td></tr>
+  </table></div>
+  <div class="callout"><p><b>Not inputs, despite appearances.</b> The analytics display layer (reach, saves, demographics) never reaches the engine. First look is stored on the snapshot but is not scored. Athlete-asserted facts and affiliations reach the engine only through the level record. <code>brand_voice</code> is never written.</p></div>
+
+  <h2 id="score">C · How the score is computed today (v7.2)</h2>
+  <div class="measure">
+    <p>Four capitals, each 0–100, blended by weights that depend on which data exists, then multiplied by a brand-safety factor, then stretched onto a 200–850 display scale with five tier words. The whole engine is <code>server/services/scoringService.ts</code>, pure and synchronous.</p>
+  </div>
+  <div class="formula">internal = round( Σ capital × weight[profile] ) × safety   →   display = piecewise(internal): 0–80 → 200–710, 80–100 → 710–850</div>
+  <div class="tbl"><table>
+    <tr><th>Capital</th><th>Built from</th><th>Notes</th></tr>
+    <tr><td><span class="cap au"></span>Audience</td><td>log10(total followers)×13 capped at 100, plus tier-relative engagement, posting frequency, platform count, engagement-momentum bonus, and five history signals (consistency, stability, growth, audience quality, cross-platform)</td><td>Zero when there are no followers. Only Instagram and TikTok carry engagement; X and YouTube count toward reach only.</td></tr>
+    <tr><td><span class="cap at"></span>Athletic</td><td>Achievements classified national / conference / academic by keyword lists, plus competition level (pro 25 … youth 3), plus institutional tier (power conference 15, other D1 3), plus GDELT baseline press</td><td>The keyword lists (all-acc, all-pac, all-sec…) are conference words hard-coded in the engine, which sits against the no-hardcoding rule.</td></tr>
+    <tr><td><span class="cap br"></span>Brand</td><td>Brand mentions (confidence &gt; .3, not team apparel), press volume + national-outlet bonus, Trends baseline, decaying Trends spike, GDELT delta and quality tiers, media assets, verified badge. Story-arc bonus is 0 since v7.1.</td><td>Spike and delta terms compare against the immediately previous snapshot, which since the nightly refresh is usually yesterday, so they are almost always 0.</td></tr>
+    <tr><td><span class="cap co"></span>Commercial</td><td>Count of earned deals, total value tiers, an engagement boost on value, paid ratio</td><td>Counted at signature. Mia's gorjana agreement is why her Commercial reads 70; every other athlete is 0.</td></tr>
+  </table></div>
+  <div class="two">
+    <div>
+      <h3>Cold-start profiles (which weights apply)</h3>
+      <div class="tbl"><table>
+        <tr><th>Profile</th><th>Condition</th><th>Au / At / Br / Co</th></tr>
+        <tr><td class="mono">full</td><td>social + research + ≥1 earned deal</td><td class="n">.25 / .25 / .25 / .25</td></tr>
+        <tr><td class="mono">socialAndResearch</td><td>social, no deals</td><td class="n">.30 / .25 / .25 / .20</td></tr>
+        <tr><td class="mono">socialOnly</td><td>social, no research</td><td class="n">.45 / .10 / .10 / .35</td></tr>
+        <tr><td class="mono">researchOnly</td><td>no social, no deals</td><td class="n">.05 / .40 / .40 / .15</td></tr>
+      </table></div>
+      <p><small>Only Mia is "full". The profile flips on the length of the deals array, which is why an empty array once dropped her from 634 to 576 (pinned by <code>emptyDealsChangesProfile.test.ts</code>).</small></p>
+    </div>
+    <div>
+      <h3>Display scale and tiers</h3>
+      <div class="tbl"><table>
+        <tr><th>Tier</th><th>Display ≥</th><th>In prod today</th></tr>
+        <tr><td>Icon</td><td class="n">800</td><td class="n">0</td></tr>
+        <tr><td>Elite</td><td class="n">700</td><td class="n">0</td></tr>
+        <tr><td>Established</td><td class="n">550</td><td class="n">4</td></tr>
+        <tr><td>Rising</td><td class="n">400</td><td class="n">2</td></tr>
+        <tr><td>Local</td><td class="n">200</td><td class="n">4</td></tr>
+      </table></div>
+      <p><small>Safety multiplier: GDELT tone &lt; 0 → .95, &lt; −2 → .90, &lt; −5 → .85; with no tone, 3+ negative sentiment items → .95.</small></p>
+    </div>
+  </div>
+  <h3>What the engine returns and what is persisted</h3>
+  <pre><code>ScoreResult {
+  internalScore 0–100      → athletes_current.internal_score (numeric, as a string)
+  displayScore  200–850    → athletes_current.display_score
+  tier          Icon|Elite|Established|Rising|Local → athletes_current.tier
+  capitals { audience, commercial, brand, athletic } 0–100 → athletes_current.capitals
+  ptsToNextTier, tierFillPct, safetyMultiplier, coldStartProfile, momentum{…}
+}                         → the WHOLE object is stored as athlete_snapshots.score</code></pre>
+  <div class="measure"><p><code>momentum</code>, <code>coldStartProfile</code>, <code>ptsToNextTier</code> and <code>tierFillPct</code> have no reader anywhere in the app, the kit, Mila or the voice worker. They are logged and stored, nothing more. Older snapshot rows also carry <code>pav</code>, <code>dealTypeRates</code> and <code>enrichmentBreakdown</code> from the retired v7 rate model.</p></div>
+
+  <h2 id="rates">D · How rates are computed, and why they depend on the score</h2>
+  <div class="measure">
+    <p>The rate card (<code>rateService.ts</code>, v3.1.0-calibrated) prices each deal type on its own market basis. It reads nothing from the database and none of the scoring weights; its benchmarks are constants in <code>rateModelConfig.ts</code>. It is computed inside <code>writeAthletesCurrent</code> on every score write, so a rate card can never exist without a score.</p>
+  </div>
+  <div class="formula">socialPost = CPMcurve(platform, followers) × athletePremium(followers) × clamp(√(ER / tierNorm), .7, 1.4) × scoreMod   ·   scoreMod = 1 + (clamp(.80 + .40·S/100, lo, hi) − 1) × provenance</div>
+  <div class="tbl"><table>
+    <tr><th>Deal type</th><th>Base</th><th>Where the score enters</th><th>Output on the card</th></tr>
+    <tr><td>Social post (per platform)</td><td>Log-log interpolation of IMH per-post anchors × athlete premium (2.0–2.6× at micro, 1.0× at 2M)</td><td>S = narrative .40 + athletic .30 + brand .25 + commercial .05, bounds .85–1.25</td><td><code>social[]</code>, <code>headlineSocial</code> (strongest platform)</td></tr>
+    <tr><td>Appearance</td><td>Flat prestige tier P1–P7</td><td>Tier <b>word</b> gates P1/P2/P4 (pro+Icon, pro+Elite, power-D1+Elite); S = athletic .45 + brand .30 + narrative .25</td><td><code>appearance.ratePerEvent</code></td></tr>
+    <tr><td>Ambassador</td><td>3.08 × headline social mid, per month</td><td>Inherits the social modifier</td><td><code>ambassador.monthlyRetainer</code></td></tr>
+    <tr><td>Autograph</td><td>Per-item tier × batch (25 NIL, 150 pro)</td><td>Tier word gates proIcon / proElite / collegeName; S = athletic .55 + narrative .25 + brand .20</td><td><code>autograph.ratePerDeal</code></td></tr>
+    <tr><td>Licensing</td><td>Royalty % (score-independent) + guaranteed minimum</td><td>S = brand .35 + audience .35 + narrative .30 on the minimum only</td><td><code>licensing.guaranteedMinimum</code></td></tr>
+    <tr><td>PAV (projected annual value)</td><td>Probability-weighted mix of the above by bucket (NIL micro / macro / pro), floors for pro and power-D1</td><td>Through every component</td><td><code>pav</code>; also projected into the <code>pav</code> column and <code>deal_type_rates.projectedAnnualValue</code></td></tr>
+  </table></div>
+  <div class="callout">
+    <p><b>Narrative is a fifth capital that only rates see.</b> <code>narrativeCapital = min(100, trends×.6 + min(40, gdelt×2))</code>. It is computed in <code>rateService</code> (and, unused, in the engine) and is never stored or shown.</p>
+    <p><b>Two silent defaults.</b> A capital missing from the object defaults to 50 inside <code>scoreMod</code>, and a tier word the code does not know simply fails every gate. A new score that renames a capital or a tier will change every rate with no error anywhere.</p>
+  </div>
+  <div class="measure"><p>Mia today, from the live row: Instagram $497 mid, TikTok $863 mid (headline), appearance $1,005 (P5), ambassador $2,659/month, PAV $22,361 mid. Range widths come from data provenance (connected 1.0 → research 0.5) times a per-type benchmark quality, not from the score.</p></div>
+
+  <h2 id="writers">E · The three writers and the one writer</h2>
+  <div class="measure"><p>Three skills compute a score. All three insert an <code>athlete_snapshots</code> row and then call <code>writeAthletesCurrent</code>, which is the only code allowed to touch <code>athletes_current</code>. That discipline is what makes a transition tractable: there is one place where the score becomes columns.</p></div>
+  <div class="tbl"><table>
+    <tr><th>Writer</th><th>Trigger word</th><th>Social it scores with</th><th>Research it scores with</th><th>Persists</th></tr>
+    <tr><td><code>researchAthlete</code></td><td class="mono">signup · manual · re_enrich</td><td>Connected analytics (best row per platform, 45-day fresh) with discovery filling gaps</td><td>Fresh Gemini/Kimi union with the last 5 snapshots</td><td>Snapshot + current row incl. research counts, story arc, timestamps; also proposes found teams and fills empty profile fields</td></tr>
+    <tr><td><code>fetchSocialData</code></td><td class="mono">social_connect</td><td>Previous snapshot's social with this platform replaced by the live OAuth fetch</td><td>Inherited from the previous snapshot</td><td>Snapshot + current row; marks the connection expired on 401/403</td></tr>
+    <tr><td><code>refreshScores</code></td><td class="mono">scheduled_refresh</td><td>Rebuilt from <code>social_analytics_snapshots</code> (connected &gt; provider &gt; discovery &gt; research)</td><td>Inherited from the latest snapshot</td><td>Snapshot + current row, but only when display score, tier, capitals or the rate card actually changed</td></tr>
+  </table></div>
+  <div class="measure">
+    <p>The writer always recomputes the v3 rate card and projects <code>pav</code> and <code>deal_type_rates</code> from it, sets follower columns from the social it scored with, and stamps <code>score_updated_at</code>. Its column list is pinned by <code>athletesCurrentWriter.test.ts</code>.</p>
+    <p>Two operational facts worth knowing: the 04:30 refresh is an in-process node-cron, not a Cloud Scheduler job, and unlike the inbox sync it takes no advisory lock, so with up to three Cloud Run instances it can run up to three times (the unchanged-skip makes that harmless today). The manual endpoint <code>POST /api/internal/score-refresh-cron?dryRun=true</code> returns per-athlete before/after deltas without writing, which is the readiest tool for a shadow comparison.</p>
+  </div>
+
+  <h2 id="readers">F · Everything downstream, by what it reads</h2>
+  <div class="measure"><p>Grouped by the stored field, because that is what a new algorithm has to keep or migrate. "Fails how" is what happens if the field's shape or vocabulary changes without the reader being updated.</p></div>
+
+  <h3>display_score and tier</h3>
+  <div class="tbl"><table>
+    <tr><th>Reader</th><th>Uses it for</th><th>Fails how</th></tr>
+    <tr><td><code>GET /api/v1/athletes/:id/score</code> → <code>use-score</code> hook → Brand tab, Score card, Score screen, Mila widget</td><td>Headline number "of 850", tier chip, ring header</td><td>Renders whatever number arrives; "of 850" and the /100 capital labels are literals in the client</td></tr>
+    <tr><td>Nomi Card assembler → index card, all three themes, kit renderer</td><td><code>value / max: 850</code>, <code>TIER_DISPLAY[tier]</code> lookup, aria text "Marketability Index X/850"</td><td>Unknown tier word falls back to the raw string; max is hard-coded 850</td></tr>
+    <tr><td>Narrator, shot list, Studio brief</td><td>Tier word in the model prompt ("Established tier", the deck register)</td><td>Prompt quality only</td></tr>
+    <tr><td><code>dealDetector.scoreDeal</code></td><td>"M.I.A. Score: X (tier)" line in the deal-scoring prompt</td><td>Prompt quality only</td></tr>
+    <tr><td><code>chat.ts</code> (v1 inline prompt path)</td><td>Score, tier, capitals, pav in the system context</td><td>Prompt quality only</td></tr>
+    <tr><td>Mila <code>get_score</code> → <code>score_breakdown</code> widget; voice <code>/score</code> and the worker's score card</td><td>displayScore, tier, top capital, all four capitals</td><td>Widget and voice card are suppressed if any capital key is missing (silent)</td></tr>
+    <tr><td>Voice <code>/score-history</code></td><td>Reads <code>athlete_snapshots.score.displayScore</code> and <code>.tier</code> across runs for "how has my score moved"</td><td>Any change to the stored JSON key names breaks history reads for old rows</td></tr>
+    <tr><td>Mila onboarding greet block, About you (<code>athleteRecord</code>), admin waitlist dashboard, rate service prestige/autograph gates</td><td>Score + tier text; tier word as a gate</td><td>Text degrades; rate gates silently drop to lower tiers</td></tr>
+  </table></div>
+
+  <h3>capitals { audience, commercial, brand, athletic }</h3>
+  <div class="tbl"><table>
+    <tr><th>Reader</th><th>Uses it for</th><th>Fails how</th></tr>
+    <tr><td><code>ConcentricRingScore</code> (client), Mila widget, voice card</td><td>Four rings with locked colours (blue, green, pink, gold) and quality labels at 80/60/40/20 on a /100 scale</td><td>Extra keys ignored; missing keys read as 0 in the client, suppress the card in Mila and voice</td></tr>
+    <tr><td>Nomi Card mix card + index rings</td><td>Grade per capital (value thresholds), Commercial row framed by confirmed-partner state</td><td>Same four keys assumed in order</td></tr>
+    <tr><td><code>rateService.scoreMod</code></td><td>Weighted blend per deal type, plus narrative</td><td>Missing key → 50 (silent)</td></tr>
+    <tr><td>Shot list prompt, chat context, About you Capitals line</td><td>Text</td><td>Prompt quality only</td></tr>
+  </table></div>
+
+  <h3>rate_card (v3 JSON) and its projections pav, deal_type_rates</h3>
+  <div class="tbl"><table>
+    <tr><th>Reader</th><th>Uses it for</th><th>Fails how</th></tr>
+    <tr><td><code>dealDetector.scoreDeal</code> → <code>dealScoreGrid</code></td><td>Per-type ranges (via <code>deriveDealTypeRates</code>), floor override from <code>deal_preferences.minimum_rates</code>, economics band ABOVE/UPPER/LOWER/BELOW, the verdict prose stored on <code>inbox_threads.score</code></td><td>Old thread scores keep the rate figure baked into their prose until re-scored (268 threads today; <code>_rescoreImpacted.ts</code> exists for this)</td></tr>
+    <tr><td><code>dealDraft</code>, <code>routes/deals</code> counter drafts</td><td>Unit-matched market rate for the negotiation draft</td><td>Draft quotes move with the rate</td></tr>
+    <tr><td><code>dealValueStore.economicsReadForDeals</code></td><td>Per-year deal money against PAV (Classic tab economics line)</td><td>Bands move with the rate</td></tr>
+    <tr><td><code>dealVoice.resolveAthleteRate</code>, Mila <code>offerMoney</code>, voice deal brief, voice profile</td><td><code>headlineSocial.ratePerPost.mid</code> as "her rate", rate multiples spoken aloud</td><td>Numbers move; no failure</td></tr>
+    <tr><td>Mila <code>get_rate_card</code>, <code>get_score</code> summary</td><td>Compact projection of the card</td><td>Defensive against shape drift</td></tr>
+    <tr><td>Client Rate card block, Rates &amp; floor settings, Brand tab PAV line</td><td>Per-platform and per-type ranges; floors set against suggested mids</td><td>Fall back to <code>deal_type_rates</code> when the card is absent</td></tr>
+    <tr><td>Nomi Card rates card, <code>deckRates</code>, athlete context</td><td>PAV and headline per-post on the deck</td><td>Cached kits (<code>media_kits</code>, 9 rows) and frozen shares (<code>card_shares</code>) keep old figures until rebuilt</td></tr>
+    <tr><td>Golden athletes + <code>evaluateRates.ts</code></td><td>Backtest of the rate model against IMH bands and published estimates (5 golden rows)</td><td>Calibration harness, not a runtime reader</td></tr>
+  </table></div>
+
+  <h2 id="state">G · Live state, 10 Sep 2026</h2>
+  <div class="two">
+    <div class="tbl"><table>
+      <tr><th>Fact</th><th>Value</th></tr>
+      <tr><td>athletes rows by status</td><td class="n">12 raw · 5 enriched · 5 waitlisted · 3 active</td></tr>
+      <tr><td>athletes_current rows / with rate card</td><td class="n">10 / 9</td></tr>
+      <tr><td>Display score range</td><td class="n">277 – 672</td></tr>
+      <tr><td>Snapshots</td><td class="n">272 (230 scheduled_refresh, 15 social_connect, 15 manual, 10 re_enrich, 2 signup)</td></tr>
+      <tr><td>Weights rows</td><td class="n">v6.2.0, v7.0.0, v7.1.0 inactive · v7.2.0 active</td></tr>
+      <tr><td>Active social connections</td><td class="n">1 Instagram, 1 TikTok (both Mia) · YouTube expired</td></tr>
+      <tr><td>Analytics rows</td><td class="n">connected 151 (1 athlete) · discovery 61 (6 athletes) · research 6</td></tr>
+      <tr><td>Deals earned / detected</td><td class="n">5 accepted + 1 completed / 256 detected</td></tr>
+      <tr><td>Athletes with rate floors set</td><td class="n">3</td></tr>
+      <tr><td>Scored inbox threads</td><td class="n">268 of 288</td></tr>
+    </table></div>
+    <div class="tbl"><table>
+      <tr><th>Athlete</th><th>Score</th><th>Profile</th><th>Au/At/Br/Co</th></tr>
+      <tr><td>Mia Bhuta</td><td class="n">672 Established</td><td class="mono">full</td><td class="n">100/91/34/70</td></tr>
+      <tr><td>Lara Somfai</td><td class="n">608 Established</td><td class="mono">socialAndResearch</td><td class="n">100/94/42/0</td></tr>
+      <tr><td>Matt Rose</td><td class="n">563 Established</td><td class="mono">socialAndResearch</td><td class="n">100/68/39/0</td></tr>
+      <tr><td>Anthony Batson Jr.</td><td class="n">551 Established</td><td class="mono">socialAndResearch</td><td class="n">98/65/37/0</td></tr>
+      <tr><td>Aditya Sharma</td><td class="n">512 Rising</td><td class="mono">stale (Jul 23, card "v3")</td><td class="n">58/74/52/49</td></tr>
+      <tr><td>Chisom Okpara</td><td class="n">506 Rising</td><td class="mono">researchOnly</td><td class="n">0/77/43/0</td></tr>
+      <tr><td>Paytest Athlete</td><td class="n">359 Local</td><td class="mono">researchOnly</td><td class="n">0/20/23/50</td></tr>
+      <tr><td>Lilia Bhuta</td><td class="n">359 Local</td><td class="mono">socialAndResearch</td><td class="n">39/42/13/0</td></tr>
+      <tr><td>Aaron C.-S. Nguyen</td><td class="n">296 Local</td><td class="mono">researchOnly</td><td class="n">0/20/17/0</td></tr>
+      <tr><td>demo</td><td class="n">277 Local</td><td class="mono">no rate card</td><td class="n">22/20/0/0</td></tr>
+    </table></div>
+  </div>
+  <div class="measure"><p>Read this as: the audience capital saturates at 100 for anyone above roughly 10K followers because of the log curve, athletic dominates for everyone else, and commercial is zero for all but two rows. Whatever the new methodology is, ten athletes is a small enough set to hand-check every before/after.</p></div>
+
+  <h2 id="risks">H · Things the audit found that the transition must not trip over</h2>
+  <ol class="risklist">
+    <li><span class="pill risk">silent</span> <b>Rates default missing capitals to 50 and unknown tier words to the lowest gate.</b> A renamed capital or a new tier vocabulary changes every rate with no error. <small>rateService.ts scoreMod, prestigeTier, autographTier</small></li>
+    <li><span class="pill risk">crash</span> <b>reloadWeights throws if the config lacks <code>rateEstimation.brackets</code></b> (it sorts them unconditionally), even though nothing reads them since the v7 rate model was retired. A clean new weights row without that dead block will fail every scoring at startup. <small>weightsService.ts reloadWeights</small></li>
+    <li><span class="pill risk">silent</span> <b>Mila and the voice worker drop the score card if any of the four capital keys is missing.</b> The client rings render 0 instead. <small>mila/widgets.ts, voice/scoreRoute.ts, mila-voice widgetBridge.ts</small></li>
+    <li><span class="pill warn">history</span> <b>The whole ScoreResult is stored on every snapshot and the voice score-history route reads <code>displayScore</code> / <code>tier</code> from those rows.</b> A new result shape must either keep those two keys or the history reader must be versioned. 272 rows today.</li>
+    <li><span class="pill warn">history</span> <b>The engine is path-dependent.</b> Five audience signals need ≥3 prior snapshots; spike and delta terms diff against the previous row. A new algorithm that is not history-dependent will make old and new scores incomparable for the first run and every "unchanged" comparison in refreshScores will fire once.</li>
+    <li><span class="pill warn">contradiction</span> <b>Mila's system prompt states "Deals do NOT affect the M.I.A. score"</b>, while Commercial capital counts accepted deals and the cold-start profile flips on them (Mia +7 from gorjana). Decide which is true in the new methodology and fix the prompt to match. <small>mila/prompt.ts line 86</small></li>
+    <li><span class="pill warn">baked</span> <b>Deal verdicts bake the athlete's rate into prose stored on the thread.</b> 268 scored threads say things like "cannot compare to her $1,000 per-post floor". A rate change needs a gated re-score (<code>server/scripts/_rescoreImpacted.ts</code> is the existing pattern; it calls Kimi per thread).</li>
+    <li><span class="pill warn">cache</span> <b>Nomi Cards are cached and shares are frozen.</b> 9 cached kits across 3 athletes and 2 frozen shares will show the old score until rebuilt (the onboarding run deletes only the generic brand_id 0 kit). Brand-tailored kits are never invalidated by a score change.</li>
+    <li><span class="pill warn">deploy</span> <b>Weights swap pattern is one-active-row.</b> The partial unique index means a new version must be inserted inactive and swapped in one transaction (0038 and 0042 are the templates). Dry-run every migration with BEGIN … ROLLBACK against prod and watch the deploy go green; deploy.yml re-creates CHECK lists by hand and they must mirror schema.ts.</li>
+    <li><span class="pill warn">stale</span> <b>Three fixtures will drift:</b> <code>__fixtures__/scoringWeights.v7.json</code> (the profile-switch test), the inline weights in <code>server/scripts/testScoring.ts</code>, and the <code>mediaKitService.golden</code> snapshot pinning the "Established" tier text.</li>
+    <li><span class="pill">hygiene</span> <b>Legacy columns still have fallback readers.</b> <code>pav</code> and <code>deal_type_rates</code> are projections of the v3 card, but the client, chat context, deck rates and voice score still read them as fallbacks. Aditya's row still carries a July card with version "v3", the demo row has none.</li>
+    <li><span class="pill">hygiene</span> <b>Sport and conference words live in the engine</b> (NATIONAL_KW, CONFERENCE_KW, POWER_CONFERENCES in two files). The no-hardcoding rule says these belong in data. The new methodology is the moment to move them.</li>
+    <li><span class="pill">ops</span> <b>The 04:30 refresh has no advisory lock and no Cloud Scheduler job</b>; it is an in-process cron on every instance. Fine today because of the unchanged-skip, worth locking before a heavier engine runs nightly.</li>
+    <li><span class="pill">ops</span> <b>Direct database access from this machine is gone.</b> The public IP changed (38.248.93.149 is not in the authorized networks); the bundled <code>cloud-sql-proxy.exe</code> on port 5440 works.</li>
+  </ol>
+
+  <h2 id="plan">I · Transition approach with the least downstream risk</h2>
+  <div class="measure"><p>The safest shape is the one the codebase already has: a new pure engine beside the old one, selected by the active weights row, shadow-run through the existing dry-run endpoint, then cut over by swapping one row. The decision that sets the size of the job is whether the external contract survives.</p></div>
+
+  <div class="step"><div class="num">1</div><div><p><b>Fix the contract before the algorithm.</b> Decide, in writing, for each of: display range (200–850?), tier vocabulary (five words?), capital set (four keys, 0–100?), and whether deals feed the score. Keeping all four means the app, Mila, voice, deck and deal pipeline need no change. Any change is a named migration with its own reader list from section F.</p></div></div>
+  <div class="step"><div class="num">2</div><div><p><b>Add the engine as a second pure function</b> (<code>scoringServiceV8.ts</code> or an <code>engine</code> field on the weights config), returning the same <code>ScoreResult</code> type, with an explicit adapter if the internal shape differs. Keep <code>computeScore</code>'s signature so the three writers and <code>refreshScores.unchanged</code> stay untouched. Strip the dead <code>rateEstimation</code> requirement from <code>reloadWeights</code> first.</p></div></div>
+  <div class="step"><div class="num">3</div><div><p><b>Shadow-run before any write.</b> Insert the new weights row inactive; extend the dry-run script pattern (<code>scripts/_dryRunV72.ts</code>) to compute old and new for all 10 athletes plus the 5 golden athletes, printing score, tier, capitals and the full rate card side by side. Store the grid on the PR the way #363 did. Run <code>evaluateRates.ts</code> against the new capitals so the rate calibration is re-checked in the same pass.</p></div></div>
+  <div class="step"><div class="num">4</div><div><p><b>Re-calibrate rates deliberately, not by accident.</b> If the capital distribution moves (today audience saturates at 100), the scoreMod blends in <code>rateModelConfig.SCORE_MOD</code> and the tier gates need a matching bump of <code>RATE_MODEL_VERSION</code>. Either pin rates by freezing the old capitals into the rate input during the transition, or version both together.</p></div></div>
+  <div class="step"><div class="num">5</div><div><p><b>Cut over with one transaction</b> (the 0038/0042 migration shape), then force a full recompute: <code>POST /api/internal/score-refresh-cron</code> writes only on change, so use <code>refreshAthleteScore(id, { force: true })</code> per athlete or a one-off script. Watch the deploy to green.</p></div></div>
+  <div class="step"><div class="num">6</div><div><p><b>Re-derive what was baked.</b> Re-score the 268 deal threads (gated, reviewed dry run first), rebuild cached kits for all brand ids, leave frozen shares frozen by design, and refresh the three fixtures. Update the Mila prompt line about deals.</p></div></div>
+  <div class="step"><div class="num">7</div><div><p><b>Retire the fallbacks in a separate PR.</b> Once every current row carries the new card, drop the readers of <code>pav</code> and <code>deal_type_rates</code> and the momentum block if the new engine does not produce it.</p></div></div>
+
+  <h3>What I need from the new methodology to size the work</h3>
+  <ul>
+    <li>Output shape: score range, tier names, capital names and scale, anything new the UI should show.</li>
+    <li>Inputs: anything not already on the snapshot (new APIs mean a new writer path and a new snapshot column, not just a new engine).</li>
+    <li>History: whether it needs prior snapshots, and how many.</li>
+    <li>Deals: whether signed deals count, and at what moment.</li>
+    <li>Whether the rate model keeps reading the score, and which capitals it should read.</li>
+    <li>Cadence: nightly is free today; anything heavier needs the lock in H·12.</li>
+  </ul>
+
+  <h3>Files that matter</h3>
+  <div class="tbl"><table>
+    <tr><th>Layer</th><th>Files</th></tr>
+    <tr><td>Engine and weights</td><td class="mono">server/services/scoringService.ts · weightsService.ts · scripts/seedWeightsV7.ts · migrations/0038, 0042</td></tr>
+    <tr><td>Rates</td><td class="mono">server/services/rateService.ts · rateModelConfig.ts · deckRates.ts · docs/rate-model-design.md · rate-model-calibration.md</td></tr>
+    <tr><td>Writers</td><td class="mono">server/skills/researchAthlete.ts · fetchSocialData.ts · refreshScores.ts · server/services/athletesCurrentWriter.ts · snapshotAdapter.ts · snapshotDeals.ts</td></tr>
+    <tr><td>Creation</td><td class="mono">server/routes/auth.ts · waitlist.ts · admin.ts · oauthCallback.ts · server/workflow/definitions/{onboarding,firstLook,researchRefresh}.ts</td></tr>
+    <tr><td>Tests and tooling</td><td class="mono">server/skills/emptyDealsChangesProfile.test.ts · dbSnapshotToScoring.characterization.test.ts · athletesCurrentWriter.test.ts · scripts/_dryRunV72.ts · server/scripts/{evaluateRates,_rescoreImpacted,backfillRateCards,testScoring}.ts</td></tr>
+  </table></div>
+</div>

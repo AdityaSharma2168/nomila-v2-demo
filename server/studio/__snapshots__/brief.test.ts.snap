@@ -1,0 +1,677 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`assembleBrief — the four shapes inbound · edit — they named a piece AND there is a frame to preserve 1`] = `
+{
+  "athlete": {
+    "aesthetic": {
+      "notes": [
+        "National Team",
+        "Soccer · Example · National Team",
+      ],
+      "register": "college · soccer",
+    },
+    "athleteId": "11111111-2222-4333-8444-555555555555",
+    "audience": {
+      "ageRange": "18-24",
+      "descriptor": "women 18-24 · top market US",
+      "share": 66,
+      "topCity": "Exampleton",
+      "topMarket": "US",
+    },
+    "commercialState": "undisclosed",
+    "goal": "Put gorjana's product in frame without losing her",
+    "identity": {
+      "conference": "Example Conference",
+      "division": "D1",
+      "firstName": "Test",
+      "identityLine": "Soccer · Example · National Team",
+      "marqueeTag": "National Team",
+      "name": "Test Spike Athlete",
+      "org": "Example",
+      "segment": "college",
+      "sport": "soccer",
+    },
+    "voice": {
+      "highlights": [
+        "35K combined following",
+        "top post reached 18.4K views",
+        "31.2K reach on that post",
+        "audience skews women 18-24",
+        "top geography US",
+        "Youth National Team call-up",
+        "Conference Defender of the Year",
+      ],
+      "storyArc": "A defender who kept choosing the harder programme and kept getting picked anyway.",
+    },
+  },
+  "brand": {
+    "brandId": 1,
+    "category": "Luxury Goods",
+    "competitors": [],
+    "donts": [],
+    "dos": [],
+    "name": "gorjana",
+    "palette": [],
+    "pieces": [
+      {
+        "granularity": "category",
+        "name": "necklaces",
+        "reference": null,
+      },
+      {
+        "granularity": "category",
+        "name": "earrings",
+        "reference": null,
+      },
+      {
+        "granularity": "category",
+        "name": "rings",
+        "reference": null,
+      },
+      {
+        "granularity": "category",
+        "name": "bracelets",
+        "reference": null,
+      },
+      {
+        "granularity": "sku",
+        "name": "Wilder Mini Alphabet M",
+        "reference": null,
+      },
+    ],
+    "recentCampaigns": [
+      "gorjana Sports Club launch",
+      "USWNTPA partnership",
+    ],
+    "referenceImagery": [
+      {
+        "ref": "https://example.test/gorjana-logo.png",
+        "role": "logo",
+      },
+      {
+        "ref": "https://example.test/gorjana-cover.jpg",
+        "role": "cover",
+      },
+      {
+        "ref": "https://example.test/gorjana-chains.jpg",
+        "role": "gallery",
+      },
+      {
+        "ref": "https://example.test/gorjana-charms.jpg",
+        "role": "gallery",
+      },
+    ],
+    "tier": "established",
+    "tone": {
+      "audience": "Primarily women aged 25-34 seeking accessible luxury and everyday elegance",
+      "contentStyle": "coastal-cool, effortlessly chic",
+      "values": "Empowering women through accessible, everyday luxury jewelry",
+    },
+  },
+  "briefId": "<briefId>",
+  "createdAt": "<createdAt>",
+  "gaps": [
+    {
+      "field": "brand.palette",
+      "note": "No brand colours are stored for any brand in the catalog yet. Art direction falls back to the brand's own reference imagery.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.dos/donts",
+      "note": "inbox_brands.enrichment.brand_safety is empty for this brand, so there are no explicit do's and don'ts beyond the competitor rule.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.pieces[necklaces].reference",
+      "note": "No product photograph on file for "necklaces" — only the category name, which is not enough to render a specific piece.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.pieces[earrings].reference",
+      "note": "No product photograph on file for "earrings" — only the category name, which is not enough to render a specific piece.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.pieces[rings].reference",
+      "note": "No product photograph on file for "rings" — only the category name, which is not enough to render a specific piece.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.pieces[bracelets].reference",
+      "note": "No product photograph on file for "bracelets" — only the category name, which is not enough to render a specific piece.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.pieces[Wilder Mini Alphabet M].reference",
+      "note": "The ask names "Wilder Mini Alphabet M" but no clean product photograph of it is on file. Rendering it would invent the product. Needs a supplied product shot before this can generate.",
+      "severity": "blocking",
+    },
+    {
+      "field": "athlete.aesthetic",
+      "note": "No first-class aesthetic or visual-identity field exists on an athlete today. The register below stands in for one and is derived from her sport, level and credential alone — enough to fit a setting to her, not a visual identity.",
+      "severity": "degraded",
+    },
+  ],
+  "job": {
+    "deliverable": "post",
+    "direction": {
+      "featuredPieces": [
+        "Wilder Mini Alphabet M",
+      ],
+      "set": "given",
+      "statement": "Showcase the Wilder Mini Alphabet M on the shoot frames.",
+      "untrusted": true,
+    },
+    "mode": "edit",
+    "objective": "showcase-product",
+    "origin": "inbound",
+    "references": [],
+    "source": {
+      "editRegions": [
+        {
+          "height": 780,
+          "label": "competitor swoosh on the ball",
+          "left": 2125,
+          "top": 2345,
+          "width": 780,
+        },
+      ],
+      "height": 6000,
+      "mediaAssetId": "00000000-0000-4000-8000-000000000042",
+      "ref": "athletes/synthetic/frame-0709.jpg",
+      "width": 4000,
+    },
+  },
+}
+`;
+
+exports[`assembleBrief — the four shapes inbound · generate — they brought the ask, no frame to preserve 1`] = `
+{
+  "athlete": {
+    "aesthetic": {
+      "notes": [
+        "National Team",
+        "Soccer · Example · National Team",
+      ],
+      "register": "college · soccer",
+    },
+    "athleteId": "11111111-2222-4333-8444-555555555555",
+    "audience": {
+      "ageRange": "18-24",
+      "descriptor": "women 18-24 · top market US",
+      "share": 66,
+      "topCity": "Exampleton",
+      "topMarket": "US",
+    },
+    "commercialState": "undisclosed",
+    "goal": "Announce the gorjana partnership in her own voice",
+    "identity": {
+      "conference": "Example Conference",
+      "division": "D1",
+      "firstName": "Test",
+      "identityLine": "Soccer · Example · National Team",
+      "marqueeTag": "National Team",
+      "name": "Test Spike Athlete",
+      "org": "Example",
+      "segment": "college",
+      "sport": "soccer",
+    },
+    "voice": {
+      "highlights": [
+        "35K combined following",
+        "top post reached 18.4K views",
+        "31.2K reach on that post",
+        "audience skews women 18-24",
+        "top geography US",
+        "Youth National Team call-up",
+        "Conference Defender of the Year",
+      ],
+      "storyArc": "A defender who kept choosing the harder programme and kept getting picked anyway.",
+    },
+  },
+  "brand": {
+    "brandId": 1,
+    "category": "Luxury Goods",
+    "competitors": [],
+    "donts": [],
+    "dos": [],
+    "name": "gorjana",
+    "palette": [],
+    "pieces": [
+      {
+        "granularity": "category",
+        "name": "necklaces",
+        "reference": null,
+      },
+      {
+        "granularity": "category",
+        "name": "earrings",
+        "reference": null,
+      },
+      {
+        "granularity": "category",
+        "name": "rings",
+        "reference": null,
+      },
+      {
+        "granularity": "category",
+        "name": "bracelets",
+        "reference": null,
+      },
+    ],
+    "recentCampaigns": [
+      "gorjana Sports Club launch",
+      "USWNTPA partnership",
+    ],
+    "referenceImagery": [
+      {
+        "ref": "https://example.test/gorjana-logo.png",
+        "role": "logo",
+      },
+      {
+        "ref": "https://example.test/gorjana-cover.jpg",
+        "role": "cover",
+      },
+      {
+        "ref": "https://example.test/gorjana-chains.jpg",
+        "role": "gallery",
+      },
+      {
+        "ref": "https://example.test/gorjana-charms.jpg",
+        "role": "gallery",
+      },
+    ],
+    "tier": "established",
+    "tone": {
+      "audience": "Primarily women aged 25-34 seeking accessible luxury and everyday elegance",
+      "contentStyle": "coastal-cool, effortlessly chic",
+      "values": "Empowering women through accessible, everyday luxury jewelry",
+    },
+  },
+  "briefId": "<briefId>",
+  "createdAt": "<createdAt>",
+  "gaps": [
+    {
+      "field": "brand.palette",
+      "note": "No brand colours are stored for any brand in the catalog yet. Art direction falls back to the brand's own reference imagery.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.dos/donts",
+      "note": "inbox_brands.enrichment.brand_safety is empty for this brand, so there are no explicit do's and don'ts beyond the competitor rule.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.pieces[necklaces].reference",
+      "note": "No product photograph on file for "necklaces" — only the category name, which is not enough to render a specific piece.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.pieces[earrings].reference",
+      "note": "No product photograph on file for "earrings" — only the category name, which is not enough to render a specific piece.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.pieces[rings].reference",
+      "note": "No product photograph on file for "rings" — only the category name, which is not enough to render a specific piece.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.pieces[bracelets].reference",
+      "note": "No product photograph on file for "bracelets" — only the category name, which is not enough to render a specific piece.",
+      "severity": "degraded",
+    },
+    {
+      "field": "athlete.aesthetic",
+      "note": "No first-class aesthetic or visual-identity field exists on an athlete today. The register below stands in for one and is derived from her sport, level and credential alone — enough to fit a setting to her, not a visual identity.",
+      "severity": "degraded",
+    },
+  ],
+  "job": {
+    "deliverable": "carousel",
+    "direction": {
+      "featuredPieces": [],
+      "set": "given",
+      "statement": "Brand announcement — introduce her as a gorjana partner.",
+      "untrusted": true,
+    },
+    "mode": "generate",
+    "objective": "announce",
+    "origin": "inbound",
+    "references": [],
+    "source": null,
+  },
+}
+`;
+
+exports[`assembleBrief — the four shapes system-originated · edit — we author, but a real frame has to survive 1`] = `
+{
+  "athlete": {
+    "aesthetic": {
+      "notes": [
+        "National Team",
+        "Soccer · Example · National Team",
+      ],
+      "register": "college · soccer",
+    },
+    "athleteId": "11111111-2222-4333-8444-555555555555",
+    "audience": {
+      "ageRange": "18-24",
+      "descriptor": "women 18-24 · top market US",
+      "share": 66,
+      "topCity": "Exampleton",
+      "topMarket": "US",
+    },
+    "commercialState": "undisclosed",
+    "goal": "Retell a moment she already earned",
+    "identity": {
+      "conference": "Example Conference",
+      "division": "D1",
+      "firstName": "Test",
+      "identityLine": "Soccer · Example · National Team",
+      "marqueeTag": "National Team",
+      "name": "Test Spike Athlete",
+      "org": "Example",
+      "segment": "college",
+      "sport": "soccer",
+    },
+    "voice": {
+      "highlights": [
+        "35K combined following",
+        "top post reached 18.4K views",
+        "31.2K reach on that post",
+        "audience skews women 18-24",
+        "top geography US",
+        "Youth National Team call-up",
+        "Conference Defender of the Year",
+      ],
+      "storyArc": "A defender who kept choosing the harder programme and kept getting picked anyway.",
+    },
+  },
+  "brand": {
+    "brandId": 1,
+    "category": "Luxury Goods",
+    "competitors": [],
+    "donts": [],
+    "dos": [],
+    "name": "gorjana",
+    "palette": [],
+    "pieces": [
+      {
+        "granularity": "category",
+        "name": "necklaces",
+        "reference": null,
+      },
+      {
+        "granularity": "category",
+        "name": "earrings",
+        "reference": null,
+      },
+      {
+        "granularity": "category",
+        "name": "rings",
+        "reference": null,
+      },
+      {
+        "granularity": "category",
+        "name": "bracelets",
+        "reference": null,
+      },
+    ],
+    "recentCampaigns": [
+      "gorjana Sports Club launch",
+      "USWNTPA partnership",
+    ],
+    "referenceImagery": [
+      {
+        "ref": "https://example.test/gorjana-logo.png",
+        "role": "logo",
+      },
+      {
+        "ref": "https://example.test/gorjana-cover.jpg",
+        "role": "cover",
+      },
+      {
+        "ref": "https://example.test/gorjana-chains.jpg",
+        "role": "gallery",
+      },
+      {
+        "ref": "https://example.test/gorjana-charms.jpg",
+        "role": "gallery",
+      },
+    ],
+    "tier": "established",
+    "tone": {
+      "audience": "Primarily women aged 25-34 seeking accessible luxury and everyday elegance",
+      "contentStyle": "coastal-cool, effortlessly chic",
+      "values": "Empowering women through accessible, everyday luxury jewelry",
+    },
+  },
+  "briefId": "<briefId>",
+  "createdAt": "<createdAt>",
+  "gaps": [
+    {
+      "field": "brand.palette",
+      "note": "No brand colours are stored for any brand in the catalog yet. Art direction falls back to the brand's own reference imagery.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.dos/donts",
+      "note": "inbox_brands.enrichment.brand_safety is empty for this brand, so there are no explicit do's and don'ts beyond the competitor rule.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.pieces[necklaces].reference",
+      "note": "No product photograph on file for "necklaces" — only the category name, which is not enough to render a specific piece.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.pieces[earrings].reference",
+      "note": "No product photograph on file for "earrings" — only the category name, which is not enough to render a specific piece.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.pieces[rings].reference",
+      "note": "No product photograph on file for "rings" — only the category name, which is not enough to render a specific piece.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.pieces[bracelets].reference",
+      "note": "No product photograph on file for "bracelets" — only the category name, which is not enough to render a specific piece.",
+      "severity": "degraded",
+    },
+    {
+      "field": "athlete.aesthetic",
+      "note": "No first-class aesthetic or visual-identity field exists on an athlete today. The register below stands in for one and is derived from her sport, level and credential alone — enough to fit a setting to her, not a visual identity.",
+      "severity": "degraded",
+    },
+  ],
+  "job": {
+    "deliverable": "post",
+    "direction": {
+      "featuredPieces": [],
+      "set": "chosen",
+      "statement": "Retell a moment she already earned",
+      "untrusted": false,
+    },
+    "mode": "edit",
+    "objective": "recap",
+    "origin": "system",
+    "references": [],
+    "source": {
+      "editRegions": [
+        {
+          "height": 780,
+          "label": "competitor swoosh on the ball",
+          "left": 2125,
+          "top": 2345,
+          "width": 780,
+        },
+      ],
+      "height": 6000,
+      "mediaAssetId": "00000000-0000-4000-8000-000000000042",
+      "ref": "athletes/synthetic/frame-0709.jpg",
+      "width": 4000,
+    },
+  },
+}
+`;
+
+exports[`assembleBrief — the four shapes system-originated · generate — we author for her, nothing to preserve 1`] = `
+{
+  "athlete": {
+    "aesthetic": {
+      "notes": [
+        "National Team",
+        "Soccer · Example · National Team",
+      ],
+      "register": "college · soccer",
+    },
+    "athleteId": "11111111-2222-4333-8444-555555555555",
+    "audience": {
+      "ageRange": "18-24",
+      "descriptor": "women 18-24 · top market US",
+      "share": 66,
+      "topCity": "Exampleton",
+      "topMarket": "US",
+    },
+    "commercialState": "undisclosed",
+    "goal": "Grow her audience with something that reads as hers, not as an ad",
+    "identity": {
+      "conference": "Example Conference",
+      "division": "D1",
+      "firstName": "Test",
+      "identityLine": "Soccer · Example · National Team",
+      "marqueeTag": "National Team",
+      "name": "Test Spike Athlete",
+      "org": "Example",
+      "segment": "college",
+      "sport": "soccer",
+    },
+    "voice": {
+      "highlights": [
+        "35K combined following",
+        "top post reached 18.4K views",
+        "31.2K reach on that post",
+        "audience skews women 18-24",
+        "top geography US",
+        "Youth National Team call-up",
+        "Conference Defender of the Year",
+      ],
+      "storyArc": "A defender who kept choosing the harder programme and kept getting picked anyway.",
+    },
+  },
+  "brand": {
+    "brandId": 1,
+    "category": "Luxury Goods",
+    "competitors": [],
+    "donts": [],
+    "dos": [],
+    "name": "gorjana",
+    "palette": [],
+    "pieces": [
+      {
+        "granularity": "category",
+        "name": "necklaces",
+        "reference": null,
+      },
+      {
+        "granularity": "category",
+        "name": "earrings",
+        "reference": null,
+      },
+      {
+        "granularity": "category",
+        "name": "rings",
+        "reference": null,
+      },
+      {
+        "granularity": "category",
+        "name": "bracelets",
+        "reference": null,
+      },
+    ],
+    "recentCampaigns": [
+      "gorjana Sports Club launch",
+      "USWNTPA partnership",
+    ],
+    "referenceImagery": [
+      {
+        "ref": "https://example.test/gorjana-logo.png",
+        "role": "logo",
+      },
+      {
+        "ref": "https://example.test/gorjana-cover.jpg",
+        "role": "cover",
+      },
+      {
+        "ref": "https://example.test/gorjana-chains.jpg",
+        "role": "gallery",
+      },
+      {
+        "ref": "https://example.test/gorjana-charms.jpg",
+        "role": "gallery",
+      },
+    ],
+    "tier": "established",
+    "tone": {
+      "audience": "Primarily women aged 25-34 seeking accessible luxury and everyday elegance",
+      "contentStyle": "coastal-cool, effortlessly chic",
+      "values": "Empowering women through accessible, everyday luxury jewelry",
+    },
+  },
+  "briefId": "<briefId>",
+  "createdAt": "<createdAt>",
+  "gaps": [
+    {
+      "field": "brand.palette",
+      "note": "No brand colours are stored for any brand in the catalog yet. Art direction falls back to the brand's own reference imagery.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.dos/donts",
+      "note": "inbox_brands.enrichment.brand_safety is empty for this brand, so there are no explicit do's and don'ts beyond the competitor rule.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.pieces[necklaces].reference",
+      "note": "No product photograph on file for "necklaces" — only the category name, which is not enough to render a specific piece.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.pieces[earrings].reference",
+      "note": "No product photograph on file for "earrings" — only the category name, which is not enough to render a specific piece.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.pieces[rings].reference",
+      "note": "No product photograph on file for "rings" — only the category name, which is not enough to render a specific piece.",
+      "severity": "degraded",
+    },
+    {
+      "field": "brand.pieces[bracelets].reference",
+      "note": "No product photograph on file for "bracelets" — only the category name, which is not enough to render a specific piece.",
+      "severity": "degraded",
+    },
+    {
+      "field": "athlete.aesthetic",
+      "note": "No first-class aesthetic or visual-identity field exists on an athlete today. The register below stands in for one and is derived from her sport, level and credential alone — enough to fit a setting to her, not a visual identity.",
+      "severity": "degraded",
+    },
+  ],
+  "job": {
+    "deliverable": "post",
+    "direction": {
+      "featuredPieces": [],
+      "set": "chosen",
+      "statement": "Grow her audience with something that reads as hers, not as an ad",
+      "untrusted": false,
+    },
+    "mode": "generate",
+    "objective": "grow-following",
+    "origin": "system",
+    "references": [],
+    "source": null,
+  },
+}
+`;

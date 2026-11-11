@@ -1,0 +1,684 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "ben-shelton",
+    "name": "Ben Shelton",
+    "sport": "Tennis"
+  },
+  "parseError": null,
+  "dimensionAssessments": {
+    "athletic_authority": {
+      "prose": "Ben Shelton is establishing himself at the very top of professional tennis, cemented by his career-high world No. 4 ranking and historic run to the 2026 US Open final. His athletic authority is pristine, backed by a unique achievement of winning titles on clay, grass, indoor hard, and outdoor hard courts within the same calendar season. As the undisputed American No. 1, he is the central hope of domestic men's tennis.",
+      "confidence": "HIGH",
+      "confidenceReason": "Verifiable ATP rankings, tournament draws, and historical record books firmly establish his current athletic peak."
+    },
+    "audience_scale": {
+      "prose": "Shelton possesses a robust, highly valuable digital footprint led by over 1.3 million followers on Instagram. While this places him in the top echelon of young tennis stars, his overall platform reach is slightly restricted by his deliberate choice to not maintain accounts on other major social networks. However, this is heavily subsidized by the massive reach of his brand partners and his girlfriend, Olympic gold medalist Trinity Rodman.",
+      "confidence": "HIGH",
+      "confidenceReason": "Follower counts and platform presence are highly transparent and well-documented across public platforms."
+    },
+    "engagement_quality": {
+      "prose": "While private, first-party data is unavailable, public indicators point to exceptionally strong engagement surrounding Shelton's content, driven by his natural charisma and on-court celebrations. His viral signature moments and crossover lifestyle posts with Trinity Rodman consistently reach audiences well beyond his primary follower base. The audience composition consists of highly active and passionate sports and lifestyle enthusiasts.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "Public engagement rates on Instagram are visible, but the lack of private video retention, saves, and story metrics prevents a high confidence rating."
+    },
+    "cultural_relevance": {
+      "prose": "Shelton represents a rare crossover sports figure in American culture, drawing extensive media attention from both elite tennis publications and mainstream lifestyle outlets. His signature dialed-in phone celebration has entered broader sports culture, and his relationship with Trinity Rodman has solidified his status in pop culture. This creates a persistent cultural footprint that far exceeds standard tennis demographics.",
+      "confidence": "HIGH",
+      "confidenceReason": "Consistent mainstream coverage, viral pop-culture footprint, and search trend spikes heavily validate his cultural footprint."
+    },
+    "narrative_power": {
+      "prose": "The narrative surrounding Shelton is exceptionally compelling and perfectly structured for commercial branding. His journey as a collegiate NCAA champion trained by his father, combined with his status as the first Black American man in the US Open final since Arthur Ashe, provides deep and authentic storytelling dimensions. This story is naturally embraced by the media and translates effortlessly into premium brand campaigns.",
+      "confidence": "HIGH",
+      "confidenceReason": "His unique background, family coaching setup, and historical milestones are extensively documented and corroborated."
+    },
+    "brand_fit": {
+      "prose": "Shelton is a premier, highly versatile ambassador suitable for a vast array of commercial categories ranging from luxury products to athletic gear. His clean, family-friendly, and mentally grounded public persona provides maximum brand safety for corporate partners. Furthermore, his core demographic successfully bridges affluent traditional tennis fans with a highly coveted, youthful Gen Z audience.",
+      "confidence": "HIGH",
+      "confidenceReason": "He has a clear, established track record of brand alignment across luxury, tech, lifestyle, and sportswear categories."
+    },
+    "commercial_proof": {
+      "prose": "Shelton boasts definitive commercial proof, serving as a global ambassador for premier brands like Rolex, Ralph Lauren Fragrances, and Bose. His high market demand is explicitly illustrated by the multi-million dollar bidding war currently surrounding his upcoming footwear and apparel contract. These verified, top-tier sponsorships confirm that he is one of the most lucrative and sought-after assets in tennis.",
+      "confidence": "HIGH",
+      "confidenceReason": "Confirmed partnership rosters, public corporate campaigns, and reported contract valuations provide strong commercial evidence."
+    },
+    "momentum": {
+      "prose": "Shelton is currently experiencing peak professional and commercial momentum, driven by his historic 2026 US Open final run. His athletic trajectory, media visibility, and search interest are all surging rapidly at the exact same moment. This explosive rise is directly translating into commercial acceleration as major brands compete for his endorsement at historic financial tiers.",
+      "confidence": "HIGH",
+      "confidenceReason": "The recency of his US Open final appearance and the ongoing sportswear bidding war indicate immediate and verifiable upward momentum."
+    }
+  },
+  "overallConfidence": {
+    "level": "HIGH",
+    "explanation": "Ben Shelton's identity, elite athletic status as a US Open finalist, current sponsorships, and impending commercial contract values are highly verified by prestigious media and industry sources. The only minor uncertainties pertain to private social media analytics (such as video retention and story views) and the final signed details of his next sportswear contract, neither of which would materially alter the overall marketability assessment."
+  },
+  "identityConfidence": "HIGH",
+  "summary": "Ben Shelton stands at the absolute vanguard of American men's tennis, currently ranked World No. 4 and coming off a historic run to the 2026 US Open final. His athletic standing is exceptional, having won ATP titles on every surface in a single season. Professionally, Shelton’s audience is highly concentrated on Instagram, where he commands over 1.3 million followers; however, his deliberate decision to delete Twitter/X limits his active multi-platform footprint. Culturally, his relevance is amplified by a high-profile romance with Olympic soccer champion Trinity Rodman, creating a mainstream sports \"power couple\" narrative that resonates deeply across sports and lifestyle circles. His distinctive story as a former NCAA champion trained by his father gives him a highly authentic and marketable family legacy. Commercially, Shelton is one of the most in-demand young figures in global sports, boasting partnerships with luxury tier brands like Rolex and Ralph Lauren Fragrances, and is currently the subject of an intense multi-million dollar bidding war as his On Running contract nears expiration. His momentum is reaching its absolute zenith, although the primary commercial uncertainties lie in the exact valuation of his impending footwear/apparel contract renewal and private performance analytics of his digital campaigns.",
+  "summaryWords": 197,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Ben Shelton achieved a career-high ranking of World No. 4 in the ATP Singles Rankings on September 14, 2026, establishing him as the current American No. 1.",
+      "sourceTitle": "Benjamin Todd Shelton - Wikipedia Profile",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ben_Shelton",
+      "sourceType": "official",
+      "date": "2026-09-14"
+    },
+    {
+      "id": "E2",
+      "claim": "Shelton reached his first Grand Slam singles final at the 2026 US Open, losing to World No. 1 Alexander Zverev in four sets after defeating Frances Tiafoe in the semifinals and Carlos Alcaraz in the quarterfinals.",
+      "sourceTitle": "Alexander Zverev defeats Ben Shelton to win 2026 US Open",
+      "sourceUrl": "https://www.usopen.org/en_US/news/articles/2026-09-14/alexander_zverev_defeats_ben_shelton_to_win_2026_us_open.html",
+      "sourceType": "official",
+      "date": "2026-09-14"
+    },
+    {
+      "id": "E3",
+      "claim": "Shelton defended his Canadian Open Masters 1000 title in August 2026 and became only the eighth player in ATP history to win titles on all surfaces (indoor hard, outdoor hard, grass, and clay) in the same season.",
+      "sourceTitle": "Former Florida Gator Ben Shelton Reaches First US Open Final",
+      "sourceUrl": "https://www.wearecollegetennis.com/2026/09/12/former-florida-gator-ben-shelton-reaches-first-us-open-final/",
+      "sourceType": "secondary",
+      "date": "2026-09-12"
+    },
+    {
+      "id": "E4",
+      "claim": "Shelton maintains major commercial endorsements with prestigious global brands including Rolex, Ralph Lauren Fragrances, Bose, Yonex, and Thorne.",
+      "sourceTitle": "Ben Shelton Endorsements, Net Worth & Brands Portfolio",
+      "sourceUrl": "https://bookingagentinfo.com/celebrity/ben-shelton/",
+      "sourceType": "secondary",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "E5",
+      "claim": "Shelton's current apparel and footwear sponsorship with Swiss brand On is set to expire at the end of 2026, leading to a competitive bidding war with New Balance reportedly leading with a contract valuation of roughly $10 million per year.",
+      "sourceTitle": "Ben Shelton closing in on $10M New Balance Deal",
+      "sourceUrl": "https://hard-court.com/2026/09/07/ben-shelton-new-balance-deal/",
+      "sourceType": "major_media",
+      "date": "2026-09-07"
+    },
+    {
+      "id": "E6",
+      "claim": "Shelton is in a high-profile public relationship with Olympic Gold Medalist and USWNT soccer star Trinity Rodman (daughter of Dennis Rodman), generating significant mainstream culture and sports crossover media coverage.",
+      "sourceTitle": "Who is Ben Shelton's Girlfriend Trinity Rodman?",
+      "sourceUrl": "https://www.mensjournal.com/sports/ben-shelton-girlfriend-trinity-rodman-photos-posts",
+      "sourceType": "major_media",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "E7",
+      "claim": "Shelton deleted Twitter/X in 2024 to stay away from online noise and focus on training, keeping his primary personal social presence on Instagram, where he has over 1.3 million followers.",
+      "sourceTitle": "Ben Shelton quit social media to clear head of nonsense",
+      "sourceUrl": "https://www.indiatimes.com/sports/tennis/ben-shelton-social-media-quit-cincinnati-2025",
+      "sourceType": "major_media",
+      "date": "2025-08-16"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Shelton competes at the absolute pinnacle of global men's professional tennis, contesting Grand Slam finals and Masters 1000 events on the ATP Tour.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E3"
+      ],
+      "rationale": "Shelton has achieved outstanding elite results, highlighted by reaching the 2026 US Open final and defending his Masters 1000 Canadian Open title.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "Shelton achieved a career-high ranking of World No. 4 on September 14, 2026, officially establishing him as the American No. 1.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "As the top-ranked American, he is a primary international representative for US tennis and the first Black American man to reach the US Open final since Arthur Ashe in 1972.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "He is the central figure and primary hope for American men's tennis, bearing the pressure of ending the country's multi-decade Grand Slam singles drought.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2"
+      ],
+      "rationale": "Shelton's major achievements are incredibly current, including reaching the US Open final just yesterday on September 13, 2026.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7"
+      ],
+      "rationale": "Shelton has a highly engaged following of over 1.3 million on Instagram, but his total reach is slightly bottlenecked by his lack of active personal channels on other major platforms.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7"
+      ],
+      "rationale": "Within the ATP tour, particularly among the younger generation of players, a 1.3M follower base places Shelton in the highest tier of commercial audience sizes.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 85,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E2",
+        "E7"
+      ],
+      "rationale": "His dramatic run to the 2026 US Open final has driven a massive spike in follower acquisition and broader digital impressions.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 60,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7"
+      ],
+      "rationale": "While highly influential on Instagram, Shelton lacks breadth after deleting his Twitter/X account and maintaining no active personal presence on YouTube or TikTok.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "scored",
+      "score": 75,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6",
+        "E7"
+      ],
+      "rationale": "Public interactions (likes and comments) on his Instagram show extremely robust engagement relative to his peer group, heavily boosted by his charisma and high-profile relationship.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "scored",
+      "score": 80,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E2",
+        "E6"
+      ],
+      "rationale": "Shelton’s signature 'phone' celebration and relationship milestones regularly go viral, allowing his content to reach far beyond his direct follower base.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Private platform metrics for saves and shares are not publicly accessible and no authoritative platform data is supplied.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Detailed video retention rates and play-through metrics are private platform data and currently unavailable.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Instagram Story views and click-through rates are private and not represented in public datasets.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "scored",
+      "score": 85,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E7"
+      ],
+      "rationale": "Public commentary and audit trends indicate a highly authentic, active audience of genuine tennis enthusiasts and young lifestyle followers.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E6"
+      ],
+      "rationale": "Shelton is a massive media draw, commanding persistent headlines across sports, lifestyle, and mainstream news outlets.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E6"
+      ],
+      "rationale": "He is consistently covered by premium outlets including ESPN, TIME, GQ, Men's Journal, and the New York Times.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2"
+      ],
+      "rationale": "Public search volume spikes dramatically during Grand Slam events, especially surrounding his high-profile matchups with Alcaraz and Tiafoe.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E6"
+      ],
+      "rationale": "Shelton generates significant organic discussion across social platforms, driven by his signature 'dialed-in' celebration and public romance.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E6"
+      ],
+      "rationale": "His modeling work for Loewe, fragrance deals with Ralph Lauren, and high-profile partnership with Olympic gold medalist Trinity Rodman give him superb mainstream lifestyle recognition.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3"
+      ],
+      "rationale": "Bypassing the traditional junior academy system to win an NCAA title under his father’s coaching makes his professional ascent exceptionally unique and memorable.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "His narrative is rich with family legacy (former pro father and collegiate coach), college tennis pride, and historic cultural milestone representation as a Black American.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "His narrative is grounded in verifiable history, with his father Bryan openly traveling and coaching him throughout his ATP career.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E6"
+      ],
+      "rationale": "Mainstream media heavily embraces and amplifies his themes of American tennis hope, familial coaching dynamics, and athletic romance.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "His story easily aligns with premium brand values of hard work, legacy, luxury, and youthful energy, making him highly attractive to sponsors.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "At just 23, his narrative is structured for long-term viability, as he remains the primary face of American tennis for the next decade.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Shelton is a natural fit for luxury (Rolex), classic fashion (Ralph Lauren, Loewe), athletic wear (On, New Balance), technology (Bose), and wellness (Thorne).",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7"
+      ],
+      "rationale": "Shelton maintains an exceptionally clean, positive, and family-friendly public image with no reputation issues or controversies.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E7"
+      ],
+      "rationale": "He appeals to both the affluent, high-spending demographic of traditional tennis fans and highly coveted Gen Z sports consumers.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7"
+      ],
+      "rationale": "His values are consistently presented as family-focused, grounded, and focused on physical and mental well-being (demonstrated by deleting noisy social apps).",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 80,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "He seamlessly transitions from high-energy athletic performance campaigns to luxury, high-fashion lifestyle editorials.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "He possesses immense commercial value in the United States while enjoying global relevance due to the highly international ATP Tour schedule.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Backed by verified lucrative sponsorships including a head-to-toe apparel deal with On and ambassadorships with Rolex, Ralph Lauren Fragrances, and Bose.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Shelton has steadily secured premium endorsement deals with major brands every year since his professional transition.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 96,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "His corporate roster represents the absolute peak of brand prestige, featuring names like Rolex, Ralph Lauren, and Bose.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Shelton has successfully grown with On and repeated collaborations with luxury labels, though he is now testing the market as his apparel deal expires.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Direct performance and ROI metrics for his campaigns with On, Ralph Lauren, and Rolex are proprietary and unavailable.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "He commands immense pricing power, as evidenced by his team driving a bidding war that has pushed contract valuations toward $10 million annually.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "rationale": "Shelton is on a steep upward trajectory, climbing to a career-high World No. 4 and securing his first Grand Slam final appearance.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 85,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E2",
+        "E7"
+      ],
+      "rationale": "His social following is experiencing significant positive momentum following his deep US Open run and the intense media coverage of his matches.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E6"
+      ],
+      "rationale": "Media coverage has dramatically accelerated, positioning him as the primary narrative of American tennis throughout August and September 2026.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2"
+      ],
+      "rationale": "Organic public interest and search frequency have surged to peak historical levels during his US Open matches.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "His commercial leverage is accelerating at a historic pace, with elite brands competing for his upcoming multi-million dollar apparel contract renewal.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "American No. 1 and World No. 4 ranking following his historic 2026 US Open singles final appearance.",
+    "Charismatic, high-energy personality with iconic viral trademark celebration ('hang up the phone').",
+    "Elite, pristine endorsement portfolio with luxury giants such as Rolex and Ralph Lauren Fragrances.",
+    "High cultural crossover appeal amplified by his public relationship with USWNT star Trinity Rodman.",
+    "Massive current commercial leverage, commanding a reported $10M/year bidding war for his next footwear/apparel contract."
+  ],
+  "keyConstraints": [
+    "Social media reach is highly concentrated on Instagram, with no active presence on X/Twitter, TikTok, or YouTube.",
+    "Pressure to break the 23-year American men's Grand Slam singles title drought can create intense domestic media scrutiny."
+  ],
+  "importantMissingData": [
+    "Private first-party social media metrics (story views, video retention rates, post shares/saves).",
+    "Exact verified commercial values for older active contracts (On, Rolex, Bose)."
+  ],
+  "identityOrEvidenceRisks": [
+    "Ongoing negotiations for his next apparel contract mean his brand alignment in the sportswear sector is in transition until officially signed."
+  ],
+  "socialBlockSupplied": false
+}

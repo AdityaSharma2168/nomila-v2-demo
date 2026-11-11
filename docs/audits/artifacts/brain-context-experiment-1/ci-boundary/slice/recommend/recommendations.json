@@ -1,0 +1,536 @@
+{
+ "version": "recommendation/0.1.0-exp",
+ "records": [
+  {
+   "version": "recommendation/0.1.0-exp",
+   "id": "rec_18ea4e607ae91618",
+   "key": "07f4ef53817dfd0e",
+   "source": "her agent, through Mila",
+   "subject": {
+    "kind": "deal",
+    "id": "ctl-r2-northlight-termsheet"
+   },
+   "question": "Should this negotiation be advanced, countered or accepted?",
+   "objectiveIds": [],
+   "value": {
+    "what": "Recommend that Mia's agent accept the Northlight Learning termsheet to secure her first strategic partnership in the EdTech domain.",
+    "why": "The Northlight Learning term sheet should be accepted. As an EdTech brand, it perfectly aligns with Mia's academic and tech-positioning objectives. The USD 5,000 cash compensation exceeds her established ambassador floor (USD 3,602) and her cumulative social post floors for four posts (USD 4,000). Crucially, the agreement requires no category exclusivity, maintaining strategic flexibility for future tech/venture partnerships.",
+    "cites": [
+     {
+      "ref": "work[ctl-r2-northlight-termsheet]",
+      "how": "Details the terms: USD 5,000 cash for a 2026-27 academic year ambassador role, 4 Instagram posts, and no category exclusivity."
+     },
+     {
+      "ref": "representation.floors[ambassador]",
+      "how": "Establishes Mia's minimum floor for an ambassador role is USD 3,602."
+     },
+     {
+      "ref": "representation.floors[socialPost]",
+      "how": "Establishes Mia's minimum floor for a social post is USD 1,000, making 4 posts worth USD 4,000."
+     },
+     {
+      "ref": "objective[c0f587e4-750f-4575-a4e8-fd4cfa6e078e]",
+      "how": "Aligns the partnership with her goal of securing partnerships with brands in the EdTech, STEM, or tech venture sectors."
+     },
+     {
+      "ref": "opportunity[grow-academic-tech-partnerships]",
+      "how": "Identifies the high strategic value of leveraging her academic acceleration to target premium brand partnerships in EdTech and STEM."
+     }
+    ],
+    "executionPath": "direct_action",
+    "relationToExistingWork": "advances_existing_work",
+    "advances": "work[ctl-r2-northlight-termsheet]",
+    "notSeen": [],
+    "intent": null
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.4.0-exp",
+    "runId": "A0:636638b9",
+    "runAt": "2026-09-26T18:05:25.157Z"
+   },
+   "runs": [
+    "A0:636638b9"
+   ],
+   "response": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "authorization": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "execution": {
+    "state": "none",
+    "refs": []
+   },
+   "outcome": null,
+   "supersededBy": "rec_7e6f462c28fa6927",
+   "closed": true,
+   "events": [
+    {
+     "at": "2026-09-26T18:05:25.157Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run A0:636638b9"
+    },
+    {
+     "at": "2026-09-26T18:10:08.007Z",
+     "event": "superseded",
+     "actor": "system",
+     "note": "by rec_7e6f462c28fa6927 (run A3-2:01118fc3)"
+    }
+   ]
+  },
+  {
+   "version": "recommendation/0.1.0-exp",
+   "id": "rec_b511b8952c16b022",
+   "key": "c81ff8144f65d35a",
+   "source": "the Objective loop",
+   "subject": {
+    "kind": "objective",
+    "id": "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+   },
+   "question": "what should Nomila do about this Objective now?",
+   "objectiveIds": [
+    "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+   ],
+   "value": {
+    "what": "Develop a targeted commercial pitch highlighting her leadership with the Yuwa girls empowerment program to secure corporate CSR partnerships.",
+    "why": "The athlete wants to expand her Yuwa academy partnerships, and her philanthropic narrative is highly compelling but has no active work in motion.",
+    "cites": [
+     {
+      "ref": "objective[b1c799e3-59fc-4986-b3ab-a0b7b4869601]",
+      "how": "States her goal to expand the impact and visibility of her work with Yuwa through global brand and CSR partnerships."
+     },
+     {
+      "ref": "opportunity[amplify-yuwa-philanthropic-work]",
+      "how": "Identifies the opening to attract global Corporate Social Responsibility sponsorships by integrating her active work with Yuwa."
+     },
+     {
+      "ref": "findings[mia.narrative_power]",
+      "how": "Highlights her active philanthropy with Yuwa as an exceptionally strong, three-dimensional narrative element."
+     }
+    ],
+    "executionPath": "specialized_plan",
+    "relationToExistingWork": "new_work",
+    "advances": null,
+    "notSeen": [],
+    "intent": null
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.4.0-exp",
+    "runId": "A0:636638b9",
+    "runAt": "2026-09-26T18:05:25.157Z"
+   },
+   "runs": [
+    "A0:636638b9",
+    "A3-2:01118fc3",
+    "A3-3:b8710615",
+    "S1:2dc1a64c",
+    "G0:4d758bc4"
+   ],
+   "response": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "authorization": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "execution": {
+    "state": "none",
+    "refs": []
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-26T18:05:25.157Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run A0:636638b9"
+    },
+    {
+     "at": "2026-09-26T18:10:08.007Z",
+     "event": "reworded_by_run",
+     "actor": "system",
+     "note": "run A3-2:01118fc3"
+    },
+    {
+     "at": "2026-09-26T18:11:10.641Z",
+     "event": "reworded_by_run",
+     "actor": "system",
+     "note": "run A3-3:b8710615"
+    },
+    {
+     "at": "2026-09-26T23:14:49.631Z",
+     "event": "reworded_by_run",
+     "actor": "system",
+     "note": "run S1:2dc1a64c"
+    },
+    {
+     "at": "2026-09-26T23:15:50.875Z",
+     "event": "reworded_by_run",
+     "actor": "system",
+     "note": "run G0:4d758bc4"
+    }
+   ]
+  },
+  {
+   "version": "recommendation/0.1.0-exp",
+   "id": "rec_3d8df9a6f78d62b7",
+   "key": "8704ed12d2c29628",
+   "source": "the Objective loop",
+   "subject": {
+    "kind": "objective",
+    "id": "feb62891-8b9f-44e4-8c1f-677d6947334b"
+   },
+   "question": "what should Nomila do about this Objective now?",
+   "objectiveIds": [
+    "feb62891-8b9f-44e4-8c1f-677d6947334b"
+   ],
+   "value": {
+    "what": "Establish a consistent social media posting cadence to reactivate her TikTok channel and increase her Instagram post frequency.",
+    "why": "Her social media audience is in a cooling phase, with Instagram posting less than once a week and TikTok dormant for over 500 days, with no existing organic social media work in motion.",
+    "cites": [
+     {
+      "ref": "objective[feb62891-8b9f-44e4-8c1f-677d6947334b]",
+      "how": "States her goal to grow her audience and build a stronger, more consistent presence across Instagram and TikTok."
+     },
+     {
+      "ref": "opportunity[unlock-tiktok-channel]",
+      "how": "Recommends reactivating her dormant TikTok channel to expand platform breadth and re-engage short-form video audiences."
+     },
+     {
+      "ref": "opportunity[grow-instagram-posting-cadence]",
+      "how": "Recommends increasing Instagram posting frequency to reverse her cooling follower trajectory."
+     },
+     {
+      "ref": "contentPerformance[tiktok]",
+      "how": "Shows TikTok has been completely dormant for 556.3 days."
+     },
+     {
+      "ref": "contentPerformance[instagram]",
+      "how": "Indicates a very low posting frequency of 0.2333 posts per week."
+     }
+    ],
+    "executionPath": "specialized_plan",
+    "relationToExistingWork": "new_work",
+    "advances": null,
+    "notSeen": [],
+    "intent": null
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.4.0-exp",
+    "runId": "A0:636638b9",
+    "runAt": "2026-09-26T18:05:25.157Z"
+   },
+   "runs": [
+    "A0:636638b9",
+    "A3-2:01118fc3",
+    "A3-3:b8710615",
+    "S1:2dc1a64c",
+    "G0:4d758bc4"
+   ],
+   "response": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "authorization": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "execution": {
+    "state": "none",
+    "refs": []
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-26T18:05:25.157Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run A0:636638b9"
+    },
+    {
+     "at": "2026-09-26T18:10:08.007Z",
+     "event": "reworded_by_run",
+     "actor": "system",
+     "note": "run A3-2:01118fc3"
+    },
+    {
+     "at": "2026-09-26T18:11:10.641Z",
+     "event": "reworded_by_run",
+     "actor": "system",
+     "note": "run A3-3:b8710615"
+    },
+    {
+     "at": "2026-09-26T23:14:49.631Z",
+     "event": "reworded_by_run",
+     "actor": "system",
+     "note": "run S1:2dc1a64c"
+    },
+    {
+     "at": "2026-09-26T23:15:50.875Z",
+     "event": "reworded_by_run",
+     "actor": "system",
+     "note": "run G0:4d758bc4"
+    }
+   ]
+  },
+  {
+   "version": "recommendation/0.1.0-exp",
+   "id": "rec_7e6f462c28fa6927",
+   "key": "07f4ef53817dfd0e",
+   "source": "her agent, through Mila",
+   "subject": {
+    "kind": "deal",
+    "id": "ctl-r2-northlight-termsheet"
+   },
+   "question": "Should this negotiation be advanced, countered or accepted?",
+   "objectiveIds": [],
+   "value": {
+    "what": "Counter the Northlight Learning term sheet to align the fee with her ambassador floor of USD 3,602 per deliverable and clarify the missing timeline and usage terms.",
+    "why": "The term sheet from Northlight Learning offers USD 5,000 for 4 deliverables, equating to USD 1,250 per deliverable. This is significantly below Mia's stated ambassador floor of USD 3,602. Additionally, key elements such as a campaign timeline and usage rights are absent or unknown, which must be clarified.",
+    "cites": [
+     {
+      "ref": "request[D2k]",
+      "how": "Asks whether to advance, counter, or accept the Northlight term sheet."
+     },
+     {
+      "ref": "work[ctl-r2-northlight-termsheet]",
+      "how": "Details the terms offered by Northlight Learning."
+     },
+     {
+      "ref": "work[ctl-r2-northlight-termsheet].band",
+      "how": "Identifies that the offer's value is below her minimum ambassador price band."
+     },
+     {
+      "ref": "representation.floors[ambassador]",
+      "how": "Establishes her minimum ambassador floor rate at USD 3,602."
+     },
+     {
+      "ref": "work[ctl-r2-northlight-termsheet].absent",
+      "how": "Notes that the campaign timeline is absent from the current terms."
+     },
+     {
+      "ref": "work[ctl-r2-northlight-termsheet].unknown",
+      "how": "Notes that the deal's usage rights terms are currently unknown."
+     }
+    ],
+    "executionPath": "direct_action",
+    "relationToExistingWork": "advances_existing_work",
+    "advances": "work[ctl-r2-northlight-termsheet]",
+    "notSeen": [
+     "specific usage rights requirements",
+     "exact campaign delivery schedule"
+    ],
+    "intent": null
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.4.0-exp",
+    "runId": "A3-2:01118fc3",
+    "runAt": "2026-09-26T18:10:08.007Z"
+   },
+   "runs": [
+    "A3-2:01118fc3"
+   ],
+   "response": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "authorization": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "execution": {
+    "state": "none",
+    "refs": []
+   },
+   "outcome": null,
+   "supersededBy": "rec_d0a0ff3a9463572f",
+   "closed": true,
+   "events": [
+    {
+     "at": "2026-09-26T18:10:08.007Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run A3-2:01118fc3"
+    },
+    {
+     "at": "2026-09-26T18:11:10.641Z",
+     "event": "superseded",
+     "actor": "system",
+     "note": "by rec_d0a0ff3a9463572f (run A3-3:b8710615)"
+    }
+   ]
+  },
+  {
+   "version": "recommendation/0.1.0-exp",
+   "id": "rec_d0a0ff3a9463572f",
+   "key": "07f4ef53817dfd0e",
+   "source": "her agent, through Mila",
+   "subject": {
+    "kind": "deal",
+    "id": "ctl-r2-northlight-termsheet"
+   },
+   "question": "Should this negotiation be advanced, countered or accepted?",
+   "objectiveIds": [],
+   "value": {
+    "what": "Counter the term sheet from Northlight Learning to request a package compensation that meets or exceeds her established ambassador floor of USD 3,602 per deliverable.",
+    "why": "The Northlight Learning term sheet offers a package of USD 5,000 for four Instagram posts, which translates to a per-deliverable rate of USD 1,250. This is significantly below her established ambassador floor rate of USD 3,602 per deliverable. Therefore, the term sheet should be countered to align with her commercial floor.",
+    "cites": [
+     {
+      "ref": "request[D2k]",
+      "how": "Her agent asked if the Northlight negotiation should be advanced, countered, or accepted."
+     },
+     {
+      "ref": "work[ctl-r2-northlight-termsheet]",
+      "how": "Details the terms of the offer: USD 5,000 for 4 posts, ambassador deal type."
+     },
+     {
+      "ref": "representation.floors[ambassador]",
+      "how": "Establishes her minimum acceptable rate for ambassador work as USD 3,602."
+     },
+     {
+      "ref": "work[ctl-r2-northlight-termsheet].basis",
+      "how": "Extracts the per-deliverable value of the offer as USD 1,250."
+     },
+     {
+      "ref": "work[ctl-r2-northlight-termsheet].band",
+      "how": "Confirms the offer is BELOW her established ambassador pricing band."
+     }
+    ],
+    "executionPath": "direct_action",
+    "relationToExistingWork": "advances_existing_work",
+    "advances": "work[ctl-r2-northlight-termsheet]",
+    "notSeen": [
+     "Any prior correspondence or context shared during initial discussions with Northlight Learning",
+     "The brand's flexibility regarding budget and deliverables"
+    ],
+    "intent": null
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.4.0-exp",
+    "runId": "A3-3:b8710615",
+    "runAt": "2026-09-26T18:11:10.641Z"
+   },
+   "runs": [
+    "A3-3:b8710615"
+   ],
+   "response": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "authorization": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "execution": {
+    "state": "none",
+    "refs": []
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-26T18:11:10.641Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run A3-3:b8710615"
+    }
+   ]
+  },
+  {
+   "version": "recommendation/0.1.0-exp",
+   "id": "rec_4493ccd22a39ec24",
+   "key": "d9372f4f7e892e9b",
+   "source": "the Objective loop",
+   "subject": {
+    "kind": "objective",
+    "id": "c0f587e4-750f-4575-a4e8-fd4cfa6e078e"
+   },
+   "question": "what should Nomila do about this Objective now?",
+   "objectiveIds": [
+    "c0f587e4-750f-4575-a4e8-fd4cfa6e078e"
+   ],
+   "value": {
+    "what": "Initiate targeted commercial outreach to premium brands in the EdTech, STEM, and tech venture sectors that align with her Stanford academic background.",
+    "why": "The athlete wants to establish partnerships in tech, STEM, and entrepreneurship. While she has multiple inbound inquiries and ongoing negotiations, none target her academic domain, and there is no active work in motion for this positioning.",
+    "cites": [
+     {
+      "ref": "objective[c0f587e4-750f-4575-a4e8-fd4cfa6e078e]",
+      "how": "Expresses her desire to secure partnerships aligning with athletics, technology, AI, innovation, and entrepreneurship."
+     },
+     {
+      "ref": "opportunity[grow-academic-tech-partnerships]",
+      "how": "Identifies the high-impact opening to leverage her Symbolic Systems and Management Science studies to target premium STEM and EdTech brands."
+     },
+     {
+      "ref": "findings[mia.narrative_power]",
+      "how": "Confirms her world-class academic acceleration and tech-entrepreneurial mindset form a highly differentiated narrative."
+     }
+    ],
+    "executionPath": "specialized_plan",
+    "relationToExistingWork": "new_work",
+    "advances": null,
+    "notSeen": [],
+    "intent": null
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.6.0-exp",
+    "runId": "S1:2dc1a64c",
+    "runAt": "2026-09-26T23:14:49.631Z"
+   },
+   "runs": [
+    "S1:2dc1a64c",
+    "G0:4d758bc4"
+   ],
+   "response": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "authorization": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "execution": {
+    "state": "none",
+    "refs": []
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-26T23:14:49.631Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run S1:2dc1a64c"
+    },
+    {
+     "at": "2026-09-26T23:15:50.875Z",
+     "event": "reworded_by_run",
+     "actor": "system",
+     "note": "run G0:4d758bc4"
+    }
+   ]
+  }
+ ]
+}

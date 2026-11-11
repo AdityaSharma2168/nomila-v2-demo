@@ -1,0 +1,9 @@
+# Nomila's own fields for the documents playbook, validated by load.ts (sidecarSchema). Not part of the Agent Skills spec.
+version: 1.0.0
+register_id: mila.playbook.documents
+surfaces: [chat, voice, proactive]
+flag: AGENT_DOCUMENTS_TOOLS
+tools: [documents_status, documents_make, documents_edit, documents_share, remember_preference]
+sends_externally: true
+model_tier: athlete-facing
+evals: null

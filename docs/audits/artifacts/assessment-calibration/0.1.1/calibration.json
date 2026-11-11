@@ -1,0 +1,267 @@
+{
+  "version": "objective-change-assessment/0.1.1-exp",
+  "promptSha256": "ec2696df5abce2ff5d748426509e624a561a3ffa0c6e06a109a813a4cc188002",
+  "providerCalls": 1,
+  "spentUsd": 0.00946,
+  "cap": 0.25,
+  "stopped": "F1 draw 1: success still_coherent ∉ {incoherent}; opening grow-academic-tech-partnerships still_supports ∉ {incomplete, contradicted}",
+  "bypassChecks": {
+    "F6": {
+      "providerCalls": 0,
+      "rule": {
+        "bypass": true,
+        "because": "spelling correction \"audiance\" → \"audience\", a word the Objective already uses"
+      },
+      "status": "assessed",
+      "by": "rule",
+      "mismatches": [],
+      "result": {
+        "status": "assessed",
+        "version": "objective-change-assessment/0.1.1-exp",
+        "by": "rule",
+        "signals": {
+          "fieldsChanged": [
+            "desiredState"
+          ],
+          "mechanicalOnly": true,
+          "bypassBecause": "spelling correction \"audiance\" → \"audience\", a word the Objective already uses",
+          "termsAdded": [
+            "audience"
+          ],
+          "termsRemoved": [
+            "audiance"
+          ],
+          "successTermsDropped": [],
+          "quantifiedPresent": false
+        },
+        "assessment": {
+          "change": {
+            "class": "wording",
+            "reason": "mechanical edit (rule)",
+            "evidence": {
+              "present": [],
+              "absent": []
+            }
+          },
+          "success": {
+            "verdict": "still_coherent",
+            "reason": "mechanical edit (rule)",
+            "evidence": {
+              "present": [],
+              "absent": []
+            }
+          },
+          "horizon": {
+            "verdict": "not_applicable",
+            "reason": "mechanical edit (rule)",
+            "evidence": {
+              "present": [],
+              "absent": []
+            }
+          },
+          "openings": [
+            {
+              "key": "grow-instagram-posting-cadence",
+              "verdict": "still_supports",
+              "reason": "mechanical edit (rule)",
+              "evidence": {
+                "present": [],
+                "absent": []
+              }
+            }
+          ]
+        },
+        "model": null,
+        "promptSha256": null
+      }
+    }
+  },
+  "calibrationDraws": {
+    "F1": {
+      "stable": null,
+      "runs": [
+        {
+          "draw": 1,
+          "status": "assessed",
+          "by": "model",
+          "usage": {
+            "promptTokens": 2290,
+            "outputTokens": 3510,
+            "reasoningTokens": 3258
+          },
+          "costUsd": 0.00946,
+          "mismatches": [
+            "success still_coherent ∉ {incoherent}",
+            "opening grow-academic-tech-partnerships still_supports ∉ {incomplete, contradicted}"
+          ],
+          "fingerprint": "{\"c\":\"scope\",\"s\":\"still_coherent\",\"h\":\"still_coherent\",\"o\":[[\"grow-academic-tech-partnerships\",\"still_supports\"]]}",
+          "result": {
+            "status": "assessed",
+            "version": "objective-change-assessment/0.1.1-exp",
+            "by": "model",
+            "signals": {
+              "fieldsChanged": [
+                "desiredState"
+              ],
+              "mechanicalOnly": false,
+              "bypassBecause": "the word count changed",
+              "termsAdded": [
+                "build",
+                "positioning",
+                "intersection",
+                "athletics",
+                "technology",
+                "ai",
+                "innovation",
+                "entrepreneurship",
+                "secure",
+                "partnerships",
+                "align",
+                "identity"
+              ],
+              "termsRemoved": [
+                "established",
+                "active",
+                "commercial",
+                "partner",
+                "ambassador",
+                "brands",
+                "stem",
+                "edtech",
+                "tech",
+                "venture",
+                "sectors"
+              ],
+              "successTermsDropped": [
+                "ambassador",
+                "edtech",
+                "stem",
+                "tech",
+                "venture",
+                "sectors"
+              ],
+              "quantifiedPresent": false
+            },
+            "assessment": {
+              "change": {
+                "class": "scope",
+                "reason": "The goal's scope has expanded from specific tech sectors to a broader intersection of athletics, AI, innovation, and entrepreneurship.",
+                "evidence": {
+                  "present": [
+                    {
+                      "source": "old",
+                      "text": "STEM, EdTech, or tech venture sectors"
+                    },
+                    {
+                      "source": "new",
+                      "text": "athletics, technology, AI, innovation and entrepreneurship"
+                    }
+                  ],
+                  "absent": [
+                    {
+                      "source": "old",
+                      "term": "AI"
+                    }
+                  ]
+                }
+              },
+              "success": {
+                "verdict": "still_coherent",
+                "reason": "Securing a partnership in EdTech, STEM, or tech venture remains a coherent way to demonstrate partnerships that align with her technology and innovation identity.",
+                "evidence": {
+                  "present": [],
+                  "absent": []
+                }
+              },
+              "horizon": {
+                "verdict": "still_coherent",
+                "reason": "The 12-month timeline for building credibility with non-traditional partners remains coherent with building positioning and securing partnerships in tech and AI.",
+                "evidence": {
+                  "present": [],
+                  "absent": []
+                }
+              },
+              "openings": [
+                {
+                  "key": "grow-academic-tech-partnerships",
+                  "verdict": "still_supports",
+                  "reason": "Leveraging her Stanford tech studies to target tech and venture partnerships directly supports building her positioning at the intersection of technology and entrepreneurship.",
+                  "evidence": {
+                    "present": [],
+                    "absent": []
+                  }
+                }
+              ]
+            },
+            "model": "gemini-3.5-flash",
+            "promptSha256": "ec2696df5abce2ff5d748426509e624a561a3ffa0c6e06a109a813a4cc188002",
+            "usage": {
+              "promptTokens": 2290,
+              "outputTokens": 3510,
+              "reasoningTokens": 3258
+            },
+            "raw": {
+              "change": {
+                "class": "scope",
+                "reason": "The goal's scope has expanded from specific tech sectors to a broader intersection of athletics, AI, innovation, and entrepreneurship.",
+                "evidence": {
+                  "present": [
+                    {
+                      "source": "old",
+                      "text": "STEM, EdTech, or tech venture sectors"
+                    },
+                    {
+                      "source": "new",
+                      "text": "athletics, technology, AI, innovation and entrepreneurship"
+                    }
+                  ],
+                  "absent": [
+                    {
+                      "source": "old",
+                      "term": "AI"
+                    }
+                  ]
+                }
+              },
+              "success": {
+                "verdict": "still_coherent",
+                "reason": "Securing a partnership in EdTech, STEM, or tech venture remains a coherent way to demonstrate partnerships that align with her technology and innovation identity.",
+                "evidence": {
+                  "present": [],
+                  "absent": []
+                }
+              },
+              "horizon": {
+                "verdict": "still_coherent",
+                "reason": "The 12-month timeline for building credibility with non-traditional partners remains coherent with building positioning and securing partnerships in tech and AI.",
+                "evidence": {
+                  "present": [],
+                  "absent": []
+                }
+              },
+              "openings": [
+                {
+                  "key": "grow-academic-tech-partnerships",
+                  "verdict": "still_supports",
+                  "reason": "Leveraging her Stanford tech studies to target tech and venture partnerships directly supports building her positioning at the intersection of technology and entrepreneurship.",
+                  "evidence": {
+                    "present": [],
+                    "absent": []
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "priorFinding": {
+    "version": "objective-change-assessment/0.1.0-exp",
+    "artifacts": "../0.1.0-finding",
+    "providerCalls": 1,
+    "spentUsd": 0.0112,
+    "finding": "F1 draw 1: opening key returned as \"opening:<key>\" (semantics correct; verifier refused)"
+  },
+  "cumulativeSpentUsd": 0.02066
+}

@@ -1,0 +1,616 @@
+{
+  "specVersion": "blind-eval-spec/0.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "mia-bhuta",
+    "name": "Mia Bhuta",
+    "sport": "Soccer"
+  },
+  "parseError": null,
+  "identityConfidence": "HIGH",
+  "summary": "Mia Bhuta is an elite senior midfielder and co-captain for the Stanford Cardinal women's soccer team, which entered the 2026 season ranked No. 1 in the nation. Academically and athletically outstanding, Bhuta's marketability is anchored by a highly distinctive and culturally resonant narrative: in 2022, she became the first player of Indian descent, male or female, to represent the United States at a FIFA World Cup at any level. This historic milestone—combined with her academic pedigree as a Symbolic Systems major and her hands-on philanthropic work empowering young girls through soccer in rural India (Yuwa)—gives her a premium, highly authentic brand identity. Commercially, she secured a major multi-year NIL endorsement with Adidas, serving as a featured athlete in national campaigns. While her raw social media following remains relatively modest (estimated under 15,000 across platforms), her qualitative brand fit is exceptional, offering pristine brand safety, strong identity-values coherence, and highly desirable demographic reach. As she leads Stanford's 2026 campaign and eyes a professional transition to the NWSL, Bhuta represents a gold standard for purpose-driven collegiate sports partnerships, though quantitative conversion and campaign-level sales data remain private.",
+  "summaryWords": 185,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Mia Bhuta is a senior midfielder and co-captain for the Stanford women's soccer team for the 2026 season, having previously achieved multiple All-ACC, All-Region, and All-Academic selections.",
+      "sourceTitle": "Mia Bhuta - Women's Soccer 2026 - Stanford Cardinal - Official Athletics Website",
+      "sourceUrl": "https://gostanford.com/sports/womens-soccer/roster/mia-bhuta/21634",
+      "sourceType": "official",
+      "date": "August 13, 2026"
+    },
+    {
+      "id": "E2",
+      "claim": "Bhuta represented the United States at the 2022 FIFA U-17 Women's World Cup, becoming the first Indian-American to play at a FIFA tournament.",
+      "sourceTitle": "Mia Bhuta - Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mia_Bhuta",
+      "sourceType": "secondary",
+      "date": "Updated 2026"
+    },
+    {
+      "id": "E3",
+      "claim": "Mia Bhuta signed a prominent NIL endorsement deal with Adidas as a first-year student and was featured in their national back-to-school marketing campaigns.",
+      "sourceTitle": "Stanford's Mia Bhuta signed with Adidas",
+      "sourceUrl": "https://girlssoccernetwork.com/the-biggest-ncaa-womens-soccer-nil-deals-this-year/",
+      "sourceType": "major_media",
+      "date": "December 14, 2023"
+    },
+    {
+      "id": "E4",
+      "claim": "At just 16 years old, Mia Bhuta made history and has used her platform to empower girls through organizations like Yuwa in rural India.",
+      "sourceTitle": "Meet the first Indian-American to rep US soccer at World Cup",
+      "sourceUrl": "https://www.youtube.com/watch?v=0GZ7v9E9rM0",
+      "sourceType": "major_media",
+      "date": "May 25, 2023"
+    },
+    {
+      "id": "E5",
+      "claim": "In 2026, elite NCAA women's soccer brand value compounds across top programs like Stanford, where players like Bhuta stand out for corporate partnerships.",
+      "sourceTitle": "Women's College Soccer NIL Deals: The Real Landscape",
+      "sourceUrl": "https://rallyfuel.com/womens-college-soccer-nil-deals/",
+      "sourceType": "secondary",
+      "date": "May 23, 2026"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E5"
+      ],
+      "rationale": "Bhuta plays in the Atlantic Coast Conference (ACC), which is widely considered the premier and most competitive conference in NCAA Division I women's soccer.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "She helped anchor Stanford to two NCAA College Cup finals (2023, 2025) and has earned multiple elite individual awards.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "She is formally recognized as a United Soccer Coaches fourth-team All-American (2024) and All-Region first-team selection.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E4"
+      ],
+      "rationale": "She captained the U.S. U-17 team at a World Cup and remains active on youth national teams, though she hasn't debuted for the senior USWNT.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "She was voted team captain at Stanford for consecutive seasons (2025 and 2026) and has been a primary starter since her freshman year.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 84,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "Her achievements are highly current, leading Stanford's 2026 season as co-captain following an ACC championship in late 2025.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 32,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E5"
+      ],
+      "rationale": "Her actual combined social media audience is quite modest, with her main Instagram account tracking around 5.6k followers.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 55,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "She has a solid, moderate following relative to average college soccer players, though she lags behind college sports' crossover megastars.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No longitudinal, audited public data tracking her monthly audience growth rates is currently available.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 45,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E3",
+        "E5"
+      ],
+      "rationale": "She is primarily active on Instagram with secondary exposure on TikTok, but lacks a wide multi-channel footprint.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Audience interaction percentages and comparison metrics are private and not reported in verified public databases.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Detailed algorithm-driven reach and impression efficiency statistics are not publicly accessible.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "High-value platform interactions like shares and saves are private to the creator's first-party analytics.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Audience video retention and completion rates are private first-party metrics.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Story reach and link tap-through performance data are not publicly documented.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Independent quantitative audience audits analyzing bot-to-genuine follower ratios are unavailable.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 54,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E4"
+      ],
+      "rationale": "She maintains steady, moderate collegiate coverage with major national peaks during historic moments like her 2022 World Cup debut.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Her media footprint includes extremely high-prestige mainstream profiles, such as a featured segment on NBC's TODAY Show.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 45,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E2",
+        "E4"
+      ],
+      "rationale": "Her overall search volume is modest and highly event-driven, spiking primarily during high-stakes tournament matches.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 48,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Discussion is focused but highly engaged within specialized women's soccer communities and South Asian representation forums.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 70,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "She enjoys significant crossover recognition outside of sports as a historic trailblazer for South Asian-American athletic representation.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2",
+        "E4"
+      ],
+      "rationale": "Her identity as the first player of Indian descent to play for the U.S. in a World Cup—held in India—is an incredibly distinct, memorable story.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E4"
+      ],
+      "rationale": "Her narrative is highly layered, combining her family's academic roots, elite athletic pedigree, and Stanford Symbolic Systems major.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 94,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "Her values are genuinely backed by her actions, academic achievements, and her hands-on volunteer work with Yuwa in India.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "The media has strongly leaned into and amplified her personal narrative of representation and purpose-driven sports development.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E5"
+      ],
+      "rationale": "Her storyline translates cleanly into corporate marketing campaigns focused on diversity, high performance, and societal impact.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "Her narrative has lasting power because her status as a historic trailblazer and future pro prospect remains highly relevant.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "rationale": "She is highly credible across athletic wear, corporate social responsibility, STEM/academic, tech, and lifestyle categories.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "Her public record is entirely pristine, highlighted by academic honors, community service, and respected team leadership roles.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "She appeals directly to affluent collegiate fanbases, young athletes, and the highly educated South Asian diaspora.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "Her public persona is incredibly coherent, consistently emphasizing family support, academic drive, and social service.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "She can comfortably transition from on-field athletic training to thought leadership, academic excellence, and philanthropic content.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "She offers deep regional appeal in Silicon Valley and Pennsylvania, alongside a unique global bridge to the Indian market.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 68,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E5"
+      ],
+      "rationale": "She proved her commercial value early by signing an individual NIL deal with Adidas, a premier global sportswear giant.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 42,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E5"
+      ],
+      "rationale": "She maintains a highly selective, low-frequency portfolio, focusing on her flagship Adidas deal rather than high-volume micro-influencing.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3"
+      ],
+      "rationale": "Her main corporate partnership is of the highest strategic tier, aligning her directly with Adidas's global brand.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E5"
+      ],
+      "rationale": "Her partnership with Adidas has been active and multi-year, stretching from her freshman year in 2023 through to her senior season.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Private return-on-investment, sales metrics, and click-through performance from her brand campaigns are not publicly disclosed.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Specific commercial valuations and personal pricing rates of her corporate contracts remain strictly confidential.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "She has a highly positive athletic trajectory as captain of the top-ranked Stanford squad, paving a clear path toward professional play.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Unverified social media growth metrics make it impossible to accurately score her recent month-over-month social audience trajectory.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 60,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Her media exposure is stable and focused around collegiate achievements, though lacking the explosive velocity of her 2022 historic debut.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 56,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "Search interest is stable with routine spikes coinciding with Stanford's high-stakes collegiate matches.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 50,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E3",
+        "E5"
+      ],
+      "rationale": "Her commercial posture is stable, centered on maintaining and activating her premium Adidas relationship without rapid new deal additions.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Historic status as the first Indian-American player to represent the US in a FIFA World Cup, providing a highly compelling and distinct personal narrative.",
+    "Cornerstone endorsement deal with global brand Adidas, providing verified commercial credibility.",
+    "Elite athletic standing as two-time captain of the #1 ranked Stanford Cardinal and participant in youth national teams.",
+    "Impeccable brand safety profile with strong academic credentials (CSC Academic All-District, ACC All-Academic).",
+    "Deep philanthropic commitment through organizations like Yuwa, adding profound authenticity to her narrative."
+  ],
+  "keyConstraints": [
+    "Modest social media following (estimated under 15,000 combined reach), limiting broad quantitative reach for brands prioritizing sheer volume.",
+    "Limited number of active commercial deals beyond her central Adidas partnership.",
+    "Has not yet transitioned to the senior USWNT, limiting her visibility to collegiate and youth international levels."
+  ],
+  "importantMissingData": [
+    "Verifiable audience engagement rates, reach efficiency, and audience authenticity metrics.",
+    "Specific monetary valuations and contract details of her NIL agreement with Adidas.",
+    "Quantitative campaign performance data (e.g., click-through rates, product sales) from her brand campaigns."
+  ],
+  "identityOrEvidenceRisks": [
+    "High identity confidence, but commercial trajectory relies on her upcoming professional transition (NWSL/senior team) which is not yet finalized."
+  ]
+}

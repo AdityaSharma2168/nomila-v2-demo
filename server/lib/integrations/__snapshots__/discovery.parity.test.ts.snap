@@ -1,0 +1,2027 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Instagram Business Discovery — every caller, every recorded response shape business_account 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": null,
+      "found": true,
+      "native": {
+        "accountId": "17841400000000001",
+        "apiVersion": "v22.0",
+        "businessDiscovery": {
+          "biography": "Athlete.",
+          "followers_count": 12480,
+          "follows_count": 512,
+          "id": "17841400000000001",
+          "media": {
+            "data": [
+              {
+                "comments_count": 31,
+                "id": "m1",
+                "like_count": 640,
+                "media_product_type": "FEED",
+                "media_type": "IMAGE",
+                "timestamp": "2026-09-13T12:00:00+0000",
+              },
+              {
+                "comments_count": 58,
+                "id": "m2",
+                "like_count": 1210,
+                "media_product_type": "REELS",
+                "media_type": "VIDEO",
+                "timestamp": "2026-09-06T12:00:00+0000",
+              },
+              {
+                "comments_count": 12,
+                "id": "m3",
+                "like_count": 402,
+                "media_product_type": "FEED",
+                "media_type": "CAROUSEL_ALBUM",
+                "timestamp": "2026-08-25T12:00:00+0000",
+              },
+              {
+                "comments_count": 20,
+                "id": "m4",
+                "like_count": 515,
+                "media_product_type": "FEED",
+                "media_type": "IMAGE",
+                "timestamp": "2026-08-02T12:00:00+0000",
+              },
+              {
+                "comments_count": 4,
+                "id": "m5",
+                "media_product_type": "FEED",
+                "media_type": "IMAGE",
+                "timestamp": "2026-07-17T12:00:00+0000",
+              },
+            ],
+            "paging": {
+              "cursors": {
+                "after": "QVFIUfake",
+              },
+            },
+          },
+          "media_count": 318,
+          "name": "Jordan Example",
+          "username": "jordan.example",
+          "website": "https://example.com",
+        },
+        "errors": [],
+        "fetchedAt": "2026-09-15T12:00:00.000Z",
+        "handle": "jordan.example",
+        "platform": "instagram",
+        "sourceMethod": "meta_business_discovery",
+        "toolsCalled": [
+          "instagram_business_discovery",
+        ],
+      },
+      "result": {
+        "avg_engagement_rate": 4.63,
+        "avg_reach_per_post": null,
+        "avg_saves_per_post": null,
+        "avg_shares_per_post": null,
+        "avg_views_per_post": null,
+        "avg_watch_time_sec": null,
+        "content_frequency": 0.6,
+        "followers": 12480,
+        "following": null,
+        "impressions": null,
+        "is_verified": false,
+        "post_count": 318,
+        "posts_last_30d": 3,
+        "profile_views": null,
+        "raw_metrics": {
+          "discovery": {
+            "platform": "instagram",
+            "source": "business_discovery",
+            "username": "jordan.example",
+          },
+        },
+        "reach": null,
+        "toolsCalled": [
+          "instagram_business_discovery",
+        ],
+        "top_audience_age_range": null,
+        "top_audience_city": null,
+        "top_audience_country": null,
+        "top_audience_gender": null,
+        "total_channel_views": null,
+        "total_likes": null,
+      },
+    },
+  },
+  "keeperRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,biography,followers_count,media_count,media.limit(10){id,like_count,comments_count,timestamp,media_type}}",
+  ],
+  "legacy": {
+    "value": {
+      "_computed": {
+        "avg_engagement_rate": 4.63,
+        "content_frequency": 3,
+        "data_tier": "discovery",
+        "platform_count": 1,
+        "total_followers": 12480,
+      },
+      "instagram": {
+        "avg_comments": 25,
+        "avg_likes": 553,
+        "engagement_rate": 4.63,
+        "fetched_at": "2026-09-15T12:00:00.000Z",
+        "followers": 12480,
+        "handle": "@jordan.example",
+        "media_count": 318,
+        "posts_last_30d": 3,
+        "source": "business_discovery",
+        "website": "https://example.com",
+      },
+    },
+  },
+  "legacyRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,followers_count,media_count,website,username,media.limit(25){like_count,comments_count,timestamp,media_type}}",
+  ],
+  "mia": {
+    "block": "AUTHORITATIVE SOCIAL DATA
+
+Measured platform facts supplied by Nomila. Each account states its source, observation date and identity-resolution basis/confidence. Treat these as authoritative; do not replace them with web estimates.
+- instagram @jordan.example — source: meta business discovery; observed 2026-09-15; identity: handle cited by Nomila research; Instagram profile name "Jordan Example" matches the athlete (HIGH). followers: 12,480; posts (media count): 318; median likes per post (last 4 public posts): 578; median likes per post as % of followers: 4.63%; median comments per post (last 5 public posts): 20; public posting cadence: 0.5 posts/week over the last 5 posts
+- youtube: not available (no confidently resolved account)
+- tiktok: not available (no authoritative route)
+- x: not available (no authoritative route)",
+    "candidates": [
+      {
+        "handle": "jordan.example",
+        "outcome": "resolved (profile name "Jordan Example" matches)",
+        "platform": "instagram",
+      },
+    ],
+    "digest": "f2d8bab77326df0db38e9e6e3819031d4083169753826706e41af680d9b3b887",
+    "result": {
+      "value": [
+        {
+          "handle": "jordan.example",
+          "identityBasis": "handle cited by Nomila research; Instagram profile name "Jordan Example" matches the athlete",
+          "identityConfidence": "HIGH",
+          "metrics": {
+            "followers": "12,480",
+            "median comments per post (last 5 public posts)": "20",
+            "median likes per post (last 4 public posts)": "578",
+            "median likes per post as % of followers": "4.63%",
+            "posts (media count)": "318",
+            "public posting cadence": "0.5 posts/week over the last 5 posts",
+          },
+          "observedAt": "2026-09-15",
+          "platform": "instagram",
+          "source": "meta_business_discovery",
+        },
+      ],
+    },
+  },
+  "miaRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,name,biography,website,followers_count,follows_count,media_count,media.limit(25){id,like_count,comments_count,timestamp,media_type,media_product_type}}",
+  ],
+}
+`;
+
+exports[`Instagram Business Discovery — every caller, every recorded response shape media_permission_error 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": "(#10) Application does not have permission for this action",
+      "found": false,
+      "result": null,
+    },
+  },
+  "keeperRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,biography,followers_count,media_count,media.limit(10){id,like_count,comments_count,timestamp,media_type}}",
+  ],
+  "legacy": {
+    "value": {
+      "_computed": {
+        "avg_engagement_rate": 0,
+        "content_frequency": undefined,
+        "data_tier": "discovery",
+        "platform_count": 1,
+        "total_followers": 12480,
+      },
+      "instagram": {
+        "avg_comments": 0,
+        "avg_likes": 0,
+        "engagement_rate": 0,
+        "fetched_at": "2026-09-15T12:00:00.000Z",
+        "followers": 12480,
+        "handle": "@jordan.example",
+        "media_count": 318,
+        "posts_last_30d": 0,
+        "source": "business_discovery",
+        "website": "https://example.com",
+      },
+    },
+  },
+  "legacyRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,followers_count,media_count,website,username,media.limit(25){like_count,comments_count,timestamp,media_type}}",
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,followers_count,media_count,website,username}",
+  ],
+  "mia": {
+    "block": "",
+    "candidates": [
+      {
+        "handle": "jordan.example",
+        "outcome": "discovery: (#10) Application does not have permission for this action",
+        "platform": "instagram",
+      },
+    ],
+    "digest": "086678059c9b8a6d0ec88f6abcb385b71669a15088f82c9c4b74d42ebbf8b54a",
+    "result": {
+      "value": [],
+    },
+  },
+  "miaRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,name,biography,website,followers_count,follows_count,media_count,media.limit(25){id,like_count,comments_count,timestamp,media_type,media_product_type}}",
+  ],
+}
+`;
+
+exports[`Instagram Business Discovery — every caller, every recorded response shape name_does_not_match 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": null,
+      "found": true,
+      "native": {
+        "accountId": "17841400000000001",
+        "apiVersion": "v22.0",
+        "businessDiscovery": {
+          "biography": "Athlete.",
+          "followers_count": 12480,
+          "follows_count": 512,
+          "id": "17841400000000001",
+          "media": {
+            "data": [
+              {
+                "comments_count": 31,
+                "id": "m1",
+                "like_count": 640,
+                "media_product_type": "FEED",
+                "media_type": "IMAGE",
+                "timestamp": "2026-09-13T12:00:00+0000",
+              },
+              {
+                "comments_count": 58,
+                "id": "m2",
+                "like_count": 1210,
+                "media_product_type": "REELS",
+                "media_type": "VIDEO",
+                "timestamp": "2026-09-06T12:00:00+0000",
+              },
+              {
+                "comments_count": 12,
+                "id": "m3",
+                "like_count": 402,
+                "media_product_type": "FEED",
+                "media_type": "CAROUSEL_ALBUM",
+                "timestamp": "2026-08-25T12:00:00+0000",
+              },
+              {
+                "comments_count": 20,
+                "id": "m4",
+                "like_count": 515,
+                "media_product_type": "FEED",
+                "media_type": "IMAGE",
+                "timestamp": "2026-08-02T12:00:00+0000",
+              },
+              {
+                "comments_count": 4,
+                "id": "m5",
+                "media_product_type": "FEED",
+                "media_type": "IMAGE",
+                "timestamp": "2026-07-17T12:00:00+0000",
+              },
+            ],
+            "paging": {
+              "cursors": {
+                "after": "QVFIUfake",
+              },
+            },
+          },
+          "media_count": 318,
+          "name": "Someone Else",
+          "username": "jordan.example",
+          "website": "https://example.com",
+        },
+        "errors": [],
+        "fetchedAt": "2026-09-15T12:00:00.000Z",
+        "handle": "jordan.example",
+        "platform": "instagram",
+        "sourceMethod": "meta_business_discovery",
+        "toolsCalled": [
+          "instagram_business_discovery",
+        ],
+      },
+      "result": {
+        "avg_engagement_rate": 4.63,
+        "avg_reach_per_post": null,
+        "avg_saves_per_post": null,
+        "avg_shares_per_post": null,
+        "avg_views_per_post": null,
+        "avg_watch_time_sec": null,
+        "content_frequency": 0.6,
+        "followers": 12480,
+        "following": null,
+        "impressions": null,
+        "is_verified": false,
+        "post_count": 318,
+        "posts_last_30d": 3,
+        "profile_views": null,
+        "raw_metrics": {
+          "discovery": {
+            "platform": "instagram",
+            "source": "business_discovery",
+            "username": "jordan.example",
+          },
+        },
+        "reach": null,
+        "toolsCalled": [
+          "instagram_business_discovery",
+        ],
+        "top_audience_age_range": null,
+        "top_audience_city": null,
+        "top_audience_country": null,
+        "top_audience_gender": null,
+        "total_channel_views": null,
+        "total_likes": null,
+      },
+    },
+  },
+  "keeperRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,biography,followers_count,media_count,media.limit(10){id,like_count,comments_count,timestamp,media_type}}",
+  ],
+  "legacy": {
+    "value": {
+      "_computed": {
+        "avg_engagement_rate": 4.63,
+        "content_frequency": 3,
+        "data_tier": "discovery",
+        "platform_count": 1,
+        "total_followers": 12480,
+      },
+      "instagram": {
+        "avg_comments": 25,
+        "avg_likes": 553,
+        "engagement_rate": 4.63,
+        "fetched_at": "2026-09-15T12:00:00.000Z",
+        "followers": 12480,
+        "handle": "@jordan.example",
+        "media_count": 318,
+        "posts_last_30d": 3,
+        "source": "business_discovery",
+        "website": "https://example.com",
+      },
+    },
+  },
+  "legacyRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,followers_count,media_count,website,username,media.limit(25){like_count,comments_count,timestamp,media_type}}",
+  ],
+  "mia": {
+    "block": "",
+    "candidates": [
+      {
+        "handle": "jordan.example",
+        "outcome": "NOT supplied: identity not certain (profile name "Someone Else")",
+        "platform": "instagram",
+      },
+    ],
+    "digest": "086678059c9b8a6d0ec88f6abcb385b71669a15088f82c9c4b74d42ebbf8b54a",
+    "result": {
+      "value": [],
+    },
+  },
+  "miaRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,name,biography,website,followers_count,follows_count,media_count,media.limit(25){id,like_count,comments_count,timestamp,media_type,media_product_type}}",
+  ],
+}
+`;
+
+exports[`Instagram Business Discovery — every caller, every recorded response shape network_error 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": "fetch failed",
+      "found": false,
+      "result": null,
+    },
+  },
+  "keeperRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,biography,followers_count,media_count,media.limit(10){id,like_count,comments_count,timestamp,media_type}}",
+  ],
+  "legacy": {
+    "value": null,
+  },
+  "legacyRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,followers_count,media_count,website,username,media.limit(25){like_count,comments_count,timestamp,media_type}}",
+  ],
+  "mia": {
+    "block": "",
+    "candidates": [],
+    "digest": "086678059c9b8a6d0ec88f6abcb385b71669a15088f82c9c4b74d42ebbf8b54a",
+    "result": {
+      "threw": "fetch failed",
+    },
+  },
+  "miaRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,name,biography,website,followers_count,follows_count,media_count,media.limit(25){id,like_count,comments_count,timestamp,media_type,media_product_type}}",
+  ],
+}
+`;
+
+exports[`Instagram Business Discovery — every caller, every recorded response shape no_profile_name 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": null,
+      "found": true,
+      "native": {
+        "accountId": "17841400000000001",
+        "apiVersion": "v22.0",
+        "businessDiscovery": {
+          "biography": "Athlete.",
+          "followers_count": 12480,
+          "follows_count": 512,
+          "id": "17841400000000001",
+          "media": {
+            "data": [
+              {
+                "comments_count": 31,
+                "id": "m1",
+                "like_count": 640,
+                "media_product_type": "FEED",
+                "media_type": "IMAGE",
+                "timestamp": "2026-09-13T12:00:00+0000",
+              },
+              {
+                "comments_count": 58,
+                "id": "m2",
+                "like_count": 1210,
+                "media_product_type": "REELS",
+                "media_type": "VIDEO",
+                "timestamp": "2026-09-06T12:00:00+0000",
+              },
+              {
+                "comments_count": 12,
+                "id": "m3",
+                "like_count": 402,
+                "media_product_type": "FEED",
+                "media_type": "CAROUSEL_ALBUM",
+                "timestamp": "2026-08-25T12:00:00+0000",
+              },
+              {
+                "comments_count": 20,
+                "id": "m4",
+                "like_count": 515,
+                "media_product_type": "FEED",
+                "media_type": "IMAGE",
+                "timestamp": "2026-08-02T12:00:00+0000",
+              },
+              {
+                "comments_count": 4,
+                "id": "m5",
+                "media_product_type": "FEED",
+                "media_type": "IMAGE",
+                "timestamp": "2026-07-17T12:00:00+0000",
+              },
+            ],
+            "paging": {
+              "cursors": {
+                "after": "QVFIUfake",
+              },
+            },
+          },
+          "media_count": 318,
+          "username": "jordan.example",
+          "website": "https://example.com",
+        },
+        "errors": [],
+        "fetchedAt": "2026-09-15T12:00:00.000Z",
+        "handle": "jordan.example",
+        "platform": "instagram",
+        "sourceMethod": "meta_business_discovery",
+        "toolsCalled": [
+          "instagram_business_discovery",
+        ],
+      },
+      "result": {
+        "avg_engagement_rate": 4.63,
+        "avg_reach_per_post": null,
+        "avg_saves_per_post": null,
+        "avg_shares_per_post": null,
+        "avg_views_per_post": null,
+        "avg_watch_time_sec": null,
+        "content_frequency": 0.6,
+        "followers": 12480,
+        "following": null,
+        "impressions": null,
+        "is_verified": false,
+        "post_count": 318,
+        "posts_last_30d": 3,
+        "profile_views": null,
+        "raw_metrics": {
+          "discovery": {
+            "platform": "instagram",
+            "source": "business_discovery",
+            "username": "jordan.example",
+          },
+        },
+        "reach": null,
+        "toolsCalled": [
+          "instagram_business_discovery",
+        ],
+        "top_audience_age_range": null,
+        "top_audience_city": null,
+        "top_audience_country": null,
+        "top_audience_gender": null,
+        "total_channel_views": null,
+        "total_likes": null,
+      },
+    },
+  },
+  "keeperRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,biography,followers_count,media_count,media.limit(10){id,like_count,comments_count,timestamp,media_type}}",
+  ],
+  "legacy": {
+    "value": {
+      "_computed": {
+        "avg_engagement_rate": 4.63,
+        "content_frequency": 3,
+        "data_tier": "discovery",
+        "platform_count": 1,
+        "total_followers": 12480,
+      },
+      "instagram": {
+        "avg_comments": 25,
+        "avg_likes": 553,
+        "engagement_rate": 4.63,
+        "fetched_at": "2026-09-15T12:00:00.000Z",
+        "followers": 12480,
+        "handle": "@jordan.example",
+        "media_count": 318,
+        "posts_last_30d": 3,
+        "source": "business_discovery",
+        "website": "https://example.com",
+      },
+    },
+  },
+  "legacyRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,followers_count,media_count,website,username,media.limit(25){like_count,comments_count,timestamp,media_type}}",
+  ],
+  "mia": {
+    "block": "",
+    "candidates": [
+      {
+        "handle": "jordan.example",
+        "outcome": "NOT supplied: identity not certain (profile name "?")",
+        "platform": "instagram",
+      },
+    ],
+    "digest": "086678059c9b8a6d0ec88f6abcb385b71669a15088f82c9c4b74d42ebbf8b54a",
+    "result": {
+      "value": [],
+    },
+  },
+  "miaRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,name,biography,website,followers_count,follows_count,media_count,media.limit(25){id,like_count,comments_count,timestamp,media_type,media_product_type}}",
+  ],
+}
+`;
+
+exports[`Instagram Business Discovery — every caller, every recorded response shape not_business_account 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": "not_business_account",
+      "found": false,
+      "result": null,
+    },
+  },
+  "keeperRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,biography,followers_count,media_count,media.limit(10){id,like_count,comments_count,timestamp,media_type}}",
+  ],
+  "legacy": {
+    "value": null,
+  },
+  "legacyRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,followers_count,media_count,website,username,media.limit(25){like_count,comments_count,timestamp,media_type}}",
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,followers_count,media_count,website,username}",
+  ],
+  "mia": {
+    "block": "",
+    "candidates": [
+      {
+        "handle": "jordan.example",
+        "outcome": "discovery: Invalid user id",
+        "platform": "instagram",
+      },
+    ],
+    "digest": "086678059c9b8a6d0ec88f6abcb385b71669a15088f82c9c4b74d42ebbf8b54a",
+    "result": {
+      "value": [],
+    },
+  },
+  "miaRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,name,biography,website,followers_count,follows_count,media_count,media.limit(25){id,like_count,comments_count,timestamp,media_type,media_product_type}}",
+  ],
+}
+`;
+
+exports[`Instagram Business Discovery — every caller, every recorded response shape not_found 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": "not_found",
+      "found": false,
+      "result": null,
+    },
+  },
+  "keeperRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,biography,followers_count,media_count,media.limit(10){id,like_count,comments_count,timestamp,media_type}}",
+  ],
+  "legacy": {
+    "value": null,
+  },
+  "legacyRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,followers_count,media_count,website,username,media.limit(25){like_count,comments_count,timestamp,media_type}}",
+  ],
+  "mia": {
+    "block": "",
+    "candidates": [
+      {
+        "handle": "jordan.example",
+        "outcome": "discovery: 200",
+        "platform": "instagram",
+      },
+    ],
+    "digest": "086678059c9b8a6d0ec88f6abcb385b71669a15088f82c9c4b74d42ebbf8b54a",
+    "result": {
+      "value": [],
+    },
+  },
+  "miaRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,name,biography,website,followers_count,follows_count,media_count,media.limit(25){id,like_count,comments_count,timestamp,media_type,media_product_type}}",
+  ],
+}
+`;
+
+exports[`Instagram Business Discovery — every caller, every recorded response shape rate_limited 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": "rate_limited",
+      "found": false,
+      "result": null,
+    },
+  },
+  "keeperRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,biography,followers_count,media_count,media.limit(10){id,like_count,comments_count,timestamp,media_type}}",
+  ],
+  "legacy": {
+    "value": null,
+  },
+  "legacyRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,followers_count,media_count,website,username,media.limit(25){like_count,comments_count,timestamp,media_type}}",
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,followers_count,media_count,website,username}",
+  ],
+  "mia": {
+    "block": "",
+    "candidates": [
+      {
+        "handle": "jordan.example",
+        "outcome": "discovery: (#4) Application request limit reached",
+        "platform": "instagram",
+      },
+    ],
+    "digest": "086678059c9b8a6d0ec88f6abcb385b71669a15088f82c9c4b74d42ebbf8b54a",
+    "result": {
+      "value": [],
+    },
+  },
+  "miaRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,name,biography,website,followers_count,follows_count,media_count,media.limit(25){id,like_count,comments_count,timestamp,media_type,media_product_type}}",
+  ],
+}
+`;
+
+exports[`Instagram Business Discovery — every caller, every recorded response shape token_expired 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": "token_expired",
+      "found": false,
+      "result": null,
+    },
+  },
+  "keeperRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,biography,followers_count,media_count,media.limit(10){id,like_count,comments_count,timestamp,media_type}}",
+  ],
+  "legacy": {
+    "value": null,
+  },
+  "legacyRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,followers_count,media_count,website,username,media.limit(25){like_count,comments_count,timestamp,media_type}}",
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,followers_count,media_count,website,username}",
+  ],
+  "mia": {
+    "block": "",
+    "candidates": [
+      {
+        "handle": "jordan.example",
+        "outcome": "discovery: Error validating access token: Session has expired on Tuesday, 15-Sep-26 04:00:00 PDT.",
+        "platform": "instagram",
+      },
+    ],
+    "digest": "086678059c9b8a6d0ec88f6abcb385b71669a15088f82c9c4b74d42ebbf8b54a",
+    "result": {
+      "value": [],
+    },
+  },
+  "miaRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,name,biography,website,followers_count,follows_count,media_count,media.limit(25){id,like_count,comments_count,timestamp,media_type,media_product_type}}",
+  ],
+}
+`;
+
+exports[`Instagram Business Discovery — every caller, every recorded response shape unparseable_response 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": "Unexpected token '<', "<html>Bad "... is not valid JSON",
+      "found": false,
+      "result": null,
+    },
+  },
+  "keeperRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,biography,followers_count,media_count,media.limit(10){id,like_count,comments_count,timestamp,media_type}}",
+  ],
+  "legacy": {
+    "value": null,
+  },
+  "legacyRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,followers_count,media_count,website,username,media.limit(25){like_count,comments_count,timestamp,media_type}}",
+  ],
+  "mia": {
+    "block": "",
+    "candidates": [
+      {
+        "handle": "jordan.example",
+        "outcome": "discovery: 502",
+        "platform": "instagram",
+      },
+    ],
+    "digest": "086678059c9b8a6d0ec88f6abcb385b71669a15088f82c9c4b74d42ebbf8b54a",
+    "result": {
+      "value": [],
+    },
+  },
+  "miaRequests": [
+    "GET graph.facebook.com/v22.0/{biz} fields=business_discovery.username(jordan.example){id,username,name,biography,website,followers_count,follows_count,media_count,media.limit(25){id,like_count,comments_count,timestamp,media_type,media_product_type}}",
+  ],
+}
+`;
+
+exports[`YouTube Data API — every caller, every recorded response shape channel_id_handle 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": null,
+      "found": true,
+      "native": {
+        "accountId": "UCabcdefghijklmnopqrstuv",
+        "apiVersion": "v3",
+        "channel": {
+          "contentDetails": {
+            "relatedPlaylists": {
+              "likes": "",
+              "uploads": "UUabcdefghijklmnopqrstuv",
+            },
+          },
+          "etag": "e",
+          "id": "UCabcdefghijklmnopqrstuv",
+          "kind": "youtube#channel",
+          "snippet": {
+            "customUrl": "@jordanexample",
+            "description": "",
+            "publishedAt": "2019-04-02T17:11:05Z",
+            "title": "Jordan Example",
+          },
+          "statistics": {
+            "hiddenSubscriberCount": false,
+            "subscriberCount": "8410",
+            "videoCount": "142",
+            "viewCount": "1834220",
+          },
+        },
+        "errors": [],
+        "fetchedAt": "2026-09-15T12:00:00.000Z",
+        "handle": "@jordanexample",
+        "platform": "youtube",
+        "sourceMethod": "youtube_data_api",
+        "toolsCalled": [
+          "youtube_data_api",
+        ],
+        "videos": [],
+      },
+      "result": {
+        "avg_engagement_rate": null,
+        "avg_reach_per_post": null,
+        "avg_saves_per_post": null,
+        "avg_shares_per_post": null,
+        "avg_views_per_post": null,
+        "avg_watch_time_sec": null,
+        "content_frequency": null,
+        "followers": 8410,
+        "following": null,
+        "impressions": null,
+        "is_verified": false,
+        "post_count": 142,
+        "posts_last_30d": null,
+        "profile_views": null,
+        "raw_metrics": {
+          "discovery": {
+            "channelId": "UCabcdefghijklmnopqrstuv",
+            "platform": "youtube",
+            "source": "youtube_data_api",
+            "username": "UCabcdefghijklmnopqrstuv",
+          },
+        },
+        "reach": null,
+        "toolsCalled": [
+          "youtube_data_api",
+        ],
+        "top_audience_age_range": null,
+        "top_audience_city": null,
+        "top_audience_country": null,
+        "top_audience_gender": null,
+        "total_channel_views": 1834220,
+        "total_likes": null,
+      },
+    },
+  },
+  "keeperRequests": [
+    "GET www.googleapis.com/youtube/v3/channels id=UCabcdefghijklmnopqrstuv&part=snippet,statistics",
+  ],
+  "legacy": {
+    "value": {
+      "_computed": {
+        "avg_engagement_rate": 5.14,
+        "content_frequency": 2,
+        "data_tier": "discovery",
+        "platform_count": 1,
+        "total_followers": 8410,
+      },
+      "youtube": {
+        "avg_comments": 32,
+        "avg_likes": 400,
+        "avg_views": 6538,
+        "engagement_rate": 5.14,
+        "fetched_at": "2026-09-15T12:00:00.000Z",
+        "handle": "@UCabcdefghijklmnopqrstuv",
+        "posts_last_30d": 2,
+        "short_form_ratio": 0.33,
+        "source": "data_api",
+        "subscribers": 8410,
+        "topic_categories": [
+          "Sport",
+          "Lifestyle_(sociology)",
+        ],
+      },
+    },
+  },
+  "legacyRequests": [
+    "GET www.googleapis.com/youtube/v3/channels id=UCabcdefghijklmnopqrstuv&part=snippet,statistics,contentDetails",
+    "GET www.googleapis.com/youtube/v3/playlistItems maxResults=10&part=snippet&playlistId=UUabcdefghijklmnopqrstuv",
+    "GET www.googleapis.com/youtube/v3/videos id=vid1,vid2,vid3&part=statistics,contentDetails,topicDetails",
+  ],
+  "mia": {
+    "block": "AUTHORITATIVE SOCIAL DATA
+
+Measured platform facts supplied by Nomila. Each account states its source, observation date and identity-resolution basis/confidence. Treat these as authoritative; do not replace them with web estimates.
+- youtube @UCabcdefghijklmnopqrstuv — source: youtube data api; observed 2026-09-15; identity: handle cited by Nomila research; YouTube channel title "Jordan Example" matches the athlete (HIGH). subscribers: 8,410; total channel views: 1,834,220; videos: 142; median views per video (last 3 uploads): 5,210; median views per video as % of subscribers: 61.95%; median likes per video (last 2 uploads): 601; median comments per video (last 3 uploads): 22; upload cadence: 1.6 uploads/month over the last 3 uploads
+- instagram: not available (no confidently resolved account)
+- tiktok: not available (no authoritative route)
+- x: not available (no authoritative route)",
+    "candidates": [
+      {
+        "handle": "UCabcdefghijklmnopqrstuv",
+        "outcome": "resolved (channel "Jordan Example")",
+        "platform": "youtube",
+      },
+    ],
+    "digest": "65fde3b7e7042fc790f226fe1f1be0688dc44bdaac38017ae788f6c896ab66b1",
+    "result": {
+      "value": [
+        {
+          "handle": "UCabcdefghijklmnopqrstuv",
+          "identityBasis": "handle cited by Nomila research; YouTube channel title "Jordan Example" matches the athlete",
+          "identityConfidence": "HIGH",
+          "metrics": {
+            "median comments per video (last 3 uploads)": "22",
+            "median likes per video (last 2 uploads)": "601",
+            "median views per video (last 3 uploads)": "5,210",
+            "median views per video as % of subscribers": "61.95%",
+            "subscribers": "8,410",
+            "total channel views": "1,834,220",
+            "upload cadence": "1.6 uploads/month over the last 3 uploads",
+            "videos": "142",
+          },
+          "observedAt": "2026-09-15",
+          "platform": "youtube",
+          "source": "youtube_data_api",
+        },
+      ],
+    },
+  },
+  "miaRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@UCabcdefghijklmnopqrstuv&part=snippet,statistics,contentDetails",
+    "GET www.googleapis.com/youtube/v3/playlistItems maxResults=10&part=contentDetails&playlistId=UUabcdefghijklmnopqrstuv",
+    "GET www.googleapis.com/youtube/v3/videos id=vid1,vid2,vid3&part=statistics,snippet",
+  ],
+}
+`;
+
+exports[`YouTube Data API — every caller, every recorded response shape hidden_subscribers_absent 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": null,
+      "found": true,
+      "native": {
+        "accountId": "UCabcdefghijklmnopqrstuv",
+        "apiVersion": "v3",
+        "channel": {
+          "contentDetails": {
+            "relatedPlaylists": {
+              "likes": "",
+              "uploads": "UUabcdefghijklmnopqrstuv",
+            },
+          },
+          "etag": "e",
+          "id": "UCabcdefghijklmnopqrstuv",
+          "kind": "youtube#channel",
+          "snippet": {
+            "customUrl": "@jordanexample",
+            "description": "",
+            "publishedAt": "2019-04-02T17:11:05Z",
+            "title": "Jordan Example",
+          },
+          "statistics": {
+            "hiddenSubscriberCount": true,
+            "videoCount": "142",
+            "viewCount": "1834220",
+          },
+        },
+        "errors": [],
+        "fetchedAt": "2026-09-15T12:00:00.000Z",
+        "handle": "@jordanexample",
+        "platform": "youtube",
+        "sourceMethod": "youtube_data_api",
+        "toolsCalled": [
+          "youtube_data_api",
+        ],
+        "videos": [],
+      },
+      "result": {
+        "avg_engagement_rate": null,
+        "avg_reach_per_post": null,
+        "avg_saves_per_post": null,
+        "avg_shares_per_post": null,
+        "avg_views_per_post": null,
+        "avg_watch_time_sec": null,
+        "content_frequency": null,
+        "followers": null,
+        "following": null,
+        "impressions": null,
+        "is_verified": false,
+        "post_count": 142,
+        "posts_last_30d": null,
+        "profile_views": null,
+        "raw_metrics": {
+          "discovery": {
+            "channelId": "UCabcdefghijklmnopqrstuv",
+            "platform": "youtube",
+            "source": "youtube_data_api",
+            "username": "jordanexample",
+          },
+        },
+        "reach": null,
+        "toolsCalled": [
+          "youtube_data_api",
+        ],
+        "top_audience_age_range": null,
+        "top_audience_city": null,
+        "top_audience_country": null,
+        "top_audience_gender": null,
+        "total_channel_views": 1834220,
+        "total_likes": null,
+      },
+    },
+  },
+  "keeperRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics",
+  ],
+  "legacy": {
+    "value": {
+      "_computed": {
+        "avg_engagement_rate": 0,
+        "content_frequency": undefined,
+        "data_tier": "discovery",
+        "platform_count": 1,
+        "total_followers": 0,
+      },
+      "youtube": {
+        "avg_comments": 0,
+        "avg_likes": 0,
+        "avg_views": 12917,
+        "engagement_rate": 0,
+        "fetched_at": "2026-09-15T12:00:00.000Z",
+        "handle": "@jordanexample",
+        "posts_last_30d": 0,
+        "short_form_ratio": undefined,
+        "source": "data_api",
+        "subscribers": 0,
+        "topic_categories": undefined,
+      },
+    },
+  },
+  "legacyRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+  ],
+  "mia": {
+    "block": "AUTHORITATIVE SOCIAL DATA
+
+Measured platform facts supplied by Nomila. Each account states its source, observation date and identity-resolution basis/confidence. Treat these as authoritative; do not replace them with web estimates.
+- youtube @jordanexample — source: youtube data api; observed 2026-09-15; identity: handle cited by Nomila research; YouTube channel title "Jordan Example" matches the athlete (HIGH). total channel views: 1,834,220; videos: 142; median views per video (last 3 uploads): 5,210; median likes per video (last 2 uploads): 601; median comments per video (last 3 uploads): 22; upload cadence: 1.6 uploads/month over the last 3 uploads
+- instagram: not available (no confidently resolved account)
+- tiktok: not available (no authoritative route)
+- x: not available (no authoritative route)",
+    "candidates": [
+      {
+        "handle": "jordanexample",
+        "outcome": "resolved (channel "Jordan Example")",
+        "platform": "youtube",
+      },
+    ],
+    "digest": "7131c09f949be207d6b3abce62560c322715418654056f232174fb1f0b77c52b",
+    "result": {
+      "value": [
+        {
+          "handle": "jordanexample",
+          "identityBasis": "handle cited by Nomila research; YouTube channel title "Jordan Example" matches the athlete",
+          "identityConfidence": "HIGH",
+          "metrics": {
+            "median comments per video (last 3 uploads)": "22",
+            "median likes per video (last 2 uploads)": "601",
+            "median views per video (last 3 uploads)": "5,210",
+            "total channel views": "1,834,220",
+            "upload cadence": "1.6 uploads/month over the last 3 uploads",
+            "videos": "142",
+          },
+          "observedAt": "2026-09-15",
+          "platform": "youtube",
+          "source": "youtube_data_api",
+        },
+      ],
+    },
+  },
+  "miaRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+    "GET www.googleapis.com/youtube/v3/playlistItems maxResults=10&part=contentDetails&playlistId=UUabcdefghijklmnopqrstuv",
+    "GET www.googleapis.com/youtube/v3/videos id=vid1,vid2,vid3&part=statistics,snippet",
+  ],
+}
+`;
+
+exports[`YouTube Data API — every caller, every recorded response shape hidden_subscribers_zero 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": null,
+      "found": true,
+      "native": {
+        "accountId": "UCabcdefghijklmnopqrstuv",
+        "apiVersion": "v3",
+        "channel": {
+          "contentDetails": {
+            "relatedPlaylists": {
+              "likes": "",
+              "uploads": "UUabcdefghijklmnopqrstuv",
+            },
+          },
+          "etag": "e",
+          "id": "UCabcdefghijklmnopqrstuv",
+          "kind": "youtube#channel",
+          "snippet": {
+            "customUrl": "@jordanexample",
+            "description": "",
+            "publishedAt": "2019-04-02T17:11:05Z",
+            "title": "Jordan Example",
+          },
+          "statistics": {
+            "hiddenSubscriberCount": true,
+            "subscriberCount": "0",
+            "videoCount": "142",
+            "viewCount": "1834220",
+          },
+        },
+        "errors": [],
+        "fetchedAt": "2026-09-15T12:00:00.000Z",
+        "handle": "@jordanexample",
+        "platform": "youtube",
+        "sourceMethod": "youtube_data_api",
+        "toolsCalled": [
+          "youtube_data_api",
+        ],
+        "videos": [],
+      },
+      "result": {
+        "avg_engagement_rate": null,
+        "avg_reach_per_post": null,
+        "avg_saves_per_post": null,
+        "avg_shares_per_post": null,
+        "avg_views_per_post": null,
+        "avg_watch_time_sec": null,
+        "content_frequency": null,
+        "followers": 0,
+        "following": null,
+        "impressions": null,
+        "is_verified": false,
+        "post_count": 142,
+        "posts_last_30d": null,
+        "profile_views": null,
+        "raw_metrics": {
+          "discovery": {
+            "channelId": "UCabcdefghijklmnopqrstuv",
+            "platform": "youtube",
+            "source": "youtube_data_api",
+            "username": "jordanexample",
+          },
+        },
+        "reach": null,
+        "toolsCalled": [
+          "youtube_data_api",
+        ],
+        "top_audience_age_range": null,
+        "top_audience_city": null,
+        "top_audience_country": null,
+        "top_audience_gender": null,
+        "total_channel_views": 1834220,
+        "total_likes": null,
+      },
+    },
+  },
+  "keeperRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics",
+  ],
+  "legacy": {
+    "value": {
+      "_computed": {
+        "avg_engagement_rate": 0,
+        "content_frequency": undefined,
+        "data_tier": "discovery",
+        "platform_count": 1,
+        "total_followers": 0,
+      },
+      "youtube": {
+        "avg_comments": 0,
+        "avg_likes": 0,
+        "avg_views": 12917,
+        "engagement_rate": 0,
+        "fetched_at": "2026-09-15T12:00:00.000Z",
+        "handle": "@jordanexample",
+        "posts_last_30d": 0,
+        "short_form_ratio": undefined,
+        "source": "data_api",
+        "subscribers": 0,
+        "topic_categories": undefined,
+      },
+    },
+  },
+  "legacyRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+  ],
+  "mia": {
+    "block": "AUTHORITATIVE SOCIAL DATA
+
+Measured platform facts supplied by Nomila. Each account states its source, observation date and identity-resolution basis/confidence. Treat these as authoritative; do not replace them with web estimates.
+- youtube @jordanexample — source: youtube data api; observed 2026-09-15; identity: handle cited by Nomila research; YouTube channel title "Jordan Example" matches the athlete (HIGH). total channel views: 1,834,220; videos: 142; median views per video (last 3 uploads): 5,210; median likes per video (last 2 uploads): 601; median comments per video (last 3 uploads): 22; upload cadence: 1.6 uploads/month over the last 3 uploads
+- instagram: not available (no confidently resolved account)
+- tiktok: not available (no authoritative route)
+- x: not available (no authoritative route)",
+    "candidates": [
+      {
+        "handle": "jordanexample",
+        "outcome": "resolved (channel "Jordan Example")",
+        "platform": "youtube",
+      },
+    ],
+    "digest": "7131c09f949be207d6b3abce62560c322715418654056f232174fb1f0b77c52b",
+    "result": {
+      "value": [
+        {
+          "handle": "jordanexample",
+          "identityBasis": "handle cited by Nomila research; YouTube channel title "Jordan Example" matches the athlete",
+          "identityConfidence": "HIGH",
+          "metrics": {
+            "median comments per video (last 3 uploads)": "22",
+            "median likes per video (last 2 uploads)": "601",
+            "median views per video (last 3 uploads)": "5,210",
+            "total channel views": "1,834,220",
+            "upload cadence": "1.6 uploads/month over the last 3 uploads",
+            "videos": "142",
+          },
+          "observedAt": "2026-09-15",
+          "platform": "youtube",
+          "source": "youtube_data_api",
+        },
+      ],
+    },
+  },
+  "miaRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+    "GET www.googleapis.com/youtube/v3/playlistItems maxResults=10&part=contentDetails&playlistId=UUabcdefghijklmnopqrstuv",
+    "GET www.googleapis.com/youtube/v3/videos id=vid1,vid2,vid3&part=statistics,snippet",
+  ],
+}
+`;
+
+exports[`YouTube Data API — every caller, every recorded response shape network_error 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": "fetch failed",
+      "found": false,
+      "result": null,
+    },
+  },
+  "keeperRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics",
+  ],
+  "legacy": {
+    "value": null,
+  },
+  "legacyRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+  ],
+  "mia": {
+    "block": "",
+    "candidates": [],
+    "digest": "086678059c9b8a6d0ec88f6abcb385b71669a15088f82c9c4b74d42ebbf8b54a",
+    "result": {
+      "threw": "fetch failed",
+    },
+  },
+  "miaRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+  ],
+}
+`;
+
+exports[`YouTube Data API — every caller, every recorded response shape not_found 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": "not_found",
+      "found": false,
+      "result": null,
+    },
+  },
+  "keeperRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics",
+  ],
+  "legacy": {
+    "value": null,
+  },
+  "legacyRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+  ],
+  "mia": {
+    "block": "",
+    "candidates": [
+      {
+        "handle": "jordanexample",
+        "outcome": "discovery: not_found",
+        "platform": "youtube",
+      },
+    ],
+    "digest": "086678059c9b8a6d0ec88f6abcb385b71669a15088f82c9c4b74d42ebbf8b54a",
+    "result": {
+      "value": [],
+    },
+  },
+  "miaRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+  ],
+}
+`;
+
+exports[`YouTube Data API — every caller, every recorded response shape rate_limited 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": "The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.",
+      "found": false,
+      "result": null,
+    },
+  },
+  "keeperRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics",
+  ],
+  "legacy": {
+    "value": null,
+  },
+  "legacyRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+  ],
+  "mia": {
+    "block": "",
+    "candidates": [
+      {
+        "handle": "jordanexample",
+        "outcome": "discovery: The request cannot be completed because you have exceeded your <a href="/youtube/v3/getting-started#quota">quota</a>.",
+        "platform": "youtube",
+      },
+    ],
+    "digest": "086678059c9b8a6d0ec88f6abcb385b71669a15088f82c9c4b74d42ebbf8b54a",
+    "result": {
+      "value": [],
+    },
+  },
+  "miaRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+  ],
+}
+`;
+
+exports[`YouTube Data API — every caller, every recorded response shape token_expired 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": "API key expired. Please renew the API key.",
+      "found": false,
+      "result": null,
+    },
+  },
+  "keeperRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics",
+  ],
+  "legacy": {
+    "value": null,
+  },
+  "legacyRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+  ],
+  "mia": {
+    "block": "",
+    "candidates": [
+      {
+        "handle": "jordanexample",
+        "outcome": "discovery: API key expired. Please renew the API key.",
+        "platform": "youtube",
+      },
+    ],
+    "digest": "086678059c9b8a6d0ec88f6abcb385b71669a15088f82c9c4b74d42ebbf8b54a",
+    "result": {
+      "value": [],
+    },
+  },
+  "miaRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+  ],
+}
+`;
+
+exports[`YouTube Data API — every caller, every recorded response shape unparseable_response 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": "Unexpected token '<', "<html>Bad "... is not valid JSON",
+      "found": false,
+      "result": null,
+    },
+  },
+  "keeperRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics",
+  ],
+  "legacy": {
+    "value": null,
+  },
+  "legacyRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+  ],
+  "mia": {
+    "block": "",
+    "candidates": [
+      {
+        "handle": "jordanexample",
+        "outcome": "discovery: 502",
+        "platform": "youtube",
+      },
+    ],
+    "digest": "086678059c9b8a6d0ec88f6abcb385b71669a15088f82c9c4b74d42ebbf8b54a",
+    "result": {
+      "value": [],
+    },
+  },
+  "miaRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+  ],
+}
+`;
+
+exports[`YouTube Data API — every caller, every recorded response shape uploads_network_error 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": null,
+      "found": true,
+      "native": {
+        "accountId": "UCabcdefghijklmnopqrstuv",
+        "apiVersion": "v3",
+        "channel": {
+          "contentDetails": {
+            "relatedPlaylists": {
+              "likes": "",
+              "uploads": "UUabcdefghijklmnopqrstuv",
+            },
+          },
+          "etag": "e",
+          "id": "UCabcdefghijklmnopqrstuv",
+          "kind": "youtube#channel",
+          "snippet": {
+            "customUrl": "@jordanexample",
+            "description": "",
+            "publishedAt": "2019-04-02T17:11:05Z",
+            "title": "Jordan Example",
+          },
+          "statistics": {
+            "hiddenSubscriberCount": false,
+            "subscriberCount": "8410",
+            "videoCount": "142",
+            "viewCount": "1834220",
+          },
+        },
+        "errors": [],
+        "fetchedAt": "2026-09-15T12:00:00.000Z",
+        "handle": "@jordanexample",
+        "platform": "youtube",
+        "sourceMethod": "youtube_data_api",
+        "toolsCalled": [
+          "youtube_data_api",
+        ],
+        "videos": [],
+      },
+      "result": {
+        "avg_engagement_rate": null,
+        "avg_reach_per_post": null,
+        "avg_saves_per_post": null,
+        "avg_shares_per_post": null,
+        "avg_views_per_post": null,
+        "avg_watch_time_sec": null,
+        "content_frequency": null,
+        "followers": 8410,
+        "following": null,
+        "impressions": null,
+        "is_verified": false,
+        "post_count": 142,
+        "posts_last_30d": null,
+        "profile_views": null,
+        "raw_metrics": {
+          "discovery": {
+            "channelId": "UCabcdefghijklmnopqrstuv",
+            "platform": "youtube",
+            "source": "youtube_data_api",
+            "username": "jordanexample",
+          },
+        },
+        "reach": null,
+        "toolsCalled": [
+          "youtube_data_api",
+        ],
+        "top_audience_age_range": null,
+        "top_audience_city": null,
+        "top_audience_country": null,
+        "top_audience_gender": null,
+        "total_channel_views": 1834220,
+        "total_likes": null,
+      },
+    },
+  },
+  "keeperRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics",
+  ],
+  "legacy": {
+    "value": null,
+  },
+  "legacyRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+    "GET www.googleapis.com/youtube/v3/playlistItems maxResults=10&part=snippet&playlistId=UUabcdefghijklmnopqrstuv",
+  ],
+  "mia": {
+    "block": "AUTHORITATIVE SOCIAL DATA
+
+Measured platform facts supplied by Nomila. Each account states its source, observation date and identity-resolution basis/confidence. Treat these as authoritative; do not replace them with web estimates.
+- youtube @jordanexample — source: youtube data api; observed 2026-09-15; identity: handle cited by Nomila research; YouTube channel title "Jordan Example" matches the athlete (HIGH). subscribers: 8,410; total channel views: 1,834,220; videos: 142
+- instagram: not available (no confidently resolved account)
+- tiktok: not available (no authoritative route)
+- x: not available (no authoritative route)",
+    "candidates": [
+      {
+        "handle": "jordanexample",
+        "outcome": "resolved (channel "Jordan Example")",
+        "platform": "youtube",
+      },
+    ],
+    "digest": "41e54e6e7f3c9f4c508f4efc054a5e50348d8b2c89f102ebfc98f1be3fe1fad5",
+    "result": {
+      "value": [
+        {
+          "handle": "jordanexample",
+          "identityBasis": "handle cited by Nomila research; YouTube channel title "Jordan Example" matches the athlete",
+          "identityConfidence": "HIGH",
+          "metrics": {
+            "subscribers": "8,410",
+            "total channel views": "1,834,220",
+            "videos": "142",
+          },
+          "observedAt": "2026-09-15",
+          "platform": "youtube",
+          "source": "youtube_data_api",
+        },
+      ],
+    },
+  },
+  "miaRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+    "GET www.googleapis.com/youtube/v3/playlistItems maxResults=10&part=contentDetails&playlistId=UUabcdefghijklmnopqrstuv",
+  ],
+}
+`;
+
+exports[`YouTube Data API — every caller, every recorded response shape uploads_playlist_fails 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": null,
+      "found": true,
+      "native": {
+        "accountId": "UCabcdefghijklmnopqrstuv",
+        "apiVersion": "v3",
+        "channel": {
+          "contentDetails": {
+            "relatedPlaylists": {
+              "likes": "",
+              "uploads": "UUabcdefghijklmnopqrstuv",
+            },
+          },
+          "etag": "e",
+          "id": "UCabcdefghijklmnopqrstuv",
+          "kind": "youtube#channel",
+          "snippet": {
+            "customUrl": "@jordanexample",
+            "description": "",
+            "publishedAt": "2019-04-02T17:11:05Z",
+            "title": "Jordan Example",
+          },
+          "statistics": {
+            "hiddenSubscriberCount": false,
+            "subscriberCount": "8410",
+            "videoCount": "142",
+            "viewCount": "1834220",
+          },
+        },
+        "errors": [],
+        "fetchedAt": "2026-09-15T12:00:00.000Z",
+        "handle": "@jordanexample",
+        "platform": "youtube",
+        "sourceMethod": "youtube_data_api",
+        "toolsCalled": [
+          "youtube_data_api",
+        ],
+        "videos": [],
+      },
+      "result": {
+        "avg_engagement_rate": null,
+        "avg_reach_per_post": null,
+        "avg_saves_per_post": null,
+        "avg_shares_per_post": null,
+        "avg_views_per_post": null,
+        "avg_watch_time_sec": null,
+        "content_frequency": null,
+        "followers": 8410,
+        "following": null,
+        "impressions": null,
+        "is_verified": false,
+        "post_count": 142,
+        "posts_last_30d": null,
+        "profile_views": null,
+        "raw_metrics": {
+          "discovery": {
+            "channelId": "UCabcdefghijklmnopqrstuv",
+            "platform": "youtube",
+            "source": "youtube_data_api",
+            "username": "jordanexample",
+          },
+        },
+        "reach": null,
+        "toolsCalled": [
+          "youtube_data_api",
+        ],
+        "top_audience_age_range": null,
+        "top_audience_city": null,
+        "top_audience_country": null,
+        "top_audience_gender": null,
+        "total_channel_views": 1834220,
+        "total_likes": null,
+      },
+    },
+  },
+  "keeperRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics",
+  ],
+  "legacy": {
+    "value": {
+      "_computed": {
+        "avg_engagement_rate": 0,
+        "content_frequency": undefined,
+        "data_tier": "discovery",
+        "platform_count": 1,
+        "total_followers": 8410,
+      },
+      "youtube": {
+        "avg_comments": 0,
+        "avg_likes": 0,
+        "avg_views": 12917,
+        "engagement_rate": 0,
+        "fetched_at": "2026-09-15T12:00:00.000Z",
+        "handle": "@jordanexample",
+        "posts_last_30d": 0,
+        "short_form_ratio": undefined,
+        "source": "data_api",
+        "subscribers": 8410,
+        "topic_categories": undefined,
+      },
+    },
+  },
+  "legacyRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+    "GET www.googleapis.com/youtube/v3/playlistItems maxResults=10&part=snippet&playlistId=UUabcdefghijklmnopqrstuv",
+  ],
+  "mia": {
+    "block": "AUTHORITATIVE SOCIAL DATA
+
+Measured platform facts supplied by Nomila. Each account states its source, observation date and identity-resolution basis/confidence. Treat these as authoritative; do not replace them with web estimates.
+- youtube @jordanexample — source: youtube data api; observed 2026-09-15; identity: handle cited by Nomila research; YouTube channel title "Jordan Example" matches the athlete (HIGH). subscribers: 8,410; total channel views: 1,834,220; videos: 142
+- instagram: not available (no confidently resolved account)
+- tiktok: not available (no authoritative route)
+- x: not available (no authoritative route)",
+    "candidates": [
+      {
+        "handle": "jordanexample",
+        "outcome": "resolved (channel "Jordan Example")",
+        "platform": "youtube",
+      },
+    ],
+    "digest": "41e54e6e7f3c9f4c508f4efc054a5e50348d8b2c89f102ebfc98f1be3fe1fad5",
+    "result": {
+      "value": [
+        {
+          "handle": "jordanexample",
+          "identityBasis": "handle cited by Nomila research; YouTube channel title "Jordan Example" matches the athlete",
+          "identityConfidence": "HIGH",
+          "metrics": {
+            "subscribers": "8,410",
+            "total channel views": "1,834,220",
+            "videos": "142",
+          },
+          "observedAt": "2026-09-15",
+          "platform": "youtube",
+          "source": "youtube_data_api",
+        },
+      ],
+    },
+  },
+  "miaRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+    "GET www.googleapis.com/youtube/v3/playlistItems maxResults=10&part=contentDetails&playlistId=UUabcdefghijklmnopqrstuv",
+  ],
+}
+`;
+
+exports[`YouTube Data API — every caller, every recorded response shape videos_fail 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": null,
+      "found": true,
+      "native": {
+        "accountId": "UCabcdefghijklmnopqrstuv",
+        "apiVersion": "v3",
+        "channel": {
+          "contentDetails": {
+            "relatedPlaylists": {
+              "likes": "",
+              "uploads": "UUabcdefghijklmnopqrstuv",
+            },
+          },
+          "etag": "e",
+          "id": "UCabcdefghijklmnopqrstuv",
+          "kind": "youtube#channel",
+          "snippet": {
+            "customUrl": "@jordanexample",
+            "description": "",
+            "publishedAt": "2019-04-02T17:11:05Z",
+            "title": "Jordan Example",
+          },
+          "statistics": {
+            "hiddenSubscriberCount": false,
+            "subscriberCount": "8410",
+            "videoCount": "142",
+            "viewCount": "1834220",
+          },
+        },
+        "errors": [],
+        "fetchedAt": "2026-09-15T12:00:00.000Z",
+        "handle": "@jordanexample",
+        "platform": "youtube",
+        "sourceMethod": "youtube_data_api",
+        "toolsCalled": [
+          "youtube_data_api",
+        ],
+        "videos": [],
+      },
+      "result": {
+        "avg_engagement_rate": null,
+        "avg_reach_per_post": null,
+        "avg_saves_per_post": null,
+        "avg_shares_per_post": null,
+        "avg_views_per_post": null,
+        "avg_watch_time_sec": null,
+        "content_frequency": null,
+        "followers": 8410,
+        "following": null,
+        "impressions": null,
+        "is_verified": false,
+        "post_count": 142,
+        "posts_last_30d": null,
+        "profile_views": null,
+        "raw_metrics": {
+          "discovery": {
+            "channelId": "UCabcdefghijklmnopqrstuv",
+            "platform": "youtube",
+            "source": "youtube_data_api",
+            "username": "jordanexample",
+          },
+        },
+        "reach": null,
+        "toolsCalled": [
+          "youtube_data_api",
+        ],
+        "top_audience_age_range": null,
+        "top_audience_city": null,
+        "top_audience_country": null,
+        "top_audience_gender": null,
+        "total_channel_views": 1834220,
+        "total_likes": null,
+      },
+    },
+  },
+  "keeperRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics",
+  ],
+  "legacy": {
+    "value": {
+      "_computed": {
+        "avg_engagement_rate": 0,
+        "content_frequency": 2,
+        "data_tier": "discovery",
+        "platform_count": 1,
+        "total_followers": 8410,
+      },
+      "youtube": {
+        "avg_comments": 0,
+        "avg_likes": 0,
+        "avg_views": 12917,
+        "engagement_rate": 0,
+        "fetched_at": "2026-09-15T12:00:00.000Z",
+        "handle": "@jordanexample",
+        "posts_last_30d": 2,
+        "short_form_ratio": undefined,
+        "source": "data_api",
+        "subscribers": 8410,
+        "topic_categories": undefined,
+      },
+    },
+  },
+  "legacyRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+    "GET www.googleapis.com/youtube/v3/playlistItems maxResults=10&part=snippet&playlistId=UUabcdefghijklmnopqrstuv",
+    "GET www.googleapis.com/youtube/v3/videos id=vid1,vid2,vid3&part=statistics,contentDetails,topicDetails",
+  ],
+  "mia": {
+    "block": "AUTHORITATIVE SOCIAL DATA
+
+Measured platform facts supplied by Nomila. Each account states its source, observation date and identity-resolution basis/confidence. Treat these as authoritative; do not replace them with web estimates.
+- youtube @jordanexample — source: youtube data api; observed 2026-09-15; identity: handle cited by Nomila research; YouTube channel title "Jordan Example" matches the athlete (HIGH). subscribers: 8,410; total channel views: 1,834,220; videos: 142
+- instagram: not available (no confidently resolved account)
+- tiktok: not available (no authoritative route)
+- x: not available (no authoritative route)",
+    "candidates": [
+      {
+        "handle": "jordanexample",
+        "outcome": "resolved (channel "Jordan Example")",
+        "platform": "youtube",
+      },
+    ],
+    "digest": "41e54e6e7f3c9f4c508f4efc054a5e50348d8b2c89f102ebfc98f1be3fe1fad5",
+    "result": {
+      "value": [
+        {
+          "handle": "jordanexample",
+          "identityBasis": "handle cited by Nomila research; YouTube channel title "Jordan Example" matches the athlete",
+          "identityConfidence": "HIGH",
+          "metrics": {
+            "subscribers": "8,410",
+            "total channel views": "1,834,220",
+            "videos": "142",
+          },
+          "observedAt": "2026-09-15",
+          "platform": "youtube",
+          "source": "youtube_data_api",
+        },
+      ],
+    },
+  },
+  "miaRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+    "GET www.googleapis.com/youtube/v3/playlistItems maxResults=10&part=contentDetails&playlistId=UUabcdefghijklmnopqrstuv",
+    "GET www.googleapis.com/youtube/v3/videos id=vid1,vid2,vid3&part=statistics,snippet",
+  ],
+}
+`;
+
+exports[`YouTube Data API — every caller, every recorded response shape visible_subscribers 1`] = `
+{
+  "keeper": {
+    "value": {
+      "error": null,
+      "found": true,
+      "native": {
+        "accountId": "UCabcdefghijklmnopqrstuv",
+        "apiVersion": "v3",
+        "channel": {
+          "contentDetails": {
+            "relatedPlaylists": {
+              "likes": "",
+              "uploads": "UUabcdefghijklmnopqrstuv",
+            },
+          },
+          "etag": "e",
+          "id": "UCabcdefghijklmnopqrstuv",
+          "kind": "youtube#channel",
+          "snippet": {
+            "customUrl": "@jordanexample",
+            "description": "",
+            "publishedAt": "2019-04-02T17:11:05Z",
+            "title": "Jordan Example",
+          },
+          "statistics": {
+            "hiddenSubscriberCount": false,
+            "subscriberCount": "8410",
+            "videoCount": "142",
+            "viewCount": "1834220",
+          },
+        },
+        "errors": [],
+        "fetchedAt": "2026-09-15T12:00:00.000Z",
+        "handle": "@jordanexample",
+        "platform": "youtube",
+        "sourceMethod": "youtube_data_api",
+        "toolsCalled": [
+          "youtube_data_api",
+        ],
+        "videos": [],
+      },
+      "result": {
+        "avg_engagement_rate": null,
+        "avg_reach_per_post": null,
+        "avg_saves_per_post": null,
+        "avg_shares_per_post": null,
+        "avg_views_per_post": null,
+        "avg_watch_time_sec": null,
+        "content_frequency": null,
+        "followers": 8410,
+        "following": null,
+        "impressions": null,
+        "is_verified": false,
+        "post_count": 142,
+        "posts_last_30d": null,
+        "profile_views": null,
+        "raw_metrics": {
+          "discovery": {
+            "channelId": "UCabcdefghijklmnopqrstuv",
+            "platform": "youtube",
+            "source": "youtube_data_api",
+            "username": "jordanexample",
+          },
+        },
+        "reach": null,
+        "toolsCalled": [
+          "youtube_data_api",
+        ],
+        "top_audience_age_range": null,
+        "top_audience_city": null,
+        "top_audience_country": null,
+        "top_audience_gender": null,
+        "total_channel_views": 1834220,
+        "total_likes": null,
+      },
+    },
+  },
+  "keeperRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics",
+  ],
+  "legacy": {
+    "value": {
+      "_computed": {
+        "avg_engagement_rate": 5.14,
+        "content_frequency": 2,
+        "data_tier": "discovery",
+        "platform_count": 1,
+        "total_followers": 8410,
+      },
+      "youtube": {
+        "avg_comments": 32,
+        "avg_likes": 400,
+        "avg_views": 6538,
+        "engagement_rate": 5.14,
+        "fetched_at": "2026-09-15T12:00:00.000Z",
+        "handle": "@jordanexample",
+        "posts_last_30d": 2,
+        "short_form_ratio": 0.33,
+        "source": "data_api",
+        "subscribers": 8410,
+        "topic_categories": [
+          "Sport",
+          "Lifestyle_(sociology)",
+        ],
+      },
+    },
+  },
+  "legacyRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+    "GET www.googleapis.com/youtube/v3/playlistItems maxResults=10&part=snippet&playlistId=UUabcdefghijklmnopqrstuv",
+    "GET www.googleapis.com/youtube/v3/videos id=vid1,vid2,vid3&part=statistics,contentDetails,topicDetails",
+  ],
+  "mia": {
+    "block": "AUTHORITATIVE SOCIAL DATA
+
+Measured platform facts supplied by Nomila. Each account states its source, observation date and identity-resolution basis/confidence. Treat these as authoritative; do not replace them with web estimates.
+- youtube @jordanexample — source: youtube data api; observed 2026-09-15; identity: handle cited by Nomila research; YouTube channel title "Jordan Example" matches the athlete (HIGH). subscribers: 8,410; total channel views: 1,834,220; videos: 142; median views per video (last 3 uploads): 5,210; median views per video as % of subscribers: 61.95%; median likes per video (last 2 uploads): 601; median comments per video (last 3 uploads): 22; upload cadence: 1.6 uploads/month over the last 3 uploads
+- instagram: not available (no confidently resolved account)
+- tiktok: not available (no authoritative route)
+- x: not available (no authoritative route)",
+    "candidates": [
+      {
+        "handle": "jordanexample",
+        "outcome": "resolved (channel "Jordan Example")",
+        "platform": "youtube",
+      },
+    ],
+    "digest": "1f16ecb4a9f6745968a6d8d31af5091919476a41be288e7af30a5c5d61f9bbfb",
+    "result": {
+      "value": [
+        {
+          "handle": "jordanexample",
+          "identityBasis": "handle cited by Nomila research; YouTube channel title "Jordan Example" matches the athlete",
+          "identityConfidence": "HIGH",
+          "metrics": {
+            "median comments per video (last 3 uploads)": "22",
+            "median likes per video (last 2 uploads)": "601",
+            "median views per video (last 3 uploads)": "5,210",
+            "median views per video as % of subscribers": "61.95%",
+            "subscribers": "8,410",
+            "total channel views": "1,834,220",
+            "upload cadence": "1.6 uploads/month over the last 3 uploads",
+            "videos": "142",
+          },
+          "observedAt": "2026-09-15",
+          "platform": "youtube",
+          "source": "youtube_data_api",
+        },
+      ],
+    },
+  },
+  "miaRequests": [
+    "GET www.googleapis.com/youtube/v3/channels forHandle=@jordanexample&part=snippet,statistics,contentDetails",
+    "GET www.googleapis.com/youtube/v3/playlistItems maxResults=10&part=contentDetails&playlistId=UUabcdefghijklmnopqrstuv",
+    "GET www.googleapis.com/youtube/v3/videos id=vid1,vid2,vid3&part=statistics,snippet",
+  ],
+}
+`;

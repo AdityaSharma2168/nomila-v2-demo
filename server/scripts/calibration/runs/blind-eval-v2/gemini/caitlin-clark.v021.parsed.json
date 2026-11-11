@@ -1,0 +1,680 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "caitlin-clark",
+    "name": "Caitlin Clark",
+    "sport": "Basketball"
+  },
+  "parseError": null,
+  "dimensionAssessments": {
+    "athletic_authority": {
+      "prose": "Caitlin Clark is established at the absolute pinnacle of her sport, actively competing in the highly elite WNBA and international FIBA environments. After an injury-stunted sophomore campaign in 2025, her 2026 rebound has been exceptional, posting top-tier scoring and playmaking numbers. Her recent Gold medal with Team USA at the 2026 FIBA World Cup further solidifies her world-class athletic credentials.",
+      "confidence": "HIGH",
+      "confidenceReason": "Grounded in official, direct performance databases and international competition records."
+    },
+    "audience_scale": {
+      "prose": "Clark commands one of the most powerful and expansive audiences in all of women's professional sports. Her social media following is exceptionally large, placing her in the top tier of WNBA players with over 4.1 million followers on Instagram. While the explosive growth of her rookie year has stabilized, she maintains a steady upward trajectory and broad platform footprint.",
+      "confidence": "HIGH",
+      "confidenceReason": "Based on widely reported, verifiable public follower counts across multiple major social platforms."
+    },
+    "engagement_quality": {
+      "prose": "Her public engagement metrics are outstanding for an athlete of her scale, displaying a strong connection with her massive fanbase. Public posts regularly generate hundreds of thousands of organic likes and shares, highlighting robust and authentic consumer passion. While exact private conversion metrics like saves and shares are not public, her real-world commercial results demonstrate highly efficient audience activation.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "Publicly visible post interactions are clear, but precise private metrics like shares, saves, and story reach are missing."
+    },
+    "cultural_relevance": {
+      "prose": "Clark operates as a genuine crossover cultural icon, transcending the sport of basketball into the broader public consciousness. 'The Caitlin Clark Effect' continues to drive unprecedented search interest, media coverage, and public discourse. Her activities are heavily reported by major international outlets, establishing her as one of the most visible female athletes on the planet.",
+      "confidence": "HIGH",
+      "confidenceReason": "Supported by continuous major media coverage and prominent crossover cultural footprints."
+    },
+    "narrative_power": {
+      "prose": "The narrative driving Clark's brand is one of the most distinctive and compelling in sporting history. She is widely recognized as a transformative agent who single-handedly elevated public interest in women's basketball. This highly authentic story is richly supported by record-breaking real-world viewership, and it translates seamlessly into powerful, highly durable corporate campaigns.",
+      "confidence": "HIGH",
+      "confidenceReason": "Grounded in highly documented cultural and media trends and real-world behavioral changes of sports fans."
+    },
+    "brand_fit": {
+      "prose": "Clark possesses an extraordinarily clean, highly professional public persona that aligns perfectly with elite global brands. Her versatile appeal spans many distinct categories, making her highly safe and exceptionally attractive to blue-chip corporate sponsors. Furthermore, her clear priority of athletic success over business interests maintains a highly cohesive, authentic values-led identity.",
+      "confidence": "HIGH",
+      "confidenceReason": "Supported by a clear history of clean public behavior and highly successful activations across diverse industries."
+    },
+    "commercial_proof": {
+      "prose": "The commercial evidence supporting Clark's marketability is absolutely category-leading, with estimated off-court earnings reaching $16 million annually. She is anchored by a landmark, long-term Nike contract, alongside repeat campaigns for State Farm, Gatorade, and Stanley. Her extreme pricing power and immediate merchandise sellouts provide undeniable proof of high-tier economic value.",
+      "confidence": "HIGH",
+      "confidenceReason": "Directly supported by verified, widely published financial contract terms and major corporate partner campaigns."
+    },
+    "momentum": {
+      "prose": "Clark's momentum has accelerated back to an elite trajectory in 2026 following her injury-shortened 2025 season. Her on-court play is once again dominant, complemented by new premier partnerships like her Capital One deal and cover placement for NBA 2K27. Public curiosity and commercial demand continue to expand as her highly anticipated signature Nike shoe approaches its release.",
+      "confidence": "HIGH",
+      "confidenceReason": "Anchored by very recent 2026 athletic recoveries, brand signings, and product launches."
+    }
+  },
+  "overallConfidence": {
+    "level": "HIGH",
+    "explanation": "Caitlin Clark's athletic and commercial identities are exceptionally well-documented, with unambiguous alignment across authoritative sources. While a few private platform-level engagement metrics remain missing, the sheer volume of public contract figures, performance stats, and cultural data provides a remarkably high level of overall certainty. Access to private account analytics would only add precision to her secondary engagement metrics, but would not alter the overall assessment of her marketability."
+  },
+  "identityConfidence": "HIGH",
+  "summary": "Caitlin Clark is the defining icon of modern women's basketball, generating an unprecedented level of commercial and cultural impact. Following a legendary NCAA run, she transitioned to the WNBA as the 1st overall draft pick in 2024, winning Rookie of the Year and All-WNBA First Team honors. Despite a sophomore 2025 season marred by groin and ankle injuries that limited her to 13 games, she has rebounded spectacularly in her third season in 2026, averaging over 22 points and 8 assists per game. Internationally, she cemented her elite standing by helping Team USA win gold at the 2026 FIBA World Cup in September 2026. Off the court, her audience scale is near-unrivaled in women's sports, boasting over 4.1 million Instagram followers and massive cross-platform engagement. Her commercial empire is vast, with an estimated $16 million in annual endorsements, highlighted by a landmark $28 million Nike contract, a signature shoe release ('Caitlin 1'), and a coveted cover for NBA 2K27. Clark’s narrative—the humble, deep-shooting Midwestern phenom transforming her sport—is highly authentic and extremely safe for corporate partnerships. Her commercial momentum remains exceptionally high as blue-chip brands continue to expand their commitments, showing that her off-court economy matches her elite athletic authority.",
+  "summaryWords": 200,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Caitlin Clark was the 2024 WNBA Rookie of the Year and All-WNBA First Team; in 2026, she rebounded from an injury-plagued sophomore season to average 22.0 points and 8.3 assists per game in 31 games.",
+      "sourceTitle": "Caitlin Clark Player Profile & Career Stats",
+      "sourceUrl": "https://www.wnba.com/player/caitlin-clark",
+      "sourceType": "official",
+      "date": "2026-09-12"
+    },
+    {
+      "id": "E2",
+      "claim": "Clark's 2025 sophomore WNBA season was cut short due to persistent groin and ankle injuries, limiting her to just 13 appearances.",
+      "sourceTitle": "Indiana Fever Guard Caitlin Clark Ruled Out for Remainder of 2025 Season",
+      "sourceUrl": "https://www.wnba.com/news/caitlin-clark-injury-update-2025",
+      "sourceType": "official",
+      "date": "2025-09-04"
+    },
+    {
+      "id": "E3",
+      "claim": "Clark helped lead Team USA to a gold medal at the 2026 FIBA World Cup in Germany, scoring 12 points off the bench in the 97-79 final victory over France.",
+      "sourceTitle": "Clark and Boston Help Lead USA to Gold Medal at 2026 FIBA World Cup",
+      "sourceUrl": "https://www.wnba.com/news/usa-basketball-fiba-world-cup-gold-2026",
+      "sourceType": "official",
+      "date": "2026-09-13"
+    },
+    {
+      "id": "E4",
+      "claim": "Clark signed a historic 8-year, $28 million deal with Nike that pays her $3.5 million annually, featuring an upcoming signature shoe, alongside product lines with Wilson and Stanley.",
+      "sourceTitle": "Caitlin Clark's Notable Endorsements",
+      "sourceUrl": "https://athlonsports.com/wnba/caitlin-clark-net-worth-endorsements-contract",
+      "sourceType": "major_media",
+      "date": "2026-08-04"
+    },
+    {
+      "id": "E5",
+      "claim": "Clark earned an estimated $16 million in endorsements in 2025, ranking 6th among highest-paid female athletes; she added deals like Capital One in 2026 and was named the NBA 2K27 Deluxe Cover Athlete.",
+      "sourceTitle": "Caitlin Clark's $16 million endorsement empire keeps growing",
+      "sourceUrl": "https://timesofindia.indiatimes.com/sports/caitlin-clark-endorsements-ambition-2026",
+      "sourceType": "major_media",
+      "date": "2026-09-12"
+    },
+    {
+      "id": "E6",
+      "claim": "Clark's Instagram account (@caitlinclark22) has over 4.1 million followers with a strong organic engagement rate of 3.95% as of September 2026.",
+      "sourceTitle": "Caitlin Clark (@caitlinclark22) Instagram Influencer Analytics",
+      "sourceUrl": "https://hypeauditor.com/instagram/caitlinclark22",
+      "sourceType": "secondary",
+      "date": "2026-09-14"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3"
+      ],
+      "rationale": "Clark competes at the absolute pinnacle of her sport, playing in the WNBA and representing Team USA in the FIBA World Cup.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "rationale": "Despite an injury-interrupted sophomore season in 2025, her 2026 rebound features an elite average of 22.0 PPG and 8.3 APG alongside a FIBA gold medal.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 94,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "She holds high official honors including 2024 WNBA Rookie of the Year, All-WNBA First Team, 2x WNBA All-Star, and the NCAA all-time scoring crown.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3"
+      ],
+      "rationale": "Clark's international status is solidified as a gold medalist for USA Basketball at the 2026 FIBA World Cup.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3"
+      ],
+      "rationale": "She is the primary franchise engine and ball-handler for the Indiana Fever, though serving in a slightly more rotational role for a historically stacked national team.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3"
+      ],
+      "rationale": "Her athletic successes are highly current, punctuated by her exceptional 2026 WNBA season and her September 2026 World Cup Gold.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Clark commands a massive digital audience, with over 4.1 million followers on Instagram alone and large footprints across other networks.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "She sits in the 98th+ percentile of WNBA and women's professional sports globally, trailing only Angel Reese in total league followers.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "While the meteoric post-draft spike has stabilized, she has demonstrated steady, resilient growth from 3.1M followers in 2025 to over 4.1M in 2026.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Clark distributes her brand effectively across multiple highly active platforms, with massive community hubs on Instagram, X, and TikTok.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Her organic Instagram engagement rate of 3.95% is considered excellent for accounts with over 4 million followers.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "scored",
+      "score": 88,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "Her content routinely breaks out of her core base to trend in mainstream culture, heavily driven by massive media loops and news coverage.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Private platform metrics for shares and saves are unavailable in public source documentation.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Private video completion and retention metrics cannot be verified from public sources.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No authoritative platform data is available to assess private story performance or reach rates.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "scored",
+      "score": 85,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "Her audience exhibits high authenticity, backed by real-world consumer behaviors like sold-out ticket demands and physical merchandise purchases.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Clark generates unprecedented media coverage for a female basketball player, maintaining a constant news presence across sports and lifestyle press.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "She is consistently covered by premium mainstream and sports publications, including The New York Times, Sports Illustrated, and major networks.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 96,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Known as 'The Caitlin Clark Effect,' public search interest routinely spikes to levels comparable to or exceeding top-tier male athletes.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "Her performances, fashion choices, and endorsements spark broad daily conversations on X, TikTok, and Reddit, independent of her own posts.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Clark's public recognition stretches far outside basketball, as evidenced by appearances on SNL, lifestyle brand partnerships, and general pop culture fame.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "Her story as the transformative pioneer who redefined women's basketball popularity and broke ancient NCAA records is globally unique and instantly clear.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "rationale": "Features compelling layers: a humble Midwestern origin, elite college rivalries, professional pressure, injury setbacks, and triumphant athletic redemption.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3",
+        "E5"
+      ],
+      "rationale": "Her narrative is heavily backed by measurable metrics, from WNBA television ratings and sellout records to official league and international trophies.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "The media deeply embraces and continuously amplifies her story, portraying her as a rare generational standard-bearer.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 96,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Themes of barrier-breaking, resilience, precision, and relentless hard work integrate seamlessly into elite corporate campaigns.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3"
+      ],
+      "rationale": "She has proven that her narrative appeal survives beyond the initial NCAA college craze, successfully carrying into her professional and international career.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Clark has secured active partnerships in athletic apparel, hydration, finance, insurance, telecommunications, lifestyle products, and gaming.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "She maintains an exceptionally clean, professional, and family-friendly image with zero controversy, posing virtually no brand-safety risks.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "Her audience offers highly desirable consumer demographics, blending core sports fans with families and young, active females.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 94,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "She maintains a consistent and clear personal identity, explicitly prioritizing on-court championships over commercial expansion.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 88,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "She handles large television spots, digital social content, and merchandise designs with high professional capability, though not predominantly a lifestyle creator.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E5"
+      ],
+      "rationale": "While deeply rooted in highly lucrative US Midwestern and national markets, her recent international play in Germany extends her global marketability.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Her off-court earnings are verified at an estimated $16M annually, anchored by her historic multi-million dollar Nike contract.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 96,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "With over 12 high-profile brand partnerships, her commercial demand remains extremely frequent and highly competitive.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Partnered only with the highest-tier blue-chip brands, including Nike, Gatorade, State Farm, Capital One, and Wilson.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Sponsors consistently deepen their investments, as seen in Xfinity's television expansion and Stanley's renewed custom merchandise line in 2026.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Her campaigns show exceptional performance, characterized by rapid sell-outs of her Wilson basketball collection and record-breaking television ratings.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Clark commands maximum economic premium, earning off-court figures that entirely dwarf traditional player compensation models.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "rationale": "Following her injury setbacks in 2025, her athletic path in 2026 points sharply upward after a dominant WNBA run and World Cup Gold.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Her audience shows steady, healthy growth, demonstrating that her popularity remains highly sustainable beyond initial rookie hypes.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Media coverage has stabilized at a mature, highly prominent level, transitioning from a localized fad to a long-term sports legacy narrative.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "Public search demand and social discussion remain high, spiking reliably around her peak games and major corporate product drops.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "Her commercial profile is accelerating in late 2026 with new product rollouts, a Deluxe gaming cover, and her upcoming Nike signature shoe launch.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Unprecedented crossover cultural relevance that drives real-world ticket sales, TV ratings, and product sellouts ('The Caitlin Clark Effect').",
+    "Historic commercial footprint with an estimated $16M in annual off-court earnings and a category-defining $28M Nike deal.",
+    "Elite national team standing, recently consolidated by winning gold at the 2026 FIBA World Cup."
+  ],
+  "keyConstraints": [
+    "On-court physical durability remains a critical factor after injuries limited her sophomore 2025 campaign to just 13 games.",
+    "Extremely high expectations place continuous pressure on athletic performance to maintain her commercial premium."
+  ],
+  "importantMissingData": [
+    "Private platform engagement metrics (shares, saves, video retention, and story performance) are unavailable."
+  ],
+  "identityOrEvidenceRisks": [
+    "No major risks identified; the athlete's identity is highly certain, and her clean personal image carries zero brand-safety concerns."
+  ],
+  "socialBlockSupplied": false
+}

@@ -1,0 +1,3 @@
+-- Genesis migration — initial schema was applied via drizzle-kit push.
+-- This file exists solely as a journal anchor so drizzle-kit migrate
+-- can track the baseline. No DDL is executed.

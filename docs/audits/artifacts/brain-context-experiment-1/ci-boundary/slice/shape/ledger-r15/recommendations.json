@@ -1,0 +1,466 @@
+{
+ "version": "recommendation/0.1.0-exp",
+ "records": [
+  {
+   "version": "recommendation/0.1.0-exp",
+   "id": "rec_94b6d20dee8c9b5a",
+   "key": "b569363aa8fdc507",
+   "source": "her agent, through Mila",
+   "subject": {
+    "kind": "deal",
+    "id": "ctl-r2-northlight-termsheet"
+   },
+   "question": "Should this negotiation be advanced, countered or accepted?",
+   "objectiveIds": [],
+   "value": {
+    "what": "Counter the Northlight Learning ambassador term sheet to bring the commercial compensation in line with her established per-deliverable floor.",
+    "why": "The Northlight Learning ambassador term sheet offers a per-deliverable value of USD 1,250, which is below Mia's established ambassador floor of USD 3,602. A counter is required to align the terms with her financial requirements.",
+    "cites": [
+     {
+      "ref": "deal[ctl-r2-northlight-termsheet].basis",
+      "how": "Shows the offer value of USD 1,250 per deliverable"
+     },
+     {
+      "ref": "representation.floors[ambassador]",
+      "how": "Establishes her minimum floor of USD 3,602 for ambassador deals"
+     },
+     {
+      "ref": "deal[ctl-r2-northlight-termsheet].band",
+      "how": "Confirms the offer is below her established range"
+     }
+    ],
+    "executionPath": "direct_action",
+    "relationToExistingWork": "advances_existing_work",
+    "advances": "deal[ctl-r2-northlight-termsheet]",
+    "notSeen": [],
+    "intent": "counter"
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.7.0-exp",
+    "runId": "A3:488f2740",
+    "runAt": "2026-09-27T00:13:03.193Z"
+   },
+   "runs": [
+    "A3:488f2740"
+   ],
+   "response": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "authorization": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "execution": {
+    "state": "none",
+    "refs": []
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "reconsiders": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-27T00:13:03.193Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run A3:488f2740"
+    }
+   ]
+  },
+  {
+   "version": "recommendation/0.1.0-exp",
+   "id": "rec_9feaeb54fb19c6b1",
+   "key": "c81ff8144f65d35a",
+   "source": "the Objective loop",
+   "subject": {
+    "kind": "objective",
+    "id": "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+   },
+   "question": "what should Nomila do about this Objective now?",
+   "objectiveIds": [
+    "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+   ],
+   "value": {
+    "what": "Initiate outreach to global brand CSR departments to secure partnerships co-funding her work with the Yuwa girls empowerment program.",
+    "why": "Mia has a highly compelling narrative around her philanthropy and leadership with the Yuwa Academy, which is currently uncommercialized. Initiating outreach to global brand CSR departments can secure co-funded partnerships that expand her impact.",
+    "cites": [
+     {
+      "ref": "objective[b1c799e3-59fc-4986-b3ab-a0b7b4869601]",
+      "how": "Desired state is to expand visibility of Yuwa through brand and CSR partnerships"
+     },
+     {
+      "ref": "opportunity[amplify-yuwa-philanthropic-work]",
+      "how": "Identifies opportunity to elevate her active work with Yuwa to attract global CSR sponsorships"
+     },
+     {
+      "ref": "findings[mia.narrative_power]",
+      "how": "Highlights her work with Yuwa as a key component of her highly differentiated narrative power"
+     },
+     {
+      "ref": "findings[mia.brand_fit]",
+      "how": "Notes her clean brand-safety profile and high suitability for international CSR campaigns"
+     }
+    ],
+    "executionPath": "specialized_plan",
+    "relationToExistingWork": "new_work",
+    "advances": null,
+    "notSeen": [
+     "Budget parameters and alignment criteria of target corporate social responsibility funds"
+    ],
+    "intent": null
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.7.0-exp",
+    "runId": "A3:488f2740",
+    "runAt": "2026-09-27T00:13:03.193Z"
+   },
+   "runs": [
+    "A3:488f2740",
+    "R15:47b50da0"
+   ],
+   "response": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "authorization": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "execution": {
+    "state": "none",
+    "refs": []
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "reconsiders": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-27T00:13:03.193Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run A3:488f2740"
+    },
+    {
+     "at": "2026-09-27T06:48:13.428Z",
+     "event": "reworded_by_run",
+     "actor": "system",
+     "note": "run R15:47b50da0"
+    }
+   ]
+  },
+  {
+   "version": "recommendation/0.1.0-exp",
+   "id": "rec_764257cd61ef9777",
+   "key": "8704ed12d2c29628",
+   "source": "the Objective loop",
+   "subject": {
+    "kind": "objective",
+    "id": "feb62891-8b9f-44e4-8c1f-677d6947334b"
+   },
+   "question": "what should Nomila do about this Objective now?",
+   "objectiveIds": [
+    "feb62891-8b9f-44e4-8c1f-677d6947334b"
+   ],
+   "value": {
+    "what": "Create a specialized plan to reactivate her dormant TikTok channel by cross-posting existing video formats like Reels and carousels.",
+    "why": "Mia's audience growth is currently cooling, and her TikTok has been dormant for over 500 days. Reactivating TikTok through cross-posting Instagram content is highly feasible and directly addresses her growth objective.",
+    "cites": [
+     {
+      "ref": "objective[feb62891-8b9f-44e4-8c1f-677d6947334b]",
+      "how": "Objective to grow audience across Instagram and TikTok"
+     },
+     {
+      "ref": "contentPerformance[tiktok]",
+      "how": "Shows TikTok is dormant with 556.3 days since last post"
+     },
+     {
+      "ref": "opportunity[unlock-tiktok-channel]",
+      "how": "Identifies highly feasible opening to cross-post existing content to TikTok"
+     }
+    ],
+    "executionPath": "specialized_plan",
+    "relationToExistingWork": "new_work",
+    "advances": null,
+    "notSeen": [],
+    "intent": null
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.7.0-exp",
+    "runId": "A3:488f2740",
+    "runAt": "2026-09-27T00:13:03.193Z"
+   },
+   "runs": [
+    "A3:488f2740"
+   ],
+   "response": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "authorization": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "execution": {
+    "state": "none",
+    "refs": []
+   },
+   "outcome": null,
+   "supersededBy": "rec_116a86b109346a5c",
+   "reconsiders": null,
+   "closed": true,
+   "events": [
+    {
+     "at": "2026-09-27T00:13:03.193Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run A3:488f2740"
+    },
+    {
+     "at": "2026-09-27T06:48:13.428Z",
+     "event": "superseded",
+     "actor": "system",
+     "note": "by rec_116a86b109346a5c (run R15:47b50da0)"
+    }
+   ]
+  },
+  {
+   "version": "recommendation/0.1.0-exp",
+   "id": "rec_bb66435c91ced059",
+   "key": "d9372f4f7e892e9b",
+   "source": "the Objective loop",
+   "subject": {
+    "kind": "objective",
+    "id": "c0f587e4-750f-4575-a4e8-fd4cfa6e078e"
+   },
+   "question": "what should Nomila do about this Objective now?",
+   "objectiveIds": [
+    "c0f587e4-750f-4575-a4e8-fd4cfa6e078e"
+   ],
+   "value": {
+    "what": "Target premium brand partnerships and ambassador roles within the EdTech, STEM, and technology venture capital sectors.",
+    "why": "Mia's elite academic credentials and studies in technology and management science at Stanford offer a unique, peer-free positioning. Actively targeting partnerships in EdTech, STEM, and technology ventures will establish her commercial presence in these core domains.",
+    "cites": [
+     {
+      "ref": "objective[c0f587e4-750f-4575-a4e8-fd4cfa6e078e]",
+      "how": "Desired state is to build positioning and secure partnerships in tech, AI, innovation, and entrepreneurship"
+     },
+     {
+      "ref": "opportunity[grow-academic-tech-partnerships]",
+      "how": "Recommends targeting premium brand partnerships in EdTech, STEM, and venture capital"
+     },
+     {
+      "ref": "findings[mia.narrative_power]",
+      "how": "Confirms her academic acceleration and Symbolic Systems degree enhance her narrative power"
+     },
+     {
+      "ref": "findings[mia.brand_fit]",
+      "how": "Identifies educational tech and venture as highly credible brand fit categories"
+     }
+    ],
+    "executionPath": "specialized_plan",
+    "relationToExistingWork": "new_work",
+    "advances": null,
+    "notSeen": [
+     "Specific partnership structures and criteria preferred by technology and venture capital firms"
+    ],
+    "intent": null
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.10.0-exp",
+    "runId": "R15:47b50da0",
+    "runAt": "2026-09-27T06:48:13.428Z"
+   },
+   "runs": [
+    "R15:47b50da0"
+   ],
+   "response": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "authorization": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "execution": {
+    "state": "none",
+    "refs": []
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "reconsiders": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-27T06:48:13.428Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run R15:47b50da0"
+    }
+   ]
+  },
+  {
+   "version": "recommendation/0.1.0-exp",
+   "id": "rec_116a86b109346a5c",
+   "key": "3eef02ddd05a4b55",
+   "source": "the Objective loop",
+   "subject": {
+    "kind": "objective",
+    "id": "feb62891-8b9f-44e4-8c1f-677d6947334b"
+   },
+   "question": "what should Nomila do about this Objective now?",
+   "objectiveIds": [
+    "feb62891-8b9f-44e4-8c1f-677d6947334b"
+   ],
+   "value": {
+    "what": "Reactivate her dormant TikTok channel by cross-posting short-form video content to expand her platform breadth and reverse audience contraction.",
+    "why": "Mia's audience scale is in a minor contraction phase, and her TikTok has been idle for over 500 days. Reactivating TikTok by leveraging existing short-form content can re-engage video audiences and expand her reach with minimal overhead.",
+    "cites": [
+     {
+      "ref": "objective[feb62891-8b9f-44e4-8c1f-677d6947334b]",
+      "how": "Desired state is to grow following and presence across Instagram and TikTok"
+     },
+     {
+      "ref": "opportunity[unlock-tiktok-channel]",
+      "how": "Indicates high feasibility of reactivating TikTok by cross-posting existing Reels content"
+     },
+     {
+      "ref": "contentPerformance[tiktok]",
+      "how": "Confirms TikTok has been idle with 557.3 days since last post"
+     },
+     {
+      "ref": "findings[mia.audience_scale]",
+      "how": "Confirms a gap in audience scale and a cooling growth trajectory"
+     }
+    ],
+    "executionPath": "direct_action",
+    "relationToExistingWork": "new_work",
+    "advances": null,
+    "notSeen": [
+     "TikTok-specific audience demographics and video retention benchmarks for her category"
+    ],
+    "intent": null
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.10.0-exp",
+    "runId": "R15:47b50da0",
+    "runAt": "2026-09-27T06:48:13.428Z"
+   },
+   "runs": [
+    "R15:47b50da0"
+   ],
+   "response": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "authorization": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "execution": {
+    "state": "none",
+    "refs": []
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "reconsiders": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-27T06:48:13.428Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run R15:47b50da0"
+    }
+   ]
+  },
+  {
+   "version": "recommendation/0.1.0-exp",
+   "id": "rec_d177e302bc3157f8",
+   "key": "ead014a3e535f0aa",
+   "source": "the Objective loop",
+   "subject": {
+    "kind": "objective",
+    "id": "ctl-obj-matchday-series"
+   },
+   "question": "what should Nomila do about this Objective now?",
+   "objectiveIds": [
+    "ctl-obj-matchday-series"
+   ],
+   "value": {
+    "what": "Launch a recurring match-day social media series across her channels for each remaining Stanford women's soccer fixture of the season.",
+    "why": "Stanford's soccer season is underway, and establishing a consistent match-day series will capitalize on her strong audience engagement. With the next matches scheduled (Syracuse on Oct 8 and Cal on Oct 16), a recurring campaign through the end of the season will satisfy her athletic narrative.",
+    "cites": [
+     {
+      "ref": "objective[ctl-obj-matchday-series]",
+      "how": "Athlete desire for a match-day presence on her own channels for every match this season"
+     },
+     {
+      "ref": "ctx[0]",
+      "how": "Identifies upcoming away fixture at Syracuse on October 8"
+     },
+     {
+      "ref": "ctx[1]",
+      "how": "Identifies upcoming home fixture against California on October 16"
+     },
+     {
+      "ref": "findings[mia.engagement_quality]",
+      "how": "Confirms her high audience engagement and reach efficiency on Instagram posts"
+     }
+    ],
+    "executionPath": "campaign",
+    "relationToExistingWork": "new_work",
+    "advances": null,
+    "notSeen": [
+     "Specific content creation and editing support available to Mia during travel matches"
+    ],
+    "intent": null
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.10.0-exp",
+    "runId": "R15:47b50da0",
+    "runAt": "2026-09-27T06:48:13.428Z"
+   },
+   "runs": [
+    "R15:47b50da0"
+   ],
+   "response": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "authorization": {
+    "state": "none",
+    "at": null,
+    "actor": null
+   },
+   "execution": {
+    "state": "none",
+    "refs": []
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "reconsiders": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-27T06:48:13.428Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run R15:47b50da0"
+    }
+   ]
+  }
+ ]
+}

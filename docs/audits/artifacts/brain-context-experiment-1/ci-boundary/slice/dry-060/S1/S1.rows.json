@@ -1,0 +1,327 @@
+{
+ "asOf": "2026-09-26T23:12:42.474Z",
+ "deal": {
+  "id": "82cf1d6f-fa8c-42d5-8ab8-f8ac0196953c",
+  "brand_name": "INIU",
+  "deal_type": "social_post",
+  "status": "detected",
+  "amount": null,
+  "amount_cash": null,
+  "amount_product": null,
+  "commission_pct": null,
+  "term_start": null,
+  "term_end": null,
+  "created_at": "2026-08-25T07:57:05.335Z",
+  "brand_id": 188
+ },
+ "thread": {
+  "id": "14df5058-1b8b-4f91-bb5c-ffbac1350867",
+  "status": "deal_detected",
+  "created_at": "2026-08-25T07:56:36.793Z",
+  "classification": {
+   "category": "PAID",
+   "deadline": null,
+   "brand_name": "INIU",
+   "confidence": 0.9,
+   "brand_domain": "widgetable.net",
+   "contact_name": "Luke",
+   "deliverables": [
+    "Paid partnership / promotion"
+   ],
+   "offer_amount": null,
+   "gmail_thread_id": "1a037eb9e41e534f"
+  },
+  "conversation_state": {
+   "summary": "INIU Global Talent Team reached out on Aug 25 seeking a tech reviewer for monthly power bank campaigns, offering product and flat-fee compensation. Followed up Aug 26 asking for athlete's rates and country. No response yet from athlete.",
+   "deal_stage": "outreach",
+   "key_details": {
+    "ask": "1 video + 3-month bio link + copyright license",
+    "offer": null,
+    "amounts": [],
+    "deadlines": [],
+    "last_contact": "2026-08-26",
+    "offer_struct": {
+     "unit": null,
+     "amount": null,
+     "recurring": false,
+     "product_value": null,
+     "commission_pct": null,
+     "deliverable_counts": {
+      "videos": 1
+     }
+    },
+    "awaiting_response_from": "athlete"
+   },
+   "offer_display": null,
+   "conversation_state": "INIU sent 2 unanswered outreach emails; awaiting athlete's rates and interest."
+  },
+  "score": {
+   "factors": {
+    "exclusivity": "No exclusivity terms mentioned, which avoids immediate conflicts with other tech or lifestyle brands.",
+    "brandRelevance": "INIU power banks have moderate relevance for a college soccer player—useful for travel and daily use, but not core sport equipment. General consumer tech appeal.",
+    "rateComparison": "No offer amount stated; athlete's per-post floor is $1,000. Cannot assess economics without a concrete proposal.",
+    "deliverableScope": "Extremely vague: 'Paid partnership / promotion' with zero detail on post count, format, timeline, or usage rights. Critical gap."
+   },
+   "fitRead": {
+    "label": "Lifestyle product fit",
+    "rating": "fair"
+   },
+   "reasons": [
+    "No compensation offered yet—cannot benchmark against $1,000/post floor",
+    "Deliverables are undefined; need post count, formats, and timeline",
+    "Power banks are moderately relevant for a traveling athlete but not sport-specific",
+    "Brand appears legitimate with no exclusivity pressure"
+   ],
+   "urgency": "low",
+   "verdict": "fair",
+   "redFlags": [],
+   "dollarAmount": null,
+   "draft_points": [
+    "My partnership rate starts at $1,000 per dedicated post",
+    "Can you share the specific deliverables and timeline for the September launch?",
+    "I'd like to understand the total campaign budget to assess fit"
+   ],
+   "rateVsMarket": null,
+   "scoreNumeric": 4,
+   "brandAnalysis": {
+    "category": "Consumer Electronics",
+    "sportFit": {
+     "label": "Travel utility fit",
+     "rating": "fair"
+    },
+    "brandTier": "mid",
+    "audienceFit": {
+     "label": "General consumer product",
+     "rating": "fair"
+    },
+    "brandSummary": "INIU is a mid-tier consumer electronics brand specializing in portable power banks. The partnership would promote their September product launch to a college athlete audience.",
+    "capitalContribution": "commercial",
+    "capitalContributionLabel": "Builds commercial capital",
+    "portfolioDiversification": {
+     "label": "First tech brand deal",
+     "rating": "good"
+    }
+   },
+   "factorRatings": {
+    "exclusivity": {
+     "label": "None mentioned",
+     "rating": "great"
+    },
+    "brandRelevance": {
+     "label": "Travel utility fit",
+     "rating": "good"
+    },
+    "rateComparison": {
+     "label": "Offer pending",
+     "rating": "fair"
+    },
+    "deliverableScope": {
+     "label": "Undefined scope",
+     "rating": "poor"
+    }
+   },
+   "autopilot_safe": false,
+   "economicsState": {
+    "read": "No offer stated; athlete's floor is $1,000/post",
+    "state": "tbd"
+   },
+   "recommendation": "negotiate",
+   "negotiate_terms": [
+    "Clarify total compensation and confirm per-post rate meets $1,000 floor",
+    "Define specific deliverables: number of feed posts, stories, and timeline",
+    "Specify content approval rights and usage period for brand assets",
+    "Confirm no category exclusivity that conflicts with existing partnerships"
+   ],
+   "recommendation_ui": "Get pricing & deliverables",
+   "recommendation_agent": "This is incomplete but viable. First, demand a concrete offer that meets your $1,000 per-post floor. Second, require a detailed deliverables list: number of posts/stories, content approval rights, usage period, and exclusivity scope. Frame the ask around your established rate and the value of your Stanford soccer audience. The brand seems legitimate, so treat this as a real negotiation opportunity rather than a red flag situation.",
+   "recommendation_confidence": "low"
+  },
+  "summary": "An invitation to collaborate on a paid partnership for INIU's upcoming September power bank product launches."
+ },
+ "messages": [
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-25T07:56:19.000Z"
+  },
+  {
+   "direction": "inbound",
+   "received_at": "2026-08-26T06:54:09.000Z"
+  }
+ ],
+ "brand": {
+  "name": "INIU",
+  "category": "Tech Accessories",
+  "description": "Tech Accessories. INIU is a prominent consumer electronics brand specializing in fast-charging technology and mobile power solutions. Established as a trusted global name in the charging sector, the brand focuses on combining high-performance engineering with sleek, compact designs.",
+  "brand_tier": "established",
+  "enriched_at": "2026-08-25T07:57:21.523Z",
+  "origin": "detected"
+ },
+ "floors": {
+  "autograph": 465,
+  "licensing": 1049,
+  "ambassador": 3602,
+  "appearance": 1213,
+  "socialPost": 1000
+ },
+ "rateCard": {
+  "pav": {
+   "low": 17870,
+   "mid": 22338,
+   "high": 27922
+  },
+  "social": [
+   {
+    "source": "connected",
+    "platform": "instagram",
+    "followers": 21957,
+    "confidence": 0.7,
+    "ratePerPost": {
+     "low": 413,
+     "mid": 516,
+     "high": 645
+    }
+   },
+   {
+    "source": "connected",
+    "platform": "tiktok",
+    "followers": 15486,
+    "confidence": 0.7,
+    "ratePerPost": {
+     "low": 689,
+     "mid": 862,
+     "high": 1077
+    }
+   }
+  ],
+  "version": "v3.1.0-calibrated",
+  "autograph": {
+   "tier": "collegeStd",
+   "batch": 25,
+   "perItem": {
+    "ultra": 50,
+    "premium": 25,
+    "standard": 15
+   },
+   "confidence": 0.8,
+   "ratePerDeal": {
+    "low": 308,
+    "mid": 385,
+    "high": 482
+   }
+  },
+  "licensing": {
+   "category": "default",
+   "confidence": 0.6,
+   "royaltyPct": {
+    "low": 0.08,
+    "mid": 0.1,
+    "high": 0.12
+   },
+   "guaranteedMinimum": {
+    "low": 518,
+    "mid": 740,
+    "high": 1035
+   }
+  },
+  "ambassador": {
+   "confidence": 0.6,
+   "monthlyRetainer": {
+    "low": 1859,
+    "mid": 2656,
+    "high": 3718
+   },
+   "annualEquivalent": {
+    "low": 22308,
+    "mid": 31872,
+    "high": 44616
+   }
+  },
+  "appearance": {
+   "confidence": 0.8,
+   "prestigeTier": "P5",
+   "ratePerEvent": {
+    "low": 804,
+    "mid": 1005,
+    "high": 1256
+   }
+  },
+  "headlineSocial": {
+   "deal": "socialPost",
+   "source": "connected",
+   "platform": "tiktok",
+   "followers": 15486,
+   "confidence": 0.7,
+   "ratePerPost": {
+    "low": 689,
+    "mid": 862,
+    "high": 1077
+   }
+  }
+ },
+ "rateCardVersion": "v3.1.0-calibrated",
+ "periods": [],
+ "deliverableRows": 0,
+ "observed": {
+  "accounts": [
+   {
+    "platform": "instagram",
+    "status": "revoked"
+   },
+   {
+    "platform": "instagram",
+    "status": "revoked"
+   },
+   {
+    "platform": "youtube",
+    "status": "active"
+   },
+   {
+    "platform": "tiktok",
+    "status": "active"
+   },
+   {
+    "platform": "instagram",
+    "status": "revoked"
+   },
+   {
+    "platform": "youtube",
+    "status": "expired"
+   },
+   {
+    "platform": "gmail",
+    "status": "revoked"
+   },
+   {
+    "platform": "gmail",
+    "status": "active"
+   },
+   {
+    "platform": "gmail",
+    "status": "active"
+   },
+   {
+    "platform": "outlook",
+    "status": "pending"
+   },
+   {
+    "platform": "gmail",
+    "status": "revoked"
+   },
+   {
+    "platform": "instagram",
+    "status": "revoked"
+   },
+   {
+    "platform": "instagram",
+    "status": "active"
+   }
+  ],
+  "dealCounts": {
+   "rejected": 2,
+   "negotiating": 7,
+   "detected": 201,
+   "accepted": 1
+  },
+  "researchRuns": 0
+ }
+}

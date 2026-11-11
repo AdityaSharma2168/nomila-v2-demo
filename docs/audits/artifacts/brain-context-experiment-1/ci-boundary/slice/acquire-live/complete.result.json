@@ -1,0 +1,82 @@
+{
+ "completion": {
+  "request": {
+   "value": "3 a week in season (test value)",
+   "said": "Test answer: I can keep three a week during the season, more in the off-season.",
+   "mode": "chat"
+  },
+  "result": {
+   "alreadyDone": false,
+   "run_status": "done"
+  }
+ },
+ "duplicate_completion": {
+  "alreadyDone": true
+ },
+ "other_athlete_completion": {
+  "refused": true,
+  "code": "not_found",
+  "status": 404
+ },
+ "evidence_refs": [
+  {
+   "store": "athlete_asserted",
+   "id": "aac861dd-7ca6-4298-a517-33643991d3b5",
+   "at": "2026-09-27T01:51:38.852Z",
+   "sourceClass": "athlete",
+   "need": "athlete_capability_intent",
+   "attributedTo": "req_41d994ca3ee36669",
+   "asserts": "cadence: 3 a week in season (test value) — she said \"Test answer: I can keep three a week during the season, more in the off-season.\""
+  }
+ ],
+ "lineage": {
+  "request_id": "req_41d994ca3ee36669",
+  "need": "athlete_capability_intent",
+  "field": "cadence",
+  "run": {
+   "id": "67658745-0950-4c94-90b9-d9a799607603",
+   "process": "intelligence_acquisition",
+   "status": "done",
+   "athlete_id": "dd1a8a80-d31b-423a-a572-9d146716cb0f",
+   "idempotency_key": "intelligence_acquisition:req_41d994ca3ee36669",
+   "active_scope": "intelligence_acquisition:req_41d994ca3ee36669",
+   "definition_version": 1
+  },
+  "step": {
+   "id": "c0aaaece-c21e-45c9-b665-10d90125078b",
+   "step": "ask",
+   "status": "done",
+   "mode": "chat",
+   "finished_at": "2026-09-27T01:51:39.326Z",
+   "input_request_id": "req_41d994ca3ee36669",
+   "output_request_id": "req_41d994ca3ee36669"
+  },
+  "asserted": [
+   {
+    "id": "aac861dd-7ca6-4298-a517-33643991d3b5",
+    "field": "cadence",
+    "value": {
+     "text": "3 a week in season (test value)"
+    },
+    "said": "Test answer: I can keep three a week during the season, more in the off-season.",
+    "source": "chat",
+    "mode": "chat",
+    "run_id": "67658745-0950-4c94-90b9-d9a799607603",
+    "agent_action_id": "e5a1f290-a5fb-4a1e-9bff-72c1cc247f42",
+    "created_at": "2026-09-27T01:51:38.852Z",
+    "retracted_at": null,
+    "superseded_by": null
+   }
+  ],
+  "problems": []
+ },
+ "receive": {
+  "counted": true,
+  "because": "attributable, right class, after the request"
+ },
+ "derived_status": "evidenced",
+ "start_again": {
+  "started": false,
+  "refused": "request is evidenced — nothing to acquire"
+ }
+}

@@ -1,0 +1,336 @@
+name: Deploy to production
+
+# Runs ONLY by dispatch against the `production` branch — normally from promote.yml,
+# which is the only thing that moves that branch. There is deliberately no `push`
+# trigger: a stray push to `production` (the ruleset blocks force-pushes and deletion,
+# but not a plain push by a writer) must not deploy anything.
+#
+# The approval gate is the promoter allow-list below (same list as promote.yml).
+# GitHub's "required reviewers" rule on Environments needs the Enterprise plan for a
+# private repository, so the `production` Environment here only records deployments.
+#
+# PRODUCTION NEVER BUILDS THE SERVER. The image deployed is the SHA-tagged one that
+# deploy-dev.yml built and ran in dev for this exact commit; if that image does not
+# exist, this workflow stops before touching the database. (The web export and the OTA
+# bundle are still produced here — they are per-environment because EXPO_PUBLIC_* is
+# inlined at bundle time — from the same commit.)
+#
+# Order inside `api`: verify image → manual Cloud SQL backup → schema (the same
+# scripts/db-migrate.sh dev runs) → deploy → smoke /health. The database changes first
+# so the old revision keeps serving throughout; migrations therefore have to be
+# backward-compatible with the previous image (add nullable, backfill, tighten later).
+
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for manual trigger'
+        required: false
+        default: 'Manual production deploy'
+      promoter:
+        description: 'Set by promote.yml: the GitHub login that pressed Run there'
+        required: false
+        default: ''
+
+# One production deploy at a time, never cancelled mid-DDL (same reasoning as deploy-dev).
+concurrency:
+  group: deploy-cloud-run-prod
+  cancel-in-progress: false
+
+env:
+  PROJECT_ID: gamechanger-pocket-agent
+  REGION: us-central1
+  REGISTRY: us-central1-docker.pkg.dev
+  REPOSITORY: gamechanger
+  IMAGE: nomila-v2
+  SERVICE: nomila-v2-prod
+  SQL_INSTANCE: nomila-prod-db
+  API_URL: https://api.nomila.co
+  PROMOTERS: miabhuta-code aaronsongnguyen
+
+jobs:
+  api:
+    name: Migrate and deploy the API
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://api.nomila.co
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Refuse anything that is not the production branch
+        if: github.ref != 'refs/heads/production'
+        run: |
+          echo "::error::deploy-prod runs only from refs/heads/production (got ${{ github.ref }}). Use promote.yml."
+          exit 1
+
+      - name: Only a listed promoter may deploy production
+        # Two legitimate shapes: a listed human ran this workflow directly, or
+        # promote.yml (whose actor is github-actions[bot]) dispatched it and passed the
+        # human who pressed Run as the `promoter` input. promote.yml applies the same
+        # list before it dispatches. Residual gap, accepted: a repository writer could
+        # author a branch workflow that dispatches this with a forged input — that is a
+        # deliberate act by a trusted collaborator, not the accidental deploy this gate
+        # exists to prevent.
+        env:
+          PROMOTER_INPUT: ${{ github.event.inputs.promoter }}
+        run: |
+          WHO="${GITHUB_ACTOR}"
+          if [ "${GITHUB_ACTOR}" = "github-actions[bot]" ]; then WHO="${PROMOTER_INPUT}"; fi
+          for u in ${PROMOTERS}; do [ "$u" = "${WHO}" ] && { echo "promoter: ${WHO}"; exit 0; }; done
+          echo "::error::'${WHO:-<none>}' is not a promoter (allowed: ${PROMOTERS}). Run promote.yml as one of them."
+          exit 1
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_DEPLOYER_SERVICE_ACCOUNT }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.22'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Resolve the image dev already built for this commit
+        run: |
+          SHORT_SHA="${GITHUB_SHA:0:8}"
+          IMAGE_URI="${{ env.REGISTRY }}/${{ env.PROJECT_ID }}/${{ env.REPOSITORY }}/${{ env.IMAGE }}:${SHORT_SHA}"
+          if ! gcloud artifacts docker images describe "${IMAGE_URI}" --project=${{ env.PROJECT_ID }} >/dev/null 2>&1; then
+            echo "::error::No image ${IMAGE_URI}. This commit never deployed to dev (deploy-dev.yml builds and tags by SHA). Production does not build — promote a commit that ran in dev."
+            exit 1
+          fi
+          echo "Deploying image that ran in dev: ${IMAGE_URI}"
+          echo "IMAGE_URI=${IMAGE_URI}" >> $GITHUB_ENV
+          echo "SHORT_SHA=${SHORT_SHA}" >> $GITHUB_ENV
+
+      - name: Refuse to switch a guarded feature flag on (kill switches survive promotion)
+        # `services replace` below applies the whole YAML, so a flag the owner turned OFF on the live service as a kill
+        # switch (gcloud run services update --update-env-vars FLAG=false) would come back ON from the YAML. The guard
+        # stops here, before the backup, the migration and the deploy. Guarded flags: scripts/prod-flag-guard.ts.
+        run: |
+          gcloud run services describe ${{ env.SERVICE }} \
+            --region=${{ env.REGION }} \
+            --project=${{ env.PROJECT_ID }} \
+            --format=json > "${RUNNER_TEMP}/live-service.json"
+          npx tsx scripts/prod-flag-guard.ts gcp/cloud-run-prod.yaml "${RUNNER_TEMP}/live-service.json"
+
+      - name: Tag the image prod-* so registry cleanup keeps it
+        # The gamechanger repo's cleanup policy deletes nomila-v2 images older than 30
+        # days unless they are among the newest 20 or tagged prod-*/latest. Dev pushes
+        # ~20 images a day, so without this tag prod's running image (and its rollback
+        # targets) would age out. Tag before deploying so it is protected while live.
+        # Skipped when the tag already exists (a re-run for the same commit the same UTC
+        # day): `tags add` on an existing tag deletes and re-creates it, and the deployer's
+        # Artifact Registry Writer role has no tags.delete, so it would fail the deploy.
+        run: |
+          TAG="${IMAGE_URI%:*}:prod-$(date -u +%Y%m%d)-${SHORT_SHA}"
+          if gcloud artifacts docker images describe "$TAG" --project=${{ env.PROJECT_ID }} >/dev/null 2>&1; then
+            echo "Tag $TAG already present"
+          else
+            gcloud artifacts docker tags add "${IMAGE_URI}" "$TAG" --project=${{ env.PROJECT_ID }} --quiet
+          fi
+
+      - name: Manual Cloud SQL backup (restore point for this promotion)
+        run: |
+          gcloud sql backups create \
+            --instance=${{ env.SQL_INSTANCE }} \
+            --project=${{ env.PROJECT_ID }} \
+            --description="pre-promote ${{ env.SHORT_SHA }}"
+
+      - name: Run schema migration via Cloud SQL Auth Proxy
+        # Same script, same order, as dev. Keep this run block free of ${{ }} expressions
+        # (see the note in scripts/db-migrate.sh).
+        env:
+          CLOUD_SQL_INSTANCE: gamechanger-pocket-agent:us-central1:nomila-prod-db
+          DB_URL_SECRET: NOMILA_PROD_DATABASE_URL
+        run: bash scripts/db-migrate.sh
+
+      - name: Deploy to Cloud Run
+        run: |
+          sed -i "s|image: .*|image: ${{ env.IMAGE_URI }}|" gcp/cloud-run-prod.yaml
+          echo "Deploying image: ${{ env.IMAGE_URI }}"
+
+          # The startup probe on /health refuses to shift traffic to a revision that will
+          # not boot, so a bad image fails here rather than serving.
+          gcloud run services replace gcp/cloud-run-prod.yaml \
+            --region=${{ env.REGION }} \
+            --project=${{ env.PROJECT_ID }} || DEPLOY_FAILED=true
+
+          echo "=== REVISIONS ==="
+          gcloud run revisions list \
+            --service=${{ env.SERVICE }} \
+            --region=${{ env.REGION }} \
+            --project=${{ env.PROJECT_ID }} \
+            --limit=5 \
+            --format="table(name,status.conditions[0].status,metadata.creationTimestamp)"
+
+          echo "=== STARTUP LOGS ==="
+          gcloud logging read \
+            "resource.type=cloud_run_revision AND resource.labels.service_name=${{ env.SERVICE }}" \
+            --project=${{ env.PROJECT_ID }} \
+            --freshness=10m \
+            --limit=50 \
+            --order=asc \
+            --format="value(textPayload)" | grep -v "^$" || true
+
+          if [ "${DEPLOY_FAILED}" = "true" ]; then
+            echo "Deploy failed — see revision list and logs above"
+            exit 1
+          fi
+
+      - name: Allow unauthenticated access
+        run: |
+          gcloud run services add-iam-policy-binding ${{ env.SERVICE }} \
+            --member="allUsers" \
+            --role="roles/run.invoker" \
+            --region=${{ env.REGION }} \
+            --project=${{ env.PROJECT_ID }}
+
+      - name: Smoke /health
+        run: |
+          URL=$(gcloud run services describe ${{ env.SERVICE }} \
+            --region=${{ env.REGION }} \
+            --project=${{ env.PROJECT_ID }} \
+            --format="value(status.url)")
+          echo "Service URL: ${URL}"
+          curl -fsS --max-time 30 "${URL}/health" && echo
+          # api.nomila.co has been mapped to this service since 2026-09-11; a failure
+          # here means the mapping or the certificate broke, which must fail the deploy.
+          curl -fsS --max-time 20 "${{ env.API_URL }}/health" && echo && echo "${{ env.API_URL }}/health OK"
+
+  web:
+    name: Web app and landing to Firebase Hosting
+    needs: api
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_DEPLOYER_SERVICE_ACCOUNT }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.22'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Client flags from eas.json (production profile) + web switch
+        # Stage 1 (owner, 25 Oct 2026): app.nomila.co shows the same app as the production phone build (web = app
+        # parity), so the web export reads EVERY EXPO_PUBLIC_* key of eas.json's `production` profile — the new
+        # layout (AGENT_V3 / HOME_V3), Studio, the deals board — exactly like dev web reads the preview profile
+        # (deploy-web-dev.yml). EXPO_PUBLIC_API_URL is skipped here: the export step below sets the prod API.
+        # EXPO_PUBLIC_WEB_V2 is the web-only switch (URLs, the phone-width column, same-tab connects).
+        run: |
+          node scripts/eas-profile-env.cjs production | grep -v '^EXPO_PUBLIC_API_URL=' >> "$GITHUB_ENV"
+          echo "EXPO_PUBLIC_WEB_V2=true" >> "$GITHUB_ENV"
+
+      - name: Build Expo web export (production API)
+        env:
+          EXPO_PUBLIC_API_URL: ${{ env.API_URL }}
+        run: npx expo export --platform web
+
+      - name: Copy fonts to dist/fonts and inject CSS
+        run: |
+          mkdir -p dist/fonts
+          cp node_modules/@expo-google-fonts/outfit/400Regular/Outfit_400Regular.ttf   dist/fonts/Outfit_400Regular.ttf
+          cp node_modules/@expo-google-fonts/outfit/500Medium/Outfit_500Medium.ttf     dist/fonts/Outfit_500Medium.ttf
+          cp node_modules/@expo-google-fonts/outfit/600SemiBold/Outfit_600SemiBold.ttf dist/fonts/Outfit_600SemiBold.ttf
+          cp node_modules/@expo-google-fonts/outfit/700Bold/Outfit_700Bold.ttf         dist/fonts/Outfit_700Bold.ttf
+          cp node_modules/@expo-google-fonts/outfit/800ExtraBold/Outfit_800ExtraBold.ttf dist/fonts/Outfit_800ExtraBold.ttf
+          cp node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Feather.ttf                dist/fonts/Feather.ttf
+          cp node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Ionicons.ttf               dist/fonts/Ionicons.ttf
+          cp node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf dist/fonts/MaterialCommunityIcons.ttf
+          node scripts/inject-web-fonts.js
+
+      - name: Web frame backdrop photos
+        # nomila.co's hero photos (landing/assets/v2/hero-*-960/1920.webp) into dist/web-frame/, for the wide-window
+        # frame's blurred backdrop (client/components/web/WebFrame.tsx). Never bundled, so native builds never carry them.
+        run: node scripts/copy-web-frame-hero.js
+
+      - name: Copy admin dashboard into dist
+        # Served at https://app.nomila.co/admin/ — a real static file, so it takes
+        # precedence over the SPA "** → /index.html" rewrite. The page picks
+        # api.nomila.co from its own hostname.
+        run: |
+          mkdir -p dist/admin
+          cp admin/index.html dist/admin/index.html
+
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools
+
+      - name: Deploy app to Firebase Hosting (prod → app.nomila.co)
+        run: |
+          firebase target:apply hosting prod nomila-app --project ${{ env.PROJECT_ID }}
+          firebase deploy --only hosting:prod --project ${{ env.PROJECT_ID }}
+
+      - name: Deploy landing page (nomila.co)
+        # The public site belongs to production: it ships on promotion, not on every
+        # push to main, so what a brand sees at nomila.co is what beta users run.
+        run: |
+          firebase target:apply hosting landing nomila --project ${{ env.PROJECT_ID }}
+          firebase deploy --only hosting:landing --project ${{ env.PROJECT_ID }}
+
+  mobile:
+    name: EAS update → production channel
+    needs: api
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        # eas-cli at 'latest' needs node >= 22 (its oclif dependency); the other jobs are
+        # fine on 20. Same reasoning as eas-update-preview.yml.
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Setup EAS
+        uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Client env from eas.json (production profile)
+        # The OTA bundle must inline the same public config as the installed binary, so it reads
+        # the binary's own source — eas.json build.production.env — instead of repeating it here
+        # (PR 20; these were three literal lines under a "MUST match eas.json" comment).
+        run: node scripts/eas-profile-env.cjs production >> "$GITHUB_ENV"
+
+      - name: Publish EAS Update → production
+        # Reaches every installed `production` build (eas.json → profile "production",
+        # channel "production") on next launch. Native changes still need a new binary
+        # through TestFlight / Play internal testing and a runtimeVersion bump.
+        # --environment is required from Expo SDK 55; `production` matches the production build profile.
+        run: eas update --branch production --environment production --message "${MESSAGE:-$COMMIT_MSG}" --non-interactive
+        env:
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
+          MESSAGE: ${{ github.event.inputs.reason }}
+          # EXPO_PUBLIC_* come from eas.json build.production.env (the step above), never from here.

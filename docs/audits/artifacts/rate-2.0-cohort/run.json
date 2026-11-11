@@ -1,0 +1,19 @@
+{
+  "experimentVersion": "rate-e2e-experiment/1",
+  "evaluatorSpec": "rate-eval-spec/2.0.0",
+  "canonicalSha256": "03af8cec6d392dad118fbcbdb29b4cf95fb2732d1cba5954266c3a12270b9f44",
+  "conditions": "google-search-grounding; thinking=default; temperature=1.0",
+  "athletes": [
+    "Zippy Fish",
+    "Lilia Bhuta",
+    "Riya Mehta",
+    "Carlin Isles",
+    "Livvy Dunne",
+    "LeBron James",
+    "Ben Shelton",
+    "Mia Bhuta"
+  ],
+  "repeat": 2,
+  "costUsd": 0.371039,
+  "finishedAt": "2026-09-19T13:39:46.025Z"
+}

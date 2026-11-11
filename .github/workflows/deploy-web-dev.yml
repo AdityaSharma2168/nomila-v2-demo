@@ -1,0 +1,111 @@
+name: Deploy Web to Firebase Hosting (Dev)
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for manual trigger'
+        required: false
+        default: 'Manual deploy'
+
+env:
+  PROJECT_ID: gamechanger-pocket-agent
+  API_URL: https://api-dev.nomila.co
+
+jobs:
+  deploy-web:
+    name: Build and Deploy Web
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_DEPLOYER_SERVICE_ACCOUNT }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.22'
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Studio client flags from eas.json (preview profile)
+        # PR 20: dev's Studio client flags live in eas.json's `preview` profile — the preview
+        # binary, its OTA and this web export all read it. Only the EXPO_PUBLIC_STUDIO_* keys come
+        # across; the profile's native-app keys (voice, identity, objectives, the Microsoft id) do
+        # not, so dev web is unchanged by this step until a Studio key is added there.
+        run: node scripts/eas-profile-env.cjs preview --prefix EXPO_PUBLIC_STUDIO_ >> "$GITHUB_ENV"
+
+      - name: Dev web parity flags (WEB_V2)
+        # Dev web gets every EXPO_PUBLIC_* flag the native preview build has (eas.json build.preview.env), so it shows
+        # the same app as the preview phone, plus the deals screens (OPPS_V2), Mila's deal tools and the web switch
+        # itself (EXPO_PUBLIC_WEB_V2: URLs, the phone-width column, same-tab connects, home-screen install, web push).
+        # EXPO_PUBLIC_API_URL is skipped: dev web stays on api-dev (set on the export step below).
+        # That copy carries EXPO_PUBLIC_HOME_V3 (the v3 shell and Home) from the preview profile, so dev web and the
+        # preview phone show the same Home; production web reads only the production profile's STUDIO_ keys.
+        # DEV ONLY — deploy-prod.yml is not touched, so app.nomila.co builds exactly as before.
+        run: |
+          node scripts/eas-profile-env.cjs preview | grep -v '^EXPO_PUBLIC_API_URL=' >> "$GITHUB_ENV"
+          {
+            echo "EXPO_PUBLIC_OPPS_V2=true"
+            echo "EXPO_PUBLIC_AGENT_DEALS_TOOLS=true"
+            echo "EXPO_PUBLIC_WEB_V2=true"
+          } >> "$GITHUB_ENV"
+
+      - name: Build Expo web export
+        env:
+          EXPO_PUBLIC_API_URL: ${{ env.API_URL }}
+          # The FCM web-push PUBLIC key (Firebase console → Cloud Messaging → Web Push certificates). Unset → web
+          # notifications are simply off; everything else on dev web works without it.
+          EXPO_PUBLIC_FIREBASE_VAPID_KEY: ${{ vars.DEV_FIREBASE_VAPID_KEY }}
+        run: npx expo export --platform web
+
+      - name: Copy fonts to dist/fonts and inject CSS
+        run: |
+          mkdir -p dist/fonts
+          cp node_modules/@expo-google-fonts/outfit/400Regular/Outfit_400Regular.ttf   dist/fonts/Outfit_400Regular.ttf
+          cp node_modules/@expo-google-fonts/outfit/500Medium/Outfit_500Medium.ttf     dist/fonts/Outfit_500Medium.ttf
+          cp node_modules/@expo-google-fonts/outfit/600SemiBold/Outfit_600SemiBold.ttf dist/fonts/Outfit_600SemiBold.ttf
+          cp node_modules/@expo-google-fonts/outfit/700Bold/Outfit_700Bold.ttf         dist/fonts/Outfit_700Bold.ttf
+          cp node_modules/@expo-google-fonts/outfit/800ExtraBold/Outfit_800ExtraBold.ttf dist/fonts/Outfit_800ExtraBold.ttf
+          cp node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Feather.ttf                dist/fonts/Feather.ttf
+          cp node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Ionicons.ttf               dist/fonts/Ionicons.ttf
+          cp node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf dist/fonts/MaterialCommunityIcons.ttf
+          node scripts/inject-web-fonts.js
+
+      - name: Home-screen manifest and notification worker (WEB_V2, dev only)
+        # Copies web-v2/ (manifest, icons, firebase-messaging-sw.js) into dist and adds the manifest / apple-touch-icon
+        # tags to dist/index.html. Dev only: the production web build never runs this.
+        run: node scripts/inject-web-v2.js
+
+      - name: Web frame backdrop photos
+        # nomila.co's hero photos (landing/assets/v2/hero-*-960/1920.webp) into dist/web-frame/, for the wide-window
+        # frame's blurred backdrop (client/components/web/WebFrame.tsx). Never bundled, so native builds never carry them.
+        run: node scripts/copy-web-frame-hero.js
+
+      - name: Copy admin dashboard into dist
+        # Served at https://nomila-dev.web.app/admin/ — a real static file, so it takes
+        # precedence over the SPA "** → /index.html" rewrite.
+        run: |
+          mkdir -p dist/admin
+          cp admin/index.html dist/admin/index.html
+
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools
+
+      - name: Deploy app to Firebase Hosting (dev)
+        run: |
+          firebase target:apply hosting dev nomila-dev --project ${{ env.PROJECT_ID }}
+          firebase deploy --only hosting:dev --project ${{ env.PROJECT_ID }}

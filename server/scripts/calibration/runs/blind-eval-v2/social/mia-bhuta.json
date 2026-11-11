@@ -1,0 +1,54 @@
+{
+  "athlete": {
+    "key": "mia-bhuta",
+    "name": "Mia Bhuta",
+    "sport": "Soccer"
+  },
+  "accounts": [
+    {
+      "platform": "tiktok",
+      "handle": "miabhuta",
+      "source": "connected_verified",
+      "observedAt": "2026-09-14",
+      "identityBasis": "athlete-connected account (OAuth), Nomila social substrate",
+      "identityConfidence": "HIGH",
+      "metrics": {
+        "followers": "15,511",
+        "follower growth (30 days)": "-0.37%",
+        "follower growth (90 days)": "-1.20%",
+        "cross-platform effective reach (30 days, all connected platforms)": "8,152"
+      }
+    },
+    {
+      "platform": "instagram",
+      "handle": "miabhuta",
+      "source": "connected_verified",
+      "observedAt": "2026-09-14",
+      "identityBasis": "athlete-connected account (OAuth), Nomila social substrate",
+      "identityConfidence": "HIGH",
+      "metrics": {
+        "followers": "22,040",
+        "follower growth (30 days)": "-1.55%",
+        "follower growth (90 days)": "-3.12%",
+        "median engagement per follower (30 days)": "3.36%",
+        "median reach per follower (30 days)": "36.99%",
+        "median interactions per reach (30 days)": "8.76%",
+        "median saves per 1k reach (30 days)": "2.38",
+        "median shares per 1k reach (30 days)": "2.39",
+        "top audience country share": "69%"
+      }
+    }
+  ],
+  "unavailable": [
+    {
+      "platform": "youtube",
+      "reason": "no confidently resolved account"
+    },
+    {
+      "platform": "x",
+      "reason": "no authoritative route"
+    }
+  ],
+  "candidates": [],
+  "text": "AUTHORITATIVE SOCIAL DATA\n\nMeasured platform facts supplied by Nomila. Each account states its source, observation date and identity-resolution basis/confidence. Treat these as authoritative; do not replace them with web estimates.\n- tiktok @miabhuta — source: connected verified; observed 2026-09-14; identity: athlete-connected account (OAuth), Nomila social substrate (HIGH). followers: 15,511; follower growth (30 days): -0.37%; follower growth (90 days): -1.20%; cross-platform effective reach (30 days, all connected platforms): 8,152\n- instagram @miabhuta — source: connected verified; observed 2026-09-14; identity: athlete-connected account (OAuth), Nomila social substrate (HIGH). followers: 22,040; follower growth (30 days): -1.55%; follower growth (90 days): -3.12%; median engagement per follower (30 days): 3.36%; median reach per follower (30 days): 36.99%; median interactions per reach (30 days): 8.76%; median saves per 1k reach (30 days): 2.38; median shares per 1k reach (30 days): 2.39; top audience country share: 69%\n- youtube: not available (no confidently resolved account)\n- x: not available (no authoritative route)"
+}

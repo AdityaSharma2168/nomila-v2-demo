@@ -1,0 +1,1664 @@
+{
+ "state": {
+  "athleteId": "ac59bacd-1098-4fae-b49d-9a0ea1a96c88",
+  "asOf": "2026-09-22T04:31:47.294Z",
+  "version": "athlete-state/1.0.0",
+  "identity": {
+   "name": "LeBron James",
+   "sport": "basketball",
+   "competitionContext": null,
+   "careerStatus": "active"
+  },
+  "findings": [
+   {
+    "key": "mia.athletic_authority",
+    "direction": "strength",
+    "rationale": {
+     "value": "Your standing is that of an undisputed, historic sports icon. Despite moving into a veteran-minimum supporting role with the Philadelphia 76ers, your 2024 Olympic MVP award and consistent All-Star production maintain your elite status on the court. You remain one of the most authoritative athletic figures globally.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:52:12.230Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E8"
+     ],
+     "rationale": "Backed by official FIBA Olympic tournament logs and comprehensive NBA historical stats.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Backed by official FIBA Olympic tournament logs and comprehensive NBA historical stats.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "LeBron James joined the Philadelphia 76ers in July 2026 on a two-year veteran-minimum contract worth $3.88 million for the 2026-27 season, entering his 24th NBA season.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXpDsAbTjXFuo_jJX7uew5GBDe4lqhj2I7FcrxSOYsuh49TbfrsPDaTZRS_M2-_d9oVDzLR3T3RC4a_netDrSF-pBUkZBBQbLnB94bm3Ai8b5N73KrtF98vjrdAF13ADv-gYFOxkzEYThbog2i0sUM7baM-q6b5aH5RGf0gM8NmEmisYZonHQjCpOFXuWPZ2ki0HJsoil63h7o9RIH3JP5zYea",
+      "observedAt": "2026-07-24",
+      "sourceType": "major_media",
+      "sourceTitle": "basketnews.com"
+     },
+     {
+      "id": "E2",
+      "claim": "During the 2025-26 NBA season, James averaged 20.9 points, 7.2 assists, and 6.1 rebounds across 60 games for the Los Angeles Lakers.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXpDsAbTjXFuo_jJX7uew5GBDe4lqhj2I7FcrxSOYsuh49TbfrsPDaTZRS_M2-_d9oVDzLR3T3RC4a_netDrSF-pBUkZBBQbLnB94bm3Ai8b5N73KrtF98vjrdAF13ADv-gYFOxkzEYThbog2i0sUM7baM-q6b5aH5RGf0gM8NmEmisYZonHQjCpOFXuWPZ2ki0HJsoil63h7o9RIH3JP5zYea",
+      "observedAt": "2026-07-24",
+      "sourceType": "major_media",
+      "sourceTitle": "basketnews.com"
+     },
+     {
+      "id": "E3",
+      "claim": "James won his fourth Olympic medal and third gold at the 2024 Paris Olympics, where he was named the FIBA Olympic MVP after leading Team USA.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZo0MUEBROzNlgcgKKdKDfCsh_BoeddKr8RavX1bNnlFCCPJ3DbcMQB4khThX29EPNgqXGVFw_92aIGd8gGEGzLEQJfKHMvXdCVVFEOa32o_FSAdhC3-28M1J12WCLVgMppFxl6MTl9k9v66VqFlxfXLopKcWdDIIJUe597uVk8i_5UO-SbYjFTNcV8L_HtZEdrA==",
+      "observedAt": "2024-08-10",
+      "sourceType": "official",
+      "sourceTitle": "nbcolympics.com"
+     },
+     {
+      "id": "E4",
+      "claim": "James is the NBA's all-time leading scorer, a 4-time NBA champion, and a 4-time league MVP.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYgDIfgZNXh7rIz3Q4-Pz2kD7QiGFIMBZ6vVwkbX32dqVtt1DZ945iRy4Wj1auagkCy9r3c5azsGpntH12x1RIpGhI27RaU6LpvZP_YPupmgXg_caDb4XQGOJrGBczVVNTtuK977iuvwbslvyej16hRgwIzqFaZNdWy8EZEJs1-G-ud1eRUAM954SJ",
+      "observedAt": "2026-06-30",
+      "sourceType": "major_media",
+      "sourceTitle": "cbsnews.com"
+     },
+     {
+      "id": "E8",
+      "claim": "James experienced physical setbacks including foot joint arthritis and sciatica pain that caused him to miss 17 games during the 2025-26 NBA season.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvaOQpiWTpxQSrrJ6WlqsK_ziQxdGwPPP9OKYqjC-AIZ5AbOjkDJfxz0juY8leo_t3lF1X5LtCRRbzAWTAlKlPj3neZe7UvXUo7OvP6My_BnIjcRLReUelhzey2QtvE3pXF1MfiqjASFWrtIvQF2jqZy6NFemeZk51s7lTvyuZIUD2av-eUKehOYODzWfVeHxB_g==",
+      "observedAt": "2026-01-08",
+      "sourceType": "secondary",
+      "sourceTitle": "revolt.tv"
+     }
+    ],
+    "components": [
+     {
+      "key": "athletic_authority.role_importance",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 94.25,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:52:12.230Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "815b232d-8157-4125-9ace-4eb93af61d8a#athletic_authority.role_importance",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#athletic_authority.competition_level",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#athletic_authority.achievement_recency",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#athletic_authority.performance_results",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#athletic_authority.rankings_recognition",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#athletic_authority.national_international_status"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#athletic_authority.role_importance",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#athletic_authority.competition_level",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#athletic_authority.achievement_recency",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#athletic_authority.performance_results",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#athletic_authority.rankings_recognition",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#athletic_authority.national_international_status",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.audience_scale",
+    "direction": "strength",
+    "rationale": {
+     "value": "Your reach is nearly unmatched in the sports world, serving as the most followed basketball player on Earth with over 154 million Instagram followers. While growth has naturally plateaued due to market saturation, your cross-platform presence is exceptionally broad and highly valuable. Brands can access a massive, global audience through your platforms.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:52:12.230Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E5"
+     ],
+     "rationale": "Consistent and highly verified public metrics across major social platforms.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Consistent and highly verified public metrics across major social platforms.",
+    "citedEvidence": [
+     {
+      "id": "E5",
+      "claim": "LeBron James is the most followed basketball player in the world with over 154 million Instagram followers, far ahead of Stephen Curry (56.9M).",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-yoK5BDZf-f78omCnbtP_mtXzLIfn3VCF99GWvTwCp81HOeen5O7yN6MauFqnsydHhIZ-PtkVVaxNwyK2beZUS9oPQ8eD-OG-1_WdyLE1MfiZELbgzUD_4UJ2UN3lmFs=",
+      "observedAt": "2026-08-01",
+      "sourceType": "secondary",
+      "sourceTitle": "popularbasketballers.com"
+     }
+    ],
+    "components": [
+     {
+      "key": "audience_scale.audience_growth",
+      "value": 65,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 93.55,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:52:12.230Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "815b232d-8157-4125-9ace-4eb93af61d8a#audience_scale.audience_growth",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#audience_scale.platform_breadth",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#audience_scale.cross_platform_effective_reach",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#audience_scale.sport_level_audience_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 4
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#audience_scale.audience_growth",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#audience_scale.platform_breadth",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.engagement_quality",
+    "direction": "unknown",
+    "rationale": {
+     "value": "While absolute engagement volume is incredibly high, relative interaction percentages are typical of a mega-celebrity account of this scale. Your posts generate widespread conversation and viral sharing, though precise tracking of private sharing metrics remains restricted. Core audience interaction remains highly authentic and driven by decades of fan loyalty.",
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-09-13T22:52:12.230Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E5"
+     ],
+     "rationale": "Evaluated using standard public interaction volumes and mega-influencer benchmarks in the absence of private platform logs.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Evaluated using standard public interaction volumes and mega-influencer benchmarks in the absence of private platform logs.",
+    "citedEvidence": [
+     {
+      "id": "E5",
+      "claim": "LeBron James is the most followed basketball player in the world with over 154 million Instagram followers, far ahead of Stephen Curry (56.9M).",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-yoK5BDZf-f78omCnbtP_mtXzLIfn3VCF99GWvTwCp81HOeen5O7yN6MauFqnsydHhIZ-PtkVVaxNwyK2beZUS9oPQ8eD-OG-1_WdyLE1MfiZELbgzUD_4UJ2UN3lmFs=",
+      "observedAt": "2026-08-01",
+      "sourceType": "secondary",
+      "sourceTitle": "popularbasketballers.com"
+     }
+    ],
+    "components": [
+     {
+      "key": "engagement_quality.video_retention",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "value": 75,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "value": 80,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "value": 60,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 68.85,
+     "owner": "marketability",
+     "confidence": "LOW",
+     "asOf": "2026-09-13T22:52:12.230Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "815b232d-8157-4125-9ace-4eb93af61d8a#engagement_quality.video_retention",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#engagement_quality.reach_efficiency",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#engagement_quality.story_efficiency",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#engagement_quality.shares_saves_quality",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#engagement_quality.audience_authenticity",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#engagement_quality.engagement_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 3,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#engagement_quality.video_retention",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#engagement_quality.reach_efficiency",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#engagement_quality.story_efficiency",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#engagement_quality.shares_saves_quality",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#engagement_quality.audience_authenticity",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#engagement_quality.engagement_percentile",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.cultural_relevance",
+    "direction": "strength",
+    "rationale": {
+     "value": "You are a global cultural fixture whose relevance extends far beyond basketball. Your career decisions, business ventures, and personal milestones generate massive, non-stop coverage across prestigious news outlets and global social platforms. This widespread crossover recognition ensures you remain a household name worldwide.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:52:12.230Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E4",
+      "E6",
+      "E7"
+     ],
+     "rationale": "Grounded in persistent top-tier media indexing, public conversation, and search trends.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Grounded in persistent top-tier media indexing, public conversation, and search trends.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "LeBron James joined the Philadelphia 76ers in July 2026 on a two-year veteran-minimum contract worth $3.88 million for the 2026-27 season, entering his 24th NBA season.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXpDsAbTjXFuo_jJX7uew5GBDe4lqhj2I7FcrxSOYsuh49TbfrsPDaTZRS_M2-_d9oVDzLR3T3RC4a_netDrSF-pBUkZBBQbLnB94bm3Ai8b5N73KrtF98vjrdAF13ADv-gYFOxkzEYThbog2i0sUM7baM-q6b5aH5RGf0gM8NmEmisYZonHQjCpOFXuWPZ2ki0HJsoil63h7o9RIH3JP5zYea",
+      "observedAt": "2026-07-24",
+      "sourceType": "major_media",
+      "sourceTitle": "basketnews.com"
+     },
+     {
+      "id": "E4",
+      "claim": "James is the NBA's all-time leading scorer, a 4-time NBA champion, and a 4-time league MVP.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYgDIfgZNXh7rIz3Q4-Pz2kD7QiGFIMBZ6vVwkbX32dqVtt1DZ945iRy4Wj1auagkCy9r3c5azsGpntH12x1RIpGhI27RaU6LpvZP_YPupmgXg_caDb4XQGOJrGBczVVNTtuK977iuvwbslvyej16hRgwIzqFaZNdWy8EZEJs1-G-ud1eRUAM954SJ",
+      "observedAt": "2026-06-30",
+      "sourceType": "major_media",
+      "sourceTitle": "cbsnews.com"
+     },
+     {
+      "id": "E6",
+      "claim": "James reportedly signed a major endorsement deal with prediction-market platform Polymarket in September 2026 worth $15 million annually to focus on football-related promotional content.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjBFdL1IntWioTas_LuPmUr9ulCjM4Rk-IqWwkDqeiynFKmAsX-hBFVmmvknLQ8ucgZ5KzAwTSFQooBZpqJyXhcDUiV4kA0hbGDJUEP_bcMWcY_tSM4z4NmFqIasVeOa2EZAxZ0qb47kWD2yIGkmTW4xDQcfHo3J32QdesaTWxJ5aC_38Eg8G5f8vhWbERsd4CrZG3",
+      "observedAt": "2026-09-16",
+      "sourceType": "major_media",
+      "sourceTitle": "frontofficesports.com"
+     },
+     {
+      "id": "E7",
+      "claim": "James signed a lifetime endorsement contract with Nike in late 2015, which is widely reported by his business partner Maverick Carter and media to be worth over $1 billion.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0jU8P_Vm5bZGwewAhi8YELBYrYILXsD0lQ7_ncWIMu6JbrDIpymIuU76oActhsODdcE87Vg3wYSSUyq6U_j8VtI5TKeghgP8F6ExaNLmu7R-eHeqal7DCC73wTkG-io_pIkwipXaaQ968DodU_t9Ul7UFFjbkyqWfN6RWtfAhzim2Aiy9B4sQHWvO-uysXIhHmBk0R3sFjvbMufhZgWifxhzI",
+      "observedAt": "2016-05-17",
+      "sourceType": "major_media",
+      "sourceTitle": "cbssports.com"
+     }
+    ],
+    "components": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 99.6,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:52:12.230Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "815b232d-8157-4125-9ace-4eb93af61d8a#cultural_relevance.search_interest",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#cultural_relevance.social_conversation",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#cultural_relevance.media_source_quality",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#cultural_relevance.crossover_recognition",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#cultural_relevance.media_volume_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#cultural_relevance.search_interest",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#cultural_relevance.social_conversation",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#cultural_relevance.media_source_quality",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#cultural_relevance.crossover_recognition",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#cultural_relevance.media_volume_percentile",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.narrative_power",
+    "direction": "strength",
+    "rationale": {
+     "value": "Your narrative is one of the most powerful and authentic in sporting history, built on the 'Kid from Akron' journey, unparalleled longevity, and family legacy. This distinctiveness translates seamlessly into premium commercial campaigns, commanding immense public resonance. It is a highly durable story that will continue to inspire long after your playing days are over.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:52:12.230Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E4",
+      "E6",
+      "E7",
+      "E8",
+      "E9"
+     ],
+     "rationale": "Based on two decades of extensively documented public actions, philanthropy, and media-amplified history.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Based on two decades of extensively documented public actions, philanthropy, and media-amplified history.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "LeBron James joined the Philadelphia 76ers in July 2026 on a two-year veteran-minimum contract worth $3.88 million for the 2026-27 season, entering his 24th NBA season.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXpDsAbTjXFuo_jJX7uew5GBDe4lqhj2I7FcrxSOYsuh49TbfrsPDaTZRS_M2-_d9oVDzLR3T3RC4a_netDrSF-pBUkZBBQbLnB94bm3Ai8b5N73KrtF98vjrdAF13ADv-gYFOxkzEYThbog2i0sUM7baM-q6b5aH5RGf0gM8NmEmisYZonHQjCpOFXuWPZ2ki0HJsoil63h7o9RIH3JP5zYea",
+      "observedAt": "2026-07-24",
+      "sourceType": "major_media",
+      "sourceTitle": "basketnews.com"
+     },
+     {
+      "id": "E4",
+      "claim": "James is the NBA's all-time leading scorer, a 4-time NBA champion, and a 4-time league MVP.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYgDIfgZNXh7rIz3Q4-Pz2kD7QiGFIMBZ6vVwkbX32dqVtt1DZ945iRy4Wj1auagkCy9r3c5azsGpntH12x1RIpGhI27RaU6LpvZP_YPupmgXg_caDb4XQGOJrGBczVVNTtuK977iuvwbslvyej16hRgwIzqFaZNdWy8EZEJs1-G-ud1eRUAM954SJ",
+      "observedAt": "2026-06-30",
+      "sourceType": "major_media",
+      "sourceTitle": "cbsnews.com"
+     },
+     {
+      "id": "E6",
+      "claim": "James reportedly signed a major endorsement deal with prediction-market platform Polymarket in September 2026 worth $15 million annually to focus on football-related promotional content.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjBFdL1IntWioTas_LuPmUr9ulCjM4Rk-IqWwkDqeiynFKmAsX-hBFVmmvknLQ8ucgZ5KzAwTSFQooBZpqJyXhcDUiV4kA0hbGDJUEP_bcMWcY_tSM4z4NmFqIasVeOa2EZAxZ0qb47kWD2yIGkmTW4xDQcfHo3J32QdesaTWxJ5aC_38Eg8G5f8vhWbERsd4CrZG3",
+      "observedAt": "2026-09-16",
+      "sourceType": "major_media",
+      "sourceTitle": "frontofficesports.com"
+     },
+     {
+      "id": "E7",
+      "claim": "James signed a lifetime endorsement contract with Nike in late 2015, which is widely reported by his business partner Maverick Carter and media to be worth over $1 billion.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0jU8P_Vm5bZGwewAhi8YELBYrYILXsD0lQ7_ncWIMu6JbrDIpymIuU76oActhsODdcE87Vg3wYSSUyq6U_j8VtI5TKeghgP8F6ExaNLmu7R-eHeqal7DCC73wTkG-io_pIkwipXaaQ968DodU_t9Ul7UFFjbkyqWfN6RWtfAhzim2Aiy9B4sQHWvO-uysXIhHmBk0R3sFjvbMufhZgWifxhzI",
+      "observedAt": "2016-05-17",
+      "sourceType": "major_media",
+      "sourceTitle": "cbssports.com"
+     },
+     {
+      "id": "E8",
+      "claim": "James experienced physical setbacks including foot joint arthritis and sciatica pain that caused him to miss 17 games during the 2025-26 NBA season.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvaOQpiWTpxQSrrJ6WlqsK_ziQxdGwPPP9OKYqjC-AIZ5AbOjkDJfxz0juY8leo_t3lF1X5LtCRRbzAWTAlKlPj3neZe7UvXUo7OvP6My_BnIjcRLReUelhzey2QtvE3pXF1MfiqjASFWrtIvQF2jqZy6NFemeZk51s7lTvyuZIUD2av-eUKehOYODzWfVeHxB_g==",
+      "observedAt": "2026-01-08",
+      "sourceType": "secondary",
+      "sourceTitle": "revolt.tv"
+     },
+     {
+      "id": "E9",
+      "claim": "James has robust brand relationships spanning Amazon (signed in June 2025), AT&T, Audemars Piguet, and GMC.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5OgIRnzyUv94_MvMZJJ1u9_zi5bDTZhwXC0nFXWLC-uw3Hg2L0osyV8t2BZU3ZISvZvyys8fMm5Y0p4lJ4z9tAipZXnwuDRjC_McjRUOd7VrXtkb1psh5mVwqv0TewVmUtJxWDpQ_nKHgGKJt6LDCx2qj2KJa2btzhWD6",
+      "observedAt": "2025-06-01",
+      "sourceType": "secondary",
+      "sourceTitle": "bookingagentinfo.com"
+     }
+    ],
+    "components": [
+     {
+      "key": "narrative_power.durability",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 99.3,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:52:12.230Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "815b232d-8157-4125-9ace-4eb93af61d8a#narrative_power.durability",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#narrative_power.story_depth",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#narrative_power.distinctiveness",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#narrative_power.media_resonance",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#narrative_power.evidence_authenticity",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#narrative_power.commercial_applicability"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#narrative_power.durability",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#narrative_power.story_depth",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#narrative_power.distinctiveness",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#narrative_power.media_resonance",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#narrative_power.evidence_authenticity",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#narrative_power.commercial_applicability",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.brand_fit",
+    "direction": "strength",
+    "rationale": {
+     "value": "You offer an exceptionally versatile brand persona that easily spans luxury, mass market, tech, and lifestyle categories. Despite late-career transitions and occasionally polarizing social activism, your family-first identity and philanthropic commitment make you an incredibly safe, premium fit. This strong coherence allows you to represent diverse global brands seamlessly.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:52:12.230Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E9"
+     ],
+     "rationale": "Validated by your existing high-profile, multi-industry corporate partnerships and public brand history.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Validated by your existing high-profile, multi-industry corporate partnerships and public brand history.",
+    "citedEvidence": [
+     {
+      "id": "E4",
+      "claim": "James is the NBA's all-time leading scorer, a 4-time NBA champion, and a 4-time league MVP.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYgDIfgZNXh7rIz3Q4-Pz2kD7QiGFIMBZ6vVwkbX32dqVtt1DZ945iRy4Wj1auagkCy9r3c5azsGpntH12x1RIpGhI27RaU6LpvZP_YPupmgXg_caDb4XQGOJrGBczVVNTtuK977iuvwbslvyej16hRgwIzqFaZNdWy8EZEJs1-G-ud1eRUAM954SJ",
+      "observedAt": "2026-06-30",
+      "sourceType": "major_media",
+      "sourceTitle": "cbsnews.com"
+     },
+     {
+      "id": "E5",
+      "claim": "LeBron James is the most followed basketball player in the world with over 154 million Instagram followers, far ahead of Stephen Curry (56.9M).",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-yoK5BDZf-f78omCnbtP_mtXzLIfn3VCF99GWvTwCp81HOeen5O7yN6MauFqnsydHhIZ-PtkVVaxNwyK2beZUS9oPQ8eD-OG-1_WdyLE1MfiZELbgzUD_4UJ2UN3lmFs=",
+      "observedAt": "2026-08-01",
+      "sourceType": "secondary",
+      "sourceTitle": "popularbasketballers.com"
+     },
+     {
+      "id": "E6",
+      "claim": "James reportedly signed a major endorsement deal with prediction-market platform Polymarket in September 2026 worth $15 million annually to focus on football-related promotional content.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjBFdL1IntWioTas_LuPmUr9ulCjM4Rk-IqWwkDqeiynFKmAsX-hBFVmmvknLQ8ucgZ5KzAwTSFQooBZpqJyXhcDUiV4kA0hbGDJUEP_bcMWcY_tSM4z4NmFqIasVeOa2EZAxZ0qb47kWD2yIGkmTW4xDQcfHo3J32QdesaTWxJ5aC_38Eg8G5f8vhWbERsd4CrZG3",
+      "observedAt": "2026-09-16",
+      "sourceType": "major_media",
+      "sourceTitle": "frontofficesports.com"
+     },
+     {
+      "id": "E7",
+      "claim": "James signed a lifetime endorsement contract with Nike in late 2015, which is widely reported by his business partner Maverick Carter and media to be worth over $1 billion.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0jU8P_Vm5bZGwewAhi8YELBYrYILXsD0lQ7_ncWIMu6JbrDIpymIuU76oActhsODdcE87Vg3wYSSUyq6U_j8VtI5TKeghgP8F6ExaNLmu7R-eHeqal7DCC73wTkG-io_pIkwipXaaQ968DodU_t9Ul7UFFjbkyqWfN6RWtfAhzim2Aiy9B4sQHWvO-uysXIhHmBk0R3sFjvbMufhZgWifxhzI",
+      "observedAt": "2016-05-17",
+      "sourceType": "major_media",
+      "sourceTitle": "cbssports.com"
+     },
+     {
+      "id": "E9",
+      "claim": "James has robust brand relationships spanning Amazon (signed in June 2025), AT&T, Audemars Piguet, and GMC.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5OgIRnzyUv94_MvMZJJ1u9_zi5bDTZhwXC0nFXWLC-uw3Hg2L0osyV8t2BZU3ZISvZvyys8fMm5Y0p4lJ4z9tAipZXnwuDRjC_McjRUOd7VrXtkb1psh5mVwqv0TewVmUtJxWDpQ_nKHgGKJt6LDCx2qj2KJa2btzhWD6",
+      "observedAt": "2025-06-01",
+      "sourceType": "secondary",
+      "sourceTitle": "bookingagentinfo.com"
+     }
+    ],
+    "components": [
+     {
+      "key": "brand_fit.brand_safety",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 93.5,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:52:12.230Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "815b232d-8157-4125-9ace-4eb93af61d8a#brand_fit.brand_safety",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#brand_fit.category_breadth",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#brand_fit.content_versatility",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#brand_fit.geographic_relevance",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#brand_fit.audience_attractiveness",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#brand_fit.identity_values_coherence"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#brand_fit.brand_safety",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#brand_fit.category_breadth",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#brand_fit.content_versatility",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#brand_fit.geographic_relevance",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#brand_fit.audience_attractiveness",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#brand_fit.identity_values_coherence",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.commercial_proof",
+    "direction": "strength",
+    "rationale": {
+     "value": "Your commercial performance is historic, highlighted by a lifetime Nike contract valued at over $1 billion and a diverse, active portfolio. Even at age 41, your premium pricing power is intact, as seen in your recent $15 million annual Polymarket endorsement. Brands consistently reinvest in you due to your proven ability to drive cultural and financial results.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:52:12.230Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E6",
+      "E7",
+      "E9"
+     ],
+     "rationale": "Backed by documented financial reports of earnings and high-profile repeat corporate partnerships.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Backed by documented financial reports of earnings and high-profile repeat corporate partnerships.",
+    "citedEvidence": [
+     {
+      "id": "E6",
+      "claim": "James reportedly signed a major endorsement deal with prediction-market platform Polymarket in September 2026 worth $15 million annually to focus on football-related promotional content.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjBFdL1IntWioTas_LuPmUr9ulCjM4Rk-IqWwkDqeiynFKmAsX-hBFVmmvknLQ8ucgZ5KzAwTSFQooBZpqJyXhcDUiV4kA0hbGDJUEP_bcMWcY_tSM4z4NmFqIasVeOa2EZAxZ0qb47kWD2yIGkmTW4xDQcfHo3J32QdesaTWxJ5aC_38Eg8G5f8vhWbERsd4CrZG3",
+      "observedAt": "2026-09-16",
+      "sourceType": "major_media",
+      "sourceTitle": "frontofficesports.com"
+     },
+     {
+      "id": "E7",
+      "claim": "James signed a lifetime endorsement contract with Nike in late 2015, which is widely reported by his business partner Maverick Carter and media to be worth over $1 billion.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0jU8P_Vm5bZGwewAhi8YELBYrYILXsD0lQ7_ncWIMu6JbrDIpymIuU76oActhsODdcE87Vg3wYSSUyq6U_j8VtI5TKeghgP8F6ExaNLmu7R-eHeqal7DCC73wTkG-io_pIkwipXaaQ968DodU_t9Ul7UFFjbkyqWfN6RWtfAhzim2Aiy9B4sQHWvO-uysXIhHmBk0R3sFjvbMufhZgWifxhzI",
+      "observedAt": "2016-05-17",
+      "sourceType": "major_media",
+      "sourceTitle": "cbssports.com"
+     },
+     {
+      "id": "E9",
+      "claim": "James has robust brand relationships spanning Amazon (signed in June 2025), AT&T, Audemars Piguet, and GMC.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5OgIRnzyUv94_MvMZJJ1u9_zi5bDTZhwXC0nFXWLC-uw3Hg2L0osyV8t2BZU3ZISvZvyys8fMm5Y0p4lJ4z9tAipZXnwuDRjC_McjRUOd7VrXtkb1psh5mVwqv0TewVmUtJxWDpQ_nKHgGKJt6LDCx2qj2KJa2btzhWD6",
+      "observedAt": "2025-06-01",
+      "sourceType": "secondary",
+      "sourceTitle": "bookingagentinfo.com"
+     }
+    ],
+    "components": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "value": 100,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 98,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:52:12.230Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "815b232d-8157-4125-9ace-4eb93af61d8a#commercial_proof.brand_quality",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#commercial_proof.pricing_power",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#commercial_proof.deal_frequency",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#commercial_proof.renewals_repeat",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#commercial_proof.campaign_performance",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#commercial_proof.verified_commercial_value"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#commercial_proof.brand_quality",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#commercial_proof.pricing_power",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#commercial_proof.deal_frequency",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#commercial_proof.renewals_repeat",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#commercial_proof.campaign_performance",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#commercial_proof.verified_commercial_value",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.momentum",
+    "direction": "neutral",
+    "rationale": {
+     "value": "Your athletic trajectory is in a natural, late-career decline, but your commercial and media momentum is remarkably stable and occasionally accelerating. Your move to Philadelphia and newly signed mega-deals demonstrate your continued relevance. You are successfully converting active athletic dominance into a permanent, legendary cultural legacy.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:52:12.230Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E5",
+      "E6",
+      "E8",
+      "E9"
+     ],
+     "rationale": "Evidenced by real-time contract changes, public roster shifts, and high-value commercial announcements in 2026.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Evidenced by real-time contract changes, public roster shifts, and high-value commercial announcements in 2026.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "LeBron James joined the Philadelphia 76ers in July 2026 on a two-year veteran-minimum contract worth $3.88 million for the 2026-27 season, entering his 24th NBA season.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXpDsAbTjXFuo_jJX7uew5GBDe4lqhj2I7FcrxSOYsuh49TbfrsPDaTZRS_M2-_d9oVDzLR3T3RC4a_netDrSF-pBUkZBBQbLnB94bm3Ai8b5N73KrtF98vjrdAF13ADv-gYFOxkzEYThbog2i0sUM7baM-q6b5aH5RGf0gM8NmEmisYZonHQjCpOFXuWPZ2ki0HJsoil63h7o9RIH3JP5zYea",
+      "observedAt": "2026-07-24",
+      "sourceType": "major_media",
+      "sourceTitle": "basketnews.com"
+     },
+     {
+      "id": "E2",
+      "claim": "During the 2025-26 NBA season, James averaged 20.9 points, 7.2 assists, and 6.1 rebounds across 60 games for the Los Angeles Lakers.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXpDsAbTjXFuo_jJX7uew5GBDe4lqhj2I7FcrxSOYsuh49TbfrsPDaTZRS_M2-_d9oVDzLR3T3RC4a_netDrSF-pBUkZBBQbLnB94bm3Ai8b5N73KrtF98vjrdAF13ADv-gYFOxkzEYThbog2i0sUM7baM-q6b5aH5RGf0gM8NmEmisYZonHQjCpOFXuWPZ2ki0HJsoil63h7o9RIH3JP5zYea",
+      "observedAt": "2026-07-24",
+      "sourceType": "major_media",
+      "sourceTitle": "basketnews.com"
+     },
+     {
+      "id": "E5",
+      "claim": "LeBron James is the most followed basketball player in the world with over 154 million Instagram followers, far ahead of Stephen Curry (56.9M).",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-yoK5BDZf-f78omCnbtP_mtXzLIfn3VCF99GWvTwCp81HOeen5O7yN6MauFqnsydHhIZ-PtkVVaxNwyK2beZUS9oPQ8eD-OG-1_WdyLE1MfiZELbgzUD_4UJ2UN3lmFs=",
+      "observedAt": "2026-08-01",
+      "sourceType": "secondary",
+      "sourceTitle": "popularbasketballers.com"
+     },
+     {
+      "id": "E6",
+      "claim": "James reportedly signed a major endorsement deal with prediction-market platform Polymarket in September 2026 worth $15 million annually to focus on football-related promotional content.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjBFdL1IntWioTas_LuPmUr9ulCjM4Rk-IqWwkDqeiynFKmAsX-hBFVmmvknLQ8ucgZ5KzAwTSFQooBZpqJyXhcDUiV4kA0hbGDJUEP_bcMWcY_tSM4z4NmFqIasVeOa2EZAxZ0qb47kWD2yIGkmTW4xDQcfHo3J32QdesaTWxJ5aC_38Eg8G5f8vhWbERsd4CrZG3",
+      "observedAt": "2026-09-16",
+      "sourceType": "major_media",
+      "sourceTitle": "frontofficesports.com"
+     },
+     {
+      "id": "E8",
+      "claim": "James experienced physical setbacks including foot joint arthritis and sciatica pain that caused him to miss 17 games during the 2025-26 NBA season.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvaOQpiWTpxQSrrJ6WlqsK_ziQxdGwPPP9OKYqjC-AIZ5AbOjkDJfxz0juY8leo_t3lF1X5LtCRRbzAWTAlKlPj3neZe7UvXUo7OvP6My_BnIjcRLReUelhzey2QtvE3pXF1MfiqjASFWrtIvQF2jqZy6NFemeZk51s7lTvyuZIUD2av-eUKehOYODzWfVeHxB_g==",
+      "observedAt": "2026-01-08",
+      "sourceType": "secondary",
+      "sourceTitle": "revolt.tv"
+     },
+     {
+      "id": "E9",
+      "claim": "James has robust brand relationships spanning Amazon (signed in June 2025), AT&T, Audemars Piguet, and GMC.",
+      "sourceUrl": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5OgIRnzyUv94_MvMZJJ1u9_zi5bDTZhwXC0nFXWLC-uw3Hg2L0osyV8t2BZU3ZISvZvyys8fMm5Y0p4lJ4z9tAipZXnwuDRjC_McjRUOd7VrXtkb1psh5mVwqv0TewVmUtJxWDpQ_nKHgGKJt6LDCx2qj2KJa2btzhWD6",
+      "observedAt": "2025-06-01",
+      "sourceType": "secondary",
+      "sourceTitle": "bookingagentinfo.com"
+     }
+    ],
+    "components": [
+     {
+      "key": "momentum.audience_growth",
+      "value": 60,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "value": 65,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "value": 80,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "value": 80,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 71.5,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-13T22:52:12.230Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "815b232d-8157-4125-9ace-4eb93af61d8a#momentum.audience_growth",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#momentum.media_trajectory",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#momentum.athletic_trajectory",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#momentum.commercial_acceleration",
+      "815b232d-8157-4125-9ace-4eb93af61d8a#momentum.search_social_trajectory"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#momentum.audience_growth",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#momentum.media_trajectory",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#momentum.athletic_trajectory",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#momentum.commercial_acceleration",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     },
+     {
+      "source": "mia",
+      "locator": "815b232d-8157-4125-9ace-4eb93af61d8a#momentum.search_social_trajectory",
+      "asOf": "2026-09-13T22:52:12.230Z"
+     }
+    ]
+   }
+  ],
+  "audienceTrajectory": {
+   "value": null,
+   "owner": "athlete_intelligence",
+   "asOf": "2026-09-22T04:31:47.294Z",
+   "evidenceClass": "MISSING",
+   "reason": "no growth measurement on any platform"
+  },
+  "commercialPosition": {
+   "closedDeals": {
+    "value": 0,
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-22T04:31:47.294Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "count_deals_at_earned_status"
+   },
+   "activeRelationships": {
+    "value": [],
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-22T04:31:47.294Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "distinct_brand_at_earned_status"
+   },
+   "demonstratedEconomics": {
+    "value": null,
+    "owner": "athlete_state",
+    "asOf": "2026-09-22T04:31:47.294Z",
+    "evidenceClass": "MISSING",
+    "reason": "no closed deal carries an amount"
+   },
+   "pricingEvidence": "none"
+  },
+  "constraints": [],
+  "preferences": [],
+  "materialGaps": [
+   "Private Instagram platform logs showing precise video retention, saves, shares, and story performance.",
+   "First-party demographic breakdown of his active audience across modern platforms."
+  ],
+  "overallConfidence": "LOW",
+  "sources": [
+   {
+    "owner": "marketability",
+    "present": true,
+    "asOf": "2026-09-13T22:52:12.230Z"
+   },
+   {
+    "owner": "athlete_intelligence",
+    "present": false,
+    "asOf": null
+   },
+   {
+    "owner": "athlete_state",
+    "present": true,
+    "asOf": "2026-09-22T04:31:47.294Z"
+   }
+  ]
+ },
+ "record": {
+  "evaluatorSpec": "opportunity-eval-spec/1.0.0",
+  "canonicalSha256": "6bcf91ab36b5fb7d970f8e2eac304fc82b9d7427b2ce00d35a54e21de3ae3c2d",
+  "manifest": {
+   "evaluatorSpec": "opportunity-eval-spec/1.0.0",
+   "promptDigest": "6bcf91ab36b5fb7d970f8e2eac304fc82b9d7427b2ce00d35a54e21de3ae3c2d"
+  },
+  "promptSha256": "f8f082d035f0219329318fa976d7c7af1588113329c84478b7a14ce75187eacc",
+  "athlete": {
+   "id": "ac59bacd-1098-4fae-b49d-9a0ea1a96c88",
+   "name": "LeBron James"
+  },
+  "stateAsOf": "2026-09-22T04:31:47.294Z",
+  "stateBlock": "Nomila's account of this athlete as of 2026-09-22T04:31:47.294Z (athlete-state/1.0.0).\nOverall confidence in this picture: LOW.\n\nCite any line below by the path shown at its left.\n\nIDENTITY\n    identity.name                             LeBron James\n    identity.sport                            basketball\n    identity.competitionContext               not recorded\n    identity.careerStatus                     active\n\nFINDINGS — marketability dimensions, each judged by M.I.A. and read here unchanged.\n  STRENGTH  measured, above the band\n  GAP       measured, below the band\n  NEUTRAL   MEASURED and unremarkable. We know; it is simply ordinary. This is NOT missing evidence.\n  UNKNOWN   evidence is genuinely insufficient — no score, or mostly imputed signals. A statement about\n            what Nomila has measured, never about the athlete.\n\n  Each finding may carry WHY M.I.A. concluded it and WHICH SOURCES it relied on. Read those as the\n  evaluator's interpretation and the evidence behind it — NOT as established fact about the athlete.\n\n    findings[mia.athletic_authority]          STRENGTH  score 94.25   HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Your standing is that of an undisputed, historic sports icon. Despite moving into a\n          veteran-minimum supporting role with the Philadelphia 76ers, your 2024 Olympic MVP award and\n          consistent All-Star production maintain your elite status on the court. You remain one of the\n          most authoritative athletic figures globally.\n          confidence HIGH — Backed by official FIBA Olympic tournament logs and comprehensive NBA historical stats.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  major_media · 2026-07-24  LeBron James joined the Philadelphia 76ers in July 2026 on a two-year veteran-minimum contract worth $3.88 million for the 2026-27 season, entering his 24th NBA season.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXpDsAbTjXFuo_jJX7uew5GBDe4lqhj2I7FcrxSOYsuh49TbfrsPDaTZRS_M2-_d9oVDzLR3T3RC4a_netDrSF-pBUkZBBQbLnB94bm3Ai8b5N73KrtF98vjrdAF13ADv-gYFOxkzEYThbog2i0sUM7baM-q6b5aH5RGf0gM8NmEmisYZonHQjCpOFXuWPZ2ki0HJsoil63h7o9RIH3JP5zYea\n          E2  major_media · 2026-07-24  During the 2025-26 NBA season, James averaged 20.9 points, 7.2 assists, and 6.1 rebounds across 60 games for the Los Angeles Lakers.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXpDsAbTjXFuo_jJX7uew5GBDe4lqhj2I7FcrxSOYsuh49TbfrsPDaTZRS_M2-_d9oVDzLR3T3RC4a_netDrSF-pBUkZBBQbLnB94bm3Ai8b5N73KrtF98vjrdAF13ADv-gYFOxkzEYThbog2i0sUM7baM-q6b5aH5RGf0gM8NmEmisYZonHQjCpOFXuWPZ2ki0HJsoil63h7o9RIH3JP5zYea\n          E3  official · 2024-08-10  James won his fourth Olympic medal and third gold at the 2024 Paris Olympics, where he was named the FIBA Olympic MVP after leading Team USA.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHZo0MUEBROzNlgcgKKdKDfCsh_BoeddKr8RavX1bNnlFCCPJ3DbcMQB4khThX29EPNgqXGVFw_92aIGd8gGEGzLEQJfKHMvXdCVVFEOa32o_FSAdhC3-28M1J12WCLVgMppFxl6MTl9k9v66VqFlxfXLopKcWdDIIJUe597uVk8i_5UO-SbYjFTNcV8L_HtZEdrA==\n          E4  major_media · 2026-06-30  James is the NBA's all-time leading scorer, a 4-time NBA champion, and a 4-time league MVP.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYgDIfgZNXh7rIz3Q4-Pz2kD7QiGFIMBZ6vVwkbX32dqVtt1DZ945iRy4Wj1auagkCy9r3c5azsGpntH12x1RIpGhI27RaU6LpvZP_YPupmgXg_caDb4XQGOJrGBczVVNTtuK977iuvwbslvyej16hRgwIzqFaZNdWy8EZEJs1-G-ud1eRUAM954SJ\n          E8  secondary · 2026-01-08  James experienced physical setbacks including foot joint arthritis and sciatica pain that caused him to miss 17 games during the 2025-26 NBA season.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvaOQpiWTpxQSrrJ6WlqsK_ziQxdGwPPP9OKYqjC-AIZ5AbOjkDJfxz0juY8leo_t3lF1X5LtCRRbzAWTAlKlPj3neZe7UvXUo7OvP6My_BnIjcRLReUelhzey2QtvE3pXF1MfiqjASFWrtIvQF2jqZy6NFemeZk51s7lTvyuZIUD2av-eUKehOYODzWfVeHxB_g==\n        COMPONENTS  role_importance=90 [EVALUATED]  competition_level=100 [EVALUATED]  achievement_recency=90 [EVALUATED]  performance_results=85 [EVALUATED]  rankings_recognition=100 [EVALUATED]  national_international_status=100 [EVALUATED]\n\n    findings[mia.audience_scale]              STRENGTH  score 93.55   HIGH    0/4 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Your reach is nearly unmatched in the sports world, serving as the most followed basketball\n          player on Earth with over 154 million Instagram followers. While growth has naturally plateaued\n          due to market saturation, your cross-platform presence is exceptionally broad and highly\n          valuable. Brands can access a massive, global audience through your platforms.\n          confidence HIGH — Consistent and highly verified public metrics across major social platforms.\n        SOURCE EVIDENCE M.I.A. CITED\n          E5  secondary · 2026-08-01  LeBron James is the most followed basketball player in the world with over 154 million Instagram followers, far ahead of Stephen Curry (56.9M).\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-yoK5BDZf-f78omCnbtP_mtXzLIfn3VCF99GWvTwCp81HOeen5O7yN6MauFqnsydHhIZ-PtkVVaxNwyK2beZUS9oPQ8eD-OG-1_WdyLE1MfiZELbgzUD_4UJ2UN3lmFs=\n        COMPONENTS  audience_growth=65 [EVALUATED]  platform_breadth=98 [EVALUATED]  cross_platform_effective_reach=98 [EVALUATED]  sport_level_audience_percentile=100 [EVALUATED]\n\n    findings[mia.engagement_quality]          UNKNOWN   score 68.85   LOW     3/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          While absolute engagement volume is incredibly high, relative interaction percentages are\n          typical of a mega-celebrity account of this scale. Your posts generate widespread conversation\n          and viral sharing, though precise tracking of private sharing metrics remains restricted. Core\n          audience interaction remains highly authentic and driven by decades of fan loyalty.\n          confidence MEDIUM — Evaluated using standard public interaction volumes and mega-influencer benchmarks in the absence of private platform logs.\n        SOURCE EVIDENCE M.I.A. CITED\n          E5  secondary · 2026-08-01  LeBron James is the most followed basketball player in the world with over 154 million Instagram followers, far ahead of Stephen Curry (56.9M).\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-yoK5BDZf-f78omCnbtP_mtXzLIfn3VCF99GWvTwCp81HOeen5O7yN6MauFqnsydHhIZ-PtkVVaxNwyK2beZUS9oPQ8eD-OG-1_WdyLE1MfiZELbgzUD_4UJ2UN3lmFs=\n        COMPONENTS  video_retention=50 [ASSUMED]  reach_efficiency=75 [EVALUATED]  story_efficiency=50 [ASSUMED]  shares_saves_quality=50 [ASSUMED]  audience_authenticity=80 [EVALUATED]  engagement_percentile=60 [EVALUATED]\n\n    findings[mia.cultural_relevance]          STRENGTH  score 99.6    HIGH    0/5 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          You are a global cultural fixture whose relevance extends far beyond basketball. Your career\n          decisions, business ventures, and personal milestones generate massive, non-stop coverage across\n          prestigious news outlets and global social platforms. This widespread crossover recognition\n          ensures you remain a household name worldwide.\n          confidence HIGH — Grounded in persistent top-tier media indexing, public conversation, and search trends.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  major_media · 2026-07-24  LeBron James joined the Philadelphia 76ers in July 2026 on a two-year veteran-minimum contract worth $3.88 million for the 2026-27 season, entering his 24th NBA season.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXpDsAbTjXFuo_jJX7uew5GBDe4lqhj2I7FcrxSOYsuh49TbfrsPDaTZRS_M2-_d9oVDzLR3T3RC4a_netDrSF-pBUkZBBQbLnB94bm3Ai8b5N73KrtF98vjrdAF13ADv-gYFOxkzEYThbog2i0sUM7baM-q6b5aH5RGf0gM8NmEmisYZonHQjCpOFXuWPZ2ki0HJsoil63h7o9RIH3JP5zYea\n          E4  major_media · 2026-06-30  James is the NBA's all-time leading scorer, a 4-time NBA champion, and a 4-time league MVP.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYgDIfgZNXh7rIz3Q4-Pz2kD7QiGFIMBZ6vVwkbX32dqVtt1DZ945iRy4Wj1auagkCy9r3c5azsGpntH12x1RIpGhI27RaU6LpvZP_YPupmgXg_caDb4XQGOJrGBczVVNTtuK977iuvwbslvyej16hRgwIzqFaZNdWy8EZEJs1-G-ud1eRUAM954SJ\n          E6  major_media · 2026-09-16  James reportedly signed a major endorsement deal with prediction-market platform Polymarket in September 2026 worth $15 million annually to focus on football-related promotional content.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjBFdL1IntWioTas_LuPmUr9ulCjM4Rk-IqWwkDqeiynFKmAsX-hBFVmmvknLQ8ucgZ5KzAwTSFQooBZpqJyXhcDUiV4kA0hbGDJUEP_bcMWcY_tSM4z4NmFqIasVeOa2EZAxZ0qb47kWD2yIGkmTW4xDQcfHo3J32QdesaTWxJ5aC_38Eg8G5f8vhWbERsd4CrZG3\n          E7  major_media · 2016-05-17  James signed a lifetime endorsement contract with Nike in late 2015, which is widely reported by his business partner Maverick Carter and media to be worth over $1 billion.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0jU8P_Vm5bZGwewAhi8YELBYrYILXsD0lQ7_ncWIMu6JbrDIpymIuU76oActhsODdcE87Vg3wYSSUyq6U_j8VtI5TKeghgP8F6ExaNLmu7R-eHeqal7DCC73wTkG-io_pIkwipXaaQ968DodU_t9Ul7UFFjbkyqWfN6RWtfAhzim2Aiy9B4sQHWvO-uysXIhHmBk0R3sFjvbMufhZgWifxhzI\n        COMPONENTS  search_interest=98 [EVALUATED]  social_conversation=100 [EVALUATED]  media_source_quality=100 [EVALUATED]  crossover_recognition=100 [EVALUATED]  media_volume_percentile=100 [EVALUATED]\n\n    findings[mia.narrative_power]             STRENGTH  score 99.3    HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Your narrative is one of the most powerful and authentic in sporting history, built on the 'Kid\n          from Akron' journey, unparalleled longevity, and family legacy. This distinctiveness translates\n          seamlessly into premium commercial campaigns, commanding immense public resonance. It is a\n          highly durable story that will continue to inspire long after your playing days are over.\n          confidence HIGH — Based on two decades of extensively documented public actions, philanthropy, and media-amplified history.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  major_media · 2026-07-24  LeBron James joined the Philadelphia 76ers in July 2026 on a two-year veteran-minimum contract worth $3.88 million for the 2026-27 season, entering his 24th NBA season.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXpDsAbTjXFuo_jJX7uew5GBDe4lqhj2I7FcrxSOYsuh49TbfrsPDaTZRS_M2-_d9oVDzLR3T3RC4a_netDrSF-pBUkZBBQbLnB94bm3Ai8b5N73KrtF98vjrdAF13ADv-gYFOxkzEYThbog2i0sUM7baM-q6b5aH5RGf0gM8NmEmisYZonHQjCpOFXuWPZ2ki0HJsoil63h7o9RIH3JP5zYea\n          E4  major_media · 2026-06-30  James is the NBA's all-time leading scorer, a 4-time NBA champion, and a 4-time league MVP.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYgDIfgZNXh7rIz3Q4-Pz2kD7QiGFIMBZ6vVwkbX32dqVtt1DZ945iRy4Wj1auagkCy9r3c5azsGpntH12x1RIpGhI27RaU6LpvZP_YPupmgXg_caDb4XQGOJrGBczVVNTtuK977iuvwbslvyej16hRgwIzqFaZNdWy8EZEJs1-G-ud1eRUAM954SJ\n          E6  major_media · 2026-09-16  James reportedly signed a major endorsement deal with prediction-market platform Polymarket in September 2026 worth $15 million annually to focus on football-related promotional content.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjBFdL1IntWioTas_LuPmUr9ulCjM4Rk-IqWwkDqeiynFKmAsX-hBFVmmvknLQ8ucgZ5KzAwTSFQooBZpqJyXhcDUiV4kA0hbGDJUEP_bcMWcY_tSM4z4NmFqIasVeOa2EZAxZ0qb47kWD2yIGkmTW4xDQcfHo3J32QdesaTWxJ5aC_38Eg8G5f8vhWbERsd4CrZG3\n          E7  major_media · 2016-05-17  James signed a lifetime endorsement contract with Nike in late 2015, which is widely reported by his business partner Maverick Carter and media to be worth over $1 billion.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0jU8P_Vm5bZGwewAhi8YELBYrYILXsD0lQ7_ncWIMu6JbrDIpymIuU76oActhsODdcE87Vg3wYSSUyq6U_j8VtI5TKeghgP8F6ExaNLmu7R-eHeqal7DCC73wTkG-io_pIkwipXaaQ968DodU_t9Ul7UFFjbkyqWfN6RWtfAhzim2Aiy9B4sQHWvO-uysXIhHmBk0R3sFjvbMufhZgWifxhzI\n          E8  secondary · 2026-01-08  James experienced physical setbacks including foot joint arthritis and sciatica pain that caused him to miss 17 games during the 2025-26 NBA season.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvaOQpiWTpxQSrrJ6WlqsK_ziQxdGwPPP9OKYqjC-AIZ5AbOjkDJfxz0juY8leo_t3lF1X5LtCRRbzAWTAlKlPj3neZe7UvXUo7OvP6My_BnIjcRLReUelhzey2QtvE3pXF1MfiqjASFWrtIvQF2jqZy6NFemeZk51s7lTvyuZIUD2av-eUKehOYODzWfVeHxB_g==\n          E9  secondary · 2025-06-01  James has robust brand relationships spanning Amazon (signed in June 2025), AT&T, Audemars Piguet, and GMC.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5OgIRnzyUv94_MvMZJJ1u9_zi5bDTZhwXC0nFXWLC-uw3Hg2L0osyV8t2BZU3ZISvZvyys8fMm5Y0p4lJ4z9tAipZXnwuDRjC_McjRUOd7VrXtkb1psh5mVwqv0TewVmUtJxWDpQ_nKHgGKJt6LDCx2qj2KJa2btzhWD6\n        COMPONENTS  durability=98 [EVALUATED]  story_depth=100 [EVALUATED]  distinctiveness=100 [EVALUATED]  media_resonance=100 [EVALUATED]  evidence_authenticity=100 [EVALUATED]  commercial_applicability=95 [EVALUATED]\n\n    findings[mia.brand_fit]                   STRENGTH  score 93.5    HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          You offer an exceptionally versatile brand persona that easily spans luxury, mass market, tech,\n          and lifestyle categories. Despite late-career transitions and occasionally polarizing social\n          activism, your family-first identity and philanthropic commitment make you an incredibly safe,\n          premium fit. This strong coherence allows you to represent diverse global brands seamlessly.\n          confidence HIGH — Validated by your existing high-profile, multi-industry corporate partnerships and public brand history.\n        SOURCE EVIDENCE M.I.A. CITED\n          E4  major_media · 2026-06-30  James is the NBA's all-time leading scorer, a 4-time NBA champion, and a 4-time league MVP.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYgDIfgZNXh7rIz3Q4-Pz2kD7QiGFIMBZ6vVwkbX32dqVtt1DZ945iRy4Wj1auagkCy9r3c5azsGpntH12x1RIpGhI27RaU6LpvZP_YPupmgXg_caDb4XQGOJrGBczVVNTtuK977iuvwbslvyej16hRgwIzqFaZNdWy8EZEJs1-G-ud1eRUAM954SJ\n          E5  secondary · 2026-08-01  LeBron James is the most followed basketball player in the world with over 154 million Instagram followers, far ahead of Stephen Curry (56.9M).\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-yoK5BDZf-f78omCnbtP_mtXzLIfn3VCF99GWvTwCp81HOeen5O7yN6MauFqnsydHhIZ-PtkVVaxNwyK2beZUS9oPQ8eD-OG-1_WdyLE1MfiZELbgzUD_4UJ2UN3lmFs=\n          E6  major_media · 2026-09-16  James reportedly signed a major endorsement deal with prediction-market platform Polymarket in September 2026 worth $15 million annually to focus on football-related promotional content.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjBFdL1IntWioTas_LuPmUr9ulCjM4Rk-IqWwkDqeiynFKmAsX-hBFVmmvknLQ8ucgZ5KzAwTSFQooBZpqJyXhcDUiV4kA0hbGDJUEP_bcMWcY_tSM4z4NmFqIasVeOa2EZAxZ0qb47kWD2yIGkmTW4xDQcfHo3J32QdesaTWxJ5aC_38Eg8G5f8vhWbERsd4CrZG3\n          E7  major_media · 2016-05-17  James signed a lifetime endorsement contract with Nike in late 2015, which is widely reported by his business partner Maverick Carter and media to be worth over $1 billion.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0jU8P_Vm5bZGwewAhi8YELBYrYILXsD0lQ7_ncWIMu6JbrDIpymIuU76oActhsODdcE87Vg3wYSSUyq6U_j8VtI5TKeghgP8F6ExaNLmu7R-eHeqal7DCC73wTkG-io_pIkwipXaaQ968DodU_t9Ul7UFFjbkyqWfN6RWtfAhzim2Aiy9B4sQHWvO-uysXIhHmBk0R3sFjvbMufhZgWifxhzI\n          E9  secondary · 2025-06-01  James has robust brand relationships spanning Amazon (signed in June 2025), AT&T, Audemars Piguet, and GMC.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5OgIRnzyUv94_MvMZJJ1u9_zi5bDTZhwXC0nFXWLC-uw3Hg2L0osyV8t2BZU3ZISvZvyys8fMm5Y0p4lJ4z9tAipZXnwuDRjC_McjRUOd7VrXtkb1psh5mVwqv0TewVmUtJxWDpQ_nKHgGKJt6LDCx2qj2KJa2btzhWD6\n        COMPONENTS  brand_safety=90 [EVALUATED]  category_breadth=95 [EVALUATED]  content_versatility=90 [EVALUATED]  geographic_relevance=95 [EVALUATED]  audience_attractiveness=95 [EVALUATED]  identity_values_coherence=95 [EVALUATED]\n\n    findings[mia.commercial_proof]            STRENGTH  score 98      HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Your commercial performance is historic, highlighted by a lifetime Nike contract valued at over\n          $1 billion and a diverse, active portfolio. Even at age 41, your premium pricing power is\n          intact, as seen in your recent $15 million annual Polymarket endorsement. Brands consistently\n          reinvest in you due to your proven ability to drive cultural and financial results.\n          confidence HIGH — Backed by documented financial reports of earnings and high-profile repeat corporate partnerships.\n        SOURCE EVIDENCE M.I.A. CITED\n          E6  major_media · 2026-09-16  James reportedly signed a major endorsement deal with prediction-market platform Polymarket in September 2026 worth $15 million annually to focus on football-related promotional content.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjBFdL1IntWioTas_LuPmUr9ulCjM4Rk-IqWwkDqeiynFKmAsX-hBFVmmvknLQ8ucgZ5KzAwTSFQooBZpqJyXhcDUiV4kA0hbGDJUEP_bcMWcY_tSM4z4NmFqIasVeOa2EZAxZ0qb47kWD2yIGkmTW4xDQcfHo3J32QdesaTWxJ5aC_38Eg8G5f8vhWbERsd4CrZG3\n          E7  major_media · 2016-05-17  James signed a lifetime endorsement contract with Nike in late 2015, which is widely reported by his business partner Maverick Carter and media to be worth over $1 billion.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0jU8P_Vm5bZGwewAhi8YELBYrYILXsD0lQ7_ncWIMu6JbrDIpymIuU76oActhsODdcE87Vg3wYSSUyq6U_j8VtI5TKeghgP8F6ExaNLmu7R-eHeqal7DCC73wTkG-io_pIkwipXaaQ968DodU_t9Ul7UFFjbkyqWfN6RWtfAhzim2Aiy9B4sQHWvO-uysXIhHmBk0R3sFjvbMufhZgWifxhzI\n          E9  secondary · 2025-06-01  James has robust brand relationships spanning Amazon (signed in June 2025), AT&T, Audemars Piguet, and GMC.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5OgIRnzyUv94_MvMZJJ1u9_zi5bDTZhwXC0nFXWLC-uw3Hg2L0osyV8t2BZU3ZISvZvyys8fMm5Y0p4lJ4z9tAipZXnwuDRjC_McjRUOd7VrXtkb1psh5mVwqv0TewVmUtJxWDpQ_nKHgGKJt6LDCx2qj2KJa2btzhWD6\n        COMPONENTS  brand_quality=100 [EVALUATED]  pricing_power=100 [EVALUATED]  deal_frequency=95 [EVALUATED]  renewals_repeat=100 [EVALUATED]  campaign_performance=90 [EVALUATED]  verified_commercial_value=100 [EVALUATED]\n\n    findings[mia.momentum]                    NEUTRAL   score 71.5    HIGH    0/5 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Your athletic trajectory is in a natural, late-career decline, but your commercial and media\n          momentum is remarkably stable and occasionally accelerating. Your move to Philadelphia and newly\n          signed mega-deals demonstrate your continued relevance. You are successfully converting active\n          athletic dominance into a permanent, legendary cultural legacy.\n          confidence HIGH — Evidenced by real-time contract changes, public roster shifts, and high-value commercial announcements in 2026.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  major_media · 2026-07-24  LeBron James joined the Philadelphia 76ers in July 2026 on a two-year veteran-minimum contract worth $3.88 million for the 2026-27 season, entering his 24th NBA season.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXpDsAbTjXFuo_jJX7uew5GBDe4lqhj2I7FcrxSOYsuh49TbfrsPDaTZRS_M2-_d9oVDzLR3T3RC4a_netDrSF-pBUkZBBQbLnB94bm3Ai8b5N73KrtF98vjrdAF13ADv-gYFOxkzEYThbog2i0sUM7baM-q6b5aH5RGf0gM8NmEmisYZonHQjCpOFXuWPZ2ki0HJsoil63h7o9RIH3JP5zYea\n          E2  major_media · 2026-07-24  During the 2025-26 NBA season, James averaged 20.9 points, 7.2 assists, and 6.1 rebounds across 60 games for the Los Angeles Lakers.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHXpDsAbTjXFuo_jJX7uew5GBDe4lqhj2I7FcrxSOYsuh49TbfrsPDaTZRS_M2-_d9oVDzLR3T3RC4a_netDrSF-pBUkZBBQbLnB94bm3Ai8b5N73KrtF98vjrdAF13ADv-gYFOxkzEYThbog2i0sUM7baM-q6b5aH5RGf0gM8NmEmisYZonHQjCpOFXuWPZ2ki0HJsoil63h7o9RIH3JP5zYea\n          E5  secondary · 2026-08-01  LeBron James is the most followed basketball player in the world with over 154 million Instagram followers, far ahead of Stephen Curry (56.9M).\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-yoK5BDZf-f78omCnbtP_mtXzLIfn3VCF99GWvTwCp81HOeen5O7yN6MauFqnsydHhIZ-PtkVVaxNwyK2beZUS9oPQ8eD-OG-1_WdyLE1MfiZELbgzUD_4UJ2UN3lmFs=\n          E6  major_media · 2026-09-16  James reportedly signed a major endorsement deal with prediction-market platform Polymarket in September 2026 worth $15 million annually to focus on football-related promotional content.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEjBFdL1IntWioTas_LuPmUr9ulCjM4Rk-IqWwkDqeiynFKmAsX-hBFVmmvknLQ8ucgZ5KzAwTSFQooBZpqJyXhcDUiV4kA0hbGDJUEP_bcMWcY_tSM4z4NmFqIasVeOa2EZAxZ0qb47kWD2yIGkmTW4xDQcfHo3J32QdesaTWxJ5aC_38Eg8G5f8vhWbERsd4CrZG3\n          E8  secondary · 2026-01-08  James experienced physical setbacks including foot joint arthritis and sciatica pain that caused him to miss 17 games during the 2025-26 NBA season.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvaOQpiWTpxQSrrJ6WlqsK_ziQxdGwPPP9OKYqjC-AIZ5AbOjkDJfxz0juY8leo_t3lF1X5LtCRRbzAWTAlKlPj3neZe7UvXUo7OvP6My_BnIjcRLReUelhzey2QtvE3pXF1MfiqjASFWrtIvQF2jqZy6NFemeZk51s7lTvyuZIUD2av-eUKehOYODzWfVeHxB_g==\n          E9  secondary · 2025-06-01  James has robust brand relationships spanning Amazon (signed in June 2025), AT&T, Audemars Piguet, and GMC.\n              https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5OgIRnzyUv94_MvMZJJ1u9_zi5bDTZhwXC0nFXWLC-uw3Hg2L0osyV8t2BZU3ZISvZvyys8fMm5Y0p4lJ4z9tAipZXnwuDRjC_McjRUOd7VrXtkb1psh5mVwqv0TewVmUtJxWDpQ_nKHgGKJt6LDCx2qj2KJa2btzhWD6\n        COMPONENTS  audience_growth=60 [EVALUATED]  media_trajectory=85 [EVALUATED]  athletic_trajectory=65 [EVALUATED]  commercial_acceleration=80 [EVALUATED]  search_social_trajectory=80 [EVALUATED]\n\nAUDIENCE TRAJECTORY — follower growth only. It says nothing about athletic or commercial direction.\n    audienceTrajectory                        not known (no growth measurement on any platform)\n\nCOMMERCIAL POSITION — what the market has actually paid. Counted, never estimated.\n    commercialPosition.closedDeals            0  [measured · HIGH confidence]\n    commercialPosition.activeRelationships    []  [measured · HIGH confidence]\n    commercialPosition.demonstratedEconomics  not known (no closed deal carries an amount)\n    commercialPosition.pricingEvidence        none\n\nCONSTRAINTS — only what has been explicitly recorded as a bound on what the athlete can do.\n  An empty list means Nomila has recorded none. It does NOT mean none exist.\n    (none recorded)\n\nWHAT THE ATHLETE HAS SAID — their own words. A refusal bears on an opportunity; an ambition can generate one.\n  Never infer a preference or an ambition that is not listed here.\n    (the athlete has stated nothing)\n\nWHAT NOMILA CANNOT SEE — evidence we looked for and could not find. A research task, not a caveat.\n    materialGaps[0]                           Private Instagram platform logs showing precise video retention, saves, shares, and story performance.\n    materialGaps[1]                           First-party demographic breakdown of his active audience across modern platforms.\n\nSOURCES CONSULTED\n    marketability            present · as of 2026-09-13T22:52:12.230Z\n    athlete_intelligence     ABSENT\n    athlete_state            present · as of 2026-09-22T04:31:47.294Z",
+  "startedAt": "2026-09-22T04:31:47.562Z",
+  "latencyMs": 41704,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+   "promptTokens": 11304,
+   "outputTokens": 1748,
+   "thoughtTokens": 6541
+  },
+  "costUsd": 0.0241137,
+  "rawText": "{\n  \"opportunities\": [\n    {\n      \"key\": \"unlock-private-audience-data\",\n      \"kind\": \"UNLOCK\",\n      \"domain\": \"evidence\",\n      \"statement\": \"Secure direct integration of LeBron's private Instagram platform logs and demographic breakdowns to resolve high-priority intelligence gaps.\",\n      \"rationale\": \"LeBron commands a massive global audience, but Nomila's intelligence remains at LOW overall confidence because private sharing, retention, and demographic metrics are restricted, leaving critical optimization insights unused.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"findings[mia.engagement_quality]\",\n          \"how\": \"Verifies that relative interaction and private sharing metrics are restricted, resulting in low confidence.\"\n        },\n        {\n          \"state_path\": \"materialGaps[0]\",\n          \"how\": \"Identifies missing private Instagram platform logs as a material gap.\"\n        },\n        {\n          \"state_path\": \"materialGaps[1]\",\n          \"how\": \"Identifies the lack of a first-party demographic breakdown as a material gap.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"high\",\n        \"claim\": \"Will elevate overall platform confidence, enabling precise interaction profiling and stronger commercial validation for premium brands.\"\n      },\n      \"feasibility\": {\n        \"level\": \"high\",\n        \"claim\": \"Requires a one-time technical connection or log export from the athlete's digital management team.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"amplify-football-promotional-content\",\n      \"kind\": \"AMPLIFY\",\n      \"domain\": \"content\",\n      \"statement\": \"Scale football-focused promotional content across his major digital channels to maximize the impact of the newly signed Polymarket endorsement.\",\n      \"rationale\": \"LeBron's recent multi-million dollar Polymarket endorsement specifically focuses on football promotional content. Leveraging his massive, globally established digital audience to scale this specific vertical expands a highly capitalized, active commercial project.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"findings[mia.cultural_relevance]\",\n          \"how\": \"Cites the major, recently signed endorsement deal with Polymarket in September 2026 focused on football promotional content.\"\n        },\n        {\n          \"state_path\": \"findings[mia.audience_scale]\",\n          \"how\": \"Confirms LeBron is the most followed basketball player with over 154 million Instagram followers, providing an elite distribution network.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"high\",\n        \"claim\": \"Will drive high campaign performance and optimize returns on his newest active commercial partnership.\"\n      },\n      \"feasibility\": {\n        \"level\": \"medium\",\n        \"claim\": \"Requires balancing promotional content schedules and production with his demanding active NBA season commitments.\"\n      },\n      \"urgency\": {\n        \"level\": \"high\",\n        \"claim\": \"The deal was signed in September 2026, coinciding with the active football season where promotional content has peak seasonal relevance.\"\n      },\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"maintain-athletic-longevity\",\n      \"kind\": \"MAINTAIN\",\n      \"domain\": \"athletic\",\n      \"statement\": \"Implement strict load management and physical maintenance protocols to protect on-court availability during his 24th NBA season.\",\n      \"rationale\": \"LeBron remains an elite athletic authority, but as an active veteran on a new two-year contract, his availability is actively threatened by documented physical setbacks. Maintaining his health is essential to preserving his core athletic authority.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"findings[mia.athletic_authority]\",\n          \"how\": \"Records that arthritis and sciatica caused LeBron to miss 17 games in the 2025-26 season, while noting his new contract for the 2026-27 season.\"\n        },\n        {\n          \"state_path\": \"identity.careerStatus\",\n          \"how\": \"Confirms he is still actively playing.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"high\",\n        \"claim\": \"Directly preserves his on-court presence, which is the foundational anchor for his global authority and active brand value.\"\n      },\n      \"feasibility\": {\n        \"level\": \"high\",\n        \"claim\": \"Requires continuing and refining his existing elite sports science, recovery, and medical routines.\"\n      },\n      \"urgency\": {\n        \"level\": \"high\",\n        \"claim\": \"The 2026-27 season is starting immediately following his July 2026 contract signing.\"\n      },\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"fix-commercial-portfolio-records\",\n      \"kind\": \"FIX\",\n      \"domain\": \"commercial\",\n      \"statement\": \"Reconcile Nomila's commercial position database to accurately reflect LeBron's extensive list of active high-profile relationships.\",\n      \"rationale\": \"Nomila's internal data currently lists zero closed deals and zero active relationships, which directly contradicts verified findings of active, high-value partnerships (Nike, Amazon, GMC, etc.). This mismatch costs Nomila the ability to properly run automated conflict checks or schedule renewals.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"commercialPosition.activeRelationships\",\n          \"how\": \"Lists active relationships as empty, representing a severe data error relative to the findings.\"\n        },\n        {\n          \"state_path\": \"commercialPosition.closedDeals\",\n          \"how\": \"Lists closed deals as zero.\"\n        },\n        {\n          \"state_path\": \"findings[mia.commercial_proof]\",\n          \"how\": \"Verifies his active partnerships with Nike and Polymarket.\"\n        },\n        {\n          \"state_path\": \"findings[mia.narrative_power]\",\n          \"how\": \"Verifies active relationships spanning Amazon, AT&T, Audemars Piguet, and GMC.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"medium\",\n        \"claim\": \"Eliminates database inaccuracies, allowing Nomila to accurately assess category exclusivity, identify contract gaps, and avoid potential compliance conflicts.\"\n      },\n      \"feasibility\": {\n        \"level\": \"high\",\n        \"claim\": \"Requires a straightforward administrative audit to log contract metadata already verified in findings.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    }\n  ],\n  \"notes\": [\n    {\n      \"domain\": \"positioning\",\n      \"reason\": \"LeBron's positioning as an undisputed sports icon and crossover global figure is exceptionally mature and stable. No active gaps or repositioning goals are documented.\"\n    },\n    {\n      \"domain\": \"relationships\",\n      \"reason\": \"The state confirms elite-tier corporate and management relationships but lists no missing strategic connections or relationship-building needs.\"\n    },\n    {\n      \"domain\": \"owned_venture\",\n      \"reason\": \"While corporate partnerships are detailed, the state contains no specific information on athletic-owned business entities or ventures to evaluate.\"\n    },\n    {\n      \"domain\": \"impact\",\n      \"reason\": \"The state notes general philanthropic commitment and values, but contains no concrete data on foundations or specific community initiatives to expand.\"\n    },\n    {\n      \"domain\": \"career\",\n      \"reason\": \"LeBron is committed to a new two-year playing contract, and the state records no specific post-playing career preferences, media ambitions, or coaching interests.\"\n    }\n  ]\n}",
+  "parsed": {
+   "opportunities": [
+    {
+     "key": "unlock-private-audience-data",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": "Secure direct integration of LeBron's private Instagram platform logs and demographic breakdowns to resolve high-priority intelligence gaps.",
+     "rationale": "LeBron commands a massive global audience, but Nomila's intelligence remains at LOW overall confidence because private sharing, retention, and demographic metrics are restricted, leaving critical optimization insights unused.",
+     "rests_on": [
+      {
+       "state_path": "findings[mia.engagement_quality]",
+       "how": "Verifies that relative interaction and private sharing metrics are restricted, resulting in low confidence."
+      },
+      {
+       "state_path": "materialGaps[0]",
+       "how": "Identifies missing private Instagram platform logs as a material gap."
+      },
+      {
+       "state_path": "materialGaps[1]",
+       "how": "Identifies the lack of a first-party demographic breakdown as a material gap."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Will elevate overall platform confidence, enabling precise interaction profiling and stronger commercial validation for premium brands."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Requires a one-time technical connection or log export from the athlete's digital management team."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "amplify-football-promotional-content",
+     "kind": "AMPLIFY",
+     "domain": "content",
+     "statement": "Scale football-focused promotional content across his major digital channels to maximize the impact of the newly signed Polymarket endorsement.",
+     "rationale": "LeBron's recent multi-million dollar Polymarket endorsement specifically focuses on football promotional content. Leveraging his massive, globally established digital audience to scale this specific vertical expands a highly capitalized, active commercial project.",
+     "rests_on": [
+      {
+       "state_path": "findings[mia.cultural_relevance]",
+       "how": "Cites the major, recently signed endorsement deal with Polymarket in September 2026 focused on football promotional content."
+      },
+      {
+       "state_path": "findings[mia.audience_scale]",
+       "how": "Confirms LeBron is the most followed basketball player with over 154 million Instagram followers, providing an elite distribution network."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Will drive high campaign performance and optimize returns on his newest active commercial partnership."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires balancing promotional content schedules and production with his demanding active NBA season commitments."
+     },
+     "urgency": {
+      "level": "high",
+      "claim": "The deal was signed in September 2026, coinciding with the active football season where promotional content has peak seasonal relevance."
+     },
+     "confidence": "HIGH"
+    },
+    {
+     "key": "maintain-athletic-longevity",
+     "kind": "MAINTAIN",
+     "domain": "athletic",
+     "statement": "Implement strict load management and physical maintenance protocols to protect on-court availability during his 24th NBA season.",
+     "rationale": "LeBron remains an elite athletic authority, but as an active veteran on a new two-year contract, his availability is actively threatened by documented physical setbacks. Maintaining his health is essential to preserving his core athletic authority.",
+     "rests_on": [
+      {
+       "state_path": "findings[mia.athletic_authority]",
+       "how": "Records that arthritis and sciatica caused LeBron to miss 17 games in the 2025-26 season, while noting his new contract for the 2026-27 season."
+      },
+      {
+       "state_path": "identity.careerStatus",
+       "how": "Confirms he is still actively playing."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Directly preserves his on-court presence, which is the foundational anchor for his global authority and active brand value."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Requires continuing and refining his existing elite sports science, recovery, and medical routines."
+     },
+     "urgency": {
+      "level": "high",
+      "claim": "The 2026-27 season is starting immediately following his July 2026 contract signing."
+     },
+     "confidence": "HIGH"
+    },
+    {
+     "key": "fix-commercial-portfolio-records",
+     "kind": "FIX",
+     "domain": "commercial",
+     "statement": "Reconcile Nomila's commercial position database to accurately reflect LeBron's extensive list of active high-profile relationships.",
+     "rationale": "Nomila's internal data currently lists zero closed deals and zero active relationships, which directly contradicts verified findings of active, high-value partnerships (Nike, Amazon, GMC, etc.). This mismatch costs Nomila the ability to properly run automated conflict checks or schedule renewals.",
+     "rests_on": [
+      {
+       "state_path": "commercialPosition.activeRelationships",
+       "how": "Lists active relationships as empty, representing a severe data error relative to the findings."
+      },
+      {
+       "state_path": "commercialPosition.closedDeals",
+       "how": "Lists closed deals as zero."
+      },
+      {
+       "state_path": "findings[mia.commercial_proof]",
+       "how": "Verifies his active partnerships with Nike and Polymarket."
+      },
+      {
+       "state_path": "findings[mia.narrative_power]",
+       "how": "Verifies active relationships spanning Amazon, AT&T, Audemars Piguet, and GMC."
+      }
+     ],
+     "impact": {
+      "level": "medium",
+      "claim": "Eliminates database inaccuracies, allowing Nomila to accurately assess category exclusivity, identify contract gaps, and avoid potential compliance conflicts."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Requires a straightforward administrative audit to log contract metadata already verified in findings."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [
+    {
+     "domain": "positioning",
+     "reason": "LeBron's positioning as an undisputed sports icon and crossover global figure is exceptionally mature and stable. No active gaps or repositioning goals are documented."
+    },
+    {
+     "domain": "relationships",
+     "reason": "The state confirms elite-tier corporate and management relationships but lists no missing strategic connections or relationship-building needs."
+    },
+    {
+     "domain": "owned_venture",
+     "reason": "While corporate partnerships are detailed, the state contains no specific information on athletic-owned business entities or ventures to evaluate."
+    },
+    {
+     "domain": "impact",
+     "reason": "The state notes general philanthropic commitment and values, but contains no concrete data on foundations or specific community initiatives to expand."
+    },
+    {
+     "domain": "career",
+     "reason": "LeBron is committed to a new two-year playing contract, and the state records no specific post-playing career preferences, media ambitions, or coaching interests."
+    }
+   ]
+  },
+  "structuralProblems": [],
+  "groundingProblems": [],
+  "citations": [
+   {
+    "index": 0,
+    "key": "unlock-private-audience-data",
+    "statePath": "findings[mia.engagement_quality]",
+    "resolved": true
+   },
+   {
+    "index": 0,
+    "key": "unlock-private-audience-data",
+    "statePath": "materialGaps[0]",
+    "resolved": true
+   },
+   {
+    "index": 0,
+    "key": "unlock-private-audience-data",
+    "statePath": "materialGaps[1]",
+    "resolved": true
+   },
+   {
+    "index": 1,
+    "key": "amplify-football-promotional-content",
+    "statePath": "findings[mia.cultural_relevance]",
+    "resolved": true
+   },
+   {
+    "index": 1,
+    "key": "amplify-football-promotional-content",
+    "statePath": "findings[mia.audience_scale]",
+    "resolved": true
+   },
+   {
+    "index": 2,
+    "key": "maintain-athletic-longevity",
+    "statePath": "findings[mia.athletic_authority]",
+    "resolved": true
+   },
+   {
+    "index": 2,
+    "key": "maintain-athletic-longevity",
+    "statePath": "identity.careerStatus",
+    "resolved": true
+   },
+   {
+    "index": 3,
+    "key": "fix-commercial-portfolio-records",
+    "statePath": "commercialPosition.activeRelationships",
+    "resolved": true
+   },
+   {
+    "index": 3,
+    "key": "fix-commercial-portfolio-records",
+    "statePath": "commercialPosition.closedDeals",
+    "resolved": true
+   },
+   {
+    "index": 3,
+    "key": "fix-commercial-portfolio-records",
+    "statePath": "findings[mia.commercial_proof]",
+    "resolved": true
+   },
+   {
+    "index": 3,
+    "key": "fix-commercial-portfolio-records",
+    "statePath": "findings[mia.narrative_power]",
+    "resolved": true
+   }
+  ],
+  "map": {
+   "athleteId": "ac59bacd-1098-4fae-b49d-9a0ea1a96c88",
+   "asOf": "2026-09-22T04:32:29.265Z",
+   "version": "opportunity-map/1.0.0",
+   "specVersion": "opportunity-eval-spec/1.0.0",
+   "stateAsOf": "2026-09-22T04:31:47.294Z",
+   "opportunities": [
+    {
+     "key": "unlock-private-audience-data",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": {
+      "value": "Secure direct integration of LeBron's private Instagram platform logs and demographic breakdowns to resolve high-priority intelligence gaps.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-22T04:31:47.294Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "findings[mia.engagement_quality]",
+       "materialGaps[0]",
+       "materialGaps[1]"
+      ],
+      "rationale": "LeBron commands a massive global audience, but Nomila's intelligence remains at LOW overall confidence because private sharing, retention, and demographic metrics are restricted, leaving critical optimization insights unused.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "findings[mia.engagement_quality]",
+       "how": "Verifies that relative interaction and private sharing metrics are restricted, resulting in low confidence."
+      },
+      {
+       "statePath": "materialGaps[0]",
+       "how": "Identifies missing private Instagram platform logs as a material gap."
+      },
+      {
+       "statePath": "materialGaps[1]",
+       "how": "Identifies the lack of a first-party demographic breakdown as a material gap."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Will elevate overall platform confidence, enabling precise interaction profiling and stronger commercial validation for premium brands."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Requires a one-time technical connection or log export from the athlete's digital management team."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "amplify-football-promotional-content",
+     "kind": "AMPLIFY",
+     "domain": "content",
+     "statement": {
+      "value": "Scale football-focused promotional content across his major digital channels to maximize the impact of the newly signed Polymarket endorsement.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-22T04:31:47.294Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "findings[mia.cultural_relevance]",
+       "findings[mia.audience_scale]"
+      ],
+      "rationale": "LeBron's recent multi-million dollar Polymarket endorsement specifically focuses on football promotional content. Leveraging his massive, globally established digital audience to scale this specific vertical expands a highly capitalized, active commercial project.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "findings[mia.cultural_relevance]",
+       "how": "Cites the major, recently signed endorsement deal with Polymarket in September 2026 focused on football promotional content."
+      },
+      {
+       "statePath": "findings[mia.audience_scale]",
+       "how": "Confirms LeBron is the most followed basketball player with over 154 million Instagram followers, providing an elite distribution network."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Will drive high campaign performance and optimize returns on his newest active commercial partnership."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires balancing promotional content schedules and production with his demanding active NBA season commitments."
+     },
+     "urgency": {
+      "level": "high",
+      "claim": "The deal was signed in September 2026, coinciding with the active football season where promotional content has peak seasonal relevance."
+     },
+     "confidence": "HIGH"
+    },
+    {
+     "key": "maintain-athletic-longevity",
+     "kind": "MAINTAIN",
+     "domain": "athletic",
+     "statement": {
+      "value": "Implement strict load management and physical maintenance protocols to protect on-court availability during his 24th NBA season.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-22T04:31:47.294Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "findings[mia.athletic_authority]",
+       "identity.careerStatus"
+      ],
+      "rationale": "LeBron remains an elite athletic authority, but as an active veteran on a new two-year contract, his availability is actively threatened by documented physical setbacks. Maintaining his health is essential to preserving his core athletic authority.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "findings[mia.athletic_authority]",
+       "how": "Records that arthritis and sciatica caused LeBron to miss 17 games in the 2025-26 season, while noting his new contract for the 2026-27 season."
+      },
+      {
+       "statePath": "identity.careerStatus",
+       "how": "Confirms he is still actively playing."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Directly preserves his on-court presence, which is the foundational anchor for his global authority and active brand value."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Requires continuing and refining his existing elite sports science, recovery, and medical routines."
+     },
+     "urgency": {
+      "level": "high",
+      "claim": "The 2026-27 season is starting immediately following his July 2026 contract signing."
+     },
+     "confidence": "HIGH"
+    },
+    {
+     "key": "fix-commercial-portfolio-records",
+     "kind": "FIX",
+     "domain": "commercial",
+     "statement": {
+      "value": "Reconcile Nomila's commercial position database to accurately reflect LeBron's extensive list of active high-profile relationships.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-22T04:31:47.294Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "commercialPosition.activeRelationships",
+       "commercialPosition.closedDeals",
+       "findings[mia.commercial_proof]",
+       "findings[mia.narrative_power]"
+      ],
+      "rationale": "Nomila's internal data currently lists zero closed deals and zero active relationships, which directly contradicts verified findings of active, high-value partnerships (Nike, Amazon, GMC, etc.). This mismatch costs Nomila the ability to properly run automated conflict checks or schedule renewals.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "commercialPosition.activeRelationships",
+       "how": "Lists active relationships as empty, representing a severe data error relative to the findings."
+      },
+      {
+       "statePath": "commercialPosition.closedDeals",
+       "how": "Lists closed deals as zero."
+      },
+      {
+       "statePath": "findings[mia.commercial_proof]",
+       "how": "Verifies his active partnerships with Nike and Polymarket."
+      },
+      {
+       "statePath": "findings[mia.narrative_power]",
+       "how": "Verifies active relationships spanning Amazon, AT&T, Audemars Piguet, and GMC."
+      }
+     ],
+     "impact": {
+      "level": "medium",
+      "claim": "Eliminates database inaccuracies, allowing Nomila to accurately assess category exclusivity, identify contract gaps, and avoid potential compliance conflicts."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Requires a straightforward administrative audit to log contract metadata already verified in findings."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [],
+   "inputs": [
+    {
+     "kind": "athlete_state",
+     "version": "athlete-state/1.0.0",
+     "present": true
+    },
+    {
+     "kind": "strategy_intelligence",
+     "version": null,
+     "present": false
+    },
+    {
+     "kind": "targeted_research",
+     "version": null,
+     "present": false
+    }
+   ],
+   "overallConfidence": "LOW"
+  }
+ }
+}

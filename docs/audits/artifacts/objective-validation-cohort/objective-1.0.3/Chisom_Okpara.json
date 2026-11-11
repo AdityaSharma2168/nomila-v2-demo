@@ -1,0 +1,1661 @@
+{
+ "state": {
+  "athleteId": "8b3befbd-e0ca-4c3a-8f7e-42d764ba2213",
+  "asOf": "2026-09-25T20:33:24.938Z",
+  "version": "athlete-state/1.2.0",
+  "identity": {
+   "name": "Chisom Okpara",
+   "sport": "Basketball",
+   "competitionContext": "Stanford University · D1",
+   "careerStatus": "active"
+  },
+  "findings": [
+   {
+    "key": "mia.athletic_authority",
+    "direction": "neutral",
+    "rationale": {
+     "value": "Okpara boasts elite collegiate athletic standing, having successfully transitioned from a breakout role in the Ivy League to a starting position in the highly competitive ACC at Stanford. Prior to his season-ending injury in January 2026, he was a key offensive piece for a resurgent Cardinal team, proving his Power 4 starter capabilities. His authority remains high as he enters the market as one of the most intriguing and talented grad transfers in the country.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-05-29T07:19:33.833Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E3",
+      "E5"
+     ],
+     "rationale": "Statistical records, transfer rankings, and team starter dynamics are comprehensively documented and clear.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Statistical records, transfer rankings, and team starter dynamics are comprehensively documented and clear.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Chisom Okpara was an All-Ivy sophomore breakout at Harvard (16.5 PPG, 5.0 RPG, team's Most Improved Player) before transferring to Stanford in May 2024.",
+      "sourceUrl": "https://gocrimson.com/sports/mens-basketball/roster/chisom-okpara/26078",
+      "observedAt": "2024-05-24",
+      "sourceType": "official",
+      "sourceTitle": "Chisom Okpara Harvard Athletics Profile"
+     },
+     {
+      "id": "E2",
+      "claim": "Okpara averaged 13.9 points, 3.9 rebounds, and 2.2 assists in 17 starts as a breakout senior for Stanford in the 2025-26 season before injury.",
+      "sourceUrl": "https://gostanford.com/sports/mens-basketball/roster/chisom-okpara/44321",
+      "observedAt": "2026-01-21",
+      "sourceType": "official",
+      "sourceTitle": "Chisom Okpara Stanford Athletics Profile"
+     },
+     {
+      "id": "E3",
+      "claim": "Okpara suffered a season-ending lower-extremity injury on January 10, 2026, against Virginia, halting his senior season.",
+      "sourceUrl": "https://www.foxsports.com/college-basketball/chisom-okpara-player-news",
+      "observedAt": "2026-01-21",
+      "sourceType": "major_media",
+      "sourceTitle": "Stanford's Chisom Okpara to miss rest of season with injury"
+     },
+     {
+      "id": "E5",
+      "claim": "Okpara entered the NCAA transfer portal on August 5, 2026, as a healthy grad transfer to explore options for his fifth collegiate season.",
+      "sourceUrl": "https://247sports.com/Player/Chisom-Okpara-46114678/TransferHistory",
+      "observedAt": "2026-08-05",
+      "sourceType": "secondary",
+      "sourceTitle": "Chisom Okpara Transfer Portal Activity"
+     }
+    ],
+    "components": [
+     {
+      "key": "athletic_authority.role_importance",
+      "value": 74,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "value": 82,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "value": 75,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "value": 72,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "value": 62,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "value": 25,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 66.45,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-05-29T07:19:33.833Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#athletic_authority.role_importance",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#athletic_authority.competition_level",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#athletic_authority.achievement_recency",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#athletic_authority.performance_results",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#athletic_authority.rankings_recognition",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#athletic_authority.national_international_status"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#athletic_authority.role_importance",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#athletic_authority.competition_level",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#athletic_authority.achievement_recency",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#athletic_authority.performance_results",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#athletic_authority.rankings_recognition",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#athletic_authority.national_international_status",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.audience_scale",
+    "direction": "unknown",
+    "rationale": {
+     "value": "Due to the lack of authoritative platform metrics or public follower registries, Okpara's total reach remains unquantified. While he is tagged in major university and conference media, his individual social footprint must be classified as missing. Brand campaigns would require verified first-party audience audits to determine true reach.",
+     "owner": "marketability",
+     "confidence": "LOW",
+     "asOf": "2026-05-29T07:19:33.833Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [],
+     "rationale": "No verifiable follower counts or audience size metrics exist in the public domain.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "No verifiable follower counts or audience size metrics exist in the public domain.",
+    "components": [
+     {
+      "key": "audience_scale.audience_growth",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 50,
+     "owner": "marketability",
+     "confidence": "LOW",
+     "asOf": "2026-05-29T07:19:33.833Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#audience_scale.audience_growth",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#audience_scale.platform_breadth",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#audience_scale.cross_platform_effective_reach",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#audience_scale.sport_level_audience_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 4,
+     "total": 4
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#audience_scale.audience_growth",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#audience_scale.platform_breadth",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.engagement_quality",
+    "direction": "unknown",
+    "rationale": {
+     "value": "Individual interaction rates, video view completion times, and story click-through percentages are completely unavailable. While highlight reels on conference networks suggest healthy fan interest, personal social channel performance cannot be verified. This dimension is entirely missing under the evaluation criteria.",
+     "owner": "marketability",
+     "confidence": "LOW",
+     "asOf": "2026-05-29T07:19:33.833Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [],
+     "rationale": "Private post-level and interaction performance metrics are absent without connected platform data.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Private post-level and interaction performance metrics are absent without connected platform data.",
+    "components": [
+     {
+      "key": "engagement_quality.video_retention",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 50,
+     "owner": "marketability",
+     "confidence": "LOW",
+     "asOf": "2026-05-29T07:19:33.833Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#engagement_quality.video_retention",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#engagement_quality.reach_efficiency",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#engagement_quality.story_efficiency",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#engagement_quality.shares_saves_quality",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#engagement_quality.audience_authenticity",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#engagement_quality.engagement_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 6,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#engagement_quality.video_retention",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#engagement_quality.reach_efficiency",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#engagement_quality.story_efficiency",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#engagement_quality.shares_saves_quality",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#engagement_quality.audience_authenticity",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#engagement_quality.engagement_percentile",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.cultural_relevance",
+    "direction": "neutral",
+    "rationale": {
+     "value": "Okpara's cultural footprint is uniquely tied to the national dialogue surrounding student-athlete rights and NCAA antitrust litigation. He has garnered significant coverage in premium news outlets as the lead named plaintiff in a successful eligibility lawsuit. Although he is not a mainstream pop-culture celebrity, his relevance in sports business, law, and academic spheres is remarkably high.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-05-29T07:19:33.833Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E9"
+     ],
+     "rationale": "Qualitative media presence across premium outlets is deeply tracked and thoroughly documented.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Qualitative media presence across premium outlets is deeply tracked and thoroughly documented.",
+    "citedEvidence": [
+     {
+      "id": "E4",
+      "claim": "Okpara is the lead named plaintiff in Chisom Okpara et al. v. NCAA, filed July 17, 2026, challenging NCAA age-based eligibility limits in California state court.",
+      "sourceUrl": "https://collegesportslitigationtracker.com/case/okpara-v-ncaa",
+      "observedAt": "2026-09-18",
+      "sourceType": "secondary",
+      "sourceTitle": "College Sports Litigation Tracker - Age-Based Eligibility Rules"
+     },
+     {
+      "id": "E5",
+      "claim": "Okpara entered the NCAA transfer portal on August 5, 2026, as a healthy grad transfer to explore options for his fifth collegiate season.",
+      "sourceUrl": "https://247sports.com/Player/Chisom-Okpara-46114678/TransferHistory",
+      "observedAt": "2026-08-05",
+      "sourceType": "secondary",
+      "sourceTitle": "Chisom Okpara Transfer Portal Activity"
+     },
+     {
+      "id": "E6",
+      "claim": "Attorneys and schools estimated Okpara's roster-based NIL valuation between $200,000 and $500,000 during his recruitment and transfer cycles.",
+      "sourceUrl": "https://harvardmagazine.com/2024/10/ivy-league-transfer-portal-nil",
+      "observedAt": "2024-10-08",
+      "sourceType": "major_media",
+      "sourceTitle": "How the Transfer Portal is Reshaping Ivy League Basketball"
+     },
+     {
+      "id": "E7",
+      "claim": "Okpara is from a prominent, high-achieving family; his father is a Morgan Stanley executive, and his sister Chidimma is a tennis standout at Stanford.",
+      "sourceUrl": "https://www.stanforddaily.com/article/chisom-okpara-reunited-with-sister",
+      "observedAt": "2024-11-03",
+      "sourceType": "secondary",
+      "sourceTitle": "A family affair: Chisom Okpara reunites with sister on the Farm"
+     },
+     {
+      "id": "E9",
+      "claim": "Okpara's legal lawsuit is covered by national media outlets, highlighting the trend of Ivy League basketball talent transferring to high-major NIL programs.",
+      "sourceUrl": "https://www.thenation.com/article/society/ivy-league-basketball-transfer-portal/",
+      "observedAt": "2025-01-17",
+      "sourceType": "major_media",
+      "sourceTitle": "The Ivy League Transfer Exodus and the NCAA's Commercial Reality"
+     }
+    ],
+    "components": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "value": 45,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "value": 50,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "value": 72,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "value": 40,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "value": 60,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 54.9,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-05-29T07:19:33.833Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#cultural_relevance.search_interest",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#cultural_relevance.social_conversation",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#cultural_relevance.media_source_quality",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#cultural_relevance.crossover_recognition",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#cultural_relevance.media_volume_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#cultural_relevance.search_interest",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#cultural_relevance.social_conversation",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#cultural_relevance.media_source_quality",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#cultural_relevance.crossover_recognition",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#cultural_relevance.media_volume_percentile",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.narrative_power",
+    "direction": "strength",
+    "rationale": {
+     "value": "Okpara possesses one of the most distinctive narratives in collegiate sports. His journey combines academic excellence at the world's most prestigious institutions, overcoming adversity in rehab, and fighting the NCAA in court to secure immediate eligibility for over 50 of his peers. This story is highly durable and carries massive storytelling weight for values-based corporate sponsorships.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-05-29T07:19:33.833Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E4",
+      "E6",
+      "E7",
+      "E9"
+     ],
+     "rationale": "Court documents, video interviews, and editorial features provide overwhelming, authentic proof of his story.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Court documents, video interviews, and editorial features provide overwhelming, authentic proof of his story.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Chisom Okpara was an All-Ivy sophomore breakout at Harvard (16.5 PPG, 5.0 RPG, team's Most Improved Player) before transferring to Stanford in May 2024.",
+      "sourceUrl": "https://gocrimson.com/sports/mens-basketball/roster/chisom-okpara/26078",
+      "observedAt": "2024-05-24",
+      "sourceType": "official",
+      "sourceTitle": "Chisom Okpara Harvard Athletics Profile"
+     },
+     {
+      "id": "E2",
+      "claim": "Okpara averaged 13.9 points, 3.9 rebounds, and 2.2 assists in 17 starts as a breakout senior for Stanford in the 2025-26 season before injury.",
+      "sourceUrl": "https://gostanford.com/sports/mens-basketball/roster/chisom-okpara/44321",
+      "observedAt": "2026-01-21",
+      "sourceType": "official",
+      "sourceTitle": "Chisom Okpara Stanford Athletics Profile"
+     },
+     {
+      "id": "E4",
+      "claim": "Okpara is the lead named plaintiff in Chisom Okpara et al. v. NCAA, filed July 17, 2026, challenging NCAA age-based eligibility limits in California state court.",
+      "sourceUrl": "https://collegesportslitigationtracker.com/case/okpara-v-ncaa",
+      "observedAt": "2026-09-18",
+      "sourceType": "secondary",
+      "sourceTitle": "College Sports Litigation Tracker - Age-Based Eligibility Rules"
+     },
+     {
+      "id": "E6",
+      "claim": "Attorneys and schools estimated Okpara's roster-based NIL valuation between $200,000 and $500,000 during his recruitment and transfer cycles.",
+      "sourceUrl": "https://harvardmagazine.com/2024/10/ivy-league-transfer-portal-nil",
+      "observedAt": "2024-10-08",
+      "sourceType": "major_media",
+      "sourceTitle": "How the Transfer Portal is Reshaping Ivy League Basketball"
+     },
+     {
+      "id": "E7",
+      "claim": "Okpara is from a prominent, high-achieving family; his father is a Morgan Stanley executive, and his sister Chidimma is a tennis standout at Stanford.",
+      "sourceUrl": "https://www.stanforddaily.com/article/chisom-okpara-reunited-with-sister",
+      "observedAt": "2024-11-03",
+      "sourceType": "secondary",
+      "sourceTitle": "A family affair: Chisom Okpara reunites with sister on the Farm"
+     },
+     {
+      "id": "E9",
+      "claim": "Okpara's legal lawsuit is covered by national media outlets, highlighting the trend of Ivy League basketball talent transferring to high-major NIL programs.",
+      "sourceUrl": "https://www.thenation.com/article/society/ivy-league-basketball-transfer-portal/",
+      "observedAt": "2025-01-17",
+      "sourceType": "major_media",
+      "sourceTitle": "The Ivy League Transfer Exodus and the NCAA's Commercial Reality"
+     }
+    ],
+    "components": [
+     {
+      "key": "narrative_power.durability",
+      "value": 75,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "value": 78,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "value": 80,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "value": 70,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "value": 82,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "value": 65,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 76.5,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-05-29T07:19:33.833Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.durability",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.story_depth",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.distinctiveness",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.media_resonance",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.evidence_authenticity",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.commercial_applicability"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.durability",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.story_depth",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.distinctiveness",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.media_resonance",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.evidence_authenticity",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.commercial_applicability",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.brand_fit",
+    "direction": "strength",
+    "rationale": {
+     "value": "As an exceptionally clean, well-spoken, and high-achieving student-athlete, Okpara is a pristine ambassador for brand partnerships. He aligns naturally with high-end, premium brand categories like financial management, academic tech, healthcare, and high-performance lifestyle lines. His geographically valuable audience offers brands highly concentrated, highly educated target markets.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-05-29T07:19:33.833Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E4",
+      "E7"
+     ],
+     "rationale": "Clean scholastic records, background, and value coherence are incredibly consistent and verified.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Clean scholastic records, background, and value coherence are incredibly consistent and verified.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Chisom Okpara was an All-Ivy sophomore breakout at Harvard (16.5 PPG, 5.0 RPG, team's Most Improved Player) before transferring to Stanford in May 2024.",
+      "sourceUrl": "https://gocrimson.com/sports/mens-basketball/roster/chisom-okpara/26078",
+      "observedAt": "2024-05-24",
+      "sourceType": "official",
+      "sourceTitle": "Chisom Okpara Harvard Athletics Profile"
+     },
+     {
+      "id": "E2",
+      "claim": "Okpara averaged 13.9 points, 3.9 rebounds, and 2.2 assists in 17 starts as a breakout senior for Stanford in the 2025-26 season before injury.",
+      "sourceUrl": "https://gostanford.com/sports/mens-basketball/roster/chisom-okpara/44321",
+      "observedAt": "2026-01-21",
+      "sourceType": "official",
+      "sourceTitle": "Chisom Okpara Stanford Athletics Profile"
+     },
+     {
+      "id": "E4",
+      "claim": "Okpara is the lead named plaintiff in Chisom Okpara et al. v. NCAA, filed July 17, 2026, challenging NCAA age-based eligibility limits in California state court.",
+      "sourceUrl": "https://collegesportslitigationtracker.com/case/okpara-v-ncaa",
+      "observedAt": "2026-09-18",
+      "sourceType": "secondary",
+      "sourceTitle": "College Sports Litigation Tracker - Age-Based Eligibility Rules"
+     },
+     {
+      "id": "E7",
+      "claim": "Okpara is from a prominent, high-achieving family; his father is a Morgan Stanley executive, and his sister Chidimma is a tennis standout at Stanford.",
+      "sourceUrl": "https://www.stanforddaily.com/article/chisom-okpara-reunited-with-sister",
+      "observedAt": "2024-11-03",
+      "sourceType": "secondary",
+      "sourceTitle": "A family affair: Chisom Okpara reunites with sister on the Farm"
+     }
+    ],
+    "components": [
+     {
+      "key": "brand_fit.brand_safety",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "value": 70,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "value": 60,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "value": 65,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "value": 80,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 77.75,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-05-29T07:19:33.833Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.brand_safety",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.category_breadth",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.content_versatility",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.geographic_relevance",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.audience_attractiveness",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.identity_values_coherence"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.brand_safety",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.category_breadth",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.content_versatility",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.geographic_relevance",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.audience_attractiveness",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.identity_values_coherence",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.commercial_proof",
+    "direction": "neutral",
+    "rationale": {
+     "value": "Okpara has demonstrated clear market value within the university collective framework, commanding valuations estimated up to $500,000 during his college recruitments. However, he has no verified individual corporate endorsements on his record. His pricing power is currently restricted to systemic team roster pools rather than direct consumer brands.",
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-05-29T07:19:33.833Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E6",
+      "E8"
+     ],
+     "rationale": "Verified transfer valuation estimates are reported, but direct commercial brand histories are absent.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Verified transfer valuation estimates are reported, but direct commercial brand histories are absent.",
+    "citedEvidence": [
+     {
+      "id": "E6",
+      "claim": "Attorneys and schools estimated Okpara's roster-based NIL valuation between $200,000 and $500,000 during his recruitment and transfer cycles.",
+      "sourceUrl": "https://harvardmagazine.com/2024/10/ivy-league-transfer-portal-nil",
+      "observedAt": "2024-10-08",
+      "sourceType": "major_media",
+      "sourceTitle": "How the Transfer Portal is Reshaping Ivy League Basketball"
+     },
+     {
+      "id": "E8",
+      "claim": "The Sideline Co estimated Okpara's headline NIL valuation at $280K - $347K representing 5.4% of the Stanford basketball roster market.",
+      "sourceUrl": "https://thesideline.co/players/chisom-okpara",
+      "observedAt": "2026-09-17",
+      "sourceType": "secondary",
+      "sourceTitle": "Chisom Okpara NIL Market Summary"
+     }
+    ],
+    "components": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "value": 30,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "value": 55,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "value": 35,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "value": 55,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 46,
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-05-29T07:19:33.833Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.brand_quality",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.pricing_power",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.deal_frequency",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.renewals_repeat",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.campaign_performance",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.verified_commercial_value"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 2,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.brand_quality",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.pricing_power",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.deal_frequency",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.renewals_repeat",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.campaign_performance",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.verified_commercial_value",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.momentum",
+    "direction": "neutral",
+    "rationale": {
+     "value": "On the court, Okpara's momentum was temporarily halted by his season-ending knee injury, but his brand momentum surged dramatically in late 2026 due to his legal triumph and entry into the transfer portal. He is currently positioned as a highly visible, compelling 'reboot' story as he selects his fifth-year collegiate home. Commercial acceleration remains flat until his new program commitment is official.",
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-05-29T07:19:33.833Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E8",
+      "E9"
+     ],
+     "rationale": "His legal and transfer portal momentum is highly active, but his athletic return is still in transition.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "His legal and transfer portal momentum is highly active, but his athletic return is still in transition.",
+    "citedEvidence": [
+     {
+      "id": "E2",
+      "claim": "Okpara averaged 13.9 points, 3.9 rebounds, and 2.2 assists in 17 starts as a breakout senior for Stanford in the 2025-26 season before injury.",
+      "sourceUrl": "https://gostanford.com/sports/mens-basketball/roster/chisom-okpara/44321",
+      "observedAt": "2026-01-21",
+      "sourceType": "official",
+      "sourceTitle": "Chisom Okpara Stanford Athletics Profile"
+     },
+     {
+      "id": "E3",
+      "claim": "Okpara suffered a season-ending lower-extremity injury on January 10, 2026, against Virginia, halting his senior season.",
+      "sourceUrl": "https://www.foxsports.com/college-basketball/chisom-okpara-player-news",
+      "observedAt": "2026-01-21",
+      "sourceType": "major_media",
+      "sourceTitle": "Stanford's Chisom Okpara to miss rest of season with injury"
+     },
+     {
+      "id": "E4",
+      "claim": "Okpara is the lead named plaintiff in Chisom Okpara et al. v. NCAA, filed July 17, 2026, challenging NCAA age-based eligibility limits in California state court.",
+      "sourceUrl": "https://collegesportslitigationtracker.com/case/okpara-v-ncaa",
+      "observedAt": "2026-09-18",
+      "sourceType": "secondary",
+      "sourceTitle": "College Sports Litigation Tracker - Age-Based Eligibility Rules"
+     },
+     {
+      "id": "E5",
+      "claim": "Okpara entered the NCAA transfer portal on August 5, 2026, as a healthy grad transfer to explore options for his fifth collegiate season.",
+      "sourceUrl": "https://247sports.com/Player/Chisom-Okpara-46114678/TransferHistory",
+      "observedAt": "2026-08-05",
+      "sourceType": "secondary",
+      "sourceTitle": "Chisom Okpara Transfer Portal Activity"
+     },
+     {
+      "id": "E8",
+      "claim": "The Sideline Co estimated Okpara's headline NIL valuation at $280K - $347K representing 5.4% of the Stanford basketball roster market.",
+      "sourceUrl": "https://thesideline.co/players/chisom-okpara",
+      "observedAt": "2026-09-17",
+      "sourceType": "secondary",
+      "sourceTitle": "Chisom Okpara NIL Market Summary"
+     },
+     {
+      "id": "E9",
+      "claim": "Okpara's legal lawsuit is covered by national media outlets, highlighting the trend of Ivy League basketball talent transferring to high-major NIL programs.",
+      "sourceUrl": "https://www.thenation.com/article/society/ivy-league-basketball-transfer-portal/",
+      "observedAt": "2025-01-17",
+      "sourceType": "major_media",
+      "sourceTitle": "The Ivy League Transfer Exodus and the NCAA's Commercial Reality"
+     }
+    ],
+    "components": [
+     {
+      "key": "momentum.audience_growth",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "value": 70,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "value": 60,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "value": 40,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "value": 55,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 56.75,
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-05-29T07:19:33.833Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#momentum.audience_growth",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#momentum.media_trajectory",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#momentum.athletic_trajectory",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#momentum.commercial_acceleration",
+      "86287c8d-d5dd-450a-a966-bad55b9896ce#momentum.search_social_trajectory"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 1,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#momentum.audience_growth",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#momentum.media_trajectory",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#momentum.athletic_trajectory",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#momentum.commercial_acceleration",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     },
+     {
+      "source": "mia",
+      "locator": "86287c8d-d5dd-450a-a966-bad55b9896ce#momentum.search_social_trajectory",
+      "asOf": "2026-05-29T07:19:33.833Z"
+     }
+    ]
+   }
+  ],
+  "audienceTrajectory": {
+   "value": null,
+   "owner": "athlete_intelligence",
+   "asOf": "2026-09-25T20:33:24.938Z",
+   "evidenceClass": "MISSING",
+   "reason": "no growth measurement on any platform"
+  },
+  "commercialPosition": {
+   "closedDeals": {
+    "value": 0,
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-25T20:33:24.938Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "count_deals_at_earned_status"
+   },
+   "activeRelationships": {
+    "value": [],
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-25T20:33:24.938Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "distinct_brand_at_earned_status"
+   },
+   "demonstratedEconomics": {
+    "value": null,
+    "owner": "athlete_state",
+    "asOf": "2026-09-25T20:33:24.938Z",
+    "evidenceClass": "MISSING",
+    "reason": "no closed deal carries an amount"
+   },
+   "pricingEvidence": "none",
+   "pipeline": {
+    "value": {
+     "detected": 0,
+     "negotiating": 0,
+     "rejected": 0,
+     "accepted": 0,
+     "completed": 0
+    },
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-25T20:33:24.938Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "count_deals_by_status"
+   },
+   "inbound": []
+  },
+  "constraints": [],
+  "preferences": [],
+  "audience": [],
+  "contentPerformance": [],
+  "representation": null,
+  "dates": [],
+  "materialGaps": [
+   "Verified personal social media follower counts, views, and engagement metrics.",
+   "Details of direct commercial endorsements, campaigns, or partnership terms.",
+   "Official commitment announcement regarding his next transfer portal destination."
+  ],
+  "overallConfidence": "LOW",
+  "sources": [
+   {
+    "owner": "marketability",
+    "present": true,
+    "asOf": "2026-05-29T07:19:33.833Z"
+   },
+   {
+    "owner": "athlete_intelligence",
+    "present": false,
+    "asOf": null
+   },
+   {
+    "owner": "athlete_state",
+    "present": true,
+    "asOf": "2026-09-25T20:33:24.938Z"
+   }
+  ]
+ },
+ "map": {
+  "athleteId": "8b3befbd-e0ca-4c3a-8f7e-42d764ba2213",
+  "asOf": "2026-09-25T20:34:09.494Z",
+  "version": "opportunity-map/1.0.0",
+  "specVersion": "opportunity-eval-spec/1.0.0",
+  "stateAsOf": "2026-09-25T20:33:24.938Z",
+  "opportunities": [
+   {
+    "key": "unlock-audience-metrics",
+    "kind": "UNLOCK",
+    "domain": "evidence",
+    "statement": {
+     "value": "Secure direct access to Okpara's personal social media platform data to establish verified baseline audience metrics.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-25T20:33:24.938Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "findings[mia.audience_scale]",
+      "materialGaps[0]"
+     ],
+     "rationale": "Nomila currently has zero visibility into Okpara's social reach and engagement quality, relying entirely on imputed values. Brands require verified audits to justify direct corporate campaigns, making this data integration the most critical immediate strategic unlock.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "findings[mia.audience_scale]",
+      "how": "Notes that the lack of platform metrics or public follower registries leaves reach unquantified and that brand campaigns require verified audits."
+     },
+     {
+      "statePath": "materialGaps[0]",
+      "how": "Identifies verified personal social media follower counts, views, and engagement metrics as a primary material gap."
+     }
+    ],
+    "impact": {
+     "level": "high",
+     "claim": "Provides the verified data foundations required to pitch Okpara to direct consumer brands, moving past speculative roster-value estimates."
+    },
+    "feasibility": {
+     "level": "high",
+     "claim": "Only requires the athlete to authenticate his personal social accounts with Nomila's platform."
+    },
+    "urgency": null,
+    "confidence": "HIGH"
+   },
+   {
+    "key": "amplify-values-based-positioning",
+    "kind": "AMPLIFY",
+    "domain": "positioning",
+    "statement": {
+     "value": "Position Okpara for premium corporate partnerships leveraging his high-profile advocacy and Ivy League and Stanford academic pedigree.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-25T20:33:24.938Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "findings[mia.narrative_power]",
+      "findings[mia.cultural_relevance]",
+      "findings[mia.brand_fit]"
+     ],
+     "rationale": "Okpara's legal standing as the lead named plaintiff in college eligibility litigation, combined with his elite academic profile, creates a uniquely deep and durable narrative. This existing cultural footprint should be projected to high-end financial, tech, or health brands.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "findings[mia.narrative_power]",
+      "how": "Highlights his durable and distinctive narrative combining academic excellence, injury rehab, and collegiate legal advocacy as having massive storytelling weight."
+     },
+     {
+      "statePath": "findings[mia.cultural_relevance]",
+      "how": "Documents his high relevance in sports business, law, and academic spheres as the lead plaintiff in Chisom Okpara et al. v. NCAA."
+     },
+     {
+      "statePath": "findings[mia.brand_fit]",
+      "how": "Identifies his alignment with premium brand categories like financial management, academic tech, and healthcare."
+     }
+    ],
+    "impact": {
+     "level": "high",
+     "claim": "Establishes a highly differentiated, non-traditional sponsorship lane that protects his long-term value beyond pure on-court athletic performance."
+    },
+    "feasibility": {
+     "level": "medium",
+     "claim": "Requires crafting a specialized narrative pitch deck and targeting corporate communications or corporate social responsibility (CSR) departments rather than standard sports marketing teams."
+    },
+    "urgency": null,
+    "confidence": "HIGH"
+   },
+   {
+    "key": "grow-direct-brand-relationships",
+    "kind": "GROW",
+    "domain": "commercial",
+    "statement": {
+     "value": "Build out Okpara's direct corporate endorsement portfolio from its current baseline of having no active brand partnerships.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-25T20:33:24.938Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "commercialPosition.closedDeals",
+      "findings[mia.commercial_proof]"
+     ],
+     "rationale": "Despite holding high estimated NIL valuations within systemic university collective frameworks, Okpara currently has no verified direct consumer brand deals. This commercial gap represents a clear, buildable area for growth.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "commercialPosition.closedDeals",
+      "how": "Confirms that Okpara has completed no closed deals to date."
+     },
+     {
+      "statePath": "findings[mia.commercial_proof]",
+      "how": "Notes that he has no verified individual corporate endorsements and that his pricing power is restricted to systemic team roster pools."
+     }
+    ],
+    "impact": {
+     "level": "high",
+     "claim": "Creates direct, individual commercial revenue streams independent of athletic collectives and team-specific budgets."
+    },
+    "feasibility": {
+     "level": "medium",
+     "claim": "Requires proactive outreach to brands, but is highly achievable given his pristine background and high brand fit score."
+    },
+    "urgency": null,
+    "confidence": "HIGH"
+   },
+   {
+    "key": "evidence-track-transfer-commitment",
+    "kind": "GROW",
+    "domain": "evidence",
+    "statement": {
+     "value": "Capture and leverage Okpara's upcoming transfer portal commitment to align geographic and collegiate commercial targeting.",
+     "owner": "opportunity",
+     "confidence": "HIGH",
+     "asOf": "2026-09-25T20:33:24.938Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "materialGaps[2]",
+      "findings[mia.momentum]",
+      "findings[mia.brand_fit]"
+     ],
+     "rationale": "Okpara's brand momentum is highly tied to his next collegiate home. Tracking and preparing for this announcement is vital for localized corporate matching, regional audience growth, and capturing immediate media interest.",
+     "falsifiedBy": null
+    },
+    "restsOn": [
+     {
+      "statePath": "materialGaps[2]",
+      "how": "Identifies the lack of official commitment announcement regarding his next transfer portal destination as a critical gap."
+     },
+     {
+      "statePath": "findings[mia.momentum]",
+      "how": "Notes that commercial acceleration remains flat until his new program commitment is official."
+     },
+     {
+      "statePath": "findings[mia.brand_fit]",
+      "how": "Stresses that geographic relevance is a key driver for brand campaigns, which will shift based on his next school destination."
+     }
+    ],
+    "impact": {
+     "level": "high",
+     "claim": "Allows Nomila to launch localized commercial pitches instantly upon his commitment, maximizing the news cycle's media traction."
+    },
+    "feasibility": {
+     "level": "high",
+     "claim": "Requires establishing a regular communication cadence with the athlete or his advisors regarding his final transfer list."
+    },
+    "urgency": {
+     "level": "high",
+     "claim": "Okpara entered the portal in August and is currently a healthy grad transfer preparing for his fifth season, making a commitment decision highly imminent."
+    },
+    "confidence": "HIGH"
+   }
+  ],
+  "notes": [
+   "audience: No personal social metrics, performance, or platforms are currently connected, leaving his true audience scale and engagement trajectory completely unmeasured.",
+   "content: No content formats, performance, or platform metrics are currently recorded, making it impossible to evaluate his content style or distribution strategy.",
+   "owned_venture: No evidence of owned businesses, equity models, or personal ventures exists in the athlete state.",
+   "impact: No specific philanthropic work, foundations, or community causes are recorded in the athlete state, though his legal advocacy serves as a strong values baseline.",
+   "career: Although his legal and academic pedigree is strong, no specific post-playing career ambitions (such as coaching, broadcasting, business, or education) are recorded.",
+   "relationships: No active relationships, agencies, or specific corporate network connections are recorded in the state, despite family background details."
+  ],
+  "inputs": [
+   {
+    "kind": "athlete_state",
+    "version": "athlete-state/1.2.0",
+    "present": true
+   },
+   {
+    "kind": "strategy_intelligence",
+    "version": null,
+    "present": false
+   },
+   {
+    "kind": "targeted_research",
+    "version": null,
+    "present": false
+   }
+  ],
+  "overallConfidence": "LOW"
+ },
+ "record": {
+  "evaluatorSpec": "objective-eval-spec/1.0.3",
+  "canonicalSha256": "16627fb2e54e6a905c57b7a7fe631659ca517a7aacd7f2b59c13a4d7c772ef4d",
+  "manifest": {
+   "evaluatorSpec": "objective-eval-spec/1.0.3",
+   "promptDigest": "16627fb2e54e6a905c57b7a7fe631659ca517a7aacd7f2b59c13a4d7c772ef4d"
+  },
+  "promptSha256": "bb79da16adba73e1fa001cfc7a8eeeb43872b802ff485721ca2c1163b1956b55",
+  "athlete": {
+   "id": "8b3befbd-e0ca-4c3a-8f7e-42d764ba2213",
+   "name": "Chisom Okpara"
+  },
+  "stateAsOf": "2026-09-25T20:33:24.938Z",
+  "opportunityMapAsOf": "2026-09-25T20:34:09.494Z",
+  "stateBlock": "Nomila's account of this athlete as of 2026-09-25T20:33:24.938Z (athlete-state/1.2.0).\nOverall confidence in this picture: LOW.\n\nCite any line below by the path shown at its left.\n\nIDENTITY\n    identity.name                             Chisom Okpara\n    identity.sport                            Basketball\n    identity.competitionContext               Stanford University · D1\n    identity.careerStatus                     active\n\nFINDINGS — marketability dimensions, each judged by M.I.A. and read here unchanged.\n  STRENGTH  measured, above the band\n  GAP       measured, below the band\n  NEUTRAL   MEASURED and unremarkable. We know; it is simply ordinary. This is NOT missing evidence.\n  UNKNOWN   evidence is genuinely insufficient — no score, or mostly imputed signals. A statement about\n            what Nomila has measured, never about the athlete.\n\n  Each finding may carry WHY M.I.A. concluded it and WHICH SOURCES it relied on. Read those as the\n  evaluator's interpretation and the evidence behind it — NOT as established fact about the athlete.\n\n    findings[mia.athletic_authority]          NEUTRAL   score 66.45   HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Okpara boasts elite collegiate athletic standing, having successfully transitioned from a\n          breakout role in the Ivy League to a starting position in the highly competitive ACC at\n          Stanford. Prior to his season-ending injury in January 2026, he was a key offensive piece for a\n          resurgent Cardinal team, proving his Power 4 starter capabilities. His authority remains high as\n          he enters the market as one of the most intriguing and talented grad transfers in the country.\n          confidence HIGH — Statistical records, transfer rankings, and team starter dynamics are comprehensively documented and clear.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  official · 2024-05-24  Chisom Okpara was an All-Ivy sophomore breakout at Harvard (16.5 PPG, 5.0 RPG, team's Most Improved Player) before transferring to Stanford in May 2024.\n              https://gocrimson.com/sports/mens-basketball/roster/chisom-okpara/26078\n          E2  official · 2026-01-21  Okpara averaged 13.9 points, 3.9 rebounds, and 2.2 assists in 17 starts as a breakout senior for Stanford in the 2025-26 season before injury.\n              https://gostanford.com/sports/mens-basketball/roster/chisom-okpara/44321\n          E3  major_media · 2026-01-21  Okpara suffered a season-ending lower-extremity injury on January 10, 2026, against Virginia, halting his senior season.\n              https://www.foxsports.com/college-basketball/chisom-okpara-player-news\n          E5  secondary · 2026-08-05  Okpara entered the NCAA transfer portal on August 5, 2026, as a healthy grad transfer to explore options for his fifth collegiate season.\n              https://247sports.com/Player/Chisom-Okpara-46114678/TransferHistory\n        COMPONENTS  role_importance=74 [EVALUATED]  competition_level=82 [EVALUATED]  achievement_recency=75 [EVALUATED]  performance_results=72 [EVALUATED]  rankings_recognition=62 [EVALUATED]  national_international_status=25 [EVALUATED]\n\n    findings[mia.audience_scale]              UNKNOWN   score 50      LOW     4/4 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Due to the lack of authoritative platform metrics or public follower registries, Okpara's total\n          reach remains unquantified. While he is tagged in major university and conference media, his\n          individual social footprint must be classified as missing. Brand campaigns would require\n          verified first-party audience audits to determine true reach.\n          confidence LOW — No verifiable follower counts or audience size metrics exist in the public domain.\n        COMPONENTS  audience_growth=50 [ASSUMED]  platform_breadth=50 [ASSUMED]  cross_platform_effective_reach=50 [ASSUMED]  sport_level_audience_percentile=50 [ASSUMED]\n\n    findings[mia.engagement_quality]          UNKNOWN   score 50      LOW     6/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Individual interaction rates, video view completion times, and story click-through percentages\n          are completely unavailable. While highlight reels on conference networks suggest healthy fan\n          interest, personal social channel performance cannot be verified. This dimension is entirely\n          missing under the evaluation criteria.\n          confidence LOW — Private post-level and interaction performance metrics are absent without connected platform data.\n        COMPONENTS  video_retention=50 [ASSUMED]  reach_efficiency=50 [ASSUMED]  story_efficiency=50 [ASSUMED]  shares_saves_quality=50 [ASSUMED]  audience_authenticity=50 [ASSUMED]  engagement_percentile=50 [ASSUMED]\n\n    findings[mia.cultural_relevance]          NEUTRAL   score 54.9    HIGH    0/5 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Okpara's cultural footprint is uniquely tied to the national dialogue surrounding\n          student-athlete rights and NCAA antitrust litigation. He has garnered significant coverage in\n          premium news outlets as the lead named plaintiff in a successful eligibility lawsuit. Although\n          he is not a mainstream pop-culture celebrity, his relevance in sports business, law, and\n          academic spheres is remarkably high.\n          confidence HIGH — Qualitative media presence across premium outlets is deeply tracked and thoroughly documented.\n        SOURCE EVIDENCE M.I.A. CITED\n          E4  secondary · 2026-09-18  Okpara is the lead named plaintiff in Chisom Okpara et al. v. NCAA, filed July 17, 2026, challenging NCAA age-based eligibility limits in California state court.\n              https://collegesportslitigationtracker.com/case/okpara-v-ncaa\n          E5  secondary · 2026-08-05  Okpara entered the NCAA transfer portal on August 5, 2026, as a healthy grad transfer to explore options for his fifth collegiate season.\n              https://247sports.com/Player/Chisom-Okpara-46114678/TransferHistory\n          E6  major_media · 2024-10-08  Attorneys and schools estimated Okpara's roster-based NIL valuation between $200,000 and $500,000 during his recruitment and transfer cycles.\n              https://harvardmagazine.com/2024/10/ivy-league-transfer-portal-nil\n          E7  secondary · 2024-11-03  Okpara is from a prominent, high-achieving family; his father is a Morgan Stanley executive, and his sister Chidimma is a tennis standout at Stanford.\n              https://www.stanforddaily.com/article/chisom-okpara-reunited-with-sister\n          E9  major_media · 2025-01-17  Okpara's legal lawsuit is covered by national media outlets, highlighting the trend of Ivy League basketball talent transferring to high-major NIL programs.\n              https://www.thenation.com/article/society/ivy-league-basketball-transfer-portal/\n        COMPONENTS  search_interest=45 [EVALUATED]  social_conversation=50 [EVALUATED]  media_source_quality=72 [EVALUATED]  crossover_recognition=40 [EVALUATED]  media_volume_percentile=60 [EVALUATED]\n\n    findings[mia.narrative_power]             STRENGTH  score 76.5    HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Okpara possesses one of the most distinctive narratives in collegiate sports. His journey\n          combines academic excellence at the world's most prestigious institutions, overcoming adversity\n          in rehab, and fighting the NCAA in court to secure immediate eligibility for over 50 of his\n          peers. This story is highly durable and carries massive storytelling weight for values-based\n          corporate sponsorships.\n          confidence HIGH — Court documents, video interviews, and editorial features provide overwhelming, authentic proof of his story.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  official · 2024-05-24  Chisom Okpara was an All-Ivy sophomore breakout at Harvard (16.5 PPG, 5.0 RPG, team's Most Improved Player) before transferring to Stanford in May 2024.\n              https://gocrimson.com/sports/mens-basketball/roster/chisom-okpara/26078\n          E2  official · 2026-01-21  Okpara averaged 13.9 points, 3.9 rebounds, and 2.2 assists in 17 starts as a breakout senior for Stanford in the 2025-26 season before injury.\n              https://gostanford.com/sports/mens-basketball/roster/chisom-okpara/44321\n          E4  secondary · 2026-09-18  Okpara is the lead named plaintiff in Chisom Okpara et al. v. NCAA, filed July 17, 2026, challenging NCAA age-based eligibility limits in California state court.\n              https://collegesportslitigationtracker.com/case/okpara-v-ncaa\n          E6  major_media · 2024-10-08  Attorneys and schools estimated Okpara's roster-based NIL valuation between $200,000 and $500,000 during his recruitment and transfer cycles.\n              https://harvardmagazine.com/2024/10/ivy-league-transfer-portal-nil\n          E7  secondary · 2024-11-03  Okpara is from a prominent, high-achieving family; his father is a Morgan Stanley executive, and his sister Chidimma is a tennis standout at Stanford.\n              https://www.stanforddaily.com/article/chisom-okpara-reunited-with-sister\n          E9  major_media · 2025-01-17  Okpara's legal lawsuit is covered by national media outlets, highlighting the trend of Ivy League basketball talent transferring to high-major NIL programs.\n              https://www.thenation.com/article/society/ivy-league-basketball-transfer-portal/\n        COMPONENTS  durability=75 [EVALUATED]  story_depth=78 [EVALUATED]  distinctiveness=80 [EVALUATED]  media_resonance=70 [EVALUATED]  evidence_authenticity=82 [EVALUATED]  commercial_applicability=65 [EVALUATED]\n\n    findings[mia.brand_fit]                   STRENGTH  score 77.75   HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          As an exceptionally clean, well-spoken, and high-achieving student-athlete, Okpara is a pristine\n          ambassador for brand partnerships. He aligns naturally with high-end, premium brand categories\n          like financial management, academic tech, healthcare, and high-performance lifestyle lines. His\n          geographically valuable audience offers brands highly concentrated, highly educated target\n          markets.\n          confidence HIGH — Clean scholastic records, background, and value coherence are incredibly consistent and verified.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  official · 2024-05-24  Chisom Okpara was an All-Ivy sophomore breakout at Harvard (16.5 PPG, 5.0 RPG, team's Most Improved Player) before transferring to Stanford in May 2024.\n              https://gocrimson.com/sports/mens-basketball/roster/chisom-okpara/26078\n          E2  official · 2026-01-21  Okpara averaged 13.9 points, 3.9 rebounds, and 2.2 assists in 17 starts as a breakout senior for Stanford in the 2025-26 season before injury.\n              https://gostanford.com/sports/mens-basketball/roster/chisom-okpara/44321\n          E4  secondary · 2026-09-18  Okpara is the lead named plaintiff in Chisom Okpara et al. v. NCAA, filed July 17, 2026, challenging NCAA age-based eligibility limits in California state court.\n              https://collegesportslitigationtracker.com/case/okpara-v-ncaa\n          E7  secondary · 2024-11-03  Okpara is from a prominent, high-achieving family; his father is a Morgan Stanley executive, and his sister Chidimma is a tennis standout at Stanford.\n              https://www.stanforddaily.com/article/chisom-okpara-reunited-with-sister\n        COMPONENTS  brand_safety=95 [EVALUATED]  category_breadth=70 [EVALUATED]  content_versatility=60 [EVALUATED]  geographic_relevance=65 [EVALUATED]  audience_attractiveness=80 [EVALUATED]  identity_values_coherence=85 [EVALUATED]\n\n    findings[mia.commercial_proof]            NEUTRAL   score 46      MEDIUM  2/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Okpara has demonstrated clear market value within the university collective framework,\n          commanding valuations estimated up to $500,000 during his college recruitments. However, he has\n          no verified individual corporate endorsements on his record. His pricing power is currently\n          restricted to systemic team roster pools rather than direct consumer brands.\n          confidence MEDIUM — Verified transfer valuation estimates are reported, but direct commercial brand histories are absent.\n        SOURCE EVIDENCE M.I.A. CITED\n          E6  major_media · 2024-10-08  Attorneys and schools estimated Okpara's roster-based NIL valuation between $200,000 and $500,000 during his recruitment and transfer cycles.\n              https://harvardmagazine.com/2024/10/ivy-league-transfer-portal-nil\n          E8  secondary · 2026-09-17  The Sideline Co estimated Okpara's headline NIL valuation at $280K - $347K representing 5.4% of the Stanford basketball roster market.\n              https://thesideline.co/players/chisom-okpara\n        COMPONENTS  brand_quality=30 [EVALUATED]  pricing_power=55 [EVALUATED]  deal_frequency=35 [EVALUATED]  renewals_repeat=50 [ASSUMED]  campaign_performance=50 [ASSUMED]  verified_commercial_value=55 [EVALUATED]\n\n    findings[mia.momentum]                    NEUTRAL   score 56.75   MEDIUM  1/5 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          On the court, Okpara's momentum was temporarily halted by his season-ending knee injury, but his\n          brand momentum surged dramatically in late 2026 due to his legal triumph and entry into the\n          transfer portal. He is currently positioned as a highly visible, compelling 'reboot' story as he\n          selects his fifth-year collegiate home. Commercial acceleration remains flat until his new\n          program commitment is official.\n          confidence MEDIUM — His legal and transfer portal momentum is highly active, but his athletic return is still in transition.\n        SOURCE EVIDENCE M.I.A. CITED\n          E2  official · 2026-01-21  Okpara averaged 13.9 points, 3.9 rebounds, and 2.2 assists in 17 starts as a breakout senior for Stanford in the 2025-26 season before injury.\n              https://gostanford.com/sports/mens-basketball/roster/chisom-okpara/44321\n          E3  major_media · 2026-01-21  Okpara suffered a season-ending lower-extremity injury on January 10, 2026, against Virginia, halting his senior season.\n              https://www.foxsports.com/college-basketball/chisom-okpara-player-news\n          E4  secondary · 2026-09-18  Okpara is the lead named plaintiff in Chisom Okpara et al. v. NCAA, filed July 17, 2026, challenging NCAA age-based eligibility limits in California state court.\n              https://collegesportslitigationtracker.com/case/okpara-v-ncaa\n          E5  secondary · 2026-08-05  Okpara entered the NCAA transfer portal on August 5, 2026, as a healthy grad transfer to explore options for his fifth collegiate season.\n              https://247sports.com/Player/Chisom-Okpara-46114678/TransferHistory\n          E8  secondary · 2026-09-17  The Sideline Co estimated Okpara's headline NIL valuation at $280K - $347K representing 5.4% of the Stanford basketball roster market.\n              https://thesideline.co/players/chisom-okpara\n          E9  major_media · 2025-01-17  Okpara's legal lawsuit is covered by national media outlets, highlighting the trend of Ivy League basketball talent transferring to high-major NIL programs.\n              https://www.thenation.com/article/society/ivy-league-basketball-transfer-portal/\n        COMPONENTS  audience_growth=50 [ASSUMED]  media_trajectory=70 [EVALUATED]  athletic_trajectory=60 [EVALUATED]  commercial_acceleration=40 [EVALUATED]  search_social_trajectory=55 [EVALUATED]\n\nAUDIENCE TRAJECTORY — follower growth only. It says nothing about athletic or commercial direction.\n    audienceTrajectory                        not known (no growth measurement on any platform)\n\nCOMMERCIAL POSITION — what the market has actually paid. Counted, never estimated.\n    commercialPosition.closedDeals            0  [measured · HIGH confidence]\n    commercialPosition.activeRelationships    []  [measured · HIGH confidence]\n    commercialPosition.demonstratedEconomics  not known (no closed deal carries an amount)\n    commercialPosition.pricingEvidence        none\n\nCOMMERCIAL PIPELINE — counts by state. `detected` means a brand made contact and nothing more.\n  Inbound interest is NOT a deal, NOT revenue and NOT an active relationship.\n    commercialPosition.pipeline               detected 0 · negotiating 0 · rejected 0 · accepted 0 · completed 0\n\nINBOUND SIGNALS — the athlete's own classified inbox, most recent first, capped. Demonstrated interest,\n  as classified by Nomila's inbox pipeline. A category is the classifier's label, not a commitment.\n    (no classified inbound threads)\n\nCONSTRAINTS — only what has been explicitly recorded as a bound on what the athlete can do.\n  An empty list means Nomila has recorded none. It does NOT mean none exist.\n    (none recorded)\n\nAUDIENCE — composition per platform, latest observation. Top buckets only.\n    (no audience composition is recorded on any platform)\n\nCONTENT PERFORMANCE — cadence and format, per platform, from Nomila's own measurement.\n    (no content performance is measured on any platform)\n\nREPRESENTATION & FLOORS — as the athlete stated them. A FLOOR IS NOT A MARKET VALUE; it is the least\n  she has said she would accept.\n    (the athlete has stated nothing about representation or floors)\n\nWHAT THE ATHLETE HAS SAID — their own words. A refusal bears on an opportunity; an ambition can generate one.\n  Never infer a preference or an ambition that is not listed here.\n  A stance is one of: wants | open | avoids | refuses — cite it in exactly that spelling.\n  A line marked ONBOARDING CHOICE was selected from a fixed set when the athlete joined. It is evidence of\n  intent at that time — she actually chose it — and it is NOT a current strategic objective.\n    (the athlete has stated nothing)\n\nDATES — recorded real-world dates that can bear on strategy, each with what it means. Only what is\n  populated; an empty list means none are recorded, not that none exist.\n    (none recorded)\n\nWHAT NOMILA CANNOT SEE — evidence we looked for and could not find. A research task, not a caveat.\n    materialGaps[0]                           Verified personal social media follower counts, views, and engagement metrics.\n    materialGaps[1]                           Details of direct commercial endorsements, campaigns, or partnership terms.\n    materialGaps[2]                           Official commitment announcement regarding his next transfer portal destination.\n\nSOURCES CONSULTED\n    marketability            present · as of 2026-05-29T07:19:33.833Z\n    athlete_intelligence     ABSENT\n    athlete_state            present · as of 2026-09-25T20:33:24.938Z",
+  "opportunityBlock": "Strategic openings identified as of 2026-09-25T20:34:09.494Z (opportunity-eval-spec/1.0.0), judged from the athlete state as of 2026-09-25T20:33:24.938Z.\nOverall confidence in this map: LOW.\n\nCite an opportunity by the key shown at its left. Every key below must appear exactly once in your output —\nin a proposal's from_opportunities, or in notes as consolidated (into a named proposal) or not_carried.\n\n    unlock-audience-metrics\n        UNLOCK · evidence · confidence HIGH\n        Secure direct access to Okpara's personal social media platform data to establish verified baseline audience metrics.\n        impact(high): Provides the verified data foundations required to pitch Okpara to direct consumer brands, moving past speculative roster-value estimates.\n        feasibility(high): Only requires the athlete to authenticate his personal social accounts with Nomila's platform.\n        rests on: findings[mia.audience_scale], materialGaps[0]\n\n    amplify-values-based-positioning\n        AMPLIFY · positioning · confidence HIGH\n        Position Okpara for premium corporate partnerships leveraging his high-profile advocacy and Ivy League and Stanford academic pedigree.\n        impact(high): Establishes a highly differentiated, non-traditional sponsorship lane that protects his long-term value beyond pure on-court athletic performance.\n        feasibility(medium): Requires crafting a specialized narrative pitch deck and targeting corporate communications or corporate social responsibility (CSR) departments rather than standard sports marketing teams.\n        rests on: findings[mia.narrative_power], findings[mia.cultural_relevance], findings[mia.brand_fit]\n\n    grow-direct-brand-relationships\n        GROW · commercial · confidence HIGH\n        Build out Okpara's direct corporate endorsement portfolio from its current baseline of having no active brand partnerships.\n        impact(high): Creates direct, individual commercial revenue streams independent of athletic collectives and team-specific budgets.\n        feasibility(medium): Requires proactive outreach to brands, but is highly achievable given his pristine background and high brand fit score.\n        rests on: commercialPosition.closedDeals, findings[mia.commercial_proof]\n\n    evidence-track-transfer-commitment\n        GROW · evidence · confidence HIGH\n        Capture and leverage Okpara's upcoming transfer portal commitment to align geographic and collegiate commercial targeting.\n        impact(high): Allows Nomila to launch localized commercial pitches instantly upon his commitment, maximizing the news cycle's media traction.\n        feasibility(high): Requires establishing a regular communication cadence with the athlete or his advisors regarding his final transfer list.\n        urgency(high): Okpara entered the portal in August and is currently a healthy grad transfer preparing for his fifth season, making a commitment decision highly imminent.\n        rests on: materialGaps[2], findings[mia.momentum], findings[mia.brand_fit]\n\nWhy other domains yielded nothing, per the Opportunity evaluator:\n    - audience: No personal social metrics, performance, or platforms are currently connected, leaving his true audience scale and engagement trajectory completely unmeasured.\n    - content: No content formats, performance, or platform metrics are currently recorded, making it impossible to evaluate his content style or distribution strategy.\n    - owned_venture: No evidence of owned businesses, equity models, or personal ventures exists in the athlete state.\n    - impact: No specific philanthropic work, foundations, or community causes are recorded in the athlete state, though his legal advocacy serves as a strong values baseline.\n    - career: Although his legal and academic pedigree is strong, no specific post-playing career ambitions (such as coaching, broadcasting, business, or education) are recorded.\n    - relationships: No active relationships, agencies, or specific corporate network connections are recorded in the state, despite family background details.",
+  "startedAt": "2026-09-27T04:36:26.211Z",
+  "latencyMs": 33633,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+   "promptTokens": 8440,
+   "outputTokens": 877,
+   "thoughtTokens": 5811
+  },
+  "costUsd": 0.019252000000000002,
+  "rawText": "```json\n{\n  \"proposals\": [\n    {\n      \"key\": \"premium-brand-partnerships\",\n      \"desired_state\": \"Okpara holds active direct endorsement partnerships with premium corporate brands.\",\n      \"current_state\": \"Okpara has zero closed deals and zero active relationships on record, with his commercial valuation restricted to collegiate team roster pools.\",\n      \"rationale\": \"Okpara possesses exceptional brand fit and narrative power due to his academic pedigree and lead role in historic NCAA litigation, yet his current commercial value is confined to team roster collectives. Securing direct, independent brand partnerships will translate his values-based positioning into a durable commercial portfolio.\",\n      \"domain\": \"commercial\",\n      \"from_opportunities\": [\n        {\n          \"opportunity_key\": \"grow-direct-brand-relationships\",\n          \"how\": \"Builds his direct corporate endorsement portfolio from its current baseline of zero active partnerships.\"\n        }\n      ],\n      \"from_athlete_intent\": [],\n      \"current_state_evidence\": [\n        {\n          \"state_path\": \"commercialPosition.closedDeals\",\n          \"how\": \"Confirms Okpara has zero closed deals on record.\"\n        },\n        {\n          \"state_path\": \"commercialPosition.activeRelationships\",\n          \"how\": \"Confirms Okpara has no active commercial relationships.\"\n        },\n        {\n          \"state_path\": \"findings[mia.commercial_proof]\",\n          \"how\": \"Establishes that his commercial value is currently limited to team roster pools rather than direct brands.\"\n        },\n        {\n          \"state_path\": \"findings[mia.brand_fit]\",\n          \"how\": \"Identifies Okpara's strong brand fit (score 77.75) and natural alignment with premium corporate categories.\"\n        },\n        {\n          \"state_path\": \"findings[mia.narrative_power]\",\n          \"how\": \"Establishes Okpara's strong narrative power (score 76.5) grounded in academic excellence and legal advocacy.\"\n        }\n      ],\n      \"success\": {\n        \"observable_condition\": \"Okpara has at least one signed and active corporate partnership agreement independent of collegiate collectives.\",\n        \"quantified\": {\n          \"metric\": \"closedDeals\",\n          \"state_path\": \"commercialPosition.closedDeals\",\n          \"direction\": \"increase\",\n          \"target\": {\n            \"kind\": \"at_least\",\n            \"value\": 1\n          }\n        }\n      },\n      \"horizon\": {\n        \"period\": \"next_12_months\",\n        \"why\": \"Okpara's fifth collegiate season is commencing, making the next year the prime window to secure his first direct brand partnerships.\"\n      },\n      \"athlete_stance\": null,\n      \"confidence\": \"HIGH\"\n    }\n  ],\n  \"notes\": [\n    {\n      \"opportunity_key\": \"amplify-values-based-positioning\",\n      \"outcome\": \"consolidated\",\n      \"into\": \"premium-brand-partnerships\",\n      \"why\": \"Okpara's advocacy and academic pedigree are the primary narrative assets used to secure the premium corporate partnerships outlined in the commercial proposal, uniting positioning with commercial outcomes.\"\n    },\n    {\n      \"opportunity_key\": \"unlock-audience-metrics\",\n      \"outcome\": \"not_carried\",\n      \"into\": null,\n      \"why\": \"Securing access to personal social media metrics is a preliminary evidence-gathering task (information acquisition) rather than a strategic change in his real-world business or positioning.\"\n    },\n    {\n      \"opportunity_key\": \"evidence-track-transfer-commitment\",\n      \"outcome\": \"not_carried\",\n      \"into\": null,\n      \"why\": \"Tracking and capturing his transfer portal commitment is a research and information acquisition task in the evidence domain, not a strategic outcome.\"\n    }\n  ]\n}\n```",
+  "parsed": {
+   "proposals": [
+    {
+     "key": "premium-brand-partnerships",
+     "desired_state": "Okpara holds active direct endorsement partnerships with premium corporate brands.",
+     "current_state": "Okpara has zero closed deals and zero active relationships on record, with his commercial valuation restricted to collegiate team roster pools.",
+     "rationale": "Okpara possesses exceptional brand fit and narrative power due to his academic pedigree and lead role in historic NCAA litigation, yet his current commercial value is confined to team roster collectives. Securing direct, independent brand partnerships will translate his values-based positioning into a durable commercial portfolio.",
+     "domain": "commercial",
+     "from_opportunities": [
+      {
+       "opportunity_key": "grow-direct-brand-relationships",
+       "how": "Builds his direct corporate endorsement portfolio from its current baseline of zero active partnerships."
+      }
+     ],
+     "from_athlete_intent": [],
+     "current_state_evidence": [
+      {
+       "state_path": "commercialPosition.closedDeals",
+       "how": "Confirms Okpara has zero closed deals on record."
+      },
+      {
+       "state_path": "commercialPosition.activeRelationships",
+       "how": "Confirms Okpara has no active commercial relationships."
+      },
+      {
+       "state_path": "findings[mia.commercial_proof]",
+       "how": "Establishes that his commercial value is currently limited to team roster pools rather than direct brands."
+      },
+      {
+       "state_path": "findings[mia.brand_fit]",
+       "how": "Identifies Okpara's strong brand fit (score 77.75) and natural alignment with premium corporate categories."
+      },
+      {
+       "state_path": "findings[mia.narrative_power]",
+       "how": "Establishes Okpara's strong narrative power (score 76.5) grounded in academic excellence and legal advocacy."
+      }
+     ],
+     "success": {
+      "observable_condition": "Okpara has at least one signed and active corporate partnership agreement independent of collegiate collectives.",
+      "quantified": {
+       "metric": "closedDeals",
+       "state_path": "commercialPosition.closedDeals",
+       "direction": "increase",
+       "target": {
+        "kind": "at_least",
+        "value": 1
+       }
+      }
+     },
+     "horizon": {
+      "period": "next_12_months",
+      "why": "Okpara's fifth collegiate season is commencing, making the next year the prime window to secure his first direct brand partnerships."
+     },
+     "athlete_stance": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [
+    {
+     "opportunity_key": "amplify-values-based-positioning",
+     "outcome": "consolidated",
+     "into": "premium-brand-partnerships",
+     "why": "Okpara's advocacy and academic pedigree are the primary narrative assets used to secure the premium corporate partnerships outlined in the commercial proposal, uniting positioning with commercial outcomes."
+    },
+    {
+     "opportunity_key": "unlock-audience-metrics",
+     "outcome": "not_carried",
+     "into": null,
+     "why": "Securing access to personal social media metrics is a preliminary evidence-gathering task (information acquisition) rather than a strategic change in his real-world business or positioning."
+    },
+    {
+     "opportunity_key": "evidence-track-transfer-commitment",
+     "outcome": "not_carried",
+     "into": null,
+     "why": "Tracking and capturing his transfer portal commitment is a research and information acquisition task in the evidence domain, not a strategic outcome."
+    }
+   ]
+  },
+  "structuralProblems": [],
+  "groundingProblems": [],
+  "set": {
+   "athleteId": "8b3befbd-e0ca-4c3a-8f7e-42d764ba2213",
+   "asOf": "2026-09-27T04:36:59.844Z",
+   "version": "objective-proposal/1.0.0",
+   "specVersion": "objective-eval-spec/1.0.3",
+   "stateAsOf": "2026-09-25T20:33:24.938Z",
+   "opportunityMapAsOf": "2026-09-25T20:34:09.494Z",
+   "proposals": [
+    {
+     "key": "premium-brand-partnerships",
+     "desiredState": {
+      "value": "Okpara holds active direct endorsement partnerships with premium corporate brands.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T20:33:24.938Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.audience_attractiveness",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.brand_safety",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.category_breadth",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.content_versatility",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.geographic_relevance",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.identity_values_coherence",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.brand_quality",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.campaign_performance",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.deal_frequency",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.pricing_power",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.renewals_repeat",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.verified_commercial_value",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.commercial_applicability",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.distinctiveness",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.durability",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.evidence_authenticity",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.media_resonance",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.story_depth",
+       "E1",
+       "E2",
+       "E4",
+       "E6",
+       "E7",
+       "E8",
+       "E9"
+      ],
+      "rationale": "Okpara possesses exceptional brand fit and narrative power due to his academic pedigree and lead role in historic NCAA litigation, yet his current commercial value is confined to team roster collectives. Securing direct, independent brand partnerships will translate his values-based positioning into a durable commercial portfolio.",
+      "falsifiedBy": null
+     },
+     "currentState": {
+      "value": "Okpara has zero closed deals and zero active relationships on record, with his commercial valuation restricted to collegiate team roster pools.",
+      "owner": "objectives",
+      "confidence": "HIGH",
+      "asOf": "2026-09-25T20:33:24.938Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.audience_attractiveness",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.brand_safety",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.category_breadth",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.content_versatility",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.geographic_relevance",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#brand_fit.identity_values_coherence",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.brand_quality",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.campaign_performance",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.deal_frequency",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.pricing_power",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.renewals_repeat",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#commercial_proof.verified_commercial_value",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.commercial_applicability",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.distinctiveness",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.durability",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.evidence_authenticity",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.media_resonance",
+       "86287c8d-d5dd-450a-a966-bad55b9896ce#narrative_power.story_depth",
+       "E1",
+       "E2",
+       "E4",
+       "E6",
+       "E7",
+       "E8",
+       "E9"
+      ],
+      "rationale": "Read from: commercialPosition.closedDeals, commercialPosition.activeRelationships, findings[mia.commercial_proof], findings[mia.brand_fit], findings[mia.narrative_power]",
+      "falsifiedBy": null
+     },
+     "domain": "commercial",
+     "provenance": {
+      "origin": "nomila",
+      "fromOpportunities": [
+       {
+        "opportunityKey": "grow-direct-brand-relationships",
+        "how": "Builds his direct corporate endorsement portfolio from its current baseline of zero active partnerships."
+       }
+      ],
+      "fromAthleteIntent": [],
+      "currentStateEvidence": [
+       {
+        "statePath": "commercialPosition.closedDeals",
+        "how": "Confirms Okpara has zero closed deals on record."
+       },
+       {
+        "statePath": "commercialPosition.activeRelationships",
+        "how": "Confirms Okpara has no active commercial relationships."
+       },
+       {
+        "statePath": "findings[mia.commercial_proof]",
+        "how": "Establishes that his commercial value is currently limited to team roster pools rather than direct brands."
+       },
+       {
+        "statePath": "findings[mia.brand_fit]",
+        "how": "Identifies Okpara's strong brand fit (score 77.75) and natural alignment with premium corporate categories."
+       },
+       {
+        "statePath": "findings[mia.narrative_power]",
+        "how": "Establishes Okpara's strong narrative power (score 76.5) grounded in academic excellence and legal advocacy."
+       }
+      ]
+     },
+     "success": {
+      "observableCondition": "Okpara has at least one signed and active corporate partnership agreement independent of collegiate collectives.",
+      "quantified": {
+       "metric": "closedDeals",
+       "statePath": "commercialPosition.closedDeals",
+       "baseline": {
+        "value": 0,
+        "asOf": "2026-09-25T20:33:24.938Z"
+       },
+       "direction": "increase",
+       "target": {
+        "kind": "at_least",
+        "value": 1
+       }
+      }
+     },
+     "horizon": {
+      "kind": "period",
+      "period": "next_12_months",
+      "why": "Okpara's fifth collegiate season is commencing, making the next year the prime window to secure his first direct brand partnerships."
+     },
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [
+    {
+     "opportunityKey": "amplify-values-based-positioning",
+     "outcome": "consolidated",
+     "into": "premium-brand-partnerships",
+     "why": "Okpara's advocacy and academic pedigree are the primary narrative assets used to secure the premium corporate partnerships outlined in the commercial proposal, uniting positioning with commercial outcomes."
+    },
+    {
+     "opportunityKey": "unlock-audience-metrics",
+     "outcome": "not_carried",
+     "why": "Securing access to personal social media metrics is a preliminary evidence-gathering task (information acquisition) rather than a strategic change in his real-world business or positioning."
+    },
+    {
+     "opportunityKey": "evidence-track-transfer-commitment",
+     "outcome": "not_carried",
+     "why": "Tracking and capturing his transfer portal commitment is a research and information acquisition task in the evidence domain, not a strategic outcome."
+    }
+   ],
+   "overallConfidence": "LOW"
+  }
+ }
+}

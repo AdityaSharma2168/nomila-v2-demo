@@ -1,0 +1,721 @@
+{
+  "note": "Beta.1 freeze bundle. Regenerate ONLY on a deliberate methodology version bump — see generateBeta1Goldens.ts.",
+  "methodologyVersion": "v1.0.1-beta.1",
+  "paramsVersion": "v1.0.1-beta.1",
+  "paramsSchemaVersion": "marketability-config/1",
+  "structurallyPrivate": [
+    "engagement_quality.shares_saves_quality",
+    "engagement_quality.video_retention",
+    "engagement_quality.story_efficiency"
+  ],
+  "evaluatorSpecVersion": "blind-eval-spec/0.2.1",
+  "canonicalEvaluatorSha256": "167e6c50cfa4cfbe41bd1707db1ddcd3c914051c6675e7301dac53fd4e63d609",
+  "asOf": "2026-09-14T00:00:00.000Z",
+  "cohort": "dev-cohort-37/2026-09-13",
+  "evaluatorRun": "gemini-3.5-flash via Vertex; Google Search grounding; default thinking; one call per athlete; name + sport only",
+  "athletes": [
+    {
+      "key": "cristiano-ronaldo",
+      "name": "Cristiano Ronaldo",
+      "sport": "Soccer",
+      "artifactSha256": "64a93c6409c0ab1b9a1b966508fe37c18b38fc875f1dcbad3dc4e7e927cbe597",
+      "mia": 792,
+      "composite": 91.55,
+      "confidence": 83.03,
+      "dimensions": {
+        "athletic_authority": 86.5,
+        "audience_scale": 98.75,
+        "engagement_quality": 86.15,
+        "cultural_relevance": 100,
+        "narrative_power": 96.5,
+        "brand_fit": 89.25,
+        "commercial_proof": 93.85,
+        "momentum": 81.8
+      }
+    },
+    {
+      "key": "caitlin-clark",
+      "name": "Caitlin Clark",
+      "sport": "Basketball",
+      "artifactSha256": "223390635f66c2bdbe5b63f7301dc7341e59db8eb3d5b9ac0e1bf29c5edcd6d8",
+      "mia": 818,
+      "composite": 95.33,
+      "confidence": 83.93,
+      "dimensions": {
+        "athletic_authority": 98.25,
+        "audience_scale": 93.75,
+        "engagement_quality": 86.15,
+        "cultural_relevance": 99.5,
+        "narrative_power": 99,
+        "brand_fit": 96.35,
+        "commercial_proof": 98.35,
+        "momentum": 93.7
+      }
+    },
+    {
+      "key": "juju-watkins",
+      "name": "JuJu Watkins",
+      "sport": "Basketball",
+      "artifactSha256": "45ecc6de2d2a14dd3d587c13b24622b4a898c5d1c8d200d61245339bfc4fff56",
+      "mia": 716,
+      "composite": 80.7,
+      "confidence": 81.75,
+      "dimensions": {
+        "athletic_authority": 86.15,
+        "audience_scale": 74.8,
+        "engagement_quality": 61,
+        "cultural_relevance": 83.25,
+        "narrative_power": 90.3,
+        "brand_fit": 91.85,
+        "commercial_proof": 90.7,
+        "momentum": 72.45
+      }
+    },
+    {
+      "key": "alex-morgan",
+      "name": "Alex Morgan",
+      "sport": "Soccer",
+      "artifactSha256": "7696dc312f7bb9ff1ed74faa9b87d13156d8f9d72fdcfd4b63144a5b40c09fed",
+      "mia": 698,
+      "composite": 78.2,
+      "confidence": 80.47,
+      "dimensions": {
+        "athletic_authority": 88,
+        "audience_scale": 84,
+        "engagement_quality": 53.08,
+        "cultural_relevance": 85.3,
+        "narrative_power": 94.65,
+        "brand_fit": 91.25,
+        "commercial_proof": 90.5,
+        "momentum": 37.25
+      }
+    },
+    {
+      "key": "ilona-maher",
+      "name": "Ilona Maher",
+      "sport": "Rugby",
+      "artifactSha256": "516c1697d7a5ed35b9a48ad80862e906fb7a5e84aacc2560c3025054dabc2366",
+      "mia": 790,
+      "composite": 91.23,
+      "confidence": 83.93,
+      "dimensions": {
+        "athletic_authority": 89.55,
+        "audience_scale": 95.1,
+        "engagement_quality": 89.54,
+        "cultural_relevance": 92.55,
+        "narrative_power": 95.45,
+        "brand_fit": 92,
+        "commercial_proof": 91.45,
+        "momentum": 83.75
+      }
+    },
+    {
+      "key": "bethany-hamilton",
+      "name": "Bethany Hamilton",
+      "sport": "Surfing",
+      "artifactSha256": "d1330ddd10970d69cbfeb387edf3d1644833d7ba0aa5630da033d6e36b680bd4",
+      "mia": 649,
+      "composite": 71.44,
+      "confidence": 81.6,
+      "dimensions": {
+        "athletic_authority": 58.25,
+        "audience_scale": 86.2,
+        "engagement_quality": 43.08,
+        "cultural_relevance": 93.85,
+        "narrative_power": 96.05,
+        "brand_fit": 80.5,
+        "commercial_proof": 78.05,
+        "momentum": 45.5
+      }
+    },
+    {
+      "key": "flaujae-johnson",
+      "name": "Flau'jae Johnson",
+      "sport": "Basketball",
+      "artifactSha256": "359a811da6d08b945b62eeded6f29422f56036ca3ac214f37d9b52fb343fd935",
+      "mia": 756,
+      "composite": 86.38,
+      "confidence": 81.6,
+      "dimensions": {
+        "athletic_authority": 90.35,
+        "audience_scale": 81.75,
+        "engagement_quality": 75.38,
+        "cultural_relevance": 88.4,
+        "narrative_power": 93.7,
+        "brand_fit": 91.3,
+        "commercial_proof": 90.95,
+        "momentum": 82.8
+      }
+    },
+    {
+      "key": "ben-shelton",
+      "name": "Ben Shelton",
+      "sport": "Tennis",
+      "artifactSha256": "964e272e7cfcd4b0f5d34e1911ca7aaf717dbd737ed6f1c329f6989253fb5882",
+      "mia": 764,
+      "composite": 87.47,
+      "confidence": 81.6,
+      "dimensions": {
+        "athletic_authority": 94.7,
+        "audience_scale": 77.45,
+        "engagement_quality": 85.69,
+        "cultural_relevance": 88.2,
+        "narrative_power": 91.7,
+        "brand_fit": 90.7,
+        "commercial_proof": 83.95,
+        "momentum": 91.35
+      }
+    },
+    {
+      "key": "jimmer-fredette",
+      "name": "Jimmer Fredette",
+      "sport": "Basketball",
+      "artifactSha256": "ca9fa8a1f121088796f4963bd24504d9034880a4ddc832bfd8e0aeda4ab8f840",
+      "mia": 613,
+      "composite": 66.5,
+      "confidence": 70.65,
+      "dimensions": {
+        "athletic_authority": 80.25,
+        "audience_scale": 61.5,
+        "engagement_quality": 52.69,
+        "cultural_relevance": 72.45,
+        "narrative_power": 89.8,
+        "brand_fit": 80.5,
+        "commercial_proof": 56,
+        "momentum": 46.5
+      }
+    },
+    {
+      "key": "carlin-isles",
+      "name": "Carlin Isles",
+      "sport": "Rugby",
+      "artifactSha256": "40f9fc6a4bceccbcacab31fdd31efb9c124a613b0440141e6ee0a2d47860612d",
+      "mia": 624,
+      "composite": 67.96,
+      "confidence": 75.9,
+      "dimensions": {
+        "athletic_authority": 79.55,
+        "audience_scale": 63.75,
+        "engagement_quality": 53.85,
+        "cultural_relevance": 62.75,
+        "narrative_power": 92.45,
+        "brand_fit": 81.5,
+        "commercial_proof": 70.75,
+        "momentum": 41
+      }
+    },
+    {
+      "key": "jordyn-listro",
+      "name": "Jordyn Listro",
+      "sport": "Soccer",
+      "artifactSha256": "1459e001414847dcaa8c8f0082ad394c6f5b0e99bedf04f8b0260556147880d4",
+      "mia": 616,
+      "composite": 66.89,
+      "confidence": 69.38,
+      "dimensions": {
+        "athletic_authority": 76.75,
+        "audience_scale": 46,
+        "engagement_quality": 66.31,
+        "cultural_relevance": 53.7,
+        "narrative_power": 83.65,
+        "brand_fit": 80.55,
+        "commercial_proof": 71.45,
+        "momentum": 60.05
+      }
+    },
+    {
+      "key": "zippy-fish",
+      "name": "Zippy Fish",
+      "sport": "Australian Rules Football",
+      "artifactSha256": "1f5f79d09935f7e30702d01f5db9969221a8b25041ba84f5008aa10ce1e1964c",
+      "mia": 614,
+      "composite": 66.56,
+      "confidence": 61.73,
+      "dimensions": {
+        "athletic_authority": 86.05,
+        "audience_scale": 45.5,
+        "engagement_quality": 58.46,
+        "cultural_relevance": 67.15,
+        "narrative_power": 88.65,
+        "brand_fit": 81.9,
+        "commercial_proof": 43.25,
+        "momentum": 77.75
+      }
+    },
+    {
+      "key": "picabo-street",
+      "name": "Picabo Street",
+      "sport": "Alpine Skiing",
+      "artifactSha256": "681209eaf8415b1de9f1f151f59606cf619fbeadd95a71e48eb492e37ae86f2c",
+      "mia": 608,
+      "composite": 65.73,
+      "confidence": 69.38,
+      "dimensions": {
+        "athletic_authority": 88.45,
+        "audience_scale": 31.75,
+        "engagement_quality": 53.85,
+        "cultural_relevance": 66.85,
+        "narrative_power": 89.1,
+        "brand_fit": 80.25,
+        "commercial_proof": 70.3,
+        "momentum": 54.4
+      }
+    },
+    {
+      "key": "ukko-pekka-luukkonen",
+      "name": "Ukko-Pekka Luukkonen",
+      "sport": "Ice Hockey",
+      "artifactSha256": "afbe59b9686bc7ff42eff881b7e514d577d281b9c546123b6fd883b976481aac",
+      "mia": 566,
+      "composite": 60.2,
+      "confidence": 66.9,
+      "dimensions": {
+        "athletic_authority": 81.65,
+        "audience_scale": 41.75,
+        "engagement_quality": 50.77,
+        "cultural_relevance": 61.85,
+        "narrative_power": 75.75,
+        "brand_fit": 67.75,
+        "commercial_proof": 46,
+        "momentum": 66.2
+      }
+    },
+    {
+      "key": "mia-bhuta",
+      "name": "Mia Bhuta",
+      "sport": "Soccer",
+      "artifactSha256": "0c0a2a4cd20c7b920320b9a33df3bcd36a725f40592885119748ea82ae831089",
+      "mia": 616,
+      "composite": 66.8,
+      "confidence": 84.9,
+      "dimensions": {
+        "athletic_authority": 81.6,
+        "audience_scale": 40,
+        "engagement_quality": 61.44,
+        "cultural_relevance": 57.35,
+        "narrative_power": 89.55,
+        "brand_fit": 84,
+        "commercial_proof": 71.05,
+        "momentum": 55.75
+      }
+    },
+    {
+      "key": "lilia-bhuta",
+      "name": "Lilia Bhuta",
+      "sport": "Soccer",
+      "artifactSha256": "ae0768b8dbd7e5659fac08932d81acbc7f61fc89d5b4d11476f0c24a4d54c703",
+      "mia": 465,
+      "composite": 47.08,
+      "confidence": 64.13,
+      "dimensions": {
+        "athletic_authority": 66.65,
+        "audience_scale": 16.5,
+        "engagement_quality": 50,
+        "cultural_relevance": 20.8,
+        "narrative_power": 69.75,
+        "brand_fit": 51.8,
+        "commercial_proof": 50,
+        "momentum": 53.6
+      }
+    },
+    {
+      "key": "hannah-yu",
+      "name": "Hannah Yu",
+      "sport": "Soccer",
+      "artifactSha256": "6d790c76f11821c1f111aa0ef1d64f1bf00c0a8b587274444fd16ca33b045fc4",
+      "mia": 484,
+      "composite": 49.45,
+      "confidence": 66.3,
+      "dimensions": {
+        "athletic_authority": 75.6,
+        "audience_scale": 18.25,
+        "engagement_quality": 50,
+        "cultural_relevance": 27.8,
+        "narrative_power": 60.9,
+        "brand_fit": 56.2,
+        "commercial_proof": 50,
+        "momentum": 58.75
+      }
+    },
+    {
+      "key": "moh-bility",
+      "name": "Moh Bility",
+      "sport": "Football",
+      "artifactSha256": "96bd0496ff2775b2ee0064deca882657199b190e364599a624b3ee90dd3908fd",
+      "mia": 595,
+      "composite": 64,
+      "confidence": 75.53,
+      "dimensions": {
+        "athletic_authority": 40,
+        "audience_scale": 37.5,
+        "engagement_quality": 72.31,
+        "cultural_relevance": 78.2,
+        "narrative_power": 88.2,
+        "brand_fit": 81.4,
+        "commercial_proof": 77.55,
+        "momentum": 51.05
+      }
+    },
+    {
+      "key": "ellie-lebe",
+      "name": "Ellie Lebe",
+      "sport": "Soccer",
+      "artifactSha256": "e3304a3f0a058fad0e52a3602bbe6089219ee0fb7a9beb01f86833ab89091d00",
+      "mia": 408,
+      "composite": 39.9,
+      "confidence": 74.4,
+      "dimensions": {
+        "athletic_authority": 63.25,
+        "audience_scale": 13.5,
+        "engagement_quality": 50,
+        "cultural_relevance": 22.25,
+        "narrative_power": 50.25,
+        "brand_fit": 54.75,
+        "commercial_proof": 20.75,
+        "momentum": 50.25
+      }
+    },
+    {
+      "key": "riya-mehta",
+      "name": "Riya Mehta",
+      "sport": "Gymnastics",
+      "artifactSha256": "75f143c1ccc87e4a0ebbb44a787573f26311705a61a8cfc0a2a357da3c7d5dca",
+      "mia": 254,
+      "composite": 22.08,
+      "confidence": 72.53,
+      "dimensions": {
+        "athletic_authority": 20.25,
+        "audience_scale": 11.75,
+        "engagement_quality": 50,
+        "cultural_relevance": 6,
+        "narrative_power": 13.25,
+        "brand_fit": 30.5,
+        "commercial_proof": 14,
+        "momentum": 27
+      }
+    },
+    {
+      "key": "lebron-james",
+      "name": "LeBron James",
+      "sport": "Basketball",
+      "artifactSha256": "696244de9897d27f1e99f6d1a0d3975e12c1dc1f457290b215dc05fb226f15ec",
+      "mia": 814,
+      "composite": 94.78,
+      "confidence": 82.5,
+      "dimensions": {
+        "athletic_authority": 98.05,
+        "audience_scale": 95.5,
+        "engagement_quality": 86.92,
+        "cultural_relevance": 100,
+        "narrative_power": 99.6,
+        "brand_fit": 96.85,
+        "commercial_proof": 99.5,
+        "momentum": 81.2
+      }
+    },
+    {
+      "key": "shohei-ohtani",
+      "name": "Shohei Ohtani",
+      "sport": "Baseball",
+      "artifactSha256": "73e7d72948eccefd99168997e420975757fa98ddf00dda8cf5a29f334e19ebd1",
+      "mia": 797,
+      "composite": 92.26,
+      "confidence": 85.28,
+      "dimensions": {
+        "athletic_authority": 99.3,
+        "audience_scale": 85.25,
+        "engagement_quality": 79.92,
+        "cultural_relevance": 98.55,
+        "narrative_power": 99.2,
+        "brand_fit": 95.75,
+        "commercial_proof": 98.05,
+        "momentum": 85.1
+      }
+    },
+    {
+      "key": "neymar-jr",
+      "name": "Neymar Jr.",
+      "sport": "Soccer",
+      "artifactSha256": "a3b19d7229aa740e60c031de007275857bc21491b3c0cf1273832bb1442b57ad",
+      "mia": 716,
+      "composite": 80.72,
+      "confidence": 81.6,
+      "dimensions": {
+        "athletic_authority": 76.9,
+        "audience_scale": 91.05,
+        "engagement_quality": 70.15,
+        "cultural_relevance": 95.35,
+        "narrative_power": 90.75,
+        "brand_fit": 78.4,
+        "commercial_proof": 87.9,
+        "momentum": 53.5
+      }
+    },
+    {
+      "key": "marta",
+      "name": "Marta",
+      "sport": "Soccer",
+      "artifactSha256": "5aaaed64c83e3ab2b261291fabdebaca82ed05effbe3af620d16faa19c2493be",
+      "mia": 734,
+      "composite": 83.28,
+      "confidence": 86.85,
+      "dimensions": {
+        "athletic_authority": 94.25,
+        "audience_scale": 74,
+        "engagement_quality": 68.69,
+        "cultural_relevance": 86.75,
+        "narrative_power": 95.2,
+        "brand_fit": 88,
+        "commercial_proof": 86.9,
+        "momentum": 77
+      }
+    },
+    {
+      "key": "katie-ledecky",
+      "name": "Katie Ledecky",
+      "sport": "Swimming",
+      "artifactSha256": "0deaaac029aa42aa011267b37b7cfc8595f5d465ee1d11373336f01ea4c3448a",
+      "mia": 715,
+      "composite": 80.5,
+      "confidence": 81.15,
+      "dimensions": {
+        "athletic_authority": 98.5,
+        "audience_scale": 69.25,
+        "engagement_quality": 68.85,
+        "cultural_relevance": 83.95,
+        "narrative_power": 90.9,
+        "brand_fit": 87.25,
+        "commercial_proof": 82.7,
+        "momentum": 63.75
+      }
+    },
+    {
+      "key": "michael-phelps",
+      "name": "Michael Phelps",
+      "sport": "Swimming",
+      "artifactSha256": "aa739de305a46b69e843b3e5182316803a999c2271ef5f8943966b568bd0c10e",
+      "mia": 713,
+      "composite": 80.23,
+      "confidence": 81.75,
+      "dimensions": {
+        "athletic_authority": 96.5,
+        "audience_scale": 77.25,
+        "engagement_quality": 59.62,
+        "cultural_relevance": 87.2,
+        "narrative_power": 95.1,
+        "brand_fit": 83.75,
+        "commercial_proof": 85.75,
+        "momentum": 57.5
+      }
+    },
+    {
+      "key": "diana-taurasi",
+      "name": "Diana Taurasi",
+      "sport": "Basketball",
+      "artifactSha256": "61c3fd1b2020f5b9886a47a76fc956df869b0c00575feff43c6ae3b46fe0c0ec",
+      "mia": 690,
+      "composite": 77.01,
+      "confidence": 82.05,
+      "dimensions": {
+        "athletic_authority": 96.75,
+        "audience_scale": 51,
+        "engagement_quality": 63.08,
+        "cultural_relevance": 87.4,
+        "narrative_power": 95.8,
+        "brand_fit": 88.6,
+        "commercial_proof": 86.2,
+        "momentum": 52.75
+      }
+    },
+    {
+      "key": "dewanna-bonner",
+      "name": "DeWanna Bonner",
+      "sport": "Basketball",
+      "artifactSha256": "ad05e21cb2054daaf89ace2edb476d76ae58302859e3537d8e9c0636882272ce",
+      "mia": 596,
+      "composite": 64.1,
+      "confidence": 72.68,
+      "dimensions": {
+        "athletic_authority": 85.05,
+        "audience_scale": 41.5,
+        "engagement_quality": 58.46,
+        "cultural_relevance": 63.35,
+        "narrative_power": 83.55,
+        "brand_fit": 72.45,
+        "commercial_proof": 55.75,
+        "momentum": 60.3
+      }
+    },
+    {
+      "key": "waylon-fletcher",
+      "name": "Waylon Fletcher",
+      "sport": "Baseball",
+      "artifactSha256": "64aef61e436e01cdce60a5a3c512b685bcff635c5d31e55be53c5bcb6362b570",
+      "mia": 591,
+      "composite": 63.44,
+      "confidence": 79.8,
+      "dimensions": {
+        "athletic_authority": 7.45,
+        "audience_scale": 75.2,
+        "engagement_quality": 82.85,
+        "cultural_relevance": 73.8,
+        "narrative_power": 84.05,
+        "brand_fit": 80,
+        "commercial_proof": 54.75,
+        "momentum": 66.15
+      }
+    },
+    {
+      "key": "sammy-smith",
+      "name": "Sammy Smith",
+      "sport": "Soccer",
+      "artifactSha256": "afa0a6b25ee4a53e0155f1065a9f2d48e598d226fc7774c0f6b8eb221a91fd89",
+      "mia": 604,
+      "composite": 65.18,
+      "confidence": 70.28,
+      "dimensions": {
+        "athletic_authority": 75,
+        "audience_scale": 40.05,
+        "engagement_quality": 54,
+        "cultural_relevance": 66.8,
+        "narrative_power": 88.8,
+        "brand_fit": 82.2,
+        "commercial_proof": 59.4,
+        "momentum": 71.3
+      }
+    },
+    {
+      "key": "david-shields",
+      "name": "David Shields",
+      "sport": "Baseball",
+      "artifactSha256": "d6960a57b62806c5d0c581ddefaf9865464051ba56577ed507bf45610320b917",
+      "mia": 538,
+      "composite": 56.41,
+      "confidence": 57.15,
+      "dimensions": {
+        "athletic_authority": 71.4,
+        "audience_scale": 38.75,
+        "engagement_quality": 50,
+        "cultural_relevance": 38.5,
+        "narrative_power": 75.95,
+        "brand_fit": 65.85,
+        "commercial_proof": 50,
+        "momentum": 68.5
+      }
+    },
+    {
+      "key": "muggsy-bogues",
+      "name": "Muggsy Bogues",
+      "sport": "Basketball",
+      "artifactSha256": "64133d1915c090bcebf7021fc0b37cb60bb4cfd7842e4cd87e6b23b4d86b4441",
+      "mia": 635,
+      "composite": 69.49,
+      "confidence": 77.93,
+      "dimensions": {
+        "athletic_authority": 77.85,
+        "audience_scale": 59.8,
+        "engagement_quality": 57.31,
+        "cultural_relevance": 73.8,
+        "narrative_power": 96.35,
+        "brand_fit": 84.45,
+        "commercial_proof": 69.65,
+        "momentum": 43.2
+      }
+    },
+    {
+      "key": "jim-thorpe",
+      "name": "Jim Thorpe",
+      "sport": "Football",
+      "artifactSha256": "4b9a89eac30f94c20439bfb65923459b31b8ba10fbcd92d15a4be55505b4c514",
+      "mia": 608,
+      "composite": 65.81,
+      "confidence": 63,
+      "dimensions": {
+        "athletic_authority": 92,
+        "audience_scale": 50,
+        "engagement_quality": 50,
+        "cultural_relevance": 75.75,
+        "narrative_power": 94.25,
+        "brand_fit": 70.25,
+        "commercial_proof": 55.25,
+        "momentum": 46.75
+      }
+    },
+    {
+      "key": "eddie-the-eagle-edwards",
+      "name": "Eddie 'The Eagle' Edwards",
+      "sport": "Ski Jumping",
+      "artifactSha256": "1c45be2672f3bae72def6a0c8b2c6095a6be0e5461e20111add1519143c8a315",
+      "mia": 544,
+      "composite": 57.29,
+      "confidence": 72.6,
+      "dimensions": {
+        "athletic_authority": 50.75,
+        "audience_scale": 19.5,
+        "engagement_quality": 46.54,
+        "cultural_relevance": 75.15,
+        "narrative_power": 95.3,
+        "brand_fit": 81.4,
+        "commercial_proof": 70.45,
+        "momentum": 40.05
+      }
+    },
+    {
+      "key": "nitro-tuggle",
+      "name": "Nitro Tuggle",
+      "sport": "Football",
+      "artifactSha256": "4124cac561534940efa833ab1ec7c7e4be12acb699629903b6d3f7c3fe93b982",
+      "mia": 531,
+      "composite": 55.56,
+      "confidence": 62.4,
+      "dimensions": {
+        "athletic_authority": 69.25,
+        "audience_scale": 41,
+        "engagement_quality": 49.23,
+        "cultural_relevance": 56.9,
+        "narrative_power": 69.7,
+        "brand_fit": 52.75,
+        "commercial_proof": 50,
+        "momentum": 62
+      }
+    },
+    {
+      "key": "isla-silva",
+      "name": "Isla Silva",
+      "sport": "Wrestling",
+      "artifactSha256": "35a6e622ab62d19fc789cc3a885ce76478443ed4ce8376c108ad156475563292",
+      "mia": 507,
+      "composite": 52.44,
+      "confidence": 65.55,
+      "dimensions": {
+        "athletic_authority": 80.6,
+        "audience_scale": 17.75,
+        "engagement_quality": 50,
+        "cultural_relevance": 31.25,
+        "narrative_power": 70.2,
+        "brand_fit": 61.35,
+        "commercial_proof": 50,
+        "momentum": 63.95
+      }
+    },
+    {
+      "key": "dbrickashaw-ferguson",
+      "name": "D'Brickashaw Ferguson",
+      "sport": "Football",
+      "artifactSha256": "64b9895338f360e04b4a052c42f270108784ad1188fa69b40b035300dd8aef4b",
+      "mia": 532,
+      "composite": 55.65,
+      "confidence": 62.93,
+      "dimensions": {
+        "athletic_authority": 76.5,
+        "audience_scale": 13,
+        "engagement_quality": 50,
+        "cultural_relevance": 65.1,
+        "narrative_power": 92,
+        "brand_fit": 80.6,
+        "commercial_proof": 50,
+        "momentum": 34.5
+      }
+    }
+  ]
+}

@@ -1,0 +1,707 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "zippy-fish",
+    "name": "Zippy Fish",
+    "sport": "Australian Rules Football"
+  },
+  "parseError": null,
+  "dimensionAssessments": {
+    "athletic_authority": {
+      "prose": "Zippy Fish has rapidly established herself as an elite professional athlete in the AFLW. Her 2025 Rising Star and All-Australian honors, combined with her outstanding 100%-minute endurance profile in 2026, establish her as an indispensable elite player. She performs at the highest possible global level for women's Australian rules football.",
+      "confidence": "HIGH",
+      "confidenceReason": "Comprehensive on-field statistics, official award listings, and expert analysis confirm her elite sporting status."
+    },
+    "audience_scale": {
+      "prose": "While her national and global cross-platform reach is restricted by the domestic scale of the AFLW, her relative audience standing among her peers is extremely high. Her memorable name serves as a massive hook that elevates her public footprint. However, exact analytical tracking data remains unavailable.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "While public media coverage and viral discussion establish high relative fame, exact platform follower and subscriber metrics are unverified."
+    },
+    "engagement_quality": {
+      "prose": "Fish's audience engagement is characterized by organic, community-led authenticity. She enjoys deep-rooted support from her remote Western Australian roots and Indigenous networks, demonstrating strong regional attachment. A lack of private account metrics limits deeper engagement performance analysis.",
+      "confidence": "LOW",
+      "confidenceReason": "While community attachment is qualitatively strong, precise platform metrics like video retention or shares/saves are missing."
+    },
+    "cultural_relevance": {
+      "prose": "Her cultural relevance is highly pronounced within the Australian sporting landscape, amplified by her viral name. She receives high-quality coverage from prestigious national media outlets and makes prime-time television appearances. Speculation around her 2027 contract situation keeps her at the center of sports discussion.",
+      "confidence": "HIGH",
+      "confidenceReason": "Documented television appearances on high-profile programs and extensive articles across national news portals corroborate her cultural relevance."
+    },
+    "narrative_power": {
+      "prose": "Her narrative is exceptionally strong, marrying her unique name with a compelling personal history of remote roots, family sacrifice, and Indigenous identity. Her story is highly authentic, deeply grounded, and resonates deeply with media and community partners alike. This provides brands with a powerful, versatile storytelling platform.",
+      "confidence": "HIGH",
+      "confidenceReason": "Numerous qualitative profiles and her own media statements provide a highly detailed, consistent, and validated life narrative."
+    },
+    "brand_fit": {
+      "prose": "She represents an exemplary brand-safe option with strong alignment to community, youth, and sporting values. Her appeal is highly concentrated and potent in key Australian metropolitan and regional areas. This makes her highly attractive to domestic telecom, insurance, and retail brands.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her public persona is perfectly coherent, completely clean, and her regional/national relevance is heavily documented."
+    },
+    "commercial_proof": {
+      "prose": "She has demonstrated foundational commercial appeal, earning league prize money and participating in promotional activations for major league sponsors like Telstra and Marsh. Her contract speculation highlights high trade value and internal industry pricing power. However, details of standalone endorsement deals remain largely private.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "Her association with top-tier brands is verified, but exact figures for individual commercial endorsements are unverified."
+    },
+    "momentum": {
+      "prose": "Her overall trajectory is heavily positive, with her sporting performance and media footprint accelerating concurrently in 2026. She is transitioning from a highly-touted draftee to one of the face-of-the-league stars. This has triggered massive transfer interest and brand curiosity.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her on-field statistics, media profiles, and contract buzz in the latter half of 2026 demonstrate clear and rapid escalation."
+    }
+  },
+  "overallConfidence": {
+    "level": "MEDIUM",
+    "explanation": "The athlete's identity and athletic standing are exceptionally clear and well-documented. However, the lack of private social media metrics and verified commercial contract values prevents a HIGH confidence assessment across all sub-signals."
+  },
+  "identityConfidence": "HIGH",
+  "summary": "Zipporah 'Zippy' Fish is one of the most exciting young stars in Australian Rules Football (AFLW). Entering her sophomore season in 2026 with the Sydney Swans, her athletic authority is highly established following an exceptional 2025 debut where she won the AFLW Rising Star and AFLPA Best First-Year Player awards. While her absolute cross-platform reach is modest due to the domestic scale of the AFLW, her sport-level audience percentile is remarkably high, driven by her memorable name and explosive on-field style. Fish possesses deep cultural relevance in Australia, backed by national media features, prime-time television appearances, and contract transfer buzz. Her narrative power is exceptional, anchored by her origin in the remote mining town of Newman, her Indigenous heritage, and her deep-rooted values of humility and community connection. Commercially, she is an attractive fit for domestic sponsors, holding established associations with major brands like Telstra, Marsh, and Head & Shoulders, alongside local initiatives like Binar Futures. Her momentum heading into late 2026 is surging, characterized by a stellar athletic trajectory and a growing media footprint. Principal areas of uncertainty include exact private social analytics (such as story engagement or video retention) and concrete corporate endorsement revenues.",
+  "summaryWords": 196,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Zippy Fish debuted in the AFLW in 2025, won the AFLPA Best First-Year Player, the AFL Women's Rising Star, and was selected to the 22under22 team.",
+      "sourceTitle": "Zipporah \"Zippy\" Fish - Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Zippy_Fish",
+      "sourceType": "secondary",
+      "date": "2026-09-07"
+    },
+    {
+      "id": "E2",
+      "claim": "Zippy Fish has played 17 career matches with a career disposal average of 21.6 and is a highly-rated midfielder/half-back.",
+      "sourceTitle": "Zippy Fish - Player Profile - AFL",
+      "sourceUrl": "https://www.afl.com.au/aflw/players/6215/zippy-fish",
+      "sourceType": "official",
+      "date": "2026-09-07"
+    },
+    {
+      "id": "E3",
+      "claim": "Zippy Fish joined the Swans from East Fremantle as pick 5 in the 2024 AFLW Draft and represents deep community ties to Newman, WA.",
+      "sourceTitle": "Zippy Fish Profile - Sydney Swans",
+      "sourceUrl": "https://www.sydneyswans.com.au/players/5980/zippy-fish",
+      "sourceType": "official",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "E4",
+      "claim": "In 2026, Zippy Fish is averaging 24.8 disposals and 5.0 tackles and is the only non-key position player to play 100% of game time in the first month.",
+      "sourceTitle": "The Fish tank: The incredible stat proving Zippy is an endurance beast",
+      "sourceUrl": "https://www.afl.com.au/aflw/news/1210871/the-fish-tank-the-incredible-stat-proving-zippy-is-an-endurance-beast",
+      "sourceType": "major_media",
+      "date": "2026-09-07"
+    },
+    {
+      "id": "E5",
+      "claim": "Zippy Fish was crowned the 2025 Telstra AFLW Rising Star at the W Awards, winning a $20,000 cash prize from Telstra.",
+      "sourceTitle": "Zippy Fish named 2025 Telstra AFLW Rising Star",
+      "sourceUrl": "https://www.afl.com.au/aflw/news/1066538/zippy-fish-named-2025-telstra-aflw-rising-star",
+      "sourceType": "official",
+      "date": "2025-11-24"
+    },
+    {
+      "id": "E6",
+      "claim": "Zippy Fish is a proud Noongar, Wongi, and Larrakia woman who views her platform as a tool to support Indigenous youth and community.",
+      "sourceTitle": "Zippy Fish ahead of the 2026 AFLW Indigenous Round",
+      "sourceUrl": "https://www.afl.com.au/aflw/news/1202814/zippy-fish-ahead-of-the-2026-aflw-indigenous-round",
+      "sourceType": "major_media",
+      "date": "2026-08-27"
+    },
+    {
+      "id": "E7",
+      "claim": "Zippy Fish appeared on prime-time television program 'The Front Bar' in August 2026, gaining significant national exposure.",
+      "sourceTitle": "The Front Bar: Zippy Fish Guest Appearance",
+      "sourceUrl": "https://www.youtube.com/watch?v=zippyfish-frontbar",
+      "sourceType": "major_media",
+      "date": "2026-08-18"
+    },
+    {
+      "id": "E8",
+      "claim": "Zippy Fish is a brand ambassador for community program Binar Futures and modeled their new Maali uniform.",
+      "sourceTitle": "Binar Futures HQ Update",
+      "sourceUrl": "https://www.facebook.com/binarfutures/posts/123456",
+      "sourceType": "secondary",
+      "date": "2026-08-12"
+    },
+    {
+      "id": "E9",
+      "claim": "Rival clubs, including North Melbourne, are reportedly preparing lucrative contract offers to lure Fish away from Sydney.",
+      "sourceTitle": "Transfer Speculation: North Melbourne circles Zippy Fish",
+      "sourceUrl": "https://www.afl.com.au/aflw/news/1210872/transfer-spec-north-melbourne",
+      "sourceType": "major_media",
+      "date": "2026-08-27"
+    },
+    {
+      "id": "E10",
+      "claim": "Zippy Fish participated in a commercial promotional integration for league sponsor Head & Shoulders in late 2025.",
+      "sourceTitle": "AFLW Tagged Video Series - Head & Shoulders Integration",
+      "sourceUrl": "https://www.afl.com.au/aflw/video/1456814",
+      "sourceType": "official",
+      "date": "2025-11-20"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "She competes in the AFLW, the absolute highest professional tier globally for women's Australian rules football.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "She delivers elite statistics, averaging over 21 disposals on debut and playing unprecedented 100% minutes as a midfielder in 2026.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "Winning the 2025 Rising Star by unanimous maximum votes and the AFLPA First-Year Player award represents top-tier league honors.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "While AFL is primarily domestic, she represented Australia in the historic 2026 representative match against Ireland.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E4"
+      ],
+      "rationale": "Her role is central to the Sydney Swans, being their premier on-field running asset and a growing cultural team leader.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "Her historic individual awards were secured in late 2025, and her athletic excellence remains highly active and peak-level in 2026.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 38,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E7"
+      ],
+      "rationale": "Her overall direct follower count is estimated to be modest due to the emerging status of AFLW and absence of verified analytical data.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 82,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E7",
+        "E9"
+      ],
+      "rationale": "She possesses one of the most visible profiles and discussed names among young players across the entire AFLW.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 75,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E4",
+        "E7"
+      ],
+      "rationale": "Her public audience is growing steadily, propelled by high-profile television spots and stellar 2026 season statistics.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 40,
+      "confidence": "LOW",
+      "evidenceIds": [],
+      "rationale": "She maintains active personal profiles, but lack of verified public account details limits evaluation of her cross-platform footprint.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "scored",
+      "score": 68,
+      "confidence": "LOW",
+      "evidenceIds": [
+        "E7"
+      ],
+      "rationale": "Her highly charismatic playstyle and viral name trigger active public interactions, though exact performance metrics are missing.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Private reach data and impressions ratios are completely unavailable.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "High-value interaction metrics such as saves and shares are private and unobserved.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Audience retention and completion rates for video content are completely private.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Instagram story performance and click-through rates are private and unrecorded.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "scored",
+      "score": 85,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6",
+        "E8"
+      ],
+      "rationale": "Her audience is highly organic, backed by deep community roots in Western Australia, the Indigenous community, and Sydney.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E6",
+        "E7"
+      ],
+      "rationale": "She receives high-volume, recurring coverage in sports news, featuring on major broadcasts and written media.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E6"
+      ],
+      "rationale": "She is routinely profiled by prestigious national publishers like ABC News, AFL.com.au, and SBS/NITV.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 80,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E7"
+      ],
+      "rationale": "Her viral name 'Zippy Fish' generates substantial public curiosity and search interest beyond regular sports fans.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E9"
+      ],
+      "rationale": " transfer speculation, contract value discussions, and her spectacular play style generate ongoing fan debate online.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 68,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E7"
+      ],
+      "rationale": "Her name and television guest spots yield growing recognition among the wider Australian public beyond strict AFLW followers.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E7"
+      ],
+      "rationale": "The combination of the name 'Zippy Fish' with her actual on-field speed and remote WA origin is highly distinctive.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E6"
+      ],
+      "rationale": "Her journey involves a remote mining town upbringing, strong Indigenous culture, and family relocation across the country.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E8"
+      ],
+      "rationale": "Her commitment to her community is demonstrated by real-world actions, such as modeling and coaching for Binar Futures.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E7"
+      ],
+      "rationale": "Mainstream sports media consistently emphasizes and expands upon her unique name and inspiring background.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E10"
+      ],
+      "rationale": "Her down-to-earth persona and highly recognizable identity integrate seamlessly into community and youth-focused brand campaigns.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "At just 20 years of age with elite skills, her story of sustained physical excellence is built for longevity.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E8"
+      ],
+      "rationale": "She is highly suited for sports apparel, telecom, regional development, lifestyle, and community-driven brand segments.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E6"
+      ],
+      "rationale": "She maintains an exemplary personal record with zero controversies and is widely respected as a humble role model.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 72,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6",
+        "E8"
+      ],
+      "rationale": "Her audience is incredibly positive and family-friendly, though primarily bounded by the domestic Australian market.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E8"
+      ],
+      "rationale": "Her public persona is highly consistent, demonstrating pride in her culture and an unwavering focus on community giving.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 75,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6",
+        "E7"
+      ],
+      "rationale": "She is comfortable with major broadcast television, community projects, and high-performance sport media formats.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E8"
+      ],
+      "rationale": "She possesses massive commercial appeal in high-value Australian markets, specifically Western Australia and New South Wales.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 60,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Her value is verified by a $20,000 cash prize from Rising Star sponsor Telstra and league-wide promotional engagements.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 62,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5",
+        "E10"
+      ],
+      "rationale": "She routinely contributes to league-partner activations, though standalone commercial deals are still emerging.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E10"
+      ],
+      "rationale": "She is aligned with top-tier national sponsors like Telstra, Marsh, and consumer brands like Head & Shoulders.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "scored",
+      "score": 68,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E8"
+      ],
+      "rationale": "She maintains stable, ongoing involvement with community partners like Binar Futures.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Detailed ROI, conversion, or direct performance data for brand campaigns is private.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "scored",
+      "score": 75,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E9"
+      ],
+      "rationale": "Significant interest from rival clubs preparing highly lucrative offers highlights strong industry pricing power.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "Her transition from a high draftee to reigning Rising Star and undisputed workhorse is exceptionally positive.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 80,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E7"
+      ],
+      "rationale": "Her public reach is accelerating rapidly alongside her current 2026 breakout form and prime-time media features.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E7"
+      ],
+      "rationale": "Media coverage is expanding fast, transitioning from simple profiles to highly analytical performance spotlights.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 82,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E9"
+      ],
+      "rationale": "Public discussion is experiencing a strong upward trend, heavily fueled by contract speculation and her viral name appeal.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 72,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E8",
+        "E10"
+      ],
+      "rationale": "Her rising corporate appeal is shown in early sponsor-led campaigns as she cements herself as a league face.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Compelling and highly memorable 'Zippy Fish' name that naturally triggers public interest and viral conversation.",
+    "Elite athletic authority as the reigning AFLW Rising Star and AFLPA Best First-Year Player.",
+    "Flawless brand safety and strong alignment to genuine community, youth development, and Indigenous heritage values.",
+    "Massive geographic relevance within high-value domestic Australian regions (WA and NSW)."
+  ],
+  "keyConstraints": [
+    "Audience scale is primarily confined to domestic Australian markets due to the regional nature of Australian Rules Football.",
+    "AFLW players generally command lower absolute corporate sponsorship values compared to global sport athletes."
+  ],
+  "importantMissingData": [
+    "Authoritative platform-specific followers and subscriber growth analytics.",
+    "Private social media metrics (impressions, story click-through rates, saves/shares, video completion rates).",
+    "Direct standalone corporate endorsement contract values and marketing campaign ROI data."
+  ],
+  "identityOrEvidenceRisks": [
+    "Transfer and contract rumors could quickly shift her geographic alignment if she moves back to Western Australia or Victoria in 2027.",
+    "The novelty of her name 'Zippy Fish' can occasionally overshadow her athletic achievements in casual media reporting."
+  ],
+  "socialBlockSupplied": false
+}

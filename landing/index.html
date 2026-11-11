@@ -1,0 +1,2503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<!-- Back from a sign-in or Instagram redirect: show the boot screen from the first paint, never the home page, until
+     the right screen opens (#j-boot; unboot() in the main script). -->
+<script>try{var q=location.search;if(/[?&](connected|connected_error)=/.test(q)||/[?&]go=score(&|$)/.test(q)||Date.now()-Number(localStorage.getItem('nomila_oauth_at')||0)<600000)document.documentElement.classList.add('booting');}catch(e){}</script>
+<title>Nomila — The Operating System for Athletes</title>
+<meta property="og:title" content="Nomila — The Operating System for Athletes"/>
+<meta property="og:description" content="Meet Mila, a personal AI agent that learns your story, builds your brand and turns your influence into opportunities, while you train, compete and sleep."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://nomila.co/"/>
+<meta property="og:image" content="https://nomila.co/assets/og-image.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Nomila — The Operating System for Athletes"/>
+<meta name="twitter:description" content="Your brand is a media business. Monetize your impact."/>
+<meta name="twitter:image" content="https://nomila.co/assets/og-image.png"/>
+<meta property="fb:app_id" content="876239621775424"/>
+<meta name="description" content="Meet Mila, a personal AI agent that learns your story, builds your brand and turns your influence into opportunities, while you train, compete and sleep."/>
+<meta name="theme-color" content="#0E0E0E"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<link rel="preload" as="image" href="assets/v2/hero-1-1920.webp" imagesrcset="assets/v2/hero-1-960.webp 960w, assets/v2/hero-1-1920.webp 1920w" imagesizes="100vw" fetchpriority="high"/>
+<style>
+/* ═══════════════════ MARKETING PAGE ═══════════════════ */
+:root{--ink:#0E0E0E;--ink2:#3A3A3A;--ground:#FBFBFA;--act:#C8325A;--act-hover:#A82648;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:'Outfit',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased;}
+a{color:var(--ink);text-underline-offset:3px;}a:hover{color:var(--ink2);}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px;box-sizing:border-box;}
+.wide{max-width:1320px;margin:0 auto;padding:0 40px;box-sizing:border-box;}
+.navlink{color:#3A3A3A;text-decoration:none;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:12px 2px;white-space:nowrap;}
+.navlink:hover{color:#0E0E0E;}
+/* actions: raspberry pills, white uppercase label */
+.pill{background:var(--act);color:#FFFFFF !important;text-decoration:none;font-weight:800;letter-spacing:.08em;text-transform:uppercase;display:inline-flex;align-items:center;justify-content:center;border-radius:999px;white-space:nowrap;transition:background .2s, transform .2s;}
+button.pill{border:0;cursor:pointer;font-family:inherit;}
+.pill:hover{background:var(--act-hover);transform:translateY(-1px);}
+section[id]{scroll-margin-top:96px;}
+
+/* rings that live */
+.spin-a{transform-box:view-box;transform-origin:56px 56px;animation:spin 38s linear infinite;}
+.spin-b{transform-box:view-box;transform-origin:56px 56px;animation:spin 28s linear infinite reverse;}
+.spin-c{transform-box:view-box;transform-origin:56px 56px;animation:spin 22s linear infinite;}
+.spin-d{transform-box:view-box;transform-origin:56px 56px;animation:spin 16s linear infinite reverse;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.6s cubic-bezier(.6,0,.2,1) forwards;}
+.d1{animation-delay:.1s}.d2{animation-delay:.35s}.d3{animation-delay:.6s}.d4{animation-delay:.85s}
+@keyframes draw{to{stroke-dashoffset:0;}}
+.pulse{animation:pulse 1.8s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.35;transform:scale(.8);}}
+.fade-in{animation:fadein .6s ease both;}
+@keyframes fadein{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
+@keyframes prog{from{width:0;}to{width:100%;}}
+
+/* hero photo rotation: 8 photos x 5s, 1s crossfade (40s loop) */
+.hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;opacity:0;animation:heroslide 40s linear infinite both;}
+.hero-slide.hs1{opacity:1;}
+.hs1{animation-delay:-1s;}.hs2{animation-delay:4s;}.hs3{animation-delay:9s;}.hs4{animation-delay:14s;}.hs5{animation-delay:19s;}.hs6{animation-delay:24s;}.hs7{animation-delay:29s;}.hs8{animation-delay:34s;}
+@keyframes heroslide{0%{opacity:0;transform:scale(1.06);}2.5%{opacity:1;}15%{opacity:1;}17.5%{opacity:0;transform:scale(1);}100%{opacity:0;transform:scale(1);}}
+.h1l{display:block;white-space:nowrap;}
+.hero-mila{display:inline-block;vertical-align:-10px;width:36px;height:36px;margin:0 2px;padding:0;border:2px solid rgba(255,255,255,.85);border-radius:50%;overflow:hidden;background:#F1E9DC;box-shadow:0 4px 14px rgba(0,0,0,.3);}
+.hero-mila video{width:100%;height:100%;object-fit:cover;display:block;}
+
+/* How it works: auto-advancing stepper, per-step colours */
+.step{position:relative;text-align:left;background:transparent;border:1px solid transparent;border-radius:12px;padding:16px 22px;margin:2px 0;cursor:pointer;font-family:inherit;color:#6B6B6B;min-height:44px;overflow:hidden;}
+.step .row{display:flex;align-items:baseline;gap:16px;}
+.step .n{font-size:13px;font-weight:900;letter-spacing:.08em;}
+.step .t{font-size:20px;font-weight:900;letter-spacing:-.3px;text-transform:uppercase;}
+.step .b,.step .track,.step .bar{display:none;}
+.step.on .b{display:block;margin:10px 0 0 39px;font-size:15px;line-height:1.5;color:#3A3A3A;animation:fadein .6s ease both;}
+.step.on .track{display:block;position:absolute;left:0;width:100%;}
+.step.on .bar{display:block;position:absolute;left:0;animation:prog 5s linear forwards;}
+.how-grid{display:grid;grid-template-columns:5fr 7fr;gap:64px;align-items:stretch;}
+.how-left{display:flex;flex-direction:column;min-width:0;}
+.how-steps{flex:1;display:flex;flex-direction:column;justify-content:center;margin-top:40px;}
+.how-steps .step{border:0;border-top:1px solid #E8E9EC;border-radius:0;background:transparent;box-shadow:none;margin:0;padding:18px 0;color:#9A9A9A;width:100%;}
+.how-steps .step:last-child{border-bottom:1px solid #E8E9EC;}
+.how-steps .step.on{background:transparent;box-shadow:none;border-color:#E8E9EC;padding:22px 0;margin:0;color:#0E0E0E;}
+.how-steps .step .t{font-size:20px;font-weight:800;}
+.how-steps .step .n{font-size:12px;transition:color .4s ease;}
+.how-steps .step.on .b{margin:10px 0 0 30px;font-size:16px;}
+.how-steps .step.on .track{top:-1px;height:2px;background:transparent;}
+.how-steps .step.on .bar{top:-1px;height:2px;animation-duration:6s;}
+.how-steps .step[data-i="0"]{--sc:#2D8EFF;} .how-steps .step[data-i="1"]{--sc:#1E9E60;} .how-steps .step[data-i="2"]{--sc:#E84591;} .how-steps .step[data-i="3"]{--sc:#C98A0E;} .how-steps .step[data-i="4"]{--sc:#C8325A;}
+.how-steps .step.on .n{color:var(--sc);}
+.how-steps .step.on .bar{background:var(--sc);}
+.how-right{display:flex;flex-direction:column;align-items:center;min-width:0;}
+.step-now{display:none;width:100%;max-width:620px;margin:22px 0 0;}
+.step-now .sn-k{margin:0;font-size:18px;font-weight:900;letter-spacing:-.2px;text-transform:uppercase;color:#0E0E0E;}
+.step-now .sn-n{font-size:13px;letter-spacing:.08em;color:var(--snc,#C8325A);margin-right:6px;}
+.step-now .sn-b{margin:6px 0 0;font-size:15px;line-height:1.5;color:#3A3A3A;}
+.mila-block{width:100%;max-width:620px;}
+.mila-h{margin:0;font-size:32px;line-height:1;font-weight:900;letter-spacing:-.6px;text-transform:uppercase;color:#0E0E0E;}
+.mila-p{margin:12px 0 0;font-size:18px;line-height:1.5;color:#333;}
+.mila-row{display:flex;align-items:center;gap:18px;margin-top:20px;}
+.mila-btn{position:relative;display:block;flex:0 0 auto;width:80px;height:80px;border-radius:50%;}
+.mila-ring{position:absolute;inset:-6px;border-radius:50%;border:2px solid #E84591;display:block;}
+.mila-face{position:absolute;inset:0;border-radius:50%;overflow:hidden;background:#F1E9DC;}
+.mila-face video{width:100%;height:100%;object-fit:cover;display:block;}
+.mila-link{margin:0;padding:0;font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#C8325A;}
+.mila-cap{margin:4px 0 0;font-size:14px;color:#6B6B6B;}
+.mila-say{font-size:16px;line-height:1.4;color:#0E0E0E;font-weight:600;max-width:420px;transition:opacity .3s ease,transform .3s ease;}
+.mila-say.swap{opacity:0;transform:translateY(4px);}
+/* the no-phone screen card */
+.phone-wrap{position:relative;display:flex;justify-content:center;width:100%;}
+.phone{position:relative;z-index:1;margin-top:20px;width:min(420px,100%);aspect-ratio:3 / 4;border-radius:28px;box-shadow:0 40px 80px -28px rgba(14,14,14,.38),0 0 0 1px rgba(14,14,14,.06);}
+.phone-in{position:relative;width:100%;height:100%;border-radius:28px;overflow:hidden;background:#FFFFFF;}
+.shot{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;opacity:0;transform:translateY(12px);transition:opacity .4s ease-out,transform .4s ease-out;}
+.shot.on{opacity:1;transform:none;}
+/* step 5: three cards Mila prepared */
+.cards5{box-sizing:border-box;background:#F7F7F5;padding:12px 9px 10px;display:flex;flex-direction:column;justify-content:flex-start;gap:7px;overflow:hidden;font-family:Outfit,system-ui,sans-serif;color:#0E0E0E;}
+.c5{flex-shrink:0;background:#fff;border-radius:14px;box-shadow:0 6px 18px -10px rgba(14,14,14,.25);overflow:hidden;opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s cubic-bezier(.2,.8,.2,1);}
+.c5a{opacity:1;transform:none;}
+#panel.s5 .c5b{opacity:1;transform:none;transition-delay:1.4s;}
+#panel.s5 .c5c{opacity:1;transform:none;transition-delay:2.8s;}
+.c5-cover{height:72px;background:#0E3B55;overflow:hidden;}
+.c5-cover img{width:100%;height:100%;object-fit:cover;object-position:62% 55%;display:block;}
+.c5-b{padding:8px 10px 9px;display:flex;flex-direction:column;gap:6px;}
+.c5-h{display:flex;align-items:center;gap:8px;}
+.c5-h>span:not(.c5-cal){flex:1;display:flex;flex-direction:column;}
+.c5-h b{font-size:12px;font-weight:800;}
+.c5-h i{font-style:normal;font-size:10px;color:#6B6B6B;}
+.c5-h em{font-style:normal;font-size:8.5px;font-weight:800;background:#0E0E0E;color:#fff;border-radius:999px;padding:3px 7px;}
+.c5-logo{width:28px;height:28px;border-radius:50%;}
+.c5-amt{margin:0;font-size:18px;font-weight:900;letter-spacing:-.4px;}
+.c5-amt span{font-size:11px;font-weight:600;color:#3A3A3A;letter-spacing:0;}
+.c5-act{display:flex;gap:6px;align-items:center;}
+.c5-act span{font-size:10px;font-weight:800;border-radius:999px;padding:6px 11px;}
+.c5-act .pri{background:#C8325A;color:#fff;}
+.c5-act .pri.wide{flex:1;text-align:center;}
+.c5-act .sec{background:#F0F0EE;color:#0E0E0E;}
+.c5-cal{flex:0 0 auto;width:28px;height:28px;border-radius:8px;border:1px solid #E4E4E2;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:900;font-size:11px;line-height:1;}
+.c5-cal small{font-size:6px;color:#C8325A;}
+.c5-row{flex-direction:row;align-items:center;gap:10px;}
+.c5-rt{display:flex;flex-direction:column;gap:1px;}
+.c5-rt small{font-size:8px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#6B6B6B;}
+.c5-rt b{font-size:14px;font-weight:900;}
+.c5-rt i{font-style:normal;font-size:10px;color:#6B6B6B;}
+.c5-reel{position:relative;width:60px;height:82px;border-radius:10px;overflow:hidden;flex:0 0 auto;background:#111;}
+.c5-reel .rf{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:reelcut 4.8s linear infinite;}
+.c5-reel .rf2{animation-delay:1.6s;} .c5-reel .rf3{animation-delay:3.2s;}
+@keyframes reelcut{0%{opacity:1;transform:scale(1.02)}30%{opacity:1;transform:scale(1.12)}33.4%{opacity:0;transform:scale(1.12)}100%{opacity:0}}
+.c5-reel .rbar{position:absolute;left:6px;right:6px;top:5px;height:2px;border-radius:2px;background:rgba(255,255,255,.35);overflow:hidden;}
+.c5-reel .rbar i{position:absolute;left:0;top:0;bottom:0;width:100%;background:#fff;transform-origin:left;animation:reelbar 4.8s linear infinite;}
+@keyframes reelbar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.c5-reel .rtag{position:absolute;left:5px;bottom:5px;font-size:8.5px;font-weight:800;color:#fff;background:rgba(0,0,0,.45);border-radius:999px;padding:2px 6px;}
+
+/* Why Nomila */
+.lname{min-width:230px;}
+
+/* founder story overlay */
+.founder-page{position:fixed;inset:0;z-index:60;overflow-y:auto;background:#FBFBFA;padding:32px 0 80px;}
+.f-back{display:inline-flex;align-items:center;gap:8px;margin:0 0 24px;padding:12px 0;min-height:44px;background:none;border:0;cursor:pointer;font:800 12px Outfit,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#5A5A5A;}
+.f-back:hover{color:#0E0E0E;}
+.f-back:focus{outline:none;}
+.f-back:focus-visible{outline:2px solid #0E0E0E;outline-offset:4px;border-radius:999px;}
+.f-grid{display:flex;gap:72px;align-items:stretch;}
+.f-photo{flex:1 1 440px;min-width:0;min-height:620px;position:relative;border-radius:16px;overflow:hidden;background:#2A2A2A;}
+.f-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block;}
+.f-photo p{position:absolute;left:0;right:0;bottom:0;margin:0;padding:24px;background:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.82));color:#fff;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;}
+.f-copy{flex:1 1 540px;min-width:0;display:flex;flex-direction:column;justify-content:center;}
+.f-eye{margin:0;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#C8325A;}
+.f-h{margin:14px 0 0;font-size:56px;line-height:.95;font-weight:900;letter-spacing:-1.6px;text-transform:uppercase;text-wrap:balance;}
+.f-body{display:flex;flex-direction:column;gap:18px;margin-top:30px;font-size:17px;line-height:1.6;color:#3A3A3A;max-width:620px;}
+.f-body p{margin:0;}
+.f-body .f-lead{font-size:21px;line-height:1.4;font-weight:600;color:#0E0E0E;}
+.f-body .f-close{margin-top:8px;font-size:24px;line-height:1.15;font-weight:900;text-transform:uppercase;letter-spacing:-.4px;color:#0E0E0E;}
+.f-close span{color:#C8325A;}
+.f-by{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#0E0E0E;}
+
+/* investor strip */
+.backed{display:flex;align-items:center;gap:28px;}
+.backed .lbl{flex:none;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#6B6B6B;}
+.backed .names{display:flex;flex-wrap:wrap;gap:12px 48px;}
+.backed .lbl .heart{display:inline-block;vertical-align:-2px;margin:0 1px;}
+.backed .nm{font-size:15px;font-weight:800;letter-spacing:.12em;color:#0E0E0E;white-space:nowrap;}
+
+@media (max-width:900px){
+  .wrap,.wide{padding-left:16px !important;padding-right:16px !important;}
+  .end-cta{padding-top:88px !important;padding-bottom:80px !important;}
+  .end-cta .end-row{flex-direction:column;align-items:flex-start;gap:14px !important;}
+  .end-foot{flex-direction:column;align-items:flex-start !important;gap:18px !important;padding-top:36px !important;padding-bottom:calc(40px + env(safe-area-inset-bottom, 0px)) !important;}
+  .end-foot .end-links{gap:12px 24px !important;}
+  .nav-links{display:none !important;}
+  .hero-row{padding:48px 0 80px !important;min-height:0 !important;}
+  .hero-h1{font-size:40px !important;letter-spacing:-1.2px !important;}
+  .h1l{white-space:normal;}
+  .two-col{flex-direction:column !important;gap:32px !important;}
+  .ring-art{width:min(280px,72vw) !important;height:auto !important;}
+  .layers-row{margin-top:36px !important;padding-top:28px !important;}
+  .nav-cta{padding:0 14px !important;font-size:11px !important;}
+  .nav-r{gap:10px !important;}
+  .nav-signin{font-size:12px !important;}
+  .backed{gap:12px 16px;flex-wrap:wrap;}
+  .f-grid{flex-direction:column;gap:28px;}
+  .f-photo{flex:none;min-height:420px;}
+  .f-h{font-size:36px;}
+  .f-body{font-size:16px;}
+  .f-body .f-lead{font-size:19px;}
+  .two-col > *{flex-basis:auto !important;}
+  .layer{flex-wrap:wrap;gap:6px 14px !important;}
+  .lname{min-width:0;font-size:26px !important;}
+  .lline{flex:1 0 100%;padding-left:36px;}
+  .how-grid{grid-template-columns:1fr;gap:36px;}
+  .how-left{display:contents;}
+  .how-left > .fade-in{order:1;}
+  /* Phones: the five steps become a compact row of numbered tabs, and the active step's words sit right
+     above the screen they describe (the full list below the card lost the link between the two). */
+  .how-right{display:contents;}
+  .how-right > .mila-block{order:2;}
+  .how-steps{order:3;margin-top:0;flex-direction:row;gap:6px;}
+  .how-right > .step-now{order:4;margin-top:-18px;}
+  .how-right > .phone-wrap{order:5;margin-top:-18px;}
+  .how-steps .step,.how-steps .step.on{flex:1;width:auto;padding:12px 0 10px;border:0;border-bottom:2px solid #E8E9EC;}
+  .how-steps .step:last-child{border-bottom:2px solid #E8E9EC;}
+  .how-steps .step .row{justify-content:center;}
+  .how-steps .step .t,.how-steps .step.on .b{display:none !important;}
+  .how-steps .step .n{font-size:13px;}
+  .how-steps .step.on .track,.how-steps .step.on .bar{top:auto;bottom:-2px;height:2px;}
+  .step-now{display:block !important;}
+  .hero-eyebrow{font-size:clamp(11px,3.7vw,15px) !important;letter-spacing:.1em !important;white-space:nowrap;}
+  .mila-h{font-size:24px;} .mila-p{font-size:16px;}
+  .mila-btn{width:64px;height:64px;}
+  .phone{width:100%;max-width:360px;}
+  .phone-wrap{flex-direction:column;align-items:center;}
+}
+/* tablet (601-900): pairs that fit stay side by side */
+@media (min-width:601px) and (max-width:900px){
+  .wrap,.wide{padding-left:32px !important;padding-right:32px !important;}
+  .two-col.nm-row{flex-direction:row !important;gap:16px !important;}
+  .two-col.layers-row{flex-direction:row !important;align-items:center;gap:40px !important;}
+  .two-col.layers-row .ring-art{width:min(240px,32vw) !important;}
+  .hero-h1{font-size:5.2vw !important;letter-spacing:-.02em !important;}
+  .hero-h1 .h1l{white-space:nowrap;}
+  .f-h{font-size:40px;}
+  .f-grid{flex-direction:row;gap:36px;}
+  .f-photo{flex:1 1 0;min-height:520px;}
+  .f-copy{flex:1.3 1 0;}
+  .end-foot{flex-direction:row;flex-wrap:wrap;align-items:center !important;gap:14px 28px !important;}
+}
+/* phones: NOM and MILA stay side by side, wordmarks sized to the card */
+@media (max-width:600px){
+  .two-col.nm-row{flex-direction:row !important;gap:10px !important;}
+  .two-col.nm-row > div{padding:18px 16px !important;}
+  .two-col.nm-row > div > p:first-child{font-size:clamp(36px,10.5vw,60px) !important;}
+  .two-col.nm-row > div > p + p{font-size:16px !important;margin-top:10px !important;}
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation:none !important;}
+  .draw{stroke-dashoffset:0 !important;}
+  .shot,.c5,.mila-say{transition:none !important;}
+  .shot{transform:none;}
+  .c5{opacity:1;transform:none;}
+  .c5-reel .rf1{opacity:1;}
+}
+
+.nav-r{display:flex;align-items:center;gap:18px;}
+.nav-signin{border:0;background:none;font-family:inherit;font-size:13px;font-weight:800;color:#0E0E0E;cursor:pointer;padding:8px 4px;white-space:nowrap;}
+.nav-signin[hidden]{display:none;}
+
+/* ═══════════════════ JOIN FLOW (overlay screens) ═══════════════════
+   One look (DESIGN.md): ink on paper, Outfit, raspberry pills for the one action, ring colours ONLY on the score.
+   Every screen is a fixed overlay above the marketing page: full screen on a phone, a phone-sized sheet on a computer. */
+.jf{position:fixed;inset:0;z-index:100;display:flex;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .4s ease;overflow-y:auto;-webkit-overflow-scrolling:touch;font-family:'Outfit',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
+.jf.active{opacity:1;visibility:visible;pointer-events:auto;}
+/* Screen to screen: swap with no fade (two half-faded layers let the home page show through); fade only from/to home. */
+.jf.snap{transition:none;}
+/* the boot screen: back from a redirect, shown from the first paint until the right screen opens (never the home page) */
+#j-boot{transition:none;}
+html.booting #j-boot{opacity:1;visibility:visible;pointer-events:auto;}
+.jf .boot{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;}
+.jf .boot .ring{width:22px;height:22px;border:2.5px solid #E6E6E6;border-top-color:#0E0E0E;border-radius:50%;animation:spin .8s linear infinite;}
+.jf *,.jf *::before,.jf *::after{box-sizing:border-box;}
+.jf button,.jf input{font-family:inherit;}
+.jf [hidden]{display:none !important;}
+.jf .col{position:relative;width:100%;max-width:460px;margin:auto;min-height:100dvh;display:flex;flex-direction:column;background:#FFFFFF;color:#0E0E0E;overflow-x:hidden;overflow-x:clip;}
+.jf.dark .col{background:#0E0E0E;color:#FFFFFF;}
+.jf .body{flex:1;display:flex;flex-direction:column;gap:12px;padding:8px 20px 28px;}
+.jf .grow{flex:1;min-height:12px;}
+@media (min-width:480px){.jf{background:rgba(6,6,6,.92);}}
+@media (min-width:480px) and (min-height:720px){
+  .jf{padding:20px;}
+  .jf .col{min-height:0;height:min(860px,calc(100dvh - 40px));border-radius:28px;overflow-y:auto;box-shadow:0 24px 70px rgba(0,0,0,.55);}
+}
+/* the bar on top: back / close, the wordmark, the spot chip once she is on the list */
+.jf .bar{display:flex;align-items:center;gap:10px;min-height:56px;padding:12px 20px 4px;}
+.jf .bar .wm{font-size:12px;font-weight:900;letter-spacing:.34em;}
+.jf .bar .sp{cursor:pointer;border:0;font-family:inherit;margin-left:auto;font-size:11px;font-weight:800;letter-spacing:.06em;padding:5px 10px;border-radius:999px;background:#F3F3F1;color:#0E0E0E;display:none;}
+.jf.dark .bar .sp{background:rgba(255,255,255,.12);color:#FFFFFF;}
+.jf .ib{width:36px;height:36px;border-radius:50%;border:1px solid #E4E4E2;background:#FFFFFF;color:#0E0E0E;display:flex;align-items:center;justify-content:center;cursor:pointer;flex:0 0 auto;padding:0;}
+.jf.dark .ib,.jf .hero .ib{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#FFFFFF;}
+/* type */
+.jf .eb{margin:0;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#6B6B6B;}
+.jf.dark .eb{color:rgba(255,255,255,.7);}
+.jf .eb i{font-style:normal;opacity:.75;}
+.jf h2{margin:0;font-size:30px;line-height:.98;font-weight:900;letter-spacing:-.6px;text-transform:uppercase;text-wrap:balance;}
+.jf h2.sm{font-size:25px;}
+.jf .lede{margin:0;font-size:15px;line-height:1.45;color:#3A3A3A;}
+.jf.dark .lede{color:rgba(255,255,255,.85);}
+.jf .lede b{color:#0E0E0E;}
+.jf.dark .lede b{color:#FFFFFF;}
+.jf .fine{margin:0;font-size:12px;line-height:1.4;color:#6B6B6B;text-align:center;}
+.jf.dark .fine{color:rgba(255,255,255,.6);}
+.jf .fine a{color:inherit;}
+.jf .err{margin:0;font-size:13px;font-weight:600;color:#C8325A;min-height:0;}
+.jf.dark .err{color:#FF9DB8;}
+.jf .err:empty{display:none;}
+/* actions: the raspberry pill is the one loud action; ghost text for the quiet way out */
+.jf .go{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:52px;border:0;border-radius:999px;background:#C8325A;color:#FFFFFF;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;text-decoration:none;flex:0 0 auto;transition:background .2s,transform .15s;}
+.jf .go:hover{background:#A82648;}
+.jf .go:active{transform:scale(.98);}
+.jf .go:disabled{opacity:.45;cursor:not-allowed;transform:none;}
+.jf .go.white{background:#FFFFFF;color:#0E0E0E;}
+.jf .go.white:hover{background:#F3F3F1;}
+.jf .ghost{display:block;width:100%;padding:12px;border:0;background:none;color:#6B6B6B;font-size:14px;font-weight:700;cursor:pointer;text-align:center;}
+.jf.dark .ghost{color:rgba(255,255,255,.75);}
+.jf .ghost:hover{color:#0E0E0E;}
+.jf.dark .ghost:hover{color:#FFFFFF;}
+.jf .ghost:disabled{opacity:.5;cursor:not-allowed;}
+.jf .lk{border:0;background:none;padding:6px 0;font-size:13px;font-weight:800;color:#C8325A;cursor:pointer;text-align:left;}
+.jf.dark .lk,.jf .hero .lk{color:#FFFFFF;}
+.jf .field{width:100%;height:52px;border:1px solid #E4E4E2;border-radius:4px;background:#FFFFFF;padding:0 14px;font-size:16px;color:#0E0E0E;outline:none;}
+.jf .field:focus{border-color:#0E0E0E;}
+.jf .field::placeholder{color:#9A9A98;}
+.jf .lbl{display:block;margin:0 0 6px;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#0E0E0E;}
+.jf .hero .lbl{color:rgba(255,255,255,.85);}
+.jf :focus-visible{outline:2px solid #C8325A;outline-offset:3px;}
+
+/* 1 · sign in: full-bleed photo under the tagline */
+.jf .hero{position:relative;color:#FFFFFF;background:#0E0E0E;}
+.jf .hero .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:22% 50%;opacity:.9;}
+.jf .hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.66) 0%,rgba(0,0,0,.3) 34%,rgba(0,0,0,.2) 52%,rgba(0,0,0,.86) 78%);}
+.jf .hero>.bar,.jf .hero>.body{position:relative;z-index:2;}
+.jf .disp{margin:0;font-size:34px;line-height:.95;font-weight:900;letter-spacing:-.8px;text-transform:uppercase;color:#FFFFFF;text-wrap:balance;}
+.jf .dsub{margin:4px 0 0;font-size:18px;line-height:1.05;font-weight:800;text-transform:uppercase;color:#FF9DB8;}
+.jf .pv{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;height:48px;border:0;border-radius:4px;background:#FFFFFF;color:#0E0E0E;font-size:15px;font-weight:700;cursor:pointer;transition:transform .15s;}
+.jf .pv:active{transform:scale(.98);}
+/* Wait screen: the next step is always on screen — the actions stick to the bottom, and the score button
+   arrives with a short pulse when the score lands (it used to sit below the fact cards, out of view). */
+.wait-act{position:sticky;bottom:0;display:flex;flex-direction:column;gap:6px;margin:0 -20px -28px;padding:14px 20px calc(18px + env(safe-area-inset-bottom,0px));background:linear-gradient(to bottom,rgba(255,255,255,0),#FFFFFF 28%);z-index:2;}
+.jf.dark .wait-act{background:linear-gradient(to bottom,rgba(14,14,14,0),#0E0E0E 28%);}
+#j-wait-score:not([hidden]){animation:scoreReady 1.2s ease 1;}
+@keyframes scoreReady{0%{transform:scale(.96);box-shadow:0 0 0 0 rgba(200,50,90,.55);}60%{transform:scale(1);box-shadow:0 0 0 14px rgba(200,50,90,0);}100%{box-shadow:none;}}
+#j-stat.ready{cursor:pointer;}
+
+/* Sign-in in the hero: tapping Join turns the button into the options, no second page (owner, 24 Oct 2026) */
+.hj .pv,.hj .go,.hj .lk,.hj .field{font-family:inherit;}
+.hj{width:min(380px,100%);margin-top:40px;display:flex;flex-direction:column;gap:10px;text-align:left;}
+.hj[hidden]{display:none;}
+.hj .fine{margin:0;font-size:12px;line-height:1.4;color:#6B6B6B;text-align:center;}
+.hj .fine{color:rgba(255,255,255,.6);}
+.hj .fine a{color:inherit;}
+.hj .err{margin:0;font-size:13px;font-weight:600;color:#C8325A;min-height:0;}
+.hj .err{color:#FF9DB8;}
+.hj .err:empty{display:none;}
+.hj .go{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:52px;border:0;border-radius:999px;background:#C8325A;color:#FFFFFF;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;text-decoration:none;flex:0 0 auto;transition:background .2s,transform .15s;}
+.hj .go:hover{background:#A82648;}
+.hj .go:active{transform:scale(.98);}
+.hj .go:disabled{opacity:.45;cursor:not-allowed;transform:none;}
+.hj .go.white{background:#FFFFFF;color:#0E0E0E;}
+.hj .go.white:hover{background:#F3F3F1;}
+.hj .lk{border:0;background:none;padding:6px 0;font-size:13px;font-weight:800;color:#C8325A;cursor:pointer;text-align:left;}
+.hj .field{width:100%;height:52px;border:1px solid #E4E4E2;border-radius:4px;background:#FFFFFF;padding:0 14px;font-size:16px;color:#0E0E0E;outline:none;}
+.hj .field:focus{border-color:#0E0E0E;}
+.hj .field::placeholder{color:#9A9A98;}
+.hj .lbl{display:block;margin:0 0 6px;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#0E0E0E;}
+.hj .pv{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;height:48px;border:0;border-radius:4px;background:#FFFFFF;color:#0E0E0E;font-size:15px;font-weight:700;cursor:pointer;transition:transform .15s;}
+.hj .pv:active{transform:scale(.98);}
+.hj .pv:disabled{opacity:.6;cursor:wait;}
+.hj .pv svg{flex:0 0 auto;}
+.hj .em{display:none;flex-direction:column;gap:10px;}
+.hj .em.on{display:flex;}
+.hj .em .field{background:rgba(255,255,255,.96);}
+.hj .em .hide{display:none;}
+.hj .lk{color:#FFFFFF;text-align:center;}
+.hj .fine{color:rgba(255,255,255,.7);}
+.hj .err{color:#FF9DB8;}
+.hj .lbl{color:#FFFFFF;}
+
+/* Sign-in is a sheet over the landing page, not a second page (owner, 24 Oct 2026) */
+.jf.sheet-unused{background:rgba(14,14,14,.55);align-items:flex-end;}
+.jf.sheet-unused .col{min-height:0;margin:auto auto 0;border-radius:20px 20px 0 0;padding-bottom:env(safe-area-inset-bottom,0px);}
+.jf.sheet-unused .body{flex:0 0 auto;padding:18px 20px 22px;gap:12px;}
+.jf.sheet-unused .col{height:auto !important;min-height:0 !important;flex:0 0 auto;align-self:flex-end;}
+@media (min-width:600px){.jf.sheet-unused .col{align-self:center;}}
+.jf.sheet-unused .sh-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;}
+.jf.sheet-unused .sh-t{margin:0;font-size:20px;font-weight:900;letter-spacing:-.2px;text-transform:uppercase;}
+@media (min-width:600px){.jf.sheet-unused{align-items:center;}.jf.sheet-unused .col{margin:auto;border-radius:20px;}}
+
+.jf .pv:disabled{opacity:.6;cursor:wait;}
+.jf .pv svg{flex:0 0 auto;}
+.jf .em{display:none;flex-direction:column;gap:10px;}
+.jf .em.on{display:flex;}
+.jf .em .field{background:rgba(255,255,255,.96);}
+.jf .em .hide{display:none;}
+
+/* 2 · sport grid (as the app's, components/onboarding/SportTile): 4 columns, the sport's icon (./sport-icons.js) over its name; Main in raspberry, others checked */
+.jf .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;}
+.jf .tl{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;text-align:center;min-height:58px;padding:9px 3px 6px;border:1px solid #E4E4E2;border-radius:4px;background:#FFFFFF;color:#0E0E0E;font-size:10.5px;font-weight:700;line-height:1.15;cursor:pointer;transition:transform .15s;overflow-wrap:anywhere;}
+.jf .tl svg{width:20px;height:20px;flex:0 0 auto;color:#3A3A3A;}
+.jf .tl.on svg{color:inherit;}
+.jf .tl:active{transform:scale(.98);}
+.jf .tl.on{background:#0E0E0E;border-color:#0E0E0E;color:#FFFFFF;}
+.jf .tl.main{background:#C8325A;border-color:#C8325A;}
+.jf .tl em{position:absolute;top:3px;right:3px;font-style:normal;font-size:8px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;line-height:1;padding:2px 3px;border-radius:2px;background:#FFFFFF;color:#C8325A;}
+.jf .tl em.ck{background:none;color:#FFFFFF;font-size:11px;padding:0;}
+
+/* 3 · is this you? */
+.jf .who{font-size:34px;line-height:.95;font-weight:900;text-transform:uppercase;letter-spacing:-.8px;margin:0;}
+.jf .wl{margin:6px 0 0;font-size:15px;font-weight:700;}
+.jf .wd{margin:2px 0 0;font-size:13px;color:rgba(255,255,255,.7);}
+
+/* 4 · connect: pulsing Connect turns green with a check */
+.jf .soc{display:flex;align-items:center;gap:12px;border:1px solid #E4E4E2;border-radius:6px;padding:12px;transition:background .3s,border-color .3s;}
+.jf .soc .ico{width:36px;height:36px;border-radius:8px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;}
+.jf .soc .tx{flex:1;min-width:0;display:flex;flex-direction:column;gap:1px;}
+.jf .soc .tx b{font-size:15px;}
+.jf .soc .tx i{font-style:normal;font-size:12px;line-height:1.35;color:#6B6B6B;}
+.jf .soc .tx i.hd{color:#0E0E0E;font-weight:700;}
+.jf .soc.ok{border-color:#2DC87C;background:#F0FBF5;}
+.jf .soc.soon .ico,.jf .soc.soon .tx b{opacity:.5;}
+.jf .cbtn{flex:0 0 auto;height:34px;padding:0 14px;border:0;border-radius:999px;background:#C8325A;color:#FFFFFF;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;animation:jpulse 1.8s ease-out infinite;}
+.jf .cbtn:disabled{opacity:.6;cursor:wait;animation:none;}
+@keyframes jpulse{0%{box-shadow:0 0 0 0 rgba(200,50,90,.45);}70%{box-shadow:0 0 0 9px rgba(200,50,90,0);}100%{box-shadow:0 0 0 0 rgba(200,50,90,0);}}
+.jf .okd{flex:0 0 auto;width:28px;height:28px;border-radius:50%;background:#2DC87C;color:#FFFFFF;display:flex;align-items:center;justify-content:center;}
+.jf .soon-chip{flex:0 0 auto;font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;padding:6px 8px;border-radius:3px;background:#F3F3F1;color:#6B6B6B;}
+.jf .note{margin:0;font-size:13px;color:#6B6B6B;}
+
+/* 5 · the wait: Mila appears, findings arrive */
+.jf .mh{display:flex;align-items:center;gap:10px;}
+.jf .mh .face{width:44px;height:44px;border-radius:50%;overflow:hidden;background:#F1E9DC;flex:0 0 auto;}
+.jf .mh .face video,.jf .mh .face img{width:100%;height:100%;object-fit:cover;display:block;}
+.jf .mh .nm{display:flex;flex-direction:column;padding:4px 10px;border-radius:10px;background:#F3F3F1;}
+.jf.dark .mh .nm{background:rgba(255,255,255,.1);}
+.jf .mh .nm b{font-size:14px;}
+.jf .mh .nm i{font-style:normal;font-size:12px;color:#6B6B6B;}
+.jf.dark .mh .nm i{color:rgba(255,255,255,.6);}
+.jf .stat{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:6px;background:#F3F3F1;}
+.jf .stat .dot{width:10px;height:10px;border-radius:50%;background:#0E0E0E;flex:0 0 auto;animation:jdot 1.4s ease-in-out infinite;}
+.jf .stat.done .dot{animation:none;background:#0E0E0E;}
+.jf .stat .st{display:flex;flex-direction:column;}
+.jf .stat b{font-size:14px;}
+.jf .stat i{font-style:normal;font-size:12.5px;color:#6B6B6B;line-height:1.35;}
+/* the live checklist: Mila's real steps (GET /waitlist/progress research.steps), each ticking as it finishes */
+.jf .chk{list-style:none;margin:0;padding:2px 2px 0;display:flex;flex-direction:column;gap:11px;}
+.jf .chk li{display:flex;gap:11px;align-items:flex-start;}
+.jf .chk .ic{width:20px;height:20px;border-radius:50%;flex:0 0 auto;display:flex;align-items:center;justify-content:center;border:1.5px solid #D9D9D6;margin-top:1px;color:#FFFFFF;}
+.jf .chk .running .ic{border-color:#0E0E0E;border-top-color:transparent;animation:jspin .9s linear infinite;}
+.jf .chk .done .ic{background:#0E0E0E;border-color:#0E0E0E;}
+.jf .chk .failed .ic{border-color:#C8325A;color:#C8325A;font-size:12px;font-weight:900;}
+.jf .chk .tx{display:flex;flex-direction:column;min-width:0;}
+.jf .chk b{font-size:14px;line-height:20px;font-weight:700;color:#0E0E0E;}
+.jf .chk .pending b{color:#9A9A9A;font-weight:600;}
+.jf .chk i{font-style:normal;font-size:12.5px;line-height:17px;color:#6B6B6B;transition:opacity .25s;}
+.jf .chk i.swap{opacity:0;}
+/* "Is this you?" rows: the connect screen's account row (.soc), with a black-outline pill to confirm and a quiet
+   "Not me" (one raspberry per screen stays the wait screen's main button). */
+.jf .hds{display:flex;flex-direction:column;gap:8px;}
+.jf .hds-t{margin:0;font-size:15px;font-weight:800;color:#0E0E0E;}
+.jf .hds-l{display:flex;flex-direction:column;gap:8px;}
+.jf .hds .soc .tx b{overflow-wrap:anywhere;}
+.jf .hds-a{display:flex;align-items:center;gap:4px;flex:0 0 auto;}
+.jf .hbtn{height:34px;padding:0 14px;border:1.5px solid #0E0E0E;border-radius:999px;background:#FFFFFF;color:#0E0E0E;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:transform .15s;}
+.jf .hbtn:active{transform:scale(.98);}
+.jf .hno{height:34px;padding:0 8px;border:0;background:none;color:#6B6B6B;font-size:12px;font-weight:700;cursor:pointer;}
+.jf .hno:hover{color:#0E0E0E;}
+.jf .hbtn:disabled,.jf .hno:disabled{opacity:.5;cursor:wait;}
+.jf .hok{font-size:12px;font-weight:700;color:#0E0E0E;display:inline-flex;align-items:center;gap:6px;}
+@keyframes jspin{to{transform:rotate(360deg);}}
+@keyframes jdot{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.3;transform:scale(.7);}}
+/* findings: the app's "What Mila already has" cards (screens/onboarding/WhatMilaHasScreen): a swipe rail, one fact per
+   photo card (corner 18, the foot scrim), its kind chip, the fact, its source chips, the counter */
+.jf .rail-w{position:relative;}
+.jf .rail{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:0 20px;scroll-padding:0 20px;scrollbar-width:none;-webkit-overflow-scrolling:touch;}
+.jf .rail::-webkit-scrollbar{display:none;}
+.jf .fc{position:relative;flex:0 0 100%;height:380px;border-radius:18px;overflow:hidden;background:#2A2A2A center/cover no-repeat;scroll-snap-align:start;animation:jin .4s ease-out both;}
+.jf .fc::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(0,0,0,.82) 100%);}
+.jf .fc .ft{position:absolute;left:0;right:0;bottom:0;padding:16px;display:flex;flex-direction:column;align-items:flex-start;gap:8px;color:#FFFFFF;}
+.jf .fc .k{display:inline-flex;align-items:center;height:24px;padding:0 10px;border-radius:999px;background:#FFFFFF;color:#0E0E0E;font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;}
+.jf .fc .t{margin:0;font-size:15px;line-height:19px;font-weight:800;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;}
+.jf .fc .srcs{display:flex;flex-wrap:wrap;gap:6px;}
+.jf .fc .src{display:inline-flex;align-items:center;gap:4px;max-width:220px;padding:4px 9px;border-radius:10px;background:rgba(255,255,255,.12);color:rgba(255,255,255,.92);font-size:12px;line-height:16px;font-weight:500;text-decoration:none;}
+.jf .fc .src span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.jf .fc a.src:hover{background:rgba(255,255,255,.2);}
+.jf .fc .acts{min-height:44px;margin-top:4px;}   /* kept for the app's tick / edit, once the web can save them */
+.jf .ctr{position:absolute;top:12px;right:12px;padding:4px 10px;border-radius:18px;background:rgba(255,255,255,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);color:#0E0E0E;font-size:12px;line-height:16px;font-weight:500;}
+.jf .seg{stroke-dasharray:1;stroke-dashoffset:1;animation:jdraw .6s ease-out var(--d,0s) forwards;}
+@keyframes jdraw{to{stroke-dashoffset:0;}}
+@keyframes jin{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+.jf .empty{margin:0;font-size:13px;color:#6B6B6B;}
+
+/* 6 · the score: the app's black score block (components/home/HomeBriefing ScoreBlock + intelligence/IntelligenceRing):
+   the ring of eight bands with the number inside, Nomila's read and the confidence line beside it, the capital legend.
+   The ONE place the ring colours appear. */
+.jf .sb{display:flex;flex-direction:column;gap:12px;}
+.jf .sb .eb{color:rgba(255,255,255,.6);}
+.jf .sb-row{display:flex;align-items:center;gap:14px;}
+.jf .ringw{position:relative;width:156px;height:156px;flex:0 0 auto;}
+.jf .ringw svg{width:100%;height:100%;display:block;overflow:visible;}
+.jf .ringw .num{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.jf .ringw .num b{font-size:47px;line-height:50px;font-weight:800;letter-spacing:-2px;font-variant-numeric:tabular-nums;}
+.jf .ringw .num small{margin-top:1px;font-size:10px;line-height:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6);}
+.jf .sb-tx{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px;}
+.jf .sb-read{margin:0;font-size:15px;line-height:21px;font-weight:500;color:rgba(255,255,255,.92);}
+.jf .sb-conf{margin:4px 0 0;font-size:12px;line-height:16px;font-weight:500;color:rgba(255,255,255,.6);}
+.jf .legend{display:grid;grid-template-columns:1fr 1fr;row-gap:6px;column-gap:10px;}
+.jf .legend>div{display:flex;align-items:center;gap:7px;min-width:0;}
+.jf .legend .dots{display:flex;gap:2px;flex:0 0 auto;}
+.jf .legend .dots i{width:9px;height:9px;border-radius:2px;}
+.jf .legend span:not(.dots){display:flex;flex-direction:column;min-width:0;}
+.jf .legend b{font-size:11px;line-height:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#FFFFFF;}
+.jf .legend small{font-size:11px;line-height:13px;font-weight:500;color:rgba(255,255,255,.6);}
+.jf .sb-foot{display:flex;flex-direction:column;gap:10px;}
+.jf .sb-foot p{margin:0;font-size:12px;line-height:16px;font-weight:500;color:rgba(255,255,255,.6);}
+.jf .sb-link{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;padding:0;border:0;background:none;color:#FFFFFF;font-size:13px;line-height:15px;font-weight:800;cursor:pointer;}
+.jf .sb-link:hover{text-decoration:underline;}
+.jf .sb-quick{display:flex;flex-direction:column;gap:8px;}
+.jf .sb-quick p{margin:0;font-size:12px;line-height:16px;font-weight:500;color:rgba(255,255,255,.6);}
+.jf .sb-quick p b{font-weight:700;color:#FFFFFF;}
+/* The full score replacing the preliminary one: no redraw from empty — the drawn bands grow or shrink to their new
+   lengths (script, crawl 600ms, easeOut) while the number counts on. The entrance draw is not replayed. */
+.jf .ringw.settle .seg{animation:none;stroke-dashoffset:0;}
+/* The preliminary score's sources: the finding cards' source chip (.fc .src), on the black block. */
+.jf .sb-quick .srcs{display:flex;flex-wrap:wrap;gap:6px;}
+.jf .sb-quick .src{display:inline-flex;align-items:center;gap:4px;max-width:220px;padding:4px 9px;border-radius:10px;background:rgba(255,255,255,.12);color:rgba(255,255,255,.92);font-size:12px;line-height:16px;font-weight:500;text-decoration:none;}
+.jf .sb-quick .src span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.jf .sb-quick a.src:hover{background:rgba(255,255,255,.2);}
+
+/* 7 · bring your team */
+/* invite your team: the shareable M.I.A. card, one message, one share */
+.jf .card-prev{align-self:center;width:min(260px,72%);aspect-ratio:1080/1350;border-radius:14px;overflow:hidden;background:#0E0E0E;box-shadow:0 10px 30px rgba(0,0,0,.18);}
+.jf .card-prev canvas{width:100%;height:100%;display:block;}
+.jf .tlinks{display:flex;justify-content:center;gap:22px;}
+.jf .chan{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+.jf .ch{display:flex;align-items:center;justify-content:center;gap:7px;height:44px;border:1px solid #E4E4E2;border-radius:999px;background:#FFFFFF;color:#0E0E0E;font-family:inherit;font-size:13px;font-weight:800;text-decoration:none;cursor:pointer;transition:border-color .15s,transform .15s;}
+.jf .ch:hover{border-color:#0E0E0E;}
+.jf .ch:active{transform:scale(.98);}
+.jf .tlink{border:0;background:none;padding:6px 2px;color:#0E0E0E;font-size:13px;font-weight:800;cursor:pointer;text-decoration:underline;text-underline-offset:3px;}
+.jf .imgv{position:fixed;inset:0;z-index:5;background:rgba(6,6,6,.94);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;}
+.jf .imgv img{max-width:100%;max-height:70vh;border-radius:12px;-webkit-touch-callout:default;user-select:auto;}
+.jf .imgv p{margin:0;color:#FFFFFF;font-size:14px;font-weight:600;text-align:center;}
+.jf .imgv .go{max-width:320px;}
+.jf .msg{background:#F3F3F1;border-radius:14px 14px 14px 4px;padding:10px 12px;font-size:13px;line-height:1.4;color:#3A3A3A;}
+.jf .msg u{color:#C8325A;text-decoration:none;overflow-wrap:anywhere;}
+.jf .done-line{margin:0;font-size:13px;font-weight:700;color:#14804A;}
+.jf .done-line:empty{display:none;}
+
+/* 8 · your spot */
+.jf .spot{border-radius:16px;background:#0E0E0E;color:#FFFFFF;padding:22px 20px 20px;display:flex;flex-direction:column;gap:4px;}
+.jf .spot small{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75);}
+.jf .spot b{font-size:84px;line-height:.95;font-weight:900;letter-spacing:-3px;font-variant-numeric:tabular-nums;margin-top:6px;}
+.jf .spot i{font-style:normal;font-size:15px;font-weight:600;color:rgba(255,255,255,.75);}
+.jf .tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.jf .tile{display:flex;flex-direction:column;align-items:flex-start;gap:3px;min-height:78px;padding:14px;border:1px solid #E4E4E2;border-radius:12px;background:#FFFFFF;color:#0E0E0E;text-align:left;cursor:pointer;transition:transform .15s,border-color .15s;}
+.jf .tile:hover{border-color:#0E0E0E;}
+.jf .tile:active{transform:scale(.98);}
+.jf .tile b{font-size:15px;font-weight:800;}
+.jf .tile i{font-style:normal;font-size:12.5px;color:#6B6B6B;}
+.jf .row.soon{cursor:default;opacity:.55;}
+.jf .signout{align-self:center;border:0;background:none;color:#6B6B6B;font-size:12.5px;font-weight:700;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:6px;}
+.jf .rankline{margin:0;font-size:13px;font-weight:600;text-align:center;color:#6B6B6B;}
+.jf.dark .rankline{color:rgba(255,255,255,.65);}
+.jf .rankline:empty{display:none;}
+.jf .rows{display:flex;flex-direction:column;border:1px solid #E4E4E2;border-radius:6px;}
+.jf .row{display:flex;align-items:center;gap:12px;width:100%;padding:12px 14px;border:0;background:none;text-align:left;cursor:pointer;color:#0E0E0E;}
+.jf .row+.row{border-top:1px solid #E4E4E2;}
+.jf .row .tx{flex:1;display:flex;flex-direction:column;}
+.jf .row .tx b{font-size:15px;}
+.jf .row .tx i{font-style:normal;font-size:12.5px;color:#6B6B6B;}
+.jf .row .plus{font-size:20px;font-weight:800;color:#C8325A;}
+.jf .row .ico{width:32px;height:32px;border-radius:8px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;background:#0E0E0E;color:#FFFFFF;}
+
+/* toast: "You're on the waitlist" */
+.jtoast{position:fixed;left:50%;bottom:28px;z-index:120;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#0E0E0E;color:#FFFFFF;font-family:'Outfit',sans-serif;font-size:14px;font-weight:700;padding:12px 18px;border-radius:999px;box-shadow:0 12px 30px rgba(0,0,0,.3);transition:opacity .3s,transform .3s;white-space:nowrap;}
+.jtoast.on{opacity:1;transform:translate(-50%,0);}
+@media (prefers-reduced-motion:reduce){.jf,.jf *{animation:none !important;transition:none !important;}.jf .seg{stroke-dashoffset:0;}.jtoast{transition:none;}}
+  /* needs_more: the "real athlete?" check asks for a team or Instagram */
+  .more { margin-top: 18px; }
+  .more p { margin: 0 0 12px; font-size: 15px; line-height: 1.4; }
+  .more-act { display: flex; flex-direction: column; gap: 8px; }
+
+/* Mila hosts the join flow (MILA_TF_WAITLIST, dev only; landing/mila-host.js): the conversation around the existing
+   cards. Mila's words are plain text under her face (the Muse look, DESIGN.md §16); hers are a grey pill on the right.
+   Each existing card sits in the thread in a .mcard wrapper: its own light or dark look, a 1px line and the soft lift. */
+#j-mila .body{gap:14px;padding-bottom:0;}
+.jf .mthread{display:flex;flex-direction:column;gap:12px;}
+.jf .mb{margin:0;font-size:15px;line-height:1.45;color:#0E0E0E;white-space:pre-wrap;}
+.jf .mb.typing::after{content:'';display:inline-block;width:8px;height:8px;border-radius:50%;background:#0E0E0E;animation:jdot 1.4s ease-in-out infinite;}
+.jf .ub{margin:0;align-self:flex-end;max-width:85%;padding:10px 14px;border-radius:18px;background:#F3F3F1;font-size:15px;line-height:1.4;color:#0E0E0E;overflow-wrap:anywhere;}
+.jf.mcard{position:relative;inset:auto;z-index:auto;display:block;opacity:1;visibility:visible;pointer-events:auto;overflow:visible;padding:0;background:none;transition:opacity .3s;}
+.jf.mcard .col{min-height:0;height:auto;margin:0;max-width:none;border:1px solid #E4E4E2;border-radius:20px;box-shadow:0 2px 12px rgba(0,0,0,.06);overflow:hidden;}
+.jf.mcard.dark .col{border-color:#0E0E0E;}
+.jf.mcard .body{padding:16px;}
+.jf.mcard .grow,.jf.mcard .body > .mh{display:none;}
+.jf.mcard.answered{opacity:.55;pointer-events:none;}
+.jf .mcomp{position:sticky;bottom:0;display:flex;flex-direction:column;gap:2px;padding:10px 0 12px;background:#FFFFFF;}
+.jf .mcomp form{display:flex;gap:8px;margin:0;}
+.jf .mcomp .field{flex:1;min-width:0;border-radius:999px;}
+.jf .msend{width:52px;height:52px;flex:0 0 auto;border:0;border-radius:50%;background:#0E0E0E;color:#FFFFFF;display:flex;align-items:center;justify-content:center;cursor:pointer;}
+.jf .msend:disabled{opacity:.45;cursor:not-allowed;}
+.jf .mcomp .ghost{padding:8px;font-size:13px;}
+</style>
+</head>
+<body>
+
+<script>
+  /* Capture referral code from URL → localStorage */
+  (function () {
+    var ref = new URLSearchParams(window.location.search).get('ref');
+    if (ref) { try { localStorage.setItem('referralCode', ref); } catch (e) {} }
+  })();
+</script>
+
+<div id="top" style="font-family: 'Outfit', sans-serif; color: #0E0E0E; background: #FBFBFA; width: 100%; position: relative;">
+
+  <!-- ============ FLOATING NAV ============ -->
+  <div style="position: sticky; top: 16px; z-index: 30; padding: 0 16px;">
+    <header style="max-width: 1240px; margin: 0 auto; background: rgba(255,255,255,0.86); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border: 1px solid #E4E4E2; border-radius: 12px; box-shadow: 0 8px 30px rgba(14,14,14,0.07); display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 10px 12px 10px 20px;">
+      <a href="#top" aria-label="Nomila home" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #0E0E0E;">
+        <svg width="32" height="32" viewBox="0 0 112 112" fill="none" aria-hidden="true">
+          <path d="M 17.7 88.14 A 50 50 0 1 1 99.3 31.0" stroke="#2D8EFF" stroke-width="7" stroke-linecap="round"></path>
+          <path d="M 26.89 80.43 A 38 38 0 1 1 93.42 62.6" stroke="#2DC87C" stroke-width="7" stroke-linecap="round"></path>
+          <path d="M 36.08 72.71 A 26 26 0 1 1 72.71 75.92" stroke="#E84591" stroke-width="7" stroke-linecap="round"></path>
+          <path d="M 45.28 65.0 A 14 14 0 1 1 56.0 70.0" stroke="#E8A215" stroke-width="7" stroke-linecap="round"></path>
+        </svg>
+        <span style="font-size: 15px; font-weight: 900; letter-spacing: .34em;">NOMILA</span>
+      </a>
+      <nav class="nav-links" aria-label="Sections" style="display: flex; align-items: center; gap: 32px;">
+        <a class="navlink" href="#how">How it works</a>
+        <a class="navlink" href="#name">Why Nomila</a>
+        <a class="navlink" href="#founder" data-founder-open>Our story</a>
+      </nav>
+      <div class="nav-r">
+        <button type="button" id="btn-nav-signin" class="nav-signin js-join">Sign in</button>
+        <button type="button" id="btn-get-agent" class="pill nav-cta js-join" style="font-size: 12px; padding: 0 20px; height: 42px;">Join the waitlist</button>
+      </div>
+    </header>
+  </div>
+
+  <!-- ============ HERO (rotating athlete photos) ============ -->
+  <section style="position: relative; overflow: hidden; margin-top: -74px; padding-top: 74px; background: #0E0E0E; color: #FFFFFF;">
+    <div aria-hidden="true" style="position: absolute; inset: 0;">
+      <!-- Slide 1 loads with the page; slides 2-8 get their sources after window load (see the hero script below). -->
+      <img class="hero-slide hs1" src="assets/v2/hero-1-1920.webp" srcset="assets/v2/hero-1-960.webp 960w, assets/v2/hero-1-1920.webp 1920w" sizes="100vw" fetchpriority="high" alt="" style="object-position: 30% 40%;">
+      <img class="hero-slide hs2" data-src="assets/v2/hero-2-1920.webp" data-srcset="assets/v2/hero-2-960.webp 960w, assets/v2/hero-2-1920.webp 1920w" sizes="100vw" alt="" style="object-position: 55% 40%;">
+      <img class="hero-slide hs3" data-src="assets/v2/hero-3-1920.webp" data-srcset="assets/v2/hero-3-960.webp 960w, assets/v2/hero-3-1920.webp 1920w" sizes="100vw" alt="" style="object-position: 50% 30%;">
+      <img class="hero-slide hs4" data-src="assets/v2/hero-4-1920.webp" data-srcset="assets/v2/hero-4-960.webp 960w, assets/v2/hero-4-1920.webp 1920w" sizes="100vw" alt="" style="object-position: 50% 35%;">
+      <img class="hero-slide hs5" data-src="assets/v2/hero-5-1920.webp" data-srcset="assets/v2/hero-5-960.webp 960w, assets/v2/hero-5-1920.webp 1920w" sizes="100vw" alt="" style="object-position: 40% 40%;">
+      <img class="hero-slide hs6" data-src="assets/v2/hero-6-1920.webp" data-srcset="assets/v2/hero-6-960.webp 960w, assets/v2/hero-6-1920.webp 1920w" sizes="100vw" alt="" style="object-position: 45% 30%;">
+      <img class="hero-slide hs7" data-src="assets/v2/hero-7-1920.webp" data-srcset="assets/v2/hero-7-960.webp 960w, assets/v2/hero-7-1920.webp 1920w" sizes="100vw" alt="" style="object-position: 55% 35%;">
+      <img class="hero-slide hs8" data-src="assets/v2/hero-8-1920.webp" data-srcset="assets/v2/hero-8-960.webp 960w, assets/v2/hero-8-1920.webp 1920w" sizes="100vw" alt="" style="object-position: 50% 30%;">
+      <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,8,8,0.62) 0%, rgba(8,8,8,0.42) 38%, rgba(8,8,8,0.50) 70%, rgba(8,8,8,0.82) 100%);"></div>
+    </div>
+    <div class="wide" style="position: relative;">
+      <div class="hero-row" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 140px 0 128px; min-height: 720px; box-sizing: border-box;">
+        <p class="fade-in hero-eyebrow" style="margin: 0; font-size: clamp(12px, 3.4vw, 16px); white-space: nowrap; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,0.78);">The operating system for athletes</p>
+        <h1 class="hero-h1 fade-in" style="margin: 22px 0 0; max-width: none; font-size: clamp(30px, 4.4vw, 64px); line-height: .98; font-weight: 900; letter-spacing: -1.6px; text-transform: uppercase; color: #FFFFFF; text-shadow: 0 2px 24px rgba(0,0,0,0.35); animation-delay: .1s;"><span class="h1l">Your brand is a media business.</span><span class="h1l" style="color: #FF9DB8;">Monetize your impact.</span></h1>
+        <p class="fade-in" style="margin: 26px 0 0; font-size: 18px; line-height: 1.5; font-weight: 500; color: rgba(255,255,255,0.88); max-width: 680px; animation-delay: .2s;">Meet Mila <span class="hero-mila" aria-hidden="true"><video src="assets/v2/mila.mp4" poster="assets/v2/mila-poster.jpg" autoplay muted loop playsinline></video></span>, a personal AI agent that learns your story, builds your brand and turns your influence into opportunities, while you train, compete and sleep.</p>
+        <button type="button" id="hero-join" class="pill fade-in js-join" style="margin-top: 40px; font-size: 15px; padding: 0 44px; height: 60px; box-shadow: 0 12px 32px rgba(200,50,90,0.45); animation-delay: .3s;">Join the waitlist</button>
+        <div id="hero-join-slot" class="hj" hidden></div>
+        <p class="fade-in" style="margin: 40px 0 0; padding-top: 22px; border-top: 1px solid rgba(255,255,255,0.22); max-width: 720px; font-size: 13px; line-height: 1.6; font-weight: 500; color: rgba(255,255,255,0.78); animation-delay: .45s;"><span style="white-space: nowrap;">Built by an <a href="#founder" data-founder-open style="color: #FFFFFF; font-weight: 700;">athlete</a>, for athletes</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS (auto-advancing stepper, no-phone screen card) ============ -->
+  <section id="how" style="padding: 96px 0 112px;">
+    <div class="wrap">
+      <div class="how-grid" id="stepper">
+        <div class="how-left">
+          <div class="fade-in">
+            <p style="margin: 0 0 14px; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #6B6B6B;">How it works</p>
+            <h2 style="margin: 0; font-size: clamp(34px, 4.4vw, 56px); line-height: .95; font-weight: 900; letter-spacing: -1.6px; text-transform: uppercase;">From your story to your next move.</h2>
+          </div>
+          <div class="how-steps">
+            <button type="button" class="step on" data-i="0"><div class="row"><span class="n">01</span><span class="t">Connect</span></div><p class="b">Link your socials. Tell Mila your sport, your team, and your goals.</p><span class="track"></span><span class="bar"></span></button><button type="button" class="step" data-i="1"><div class="row"><span class="n">02</span><span class="t">Mila gets to know you</span></div><p class="b">Mila researches your story, discovers what makes you different, and builds your personal brand strategy.</p><span class="track"></span><span class="bar"></span></button><button type="button" class="step" data-i="2"><div class="row"><span class="n">03</span><span class="t">Discover your M.I.A. score</span></div><p class="b">See where your brand stands today, what drives your value, and where you can grow.</p><span class="track"></span><span class="bar"></span></button><button type="button" class="step" data-i="3"><div class="row"><span class="n">04</span><span class="t">Get your game plan</span></div><p class="b">Your personalized roadmap: what to post, which brands to pitch, and how to turn your story into opportunities.</p><span class="track"></span><span class="bar"></span></button><button type="button" class="step" data-i="4"><div class="row"><span class="n">05</span><span class="t">Mila makes it happen</span></div><p class="b">From content and brand deals to bookings, the products you love and new ways to earn, Mila does the heavy lifting. You stay in control.</p><span class="track"></span><span class="bar"></span></button>
+          </div>
+        </div>
+        <div class="how-right" id="panel">
+          <div class="mila-block">
+            <p class="mila-h">Always one step ahead.</p>
+            <p class="mila-p">Mila doesn't wait to be asked: finding opportunities, bringing you ideas and working out your next move. Nothing goes out until you say yes.</p>
+            <div class="mila-row">
+              <span class="mila-btn" aria-hidden="true">
+                <span class="pulse mila-ring"></span>
+                <span class="mila-face"><video src="assets/v2/mila.mp4" poster="assets/v2/mila-poster.jpg" autoplay muted loop playsinline></video></span>
+              </span>
+              <div>
+                <p class="mila-link">Mila, your agent</p>
+                <p class="mila-cap mila-say" id="milaSay" aria-live="polite">Connect your accounts and I'll start learning your story.</p>
+              </div>
+            </div>
+          </div>
+          <div class="step-now" id="stepNow" aria-live="polite" style="--snc:#2D8EFF;"><p class="sn-k"><span class="sn-n">01</span> <span class="sn-t">Connect</span></p><p class="sn-b">Link your socials. Tell Mila your sport, your team, and your goals.</p></div>
+          <div class="phone-wrap">
+            <div class="phone">
+              <div class="phone-in">
+                <img class="shot on" src="assets/v2/step1.jpg" loading="lazy" alt="Nomila app: What do you play? sport picker">
+                <img class="shot" src="assets/v2/step2.jpg" loading="lazy" alt="Nomila app: what Mila already has about you">
+                <img class="shot" src="assets/v2/step3.jpg" loading="lazy" alt="Nomila app: your M.I.A. marketability score">
+                <img class="shot" src="assets/v2/step4.jpg" loading="lazy" alt="Nomila app: your plan for the season">
+                <div class="shot cards5" role="img" aria-label="Three cards Mila prepared: a brand offer from Northline Hydration, a booking request and a game-day reel ready to review">
+                  <div class="c5 c5a"><div class="c5-cover"><img src="assets/v2/northline-cover.jpg" loading="lazy" alt=""></div>
+                    <div class="c5-b"><div class="c5-h"><img class="c5-logo" src="assets/v2/northline-logo.png" loading="lazy" alt=""><span><b>Northline Hydration</b><i>Paid offer</i></span><em>Your move</em></div>
+                    <p class="c5-amt">$1,200 <span>for a Reel and 2 stories</span></p>
+                    <div class="c5-act"><span class="pri">Draft a reply</span><span class="sec">Open deal</span></div></div></div>
+                  <div class="c5 c5b"><div class="c5-b"><div class="c5-h"><span class="c5-cal"><small>SAT</small>25</span><span><b>1:1 shooting clinic</b><i>Sat 10 AM · 60 min · $80</i></span><em>New</em></div>
+                    <div class="c5-act"><span class="pri">Accept</span><span class="sec">Decline</span></div></div></div>
+                  <div class="c5 c5c"><div class="c5-b c5-row"><span class="c5-reel" aria-hidden="true"><img class="rf rf1" src="assets/v2/reel-3.jpg" loading="lazy" alt=""><img class="rf rf2" src="assets/v2/reel-1.jpg" loading="lazy" alt=""><img class="rf rf3" src="assets/v2/reel-2.jpg" loading="lazy" alt=""><span class="rbar"><i></i></span><span class="rtag">&#9654; 0:15</span></span><span class="c5-rt"><small>Post kit</small><b>Game-day reel</b><i>Ready for tomorrow</i></span></div>
+                    <div class="c5-b" style="padding-top:0"><div class="c5-act"><span class="pri wide">Review &amp; post</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY NOMILA (the name + rings) ============ -->
+  <section id="name" style="position: relative; background: #0E0E0E; color: #FFFFFF; padding: 112px 0; overflow: hidden;">
+    <div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(40% 50% at 85% 75%, rgba(45,142,255,0.20), rgba(45,142,255,0) 70%), radial-gradient(30% 40% at 10% 20%, rgba(232,69,145,0.14), rgba(232,69,145,0) 70%);"></div>
+    <div class="wrap" style="position: relative;">
+      <div class="fade-in">
+        <p style="margin: 0 0 14px; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,0.6);">The story behind the name</p>
+        <h2 style="margin: 0; font-size: clamp(34px, 3.9vw, 50px); line-height: .95; font-weight: 900; letter-spacing: -1.5px; text-transform: uppercase;">Why Nomila.</h2>
+      </div>
+
+      <div class="two-col nm-row" style="display: flex; gap: 24px; margin-top: 48px;">
+        <div style="flex: 1 1 0; min-width: 0; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 32px;">
+          <p style="margin: 0; font-size: clamp(52px, 8vw, 96px); line-height: .9; font-weight: 900; letter-spacing: -.03em; color: #7DB8FF;">NOM</p>
+          <p style="margin: 14px 0 0; font-size: 20px; font-weight: 600; color: rgba(255,255,255,0.92);">Your name.</p>
+        </div>
+        <div style="flex: 1 1 0; min-width: 0; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 32px;">
+          <p style="margin: 0; font-size: clamp(52px, 8vw, 96px); line-height: .9; font-weight: 900; letter-spacing: -.03em; color: #F28DBB;">MILA</p>
+          <p style="margin: 14px 0 0; font-size: 20px; font-weight: 600; color: rgba(255,255,255,0.92);">Loved by many.</p>
+        </div>
+      </div>
+      <div>
+        <p style="margin: 40px 0 0; font-size: 28px; line-height: 1.15; font-weight: 900; text-transform: uppercase; letter-spacing: -.4px;">Together, Nomila: a name loved by many.</p>
+        <p style="margin: 14px 0 0; font-size: 17px; line-height: 1.5; color: rgba(255,255,255,0.7); max-width: 680px;">Because every athlete has a story worth knowing, a name worth remembering, and an identity that goes far beyond the game.</p>
+      </div>
+
+      <div class="two-col layers-row" style="display: flex; align-items: center; gap: 80px; margin-top: 56px; padding-top: 44px; border-top: 1px solid rgba(255,255,255,0.14);">
+        <svg class="ring-art" width="420" height="420" viewBox="0 0 112 112" fill="none" role="img" aria-label="The Nomila logo: four rings, one for each layer of who you are" style="flex: 0 0 auto; width: min(420px, 34vw); height: auto;">
+          <circle cx="56" cy="56" r="50" stroke="#1E1E1E" stroke-width="4"></circle>
+          <circle cx="56" cy="56" r="38" stroke="#1E1E1E" stroke-width="4"></circle>
+          <circle cx="56" cy="56" r="26" stroke="#1E1E1E" stroke-width="4"></circle>
+          <circle cx="56" cy="56" r="14" stroke="#1E1E1E" stroke-width="4"></circle>
+          <!-- draw order follows the legend: gold Athlete, blue Creator, pink Storyteller, green Builder -->
+          <path class="draw d1" pathLength="1" d="M 45.28 65.0 A 14 14 0 1 1 56.0 70.0" stroke="#E8A215" stroke-width="4.5" stroke-linecap="round"></path>
+          <path class="draw d2" pathLength="1" d="M 17.7 88.14 A 50 50 0 1 1 99.3 31.0" stroke="#2D8EFF" stroke-width="4.5" stroke-linecap="round"></path>
+          <path class="draw d3" pathLength="1" d="M 36.08 72.71 A 26 26 0 1 1 72.71 75.92" stroke="#E84591" stroke-width="4.5" stroke-linecap="round"></path>
+          <path class="draw d4" pathLength="1" d="M 26.89 80.43 A 38 38 0 1 1 93.42 62.6" stroke="#2DC87C" stroke-width="4.5" stroke-linecap="round"></path>
+        </svg>
+        <div style="flex: 1 1 420px; min-width: 0;">
+          <h3 style="margin: 0; font-size: 42px; line-height: .95; font-weight: 900; letter-spacing: -1px; text-transform: uppercase;">Own every layer.</h3>
+          <p style="margin: 18px 0 0; font-size: 17px; line-height: 1.5; color: rgba(255,255,255,0.7);">Every ring in our logo represents a different layer of who you are.</p>
+          <div style="display: flex; flex-direction: column; margin-top: 28px;">
+            <div class="layer" style="display: flex; align-items: center; gap: 18px; padding: 14px 0; border-top: 1px solid rgba(255,255,255,0.14);">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true" style="flex: 0 0 auto;"><circle cx="11" cy="11" r="8" stroke="#E8A215" stroke-width="3"></circle></svg>
+              <span class="lname" style="font-size: 30px; line-height: 1; font-weight: 900; letter-spacing: -.5px; text-transform: uppercase; color: #E8A215;">Athlete</span>
+              <span class="lline" style="font-size: 15px; line-height: 1.4; color: rgba(255,255,255,0.72);">Your performance.</span>
+            </div>
+            <div class="layer" style="display: flex; align-items: center; gap: 18px; padding: 14px 0; border-top: 1px solid rgba(255,255,255,0.14);">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true" style="flex: 0 0 auto;"><circle cx="11" cy="11" r="8" stroke="#2D8EFF" stroke-width="3"></circle></svg>
+              <span class="lname" style="font-size: 30px; line-height: 1; font-weight: 900; letter-spacing: -.5px; text-transform: uppercase; color: #2D8EFF;">Creator</span>
+              <span class="lline" style="font-size: 15px; line-height: 1.4; color: rgba(255,255,255,0.72);">The audience you build.</span>
+            </div>
+            <div class="layer" style="display: flex; align-items: center; gap: 18px; padding: 14px 0; border-top: 1px solid rgba(255,255,255,0.14);">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true" style="flex: 0 0 auto;"><circle cx="11" cy="11" r="8" stroke="#E84591" stroke-width="3"></circle></svg>
+              <span class="lname" style="font-size: 30px; line-height: 1; font-weight: 900; letter-spacing: -.5px; text-transform: uppercase; color: #E84591;">Storyteller</span>
+              <span class="lline" style="font-size: 15px; line-height: 1.4; color: rgba(255,255,255,0.72);">Your voice and what you stand for.</span>
+            </div>
+            <div class="layer" style="display: flex; align-items: center; gap: 18px; padding: 14px 0; border-top: 1px solid rgba(255,255,255,0.14);">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true" style="flex: 0 0 auto;"><circle cx="11" cy="11" r="8" stroke="#2DC87C" stroke-width="3"></circle></svg>
+              <span class="lname" style="font-size: 30px; line-height: 1; font-weight: 900; letter-spacing: -.5px; text-transform: uppercase; color: #2DC87C;">Builder</span>
+              <span class="lline" style="font-size: 15px; line-height: 1.4; color: rgba(255,255,255,0.72);">The business you grow.</span>
+            </div>
+          </div>
+          <p style="margin: 28px 0 0; font-size: 17px; line-height: 1.5; color: #FFFFFF; font-weight: 600;">No two stories are the same. We're here to help the world see every side of yours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OUR STORY (overlay; opened only by the hero "athlete" link and the nav "Our story" link) ============ -->
+  <section id="founder" class="founder-page" hidden role="dialog" aria-modal="true" aria-label="Our story">
+    <div class="wrap">
+      <button type="button" class="f-back" data-founder-close><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>Back to home</button>
+      <div class="f-grid">
+        <div class="f-photo">
+          <img src="assets/v2/founder.jpg" loading="lazy" alt="Mia Bhuta wearing the U.S. number 10 jersey and captain's armband during a FIFA World Cup match">
+          <p>Mia Bhuta &middot; Founder</p>
+        </div>
+        <div class="f-copy">
+          <p class="f-eye">Our story</p>
+          <h2 class="f-h">Built by an athlete. For every athlete.</h2>
+          <div class="f-body">
+            <p class="f-lead">I'm Mia Bhuta, captain of Stanford Women's Soccer and aspiring to be a professional soccer player.</p>
+            <p>At 17, I became the first Indian American to represent the U.S. at a FIFA World Cup. I saw an opportunity to build my brand, reaching millions of views and signing an NIL deal with adidas. But managing it all became a full-time job on top of being a student-athlete.</p>
+            <p>I realized athletes everywhere face the same challenge. They have incredible stories and real opportunities, but not enough time or support to make the most of them.</p>
+            <p>That's why I built Nomila. To give every athlete personalized support to build their brand, unlock opportunities, and focus on what they do best.</p>
+            <p class="f-close">Every athlete has a story. <span>Every story deserves to be shared.</span></p>
+            <p class="f-by">&mdash; Mia Bhuta, Founder</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUSTED, FUNDED & LOVED BY ============ -->
+  <section id="investors" style="padding: 32px 0; border-bottom: 1px solid #ECECEA;">
+    <div class="wrap">
+      <div class="backed"><span class="lbl">Trusted, Funded &amp; <svg class="heart" viewBox="0 0 24 24" width="13" height="13" aria-label="Loved" role="img"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.8 4.5c2.1 0 3.6 1.1 5.2 3 1.6-1.9 3.1-3 5.2-3 3.8 0 5.9 3.9 4.4 7.3C19.5 16.4 12 21 12 21z" fill="#C8325A"/></svg> by</span><div class="names"><span class="nm">WESTBOUND</span><span class="nm">TRYBE VENTURES</span></div></div>
+    </div>
+  </section>
+
+  <!-- ============ CLOSING BANNER ============ -->
+  <section id="join" style="position: relative; background: #0E0E0E; color: #FFFFFF; overflow: hidden;">
+    <svg aria-hidden="true" width="900" height="900" viewBox="0 0 112 112" fill="none" style="position: absolute; right: -260px; top: 50%; margin-top: -450px; opacity: .55;">
+      <g class="spin-a"><path d="M 17.7 88.14 A 50 50 0 1 1 99.3 31.0" stroke="#2D8EFF" stroke-width="1.2" stroke-linecap="round"></path></g>
+      <g class="spin-b"><path d="M 26.89 80.43 A 38 38 0 1 1 93.42 62.6" stroke="#2DC87C" stroke-width="1.2" stroke-linecap="round"></path></g>
+      <g class="spin-c"><path d="M 36.08 72.71 A 26 26 0 1 1 72.71 75.92" stroke="#E84591" stroke-width="1.2" stroke-linecap="round"></path></g>
+      <g class="spin-d"><path d="M 45.28 65.0 A 14 14 0 1 1 56.0 70.0" stroke="#E8A215" stroke-width="1.2" stroke-linecap="round"></path></g>
+    </svg>
+    <div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(50% 70% at 80% 50%, rgba(45,107,255,0.22), rgba(45,107,255,0) 70%);"></div>
+    <div class="wrap fade-in end-cta" style="position: relative; padding-top: 144px; padding-bottom: 136px;">
+      <h2 style="margin: 0; font-size: clamp(34px, 4.9vw, 62px); line-height: .93; font-weight: 900; letter-spacing: -1.9px; text-transform: uppercase; max-width: 900px;">Your athletic career is just one chapter.<br><span style="color: #6D95FF;">Build a brand that lasts a lifetime.</span></h2>
+      <p style="margin: 32px 0 0; font-size: 20px; font-weight: 600; color: rgba(255,255,255,0.92);">Join Nomila.</p>
+      <div class="end-row" style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-top: 24px;">
+        <button type="button" class="pill js-join" style="font-size: 14px; padding: 0 32px; height: 54px; box-shadow: 0 10px 30px rgba(200,50,90,0.4);">Join the waitlist</button>
+        <span style="font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.92);">Be one of the first athletes on Nomila</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="background: #0E0E0E; color: rgba(255,255,255,0.7); border-top: 1px solid rgba(255,255,255,0.1);">
+    <div class="wide end-foot" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px 24px; padding-top: 28px; padding-bottom: 28px; font-size: 13px;">
+      <span style="font-size: 12px; font-weight: 900; letter-spacing: .34em; color: #FFFFFF;">NOMILA</span>
+      <nav class="end-links" aria-label="Legal" style="display: flex; gap: 24px; flex-wrap: wrap;">
+        <a href="/privacy-policy" style="color: rgba(255,255,255,0.7); text-decoration: none;">Privacy</a>
+        <a href="/terms" style="color: rgba(255,255,255,0.7); text-decoration: none;">Terms</a>
+        <a href="/data-deletion" style="color: rgba(255,255,255,0.7); text-decoration: none;">Data deletion</a>
+      </nav>
+      <span>Brands: <a href="mailto:hello@nomila.co" style="color: rgba(255,255,255,0.7);">hello@nomila.co</a></span>
+      <span>© 2026 Nomila</span>
+    </div>
+  </footer>
+</div>
+
+<script>
+/* Hero: slides 2-8 load after the page has finished loading (slide 1 is the only one on the critical path).
+   With reduced motion the rotation is off, so they are never fetched. */
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) return;
+  function go(){
+    [].forEach.call(document.querySelectorAll('img.hero-slide[data-src]'), function(i){
+      i.srcset = i.getAttribute('data-srcset'); i.src = i.getAttribute('data-src');
+      i.removeAttribute('data-srcset'); i.removeAttribute('data-src');
+    });
+  }
+  if (document.readyState === 'complete') go(); else window.addEventListener('load', go);
+})();
+</script>
+<script>
+/* How it works: auto-advancing stepper (5 steps x 6s, stops after one pass, on hover, or when a step is clicked). */
+(function(){
+  var st=document.getElementById('stepper'); if(!st) return;
+  var steps=[].slice.call(st.querySelectorAll('.step'));
+  var shots=[].slice.call(document.querySelectorAll('#panel .shot'));
+  var pnl=document.getElementById('panel'), say=document.getElementById('milaSay');
+  var SAY=["Connect your accounts and I'll start learning your story.","Tick what's right, fix what isn't.","Here's how brands see you.","Your plan for this season is ready.","I'll draft it. You approve everything."];
+  var cur=0,holdUntil=0,now=document.getElementById('stepNow');
+  var SC=['#2D8EFF','#1E9E60','#E84591','#C98A0E','#C8325A'];
+  function show(k){
+    cur=k;
+    steps.forEach(function(s,i){s.classList.toggle('on',i===k);});
+    shots.forEach(function(s,i){s.classList.toggle('on',i===k);});
+    pnl.classList.toggle('s5',k===4);
+    if(say&&SAY[k]&&say.textContent!==SAY[k]){say.classList.add('swap');setTimeout(function(){say.textContent=SAY[k];say.classList.remove('swap');},250);}
+    var bar=steps[k].querySelector('.bar');bar.style.animation='none';void bar.offsetWidth;bar.style.animation='';
+    if(now){now.querySelector('.sn-n').textContent=steps[k].querySelector('.n').textContent;now.querySelector('.sn-t').textContent=steps[k].querySelector('.t').textContent;now.querySelector('.sn-b').textContent=steps[k].querySelector('.b').textContent;now.style.setProperty('--snc',SC[k]);}
+  }
+  steps.forEach(function(s,i){s.addEventListener('click',function(){holdUntil=Date.now()+15000;show(i);});});
+  // Loops for good: no hover pause (touch screens never send mouseleave, so a tap froze it); a tap holds that step 15 s.
+  // On screen = any part of the steps section is in the viewport, checked each tick (an IntersectionObserver could
+  // report it hidden while in view, and the steps never moved).
+  function onScreen(){var r=st.getBoundingClientRect();return r.bottom>0&&r.top<(window.innerHeight||document.documentElement.clientHeight);}
+  setInterval(function(){if(document.hidden||Date.now()<holdUntil||!onScreen())return;show((cur+1)%5);},6000);
+})();
+</script>
+<script>
+/* Our story overlay: opened only by [data-founder-open] links; Back / Escape closes it. */
+(function(){
+  var pg=document.getElementById('founder'); if(!pg) return;
+  var last=null;
+  function open(e){ if(e) e.preventDefault(); last=document.activeElement; pg.hidden=false; pg.scrollTop=0; document.documentElement.style.overflow='hidden'; var b=pg.querySelector('[data-founder-close]'); if(b) b.focus(); }
+  function close(){ pg.hidden=true; document.documentElement.style.overflow=''; if(last&&last.focus) last.focus(); }
+  [].forEach.call(document.querySelectorAll('[data-founder-open]'),function(a){a.addEventListener('click',open);});
+  pg.querySelector('[data-founder-close]').addEventListener('click',close);
+  pg.addEventListener('keydown',function(e){ if(e.key==='Escape') close(); });
+})();
+</script>
+
+<!-- ═══════════════════ JOIN FLOW SCREENS (fixed overlays; opened by every "Join the waitlist" button) ═══════════════════
+     Sign in → What do you play? → Is this you? (only on an index match) / your team (only when nothing places you) →
+     Unlock your M.I.A. score → Mila: the wait → Your M.I.A. score → Invite your team → You're on the list. Promoted: You're in.
+     Mila appears only on the wait and the score. Everything shown comes from the server; what is missing is hidden. -->
+
+<!-- 1 · Sign in -->
+<section id="j-signin" class="jf dark sheet" aria-label="Join the waitlist">
+  <div class="col">
+    <div class="body">
+      <div class="sh-top"><p class="sh-t">Join the waitlist</p><button type="button" class="ib" data-close aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+      <div id="j-providers" style="display:flex;flex-direction:column;gap:10px;">
+        <button type="button" id="j-google" class="pv"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844a4.14 4.14 0 0 1-1.796 2.716v2.259h2.908c1.702-1.567 2.684-3.875 2.684-6.615z" fill="#4285F4"/><path d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 0 0 9 18z" fill="#34A853"/><path d="M3.964 10.71A5.41 5.41 0 0 1 3.682 9c0-.593.102-1.17.282-1.71V4.958H.957A8.996 8.996 0 0 0 0 9c0 1.452.348 2.827.957 4.042l3.007-2.332z" fill="#FBBC05"/><path d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 0 0 .957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z" fill="#EA4335"/></svg>Continue with Google</button>
+        <button type="button" id="j-apple" class="pv"><svg width="16" height="18" viewBox="0 0 814 1000" aria-hidden="true"><path fill="#0E0E0E" d="M788 341c-6 4-109 62-109 191 0 149 131 202 135 203-1 3-21 72-69 142-43 62-88 124-156 124s-86-40-165-40c-77 0-104 41-166 41s-106-57-156-127C44 793 0 671 0 556c0-185 120-283 239-283 63 0 115 41 155 41 38 0 97-44 169-44 27 0 125 3 190 95zM554 167c30-35 51-84 51-133 0-7-1-14-2-19-48 2-106 32-140 72-27 31-53 80-53 130 0 8 1 15 2 18 3 1 9 2 14 2 44 0 99-29 128-70z"/></svg>Continue with Apple</button>
+        <button type="button" id="j-microsoft" class="pv"><svg width="17" height="17" viewBox="0 0 21 21" aria-hidden="true"><rect x="1" y="1" width="9" height="9" fill="#F25022"/><rect x="11" y="1" width="9" height="9" fill="#7FBA00"/><rect x="1" y="11" width="9" height="9" fill="#00A4EF"/><rect x="11" y="11" width="9" height="9" fill="#FFB900"/></svg>Continue with Microsoft</button>
+        <button type="button" id="j-use-email" class="lk" style="text-align:center;">Use email instead &rarr;</button>
+      </div>
+      <!-- Email: a 6-digit code when the server offers it (EMAIL_CODE_SIGNIN), else email + password as before -->
+      <div id="j-email" class="em">
+        <div id="j-email-step">
+          <label class="lbl" for="j-in-email">Email</label>
+          <input id="j-in-email" class="field" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com">
+        </div>
+        <div id="j-pass-step" class="hide">
+          <label class="lbl" for="j-in-pass">Password</label>
+          <input id="j-in-pass" class="field" type="password" autocomplete="current-password" placeholder="6+ characters">
+        </div>
+        <div id="j-code-step" class="hide">
+          <label class="lbl" for="j-in-code">6-digit code</label>
+          <input id="j-in-code" class="field" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="123456">
+          <p class="fine" id="j-code-sent" style="text-align:left;margin-top:6px;color:rgba(255,255,255,.75);"></p>
+        </div>
+        <button type="button" id="j-email-go" class="go white">Continue</button>
+        <button type="button" id="j-email-back" class="lk" style="text-align:center;">Other ways to sign in</button>
+      </div>
+      <p class="err" id="j-signin-err" role="alert"></p>
+      <p class="fine">By continuing you agree to the <a href="/terms">terms</a> and <a href="/privacy-policy">privacy policy</a>, and confirm you're 13 or older.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2 · What do you play? -->
+<section id="j-sport" class="jf" aria-label="What do you play?">
+  <div class="col">
+    <div class="bar"><span class="wm">NOMILA</span><button type="button" class="sp" data-spot aria-label="Your spot on the list"></button></div>
+    <div class="body">
+      <div id="j-name-wrap" style="display:none;">
+        <label class="lbl" for="j-in-name">What should we call you?</label>
+        <input id="j-in-name" class="field" type="text" maxlength="80" autocomplete="name" placeholder="Your name">
+      </div>
+      <h2>What do you play?</h2>
+      <p class="lede">Pick your main sport first, then any others.</p>
+      <div class="grid" id="j-grid" role="group" aria-label="Sports"></div>
+      <input id="j-in-other" class="field" type="text" maxlength="60" placeholder="Other: type your sport" aria-label="Another sport">
+      <div class="grow"></div>
+      <p class="err" id="j-sport-err" role="alert"></p>
+      <button type="button" id="j-sport-go" class="go" disabled>Continue</button>
+      <button type="button" id="j-sport-switch" class="ghost">Not you? Sign out</button>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · Is this you? (only when the index found a likely public profile) -->
+<section id="j-claim" class="jf dark" aria-label="Is this you?">
+  <div class="col">
+    <div class="bar"><span class="wm">NOMILA</span></div>
+    <div class="body">
+      <p class="eb" id="j-claim-eb">Is this you?</p>
+      <div class="grow"></div>
+      <h2 class="who" id="j-claim-name"></h2>
+      <p class="wl" id="j-claim-line"></p>
+      <p class="wd" id="j-claim-detail"></p>
+      <p class="fine" id="j-claim-taken" style="text-align:left;display:none;">This profile already has an owner. Picking it sends it to our team.</p>
+      <p class="err" id="j-claim-err" role="alert"></p>
+      <button type="button" id="j-claim-yes" class="go white" style="margin-top:8px;">That's me</button>
+      <button type="button" id="j-claim-no" class="ghost">Not me</button>
+      <p class="fine">Nomila found this public profile. Nothing is linked until you say so.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3b · Your team (only when the index could not place them) -->
+<section id="j-team" class="jf" aria-label="Your team">
+  <div class="col">
+    <div class="bar"><span class="wm">NOMILA</span><button type="button" class="sp" data-spot aria-label="Your spot on the list"></button></div>
+    <div class="body">
+      <h2>Where do you play?</h2>
+      <p class="lede">Where you compete helps us find you in the right place.</p>
+      <label class="lbl" for="j-in-team" style="margin-top:8px;">Your team, tour or club</label>
+      <input id="j-in-team" class="field" type="text" maxlength="120" autocomplete="organization" placeholder="Optional" aria-describedby="j-team-hint">
+      <p class="fine" id="j-team-hint" style="text-align:left;margin-top:6px;">Current, or your last one if you've retired. E.g. Stanford, Bay FC, WTA Tour, IMG Academy</p>
+      <div class="grow"></div>
+      <p class="err" id="j-team-err" role="alert"></p>
+      <button type="button" id="j-team-go" class="go" disabled>Continue</button>
+      <button type="button" id="j-team-skip" class="ghost">Skip</button>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · Unlock your M.I.A. score -->
+<section id="j-connect" class="jf" aria-label="Unlock your M.I.A. score">
+  <div class="col">
+    <div class="bar"><span class="wm">NOMILA</span><button type="button" class="sp" data-spot aria-label="Your spot on the list"></button></div>
+    <div class="body">
+      <h2 class="sm">Find out how marketable you are.</h2>
+      <p class="lede">Your <b>M.I.A. score</b> shows how brands see you. Connect so we measure your real audience.</p>
+      <div class="soc" id="j-ig">
+        <span class="ico" style="background:linear-gradient(135deg,#F58529,#DD2A7B,#8134AF);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg></span>
+        <span class="tx"><b>Instagram</b><i class="hd" id="j-ig-handle" hidden></i><i>Profile, posts and audience insights; DMs to find brand requests</i></span>
+        <button type="button" id="j-ig-go" class="cbtn">Connect</button>
+        <span class="okd" id="j-ig-ok" hidden aria-label="Connected"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>
+      </div>
+      <div class="soc soon">
+        <span class="ico" style="background:#0E0E0E;"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.3v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.5a5.9 5.9 0 1 0 5.1 5.9V9a7.6 7.6 0 0 0 4.4 1.4V7.1a4.3 4.3 0 0 1-3.3-1.3z"/></svg></span>
+        <span class="tx"><b>TikTok</b><i>Your profile and video stats</i></span>
+        <span class="soon-chip">Coming soon</span>
+      </div>
+      <div class="soc soon">
+        <span class="ico" style="background:#FF0000;"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M9.5 8.3v7.4l6.3-3.7z"/></svg></span>
+        <span class="tx"><b>YouTube</b><i>Your channel and video stats</i></span>
+        <span class="soon-chip">Coming soon</span>
+      </div>
+      <p class="note">Each account you connect also moves you up the list.</p>
+      <p class="err" id="j-connect-err" role="alert"></p>
+      <div class="grow"></div>
+      <button type="button" id="j-connect-go" class="go">Get my M.I.A. score</button>
+      <button type="button" id="j-connect-skip" class="ghost">Not now</button>
+      <p class="fine">Disconnect any time. Nothing is posted without you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · Mila arrives: the wait is the show -->
+<section id="j-wait" class="jf" aria-label="Mila is reading your story">
+  <div class="col">
+    <div class="bar"><span class="wm">NOMILA</span><button type="button" class="sp" data-spot aria-label="Your spot on the list"></button></div>
+    <div class="body">
+      <div class="mh"><span class="face"><video src="assets/v2/mila.mp4" poster="assets/v2/mila-poster.jpg" autoplay muted loop playsinline aria-hidden="true"></video></span><span class="nm"><b>Mila</b><i>Your agent</i></span></div>
+      <p class="lede" id="j-wait-hi"></p>
+      <div class="stat" id="j-stat" aria-live="polite"><span class="dot"></span><span class="st"><b id="j-stat-t"></b><i id="j-stat-s"></i></span></div>
+      <ol class="chk" id="j-chk" aria-label="What Mila is doing" hidden></ol>
+      <!-- "Is this you?" — the Instagram / YouTube handles research found (research-card.js; dev only: none sent on prod) -->
+      <div class="hds" id="j-handles" hidden>
+        <p class="hds-t" id="j-handles-t"></p>
+        <p class="note" id="j-handles-lede"></p>
+        <div class="hds-l" id="j-handles-list" role="list"></div>
+        <p class="note" id="j-handles-note" role="status" hidden></p>
+      </div>
+      <p class="note" id="j-wait-mail" hidden>I'll email you when your score is ready, so you can keep going.</p>
+      <!-- "Real athlete?" check found nothing yet (research.state needs_more): what would help, two ways to give it -->
+      <div class="more" id="j-more" hidden>
+        <p id="j-more-t">We couldn't find you online yet. Connect Instagram or add your team and we'll look again.</p>
+        <div class="more-act">
+          <button type="button" id="j-more-ig" class="go">Connect Instagram</button>
+          <button type="button" id="j-more-team" class="ghost">Add team</button>
+        </div>
+      </div>
+      <div class="rail-w" id="j-rail-w" hidden><div class="rail" id="j-facts" role="list" aria-label="What Mila found" aria-live="polite"></div><span class="ctr" id="j-ctr" aria-live="polite" hidden></span></div>
+      <p class="empty" id="j-facts-empty">Facts appear here as I find them, each with where it came from.</p>
+      <div class="grow"></div>
+      <div class="wait-act">
+        <button type="button" id="j-wait-score" class="go" hidden>See my M.I.A. score</button>
+        <button type="button" id="j-wait-on" class="ghost">Keep going. I'll keep working.</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · Your M.I.A. score -->
+<section id="j-score" class="jf dark" aria-label="Your M.I.A. score">
+  <div class="col">
+    <div class="bar"><span class="wm">NOMILA</span><button type="button" class="sp" data-spot aria-label="Your spot on the list"></button></div>
+    <div class="body">
+      <div class="mh"><span class="face"><video src="assets/v2/mila.mp4" poster="assets/v2/mila-poster.jpg" autoplay muted loop playsinline aria-hidden="true"></video></span><span class="nm"><b>Mila</b><i>Your agent</i></span></div>
+      <div class="sb">
+        <p class="eb" id="j-score-eb">Your marketability</p>
+        <div class="sb-row"><div class="ringw" id="j-ring" role="img"></div><div class="sb-tx"><p class="sb-read" id="j-read"></p><p class="sb-conf" id="j-conf" hidden></p></div></div>
+        <p class="sb-read" id="j-read2" hidden></p>
+        <div class="legend" id="j-legend"></div>
+        <!-- The preliminary score (dev only): the words (score-stage.js), then its sources as our own source chips. -->
+        <div class="sb-quick" id="j-quick" hidden aria-live="polite">
+          <p><b id="j-quick-h"></b> <span id="j-quick-n"></span></p>
+          <div class="srcs" id="j-quick-src" role="list" aria-label="Sources"></div>
+        </div>
+        <!-- The full score replaced the quick one (dev only): one quiet line. -->
+        <div class="sb-quick" id="j-replaced" hidden aria-live="polite"><p></p></div>
+        <div class="sb-foot" id="j-raise" hidden><p id="j-raise-t"></p><button type="button" id="j-raise-go" class="sb-link" hidden>Connect Instagram to sharpen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+      </div>
+      <div class="grow"></div>
+      <p class="rankline" data-rankline></p>
+      <button type="button" id="j-score-go" class="go">Invite your team</button>
+      <button type="button" id="j-score-later" class="ghost" hidden>I'll keep working, see my spot</button>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · Invite your team -->
+<section id="j-bring" class="jf" aria-label="Invite your team">
+  <div class="col">
+    <div class="bar"><span class="wm">NOMILA</span><button type="button" class="sp" data-spot aria-label="Your spot on the list"></button></div>
+    <div class="body">
+      <h2 class="sm">Invite your team</h2>
+      <p class="lede">Share your card. You'll see how many teammates join with your link.</p>
+      <div class="card-prev"><canvas id="j-card" width="1080" height="1350" role="img" aria-label="Your M.I.A. card"></canvas></div>
+      <p class="msg" id="j-msg-team"></p>
+      <button type="button" id="j-share-team" class="go">Share with your team</button>
+      <div class="chan" aria-label="Other ways to send it">
+        <a class="ch" id="j-text" href="sms:"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Text</a>
+        <a class="ch" id="j-email" href="mailto:"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Email</a>
+        <button type="button" class="ch" id="j-copy-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>Copy link</button>
+      </div>
+      <div class="tlinks"><button type="button" class="tlink" id="j-save-img">Save image</button></div>
+      <p class="done-line" id="j-share-done" aria-live="polite"></p>
+      <div class="grow"></div>
+      <p class="rankline" data-rankline></p>
+      <button type="button" id="j-bring-go" class="ghost">See my spot</button>
+      <p class="fine">You send from your phone. Nomila never messages anyone or reads your contacts.</p>
+    </div>
+  </div>
+  <div class="imgv" id="j-imgv" hidden><img id="j-imgv-img" alt="Your M.I.A. card"><p>Press and hold the image to save it.</p><button type="button" class="go white" id="j-imgv-close">Done</button></div>
+</section>
+
+<!-- 8 · You're on the list -->
+<section id="j-spot" class="jf" aria-label="Your spot">
+  <div class="col">
+    <div class="bar"><button type="button" class="ib" data-close aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button><span class="wm">NOMILA</span></div>
+    <div class="body">
+      <p class="eb">Your spot</p>
+      <div class="spot"><small id="j-spot-hi">You're on the list</small><b id="j-spot-rank" hidden></b><i id="j-spot-of" hidden></i></div>
+      <div class="tiles" id="j-tiles"><button type="button" class="tile" id="j-tile-score"><b>My M.I.A. score</b><i id="j-tile-score-s"></i></button><button type="button" class="tile" id="j-tile-share"><b>Share my score</b><i>Your card for your team</i></button></div>
+      <p class="eb" style="margin-top:8px;">Move up</p>
+      <div class="rows" id="j-rows"></div>
+      <p class="eb" style="margin-top:8px;">Your team</p>
+      <div class="rows" id="j-rows-team"></div>
+      <div class="grow"></div>
+      <p class="fine">We'll email you the moment your wave opens.</p>
+      <button type="button" class="ghost" data-close>Back to home</button>
+      <button type="button" class="signout" id="j-signout">Sign out</button>
+    </div>
+  </div>
+</section>
+
+<!-- 9 · You're in (an admin let their wave in) -->
+<section id="j-in" class="jf dark" aria-label="You're in">
+  <div class="col">
+    <div class="bar"><button type="button" class="ib" data-close aria-label="Close"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button><span class="wm">NOMILA</span></div>
+    <div class="body">
+      <div class="grow"></div>
+      <p class="eb">Your wave is open</p>
+      <h2 class="disp" id="j-in-t">You're in.</h2>
+      <p class="lede">Your agent is ready. Open Nomila to get started.</p>
+      <div class="grow"></div>
+      <a class="go white" id="j-open-app" href="https://nomila-dev.web.app/" target="_blank" rel="noopener">Open Nomila</a>
+      <button type="button" class="ghost" data-close>Back to home</button>
+    </div>
+  </div>
+</section>
+
+<!-- Mila hosts the join flow (MILA_TF_WAITLIST, dev only; landing/mila-host.js): the existing cards above move into
+     the thread as Mila reaches each step, and move back to their own screens on the way out -->
+<section id="j-mila" class="jf" aria-label="Mila">
+  <div class="col">
+    <div class="bar"><span class="wm">NOMILA</span><button type="button" class="sp" data-spot aria-label="Your spot on the list"></button></div>
+    <div class="body">
+      <div class="mh"><span class="face"><video src="assets/v2/mila.mp4" poster="assets/v2/mila-poster.jpg" autoplay muted loop playsinline aria-hidden="true"></video></span><span class="nm"><b>Mila</b><i id="j-mila-st" aria-live="polite">Your agent</i></span></div>
+      <div class="mthread" id="j-mila-thread" role="log" aria-label="Your conversation with Mila"></div>
+      <div class="grow"></div>
+      <div class="mcomp">
+        <form id="j-mila-form" autocomplete="off">
+          <input id="j-mila-in" class="field" type="text" maxlength="1000" placeholder="Ask Mila anything" aria-label="Message Mila">
+          <button type="submit" class="msend" aria-label="Send"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+        </form>
+        <button type="button" id="j-mila-skip" class="ghost">Just show me my score</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Boot: back from a redirect, until the right screen opens -->
+<section id="j-boot" class="jf" aria-label="Loading" aria-busy="true">
+  <div class="col">
+    <div class="body"><div class="boot"><span class="wm" style="font-size:12px;font-weight:900;letter-spacing:.34em;">NOMILA</span><span class="ring" aria-hidden="true"></span></div></div>
+  </div>
+</section>
+
+<div class="jtoast" id="j-toast" role="status" aria-live="polite"></div>
+
+<script type="module">
+  // The sport grid's tiles: the ONE sport list (shared/sports.ts), generated into ./sports.js.
+  import { SPORTS } from './sports.js';
+  // Each sport's icon (the app's MaterialCommunityIcons glyph or drawn glyph) as SVG path data, generated into ./sport-icons.js.
+  import { SPORT_ICONS } from './sport-icons.js';
+  // Which score the score screen shows (quick → full) and the words around it (pure; dev only in practice).
+  import { STAGE_COPY, quickOf, scoreViewOf, waitMailText } from './score-stage.js';
+  // The wait screen's real status line and the "Is this you?" handle rows (pure; dev only in practice).
+  import { HANDLE_COPY, handleRowsOf, liveLineOf, liveRowOf, liveSubOf, lookupNoteOf } from './research-card.js';
+  // Mila hosts the join flow around these same cards (MILA_TF_WAITLIST, dev only; the server says whether it is on).
+  import { createMilaHost } from './mila-host.js';
+
+  // Local dev → the local server. Deployed → the API that matches this site.
+  // nomila.co is the production site: its sign-ups go to production (api.nomila.co) from the
+  // waitlist launch (owner, 24 Oct 2026). Other hosts (previews) keep using dev. Shared card
+  // links (/c/**) still go to the dev service — see firebase.json — until cards live on prod.
+  // ?api=dev (localhost only): a local copy of this page against the deployed dev API, to test dev-only flows end to end.
+  const isLocal = ['localhost', '127.0.0.1'].includes(location.hostname);
+  const PROD_HOSTS = ['nomila.co', 'www.nomila.co'];
+  const API_URL = isLocal ? (new URLSearchParams(location.search).get('api') === 'dev' ? 'https://api-dev.nomila.co' : 'http://localhost:8080')
+    : PROD_HOSTS.includes(location.hostname) ? 'https://api.nomila.co'
+    : 'https://api-dev.nomila.co';
+  // "Open Nomila": the production app from nomila.co / www; previews and local keep the dev app.
+  const APP_URL = PROD_HOSTS.includes(location.hostname) ? 'https://app.nomila.co/' : 'https://nomila-dev.web.app/';
+  document.getElementById('j-open-app').href = APP_URL;
+
+  // ?mock=1 drives every screen from a stand-in server with a made-up athlete (./join-mock.js). LOCAL ONLY: on any
+  // deployed host the flag is ignored and the module is never fetched.
+  const params = new URLSearchParams(location.search);
+  const MOCK = isLocal && params.get('mock') === '1' ? (await import('./join-mock.js')).createMock(params) : null;
+
+  // ─── Firebase App Check (anti-fake plan, 24 Oct 2026) ─────
+  // reCAPTCHA Enterprise attests that an account-creating call came from this site; the server verifies the token
+  // (server/lib/appCheck.ts, APP_CHECK_ENFORCE off | monitor | enforce) only where a NEW account would be made. The
+  // site key is public. Only nomila.co / www.nomila.co (the key's domains); empty ⇒ App Check is not started and no
+  // token is sent (the server's monitor mode logs that, enforce would refuse).
+  // The reCAPTCHA Enterprise web site key for nomila.co + www.nomila.co (public; owner, 24 Oct 2026), registered for the
+  // Firebase web app in App Check with no enforcement in Firebase (the server's APP_CHECK_ENFORCE decides: monitor).
+  const APP_CHECK_SITE_KEY = '6Lc7xf4tAAAAAIQvABFK7Pd91d9zVU7_LcWFrEEH';
+  let appCheck = null, appCheckMod = null;
+  async function startAppCheck(app) {
+    if (!APP_CHECK_SITE_KEY || !PROD_HOSTS.includes(location.hostname)) return null;
+    try {
+      appCheckMod = await import('https://www.gstatic.com/firebasejs/11.9.0/firebase-app-check.js');
+      return appCheckMod.initializeAppCheck(app, { provider: new appCheckMod.ReCaptchaEnterpriseProvider(APP_CHECK_SITE_KEY), isTokenAutoRefreshEnabled: true });
+    } catch (e) { console.warn('[app-check] not started:', e && e.message || e); return null; }
+  }
+  // The X-Firebase-AppCheck header for a call that can create an account (POST /api/v1/waitlist); {} for anything
+  // else, or when App Check is off or slow (never blocks sign-up longer than 4 s; the server decides what a missing
+  // token means).
+  async function appCheckHeaders(path, method) {
+    if (!appCheck || method !== 'POST' || path !== '/api/v1/waitlist') return {};
+    try {
+      const r = await Promise.race([appCheckMod.getToken(appCheck, false), new Promise((ok) => setTimeout(() => ok(null), 4000))]);
+      return r && r.token ? { 'X-Firebase-AppCheck': r.token } : {};
+    } catch { return {}; }
+  }
+
+  // ─── Firebase (not loaded under the mock) ─────────────────
+  let fb = null, auth = null;
+  if (!MOCK) {
+    const [{ initializeApp }, fa] = await Promise.all([
+      import('https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js'),
+      import('https://www.gstatic.com/firebasejs/11.9.0/firebase-auth.js'),
+    ]);
+    fb = fa;
+    const app = initializeApp({
+      apiKey:            'AIzaSyAfVZNcQ65LcRQPh1XbUZYT4Yab5WFcvGw',
+      // Same-origin authDomain so Firebase's auth handler shares this page's origin.
+      // Cross-origin firebaseapp.com triggers iOS storage partitioning, which drops
+      // Firebase's pending auth state and breaks redirect sign-in. <hostname>/__/auth/handler
+      // must be registered on the Firebase Auth client (done for nomila-dev.web.app).
+      authDomain:        isLocal ? 'gamechanger-pocket-agent.firebaseapp.com' : location.hostname,
+      projectId:         'gamechanger-pocket-agent',
+      storageBucket:     'gamechanger-pocket-agent.firebasestorage.app',
+      messagingSenderId: '241621020090',
+      appId:             '1:241621020090:web:a4c064de2e19791aa88183',
+    });
+    auth = fa.getAuth(app);
+    appCheck = await startAppCheck(app);
+  }
+  const PROVIDERS = fb ? {
+    google: (() => { const p = new fb.GoogleAuthProvider(); p.addScope('profile'); p.addScope('email'); p.setCustomParameters({ prompt: 'select_account' }); return p; })(),
+    // Apple on the web: Firebase's apple.com provider (Services ID co.nomila.web, enabled in the Firebase project).
+    apple: (() => { const p = new fb.OAuthProvider('apple.com'); p.addScope('email'); p.addScope('name'); return p; })(),
+    microsoft: (() => { const p = new fb.OAuthProvider('microsoft.com'); p.addScope('profile'); p.addScope('email'); p.setCustomParameters({ prompt: 'select_account' }); return p; })(),
+  } : {};
+
+  // iOS severs window.opener for cross-origin popups (and Android is flaky), so mobile web uses full-page redirects for
+  // sign-in and for connecting Instagram; desktop keeps popups. Redirects resume on the next load (see the bottom).
+  const isMobileWeb = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  const OAUTH_PENDING = 'nomila_oauth_pending';
+  const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  // The ring's capitals, as the app's (client/constants/ring.ts): two tones each, the two dimensions they pair, in order.
+  const RING_CAPS = [
+    { key: 'audience',    name: 'Audience',    tones: ['#2D8EFF', '#7DB8FF'], dims: ['audience_scale', 'engagement_quality'], sub: 'scale · engagement' },
+    { key: 'commercial',  name: 'Commercial',  tones: ['#2DC87C', '#7FDDB0'], dims: ['commercial_proof', 'brand_fit'],        sub: 'proof · brand fit' },
+    { key: 'brand',       name: 'Brand',       tones: ['#E84591', '#F28DBB'], dims: ['narrative_power', 'cultural_relevance'], sub: 'narrative · culture' },
+    { key: 'performance', name: 'Performance', tones: ['#E8A215', '#F2C76A'], dims: ['athletic_authority', 'momentum'],       sub: 'authority · momentum' },
+  ];
+  const KIND = { about: 'About you', results: 'Results', partners: 'Partners', press: 'Press', audience: 'Audience' };
+  const FACT_PHOTOS = ['assets/v2/reel-2.jpg', 'assets/v2/reel-3.jpg', 'assets/v2/reel-1.jpg'];
+  const PURPOSE = { about: 'positioning', results: 'performance', partners: 'commercial', press: 'audience', audience: 'audience' };
+
+  const $ = (id) => document.getElementById(id);
+  const S = {
+    user: null, first: '', last: '', full: '', needName: false,
+    sports: [], claim: null, claimIdx: 0, linked: false,
+    connected: new Set(), rank: null, progress: null, progressMissing: false, poll: null, current: null,
+  };
+
+  // ─── screens ──────────────────────────────────────────────
+  // The marketing page is the normal document; every join screen is a fixed overlay above it. show(null) closes them.
+  // The boot screen (html.booting, set in <head> on a redirect return) stays up until a screen opens; it lifts once the
+  // new screen has faded in, so the home page never shows in between. A failsafe lifts it if nothing ever opens.
+  const OAUTH_AT = 'nomila_oauth_at';
+  const markRedirect = () => { try { localStorage.setItem(OAUTH_AT, String(Date.now())); } catch {} };
+  const clearRedirect = () => { try { localStorage.removeItem(OAUTH_AT); } catch {} };
+  function unboot(afterMs = 0) {
+    const root = document.documentElement;
+    if (!root.classList.contains('booting')) return;
+    setTimeout(() => root.classList.remove('booting'), afterMs);
+  }
+  setTimeout(() => unboot(), 12000);
+  // While Mila hosts the join flow (landing/mila-host.js), the join screens open as cards in her conversation instead;
+  // any other screen (the spot, "you're in", home) ends the conversation first. null until the host is created below.
+  let MILA = null;
+  function show(id) {
+    if (MILA && MILA.present(id)) return;
+    unboot(id && id !== 'j-signin' ? 450 : 0);
+    if (id === 'j-signin') { if ($('hero-join').closest('section').getBoundingClientRect().bottom < 120) window.scrollTo({ top: 0, behavior: 'smooth' }); openHeroSignin(); id = null; }
+    // Between two join screens nothing fades (both layers half see-through flashed the home page); opening from home
+    // or closing back to it keeps the fade.
+    const snap = !!(S.current && id);
+    document.querySelectorAll('.jf').forEach((s) => { s.classList.toggle('snap', snap); s.classList.toggle('active', s.id === id); });
+    if (snap) requestAnimationFrame(() => requestAnimationFrame(() => document.querySelectorAll('.jf.snap').forEach((s) => s.classList.remove('snap'))));
+    S.current = id;
+    if (id !== 'j-wait') stopPolling();
+    if (!id) { document.documentElement.style.overflow = ''; return; }
+    const el = $(id); el.scrollTop = 0; const col = el.querySelector('.col'); if (col) col.scrollTop = 0;
+    document.documentElement.style.overflow = 'hidden';
+    paintSpot();
+  }
+  document.querySelectorAll('[data-close]').forEach((b) => b.addEventListener('click', () => show(null)));
+  $('j-signin').addEventListener('click', (e) => { if (e.target === e.currentTarget) show(null); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && S.current) show(null); });
+
+  // Sign-in lives in the hero: the Join button becomes Google / Apple / Microsoft (+ email), like the app.
+  function openHeroSignin() {
+    const slot = $('hero-join-slot'), body = $('j-signin').querySelector('.body');
+    if (!slot.dataset.ready) {
+      slot.dataset.ready = '1';
+      ['j-providers', 'j-email', 'j-signin-err'].forEach((id) => slot.appendChild($(id)));
+      const fine = body.querySelector('.fine'); if (fine) slot.appendChild(fine);
+    }
+    $('hero-join').style.display = 'none'; slot.hidden = false;
+    armCollapse();
+  }
+  // As in the app (SignInFront): no choice within 8 s on the providers ⇒ fold back to the button. Not while signing
+  // in, not on the email step, not with an error showing.
+  let collapseTimer = 0;
+  function armCollapse() {
+    clearTimeout(collapseTimer);
+    collapseTimer = setTimeout(() => {
+      const busyNow = document.querySelector('#hero-join-slot .pv:disabled');
+      const emailOpen = $('j-email').classList.contains('on');
+      if (!busyNow && !emailOpen && $('j-signin-err').textContent === '') closeHeroSignin(); else armCollapse();
+    }, 8000);
+  }
+  function closeHeroSignin() {
+    clearTimeout(collapseTimer);
+    $('hero-join-slot').hidden = true; $('hero-join').style.display = '';
+    $('j-email').classList.remove('on'); $('j-providers').style.display = 'flex'; setErr('j-signin-err', '');
+  }
+  // Tapping the hero photo (not a button, link or field) opens or closes the options, as in the app.
+  (function () {
+    const hero = $('hero-join').closest('section') || $('hero-join').parentElement;
+    hero.addEventListener('click', (e) => {
+      if (S.user || e.target.closest('button, a, input, label, .hj')) return;
+      if ($('hero-join-slot').hidden) openHeroSignin(); else closeHeroSignin();
+    });
+  })();
+  // Every "Join the waitlist" button: signed in already → straight to where they are; else sign in.
+  document.querySelectorAll('.js-join').forEach((b) => b.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (S.user) route(); else show('j-signin');
+  }));
+
+  let toastT = null;
+  function toast(text) {
+    const t = $('j-toast'); t.textContent = text; t.classList.add('on');
+    clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('on'), 3200);
+  }
+  // The corner chip says what it is ("#24 on the list"; just "#24" on a very narrow screen) and opens the spot screen;
+  // the score and invite screens carry one quiet line with the same place.
+  function paintSpot() {
+    const pos = S.rank ? '#' + S.rank.position.toLocaleString() : '';
+    const narrow = window.innerWidth < 340;
+    document.querySelectorAll('[data-spot]').forEach((el) => {
+      el.textContent = S.rank ? (narrow ? pos : `${pos} on the list`) : '';
+      el.style.display = S.rank ? 'inline-block' : 'none';
+    });
+    document.querySelectorAll('[data-rankline]').forEach((el) => { el.textContent = S.rank ? `You're ${pos} on the waitlist.` : ''; });
+    paintNav();
+  }
+  document.querySelectorAll('[data-spot]').forEach((el) => el.addEventListener('click', () => openSpot()));
+  window.addEventListener('resize', () => paintNav());
+  paintNav();
+  // The top bar: "Sign in" for a returning visitor beside "Join the waitlist"; with a session, one "My spot" that goes in.
+  function paintNav() {
+    $('btn-nav-signin').hidden = !!S.user;
+    // Beside "Sign in" on a narrow phone the CTA says just "Join" (the bar has no room for both in full).
+    $('btn-get-agent').textContent = S.user ? 'My spot' : window.innerWidth < 420 ? 'Join' : 'Join the waitlist';
+  }
+  const setErr = (id, text) => { $(id).textContent = text || ''; };
+  const busy = (btn, on) => { btn.disabled = on; };
+
+  // ─── server ───────────────────────────────────────────────
+  // Every call is auth-first: the caller's Firebase ID token; identity comes from the token, never the body.
+  // credentials: 'include' only for the Instagram connect start, whose response sets the HttpOnly cookie that binds the
+  // connect to this browser (the server's callback refuses the connect without it).
+  async function api(path, { method = 'GET', body, credentials } = {}) {
+    if (MOCK) return MOCK.fetch(path, { method, body });
+    if (!S.user) throw new Error('not signed in');
+    const token = await S.user.getIdToken();
+    const headers = { Authorization: 'Bearer ' + token, ...(await appCheckHeaders(path, method)) };
+    if (body !== undefined) headers['Content-Type'] = 'application/json';
+    return fetch(API_URL + path, { method, headers, body: body !== undefined ? JSON.stringify(body) : undefined, ...(credentials ? { credentials } : {}) });
+  }
+  const readJson = (r) => r.json().catch(() => ({}));
+  const referralIn = () => { try { return localStorage.getItem('referralCode') || undefined; } catch { return undefined; } };
+
+  async function loadRank() {
+    try {
+      const r = await api('/api/v1/waitlist/rank');
+      if (!r.ok) return null;
+      const d = await r.json();
+      if (typeof d.rank === 'number') S.rank = { position: d.rank, total: d.total };
+    } catch {}
+    paintSpot();
+    return S.rank;
+  }
+  async function loadConnections() {
+    try {
+      const r = await api('/api/v1/me/connections');
+      if (!r.ok) return;
+      const d = await r.json();
+      S.connected = new Set((d.connections || []).filter((c) => c.status === 'active').map((c) => c.platform));
+      const ig = (d.connections || []).find((c) => c.platform === 'instagram' && c.status === 'active');
+      S.igHandle = ig && ig.platform_username ? (ig.platform_username.includes('@') ? ig.platform_username : '@' + ig.platform_username) : '';
+    } catch {}
+    paintConnect();
+  }
+  // GET /api/v1/waitlist/progress: findings and the score come only from real research and scoring; null until ready.
+  async function loadProgress() {
+    try {
+      const r = await api('/api/v1/waitlist/progress');
+      if (r.status === 404) { S.progressMissing = true; S.progressErrors = 0; return null; }
+      if (!r.ok) { S.progressErrors = (S.progressErrors || 0) + 1; return null; }
+      const d = await r.json();
+      S.progressMissing = false; S.progressErrors = 0; S.errorSince = 0;
+      S.progress = d;
+      if (d.rank && typeof d.rank.position === 'number') S.rank = { position: d.rank.position, total: d.rank.total };
+      else if (d.rank === null) S.rank = null;                    // null once promoted (no longer on the list)
+      if (Array.isArray(d.connected)) d.connected.forEach((p) => S.connected.add(p));
+      paintSpot();
+      return d;
+    } catch { S.progressErrors = (S.progressErrors || 0) + 1; return null; }
+  }
+
+  // ─── where does this person belong? ───────────────────────
+  // A returning person resumes at the first step they have not finished, from what the server holds:
+  //   promoted → you're in · no sport → the sport grid · no Instagram (and connecting not skipped) → connect ·
+  //   research running or queued → the wait · score ready (and not yet seen) → the score · else → their spot.
+  // The server cannot tell two of those (she tapped "Not now" on connect; she has seen her score), so this device
+  // remembers them per sign-in (localStorage; another device simply shows those steps again).
+  const stepKey = (k) => `nomila.join.${k}.${(S.user && S.user.uid) || ''}`;
+  const markStep = (k) => { try { localStorage.setItem(stepKey(k), '1'); } catch {} };
+  const stepDone = (k) => { try { return localStorage.getItem(stepKey(k)) === '1'; } catch { return false; } };
+  // ?go=score (the score-ready email's link): once signed in, open the score — only when she has one; used once.
+  let goScore = params.get('go') === 'score';
+  if (goScore) { params.delete('go'); history.replaceState(null, '', location.pathname + (params.toString() ? '?' + params : '') + location.hash); }
+  async function route() {
+    await ensureAccount();
+    let r;
+    try { r = await api('/api/v1/auth/me'); } catch { show('j-signin'); setErr('j-signin-err', "That didn't go through. Check your connection and try again."); return; }
+    if (r.status === 409) return openSpot();                       // several profiles held: the app sorts that out
+    if (r.status >= 500) { show('j-signin'); setErr('j-signin-err', "That didn't go through. Try again in a moment."); return; }
+    const me = r.ok ? await readJson(r) : null;
+    if (me && !S.first && me.firstName) S.first = me.firstName;
+    // "You're in" only once an admin has promoted her (status 'active'); any other status ('raw' from an older app
+    // sign-up, 'waitlisted') is on the list and goes through the waitlist flow.
+    if (me && me.status === 'active') return openIn();
+    // Mila hosts the rest when the server has it on (dev only) and she has not chosen "Just show me my score" here.
+    if (!goScore && MILA && await MILA.maybeStart(me)) return;
+    if (!me || !me.sport) return openSport();
+    await Promise.all([loadProgress(), loadConnections(), loadRank()]);
+    if (goScore) { goScore = false; if (S.progress && S.progress.score) return openScore(); }
+    const st = S.progress && S.progress.research ? S.progress.research.state : null;
+    if (!S.connected.has('instagram') && !stepDone('connect')) return openConnect();
+    if (st === 'running' || st === 'queued' || st === 'needs_more') return openWait();
+    if (st === 'done' && !stepDone('score') && (S.progress.score || !scoreFailed(S.progress))) return openScore();
+    return openSpot();
+  }
+
+  // ─── 1 · sign in ──────────────────────────────────────────
+  function takeUser(u) {
+    S.user = u;
+    const parts = (u.displayName || '').trim().split(/\s+/).filter(Boolean);
+    S.first = parts[0] || ''; S.last = parts.slice(1).join(' '); S.full = (u.displayName || '').trim();
+    S.needName = !S.full;
+  }
+  async function signedIn(u) {
+    takeUser(u); setErr('j-signin-err', '');
+    if (!(accountOnce && u && accountOnce.uid === u.uid)) accountOnce = { uid: u && u.uid, p: createAccount() };
+    await accountOnce.p; await route();
+  }
+  // A browser that remembers her sign-in never runs signedIn(), so on load (and before any routing) she gets the same
+  // one POST when GET /auth/me says this sign-in has no account yet (401 / 404). Once per sign-in per page load.
+  let accountOnce = null;
+  function ensureAccount() {
+    const uid = S.user && S.user.uid;
+    if (!uid) return Promise.resolve();
+    if (accountOnce && accountOnce.uid === uid) return accountOnce.p;
+    const p = (async () => {
+      try { const r = await api('/api/v1/auth/me'); if (r.status === 401 || r.status === 404) await createAccount(); } catch {}
+    })();
+    accountOnce = { uid, p };
+    return p;
+  }
+  // Her Nomila account is made at sign-in: POST /waitlist with only what the sign-in gives (the server names a new row
+  // from the sign-in's name, else her e-mail; an existing row is left as it is). Research waits for her sport and her
+  // name. Sign-ups closed (403) or an "Is this you?" (409) creates nothing here: the sport step asks again, as before.
+  async function createAccount() {
+    try { await api('/api/v1/waitlist', { method: 'POST', body: { referral_code: referralIn() } }); } catch {}
+  }
+
+  function bindProvider(btnId, key, label) {
+    $(btnId).addEventListener('click', async () => {
+      const btn = $(btnId); busy(btn, true); setErr('j-signin-err', '');
+      try {
+        if (MOCK) { await signedIn(MOCK.user); return; }
+        if (isMobileWeb) {
+          try { sessionStorage.setItem(OAUTH_PENDING, key); } catch {}
+          markRedirect();                                         // the return opens on the boot screen, not the home page
+          await fb.signInWithRedirect(auth, PROVIDERS[key]);   // navigates away; resumes on return
+          return;
+        }
+        const res = await fb.signInWithPopup(auth, PROVIDERS[key]);
+        await signedIn(res.user);
+      } catch (e) {
+        const code = e && e.code;
+        if (code === 'auth/popup-closed-by-user' || code === 'auth/cancelled-popup-request') return;
+        setErr('j-signin-err', code === 'auth/account-exists-with-different-credential'
+          ? 'You already have a Nomila account with this email. Sign in the way you did before.'
+          : label + " sign-in didn't go through. Try email instead.");
+      } finally { busy(btn, false); }
+    });
+  }
+  bindProvider('j-google', 'google', 'Google');
+  bindProvider('j-apple', 'apple', 'Apple');
+  bindProvider('j-microsoft', 'microsoft', 'Microsoft');
+
+  // Email: a 6-digit code when the server offers it (POST /auth/email-code/start; 404 when EMAIL_CODE_SIGNIN is off),
+  // otherwise email + password as before (create the account, or sign in when it exists).
+  let emailStep = 'email';
+  function setEmailStep(step) {
+    emailStep = step;
+    $('j-pass-step').classList.toggle('hide', step !== 'pass');
+    $('j-code-step').classList.toggle('hide', step !== 'code');
+    $('j-email-go').textContent = step === 'code' ? 'Sign in' : step === 'pass' ? 'Continue' : 'Continue';
+    const f = step === 'pass' ? $('j-in-pass') : step === 'code' ? $('j-in-code') : $('j-in-email');
+    setTimeout(() => f.focus(), 30);
+  }
+  $('j-use-email').addEventListener('click', () => { $('j-providers').style.display = 'none'; $('j-email').classList.add('on'); setEmailStep('email'); setErr('j-signin-err', ''); });
+  $('j-email-back').addEventListener('click', () => { $('j-email').classList.remove('on'); $('j-providers').style.display = 'flex'; setErr('j-signin-err', ''); });
+  const publicPost = (path, body) => fetch(API_URL + path, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+  const wait = (sec) => { const m = Math.ceil((sec || 60) / 60); return m < 60 ? `${m} minute${m === 1 ? '' : 's'}` : `${Math.ceil(m / 60)} hours`; };
+
+  $('j-email-go').addEventListener('click', async () => {
+    const btn = $('j-email-go');
+    const email = ($('j-in-email').value || '').trim().toLowerCase();
+    setErr('j-signin-err', '');
+    if (!EMAIL_RE.test(email)) { setErr('j-signin-err', 'That doesn’t look like an email address.'); return; }
+    busy(btn, true);
+    try {
+      if (MOCK) { await signedIn(MOCK.user); return; }
+      if (emailStep === 'email') {
+        let r = null;
+        try { r = await publicPost('/api/v1/auth/email-code/start', { email }); } catch {}
+        if (r && r.status === 202) { $('j-code-sent').textContent = `We sent it to ${email}. It works for 10 minutes. Can’t find it? Check spam.`; setEmailStep('code'); return; }
+        const b = r ? await readJson(r) : {};
+        if (r && r.status === 429) { setErr('j-signin-err', b.error === 'too_soon' ? 'A code is already on its way. Check your email.' : `Too many codes for this email. Try again in ${wait(b.retryAfterSec)}, or use Google.`); if (b.error === 'too_soon') setEmailStep('code'); return; }
+        if (r && r.status === 503 && b.error === 'busy') { setErr('j-signin-err', 'Lots of sign-ins right now. Try again in a few minutes.'); return; }
+        // Email + password ONLY where the server has no code sign-in at all (404). With it on (production), an email
+        // sign-up is always the verified code: any other answer is an error to retry, never a password fallback.
+        if (!r || r.status !== 404) { setErr('j-signin-err', "That didn't go through. Check your connection and try again, or use Google."); return; }
+        setEmailStep('pass');                                     // no code sign-in on this server: email + password
+        return;
+      }
+      if (emailStep === 'code') {
+        const code = ($('j-in-code').value || '').trim();
+        const r = await publicPost('/api/v1/auth/email-code/verify', { email, code });
+        const b = await readJson(r);
+        if (r.ok && b.customToken) { const cred = await fb.signInWithCustomToken(auth, b.customToken); await signedIn(cred.user); return; }
+        setErr('j-signin-err', b.error === 'wrong_code' ? `That code isn’t right. ${b.triesLeft} ${b.triesLeft === 1 ? 'try' : 'tries'} left.`
+          : b.error === 'expired' ? 'That code has expired. Go back and send a new one.'
+          : b.error === 'locked' ? 'Too many wrong tries. Go back and send a new code.'
+          : b.error === 'invalid_code' ? 'Enter the 6 digits from the email.'
+          : "That didn't go through. Check your connection and try again.");
+        return;
+      }
+      const password = $('j-in-pass').value;
+      if (password.length < 6) { setErr('j-signin-err', 'Password must be at least 6 characters.'); return; }
+      let cred;
+      try { cred = await fb.createUserWithEmailAndPassword(auth, email, password); }
+      catch (e) { if (e.code === 'auth/email-already-in-use') cred = await fb.signInWithEmailAndPassword(auth, email, password); else throw e; }
+      await signedIn(cred.user);
+    } catch (e) {
+      setErr('j-signin-err', e && (e.code === 'auth/invalid-credential' || e.code === 'auth/wrong-password')
+        ? 'That email already has an account. Wrong password.' : "That didn't go through. Please try again.");
+    } finally { busy(btn, false); }
+  });
+  [$('j-in-email'), $('j-in-pass'), $('j-in-code')].forEach((f) => f.addEventListener('keydown', (e) => { if (e.key === 'Enter') $('j-email-go').click(); }));
+
+  // ─── 2 · what do you play? ────────────────────────────────
+  // The first pick is Main (raspberry); others get a check. Turning Main off promotes the next pick.
+  const grid = $('j-grid');
+  SPORTS.forEach(([id, label]) => {
+    const t = document.createElement('button');
+    t.type = 'button'; t.className = 'tl'; t.dataset.sport = id; t.setAttribute('role', 'checkbox'); t.setAttribute('aria-checked', 'false');
+    const ic = SPORT_ICONS[id];
+    if (ic) {
+      const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      svg.setAttribute('viewBox', ic.viewBox); svg.setAttribute('aria-hidden', 'true'); svg.setAttribute('focusable', 'false');
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute('d', ic.d); path.setAttribute('fill', 'currentColor');
+      svg.appendChild(path); t.appendChild(svg);
+    }
+    const name = document.createElement('span'); name.textContent = label; t.appendChild(name);
+    t.addEventListener('click', () => {
+      S.sports = S.sports.includes(id) ? S.sports.filter((x) => x !== id) : [...S.sports, id];
+      paintSports();
+    });
+    grid.appendChild(t);
+  });
+  function chosenSports() {
+    const typed = ($('j-in-other').value || '').replace(/\s+/g, ' ').trim().slice(0, 60);
+    const tile = typed ? SPORTS.find(([, l]) => l.toLowerCase() === typed.toLowerCase()) : null;
+    const all = typed ? [...S.sports, tile ? tile[0] : typed] : [...S.sports];
+    return all.filter((s, i) => all.indexOf(s) === i);
+  }
+  function paintSports() {
+    grid.querySelectorAll('.tl').forEach((t) => {
+      const i = S.sports.indexOf(t.dataset.sport);
+      t.classList.toggle('on', i >= 0); t.classList.toggle('main', i === 0);
+      t.setAttribute('aria-checked', String(i >= 0));
+      const mark = t.querySelector('em'); if (mark) mark.remove();
+      if (i === 0) t.insertAdjacentHTML('beforeend', '<em>Main</em>');
+      else if (i > 0) t.insertAdjacentHTML('beforeend', '<em class="ck" aria-hidden="true">&#10003;</em>');
+    });
+    const n = chosenSports().length;
+    const nameOk = !S.needName || !!($('j-in-name').value || '').trim();
+    $('j-sport-go').disabled = !n || !nameOk;
+    $('j-sport-go').textContent = n > 1 ? `Continue · ${n}` : 'Continue';
+  }
+  $('j-in-other').addEventListener('input', paintSports);
+  $('j-in-name').addEventListener('input', paintSports);
+  function openSport() {
+    $('j-name-wrap').style.display = S.needName ? 'block' : 'none';
+    paintSports(); show('j-sport');
+  }
+
+  // POST /api/v1/waitlist with the main sport puts them on the list and starts the research. The index may answer
+  // 409 "Is this you?"; nothing is created until they decide, then the same post goes again with the claim session.
+  function joinBody(extra) {
+    const sports = chosenSports();
+    if (S.needName) {
+      const typed = ($('j-in-name').value || '').replace(/\s+/g, ' ').trim();
+      const parts = typed.split(' ');
+      S.full = typed; S.first = parts[0] || ''; S.last = parts.slice(1).join(' ');
+    }
+    return {
+      sport: sports[0],
+      first_name: S.first || undefined, last_name: S.last || undefined, full_name: S.full || undefined,
+      referral_code: referralIn(),
+      ...extra,
+    };
+  }
+  async function join(extra = {}) {
+    const r = await api('/api/v1/waitlist', { method: 'POST', body: joinBody(extra) });
+    const b = await readJson(r);
+    if (r.status === 409 && b.error === 'confirmation_required' && Array.isArray(b.claims) && b.claims.length) {
+      S.claim = b; S.claimIdx = 0; paintClaim(); show('j-claim'); return;
+    }
+    if (r.status === 403 && b.error === 'signups_closed') throw new Error('Sign-ups are closed for now.');
+    if (r.status === 429) throw new Error('Too many new accounts from this network just now. Please try again in a little while.');
+    if (!r.ok) throw new Error("That didn't save. Check your connection and try again.");
+    if (b.promoted) { openIn(); return; }
+    await afterJoin();
+  }
+  $('j-sport-go').addEventListener('click', async () => {
+    const btn = $('j-sport-go'); busy(btn, true); setErr('j-sport-err', '');
+    try { await join(); } catch (e) { setErr('j-sport-err', e.message); } finally { paintSports(); }
+  });
+  // Sign out (ONE way, two places: "Not you? Sign out" on the sport step, "Sign out" on the spot): signs out of
+  // Firebase and forgets this page's view of the old sign-in; `then` is where she lands (the sign-in options, or home).
+  async function signOutHere(then) {
+    try { if (fb && auth) await fb.signOut(auth); } catch {}
+    S.user = null; S.first = ''; S.last = ''; S.full = ''; S.needName = false; S.sports = []; S.claim = null; S.linked = false;
+    S.connected = new Set(); S.rank = null; S.progress = null; accountOnce = null;
+    setErr('j-sport-err', ''); paintSpot(); show(then);
+  }
+  $('j-sport-switch').addEventListener('click', () => signOutHere('j-signin'));
+
+  // On the list: the toast, the spot chip, then the team question only when nothing placed them.
+  async function afterJoin() {
+    const rank = await loadRank();
+    toast(rank ? `You're on the waitlist · #${rank.position.toLocaleString()}` : "You're on the waitlist");
+    let school = null;
+    if (!S.linked) { try { const r = await api('/api/v1/auth/me'); if (r.ok) school = (await r.json()).school || null; } catch {} }
+    if (!S.linked && !school) { $('j-team-go').disabled = true; show('j-team'); return; }
+    openConnect();
+  }
+
+  // ─── 3 · is this you? ─────────────────────────────────────
+  function paintClaim() {
+    const claims = S.claim.claims; const c = claims[Math.min(S.claimIdx, claims.length - 1)].candidate || {};
+    $('j-claim-eb').innerHTML = 'Is this you?' + (claims.length > 1 ? ` &nbsp;<i>${S.claimIdx + 1} of ${claims.length}</i>` : '');
+    $('j-claim-name').textContent = c.fullName || '';
+    $('j-claim-line').textContent = [c.sport, c.teamOrSchool].filter(Boolean).join(' · ');
+    const handles = Object.values(c.knownSocialHandles || {}).filter(Boolean).slice(0, 2).map((h) => '@' + String(h).replace(/^@/, ''));
+    $('j-claim-detail').textContent = [c.classYear ? `Class of ${c.classYear}` : null, c.cityOrCountry, ...handles].filter(Boolean).join(' · ');
+    $('j-claim-taken').style.display = c.claimability === 'none' ? 'block' : 'none';
+    setErr('j-claim-err', '');
+  }
+  async function claimThen(fn) {
+    const y = $('j-claim-yes'), n = $('j-claim-no'); busy(y, true); busy(n, true); setErr('j-claim-err', '');
+    try { await fn(); } catch (e) { setErr('j-claim-err', e.message || "We couldn't record that. Please try again."); } finally { busy(y, false); busy(n, false); }
+  }
+  $('j-claim-yes').addEventListener('click', () => claimThen(async () => {
+    const sess = S.claim.claimSessionId; const claim = S.claim.claims[S.claimIdx];
+    const r = await api(`/api/v1/identity/claims/${claim.claimId}/confirm`, { method: 'POST', body: { claimSessionId: sess } });
+    if (r.status !== 410 && !r.ok) throw new Error("We couldn't record that. Please try again.");
+    const out = r.ok ? await readJson(r) : {};
+    S.linked = out.outcome === 'linked';
+    if (out.outcome === 'pending_operator') toast("Thanks. Our team will confirm that profile is yours.");
+    if (out.outcome === 'taken') toast("That profile already has an owner. We'll sort it out.");
+    await join({ claim_session_id: sess });
+  }));
+  $('j-claim-no').addEventListener('click', () => {
+    if (S.claimIdx < S.claim.claims.length - 1) { S.claimIdx += 1; paintClaim(); return; }
+    claimThen(async () => {
+      const sess = S.claim.claimSessionId;
+      const r = await api(`/api/v1/identity/claims/session/${sess}/dismiss`, { method: 'POST' });
+      if (!r.ok && r.status !== 404) throw new Error("We couldn't record that. Please try again.");
+      await join({ claim_session_id: sess });
+    });
+  });
+
+  // ─── 3b · your team (only when nothing placed them) ───────
+  $('j-in-team').addEventListener('input', () => { $('j-team-go').disabled = !($('j-in-team').value || '').trim(); });
+  $('j-in-team').addEventListener('keydown', (e) => { if (e.key === 'Enter' && !$('j-team-go').disabled) $('j-team-go').click(); });
+  $('j-team-go').addEventListener('click', async () => {
+    const team = ($('j-in-team').value || '').replace(/\s+/g, ' ').trim().slice(0, 120);
+    if (!team) return;
+    const btn = $('j-team-go'); busy(btn, true); setErr('j-team-err', '');
+    try {
+      // `team` is the join flow's field (stored like the app does); `school` keeps today's server storing it too.
+      const r = await api('/api/v1/waitlist', { method: 'POST', body: { team, school: team } });
+      if (!r.ok) throw new Error();
+      if (S.teamThenWait) { S.teamThenWait = false; await loadProgress(); openWait(); return; }
+      openConnect();
+    } catch { setErr('j-team-err', "That didn't save. Check your connection and try again."); }
+    finally { busy(btn, false); }
+  });
+  $('j-team-skip').addEventListener('click', () => { if (S.teamThenWait) { S.teamThenWait = false; openWait(); return; } openConnect(); });
+
+  // ─── 4 · unlock your M.I.A. score ─────────────────────────
+  function paintConnect() {
+    const on = S.connected.has('instagram');
+    $('j-ig').classList.toggle('ok', on);
+    $('j-ig-go').hidden = on; $('j-ig-ok').hidden = !on;
+    $('j-ig-handle').hidden = !(on && S.igHandle); $('j-ig-handle').textContent = on && S.igHandle ? `${S.igHandle} · connected` : '';
+    // Nothing connected: the main button connects; "Not now" goes on without. Connected: it moves on.
+    $('j-connect-go').textContent = on ? 'Get my M.I.A. score' : 'Connect Instagram';
+    $('j-connect-skip').hidden = on;
+  }
+  async function openConnect() { paintConnect(); show('j-connect'); await loadConnections(); }
+
+  // POST /me/connect/instagram with returnOrigin → Instagram's login → the server's callback verifies and stores →
+  // we read GET /me/connections until it shows the account (the row turns green). Mobile: same tab, back at ?connected=.
+  async function connectInstagram() {
+    setErr('j-connect-err', '');
+    const btn = $('j-ig-go'); busy(btn, true);
+    const popup = !isMobileWeb && !MOCK ? window.open('about:blank', 'nomila-oauth', 'popup,width=520,height=700') : null;
+    try {
+      const r = await api('/api/v1/me/connect/instagram', { method: 'POST', body: { clientPlatform: 'web', returnOrigin: location.origin }, credentials: 'include' });
+      const d = r.ok ? await readJson(r) : {};
+      if (MOCK && d.mockConnected) { await loadConnections(); afterConnected(); return; }
+      if (!r.ok || !d.redirectUrl) throw new Error('connect');
+      if (isMobileWeb) { location.href = d.redirectUrl; return; }
+      if (popup) popup.location.href = d.redirectUrl; else window.open(d.redirectUrl, '_blank');
+      const started = Date.now(); let afterClose = 0;
+      while (Date.now() - started < 180000) {
+        await new Promise((res) => setTimeout(res, 1500));
+        await loadConnections();
+        if (S.connected.has('instagram')) { if (popup && !popup.closed) popup.close(); afterConnected(); return; }
+        if (popup && popup.closed && ++afterClose >= 2) return;    // closed without connecting: the button stays
+      }
+    } catch {
+      if (popup) popup.close();
+      setErr('j-connect-err', "Instagram didn't connect. Try again in a moment.");
+    } finally { busy(btn, false); }
+  }
+  function afterConnected() { paintConnect(); loadRank().then((rk) => { if (rk) toast(`Instagram connected · you're #${rk.position.toLocaleString()}`); }); }
+  $('j-ig-go').addEventListener('click', connectInstagram);
+  $('j-connect-go').addEventListener('click', () => { if (S.connected.has('instagram')) openWait(); else connectInstagram(); });
+  $('j-connect-skip').addEventListener('click', () => { markStep('connect'); openWait(); });
+
+  // ─── 5 · Mila arrives: the wait is the show ───────────────
+  function stopPolling() { clearTimeout(S.poll); S.poll = null; }
+  // Server errors back off 4 → 8 → 16 → 30 s, and after a few minutes of nothing but errors polling stops with a calm
+  // note (the read carries on server-side; they keep their spot).
+  const ERROR_GIVE_UP_MS = 3 * 60 * 1000;
+  async function tick() {
+    if (S.current !== 'j-wait') return;
+    if (document.hidden) { S.poll = setTimeout(tick, 4000); return; }
+    await loadProgress();
+    paintWait();
+    const st = S.progress && S.progress.research ? S.progress.research.state : null;
+    // Read done, score still being worked out: keep looking (every 6 s) until it lands or the score step gives up.
+    const scoreComing = st === 'done' && !(S.progress && S.progress.score) && !scoreFailed(S.progress);
+    if (S.current !== 'j-wait' || (st === 'done' && !scoreComing) || st === 'failed' || st === 'not_started') return;
+    if (scoreComing && !S.progressErrors) { S.poll = setTimeout(tick, 6000); return; }
+    if (S.progressErrors > 0) {
+      if (!S.errorSince) S.errorSince = Date.now();
+      if (Date.now() - S.errorSince > ERROR_GIVE_UP_MS) { S.gaveUp = true; paintWait(); return; }
+      S.poll = setTimeout(tick, Math.min(30000, 4000 * 2 ** (S.progressErrors - 1)));
+      return;
+    }
+    // ~4 s while she works; slower while the read waits its turn (queued until the daily cap has room) or the
+    // progress endpoint is not there yet.
+    S.poll = setTimeout(tick, S.progressMissing ? 30000 : st === 'queued' || st === 'needs_more' ? 20000 : 4000);
+  }
+  async function openWait() { S.gaveUp = false; S.errorSince = 0; paintWait(); show('j-wait'); stopPolling(); tick(); }
+  const shown = new Set();
+  function paintWait() {
+    const p = S.progress, st = S.gaveUp ? 'later' : p && p.research ? p.research.state : (S.progressMissing ? 'unknown' : 'running');
+    const hi = S.first ? `Hi ${S.first}, I'm Mila, your agent.` : "Hi, I'm Mila, your agent.";
+    $('j-wait-hi').innerHTML = '';
+    const b = document.createElement('b'); b.textContent = hi;
+    $('j-wait-hi').append(b, ' ' + (st === 'needs_more' ? 'I need a little more to find you.'
+      : st === 'queued' ? "I'll read your story as soon as your turn comes."
+      : st === 'failed' ? "I'll read your story as soon as I can."
+      : st === 'later' ? "I'll keep working on your read."
+      : st === 'not_started' ? (p && p.score ? 'Your score is ready.' : 'Your read is coming.')
+      : st === 'done' ? "I've read your story." + (p && p.findings && p.findings.length ? " Here's what I found about you." : '')
+      : "I'm reading your story now. What I find shows up here."));
+    const T = {
+      running:     ['Reading your story', 'Searching for you, checking what I find, getting your score ready.'],
+      not_started: p && p.score ? ['Your score is ready', 'Open it below.'] : ['Your read is on its way', "It isn't ready yet. Come back and sign in here to see it. You keep your spot on the list."],
+      later:       ["We'll keep working on it", 'Come back and sign in here any time to see your read. You keep your spot on the list.'],
+      needs_more:  ['Your read is waiting on you', 'You keep your spot on the list.'],
+      queued:      ['Your read is in line', 'Lots of athletes joined today. Your read will arrive by tomorrow.' + (p && p.research && p.research.readyEmail ? " I'll email you when it's ready." : ' Come back and sign in here to see it.')],
+      done:        [p && p.score ? 'Your score is ready' : 'Your read is done', p && p.score ? 'I finished your read.' : scoreFailed(p) ? "I couldn't finish your score this time. I'll try again later." : "I'm working out your M.I.A. score now."],
+      failed:      ['Your read will run again soon', "I'll try again later and show what I find here. You keep your spot on the list."],
+      unknown:     ['Reading your story', "I'll show what I find here as it comes in."],
+    }[st] || ['Reading your story', ''];
+    // A v4 run's REAL stage (research.live, from the runner's rows) replaces the state-based line while it says something.
+    const liveLine = !S.gaveUp && p && p.research ? liveLineOf(p.research.live) : null;
+    if (liveLine) { T[0] = liveLine; T[1] = liveSubOf(p); }
+    $('j-stat-t').textContent = T[0]; $('j-stat-s').textContent = T[1];
+    paintHandles();
+    const settled = st === 'done' || st === 'failed' || st === 'not_started' || st === 'later';
+    $('j-stat').classList.toggle('done', settled);
+    const facts = (p && Array.isArray(p.findings)) ? p.findings : [];
+    const box = $('j-facts');
+    // Early facts come from one search pass before they are checked; once the checked facts arrive they replace them.
+    const early = !!(p && p.research && p.research.findingsProvisional);
+    if (S.railEarly && !early && facts.length) { box.innerHTML = ''; shown.clear(); }
+    if (facts.length) S.railEarly = early;
+    facts.forEach((f) => {
+      const key = f.kind + '|' + f.text; if (!f.text || shown.has(key)) return; shown.add(key);
+      const n = box.children.length;
+      const card = document.createElement('article'); card.className = 'fc'; card.setAttribute('role', 'listitem');
+      card.style.backgroundImage = `url("${FACT_PHOTOS[n % FACT_PHOTOS.length]}")`;
+      const ft = document.createElement('div'); ft.className = 'ft';
+      const k = document.createElement('span'); k.className = 'k'; k.textContent = KIND[f.kind] || 'Found';
+      const t = document.createElement('p'); t.className = 't'; t.textContent = f.text;
+      ft.append(k, t);
+      if (f.source && f.source.label) {
+        const srcs = document.createElement('div'); srcs.className = 'srcs';
+        let src;
+        if (f.source.url && /^https?:\/\//.test(f.source.url)) { src = document.createElement('a'); src.href = f.source.url; src.target = '_blank'; src.rel = 'noopener nofollow'; src.setAttribute('aria-label', 'Source: ' + f.source.label); }
+        else src = document.createElement('span');
+        src.className = 'src';
+        const l = document.createElement('span'); l.textContent = f.source.label; src.append(l);
+        if (src.tagName === 'A') src.insertAdjacentHTML('beforeend', '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>');
+        srcs.append(src); ft.append(srcs);
+      }
+      const acts = document.createElement('div'); acts.className = 'acts'; ft.append(acts);
+      card.append(ft); box.append(card);
+      pickPhoto(card, f.kind, n);
+    });
+    $('j-rail-w').hidden = box.children.length === 0;
+    paintCounter();
+    $('j-facts-empty').hidden = shown.size > 0 || settled || st === 'queued' || st === 'needs_more';
+    $('j-stat').classList.toggle('ready', !!(p && p.score));
+    // One raspberry action once there is somewhere to go: the score (or its "on its way" screen once the research is
+    // done); after a failed or later read, on to the team. The quiet way out stays a ghost.
+    const toScore = !!(p && p.score) || st === 'done' || !!quickOf(p);
+    $('j-wait-score').hidden = !(toScore || settled);
+    $('j-wait-score').textContent = p && p.score ? 'See my M.I.A. score' : quickOf(p) ? STAGE_COPY.waitQuickButton : 'Continue';
+    $('j-wait-on').hidden = (settled && !(p && p.score)) || st === 'needs_more';
+    $('j-wait-on').textContent = p && p.score ? 'Later' : "Keep going. I'll keep working.";
+    $('j-wait-mail').hidden = !(p && p.research && p.research.readyEmail && !p.score && (st === 'running' || (st === 'done' && !scoreFailed(p))));
+    $('j-wait-mail').textContent = waitMailText(p);
+    paintChecklist();
+    paintNeedsMore(st);
+  }
+  // needs_more: the "real athlete?" check (server agent/onboarding/footprintCheck.ts) found no public page for them
+  // yet, so the full read has not started. Connecting Instagram (a real account with posts) or adding a team makes the
+  // server look again, then start the read. Nothing is refused: they keep their spot either way.
+  function paintNeedsMore(st) {
+    const on = st === 'needs_more';
+    $('j-more').hidden = !on;
+    if (!on) return;
+    $('j-more-ig').hidden = S.connected.has('instagram');
+    $('j-chk').hidden = true;
+  }
+  // "Is this you?": the Instagram / YouTube handles research found (GET /waitlist/progress handles; dev only — [] or
+  // absent with LEAN_SIGNUP_RESEARCH off, and POST answers 404 ⇒ nothing is shown). The handle with the platform's
+  // mark, where it came from, and "That's me" / "Not me". Never blocks: a lookup that could not read the account keeps
+  // her answer and says we'll try again later.
+  const HANDLE_ICON = {
+    instagram: ['linear-gradient(135deg,#F58529,#DD2A7B,#8134AF)', '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg>'],
+    youtube: ['#FF0000', '<svg width="18" height="18" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M9.5 8.3v7.4l6.3-3.7z"/></svg>'],
+  };
+  function paintHandles() {
+    const rows = S.handlesGone ? [] : handleRowsOf(S.progress && S.progress.handles);
+    $('j-handles').hidden = !rows.length;
+    if (!rows.length) return;
+    $('j-handles-t').textContent = HANDLE_COPY.title;
+    $('j-handles-lede').textContent = HANDLE_COPY.lede;
+    const list = $('j-handles-list');
+    const key = JSON.stringify(rows) + '|' + (S.handleBusy || '');
+    if (list.dataset.key === key) return;                    // repaint only when the rows change (polling is every 4 s)
+    list.dataset.key = key; list.innerHTML = '';
+    rows.forEach((h) => {
+      const row = document.createElement('div'); row.className = 'soc'; row.setAttribute('role', 'listitem');
+      const [bg, svg] = HANDLE_ICON[h.platform];
+      const ico = document.createElement('span'); ico.className = 'ico'; ico.style.background = bg; ico.innerHTML = svg;
+      const tx = document.createElement('span'); tx.className = 'tx';
+      const b = document.createElement('b'); b.textContent = h.handle;
+      const i = document.createElement('i'); i.textContent = [h.service, h.source].filter(Boolean).join(' · ');
+      tx.append(b, i);
+      const act = document.createElement('span'); act.className = 'hds-a';
+      if (h.ask) {
+        const yes = Object.assign(document.createElement('button'), { type: 'button', className: 'hbtn', textContent: HANDLE_COPY.confirm });
+        const no = Object.assign(document.createElement('button'), { type: 'button', className: 'hno', textContent: HANDLE_COPY.reject });
+        yes.setAttribute('aria-label', `${HANDLE_COPY.confirm}: ${h.service} ${h.handle}`);
+        no.setAttribute('aria-label', `${HANDLE_COPY.reject}: ${h.service} ${h.handle}`);
+        yes.disabled = no.disabled = S.handleBusy === h.platform;
+        yes.addEventListener('click', () => answerHandle(h, 'confirm'));
+        no.addEventListener('click', () => answerHandle(h, 'reject'));
+        act.append(yes, no);
+      } else {
+        act.innerHTML = '<span class="hok"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>';
+        act.firstChild.append(HANDLE_COPY.confirmed);
+      }
+      row.append(ico, tx, act); list.append(row);
+    });
+  }
+  async function answerHandle(h, action) {
+    if (S.handleBusy) return;
+    S.handleBusy = h.platform; paintHandles();
+    const note = $('j-handles-note'); note.hidden = true;
+    try {
+      const r = await api(`/api/v1/waitlist/handles/${encodeURIComponent(h.platform)}`, { method: 'POST', body: { action, handle: h.raw } });
+      if (r.status === 404) { S.handlesGone = true; return; }       // not on this server (flag off): show nothing
+      if (!r.ok) throw new Error('save');
+      const d = await readJson(r);
+      if (S.progress && Array.isArray(d.handles)) S.progress.handles = d.handles;
+      const line = action === 'confirm' ? lookupNoteOf(d.lookup) : null;
+      note.textContent = line || ''; note.hidden = !line;
+    } catch { note.textContent = HANDLE_COPY.saveFailed; note.hidden = false; }
+    finally { S.handleBusy = null; paintHandles(); }
+  }
+
+  $('j-more-ig').addEventListener('click', () => { stopPolling(); openConnect(); });
+  $('j-more-team').addEventListener('click', () => {
+    stopPolling(); S.teamThenWait = true;
+    $('j-in-team').value = ''; $('j-team-go').disabled = true; setErr('j-team-err', ''); show('j-team');
+  });
+
+  // The live checklist: the server's real steps (research.steps), a tick as each one finishes; a running step shows only
+  // the runner's real stage (research.live), never a scripted line.
+  const CHK = {
+    web:       { label: 'Searched the web for you' },
+    instagram: { label: 'Read your Instagram' },
+    merge:     { label: 'Checking what I found', done: 'Checked what I found' },
+    score:     { label: 'Working out your M.I.A. score', done: 'Worked out your M.I.A. score' },
+  };
+  const scoreStepOf = (p) => (p && p.research && Array.isArray(p.research.steps) ? p.research.steps.find((x) => x.key === 'score') : null) || null;
+  const scoreFailed = (p) => { const x = scoreStepOf(p); return !!(x && x.status === 'failed' && !(p && p.score)); };
+  function paintChecklist() {
+    const p = S.progress, box = $('j-chk');
+    const steps = p && p.research && Array.isArray(p.research.steps) ? p.research.steps.filter((x) => CHK[x.key]) : [];
+    const st = p && p.research ? p.research.state : null;
+    box.hidden = !steps.length || st === 'queued' || st === 'not_started' || S.gaveUp;
+    if (box.hidden) return;
+    const hasLive = !!(p && p.research && 'live' in p.research), live = hasLive ? p.research.live : null;
+    steps.forEach((x, n) => {
+      const c = CHK[x.key];
+      let li = box.children[n];
+      if (!li || li.dataset.key !== x.key) {
+        li = document.createElement('li'); li.dataset.key = x.key;
+        li.innerHTML = '<span class="ic" aria-hidden="true"></span><span class="tx"><b></b><i></i></span>';
+        if (box.children[n]) box.replaceChild(li, box.children[n]); else box.append(li);
+      }
+      li.className = x.status;
+      li.querySelector('.ic').innerHTML = x.status === 'done' ? '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>' : x.status === 'failed' ? '!' : '';
+      li.querySelector('b').textContent = x.status === 'done' && c.done ? c.done : c.label;
+      // A v4 run carries research.live: a running row shows the runner's real stage (only on its own row). Without it
+      // (v2/v3 runs) a running row shows just its label.
+      const sub = x.status === 'running' ? (hasLive && liveRowOf(live) === x.key ? liveLineOf(live) || '' : '')
+        : x.status === 'done' && x.key === 'merge' && typeof x.count === 'number' ? `Kept ${x.count} fact${x.count === 1 ? '' : 's'} about you`
+        : x.status === 'failed' ? (x.key === 'score' ? "I'll try again later" : "I'll try this again soon") : '';
+      const i = li.querySelector('i');
+      if (i.textContent !== sub) {
+        if (i.textContent && sub) { i.classList.add('swap'); setTimeout(() => { i.textContent = sub; i.classList.remove('swap'); }, 250); }
+        else i.textContent = sub;
+      }
+      i.hidden = !sub;
+    });
+    while (box.children.length > steps.length) box.lastChild.remove();
+  }
+  setInterval(() => { if (S.current === 'j-wait' && !document.hidden) paintChecklist(); }, 3200);
+  // The counter, "1 / N", follows the card in view (the app's rail snaps one card at a time).
+  function paintCounter() {
+    const box = $('j-facts'), n = box.children.length, first = box.children[0];
+    const step = first ? first.getBoundingClientRect().width + 10 : 1;
+    const i = Math.max(0, Math.min(n - 1, Math.round(box.scrollLeft / step)));
+    $('j-ctr').hidden = n < 2; $('j-ctr').textContent = `${i + 1} / ${n}`;
+  }
+  $('j-facts').addEventListener('scroll', () => requestAnimationFrame(paintCounter), { passive: true });
+  // Each card's photo: atmosphere, never a person. The app's own picker (POST /me/atmosphere/pick, the same screen and
+  // purposes as the app's "What Mila already has") when it answers with an image; otherwise the landing's own
+  // people-free stills, set first.
+  async function pickPhoto(card, kind, n) {
+    try {
+      const r = await api('/api/v1/me/atmosphere/pick', { method: 'POST', body: { screen: 'onboarding_has', slots: [{ key: `finding:${n}`, type: 'section_header', purpose: PURPOSE[kind] || 'positioning' }] } });
+      if (!r.ok) return;
+      const img = ((await readJson(r)).images || [])[0];
+      if (img && img.kind === 'image' && /^https:\/\//.test(img.url || '')) card.style.backgroundImage = `url("${img.url.replace(/"/g, '%22')}")`;
+    } catch { /* keep the still */ }
+  }
+  $('j-wait-score').addEventListener('click', () => {
+    const p = S.progress, st = p && p.research ? p.research.state : null;
+    if ((p && p.score) || st === 'done' || quickOf(p)) openScore(); else openBring();
+  });
+  $('j-stat').addEventListener('click', () => { if ($('j-stat').classList.contains('ready')) openScore(); });
+  $('j-wait-on').addEventListener('click', () => openBring());
+
+  // ─── 6 · your M.I.A. score ────────────────────────────────
+  // The app's black score block: its ring (components/intelligence/IntelligenceRing) of eight bands from 12 o'clock
+  // clockwise, Audience → Commercial → Brand → Performance, two tones per capital, each band as long as its dimension's
+  // contribution (of 100), 2.6° gaps, butt caps, stroke 9% of the diameter, a soft glow under the arcs, the neutral
+  // track for the rest; the number inside, "of 850" under it. With no bands (an older server) it is one white arc of
+  // the score's share of 850, as the app draws it. Beside it, Nomila's read and the confidence line; under it, the
+  // capital legend, then the one way to sharpen the read.
+  function arc(cx, r, a0, a1) {
+    const pt = (a) => { const t = ((a - 90) * Math.PI) / 180; return [cx + r * Math.cos(t), cx + r * Math.sin(t)]; };
+    const [x0, y0] = pt(a0), [x1, y1] = pt(a1);
+    return `M${x0.toFixed(2)} ${y0.toFixed(2)}A${r} ${r} 0 ${a1 - a0 > 180 ? 1 : 0} 1 ${x1.toFixed(2)} ${y1.toFixed(2)}`;
+  }
+  const CONF_LINE = { high: 'Nomila is confident in this read.', medium: 'Nomila is fairly confident in this read.', low: 'Nomila is less certain about this read.' };
+  // `opts.settle`: the full score replacing a quick one on screen — the bands settle in place and the number counts on
+  // from `opts.from` (the quick value), so nothing flashes back to empty (DESIGN.md §7: slow 400ms, crawl 600ms).
+  function paintScore(sc, opts = {}) {
+    $('j-score-go').hidden = false; $('j-score-later').hidden = true;
+    const size = 156, stroke = Math.round(size * 0.09), r = (size - stroke) / 2 - 6, cx = size / 2, gap = 2.6;
+    const val = Math.round(Number(sc.value) || 0);
+    const bands = [];
+    RING_CAPS.forEach((c) => c.dims.forEach((key, i) => {
+      const b = (sc.bands || []).find((x) => x.key === key);
+      if (b && Number.isFinite(b.contribution) && b.contribution > 0) bands.push({ key, color: c.tones[i], contribution: b.contribution });
+    }));
+    const seg = (d, color, w, op, i) => `<path d="${d}" pathLength="1" class="seg" style="--d:${0.15 + i * 0.12}s" stroke="${color}" stroke-width="${w}" stroke-opacity="${op}" fill="none"/>`;
+    // The ring's SVG for a set of band lengths (or, with none, the one arc of value / 850) — the same drawing as before.
+    const ringSvg = (bs, v) => {
+      let arcs = '', glow = '', track = '';
+      if (bs.length) {
+        let acc = 0;
+        bs.forEach((b, i) => {
+          const c = Math.max(0, Math.min(100 - acc, b.contribution));
+          const a0 = (acc / 100) * 360 + gap / 2, a1 = Math.max(a0, ((acc + c) / 100) * 360 - gap / 2);
+          acc += c;
+          if (a1 <= a0) return;
+          const d = arc(cx, r, a0, a1);
+          glow += seg(d, b.color, stroke + 10, 0.16, i) + seg(d, b.color, stroke + 4, 0.32, i);
+          arcs += seg(d, b.color, stroke, 1, i);
+        });
+        const t0 = (Math.min(100, acc) / 100) * 360 + gap / 2, t1 = 360 - gap / 2;
+        if (acc < 100 && t1 > t0) track = `<path d="${arc(cx, r, t0, t1)}" stroke="rgba(255,255,255,.14)" stroke-width="${stroke}" fill="none"/>`;
+      } else {
+        const f = Math.max(0, Math.min(1, v / 850));
+        track = `<circle cx="${cx}" cy="${cx}" r="${r}" stroke="rgba(255,255,255,.14)" stroke-width="${stroke}" fill="none"/>`;
+        if (f > 0) arcs = seg(arc(cx, r, gap / 2, Math.max(gap / 2, f * 360 - gap / 2)), '#FFFFFF', stroke, 1, 0);
+      }
+      return `<svg viewBox="0 0 ${size} ${size}" aria-hidden="true">${track}${glow}${arcs}</svg>`;
+    };
+    $('j-ring').setAttribute('aria-label', `M.I.A. ${val} out of 850`);
+    const from = opts.settle && Number.isFinite(opts.from) ? opts.from : 0;
+    const prev = opts.settle ? S.ringBands || [] : null;
+    $('j-ring').classList.toggle('settle', !!opts.settle);
+    cancelAnimationFrame(S.ringTween || 0);
+    if (!opts.settle) {
+      // The entrance, exactly as before: each band draws in from 12 o'clock while the number counts up from 0.
+      $('j-ring').innerHTML = `${ringSvg(bands, val)}<div class="num"><b id="j-num">0</b><small>of 850</small></div>`;
+    } else {
+      // The full score replacing the preliminary one: the drawn ring carries on — every band grows or shrinks from its
+      // current length to its new one while the number counts on from the preliminary value (crawl, 600ms, easeOut).
+      const num = `<div class="num"><b id="j-num">${from}</b><small>of 850</small></div>`;
+      const lenOf = (list, key) => { const b = list.find((x) => x.key === key); return b ? b.contribution : 0; };
+      const keys = [...new Set([...prev.map((b) => b.key), ...bands.map((b) => b.key)])];
+      const colorOf = (key) => (bands.find((b) => b.key === key) || prev.find((b) => b.key === key)).color;
+      const order = RING_CAPS.flatMap((c) => c.dims).filter((k) => keys.includes(k));
+      const frame = (k) => order.map((key) => ({ key, color: colorOf(key), contribution: lenOf(prev, key) + (lenOf(bands, key) - lenOf(prev, key)) * k }));
+      const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce || !bands.length || !prev.length) $('j-ring').innerHTML = ringSvg(bands, val) + num;
+      else {
+        $('j-ring').innerHTML = ringSvg(frame(0), val) + num;
+        const svgBox = () => $('j-ring').querySelector('svg');
+        const start = performance.now(), dur = 600;
+        const step = (t) => {
+          const k = Math.max(0, Math.min(1, (t - start) / dur)), e = 1 - Math.pow(1 - k, 3);
+          const tmp = document.createElement('div'); tmp.innerHTML = ringSvg(frame(e), val);
+          svgBox().replaceWith(tmp.firstElementChild);
+          if (k < 1) S.ringTween = requestAnimationFrame(step);
+        };
+        S.ringTween = requestAnimationFrame(step);
+      }
+    }
+    S.ringBands = bands;
+    countUp($('j-num'), val, from);
+    const lines = (sc.lines || []).filter(Boolean).slice(0, 2);
+    $('j-read').textContent = lines[0] || ''; $('j-read').hidden = !lines[0];
+    $('j-read2').textContent = lines[1] || ''; $('j-read2').hidden = !lines[1];
+    $('j-conf').hidden = !CONF_LINE[sc.confidence];
+    $('j-conf').textContent = CONF_LINE[sc.confidence] || '';
+    $('j-legend').innerHTML = '';
+    $('j-legend').hidden = !bands.length;
+    RING_CAPS.forEach((c) => {
+      const d = document.createElement('div'); d.setAttribute('aria-label', `${c.name}: ${c.sub}`);
+      const dots = document.createElement('span'); dots.className = 'dots';
+      c.tones.forEach((t) => { const i = document.createElement('i'); i.style.background = t; dots.append(i); });
+      const tx = document.createElement('span');
+      const n = document.createElement('b'); n.textContent = c.name;
+      const sub = document.createElement('small'); sub.textContent = c.sub;
+      tx.append(n, sub); d.append(dots, tx); $('j-legend').append(d);
+    });
+    // The app's footer under the block: an evidence step as a quiet line, a connect step as "Connect … to sharpen".
+    const raise = sc.raise && sc.raise.text ? sc.raise : null;
+    const canConnect = !!(raise && raise.action === 'connect_instagram' && !S.connected.has('instagram'));
+    const quiet = !!(raise && !raise.action);
+    $('j-raise-t').textContent = quiet ? raise.text : ''; $('j-raise-t').hidden = !quiet;
+    $('j-raise-go').hidden = !canConnect;
+    $('j-raise').hidden = !quiet && !canConnect;
+    paintQuick(sc.quick ? sc : null);
+  }
+  // A score view (score-stage.js): the card, then the eyebrow and the stage's words. A quick score on screen that the
+  // full score now replaces settles into it (no redraw from empty).
+  function paintView(v) {
+    const settle = v.mode === 'final' && S.scoreMode === 'quick' && (S.current === 'j-score' || !!(MILA && MILA.hosting('j-score')));
+    const from = settle ? Number($('j-num') && $('j-num').dataset.target) : 0;
+    paintScore(v.card, { settle, from });
+    $('j-score-eb').textContent = v.eyebrow;
+    if (v.mode === 'quick') { $('j-quick-h').textContent = v.title || ''; $('j-quick-n').textContent = v.note || ''; }
+    const replaced = $('j-replaced');
+    replaced.hidden = !(v.mode === 'final' && v.note);
+    replaced.firstElementChild.textContent = v.mode === 'final' && v.note ? v.note : '';
+    if (v.mode === 'final' && S.scoreMode === 'quick') S.swapped = true;
+    S.scoreMode = v.mode;
+  }
+  const viewOf = (p) => scoreViewOf(p, { swapped: S.scoreMode === 'quick' || S.swapped, fullFailed: scoreFailed(p) });
+  // The preliminary score's sources as OUR source chips — the same chip as each finding card's source (label + the
+  // up-right arrow, opening a new tab), at most eight, labelled by the source's own title (else its site). Hidden for
+  // the full score.
+  function paintQuick(q) {
+    $('j-quick').hidden = !q;
+    const box = $('j-quick-src'); box.innerHTML = '';
+    if (!q) return;
+    (q.sources || []).slice(0, 8).forEach((s) => {
+      if (!/^https?:\/\//.test(s.url || '')) return;
+      const label = (s.title || '').trim() || (() => { try { return new URL(s.url).hostname.replace(/^www\./, ''); } catch { return s.url; } })();
+      const a = document.createElement('a'); a.className = 'src'; a.setAttribute('role', 'listitem');
+      a.href = s.url; a.target = '_blank'; a.rel = 'noopener nofollow'; a.setAttribute('aria-label', 'Source: ' + label);
+      const l = document.createElement('span'); l.textContent = label; a.append(l);
+      a.insertAdjacentHTML('beforeend', '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>');
+      box.append(a);
+    });
+    box.hidden = !box.children.length;
+  }
+  // From 0 on a first reveal (1200ms); from the quick value when the full score replaces it (crawl, 600ms).
+  function countUp(el, target, from = 0) {
+    el.dataset.target = target;
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = target; return; }
+    const dur = from ? 600 : 1200, start = performance.now();
+    (function f(t) { const k = Math.max(0, Math.min(1, (t - start) / dur)); el.textContent = Math.round(from + (target - from) * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(f); })(start);
+  }
+  // The score screen is never skipped once the research is done: the score, or "Your score is on its way" with the
+  // ring's empty track while it computes (polling; the reveal plays the moment it lands), or, only when scoring failed,
+  // "I'll try again later".
+  async function openScore() {
+    if (!S.progress || !S.progress.score) await loadProgress();
+    const p = S.progress;
+    if (p && p.score) { paintView(viewOf(p)); show('j-score'); return; }
+    // The quick score while the full one is still processing: shown now, replaced the moment the full score lands.
+    if (quickOf(p)) { paintView(viewOf(p)); show('j-score'); clearTimeout(S.scorePoll); S.scorePoll = setTimeout(scoreTick, 4000); return; }
+    if (!p || !p.research || p.research.state !== 'done') { openWait(); return; }
+    paintScorePending(scoreFailed(p)); show('j-score');
+    clearTimeout(S.scorePoll); S.scorePoll = setTimeout(scoreTick, 4000);
+  }
+  async function scoreTick() {
+    if (S.current !== 'j-score') return;
+    if (!document.hidden) {
+      await loadProgress();
+      const p = S.progress;
+      // The full score lands: it replaces the quick one in place (paintView settles it) and says so.
+      if (p && p.score) { paintView(viewOf(p)); return; }
+      // A quick score on screen stays there (its ring is not redrawn on every poll; only its words follow the stage);
+      // a failed full score leaves it in place and stops polling.
+      if (quickOf(p)) {
+        const v = viewOf(p);
+        if (S.scoreMode !== 'quick') paintView(v); else { $('j-quick-h').textContent = v.title || ''; $('j-quick-n').textContent = v.note || ''; }
+        if (scoreFailed(p)) return;
+      }
+      else if (scoreFailed(p)) { paintScorePending(true); return; }
+    }
+    S.scorePoll = setTimeout(scoreTick, S.progressErrors ? Math.min(30000, 4000 * 2 ** S.progressErrors) : 4000);
+  }
+  function paintScorePending(failed) {
+    const size = 156, stroke = Math.round(size * 0.09), r = (size - stroke) / 2 - 6, cx = size / 2;
+    $('j-ring').setAttribute('aria-label', failed ? 'M.I.A. not ready' : 'M.I.A. on its way');
+    $('j-ring').innerHTML = `<svg viewBox="0 0 ${size} ${size}" aria-hidden="true"><circle cx="${cx}" cy="${cx}" r="${r}" stroke="rgba(255,255,255,.14)" stroke-width="${stroke}" fill="none"/></svg><div class="num"><small>M.I.A.</small></div>`;
+    $('j-read').hidden = false;
+    $('j-read').textContent = failed ? "I couldn't finish your score this time." : 'Your score is on its way';
+    $('j-conf').hidden = false;
+    $('j-conf').textContent = failed ? "I'll try again later. You keep your spot on the list." : "I'm working out your M.I.A. score now. It appears here the moment it lands.";
+    ['j-read2', 'j-legend', 'j-raise', 'j-quick', 'j-replaced'].forEach((id) => { $(id).hidden = true; });
+    $('j-score-eb').textContent = STAGE_COPY.eyebrowFull; S.scoreMode = 'none';
+    $('j-score-go').hidden = !failed;
+    $('j-score-later').hidden = false;
+  }
+  $('j-score-go').addEventListener('click', () => { if (S.progress && S.progress.score) markStep('score'); openBring(); });
+  $('j-score-later').addEventListener('click', () => openSpot());
+  $('j-raise-go').addEventListener('click', () => openConnect());
+
+  // ─── 7 · invite your team ─────────────────────────────────
+  // One way: her M.I.A. card (a 1080×1350 PNG drawn here on a canvas) with one message and her own link, through the
+  // phone's share sheet (with the image when the browser can share files; else the text and link; else copied).
+  // She sends it herself; Nomila never messages anyone or reads her contacts.
+  function shareLink() {
+    const code = S.progress && S.progress.referralCode;
+    return code ? `https://nomila.co/?ref=${encodeURIComponent(code)}` : 'https://nomila.co/';
+  }
+  function teamText() {
+    return S.progress && S.progress.score
+      ? 'I just got my M.I.A. score from Nomila. What\u2019s yours? Get your score and see how brands see you:'
+      : 'I just joined Nomila to get my M.I.A. score. Get yours and see how brands see you:';
+  }
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  function paintBring() {
+    const link = shareLink();
+    $('j-msg-team').innerHTML = ''; $('j-msg-team').append(teamText() + ' ', Object.assign(document.createElement('u'), { textContent: link.replace(/^https:\/\//, '') }));
+    setErr('j-share-done', '');
+    // Text and Email: the message and her link, addressed by her in her own app (iOS reads sms:&body=, Android
+    // sms:?body=). Nomila never reads or uploads contacts: the share sheet and these apps pick the people.
+    const msg = `${teamText()} ${link}`;
+    const android = /Android/i.test(navigator.userAgent);
+    $('j-text').href = `sms:${android ? '?' : '?&'}body=${encodeURIComponent(msg)}`;
+    $('j-email').href = `mailto:?subject=${encodeURIComponent('Get your M.I.A. score on Nomila')}&body=${encodeURIComponent(msg)}`;
+    S.cardFile = null;
+    S.cardReady = drawCard().then((blob) => { if (blob) S.cardFile = new File([blob], 'my-mia-score.png', { type: 'image/png' }); return blob; }).catch(() => null);
+  }
+  async function openBring() { if (!S.progress) await loadProgress(); paintBring(); show('j-bring'); }
+
+  // The card is the app's Me hero (client/components/me/MeHero.tsx) as a 1080×1350 PNG drawn here: HER OWN photo edge
+  // to edge (GET /waitlist/hero-photo, served through the API so the canvas can export it; without one, an atmosphere
+  // still — the hero's blank-ground fallback), the hero's top-and-foot scrim, the NOMILA wordmark top left, and at the
+  // foot her name as the uppercase display block, the sport · team line, the app's ring (eight bands, else the single
+  // arc of score / 850) with the number, "My M.I.A. score", and the invite. No score yet: the empty ring and "Getting my
+  // M.I.A. score", no number. Outfit is waited for so the canvas draws in the page's type.
+  const loadImg = (src) => new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = rej; i.src = src; });
+  function spaced(g, text, x, y, track) {
+    g.textAlign = 'left'; let cx = x;
+    [...text].forEach((ch) => { g.fillText(ch, cx, y); cx += g.measureText(ch).width + track; });
+  }
+  async function cardPhoto() {
+    if (S.progress && S.progress.heroPhoto) {
+      try {
+        const r = await api('/api/v1/waitlist/hero-photo');
+        if (r.ok) { const u = URL.createObjectURL(await r.blob()); try { return await loadImg(u); } finally { setTimeout(() => URL.revokeObjectURL(u), 2000); } }
+      } catch {}
+    }
+    return loadImg(FACT_PHOTOS[0]).catch(() => null);
+  }
+  function sportLine() {
+    const pr = (S.progress && S.progress.profile) || {};
+    const raw = (pr.sport || '').trim();
+    const hit = raw ? SPORTS.find(([id, label]) => id === raw.toLowerCase() || label.toLowerCase() === raw.toLowerCase()) : null;
+    return [hit ? hit[1] : raw, (pr.team || '').trim()].filter(Boolean).join(' · ');
+  }
+  function fitText(g, text, max, size, weight) {
+    let f = size; g.font = `${weight} ${f}px Outfit, sans-serif`;
+    while (g.measureText(text).width > max && f > 40) { f -= 4; g.font = `${weight} ${f}px Outfit, sans-serif`; }
+    return f;
+  }
+  async function drawCard() {
+    const c = $('j-card'), g = c.getContext('2d'), W = 1080, H = 1350, L = 72;
+    try { await Promise.race([Promise.all([document.fonts.load('900 120px Outfit'), document.fonts.load('600 40px Outfit'), document.fonts.load('800 30px Outfit')]).then(() => document.fonts.ready), new Promise((r) => setTimeout(r, 2500))]); } catch {}
+    g.clearRect(0, 0, W, H); g.fillStyle = '#2A2A2A'; g.fillRect(0, 0, W, H);
+    const img = await cardPhoto();
+    if (img) { const k = Math.max(W / img.width, H / img.height), w = img.width * k, h = img.height * k; g.drawImage(img, (W - w) / 2, (H - h) / 2, w, h); }
+    // The hero's scrim (theme scrimTop → clear → scrimMid → scrimFoot at 0 · .32 · .52 · 1), a touch deeper at the foot for
+    // the ring and the invite.
+    const gr = g.createLinearGradient(0, 0, 0, H);
+    gr.addColorStop(0, 'rgba(0,0,0,.45)'); gr.addColorStop(0.26, 'rgba(0,0,0,0)'); gr.addColorStop(0.46, 'rgba(0,0,0,.1)'); gr.addColorStop(0.7, 'rgba(0,0,0,.66)'); gr.addColorStop(1, 'rgba(0,0,0,.88)');
+    g.fillStyle = gr; g.fillRect(0, 0, W, H);
+    g.textBaseline = 'alphabetic'; g.fillStyle = '#FFFFFF';
+    g.font = '900 34px Outfit, sans-serif'; spaced(g, 'NOMILA', L, 112, 11.5);
+    // the foot, bottom up: the invite, the ring row, the sport line, her name
+    g.textAlign = 'left';
+    g.fillStyle = '#FFFFFF'; g.font = '800 46px Outfit, sans-serif'; g.fillText('What\u2019s yours?', L, 1230);
+    g.fillStyle = 'rgba(255,255,255,.78)'; g.font = '600 34px Outfit, sans-serif'; g.fillText(shareLink().replace(/^https:\/\//, ''), L, 1282);
+    const sc = S.progress && S.progress.score, val = sc ? Math.round(Number(sc.value) || 0) : null;
+    const R = 112, stroke = Math.round(R * 2 * 0.09), cx = L + R + stroke, cy = 1040, gap = 2.6;
+    const arcAt = (a0, a1, color, w, alpha) => { g.beginPath(); g.arc(cx, cy, R, ((a0 - 90) * Math.PI) / 180, ((a1 - 90) * Math.PI) / 180); g.strokeStyle = color; g.globalAlpha = alpha; g.lineWidth = w; g.lineCap = 'butt'; g.stroke(); g.globalAlpha = 1; };
+    const bands = [];
+    if (sc) RING_CAPS.forEach((cap) => cap.dims.forEach((key, i) => { const b = (sc.bands || []).find((x) => x.key === key); if (b && Number.isFinite(b.contribution) && b.contribution > 0) bands.push({ color: cap.tones[i], contribution: b.contribution }); }));
+    if (bands.length) {
+      let acc = 0; const segs = [];
+      bands.forEach((b) => { const cc = Math.max(0, Math.min(100 - acc, b.contribution)); const a0 = (acc / 100) * 360 + gap / 2, a1 = Math.max(a0, ((acc + cc) / 100) * 360 - gap / 2); acc += cc; if (a1 > a0) segs.push([a0, a1, b.color]); });
+      const t0 = (Math.min(100, acc) / 100) * 360 + gap / 2; if (acc < 100 && 360 - gap / 2 > t0) arcAt(t0, 360 - gap / 2, 'rgba(255,255,255,.2)', stroke, 1);
+      segs.forEach(([a0, a1, col]) => { arcAt(a0, a1, col, stroke + 12, 0.16); arcAt(a0, a1, col, stroke + 5, 0.32); });
+      segs.forEach(([a0, a1, col]) => arcAt(a0, a1, col, stroke, 1));
+    } else {
+      arcAt(0, 360, 'rgba(255,255,255,.2)', stroke, 1);
+      if (val != null && val > 0) arcAt(gap / 2, Math.max(gap / 2, Math.min(1, val / 850) * 360 - gap / 2), '#FFFFFF', stroke, 1);
+    }
+    g.textAlign = 'center'; g.fillStyle = '#FFFFFF';
+    if (val != null) { g.font = '800 78px Outfit, sans-serif'; g.fillText(String(val), cx, cy + 22); g.fillStyle = 'rgba(255,255,255,.65)'; g.font = '800 20px Outfit, sans-serif'; g.fillText('OF 850', cx, cy + 56); }
+    else { g.fillStyle = 'rgba(255,255,255,.65)'; g.font = '800 24px Outfit, sans-serif'; g.fillText('M.I.A.', cx, cy + 9); }
+    g.textAlign = 'left'; const tx = cx + R + stroke + 40;
+    g.fillStyle = '#FFFFFF'; g.font = '800 48px Outfit, sans-serif'; g.fillText(val != null ? 'My M.I.A. score' : 'Getting my', tx, cy - 6);
+    g.fillStyle = 'rgba(255,255,255,.78)'; g.font = '600 34px Outfit, sans-serif'; g.fillText(val != null ? 'My marketability' : 'M.I.A. score', tx, cy + 44);
+    // her name, the display block (uppercase, 900), and the hero line under it
+    const line = sportLine();
+    let y = 860;
+    if (line) { g.fillStyle = 'rgba(255,255,255,.92)'; fitText(g, line, W - 2 * L, 40, 600); g.fillText(line, L, y); y -= 64; }
+    const name = (S.full || S.first || '').toUpperCase();
+    if (name) { g.fillStyle = '#FFFFFF'; fitText(g, name, W - 2 * L, 120, 900); g.fillText(name, L, y); }
+    $('j-card').setAttribute('aria-label', val != null ? `${S.first ? S.first + "'s" : 'My'} M.I.A. score: ${val}. What's yours? nomila.co` : 'Getting my M.I.A. score. What\'s yours? nomila.co');
+    return new Promise((res) => c.toBlob(res, 'image/png'));
+  }
+  // Share: the image with the text and link when the browser can share files (the blob is made ahead, so the tap still
+  // counts as the user's gesture); else the text and link; else copied.
+  $('j-share-team').addEventListener('click', async () => {
+    const text = teamText(), url = shareLink(), done = (t) => { $('j-share-done').textContent = t; };
+    const file = S.cardFile;
+    if (file && navigator.canShare && navigator.share) {
+      try { if (navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], text, url }); done('Shared. Thanks for inviting your team.'); return; } }
+      catch (e) { if (e && e.name === 'AbortError') return; }
+    }
+    if (navigator.share) {
+      try { await navigator.share({ text, url }); done('Shared. Thanks for inviting your team.'); return; }
+      catch (e) { if (e && e.name === 'AbortError') return; }
+    }
+    try { await navigator.clipboard.writeText(`${text} ${url}`); done('Copied. Paste it in your team chat.'); }
+    catch { done(url); }
+  });
+  $('j-copy-link').addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(shareLink()); $('j-share-done').textContent = 'Link copied.'; }
+    catch { $('j-share-done').textContent = shareLink(); }
+  });
+  // Save image: iOS saves by pressing and holding an image, so it opens full size with that hint; elsewhere it downloads.
+  $('j-save-img').addEventListener('click', async () => {
+    const blob = S.cardFile || await S.cardReady;
+    if (!blob) return;
+    const url = URL.createObjectURL(blob);
+    if (isIOS) { $('j-imgv-img').src = url; $('j-imgv').hidden = false; return; }
+    const a = Object.assign(document.createElement('a'), { href: url, download: 'my-mia-score.png' });
+    document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 4000);
+  });
+  $('j-imgv-close').addEventListener('click', () => { $('j-imgv').hidden = true; const u = $('j-imgv-img').src; $('j-imgv-img').removeAttribute('src'); if (u.startsWith('blob:')) URL.revokeObjectURL(u); });
+  $('j-bring-go').addEventListener('click', () => openSpot());
+
+  // ─── 8 · you're on the list ───────────────────────────────
+  function row(icon, title, sub, onClick, plus) {
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'row';
+    b.innerHTML = `<span class="ico" aria-hidden="true">${icon}</span><span class="tx"><b></b><i></i></span>${plus ? '<span class="plus" aria-hidden="true">+</span>' : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A9A98" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>'}`;
+    b.querySelector('b').textContent = title; b.querySelector('i').textContent = sub;
+    b.addEventListener('click', onClick); return b;
+  }
+  const ICON = {
+    ring: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" aria-hidden="true"><circle cx="12" cy="12" r="8"/></svg>',
+    ig: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>',
+    team: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM19 8v6M22 11h-6"/></svg>',
+    read: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2zM8 7h6"/></svg>',
+  };
+  function paintSpotScreen() {
+    $('j-spot-hi').textContent = S.first ? `You're on the list, ${S.first}` : "You're on the list";
+    const rk = S.rank;
+    $('j-spot-rank').hidden = !rk; $('j-spot-of').hidden = !rk;
+    // Real numbers only. While the list is small (100 or fewer) the total says little: "One of the first 100 athletes".
+    if (rk) {
+      $('j-spot-rank').textContent = '#' + rk.position.toLocaleString();
+      $('j-spot-of').textContent = rk.total && rk.total <= 100 ? 'One of the first 100 athletes' : 'of ' + rk.total.toLocaleString() + ' waiting';
+    }
+    if (rk && !rk.total) $('j-spot-of').textContent = `${Math.max(0, rk.position - 1).toLocaleString()} athletes ahead of you`;
+    const rows = $('j-rows'); rows.innerHTML = '';
+    const p = S.progress, st = p && p.research ? p.research.state : null;
+    $('j-tile-score-s').textContent = p && p.score ? `${Math.round(p.score.value)} of 850`
+      : st === 'done' ? (scoreFailed(p) ? 'Trying again later' : 'On its way')
+      : st === 'queued' ? 'Arrives by tomorrow' : st === 'running' ? 'Mila is reading your story' : 'Coming with your read';
+    if (!S.connected.has('instagram')) rows.append(row(ICON.ig, 'Connect Instagram', 'Sharper score, higher spot', () => openConnect(), true));
+    // Invite sits under "Your team", not "Move up": referrals are counted and shown, they never move her spot.
+    const team = $('j-rows-team'); team.innerHTML = '';
+    const n = p && typeof p.referrals === 'number' ? p.referrals : 0;
+    team.append(row(ICON.team, 'Invite your team', n >= 1 ? `${n.toLocaleString()} ${n === 1 ? 'teammate' : 'teammates'} joined with your link` : 'Share your card with your team', () => openBring(), true));
+    const soon = row(ICON.read, 'TikTok and YouTube', 'Connect when they open: a higher spot', () => {}, false);
+    soon.classList.add('soon'); soon.disabled = true; rows.append(soon);
+  }
+  async function openSpot() {
+    paintSpotScreen(); show('j-spot');
+    await Promise.all([loadRank(), loadProgress(), loadConnections()]);
+    // Promoted since the last look (status 'active', the admin's promote) → "You're in". Any other status stays here.
+    if (S.progress && S.progress.status === 'active') { openIn(); return; }
+    paintSpotScreen();
+  }
+
+  // Her score from the spot: the score, or its on-its-way state once read; before that, the wait.
+  $('j-tile-score').addEventListener('click', () => {
+    const p = S.progress, st = p && p.research ? p.research.state : null;
+    if ((p && p.score) || st === 'done') openScore(); else openWait();
+  });
+  $('j-tile-share').addEventListener('click', () => openBring());
+  $('j-signout').addEventListener('click', () => signOutHere(null));
+
+  // ─── 9 · you're in ────────────────────────────────────────
+  function openIn() { $('j-in-t').textContent = S.first ? `You're in, ${S.first}.` : "You're in."; show('j-in'); }
+
+  // ─── Mila hosts the join flow (MILA_TF_WAITLIST, dev only) ─
+  // The page's own functions, handed to the host: it moves these screens' cards into Mila's conversation and calls back
+  // into the same code (no second implementation of any step). Off on the server ⇒ route() never starts it.
+  MILA = createMilaHost({
+    $, S, api, readJson, route, loadProgress, openSport, openScore, openBring, paintWait, paintView, viewOf,
+    show: (id) => show(id),
+  });
+
+  // ─── returns from a redirect (mobile) ─────────────────────
+  if (MOCK) {
+    takeUser(MOCK.user);
+    const jump = { signin: () => show('j-signin'), sport: openSport, team: () => show('j-team'), connect: openConnect, wait: openWait, score: openScore, bring: openBring, spot: openSpot, in: openIn }[MOCK.screen];
+    if (MOCK.screen === 'claim') { S.sports = ['soccer']; openSport(); join().catch(() => {}); }
+    else if (jump) jump();
+    else if (params.get('session') !== '1') S.user = null;          // no jump: start signed out (session=1: a returning visitor)
+    paintNav();
+    if (S.user && goScore) route();
+  } else {
+    // Sign-in redirect: iOS clears sessionStorage across origins, so getRedirectResult always runs; the user is the truth.
+    // Instagram's callback lands on /?connected=instagram (or ?connected_error=): back to the connect step.
+    const back = params.has('connected') || params.has('connected_error');
+    fb.getRedirectResult(auth).then((res) => {
+      try { sessionStorage.removeItem(OAUTH_PENDING); } catch {}
+      clearRedirect();
+      if (res && res.user) signedIn(res.user);
+      else if (!back && !goScore) unboot();                        // no sign-in came back (cancelled): the home page
+    }).catch((e) => { clearRedirect(); if (!back && !goScore) unboot(); console.error('[firebase-auth] getRedirectResult:', e && e.code || e); });
+    const failed = params.has('connected_error');
+    if (back) {
+      params.delete('connected'); params.delete('connected_error');
+      history.replaceState(null, '', location.pathname + (params.toString() ? '?' + params : '') + location.hash);
+    }
+    let first = true;
+    fb.onAuthStateChanged(auth, async (u) => {
+      if (u) { if (!S.user) takeUser(u); } else S.user = null;
+      paintNav();
+      if (!first) return; first = false;
+      if (u) ensureAccount();                                       // a remembered sign-in with no account gets one now
+      if (u && goScore && !back) { await ensureAccount(); route(); return; }
+      if (!u && goScore) show('j-signin');
+      if (back && !u) unboot();                                     // signed out since: nothing to resume
+      if (back && u) {
+        await openConnect();
+        if (failed && !S.connected.has('instagram')) setErr('j-connect-err', "Instagram didn't connect. Try again in a moment.");
+        else if (S.connected.has('instagram')) afterConnected();
+      }
+    });
+  }
+</script>
+
+</body>
+</html>

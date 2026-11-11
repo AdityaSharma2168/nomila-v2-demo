@@ -1,0 +1,18 @@
+{
+  "id": "pk03-only-photos-reel",
+  "description": "A reel with only photos in the library: a reel of held stills from the photos that fit, never a generated clip.",
+  "reviewed": false,
+  "library": [
+    { "key": "p_start", "kind": "photo", "description": "the athlete at the start line, focused", "shot_type": "action", "setting": "track" },
+    { "key": "p_finish", "kind": "photo", "description": "the athlete crossing the finish line", "shot_type": "action", "setting": "track" },
+    { "key": "p_dinner", "kind": "photo", "description": "the athlete at a team dinner", "shot_type": "group", "setting": "restaurant" }
+  ],
+  "post": {
+    "what": "Race recap",
+    "body": "Caption: Start to finish.\nShots: the start line, the finish.",
+    "platform": "instagram",
+    "moment": { "name": "Season finale", "date": "2026-11-10", "hook": "Start to finish.", "format": "reel", "show": "the start line, then the finish", "mediaNeeds": "race-day shots" }
+  },
+  "expect": { "any_of": ["p_start", "p_finish"], "must_not": [], "ai_needed": false, "format": "reel" },
+  "mock": { "picks": [{ "key": "p_start" }, { "key": "p_finish" }], "look": "vivid", "mood": "hype" }
+}

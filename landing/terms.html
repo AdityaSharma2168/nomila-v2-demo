@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<title>Terms of Service — Nomila</title>
+<meta name="description" content="Nomila Terms of Service — the agreement governing your use of Nomila."/>
+<meta property="og:title" content="Terms of Service — Nomila"/>
+<meta property="og:description" content="Nomila Terms of Service — the agreement governing your use of Nomila."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://nomila.co/terms"/>
+<meta property="og:image" content="https://nomila.co/assets/og-image.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Terms of Service — Nomila"/>
+<meta name="twitter:description" content="Nomila Terms of Service — the agreement governing your use of Nomila."/>
+<meta name="twitter:image" content="https://nomila.co/assets/og-image.png"/>
+<meta property="fb:app_id" content="876239621775424"/>
+<meta name="theme-color" content="#0D0B08"/>
+<meta name="robots" content="index,follow"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+  /* ─── Shared design tokens (mirrors landing/index.html) ─── */
+  :root {
+    --night: #0D0B08;
+    --pink: #E84591;
+    --blue: #2D8EFF;
+    --green: #2DC87C;
+    --gold: #E8A215;
+    --cream100: #FAF8F5;
+    --cream300: #EDE8E2;
+    --ink900: #1A1A1A;
+    --ink700: #484848;
+    --ink500: #767676;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    min-height: 100dvh;
+    background: var(--night);
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    display: flex; flex-direction: column;
+  }
+  a { color: inherit; }
+
+  /* Aurora backdrop, anchored to the top like the dark screens on index.html */
+  .aurora {
+    position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background:
+      radial-gradient(60% 40% at 25% 0%, rgba(45,142,255,0.20) 0%, transparent 60%),
+      radial-gradient(55% 35% at 80% 4%, rgba(232,69,145,0.14) 0%, transparent 60%);
+  }
+
+  /* ─── Top nav: brand + back to home ─── */
+  .nav {
+    position: relative; z-index: 1;
+    display: flex; align-items: center; justify-content: space-between;
+    max-width: 960px; width: 100%; margin: 0 auto; padding: 18px 24px;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .brand span { font-weight: 600; font-size: 15px; letter-spacing: 5px; }
+  .back-home {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-weight: 600; font-size: 13px; color: rgba(255,255,255,0.55);
+    text-decoration: none; transition: color .15s ease;
+  }
+  .back-home:hover { color: #fff; }
+
+  /* ─── Document body ─── */
+  .doc {
+    position: relative; z-index: 1; flex: 1;
+    max-width: 960px; width: 100%; margin: 0 auto; padding: 24px 24px 64px;
+  }
+  .breadcrumb {
+    font-weight: 600; font-size: 11px; letter-spacing: 1.6px;
+    text-transform: uppercase; color: var(--pink); margin-bottom: 14px;
+  }
+  .doc h1 {
+    font-weight: 800; font-size: clamp(2rem, 6vw, 2.6rem); line-height: 1.05;
+    letter-spacing: -.8px; margin-bottom: 10px;
+  }
+  .updated { font-size: 13px; color: rgba(255,255,255,0.45); margin-bottom: 0; }
+  .lead {
+    font-size: 17px; line-height: 1.6; color: rgba(255,255,255,0.78);
+    margin: 14px 0 30px; max-width: 62ch;
+  }
+  .doc h2 .num { color: var(--pink); font-variant-numeric: tabular-nums; margin-right: 12px; }
+
+  /* Readable legal copy on the dark surface */
+  .doc h2 {
+    font-weight: 700; font-size: 19px; letter-spacing: -.2px;
+    margin: 36px 0 12px; color: #fff;
+  }
+  .doc h3 { font-weight: 600; font-size: 15px; margin: 22px 0 8px; color: rgba(255,255,255,0.9); }
+  .doc p, .doc li {
+    font-weight: 400; font-size: 15px; line-height: 1.7;
+    color: rgba(255,255,255,0.72);
+  }
+  .doc p { margin-bottom: 14px; }
+  .doc ul, .doc ol { margin: 0 0 14px 22px; }
+  .doc li { margin-bottom: 7px; }
+  .doc a:not(.brand):not(.back-home) { color: var(--blue); text-decoration: none; }
+  .doc a:not(.brand):not(.back-home):hover { text-decoration: underline; }
+  .doc strong { color: #fff; font-weight: 600; }
+  hr { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 36px 0; }
+
+  /* ─── Footer (shared with index.html footer) ─── */
+  .site-footer {
+    position: relative; z-index: 1;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    padding: 28px 24px;
+  }
+  .footer-inner {
+    max-width: 960px; margin: 0 auto;
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .footer-links { display: flex; flex-wrap: wrap; gap: 22px; }
+  .footer-links a {
+    font-weight: 500; font-size: 13px; color: rgba(255,255,255,0.6);
+    text-decoration: none; transition: color .15s ease;
+  }
+  .footer-links a:hover { color: #fff; }
+  .footer-copy { font-size: 12px; color: rgba(255,255,255,0.4); }
+  @media (max-width: 560px) {
+    .footer-inner { flex-direction: column; justify-content: center; text-align: center; gap: 18px; }
+    .footer-links { justify-content: center; }
+  }
+
+  :focus-visible { outline: 2px solid var(--pink); outline-offset: 3px; border-radius: 6px; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+  <div class="aurora"></div>
+
+  <!-- ─── Top nav ─── -->
+  <header class="nav">
+    <a class="brand" href="/" aria-label="Nomila home">
+      <svg width="24" height="24" viewBox="0 0 112 112" fill="none" aria-hidden="true">
+        <circle cx="56" cy="56" r="50" stroke="white" stroke-width="4" stroke-opacity="0.08"/>
+        <circle cx="56" cy="56" r="38" stroke="white" stroke-width="4" stroke-opacity="0.08"/>
+        <circle cx="56" cy="56" r="26" stroke="white" stroke-width="4" stroke-opacity="0.08"/>
+        <circle cx="56" cy="56" r="14" stroke="white" stroke-width="4" stroke-opacity="0.08"/>
+        <path d="M 17.7 88.14 A 50 50 0 1 1 99.3 31.0" stroke="#2D8EFF" stroke-width="5" stroke-linecap="round" fill="none"/>
+        <path d="M 26.89 80.43 A 38 38 0 1 1 93.42 62.6" stroke="#2DC87C" stroke-width="5" stroke-linecap="round" fill="none"/>
+        <path d="M 36.08 72.71 A 26 26 0 1 1 72.71 75.92" stroke="#E84591" stroke-width="5" stroke-linecap="round" fill="none"/>
+        <path d="M 45.28 65.0 A 14 14 0 1 1 56.0 70.0" stroke="#E8A215" stroke-width="5" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span>NOMILA</span>
+    </a>
+    <a class="back-home" href="/">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Back to home
+    </a>
+  </header>
+
+  <!-- ─── Document ─── -->
+  <main class="doc">
+    <div class="breadcrumb">LEGAL · TERMS OF SERVICE</div>
+    <h1>Terms of Service</h1>
+    <p class="lead">The agreement between you and Nomila when you use our AI-assisted tools to score your athlete brand and manage sponsorship opportunities.</p>
+    <p class="updated">Effective June 25, 2026</p>
+
+    <hr/>
+
+    <p>By accessing or using Nomila you agree to these Terms and our <a href="/privacy-policy">Privacy Policy</a>. If you do not agree, do not use the service.</p>
+
+    <h2><span class="num">01</span>Acceptance</h2>
+    <p>By accessing or using Nomila you agree to these Terms and our <a href="/privacy-policy">Privacy Policy</a>. If you do not agree, do not use the service.</p>
+
+    <h2><span class="num">02</span>Eligibility</h2>
+    <p>You must be at least 13 (or the age of majority required to form a contract in your jurisdiction). If you use Nomila on behalf of an organization, you represent you are authorized to bind it.</p>
+
+    <h2><span class="num">03</span>The service</h2>
+    <p>Nomila provides AI-assisted tools to score your athlete brand, detect and manage sponsorship opportunities, and draft communications. AI-generated outputs (scores, drafts, suggestions) are informational; you are responsible for reviewing and approving anything you send or act on.</p>
+    <p>Nomila is not a financial, legal, tax, or agency advisor.</p>
+
+    <h2><span class="num">04</span>Your accounts &amp; connected services</h2>
+    <p>You are responsible for your credentials and for the third-party accounts you connect (Google, Meta, Microsoft, TikTok, Spotify). Your use of those services remains subject to their respective terms, and you authorize Nomila to access them only as you direct.</p>
+
+    <h2><span class="num">05</span>Acceptable use</h2>
+    <p>You agree not to misuse the service, including:</p>
+    <ul>
+      <li>Violating any law or third-party rights</li>
+      <li>Sending spam or unsolicited messages</li>
+      <li>Reverse-engineering or disrupting the service</li>
+      <li>Using it to harass or deceive</li>
+    </ul>
+    <p>You must comply with the platform policies of any connected service.</p>
+
+    <h2><span class="num">06</span>Your content</h2>
+    <p>You retain ownership of content you submit. You grant Nomila a limited license to process it solely to provide the service. You represent you have the rights to the content you provide.</p>
+
+    <h2><span class="num">07</span>Intellectual property</h2>
+    <p>Nomila and its software, branding, and the MIA scoring methodology are owned by Nomila Inc. and protected by law. We grant you a limited, revocable, non-transferable license to use the app.</p>
+
+    <h2><span class="num">08</span>Fees</h2>
+    <p>If paid features are offered, applicable pricing and billing terms will be presented at purchase.</p>
+
+    <h2><span class="num">09</span>Termination</h2>
+    <p>You may stop using Nomila and delete your account at any time. We may suspend or terminate access for violation of these Terms or to protect the service or users.</p>
+
+    <h2><span class="num">10</span>Disclaimers</h2>
+    <p>The service is provided "as is" without warranties of any kind. We do not warrant that AI outputs are accurate, complete, or suitable for any purpose.</p>
+
+    <h2><span class="num">11</span>Limitation of liability</h2>
+    <p>To the maximum extent permitted by law, Nomila is not liable for indirect, incidental, or consequential damages, and our total liability is limited to the greater of amounts you paid us in the prior 12 months or USD $100.</p>
+
+    <h2><span class="num">12</span>Indemnification</h2>
+    <p>You agree to indemnify Nomila against claims arising from your misuse of the service or violation of these Terms.</p>
+
+    <h2><span class="num">13</span>Governing law &amp; disputes</h2>
+    <p>These Terms are governed by the laws of the State of Delaware, USA, and disputes will be resolved in the courts located there, except where prohibited by law.</p>
+
+    <h2><span class="num">14</span>Changes</h2>
+    <p>We may update these Terms; continued use after changes means you accept them. We will update the effective date above.</p>
+
+    <h2><span class="num">15</span>Contact</h2>
+    <p>Nomila Inc. — <a href="mailto:support@nomila.co">support@nomila.co</a></p>
+    <p>Need help understanding these Terms? Email <a href="mailto:support@nomila.co">support@nomila.co</a>.</p>
+
+  </main>
+
+  <!-- ─── Footer ─── -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-copy">© 2026 Nomila</div>
+      <nav class="footer-links" aria-label="Legal">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/data-deletion">Data Deletion</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

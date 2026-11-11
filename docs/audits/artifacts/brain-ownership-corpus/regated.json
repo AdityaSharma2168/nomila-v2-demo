@@ -1,0 +1,3875 @@
+{
+ "summary": {
+  "all": {
+   "n": 166,
+   "ok": 60,
+   "refused": 106,
+   "remainderSurvives": 84,
+   "nothingSurvives": 22
+  },
+  "specialized_plan": {
+   "n": 127,
+   "ok": 28,
+   "refused": 99,
+   "remainderSurvives": 79,
+   "nothingSurvives": 20
+  },
+  "direct_action": {
+   "n": 31,
+   "ok": 27,
+   "refused": 4,
+   "remainderSurvives": 3,
+   "nothingSurvives": 1
+  },
+  "campaign": {
+   "n": 4,
+   "ok": 4,
+   "refused": 0,
+   "remainderSurvives": 0,
+   "nothingSurvives": 0
+  },
+  "topTerms": [
+   [
+    "artefact:plan",
+    33
+   ],
+   [
+    "mechanic:cross-posting",
+    25
+   ],
+   [
+    "artefact:pitch deck",
+    18
+   ],
+   [
+    "artefact:proposal",
+    14
+   ],
+   [
+    "mechanic:posting frequency",
+    13
+   ],
+   [
+    "artefact:deck",
+    12
+   ],
+   [
+    "artefact:reels",
+    10
+   ],
+   [
+    "artefact:assets",
+    10
+   ],
+   [
+    "mechanic:schedule",
+    10
+   ],
+   [
+    "mechanic:posting cadence",
+    9
+   ],
+   [
+    "artefact:presentation",
+    7
+   ],
+   [
+    "artefact:workflow",
+    7
+   ],
+   [
+    "mechanic:posting",
+    6
+   ],
+   [
+    "mechanic:posting plan",
+    5
+   ],
+   [
+    "mechanic:repurposing",
+    5
+   ],
+   [
+    "mechanic:cross-post",
+    3
+   ],
+   [
+    "artefact:brief",
+    3
+   ],
+   [
+    "mechanic:scheduling",
+    2
+   ]
+  ]
+ },
+ "rows": [
+  {
+   "what": "Execute a match-day content campaign across her Instagram and TikTok channels for every Stanford women's soccer match through the end of the season.",
+   "shape": "campaign",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/L1/L1.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/L1/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/L2/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/ledger/recommendations.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Initiate a specialized brand outreach and narrative development campaign targeting global corporations with active CSR budgets focused on gender equality and youth empowerment, centering on her work with the Yuwa Academy.",
+   "shape": "campaign",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm/S1/S1.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Launch a match-day content campaign across her channels to document every Stanford soccer match through the end of the season.",
+   "shape": "campaign",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/shape/C23/C23.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/C23/routed.first-reader.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/C23/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-case23/recommendations.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Launch a recurring match-day social media series across her channels for each remaining Stanford women's soccer fixture of the season.",
+   "shape": "campaign",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-r15/recommendations.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/planner/handoff-caseE-matchday-as-plan.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/planner/E/E.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/planner/E/E.regated.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/R15/R15.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/R15/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/R15/routed.router-0.2.0.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Accept the Northlight Learning term sheet because it exceeds her ambassador and social post pricing floors, provides pure cash compensation, and requires no category exclusivity.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/1c/arm/K2.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Accept the term sheet from Northlight Learning to secure her first partnership in the academic and EdTech space.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/1b3/arm/D2k.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Accept this partnership as it perfectly aligns with your academic positioning at Stanford, pays above your established pricing floors, and allows you to sign other tech partners due to lack of category exclusivity.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/1c/arm/K2.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Advance the active negotiations with Northlight Learning to secure a partnership that aligns with her tech and educational positioning.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/1b/arm/R3.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Approve the Northlight Learning negotiation to proceed in parallel with her gorjana relationship, as there is no category conflict or exclusivity restriction.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A5/A5.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Counter Northlight Learning's term sheet to increase the fee to at least USD 7,602 to align with her established ambassador and social posting floor rates.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A1/A1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution mechanic the planner owns (\"posting\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "mechanic",
+     "term": "posting",
+     "position": "instrumental",
+     "clause": "with her established ambassador and social posting floor rates.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Counter Northlight Learning's term sheet to increase the fee to at least USD 7,602 to align."
+  },
+  {
+   "what": "Counter Northlight Learning's term sheet to request USD 7,602 in cash compensation to meet her combined established floors for an ambassador role and four social posts, while preserving the non-exclusivity clause.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/1c1/arm/K2.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Counter the INIU inbound proposal with a commercial rate starting at her $1,000 social post floor and request clarification on product terms and usage rights.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm/S1/S1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"proposal\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "proposal",
+     "position": "head",
+     "clause": "Counter the INIU inbound proposal",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Counter the Northlight Learning ambassador term sheet to bring the commercial compensation in line with her established per-deliverable floor.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm-070/A3/A3.json",
+    "brain-context-experiment-1/ci-boundary/slice/recommend-070/recommendations.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/case1-routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/C23/routed.first-reader.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/C23/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/C4/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-case1/recommendations.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-case23/recommendations.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-case4/recommendations.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-r15/recommendations.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/L1/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/L2/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/ledger/recommendations.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/planner/caseC-routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/planner/ledger-caseC/recommendations.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/R15/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/R15/routed.router-0.2.0.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Counter the Northlight Learning term sheet to align the fee with her ambassador floor of USD 3,602 per deliverable and clarify the missing timeline and usage terms.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A3/A3-2.json",
+    "brain-context-experiment-1/ci-boundary/slice/recommend/recommendations.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Counter the Northlight Learning term sheet to negotiate a higher compensation structure closer to her ambassador floor of USD 3,602 and establish clear deadlines for the deliverables.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A3/A3-1.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Counter the Northlight Learning term sheet to propose a higher fee that aligns with her combined floor pricing and demonstrated commercial economics.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/1c/arm/K4.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Counter the Northlight Learning term sheet to raise the compensation to her ambassador floor of USD 3,602 per deliverable (totaling USD 14,408) and establish contract timelines and usage rights.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A5/A5.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Counter the Northlight Learning term sheet to request a deliverable rate that aligns with her ambassador floor of USD 3,602.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/B1/B1.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Counter the Northlight Learning terms to adjust the fee to her ambassador floor of USD 3,602 per deliverable and clarify the missing timeline and usage rights.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A2/A2.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Counter the Northlight Learning termsheet to bring the deliverable rate in line with her ambassador floor of USD 3,602 per deliverable and to define the missing timeline and usage rights terms.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A4/A4.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Counter the term sheet from Northlight Learning to request a package compensation that meets or exceeds her established ambassador floor of USD 3,602 per deliverable.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A3/A3-3.json",
+    "brain-context-experiment-1/ci-boundary/slice/recommend/recommendations.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Counter the term sheet to request USD 7,602 in cash compensation to align with your established pricing floors for an ambassador role and four social posts, rather than accepting the initial USD 5,000 offer.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/1c1/arm/K2.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Decline the Lumen Language term sheet and terminate the negotiation.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/C0/C0.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Direct her management team to respond to and negotiate the outstanding USD 5,000 ambassador term sheet from Northlight Learning to secure her first tech-academic partnership.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/1b/arm/R2.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Instruct her agent to review and respond to the pending USD 5,000 academic-year ambassador term sheet from Northlight Learning.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/1b1/arm/S2.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Propose a counter-offer to Northlight Learning that increases the fee to at least align with her cumulative floors and demonstrated commercial value.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/1c/arm/K4.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Reactivate her dormant TikTok channel by cross-posting her Instagram Reels content.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/shape/C23/C23.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/C23/routed.first-reader.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/C23/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-case23/recommendations.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"reels\", in a instrumental clause) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "reels",
+     "position": "instrumental",
+     "clause": "by cross-posting her Instagram Reels content.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "by cross-posting her Instagram Reels content.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her dormant TikTok channel."
+  },
+  {
+   "what": "Reactivate her dormant TikTok channel by cross-posting short-form video content to expand her platform breadth and reverse audience contraction.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-r15/recommendations.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/R15/R15.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/R15/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/R15/routed.router-0.2.0.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "by cross-posting short-form video content",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her dormant TikTok channel to expand her platform breadth and reverse audience contraction."
+  },
+  {
+   "what": "Recommend countering Northlight Learning's term sheet to increase the cash compensation to at least USD 7,602 to align with her cumulative pricing floors for ambassador status and four social posts.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/1c1/arm/K4.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Recommend that Mia's agent accept the Northlight Learning termsheet to secure her first strategic partnership in the EdTech domain.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A0/A0.json",
+    "brain-context-experiment-1/ci-boundary/slice/recommend/recommendations.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Recommend that Mia's agent counter the Northlight Learning term sheet to negotiate a higher fee of at least USD 7,500, aligning with her demonstrated cash economics and combined floor pricing, while maintaining the lack of category exclusivity.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/1c/arm/K3.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Recommend that her agent Spencer Wasworth accept the Northlight Learning termsheet of USD 5,000 for the 2026-27 academic year ambassador agreement.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/1c1/arm/K3.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Reject the terms offered by Lumen Language and decline to proceed with the negotiation.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/C2/C2.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Review and respond to the pending Northlight Learning EdTech ambassadorship term sheet to negotiate and secure this academic-aligned partnership.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/1c/arm/K1.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Review and respond to the pending term sheet from Northlight Learning to secure an active partnership in the EdTech sector.",
+   "shape": "direct_action",
+   "sources": [
+    "brain-context-experiment-1/1c1/arm/K1.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Build a dedicated CSR partnership proposal detailing her work with the Yuwa Academy to enable proactive global brand outreach.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b/arm/R3.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"proposal\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "proposal",
+     "position": "head",
+     "clause": "Build a dedicated CSR partnership proposal detailing her work",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Enable proactive global brand outreach."
+  },
+  {
+   "what": "Build a tailored commercial pitch deck emphasizing her tech and academic credentials at Stanford for targeted outreach to premium partners in the STEM, EdTech, and tech venture sectors.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm-060/S0/S0.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"pitch deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "pitch deck",
+     "position": "head",
+     "clause": "Build a tailored commercial pitch deck emphasizing her tech and academic credentials at Stanford",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Targeted outreach to premium partners in the STEM, EdTech, and tech venture sectors."
+  },
+  {
+   "what": "Conduct targeted commercial outreach to premium brand partners in the EdTech, STEM, and technology venture sectors to secure an ambassador role that aligns with her Stanford academic and engineering credentials.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/arm-a/V1.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Create a cross-platform content plan to reactivate her dormant TikTok channel and establish a consistent posting cadence on Instagram.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A1/A1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"posting cadence\", in a purpose clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Create a cross-platform content plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting cadence",
+     "position": "purpose",
+     "clause": "to reactivate her dormant TikTok channel and establish a consistent posting cadence on Instagram.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Create a cross-platform content syndication and scheduling strategy designed to reactivate her TikTok channel and increase her Instagram posting frequency by cross-posting existing content formats.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b1/arm/S4.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution mechanic the planner owns (\"syndication\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"scheduling\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"posting frequency\", in a purpose clause) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "mechanic",
+     "term": "syndication",
+     "position": "head",
+     "clause": "Create a cross-platform content syndication and scheduling strategy",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "scheduling",
+     "position": "head",
+     "clause": "Create a cross-platform content syndication and scheduling strategy",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting frequency",
+     "position": "purpose",
+     "clause": "designed to reactivate her TikTok channel and increase her Instagram posting frequency",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "by cross-posting existing content formats.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Create a specialized commercial pitch deck focusing on Mia's academic achievements at Stanford and her Master's in Management Science and Engineering to target STEM and EdTech brands.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b/arm/R1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"pitch deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "pitch deck",
+     "position": "head",
+     "clause": "Create a specialized commercial pitch deck focusing on Mia's academic achievements at Stanford and her Master's in Management Science and Engineering",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Target STEM and EdTech brands."
+  },
+  {
+   "what": "Create a specialized commercial pitch framework highlighting her leadership and direct involvement with the Yuwa program to present to prospective global CSR brand partners.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b1/arm/S3.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"framework\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "framework",
+     "position": "head",
+     "clause": "Create a specialized commercial pitch framework",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Present to prospective global CSR brand partners."
+  },
+  {
+   "what": "Create a specialized content cross-posting plan to reactivate her dormant TikTok channel and boost her Instagram posting frequency.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/r1/N/N.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"cross-posting\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"posting plan\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"posting frequency\", in a purpose clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Create a specialized content cross-posting plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "head",
+     "clause": "Create a specialized content cross-posting plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting plan",
+     "position": "head",
+     "clause": "Create a specialized content cross-posting plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting frequency",
+     "position": "purpose",
+     "clause": "to reactivate her dormant TikTok channel and boost her Instagram posting frequency.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Create a specialized digital storytelling proposal and outreach plan highlighting Mia's leadership at the Yuwa Academy to present to global corporate social responsibility (CSR) officers.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/shape/C4/C4.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/C4/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-case4/recommendations.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"proposal\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "proposal",
+     "position": "head",
+     "clause": "Create a specialized digital storytelling proposal and outreach plan",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Create a specialized digital storytelling proposal and outreach plan",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Present to global corporate social responsibility (CSR) officers."
+  },
+  {
+   "what": "Create a specialized plan to reactivate her dormant TikTok channel by cross-posting existing video formats like Reels and carousels.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm-070/A3/A3.json",
+    "brain-context-experiment-1/ci-boundary/slice/recommend-070/recommendations.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/case1-routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/C4/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-case1/recommendations.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-case23/recommendations.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-case4/recommendations.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-r15/recommendations.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/planner/caseC-routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/planner/C/C.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/planner/C/C.regated.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/planner/D/D.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/planner/ledger-caseC/recommendations.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"carousels\", in a instrumental clause) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"reels\", in a instrumental clause) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Create a specialized plan",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "carousels",
+     "position": "instrumental",
+     "clause": "by cross-posting existing video formats like Reels and carousels.",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "reels",
+     "position": "instrumental",
+     "clause": "by cross-posting existing video formats like Reels and carousels.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "by cross-posting existing video formats like Reels and carousels.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her dormant TikTok channel."
+  },
+  {
+   "what": "Create a tailored commercial partnership presentation highlighting her STEM and tech venture credentials to pitch to premium brands in the EdTech and developer innovation spaces.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b1/arm/S5.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"presentation\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "presentation",
+     "position": "head",
+     "clause": "Create a tailored commercial partnership presentation",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Pitch to premium brands in the EdTech and developer innovation spaces."
+  },
+  {
+   "what": "Design a specialized content production and scheduling plan to reactivate her TikTok channel with cross-posted short-form video and increase her Instagram posting frequency.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm-060/S0/S0.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"content production\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"scheduling\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"posting frequency\", in a instrumental clause) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"cross-post\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Design a specialized content production and scheduling plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "content production",
+     "position": "head",
+     "clause": "Design a specialized content production and scheduling plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "scheduling",
+     "position": "head",
+     "clause": "Design a specialized content production and scheduling plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting frequency",
+     "position": "instrumental",
+     "clause": "with cross-posted short-form video and increase her Instagram posting frequency.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-post",
+     "position": "instrumental",
+     "clause": "with cross-posted short-form video and increase her Instagram posting frequency.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her TikTok channel."
+  },
+  {
+   "what": "Design a specialized cross-platform content reactivation plan to re-launch her dormant TikTok channel using existing video assets.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1c1/arm/K1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"assets\", in a instrumental clause) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Design a specialized cross-platform content reactivation plan",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "assets",
+     "position": "instrumental",
+     "clause": "using existing video assets.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Re-launch her dormant TikTok channel."
+  },
+  {
+   "what": "Design a specialized outreach campaign targeting global corporations with active CSR initiatives aligned with women's empowerment and Mia's philanthropic leadership at Yuwa Academy.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/arm-a/V0.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Design an integrated content plan to reactivate her dormant TikTok channel and increase her Instagram posting frequency by repurposing existing video assets.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-substrate-live/attempt-2-refused.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"posting frequency\", in a purpose clause) — that is HOW, not WHAT",
+    "what names an execution artefact the planner owns (\"assets\", in a instrumental clause) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"repurposing\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Design an integrated content plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting frequency",
+     "position": "purpose",
+     "clause": "to reactivate her dormant TikTok channel and increase her Instagram posting frequency",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "assets",
+     "position": "instrumental",
+     "clause": "by repurposing existing video assets.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "repurposing",
+     "position": "instrumental",
+     "clause": "by repurposing existing video assets.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop a B2B outreach strategy targeting EdTech and STEM-related brands to secure technology ambassador partnerships.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-substrate-live/attempt-2-refused.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop a commercial positioning deck emphasizing her Stanford academic and technology credentials to target partnerships in STEM, EdTech, and tech venture sectors.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/shape/C23/C23.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/C23/routed.first-reader.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/C23/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-case23/recommendations.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "deck",
+     "position": "head",
+     "clause": "Develop a commercial positioning deck emphasizing her Stanford academic and technology credentials",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Target partnerships in STEM, EdTech, and tech venture sectors."
+  },
+  {
+   "what": "Develop a content distribution and activation plan to reactivate her dormant TikTok channel and establish a consistent posting schedule on Instagram.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b1/arm/S3.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"schedule\", in a purpose clause) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"posting\", in a purpose clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop a content distribution and activation plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "schedule",
+     "position": "purpose",
+     "clause": "to reactivate her dormant TikTok channel and establish a consistent posting schedule on Instagram.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting",
+     "position": "purpose",
+     "clause": "to reactivate her dormant TikTok channel and establish a consistent posting schedule on Instagram.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop a cross-platform content and posting strategy to reactivate her dormant TikTok channel and establish a consistent posting cadence on Instagram using cross-platform short-form video content.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm/S0/S0.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution mechanic the planner owns (\"posting\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"posting cadence\", in a purpose clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "mechanic",
+     "term": "posting",
+     "position": "head",
+     "clause": "Develop a cross-platform content and posting strategy",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting cadence",
+     "position": "purpose",
+     "clause": "to reactivate her dormant TikTok channel and establish a consistent posting cadence on Instagram",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop a cross-platform content strategy to reactivate her dormant TikTok channel and increase her Instagram posting cadence to reverse her cooling audience trajectory.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm/S1/S1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution mechanic the planner owns (\"posting cadence\", in a purpose clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "mechanic",
+     "term": "posting cadence",
+     "position": "purpose",
+     "clause": "to reactivate her dormant TikTok channel and increase her Instagram posting cadence",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Develop a cross-platform content strategy to reverse her cooling audience trajectory."
+  },
+  {
+   "what": "Develop a dedicated Corporate Social Responsibility (CSR) pitch deck and storytelling assets highlighting her long-term philanthropic leadership with Yuwa to target global corporate impact officers.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b1/arm/S5.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"pitch deck\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"assets\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "pitch deck",
+     "position": "head",
+     "clause": "Develop a dedicated Corporate Social Responsibility (CSR) pitch deck and storytelling assets",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "assets",
+     "position": "head",
+     "clause": "Develop a dedicated Corporate Social Responsibility (CSR) pitch deck and storytelling assets",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Target global corporate impact officers."
+  },
+  {
+   "what": "Develop a dedicated corporate social responsibility storytelling package and sponsorship pitch deck centered on her leadership with the Yuwa girls empowerment program to present to global brand partners.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/arm-a/V2.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"pitch deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "pitch deck",
+     "position": "head",
+     "clause": "Develop a dedicated corporate social responsibility storytelling package and sponsorship pitch deck",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Present to global brand partners."
+  },
+  {
+   "what": "Develop a dedicated philanthropic and CSR partnership brief detailing her leadership and work with the Yuwa program to enable targeted outreach to potential global brand and corporate social responsibility partners.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b3/arm/D3.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"brief\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "brief",
+     "position": "head",
+     "clause": "Develop a dedicated philanthropic and CSR partnership brief detailing her leadership and work",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Enable targeted outreach to potential global brand and corporate social responsibility partners."
+  },
+  {
+   "what": "Develop a focused commercial pitch and outreach strategy integrating her Yuwa philanthropic leadership to secure global brand and CSR sponsorships.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/shape/C23/C23.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/C23/routed.first-reader.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/C23/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-case23/recommendations.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop a short-form video cross-posting plan to reactivate her dormant TikTok account using her existing Instagram content assets.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b3/arm/D3.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"cross-posting\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"posting plan\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution artefact the planner owns (\"assets\", in a instrumental clause) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop a short-form video cross-posting plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "head",
+     "clause": "Develop a short-form video cross-posting plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting plan",
+     "position": "head",
+     "clause": "Develop a short-form video cross-posting plan",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "assets",
+     "position": "instrumental",
+     "clause": "using her existing Instagram content assets.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her dormant TikTok account."
+  },
+  {
+   "what": "Develop a short-form video reactivation plan for her dormant TikTok account by repurposing high-performing video content from her Instagram Reels.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm/G1/G1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"reels\", in a instrumental clause) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"repurposing\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop a short-form video reactivation plan",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "reels",
+     "position": "instrumental",
+     "clause": "by repurposing high-performing video content from her Instagram Reels.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "repurposing",
+     "position": "instrumental",
+     "clause": "by repurposing high-performing video content from her Instagram Reels.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Her dormant TikTok account."
+  },
+  {
+   "what": "Develop a specialized CSR commercial pitch deck highlighting Mia's leadership and deep involvement with the Yuwa girls empowerment program.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm-070/A3/A3.json",
+    "brain-context-experiment-1/ci-boundary/slice/recommend-070/recommendations.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/case1-routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-case1/recommendations.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/planner/caseC-routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/planner/ledger-caseC/recommendations.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"pitch deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "pitch deck",
+     "position": "head",
+     "clause": "Develop a specialized CSR commercial pitch deck",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop a specialized CSR outreach campaign and presentation deck to showcase her leadership with Yuwa to global corporate impact officers.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/r1-bridge/PB/PB.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"presentation\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "presentation",
+     "position": "head",
+     "clause": "Develop a specialized CSR outreach campaign and presentation deck",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "deck",
+     "position": "head",
+     "clause": "Develop a specialized CSR outreach campaign and presentation deck",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Showcase her leadership to global corporate impact officers."
+  },
+  {
+   "what": "Develop a specialized CSR partnership deck and digital storytelling assets showcasing Mia's leadership in the Yuwa girls empowerment program to present to potential global brand partners.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b/arm/R1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"assets\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "assets",
+     "position": "head",
+     "clause": "Develop a specialized CSR partnership deck and digital storytelling assets",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "deck",
+     "position": "head",
+     "clause": "Develop a specialized CSR partnership deck and digital storytelling assets",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Present to potential global brand partners."
+  },
+  {
+   "what": "Develop a specialized CSR sponsorship proposal highlighting Mia's leadership and deep involvement with the Yuwa girls empowerment program to pitch to prospective corporate partners.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A0/A0.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"proposal\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "proposal",
+     "position": "head",
+     "clause": "Develop a specialized CSR sponsorship proposal",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Pitch to prospective corporate partners."
+  },
+  {
+   "what": "Develop a specialized brand partnership proposal brief highlighting her philanthropic work with the Yuwa program to equip her agency for global CSR brand outreach.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b1/arm/S2.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"proposal\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"brief\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "proposal",
+     "position": "head",
+     "clause": "Develop a specialized brand partnership proposal brief",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "brief",
+     "position": "head",
+     "clause": "Develop a specialized brand partnership proposal brief",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Equip her agency for global CSR brand outreach."
+  },
+  {
+   "what": "Develop a specialized channel strategy to reactivate her TikTok account and increase her Instagram posting frequency by cross-posting her highly engaging athletic and academic content.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1c1/arm/K2.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution mechanic the planner owns (\"posting frequency\", in a purpose clause) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "mechanic",
+     "term": "posting frequency",
+     "position": "purpose",
+     "clause": "to reactivate her TikTok account and increase her Instagram posting frequency",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "by cross-posting her highly engaging athletic and academic content.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Develop a specialized channel strategy."
+  },
+  {
+   "what": "Develop a specialized channel strategy to reactivate her dormant TikTok account and increase her Instagram posting cadence to reverse her cooling audience trajectory.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/arm-a/V0.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution mechanic the planner owns (\"posting cadence\", in a purpose clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "mechanic",
+     "term": "posting cadence",
+     "position": "purpose",
+     "clause": "to reactivate her dormant TikTok account and increase her Instagram posting cadence",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Develop a specialized channel strategy to reverse her cooling audience trajectory."
+  },
+  {
+   "what": "Develop a specialized commercial outreach plan and pitch deck highlighting her philanthropic work with the Yuwa program to target global brands with active CSR initiatives.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1c/arm/K3.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"pitch deck\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "pitch deck",
+     "position": "head",
+     "clause": "Develop a specialized commercial outreach plan and pitch deck",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop a specialized commercial outreach plan and pitch deck",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Target global brands."
+  },
+  {
+   "what": "Develop a specialized commercial partnership presentation highlighting her philanthropic leadership at the Yuwa Academy to present to corporate CSR sponsors.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1c1/arm/K1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"presentation\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "presentation",
+     "position": "head",
+     "clause": "Develop a specialized commercial partnership presentation",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Present to corporate CSR sponsors."
+  },
+  {
+   "what": "Develop a specialized commercial pitch deck and digital storytelling assets highlighting her active work with the Yuwa program to enable her agent to target global CSR brand partnerships during this lower-intensity athletic window.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A3/A3-2.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"pitch deck\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"assets\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "pitch deck",
+     "position": "head",
+     "clause": "Develop a specialized commercial pitch deck and digital storytelling assets",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "assets",
+     "position": "head",
+     "clause": "Develop a specialized commercial pitch deck and digital storytelling assets",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Enable her agent to target global CSR brand partnerships during this lower-intensity athletic window."
+  },
+  {
+   "what": "Develop a specialized commercial pitch deck and narrative strategy focusing on her philanthropic leadership with the Yuwa program to target global corporate social responsibility (CSR) sponsors.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1c/arm/K2.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"pitch deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "pitch deck",
+     "position": "head",
+     "clause": "Develop a specialized commercial pitch deck and narrative strategy focusing on her philanthropic leadership",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Target global corporate social responsibility (CSR) sponsors."
+  },
+  {
+   "what": "Develop a specialized commercial pitch deck and outreach plan focusing on global corporate social responsibility (CSR) brands to leverage Mia's leadership with the Yuwa program.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm/S0/S0.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"pitch deck\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "pitch deck",
+     "position": "head",
+     "clause": "Develop a specialized commercial pitch deck and outreach plan focusing on global corporate social responsibility (CSR) brands",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop a specialized commercial pitch deck and outreach plan focusing on global corporate social responsibility (CSR) brands",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Leverage Mia's leadership."
+  },
+  {
+   "what": "Develop a specialized commercial pitch strategy highlighting Mia's work with the Yuwa Academy to present to corporate social responsibility officers at global brands.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/r1/N/N.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop a specialized commercial sponsorship plan and digital storytelling materials highlighting her work with Yuwa to pitch to global corporate social responsibility partners.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A2/A2.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop a specialized commercial sponsorship plan and digital storytelling materials",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Pitch to global corporate social responsibility partners."
+  },
+  {
+   "what": "Develop a specialized content and channel reactivation plan to launch short-form video content on TikTok and increase posting frequency on Instagram.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A0/A0.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"posting frequency\", in a purpose clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop a specialized content and channel reactivation plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting frequency",
+     "position": "purpose",
+     "clause": "to launch short-form video content on TikTok and increase posting frequency on Instagram.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop a specialized content plan to reactivate her dormant TikTok channel using cross-posted short-form video and increase her Instagram posting frequency during her lower-travel academic window.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A3/A3-2.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"posting frequency\", in a instrumental clause) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"cross-post\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop a specialized content plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting frequency",
+     "position": "instrumental",
+     "clause": "using cross-posted short-form video and increase her Instagram posting frequency during her lower-travel academic window.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-post",
+     "position": "instrumental",
+     "clause": "using cross-posted short-form video and increase her Instagram posting frequency during her lower-travel academic window.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her dormant TikTok channel."
+  },
+  {
+   "what": "Develop a specialized content strategy and production plan designed to increase her Instagram posting cadence and reactivate her dormant TikTok channel.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/r1-bridge/PB/PB.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"production\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"posting cadence\", in a purpose clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop a specialized content strategy and production plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "production",
+     "position": "head",
+     "clause": "Develop a specialized content strategy and production plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting cadence",
+     "position": "purpose",
+     "clause": "designed to increase her Instagram posting cadence and reactivate her dormant TikTok channel.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop a specialized cross-platform content plan to increase her Instagram posting cadence and reactivate her dormant TikTok channel in a manner that fits her rigorous academic and athletic schedule.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A4/A4.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"posting cadence\", in a purpose clause) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"schedule\", in a purpose clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop a specialized cross-platform content plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting cadence",
+     "position": "purpose",
+     "clause": "to increase her Instagram posting cadence and reactivate her dormant TikTok channel in a manner that fits her rigorous academic and athletic schedule.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "schedule",
+     "position": "purpose",
+     "clause": "to increase her Instagram posting cadence and reactivate her dormant TikTok channel in a manner that fits her rigorous academic and athletic schedule.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop a specialized cross-platform content plan to increase her Instagram posting frequency and reactivate her dormant TikTok channel by repurposing short-form video assets.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A3/A3-1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"posting frequency\", in a purpose clause) — that is HOW, not WHAT",
+    "what names an execution artefact the planner owns (\"assets\", in a instrumental clause) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"repurposing\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop a specialized cross-platform content plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting frequency",
+     "position": "purpose",
+     "clause": "to increase her Instagram posting frequency and reactivate her dormant TikTok channel",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "assets",
+     "position": "instrumental",
+     "clause": "by repurposing short-form video assets.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "repurposing",
+     "position": "instrumental",
+     "clause": "by repurposing short-form video assets.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop a specialized cross-platform content plan to reactivate her dormant TikTok channel by repurposing and cross-posting short-form video content from her Instagram.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A3/A3-3.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"repurposing\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop a specialized cross-platform content plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "by repurposing and cross-posting short-form video content from her Instagram.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "repurposing",
+     "position": "instrumental",
+     "clause": "by repurposing and cross-posting short-form video content from her Instagram.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her dormant TikTok channel."
+  },
+  {
+   "what": "Develop a specialized cross-platform content reactivation plan to reverse her cooling audience trajectory by restoring consistent Instagram posting and re-establishing her TikTok presence.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b1/arm/S2.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"posting\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop a specialized cross-platform content reactivation plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting",
+     "position": "instrumental",
+     "clause": "by restoring consistent Instagram posting and re-establishing her TikTok presence.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reverse her cooling audience trajectory."
+  },
+  {
+   "what": "Develop a specialized cross-platform content strategy to reactivate her dormant TikTok channel and establish a consistent posting cadence on Instagram.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b/arm/R2.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution mechanic the planner owns (\"posting cadence\", in a purpose clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "mechanic",
+     "term": "posting cadence",
+     "position": "purpose",
+     "clause": "to reactivate her dormant TikTok channel and establish a consistent posting cadence on Instagram.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Develop a specialized cross-platform content strategy."
+  },
+  {
+   "what": "Develop a specialized cross-platform content strategy to reactivate her dormant TikTok channel via cross-posting and optimize her Instagram content cadence.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1c/arm/K2.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"cadence\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "via cross-posting and optimize her Instagram content cadence.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cadence",
+     "position": "instrumental",
+     "clause": "via cross-posting and optimize her Instagram content cadence.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Develop a specialized cross-platform content strategy to reactivate her dormant TikTok channel."
+  },
+  {
+   "what": "Develop a specialized narrative positioning and outreach plan around her leadership with the Yuwa girls empowerment program to target aligned global brand and CSR partnerships.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A4/A4.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop a specialized narrative positioning and outreach plan around her leadership",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Target aligned global brand and CSR partnerships."
+  },
+  {
+   "what": "Develop a specialized outreach plan to pitch partnerships to STEM, EdTech, and tech venture brands, leveraging her academic background in Symbolic Systems and Management Science and Engineering.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/arm-a/V0.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop a specialized outreach plan",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Pitch partnerships to STEM, EdTech, and tech venture brands, leveraging her academic background in Symbolic Systems and Management Science and Engineering."
+  },
+  {
+   "what": "Develop a specialized partnership presentation deck highlighting her leadership and impact with the Yuwa program to pitch to global corporate social responsibility (CSR) and brand partners.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A3/A3-1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"presentation\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "presentation",
+     "position": "head",
+     "clause": "Develop a specialized partnership presentation deck",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "deck",
+     "position": "head",
+     "clause": "Develop a specialized partnership presentation deck",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Pitch to global corporate social responsibility (CSR) and brand partners."
+  },
+  {
+   "what": "Develop a specialized storytelling content plan and pitch materials highlighting her active work with the Yuwa program to present to global corporate social responsibility (CSR) partners.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/r1/P/P.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop a specialized storytelling content plan and pitch materials",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Present to global corporate social responsibility (CSR) partners."
+  },
+  {
+   "what": "Develop a specialized storytelling proposal and digital asset deck focused on her work with the Yuwa program to present to global brand CSR officers.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm-060/S0/S0.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"proposal\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"asset\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "proposal",
+     "position": "head",
+     "clause": "Develop a specialized storytelling proposal and digital asset deck",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "asset",
+     "position": "head",
+     "clause": "Develop a specialized storytelling proposal and digital asset deck",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "deck",
+     "position": "head",
+     "clause": "Develop a specialized storytelling proposal and digital asset deck",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Present to global brand CSR officers."
+  },
+  {
+   "what": "Develop a specialized tech-and-innovation partnership deck highlighting her symbolic systems and management science credentials to pitch premium partners in EdTech, STEM, and enterprise venture sectors.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/arm-a/V2.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "deck",
+     "position": "head",
+     "clause": "Develop a specialized tech-and-innovation partnership deck",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Pitch premium partners in EdTech, STEM, and enterprise venture sectors."
+  },
+  {
+   "what": "Develop a structured global CSR sponsorship pitch deck featuring her philanthropic leadership with the Yuwa girls empowerment program.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b3/arm/D1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"pitch deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "pitch deck",
+     "position": "head",
+     "clause": "Develop a structured global CSR sponsorship pitch deck",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop a tailored commercial pitch deck and a targeted partner list focused on premium brands in the EdTech, STEM, and technology venture sectors.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/shape/C4/C4.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/C4/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-case4/recommendations.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"pitch deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "pitch deck",
+     "position": "head",
+     "clause": "Develop a tailored commercial pitch deck and a targeted partner list",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop a tailored commercial pitch deck highlighting Mia's Stanford academic credentials and tech-entrepreneurship background to pitch to premium brands in EdTech and STEM sectors.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/r1/P/P.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"pitch deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "pitch deck",
+     "position": "head",
+     "clause": "Develop a tailored commercial pitch deck",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Pitch to premium brands in EdTech and STEM sectors."
+  },
+  {
+   "what": "Develop a tailored commercial presentation highlighting her unique Stanford MS and Symbolic Systems credentials to initiate outreach to non-traditional partners in EdTech, STEM, and venture capital.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1c/arm/K2.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"presentation\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "presentation",
+     "position": "head",
+     "clause": "Develop a tailored commercial presentation",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Initiate outreach to non-traditional partners in EdTech, STEM, and venture capital."
+  },
+  {
+   "what": "Develop a targeted B2B brand outreach plan focusing on companies in the EdTech, STEM, and technology venture capital sectors that align with Mia's academic profile.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm/S0/S0.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop a targeted B2B brand outreach plan focusing on companies in the EdTech, STEM, and technology venture capital sectors that align",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop a targeted CSR partnership proposal highlighting her philanthropic leadership with the Yuwa Academy to present to prospective global corporate partners.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/B1/B1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"proposal\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "proposal",
+     "position": "head",
+     "clause": "Develop a targeted CSR partnership proposal",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Present to prospective global corporate partners."
+  },
+  {
+   "what": "Develop a targeted commercial outreach plan to secure ambassador roles with premium EdTech, STEM, or tech venture brands, leveraging her Symbolic Systems and Management Science credentials.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm/S1/S1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop a targeted commercial outreach plan",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Secure ambassador roles."
+  },
+  {
+   "what": "Develop a targeted commercial outreach strategy to present Mia's leadership with the Yuwa girls empowerment program to global brands for corporate social responsibility sponsorships.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-substrate-live/attempt-3-accepted.json",
+    "brain-substrate-live/ledger-from-database.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop a targeted commercial partnership proposal highlighting her historic FIFA World Cup impact and philanthropic leadership with Yuwa to pitch to global brands with active Corporate Social Responsibility (CSR) budgets.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A3/A3-3.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"proposal\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "proposal",
+     "position": "head",
+     "clause": "Develop a targeted commercial partnership proposal",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Pitch to global brands."
+  },
+  {
+   "what": "Develop a targeted commercial partnership proposal outlining potential CSR and brand integrations centered on her philanthropic work with the Yuwa program.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A1/A1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"proposal\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "proposal",
+     "position": "head",
+     "clause": "Develop a targeted commercial partnership proposal",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop a targeted commercial pitch deck highlighting her Stanford academic credentials in Symbolic Systems and Management Science and Engineering to pitch potential partners in the STEM, EdTech, and tech venture spaces.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b/arm/R4.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"pitch deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "pitch deck",
+     "position": "head",
+     "clause": "Develop a targeted commercial pitch deck",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Pitch potential partners in the STEM, EdTech, and tech venture spaces."
+  },
+  {
+   "what": "Develop a targeted commercial pitch highlighting her leadership with the Yuwa girls empowerment program to secure corporate CSR partnerships.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm-060/G0/G0.json",
+    "brain-context-experiment-1/ci-boundary/slice/recommend/recommendations.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop a targeted commercial positioning deck emphasizing Mia's academic acceleration and tech credentials in Stanford's Management Science and Engineering program to pitch brands in the STEM and EdTech sectors.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm/G1/G1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "deck",
+     "position": "head",
+     "clause": "Develop a targeted commercial positioning deck emphasizing Mia's academic acceleration and tech credentials in Stanford's Management Science and Engineering program",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Pitch brands in the STEM and EdTech sectors."
+  },
+  {
+   "what": "Develop a targeted commercial proposal and pitch deck showcasing her unique academic background in Symbolic Systems and Management Science and Engineering to initiate outreach to premium brands in the EdTech, STEM, and enterprise venture sectors.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b1/arm/S4.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"pitch deck\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"proposal\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "pitch deck",
+     "position": "head",
+     "clause": "Develop a targeted commercial proposal and pitch deck",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "proposal",
+     "position": "head",
+     "clause": "Develop a targeted commercial proposal and pitch deck",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Initiate outreach to premium brands in the EdTech, STEM, and enterprise venture sectors."
+  },
+  {
+   "what": "Develop an integrated brand partnership brief and outreach plan centering on her leadership with the Yuwa program to present to potential global corporate social responsibility partners.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1c/arm/K1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"brief\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "brief",
+     "position": "head",
+     "clause": "Develop an integrated brand partnership brief and outreach plan centering on her leadership",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Develop an integrated brand partnership brief and outreach plan centering on her leadership",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Present to potential global corporate social responsibility partners."
+  },
+  {
+   "what": "Develop an outreach initiative targeting global corporate partners for CSR and philanthropic sponsorships centered on her work with the Yuwa program.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b3/arm/D2.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop and initiate a targeted commercial outreach strategy to premium brands within the EdTech and STEM sectors that align with her Symbolic Systems and Management Science academic background.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/arm-a/V3.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Develop specialized digital storytelling assets and impact case studies highlighting her direct work with the Yuwa program to support outstanding corporate social responsibility proposals.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b/arm/R4.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"case studies\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"assets\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"proposal\", in a purpose clause) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "case studies",
+     "position": "head",
+     "clause": "Develop specialized digital storytelling assets and impact case studies",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "assets",
+     "position": "head",
+     "clause": "Develop specialized digital storytelling assets and impact case studies",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "proposal",
+     "position": "purpose",
+     "clause": "to support outstanding corporate social responsibility proposals.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Establish a consistent posting schedule on Instagram and reactivate her dormant TikTok channel by cross-posting short-form video content.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/L1/L1.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/L1/routed.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution mechanic the planner owns (\"schedule\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"posting\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "mechanic",
+     "term": "schedule",
+     "position": "head",
+     "clause": "Establish a consistent posting schedule on Instagram and reactivate her dormant TikTok channel",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting",
+     "position": "head",
+     "clause": "Establish a consistent posting schedule on Instagram and reactivate her dormant TikTok channel",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "by cross-posting short-form video content.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Establish a consistent social media posting cadence to reactivate her TikTok channel and increase her Instagram post frequency.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm-060/G0/G0.json",
+    "brain-context-experiment-1/ci-boundary/slice/recommend/recommendations.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution mechanic the planner owns (\"posting cadence\", as the move itself) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "mechanic",
+     "term": "posting cadence",
+     "position": "head",
+     "clause": "Establish a consistent social media posting cadence",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her TikTok channel and increase her Instagram post frequency."
+  },
+  {
+   "what": "Establish a content batching and cross-posting workflow to reactivate her dormant TikTok channel using existing short-form content while systematically increasing her Instagram posting frequency during her home schedule gap.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b1/arm/S5.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"workflow\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"cross-posting\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"batching\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"posting frequency\", in a instrumental clause) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"schedule\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "workflow",
+     "position": "head",
+     "clause": "Establish a content batching and cross-posting workflow",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "head",
+     "clause": "Establish a content batching and cross-posting workflow",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "batching",
+     "position": "head",
+     "clause": "Establish a content batching and cross-posting workflow",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting frequency",
+     "position": "instrumental",
+     "clause": "while systematically increasing her Instagram posting frequency during her home schedule gap.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "schedule",
+     "position": "instrumental",
+     "clause": "while systematically increasing her Instagram posting frequency during her home schedule gap.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her dormant TikTok channel."
+  },
+  {
+   "what": "Establish a cross-platform content strategy to reactivate her dormant TikTok channel by repurposing her existing Instagram Reels.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1c1/arm/K4.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"reels\", in a instrumental clause) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"repurposing\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "reels",
+     "position": "instrumental",
+     "clause": "by repurposing her existing Instagram Reels.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "repurposing",
+     "position": "instrumental",
+     "clause": "by repurposing her existing Instagram Reels.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Establish a cross-platform content strategy to reactivate her dormant TikTok channel."
+  },
+  {
+   "what": "Establish a cross-posting plan to repurpose her short-form Instagram Reels content onto her dormant TikTok channel to reactivate the account and expand her platform breadth.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1c/arm/K1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"cross-posting\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"posting plan\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution artefact the planner owns (\"reels\", in a purpose clause) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"repurpose\", in a purpose clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Establish a cross-posting plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "head",
+     "clause": "Establish a cross-posting plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting plan",
+     "position": "head",
+     "clause": "Establish a cross-posting plan",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "reels",
+     "position": "purpose",
+     "clause": "to repurpose her short-form Instagram Reels content onto her dormant TikTok channel",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "repurpose",
+     "position": "purpose",
+     "clause": "to repurpose her short-form Instagram Reels content onto her dormant TikTok channel",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate the account and expand her platform breadth."
+  },
+  {
+   "what": "Establish a dual-platform content workflow that increases Instagram posting frequency and reactivates her dormant TikTok channel through the structured cross-posting of short-form video reels.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/arm-a/V2.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"workflow\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"posting frequency\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution artefact the planner owns (\"reels\", in a instrumental clause) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "workflow",
+     "position": "head",
+     "clause": "Establish a dual-platform content workflow that increases Instagram posting frequency and reactivates her dormant TikTok channel",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting frequency",
+     "position": "head",
+     "clause": "Establish a dual-platform content workflow that increases Instagram posting frequency and reactivates her dormant TikTok channel",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "reels",
+     "position": "instrumental",
+     "clause": "through the structured cross-posting of short-form video reels.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "through the structured cross-posting of short-form video reels.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Establish a specialized commercial deck concept highlighting Mia's philanthropic leadership with the Yuwa Academy to enable her agent to pitch prospective global CSR partners.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1c1/arm/K3.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "deck",
+     "position": "head",
+     "clause": "Establish a specialized commercial deck concept",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Enable her agent to pitch prospective global CSR partners."
+  },
+  {
+   "what": "Establish a specialized commercial outreach plan targeting global brands with active female empowerment CSR initiatives to secure co-funded sponsorships for her work with the Yuwa Academy.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1c1/arm/K2.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Establish a specialized commercial outreach plan targeting global brands",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Secure co-funded sponsorships for her work."
+  },
+  {
+   "what": "Establish a specialized short-form video cross-posting workflow to reactivate her dormant TikTok channel using her existing Instagram Reels content.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/B0/B0.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"workflow\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"cross-posting\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution artefact the planner owns (\"reels\", in a instrumental clause) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "workflow",
+     "position": "head",
+     "clause": "Establish a specialized short-form video cross-posting workflow",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "head",
+     "clause": "Establish a specialized short-form video cross-posting workflow",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "reels",
+     "position": "instrumental",
+     "clause": "using her existing Instagram Reels content.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her dormant TikTok channel."
+  },
+  {
+   "what": "Establish a targeted commercial outreach strategy aimed at securing brand partnerships in the EdTech, STEM, and technology venture sectors, utilizing her unique academic background.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b/arm/R0.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Formulate a content plan to reactivate Mia's dormant TikTok channel and increase her Instagram posting frequency during her current quiet competitive window.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm/G0/G0.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"posting frequency\", in a purpose clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Formulate a content plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting frequency",
+     "position": "purpose",
+     "clause": "to reactivate Mia's dormant TikTok channel and increase her Instagram posting frequency during her current quiet competitive window.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Formulate a dual-platform content strategy to reactivate her TikTok channel using existing Instagram Reels and establish a consistent posting schedule on Instagram.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b2/arm/S3.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"reels\", in a instrumental clause) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"schedule\", in a instrumental clause) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"posting\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "reels",
+     "position": "instrumental",
+     "clause": "using existing Instagram Reels and establish a consistent posting schedule on Instagram.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "schedule",
+     "position": "instrumental",
+     "clause": "using existing Instagram Reels and establish a consistent posting schedule on Instagram.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting",
+     "position": "instrumental",
+     "clause": "using existing Instagram Reels and establish a consistent posting schedule on Instagram.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Formulate a dual-platform content strategy to reactivate her TikTok channel."
+  },
+  {
+   "what": "Formulate a specialized commercial partnership deck showcasing her academic and tech-entrepreneurial credentials for targeted outreach to premium EdTech and STEM brands.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/r1/N/N.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "deck",
+     "position": "head",
+     "clause": "Formulate a specialized commercial partnership deck",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Targeted outreach to premium EdTech and STEM brands."
+  },
+  {
+   "what": "Formulate a specialized commercial partnership deck that packages her philanthropic leadership with the Yuwa Academy for global corporate social responsibility outreach.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b2/arm/S3.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "deck",
+     "position": "head",
+     "clause": "Formulate a specialized commercial partnership deck that packages her philanthropic leadership",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Global corporate social responsibility outreach."
+  },
+  {
+   "what": "Formulate a specialized commercial partnership proposition packaging Mia's leadership with the Yuwa Academy to target corporate social responsibility officers at global brands.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/B0/B0.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Formulate a specialized commercial pitch deck and outreach strategy highlighting Mia's leadership and active role with the Yuwa Academy to target global CSR partnerships.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm/G0/G0.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"pitch deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "pitch deck",
+     "position": "head",
+     "clause": "Formulate a specialized commercial pitch deck and outreach strategy",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Target global CSR partnerships."
+  },
+  {
+   "what": "Formulate a specialized commercial pitch deck highlighting Mia's background in Symbolic Systems and Management Science & Engineering to target partnerships in the STEM, EdTech, and tech venture sectors.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm/G0/G0.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"pitch deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "pitch deck",
+     "position": "head",
+     "clause": "Formulate a specialized commercial pitch deck",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Target partnerships in the STEM, EdTech, and tech venture sectors."
+  },
+  {
+   "what": "Initiate a channel reactivation strategy for her dormant TikTok account during her upcoming mid-season home-game schedule gap to expand platform reach.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/arm-a/V3.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution mechanic the planner owns (\"schedule\", in a purpose clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "mechanic",
+     "term": "schedule",
+     "position": "purpose",
+     "clause": "for her dormant TikTok account during her upcoming mid-season home-game schedule gap",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Initiate a channel reactivation strategy to expand platform reach."
+  },
+  {
+   "what": "Initiate a specialized outreach initiative targeting global corporate social responsibility (CSR) brand partnerships tied structurally to her philanthropic leadership with the Yuwa Academy.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b/arm/R0.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Initiate a target brand list and positioning strategy for global corporate social responsibility partnerships that co-fund her philanthropic work with Yuwa.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-substrate-live/attempt-2-refused.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Initiate corporate social responsibility (CSR) partnership outreach to global brands by pitching her long-standing philanthropic leadership with the Yuwa program.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/arm-a/V3.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Initiate development of a specialized CSR partnership proposal highlighting her leadership with the Yuwa Academy to present to potential global brand partners.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b/arm/R2.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"proposal\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "proposal",
+     "position": "head",
+     "clause": "Initiate development of a specialized CSR partnership proposal",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Present to potential global brand partners."
+  },
+  {
+   "what": "Initiate outreach to global brand CSR departments to secure partnerships co-funding her work with the Yuwa girls empowerment program.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-r15/recommendations.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/planner/A/A.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/planner/A/A.regated.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/R15/R15.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/R15/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/R15/routed.router-0.2.0.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Initiate outreach to global brand impact and corporate social responsibility officers with a structured sponsorship proposal that co-funds and co-promotes her active work with the Yuwa girls empowerment program.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/arm-a/V1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"proposal\", in a instrumental clause) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "proposal",
+     "position": "instrumental",
+     "clause": "with a structured sponsorship proposal that co-funds and co-promotes her active work",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Initiate outreach to global brand impact and corporate social responsibility officers."
+  },
+  {
+   "what": "Initiate targeted commercial outreach to global corporate brand impact officers, utilizing her active work with the Yuwa girls empowerment program in India to secure corporate social responsibility (CSR) sponsorships.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b/arm/R5.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Initiate targeted commercial outreach to premium brands in the EdTech, STEM, and tech venture sectors that align with her Stanford academic background.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm-060/G0/G0.json",
+    "brain-context-experiment-1/ci-boundary/slice/recommend/recommendations.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Initiate targeted outreach to brands in the EdTech, STEM, and technology enterprise sectors to secure brand ambassador roles.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/L1/L1.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/L1/routed.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Initiate targeted outreach to global corporate social responsibility (CSR) brands using a dedicated presentation of her philanthropic leadership with the Yuwa girls empowerment program.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A5/A5.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"presentation\", in a instrumental clause) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "presentation",
+     "position": "instrumental",
+     "clause": "using a dedicated presentation of her philanthropic leadership",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Initiate targeted outreach to global corporate social responsibility (CSR) brands."
+  },
+  {
+   "what": "Initiate targeted outreach to prospective global brand and CSR partners to secure sponsorships co-promoting or co-funding her work with the Yuwa Academy.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/L2/L2.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/L2/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/ledger/recommendations.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Launch a specialized outreach campaign targeting premium EdTech and STEM brands to secure a partnership that aligns with her advanced academic track at Stanford.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b/arm/R5.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Leverage her upcoming multi-week soccer schedule gap to reactivate her TikTok channel and establish a consistent posting cadence on Instagram.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b/arm/R3.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution mechanic the planner owns (\"schedule\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"posting cadence\", in a purpose clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "mechanic",
+     "term": "schedule",
+     "position": "head",
+     "clause": "Leverage her upcoming multi-week soccer schedule gap",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting cadence",
+     "position": "purpose",
+     "clause": "to reactivate her TikTok channel and establish a consistent posting cadence on Instagram.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Nomila should construct a targeted outreach plan and commercial deck emphasizing Mia's Stanford tech academic credentials to approach potential partners in the EdTech and STEM sectors.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm-060/S1/S1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"deck\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "deck",
+     "position": "head",
+     "clause": "Nomila should construct a targeted outreach plan and commercial deck emphasizing Mia's Stanford tech academic credentials",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Nomila should construct a targeted outreach plan and commercial deck emphasizing Mia's Stanford tech academic credentials",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Approach potential partners in the EdTech and STEM sectors."
+  },
+  {
+   "what": "Nomila should outline a specialized content creation plan to batch and cross-post video content during her October schedule lull to reactivate her TikTok and boost Instagram frequency.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm-060/S1/S1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"cross-post\", in a purpose clause) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"schedule\", in a purpose clause) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"batch\", in a purpose clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Nomila should outline a specialized content creation plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-post",
+     "position": "purpose",
+     "clause": "to batch and cross-post video content during her October schedule lull",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "schedule",
+     "position": "purpose",
+     "clause": "to batch and cross-post video content during her October schedule lull",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "batch",
+     "position": "purpose",
+     "clause": "to batch and cross-post video content during her October schedule lull",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her TikTok and boost Instagram frequency."
+  },
+  {
+   "what": "Nomila should prepare a specialized CSR pitch deck and storytelling outline focused on Mia's active work with the Yuwa girls empowerment program to target global corporate sponsors.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm-060/S1/S1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"pitch deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "pitch deck",
+     "position": "head",
+     "clause": "Nomila should prepare a specialized CSR pitch deck and storytelling outline",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Target global corporate sponsors."
+  },
+  {
+   "what": "Position her philanthropic leadership with the Yuwa program to secure global Corporate Social Responsibility brand partnerships.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/L1/L1.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/L1/routed.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Prepare a specialized CSR partnership pitch highlighting Mia's leadership and active involvement with the Yuwa girls empowerment program in India to present to global brand impact officers.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm/G1/G1.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Prepare a specialized commercial partnership proposal highlighting her active leadership with the Yuwa Academy to present to global brand and CSR sponsors.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b3/arm/D2k.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"proposal\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "proposal",
+     "position": "head",
+     "clause": "Prepare a specialized commercial partnership proposal",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Present to global brand and CSR sponsors."
+  },
+  {
+   "what": "Reactivate Mia's dormant TikTok channel by establishing an automated cross-posting workflow for her short-form video content to capture younger audiences with minimal athletic schedule friction.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b/arm/R4.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"workflow\", in a instrumental clause) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"automated\", in a instrumental clause) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"schedule\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "workflow",
+     "position": "instrumental",
+     "clause": "by establishing an automated cross-posting workflow",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "by establishing an automated cross-posting workflow",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "automated",
+     "position": "instrumental",
+     "clause": "by establishing an automated cross-posting workflow",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "schedule",
+     "position": "instrumental",
+     "clause": "with minimal athletic schedule friction.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate Mia's dormant TikTok channel for her short-form video content to capture younger audiences."
+  },
+  {
+   "what": "Reactivate her TikTok channel by cross-posting short-form content to expand her platform reach with minimal impact on her academic schedule.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b/arm/R5.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"schedule\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "by cross-posting short-form content",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "schedule",
+     "position": "instrumental",
+     "clause": "with minimal impact on her academic schedule.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her TikTok channel to expand her platform reach."
+  },
+  {
+   "what": "Reactivate her dormant TikTok channel and increase her Instagram publishing frequency to stabilize and grow her audience.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b3/arm/D2.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Reactivate her dormant TikTok channel and increase organic Instagram posting frequency to reverse the cooling audience trajectory, leveraging the upcoming low-demand athletic window.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b/arm/R0.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution mechanic the planner owns (\"posting frequency\", as the move itself) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "mechanic",
+     "term": "posting frequency",
+     "position": "head",
+     "clause": "Reactivate her dormant TikTok channel and increase organic Instagram posting frequency",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reverse the cooling audience trajectory, leveraging the upcoming low-demand athletic window."
+  },
+  {
+   "what": "Reactivate her dormant TikTok channel and stabilize her Instagram presence by establishing a video cross-posting workflow during her current low-travel athletic window.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1c/arm/K4.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"workflow\", in a instrumental clause) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "workflow",
+     "position": "instrumental",
+     "clause": "by establishing a video cross-posting workflow during her current low-travel athletic window.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "by establishing a video cross-posting workflow during her current low-travel athletic window.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her dormant TikTok channel and stabilize her Instagram presence."
+  },
+  {
+   "what": "Reactivate her dormant TikTok channel and stabilize her cooling Instagram growth trajectory by systematically cross-posting her academic and athletic short-form video content.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/arm-a/V1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "by systematically cross-posting her academic and athletic short-form video content.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her dormant TikTok channel and stabilize her cooling Instagram growth trajectory."
+  },
+  {
+   "what": "Reactivate her dormant TikTok channel by cross-posting existing short-form video assets to re-engage younger audiences and reverse her cooling follower growth.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b3/arm/D1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"assets\", in a instrumental clause) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "assets",
+     "position": "instrumental",
+     "clause": "by cross-posting existing short-form video assets",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "by cross-posting existing short-form video assets",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her dormant TikTok channel to re-engage younger audiences and reverse her cooling follower growth."
+  },
+  {
+   "what": "Reactivate her dormant TikTok channel by cross-posting her existing short-form Instagram Reels content.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/1b3/arm/D2k.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"reels\", in a instrumental clause) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "reels",
+     "position": "instrumental",
+     "clause": "by cross-posting her existing short-form Instagram Reels content.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "by cross-posting her existing short-form Instagram Reels content.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her dormant TikTok channel."
+  },
+  {
+   "what": "Reactivate her dormant TikTok channel by cross-posting short-form video content to expand her digital reach and reverse the cooling audience trajectory.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-substrate-live/attempt-3-accepted.json",
+    "brain-substrate-live/ledger-from-database.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "by cross-posting short-form video content",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her dormant TikTok channel to expand her digital reach and reverse the cooling audience trajectory."
+  },
+  {
+   "what": "Reactivate her dormant TikTok channel by establishing a systematic cross-posting workflow of her existing Instagram short-form content.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/B1/B1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"workflow\", in a instrumental clause) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "workflow",
+     "position": "instrumental",
+     "clause": "by establishing a systematic cross-posting workflow of her existing Instagram short-form content.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "by establishing a systematic cross-posting workflow of her existing Instagram short-form content.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her dormant TikTok channel."
+  },
+  {
+   "what": "Reactivate her dormant TikTok channel by implementing a cross-posting plan for her high-performing Instagram Reels to expand her audience reach.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/r1/P/P.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", in a instrumental clause) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"posting plan\", in a instrumental clause) — that is HOW, not WHAT",
+    "what names an execution artefact the planner owns (\"reels\", in a purpose clause) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "instrumental",
+     "clause": "by implementing a cross-posting plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "by implementing a cross-posting plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting plan",
+     "position": "instrumental",
+     "clause": "by implementing a cross-posting plan",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "reels",
+     "position": "purpose",
+     "clause": "for her high-performing Instagram Reels",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her dormant TikTok channel to expand her audience reach."
+  },
+  {
+   "what": "Reactivate her dormant TikTok channel by implementing a cross-posting workflow that repurposes her existing short-form video content from Instagram.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A5/A5.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"workflow\", in a instrumental clause) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"cross-posting\", in a instrumental clause) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"repurpose\", in a instrumental clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "workflow",
+     "position": "instrumental",
+     "clause": "by implementing a cross-posting workflow that repurposes her existing short-form video content from Instagram.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "instrumental",
+     "clause": "by implementing a cross-posting workflow that repurposes her existing short-form video content from Instagram.",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "repurpose",
+     "position": "instrumental",
+     "clause": "by implementing a cross-posting workflow that repurposes her existing short-form video content from Instagram.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Reactivate her dormant TikTok channel."
+  },
+  {
+   "what": "Reactivate her dormant TikTok channel to expand platform breadth and re-engage short-form video audiences by leveraging her existing Instagram short-form content.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/L2/L2.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/L2/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/ledger/recommendations.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Reactivate her dormant TikTok channel to expand platform breadth and reverse her cooling audience growth trajectory.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/arm/A2/A2.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Target brand partnerships and ambassador roles in the EdTech, STEM, and tech venture sectors that align with her academic background.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/L2/L2.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/L2/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/loop/ledger/recommendations.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Target premium brand partnerships and ambassador roles within the EdTech, STEM, and technology venture capital sectors.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/shape/ledger-r15/recommendations.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/planner/B/B.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/planner/B/B.regated.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/R15/R15.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/R15/routed.json",
+    "brain-context-experiment-1/ci-boundary/slice/shape/R15/routed.router-0.2.0.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Target premium brand partnerships in EdTech, STEM, and enterprise venture spaces by leveraging Mia's Stanford engineering and academic credentials.",
+   "shape": "specialized_plan",
+   "sources": [
+    "brain-substrate-live/attempt-3-accepted.json",
+    "brain-substrate-live/ledger-from-database.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Create a specialized commercial presentation deck and digital assets highlighting Mia's leadership with the Yuwa Academy to pitch to potential global CSR partners.",
+   "shape": null,
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm-060/G1/G1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"presentation\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"assets\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution artefact the planner owns (\"deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "presentation",
+     "position": "head",
+     "clause": "Create a specialized commercial presentation deck and digital assets",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "assets",
+     "position": "head",
+     "clause": "Create a specialized commercial presentation deck and digital assets",
+     "constitutive": false
+    },
+    {
+     "class": "artefact",
+     "term": "deck",
+     "position": "head",
+     "clause": "Create a specialized commercial presentation deck and digital assets",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Pitch to potential global CSR partners."
+  },
+  {
+   "what": "Develop a dedicated commercial pitch deck highlighting Mia's credentials in Symbolic Systems and Management Science and Engineering to target partnerships in the EdTech, STEM, and tech venture sectors.",
+   "shape": null,
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm-060/G1/G1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"pitch deck\", as the move itself) — that is the planner's output, not the strategic move"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "pitch deck",
+     "position": "head",
+     "clause": "Develop a dedicated commercial pitch deck",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": "Target partnerships in the EdTech, STEM, and tech venture sectors."
+  },
+  {
+   "what": "Establish a consistent content creation and cross-posting plan to reactivate her TikTok channel and increase her Instagram posting frequency.",
+   "shape": null,
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm-060/G1/G1.json"
+   ],
+   "ok": false,
+   "problems": [
+    "what names an execution artefact the planner owns (\"plan\", as the move itself) — that is the planner's output, not the strategic move",
+    "what names an execution mechanic the planner owns (\"cross-posting\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"posting plan\", as the move itself) — that is HOW, not WHAT",
+    "what names an execution mechanic the planner owns (\"posting frequency\", in a purpose clause) — that is HOW, not WHAT"
+   ],
+   "findings": [
+    {
+     "class": "artefact",
+     "term": "plan",
+     "position": "head",
+     "clause": "Establish a consistent content creation and cross-posting plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "cross-posting",
+     "position": "head",
+     "clause": "Establish a consistent content creation and cross-posting plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting plan",
+     "position": "head",
+     "clause": "Establish a consistent content creation and cross-posting plan",
+     "constitutive": false
+    },
+    {
+     "class": "mechanic",
+     "term": "posting frequency",
+     "position": "purpose",
+     "clause": "to reactivate her TikTok channel and increase her Instagram posting frequency.",
+     "constitutive": false
+    }
+   ],
+   "strategicRemainder": null
+  },
+  {
+   "what": "Nomila should advise the athlete's agent to decline the offer from Lumen Language.",
+   "shape": null,
+   "sources": [
+    "brain-context-experiment-1/ci-boundary/slice/arm-060/C2/C2.json"
+   ],
+   "ok": true,
+   "problems": [],
+   "findings": [],
+   "strategicRemainder": null
+  }
+ ]
+}

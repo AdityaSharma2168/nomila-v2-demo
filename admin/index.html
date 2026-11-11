@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Nomila — Admin</title>
+  <style>
+    :root {
+      --bg: #0d0b08; --panel: #16140f; --line: rgba(255,255,255,0.08);
+      --text: #fff; --muted: rgba(255,255,255,0.55); --muted2: rgba(255,255,255,0.32);
+      --pink: #e84591; --green: #2dc87c; --blue: #2d8eff; --gold: #e8a215;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 14px; line-height: 1.45;
+    }
+    a { color: var(--blue); }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    header.top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; gap: 12px; flex-wrap: wrap; }
+    .brand { font-weight: 800; letter-spacing: 3px; font-size: 16px; }
+    .who { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--muted); }
+    button { font: inherit; cursor: pointer; border: none; border-radius: 999px; }
+    .btn-primary { background: var(--pink); color: #fff; font-weight: 700; padding: 9px 18px; }
+    .btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--line); padding: 8px 16px; }
+    .btn-sm { padding: 7px 14px; font-size: 13px; }
+    .btn-primary:disabled, .btn-ghost:disabled { opacity: 0.5; cursor: default; }
+    .banner { padding: 10px 14px; border-radius: 12px; font-size: 13px; margin-bottom: 18px; }
+    .banner.err  { background: rgba(232,69,145,0.12); border: 1px solid rgba(232,69,145,0.35); color: var(--pink); }
+    .tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+    .tab { background: var(--panel); border: 1px solid var(--line); color: var(--muted); padding: 7px 16px; border-radius: 999px; font-size: 13px; }
+    .tab.active { color: #fff; border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.08); }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 12px 14px; vertical-align: top; border-bottom: 1px solid var(--line); }
+    th { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted2); }
+    tr:last-child td { border-bottom: none; }
+    .name { font-weight: 700; }
+    .meta { color: var(--muted); font-size: 12px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
+    .chip { font-size: 11px; padding: 3px 8px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid var(--line); color: var(--muted); }
+    .chip.verified { background: rgba(45,200,124,0.14); border-color: rgba(45,200,124,0.4); color: var(--green); }
+    .chip.flag { background: rgba(232,162,21,0.14); border-color: rgba(232,162,21,0.45); color: var(--gold); }
+    .pill { font-size: 11px; padding: 2px 8px; border-radius: 999px; font-weight: 700; }
+    .pill.running { background: rgba(45,142,255,0.16); color: var(--blue); }
+    .pill.completed { background: rgba(45,200,124,0.16); color: var(--green); }
+    .pill.failed { background: rgba(232,69,145,0.16); color: var(--pink); }
+    .empty, .loading { padding: 40px; text-align: center; color: var(--muted); }
+    #signin { text-align: center; padding: 80px 20px; }
+    #signin h1 { font-weight: 800; font-size: 24px; }
+    #signin p { color: var(--muted); }
+    .gbtn { display: inline-flex; align-items: center; gap: 10px; background: #fff; color: #111; font-weight: 600; padding: 12px 22px; border-radius: 999px; margin-top: 18px; }
+    .toast { position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%); background: #fff; color: #111; font-weight: 600; padding: 12px 20px; border-radius: 999px; box-shadow: 0 8px 30px rgba(0,0,0,0.4); opacity: 0; transition: opacity .2s; pointer-events: none; }
+    .toast.show { opacity: 1; }
+    .hidden { display: none !important; }
+    /* search, filters, bulk promote */
+    .tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; }
+    .tools input, .tools select { font: inherit; font-size: 13px; color: var(--text); background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 7px 10px; }
+    .tools input[type=search] { flex: 1 1 240px; min-width: 200px; }
+    .tools input[type=date] { color-scheme: dark; }
+    .tools label { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
+    .bulk { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 13px; color: var(--muted); }
+    td.ck, th.ck { width: 34px; padding-right: 0; }
+    td.ck input, th.ck input { width: 16px; height: 16px; accent-color: var(--pink); }
+    .pill.step { background: rgba(255,255,255,0.08); color: var(--muted); }
+    .pill.step.s-connected { background: rgba(45,142,255,0.16); color: var(--blue); }
+    .pill.step.s-researched { background: rgba(232,162,21,0.16); color: var(--gold); }
+    .pill.step.s-scored { background: rgba(45,200,124,0.16); color: var(--green); }
+    .res { font-size: 12px; margin-top: 6px; }
+    .res.ok { color: var(--green); } .res.bad { color: var(--pink); }
+    /* delete account */
+    .btn-danger { background: transparent; color: var(--pink); border: 1px solid rgba(232,69,145,0.45); }
+    .btn-danger.solid { background: var(--pink); color: #fff; border-color: var(--pink); font-weight: 700; }
+    .btn-danger:disabled { opacity: 0.45; cursor: default; }
+    .row-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+    dialog.del { background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 16px; padding: 22px; width: min(460px, calc(100vw - 32px)); }
+    dialog.del::backdrop { background: rgba(0,0,0,0.6); }
+    dialog.del h2 { margin: 0 0 10px; font-size: 18px; }
+    dialog.del p { margin: 0 0 10px; color: var(--muted); font-size: 13px; }
+    dialog.del input { width: 100%; font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 9px 11px; margin: 4px 0 12px; }
+    dialog.del .btns { display: flex; justify-content: flex-end; gap: 8px; }
+    dialog.del .out { font-size: 13px; margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">NOMILA · ADMIN</div>
+      <div class="who" id="who"></div>
+    </header>
+
+    <!-- Sign-in -->
+    <section id="signin">
+      <h1>Admin sign-in</h1>
+      <p>Sign in with your Nomila account to manage the waitlist.</p>
+      <button class="gbtn" id="btn-google">
+        <svg width="18" height="18" viewBox="0 0 18 18"><path d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844a4.14 4.14 0 0 1-1.796 2.716v2.259h2.908c1.702-1.567 2.684-3.875 2.684-6.615z" fill="#4285F4"/><path d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332A8.997 8.997 0 0 0 9 18z" fill="#34A853"/><path d="M3.964 10.71A5.41 5.41 0 0 1 3.682 9c0-.593.102-1.17.282-1.71V4.958H.957A8.996 8.996 0 0 0 0 9c0 1.452.348 2.827.957 4.042l3.007-2.332z" fill="#FBBC05"/><path d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0A8.997 8.997 0 0 0 .957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z" fill="#EA4335"/></svg>
+        Continue with Google
+      </button>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dash" class="hidden">
+      <div id="banner-err" class="banner err hidden"></div>
+
+      <div class="tabs">
+        <button class="tab active" data-status="waitlisted">Waitlisted</button>
+        <button class="tab" data-status="active">Active (promoted)</button>
+      </div>
+
+      <div class="tools" id="tools">
+        <input type="search" id="f-q" placeholder="Search name, alias or e-mail" aria-label="Search" />
+        <input id="f-sport" list="f-sports" placeholder="Sport" aria-label="Sport" style="width:130px;" />
+        <datalist id="f-sports"></datalist>
+        <select id="f-conn" aria-label="Connected">
+          <option value="">Connected: any</option><option value="yes">Connected: yes</option><option value="no">Connected: no</option>
+          <option value="instagram">Instagram</option><option value="tiktok">TikTok</option><option value="youtube">YouTube</option>
+        </select>
+        <select id="f-step" aria-label="Furthest step">
+          <option value="">Step: any</option><option value="signed_in">Signed in</option><option value="sport">Sport</option>
+          <option value="connected">Connected</option><option value="researched">Researched</option><option value="scored">Scored</option>
+        </select>
+        <select id="f-scored" aria-label="Scored"><option value="">Scored: any</option><option value="yes">Scored: yes</option><option value="no">Scored: no</option></select>
+        <select id="f-flagged" aria-label="Flags"><option value="">Flags: any</option><option value="yes">Flagged</option><option value="no">Not flagged</option></select>
+        <select id="f-sort" aria-label="Order"><option value="">Order: joined</option><option value="referrals">Most referrals</option></select>
+        <label>Joined <input type="date" id="f-from" aria-label="Joined from" /> – <input type="date" id="f-to" aria-label="Joined to" /></label>
+        <button class="btn-ghost btn-sm" id="f-clear">Clear</button>
+      </div>
+      <div class="bulk" id="bulk">
+        <button class="btn-primary btn-sm" id="btn-bulk" disabled>Promote selected</button>
+        <span id="count"></span>
+      </div>
+
+      <div class="card">
+        <div id="list" class="loading">Loading…</div>
+      </div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <!-- Delete account: the app's real deletion (POST /api/v1/admin/athletes/:id/delete), confirmed by typing the email. -->
+  <dialog class="del" id="del-dialog">
+    <h2>Delete <span id="del-name"></span>'s account?</h2>
+    <p>This runs the same permanent deletion as Delete account in the app. Their sign-in, profile, deals, messages, media and connected accounts are erased and cannot be recovered. Only a de-identified payment record is kept.</p>
+    <p>When the purge is finished they are emailed "your account is deleted".</p>
+    <p>Type their sign-in email <strong id="del-email"></strong> to confirm.</p>
+    <input type="email" id="del-input" autocomplete="off" spellcheck="false" aria-label="Sign-in email" />
+    <div class="out hidden" id="del-out"></div>
+    <div class="btns">
+      <button class="btn-ghost btn-sm" id="del-cancel">Cancel</button>
+      <button class="btn-danger solid btn-sm" id="del-go" disabled>Delete permanently</button>
+    </div>
+  </dialog>
+
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js';
+    import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult, onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/11.9.0/firebase-auth.js';
+
+    const firebaseConfig = {
+      apiKey:            'AIzaSyAfVZNcQ65LcRQPh1XbUZYT4Yab5WFcvGw',
+      authDomain:        'gamechanger-pocket-agent.firebaseapp.com',
+      projectId:         'gamechanger-pocket-agent',
+      storageBucket:     'gamechanger-pocket-agent.firebasestorage.app',
+      messagingSenderId: '241621020090',
+      appId:             '1:241621020090:web:a4c064de2e19791aa88183',
+    };
+    const isLocal = ['localhost', '127.0.0.1'].includes(location.hostname);
+    // The API host follows the page host: app.nomila.co is production, every other site
+    // (nomila-dev.web.app and friends) is dev. Local dev talks to the local server.
+    const API_URL = isLocal ? 'http://localhost:8080'
+      : location.hostname === 'app.nomila.co' ? 'https://api.nomila.co'
+      : 'https://api-dev.nomila.co';
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+    provider.addScope('profile'); provider.addScope('email');
+
+    const $ = (id) => document.getElementById(id);
+    let currentStatus = 'waitlisted';
+
+    const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => (
+      { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]
+    ));
+
+    let toastTimer;
+    function toast(msg) {
+      const t = $('toast'); t.textContent = msg; t.classList.add('show');
+      clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('show'), 2600);
+    }
+
+    async function authHeaders() {
+      const u = auth.currentUser;
+      if (!u) throw new Error('not signed in');
+      const token = await u.getIdToken();
+      return { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + token };
+    }
+
+    // ─── Auth ───────────────────────────────────────────────
+    $('btn-google').addEventListener('click', async () => {
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      try {
+        if (isMobile) await signInWithRedirect(auth, provider);
+        else await signInWithPopup(auth, provider);
+      } catch (e) { toast('Sign-in failed: ' + (e?.code || e?.message || 'error')); }
+    });
+    getRedirectResult(auth).catch(() => {});
+
+    onAuthStateChanged(auth, async (user) => {
+      if (!user) {
+        $('signin').classList.remove('hidden');
+        $('dash').classList.add('hidden');
+        $('who').innerHTML = '';
+        return;
+      }
+      $('who').innerHTML = `<span>${esc(user.email || user.uid)}</span><button class="btn-ghost btn-sm" id="btn-signout">Sign out</button>`;
+      $('btn-signout').addEventListener('click', () => signOut(auth));
+
+      // Confirm access via the admin API.
+      try {
+        const r = await fetch(API_URL + '/api/v1/admin/me', { headers: await authHeaders() });
+        if (r.status === 401 || r.status === 403) {
+          $('signin').classList.add('hidden');
+          $('dash').classList.remove('hidden');
+          $('banner-err').classList.remove('hidden');
+          $('banner-err').textContent = 'Your account does not have admin access.';
+          $('list').innerHTML = '';
+          document.querySelector('.tabs').classList.add('hidden');
+          return;
+        }
+        const me = await r.json();
+        $('signin').classList.add('hidden');
+        $('dash').classList.remove('hidden');
+        document.querySelector('.tabs').classList.remove('hidden');
+        $('banner-err').classList.add('hidden');
+        loadList();
+      } catch (e) {
+        $('signin').classList.add('hidden');
+        $('dash').classList.remove('hidden');
+        $('banner-err').classList.remove('hidden');
+        $('banner-err').textContent = 'Could not reach the admin API: ' + (e?.message || 'error');
+      }
+    });
+
+    // ─── Tabs ───────────────────────────────────────────────
+    document.querySelectorAll('.tab').forEach((t) => t.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach((x) => x.classList.remove('active'));
+      t.classList.add('active');
+      currentStatus = t.getAttribute('data-status');
+      selected.clear();
+      loadList();
+    }));
+
+    // ─── List ───────────────────────────────────────────────
+    // Search, sport and the joined dates go to the server (GET /admin/waitlist ?q= name / alias / e-mail, ?sport=,
+    // ?from= / ?to=); connected, furthest step and scored filter the fetched page here.
+    let lastRows = [];
+    const selected = new Set();
+    const results = new Map();     // athleteId → { ok, text } from a promote in this session
+    let loadSeq = 0;
+    async function loadList() {
+      const seq = ++loadSeq;
+      $('list').className = 'loading';
+      $('list').textContent = 'Loading…';
+      const qs = new URLSearchParams({ status: currentStatus });
+      const q = $('f-q').value.trim(), sport = $('f-sport').value.trim(), from = $('f-from').value, to = $('f-to').value;
+      if (q) qs.set('q', q);
+      if (sport) qs.set('sport', sport);
+      if (from) qs.set('from', from);
+      if (to) qs.set('to', to);
+      const flagged = $('f-flagged').value;
+      if (flagged) qs.set('flagged', flagged);
+      const sort = $('f-sort').value;
+      if (sort) qs.set('sort', sort);
+      try {
+        const r = await fetch(API_URL + '/api/v1/admin/waitlist?' + qs, { headers: await authHeaders() });
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        const data = await r.json();
+        if (seq !== loadSeq) return;
+        lastRows = data.athletes || [];
+        const sports = [...new Set(lastRows.map((a) => a.sport).filter(Boolean))].sort();
+        const known = new Set([...$('f-sports').options].map((o) => o.value));
+        sports.filter((x) => !known.has(x)).forEach((x) => { const o = document.createElement('option'); o.value = x; $('f-sports').append(o); });
+        renderList();
+      } catch (e) {
+        if (seq !== loadSeq) return;
+        $('list').className = 'empty';
+        $('list').textContent = 'Could not load list: ' + (e?.message || 'error');
+      }
+    }
+    function shown() {
+      const conn = $('f-conn').value, step = $('f-step').value, scored = $('f-scored').value;
+      return lastRows.filter((a) => {
+        const active = (a.connections || []).filter((c) => c.status === 'active').map((c) => c.platform);
+        if (conn === 'yes' && !active.length) return false;
+        if (conn === 'no' && active.length) return false;
+        if (conn && conn !== 'yes' && conn !== 'no' && !active.includes(conn)) return false;
+        if (step && a.step !== step) return false;
+        const hasScore = !!(a.score && a.score.displayScore != null);
+        if (scored === 'yes' && !hasScore) return false;
+        if (scored === 'no' && hasScore) return false;
+        return true;
+      });
+    }
+    let qTimer;
+    $('f-q').addEventListener('input', () => { clearTimeout(qTimer); qTimer = setTimeout(loadList, 300); });
+    ['f-sport', 'f-from', 'f-to', 'f-flagged', 'f-sort'].forEach((id) => $(id).addEventListener('change', loadList));
+    ['f-conn', 'f-step', 'f-scored'].forEach((id) => $(id).addEventListener('change', renderList));
+    $('f-clear').addEventListener('click', () => {
+      ['f-q', 'f-sport', 'f-from', 'f-to', 'f-flagged', 'f-sort'].forEach((id) => { $(id).value = ''; });
+      ['f-conn', 'f-step', 'f-scored'].forEach((id) => { $(id).value = ''; });
+      loadList();
+    });
+
+    function connChips(connections) {
+      if (!connections || !connections.length) return '<span class="meta">none</span>';
+      return '<div class="chips">' + connections.map((c) => {
+        const verified = c.status === 'active';
+        const label = esc(c.platform) + (c.username ? ' · ' + esc(c.username) : '') + (verified ? ' ✓' : '');
+        return `<span class="chip ${verified ? 'verified' : ''}">${label}</span>`;
+      }).join('') + '</div>';
+    }
+
+    function socialChips(socials) {
+      const entries = Object.entries(socials || {}).filter(([, v]) => v && String(v).trim());
+      if (!entries.length) return '<span class="meta">none</span>';
+      return '<div class="chips">' + entries.map(([k, v]) => `<span class="chip">${esc(k)} · ${esc(v)}</span>`).join('') + '</div>';
+    }
+
+    // Admin flags (anti-fake plan): signals for a human, never a block. A flagged row is left out of "Select all";
+    // ticking its own box is the explicit choice to include it in a bulk promote.
+    const FLAG_LABEL = { disposable_email: 'Disposable e-mail', same_network_burst: 'Same-network burst', no_athlete_footprint: 'No athlete footprint' };
+    const isFlagged = (a) => !!(a.flags && a.flags.length);
+    function flagChips(flags) {
+      if (!flags || !flags.length) return '';
+      return '<div class="chips">' + flags.map((f) => `<span class="chip flag" title="Flag: ${esc(f)}">${esc(FLAG_LABEL[f] || f)}</span>`).join('') + '</div>';
+    }
+
+    function scorePill(score) {
+      if (score && score.displayScore != null) {
+        return `<span class="pill completed">M.I.A. ${esc(score.displayScore)}${score.tier ? ' · ' + esc(score.tier) : ''}</span>`;
+      }
+      return '<span class="meta">—</span>';
+    }
+
+    const STEP_LABEL = { signed_in: 'Signed in', sport: 'Sport', connected: 'Connected', researched: 'Researched', scored: 'Scored' };
+    function stepCell(a) {
+      const step = a.step ? `<span class="pill step s-${esc(a.step)}">${esc(STEP_LABEL[a.step] || a.step)}</span>` : '<span class="meta">—</span>';
+      const score = a.score && a.score.displayScore != null ? `<div class="meta" style="margin-top:6px;">M.I.A. ${esc(a.score.displayScore)}</div>` : '';
+      return step + score;
+    }
+    // Referrals: shown only, they never change anyone's spot. How many joined with their link, and who brought them in.
+    function referralCell(a) {
+      const by = a.referredBy ? `<div class="meta">Referred by ${esc(a.referredBy.name || 'an athlete')}</div>` : '';
+      return `<div class="name">${a.referrals || 0}</div><div class="meta">joined with their link</div>` + by;
+    }
+    function resultLine(id) {
+      const r = results.get(id);
+      return r ? `<div class="res ${r.ok ? 'ok' : 'bad'}">${esc(r.text)}</div>` : '';
+    }
+
+    function renderList() {
+      const athletes = shown();
+      const isWaitlist = currentStatus === 'waitlisted';
+      for (const id of [...selected]) if (!athletes.some((a) => a.id === id && isWaitlist)) selected.delete(id);
+      $('bulk').classList.toggle('hidden', !isWaitlist);
+      $('count').textContent = athletes.length === lastRows.length ? `${athletes.length} shown` : `${athletes.length} of ${lastRows.length} shown`;
+      paintBulk();
+      if (!athletes.length) {
+        $('list').className = 'empty';
+        $('list').textContent = lastRows.length ? 'No one matches these filters.' : currentStatus === 'waitlisted' ? 'No one is waiting right now.' : 'No promoted athletes yet.';
+        return;
+      }
+      const rows = athletes.map((a) => {
+        const when = a.createdAt ? new Date(a.createdAt).toLocaleDateString() : '';
+        const done = results.get(a.id)?.ok;
+        const deleting = a.deleting || deletions.has(a.id);
+        const delCell = deleting
+          ? `<div class="res bad">${esc(deletions.get(a.id) || 'Deletion in progress')}</div>`
+          : `<button class="btn-danger btn-sm" data-delete="${esc(a.id)}">Delete account</button>`;
+        const action = '<div class="row-actions">' + (isWaitlist
+          ? (done || deleting ? '' : `<button class="btn-primary btn-sm" data-promote="${esc(a.id)}" data-name="${esc(a.fullName || '')}">Promote</button>`) + resultLine(a.id)
+          : scorePill(a.score)) + delCell + '</div>';
+        return `<tr>
+          ${isWaitlist ? `<td class="ck"><input type="checkbox" data-pick="${esc(a.id)}" ${selected.has(a.id) ? 'checked' : ''} ${done ? 'disabled' : ''} aria-label="Select ${esc(a.fullName || 'athlete')}" /></td>` : ''}
+          <td>
+            <div class="name">${esc(a.fullName || 'Unknown')}</div>
+            <div class="meta">${esc(a.email || 'no email')}</div>
+            <div class="meta">${esc([a.sport, a.school].filter(Boolean).join(' · '))} ${when ? '· ' + esc(when) : ''}</div>
+            ${flagChips(a.flags)}
+          </td>
+          <td>${socialChips(a.socials)}</td>
+          <td>${connChips(a.connections)}<div class="meta" style="margin-top:4px;">${a.verifiedConnections || 0} verified</div></td>
+          <td>${stepCell(a)}</td>
+          <td>${referralCell(a)}</td>
+          <td style="text-align:right;">${action}</td>
+        </tr>`;
+      }).join('');
+      const pickable = athletes.filter((a) => !results.get(a.id)?.ok && !isFlagged(a));   // flagged: tick one by one
+      const allOn = isWaitlist && pickable.length > 0 && pickable.every((a) => selected.has(a.id));
+      $('list').className = '';
+      $('list').innerHTML = `<table>
+        <thead><tr>
+          ${isWaitlist ? `<th class="ck"><input type="checkbox" id="pick-all" ${allOn ? 'checked' : ''} aria-label="Select all shown" /></th>` : ''}
+          <th>Athlete</th>
+          <th>Handles (entered)</th>
+          <th>Connected (identity)</th>
+          <th>Furthest step</th>
+          <th>Referrals</th>
+          <th style="text-align:right;">${isWaitlist ? 'Action' : 'M.I.A.'}</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>`;
+
+      $('list').querySelectorAll('[data-promote]').forEach((btn) => {
+        btn.addEventListener('click', () => promoteOne(btn.getAttribute('data-promote'), btn.getAttribute('data-name'), btn));
+      });
+      $('list').querySelectorAll('[data-delete]').forEach((btn) => {
+        btn.addEventListener('click', () => openDelete(lastRows.find((a) => a.id === btn.getAttribute('data-delete'))));
+      });
+      $('list').querySelectorAll('[data-pick]').forEach((box) => box.addEventListener('change', () => {
+        const id = box.getAttribute('data-pick');
+        if (box.checked) selected.add(id); else selected.delete(id);
+        paintBulk();
+      }));
+      const all = $('pick-all');
+      if (all) all.addEventListener('change', () => {
+        pickable.forEach((a) => { if (all.checked) selected.add(a.id); else selected.delete(a.id); });
+        renderList();
+      });
+    }
+    function paintBulk() {
+      const n = selected.size;
+      $('btn-bulk').disabled = n === 0 || promoting;
+      $('btn-bulk').textContent = promoting ? 'Promoting…' : n ? `Promote ${n} selected` : 'Promote selected';
+    }
+
+    // ─── Promote ────────────────────────────────────────────
+    // What promotion does today (#1086), in plain words, for the one confirm.
+    const PROMOTE_DOES = 'This lets them into the app and emails them "you\'re in".\n\n'
+      + 'Research: if Mila already researched them at sign-up (the agent route), that research is kept and the app opens Mila\'s onboarding on their first launch, with no new research. '
+      + 'Otherwise (the legacy route) the app\'s own research starts now, and any unfinished sign-up research is stopped.';
+    let promoting = false;
+    async function promoteCall(id) {
+      const r = await fetch(API_URL + '/api/v1/admin/waitlist/' + encodeURIComponent(id) + '/promote', {
+        method: 'POST', headers: await authHeaders(), body: JSON.stringify({}),
+      });
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok) throw new Error(data.error || ('HTTP ' + r.status));
+      const route = data.signupResearch && data.signupResearch.agentFront ? 'sign-up research kept' : data.onboarding ? 'research started' : 'no research started';
+      return `Promoted · ${data?.notified?.emailed ? 'emailed' : 'email pending'} · ${route}`;
+    }
+    async function promoteOne(id, name, btn) {
+      if (!confirm(`Promote ${name || 'this athlete'} to active?\n\n${PROMOTE_DOES}`)) return;
+      btn.disabled = true; btn.textContent = 'Promoting…';
+      try { const text = await promoteCall(id); results.set(id, { ok: true, text }); selected.delete(id); toast(text); }
+      catch (e) { results.set(id, { ok: false, text: 'Failed: ' + (e?.message || 'error') }); }
+      renderList();
+    }
+    // Bulk: one confirm, then the single promote endpoint per athlete, one after another; each row shows its result.
+    $('btn-bulk').addEventListener('click', async () => {
+      const ids = lastRows.filter((a) => selected.has(a.id)).map((a) => a.id);
+      if (!ids.length || promoting) return;
+      const nFlagged = lastRows.filter((a) => selected.has(a.id) && isFlagged(a)).length;
+      const flagNote = nFlagged ? `\n\n${nFlagged} of them ${nFlagged === 1 ? 'is' : 'are'} flagged (ticked by hand).` : '';
+      if (!confirm(`Promote ${ids.length} athlete${ids.length === 1 ? '' : 's'} to active?${flagNote}\n\n${PROMOTE_DOES}`)) return;
+      promoting = true; paintBulk();
+      let ok = 0;
+      for (const id of ids) {
+        results.set(id, { ok: false, text: 'Promoting…' }); renderList();
+        try { results.set(id, { ok: true, text: await promoteCall(id) }); selected.delete(id); ok++; }
+        catch (e) { results.set(id, { ok: false, text: 'Failed: ' + (e?.message || 'error') }); }
+        renderList();
+      }
+      promoting = false; paintBulk();
+      toast(`${ok} of ${ids.length} promoted`);
+    });
+
+    // ─── Delete account ─────────────────────────────────────
+    // The server re-checks everything: admin only, the typed email must be their sign-in email, protected staff /
+    // review accounts are refused, a held payment blocks (409). A repeat while it runs returns the same receipt.
+    const deletions = new Map();   // athleteId → status line from a delete in this session
+    let delTarget = null;
+    function openDelete(a) {
+      if (!a) return;
+      delTarget = a;
+      $('del-name').textContent = a.fullName || 'this athlete';
+      $('del-email').textContent = a.email || '(no email on the athlete row: use their sign-in email)';
+      $('del-input').value = '';
+      $('del-out').classList.add('hidden'); $('del-out').textContent = '';
+      $('del-go').disabled = true; $('del-go').textContent = 'Delete permanently';
+      $('del-dialog').showModal();
+      $('del-input').focus();
+    }
+    $('del-input').addEventListener('input', () => {
+      const typed = $('del-input').value.trim().toLowerCase();
+      $('del-go').disabled = !typed || (delTarget?.email ? typed !== delTarget.email.trim().toLowerCase() : false);
+    });
+    $('del-cancel').addEventListener('click', () => $('del-dialog').close());
+    $('del-go').addEventListener('click', async () => {
+      if (!delTarget) return;
+      const a = delTarget;
+      $('del-go').disabled = true; $('del-go').textContent = 'Deleting…';
+      const out = $('del-out'); out.classList.remove('hidden'); out.className = 'out'; out.textContent = '';
+      try {
+        const r = await fetch(API_URL + '/api/v1/admin/athletes/' + encodeURIComponent(a.id) + '/delete', {
+          method: 'POST', headers: await authHeaders(), body: JSON.stringify({ confirmEmail: $('del-input').value.trim() }),
+        });
+        const data = await r.json().catch(() => ({}));
+        if (!r.ok) throw new Error(data.error || ('HTTP ' + r.status));
+        const line = (data.already ? 'Already deleting' : 'Deletion started') + ` · receipt ${data.receipt_id} · ${data.status}`;
+        deletions.set(a.id, line);
+        out.classList.add('res', 'ok'); out.textContent = line + '. The account is closed now; the purge finishes in the background.';
+        $('del-go').textContent = 'Done';
+        toast(data.already ? 'Already deleting' : 'Account deletion started');
+        renderList();
+      } catch (e) {
+        out.classList.add('res', 'bad'); out.textContent = 'Not deleted: ' + (e?.message || 'error');
+        $('del-go').disabled = false; $('del-go').textContent = 'Delete permanently';
+      }
+    });
+  </script>
+</body>
+</html>

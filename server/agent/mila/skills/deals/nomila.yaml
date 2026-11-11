@@ -1,0 +1,9 @@
+# Nomila's own fields for the deals playbook, validated by load.ts (sidecarSchema). Not part of the Agent Skills spec.
+version: 1.0.0
+register_id: mila.playbook.deals
+surfaces: [chat, voice, proactive]
+flag: AGENT_DEALS_TOOLS
+tools: [deals_find, deals_get, deals_terms, brand_get, deals_waiting, deals_draft_reply, deals_close, deals_mark, deals_open]
+sends_externally: true
+model_tier: athlete-facing
+evals: evals/agent/mila-v2/scenarios.json

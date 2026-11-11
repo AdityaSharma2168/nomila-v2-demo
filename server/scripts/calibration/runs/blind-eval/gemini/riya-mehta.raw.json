@@ -1,0 +1,217 @@
+{
+  "specVersion": "blind-eval-spec/0.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "riya-mehta",
+    "name": "Riya Mehta",
+    "sport": "Gymnastics"
+  },
+  "conditions": "gemini-3.5-flash via Vertex; Google Search grounding; default thinking; temperature 1.0; text output with fenced JSON",
+  "startedAt": "2026-09-14T02:03:31.458Z",
+  "attempts": 2,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "responseId": "9FWnauTDAdyIl7oP57uRkQI",
+  "latencyMs": 71974,
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+    "promptTokens": 2615,
+    "outputTokens": 4697,
+    "thoughtTokens": 10281,
+    "totalTokens": 17593,
+    "searchCalls": 16
+  },
+  "costUsd": 0.1737245,
+  "text": "```json\n{\n  \"athlete\": {\n    \"name\": \"Riya Mehta\",\n    \"sport\": \"Gymnastics\",\n    \"identity_confidence\": \"LOW\"\n  },\n\n  \"marketability_summary\": \"Riya Mehta is a junior-level, amateur gymnast who has competed at the club/developmental level, notably representing SGA Gymnastics as a Level 7 (Junior A) competitor in events such as the 2025 Hilton Head Island Invitational. She does not hold elite, professional, or national team status, nor is there a unified public persona or significant media footprint associated with her. Her athletic performance, while respectable within regional developmental pipelines, places her in the lower tiers of competitive authority.\\n\\nFrom an audience and cultural perspective, Mehta has no discernible public social media footprint or commercial presence. Quantitative metrics for cross-platform reach, engagement, and audience growth are entirely missing, reflecting her status as an amateur student-athlete rather than a public figure. Consequently, there is no cultural relevance, crossover recognition, or narrative power to analyze, and her commercial proof is non-existent with zero verified brand partnerships or endorsement deals.\\n\\nUltimately, Mehta represents a standard youth/developmental athlete with low current commercial marketability. Key constraints include the complete absence of public-facing audience channels, zero commercial infrastructure, and a low level of competitive athletic authority. This evaluation is limited by highly fragmented identity data and an overall lack of verifiable public metrics.\",\n\n  \"evidence\": [\n    {\n      \"id\": \"E1\",\n      \"claim\": \"Riya Mehta competed as a Level 7 (Junior A) gymnast for SGA Gymnastics at the 2025 Hilton Head Island Invitational, achieving an all-around score of 37.175.\",\n      \"source_title\": \"2025 Hilton Head Island Invitational Results - Jan. 16 - 20, 2025\",\n      \"source_url\": \"https://competemymeet.com/awards/HiltonHeadIslandInvitational2025\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2025-01-16\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Standard competitive score registry representing junior-level club gymnastics.\"\n    },\n    {\n      \"id\": \"E2\",\n      \"claim\": \"Riya Mehta has an incomplete profile on Meet Scores Online, with no listed video links, complete bio, or high-level elite scores.\",\n      \"source_title\": \"Riya Mehta - Athlete Profile\",\n      \"source_url\": \"https://meetscoresonline.com/athlete/Riya_Mehta\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2025-01-16\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Profile registry showing no elite or professional competition history.\"\n    },\n    {\n      \"id\": \"E3\",\n      \"claim\": \"High school records show Riya Mehta as a cross-country runner (Menlo-Atherton Class of 2026) and student journalist, illustrating the fragmented amateur profile of individuals with this name.\",\n      \"source_title\": \"Riya Mehta '26 Recruiting Profile\",\n      \"source_url\": \"https://ncsasports.org/womens-track-recruiting/california/atherton/menlo-atherton-high-school/riya-mehta4\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-08-31\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Demonstrates that athletes of this name are strictly at the high school, non-elite athletic level.\"\n    },\n    {\n      \"id\": \"E4\",\n      \"claim\": \"General web and social searches show no verified, high-reach public social media channels or brand partnerships associated with Riya Mehta in gymnastics.\",\n      \"source_title\": \"Google Search Results for 'Riya Mehta' Gymnast\",\n      \"source_url\": \"https://www.google.com\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-09-14\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Manual verification of search indexes yields no commercial footprints.\"\n    }\n  ],\n\n  \"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 30,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Riya Mehta competes at a regional, junior club developmental level (USA Gymnastics Level 7 Jr A) rather than elite, professional, or national tiers.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 35,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"She has recorded respectable amateur scores such as an all-around 37.175 at a 2025 invitational, but lacks distinguished high-level athletic results.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 15,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"There is no evidence of elite national/international rankings, major awards, or high-level athletic honors.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 5,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"The athlete has no verified history of representing any national federation or competing on an international scale.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 20,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"As one of many developmental club gymnasts, she does not occupy a central or highly visible role within the sport.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 25,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Her most notable documented competition occurred in early 2025, which, while relatively recent, carries very low commercial weight.\"\n      }\n    },\n\n    \"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"There are no verified public social media accounts or recorded audience reach figures available for this athlete.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Due to the absence of public social profiles, her reach cannot be measured against comparable athletes in gymnastics.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"No longitudinal public metrics exist to track or verify any audience growth trajectory over time.\"\n      },\n      \"platform_breadth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"There is no evidence of active or meaningful cross-platform presence across social media channels.\"\n      }\n    },\n\n    \"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"The absence of public-facing social media channels makes it impossible to calculate audience interaction metrics.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Content distribution metrics and reach efficiency cannot be verified without active public profiles.\"\n      },\n      \"shares_saves_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"High-value platform interactions like shares and saves are unobservable due to a lack of public content channels.\"\n      },\n      \"video_retention\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"No public video performance data exists to measure audience watch time or completion rates.\"\n      },\n      \"story_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Story metrics such as reach and tap-forward/back rates are completely unavailable for this athlete.\"\n      },\n      \"audience_authenticity\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Without a measurable follower base, audience quality and authenticity cannot be assessed.\"\n      }\n    },\n\n    \"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 5,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E4\"],\n        \"rationale\": \"Media coverage is essentially non-existent, limited purely to local meet scoring archives rather than editorial press.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 5,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"She has no coverage in premium national sports publications, major news sites, or elite gymnastics journals.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 5,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Public search volume and organic digital curiosity for her gymnastics career are negligible.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 5,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"She is not a subject of public conversation, fan discussions, or social mentions on open platforms.\"\n      },\n      \"crossover_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 2,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Recognition is entirely restricted to local club participants and does not cross over into broader culture.\"\n      }\n    },\n\n    \"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 10,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"The athlete lacks any public-facing personal brand, making her narrative indistinguishable from any other junior developmental gymnast.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 5,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"There is no accessible, multi-dimensional backstory or thematic depth behind her athletic participation.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 5,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Because there is no active public narrative, there is no real-life evidence tracking to support it.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 2,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"There is no media footprint that reflects or amplifies her personal story or achievements.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 5,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"The absence of a defined public story prevents natural alignment with brand marketing campaigns.\"\n      },\n      \"durability\": {\n        \"status\": \"scored\",\n        \"score\": 5,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Without any public profile, there is no narrative substance to remain relevant over time.\"\n      }\n    },\n\n    \"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 15,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"As a minor amateur athlete, credible commercial categories are limited primarily to local gymnastics equipment or youth apparel.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"Her record is clean, with no public controversies, regulatory issues, or reputational risks, presenting a highly safe profile.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"The lack of public demographics or follower data prevents any assessment of audience spending power or brand alignment.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 10,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her values and persona are unarticulated publicly, offering no coherent brand identity for corporate alignment.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"A complete absence of public content prevents evaluating her capability to support visual or storytelling brand campaigns.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 15,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Her geographic relevance is extremely narrow, limited to the localized vicinity of her junior athletic club.\"\n      }\n    },\n\n    \"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"There is no evidence of any historical or current commercial market valuation or financial sponsorships.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 0,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"The athlete has zero documented corporate sponsorships, brand partnerships, or endorsement campaigns.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Evaluating partner quality is impossible as she has no past or current commercial sponsors.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"No commercial baseline exists to evaluate her ability to secure repeat or extended brand deals.\"\n      },\n      \"campaign_performance\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"There are no historical marketing activations or brand campaigns to analyze for performance.\"\n      },\n      \"pricing_power\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"No commercial demand exists to establish her pricing leverage or market compensation rates.\"\n      }\n    },\n\n    \"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 25,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"She is active in youth regional development (Level 7) with no current indicators of elite transition or national team selection.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Audience growth cannot be assessed over time due to the lack of any verified public follower tracking.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 5,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her editorial press and media footprint are non-existent, remaining completely flat.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 5,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Public queries and social interest show no signs of upward trajectory or digital acceleration.\"\n      },\n      \"commercial_acceleration\": {\n        \"status\": \"scored\",\n        \"score\": 0,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Commercial momentum remains at zero with no upcoming, newly signed, or expanding corporate sponsorships.\"\n      }\n    }\n  },\n\n  \"key_strengths\": [\n    \"Extreme brand safety with zero past public controversies or negative reputational risks.\",\n    \"Stable local participation in structured club development programs (USA Gymnastics Level 7).\"\n  ],\n\n  \"key_constraints\": [\n    \"Total absence of public audience scale, preventing national or digital reach.\",\n    \"Lack of elite athletic achievements or international competitive standing.\",\n    \"Zero commercial history or corporate brand relationships to establish market value.\"\n  ],\n\n  \"important_missing_data\": [\n    \"Verified athlete-owned social media handles (Instagram, TikTok, YouTube).\",\n    \"Social follower demographics, reach efficiency, and audience engagement statistics.\",\n    \"Verified brand partnerships, endorsement deals, or past marketing campaign metrics.\"\n  ],\n\n  \"identity_or_evidence_risks\": [\n    \"High risk of identity fragmentation due to multiple amateur athletes sharing the name Riya Mehta across gymnastics and high school track.\",\n    \"Sparsity of primary public data, forcing reliance on automated meet score registries and secondary lookups.\"\n  ]\n}\n```",
+  "native": {
+    "groundingChunks": [
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECr9dh8ENjyDA_-ub3f7kaFRuY7BngXaPvrBdnjJe74OFmGga0bgvt4GDEuehF1O414qNv2vakLbDaXTMKeaxdgk1VMS-wZ4_XIdJZKOHuGZu4xqNvc2rKqtcBsYqF611x4EhG6A==",
+          "title": "competemymeet.com",
+          "domain": "competemymeet.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGe027Imkr4uJwSPP8Xzfr3BIdsbY61n9qM-i-EXXb1TJAM6hIZmiN4TplK_zDidK747S4ZncF2ZTcN4VGZMaSpUinYs2f4ki7A1L2KpnIK9CzA79pni9HLW9nnfkM4QTNaGUPwoalre6ar5MrZZK5z-CfZ",
+          "title": "meetscoresonline.com",
+          "domain": "meetscoresonline.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEeCH4AcNsg__dC2w86DfSy7eKP73dxqXG9Rn_0HlLXre34oN6dyolOCoDCO4PfQJJJ6tulyJKrWJvMOhFWL2wQoOv2_qxI7V8EOKF62vnnjyhuTJ3sy4jAcmA9wue-cl6f3A6ZWpY6Oi527Qv0vyhygpo0",
+          "title": "meetscoresonline.com",
+          "domain": "meetscoresonline.com"
+        }
+      }
+    ],
+    "groundingSupports": [
+      {
+        "segment": {
+          "startIndex": 119,
+          "endIndex": 370,
+          "text": "\"marketability_summary\": \"Riya Mehta is a junior-level, amateur gymnast who has competed at the club/developmental level, notably representing SGA Gymnastics as a Level 7 (Junior A) competitor in events such as the 2025 Hilton Head Island Invitational"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 526,
+          "endIndex": 665,
+          "text": "Her athletic performance, while respectable within regional developmental pipelines, places her in the lower tiers of competitive authority"
+        },
+        "groundingChunkIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 3897,
+          "endIndex": 4258,
+          "text": "\"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 30,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Riya Mehta competes at a regional, junior club developmental level (USA Gymnastics Level 7 Jr A) rather than elite, professional, or national tiers"
+        },
+        "groundingChunkIndices": [
+          0,
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 3897,
+          "endIndex": 4590,
+          "text": "\"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 30,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Riya Mehta competes at a regional, junior club developmental level (USA Gymnastics Level 7 Jr A) rather than elite, professional, or national tiers.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 35,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"She has recorded respectable amateur scores such as an all-around 37.175 at a 2025 invitational, but lacks distinguished high-level athletic results"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 3897,
+          "endIndex": 4881,
+          "text": "\"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 30,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Riya Mehta competes at a regional, junior club developmental level (USA Gymnastics Level 7 Jr A) rather than elite, professional, or national tiers.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 35,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"She has recorded respectable amateur scores such as an all-around 37.175 at a 2025 invitational, but lacks distinguished high-level athletic results.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 15,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"There is no evidence of elite national/international rankings, major awards, or high-level athletic honors"
+        },
+        "groundingChunkIndices": [
+          0,
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 3897,
+          "endIndex": 5186,
+          "text": "\"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 30,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Riya Mehta competes at a regional, junior club developmental level (USA Gymnastics Level 7 Jr A) rather than elite, professional, or national tiers.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 35,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"She has recorded respectable amateur scores such as an all-around 37.175 at a 2025 invitational, but lacks distinguished high-level athletic results.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 15,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"There is no evidence of elite national/international rankings, major awards, or high-level athletic honors.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 5,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"The athlete has no verified history of representing any national federation or competing on an international scale"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 3897,
+          "endIndex": 5479,
+          "text": "\"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 30,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Riya Mehta competes at a regional, junior club developmental level (USA Gymnastics Level 7 Jr A) rather than elite, professional, or national tiers.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 35,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"She has recorded respectable amateur scores such as an all-around 37.175 at a 2025 invitational, but lacks distinguished high-level athletic results.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 15,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"There is no evidence of elite national/international rankings, major awards, or high-level athletic honors.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 5,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"The athlete has no verified history of representing any national federation or competing on an international scale.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 20,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"As one of many developmental club gymnasts, she does not occupy a central or highly visible role within the sport"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 3897,
+          "endIndex": 5787,
+          "text": "\"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 30,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Riya Mehta competes at a regional, junior club developmental level (USA Gymnastics Level 7 Jr A) rather than elite, professional, or national tiers.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 35,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"She has recorded respectable amateur scores such as an all-around 37.175 at a 2025 invitational, but lacks distinguished high-level athletic results.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 15,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"There is no evidence of elite national/international rankings, major awards, or high-level athletic honors.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 5,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"The athlete has no verified history of representing any national federation or competing on an international scale.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 20,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"As one of many developmental club gymnasts, she does not occupy a central or highly visible role within the sport.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 25,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Her most notable documented competition occurred in early 2025, which, while relatively recent, carries very low commercial weight"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 8697,
+          "endIndex": 9017,
+          "text": "\"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 5,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E4\"],\n        \"rationale\": \"Media coverage is essentially non-existent, limited purely to local meet scoring archives rather than editorial press"
+        },
+        "groundingChunkIndices": [
+          0,
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 10141,
+          "endIndex": 10462,
+          "text": "\"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 10,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"The athlete lacks any public-facing personal brand, making her narrative indistinguishable from any other junior developmental gymnast"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 11819,
+          "endIndex": 12422,
+          "text": "\"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 15,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"As a minor amateur athlete, credible commercial categories are limited primarily to local gymnastics equipment or youth apparel.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"Her record is clean, with no public controversies, regulatory issues, or reputational risks, presenting a highly safe profile"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 11819,
+          "endIndex": 13605,
+          "text": "\"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 15,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"As a minor amateur athlete, credible commercial categories are limited primarily to local gymnastics equipment or youth apparel.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"Her record is clean, with no public controversies, regulatory issues, or reputational risks, presenting a highly safe profile.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"The lack of public demographics or follower data prevents any assessment of audience spending power or brand alignment.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 10,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her values and persona are unarticulated publicly, offering no coherent brand identity for corporate alignment.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"A complete absence of public content prevents evaluating her capability to support visual or storytelling brand campaigns.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 15,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Her geographic relevance is extremely narrow, limited to the localized vicinity of her junior athletic club"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 15285,
+          "endIndex": 15592,
+          "text": "\"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 25,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"She is active in youth regional development (Level 7) with no current indicators of elite transition or national team selection"
+        },
+        "groundingChunkIndices": [
+          0
+        ]
+      }
+    ],
+    "webSearchQueries": [
+      "\"Riya Mehta\" gymnastics",
+      "\"Riya Mehta\" gymnast",
+      "\"Riya Mehta\" gymnast India",
+      "\"Riya Mehta\" rhythmic gymnastics",
+      "\"Riya Mehta\" gymnastics national championship",
+      "\"Riya Mehta\" athlete",
+      "\"Riya Mehta\" gymnastics gujarat",
+      "\"Riya Mehta\" gymnastics mumbai",
+      "\"Riya Mehta\" gymnastics delhi",
+      "\"Riya Mehta\" gymnastics nationals",
+      "\"Riya Mehta\" blind",
+      "\"Riya Mehta\" \"visually impaired\"",
+      "\"Riya Mehta\" para-athlete",
+      "\"Riya Mehta\" paralympics",
+      " \"riya mehta\" gymnastics",
+      " \"riya mehta\" gymnast"
+    ],
+    "config": {
+      "tools": [
+        {
+          "googleSearch": {}
+        }
+      ],
+      "temperature": 1,
+      "maxOutputTokens": 65536,
+      "thinking": "default"
+    }
+  },
+  "error": null
+}

@@ -1,0 +1,227 @@
+{
+  "promptSha256": "b4c763d36b3f08b3fb6261df857f17917a1dbbb139f7d45ae4a5f619915a6214",
+  "providerCalls": 1,
+  "spentUsd": 0.01125,
+  "cap": 0.15,
+  "stopped": "F1 draw 1: unassessed: verification failed: opening grow-academic-tech-partnerships assessed 0 times — exactly once | opening \"opening:grow-academic-tech-partnerships\" is not one of the Objective's openings | openings[0].present[0]: unknown source \"opening:opening:grow-academic-tech-partnerships\" | openings[0].absent[0]: unknown source \"opening:opening:grow-academic-tech-partnerships\"",
+  "bypassChecks": {
+    "F6": {
+      "providerCalls": 0,
+      "rule": {
+        "bypass": true,
+        "because": "spelling correction \"audiance\" → \"audience\", a word the Objective already uses"
+      },
+      "status": "assessed",
+      "by": "rule",
+      "mismatches": [],
+      "result": {
+        "status": "assessed",
+        "version": "objective-change-assessment/0.1.0-exp",
+        "by": "rule",
+        "signals": {
+          "fieldsChanged": [
+            "desiredState"
+          ],
+          "mechanicalOnly": true,
+          "bypassBecause": "spelling correction \"audiance\" → \"audience\", a word the Objective already uses",
+          "termsAdded": [
+            "audience"
+          ],
+          "termsRemoved": [
+            "audiance"
+          ],
+          "successTermsDropped": [],
+          "quantifiedPresent": false
+        },
+        "assessment": {
+          "change": {
+            "class": "wording",
+            "reason": "mechanical edit (rule)",
+            "evidence": {
+              "present": [],
+              "absent": []
+            }
+          },
+          "success": {
+            "verdict": "still_coherent",
+            "reason": "mechanical edit (rule)",
+            "evidence": {
+              "present": [],
+              "absent": []
+            }
+          },
+          "horizon": {
+            "verdict": "not_applicable",
+            "reason": "mechanical edit (rule)",
+            "evidence": {
+              "present": [],
+              "absent": []
+            }
+          },
+          "openings": [
+            {
+              "key": "grow-instagram-posting-cadence",
+              "verdict": "still_supports",
+              "reason": "mechanical edit (rule)",
+              "evidence": {
+                "present": [],
+                "absent": []
+              }
+            }
+          ]
+        },
+        "model": null,
+        "promptSha256": null
+      }
+    }
+  },
+  "calibrationDraws": {
+    "F1": {
+      "stable": null,
+      "runs": [
+        {
+          "draw": 1,
+          "status": "unassessed",
+          "by": null,
+          "usage": {
+            "promptTokens": 2210,
+            "outputTokens": 4234
+          },
+          "costUsd": 0.01125,
+          "mismatches": [
+            "unassessed: verification failed: opening grow-academic-tech-partnerships assessed 0 times — exactly once | opening \"opening:grow-academic-tech-partnerships\" is not one of the Objective's openings | openings[0].present[0]: unknown source \"opening:opening:grow-academic-tech-partnerships\" | openings[0].absent[0]: unknown source \"opening:opening:grow-academic-tech-partnerships\""
+          ],
+          "fingerprint": null,
+          "result": {
+            "status": "unassessed",
+            "version": "objective-change-assessment/0.1.0-exp",
+            "signals": {
+              "fieldsChanged": [
+                "desiredState"
+              ],
+              "mechanicalOnly": false,
+              "bypassBecause": "the word count changed",
+              "termsAdded": [
+                "build",
+                "positioning",
+                "intersection",
+                "athletics",
+                "technology",
+                "ai",
+                "innovation",
+                "entrepreneurship",
+                "secure",
+                "partnerships",
+                "align",
+                "identity"
+              ],
+              "termsRemoved": [
+                "established",
+                "active",
+                "commercial",
+                "partner",
+                "ambassador",
+                "brands",
+                "stem",
+                "edtech",
+                "tech",
+                "venture",
+                "sectors"
+              ],
+              "successTermsDropped": [
+                "ambassador",
+                "edtech",
+                "stem",
+                "tech",
+                "venture",
+                "sectors"
+              ],
+              "quantifiedPresent": false
+            },
+            "reason": "verification failed: opening grow-academic-tech-partnerships assessed 0 times — exactly once | opening \"opening:grow-academic-tech-partnerships\" is not one of the Objective's openings | openings[0].present[0]: unknown source \"opening:opening:grow-academic-tech-partnerships\" | openings[0].absent[0]: unknown source \"opening:opening:grow-academic-tech-partnerships\"",
+            "usage": {
+              "promptTokens": 2210,
+              "outputTokens": 4234
+            },
+            "raw": {
+              "change": {
+                "class": "scope",
+                "reason": "The goal's scope has expanded from specific tech sectors to a broader intersection of athletics, AI, innovation, and entrepreneurship.",
+                "evidence": {
+                  "present": [
+                    {
+                      "source": "old",
+                      "text": "STEM, EdTech, or tech venture sectors"
+                    },
+                    {
+                      "source": "new",
+                      "text": "intersection of athletics, technology, AI, innovation and entrepreneurship"
+                    }
+                  ],
+                  "absent": [
+                    {
+                      "source": "old",
+                      "term": "AI"
+                    }
+                  ]
+                }
+              },
+              "success": {
+                "verdict": "incoherent",
+                "reason": "The success condition only measures partnerships in EdTech, STEM, or tech venture, omitting the new focus areas of AI, innovation, and athletics.",
+                "evidence": {
+                  "present": [
+                    {
+                      "source": "success",
+                      "text": "EdTech, STEM, or tech venture sectors"
+                    }
+                  ],
+                  "absent": [
+                    {
+                      "source": "success",
+                      "term": "AI"
+                    }
+                  ]
+                }
+              },
+              "horizon": {
+                "verdict": "still_coherent",
+                "reason": "The 12-month timeline remains coherent as establishing credibility with non-traditional corporate partners in tech and AI requires a structured pipeline.",
+                "evidence": {
+                  "present": [
+                    {
+                      "source": "horizon",
+                      "text": "non-traditional corporate partners"
+                    }
+                  ],
+                  "absent": []
+                }
+              },
+              "openings": [
+                {
+                  "key": "opening:grow-academic-tech-partnerships",
+                  "verdict": "incomplete",
+                  "reason": "The opening supports the tech aspect of the goal but frames the target partnerships around EdTech and STEM, omitting the new focus on AI and athletics.",
+                  "evidence": {
+                    "present": [
+                      {
+                        "source": "opening:opening:grow-academic-tech-partnerships",
+                        "text": "EdTech, STEM, and enterprise venture spaces"
+                      }
+                    ],
+                    "absent": [
+                      {
+                        "source": "opening:opening:grow-academic-tech-partnerships",
+                        "term": "AI"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

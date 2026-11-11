@@ -1,0 +1,128 @@
+{
+  "status": "unassessed",
+  "version": "objective-change-assessment/0.1.0-exp",
+  "signals": {
+    "fieldsChanged": [
+      "desiredState"
+    ],
+    "mechanicalOnly": false,
+    "bypassBecause": "the word count changed",
+    "termsAdded": [
+      "build",
+      "positioning",
+      "intersection",
+      "athletics",
+      "technology",
+      "ai",
+      "innovation",
+      "entrepreneurship",
+      "secure",
+      "partnerships",
+      "align",
+      "identity"
+    ],
+    "termsRemoved": [
+      "established",
+      "active",
+      "commercial",
+      "partner",
+      "ambassador",
+      "brands",
+      "stem",
+      "edtech",
+      "tech",
+      "venture",
+      "sectors"
+    ],
+    "successTermsDropped": [
+      "ambassador",
+      "edtech",
+      "stem",
+      "tech",
+      "venture",
+      "sectors"
+    ],
+    "quantifiedPresent": false
+  },
+  "reason": "verification failed: opening grow-academic-tech-partnerships assessed 0 times — exactly once | opening \"opening:grow-academic-tech-partnerships\" is not one of the Objective's openings | openings[0].present[0]: unknown source \"opening:opening:grow-academic-tech-partnerships\" | openings[0].absent[0]: unknown source \"opening:opening:grow-academic-tech-partnerships\"",
+  "usage": {
+    "promptTokens": 2210,
+    "outputTokens": 4234
+  },
+  "raw": {
+    "change": {
+      "class": "scope",
+      "reason": "The goal's scope has expanded from specific tech sectors to a broader intersection of athletics, AI, innovation, and entrepreneurship.",
+      "evidence": {
+        "present": [
+          {
+            "source": "old",
+            "text": "STEM, EdTech, or tech venture sectors"
+          },
+          {
+            "source": "new",
+            "text": "intersection of athletics, technology, AI, innovation and entrepreneurship"
+          }
+        ],
+        "absent": [
+          {
+            "source": "old",
+            "term": "AI"
+          }
+        ]
+      }
+    },
+    "success": {
+      "verdict": "incoherent",
+      "reason": "The success condition only measures partnerships in EdTech, STEM, or tech venture, omitting the new focus areas of AI, innovation, and athletics.",
+      "evidence": {
+        "present": [
+          {
+            "source": "success",
+            "text": "EdTech, STEM, or tech venture sectors"
+          }
+        ],
+        "absent": [
+          {
+            "source": "success",
+            "term": "AI"
+          }
+        ]
+      }
+    },
+    "horizon": {
+      "verdict": "still_coherent",
+      "reason": "The 12-month timeline remains coherent as establishing credibility with non-traditional corporate partners in tech and AI requires a structured pipeline.",
+      "evidence": {
+        "present": [
+          {
+            "source": "horizon",
+            "text": "non-traditional corporate partners"
+          }
+        ],
+        "absent": []
+      }
+    },
+    "openings": [
+      {
+        "key": "opening:grow-academic-tech-partnerships",
+        "verdict": "incomplete",
+        "reason": "The opening supports the tech aspect of the goal but frames the target partnerships around EdTech and STEM, omitting the new focus on AI and athletics.",
+        "evidence": {
+          "present": [
+            {
+              "source": "opening:opening:grow-academic-tech-partnerships",
+              "text": "EdTech, STEM, and enterprise venture spaces"
+            }
+          ],
+          "absent": [
+            {
+              "source": "opening:opening:grow-academic-tech-partnerships",
+              "term": "AI"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

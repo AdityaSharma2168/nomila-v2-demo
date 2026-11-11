@@ -1,0 +1,83 @@
+# Mila's voice pass (MILA_VOICE_ONE, off by default; dev only): the tool scope and limits a live voice call is bounded
+# by. The voice worker (mila-voice) holds no prompt and no tool logic of its own: it asks the server for the session
+# (server/voice/oneMila/session.ts: these tools as Gemini Live function declarations, Mila's one definition for the
+# voice surface, the per-turn CONTEXT) and runs every call through the server (server/voice/oneMila/toolProxy.ts: the
+# same callPassTool path a chat turn's tools take). Its instructions are NOT here: they are Mila's one definition
+# (server/agent/mila: instructions/, surfaces/voice.md), built by mila/build.ts buildMilaInstructions({ surface: "voice",
+# engine: "mastra" }) — `mila_surface` below.
+#
+# The list is chat's (jobs/chat.yaml) minus what voice does not need, chosen by AREA so that CAN DO NOW (worked out from
+# this same list, engine/context.ts canDoNow) never claims something voice cannot do: an area is either whole here
+# (goals, deals, bookings, documents) or left out. Fewer tools is less latency and fewer bad calls on a live call.
+# Left out: drop_goal, bring_back_goal, suggest_goal, refresh_plan, refresh_research (chat-only work); deals_close and
+# deals_mark (a close or a signed/completed mark is done in the app); ask_quick_question, ask_once, ideas_suggest,
+# share_insight, answer_with_sources (tap-to-answer cards that voice answers out loud instead); cite_facts.
+# The voice-only tools (skill, read_back, confirm_by_voice) are the proxy's own (server/voice/oneMila), not registry
+# tools, so they are not listed here.
+id: voice
+version: 1.0.0
+# `description` is athlete-facing: "How I got this" shows it as its why line (cards.ts howIGotThisCard), so plain words only.
+description: Mila answered out loud from what Nomila holds about you and what was looked up in this call. Nothing goes out without your say-so.
+mila_surface: voice
+inputs:
+  - name: message
+    type: string
+    description: What the athlete just said in the call.
+    required: true
+  - name: context
+    type: object
+    description: Built by code when the call starts - the same CONTEXT a chat turn gets (engine/context.ts), with OPENED FROM voice.
+    required: true
+    external: true
+outputs:
+  - name: reply
+    type: string
+    description: What Mila says out loud - two or three spoken sentences. Cards come from the tools called, never from the words.
+    required: true
+effort: low
+model: reasoning
+limits:
+  # Tool calls per spoken athlete turn, reserved atomically on the server (oneMila/state.ts reserveSlot) as well as
+  # counted by the worker's own turnBudget. No cost_cap_usd: a voice turn has no model loop of ours to price, so its
+  # spend is bounded by these slots, the call's own ceilings and the athlete's and the platform's day caps.
+  max_steps: 8
+  max_web_searches: 2
+tools:
+  - recall_facts
+  - remember_fact
+  - correct_fact
+  - remember_preference
+  - read_scouting
+  - offer_connection
+  - open_screen
+  # Run by the proxy itself (one search through the chat's web-search skill), only while MILA_VOICE_WEB_SEARCH is on.
+  - web_search
+  - list_goals
+  - keep_goal
+  - change_goal
+  - set_aside_goal
+  - add_goal
+  - check_camera_roll
+  - deals_find
+  - deals_get
+  - deals_terms
+  - deals_waiting
+  - deals_draft_reply
+  - deals_open
+  - brand_get
+  - bookings_list
+  - bookings_get
+  - bookings_waiting
+  - bookings_respond
+  - documents_status
+  - documents_make
+  - documents_edit
+  - documents_share
+  # Reads (MILA_READ_TOOLS, dev only): left out of the call while the flag is off.
+  - media_search
+  - posts_performance
+  - money_summary
+  - whats_next
+  # The Turn-on offer card (MILA_CARDS_V2, dev only): the one card-kit producer voice keeps, so a capability that is off
+  # is offered (and turned on with a tap), never claimed.
+  - offer_capability

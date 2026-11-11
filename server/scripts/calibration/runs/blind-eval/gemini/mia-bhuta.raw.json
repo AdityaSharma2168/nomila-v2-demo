@@ -1,0 +1,182 @@
+{
+  "specVersion": "blind-eval-spec/0.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "mia-bhuta",
+    "name": "Mia Bhuta",
+    "sport": "Soccer"
+  },
+  "conditions": "gemini-3.5-flash via Vertex; Google Search grounding; default thinking; temperature 1.0; text output with fenced JSON",
+  "startedAt": "2026-09-14T02:01:13.301Z",
+  "attempts": 1,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "responseId": "aVWnapWWF__CsbwPy-2coAk",
+  "latencyMs": 57961,
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+    "promptTokens": 2614,
+    "outputTokens": 5240,
+    "thoughtTokens": 9578,
+    "totalTokens": 17432,
+    "searchCalls": 8
+  },
+  "costUsd": 0.17228300000000002,
+  "text": "```json\n{\n  \"athlete\": {\n    \"name\": \"Mia Bhuta\",\n    \"sport\": \"Soccer\",\n    \"identity_confidence\": \"HIGH\"\n  },\n\n  \"marketability_summary\": \"Mia Bhuta is an elite senior midfielder and co-captain for the Stanford Cardinal women's soccer team, which entered the 2026 season ranked No. 1 in the nation. Academically and athletically outstanding, Bhuta's marketability is anchored by a highly distinctive and culturally resonant narrative: in 2022, she became the first player of Indian descent, male or female, to represent the United States at a FIFA World Cup at any level. This historic milestone—combined with her academic pedigree as a Symbolic Systems major and her hands-on philanthropic work empowering young girls through soccer in rural India (Yuwa)—gives her a premium, highly authentic brand identity. Commercially, she secured a major multi-year NIL endorsement with Adidas, serving as a featured athlete in national campaigns. While her raw social media following remains relatively modest (estimated under 15,000 across platforms), her qualitative brand fit is exceptional, offering pristine brand safety, strong identity-values coherence, and highly desirable demographic reach. As she leads Stanford's 2026 campaign and eyes a professional transition to the NWSL, Bhuta represents a gold standard for purpose-driven collegiate sports partnerships, though quantitative conversion and campaign-level sales data remain private.\",\n\n  \"evidence\": [\n    {\n      \"id\": \"E1\",\n      \"claim\": \"Mia Bhuta is a senior midfielder and co-captain for the Stanford women's soccer team for the 2026 season, having previously achieved multiple All-ACC, All-Region, and All-Academic selections.\",\n      \"source_title\": \"Mia Bhuta - Women's Soccer 2026 - Stanford Cardinal - Official Athletics Website\",\n      \"source_url\": \"https://gostanford.com/sports/womens-soccer/roster/mia-bhuta/21634\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"August 13, 2026\",\n      \"retrieved_at\": \"September 14, 2026\",\n      \"notes\": \"Confirms her senior standing, captaincy for 2025 and 2026, and comprehensive career athletic and academic statistics.\"\n    },\n    {\n      \"id\": \"E2\",\n      \"claim\": \"Bhuta represented the United States at the 2022 FIFA U-17 Women's World Cup, becoming the first Indian-American to play at a FIFA tournament.\",\n      \"source_title\": \"Mia Bhuta - Wikipedia\",\n      \"source_url\": \"https://en.wikipedia.org/wiki/Mia_Bhuta\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"Updated 2026\",\n      \"retrieved_at\": \"September 14, 2026\",\n      \"notes\": \"Summarizes her youth national team history, early high school graduation, and Stanford career.\"\n    },\n    {\n      \"id\": \"E3\",\n      \"claim\": \"Mia Bhuta signed a prominent NIL endorsement deal with Adidas as a first-year student and was featured in their national back-to-school marketing campaigns.\",\n      \"source_title\": \"Stanford's Mia Bhuta signed with Adidas\",\n      \"source_url\": \"https://girlssoccernetwork.com/the-biggest-ncaa-womens-soccer-nil-deals-this-year/\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"December 14, 2023\",\n      \"retrieved_at\": \"September 14, 2026\",\n      \"notes\": \"Highlights her cornerstone commercial relationship with Adidas.\"\n    },\n    {\n      \"id\": \"E4\",\n      \"claim\": \"At just 16 years old, Mia Bhuta made history and has used her platform to empower girls through organizations like Yuwa in rural India.\",\n      \"source_title\": \"Meet the first Indian-American to rep US soccer at World Cup\",\n      \"source_url\": \"https://www.youtube.com/watch?v=0GZ7v9E9rM0\",\n      \"source_type\": \"major_media\",\n      \"published_or_observed_date\": \"May 25, 2023\",\n      \"retrieved_at\": \"September 14, 2026\",\n      \"notes\": \"NBC TODAY Show broadcast covering her heritage, family story, and philanthropic involvement.\"\n    },\n    {\n      \"id\": \"E5\",\n      \"claim\": \"In 2026, elite NCAA women's soccer brand value compounds across top programs like Stanford, where players like Bhuta stand out for corporate partnerships.\",\n      \"source_title\": \"Women's College Soccer NIL Deals: The Real Landscape\",\n      \"source_url\": \"https://rallyfuel.com/womens-college-soccer-nil-deals/\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"May 23, 2026\",\n      \"retrieved_at\": \"September 14, 2026\",\n      \"notes\": \"Analyzes the collegiate women's soccer commercial environment and cites Bhuta as a top-tier NIL example.\"\n    }\n  ],\n\n  \"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E5\"],\n        \"rationale\": \"Bhuta plays in the Atlantic Coast Conference (ACC), which is widely considered the premier and most competitive conference in NCAA Division I women's soccer.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"She helped anchor Stanford to two NCAA College Cup finals (2023, 2025) and has earned multiple elite individual awards.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"She is formally recognized as a United Soccer Coaches fourth-team All-American (2024) and All-Region first-team selection.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E4\"],\n        \"rationale\": \"She captained the U.S. U-17 team at a World Cup and remains active on youth national teams, though she hasn't debuted for the senior USWNT.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"She was voted team captain at Stanford for consecutive seasons (2025 and 2026) and has been a primary starter since her freshman year.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 84,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Her achievements are highly current, leading Stanford's 2026 season as co-captain following an ACC championship in late 2025.\"\n      }\n    },\n\n    \"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 32,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E5\"],\n        \"rationale\": \"Her actual combined social media audience is quite modest, with her main Instagram account tracking around 5.6k followers.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 55,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"She has a solid, moderate following relative to average college soccer players, though she lags behind college sports' crossover megastars.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No longitudinal, audited public data tracking her monthly audience growth rates is currently available.\"\n      },\n      \"platform_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 45,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E3\", \"E5\"],\n        \"rationale\": \"She is primarily active on Instagram with secondary exposure on TikTok, but lacks a wide multi-channel footprint.\"\n      }\n    },\n\n    \"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Audience interaction percentages and comparison metrics are private and not reported in verified public databases.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Detailed algorithm-driven reach and impression efficiency statistics are not publicly accessible.\"\n      },\n      \"shares_saves_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"High-value platform interactions like shares and saves are private to the creator's first-party analytics.\"\n      },\n      \"video_retention\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Audience video retention and completion rates are private first-party metrics.\"\n      },\n      \"story_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Story reach and link tap-through performance data are not publicly documented.\"\n      },\n      \"audience_authenticity\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Independent quantitative audience audits analyzing bot-to-genuine follower ratios are unavailable.\"\n      }\n    },\n\n    \"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 54,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E4\"],\n        \"rationale\": \"She maintains steady, moderate collegiate coverage with major national peaks during historic moments like her 2022 World Cup debut.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"Her media footprint includes extremely high-prestige mainstream profiles, such as a featured segment on NBC's TODAY Show.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 45,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E2\", \"E4\"],\n        \"rationale\": \"Her overall search volume is modest and highly event-driven, spiking primarily during high-stakes tournament matches.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 48,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Discussion is focused but highly engaged within specialized women's soccer communities and South Asian representation forums.\"\n      },\n      \"crossover_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"She enjoys significant crossover recognition outside of sports as a historic trailblazer for South Asian-American athletic representation.\"\n      }\n    },\n\n    \"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E4\"],\n        \"rationale\": \"Her identity as the first player of Indian descent to play for the U.S. in a World Cup—held in India—is an incredibly distinct, memorable story.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E4\"],\n        \"rationale\": \"Her narrative is highly layered, combining her family's academic roots, elite athletic pedigree, and Stanford Symbolic Systems major.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 94,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"Her values are genuinely backed by her actions, academic achievements, and her hands-on volunteer work with Yuwa in India.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\"],\n        \"rationale\": \"The media has strongly leaned into and amplified her personal narrative of representation and purpose-driven sports development.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E5\"],\n        \"rationale\": \"Her storyline translates cleanly into corporate marketing campaigns focused on diversity, high performance, and societal impact.\"\n      },\n      \"durability\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"Her narrative has lasting power because her status as a historic trailblazer and future pro prospect remains highly relevant.\"\n      }\n    },\n\n    \"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E3\", \"E4\"],\n        \"rationale\": \"She is highly credible across athletic wear, corporate social responsibility, STEM/academic, tech, and lifestyle categories.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 98,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"Her public record is entirely pristine, highlighted by academic honors, community service, and respected team leadership roles.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E4\", \"E5\"],\n        \"rationale\": \"She appeals directly to affluent collegiate fanbases, young athletes, and the highly educated South Asian diaspora.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"Her public persona is incredibly coherent, consistently emphasizing family support, academic drive, and social service.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"She can comfortably transition from on-field athletic training to thought leadership, academic excellence, and philanthropic content.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E4\"],\n        \"rationale\": \"She offers deep regional appeal in Silicon Valley and Pennsylvania, alongside a unique global bridge to the Indian market.\"\n      }\n    },\n\n    \"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 68,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E5\"],\n        \"rationale\": \"She proved her commercial value early by signing an individual NIL deal with Adidas, a premier global sportswear giant.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 42,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E5\"],\n        \"rationale\": \"She maintains a highly selective, low-frequency portfolio, focusing on her flagship Adidas deal rather than high-volume micro-influencing.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 90,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\"],\n        \"rationale\": \"Her main corporate partnership is of the highest strategic tier, aligning her directly with Adidas's global brand.\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E3\", \"E5\"],\n        \"rationale\": \"Her partnership with Adidas has been active and multi-year, stretching from her freshman year in 2023 through to her senior season.\"\n      },\n      \"campaign_performance\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Private return-on-investment, sales metrics, and click-through performance from her brand campaigns are not publicly disclosed.\"\n      },\n      \"pricing_power\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Specific commercial valuations and personal pricing rates of her corporate contracts remain strictly confidential.\"\n      }\n    },\n\n    \"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"She has a highly positive athletic trajectory as captain of the top-ranked Stanford squad, paving a clear path toward professional play.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Unverified social media growth metrics make it impossible to accurately score her recent month-over-month social audience trajectory.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 60,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Her media exposure is stable and focused around collegiate achievements, though lacking the explosive velocity of her 2022 historic debut.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 56,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\"],\n        \"rationale\": \"Search interest is stable with routine spikes coinciding with Stanford's high-stakes collegiate matches.\"\n      },\n      \"commercial_acceleration\": {\n        \"status\": \"scored\",\n        \"score\": 50,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E3\", \"E5\"],\n        \"rationale\": \"Her commercial posture is stable, centered on maintaining and activating her premium Adidas relationship without rapid new deal additions.\"\n      }\n    }\n  },\n\n  \"key_strengths\": [\n    \"Historic status as the first Indian-American player to represent the US in a FIFA World Cup, providing a highly compelling and distinct personal narrative.\",\n    \"Cornerstone endorsement deal with global brand Adidas, providing verified commercial credibility.\",\n    \"Elite athletic standing as two-time captain of the #1 ranked Stanford Cardinal and participant in youth national teams.\",\n    \"Impeccable brand safety profile with strong academic credentials (CSC Academic All-District, ACC All-Academic).\",\n    \"Deep philanthropic commitment through organizations like Yuwa, adding profound authenticity to her narrative.\"\n  ],\n  \"key_constraints\": [\n    \"Modest social media following (estimated under 15,000 combined reach), limiting broad quantitative reach for brands prioritizing sheer volume.\",\n    \"Limited number of active commercial deals beyond her central Adidas partnership.\",\n    \"Has not yet transitioned to the senior USWNT, limiting her visibility to collegiate and youth international levels.\"\n  ],\n  \"important_missing_data\": [\n    \"Verifiable audience engagement rates, reach efficiency, and audience authenticity metrics.\",\n    \"Specific monetary valuations and contract details of her NIL agreement with Adidas.\",\n    \"Quantitative campaign performance data (e.g., click-through rates, product sales) from her brand campaigns.\"\n  ],\n  \"identity_or_evidence_risks\": [\n    \"High identity confidence, but commercial trajectory relies on her upcoming professional transition (NWSL/senior team) which is not yet finalized.\"\n  ]\n}\n```",
+  "native": {
+    "groundingChunks": [
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVwzBU37zZmVW0ReYVDSs-wIIQg5VEjkEwZHu1wsIKl0r9irTEA3TmSmhVXeiabvfv72sUt1bcFRT3RByouzkO-wPgtJll5q_LxK4vH0Bd40rJyPaZGrlBdi44s8Of3O136eMMYOFUEXOCPbZBtU5j4xNSciGNuzPQBbXANNY=",
+          "title": "gostanford.com",
+          "domain": "gostanford.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvPyRU3DVLjax6kbujvZ3dKUnEEsKBG8mUJkuCq_zG7AlAYpaisO_FMC3SfwVblhPdelPWDMy6QN4BH9cnt6MTBDAjkEt-Bjwn3P-ahrSeaGbbr0Gzj-sdhGHODwQDxG61He5ZNvT4xQKWL792HbVNKuZgr5EjEl10j-o3_a44H_VJHpHfgubk0A6UDcY=",
+          "title": "gostanford.com",
+          "domain": "gostanford.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFQLiAR_1VBwV7Czfbg4A9-wVBQujTvkCGIs5K28Llqoc3-wGCP2RafJ66gkNpRK5Wnk26dGu_fRUydjOtKsXODS8DVzz7uboQb-18UG8idgnc77-YjzFEXnMcQMRcqMGVEdQ==",
+          "title": "wikipedia.org",
+          "domain": "wikipedia.org"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFWVgyU2v0czzamS_xryiGOSuRbX6_qSVd5z3K6ImjNwfWUaJU-hYACx0BGKbOAVnANCZ5IGxpeJRnXuzi21I41gbzDfmvPQNlCup8hnNrVotU8DAVj7pjLxiTTi_5Qe-yBVGk5fVGoqLfefPkUodiG",
+          "title": "trailblazehersinsports.org",
+          "domain": "trailblazehersinsports.org"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIJNokUKarg8f1_4F2Bjg3QsD1GrMQ3S2GYOQM8lnvcLIq7n0MwFFnWFhd1grGt9glc6lVO0KfEortSCvBKr9fOV0uBPRGIDwMHFtVJi_mRXmDxSolOokRlcCe2hGn6kt32B65wN4UUwZXlnuFV4Tx-2FSGLG0av4lgG4ndJNGVq9wmjqsQXmIk91tTJmCmrf6jzc=",
+          "title": "cbsnews.com",
+          "domain": "cbsnews.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTdc6EbreQQcaaxBpKHEv_XI9xstI-MtiQLO98yHqPXFqw0_ySYk9L_scxpNNAEVytZFWeYwFgcbfNUzhFU6j85QuC2dy1rjaMr_w5qm3IFDukvUoLD5lqWQBVeTAH4bO0uI5Usi06znpopcWIR9_KuPVWDlLW25JXV24xe-_oUJqL8EEKmYIDBgH5pEzzJ4oz8QxkAeU1U4NyBmSXVTakt2C3rGc=",
+          "title": "thealmanac.net",
+          "domain": "thealmanac.net"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFHpmT0TFKkulliGba3hx5s2qAjkvG-hbYsEGXWbWd18RMUUw3eW54VetPEZCCP7B4w9g_0L0dqvmTyXwTt-pJx3kVvZ11z-g6cZfUX0xt-SdqiRHu7IluMpunAEuPKTEmBBAhPV97l0wTUv85zUpelT-FplnpE8Ag115lAqiZ_FtIuNnpX3mrdXyAkbMjVKOODNpPdkUHMXc4=",
+          "title": "businessofcollegesports.com",
+          "domain": "businessofcollegesports.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPK6h1jvHmmxBtXcGhk1yyn7WsQaJMSQ8fmlLm1mZRTSwEtlSPSWM4nD1vvic69cILyViJeUM9prig8_gJnjSgaNrwZQ13KrKlxXVFsTzffFto5EYz88PF4tuPu7EUzoFWEj5McOualbbc0Tfi",
+          "title": "hercollegenetworth.com",
+          "domain": "hercollegenetworth.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_NzYdbZjn0agp5XSnsaCErPsQAwMX14rd1HeRX6AWNQq998clPvGdqQVXXRixpfKi_R3skP5_BtlxP4yVZ3Yk4tDsh2AkMG8YhcZsxcQmg6QU5i02L9NXskZ3zEZ5ryeRAkkxv0tPq6prRs9p6ePkBdiQVWu-GBqY4TkoJ0aKblPS7wd5UaEguNqkyVQlsb3Jx3XHzgI04Ml7fK3qIQl1naIbanAj_n-oyuQNpsT2",
+          "title": "rallyfuel.com",
+          "domain": "rallyfuel.com"
+        }
+      }
+    ],
+    "groundingSupports": [
+      {
+        "segment": {
+          "startIndex": 284,
+          "endIndex": 299,
+          "text": "1 in the nation"
+        },
+        "groundingChunkIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 301,
+          "endIndex": 572,
+          "text": "Academically and athletically outstanding, Bhuta's marketability is anchored by a highly distinctive and culturally resonant narrative: in 2022, she became the first player of Indian descent, male or female, to represent the United States at a FIFA World Cup at any level"
+        },
+        "groundingChunkIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 574,
+          "endIndex": 814,
+          "text": "This historic milestone—combined with her academic pedigree as a Symbolic Systems major and her hands-on philanthropic work empowering young girls through soccer in rural India (Yuwa)—gives her a premium, highly authentic brand identity"
+        },
+        "groundingChunkIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 816,
+          "endIndex": 941,
+          "text": "Commercially, she secured a major multi-year NIL endorsement with Adidas, serving as a featured athlete in national campaigns"
+        },
+        "groundingChunkIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 943,
+          "endIndex": 1195,
+          "text": "While her raw social media following remains relatively modest (estimated under 15,000 across platforms), her qualitative brand fit is exceptional, offering pristine brand safety, strong identity-values coherence, and highly desirable demographic reach"
+        },
+        "groundingChunkIndices": [
+          7,
+          8
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1197,
+          "endIndex": 1442,
+          "text": "As she leads Stanford's 2026 campaign and eyes a professional transition to the NWSL, Bhuta represents a gold standard for purpose-driven collegiate sports partnerships, though quantitative conversion and campaign-level sales data remain private"
+        },
+        "groundingChunkIndices": [
+          8
+        ]
+      }
+    ],
+    "webSearchQueries": [
+      "\"Mia Bhuta\" soccer",
+      "\"Mia Bhuta\" instagram followers",
+      "\"Mia Bhuta\" endorsement brand",
+      "\"Mia Bhuta\" current team 2025 2026",
+      "\"Mia Bhuta\" instagram followers 2026",
+      " \"miabhuta\"",
+      "\"Mia Bhuta\" tiktok",
+      "\"Mia Bhuta\" NIL value OR valuation"
+    ],
+    "config": {
+      "tools": [
+        {
+          "googleSearch": {}
+        }
+      ],
+      "temperature": 1,
+      "maxOutputTokens": 65536,
+      "thinking": "default"
+    }
+  },
+  "error": null
+}

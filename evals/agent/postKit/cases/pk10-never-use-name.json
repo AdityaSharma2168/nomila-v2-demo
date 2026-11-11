@@ -1,0 +1,17 @@
+{
+  "id": "pk10-never-use-name",
+  "description": "A photo whose tags name someone the athlete said never to use is kept from the re-rank; the photo of the athlete alone is used.",
+  "reviewed": false,
+  "never": ["Robin Example"],
+  "library": [
+    { "key": "with_named", "kind": "photo", "description": "the athlete at the park with Robin Example", "setting": "park" },
+    { "key": "alone", "kind": "photo", "description": "the athlete alone at the park, smiling", "setting": "park" }
+  ],
+  "post": {
+    "what": "Day off",
+    "body": "Caption: Rest day done right.\nShots: a relaxed day outside.",
+    "platform": "instagram"
+  },
+  "expect": { "any_of": ["alone"], "must_not": ["with_named"], "ai_needed": false },
+  "mock": { "picks": [{ "key": "alone" }], "look": "warm", "mood": "warm" }
+}

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Nomila — Runs</title>
+  <style>
+    :root {
+      --bg: #0d0b08; --panel: #16140f; --line: rgba(255,255,255,0.08);
+      --text: #fff; --muted: rgba(255,255,255,0.55); --muted2: rgba(255,255,255,0.32);
+      --pink: #e84591; --green: #2dc87c; --blue: #2d8eff; --gold: #e8a215; --red: #ff5c5c;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.45; }
+    a { color: var(--blue); }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    header.top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; gap: 12px; flex-wrap: wrap; }
+    .brand { font-weight: 800; letter-spacing: 3px; font-size: 16px; }
+    .brand a { color: var(--muted); font-weight: 400; letter-spacing: 0; font-size: 13px; margin-left: 12px; }
+    .who { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--muted); }
+    button, select { font: inherit; cursor: pointer; border: 1px solid var(--line); border-radius: 999px; background: var(--panel); color: var(--text); padding: 7px 14px; }
+    button:disabled { opacity: .5; cursor: default; }
+    .btn-primary { background: var(--pink); border-color: transparent; font-weight: 700; }
+    .filters { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; align-items: center; }
+    .banner { padding: 10px 14px; border-radius: 12px; font-size: 13px; margin-bottom: 16px; display: none; }
+    .banner.err { display: block; background: rgba(232,69,145,.12); border: 1px solid rgba(232,69,145,.35); color: var(--pink); }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 10px 14px; vertical-align: top; border-bottom: 1px solid var(--line); }
+    th { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted2); }
+    tr:last-child td { border-bottom: none; }
+    tr.run { cursor: pointer; } tr.run:hover td { background: rgba(255,255,255,.03); }
+    .mono { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12px; color: var(--muted); }
+    .pill { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; }
+    .s-running { background: rgba(45,142,255,.18); color: var(--blue); }
+    .s-waiting { background: rgba(232,162,21,.18); color: var(--gold); }
+    .s-done, .s-ready { background: rgba(45,200,124,.18); color: var(--green); }
+    .s-failed { background: rgba(255,92,92,.18); color: var(--red); }
+    .s-canceled, .s-skipped { background: rgba(255,255,255,.08); color: var(--muted); }
+    .detail { margin-top: 18px; display: none; }
+    .detail.open { display: block; }
+    .detail h3 { margin: 0; padding: 14px; font-size: 14px; display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+    .detail h3 .mono { font-size: 11px; }
+    .err { color: var(--red); }
+    .actions { display: flex; gap: 8px; margin-left: auto; }
+    pre { margin: 0; white-space: pre-wrap; word-break: break-word; font-size: 11px; color: var(--muted); max-width: 40ch; }
+    .empty { padding: 24px; color: var(--muted); text-align: center; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">NOMILA <a href="./index.html">← waitlist</a></div>
+    <div class="who"><span id="who">Signing in…</span><button id="signout" class="btn-ghost" hidden>Sign out</button></div>
+  </header>
+  <div id="banner" class="banner"></div>
+
+  <div class="filters">
+    <select id="f-process"><option value="">All processes</option></select>
+    <select id="f-status">
+      <option value="">All statuses</option>
+      <option>running</option><option>waiting</option><option>failed</option><option>done</option><option>canceled</option>
+    </select>
+    <button id="refresh">Refresh</button>
+    <span class="mono" id="count"></span>
+  </div>
+
+  <div class="card">
+    <table>
+      <thead><tr><th>Started</th><th>Process</th><th>Athlete</th><th>Status</th><th>Current step</th><th>Error</th></tr></thead>
+      <tbody id="runs"><tr><td colspan="6" class="empty">Loading…</td></tr></tbody>
+    </table>
+  </div>
+
+  <div id="detail" class="card detail">
+    <h3>
+      <span id="d-title">Run</span>
+      <span class="mono" id="d-id"></span>
+      <span class="actions">
+        <button id="d-retry">Retry</button>
+        <button id="d-cancel">Cancel</button>
+      </span>
+    </h3>
+    <table>
+      <thead><tr><th>#</th><th>Step</th><th>Kind</th><th>Attempt</th><th>Status</th><th>Ready / started / finished</th><th>Mode</th><th>Trace</th><th>Input / output / error</th></tr></thead>
+      <tbody id="steps"></tbody>
+    </table>
+  </div>
+</div>
+
+<script type="module">
+  // Same auth as admin/index.html: a Firebase ID token in the Authorization header, verified by
+  // requireAdmin on /api/v1/admin/*. API_URL and Firebase config are shared with the waitlist page.
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js";
+  import { getAuth, onAuthStateChanged, signInWithPopup, GoogleAuthProvider, signOut } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-auth.js";
+  // Same config as admin/index.html (public web keys; access is decided server-side by requireAdmin).
+  const firebaseConfig = {
+    apiKey:            "AIzaSyAfVZNcQ65LcRQPh1XbUZYT4Yab5WFcvGw",
+    authDomain:        "gamechanger-pocket-agent.firebaseapp.com",
+    projectId:         "gamechanger-pocket-agent",
+    storageBucket:     "gamechanger-pocket-agent.firebasestorage.app",
+    messagingSenderId: "241621020090",
+    appId:             "1:241621020090:web:a4c064de2e19791aa88183",
+  };
+  const isLocal = ["localhost", "127.0.0.1"].includes(location.hostname);
+  // The API host follows the page host: app.nomila.co is production, every other site
+  // (nomila-dev.web.app and friends) is dev. Local dev talks to the local server.
+  const API_URL = isLocal ? "http://localhost:8080"
+    : location.hostname === "app.nomila.co" ? "https://api.nomila.co"
+    : "https://api-dev.nomila.co";
+
+  const app  = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const fmt = (t) => t ? new Date(t).toLocaleString(undefined, { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" }) : "—";
+  const pill = (s) => `<span class="pill s-${esc(s)}">${esc(s)}</span>`;
+  const short = (v) => { if (v == null) return ""; const s = JSON.stringify(v); return s.length > 160 ? s.slice(0, 157) + "…" : s; };
+
+  let user = null;
+  async function headers() { return { Authorization: "Bearer " + await user.getIdToken(), "Content-Type": "application/json" }; }
+  async function api(path, opts = {}) {
+    const r = await fetch(API_URL + path, { ...opts, headers: await headers() });
+    if (!r.ok) throw new Error((await r.json().catch(() => ({}))).error || r.statusText);
+    return r.json();
+  }
+  function fail(msg) { const b = $("banner"); b.textContent = msg; b.className = "banner err"; }
+
+  onAuthStateChanged(auth, async (u) => {
+    user = u;
+    if (!u) { $("who").innerHTML = ""; const b = document.createElement("button"); b.className = "btn-primary"; b.textContent = "Sign in with Google"; b.onclick = () => signInWithPopup(auth, new GoogleAuthProvider()); $("who").appendChild(b); return; }
+    $("who").textContent = u.email; $("signout").hidden = false;
+    try {
+      const { processes } = await api("/api/v1/admin/workflow/processes");
+      for (const p of processes) { const o = document.createElement("option"); o.value = p.process; o.textContent = `${p.process} (v${p.versions.at(-1)})`; $("f-process").appendChild(o); }
+      await loadRuns();
+    } catch (e) { fail(e.message); }
+  });
+  $("signout").onclick = () => signOut(auth);
+  $("refresh").onclick = loadRuns;
+  $("f-process").onchange = loadRuns;
+  $("f-status").onchange = loadRuns;
+
+  let currentRunId = null;
+  async function loadRuns() {
+    const q = new URLSearchParams();
+    if ($("f-process").value) q.set("process", $("f-process").value);
+    if ($("f-status").value)  q.set("status", $("f-status").value);
+    try {
+      const { runs } = await api("/api/v1/admin/workflow/runs?" + q.toString());
+      $("count").textContent = runs.length + " runs";
+      $("runs").innerHTML = runs.length ? runs.map((r) => `
+        <tr class="run" data-id="${esc(r.id)}">
+          <td>${fmt(r.started_at)}</td><td>${esc(r.process)} <span class="mono">v${r.definition_version}</span></td>
+          <td class="mono">${esc(r.athlete_id ?? "shared")}</td><td>${pill(r.status)}</td>
+          <td>${esc(r.current_step ?? "")}</td><td class="err">${esc(r.last_error ?? "")}</td>
+        </tr>`).join("") : `<tr><td colspan="6" class="empty">No runs match.</td></tr>`;
+      for (const tr of $("runs").querySelectorAll("tr.run")) tr.onclick = () => loadRun(tr.dataset.id);
+      if (currentRunId) loadRun(currentRunId);
+    } catch (e) { fail(e.message); }
+  }
+
+  async function loadRun(id) {
+    try {
+      const { run, steps } = await api("/api/v1/admin/workflow/runs/" + id);
+      currentRunId = id;
+      $("detail").classList.add("open");
+      $("d-title").innerHTML = `${esc(run.process)} · ${pill(run.status)}`;
+      $("d-id").textContent = run.id;
+      $("d-retry").disabled = run.status !== "failed";
+      $("d-cancel").disabled = run.status === "done" || run.status === "canceled";
+      $("steps").innerHTML = steps.map((s) => `
+        <tr>
+          <td class="mono">${s.ordinal}</td><td>${esc(s.step)}</td><td class="mono">${esc(s.kind)}</td><td class="mono">${s.attempt}</td>
+          <td>${pill(s.status)}</td>
+          <td class="mono">${fmt(s.ready_at)}<br>${fmt(s.started_at)}<br>${fmt(s.finished_at)}</td>
+          <td class="mono">${esc(s.mode ?? "")}</td>
+          <td class="mono">${s.trace_id ? `<a href="https://cloud.langfuse.com/trace/${esc(s.trace_id)}" target="_blank" rel="noopener">${esc(s.trace_id.slice(0, 8))}…</a>` : ""}</td>
+          <td><pre>${esc(short(s.input))}\n${esc(short(s.output))}${s.error ? `\n<span class="err">${esc(s.error)}</span>` : ""}</pre></td>
+        </tr>`).join("");
+    } catch (e) { fail(e.message); }
+  }
+  $("d-retry").onclick  = async () => { try { await api(`/api/v1/admin/workflow/runs/${currentRunId}/retry`,  { method: "POST" }); await loadRuns(); } catch (e) { fail(e.message); } };
+  $("d-cancel").onclick = async () => { if (!confirm("Cancel this run?")) return; try { await api(`/api/v1/admin/workflow/runs/${currentRunId}/cancel`, { method: "POST" }); await loadRuns(); } catch (e) { fail(e.message); } };
+</script>
+</body>
+</html>

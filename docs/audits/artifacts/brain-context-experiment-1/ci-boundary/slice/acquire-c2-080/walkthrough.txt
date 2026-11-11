@@ -1,0 +1,13 @@
+A · decision: the athlete's agent, through Mila · deal[ctl-c-lumen-termsheet] · "Should this negotiation be advanced, countered or accepted?"
+    proposition: Cristiano Ronaldo has an established commercial rate card or minimum fee requirement for digital ambassador agreements.
+    source_class: athlete · need: athlete_commercial_basis (EMITTED by the Brain in this run; nothing inferred from prose)
+    materiality: Establishing a commercial basis will allow us to determine if the USD 5,000 term sheet is acceptable, requires a counter-offer, or should be declined.
+    → raised req_a0be3b1b7b2ea481 · key 1d836bb6a0a37db9
+B · capabilities: {"connectedAccounts":[],"subject":{"hasThread":false,"hasContractDocument":false,"hasStructuredOffer":true},"athlete":{"statedFloorForType":false,"researchBudgetAvailable":true},"existingEvidence":[]}
+    plan: mila_question
+    · need athlete_commercial_basis can be established by preferences_form · mila_question · document_request
+    · authority required: athlete
+    · chosen mila_question: available, authority athlete ≥ athlete, lowest athlete burden among the available
+C · await_human step input (workflow run input carries it; one completion door: chat · voice · form):
+    {"asks":"intelligence_request","request_id":"req_a0be3b1b7b2ea481","need":"athlete_commercial_basis","question":"For an ambassador deal like Lumen's, what's the least you'd accept — and per what: per post, per month, or for the whole term?","fields":["amount","currency","per"],"why":"Establishing a commercial basis will allow us to determine if the USD 5,000 term sheet is acceptable, requires a counter-offer, or should be declined."}
+    — stopped here (--until-payload): no workflow step created, no acquisition started

@@ -1,0 +1,17 @@
+{
+  "id": "pk01-training-clip-beat",
+  "description": "A training post: the clip whose described beat shows the hard rep is picked, cut to that beat, not its warm-up.",
+  "reviewed": false,
+  "library": [
+    { "key": "clip_session", "kind": "clip", "description": "the athlete's training session at the track, warm-up then a hard rep", "duration": 24, "beats": [[0, 8, "slow warm-up jog"], [8, 15, "the athlete driving through a hard sprint rep"], [15, 24, "walking back, hands on hips"]] },
+    { "key": "photo_selfie", "kind": "photo", "description": "a casual selfie of the athlete in a cafe", "shot_type": "portrait", "setting": "cafe" },
+    { "key": "photo_stretch", "kind": "photo", "description": "the athlete stretching on the grass before training", "shot_type": "lifestyle", "setting": "training ground" }
+  ],
+  "post": {
+    "what": "Training clip",
+    "body": "Caption: The reps nobody sees. #process\nShots: one hard rep, full effort, then the walk back.",
+    "platform": "instagram"
+  },
+  "expect": { "any_of": ["clip_session"], "must_not": [], "avoid_picking": ["photo_selfie"], "clip_within": { "clip_session": [8, 15] }, "ai_needed": false },
+  "mock": { "picks": [{ "key": "clip_session", "segment": 1 }, { "key": "photo_stretch" }], "look": "natural", "mood": "driving" }
+}

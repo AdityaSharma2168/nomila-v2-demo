@@ -1,0 +1,20 @@
+{
+  "projects": {
+    "default": "gamechanger-pocket-agent"
+  },
+  "targets": {
+    "gamechanger-pocket-agent": {
+      "hosting": {
+        "dev": [
+          "nomila-dev"
+        ],
+        "landing": [
+          "nomila"
+        ],
+        "prod": [
+          "nomila-app"
+        ]
+      }
+    }
+  }
+}

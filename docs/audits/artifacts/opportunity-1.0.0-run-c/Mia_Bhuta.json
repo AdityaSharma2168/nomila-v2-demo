@@ -1,0 +1,1703 @@
+{
+ "state": {
+  "athleteId": "dc8f37f1-deff-43f8-8c02-e37a5cc20d4f",
+  "asOf": "2026-09-22T04:29:55.001Z",
+  "version": "athlete-state/1.0.0",
+  "identity": {
+   "name": "Mia Bhuta",
+   "sport": "soccer",
+   "competitionContext": "Stanford University · D1",
+   "careerStatus": "active"
+  },
+  "findings": [
+   {
+    "key": "mia.athletic_authority",
+    "direction": "strength",
+    "rationale": {
+     "value": "Mia Bhuta enjoys an elite athletic standing within the collegiate ranks, playing for Stanford, one of the premier programs in Division I women's soccer. Her performance has been highly decorated with All-America and All-Region awards, alongside leadership experience as co-captain of the US Under-17 Women's Youth National Team. She has demonstrated tactical versatility playing both as a starting midfielder and defender on championship-caliber squads.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-21T00:00:00.000Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E3"
+     ],
+     "rationale": "Her athletic record is fully documented through official Stanford University rosters, tournament results, and US Soccer federation records.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her athletic record is fully documented through official Stanford University rosters, tournament results, and US Soccer federation records.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Mia Bhuta helped guide Stanford to the ACC Championship and ACC Tournament Championship in 2025, and has received honors including United Soccer Coaches All-America fourth team (2024) and All-Region first team (2024).",
+      "sourceUrl": "https://gostanford.com/sports/womens-soccer/roster/mia-bhuta",
+      "observedAt": "2026-09-21",
+      "sourceType": "official",
+      "sourceTitle": "Mia Bhuta - Stanford Cardinal Women's Soccer Official Profile"
+     },
+     {
+      "id": "E2",
+      "claim": "Mia Bhuta is the first player of Indian descent, male or female, to play for the United States at any FIFA World Cup tournament, co-captaining the U-17 team in 2022 in India.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mia_Bhuta",
+      "observedAt": "2026-08-21",
+      "sourceType": "secondary",
+      "sourceTitle": "Mia Bhuta - Wikipedia"
+     },
+     {
+      "id": "E3",
+      "claim": "Mia Bhuta graduated from high school early, completed her Stanford undergraduate degree in Symbolic Systems in 2.5 years, began her master's in Management Science and Engineering, and is highly active in the Yuwa girls empowerment program in India.",
+      "sourceUrl": "https://trailblazehersinsports.org/mia-bhuta",
+      "observedAt": "2025-04-17",
+      "sourceType": "major_media",
+      "sourceTitle": "TrailblazeHers in Sports - Mia Bhuta"
+     }
+    ],
+    "components": [
+     {
+      "key": "athletic_authority.role_importance",
+      "value": 80,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "value": 78,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "value": 80,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "value": 82,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "value": 78,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 80,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-21T00:00:00.000Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#athletic_authority.role_importance",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#athletic_authority.competition_level",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#athletic_authority.achievement_recency",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#athletic_authority.performance_results",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#athletic_authority.rankings_recognition",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#athletic_authority.national_international_status"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#athletic_authority.role_importance",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#athletic_authority.competition_level",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#athletic_authority.achievement_recency",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#athletic_authority.performance_results",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#athletic_authority.rankings_recognition",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#athletic_authority.national_international_status",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.audience_scale",
+    "direction": "gap",
+    "rationale": {
+     "value": "Bhuta maintains a solid, niche social media audience of over 37,000 combined followers across Instagram and TikTok, which is above average for typical college athletes but smaller than major national NIL influencers. Her active cross-platform effective reach of approximately 10,300 indicates a highly focused base. However, her audience growth is currently in a minor contraction phase, reflecting a period of stable stabilization rather than explosive expansion.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-21T00:00:00.000Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E5"
+     ],
+     "rationale": "Her follower counts, reach, and growth rates are supported directly by authoritative, verified platform analytics.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her follower counts, reach, and growth rates are supported directly by authoritative, verified platform analytics.",
+    "citedEvidence": [
+     {
+      "id": "E5",
+      "claim": "Authoritative platform data for Mia Bhuta across YouTube, TikTok, and Instagram, detailing followers, growth, and specific Instagram engagement metrics.",
+      "sourceUrl": "platform_direct",
+      "observedAt": "2026-09-21",
+      "sourceType": "platform",
+      "sourceTitle": "Nomila Authoritative Social Data"
+     }
+    ],
+    "components": [
+     {
+      "key": "audience_scale.audience_growth",
+      "value": 25,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "value": 45,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "value": 38,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "value": 55,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 41,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-21T00:00:00.000Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#audience_scale.audience_growth",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#audience_scale.platform_breadth",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#audience_scale.cross_platform_effective_reach",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#audience_scale.sport_level_audience_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 4
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#audience_scale.audience_growth",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#audience_scale.platform_breadth",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.engagement_quality",
+    "direction": "neutral",
+    "rationale": {
+     "value": "Her social media presence is characterized by exceptionally healthy engagement, including an impressive 4.07% median engagement rate and 47.03% median reach efficiency on Instagram. Her audience is highly authentic, with 69% concentrated in the United States and strong organic interaction metrics. While private video retention and story analytics are missing, her public-facing interactions are highly efficient and genuine.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-21T00:00:00.000Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E5"
+     ],
+     "rationale": "High-integrity, platform-verified engagement and reach metrics are supplied for her primary social account.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "High-integrity, platform-verified engagement and reach metrics are supplied for her primary social account.",
+    "citedEvidence": [
+     {
+      "id": "E5",
+      "claim": "Authoritative platform data for Mia Bhuta across YouTube, TikTok, and Instagram, detailing followers, growth, and specific Instagram engagement metrics.",
+      "sourceUrl": "platform_direct",
+      "observedAt": "2026-09-21",
+      "sourceType": "platform",
+      "sourceTitle": "Nomila Authoritative Social Data"
+     }
+    ],
+    "components": [
+     {
+      "key": "engagement_quality.video_retention",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "value": 70,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "value": 55,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "value": 75,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "value": 68,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 67.06,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-21T00:00:00.000Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#engagement_quality.video_retention",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#engagement_quality.reach_efficiency",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#engagement_quality.story_efficiency",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#engagement_quality.shares_saves_quality",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#engagement_quality.audience_authenticity",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#engagement_quality.engagement_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 2,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#engagement_quality.video_retention",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#engagement_quality.reach_efficiency",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#engagement_quality.story_efficiency",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#engagement_quality.shares_saves_quality",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#engagement_quality.audience_authenticity",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#engagement_quality.engagement_percentile",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.cultural_relevance",
+    "direction": "neutral",
+    "rationale": {
+     "value": "Bhuta holds a distinctive cultural footprint that extends beyond soccer due to her historic role as the first Indian-American to play and score at a FIFA World Cup. This milestone, combined with her rapid academic acceleration at Stanford and tech-entrepreneurial mindset, drives recurring media coverage in both mainstream and niche sports outlets. She enjoys elevated social conversation and crossover appeal within the South Asian diaspora and STEM advocacy groups.",
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-09-21T00:00:00.000Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E2",
+      "E3"
+     ],
+     "rationale": "While major media coverage is well-documented, public search volume and diaspora-specific sentiment metrics are estimated through secondary web trends.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "While major media coverage is well-documented, public search volume and diaspora-specific sentiment metrics are estimated through secondary web trends.",
+    "citedEvidence": [
+     {
+      "id": "E2",
+      "claim": "Mia Bhuta is the first player of Indian descent, male or female, to play for the United States at any FIFA World Cup tournament, co-captaining the U-17 team in 2022 in India.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mia_Bhuta",
+      "observedAt": "2026-08-21",
+      "sourceType": "secondary",
+      "sourceTitle": "Mia Bhuta - Wikipedia"
+     },
+     {
+      "id": "E3",
+      "claim": "Mia Bhuta graduated from high school early, completed her Stanford undergraduate degree in Symbolic Systems in 2.5 years, began her master's in Management Science and Engineering, and is highly active in the Yuwa girls empowerment program in India.",
+      "sourceUrl": "https://trailblazehersinsports.org/mia-bhuta",
+      "observedAt": "2025-04-17",
+      "sourceType": "major_media",
+      "sourceTitle": "TrailblazeHers in Sports - Mia Bhuta"
+     }
+    ],
+    "components": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "value": 45,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "value": 58,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "value": 68,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "value": 65,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "value": 62,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 59.65,
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-09-21T00:00:00.000Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#cultural_relevance.search_interest",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#cultural_relevance.social_conversation",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#cultural_relevance.media_source_quality",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#cultural_relevance.crossover_recognition",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#cultural_relevance.media_volume_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#cultural_relevance.search_interest",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#cultural_relevance.social_conversation",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#cultural_relevance.media_source_quality",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#cultural_relevance.crossover_recognition",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#cultural_relevance.media_volume_percentile",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.narrative_power",
+    "direction": "strength",
+    "rationale": {
+     "value": "Her narrative is exceptionally strong and highly differentiated, combining athletic trailblazing with world-class academic acceleration (graduating high school early and Stanford in 2.5 years) and active philanthropy. Her work with the Yuwa Academy in India and her pursuit of a master's in Management Science and Engineering create a three-dimensional story of intelligence, heritage, and service. This makes her an incredibly compelling, durable, and highly authentic ambassador for brands looking to champion diverse, high-achieving leaders.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-21T00:00:00.000Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+     ],
+     "rationale": "Her academic accomplishments, philanthropic involvement, and historic athletic milestones are extensively corroborated by reputable media profiles and Stanford institutional data.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her academic accomplishments, philanthropic involvement, and historic athletic milestones are extensively corroborated by reputable media profiles and Stanford institutional data.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Mia Bhuta helped guide Stanford to the ACC Championship and ACC Tournament Championship in 2025, and has received honors including United Soccer Coaches All-America fourth team (2024) and All-Region first team (2024).",
+      "sourceUrl": "https://gostanford.com/sports/womens-soccer/roster/mia-bhuta",
+      "observedAt": "2026-09-21",
+      "sourceType": "official",
+      "sourceTitle": "Mia Bhuta - Stanford Cardinal Women's Soccer Official Profile"
+     },
+     {
+      "id": "E2",
+      "claim": "Mia Bhuta is the first player of Indian descent, male or female, to play for the United States at any FIFA World Cup tournament, co-captaining the U-17 team in 2022 in India.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mia_Bhuta",
+      "observedAt": "2026-08-21",
+      "sourceType": "secondary",
+      "sourceTitle": "Mia Bhuta - Wikipedia"
+     },
+     {
+      "id": "E3",
+      "claim": "Mia Bhuta graduated from high school early, completed her Stanford undergraduate degree in Symbolic Systems in 2.5 years, began her master's in Management Science and Engineering, and is highly active in the Yuwa girls empowerment program in India.",
+      "sourceUrl": "https://trailblazehersinsports.org/mia-bhuta",
+      "observedAt": "2025-04-17",
+      "sourceType": "major_media",
+      "sourceTitle": "TrailblazeHers in Sports - Mia Bhuta"
+     },
+     {
+      "id": "E4",
+      "claim": "Mia Bhuta signed a landmark name, image, and likeness (NIL) contract with Adidas as a first-year student at Stanford and was featured in their national back-to-school advertising campaign.",
+      "sourceUrl": "https://businessofcollegesports.com/mia-bhuta-adidas",
+      "observedAt": "2024-06-12",
+      "sourceType": "major_media",
+      "sourceTitle": "Business of College Sports - Mia Bhuta signs with Adidas"
+     }
+    ],
+    "components": [
+     {
+      "key": "narrative_power.durability",
+      "value": 88,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "value": 88,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "value": 92,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "value": 80,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 88.9,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-21T00:00:00.000Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#narrative_power.durability",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#narrative_power.story_depth",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#narrative_power.distinctiveness",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#narrative_power.media_resonance",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#narrative_power.evidence_authenticity",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#narrative_power.commercial_applicability"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#narrative_power.durability",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#narrative_power.story_depth",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#narrative_power.distinctiveness",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#narrative_power.media_resonance",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#narrative_power.evidence_authenticity",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#narrative_power.commercial_applicability",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.brand_fit",
+    "direction": "strength",
+    "rationale": {
+     "value": "Bhuta represents a flawless brand-safety profile with virtually zero reputation risks and an exemplary track record of leadership. Her diverse interests allow her to credibly fit a wide range of brand categories, including high-performance sportswear, educational tech, and international CSR campaigns. Her premium, highly educated audience further enhances her desirability for commercial partnerships.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-21T00:00:00.000Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E3",
+      "E4",
+      "E5"
+     ],
+     "rationale": "The clarity of her values, her pristine public record, and her clean brand history are highly consistent across all sources.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "The clarity of her values, her pristine public record, and her clean brand history are highly consistent across all sources.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Mia Bhuta helped guide Stanford to the ACC Championship and ACC Tournament Championship in 2025, and has received honors including United Soccer Coaches All-America fourth team (2024) and All-Region first team (2024).",
+      "sourceUrl": "https://gostanford.com/sports/womens-soccer/roster/mia-bhuta",
+      "observedAt": "2026-09-21",
+      "sourceType": "official",
+      "sourceTitle": "Mia Bhuta - Stanford Cardinal Women's Soccer Official Profile"
+     },
+     {
+      "id": "E3",
+      "claim": "Mia Bhuta graduated from high school early, completed her Stanford undergraduate degree in Symbolic Systems in 2.5 years, began her master's in Management Science and Engineering, and is highly active in the Yuwa girls empowerment program in India.",
+      "sourceUrl": "https://trailblazehersinsports.org/mia-bhuta",
+      "observedAt": "2025-04-17",
+      "sourceType": "major_media",
+      "sourceTitle": "TrailblazeHers in Sports - Mia Bhuta"
+     },
+     {
+      "id": "E4",
+      "claim": "Mia Bhuta signed a landmark name, image, and likeness (NIL) contract with Adidas as a first-year student at Stanford and was featured in their national back-to-school advertising campaign.",
+      "sourceUrl": "https://businessofcollegesports.com/mia-bhuta-adidas",
+      "observedAt": "2024-06-12",
+      "sourceType": "major_media",
+      "sourceTitle": "Business of College Sports - Mia Bhuta signs with Adidas"
+     },
+     {
+      "id": "E5",
+      "claim": "Authoritative platform data for Mia Bhuta across YouTube, TikTok, and Instagram, detailing followers, growth, and specific Instagram engagement metrics.",
+      "sourceUrl": "platform_direct",
+      "observedAt": "2026-09-21",
+      "sourceType": "platform",
+      "sourceTitle": "Nomila Authoritative Social Data"
+     }
+    ],
+    "components": [
+     {
+      "key": "brand_fit.brand_safety",
+      "value": 98,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "value": 82,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "value": 72,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "value": 75,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "value": 78,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "value": 88,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 83.6,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-21T00:00:00.000Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#brand_fit.brand_safety",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#brand_fit.category_breadth",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#brand_fit.content_versatility",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#brand_fit.geographic_relevance",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#brand_fit.audience_attractiveness",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#brand_fit.identity_values_coherence"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#brand_fit.brand_safety",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#brand_fit.category_breadth",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#brand_fit.content_versatility",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#brand_fit.geographic_relevance",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#brand_fit.audience_attractiveness",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#brand_fit.identity_values_coherence",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.commercial_proof",
+    "direction": "neutral",
+    "rationale": {
+     "value": "Her commercial marketability is backed by high-quality proof, most notably her major individual NIL deal with Adidas which led to her being featured in national back-to-school marketing campaigns. Her long-term relationship with Adidas showcases brand loyalty and renewal potential, though her overall portfolio remains highly selective and focused. Precise financial figures and campaign-specific conversion performance are private.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-21T00:00:00.000Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E4"
+     ],
+     "rationale": "Her multi-year partnership with Adidas and her national campaign presence are confirmed by major media reports and brand announcements, despite confidential terms.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her multi-year partnership with Adidas and her national campaign presence are confirmed by major media reports and brand announcements, despite confidential terms.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Mia Bhuta helped guide Stanford to the ACC Championship and ACC Tournament Championship in 2025, and has received honors including United Soccer Coaches All-America fourth team (2024) and All-Region first team (2024).",
+      "sourceUrl": "https://gostanford.com/sports/womens-soccer/roster/mia-bhuta",
+      "observedAt": "2026-09-21",
+      "sourceType": "official",
+      "sourceTitle": "Mia Bhuta - Stanford Cardinal Women's Soccer Official Profile"
+     },
+     {
+      "id": "E4",
+      "claim": "Mia Bhuta signed a landmark name, image, and likeness (NIL) contract with Adidas as a first-year student at Stanford and was featured in their national back-to-school advertising campaign.",
+      "sourceUrl": "https://businessofcollegesports.com/mia-bhuta-adidas",
+      "observedAt": "2024-06-12",
+      "sourceType": "major_media",
+      "sourceTitle": "Business of College Sports - Mia Bhuta signs with Adidas"
+     }
+    ],
+    "components": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "value": 90,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "value": 60,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "value": 80,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "value": 80,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 71.5,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-21T00:00:00.000Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#commercial_proof.brand_quality",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#commercial_proof.pricing_power",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#commercial_proof.deal_frequency",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#commercial_proof.renewals_repeat",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#commercial_proof.campaign_performance",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#commercial_proof.verified_commercial_value"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 2,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#commercial_proof.brand_quality",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#commercial_proof.pricing_power",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#commercial_proof.deal_frequency",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#commercial_proof.renewals_repeat",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#commercial_proof.campaign_performance",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#commercial_proof.verified_commercial_value",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.momentum",
+    "direction": "neutral",
+    "rationale": {
+     "value": "Bhuta’s athletic and academic momentum is highly stable, marked by her transition into Stanford's master's program while continuing to play key minutes for a top-10 national contender in 2026. However, her commercial acceleration and audience growth are currently flat, reflecting her prioritization of rigorous academic and athletic demands over rapid commercial expansion. Her public interest remains stable with anticipated postseason spikes.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-21T00:00:00.000Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+     ],
+     "rationale": "Her current 2026 Stanford participation and platform-verified social growth trends provide concrete, current evidence of her trajectory.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Her current 2026 Stanford participation and platform-verified social growth trends provide concrete, current evidence of her trajectory.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Mia Bhuta helped guide Stanford to the ACC Championship and ACC Tournament Championship in 2025, and has received honors including United Soccer Coaches All-America fourth team (2024) and All-Region first team (2024).",
+      "sourceUrl": "https://gostanford.com/sports/womens-soccer/roster/mia-bhuta",
+      "observedAt": "2026-09-21",
+      "sourceType": "official",
+      "sourceTitle": "Mia Bhuta - Stanford Cardinal Women's Soccer Official Profile"
+     },
+     {
+      "id": "E2",
+      "claim": "Mia Bhuta is the first player of Indian descent, male or female, to play for the United States at any FIFA World Cup tournament, co-captaining the U-17 team in 2022 in India.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mia_Bhuta",
+      "observedAt": "2026-08-21",
+      "sourceType": "secondary",
+      "sourceTitle": "Mia Bhuta - Wikipedia"
+     },
+     {
+      "id": "E3",
+      "claim": "Mia Bhuta graduated from high school early, completed her Stanford undergraduate degree in Symbolic Systems in 2.5 years, began her master's in Management Science and Engineering, and is highly active in the Yuwa girls empowerment program in India.",
+      "sourceUrl": "https://trailblazehersinsports.org/mia-bhuta",
+      "observedAt": "2025-04-17",
+      "sourceType": "major_media",
+      "sourceTitle": "TrailblazeHers in Sports - Mia Bhuta"
+     },
+     {
+      "id": "E4",
+      "claim": "Mia Bhuta signed a landmark name, image, and likeness (NIL) contract with Adidas as a first-year student at Stanford and was featured in their national back-to-school advertising campaign.",
+      "sourceUrl": "https://businessofcollegesports.com/mia-bhuta-adidas",
+      "observedAt": "2024-06-12",
+      "sourceType": "major_media",
+      "sourceTitle": "Business of College Sports - Mia Bhuta signs with Adidas"
+     },
+     {
+      "id": "E5",
+      "claim": "Authoritative platform data for Mia Bhuta across YouTube, TikTok, and Instagram, detailing followers, growth, and specific Instagram engagement metrics.",
+      "sourceUrl": "platform_direct",
+      "observedAt": "2026-09-21",
+      "sourceType": "platform",
+      "sourceTitle": "Nomila Authoritative Social Data"
+     }
+    ],
+    "components": [
+     {
+      "key": "momentum.audience_growth",
+      "value": 25,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "value": 68,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "value": 82,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "value": 50,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "value": 55,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 57.7,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-09-21T00:00:00.000Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#momentum.audience_growth",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#momentum.media_trajectory",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#momentum.athletic_trajectory",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#momentum.commercial_acceleration",
+      "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#momentum.search_social_trajectory"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#momentum.audience_growth",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#momentum.media_trajectory",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#momentum.athletic_trajectory",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#momentum.commercial_acceleration",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     },
+     {
+      "source": "mia",
+      "locator": "b4099ac8-9d25-4f51-89a0-32ec5dda60e9#momentum.search_social_trajectory",
+      "asOf": "2026-09-21T00:00:00.000Z"
+     }
+    ]
+   }
+  ],
+  "audienceTrajectory": {
+   "value": "cooling",
+   "owner": "athlete_intelligence",
+   "confidence": "MEDIUM",
+   "asOf": "2026-09-21T04:30:14.644Z",
+   "evidenceClass": "MEASURED",
+   "evidenceIds": [
+    "social.followers_growth_pct[0]",
+    "social.followers_growth_pct[1]",
+    "social.followers_growth_pct[2]",
+    "social.followers_growth_pct[3]",
+    "social.followers_growth_pct[4]",
+    "social.followers_growth_pct[5]",
+    "social.followers_growth_pct[6]",
+    "social.followers_growth_pct[7]",
+    "social.followers_growth_pct[8]",
+    "social.followers_growth_pct[9]",
+    "social.followers_growth_pct[10]",
+    "social.followers_growth_pct[11]",
+    "social.followers_growth_pct[12]",
+    "social.followers_growth_pct[13]",
+    "social.followers_growth_pct[14]",
+    "social.followers_growth_pct[15]",
+    "social.followers_growth_pct[16]",
+    "social.followers_growth_pct[17]",
+    "social.followers_growth_pct[18]",
+    "social.followers_growth_pct[19]",
+    "social.followers_growth_pct[20]",
+    "social.followers_growth_pct[21]",
+    "social.followers_growth_pct[22]",
+    "social.followers_growth_pct[23]",
+    "social.followers_growth_pct[24]",
+    "social.followers_growth_pct[25]",
+    "social.followers_growth_pct[26]",
+    "social.followers_growth_pct[27]",
+    "social.followers_growth_pct[28]",
+    "social.followers_growth_pct[29]",
+    "social.followers_growth_pct[30]",
+    "social.followers_growth_pct[31]",
+    "social.followers_growth_pct[32]",
+    "social.followers_growth_pct[33]",
+    "social.followers_growth_pct[34]",
+    "social.followers_growth_pct[35]",
+    "social.followers_growth_pct[36]",
+    "social.followers_growth_pct[37]",
+    "social.followers_growth_pct[38]",
+    "social.followers_growth_pct[39]",
+    "social.followers_growth_pct[40]",
+    "social.followers_growth_pct[41]",
+    "social.followers_growth_pct[42]",
+    "social.followers_growth_pct[43]",
+    "social.followers_growth_pct[44]",
+    "social.followers_growth_pct[45]",
+    "social.followers_growth_pct[46]",
+    "social.followers_growth_pct[47]",
+    "social.followers_growth_pct[48]",
+    "social.followers_growth_pct[49]",
+    "social.followers_growth_pct[50]",
+    "social.followers_growth_pct[51]",
+    "social.followers_growth_pct[52]",
+    "social.followers_growth_pct[53]",
+    "social.followers_growth_pct[54]",
+    "social.followers_growth_pct[55]",
+    "social.followers_growth_pct[56]",
+    "social.followers_growth_pct[57]",
+    "social.followers_growth_pct[58]",
+    "social.followers_growth_pct[59]",
+    "social.followers_growth_pct[60]",
+    "social.followers_growth_pct[61]",
+    "social.followers_growth_pct[62]",
+    "social.followers_growth_pct[63]",
+    "social.followers_growth_pct[64]",
+    "social.followers_growth_pct[65]",
+    "social.followers_growth_pct[66]",
+    "social.followers_growth_pct[67]",
+    "social.followers_growth_pct[68]",
+    "social.followers_growth_pct[69]",
+    "social.followers_growth_pct[70]",
+    "social.followers_growth_pct[71]",
+    "social.followers_growth_pct[72]",
+    "social.followers_growth_pct[73]",
+    "social.followers_growth_pct[74]",
+    "social.followers_growth_pct[75]",
+    "social.followers_growth_pct[76]",
+    "social.followers_growth_pct[77]",
+    "social.followers_growth_pct[78]",
+    "social.followers_growth_pct[79]",
+    "social.followers_growth_pct[80]",
+    "social.followers_growth_pct[81]",
+    "social.followers_growth_pct[82]",
+    "social.followers_growth_pct[83]"
+   ],
+   "sourceMethod": "mean_followers_growth_pct"
+  },
+  "commercialPosition": {
+   "closedDeals": {
+    "value": 1,
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-22T04:29:55.001Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [
+     "9acd1d50-0a84-4974-b3fc-bb965c8b5541"
+    ],
+    "sourceMethod": "count_deals_at_earned_status"
+   },
+   "activeRelationships": {
+    "value": [
+     "gorjana"
+    ],
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-22T04:29:55.001Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [
+     "9acd1d50-0a84-4974-b3fc-bb965c8b5541"
+    ],
+    "sourceMethod": "distinct_brand_at_earned_status"
+   },
+   "demonstratedEconomics": {
+    "value": {
+     "low": 14000,
+     "high": 14000,
+     "currency": "USD"
+    },
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-22T04:29:55.001Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [
+     "9acd1d50-0a84-4974-b3fc-bb965c8b5541"
+    ],
+    "sourceMethod": "min_max_closed_deal_amount"
+   },
+   "cashShare": {
+    "value": 0.5357142857142857,
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-22T04:29:55.001Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [
+     "9acd1d50-0a84-4974-b3fc-bb965c8b5541"
+    ],
+    "sourceMethod": "cash_over_total_closed"
+   },
+   "pricingEvidence": "athlete_transactions"
+  },
+  "constraints": [],
+  "preferences": [],
+  "materialGaps": [
+   "Confidential financial terms and exact valuation of her NIL contract with Adidas.",
+   "Private campaign conversion, ROI, and audience retention metrics for her Adidas promotions.",
+   "Audience demographics outside of top country share, and performance metrics for Instagram Stories and video completion rates."
+  ],
+  "overallConfidence": "MEDIUM",
+  "sources": [
+   {
+    "owner": "marketability",
+    "present": true,
+    "asOf": "2026-09-21T00:00:00.000Z"
+   },
+   {
+    "owner": "athlete_intelligence",
+    "present": true,
+    "asOf": "2026-09-21T04:30:14.644Z"
+   },
+   {
+    "owner": "athlete_state",
+    "present": true,
+    "asOf": "2026-09-22T04:29:55.001Z"
+   }
+  ]
+ },
+ "record": {
+  "evaluatorSpec": "opportunity-eval-spec/1.0.0",
+  "canonicalSha256": "6bcf91ab36b5fb7d970f8e2eac304fc82b9d7427b2ce00d35a54e21de3ae3c2d",
+  "manifest": {
+   "evaluatorSpec": "opportunity-eval-spec/1.0.0",
+   "promptDigest": "6bcf91ab36b5fb7d970f8e2eac304fc82b9d7427b2ce00d35a54e21de3ae3c2d"
+  },
+  "promptSha256": "6725466b1b70473e727ee8c6cec1e5f413ff578f2590e8eba5072b033cdf0da4",
+  "athlete": {
+   "id": "dc8f37f1-deff-43f8-8c02-e37a5cc20d4f",
+   "name": "Mia Bhuta"
+  },
+  "stateAsOf": "2026-09-22T04:29:55.001Z",
+  "stateBlock": "Nomila's account of this athlete as of 2026-09-22T04:29:55.001Z (athlete-state/1.0.0).\nOverall confidence in this picture: MEDIUM.\n\nCite any line below by the path shown at its left.\n\nIDENTITY\n    identity.name                             Mia Bhuta\n    identity.sport                            soccer\n    identity.competitionContext               Stanford University · D1\n    identity.careerStatus                     active\n\nFINDINGS — marketability dimensions, each judged by M.I.A. and read here unchanged.\n  STRENGTH  measured, above the band\n  GAP       measured, below the band\n  NEUTRAL   MEASURED and unremarkable. We know; it is simply ordinary. This is NOT missing evidence.\n  UNKNOWN   evidence is genuinely insufficient — no score, or mostly imputed signals. A statement about\n            what Nomila has measured, never about the athlete.\n\n  Each finding may carry WHY M.I.A. concluded it and WHICH SOURCES it relied on. Read those as the\n  evaluator's interpretation and the evidence behind it — NOT as established fact about the athlete.\n\n    findings[mia.athletic_authority]          STRENGTH  score 80      HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Mia Bhuta enjoys an elite athletic standing within the collegiate ranks, playing for Stanford,\n          one of the premier programs in Division I women's soccer. Her performance has been highly\n          decorated with All-America and All-Region awards, alongside leadership experience as co-captain\n          of the US Under-17 Women's Youth National Team. She has demonstrated tactical versatility\n          playing both as a starting midfielder and defender on championship-caliber squads.\n          confidence HIGH — Her athletic record is fully documented through official Stanford University rosters, tournament results, and US Soccer federation records.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  official · 2026-09-21  Mia Bhuta helped guide Stanford to the ACC Championship and ACC Tournament Championship in 2025, and has received honors including United Soccer Coaches All-America fourth team (2024) and All-Region first team (2024).\n              https://gostanford.com/sports/womens-soccer/roster/mia-bhuta\n          E2  secondary · 2026-08-21  Mia Bhuta is the first player of Indian descent, male or female, to play for the United States at any FIFA World Cup tournament, co-captaining the U-17 team in 2022 in India.\n              https://en.wikipedia.org/wiki/Mia_Bhuta\n          E3  major_media · 2025-04-17  Mia Bhuta graduated from high school early, completed her Stanford undergraduate degree in Symbolic Systems in 2.5 years, began her master's in Management Science and Engineering, and is highly active in the Yuwa girls empowerment program in India.\n              https://trailblazehersinsports.org/mia-bhuta\n        COMPONENTS  role_importance=80 [EVALUATED]  competition_level=78 [EVALUATED]  achievement_recency=85 [EVALUATED]  performance_results=80 [EVALUATED]  rankings_recognition=82 [EVALUATED]  national_international_status=78 [EVALUATED]\n\n    findings[mia.audience_scale]              GAP       score 41      HIGH    0/4 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Bhuta maintains a solid, niche social media audience of over 37,000 combined followers across\n          Instagram and TikTok, which is above average for typical college athletes but smaller than major\n          national NIL influencers. Her active cross-platform effective reach of approximately 10,300\n          indicates a highly focused base. However, her audience growth is currently in a minor\n          contraction phase, reflecting a period of stable stabilization rather than explosive expansion.\n          confidence HIGH — Her follower counts, reach, and growth rates are supported directly by authoritative, verified platform analytics.\n        SOURCE EVIDENCE M.I.A. CITED\n          E5  platform · 2026-09-21  Authoritative platform data for Mia Bhuta across YouTube, TikTok, and Instagram, detailing followers, growth, and specific Instagram engagement metrics.\n              platform_direct\n        COMPONENTS  audience_growth=25 [EVALUATED]  platform_breadth=45 [EVALUATED]  cross_platform_effective_reach=38 [EVALUATED]  sport_level_audience_percentile=55 [EVALUATED]\n\n    findings[mia.engagement_quality]          NEUTRAL   score 67.06   HIGH    2/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Her social media presence is characterized by exceptionally healthy engagement, including an\n          impressive 4.07% median engagement rate and 47.03% median reach efficiency on Instagram. Her\n          audience is highly authentic, with 69% concentrated in the United States and strong organic\n          interaction metrics. While private video retention and story analytics are missing, her\n          public-facing interactions are highly efficient and genuine.\n          confidence HIGH — High-integrity, platform-verified engagement and reach metrics are supplied for her primary social account.\n        SOURCE EVIDENCE M.I.A. CITED\n          E5  platform · 2026-09-21  Authoritative platform data for Mia Bhuta across YouTube, TikTok, and Instagram, detailing followers, growth, and specific Instagram engagement metrics.\n              platform_direct\n        COMPONENTS  video_retention=50 [ASSUMED]  reach_efficiency=70 [EVALUATED]  story_efficiency=50 [ASSUMED]  shares_saves_quality=55 [EVALUATED]  audience_authenticity=75 [EVALUATED]  engagement_percentile=68 [EVALUATED]\n\n    findings[mia.cultural_relevance]          NEUTRAL   score 59.65   MEDIUM  0/5 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Bhuta holds a distinctive cultural footprint that extends beyond soccer due to her historic role\n          as the first Indian-American to play and score at a FIFA World Cup. This milestone, combined\n          with her rapid academic acceleration at Stanford and tech-entrepreneurial mindset, drives\n          recurring media coverage in both mainstream and niche sports outlets. She enjoys elevated social\n          conversation and crossover appeal within the South Asian diaspora and STEM advocacy groups.\n          confidence MEDIUM — While major media coverage is well-documented, public search volume and diaspora-specific sentiment metrics are estimated through secondary web trends.\n        SOURCE EVIDENCE M.I.A. CITED\n          E2  secondary · 2026-08-21  Mia Bhuta is the first player of Indian descent, male or female, to play for the United States at any FIFA World Cup tournament, co-captaining the U-17 team in 2022 in India.\n              https://en.wikipedia.org/wiki/Mia_Bhuta\n          E3  major_media · 2025-04-17  Mia Bhuta graduated from high school early, completed her Stanford undergraduate degree in Symbolic Systems in 2.5 years, began her master's in Management Science and Engineering, and is highly active in the Yuwa girls empowerment program in India.\n              https://trailblazehersinsports.org/mia-bhuta\n        COMPONENTS  search_interest=45 [EVALUATED]  social_conversation=58 [EVALUATED]  media_source_quality=68 [EVALUATED]  crossover_recognition=65 [EVALUATED]  media_volume_percentile=62 [EVALUATED]\n\n    findings[mia.narrative_power]             STRENGTH  score 88.9    HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Her narrative is exceptionally strong and highly differentiated, combining athletic trailblazing\n          with world-class academic acceleration (graduating high school early and Stanford in 2.5 years)\n          and active philanthropy. Her work with the Yuwa Academy in India and her pursuit of a master's\n          in Management Science and Engineering create a three-dimensional story of intelligence,\n          heritage, and service. This makes her an incredibly compelling, durable, and highly authentic\n          ambassador for brands looking to champion diverse, high-achieving leaders.\n          confidence HIGH — Her academic accomplishments, philanthropic involvement, and historic athletic milestones are extensively corroborated by reputable media profiles and Stanford institutional data.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  official · 2026-09-21  Mia Bhuta helped guide Stanford to the ACC Championship and ACC Tournament Championship in 2025, and has received honors including United Soccer Coaches All-America fourth team (2024) and All-Region first team (2024).\n              https://gostanford.com/sports/womens-soccer/roster/mia-bhuta\n          E2  secondary · 2026-08-21  Mia Bhuta is the first player of Indian descent, male or female, to play for the United States at any FIFA World Cup tournament, co-captaining the U-17 team in 2022 in India.\n              https://en.wikipedia.org/wiki/Mia_Bhuta\n          E3  major_media · 2025-04-17  Mia Bhuta graduated from high school early, completed her Stanford undergraduate degree in Symbolic Systems in 2.5 years, began her master's in Management Science and Engineering, and is highly active in the Yuwa girls empowerment program in India.\n              https://trailblazehersinsports.org/mia-bhuta\n          E4  major_media · 2024-06-12  Mia Bhuta signed a landmark name, image, and likeness (NIL) contract with Adidas as a first-year student at Stanford and was featured in their national back-to-school advertising campaign.\n              https://businessofcollegesports.com/mia-bhuta-adidas\n        COMPONENTS  durability=88 [EVALUATED]  story_depth=88 [EVALUATED]  distinctiveness=92 [EVALUATED]  media_resonance=80 [EVALUATED]  evidence_authenticity=95 [EVALUATED]  commercial_applicability=85 [EVALUATED]\n\n    findings[mia.brand_fit]                   STRENGTH  score 83.6    HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Bhuta represents a flawless brand-safety profile with virtually zero reputation risks and an\n          exemplary track record of leadership. Her diverse interests allow her to credibly fit a wide\n          range of brand categories, including high-performance sportswear, educational tech, and\n          international CSR campaigns. Her premium, highly educated audience further enhances her\n          desirability for commercial partnerships.\n          confidence HIGH — The clarity of her values, her pristine public record, and her clean brand history are highly consistent across all sources.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  official · 2026-09-21  Mia Bhuta helped guide Stanford to the ACC Championship and ACC Tournament Championship in 2025, and has received honors including United Soccer Coaches All-America fourth team (2024) and All-Region first team (2024).\n              https://gostanford.com/sports/womens-soccer/roster/mia-bhuta\n          E3  major_media · 2025-04-17  Mia Bhuta graduated from high school early, completed her Stanford undergraduate degree in Symbolic Systems in 2.5 years, began her master's in Management Science and Engineering, and is highly active in the Yuwa girls empowerment program in India.\n              https://trailblazehersinsports.org/mia-bhuta\n          E4  major_media · 2024-06-12  Mia Bhuta signed a landmark name, image, and likeness (NIL) contract with Adidas as a first-year student at Stanford and was featured in their national back-to-school advertising campaign.\n              https://businessofcollegesports.com/mia-bhuta-adidas\n          E5  platform · 2026-09-21  Authoritative platform data for Mia Bhuta across YouTube, TikTok, and Instagram, detailing followers, growth, and specific Instagram engagement metrics.\n              platform_direct\n        COMPONENTS  brand_safety=98 [EVALUATED]  category_breadth=82 [EVALUATED]  content_versatility=72 [EVALUATED]  geographic_relevance=75 [EVALUATED]  audience_attractiveness=78 [EVALUATED]  identity_values_coherence=88 [EVALUATED]\n\n    findings[mia.commercial_proof]            NEUTRAL   score 71.5    HIGH    2/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Her commercial marketability is backed by high-quality proof, most notably her major individual\n          NIL deal with Adidas which led to her being featured in national back-to-school marketing\n          campaigns. Her long-term relationship with Adidas showcases brand loyalty and renewal potential,\n          though her overall portfolio remains highly selective and focused. Precise financial figures and\n          campaign-specific conversion performance are private.\n          confidence HIGH — Her multi-year partnership with Adidas and her national campaign presence are confirmed by major media reports and brand announcements, despite confidential terms.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  official · 2026-09-21  Mia Bhuta helped guide Stanford to the ACC Championship and ACC Tournament Championship in 2025, and has received honors including United Soccer Coaches All-America fourth team (2024) and All-Region first team (2024).\n              https://gostanford.com/sports/womens-soccer/roster/mia-bhuta\n          E4  major_media · 2024-06-12  Mia Bhuta signed a landmark name, image, and likeness (NIL) contract with Adidas as a first-year student at Stanford and was featured in their national back-to-school advertising campaign.\n              https://businessofcollegesports.com/mia-bhuta-adidas\n        COMPONENTS  brand_quality=90 [EVALUATED]  pricing_power=50 [ASSUMED]  deal_frequency=60 [EVALUATED]  renewals_repeat=80 [EVALUATED]  campaign_performance=50 [ASSUMED]  verified_commercial_value=80 [EVALUATED]\n\n    findings[mia.momentum]                    NEUTRAL   score 57.7    HIGH    0/5 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Bhuta’s athletic and academic momentum is highly stable, marked by her transition into\n          Stanford's master's program while continuing to play key minutes for a top-10 national contender\n          in 2026. However, her commercial acceleration and audience growth are currently flat, reflecting\n          her prioritization of rigorous academic and athletic demands over rapid commercial expansion.\n          Her public interest remains stable with anticipated postseason spikes.\n          confidence HIGH — Her current 2026 Stanford participation and platform-verified social growth trends provide concrete, current evidence of her trajectory.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  official · 2026-09-21  Mia Bhuta helped guide Stanford to the ACC Championship and ACC Tournament Championship in 2025, and has received honors including United Soccer Coaches All-America fourth team (2024) and All-Region first team (2024).\n              https://gostanford.com/sports/womens-soccer/roster/mia-bhuta\n          E2  secondary · 2026-08-21  Mia Bhuta is the first player of Indian descent, male or female, to play for the United States at any FIFA World Cup tournament, co-captaining the U-17 team in 2022 in India.\n              https://en.wikipedia.org/wiki/Mia_Bhuta\n          E3  major_media · 2025-04-17  Mia Bhuta graduated from high school early, completed her Stanford undergraduate degree in Symbolic Systems in 2.5 years, began her master's in Management Science and Engineering, and is highly active in the Yuwa girls empowerment program in India.\n              https://trailblazehersinsports.org/mia-bhuta\n          E4  major_media · 2024-06-12  Mia Bhuta signed a landmark name, image, and likeness (NIL) contract with Adidas as a first-year student at Stanford and was featured in their national back-to-school advertising campaign.\n              https://businessofcollegesports.com/mia-bhuta-adidas\n          E5  platform · 2026-09-21  Authoritative platform data for Mia Bhuta across YouTube, TikTok, and Instagram, detailing followers, growth, and specific Instagram engagement metrics.\n              platform_direct\n        COMPONENTS  audience_growth=25 [EVALUATED]  media_trajectory=68 [EVALUATED]  athletic_trajectory=82 [EVALUATED]  commercial_acceleration=50 [EVALUATED]  search_social_trajectory=55 [EVALUATED]\n\nAUDIENCE TRAJECTORY — follower growth only. It says nothing about athletic or commercial direction.\n    audienceTrajectory                        \"cooling\"  [measured · MEDIUM confidence]\n\nCOMMERCIAL POSITION — what the market has actually paid. Counted, never estimated.\n    commercialPosition.closedDeals            1  [measured · HIGH confidence]\n    commercialPosition.activeRelationships    [\"gorjana\"]  [measured · HIGH confidence]\n    commercialPosition.demonstratedEconomics  {\"low\":14000,\"high\":14000,\"currency\":\"USD\"}  [measured · HIGH confidence]\n    commercialPosition.cashShare              0.5357142857142857  [measured · HIGH confidence]\n    commercialPosition.pricingEvidence        athlete_transactions\n\nCONSTRAINTS — only what has been explicitly recorded as a bound on what the athlete can do.\n  An empty list means Nomila has recorded none. It does NOT mean none exist.\n    (none recorded)\n\nWHAT THE ATHLETE HAS SAID — their own words. A refusal bears on an opportunity; an ambition can generate one.\n  Never infer a preference or an ambition that is not listed here.\n    (the athlete has stated nothing)\n\nWHAT NOMILA CANNOT SEE — evidence we looked for and could not find. A research task, not a caveat.\n    materialGaps[0]                           Confidential financial terms and exact valuation of her NIL contract with Adidas.\n    materialGaps[1]                           Private campaign conversion, ROI, and audience retention metrics for her Adidas promotions.\n    materialGaps[2]                           Audience demographics outside of top country share, and performance metrics for Instagram Stories and video completion rates.\n\nSOURCES CONSULTED\n    marketability            present · as of 2026-09-21T00:00:00.000Z\n    athlete_intelligence     present · as of 2026-09-21T04:30:14.644Z\n    athlete_state            present · as of 2026-09-22T04:29:55.001Z",
+  "startedAt": "2026-09-22T04:29:55.432Z",
+  "latencyMs": 45205,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+   "promptTokens": 6662,
+   "outputTokens": 1743,
+   "thoughtTokens": 6662
+  },
+  "costUsd": 0.023011099999999996,
+  "rawText": "{\n  \"opportunities\": [\n    {\n      \"key\": \"grow-audience-scale\",\n      \"kind\": \"GROW\",\n      \"domain\": \"audience\",\n      \"statement\": \"Rebuild and expand her niche social media follower base following a period of minor audience contraction.\",\n      \"rationale\": \"Her audience scale is currently graded as a GAP and is in a minor contraction phase. However, her exceptionally high engagement rate and reach efficiency prove she has a highly receptive, authentic foundation upon which to build a larger audience.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"findings[mia.audience_scale]\",\n          \"how\": \"Identifies her audience scale as a GAP and notes her growth is in a minor contraction phase.\"\n        },\n        {\n          \"state_path\": \"findings[mia.engagement_quality]\",\n          \"how\": \"Highlights her high median engagement rate (4.07%) and reach efficiency (47.03%) on Instagram as strong indicators of an authentic audience core.\"\n        },\n        {\n          \"state_path\": \"audienceTrajectory\",\n          \"how\": \"Confirms her current follower growth trajectory is 'cooling'.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"medium\",\n        \"claim\": \"Reversing the audience contraction would expand her overall reach and increase her value to premium commercial partners.\"\n      },\n      \"feasibility\": {\n        \"level\": \"medium\",\n        \"claim\": \"Requires dedicating consistent effort to content creation, which must be balanced against her rigorous Stanford athletic and master's degree commitments.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"amplify-leadership-positioning\",\n      \"kind\": \"AMPLIFY\",\n      \"domain\": \"positioning\",\n      \"statement\": \"Extend her public positioning as an elite academic and athletic trailblazer to secure high-value, tech- and education-focused alignments.\",\n      \"rationale\": \"Her narrative is an exceptional STRENGTH, combining unprecedented academic acceleration (graduating Stanford in 2.5 years) with historic athletic milestones. This distinctive narrative works well but can be projected further into mainstream corporate, STEM, and leadership channels.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"findings[mia.narrative_power]\",\n          \"how\": \"Establishes her exceptional narrative depth (score 88.9) rooted in early graduation, Symbolic Systems/Management Science academic paths, and athletic milestones.\"\n        },\n        {\n          \"state_path\": \"findings[mia.cultural_relevance]\",\n          \"how\": \"Highlights her crossover recognition and relevance within the South Asian diaspora and STEM advocacy groups.\"\n        },\n        {\n          \"state_path\": \"findings[mia.brand_fit]\",\n          \"how\": \"Notes her flawless brand-safety profile and natural alignment with educational tech, high-performance sportswear, and leadership categories.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"high\",\n        \"claim\": \"Establishes a highly premium, differentiated personal brand that elevates her commercial marketability far beyond standard collegiate athlete levels.\"\n      },\n      \"feasibility\": {\n        \"level\": \"high\",\n        \"claim\": \"Requires curating and packaging her existing life achievements for corporate, tech, and cultural platforms, requiring minimal extra time from her.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"amplify-yuwa-philanthropy\",\n      \"kind\": \"AMPLIFY\",\n      \"domain\": \"impact\",\n      \"statement\": \"Deconstruct and scale her involvement with the Yuwa girls empowerment program into co-branded social impact initiatives with key sponsors.\",\n      \"rationale\": \"Her active role with Yuwa is a verified strength in her narrative power and cultural footprint. Integrating this authentic philanthropic work into her corporate relationships (like Adidas) provides a mutual avenue to amplify her impact and deepen brand loyalty.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"findings[mia.narrative_power]\",\n          \"how\": \"Corroborates her active and high-profile involvement in the Yuwa girls empowerment program in India as a pillar of her narrative depth.\"\n        },\n        {\n          \"state_path\": \"findings[mia.cultural_relevance]\",\n          \"how\": \"Notes her unique heritage milestones and crossover appeal within the South Asian diaspora, matching the geographic focus of Yuwa.\"\n        },\n        {\n          \"state_path\": \"findings[mia.brand_fit]\",\n          \"how\": \"Indicates her high suitability for international corporate social responsibility (CSR) campaigns.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"medium\",\n        \"claim\": \"Maximizes the scale and reach of her charitable work while adding genuine purpose-led value to her existing and future brand partnerships.\"\n      },\n      \"feasibility\": {\n        \"level\": \"medium\",\n        \"claim\": \"Requires negotiating CSR-specific content or campaigns with current partners, which requires administrative and representative support.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"unlock-private-performance-evidence\",\n      \"kind\": \"UNLOCK\",\n      \"domain\": \"evidence\",\n      \"statement\": \"Integrate her private social media metrics and Adidas contract details to establish a precise commercial valuation model.\",\n      \"rationale\": \"Critical commercial data remains unseen by Nomila, forcing reliance on imputed scores for pricing and campaign performance. Because this data already exists privately, securely connecting her accounts and sharing her Adidas contract terms will instantly resolve key information gaps.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"materialGaps[0]\",\n          \"how\": \"Identifies the missing financial terms and exact valuation of her NIL contract with Adidas.\"\n        },\n        {\n          \"state_path\": \"materialGaps[1]\",\n          \"how\": \"Identifies the lack of visibility into campaign conversions, ROI, and retention metrics for her promotions.\"\n        },\n        {\n          \"state_path\": \"materialGaps[2]\",\n          \"how\": \"Identifies missing metrics for Instagram Stories, video completion rates, and extended audience demographics.\"\n        },\n        {\n          \"state_path\": \"findings[mia.engagement_quality]\",\n          \"how\": \"Confirms that private video retention and story analytics are currently missing and imputed.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"high\",\n        \"claim\": \"Replaces estimated values with high-integrity, platform-verified pricing metrics, enabling her representation to pitch future partnerships with maximum leverage.\"\n      },\n      \"feasibility\": {\n        \"level\": \"high\",\n        \"claim\": \"Only requires the athlete to grant secure API access to her Instagram analytics and share existing contract documentation.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    }\n  ],\n  \"notes\": [\n    \"No opportunities were identified in the commercial domain because her commercial acceleration is flat by design; she is intentionally prioritizing her demanding Stanford academic and athletic schedule over rapid sponsor acquisition.\",\n    \"No opportunities were identified in the career domain because, while her educational trajectory is stellar, there is no evidence suggesting she is actively seeking immediate coaching, broadcasting, or post-playing business placements at this stage.\",\n    \"No opportunities were identified in the owned_venture domain because there is no evidence of existing athlete-owned business assets or a stated intent to launch a proprietary venture.\",\n    \"No opportunities were identified in the athletic domain because she is already operating at an elite championship level with Stanford and the youth national teams; there are no active performance deficiencies or selection risks to mitigate.\"\n  ]\n}",
+  "parsed": {
+   "opportunities": [
+    {
+     "key": "grow-audience-scale",
+     "kind": "GROW",
+     "domain": "audience",
+     "statement": "Rebuild and expand her niche social media follower base following a period of minor audience contraction.",
+     "rationale": "Her audience scale is currently graded as a GAP and is in a minor contraction phase. However, her exceptionally high engagement rate and reach efficiency prove she has a highly receptive, authentic foundation upon which to build a larger audience.",
+     "rests_on": [
+      {
+       "state_path": "findings[mia.audience_scale]",
+       "how": "Identifies her audience scale as a GAP and notes her growth is in a minor contraction phase."
+      },
+      {
+       "state_path": "findings[mia.engagement_quality]",
+       "how": "Highlights her high median engagement rate (4.07%) and reach efficiency (47.03%) on Instagram as strong indicators of an authentic audience core."
+      },
+      {
+       "state_path": "audienceTrajectory",
+       "how": "Confirms her current follower growth trajectory is 'cooling'."
+      }
+     ],
+     "impact": {
+      "level": "medium",
+      "claim": "Reversing the audience contraction would expand her overall reach and increase her value to premium commercial partners."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires dedicating consistent effort to content creation, which must be balanced against her rigorous Stanford athletic and master's degree commitments."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "amplify-leadership-positioning",
+     "kind": "AMPLIFY",
+     "domain": "positioning",
+     "statement": "Extend her public positioning as an elite academic and athletic trailblazer to secure high-value, tech- and education-focused alignments.",
+     "rationale": "Her narrative is an exceptional STRENGTH, combining unprecedented academic acceleration (graduating Stanford in 2.5 years) with historic athletic milestones. This distinctive narrative works well but can be projected further into mainstream corporate, STEM, and leadership channels.",
+     "rests_on": [
+      {
+       "state_path": "findings[mia.narrative_power]",
+       "how": "Establishes her exceptional narrative depth (score 88.9) rooted in early graduation, Symbolic Systems/Management Science academic paths, and athletic milestones."
+      },
+      {
+       "state_path": "findings[mia.cultural_relevance]",
+       "how": "Highlights her crossover recognition and relevance within the South Asian diaspora and STEM advocacy groups."
+      },
+      {
+       "state_path": "findings[mia.brand_fit]",
+       "how": "Notes her flawless brand-safety profile and natural alignment with educational tech, high-performance sportswear, and leadership categories."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Establishes a highly premium, differentiated personal brand that elevates her commercial marketability far beyond standard collegiate athlete levels."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Requires curating and packaging her existing life achievements for corporate, tech, and cultural platforms, requiring minimal extra time from her."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "amplify-yuwa-philanthropy",
+     "kind": "AMPLIFY",
+     "domain": "impact",
+     "statement": "Deconstruct and scale her involvement with the Yuwa girls empowerment program into co-branded social impact initiatives with key sponsors.",
+     "rationale": "Her active role with Yuwa is a verified strength in her narrative power and cultural footprint. Integrating this authentic philanthropic work into her corporate relationships (like Adidas) provides a mutual avenue to amplify her impact and deepen brand loyalty.",
+     "rests_on": [
+      {
+       "state_path": "findings[mia.narrative_power]",
+       "how": "Corroborates her active and high-profile involvement in the Yuwa girls empowerment program in India as a pillar of her narrative depth."
+      },
+      {
+       "state_path": "findings[mia.cultural_relevance]",
+       "how": "Notes her unique heritage milestones and crossover appeal within the South Asian diaspora, matching the geographic focus of Yuwa."
+      },
+      {
+       "state_path": "findings[mia.brand_fit]",
+       "how": "Indicates her high suitability for international corporate social responsibility (CSR) campaigns."
+      }
+     ],
+     "impact": {
+      "level": "medium",
+      "claim": "Maximizes the scale and reach of her charitable work while adding genuine purpose-led value to her existing and future brand partnerships."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires negotiating CSR-specific content or campaigns with current partners, which requires administrative and representative support."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "unlock-private-performance-evidence",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": "Integrate her private social media metrics and Adidas contract details to establish a precise commercial valuation model.",
+     "rationale": "Critical commercial data remains unseen by Nomila, forcing reliance on imputed scores for pricing and campaign performance. Because this data already exists privately, securely connecting her accounts and sharing her Adidas contract terms will instantly resolve key information gaps.",
+     "rests_on": [
+      {
+       "state_path": "materialGaps[0]",
+       "how": "Identifies the missing financial terms and exact valuation of her NIL contract with Adidas."
+      },
+      {
+       "state_path": "materialGaps[1]",
+       "how": "Identifies the lack of visibility into campaign conversions, ROI, and retention metrics for her promotions."
+      },
+      {
+       "state_path": "materialGaps[2]",
+       "how": "Identifies missing metrics for Instagram Stories, video completion rates, and extended audience demographics."
+      },
+      {
+       "state_path": "findings[mia.engagement_quality]",
+       "how": "Confirms that private video retention and story analytics are currently missing and imputed."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Replaces estimated values with high-integrity, platform-verified pricing metrics, enabling her representation to pitch future partnerships with maximum leverage."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Only requires the athlete to grant secure API access to her Instagram analytics and share existing contract documentation."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [
+    "No opportunities were identified in the commercial domain because her commercial acceleration is flat by design; she is intentionally prioritizing her demanding Stanford academic and athletic schedule over rapid sponsor acquisition.",
+    "No opportunities were identified in the career domain because, while her educational trajectory is stellar, there is no evidence suggesting she is actively seeking immediate coaching, broadcasting, or post-playing business placements at this stage.",
+    "No opportunities were identified in the owned_venture domain because there is no evidence of existing athlete-owned business assets or a stated intent to launch a proprietary venture.",
+    "No opportunities were identified in the athletic domain because she is already operating at an elite championship level with Stanford and the youth national teams; there are no active performance deficiencies or selection risks to mitigate."
+   ]
+  },
+  "structuralProblems": [],
+  "groundingProblems": [],
+  "citations": [
+   {
+    "index": 0,
+    "key": "grow-audience-scale",
+    "statePath": "findings[mia.audience_scale]",
+    "resolved": true
+   },
+   {
+    "index": 0,
+    "key": "grow-audience-scale",
+    "statePath": "findings[mia.engagement_quality]",
+    "resolved": true
+   },
+   {
+    "index": 0,
+    "key": "grow-audience-scale",
+    "statePath": "audienceTrajectory",
+    "resolved": true
+   },
+   {
+    "index": 1,
+    "key": "amplify-leadership-positioning",
+    "statePath": "findings[mia.narrative_power]",
+    "resolved": true
+   },
+   {
+    "index": 1,
+    "key": "amplify-leadership-positioning",
+    "statePath": "findings[mia.cultural_relevance]",
+    "resolved": true
+   },
+   {
+    "index": 1,
+    "key": "amplify-leadership-positioning",
+    "statePath": "findings[mia.brand_fit]",
+    "resolved": true
+   },
+   {
+    "index": 2,
+    "key": "amplify-yuwa-philanthropy",
+    "statePath": "findings[mia.narrative_power]",
+    "resolved": true
+   },
+   {
+    "index": 2,
+    "key": "amplify-yuwa-philanthropy",
+    "statePath": "findings[mia.cultural_relevance]",
+    "resolved": true
+   },
+   {
+    "index": 2,
+    "key": "amplify-yuwa-philanthropy",
+    "statePath": "findings[mia.brand_fit]",
+    "resolved": true
+   },
+   {
+    "index": 3,
+    "key": "unlock-private-performance-evidence",
+    "statePath": "materialGaps[0]",
+    "resolved": true
+   },
+   {
+    "index": 3,
+    "key": "unlock-private-performance-evidence",
+    "statePath": "materialGaps[1]",
+    "resolved": true
+   },
+   {
+    "index": 3,
+    "key": "unlock-private-performance-evidence",
+    "statePath": "materialGaps[2]",
+    "resolved": true
+   },
+   {
+    "index": 3,
+    "key": "unlock-private-performance-evidence",
+    "statePath": "findings[mia.engagement_quality]",
+    "resolved": true
+   }
+  ],
+  "map": {
+   "athleteId": "dc8f37f1-deff-43f8-8c02-e37a5cc20d4f",
+   "asOf": "2026-09-22T04:30:40.636Z",
+   "version": "opportunity-map/1.0.0",
+   "specVersion": "opportunity-eval-spec/1.0.0",
+   "stateAsOf": "2026-09-22T04:29:55.001Z",
+   "opportunities": [
+    {
+     "key": "grow-audience-scale",
+     "kind": "GROW",
+     "domain": "audience",
+     "statement": {
+      "value": "Rebuild and expand her niche social media follower base following a period of minor audience contraction.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-22T04:29:55.001Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "findings[mia.audience_scale]",
+       "findings[mia.engagement_quality]",
+       "audienceTrajectory"
+      ],
+      "rationale": "Her audience scale is currently graded as a GAP and is in a minor contraction phase. However, her exceptionally high engagement rate and reach efficiency prove she has a highly receptive, authentic foundation upon which to build a larger audience.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "findings[mia.audience_scale]",
+       "how": "Identifies her audience scale as a GAP and notes her growth is in a minor contraction phase."
+      },
+      {
+       "statePath": "findings[mia.engagement_quality]",
+       "how": "Highlights her high median engagement rate (4.07%) and reach efficiency (47.03%) on Instagram as strong indicators of an authentic audience core."
+      },
+      {
+       "statePath": "audienceTrajectory",
+       "how": "Confirms her current follower growth trajectory is 'cooling'."
+      }
+     ],
+     "impact": {
+      "level": "medium",
+      "claim": "Reversing the audience contraction would expand her overall reach and increase her value to premium commercial partners."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires dedicating consistent effort to content creation, which must be balanced against her rigorous Stanford athletic and master's degree commitments."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "amplify-leadership-positioning",
+     "kind": "AMPLIFY",
+     "domain": "positioning",
+     "statement": {
+      "value": "Extend her public positioning as an elite academic and athletic trailblazer to secure high-value, tech- and education-focused alignments.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-22T04:29:55.001Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "findings[mia.narrative_power]",
+       "findings[mia.cultural_relevance]",
+       "findings[mia.brand_fit]"
+      ],
+      "rationale": "Her narrative is an exceptional STRENGTH, combining unprecedented academic acceleration (graduating Stanford in 2.5 years) with historic athletic milestones. This distinctive narrative works well but can be projected further into mainstream corporate, STEM, and leadership channels.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "findings[mia.narrative_power]",
+       "how": "Establishes her exceptional narrative depth (score 88.9) rooted in early graduation, Symbolic Systems/Management Science academic paths, and athletic milestones."
+      },
+      {
+       "statePath": "findings[mia.cultural_relevance]",
+       "how": "Highlights her crossover recognition and relevance within the South Asian diaspora and STEM advocacy groups."
+      },
+      {
+       "statePath": "findings[mia.brand_fit]",
+       "how": "Notes her flawless brand-safety profile and natural alignment with educational tech, high-performance sportswear, and leadership categories."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Establishes a highly premium, differentiated personal brand that elevates her commercial marketability far beyond standard collegiate athlete levels."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Requires curating and packaging her existing life achievements for corporate, tech, and cultural platforms, requiring minimal extra time from her."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "amplify-yuwa-philanthropy",
+     "kind": "AMPLIFY",
+     "domain": "impact",
+     "statement": {
+      "value": "Deconstruct and scale her involvement with the Yuwa girls empowerment program into co-branded social impact initiatives with key sponsors.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-22T04:29:55.001Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "findings[mia.narrative_power]",
+       "findings[mia.cultural_relevance]",
+       "findings[mia.brand_fit]"
+      ],
+      "rationale": "Her active role with Yuwa is a verified strength in her narrative power and cultural footprint. Integrating this authentic philanthropic work into her corporate relationships (like Adidas) provides a mutual avenue to amplify her impact and deepen brand loyalty.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "findings[mia.narrative_power]",
+       "how": "Corroborates her active and high-profile involvement in the Yuwa girls empowerment program in India as a pillar of her narrative depth."
+      },
+      {
+       "statePath": "findings[mia.cultural_relevance]",
+       "how": "Notes her unique heritage milestones and crossover appeal within the South Asian diaspora, matching the geographic focus of Yuwa."
+      },
+      {
+       "statePath": "findings[mia.brand_fit]",
+       "how": "Indicates her high suitability for international corporate social responsibility (CSR) campaigns."
+      }
+     ],
+     "impact": {
+      "level": "medium",
+      "claim": "Maximizes the scale and reach of her charitable work while adding genuine purpose-led value to her existing and future brand partnerships."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires negotiating CSR-specific content or campaigns with current partners, which requires administrative and representative support."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "unlock-private-performance-evidence",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": {
+      "value": "Integrate her private social media metrics and Adidas contract details to establish a precise commercial valuation model.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-22T04:29:55.001Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "materialGaps[0]",
+       "materialGaps[1]",
+       "materialGaps[2]",
+       "findings[mia.engagement_quality]"
+      ],
+      "rationale": "Critical commercial data remains unseen by Nomila, forcing reliance on imputed scores for pricing and campaign performance. Because this data already exists privately, securely connecting her accounts and sharing her Adidas contract terms will instantly resolve key information gaps.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "materialGaps[0]",
+       "how": "Identifies the missing financial terms and exact valuation of her NIL contract with Adidas."
+      },
+      {
+       "statePath": "materialGaps[1]",
+       "how": "Identifies the lack of visibility into campaign conversions, ROI, and retention metrics for her promotions."
+      },
+      {
+       "statePath": "materialGaps[2]",
+       "how": "Identifies missing metrics for Instagram Stories, video completion rates, and extended audience demographics."
+      },
+      {
+       "statePath": "findings[mia.engagement_quality]",
+       "how": "Confirms that private video retention and story analytics are currently missing and imputed."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "Replaces estimated values with high-integrity, platform-verified pricing metrics, enabling her representation to pitch future partnerships with maximum leverage."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Only requires the athlete to grant secure API access to her Instagram analytics and share existing contract documentation."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [
+    "No opportunities were identified in the commercial domain because her commercial acceleration is flat by design; she is intentionally prioritizing her demanding Stanford academic and athletic schedule over rapid sponsor acquisition.",
+    "No opportunities were identified in the career domain because, while her educational trajectory is stellar, there is no evidence suggesting she is actively seeking immediate coaching, broadcasting, or post-playing business placements at this stage.",
+    "No opportunities were identified in the owned_venture domain because there is no evidence of existing athlete-owned business assets or a stated intent to launch a proprietary venture.",
+    "No opportunities were identified in the athletic domain because she is already operating at an elite championship level with Stanford and the youth national teams; there are no active performance deficiencies or selection risks to mitigate."
+   ],
+   "inputs": [
+    {
+     "kind": "athlete_state",
+     "version": "athlete-state/1.0.0",
+     "present": true
+    },
+    {
+     "kind": "strategy_intelligence",
+     "version": null,
+     "present": false
+    },
+    {
+     "kind": "targeted_research",
+     "version": null,
+     "present": false
+    }
+   ],
+   "overallConfidence": "MEDIUM"
+  }
+ }
+}

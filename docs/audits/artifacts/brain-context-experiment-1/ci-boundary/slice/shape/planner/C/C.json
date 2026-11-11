@@ -1,0 +1,240 @@
+{
+ "label": "C",
+ "plannerSpec": "planner-eval-spec/0.1.0-exp",
+ "plannerDigest": "130d10d38e331dc9d75561cfc437b70f3ef08ee8d69cbdb36a1cd8077cb2f182",
+ "planner": "content",
+ "handoff": {
+  "version": "execution-router/0.2.0-exp",
+  "shape": "specialized_plan",
+  "recommendationId": "rec_764257cd61ef9777",
+  "domain": "content",
+  "what": "Create a specialized plan to reactivate her dormant TikTok channel by cross-posting existing video formats like Reels and carousels.",
+  "why": "Mia's audience growth is currently cooling, and her TikTok has been dormant for over 500 days. Reactivating TikTok through cross-posting Instagram content is highly feasible and directly addresses her growth objective.",
+  "subject": "objective[feb62891-8b9f-44e4-8c1f-677d6947334b]",
+  "objectiveIds": [
+   "feb62891-8b9f-44e4-8c1f-677d6947334b"
+  ],
+  "advances": null,
+  "intent": null,
+  "notSeen": [],
+  "runId": "A3:488f2740"
+ },
+ "run": {
+  "file": "docs/audits/artifacts/brain-context-experiment-1/ci-boundary/slice/arm-070/A3/A3.json",
+  "promptSha256": "488f2740afbce3bbd09345de60dabe507433ecc13d8265e67212b107fc9b8fc6",
+  "evaluatorSpec": "brain-eval-spec/0.7.0-exp"
+ },
+ "workItems": 9,
+ "call": {
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "startedAt": "2026-09-27T07:37:33.845Z",
+  "promptSha256": "c56ef2a8c5b393a259b77e801f67c31f2f9b62fa6cc26e6914cfd7752cb7396e",
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+   "promptTokens": 10452,
+   "outputTokens": 679,
+   "thoughtTokens": 3334
+  },
+  "costUsd": 0.013168099999999999
+ },
+ "rawText": "{\"version\":\"planner-eval-spec/0.1.0-exp\",\"recommendation_id\":\"rec_764257cd61ef9777\",\"planner\":\"content\",\"result\":\"planned\",\"rationale\":\"To reactivate a channel dormant for over 500 days with minimal friction, we establish a lean repurposing loop that translates proven Instagram short-form video and carousel assets into TikTok-optimized clips. This strategy maximizes existing creative equity and rapidly establishes a consistent posting cadence to test audience traction before committing to native production.\",\"dependencies\":[{\"ref\":\"objective[feb62891-8b9f-44e4-8c1f-677d6947334b]\",\"why\":\"Provides the strategic context of growing audience scale and building cross-platform consistency.\"},{\"ref\":\"contentPerformance[tiktok]\",\"why\":\"Confirms the channel's 550+ day dormancy, validating the need for a programmatic restart strategy.\"},{\"ref\":\"contentPerformance[instagram]\",\"why\":\"Establishes the performance baseline of her Instagram carousels and reels as the source material for adaptation.\"}],\"completion\":{\"planning_complete_when\":\"The reactivation workflow is validated by the athlete, content source formats are selected, and the first month of Adapted TikTok drafts are ready for approval.\",\"does_not_imply\":\"Does not guarantee specific follower acquisition rates, algorithmic virality on TikTok, or immediate conversion of dormant accounts to active engagement.\"},\"output\":{\"system\":{\"role\":\"Reactivate the dormant TikTok channel and build organic consistency through the adaptation of Instagram media assets.\",\"description\":\"An efficient content translation pipeline that audits, formats, and publishes existing Instagram Reels and visual carousel structures to TikTok. This process establishes a low-friction publishing cadence to test audience appetite and signal active status to the platform algorithm.\"},\"channels\":[{\"channel\":\"instagram\",\"role\":\"The primary library for high-performing source material, including Reels and carousels.\"},{\"channel\":\"tiktok\",\"role\":\"The destination channel for reactivation, targeting short-form discovery and community building.\"}],\"cadence\":\"3 cross-posts per week, alternating between adapted Reels and carousel-to-video formats\",\"sequence\":[{\"phase\":1,\"does\":\"Audit the past 6 months of Instagram content to identify top-performing Reels and carousels suitable for translation.\",\"depends_on\":[],\"gate\":\"athlete_approval\"},{\"phase\":2,\"does\":\"Extract watermark-free master assets and adapt them to TikTok specs (aspect ratios, trending audio hooks, caption styling).\",\"depends_on\":[1],\"gate\":\"none\"},{\"phase\":3,\"does\":\"Queue the adapted content in the publishing platform and schedule them for weekly releases.\",\"depends_on\":[2],\"gate\":\"tap_to_send\"}],\"commissions\":[{\"purpose\":\"Adapt historical high-performing Instagram Reels to platform-native TikTok clips.\",\"format_class\":\"clip\",\"count_or_cadence\":\"2 clips per week\",\"channel\":\"tiktok\",\"depends_on\":[2]},{\"purpose\":\"Reformat Instagram Carousel images into engaging vertical TikTok slideshows or short fast-cut videos.\",\"format_class\":\"clip\",\"count_or_cadence\":\"1 clip per week\",\"channel\":\"tiktok\",\"depends_on\":[2]}]},\"escalation\":null}",
+ "parsed": {
+  "version": "planner-eval-spec/0.1.0-exp",
+  "recommendation_id": "rec_764257cd61ef9777",
+  "planner": "content",
+  "result": "planned",
+  "rationale": "To reactivate a channel dormant for over 500 days with minimal friction, we establish a lean repurposing loop that translates proven Instagram short-form video and carousel assets into TikTok-optimized clips. This strategy maximizes existing creative equity and rapidly establishes a consistent posting cadence to test audience traction before committing to native production.",
+  "dependencies": [
+   {
+    "ref": "objective[feb62891-8b9f-44e4-8c1f-677d6947334b]",
+    "why": "Provides the strategic context of growing audience scale and building cross-platform consistency."
+   },
+   {
+    "ref": "contentPerformance[tiktok]",
+    "why": "Confirms the channel's 550+ day dormancy, validating the need for a programmatic restart strategy."
+   },
+   {
+    "ref": "contentPerformance[instagram]",
+    "why": "Establishes the performance baseline of her Instagram carousels and reels as the source material for adaptation."
+   }
+  ],
+  "completion": {
+   "planning_complete_when": "The reactivation workflow is validated by the athlete, content source formats are selected, and the first month of Adapted TikTok drafts are ready for approval.",
+   "does_not_imply": "Does not guarantee specific follower acquisition rates, algorithmic virality on TikTok, or immediate conversion of dormant accounts to active engagement."
+  },
+  "output": {
+   "system": {
+    "role": "Reactivate the dormant TikTok channel and build organic consistency through the adaptation of Instagram media assets.",
+    "description": "An efficient content translation pipeline that audits, formats, and publishes existing Instagram Reels and visual carousel structures to TikTok. This process establishes a low-friction publishing cadence to test audience appetite and signal active status to the platform algorithm."
+   },
+   "channels": [
+    {
+     "channel": "instagram",
+     "role": "The primary library for high-performing source material, including Reels and carousels."
+    },
+    {
+     "channel": "tiktok",
+     "role": "The destination channel for reactivation, targeting short-form discovery and community building."
+    }
+   ],
+   "cadence": "3 cross-posts per week, alternating between adapted Reels and carousel-to-video formats",
+   "sequence": [
+    {
+     "phase": 1,
+     "does": "Audit the past 6 months of Instagram content to identify top-performing Reels and carousels suitable for translation.",
+     "depends_on": [],
+     "gate": "athlete_approval"
+    },
+    {
+     "phase": 2,
+     "does": "Extract watermark-free master assets and adapt them to TikTok specs (aspect ratios, trending audio hooks, caption styling).",
+     "depends_on": [
+      1
+     ],
+     "gate": "none"
+    },
+    {
+     "phase": 3,
+     "does": "Queue the adapted content in the publishing platform and schedule them for weekly releases.",
+     "depends_on": [
+      2
+     ],
+     "gate": "tap_to_send"
+    }
+   ],
+   "commissions": [
+    {
+     "purpose": "Adapt historical high-performing Instagram Reels to platform-native TikTok clips.",
+     "format_class": "clip",
+     "count_or_cadence": "2 clips per week",
+     "channel": "tiktok",
+     "depends_on": [
+      2
+     ]
+    },
+    {
+     "purpose": "Reformat Instagram Carousel images into engaging vertical TikTok slideshows or short fast-cut videos.",
+     "format_class": "clip",
+     "count_or_cadence": "1 clip per week",
+     "channel": "tiktok",
+     "depends_on": [
+      2
+     ]
+    }
+   ]
+  },
+  "escalation": null
+ },
+ "problems": [],
+ "result": {
+  "version": "planner-eval-spec/0.1.0-exp",
+  "recommendationId": "rec_764257cd61ef9777",
+  "planner": "content",
+  "result": "planned",
+  "rationale": "To reactivate a channel dormant for over 500 days with minimal friction, we establish a lean repurposing loop that translates proven Instagram short-form video and carousel assets into TikTok-optimized clips. This strategy maximizes existing creative equity and rapidly establishes a consistent posting cadence to test audience traction before committing to native production.",
+  "dependencies": [
+   {
+    "ref": "objective[feb62891-8b9f-44e4-8c1f-677d6947334b]",
+    "why": "Provides the strategic context of growing audience scale and building cross-platform consistency."
+   },
+   {
+    "ref": "contentPerformance[tiktok]",
+    "why": "Confirms the channel's 550+ day dormancy, validating the need for a programmatic restart strategy."
+   },
+   {
+    "ref": "contentPerformance[instagram]",
+    "why": "Establishes the performance baseline of her Instagram carousels and reels as the source material for adaptation."
+   }
+  ],
+  "completion": {
+   "planningCompleteWhen": "The reactivation workflow is validated by the athlete, content source formats are selected, and the first month of Adapted TikTok drafts are ready for approval.",
+   "doesNotImply": "Does not guarantee specific follower acquisition rates, algorithmic virality on TikTok, or immediate conversion of dormant accounts to active engagement."
+  },
+  "output": {
+   "system": {
+    "role": "Reactivate the dormant TikTok channel and build organic consistency through the adaptation of Instagram media assets.",
+    "description": "An efficient content translation pipeline that audits, formats, and publishes existing Instagram Reels and visual carousel structures to TikTok. This process establishes a low-friction publishing cadence to test audience appetite and signal active status to the platform algorithm."
+   },
+   "channels": [
+    {
+     "channel": "instagram",
+     "role": "The primary library for high-performing source material, including Reels and carousels."
+    },
+    {
+     "channel": "tiktok",
+     "role": "The destination channel for reactivation, targeting short-form discovery and community building."
+    }
+   ],
+   "cadence": "3 cross-posts per week, alternating between adapted Reels and carousel-to-video formats",
+   "sequence": [
+    {
+     "phase": 1,
+     "does": "Audit the past 6 months of Instagram content to identify top-performing Reels and carousels suitable for translation.",
+     "dependsOn": [],
+     "gate": "athlete_approval"
+    },
+    {
+     "phase": 2,
+     "does": "Extract watermark-free master assets and adapt them to TikTok specs (aspect ratios, trending audio hooks, caption styling).",
+     "dependsOn": [
+      1
+     ],
+     "gate": "none"
+    },
+    {
+     "phase": 3,
+     "does": "Queue the adapted content in the publishing platform and schedule them for weekly releases.",
+     "dependsOn": [
+      2
+     ],
+     "gate": "tap_to_send"
+    }
+   ],
+   "commissions": [
+    {
+     "purpose": "Adapt historical high-performing Instagram Reels to platform-native TikTok clips.",
+     "formatClass": "clip",
+     "countOrCadence": "2 clips per week",
+     "channel": "tiktok",
+     "dependsOn": [
+      2
+     ]
+    },
+    {
+     "purpose": "Reformat Instagram Carousel images into engaging vertical TikTok slideshows or short fast-cut videos.",
+     "formatClass": "clip",
+     "countOrCadence": "1 clip per week",
+     "channel": "tiktok",
+     "dependsOn": [
+      2
+     ]
+    }
+   ]
+  },
+  "escalation": null,
+  "attachedTo": null
+ },
+ "projection": {
+  "id": "content:rec_764257cd61ef9777",
+  "ref": {
+   "kind": "planning_result",
+   "id": "content:rec_764257cd61ef9777"
+  },
+  "kind": "activation",
+  "brand": null,
+  "statement": "Content system planned — Reactivate the dormant TikTok channel and build organic consistency through the adaptation of Instagram media assets.: 2 commission(s), nothing produced yet.",
+  "amount": null,
+  "termStart": null,
+  "termEnd": null,
+  "deliverablesRecorded": 0,
+  "since": "2026-09-27T07:37:33.842Z",
+  "for": {
+   "recommendationId": "rec_764257cd61ef9777",
+   "objectiveIds": [
+    "feb62891-8b9f-44e4-8c1f-677d6947334b"
+   ]
+  }
+ }
+}

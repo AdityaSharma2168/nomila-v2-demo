@@ -1,0 +1,17 @@
+{
+  "id": "pk04-brand-unsafe-decoy",
+  "description": "The closest match to the brief is not brand-safe: it is never shown to the re-rank, and a safe shot is picked instead.",
+  "reviewed": false,
+  "library": [
+    { "key": "unsafe_party", "kind": "photo", "description": "the athlete celebrating the win at a party", "brand_safe": false, "setting": "party" },
+    { "key": "safe_trophy", "kind": "photo", "description": "the athlete holding the trophy on the podium", "setting": "stadium" },
+    { "key": "safe_team", "kind": "photo", "description": "the athlete hugging teammates after the win", "shot_type": "group", "setting": "stadium" }
+  ],
+  "post": {
+    "what": "Win post",
+    "body": "Caption: We did it.\nShots: celebrating the win.",
+    "platform": "instagram"
+  },
+  "expect": { "any_of": ["safe_trophy", "safe_team"], "must_not": ["unsafe_party"], "ai_needed": false },
+  "mock": { "picks": [{ "key": "safe_trophy" }], "look": "warm", "mood": "uplifting" }
+}

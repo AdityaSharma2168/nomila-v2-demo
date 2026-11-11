@@ -1,0 +1,118 @@
+{
+  "at": "2026-10-01T04:09:45.325Z",
+  "athleteId": "dc8f37f1-deff-43f8-8c02-e37a5cc20d4f",
+  "recommendationId": "rec_2507ecb0723f9dd8",
+  "providerCalls": 0,
+  "dbWrites": 0,
+  "transaction": "READ ONLY, rolled back",
+  "recommendation": {
+    "what": "Target global brand and corporate social responsibility partnerships that align with her philanthropic leadership at the Yuwa girls empowerment program.",
+    "why": "Mia has a strong narrative power and distinctiveness tied to her philanthropy, but her work with Yuwa has not yet been commercialized. Targeting CSR and global brands allows her to leverage this unique narrative.",
+    "executionPath": "specialized_plan",
+    "objectiveIds": [
+      "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+    ],
+    "notSeen": [
+      "Specific CSR contact list",
+      "Yuwa academy's own corporate sponsorship guidelines"
+    ],
+    "response": "none",
+    "authorization": "none"
+  },
+  "realGate": "governance: preparation not authorized (response none, authorization none)",
+  "run": {
+    "id": "f9e00c6f-87b3-46be-82d9-a01300f4d4c1",
+    "asOf": "2026-09-27T23:11:26.659Z",
+    "spec": "brain-eval-spec/0.12.0-exp",
+    "promptSha256": "c840ff715a332226c1756a662fcbadef3b31d8d146e5dcaf855472645eab79eb",
+    "versionsRunId": "f9e00c6f-87b3-46be-82d9-a01300f4d4c1",
+    "evidenceRunId": "f9e00c6f-87b3-46be-82d9-a01300f4d4c1"
+  },
+  "renderedFrom": "run_record",
+  "governance": {
+    "asOf": "2026-10-01T04:09:45.321Z",
+    "source": "current_governed_stores",
+    "objectiveEvents": [
+      "objective_events:225ccc37-07ef-411e-b3a1-a43688cc7809",
+      "objective_events:ea6069c7-ddad-4f40-9048-c8aa0288396a"
+    ],
+    "recommendationEvents": []
+  },
+  "context": {
+    "live": 3,
+    "deferred": 1,
+    "declined": 1,
+    "stateBlockChars": 21833,
+    "workBlockChars": 2836
+  },
+  "cited": [
+    {
+      "ref": "objective[b1c799e3-59fc-4986-b3ab-a0b7b4869601]",
+      "how": "The objective is to expand the impact and visibility of her work with Yuwa through aligned global brand and CSR partnerships.",
+      "resolved": true,
+      "shownIn": "OBJECTIVES NAMED BY THE HANDOFF",
+      "excerpt": null
+    },
+    {
+      "ref": "findings[mia.narrative_power]",
+      "how": "M.I.A. identified her philanthropy with Yuwa as a key pillar of her highly differentiated narrative.",
+      "resolved": true,
+      "shownIn": "THE RECORD",
+      "excerpt": null
+    },
+    {
+      "ref": "opportunity[amplify-yuwa-philanthropic-work]",
+      "how": "This opportunity recommends elevating her Yuwa work to attract global CSR sponsorships.",
+      "resolved": true,
+      "shownIn": "here",
+      "excerpt": "amplify-yuwa-philanthropic-work\n    AMPLIFY · impact · confidence HIGH\n    Elevate and integrate her active work with the Yuwa girls empowerment program in India to attract global Corporate Social Responsibility (CSR) sponsorships.\n    impact(high): Unlocks high-value, non-traditional corporate marketing budgets dedicated to global impact and gender equity, building her long-term legacy.\n    feasibility(medium): Requires creating specific digital assets or storytelling content around her work with Yuwa that her agent can present to corporate impact officers.\n    rests on: findings[mia.narrative_power], findings[mia.cultural_relevance], findings[mia.brand_fit]"
+    }
+  ],
+  "handoff": {
+    "version": "execution-router/0.2.0-exp",
+    "shape": "specialized_plan",
+    "recommendationId": "rec_2507ecb0723f9dd8",
+    "domain": "impact",
+    "what": "Target global brand and corporate social responsibility partnerships that align with her philanthropic leadership at the Yuwa girls empowerment program.",
+    "why": "Mia has a strong narrative power and distinctiveness tied to her philanthropy, but her work with Yuwa has not yet been commercialized. Targeting CSR and global brands allows her to leverage this unique narrative.",
+    "subject": "objective[b1c799e3-59fc-4986-b3ab-a0b7b4869601]",
+    "objectiveIds": [
+      "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+    ],
+    "advances": null,
+    "intent": null,
+    "notSeen": [
+      "Specific CSR contact list",
+      "Yuwa academy's own corporate sponsorship guidelines"
+    ],
+    "runId": "f9e00c6f-87b3-46be-82d9-a01300f4d4c1",
+    "note": "rendered from an in-memory prepare_authorized copy; the real Recommendation is not authorized and prepareOutreach would return not_authorized"
+  },
+  "exclusions": [
+    {
+      "ref": "objective[2d199757-6e12-4a6b-bade-df05c587e849]",
+      "kind": "deferred",
+      "counterparties": [
+        "msg-biz.online",
+        "x1",
+        "ANAZE",
+        "StartX1"
+      ],
+      "governedBy": "objective_events:ea6069c7-ddad-4f40-9048-c8aa0288396a"
+    },
+    {
+      "ref": "objective[ca4976d6-c1a3-4660-a60f-c0926d7fcbe5]",
+      "kind": "declined",
+      "counterparties": [],
+      "governedBy": "objective_events:225ccc37-07ef-411e-b3a1-a43688cc7809"
+    }
+  ],
+  "counterparts": 19,
+  "contextSha256": "8ef12f555d67302c962724217926feb04c94a729b0d4b2de836af742f94901d1",
+  "prompt": {
+    "chars": 35827,
+    "sha256": "afd160b98b14a2f5cd801888f9ded60b011cc355b81da5511bccfd56c221784c",
+    "hasCitedEvidence": true,
+    "plannerDigest": "9065402868837c8a04764bf16474c5aaae8b00c700c2b8aefa39993d8a094d7e"
+  }
+}

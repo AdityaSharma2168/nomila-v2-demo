@@ -1,0 +1,739 @@
+{
+  "about": "PR 19's phrasebook (ADI-R19-PB). Every phrase here is a registered harness case: phrasebook.test.ts routes each one through the real classifier and fails by name if its route is not `expect`. docs/studio/phrasebook.md is generated from this file by `npm run studio:phrasebook` — never edit the md by hand.",
+  "quickRun": [
+    "make my jersey red",
+    "change my jersey to adidas",
+    "add a trophy",
+    "make it rain",
+    "change the lighting to golden hour",
+    "shoot this from a low angle",
+    "crop to 4:5",
+    "match this look",
+    "make this an ad for adidas that says \"OWN THE MOMENT\"",
+    "add 'shop now' at the bottom",
+    "make me jump",
+    "make it pop"
+  ],
+  "cases": [
+    {
+      "phrase": "make my jersey red",
+      "category": "colour",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "RECOLOR[jersey]=red"
+    },
+    {
+      "phrase": "make my shorts navy blue",
+      "category": "colour",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "RECOLOR[shorts]=navy blue"
+    },
+    {
+      "phrase": "turn my socks pink",
+      "category": "colour",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "RECOLOR[socks]=pink"
+    },
+    {
+      "phrase": "make my jersy blu",
+      "category": "colour",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "RECOLOR[jersey]=blue",
+      "note": "typos"
+    },
+    {
+      "phrase": "make my kicks blakc",
+      "category": "colour",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "RECOLOR[shoes]=black",
+      "note": "slang and a typo"
+    },
+    {
+      "phrase": "make my drip white",
+      "category": "colour",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "RECOLOR[outfit]=white",
+      "note": "slang"
+    },
+    {
+      "phrase": "change the color of my jersey",
+      "category": "colour",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "make my jersey red"
+    },
+    {
+      "phrase": "make it red",
+      "category": "colour",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "make my jersey red"
+    },
+    {
+      "phrase": "change my jersey to adidas",
+      "category": "kit",
+      "kind": "works",
+      "needs": ["photo", "brand"],
+      "expect": "REPLACE_OBJECT[jersey]=adidas jersey"
+    },
+    {
+      "phrase": "swap my jersey to Lululemon",
+      "category": "kit",
+      "kind": "works",
+      "needs": ["photo", "brand"],
+      "expect": "REPLACE_OBJECT[jersey]=lululemon jersey",
+      "note": "any brand"
+    },
+    {
+      "phrase": "make the socks white and adidas",
+      "category": "kit",
+      "kind": "works",
+      "needs": ["photo", "brand"],
+      "expect": "REPLACE_OBJECT[socks]=white adidas socks"
+    },
+    {
+      "phrase": "change my cleats to nike cleats",
+      "category": "kit",
+      "kind": "works",
+      "needs": ["photo", "brand"],
+      "expect": "REPLACE_OBJECT[cleats]=nike cleats"
+    },
+    {
+      "phrase": "put a nike logo on my jersey",
+      "category": "kit",
+      "kind": "works",
+      "needs": ["photo", "brand"],
+      "expect": "APPLY_DESIGN[jersey]=nike logo"
+    },
+    {
+      "phrase": "change my kit",
+      "category": "kit",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "change my jersey to adidas"
+    },
+    {
+      "phrase": "change my jersey to a nike adidas jersey",
+      "category": "kit",
+      "kind": "miss",
+      "needs": ["photo", "brand"],
+      "expect": "ASK brand_change",
+      "fix": "change my jersey to adidas"
+    },
+    {
+      "phrase": "add sunglasses",
+      "category": "add",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "ADD_OBJECT[sunglasses]=on my face"
+    },
+    {
+      "phrase": "add a trophy",
+      "category": "add",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "ADD_OBJECT[trophy]=next to me"
+    },
+    {
+      "phrase": "add a soccer ball next to me",
+      "category": "add",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "ADD_OBJECT[soccer ball]=next to me"
+    },
+    {
+      "phrase": "make me hold the gatorade bottle",
+      "category": "add",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "ADD_OBJECT[gatorade bottle]=in my hand"
+    },
+    {
+      "phrase": "remove the water bottle",
+      "category": "add",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "REMOVE_OBJECT[water bottle]=null"
+    },
+    {
+      "phrase": "remvoe my hat",
+      "category": "add",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "REMOVE_OBJECT[hat]=null",
+      "note": "typo"
+    },
+    {
+      "phrase": "put a ball in my hand",
+      "category": "add",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK add_unclear",
+      "fix": "add a soccer ball next to me"
+    },
+    {
+      "phrase": "take the water bottle out",
+      "category": "add",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "remove the water bottle"
+    },
+    {
+      "phrase": "add a nike ball and an adidas bag",
+      "category": "add",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "add a trophy"
+    },
+    {
+      "phrase": "change the background to a stadium at night",
+      "category": "background",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "CHANGE_BACKGROUND[person]=stadium at night"
+    },
+    {
+      "phrase": "put me on a beach",
+      "category": "background",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "CHANGE_BACKGROUND[person]=beach"
+    },
+    {
+      "phrase": "change the backround to a beach",
+      "category": "background",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "CHANGE_BACKGROUND[person]=beach",
+      "note": "typo"
+    },
+    {
+      "phrase": "blur the background",
+      "category": "background",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "CHANGE_BACKGROUND[person]=blurred"
+    },
+    {
+      "phrase": "make it rain",
+      "category": "background",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "CHANGE_BACKGROUND[person]=same place in the rain"
+    },
+    {
+      "phrase": "make it snowy",
+      "category": "background",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "CHANGE_BACKGROUND[person]=same place in the snow"
+    },
+    {
+      "phrase": "change the sky",
+      "category": "background",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "make it rain"
+    },
+    {
+      "phrase": "take me to paris",
+      "category": "background",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "put me on a beach"
+    },
+    {
+      "phrase": "make it night",
+      "category": "background",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "change the background to a stadium at night"
+    },
+    {
+      "phrase": "change the lighting to golden hour",
+      "category": "lighting",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "RELIGHT[]=golden_hour"
+    },
+    {
+      "phrase": "add studio lighting",
+      "category": "lighting",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "RELIGHT[]=studio"
+    },
+    {
+      "phrase": "add rim lighting",
+      "category": "lighting",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "RELIGHT[]=rim_light"
+    },
+    {
+      "phrase": "relight it with soft light",
+      "category": "lighting",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "RELIGHT[]=soft_light"
+    },
+    {
+      "phrase": "add stadium lighting",
+      "category": "lighting",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "RELIGHT[]=stadium"
+    },
+    {
+      "phrase": "fix the lighting",
+      "category": "lighting",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "add studio lighting"
+    },
+    {
+      "phrase": "better lighting",
+      "category": "lighting",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "relight it with soft light"
+    },
+    {
+      "phrase": "make it a low angle shot",
+      "category": "camera",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "CAMERA[]=low_angle"
+    },
+    {
+      "phrase": "shoot this from a low angle",
+      "category": "camera",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "CAMERA[]=low_angle"
+    },
+    {
+      "phrase": "shot from below",
+      "category": "camera",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "CAMERA[]=low_angle"
+    },
+    {
+      "phrase": "from above",
+      "category": "camera",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "CAMERA[]=high_angle"
+    },
+    {
+      "phrase": "bird's eye view",
+      "category": "camera",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "CAMERA[]=overhead"
+    },
+    {
+      "phrase": "make it an overhead shot",
+      "category": "camera",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "CAMERA[]=overhead"
+    },
+    {
+      "phrase": "change the angle",
+      "category": "camera",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK angle_unclear",
+      "fix": "shoot this from a low angle"
+    },
+    {
+      "phrase": "make it a dutch angle",
+      "category": "camera",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "make it a low angle shot"
+    },
+    {
+      "phrase": "crop to 4:5",
+      "category": "crop",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "CROP[]=4:5"
+    },
+    {
+      "phrase": "crop to 4x5",
+      "category": "crop",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "CROP[]=4:5",
+      "note": "x for the colon"
+    },
+    {
+      "phrase": "crop it square",
+      "category": "crop",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "CROP[]=1:1"
+    },
+    {
+      "phrase": "make it 9:16",
+      "category": "crop",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "CROP[]=9:16"
+    },
+    {
+      "phrase": "reformat for stories",
+      "category": "crop",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "CROP[]=9:16"
+    },
+    {
+      "phrase": "zoom in on me",
+      "category": "crop",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "CROP[]=zoom"
+    },
+    {
+      "phrase": "crop it",
+      "category": "crop",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "crop to 4:5"
+    },
+    {
+      "phrase": "make it vertical",
+      "category": "crop",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "make it 9:16"
+    },
+    {
+      "phrase": "make it 16:9",
+      "category": "crop",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "crop it square"
+    },
+    {
+      "phrase": "match this look",
+      "category": "look",
+      "kind": "works",
+      "needs": ["photo", "style"],
+      "styles": 1,
+      "expect": "GLOBAL_STYLE[]=colour grade"
+    },
+    {
+      "phrase": "make it look like this",
+      "category": "look",
+      "kind": "works",
+      "needs": ["photo", "style"],
+      "styles": 1,
+      "expect": "GLOBAL_STYLE[]=colour grade"
+    },
+    {
+      "phrase": "same vibe as this",
+      "category": "look",
+      "kind": "works",
+      "needs": ["photo", "style"],
+      "styles": 1,
+      "expect": "GLOBAL_STYLE[]=colour grade"
+    },
+    {
+      "phrase": "in this style",
+      "category": "look",
+      "kind": "works",
+      "needs": ["photo", "style"],
+      "styles": 1,
+      "expect": "GLOBAL_STYLE[]=colour grade"
+    },
+    {
+      "phrase": "make this picture match the style of the second",
+      "category": "look",
+      "kind": "works",
+      "needs": ["photo", "style"],
+      "styles": 1,
+      "expect": "GLOBAL_STYLE[]=colour grade"
+    },
+    {
+      "phrase": "match this look",
+      "category": "look",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK style_reference_missing",
+      "fix": "match this look",
+      "note": "no Style photo attached"
+    },
+    {
+      "phrase": "make it look like a movie",
+      "category": "look",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "match this look"
+    },
+    {
+      "phrase": "make this an ad for adidas",
+      "category": "ads",
+      "kind": "works",
+      "needs": ["photo", "brand"],
+      "expect": "ASK brand_change · ad=adidas"
+    },
+    {
+      "phrase": "turn this into an ad for adidas",
+      "category": "ads",
+      "kind": "works",
+      "needs": ["photo", "brand"],
+      "expect": "ASK brand_change · ad=adidas"
+    },
+    {
+      "phrase": "make an ad for adidas",
+      "category": "ads",
+      "kind": "works",
+      "needs": ["photo", "brand"],
+      "expect": "ASK brand_change · ad=adidas"
+    },
+    {
+      "phrase": "turn this into a nike ad",
+      "category": "ads",
+      "kind": "works",
+      "needs": ["photo", "brand"],
+      "expect": "ASK brand_change · ad=nike"
+    },
+    {
+      "phrase": "make this an ad for adidas that says \"OWN THE MOMENT\"",
+      "category": "ads",
+      "kind": "works",
+      "needs": ["photo", "brand"],
+      "expect": "ASK brand_change · ad=adidas",
+      "note": "your headline, used as yours"
+    },
+    {
+      "phrase": "make it look like a nike commercial",
+      "category": "ads",
+      "kind": "works",
+      "needs": ["photo", "brand"],
+      "expect": "ASK brand_change · ad=nike"
+    },
+    {
+      "phrase": "make this into an ad for stanford",
+      "category": "ads",
+      "kind": "miss",
+      "needs": ["photo", "brand"],
+      "expect": "ASK fast_path_declined · ad asks ad_needs_brand",
+      "fix": "make this an ad for adidas",
+      "note": "a brand we don't list"
+    },
+    {
+      "phrase": "make this an ad",
+      "category": "ads",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined · ad asks ad_needs_brand",
+      "fix": "make this an ad for adidas"
+    },
+    {
+      "phrase": "make this an ad for adidas and nike",
+      "category": "ads",
+      "kind": "miss",
+      "needs": ["photo", "brand"],
+      "expect": "ASK brand_change · ad asks ad_brand_mismatch",
+      "fix": "turn this into a nike ad"
+    },
+    {
+      "phrase": "add 'shop now' at the bottom",
+      "category": "text",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "DISPLAY_TEXT[]=shop now@bottom"
+    },
+    {
+      "phrase": "put \"GAME DAY\" in the middle",
+      "category": "text",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "DISPLAY_TEXT[]=GAME DAY@middle"
+    },
+    {
+      "phrase": "add 'swipe up' at the top",
+      "category": "text",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "DISPLAY_TEXT[]=swipe up@top"
+    },
+    {
+      "phrase": "add the headline \"OWN THE MOMENT\" across the top",
+      "category": "text",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "DISPLAY_TEXT[]=OWN THE MOMENT"
+    },
+    {
+      "phrase": "add text that says shop now",
+      "category": "text",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "add 'shop now' at the bottom"
+    },
+    {
+      "phrase": "add shop now",
+      "category": "text",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK add_unclear",
+      "fix": "add 'shop now' at the bottom"
+    },
+    {
+      "phrase": "add 'we run this city tonight and forever more' at the bottom",
+      "category": "text",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK add_unclear",
+      "fix": "put \"GAME DAY\" in the middle",
+      "note": "too long"
+    },
+    {
+      "phrase": "make me jump",
+      "category": "pose",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "GENERATE[]=null"
+    },
+    {
+      "phrase": "change my pose",
+      "category": "pose",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "GENERATE[]=null"
+    },
+    {
+      "phrase": "make me kick the ball",
+      "category": "pose",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "GENERATE[]=null"
+    },
+    {
+      "phrase": "make me celebrate",
+      "category": "pose",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "GENERATE[]=null"
+    },
+    {
+      "phrase": "put my arms up",
+      "category": "pose",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "GENERATE[]=null"
+    },
+    {
+      "phrase": "make me smile",
+      "category": "pose",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "GENERATE[]=null"
+    },
+    {
+      "phrase": "turn my head",
+      "category": "pose",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK person_mentioned",
+      "fix": "change my pose"
+    },
+    {
+      "phrase": "make me look happier",
+      "category": "pose",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "make me smile"
+    },
+    {
+      "phrase": "make it better",
+      "category": "vague",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "ASK vague"
+    },
+    {
+      "phrase": "make it pop",
+      "category": "vague",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "ASK vague"
+    },
+    {
+      "phrase": "clean it up",
+      "category": "vague",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "ASK vague"
+    },
+    {
+      "phrase": "make it hit different",
+      "category": "vague",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "ASK vague",
+      "note": "slang"
+    },
+    {
+      "phrase": "make it fire",
+      "category": "vague",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "ASK vague",
+      "note": "slang"
+    },
+    {
+      "phrase": "glow it up",
+      "category": "vague",
+      "kind": "works",
+      "needs": ["photo"],
+      "expect": "ASK vague",
+      "note": "slang"
+    },
+    {
+      "phrase": "enhance",
+      "category": "vague",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "make it better"
+    },
+    {
+      "phrase": "make it look expensive",
+      "category": "vague",
+      "kind": "miss",
+      "needs": ["photo"],
+      "expect": "ASK fast_path_declined",
+      "fix": "make it better"
+    }
+  ]
+}

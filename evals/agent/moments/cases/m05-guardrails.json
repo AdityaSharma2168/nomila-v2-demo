@@ -1,0 +1,154 @@
+{
+  "id": "m05-guardrails",
+  "reviewed": false,
+  "description": "The athlete's guardrails reach the scan (moments 1.1.0): a name the athlete marked never to use is held by code even when the model writes it, the avoid-list and the team's apparel conflict are in the input, and the clean moments are kept.",
+  "mock_today": "2026-10-10",
+  "athlete": {
+    "name": "Maren Holt",
+    "sport": "cycling"
+  },
+  "stage": {
+    "label": "Continental team rider",
+    "band": "developing"
+  },
+  "fixture": {
+    "facts": [
+      {
+        "key": "f1",
+        "subject_kind": "athlete",
+        "subject_name": "Maren Holt",
+        "claim": "Maren Holt rides for Larkfield Cycling, a continental team.",
+        "type": "found",
+        "date": "-40",
+        "topic": "team",
+        "field": "team",
+        "field_value": "Larkfield Cycling"
+      }
+    ],
+    "moments": [],
+    "deals": [],
+    "preferences": [
+      "Never use: Wrenna",
+      "No energy-drink brands"
+    ],
+    "conflicts": [
+      {
+        "what": "Your team's apparel partner holds the cycling apparel category.",
+        "blocks": [
+          "other cycling apparel brands"
+        ]
+      }
+    ]
+  },
+  "expect": {
+    "min_moments": 3,
+    "max_moments": 5,
+    "retired": [],
+    "kept": [],
+    "golden": [
+      {
+        "id": "g1",
+        "match": "hill climb",
+        "why": "The regional hill climb is on the team's published calendar."
+      }
+    ],
+    "min_recall": 1,
+    "must_not": [
+      {
+        "match": "Wrenna",
+        "why": "A name the athlete marked never to use: code must hold the moment even when the model writes it."
+      }
+    ]
+  },
+  "mock": {
+    "sources": [
+      "https://example.org/m05-guardrails/calendar",
+      "https://example.org/m05-guardrails/club-day"
+    ],
+    "moments": [
+      {
+        "name": "Regional hill climb",
+        "description": "Larkfield Cycling rides the regional hill climb championship.",
+        "date": "+12",
+        "date_precision": "day",
+        "category": "schedule",
+        "why_now": "The strongest discipline on the calendar, and the last race of the season.",
+        "source_url": "https://example.org/m05-guardrails/calendar",
+        "source_title": "Team calendar",
+        "confidence": 0.9,
+        "based_on": [
+          "$F:f1"
+        ],
+        "refreshes": null,
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "One climb. Nine minutes. Everything left.",
+          "angle": "Why this climb suits Maren."
+        }
+      },
+      {
+        "name": "Wrenna's first club ride",
+        "description": "Wrenna rides her first club ride with Maren Holt.",
+        "date": "+20",
+        "date_precision": "day",
+        "category": "cultural_trend",
+        "why_now": "A sweet family moment fans would love.",
+        "source_url": "https://example.org/m05-guardrails/club-day",
+        "source_title": "Club open day",
+        "confidence": 0.7,
+        "based_on": [],
+        "refreshes": null,
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "Riding with Wrenna for the first time.",
+          "angle": "Passing it on."
+        }
+      },
+      {
+        "name": "Club open day",
+        "description": "Larkfield Cycling holds its open day for new members.",
+        "date": "+20",
+        "date_precision": "day",
+        "category": "league",
+        "why_now": "A chance to show the club side of the team.",
+        "source_url": "https://example.org/m05-guardrails/club-day",
+        "source_title": "Club open day",
+        "confidence": 0.8,
+        "based_on": [
+          "$F:f1"
+        ],
+        "refreshes": null,
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "Come ride with us.",
+          "angle": "The club that built Maren."
+        }
+      },
+      {
+        "name": "Autumn time trial",
+        "description": "Larkfield Cycling rides the autumn club time trial.",
+        "date": "+27",
+        "date_precision": "day",
+        "category": "schedule",
+        "why_now": "A clean test against the clock before the off-season.",
+        "source_url": "https://example.org/m05-guardrails/calendar",
+        "source_title": "Team calendar",
+        "confidence": 0.85,
+        "based_on": [
+          "$F:f1"
+        ],
+        "refreshes": null,
+        "sensitivity": "none",
+        "never_reason": "none",
+        "idea": {
+          "hook": "Just Maren and the clock.",
+          "angle": "Racing alone."
+        }
+      }
+    ],
+    "retire": []
+  }
+}

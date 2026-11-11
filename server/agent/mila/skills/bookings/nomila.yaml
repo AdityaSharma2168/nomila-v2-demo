@@ -1,0 +1,9 @@
+# Nomila's own fields for the bookings playbook, validated by load.ts (sidecarSchema). Not part of the Agent Skills spec.
+version: 1.0.0
+register_id: mila.playbook.bookings
+surfaces: [chat, voice, proactive]
+flag: AGENT_BOOKINGS_TOOLS
+tools: [bookings_list, bookings_get, bookings_waiting, bookings_respond]
+sends_externally: true
+model_tier: athlete-facing
+evals: null

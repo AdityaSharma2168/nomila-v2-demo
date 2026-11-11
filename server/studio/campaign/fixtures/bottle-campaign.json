@@ -1,0 +1,14 @@
+{
+  "_note": "PR 6 lane 6b's fixture brief: a synthetic brand and product (no real brand row, no photo), a product LINE and a mood, planned n=3 against the ad-brief control's sentence. Used by plan.test, studio.agent.test and the route runner (--body). The prediction: at least one item per cell whose reason cites the campaign — its product ('bottle'), its brand ('Solstice'), or its feel ('calm', 'focused', 'steady').",
+  "campaign": {
+    "schema": "campaign-brief/1",
+    "objective": { "type": "ad", "goal": "showcase-product" },
+    "story": "staying cool and focused through a hard session",
+    "brand": { "name": "Solstice", "brand_attributes": ["clean", "minimal"], "profile": null },
+    "subject": { "identity_priority": "high", "sport": "soccer" },
+    "product": { "ref": null, "fidelity": "high", "line": "the matte-black Solstice insulated bottle" },
+    "creative_direction": { "tone": ["calm", "focused"], "style": null, "energy": "steady" },
+    "references": [],
+    "output": { "type": "video", "aspect_ratio": "9:16", "platform": "instagram" }
+  }
+}

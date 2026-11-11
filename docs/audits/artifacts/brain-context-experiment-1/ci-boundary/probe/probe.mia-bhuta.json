@@ -1,0 +1,1002 @@
+{
+ "name": "Mia Bhuta",
+ "found": true,
+ "id": "dc8f37f1-deff-43f8-8c02-e37a5cc20d4f",
+ "sport": "soccer",
+ "segment": "college",
+ "school": "Stanford University",
+ "division": "D1",
+ "since": "2026-05-30 00:11:24.032839+00",
+ "floors": {
+  "autograph": 465,
+  "licensing": 1049,
+  "ambassador": 3602,
+  "appearance": 1213,
+  "socialPost": 1000
+ },
+ "dealPreferencesKeys": [
+  "agent_name",
+  "agency_name",
+  "minimum_rates"
+ ],
+ "current": {
+  "tier": "Established",
+  "displayScore": 672,
+  "hasRateCard": true,
+  "rateCardVersion": "v3.1.0-calibrated",
+  "hasDealTypeRates": true,
+  "derivedPerTypeRanges": {
+   "socialPost": {
+    "low": 689,
+    "mid": 862,
+    "high": 1077
+   },
+   "appearance": {
+    "low": 804,
+    "mid": 1005,
+    "high": 1256
+   },
+   "ambassador": {
+    "low": 1859,
+    "mid": 2656,
+    "high": 3718
+   },
+   "autograph": {
+    "low": 308,
+    "mid": 385,
+    "high": 482
+   },
+   "licensing": {
+    "low": 518,
+    "mid": 740,
+    "high": 1035
+   },
+   "projectedAnnualValue": {
+    "low": 17870,
+    "mid": 22338,
+    "high": 27922
+   }
+  }
+ },
+ "deals": {
+  "byStatus": [
+   {
+    "status": "accepted",
+    "n": 1
+   },
+   {
+    "status": "detected",
+    "n": 201
+   },
+   {
+    "status": "negotiating",
+    "n": 7
+   },
+   {
+    "status": "rejected",
+    "n": 2
+   }
+  ],
+  "acceptedNegotiating": [
+   {
+    "id": "e9469f1f-66b1-46c2-80ef-bb573bc11dd3",
+    "brand_name": "TITAD",
+    "deal_type": "other",
+    "status": "negotiating",
+    "amount": "300",
+    "amount_cash": "300",
+    "amount_product": null,
+    "commission_pct": null,
+    "term_start": null,
+    "term_end": null,
+    "detected_at": "2026-06-02 19:32:32.282+00",
+    "offer_struct": {
+     "unit": "per_deliverable",
+     "amount": 300,
+     "recurring": false,
+     "commission_pct": null,
+     "deliverable_counts": {
+      "tiktok_videos": 1
+     }
+    },
+    "thread_score": {
+     "factors": {
+      "exclusivity": "No exclusivity mentioned, which is favorable. However, commercial rights usage at below-floor rates represents the primary term concern.",
+      "brandRelevance": "Haircare shampoo has minimal connection to soccer performance or athlete lifestyle content. The brand lacks athletic market presence and offers limited strategic value for growing your soccer-focused following.",
+      "rateComparison": "The $300 commercial rights option in your counter-proposal is 71% below your $1,044 floor. Even with products, this undervalues your rates. Your product-only option is appropriately priced at $0 but must explicitly exclude all commercial rights.",
+      "deliverableScope": "Single TikTok video is reasonable, but the Spark Ads Code requirement indicates commercial usage rights that should command your full floor rate, not a discounted $300."
+     },
+     "fitRead": {
+      "label": "Weak category fit",
+      "rating": "fair"
+     },
+     "reasons": [
+      "Commercial rights undervalued: $300 option is 71% below your $1,044 floor, even with products included",
+      "Weak brand alignment: haircare shampoo doesn't resonate with soccer performance or build athletic credibility",
+      "Predatory initial offer: brand sought commercial rights for product-only, indicating lowball negotiation tactics",
+      "Minimal growth potential: unlikely to drive meaningful follower growth or build relevant brand capital"
+     ],
+     "urgency": "medium",
+     "verdict": "poor",
+     "redFlags": [
+      "Brand's initial product-only offer demanded commercial rights (Spark Ads Code), a common exploitative practice",
+      "Negotiation structure suggests brand is seeking maximum rights for minimum compensation"
+     ],
+     "dollarAmount": 300,
+     "draft_points": [
+      "I need to clarify my previous counter-proposal",
+      "My floor rate for any commercial rights usage is $1,044",
+      "I cannot grant Spark Ads Code usage for $300",
+      "Product-only must mean zero commercial rights"
+     ],
+     "rateVsMarket": null,
+     "scoreNumeric": 2,
+     "brandAnalysis": {
+      "category": "Haircare",
+      "sportFit": {
+       "label": "No sport connection",
+       "rating": "poor"
+      },
+      "brandTier": "emerging",
+      "audienceFit": {
+       "label": "Generic personal care",
+       "rating": "fair"
+      },
+      "brandSummary": "TITAD is an emerging haircare brand offering scalp detox shampoo. The brand lacks athletic market presence and offers limited strategic overlap with soccer performance content. While personal care is universal, this category doesn't build athletic credibility or naturally engage your soccer audience.",
+      "capitalContribution": "commercial",
+      "capitalContributionLabel": "Builds minimal capital",
+      "portfolioDiversification": {
+       "label": "First haircare deal",
+       "rating": "fair"
+      }
+     },
+     "factorRatings": {
+      "exclusivity": {
+       "label": "No exclusivity",
+       "rating": "good"
+      },
+      "brandRelevance": {
+       "label": "Weak sport fit",
+       "rating": "fair"
+      },
+      "rateComparison": {
+       "label": "$744 below floor",
+       "rating": "poor"
+      },
+      "deliverableScope": {
+       "label": "Single post",
+       "rating": "good"
+      }
+     },
+     "autopilot_safe": false,
+     "economicsState": {
+      "read": "$300 is 71% below $1,044 floor",
+      "state": "priced"
+     },
+     "recommendation": "reject",
+     "negotiate_terms": null,
+     "recommendation_ui": "Decline politely",
+     "recommendation_agent": "You should not have offered commercial rights for $300. Immediately clarify to the brand that the $300 option is withdrawn. Present only two viable paths: (1) Product-only with zero commercial rights, no Spark Ads Code, or (2) $1,044+ cash for full commercial rights plus products. The haircare category offers weak strategic fit, so path (1) is only acceptable if you genuinely want the product. Do not grant commercial usage below your floor. If they push back on the $300 option you floated, politely retract it and reference your established rates. This deal lacks the brand alignment to justify any rate flexibility.",
+     "recommendation_confidence": "high"
+    }
+   },
+   {
+    "id": "b5d832ac-232a-44ea-bcc7-d195d92b4a51",
+    "brand_name": "Musugy",
+    "deal_type": "social_post",
+    "status": "negotiating",
+    "amount": null,
+    "amount_cash": null,
+    "amount_product": null,
+    "commission_pct": null,
+    "term_start": null,
+    "term_end": null,
+    "detected_at": "2026-06-02 19:41:18.865+00",
+    "offer_struct": {
+     "unit": null,
+     "amount": null,
+     "recurring": false,
+     "commission_pct": null,
+     "deliverable_counts": null
+    },
+    "thread_score": {
+     "factors": {
+      "exclusivity": "No terms or exclusivity clauses were mentioned.",
+      "brandRelevance": "No brand information, product details, or campaign context was provided in the empty thread.",
+      "rateComparison": "Mia's per-post floor is $1,044 and projected annual is $21,632, but no offer was stated in the thread to compare against these benchmarks.",
+      "deliverableScope": "Zero deliverables were specified — no post count, usage, or timeline."
+     },
+     "fitRead": {
+      "label": "Cannot assess fit",
+      "rating": "fair"
+     },
+     "reasons": [
+      "Thread is empty: no proposal, deliverables, or compensation details",
+      "Cannot assess brand fit or strategic value without context",
+      "Mia has established rates ($1,044/post floor) but no offer to evaluate"
+     ],
+     "urgency": "low",
+     "verdict": "fair",
+     "redFlags": [],
+     "dollarAmount": null,
+     "draft_points": [
+      "Thread contains only sender header with no message content",
+      "Mia's established per-post floor is $1,044"
+     ],
+     "rateVsMarket": null,
+     "scoreNumeric": 4,
+     "brandAnalysis": {
+      "category": "Unknown",
+      "sportFit": {
+       "label": "No info provided",
+       "rating": "fair"
+      },
+      "brandTier": "emerging",
+      "audienceFit": {
+       "label": "No info provided",
+       "rating": "fair"
+      },
+      "brandSummary": "No brand information is available in this empty thread. Without product details or campaign context, we cannot assess strategic fit, audience alignment, or brand tier.",
+      "capitalContribution": "brand",
+      "capitalContributionLabel": "Cannot determine",
+      "portfolioDiversification": {
+       "label": "Unknown category",
+       "rating": "fair"
+      }
+     },
+     "factorRatings": {
+      "exclusivity": {
+       "label": "Terms pending",
+       "rating": "fair"
+      },
+      "brandRelevance": {
+       "label": "No brand info",
+       "rating": "poor"
+      },
+      "rateComparison": {
+       "label": "No offer stated",
+       "rating": "fair"
+      },
+      "deliverableScope": {
+       "label": "No deliverables",
+       "rating": "poor"
+      }
+     },
+     "autopilot_safe": false,
+     "economicsState": {
+      "read": "No offer stated; cannot compare to $1,044 floor",
+      "state": "unpriced"
+     },
+     "recommendation": "negotiate",
+     "negotiate_terms": [
+      "Request full proposal including deliverables, timeline, and compensation",
+      "Clarify brand category and product alignment with soccer audience"
+     ],
+     "recommendation_ui": "Request proposal details",
+     "recommendation_agent": "This thread is incomplete — it contains only a sender header with no message content, deliverables, or offer details. Since Mia has established rates ($1,044 per-post floor, $21,632 projected annual), we need to request a full proposal to evaluate any potential deal. Ask for deliverables, timeline, compensation structure, and brand alignment details to properly assess against her benchmarks.",
+     "recommendation_confidence": "low"
+    }
+   },
+   {
+    "id": "797e1548-33cc-45b4-8bce-b496c7a721a7",
+    "brand_name": "ProBand",
+    "deal_type": "social_post",
+    "status": "negotiating",
+    "amount": null,
+    "amount_cash": null,
+    "amount_product": null,
+    "commission_pct": null,
+    "term_start": null,
+    "term_end": null,
+    "detected_at": "2026-06-02 19:42:09.69+00",
+    "offer_struct": {
+     "unit": null,
+     "amount": null,
+     "recurring": false,
+     "commission_pct": null,
+     "deliverable_counts": null
+    },
+    "thread_score": {
+     "factors": {
+      "exclusivity": "No exclusivity terms have been communicated, leaving this critical term undefined.",
+      "brandRelevance": "ProBand's sports performance product line fits soccer athletes well, and the World Cup partnership context suggests strategic brand alignment for a Stanford soccer player.",
+      "rateComparison": "The $1,200 offer aligns with Mia's stated $1,000-1,200/post expectations and exceeds her $1,044 floor, but without confirmed deliverables we cannot verify if this is per-post or total compensation.",
+      "deliverableScope": "No deliverables have been specified despite Mia's explicit request for a detailed proposal covering deliverables, timeline, and usage rights."
+     },
+     "fitRead": {
+      "label": "Strong soccer/World Cup fit",
+      "rating": "great"
+     },
+     "reasons": [
+      "Offer amount matches Mia's stated per-post expectations but lacks deliverable structure",
+      "Strong brand-sport fit with World Cup partnership angle",
+      "Completely undefined scope: zero deliverables, timeline, or usage rights specified",
+      "Athlete has been waiting since July 6 for substantive proposal"
+     ],
+     "urgency": "medium",
+     "verdict": "good",
+     "econBand": "NA_NOCASH",
+     "redFlags": [],
+     "econDetail": "offer unit not matchable to a rate type",
+     "dollarAmount": null,
+     "draft_points": [
+      "Referenced my $1,000-1,200/post rate expectations in July 6 response",
+      "Awaiting detailed proposal with deliverables, timeline, and usage rights as requested",
+      "$1,200 offer aligns with my stated per-post range",
+      "Need to confirm post volume and terms to evaluate true annual value"
+     ],
+     "rateVsMarket": null,
+     "scoreNumeric": 6,
+     "brandAnalysis": {
+      "category": "Sports Tech",
+      "sportFit": {
+       "label": "Exact soccer match",
+       "rating": "great"
+      },
+      "brandTier": "established",
+      "audienceFit": {
+       "label": "Soccer audience fit",
+       "rating": "good"
+      },
+      "brandSummary": "ProBand is a sports performance brand pursuing World Cup partnerships, indicating established market presence. Product alignment with soccer training and recovery needs makes this a natural fit for a Stanford soccer athlete. The World Cup angle suggests premium positioning and significant marketing investment.",
+      "capitalContribution": "athletic",
+      "capitalContributionLabel": "Builds athletic capital",
+      "portfolioDiversification": {
+       "label": "Performance gear addition",
+       "rating": "good"
+      }
+     },
+     "factorRatings": {
+      "exclusivity": {
+       "label": "Unknown",
+       "rating": "fair"
+      },
+      "brandRelevance": {
+       "label": "Strong sport fit",
+       "rating": "good"
+      },
+      "rateComparison": {
+       "label": "Above floor",
+       "rating": "good"
+      },
+      "deliverableScope": {
+       "label": "None stated",
+       "rating": "poor"
+      }
+     },
+     "autopilot_safe": false,
+     "economicsState": {
+      "read": "Price stated but deliverables pending",
+      "state": "tbd"
+     },
+     "recommendation": "negotiate",
+     "backfilled_from": {
+      "at": "2026-08-26T09:41:37.148164+00:00",
+      "verdict": "good",
+      "dollarAmount": 1200,
+      "scoreNumeric": 7
+     },
+     "negotiate_terms": [
+      "Confirm $1,200 is per-post rate, not total deal value",
+      "Request specific deliverable count and content requirements",
+      "Demand usage rights term limits and geographic scope",
+      "Set 7-day response deadline given prior wait time"
+     ],
+     "recommendation_ui": "Request full proposal",
+     "recommendation_agent": "Follow up immediately to convert the $1,200 offer into a concrete proposal. Reference your July 6 response where you clearly stated $1,000-1,200/post expectations and requested deliverables, timeline, and usage rights. Ask for specific post count, content requirements, usage terms, and exclusivity. Since you've already waited since July 6, express continued interest but note you need details to move forward. The $1,200 aligns with your floor, but only if it's per-post with reasonable volume.",
+     "recommendation_confidence": "medium"
+    }
+   },
+   {
+    "id": "c5c6069f-c60d-4525-8a2a-42ccef7c56b4",
+    "brand_name": "IRON Peptides",
+    "deal_type": "social_post",
+    "status": "negotiating",
+    "amount": null,
+    "amount_cash": null,
+    "amount_product": null,
+    "commission_pct": "25",
+    "term_start": null,
+    "term_end": null,
+    "detected_at": "2026-06-02 19:44:29.667+00",
+    "offer_struct": {
+     "unit": "commission_only",
+     "amount": null,
+     "recurring": false,
+     "commission_pct": 25,
+     "deliverable_counts": null
+    },
+    "thread_score": {
+     "factors": {
+      "exclusivity": "No exclusivity terms mentioned, which preserves flexibility for other nutrition partnerships.",
+      "brandRelevance": "IRON Peptides is a supplement brand with some relevance to soccer performance, but the peptide category carries NCAA compliance and reputation risks for a collegiate athlete.",
+      "rateComparison": "Commission-only structure with $0 guaranteed payment is 100% below Mia's per-post floor of $1,044 and projected annual of $21,632. No unit-matched comparison possible as this is not a per-post or annual deal structure.",
+      "deliverableScope": "Affiliate marketing with no posting obligations creates minimal burden, allowing focus on organic content growth, but lacks defined value."
+     },
+     "fitRead": {
+      "label": "Niche nutrition, some risk",
+      "rating": "good"
+     },
+     "reasons": [
+      "Zero guaranteed compensation: 25% commission only with no base pay, well below $1,044/post floor",
+      "Peptide category presents NCAA compliance and reputation risks for a Stanford soccer athlete",
+      "No posting obligations minimizes content burden but also means no guaranteed value",
+      "Brand re-engaged after 3.5 months and is now asking for audience data before committing to terms"
+     ],
+     "urgency": "low",
+     "verdict": "fair",
+     "econBand": "BELOW",
+     "redFlags": [],
+     "econDetail": "explicit no-cash offer vs known rate",
+     "dollarAmount": null,
+     "draft_points": [
+      "My baseline for partnerships is $1,044 per post with a projected annual value of $21,632",
+      "Commission-only structures need a strong strategic rationale given my established rates",
+      "The peptide category requires careful NCAA compliance review",
+      "I'm open to a hybrid model with guaranteed cash plus performance commission"
+     ],
+     "rateVsMarket": null,
+     "scoreNumeric": 4,
+     "brandAnalysis": {
+      "category": "Sports Nutrition",
+      "sportFit": {
+       "label": "Relevant to soccer",
+       "rating": "good"
+      },
+      "brandTier": "emerging",
+      "audienceFit": {
+       "label": "Athletic performance",
+       "rating": "good"
+      },
+      "brandSummary": "IRON Peptides appears to be an emerging sports nutrition brand focused on peptide supplements. The category is relevant to athletic performance but carries higher compliance and reputation risks than mainstream supplements for a collegiate athlete.",
+      "capitalContribution": "commercial",
+      "capitalContributionLabel": "Builds affiliate marketing experience",
+      "portfolioDiversification": {
+       "label": "First peptide brand",
+       "rating": "good"
+      }
+     },
+     "factorRatings": {
+      "exclusivity": {
+       "label": "No restrictions",
+       "rating": "great"
+      },
+      "brandRelevance": {
+       "label": "Niche nutrition",
+       "rating": "fair"
+      },
+      "rateComparison": {
+       "label": "Below floor",
+       "rating": "poor"
+      },
+      "deliverableScope": {
+       "label": "No obligations",
+       "rating": "good"
+      }
+     },
+     "autopilot_safe": false,
+     "economicsState": {
+      "read": "Commission-only, no cash guarantee",
+      "state": "unpriced"
+     },
+     "recommendation": "negotiate",
+     "backfilled_from": {
+      "at": "2026-08-26T09:41:42.842881+00:00",
+      "verdict": "fair",
+      "dollarAmount": null,
+      "scoreNumeric": 5
+     },
+     "negotiate_terms": [
+      "$400-600/month flat retainer minimum",
+      "Hybrid cash + commission structure",
+      "Clear posting guidelines if retainer added",
+      "NCAA compliance review of peptide products"
+     ],
+     "recommendation_ui": "Negotiate cash + commission",
+     "recommendation_agent": "This is a poor economic offer but the brand is actively asking for audience data, indicating they may be open to structuring real terms. Push for a hybrid model: request a $400-600 flat monthly retainer plus the 25% commission and free product. This would bring you closer to your floor while maintaining the low posting obligation. Emphasize your Stanford soccer platform and engaged audience. If they won't add cash, decline politely as this doesn't meet your economic baseline and the peptide category isn't worth the risk for commission-only compensation.",
+     "recommendation_confidence": "medium"
+    }
+   },
+   {
+    "id": "495ac373-0cc5-40e3-878d-213904ce33ef",
+    "brand_name": "AEGISLAB",
+    "deal_type": "social_post",
+    "status": "negotiating",
+    "amount": null,
+    "amount_cash": null,
+    "amount_product": null,
+    "commission_pct": null,
+    "term_start": null,
+    "term_end": null,
+    "detected_at": "2026-07-06 03:28:33.766+00",
+    "offer_struct": {
+     "unit": null,
+     "amount": null,
+     "recurring": false,
+     "commission_pct": null,
+     "deliverable_counts": null
+    },
+    "thread_score": {
+     "factors": {
+      "exclusivity": "No terms mentioned due to corrupted email content.",
+      "brandRelevance": "AEGISLAB appears to be a legitimate brand, but without message content, cannot assess sport or audience fit for a Stanford soccer athlete.",
+      "rateComparison": "Mia has established rates ($1,044/post floor, $21,632 projected annual) but no offer was stated in the corrupted email to compare against.",
+      "deliverableScope": "No deliverables specified in the incomplete communication."
+     },
+     "fitRead": {
+      "label": "Cannot assess fit",
+      "rating": "fair"
+     },
+     "reasons": [
+      "Email appears corrupted—only HTML boilerplate, no actual proposal content",
+      "No offer amount, deliverables, or terms to evaluate against Mia's $1,044/post floor",
+      "Requires immediate follow-up to request proper proposal details",
+      "Cannot assess strategic fit without brand message or product context"
+     ],
+     "urgency": "low",
+     "verdict": "fair",
+     "redFlags": [],
+     "dollarAmount": null,
+     "draft_points": [
+      "The email we received only contained HTML boilerplate with no message content",
+      "Mia has established partnership rates and needs concrete details to evaluate any offer",
+      "Please resend a complete proposal with deliverables and compensation terms"
+     ],
+     "rateVsMarket": null,
+     "scoreNumeric": 4,
+     "brandAnalysis": {
+      "category": "Sports Tech",
+      "sportFit": {
+       "label": "Cannot assess",
+       "rating": "fair"
+      },
+      "brandTier": "emerging",
+      "audienceFit": {
+       "label": "Cannot assess",
+       "rating": "fair"
+      },
+      "brandSummary": "AEGISLAB appears to be a sports tech or performance brand based on the name, but no actual product or positioning details were available in the corrupted email. The 'lab' suffix suggests scientific/technical focus that could align with athlete performance if properly positioned.",
+      "capitalContribution": "brand",
+      "capitalContributionLabel": "Builds brand capital",
+      "portfolioDiversification": {
+       "label": "Unknown category",
+       "rating": "fair"
+      }
+     },
+     "factorRatings": {
+      "exclusivity": {
+       "label": "No terms stated",
+       "rating": "fair"
+      },
+      "brandRelevance": {
+       "label": "Brand unknown",
+       "rating": "fair"
+      },
+      "rateComparison": {
+       "label": "No offer stated",
+       "rating": "fair"
+      },
+      "deliverableScope": {
+       "label": "No deliverables",
+       "rating": "fair"
+      }
+     },
+     "autopilot_safe": false,
+     "economicsState": {
+      "read": "No offer to compare to $1,044 floor",
+      "state": "unpriced"
+     },
+     "recommendation": "negotiate",
+     "negotiate_terms": [
+      "Request complete proposal with specific deliverables and compensation amount",
+      "Clarify brand category and product alignment with soccer/student-athlete audience",
+      "Ask for intended campaign timeline and usage rights scope"
+     ],
+     "recommendation_ui": "Request full proposal",
+     "recommendation_agent": "Reply to AEGISLAB noting the email appears corrupted and request a complete proposal. Ask for specific deliverables, compensation structure (cash amount per post or annual), usage rights, and any exclusivity terms. Since Mia has a per-post floor of $1,044, you'll evaluate against that benchmark. The incomplete nature prevents fit assessment, but follow-up will reveal if this is a strategic partnership worth pursuing.",
+     "recommendation_confidence": "low"
+    }
+   },
+   {
+    "id": "801fe00a-dd34-4352-8ef7-f71116d2b1cf",
+    "brand_name": "Connect Me",
+    "deal_type": "social_post",
+    "status": "negotiating",
+    "amount": null,
+    "amount_cash": null,
+    "amount_product": null,
+    "commission_pct": null,
+    "term_start": null,
+    "term_end": null,
+    "detected_at": "2026-07-08 12:41:12.609+00",
+    "offer_struct": {
+     "unit": null,
+     "amount": null,
+     "recurring": false,
+     "commission_pct": null,
+     "deliverable_counts": null
+    },
+    "thread_score": {
+     "factors": {
+      "exclusivity": "No exclusivity terms or rights requests mentioned. Terms are completely unstated.",
+      "brandRelevance": "Connect Me appears to be a tech/connectivity platform. Could align with Mia's goal to grow her following if the platform facilitates audience engagement or networking, but zero details provided to evaluate strategic fit.",
+      "rateComparison": "Mia has a known per-post floor of $1,044 and projected annual of $21,632, but no offer was stated in the thread. Cannot assess if offer meets her floor without proposal details.",
+      "deliverableScope": "No deliverables, timeline, or campaign structure stated. Athlete acknowledged reviewing a partnership opportunity, but the proposal itself is missing from the visible history."
+     },
+     "fitRead": {
+      "label": "Needs proposal details",
+      "rating": "good"
+     },
+     "reasons": [
+      "Thread is incomplete: no offer, deliverables, or terms stated despite athlete acknowledgment",
+      "Mia has strong established rates ($1,044/post floor) that any proposal must meet",
+      "Legitimate brand interest shown by same-day athlete response, worth pursuing details",
+      "Cannot evaluate economics or strategic fit without the actual proposal"
+     ],
+     "urgency": "medium",
+     "verdict": "fair",
+     "redFlags": [],
+     "dollarAmount": null,
+     "draft_points": [
+      "Mia's established rate floor is $1,044 per post with $21,632 projected annual value",
+      "Athlete responded same-day, showing legitimate interest from Connect Me brand",
+      "Need full proposal details to assess true value and strategic fit"
+     ],
+     "rateVsMarket": null,
+     "scoreNumeric": 5,
+     "brandAnalysis": {
+      "category": "Sports Tech",
+      "sportFit": {
+       "label": "Soccer mainstream appeal",
+       "rating": "good"
+      },
+      "brandTier": "emerging",
+      "audienceFit": {
+       "label": "College athlete demo",
+       "rating": "good"
+      },
+      "brandSummary": "Connect Me appears to be a tech or networking platform. For a Stanford soccer player focused on audience growth, this could be a strong fit if the platform enables follower acquisition. However, brand tier and product-market fit remain unclear without proposal details.",
+      "capitalContribution": "audience",
+      "capitalContributionLabel": "Builds audience capital",
+      "portfolioDiversification": {
+       "label": "Potential new category",
+       "rating": "good"
+      }
+     },
+     "factorRatings": {
+      "exclusivity": {
+       "label": "Not specified",
+       "rating": "fair"
+      },
+      "brandRelevance": {
+       "label": "Details pending",
+       "rating": "fair"
+      },
+      "rateComparison": {
+       "label": "No offer stated",
+       "rating": "fair"
+      },
+      "deliverableScope": {
+       "label": "None stated",
+       "rating": "poor"
+      }
+     },
+     "autopilot_safe": false,
+     "economicsState": {
+      "read": "No offer or deliverables stated",
+      "state": "unpriced"
+     },
+     "recommendation": "negotiate",
+     "negotiate_terms": [
+      "Request complete proposal: deliverables, compensation, usage rights, exclusivity, timeline",
+      "Confirm per-post rate meets or exceeds $1,044 floor based on scope",
+      "Align campaign mechanics with 'grow my following' goal (e.g., platform features, cross-promotion)"
+     ],
+     "recommendation_ui": "Request full proposal",
+     "recommendation_agent": "Mia responded promptly, indicating genuine interest from Connect Me. However, we cannot evaluate this deal without the actual proposal. Immediately request deliverables, compensation structure, and campaign timeline. Anchor any negotiation to her $1,044 per-post floor and $21K+ annual value. Since her goal is growing her following, prioritize platforms or activations that drive audience growth, not just static posts. Use her Stanford soccer pedigree and established rate card as leverage to secure premium pricing once terms surface.",
+     "recommendation_confidence": "low"
+    }
+   },
+   {
+    "id": "1965332e-7bbc-4f7f-8c8a-cb7b3d56ee89",
+    "brand_name": "Pillar",
+    "deal_type": "social_post",
+    "status": "negotiating",
+    "amount": null,
+    "amount_cash": null,
+    "amount_product": null,
+    "commission_pct": null,
+    "term_start": null,
+    "term_end": null,
+    "detected_at": "2026-07-08 13:33:25.953+00",
+    "offer_struct": {
+     "unit": "gifting_only",
+     "amount": null,
+     "recurring": false,
+     "commission_pct": null,
+     "deliverable_counts": null
+    },
+    "thread_score": {
+     "factors": {
+      "exclusivity": "No exclusivity terms mentioned in thread, suggesting a clean, non-restrictive partnership structure.",
+      "brandRelevance": "Pillar is a creator monetization platform, which aligns with athletic career needs but directly conflicts with Mia's stated primary goal of growing her following. The brand explicitly clarified they do not drive new fan acquisition.",
+      "rateComparison": "Offer of $1,108 per post sits above Mia's floor of $1,044, meeting her minimum economic threshold. The rate is unit-matched and favorable on absolute economics.",
+      "deliverableScope": "Dedicated post plus content, promotion schedule, and onboarding represents a reasonable scope for the price point, with no excessive demands."
+     },
+     "fitRead": {
+      "label": "Conflicts with growth goal",
+      "rating": "fair"
+     },
+     "reasons": [
+      "Economics meet Mia's floor: $1,108 offer exceeds her $1,044 minimum per-post rate",
+      "Strategic misalignment: Mia's core goal is audience growth; Pillar explicitly monetizes existing audiences only",
+      "Brand self-selected out: Faisal acknowledged poor fit and suggested reconnecting later",
+      "Clean terms with reasonable deliverables and no exclusivity concerns"
+     ],
+     "urgency": "low",
+     "verdict": "poor",
+     "econBand": "BELOW",
+     "redFlags": [],
+     "econDetail": "explicit no-cash offer vs known rate",
+     "dollarAmount": null,
+     "draft_points": [
+      "My primary partnership goal is growing my soccer following, which we discussed",
+      "I appreciate you clarifying that Pillar focuses on monetizing existing audiences rather than driving new fan growth",
+      "Given that core mismatch, I agree this isn't the right fit at this time",
+      "Let's definitely stay in touch if your product evolves to include audience acquisition tools"
+     ],
+     "rateVsMarket": null,
+     "scoreNumeric": 3,
+     "brandAnalysis": {
+      "category": "Sports Tech",
+      "sportFit": {
+       "label": "Athlete platform match",
+       "rating": "good"
+      },
+      "brandTier": "emerging",
+      "audienceFit": {
+       "label": "No growth mechanism",
+       "rating": "poor"
+      },
+      "brandSummary": "Pillar is an emerging sports tech platform offering creator monetization tools and AI assistance. While relevant to athletes as a category, the specific product does not align with Mia's audience growth objective. The brand operates in the creator economy space with a 0% fee model, positioning itself as athlete-friendly on economics but not on audience expansion.",
+      "capitalContribution": "commercial",
+      "capitalContributionLabel": "Builds commercial capital only",
+      "portfolioDiversification": {
+       "label": "First creator tech deal",
+       "rating": "good"
+      }
+     },
+     "factorRatings": {
+      "exclusivity": {
+       "label": "None mentioned",
+       "rating": "great"
+      },
+      "brandRelevance": {
+       "label": "Goal mismatch",
+       "rating": "poor"
+      },
+      "rateComparison": {
+       "label": "Above floor",
+       "rating": "good"
+      },
+      "deliverableScope": {
+       "label": "Reasonable scope",
+       "rating": "good"
+      }
+     },
+     "autopilot_safe": false,
+     "economicsState": {
+      "read": "Priced at $1,108 per post, above athlete's floor",
+      "state": "priced"
+     },
+     "recommendation": "negotiate",
+     "backfilled_from": {
+      "at": "2026-08-26T09:41:34.182445+00:00",
+      "verdict": "fair",
+      "dollarAmount": 1108,
+      "scoreNumeric": 5
+     },
+     "negotiate_terms": [],
+     "recommendation_ui": "Counter — ask for terms",
+     "recommendation_agent": "This deal should be declined despite meeting Mia's rate floor. The fundamental mismatch is that Mia's primary goal is growing her following, while Pillar's platform explicitly monetizes existing audiences without driving new fan acquisition. The brand representative himself recognized this misalignment and suggested they may not be a fit. While the $1,108 per post rate is economically acceptable, partnerships that don't advance core career goals should be declined, especially when the brand acknowledges the mismatch. No negotiation is recommended because the product's core function cannot be changed to deliver audience growth.",
+     "recommendation_confidence": "high"
+    }
+   },
+   {
+    "id": "9acd1d50-0a84-4974-b3fc-bb965c8b5541",
+    "brand_name": "gorjana",
+    "deal_type": "social_post",
+    "status": "accepted",
+    "amount": "14000",
+    "amount_cash": "7500",
+    "amount_product": "6500",
+    "commission_pct": "15",
+    "term_start": null,
+    "term_end": null,
+    "detected_at": "2026-07-29 17:38:50.518+00",
+    "offer_struct": {
+     "unit": "total",
+     "amount": 7500,
+     "recurring": false,
+     "product_value": 6500,
+     "commission_pct": null,
+     "deliverable_counts": {
+      "posts": 6,
+      "stories": 6
+     }
+    },
+    "thread_score": {
+     "factors": {
+      "exclusivity": "No exclusivity terms mentioned in the offer, leaving Mia free for other partnerships.",
+      "brandRelevance": "Fashion jewelry brand with lifestyle crossover appeal to Mia's college and soccer audience; strong fit for personal brand expansion.",
+      "rateComparison": "At ~$2.3K per post equivalent, this offer is 133% above Mia's $1K floor and exceptional against her own rate.",
+      "deliverableScope": "6 posts and 6 stories represents a moderate-heavy content load, but well-compensated by the $14K total value."
+     },
+     "fitRead": {
+      "label": "Strong lifestyle fit",
+      "rating": "good"
+     },
+     "reasons": [
+      "Total value of $7.5K cash + $6.5K product equates to ~$2.3K per post, significantly exceeding Mia's $1K floor",
+      "Established jewelry brand with clear lifestyle fit for college athlete audience",
+      "Affiliate commission provides ongoing revenue upside beyond initial payment",
+      "Partnership already in execution phase with content being delivered since August"
+     ],
+     "urgency": "medium",
+     "verdict": "great",
+     "redFlags": [],
+     "dollarAmount": 14000,
+     "draft_points": [
+      "$7.5K cash + $6.5K product for 6 posts and 6 stories",
+      "Partnership already active since August 25th",
+      "Value per post is 133% above your $1K floor"
+     ],
+     "rateVsMarket": null,
+     "scoreNumeric": 8,
+     "brandAnalysis": {
+      "category": "Fashion Jewelry",
+      "sportFit": {
+       "label": "Lifestyle crossover",
+       "rating": "fair"
+      },
+      "brandTier": "established",
+      "audienceFit": {
+       "label": "College/female fit",
+       "rating": "good"
+      },
+      "brandSummary": "gorjana is an established fashion jewelry brand offering strong cash-plus-product compensation with affiliate commission structure, providing lifestyle crossover appeal for a college soccer athlete.",
+      "capitalContribution": "brand",
+      "capitalContributionLabel": "Builds brand capital",
+      "portfolioDiversification": {
+       "label": "First jewelry deal",
+       "rating": "good"
+      }
+     },
+     "factorRatings": {
+      "exclusivity": {
+       "label": "None stated",
+       "rating": "great"
+      },
+      "brandRelevance": {
+       "label": "Lifestyle crossover",
+       "rating": "good"
+      },
+      "rateComparison": {
+       "label": "133% above floor",
+       "rating": "great"
+      },
+      "deliverableScope": {
+       "label": "6 posts + 6 stories",
+       "rating": "good"
+      }
+     },
+     "autopilot_safe": false,
+     "economicsState": {
+      "read": "$7.5K cash + $6.5K product for 6 posts",
+      "state": "priced"
+     },
+     "recommendation": "accept",
+     "negotiate_terms": null,
+     "recommendation_ui": "Accept and formalize",
+     "recommendation_agent": "This deal is already in execution and delivers exceptional value at 133% above Mia's per-post floor. The $7.5K cash plus $6.5K product for 6 posts and 6 stories is strong economics, and the affiliate commission adds upside. Since Mia is actively posting and receiving deliverables, formalizing the agreement is the priority. Request a written contract confirming deliverables, payment schedule, usage rights, and affiliate terms to protect the relationship. No renegotiation needed given the favorable rate and active partnership status.",
+     "recommendation_confidence": "high"
+    }
+   }
+  ],
+  "periods": [],
+  "deliverableRows": 0
+ },
+ "connectedAccounts": [
+  {
+   "platform": "gmail",
+   "status": "revoked",
+   "last_fetched_at": "2026-07-15 12:07:15.334+00"
+  },
+  {
+   "platform": "gmail",
+   "status": "active",
+   "last_fetched_at": "2026-09-26 12:02:18.698+00"
+  },
+  {
+   "platform": "gmail",
+   "status": "revoked",
+   "last_fetched_at": "2026-07-15 12:00:01.814+00"
+  },
+  {
+   "platform": "gmail",
+   "status": "active",
+   "last_fetched_at": "2026-09-26 12:02:19.266+00"
+  },
+  {
+   "platform": "instagram",
+   "status": "revoked",
+   "last_fetched_at": "2026-07-10 03:14:35.148+00"
+  },
+  {
+   "platform": "instagram",
+   "status": "revoked",
+   "last_fetched_at": "2026-07-18 12:00:14.57+00"
+  },
+  {
+   "platform": "instagram",
+   "status": "revoked",
+   "last_fetched_at": "2026-07-09 04:18:41.116+00"
+  },
+  {
+   "platform": "instagram",
+   "status": "active",
+   "last_fetched_at": "2026-09-26 12:03:59.981+00"
+  },
+  {
+   "platform": "instagram",
+   "status": "revoked",
+   "last_fetched_at": "2026-07-20 12:04:00.927+00"
+  },
+  {
+   "platform": "outlook",
+   "status": "pending",
+   "last_fetched_at": null
+  },
+  {
+   "platform": "tiktok",
+   "status": "active",
+   "last_fetched_at": "2026-09-03 19:38:04.028+00"
+  },
+  {
+   "platform": "youtube",
+   "status": "active",
+   "last_fetched_at": "2026-09-16 04:43:34.746+00"
+  },
+  {
+   "platform": "youtube",
+   "status": "expired",
+   "last_fetched_at": "2026-07-08 21:33:21.469+00"
+  }
+ ],
+ "research": {
+  "runs": 0,
+  "latestFinishedAt": null,
+  "stateRows": 0
+ },
+ "socialFeatures": {
+  "rows": 1217,
+  "latest": "2026-09-26 04:30:19.507+00"
+ },
+ "objectives": [
+  {
+   "lifecycle": "active",
+   "disposition": "modified",
+   "n": 3
+  },
+  {
+   "lifecycle": "proposed",
+   "disposition": "declined",
+   "n": 1
+  },
+  {
+   "lifecycle": "proposed",
+   "disposition": "deferred",
+   "n": 1
+  }
+ ]
+}

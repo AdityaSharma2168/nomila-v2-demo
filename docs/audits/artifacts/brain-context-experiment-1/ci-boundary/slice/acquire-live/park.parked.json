@@ -1,0 +1,65 @@
+{
+ "request": {
+  "id": "req_41d994ca3ee36669",
+  "key": "66e8cc373a820cd2",
+  "need": "athlete_capability_intent",
+  "status": "acquiring"
+ },
+ "plan": {
+  "mechanism": "mila_question",
+  "chosenBecause": [
+   "need athlete_capability_intent can be established by mila_question",
+   "authority required: athlete",
+   "chosen mila_question: available, authority athlete ≥ athlete, lowest athlete burden among the available"
+  ],
+  "rejected": []
+ },
+ "run": {
+  "id": "67658745-0950-4c94-90b9-d9a799607603",
+  "athlete_id": "dd1a8a80-d31b-423a-a572-9d146716cb0f",
+  "process": "intelligence_acquisition",
+  "definition_version": 1,
+  "active_scope": "intelligence_acquisition:req_41d994ca3ee36669",
+  "status": "waiting",
+  "current_step": "ask",
+  "input": {
+   "why": "A partnership's deliverables must fit what she will actually post; only she can say what that is.",
+   "asks": "intelligence_request",
+   "need": "athlete_capability_intent",
+   "field": "cadence",
+   "question": "How many posts a week can you keep up in season?",
+   "request_id": "req_41d994ca3ee36669"
+  },
+  "started_at": "2026-09-27T01:51:27.587Z",
+  "finished_at": null,
+  "last_error": null,
+  "created_by": "brain-acquisition-seam",
+  "idempotency_key": "intelligence_acquisition:req_41d994ca3ee36669"
+ },
+ "step": {
+  "id": "c0aaaece-c21e-45c9-b665-10d90125078b",
+  "run_id": "67658745-0950-4c94-90b9-d9a799607603",
+  "step": "ask",
+  "ordinal": 0,
+  "attempt": 1,
+  "kind": "await_human",
+  "status": "waiting",
+  "ready_at": "2026-09-27T01:51:27.528Z",
+  "lease_until": null,
+  "input": {
+   "why": "A partnership's deliverables must fit what she will actually post; only she can say what that is.",
+   "asks": "intelligence_request",
+   "need": "athlete_capability_intent",
+   "field": "cadence",
+   "question": "How many posts a week can you keep up in season?",
+   "request_id": "req_41d994ca3ee36669"
+  },
+  "output": null,
+  "mode": null,
+  "trace_id": null,
+  "error": null,
+  "started_at": null,
+  "finished_at": null,
+  "created_at": "2026-09-27T01:51:27.528Z"
+ }
+}

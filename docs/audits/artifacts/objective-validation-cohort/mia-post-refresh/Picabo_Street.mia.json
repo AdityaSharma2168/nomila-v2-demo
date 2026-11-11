@@ -1,0 +1,1297 @@
+{
+ "id": "14b5a206-43d2-429e-bd7b-3a29ddac641c",
+ "subject_id": "0ab6c9fc-9cad-40cd-8245-0cd69f8bf331",
+ "versions": {
+  "params": "v1.0.1-beta.1+lookups-v1+policy-v0",
+  "policy": "policy-v0",
+  "priors": "priors-v1",
+  "cohorts": "cohorts-v0-empty",
+  "lookups": "lookups-v1",
+  "evaluator": "blind-eval-spec/0.2.1",
+  "methodology": "v1.0.1-beta.1"
+ },
+ "value": {
+  "notes": {
+   "strengths": [
+    "Compelling and highly distinctive personal narrative of resilience, injury recovery, and triumph.",
+    "Immense historic athletic authority as an Olympic Gold and Silver medalist, further amplified by her role as an NBC sports analyst in 2026.",
+    "Strong crossover appeal and household name recognition, keeping her culturally relevant decades post-retirement.",
+    "Substantial commercial proof with premium speaking fees and strategic corporate sponsors for her educational academy.",
+    "Successful mitigation of past brand-safety concerns through absolute legal dismissal and transparent narrative-processing."
+   ],
+   "constraints": [
+    "Very small personal social media reach, which restricts her usefulness for digital-first influencer campaigns.",
+    "Lacks active modern platform channels like TikTok, YouTube, or X to engage younger demographics directly.",
+    "Athletic accomplishments occurred over two decades ago, relying on cyclical Winter Olympic events to maintain peak relevance."
+   ],
+   "evaluationRisks": [
+    "Relying on social media booking agency websites (e.g., MN2S) for direct follower estimations, which can occasionally feature unverified or outdated platform metrics."
+   ],
+   "missingEvidence": [
+    "Private social media metrics (engagement rates, video retention, reach efficiency, and audience demographics).",
+    "Direct ROI and conversion performance data for her commercial campaigns."
+   ]
+  },
+  "score": 594,
+  "drivers": [],
+  "summary": "Picabo Street is a retired American alpine skiing legend whose commercial marketability relies on her immense historic authority, uniquely compelling personal narrative, and active presence in high-profile sports media. As an Olympic gold and silver medalist and a pioneer for American women's downhill skiing, Street's legacy is firmly cemented. Her cultural relevance has experienced a powerful resurgence, driven by the 2022 Peacock documentary 'PICABO' (co-directed by Lindsey Vonn) and her high-profile debut as NBC's hill reporter and analyst for the Milano Cortina 2026 Olympic Winter Games, where her broadcast activations with icons like Snoop Dogg gained widespread traction. While her personal direct social media audience remains comparatively small, her broader narrative power—anchored by a legendary name, extreme resilience, and overcoming severe physical and personal trauma—commands significant prestige. She maintains solid commercial proof through premium speaking engagements and brand partnerships for her Picabo Street Academy. A past 2015 domestic incident was fully dismissed in court and has been transparently integrated into her comeback narrative, minimizing brand-safety risks. Her marketability today operates at a high level as a premium legacy endorser, commentator, and motivational authority.",
+  "evidence": [
+   {
+    "id": "E1",
+    "claim": "Picabo Street debuted as an NBC sports analyst and women's hill reporter for the Milano Cortina 2026 Olympic Winter Games.",
+    "sourceUrl": "https://www.nbcsports.com",
+    "observedAt": "February 2026",
+    "sourceType": "official",
+    "sourceTitle": "PICABO STREET (Olympics) - Women's Hill Reporter"
+   },
+   {
+    "id": "E2",
+    "claim": "The career-spanning documentary 'PICABO', co-directed by Frank Marshall and Lindsey Vonn, premiered on Peacock in January 2022.",
+    "sourceUrl": "https://www.staytunedmag.com",
+    "observedAt": "January 21, 2022",
+    "sourceType": "major_media",
+    "sourceTitle": "From codirectors and executive producers Frank Marshall and Lindsey Vonn, this is the first career-spanning documentary film chronicling the life of Picabo Street..."
+   },
+   {
+    "id": "E3",
+    "claim": "Picabo Street won Olympic gold in the 1998 Super-G, silver in the 1994 Downhill, and consecutive World Cup downhill season titles in 1995 and 1996.",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Picabo_Street",
+    "observedAt": "August 2026",
+    "sourceType": "secondary",
+    "sourceTitle": "Picabo Street Wikipedia"
+   },
+   {
+    "id": "E4",
+    "claim": "Picabo Street runs the Picabo Street Academy in Park City, Utah, partnering with major brands like Stifel, Hydro Flask, Comcast/Xfinity, Wildhorn, Kappa, and Cloudflare.",
+    "sourceUrl": "https://mn2s.com",
+    "observedAt": "September 2026",
+    "sourceType": "secondary",
+    "sourceTitle": "Picabo Street MN2S Booking Bio & Partners"
+   },
+   {
+    "id": "E5",
+    "claim": "Domestic violence and assault charges against Picabo Street were fully dismissed by a Utah judge in March 2016.",
+    "sourceUrl": "https://www.cbsnews.com",
+    "observedAt": "March 28, 2016",
+    "sourceType": "major_media",
+    "sourceTitle": "Judge dismisses charges against skier Picabo Street"
+   },
+   {
+    "id": "E6",
+    "claim": "Picabo Street commands keynotes and speaking engagement fees ranging from $20,000 to $50,000.",
+    "sourceUrl": "https://www.allamericanspeakers.com",
+    "observedAt": "September 17, 2026",
+    "sourceType": "secondary",
+    "sourceTitle": "Picabo Street Speaker Booking Details"
+   },
+   {
+    "id": "E7",
+    "claim": "Street engaged in high-visibility promotional content for NBC during the Milano Cortina 2026 Olympics, including a featured skiing lesson segment with Snoop Dogg.",
+    "sourceUrl": "https://www.youtube.com",
+    "observedAt": "February 10, 2026",
+    "sourceType": "official",
+    "sourceTitle": "Snoop Dogg learns how to ski with Picabo Street at the Milan Cortina Winter Olympics"
+   }
+  ],
+  "findings": [
+   {
+    "key": "athletic_authority",
+    "value": 80.5,
+    "rationale": "Picabo Street maintains an exceptional legacy of athletic authority. Although retired since 2002, her historical achievements as an Olympic gold medalist and back-to-back downhill World Cup champion command enduring respect. Her ongoing authority is preserved and refreshed through her prominent broadcasting role as NBC's women's hill reporter during the Milano Cortina 2026 Olympic Winter Games.",
+    "components": [
+     {
+      "key": "athletic_authority.role_importance",
+      "value": 80,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2",
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "value": 85,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "value": 30,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "value": 88,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "value": 85,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "value": 90,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1",
+     "E2",
+     "E3"
+    ],
+    "confidenceReason": "Her extensive historical record and her highly active 2026 NBC broadcasting role are thoroughly documented by official Olympic and network channels."
+   },
+   {
+    "key": "audience_scale",
+    "value": 37.5,
+    "rationale": "Street operates with a highly limited direct personal social media footprint. Her combined audience across Instagram and Facebook is small, representing a modest niche compared to modern, active alpine stars. However, she gains massive indirect reach through major television broadcasts and national media coverage.",
+    "components": [
+     {
+      "key": "audience_scale.audience_growth",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "value": 25,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "value": 35,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "value": 40,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E3",
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "MEDIUM",
+    "citedEvidence": [
+     "E3",
+     "E4"
+    ],
+    "confidenceReason": "Her public social profile follower counts are clear, but her lack of presence on key digital platforms like TikTok and X limits full platform visibility."
+   },
+   {
+    "key": "engagement_quality",
+    "value": 50,
+    "rationale": "A lack of private and detailed analytic data prevents a precise evaluation of Street's direct digital audience engagement. Qualitatively, her small following is highly organic, consisting of dedicated winter sports fans and generational admirers, though she is not a digital-first content creator.",
+    "components": [
+     {
+      "key": "engagement_quality.video_retention",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     }
+    ],
+    "confidence": "LOW",
+    "citedEvidence": [
+     "E4"
+    ],
+    "confidenceReason": "Essential back-end engagement data is completely missing due to the lack of connected social media platforms."
+   },
+   {
+    "key": "cultural_relevance",
+    "value": 69.5,
+    "rationale": "Street holds strong, enduring cultural relevance in the American landscape. Her unique name and charismatic personality have cemented her as a household name from the 1990s, which is regularly reactivated during Winter Olympic cycles. The launch of her 2022 career documentary and her highly-publicized NBC broadcast segments in 2026 keep her culturally visible.",
+    "components": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "value": 60,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "value": 55,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E2",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "value": 85,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "value": 75,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E3",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "value": 70,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1",
+     "E2",
+     "E3",
+     "E7"
+    ],
+    "confidenceReason": "Persistent national coverage from major outlets, along with recent prime-time Olympic broadcasts, provides deep and consistent evidence of her cultural footprint."
+   },
+   {
+    "key": "narrative_power",
+    "value": 88.8,
+    "rationale": "Her narrative power is exceptionally strong, characterized by an instantly memorable identity, deep personal struggles, and incredible resilience. Her transition from a rebellious, unnamed child in Idaho to a legendary Olympic champion who overcame severe physical trauma is highly compelling. This authentic and deep story translates seamlessly into powerful, inspirational brand messaging.",
+    "components": [
+     {
+      "key": "narrative_power.durability",
+      "value": 85,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2",
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "value": 90,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2",
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "value": 95,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2",
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "value": 85,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "value": 90,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2",
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "value": 78,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4",
+       "E6"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "confidenceReason": "The narrative is thoroughly detailed in her autobiography and was the centerpiece of a major career-spanning feature documentary co-produced by Lindsey Vonn."
+   },
+   {
+    "key": "brand_fit",
+    "value": 74.1,
+    "rationale": "Street is a highly attractive partner for brands seeking to align with themes of resilience, active lifestyle longevity, and youth development. She represents highly clear, coherent values and is geographically powerful in affluent winter sports hubs. Her 2015 arrest has been fully resolved and integrated into her personal development story, leaving her as a safe, mainstream-cleared asset.",
+    "components": [
+     {
+      "key": "brand_fit.brand_safety",
+      "value": 68,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E2",
+       "E5"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "value": 75,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4",
+       "E6"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "value": 65,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E6"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "value": 75,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "value": 75,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "value": 85,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E2",
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1",
+     "E2",
+     "E4",
+     "E5",
+     "E6"
+    ],
+    "confidenceReason": "The court's dismissal of her 2015 charges is a matter of public record, and her active corporate partners and NBC analyst role confirm her commercial safety."
+   },
+   {
+    "key": "commercial_proof",
+    "value": 66,
+    "rationale": "Street provides robust commercial proof through premium speaking fees and long-term brand integrations. She consistently commands between $20,000 and $50,000 for live speaking engagements. Additionally, her educational venture, the Picabo Street Academy, maintains strategic sponsorships with premium corporations.",
+    "components": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "value": 75,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "value": 70,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E6"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "value": 60,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "value": 65,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "value": 70,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E4",
+       "E6"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E4",
+     "E6"
+    ],
+    "confidenceReason": "Her standardized speaking rates are clearly documented by booking bureaus, and her academy's active brand partnerships are openly listed."
+   },
+   {
+    "key": "momentum",
+    "value": 55.25,
+    "rationale": "Street is experiencing a positive cyclical wave of momentum, catalyzed by her prominent broadcasting debut during the Milano Cortina 2026 Winter Olympics. This role significantly elevated her cultural visibility and generated notable public interest. Her commercial standing remains highly stable, anchored by her established legacy and educational initiatives.",
+    "components": [
+     {
+      "key": "momentum.audience_growth",
+      "value": 50,
+      "rationale": null,
+      "confidence": "LOW",
+      "citedEvidence": [],
+      "evidenceClass": "ASSUMED"
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "value": 75,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "value": 40,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E3"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "value": 60,
+      "rationale": null,
+      "confidence": "MEDIUM",
+      "citedEvidence": [
+       "E4"
+      ],
+      "evidenceClass": "EVALUATED"
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "value": 65,
+      "rationale": null,
+      "confidence": "HIGH",
+      "citedEvidence": [
+       "E1",
+       "E7"
+      ],
+      "evidenceClass": "EVALUATED"
+     }
+    ],
+    "confidence": "HIGH",
+    "citedEvidence": [
+     "E1",
+     "E3",
+     "E4",
+     "E7"
+    ],
+    "confidenceReason": "Her recent high-profile NBC analyst work and public media presence in 2026 are highly fresh and strongly verified."
+   }
+  ],
+  "headline": {
+   "key": "mia_score",
+   "value": 594,
+   "confidence": "HIGH"
+  },
+  "composite": 63.88,
+  "confidence": 70.5,
+  "dimensions": [
+   {
+    "score": 80.5,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "athletic_authority.role_importance",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 80,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 30,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 88,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 90,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "athletic_authority",
+    "confidence": 90,
+    "contribution": 12.08
+   },
+   {
+    "score": 37.5,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "audience_scale.audience_growth",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 25,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 35,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 40,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E3",
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "audience_scale",
+    "confidence": 55.5,
+    "contribution": 5.63
+   },
+   {
+    "score": 50,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "engagement_quality.video_retention",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 50,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.3,
+      "evidenceIds": [
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     }
+    ],
+    "dimension": "engagement_quality",
+    "confidence": 30,
+    "contribution": 7.5
+   },
+   {
+    "score": 69.5,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 60,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 55,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E2",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 75,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E3",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 70,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "cultural_relevance",
+    "confidence": 85.5,
+    "contribution": 6.95
+   },
+   {
+    "score": 88.8,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "narrative_power.durability",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 90,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 95,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 90,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 78,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E6"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "narrative_power",
+    "confidence": 90,
+    "contribution": 8.88
+   },
+   {
+    "score": 74.1,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "brand_fit.brand_safety",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 68,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E2",
+       "E5"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 75,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E6"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 65,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E6"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 75,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 75,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 85,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E2",
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "brand_fit",
+    "confidence": 84,
+    "contribution": 7.41
+   },
+   {
+    "score": 66,
+    "weight": 0.15,
+    "signals": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 75,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 70,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E6"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 60,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 65,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 70,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E4",
+       "E6"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "commercial_proof",
+    "confidence": 73.5,
+    "contribution": 9.9
+   },
+   {
+    "score": 55.25,
+    "weight": 0.1,
+    "signals": [
+     {
+      "key": "momentum.audience_growth",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 50,
+      "source": "imputed",
+      "imputed": true,
+      "confidence": 0.3,
+      "evidenceIds": [],
+      "modelVersion": "normalizer=v1.0.1-beta.1+lookups-v1+policy-v0;cohorts=cohorts-v0-empty;priors=priors-v1;lookups=lookups-v1;policy=policy-v0;prior=level"
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 75,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 40,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E3"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 60,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.6,
+      "evidenceIds": [
+       "E4"
+      ],
+      "modelVersion": "mia-evaluator"
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "asOf": "2026-09-13T22:41:10.473Z",
+      "value": 65,
+      "source": "web_researched",
+      "imputed": false,
+      "confidence": 0.9,
+      "evidenceIds": [
+       "E1",
+       "E7"
+      ],
+      "modelVersion": "mia-evaluator"
+     }
+    ],
+    "dimension": "momentum",
+    "confidence": 72,
+    "contribution": 5.53
+   }
+  ],
+  "overallConfidence": {
+   "level": "HIGH",
+   "explanation": "The evaluation of Picabo Street's marketability is supported by highly current, well-documented media footprints from the Milano Cortina 2026 Olympic Winter Games and her 2022 feature documentary. Access to official broadcaster reports, public court outcomes, and speaking bureaus ensures high certainty in her athletic standing, narrative power, and commercial fit. The only minor limitation is the absence of detailed, private engagement data for her personal social media accounts, which represents a negligible fraction of her overall cultural reach."
+  },
+  "identityConfidence": "HIGH",
+  "importantMissingData": [
+   "Private social media metrics (engagement rates, video retention, reach efficiency, and audience demographics).",
+   "Direct ROI and conversion performance data for her commercial campaigns."
+  ]
+ },
+ "evidence_as_of": "2026-09-13T22:41:10.473Z",
+ "evaluation_run_id": "ae30dc19-56aa-495c-a484-89b29c95f81d",
+ "created_at": "2026-09-25T17:48:08.449Z",
+ "career_status": "active",
+ "sport": "alpine skiing",
+ "division": null,
+ "cost_usd": "0.2174",
+ "supersedes": "3de8814a-4741-49a7-b4bc-c04897287176"
+}

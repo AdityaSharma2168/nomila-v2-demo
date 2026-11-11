@@ -1,0 +1,234 @@
+{
+ "version": "recommendation/0.2.0-exp",
+ "records": [
+  {
+   "version": "recommendation/0.2.0-exp",
+   "id": "rec_2507ecb0723f9dd8",
+   "key": "c81ff8144f65d35a",
+   "source": "the Objective loop",
+   "subject": {
+    "kind": "objective",
+    "id": "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+   },
+   "question": "what should Nomila do about this Objective now?",
+   "objectiveIds": [
+    "b1c799e3-59fc-4986-b3ab-a0b7b4869601"
+   ],
+   "value": {
+    "why": "Mia has a strong narrative power and distinctiveness tied to her philanthropy, but her work with Yuwa has not yet been commercialized. Targeting CSR and global brands allows her to leverage this unique narrative.",
+    "ends": null,
+    "what": "Target global brand and corporate social responsibility partnerships that align with her philanthropic leadership at the Yuwa girls empowerment program.",
+    "cites": [
+     {
+      "how": "The objective is to expand the impact and visibility of her work with Yuwa through aligned global brand and CSR partnerships.",
+      "ref": "objective[b1c799e3-59fc-4986-b3ab-a0b7b4869601]"
+     },
+     {
+      "how": "M.I.A. identified her philanthropy with Yuwa as a key pillar of her highly differentiated narrative.",
+      "ref": "findings[mia.narrative_power]"
+     },
+     {
+      "how": "This opportunity recommends elevating her Yuwa work to attract global CSR sponsorships.",
+      "ref": "opportunity[amplify-yuwa-philanthropic-work]"
+     }
+    ],
+    "intent": null,
+    "notSeen": [
+     "Specific CSR contact list",
+     "Yuwa academy's own corporate sponsorship guidelines"
+    ],
+    "advances": null,
+    "executionPath": "specialized_plan",
+    "relationToExistingWork": "new_work"
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.12.0-exp",
+    "runAt": "2026-09-27T23:11:26.659Z",
+    "runId": "f9e00c6f-87b3-46be-82d9-a01300f4d4c1"
+   },
+   "runs": [
+    "f9e00c6f-87b3-46be-82d9-a01300f4d4c1"
+   ],
+   "response": {
+    "at": null,
+    "actor": null,
+    "state": "none"
+   },
+   "authorization": {
+    "at": null,
+    "actor": null,
+    "state": "none"
+   },
+   "execution": {
+    "refs": [],
+    "state": "none"
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "reconsiders": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-27T23:11:26.659Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run f9e00c6f-87b3-46be-82d9-a01300f4d4c1"
+    }
+   ]
+  },
+  {
+   "version": "recommendation/0.2.0-exp",
+   "id": "rec_40c8ca0b0d70dc72",
+   "key": "d9372f4f7e892e9b",
+   "source": "the Objective loop",
+   "subject": {
+    "kind": "objective",
+    "id": "c0f587e4-750f-4575-a4e8-fd4cfa6e078e"
+   },
+   "question": "what should Nomila do about this Objective now?",
+   "objectiveIds": [
+    "c0f587e4-750f-4575-a4e8-fd4cfa6e078e"
+   ],
+   "value": {
+    "why": "Mia's academic acceleration in Symbolic Systems and Management Science at Stanford creates a compelling, elite narrative with practically zero athletic peer competition in tech, EdTech, and venture spaces.",
+    "ends": null,
+    "what": "Target brand partnerships and ambassador roles within the EdTech, STEM, and technology venture sectors that align with her academic positioning.",
+    "cites": [
+     {
+      "how": "The objective is to build her positioning at the intersection of athletics and technology and secure aligned partnerships.",
+      "ref": "objective[c0f587e4-750f-4575-a4e8-fd4cfa6e078e]"
+     },
+     {
+      "how": "Her academic acceleration (master's in Management Science and Engineering, undergrad in 2.5 years) is a major narrative strength.",
+      "ref": "findings[mia.narrative_power]"
+     },
+     {
+      "how": "The opportunity outlines targeting premium brand partnerships in EdTech, STEM, and enterprise venture spaces to leverage her credentials.",
+      "ref": "opportunity[grow-academic-tech-partnerships]"
+     }
+    ],
+    "intent": null,
+    "notSeen": [
+     "Tech-sector partner preferences",
+     "Academic schedule constraints"
+    ],
+    "advances": null,
+    "executionPath": "specialized_plan",
+    "relationToExistingWork": "new_work"
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.12.0-exp",
+    "runAt": "2026-09-27T23:11:26.659Z",
+    "runId": "f9e00c6f-87b3-46be-82d9-a01300f4d4c1"
+   },
+   "runs": [
+    "f9e00c6f-87b3-46be-82d9-a01300f4d4c1"
+   ],
+   "response": {
+    "at": null,
+    "actor": null,
+    "state": "none"
+   },
+   "authorization": {
+    "at": null,
+    "actor": null,
+    "state": "none"
+   },
+   "execution": {
+    "refs": [],
+    "state": "none"
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "reconsiders": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-27T23:11:26.659Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run f9e00c6f-87b3-46be-82d9-a01300f4d4c1"
+    }
+   ]
+  },
+  {
+   "version": "recommendation/0.2.0-exp",
+   "id": "rec_454fd683b5faeac4",
+   "key": "8704ed12d2c29628",
+   "source": "the Objective loop",
+   "subject": {
+    "kind": "objective",
+    "id": "feb62891-8b9f-44e4-8c1f-677d6947334b"
+   },
+   "question": "what should Nomila do about this Objective now?",
+   "objectiveIds": [
+    "feb62891-8b9f-44e4-8c1f-677d6947334b"
+   ],
+   "value": {
+    "why": "Mia's TikTok account has been dormant for over 500 days, and her audience growth is in a cooling trajectory. Reactivating TikTok allows her to re-engage short-form video audiences and expand her platform breadth.",
+    "ends": null,
+    "what": "Reactivate her dormant TikTok channel to engage short-form video audiences and expand her platform reach.",
+    "cites": [
+     {
+      "how": "The objective is to grow her audience and build a stronger presence across Instagram and TikTok.",
+      "ref": "objective[feb62891-8b9f-44e4-8c1f-677d6947334b]"
+     },
+     {
+      "how": "Her TikTok account has been dormant for 557.3 days, presenting a major growth opportunity.",
+      "ref": "contentPerformance[tiktok]"
+     },
+     {
+      "how": "Her audience growth is currently in a minor contraction phase, indicating a cooling trajectory.",
+      "ref": "findings[mia.audience_scale]"
+     },
+     {
+      "how": "Reactivating TikTok is highly feasible and will expand platform breadth to younger demographics.",
+      "ref": "opportunity[unlock-tiktok-channel]"
+     }
+    ],
+    "intent": null,
+    "notSeen": [
+     "TikTok short-form content ideas",
+     "Audience retention metrics on short-form video"
+    ],
+    "advances": null,
+    "executionPath": "specialized_plan",
+    "relationToExistingWork": "new_work"
+   },
+   "versions": {
+    "spec": "brain-eval-spec/0.12.0-exp",
+    "runAt": "2026-09-27T23:11:26.659Z",
+    "runId": "f9e00c6f-87b3-46be-82d9-a01300f4d4c1"
+   },
+   "runs": [
+    "f9e00c6f-87b3-46be-82d9-a01300f4d4c1"
+   ],
+   "response": {
+    "at": null,
+    "actor": null,
+    "state": "none"
+   },
+   "authorization": {
+    "at": null,
+    "actor": null,
+    "state": "none"
+   },
+   "execution": {
+    "refs": [],
+    "state": "none"
+   },
+   "outcome": null,
+   "supersededBy": null,
+   "reconsiders": null,
+   "closed": false,
+   "events": [
+    {
+     "at": "2026-09-27T23:11:26.659Z",
+     "event": "created",
+     "actor": "system",
+     "note": "run f9e00c6f-87b3-46be-82d9-a01300f4d4c1"
+    }
+   ]
+  }
+ ]
+}

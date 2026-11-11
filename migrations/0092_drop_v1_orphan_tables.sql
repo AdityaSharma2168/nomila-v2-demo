@@ -1,0 +1,26 @@
+-- 0092_drop_v1_orphan_tables.sql — drop five v1-era tables that exist only on the dev database.
+--
+-- Applied only because scripts/db-migrate.sh names it in the step-3 list.
+--
+-- ── WHAT THIS REMOVES ─────────────────────────────────────────────────────────────────────────────
+-- payment_offers           — the previous Connect design's brand offers (0015 called it "now-unused … a separate
+--                            cleanup"). FKs out to athletes and deals. 0 rows on dev.
+-- stripe_events            — v1 Stripe webhook log (superseded by payment_events). 2 rows on dev.
+-- stripe_connect_accounts  — v1 Connect accounts (superseded by connect_accounts). FK out to athletes. 0 rows.
+-- subscriptions            — v1 fan/creator subscriptions. FKs out to athletes and fan_tiers. 0 rows.
+-- fan_tiers                — v1 fan tiers. FK out to athletes. 0 rows.
+--
+-- None is in shared/schema.ts, no code on main reads or writes any of them (the last mention, a payment_offers
+-- count in server/scripts/mergeDuplicateDealThreads.ts, is removed in the same commit), and no DDL on main creates
+-- them — so a fresh database never has them and this file is a no-op there. They are dropped BEFORE the prod
+-- re-baseline so they are not captured into 0000_baseline. Their FKs out to athletes/deals also sat outside the
+-- athlete-data manifest, so account deletion could not have cleared them.
+--
+-- Checked on dev before writing this: the ONLY foreign key into any of them is subscriptions → fan_tiers, and both
+-- are in this one statement, so no CASCADE is needed — and none is used: if some live table ever pointed into one
+-- of these, this statement fails rather than silently dropping that constraint. No view reads any of them.
+--
+-- DESTRUCTIVE: the 2 dev stripe_events rows are discarded. Re-runs as a no-op. No transaction control here
+-- (migrationsGuard): dry-run this file ON ITS OWN in BEGIN … ROLLBACK.
+
+DROP TABLE IF EXISTS payment_offers, stripe_events, stripe_connect_accounts, subscriptions, fan_tiers;

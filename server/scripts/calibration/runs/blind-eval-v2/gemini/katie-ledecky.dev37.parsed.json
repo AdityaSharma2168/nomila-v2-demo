@@ -1,0 +1,681 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "katie-ledecky",
+    "name": "Katie Ledecky",
+    "sport": "Swimming"
+  },
+  "parseError": null,
+  "dimensionAssessments": {
+    "athletic_authority": {
+      "prose": "Katie Ledecky holds arguably the most pristine athletic resume in the history of women's swimming. She has competed at the highest global level across four Olympic Games, amassing 14 medals, including 9 gold medals, and setting 16+ world records. Her dominance in distance freestyle makes her a central pillar of USA Swimming and a legend recognized worldwide. This sporting authority is indisputable and remains highly active into 2026.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her extensive list of career achievements, gold medals, and Olympic history is fully documented by official and historical sources."
+    },
+    "audience_scale": {
+      "prose": "While Ledecky has a massive audience within the niche of swimming—boasting around 1.5 million cross-platform followers—her overall reach is moderate compared to global sports mega-stars. Her following is highly concentrated on Instagram, where she has over 914k followers, with secondary reach on Facebook, Twitter, and TikTok. Her audience scale exhibits stable long-term figures but typically experiences cyclical surges tied to the four-year Olympic window.",
+      "confidence": "HIGH",
+      "confidenceReason": "Verified follower numbers across all major platforms provide an exact, current measure of her reach."
+    },
+    "engagement_quality": {
+      "prose": "Ledecky's audience engagement is notably healthy for a macro-influencer, with a public-facing Instagram engagement rate of approximately 4.75% and an active community of swimming enthusiasts. She benefits from a highly authentic following that skews toward family-oriented, sport-focused demographics, minimizing bot risk. Detailed backend engagement metrics like share and save rates, or story performance, remain unavailable in the public domain.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "While public metrics like likes and comments are accessible, private metrics such as shares, saves, and story reach are missing."
+    },
+    "cultural_relevance": {
+      "prose": "Her cultural relevance goes far beyond swimming lanes, marked by her receiving the Presidential Medal of Freedom in 2024 and publishing a New York Times bestselling memoir. She is covered extensively by high-tier mainstream media outlets and experiences strong, sustained search interest. Her legacy as the 'GOAT' of women's swimming generates consistent public conversation, especially during international championships.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her major mainstream accolades and bestselling author status are highly visible and extensively verified."
+    },
+    "narrative_power": {
+      "prose": "Ledecky's personal narrative is exceptionally distinctive, focused on quiet discipline, family support, and an academic background at Stanford rather than flashy self-promotion. This story of humble dominance has profound depth and enjoys tremendous media resonance and brand authenticity. It is highly applicable for corporate and lifestyle brands looking for an elite symbol of consistent excellence.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her narrative has been consistently documented by major media and detailed first-hand in her personal memoir."
+    },
+    "brand_fit": {
+      "prose": "Ledecky represents a premier tier of brand safety, with a completely flawless public record over a 14-year international career. Her values of hard work and family align perfectly with mainstream brands, enabling partnerships across diverse categories like health, financial services, and apparel. While highly relevant in the United States, her geographic focus and clean-cut image provide exceptional utility for elite national campaigns.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her complete freedom from scandal and the alignment of her existing brand roster provide absolute clarity."
+    },
+    "commercial_proof": {
+      "prose": "She has proven her market value with elite corporate partnerships, including a landmark $7 million deal with TYR Sport and a major multi-year collaboration with Athleta. Her brand partnerships span major entities like Visa, Panasonic, and Eggland's Best, demonstrating robust commercial trust and renewal history. Though private campaign performance metrics are unavailable, her premium pricing power is thoroughly validated by her reported earnings.",
+      "confidence": "HIGH",
+      "confidenceReason": "Multiple multi-million dollar deals and long-term brand relationships are publicly reported and verified."
+    },
+    "momentum": {
+      "prose": "In 2026, Ledecky enjoys the steady momentum of a living legend. While her athletic performance continues to deliver top-tier results and she continues to sign new brand partnerships, her public attention and audience growth are in a natural, post-Olympic consolidation phase. The trajectory of her commercial appeal remains strong and secure, moving away from hyper-growth into a mature, legacy-driven market position.",
+      "confidence": "HIGH",
+      "confidenceReason": "Her athletic continuation and recent 2026 sponsorship additions clearly outline her current momentum trajectory."
+    }
+  },
+  "overallConfidence": {
+    "level": "HIGH",
+    "explanation": "The evaluation is based on comprehensive public records of her Olympic dominance, confirmed brand deals with verified valuations, and reliable social media data. There is minimal identity or profile risk, and her commercial history is exceptionally well-documented over more than a decade of peak athletic performance."
+  },
+  "identityConfidence": "HIGH",
+  "summary": "Katie Ledecky is the most decorated US female Olympian of all time and widely regarded as the greatest female swimmer in history, possessing an absolute pinnacle of athletic authority. With 14 Olympic medals (9 gold) and consistent dominance in distance freestyle, her sporting legacy is firmly secure. Beyond the pool, Ledecky’s brand is characterized by unmatched brand safety, high integrity, and a wholesome persona that balances athletic excellence with academic credentials from Stanford. Her audience reach is substantial but moderate compared to global sports mega-stars, totaling roughly 1.5 million followers across major platforms, with Instagram serving as her primary channel (~914k). Culturally, her relevance remains strong, amplified by her NYT bestselling memoir 'Just Add Water' and her receipt of the Presidential Medal of Freedom. Commercially, she commands premium-tier sponsorship deals, led by a landmark $7 million partnership with TYR Sport, and long-term relationships with brands like Athleta and Visa. In 2026, her athletic and commercial momentum is highly stable; while her social media growth has naturally leveled off following the post-Paris Olympic peak, her commercial appeal remains at a premium legacy level.",
+  "summaryWords": 182,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Katie Ledecky won four medals in the Paris 2024 Olympic Games, bringing her career total to 14 Olympic medals (9 gold, 4 silver, 1 bronze), making her the most decorated US female Olympian in history.",
+      "sourceTitle": "With Nine Olympic Gold Medals and 14 Total, Katie Ledecky Becomes The Most Decorated U.S. Female Olympian",
+      "sourceUrl": "https://www.teamusa.com",
+      "sourceType": "official",
+      "date": "2024-08-03"
+    },
+    {
+      "id": "E2",
+      "claim": "Ledecky is a 21-time World Aquatics champion, holding 28 total World Championship medals and the active long-course world records in the women's 800m and 1500m freestyle.",
+      "sourceTitle": "Katie Ledecky's brand endorsements and career overview",
+      "sourceUrl": "https://www.sportskeeda.com",
+      "sourceType": "secondary",
+      "date": "2025-07-29"
+    },
+    {
+      "id": "E3",
+      "claim": "Katie Ledecky was awarded the Presidential Medal of Freedom in 2024 by President Joe Biden and won the ESPY for Best Athlete in Women's Sports.",
+      "sourceTitle": "5 wealthy swimmers show it takes more than athletic prowess",
+      "sourceUrl": "https://www.scmp.com",
+      "sourceType": "major_media",
+      "date": "2024-05-22"
+    },
+    {
+      "id": "E4",
+      "claim": "Ledecky was chosen as the female flag bearer for Team USA at the closing ceremonies of the Paris 2024 Olympic Games.",
+      "sourceTitle": "Changemakers Beyond Champions - Katie Ledecky",
+      "sourceUrl": "https://www.facebook.com",
+      "sourceType": "secondary",
+      "date": "2024-08-11"
+    },
+    {
+      "id": "E5",
+      "claim": "Ledecky maintains a total public audience of over 1.49 million followers, comprising 914k on Instagram, 289k on Facebook, 192k on X (formerly Twitter), and 95k on TikTok.",
+      "sourceTitle": "Katie Ledecky MN2S Booking Portfolio and Social Analytics",
+      "sourceUrl": "https://www.mn2s.com",
+      "sourceType": "secondary",
+      "date": "2026-08-29"
+    },
+    {
+      "id": "E6",
+      "claim": "Katie Ledecky turned professional in 2018, signing a landmark swim apparel deal with TYR Sport worth a reported $7 million, and maintains active multi-year partnerships with Athleta, Visa, Panasonic, and Eggland's Best (as of 2026).",
+      "sourceTitle": "Katie Ledecky net worth in 2026, her endorsement earnings and more",
+      "sourceUrl": "https://www.indiatimes.com",
+      "sourceType": "major_media",
+      "date": "2026-08-16"
+    },
+    {
+      "id": "E7",
+      "claim": "Ledecky authored a memoir, 'Just Add Water: My Swimming Life', which became a New York Times bestseller upon its release.",
+      "sourceTitle": "Just Add Water: My Swimming Life Publisher Overview",
+      "sourceUrl": "https://www.simonandschuster.com",
+      "sourceType": "official",
+      "date": "2024-06-11"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "Ledecky competes at the pinnacle of global sports, having represented the US across four consecutive Olympic Games through Paris 2024.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "With 14 Olympic medals and 21 World Championship titles, she is the most successful female swimmer in history and holds multiple active world records.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3"
+      ],
+      "rationale": "Ledecky is formally recognized as the greatest female swimmer of all time and has received elite mainstream honors like the Presidential Medal of Freedom.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "Her role as the US flag bearer at the Paris closing ceremony confirms her status as a primary global ambassador for the sport.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "Ledecky serves as the veteran centerpiece and inspirational leader of the US Olympic swimming squad.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "She continues to dominate internationally, securing four medals at the 2024 Paris Olympics and maintaining her active competitive status.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 65,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Her cumulative audience of ~1.49M is highly respectworthy but remains moderate compared to major global sports megastars.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Within the swimming ecosystem, her digital footprint is nearly unparalleled, trailing only Michael Phelps and Caeleb Dressel.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 45,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Her audience expansion is heavily cyclical, showing steady numbers with minor spikes concentrated around Olympic quadrennials.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "She maintains an active, multi-channel presence across Instagram, Facebook, X, and TikTok.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "scored",
+      "score": 70,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Her public Instagram engagement rate of ~4.75% is robust for a macro-tier profile with nearly a million followers.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "scored",
+      "score": 65,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "During international meets, her content reaches far beyond her direct follower base, though it sits closer to baseline off-season.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No authoritative first-party data is available to assess public share or save counts on her content.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Authorized backend analytics for her video view completion rates are not publicly available.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "First-party data regarding Instagram Story views and click-through ratios remains entirely private.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "scored",
+      "score": 75,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Her public audience consists largely of genuine swimming, fitness, and family-oriented communities, indicating low bot ratios.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3",
+        "E7"
+      ],
+      "rationale": "She receives persistent global media coverage that peaks dramatically during the Olympics and remains steady through her off-pool activities.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E3",
+        "E7"
+      ],
+      "rationale": "Coverage is regularly carried by elite publications such as Time, NBC, Associated Press, and The New York Times.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E7"
+      ],
+      "rationale": "Public search volume experiences massive quadrennial Olympic surges and remains healthy due to her book releases and public speaking.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "She is consistently cited in 'Greatest of All Time' conversations on social platforms whenever athletic endurance and longevity are discussed.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E7"
+      ],
+      "rationale": "Awards like the Presidential Medal of Freedom and her NYT bestselling book cement her recognition far outside the swimming world.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E7"
+      ],
+      "rationale": "Her narrative is highly distinct: a quiet, humble, academically elite champion who rejects flashiness for relentless discipline.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E7"
+      ],
+      "rationale": "Her story covers 14+ years of evolution from a 15-year-old prodigy to a mature Stanford graduate, author, and stateswoman.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 98,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E7"
+      ],
+      "rationale": "Her career is entirely free of scandal, and her private, low-key lifestyle completely mirrors her clean, public values.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E7"
+      ],
+      "rationale": "Mainstream sports media consistently amplifies and celebrates her narrative of unmatched longevity and mental focus.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 82,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7"
+      ],
+      "rationale": "Her story integrates naturally with corporate leadership, wellness, and female empowerment campaigns without feeling fabricated.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E7"
+      ],
+      "rationale": "Ledecky's legendary 'GOAT' status ensures her narrative will remain highly relevant and commercial for decades after her retirement.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "She naturally represents clothing, wellness, technology, finance, parenting/family, and corporate performance categories.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 100,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Ledecky represents the absolute ceiling of brand safety with an immaculate personal and professional record.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "Her audience highly skews toward family-focused, high-education, fitness-oriented, and health-conscious demographics.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7"
+      ],
+      "rationale": "Her personal values, academic history, and career choices match perfectly with her clean-cut, elite sporting public persona.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E7"
+      ],
+      "rationale": "She is highly comfortable with long-form storytelling, corporate keynotes, and classic product endorsement campaigns.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "She has maximum commercial utility across the US market, while her legendary status gives her passive global recognition.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "She possesses verified high-value endorsements, including a landmark $7 million swim apparel contract.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "She maintains active relationships with over seven major corporate partners simultaneously.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 92,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Her sponsors consist of premier tier companies including Visa, Athleta, and Panasonic.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "She has a track record of multi-year extensions and sustained brand partnerships, as seen with Athleta and TYR.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Proprietary partner data on actual conversion, direct sales, and return on ad spend are not publicly reported.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Her estimated multi-million dollar annual sponsorship income reflects elite financial command in Olympic sports.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "Ledecky remains at the global peak of competitive swimming, reinforcing her legacy in Paris and continuing into 2026.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "scored",
+      "score": 40,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Her audience growth has stabilized in a standard post-Olympic consolidation phase during the off-cycle period.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 65,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E7"
+      ],
+      "rationale": "Her media footprint is stable, driven by book promotions and legacy reviews, but experiencing a standard post-Paris cyclical dip.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 55,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E5"
+      ],
+      "rationale": "Google and social search volumes have naturally plateaued, descending from their massive 2024 Olympic peak.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 70,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Her commercial momentum is solid, supported by new 2026 endorsements (e.g., Eggland's Best) and sustained keynote speaking demands.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Pristine, undisputed status as the greatest female swimmer in history with 14 Olympic medals (9 gold).",
+    "Flawless brand-safety record over more than a decade of international fame.",
+    "Excellent values coherence and academic pedigree (Stanford B.A.) aligning with elite global brands.",
+    "Bestselling author status (Just Add Water) providing an established platform for crossover speaking and brand storytelling."
+  ],
+  "keyConstraints": [
+    "The extreme cyclicality of swimming interest, with public attention dropping sharply during off-Olympic years.",
+    "Relatively modest cross-platform reach (~1.5M followers) compared to major global sports megastars.",
+    "A historically non-flashy, highly private lifestyle that makes her less suited for fast-fashion or hyper-trendy pop-cultural campaigns."
+  ],
+  "importantMissingData": [
+    "First-party social metrics including actual reach, story completion rates, post shares/saves, and video retention.",
+    "Granular commercial campaign ROI, click-through performance, and conversion data from past sponsors like Athleta and TYR."
+  ],
+  "identityOrEvidenceRisks": [
+    "Minimal identity risk; however, public estimation of social media follower count may slightly lag her actual current 2026 metrics given rolling platform-discovery updates.",
+    "The inherent volatility of commercial momentum data, as swimming sponsorship values are heavily weighted to Olympic quadrennials."
+  ],
+  "socialBlockSupplied": false
+}

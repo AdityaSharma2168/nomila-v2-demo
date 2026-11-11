@@ -1,0 +1,52 @@
+-- 0023 — voice memory phase 2: which draft cards were opened.
+--
+-- Additive only. Hand-written for the same reason as 0018: `migrations/meta/_journal.json`
+-- stops at 0011, so everything from 0012 on is unjournaled and `drizzle-kit migrate`
+-- skips it. The executing copy of this DDL is the idempotent psql block in
+-- .github/workflows/deploy.yml. This file records intent and review; it is not the
+-- delivery mechanism. Do NOT `db:push` it.
+--
+-- ── What it is for ───────────────────────────────────────────────────────────
+-- Voice cannot currently answer "did we already pull up a reply to Handshake?".
+-- open_draft opens a card, the card is persisted onto the chat thread, and the
+-- structured memory that seeds the NEXT session has no idea it happened — so the
+-- athlete asks, and Mila either says nothing or guesses.
+--
+-- The three existing columns cover what was DISCUSSED and DECIDED. This one covers
+-- what was DONE, which is the only category of memory where the athlete can be
+-- more certain than the agent, and therefore the one where a wrong answer is most
+-- obvious to them.
+--
+-- ── Why a fourth column, not a fourth key inside an existing one ─────────────
+-- `deals_discussed` is keyed by deal and bounded per conversation; folding drafts
+-- into it would make one entry mean two different things (we talked about this /
+-- we opened a card for this) and would make the seed's dedupe ambiguous. A
+-- separate list keeps each one's bound independent — see MAX_ENTRIES in
+-- server/voice/voiceContextTypes.ts.
+--
+-- ── The same untyped-jsonb trade-off as 0018, restated because it still binds ─
+-- Read whole, bounded by one conversation, never queried into. THE SCHEMA CANNOT
+-- ENFORCE WHAT GOES IN. This column must contain ONLY ids, closed-vocabulary
+-- enums and timestamps:
+--
+--   [{ dealId, brandName, replyIntent, channel, at }]
+--
+-- `brandName` is the one string, and it is NOT free text: it is `deals.brand_name`
+-- for a deal this athlete owns, which already crosses the voice wire unwrapped in
+-- list_deals and get_deal_brief. It is stored because the seed has to SAY it
+-- ("you already pulled up a reply to Handshake") and resolving an id back to a
+-- name at read time would mean a second query on the session-start path, which is
+-- the one place a slow read costs the athlete their greeting. It is still bounded
+-- and sanitised before it reaches speech — see safeName in server/voice/voiceSeed.ts.
+--
+-- `replyIntent` and `channel` are closed vocabularies enforced by the writer, not
+-- by a CHECK — same reasoning as chat_messages.source in 0018: a CHECK would need
+-- a DROP + ADD pair the first time the vocabulary grows, and that pair is exactly
+-- what broke the deploy twice.
+--
+-- ── Safe on the live table ───────────────────────────────────────────────────
+-- ADD COLUMN with a non-volatile DEFAULT does not rewrite the table on PG 11+, so
+-- this is a catalogue-only change against the existing rows. NOT NULL is safe for
+-- the same reason: every existing row gets the default without being touched.
+
+ALTER TABLE "voice_context" ADD COLUMN IF NOT EXISTS "drafts_opened" jsonb NOT NULL DEFAULT '[]'::jsonb;

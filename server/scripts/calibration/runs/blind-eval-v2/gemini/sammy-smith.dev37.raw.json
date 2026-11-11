@@ -1,0 +1,394 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "sammy-smith",
+    "name": "Sammy Smith",
+    "sport": "Soccer"
+  },
+  "conditions": "gemini-3.5-flash via Vertex; Google Search grounding; default thinking; temperature 1.0; text output with fenced JSON; spec v0.2 additions; social block none",
+  "startedAt": "2026-09-14T12:39:10.711Z",
+  "attempts": 1,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "responseId": "7-qnapalFfuWotQP7_DGoQ0",
+  "latencyMs": 107237,
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+    "promptTokens": 3509,
+    "outputTokens": 6809,
+    "thoughtTokens": 11490,
+    "totalTokens": 21808,
+    "searchCalls": 20
+  },
+  "costUsd": 0.2049545,
+  "text": "```json\n{\n  \"athlete\": {\n    \"name\": \"Sammy Smith\",\n    \"sport\": \"Soccer\",\n    \"identity_confidence\": \"MEDIUM\"\n  },\n\n  \"marketability_summary\": \"The marketability evaluation for soccer player 'Sammy Smith' reveals a unique identity resolution challenge, split between two elite active players: Samantha Elizabeth Smith (born 2005), a Stanford Cardinal defender and U.S. Ski Team cross-country Olympian, and Samantha Rose Smith (born 2001), a professional forward for the NWSL's Boston Legacy FC. Together, they represent highly diverse commercial opportunities. Samantha Elizabeth boasts an exceptional, narrative-heavy dual-sport profile, fresh off competing in the 2026 Winter Olympics in cross-country skiing while simultaneously starting in the 2025 NCAA College Cup soccer final. This rare crossover has driven national media coverage in major outlets (NBC Sports, USA Today) and secured top-tier winter sports brand deals (Salomon, Oakley). Conversely, Samantha Rose delivers a strong professional soccer baseline, transitioning from multi-trophy success in Iceland's Besta deild kvenna to her role as a local hero in the NWSL with Boston Legacy FC. While both athletes possess high athletic authority, clean brand safety, and distinct regional narratives, their marketability is constrained by name collision, particularly with NASCAR driver Sammy Smith, which dilutes individual search interest. Furthermore, the lack of first-party or large-scale cross-platform social data limits current evaluated audience metrics to moderate regional spheres.\",\n\n  \"evidence\": [\n    {\n      \"id\": \"E1\",\n      \"claim\": \"Samantha Rose Smith signed a two-year professional contract with NWSL expansion team Boston Legacy FC in December 2025, serving as a Massachusetts local signing.\",\n      \"source_title\": \"Boston Legacy FC Signs Massachusetts Local Sammy Smith\",\n      \"source_url\": \"https://www.bostonlegacyfc.com/news/boston-legacy-signs-local-sammy-smith\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2025-12-29\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Details her transition from Icelandic soccer back to Boston.\"\n    },\n    {\n      \"id\": \"E2\",\n      \"claim\": \"Samantha Elizabeth Smith, a Stanford women's soccer player, competed for the U.S. Olympic Cross Country Ski Team at the 2026 Winter Olympics in Milano-Cortina.\",\n      \"source_title\": \"Stanford Soccer Star Sammy Smith Named to U.S. Olympic Ski Team\",\n      \"source_url\": \"https://www.stanford.edu/news/sammy-smith-chases-winter-olympic-dreams\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-01-22\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Covers her dual-sport qualification within a 27-day span from the College Cup.\"\n    },\n    {\n      \"id\": \"E3\",\n      \"claim\": \"Samantha Rose Smith won two Icelandic Besta deild kvenna league titles (2024, 2025) and one national cup with Breiðablik.\",\n      \"source_title\": \"Sammy Smith Wikipedia Profile\",\n      \"source_url\": \"https://en.wikipedia.org/wiki/Sammy_Smith_(soccer,_born_2001)\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-07-31\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Summarizes her career statistics in college and European professional leagues.\"\n    },\n    {\n      \"id\": \"E4\",\n      \"claim\": \"Samantha Elizabeth Smith won a bronze medal with the U.S. Soccer Under-19 Women's National Team at the 2023 Pan American Games.\",\n      \"source_title\": \"Sammy Smith Stanford Soccer Roster Bio\",\n      \"source_url\": \"https://gostanford.com/sports/womens-soccer/roster/sammy-smith\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2026-08-01\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Details her high school and national youth soccer team background.\"\n    },\n    {\n      \"id\": \"E5\",\n      \"claim\": \"Samantha Elizabeth Smith is sponsored by Salomon and Oakley, and has officially licensed merchandise through the Stanford NIL Store.\",\n      \"source_title\": \"U.S. Ski & Snowboard Athlete Profile: Sammy Smith\",\n      \"source_url\": \"https://usskiandsnowboard.org/athletes/sammy-smith\",\n      \"source_type\": \"official\",\n      \"published_or_observed_date\": \"2025-10-14\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Confirms her equipment and NIL apparel partners.\"\n    },\n    {\n      \"id\": \"E6\",\n      \"claim\": \"Samantha Rose Smith holds an active professional contract with Boston Legacy FC in the NWSL running through the 2027 season.\",\n      \"source_title\": \"Sammy Smith Soccerdonna Profile\",\n      \"source_url\": \"https://www.soccerdonna.de/de/sammy-smith/profil/spieler_79031.html\",\n      \"source_type\": \"secondary\",\n      \"published_or_observed_date\": \"2026-08-01\",\n      \"retrieved_at\": \"2026-09-14\",\n      \"notes\": \"Shows baseline professional contract parameters.\"\n    }\n  ],\n\n  \"dimensions\": {\n    \"athletic_authority\": {\n      \"competition_level\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Both athletes play in elite tiers: Samantha Rose is in the top-flight professional NWSL, while Samantha Elizabeth competes in NCAA D1 and the Winter Olympics.\"\n      },\n      \"performance_results\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"Samantha Rose transitioned successfully from dominating in Europe to active NWSL play, while Samantha Elizabeth started in the 2025 NCAA College Cup final.\"\n      },\n      \"rankings_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 68,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\", \"E4\"],\n        \"rationale\": \"Honors include ACC All-Freshman, multiple Gatorade Player of the Year awards, and national/league championship titles.\"\n      },\n      \"national_international_status\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E4\"],\n        \"rationale\": \"Samantha Elizabeth holds bronze from the Pan Am Games in soccer and represented the U.S. in skiing at the 2026 Winter Olympics.\"\n      },\n      \"role_importance\": {\n        \"status\": \"scored\",\n        \"score\": 60,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Both play critical starting or heavy rotation roles on their respective rosters but are not yet primary team focal points.\"\n      },\n      \"achievement_recency\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Very current achievements, with Samantha Elizabeth competing in the February 2026 Winter Olympics and Samantha Rose actively playing the 2026 NWSL season.\"\n      }\n    },\n\n    \"audience_scale\": {\n      \"cross_platform_effective_reach\": {\n        \"status\": \"scored\",\n        \"score\": 35,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"Both athletes maintain modest individual social followings concentrated primarily on Instagram, with audiences currently in the low-to-mid thousands.\"\n      },\n      \"sport_level_audience_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 45,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"While smaller than global NWSL superstars, Samantha Elizabeth's unique Olympic crossover places her in a higher percentile than typical collegiate defenders.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"No longitudinal first-party or audited public data is available to measure recent growth rates.\"\n      },\n      \"platform_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 38,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E2\", \"E3\", \"E5\"],\n        \"rationale\": \"Presence is mostly limited to Instagram and official athletic profile pages, with no major active personal channels on YouTube, TikTok, or X.\"\n      }\n    },\n\n    \"engagement_quality\": {\n      \"engagement_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 52,\n        \"confidence\": \"LOW\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"Visual observation of public comments and likes indicates steady, highly enthusiastic peer-to-peer engagement, but no audited backend data is available.\"\n      },\n      \"reach_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Private reach-to-follower ratios are not accessible in the public domain.\"\n      },\n      \"shares_saves_quality\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"High-value backend save and share metrics are unavailable.\"\n      },\n      \"video_retention\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Private video completion and retention data are not publicly published.\"\n      },\n      \"story_efficiency\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Instagram Story performance metrics are private and cannot be evaluated.\"\n      },\n      \"audience_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"Audience interaction is highly organic, consisting of teammates, regional athletic communities, and winter sports enthusiasts, with zero indicators of inorganic growth.\"\n      }\n    },\n\n    \"cultural_relevance\": {\n      \"media_volume_percentile\": {\n        \"status\": \"scored\",\n        \"score\": 72,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Samantha Elizabeth generated substantial national media coverage in early 2026 due to her historic dual-sport Olympic bid, while Samantha Rose receives steady local Boston sports coverage.\"\n      },\n      \"media_source_quality\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"High-prestige outlets including Sports Illustrated, NBC Sports, USA Today, and Forbes have featured profiles on these athletes.\"\n      },\n      \"search_interest\": {\n        \"status\": \"scored\",\n        \"score\": 48,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E5\"],\n        \"rationale\": \"While there are peaks during major events like the Winter Olympics, search performance is heavily diluted by collision with a highly visible NASCAR driver of the exact same name.\"\n      },\n      \"social_conversation\": {\n        \"status\": \"scored\",\n        \"score\": 50,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Discussions are moderately active on niche subreddits (r/NWSL) and collegiate soccer circles, with occasional spikes on Olympic skiing forums.\"\n      },\n      \"crossover_recognition\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E5\"],\n        \"rationale\": \"Crossover appeal is exceptionally high for Samantha Elizabeth due to her rare dual-sport elite status spanning NCAA soccer and the Winter Olympic Games.\"\n      }\n    },\n\n    \"narrative_power\": {\n      \"distinctiveness\": {\n        \"status\": \"scored\",\n        \"score\": 100,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"Samantha Elizabeth's narrative of playing in the NCAA College Cup soccer final and competing in the Winter Olympics within 27 days is one of the most distinctive stories in modern sports.\"\n      },\n      \"story_depth\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"Both athletes have deep, layered stories: Elizabeth's multi-sport Gatorade titles and injury recovery; Rose's local hero status and European title run in Iceland.\"\n      },\n      \"evidence_authenticity\": {\n        \"status\": \"scored\",\n        \"score\": 92,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n        \"rationale\": \"The narratives are entirely authentic, documented thoroughly by the NCAA, NWSL, U.S. Ski Team, and Olympic committees.\"\n      },\n      \"media_resonance\": {\n        \"status\": \"scored\",\n        \"score\": 84,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\"],\n        \"rationale\": \"Media outlets have actively championed the multi-sport 'wonder' narrative, amplifying the athlete's story globally.\"\n      },\n      \"commercial_applicability\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\", \"E5\"],\n        \"rationale\": \"Narratives easily translate to brand campaigns focused on versatility, extreme drive, overcoming adversity, and local hometown pride.\"\n      },\n      \"durability\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Elizabeth's young age (sophomore in 2026) and Rose's active professional NWSL career provide several years of future narrative viability.\"\n      }\n    },\n\n    \"brand_fit\": {\n      \"category_breadth\": {\n        \"status\": \"scored\",\n        \"score\": 78,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\", \"E5\"],\n        \"rationale\": \"Credible representation spans soccer gear, winter/outdoor gear, hydration, activewear, lifestyle, and local Boston/regional entities.\"\n      },\n      \"brand_safety\": {\n        \"status\": \"scored\",\n        \"score\": 95,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"Outstanding academic standing (ACC All-Academic, Texas A&M master's student) and zero public controversy make both athletes exceptionally safe.\"\n      },\n      \"audience_attractiveness\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"The combined audience is highly attractive to commercial brands, capturing affluent collegiate, outdoor, and soccer demographics.\"\n      },\n      \"identity_values_coherence\": {\n        \"status\": \"scored\",\n        \"score\": 88,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Both athletes consistently project values of extreme work ethic, academic focus, versatility, and dedication.\"\n      },\n      \"content_versatility\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"MEDIUM\",\n        \"evidence_ids\": [\"E2\", \"E3\"],\n        \"rationale\": \"Able to naturally shift between winter sports, summer sports, student lifestyle, and high-performance professional focus.\"\n      },\n      \"geographic_relevance\": {\n        \"status\": \"scored\",\n        \"score\": 75,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Strong geographic focus in major marketing hubs: Boston/New England for Rose, and the Pacific Northwest, Idaho, and California for Elizabeth.\"\n      }\n    },\n\n    \"commercial_proof\": {\n      \"verified_commercial_value\": {\n        \"status\": \"scored\",\n        \"score\": 62,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E5\", \"E6\"],\n        \"rationale\": \"Samantha Elizabeth has established partnerships with Salomon and Oakley, while Samantha Rose is on an active professional NWSL contract.\"\n      },\n      \"deal_frequency\": {\n        \"status\": \"scored\",\n        \"score\": 55,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E5\"],\n        \"rationale\": \"Frequent and sustained equipment/apparel alignments (Salomon, Oakley, Stanford NIL Store), but limited non-endemic corporate deals.\"\n      },\n      \"brand_quality\": {\n        \"status\": \"scored\",\n        \"score\": 82,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E5\"],\n        \"rationale\": \"Partnerships feature premium tier-one brands like Salomon, Oakley, and Nike (via official team apparel).\"\n      },\n      \"renewals_repeat\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Public details on renewal contracts or long-term multi-year sponsor extensions are unavailable.\"\n      },\n      \"campaign_performance\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Specific campaign performance metrics, conversions, and ROI are not publicly available.\"\n      },\n      \"pricing_power\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Specific pricing power and contract economics are private.\"\n      }\n    },\n\n    \"momentum\": {\n      \"athletic_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 85,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Extremely steep trajectory, with Samantha Elizabeth making her Olympic debut in Feb 2026 and Samantha Rose debuting as a key professional starter in the NWSL in 2026.\"\n      },\n      \"audience_growth\": {\n        \"status\": \"missing\",\n        \"score\": null,\n        \"confidence\": \"MISSING\",\n        \"evidence_ids\": [],\n        \"rationale\": \"Longitudinal first-party audience metrics are not available to verify recent growth rates.\"\n      },\n      \"media_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 80,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Highly positive media trajectory, driven by Olympic coverage in early 2026 and regular NWSL match-day features.\"\n      },\n      \"search_social_trajectory\": {\n        \"status\": \"scored\",\n        \"score\": 70,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\"],\n        \"rationale\": \"Search interest experienced a major seasonal spike during the 2026 Winter Games and remains steady with ongoing league play.\"\n      },\n      \"commercial_acceleration\": {\n        \"status\": \"scored\",\n        \"score\": 68,\n        \"confidence\": \"HIGH\",\n        \"evidence_ids\": [\"E1\", \"E2\", \"E5\"],\n        \"rationale\": \"Commercial opportunities are visibly expanding, driven by Elizabeth's post-Olympic breakout and Rose's professional exposure in Boston.\"\n      }\n    }\n  },\n\n  \"dimension_assessments\": {\n    \"athletic_authority\": {\n      \"prose\": \"The athletic authority dimension is exceptionally strong but split across two distinct profiles. On one hand, Sammy Smith (Stanford) is a historic dual-sport star who competed in both the 2025 NCAA College Cup soccer final and the 2026 Winter Olympics within weeks of each other. On the other hand, Sammy Smith (Boston Legacy) is an established professional playing in the NWSL, the pinnacle of women's professional soccer, after a highly successful title-winning stint in Europe. Together, they demonstrate elite athletic capabilities and international status.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Both athletes' competitive standings are extensively documented by Stanford, the NWSL, and the U.S. Ski Team.\"\n    },\n    \"audience_scale\": {\n      \"prose\": \"The audience scale is moderate and primarily regional, rooted in collegiate (Stanford), local (Boston/Massachusetts), and niche sports (cross-country skiing) fanbases. Neither athlete has amassed a massive national social media footprint yet, though Samantha Elizabeth's Olympic narrative has generated notable spikes in public interest. Commercial potential exists to cultivate highly focused, regional, and sport-specific communities rather than broad mass-market reach.\",\n      \"confidence\": \"MEDIUM\",\n      \"confidence_reason\": \"While platform usernames are verified, audited follower counts and multi-platform metrics are missing.\"\n    },\n    \"engagement_quality\": {\n      \"prose\": \"Due to the lack of authoritative platform data, backend metrics such as reach efficiency, video retention, and saves are missing. However, qualitative observation of their public channels indicates highly authentic, community-driven interaction with zero red flags for bot activity or artificial inflation. The audience is comprised of highly passionate soccer, collegiate, and snow-sports fans who display deep loyalty.\",\n      \"confidence\": \"MEDIUM\",\n      \"confidence_reason\": \"Lack of private platform data limits the evaluation to observable qualitative engagement.\"\n    },\n    \"cultural_relevance\": {\n      \"prose\": \"Cultural relevance is buoyed by high-quality, prestigious media profiles highlighting Samantha Elizabeth's rare dual-sport Olympic run, which captured national attention in early 2026. However, overall search optimization is complicated by a prominent name collision with NASCAR driver Sammy Smith, which significantly clouds organic search interest. Crossover potential remains highly viable, particularly in the outdoor-lifestyle, fitness, and collegiate academic spheres.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Major media profiles and search collision dynamics are highly documented and verifiable.\"\n    },\n    \"narrative_power\": {\n      \"prose\": \"Narrative power is the absolute cornerstone of Sammy Smith's marketability, achieving a maximum score in distinctiveness for Samantha Elizabeth. Her transition from soccer boots to Olympic cross-country skis in less than a month is a legendary athletic feat that captures the public imagination. Samantha Rose's local-hero homecoming to Boston after dominating in Iceland provides a complementary, highly marketable narrative of local authenticity and resilience.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"The dual-sport Olympic journey and professional return stories are heavily detailed and validated across major media.\"\n    },\n    \"brand_fit\": {\n      \"prose\": \"Both athletes present an exceptionally safe, highly appealing canvas for corporate brand alignment, backed by impeccable academic records and pristine public reputations. Their profiles easily align with premium, wellness-oriented, and high-performance brand categories ranging from winter outdoor gear to local civic pride. The geographic relevance is strongly anchored in key consumer markets, specifically the Boston metropolitan area, California, and the mountain West.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Verifiable records of academic honors, community involvement (e.g., GO BIG Inc. non-profit), and clean public history.\"\n    },\n    \"commercial_proof\": {\n      \"prose\": \"While overall pricing power and campaign ROI remain private, there is strong baseline commercial proof via major established partnerships. Samantha Elizabeth has successfully secured agreements with elite global brands like Salomon and Oakley, while Samantha Rose has professional NWSL backing. This demonstrates highly viable, verified commercial demand in specialized athletic and outdoor sectors.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Equipment sponsorships with Salomon and Oakley and NWSL professional status are confirmed by official sources.\"\n    },\n    \"momentum\": {\n      \"prose\": \"The momentum dimension is characterized by highly positive athletic and media trajectories in 2026. Elizabeth's historical leap into the Winter Olympics and Rose's return as a prominent local professional in the NWSL have created a strong foundation of cultural interest. Commercial interest is accelerating as brands seek to leverage these milestone achievements, though social media amplification remains a key growth area.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Verifiable milestones (2026 Winter Olympics and 2026 NWSL season) provide strong objective proof of forward momentum.\"\n    }\n  },\n\n  \"overall_confidence\": {\n    \"level\": \"MEDIUM\",\n    \"explanation\": \"While the athletic achievements, prestigious media coverage, and brand relationships are highly verifiable, overall confidence is set to MEDIUM due to the prominent identity collision. There are two elite active soccer players named Sammy Smith, and there is a total lack of first-party back-end social data to isolate individual follower engagement and growth.\"\n  },\n\n  \"key_strengths\": [\n    \"Samantha Elizabeth's legendary dual-sport narrative as a Stanford D1 soccer player and 2026 Winter Olympian.\",\n    \"Samantha Rose's established professional footprint as an NWSL forward and local Massachusetts hero.\",\n    \"Outstanding brand safety, academic credentials, and elite athletic authority.\",\n    \"Confirmed tier-one brand alignments with Salomon and Oakley.\"\n  ],\n\n  \"key_constraints\": [\n    \"Severe search engine collision with NASCAR driver Sammy Smith, diluting organic digital discoverability.\",\n    \"Identity confusion between the two elite female soccer players sharing the exact same name.\",\n    \"Modest baseline social media audience reach across primary platforms.\"\n  ],\n\n  \"important_missing_data\": [\n    \"Audited first-party cross-platform social media growth and engagement analytics.\",\n    \"Private story views, reach efficiency, and audience demographic data.\",\n    \"ROI and campaign conversion metrics for past Salomon and Oakley activations.\"\n  ],\n\n  \"identity_or_evidence_risks\": [\n    \"Significant identity collision: There are two active, elite American women's soccer players named Sammy (Samantha) Smith. Samantha Elizabeth Smith (b. 2005) is a Stanford sophomore/Olympian; Samantha Rose Smith (b. 2001) is an NWSL player for Boston Legacy. This duality creates substantial database and search-indexing confusion for potential brand partners.\"\n  ]\n}\n```",
+  "native": {
+    "groundingChunks": [
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERpOiWMnT3UhIeV4VjLU4gbpIhjXQOpF9pRBJeYD-P7t0vUwinFxlLtKo76UkYn4LutPTMCbQ-09Snaz4YdrKtsXfeTDhgsn8ATpoQc_m0hs8Pp15z2tm3Qsx6NYFT24lPr1J7WPMNg99lMMF-IPxsGybeUHdNC0E=",
+          "title": "wikipedia.org",
+          "domain": "wikipedia.org"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFa1uWJusnodmdoOm-jiWbKVOBJxM4wxl2wcVlM7GDmhVCIKpIvg2glZKMvPE9TcNzXsiMR1Uk8btRs451S2SyHxvL9o-aPkY3xlqUSIclvq6zA4A_04CkFo3iAQkk3JexLUvvwyZ50m3m7oi_mkHUbcP0uLKybkLo=",
+          "title": "wikipedia.org",
+          "domain": "wikipedia.org"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF6yK0unsp-qs7z9tKXOBNkGKvp9F0ybarxzx4723VW1xxS1gzYt6nWWY1YAX5qC95HNoBfoAQyYo0CItucOlrxmI8oQoqlwToVwwGw-0YpLVRWQeqxC_gbx-01lLbHdejjNwph0o4gJKHBWG4aPQGxQz3PaDsiRu8vY4_vUfkZtxQ=",
+          "title": "si.com",
+          "domain": "si.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0-084F5DnxNwS24T7ikxDd8DQ4gKgkgMOu_pIgMVKG3iLYv97FZvaQPkD6SsOwlKioLqSWmim_t9W7WlxVzezSHtSe1dYFD7zLHdfAhB1zIlmOVkJRwDYIAd9lSyOa6Qtp0B0bCDitHAT_T7IUbdJpRiQ9Sdb67jxELX7j_CYb8eRaCbNmfcnrQ0cK_07SGTWu2_20HLpGlwiJbgiSZA=",
+          "title": "nbcolympics.com",
+          "domain": "nbcolympics.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjkHqKXekvcwW0fKzuG2TbI4-XEaW6Ms4OwWsMGjPY71ZUxYDDKU4mexi6BHjgAqxfGdrlTKLapfU3U-0VnIdE-vWNjJ0WjGqoR3Bdce3gkSdAZ_lh1k556O4GKgzCTeiefrT75yVtyypqUGlVh58O-ulsZXh3necbxfo=",
+          "title": "usskiandsnowboard.org",
+          "domain": "usskiandsnowboard.org"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHtARBHugh1bpYnICCZfYt1Su6OLPUgw7PAGOLTwF2c4Jrc7ayvbPUoZGUlwoMroqweTmN4oAg7roibhQyDNz-qo213c6pC37ep9P5f4E8lRIQ8-pj5F9FJvzXhE3h_PnN0Q00Hk4pACnAs2qntax6aUZss3erxzgWchYv5em4QiuxMkeXHf09jEVMx0K5ZyoPg5SIU_uwfbJ9vDEFL02etTa4pqAReGA==",
+          "title": "forbes.com",
+          "domain": "forbes.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4f6kF291ELuMODz4XYubgje7AMO0Xu0KPlZTzOUy4Rz4RZPUiJOejEt5Bp6PloPYkBh4jn5PC8XfmmBA0NPVZTZcyAJMlURda8Pkl_yy9U6bInnnBPT29XftNZGCoel-7W-VsU-6CX6vSzQlpoMMbrt6ai5n96w==",
+          "title": "yardbarker.com",
+          "domain": "yardbarker.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHd6S_4CdQ7u5eo3ldOVSgR90q918P-Rrr_xoyU2Jdl0PffgigmIRTcqhxnR-bdIjgFAa1ZNVrZeJ-lt-_Iwxiapt7tINigqcLIb_PXh1PtIg0vegvEg94IHaby-b1EjQqOpin5K3T7UJqca63wQS1eSFtb7nf2Z_tBMMRBI8TK6B8D7A==",
+          "title": "stanforddaily.com",
+          "domain": "stanforddaily.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9vZQa2GDQlt5JBr57iB3ginnwVLKOmBSBh-bwYCveeDY7GYwPm16K8Au0BKmThCcXJCta5XFzgm4Prb_C3P13YNBNlw-MgeJL5j8kLUzX2sRwc-qtRv4mbemrjMjVMcsyCLkwxHqWVjY_QIspmBMIm6Fmax-_JCP69WqWx6I_",
+          "title": "gostanford.com",
+          "domain": "gostanford.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQExs5qvRDrTbV9sk8-cP6VamAV4Bw1d-oBNAUtqjT09-HpiB46TBE_oafDBrDCTu2KJMnUQSWRSCBudBrY6zpId_SqKV5uKdd0QDVipGVDtPbBmmBr0HE8YALK1Gn10qk53u45E2sLEwp_n1bxrIi-iYz2mhM340c-a9qhn1rJCy0rdXRHYy69JwUvw",
+          "title": "12thman.com",
+          "domain": "12thman.com"
+        }
+      },
+      {
+        "web": {
+          "uri": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYtvHuIfb3cIQZ67J1N6PWBPmBPcrYZM3BPhtdRbUpk1VGSC81mc5TEPXXAi0sewZFcVulv9X51fBjxACGqQFtvbkxuJ1HlX0DUuSUgT10-ELhnhvaMKD2OOOCRzlxoD8BhIM4QJNH3ZW2vlXARD1V1eqxz0lvSDHxt3Zpc6s=",
+          "title": "soccerdonna.de",
+          "domain": "soccerdonna.de"
+        }
+      }
+    ],
+    "groundingSupports": [
+      {
+        "segment": {
+          "startIndex": 119,
+          "endIndex": 494,
+          "text": "\"marketability_summary\": \"The marketability evaluation for soccer player 'Sammy Smith' reveals a unique identity resolution challenge, split between two elite active players: Samantha Elizabeth Smith (born 2005), a Stanford Cardinal defender and U.S. Ski Team cross-country Olympian, and Samantha Rose Smith (born 2001), a professional forward for the NWSL's Boston Legacy FC"
+        },
+        "groundingChunkIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 562,
+          "endIndex": 783,
+          "text": "Samantha Elizabeth boasts an exceptional, narrative-heavy dual-sport profile, fresh off competing in the 2026 Winter Olympics in cross-country skiing while simultaneously starting in the 2025 NCAA College Cup soccer final"
+        },
+        "groundingChunkIndices": [
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 785,
+          "endIndex": 945,
+          "text": "This rare crossover has driven national media coverage in major outlets (NBC Sports, USA Today) and secured top-tier winter sports brand deals (Salomon, Oakley)"
+        },
+        "groundingChunkIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 947,
+          "endIndex": 1154,
+          "text": "Conversely, Samantha Rose delivers a strong professional soccer baseline, transitioning from multi-trophy success in Iceland's Besta deild kvenna to her role as a local hero in the NWSL with Boston Legacy FC"
+        },
+        "groundingChunkIndices": [
+          1,
+          5
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 1156,
+          "endIndex": 1402,
+          "text": "While both athletes possess high athletic authority, clean brand safety, and distinct regional narratives, their marketability is constrained by name collision, particularly with NASCAR driver Sammy Smith, which dilutes individual search interest"
+        },
+        "groundingChunkIndices": [
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 18887,
+          "endIndex": 19068,
+          "text": "On one hand, Sammy Smith (Stanford) is a historic dual-sport star who competed in both the 2025 NCAA College Cup soccer final and the 2026 Winter Olympics within weeks of each other"
+        },
+        "groundingChunkIndices": [
+          3
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19070,
+          "endIndex": 19269,
+          "text": "On the other hand, Sammy Smith (Boston Legacy) is an established professional playing in the NWSL, the pinnacle of women's professional soccer, after a highly successful title-winning stint in Europe"
+        },
+        "groundingChunkIndices": [
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19271,
+          "endIndex": 19734,
+          "text": "Together, they demonstrate elite athletic capabilities and international status.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Both athletes' competitive standings are extensively documented by Stanford, the NWSL, and the U.S. Ski Team.\"\n    },\n    \"audience_scale\": {\n      \"prose\": \"The audience scale is moderate and primarily regional, rooted in collegiate (Stanford), local (Boston/Massachusetts), and niche sports (cross-country skiing) fanbases"
+        },
+        "groundingChunkIndices": [
+          5,
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 19736,
+          "endIndex": 19904,
+          "text": "Neither athlete has amassed a massive national social media footprint yet, though Samantha Elizabeth's Olympic narrative has generated notable spikes in public interest"
+        },
+        "groundingChunkIndices": [
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 20563,
+          "endIndex": 21062,
+          "text": "The audience is comprised of highly passionate soccer, collegiate, and snow-sports fans who display deep loyalty.\",\n      \"confidence\": \"MEDIUM\",\n      \"confidence_reason\": \"Lack of private platform data limits the evaluation to observable qualitative engagement.\"\n    },\n    \"cultural_relevance\": {\n      \"prose\": \"Cultural relevance is buoyed by high-quality, prestigious media profiles highlighting Samantha Elizabeth's rare dual-sport Olympic run, which captured national attention in early 2026"
+        },
+        "groundingChunkIndices": [
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 21064,
+          "endIndex": 21228,
+          "text": "However, overall search optimization is complicated by a prominent name collision with NASCAR driver Sammy Smith, which significantly clouds organic search interest"
+        },
+        "groundingChunkIndices": [
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 21230,
+          "endIndex": 21693,
+          "text": "Crossover potential remains highly viable, particularly in the outdoor-lifestyle, fitness, and collegiate academic spheres.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"Major media profiles and search collision dynamics are highly documented and verifiable.\"\n    },\n    \"narrative_power\": {\n      \"prose\": \"Narrative power is the absolute cornerstone of Sammy Smith's marketability, achieving a maximum score in distinctiveness for Samantha Elizabeth"
+        },
+        "groundingChunkIndices": [
+          3
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 21695,
+          "endIndex": 21844,
+          "text": "Her transition from soccer boots to Olympic cross-country skis in less than a month is a legendary athletic feat that captures the public imagination"
+        },
+        "groundingChunkIndices": [
+          7
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 21846,
+          "endIndex": 22012,
+          "text": "Samantha Rose's local-hero homecoming to Boston after dominating in Iceland provides a complementary, highly marketable narrative of local authenticity and resilience"
+        },
+        "groundingChunkIndices": [
+          5
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 21846,
+          "endIndex": 22402,
+          "text": "Samantha Rose's local-hero homecoming to Boston after dominating in Iceland provides a complementary, highly marketable narrative of local authenticity and resilience.\",\n      \"confidence\": \"HIGH\",\n      \"confidence_reason\": \"The dual-sport Olympic journey and professional return stories are heavily detailed and validated across major media.\"\n    },\n    \"brand_fit\": {\n      \"prose\": \"Both athletes present an exceptionally safe, highly appealing canvas for corporate brand alignment, backed by impeccable academic records and pristine public reputations"
+        },
+        "groundingChunkIndices": [
+          8,
+          9
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 23073,
+          "endIndex": 23227,
+          "text": "Samantha Elizabeth has successfully secured agreements with elite global brands like Salomon and Oakley, while Samantha Rose has professional NWSL backing"
+        },
+        "groundingChunkIndices": [
+          4,
+          10
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 23645,
+          "endIndex": 23815,
+          "text": "Elizabeth's historical leap into the Winter Olympics and Rose's return as a prominent local professional in the NWSL have created a strong foundation of cultural interest"
+        },
+        "groundingChunkIndices": [
+          5,
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 24600,
+          "endIndex": 24731,
+          "text": "\"key_strengths\": [\n    \"Samantha Elizabeth's legendary dual-sport narrative as a Stanford D1 soccer player and 2026 Winter Olympian"
+        },
+        "groundingChunkIndices": [
+          2
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 24600,
+          "endIndex": 24838,
+          "text": "\"key_strengths\": [\n    \"Samantha Elizabeth's legendary dual-sport narrative as a Stanford D1 soccer player and 2026 Winter Olympian.\",\n    \"Samantha Rose's established professional footprint as an NWSL forward and local Massachusetts hero"
+        },
+        "groundingChunkIndices": [
+          5
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 24600,
+          "endIndex": 24923,
+          "text": "\"key_strengths\": [\n    \"Samantha Elizabeth's legendary dual-sport narrative as a Stanford D1 soccer player and 2026 Winter Olympian.\",\n    \"Samantha Rose's established professional footprint as an NWSL forward and local Massachusetts hero.\",\n    \"Outstanding brand safety, academic credentials, and elite athletic authority"
+        },
+        "groundingChunkIndices": [
+          8,
+          9
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 24600,
+          "endIndex": 24991,
+          "text": "\"key_strengths\": [\n    \"Samantha Elizabeth's legendary dual-sport narrative as a Stanford D1 soccer player and 2026 Winter Olympian.\",\n    \"Samantha Rose's established professional footprint as an NWSL forward and local Massachusetts hero.\",\n    \"Outstanding brand safety, academic credentials, and elite athletic authority.\",\n    \"Confirmed tier-one brand alignments with Salomon and Oakley"
+        },
+        "groundingChunkIndices": [
+          4
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 25002,
+          "endIndex": 25131,
+          "text": "\"key_constraints\": [\n    \"Severe search engine collision with NASCAR driver Sammy Smith, diluting organic digital discoverability"
+        },
+        "groundingChunkIndices": [
+          6
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 25002,
+          "endIndex": 25230,
+          "text": "\"key_constraints\": [\n    \"Severe search engine collision with NASCAR driver Sammy Smith, diluting organic digital discoverability.\",\n    \"Identity confusion between the two elite female soccer players sharing the exact same name"
+        },
+        "groundingChunkIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "segment": {
+          "startIndex": 25854,
+          "endIndex": 25895,
+          "text": "2001) is an NWSL player for Boston Legacy"
+        },
+        "groundingChunkIndices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "webSearchQueries": [
+      "\"Sammy Smith\" soccer",
+      "\"Sammy Smith\" football player",
+      "Sammy Smith soccer player news",
+      "Sammy Smith NWSL",
+      "\"Sammy Smith\" \"soccer\" \"Boston Legacy\"",
+      "\"Sammy Smith\" \"Stanford\" \"soccer\"",
+      "\"Sammy Smith\" \"Boston Legacy\" instagram follower count",
+      "\"Sammy Smith\" \"Stanford\" instagram follower count",
+      "\"samanthasmith__7\" instagram followers",
+      "\"sammysmlth\" instagram followers",
+      "Sammy Smith \"samanthasmith__7\"",
+      "Sammy Smith \"sammysmlth\"",
+      " \"samanthasmith__7\"",
+      " \"sammysmlth\"",
+      "\"sammysmlth\" instagram follower count",
+      "\"samanthasmith__7\" instagram followers count",
+      "\"Sammy Smith\" soccer endorsement OR partner OR sponsor",
+      "\"Sammy Smith\" NIL deal stanford OR bc OR \"texas a&m\"",
+      "\"Sammy Smith\" \"Boston Legacy\" salary OR contract OR sponsor",
+      "\"Sammy Smith\" ski sponsor OR \"skis\" OR \"atomic\" OR \"salomon\""
+    ],
+    "config": {
+      "tools": [
+        {
+          "googleSearch": {}
+        }
+      ],
+      "temperature": 1,
+      "maxOutputTokens": 65536,
+      "thinking": "default"
+    }
+  },
+  "error": null,
+  "promptSocialBlock": null
+}

@@ -1,0 +1,1481 @@
+{
+ "state": {
+  "athleteId": "3fd80f19-be44-4cb6-9075-a7e79c1924c4",
+  "asOf": "2026-09-22T04:31:08.163Z",
+  "version": "athlete-state/1.0.0",
+  "identity": {
+   "name": "Lilia Bhuta",
+   "sport": "soccer",
+   "competitionContext": "Century United · Class 4A",
+   "careerStatus": "active"
+  },
+  "findings": [
+   {
+    "key": "mia.athletic_authority",
+    "direction": "strength",
+    "rationale": {
+     "value": "As a member of the US U-15 Youth National Team who has already scored in international play, you possess elite athletic authority for your developmental age. Being ranked the #1 player in Pennsylvania for the Class of 2029 further establishes your high ceiling and standout status in the Girls Academy circuit. While still in your youth career, your trajectory points toward future NCAA and elite professional pathways.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+     ],
+     "rationale": "Your national roster appearances, international goal, and state scouting rankings are thoroughly documented by official and reputable youth soccer media.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Your national roster appearances, international goal, and state scouting rankings are thoroughly documented by official and reputable youth soccer media.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Lilia Bhuta is a midfielder in the 2029 class, ranked as the #1 player in Pennsylvania’s class by Prep Soccer, and is praised by scouts for her elite finishing and soccer smarts.",
+      "sourceUrl": "https://www.prepsoccer.com/player/lilia-bhuta/",
+      "observedAt": "2026-05-18",
+      "sourceType": "secondary",
+      "sourceTitle": "Lilia Bhuta - Prep Soccer Profile & Rankings Preview"
+     },
+     {
+      "id": "E2",
+      "claim": "Lilia Bhuta was selected to the 20-player U.S. Under-15 Girls' Youth National Team (USYNT) roster for an international training camp in England in April 2026.",
+      "sourceUrl": "https://pittsburghsoccernow.com/2026/04/18/century-united-fcs-lilia-bhuta-earns-usynt-call-up/",
+      "observedAt": "2026-04-18",
+      "sourceType": "major_media",
+      "sourceTitle": "Century United FC's Lilia Bhuta Earns USYNT Call-Up"
+     },
+     {
+      "id": "E3",
+      "claim": "Lilia Bhuta scored a goal in the 65th minute of the U.S. U-15 national team’s 4-0 victory against England during their April 2026 training camp.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/United_States_girls%27_national_under-15_soccer_team",
+      "observedAt": "2026-06-01",
+      "sourceType": "official",
+      "sourceTitle": "United States girls' national under-15 soccer team - Wikipedia"
+     },
+     {
+      "id": "E4",
+      "claim": "Lilia Bhuta was previously named to the U.S. Soccer Under-14 Girls' Talent Identification Program regional mini-camp in March 2025, with media highlighting her as the sister of Stanford star Mia Bhuta.",
+      "sourceUrl": "https://wsoccerexpress.com/2025/03/19/u-14-talent-id-80-player-roster-for-the-2025-east-regional-mini-camp-announced/",
+      "observedAt": "2025-03-19",
+      "sourceType": "secondary",
+      "sourceTitle": "U-14 Talent ID: 80-player roster for the 2025 East Regional Mini-Camp announced"
+     },
+     {
+      "id": "E5",
+      "claim": "Lilia Bhuta details her development with Century United's 2010 Girls Academy team and her long-term goals of playing professionally and representing the full USWNT.",
+      "sourceUrl": "https://www.centurysoccer.org/news_article/show/1308307",
+      "observedAt": "2026-05-01",
+      "sourceType": "official",
+      "sourceTitle": "Dream Realized: Lilia Bhuta Earns U15 Youth National Team Call-Up"
+     }
+    ],
+    "components": [
+     {
+      "key": "athletic_authority.role_importance",
+      "value": 70,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.competition_level",
+      "value": 70,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.achievement_recency",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.performance_results",
+      "value": 80,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.rankings_recognition",
+      "value": 75,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "athletic_authority.national_international_status",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 77,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#athletic_authority.role_importance",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#athletic_authority.competition_level",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#athletic_authority.achievement_recency",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#athletic_authority.performance_results",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#athletic_authority.rankings_recognition",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#athletic_authority.national_international_status"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#athletic_authority.role_importance",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#athletic_authority.competition_level",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#athletic_authority.achievement_recency",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#athletic_authority.performance_results",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#athletic_authority.rankings_recognition",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#athletic_authority.national_international_status",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.audience_scale",
+    "direction": "gap",
+    "rationale": {
+     "value": "Your public audience scale is extremely limited, as you do not currently operate public-facing personal brand channels. Outside of a family YouTube channel with low double-digit subscribers and a Hudl scouting profile, you do not have a public social media footprint. This is standard for a 14-year-old youth athlete, but represents an undeveloped public reach.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E6"
+     ],
+     "rationale": "The complete lack of verified active personal social channels and very low public views on family highlights support a minimal public reach.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "The complete lack of verified active personal social channels and very low public views on family highlights support a minimal public reach.",
+    "citedEvidence": [
+     {
+      "id": "E6",
+      "claim": "Lilia Bhuta has a minimal public digital footprint, represented primarily by a family YouTube channel with 42 subscribers and low highlight video views, and a Hudl profile with 14 followers.",
+      "sourceUrl": "https://www.youtube.com/@TheBhutas",
+      "observedAt": "2026-06-11",
+      "sourceType": "platform",
+      "sourceTitle": "TheBhutas Family YouTube Channel & Hudl Profile"
+     }
+    ],
+    "components": [
+     {
+      "key": "audience_scale.audience_growth",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.platform_breadth",
+      "value": 10,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.cross_platform_effective_reach",
+      "value": 15,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "audience_scale.sport_level_audience_percentile",
+      "value": 20,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 21,
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#audience_scale.audience_growth",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#audience_scale.platform_breadth",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#audience_scale.cross_platform_effective_reach",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#audience_scale.sport_level_audience_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 1,
+     "total": 4
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#audience_scale.audience_growth",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#audience_scale.platform_breadth",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#audience_scale.cross_platform_effective_reach",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#audience_scale.sport_level_audience_percentile",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.engagement_quality",
+    "direction": "unknown",
+    "rationale": {
+     "value": "Because you do not have active public personal social media channels, your audience engagement quality cannot be calculated. There are no public metrics available to evaluate likes, comments, shares, or video retention rates. This dimension remains currently missing as you prioritize club soccer and developmental training over digital branding.",
+     "owner": "marketability",
+     "confidence": "LOW",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [],
+     "rationale": "All primary engagement metrics are completely unavailable due to the absence of active public personal accounts.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "All primary engagement metrics are completely unavailable due to the absence of active public personal accounts.",
+    "components": [
+     {
+      "key": "engagement_quality.video_retention",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.reach_efficiency",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.story_efficiency",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.shares_saves_quality",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.audience_authenticity",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "engagement_quality.engagement_percentile",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 50,
+     "owner": "marketability",
+     "confidence": "LOW",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#engagement_quality.video_retention",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#engagement_quality.reach_efficiency",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#engagement_quality.story_efficiency",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#engagement_quality.shares_saves_quality",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#engagement_quality.audience_authenticity",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#engagement_quality.engagement_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 6,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#engagement_quality.video_retention",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#engagement_quality.reach_efficiency",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#engagement_quality.story_efficiency",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#engagement_quality.shares_saves_quality",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#engagement_quality.audience_authenticity",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#engagement_quality.engagement_percentile",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.cultural_relevance",
+    "direction": "gap",
+    "rationale": {
+     "value": "Your current cultural relevance is concentrated within the specialized US youth soccer ecosystem and your local Western Pennsylvania community. While you generate celebratory local social media chatter and have strong coverage in soccer-specific scouting publications, you are largely unrecognized by the broader general public. However, your surname carries cultural heritage equity because of your sister Mia's historic national team achievements.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E4",
+      "E5"
+     ],
+     "rationale": "Your press coverage is consistently limited to regional publications and youth soccer recruiting networks.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Your press coverage is consistently limited to regional publications and youth soccer recruiting networks.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Lilia Bhuta is a midfielder in the 2029 class, ranked as the #1 player in Pennsylvania’s class by Prep Soccer, and is praised by scouts for her elite finishing and soccer smarts.",
+      "sourceUrl": "https://www.prepsoccer.com/player/lilia-bhuta/",
+      "observedAt": "2026-05-18",
+      "sourceType": "secondary",
+      "sourceTitle": "Lilia Bhuta - Prep Soccer Profile & Rankings Preview"
+     },
+     {
+      "id": "E2",
+      "claim": "Lilia Bhuta was selected to the 20-player U.S. Under-15 Girls' Youth National Team (USYNT) roster for an international training camp in England in April 2026.",
+      "sourceUrl": "https://pittsburghsoccernow.com/2026/04/18/century-united-fcs-lilia-bhuta-earns-usynt-call-up/",
+      "observedAt": "2026-04-18",
+      "sourceType": "major_media",
+      "sourceTitle": "Century United FC's Lilia Bhuta Earns USYNT Call-Up"
+     },
+     {
+      "id": "E4",
+      "claim": "Lilia Bhuta was previously named to the U.S. Soccer Under-14 Girls' Talent Identification Program regional mini-camp in March 2025, with media highlighting her as the sister of Stanford star Mia Bhuta.",
+      "sourceUrl": "https://wsoccerexpress.com/2025/03/19/u-14-talent-id-80-player-roster-for-the-2025-east-regional-mini-camp-announced/",
+      "observedAt": "2025-03-19",
+      "sourceType": "secondary",
+      "sourceTitle": "U-14 Talent ID: 80-player roster for the 2025 East Regional Mini-Camp announced"
+     },
+     {
+      "id": "E5",
+      "claim": "Lilia Bhuta details her development with Century United's 2010 Girls Academy team and her long-term goals of playing professionally and representing the full USWNT.",
+      "sourceUrl": "https://www.centurysoccer.org/news_article/show/1308307",
+      "observedAt": "2026-05-01",
+      "sourceType": "official",
+      "sourceTitle": "Dream Realized: Lilia Bhuta Earns U15 Youth National Team Call-Up"
+     }
+    ],
+    "components": [
+     {
+      "key": "cultural_relevance.search_interest",
+      "value": 25,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.social_conversation",
+      "value": 30,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_source_quality",
+      "value": 45,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.crossover_recognition",
+      "value": 20,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "cultural_relevance.media_volume_percentile",
+      "value": 30,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 30.5,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#cultural_relevance.search_interest",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#cultural_relevance.social_conversation",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#cultural_relevance.media_source_quality",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#cultural_relevance.crossover_recognition",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#cultural_relevance.media_volume_percentile"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#cultural_relevance.search_interest",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#cultural_relevance.social_conversation",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#cultural_relevance.media_source_quality",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#cultural_relevance.crossover_recognition",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#cultural_relevance.media_volume_percentile",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.narrative_power",
+    "direction": "neutral",
+    "rationale": {
+     "value": "Your narrative is highly compelling and distinct, centered on a high-achieving athletic family and the sisterly parallel with Mia Bhuta, Stanford's standout midfielder. Media coverage naturally resonates with this storyline, framing your rise as the continuation of a notable American soccer legacy. This rich, multi-cultural (Indian-American) and authentic narrative holds significant long-term storytelling power.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+     ],
+     "rationale": "Multiple scout analyses and club features explicitly leverage and document your family legacy and personal dedication.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Multiple scout analyses and club features explicitly leverage and document your family legacy and personal dedication.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Lilia Bhuta is a midfielder in the 2029 class, ranked as the #1 player in Pennsylvania’s class by Prep Soccer, and is praised by scouts for her elite finishing and soccer smarts.",
+      "sourceUrl": "https://www.prepsoccer.com/player/lilia-bhuta/",
+      "observedAt": "2026-05-18",
+      "sourceType": "secondary",
+      "sourceTitle": "Lilia Bhuta - Prep Soccer Profile & Rankings Preview"
+     },
+     {
+      "id": "E2",
+      "claim": "Lilia Bhuta was selected to the 20-player U.S. Under-15 Girls' Youth National Team (USYNT) roster for an international training camp in England in April 2026.",
+      "sourceUrl": "https://pittsburghsoccernow.com/2026/04/18/century-united-fcs-lilia-bhuta-earns-usynt-call-up/",
+      "observedAt": "2026-04-18",
+      "sourceType": "major_media",
+      "sourceTitle": "Century United FC's Lilia Bhuta Earns USYNT Call-Up"
+     },
+     {
+      "id": "E3",
+      "claim": "Lilia Bhuta scored a goal in the 65th minute of the U.S. U-15 national team’s 4-0 victory against England during their April 2026 training camp.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/United_States_girls%27_national_under-15_soccer_team",
+      "observedAt": "2026-06-01",
+      "sourceType": "official",
+      "sourceTitle": "United States girls' national under-15 soccer team - Wikipedia"
+     },
+     {
+      "id": "E4",
+      "claim": "Lilia Bhuta was previously named to the U.S. Soccer Under-14 Girls' Talent Identification Program regional mini-camp in March 2025, with media highlighting her as the sister of Stanford star Mia Bhuta.",
+      "sourceUrl": "https://wsoccerexpress.com/2025/03/19/u-14-talent-id-80-player-roster-for-the-2025-east-regional-mini-camp-announced/",
+      "observedAt": "2025-03-19",
+      "sourceType": "secondary",
+      "sourceTitle": "U-14 Talent ID: 80-player roster for the 2025 East Regional Mini-Camp announced"
+     },
+     {
+      "id": "E5",
+      "claim": "Lilia Bhuta details her development with Century United's 2010 Girls Academy team and her long-term goals of playing professionally and representing the full USWNT.",
+      "sourceUrl": "https://www.centurysoccer.org/news_article/show/1308307",
+      "observedAt": "2026-05-01",
+      "sourceType": "official",
+      "sourceTitle": "Dream Realized: Lilia Bhuta Earns U15 Youth National Team Call-Up"
+     }
+    ],
+    "components": [
+     {
+      "key": "narrative_power.durability",
+      "value": 75,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.story_depth",
+      "value": 65,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.distinctiveness",
+      "value": 70,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.media_resonance",
+      "value": 60,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.evidence_authenticity",
+      "value": 80,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "narrative_power.commercial_applicability",
+      "value": 65,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 69.5,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#narrative_power.durability",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#narrative_power.story_depth",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#narrative_power.distinctiveness",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#narrative_power.media_resonance",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#narrative_power.evidence_authenticity",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#narrative_power.commercial_applicability"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#narrative_power.durability",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#narrative_power.story_depth",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#narrative_power.distinctiveness",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#narrative_power.media_resonance",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#narrative_power.evidence_authenticity",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#narrative_power.commercial_applicability",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.brand_fit",
+    "direction": "neutral",
+    "rationale": {
+     "value": "You present an exceptionally safe, values-coherent, and wholesome profile for mainstream youth-focused and family-oriented brands. Your dedication to training, strong academic-athletic balance, and clean public slate make you highly attractive to potential sponsors. However, your category breadth and content versatility are currently constrained by your age and the lack of an active personal publishing platform.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E4",
+      "E5",
+      "E6"
+     ],
+     "rationale": "Your clean reputation and structured family environment are well-documented, though your actual content delivery remains unproven.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "Your clean reputation and structured family environment are well-documented, though your actual content delivery remains unproven.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Lilia Bhuta is a midfielder in the 2029 class, ranked as the #1 player in Pennsylvania’s class by Prep Soccer, and is praised by scouts for her elite finishing and soccer smarts.",
+      "sourceUrl": "https://www.prepsoccer.com/player/lilia-bhuta/",
+      "observedAt": "2026-05-18",
+      "sourceType": "secondary",
+      "sourceTitle": "Lilia Bhuta - Prep Soccer Profile & Rankings Preview"
+     },
+     {
+      "id": "E2",
+      "claim": "Lilia Bhuta was selected to the 20-player U.S. Under-15 Girls' Youth National Team (USYNT) roster for an international training camp in England in April 2026.",
+      "sourceUrl": "https://pittsburghsoccernow.com/2026/04/18/century-united-fcs-lilia-bhuta-earns-usynt-call-up/",
+      "observedAt": "2026-04-18",
+      "sourceType": "major_media",
+      "sourceTitle": "Century United FC's Lilia Bhuta Earns USYNT Call-Up"
+     },
+     {
+      "id": "E4",
+      "claim": "Lilia Bhuta was previously named to the U.S. Soccer Under-14 Girls' Talent Identification Program regional mini-camp in March 2025, with media highlighting her as the sister of Stanford star Mia Bhuta.",
+      "sourceUrl": "https://wsoccerexpress.com/2025/03/19/u-14-talent-id-80-player-roster-for-the-2025-east-regional-mini-camp-announced/",
+      "observedAt": "2025-03-19",
+      "sourceType": "secondary",
+      "sourceTitle": "U-14 Talent ID: 80-player roster for the 2025 East Regional Mini-Camp announced"
+     },
+     {
+      "id": "E5",
+      "claim": "Lilia Bhuta details her development with Century United's 2010 Girls Academy team and her long-term goals of playing professionally and representing the full USWNT.",
+      "sourceUrl": "https://www.centurysoccer.org/news_article/show/1308307",
+      "observedAt": "2026-05-01",
+      "sourceType": "official",
+      "sourceTitle": "Dream Realized: Lilia Bhuta Earns U15 Youth National Team Call-Up"
+     },
+     {
+      "id": "E6",
+      "claim": "Lilia Bhuta has a minimal public digital footprint, represented primarily by a family YouTube channel with 42 subscribers and low highlight video views, and a Hudl profile with 14 followers.",
+      "sourceUrl": "https://www.youtube.com/@TheBhutas",
+      "observedAt": "2026-06-11",
+      "sourceType": "platform",
+      "sourceTitle": "TheBhutas Family YouTube Channel & Hudl Profile"
+     }
+    ],
+    "components": [
+     {
+      "key": "brand_fit.brand_safety",
+      "value": 95,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.category_breadth",
+      "value": 50,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.content_versatility",
+      "value": 40,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.geographic_relevance",
+      "value": 50,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.audience_attractiveness",
+      "value": 45,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     },
+     {
+      "key": "brand_fit.identity_values_coherence",
+      "value": 75,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 60.75,
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#brand_fit.brand_safety",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#brand_fit.category_breadth",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#brand_fit.content_versatility",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#brand_fit.geographic_relevance",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#brand_fit.audience_attractiveness",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#brand_fit.identity_values_coherence"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 0,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#brand_fit.brand_safety",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#brand_fit.category_breadth",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#brand_fit.content_versatility",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#brand_fit.geographic_relevance",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#brand_fit.audience_attractiveness",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#brand_fit.identity_values_coherence",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.commercial_proof",
+    "direction": "unknown",
+    "rationale": {
+     "value": "There is no public evidence of any paid brand partnerships, commercial deals, or pricing power, which is standard for an athlete of your age and amateur level. While your older sister has secured high-profile NIL deals (e.g., Adidas), you have yet to enter the commercial market. Consequently, this dimension remains completely missing but represents high future potential.",
+     "owner": "marketability",
+     "confidence": "LOW",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [],
+     "rationale": "There are no documented commercial transactions or endorsements for you at this stage of your youth career.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "There are no documented commercial transactions or endorsements for you at this stage of your youth career.",
+    "components": [
+     {
+      "key": "commercial_proof.brand_quality",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.pricing_power",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.deal_frequency",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.renewals_repeat",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.campaign_performance",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "commercial_proof.verified_commercial_value",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 50,
+     "owner": "marketability",
+     "confidence": "LOW",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#commercial_proof.brand_quality",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#commercial_proof.pricing_power",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#commercial_proof.deal_frequency",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#commercial_proof.renewals_repeat",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#commercial_proof.campaign_performance",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#commercial_proof.verified_commercial_value"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 6,
+     "total": 6
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#commercial_proof.brand_quality",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#commercial_proof.pricing_power",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#commercial_proof.deal_frequency",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#commercial_proof.renewals_repeat",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#commercial_proof.campaign_performance",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#commercial_proof.verified_commercial_value",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     }
+    ]
+   },
+   {
+    "key": "mia.momentum",
+    "direction": "neutral",
+    "rationale": {
+     "value": "Your athletic trajectory is experiencing rapid upward momentum, transitioning from U-14 Talent ID camps to scoring for the USYNT U-15s within a single year. While your commercial and social media momentum are non-existent, your media coverage is steadily climbing alongside your national team achievements. Your on-field progress is highly visible and accelerating.",
+     "owner": "marketability",
+     "confidence": "HIGH",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "EVALUATED",
+     "evidenceIds": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5"
+     ],
+     "rationale": "On-field athletic progression is clearly documented month-over-month through roster announcements and match reports.",
+     "falsifiedBy": null
+    },
+    "confidenceReason": "On-field athletic progression is clearly documented month-over-month through roster announcements and match reports.",
+    "citedEvidence": [
+     {
+      "id": "E1",
+      "claim": "Lilia Bhuta is a midfielder in the 2029 class, ranked as the #1 player in Pennsylvania’s class by Prep Soccer, and is praised by scouts for her elite finishing and soccer smarts.",
+      "sourceUrl": "https://www.prepsoccer.com/player/lilia-bhuta/",
+      "observedAt": "2026-05-18",
+      "sourceType": "secondary",
+      "sourceTitle": "Lilia Bhuta - Prep Soccer Profile & Rankings Preview"
+     },
+     {
+      "id": "E2",
+      "claim": "Lilia Bhuta was selected to the 20-player U.S. Under-15 Girls' Youth National Team (USYNT) roster for an international training camp in England in April 2026.",
+      "sourceUrl": "https://pittsburghsoccernow.com/2026/04/18/century-united-fcs-lilia-bhuta-earns-usynt-call-up/",
+      "observedAt": "2026-04-18",
+      "sourceType": "major_media",
+      "sourceTitle": "Century United FC's Lilia Bhuta Earns USYNT Call-Up"
+     },
+     {
+      "id": "E3",
+      "claim": "Lilia Bhuta scored a goal in the 65th minute of the U.S. U-15 national team’s 4-0 victory against England during their April 2026 training camp.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/United_States_girls%27_national_under-15_soccer_team",
+      "observedAt": "2026-06-01",
+      "sourceType": "official",
+      "sourceTitle": "United States girls' national under-15 soccer team - Wikipedia"
+     },
+     {
+      "id": "E4",
+      "claim": "Lilia Bhuta was previously named to the U.S. Soccer Under-14 Girls' Talent Identification Program regional mini-camp in March 2025, with media highlighting her as the sister of Stanford star Mia Bhuta.",
+      "sourceUrl": "https://wsoccerexpress.com/2025/03/19/u-14-talent-id-80-player-roster-for-the-2025-east-regional-mini-camp-announced/",
+      "observedAt": "2025-03-19",
+      "sourceType": "secondary",
+      "sourceTitle": "U-14 Talent ID: 80-player roster for the 2025 East Regional Mini-Camp announced"
+     },
+     {
+      "id": "E5",
+      "claim": "Lilia Bhuta details her development with Century United's 2010 Girls Academy team and her long-term goals of playing professionally and representing the full USWNT.",
+      "sourceUrl": "https://www.centurysoccer.org/news_article/show/1308307",
+      "observedAt": "2026-05-01",
+      "sourceType": "official",
+      "sourceTitle": "Dream Realized: Lilia Bhuta Earns U15 Youth National Team Call-Up"
+     }
+    ],
+    "components": [
+     {
+      "key": "momentum.audience_growth",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "momentum.media_trajectory",
+      "value": 65,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.athletic_trajectory",
+      "value": 85,
+      "evidenceClass": "EVALUATED",
+      "confidence": "HIGH",
+      "rationale": null
+     },
+     {
+      "key": "momentum.commercial_acceleration",
+      "value": 50,
+      "evidenceClass": "ASSUMED",
+      "confidence": "LOW",
+      "rationale": null
+     },
+     {
+      "key": "momentum.search_social_trajectory",
+      "value": 45,
+      "evidenceClass": "EVALUATED",
+      "confidence": "MEDIUM",
+      "rationale": null
+     }
+    ],
+    "basis": {
+     "value": 62.75,
+     "owner": "marketability",
+     "confidence": "MEDIUM",
+     "asOf": "2026-06-18T17:40:16.239Z",
+     "evidenceClass": "MEASURED",
+     "evidenceIds": [
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#momentum.audience_growth",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#momentum.media_trajectory",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#momentum.athletic_trajectory",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#momentum.commercial_acceleration",
+      "82eb514d-6c0d-438e-9f64-07f5c171175f#momentum.search_social_trajectory"
+     ],
+     "sourceMethod": "mia.dimension_score"
+    },
+    "imputedShare": {
+     "imputed": 2,
+     "total": 5
+    },
+    "evidence": [
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#momentum.audience_growth",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#momentum.media_trajectory",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#momentum.athletic_trajectory",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#momentum.commercial_acceleration",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     },
+     {
+      "source": "mia",
+      "locator": "82eb514d-6c0d-438e-9f64-07f5c171175f#momentum.search_social_trajectory",
+      "asOf": "2026-06-18T17:40:16.239Z"
+     }
+    ]
+   }
+  ],
+  "audienceTrajectory": {
+   "value": null,
+   "owner": "athlete_intelligence",
+   "asOf": "2026-09-22T04:31:08.163Z",
+   "evidenceClass": "MISSING",
+   "reason": "no growth measurement on any platform"
+  },
+  "commercialPosition": {
+   "closedDeals": {
+    "value": 0,
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-22T04:31:08.163Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "count_deals_at_earned_status"
+   },
+   "activeRelationships": {
+    "value": [],
+    "owner": "athlete_state",
+    "confidence": "HIGH",
+    "asOf": "2026-09-22T04:31:08.163Z",
+    "evidenceClass": "MEASURED",
+    "evidenceIds": [],
+    "sourceMethod": "distinct_brand_at_earned_status"
+   },
+   "demonstratedEconomics": {
+    "value": null,
+    "owner": "athlete_state",
+    "asOf": "2026-09-22T04:31:08.163Z",
+    "evidenceClass": "MISSING",
+    "reason": "no closed deal carries an amount"
+   },
+   "pricingEvidence": "none"
+  },
+  "constraints": [],
+  "preferences": [],
+  "materialGaps": [
+   "Personal public-facing social media accounts (Instagram, TikTok, X, etc.) and associated demographic or engagement metrics.",
+   "Longitudinal data tracking public search interest, digital audience growth, or social chatter trajectory over time.",
+   "Any preliminary regional or local commercial agreement details or NIL negotiations."
+  ],
+  "overallConfidence": "LOW",
+  "sources": [
+   {
+    "owner": "marketability",
+    "present": true,
+    "asOf": "2026-06-18T17:40:16.239Z"
+   },
+   {
+    "owner": "athlete_intelligence",
+    "present": false,
+    "asOf": null
+   },
+   {
+    "owner": "athlete_state",
+    "present": true,
+    "asOf": "2026-09-22T04:31:08.163Z"
+   }
+  ]
+ },
+ "record": {
+  "evaluatorSpec": "opportunity-eval-spec/1.0.0",
+  "canonicalSha256": "6bcf91ab36b5fb7d970f8e2eac304fc82b9d7427b2ce00d35a54e21de3ae3c2d",
+  "manifest": {
+   "evaluatorSpec": "opportunity-eval-spec/1.0.0",
+   "promptDigest": "6bcf91ab36b5fb7d970f8e2eac304fc82b9d7427b2ce00d35a54e21de3ae3c2d"
+  },
+  "promptSha256": "6380f26c055e6d7113e64c206c8d6ce995feaf29af2748c25a8836e806c0672e",
+  "athlete": {
+   "id": "3fd80f19-be44-4cb6-9075-a7e79c1924c4",
+   "name": "Lilia Bhuta"
+  },
+  "stateAsOf": "2026-09-22T04:31:08.163Z",
+  "stateBlock": "Nomila's account of this athlete as of 2026-09-22T04:31:08.163Z (athlete-state/1.0.0).\nOverall confidence in this picture: LOW.\n\nCite any line below by the path shown at its left.\n\nIDENTITY\n    identity.name                             Lilia Bhuta\n    identity.sport                            soccer\n    identity.competitionContext               Century United · Class 4A\n    identity.careerStatus                     active\n\nFINDINGS — marketability dimensions, each judged by M.I.A. and read here unchanged.\n  STRENGTH  measured, above the band\n  GAP       measured, below the band\n  NEUTRAL   MEASURED and unremarkable. We know; it is simply ordinary. This is NOT missing evidence.\n  UNKNOWN   evidence is genuinely insufficient — no score, or mostly imputed signals. A statement about\n            what Nomila has measured, never about the athlete.\n\n  Each finding may carry WHY M.I.A. concluded it and WHICH SOURCES it relied on. Read those as the\n  evaluator's interpretation and the evidence behind it — NOT as established fact about the athlete.\n\n    findings[mia.athletic_authority]          STRENGTH  score 77      HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          As a member of the US U-15 Youth National Team who has already scored in international play, you\n          possess elite athletic authority for your developmental age. Being ranked the #1 player in\n          Pennsylvania for the Class of 2029 further establishes your high ceiling and standout status in\n          the Girls Academy circuit. While still in your youth career, your trajectory points toward\n          future NCAA and elite professional pathways.\n          confidence HIGH — Your national roster appearances, international goal, and state scouting rankings are thoroughly documented by official and reputable youth soccer media.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  secondary · 2026-05-18  Lilia Bhuta is a midfielder in the 2029 class, ranked as the #1 player in Pennsylvania’s class by Prep Soccer, and is praised by scouts for her elite finishing and soccer smarts.\n              https://www.prepsoccer.com/player/lilia-bhuta/\n          E2  major_media · 2026-04-18  Lilia Bhuta was selected to the 20-player U.S. Under-15 Girls' Youth National Team (USYNT) roster for an international training camp in England in April 2026.\n              https://pittsburghsoccernow.com/2026/04/18/century-united-fcs-lilia-bhuta-earns-usynt-call-up/\n          E3  official · 2026-06-01  Lilia Bhuta scored a goal in the 65th minute of the U.S. U-15 national team’s 4-0 victory against England during their April 2026 training camp.\n              https://en.wikipedia.org/wiki/United_States_girls%27_national_under-15_soccer_team\n          E4  secondary · 2025-03-19  Lilia Bhuta was previously named to the U.S. Soccer Under-14 Girls' Talent Identification Program regional mini-camp in March 2025, with media highlighting her as the sister of Stanford star Mia Bhuta.\n              https://wsoccerexpress.com/2025/03/19/u-14-talent-id-80-player-roster-for-the-2025-east-regional-mini-camp-announced/\n          E5  official · 2026-05-01  Lilia Bhuta details her development with Century United's 2010 Girls Academy team and her long-term goals of playing professionally and representing the full USWNT.\n              https://www.centurysoccer.org/news_article/show/1308307\n        COMPONENTS  role_importance=70 [EVALUATED]  competition_level=70 [EVALUATED]  achievement_recency=85 [EVALUATED]  performance_results=80 [EVALUATED]  rankings_recognition=75 [EVALUATED]  national_international_status=85 [EVALUATED]\n\n    findings[mia.audience_scale]              GAP       score 21      MEDIUM  1/4 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Your public audience scale is extremely limited, as you do not currently operate public-facing\n          personal brand channels. Outside of a family YouTube channel with low double-digit subscribers\n          and a Hudl scouting profile, you do not have a public social media footprint. This is standard\n          for a 14-year-old youth athlete, but represents an undeveloped public reach.\n          confidence HIGH — The complete lack of verified active personal social channels and very low public views on family highlights support a minimal public reach.\n        SOURCE EVIDENCE M.I.A. CITED\n          E6  platform · 2026-06-11  Lilia Bhuta has a minimal public digital footprint, represented primarily by a family YouTube channel with 42 subscribers and low highlight video views, and a Hudl profile with 14 followers.\n              https://www.youtube.com/@TheBhutas\n        COMPONENTS  audience_growth=50 [ASSUMED]  platform_breadth=10 [EVALUATED]  cross_platform_effective_reach=15 [EVALUATED]  sport_level_audience_percentile=20 [EVALUATED]\n\n    findings[mia.engagement_quality]          UNKNOWN   score 50      LOW     6/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Because you do not have active public personal social media channels, your audience engagement\n          quality cannot be calculated. There are no public metrics available to evaluate likes, comments,\n          shares, or video retention rates. This dimension remains currently missing as you prioritize\n          club soccer and developmental training over digital branding.\n          confidence LOW — All primary engagement metrics are completely unavailable due to the absence of active public personal accounts.\n        COMPONENTS  video_retention=50 [ASSUMED]  reach_efficiency=50 [ASSUMED]  story_efficiency=50 [ASSUMED]  shares_saves_quality=50 [ASSUMED]  audience_authenticity=50 [ASSUMED]  engagement_percentile=50 [ASSUMED]\n\n    findings[mia.cultural_relevance]          GAP       score 30.5    HIGH    0/5 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Your current cultural relevance is concentrated within the specialized US youth soccer ecosystem\n          and your local Western Pennsylvania community. While you generate celebratory local social media\n          chatter and have strong coverage in soccer-specific scouting publications, you are largely\n          unrecognized by the broader general public. However, your surname carries cultural heritage\n          equity because of your sister Mia's historic national team achievements.\n          confidence HIGH — Your press coverage is consistently limited to regional publications and youth soccer recruiting networks.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  secondary · 2026-05-18  Lilia Bhuta is a midfielder in the 2029 class, ranked as the #1 player in Pennsylvania’s class by Prep Soccer, and is praised by scouts for her elite finishing and soccer smarts.\n              https://www.prepsoccer.com/player/lilia-bhuta/\n          E2  major_media · 2026-04-18  Lilia Bhuta was selected to the 20-player U.S. Under-15 Girls' Youth National Team (USYNT) roster for an international training camp in England in April 2026.\n              https://pittsburghsoccernow.com/2026/04/18/century-united-fcs-lilia-bhuta-earns-usynt-call-up/\n          E4  secondary · 2025-03-19  Lilia Bhuta was previously named to the U.S. Soccer Under-14 Girls' Talent Identification Program regional mini-camp in March 2025, with media highlighting her as the sister of Stanford star Mia Bhuta.\n              https://wsoccerexpress.com/2025/03/19/u-14-talent-id-80-player-roster-for-the-2025-east-regional-mini-camp-announced/\n          E5  official · 2026-05-01  Lilia Bhuta details her development with Century United's 2010 Girls Academy team and her long-term goals of playing professionally and representing the full USWNT.\n              https://www.centurysoccer.org/news_article/show/1308307\n        COMPONENTS  search_interest=25 [EVALUATED]  social_conversation=30 [EVALUATED]  media_source_quality=45 [EVALUATED]  crossover_recognition=20 [EVALUATED]  media_volume_percentile=30 [EVALUATED]\n\n    findings[mia.narrative_power]             NEUTRAL   score 69.5    HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Your narrative is highly compelling and distinct, centered on a high-achieving athletic family\n          and the sisterly parallel with Mia Bhuta, Stanford's standout midfielder. Media coverage\n          naturally resonates with this storyline, framing your rise as the continuation of a notable\n          American soccer legacy. This rich, multi-cultural (Indian-American) and authentic narrative\n          holds significant long-term storytelling power.\n          confidence HIGH — Multiple scout analyses and club features explicitly leverage and document your family legacy and personal dedication.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  secondary · 2026-05-18  Lilia Bhuta is a midfielder in the 2029 class, ranked as the #1 player in Pennsylvania’s class by Prep Soccer, and is praised by scouts for her elite finishing and soccer smarts.\n              https://www.prepsoccer.com/player/lilia-bhuta/\n          E2  major_media · 2026-04-18  Lilia Bhuta was selected to the 20-player U.S. Under-15 Girls' Youth National Team (USYNT) roster for an international training camp in England in April 2026.\n              https://pittsburghsoccernow.com/2026/04/18/century-united-fcs-lilia-bhuta-earns-usynt-call-up/\n          E3  official · 2026-06-01  Lilia Bhuta scored a goal in the 65th minute of the U.S. U-15 national team’s 4-0 victory against England during their April 2026 training camp.\n              https://en.wikipedia.org/wiki/United_States_girls%27_national_under-15_soccer_team\n          E4  secondary · 2025-03-19  Lilia Bhuta was previously named to the U.S. Soccer Under-14 Girls' Talent Identification Program regional mini-camp in March 2025, with media highlighting her as the sister of Stanford star Mia Bhuta.\n              https://wsoccerexpress.com/2025/03/19/u-14-talent-id-80-player-roster-for-the-2025-east-regional-mini-camp-announced/\n          E5  official · 2026-05-01  Lilia Bhuta details her development with Century United's 2010 Girls Academy team and her long-term goals of playing professionally and representing the full USWNT.\n              https://www.centurysoccer.org/news_article/show/1308307\n        COMPONENTS  durability=75 [EVALUATED]  story_depth=65 [EVALUATED]  distinctiveness=70 [EVALUATED]  media_resonance=60 [EVALUATED]  evidence_authenticity=80 [EVALUATED]  commercial_applicability=65 [EVALUATED]\n\n    findings[mia.brand_fit]                   NEUTRAL   score 60.75   HIGH    0/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          You present an exceptionally safe, values-coherent, and wholesome profile for mainstream\n          youth-focused and family-oriented brands. Your dedication to training, strong academic-athletic\n          balance, and clean public slate make you highly attractive to potential sponsors. However, your\n          category breadth and content versatility are currently constrained by your age and the lack of\n          an active personal publishing platform.\n          confidence HIGH — Your clean reputation and structured family environment are well-documented, though your actual content delivery remains unproven.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  secondary · 2026-05-18  Lilia Bhuta is a midfielder in the 2029 class, ranked as the #1 player in Pennsylvania’s class by Prep Soccer, and is praised by scouts for her elite finishing and soccer smarts.\n              https://www.prepsoccer.com/player/lilia-bhuta/\n          E2  major_media · 2026-04-18  Lilia Bhuta was selected to the 20-player U.S. Under-15 Girls' Youth National Team (USYNT) roster for an international training camp in England in April 2026.\n              https://pittsburghsoccernow.com/2026/04/18/century-united-fcs-lilia-bhuta-earns-usynt-call-up/\n          E4  secondary · 2025-03-19  Lilia Bhuta was previously named to the U.S. Soccer Under-14 Girls' Talent Identification Program regional mini-camp in March 2025, with media highlighting her as the sister of Stanford star Mia Bhuta.\n              https://wsoccerexpress.com/2025/03/19/u-14-talent-id-80-player-roster-for-the-2025-east-regional-mini-camp-announced/\n          E5  official · 2026-05-01  Lilia Bhuta details her development with Century United's 2010 Girls Academy team and her long-term goals of playing professionally and representing the full USWNT.\n              https://www.centurysoccer.org/news_article/show/1308307\n          E6  platform · 2026-06-11  Lilia Bhuta has a minimal public digital footprint, represented primarily by a family YouTube channel with 42 subscribers and low highlight video views, and a Hudl profile with 14 followers.\n              https://www.youtube.com/@TheBhutas\n        COMPONENTS  brand_safety=95 [EVALUATED]  category_breadth=50 [EVALUATED]  content_versatility=40 [EVALUATED]  geographic_relevance=50 [EVALUATED]  audience_attractiveness=45 [EVALUATED]  identity_values_coherence=75 [EVALUATED]\n\n    findings[mia.commercial_proof]            UNKNOWN   score 50      LOW     6/6 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          There is no public evidence of any paid brand partnerships, commercial deals, or pricing power,\n          which is standard for an athlete of your age and amateur level. While your older sister has\n          secured high-profile NIL deals (e.g., Adidas), you have yet to enter the commercial market.\n          Consequently, this dimension remains completely missing but represents high future potential.\n          confidence LOW — There are no documented commercial transactions or endorsements for you at this stage of your youth career.\n        COMPONENTS  brand_quality=50 [ASSUMED]  pricing_power=50 [ASSUMED]  deal_frequency=50 [ASSUMED]  renewals_repeat=50 [ASSUMED]  campaign_performance=50 [ASSUMED]  verified_commercial_value=50 [ASSUMED]\n\n    findings[mia.momentum]                    NEUTRAL   score 62.75   MEDIUM  2/5 signals imputed\n        WHY M.I.A. CONCLUDED THIS (M.I.A.'s evaluation, not established fact)\n          Your athletic trajectory is experiencing rapid upward momentum, transitioning from U-14 Talent\n          ID camps to scoring for the USYNT U-15s within a single year. While your commercial and social\n          media momentum are non-existent, your media coverage is steadily climbing alongside your\n          national team achievements. Your on-field progress is highly visible and accelerating.\n          confidence HIGH — On-field athletic progression is clearly documented month-over-month through roster announcements and match reports.\n        SOURCE EVIDENCE M.I.A. CITED\n          E1  secondary · 2026-05-18  Lilia Bhuta is a midfielder in the 2029 class, ranked as the #1 player in Pennsylvania’s class by Prep Soccer, and is praised by scouts for her elite finishing and soccer smarts.\n              https://www.prepsoccer.com/player/lilia-bhuta/\n          E2  major_media · 2026-04-18  Lilia Bhuta was selected to the 20-player U.S. Under-15 Girls' Youth National Team (USYNT) roster for an international training camp in England in April 2026.\n              https://pittsburghsoccernow.com/2026/04/18/century-united-fcs-lilia-bhuta-earns-usynt-call-up/\n          E3  official · 2026-06-01  Lilia Bhuta scored a goal in the 65th minute of the U.S. U-15 national team’s 4-0 victory against England during their April 2026 training camp.\n              https://en.wikipedia.org/wiki/United_States_girls%27_national_under-15_soccer_team\n          E4  secondary · 2025-03-19  Lilia Bhuta was previously named to the U.S. Soccer Under-14 Girls' Talent Identification Program regional mini-camp in March 2025, with media highlighting her as the sister of Stanford star Mia Bhuta.\n              https://wsoccerexpress.com/2025/03/19/u-14-talent-id-80-player-roster-for-the-2025-east-regional-mini-camp-announced/\n          E5  official · 2026-05-01  Lilia Bhuta details her development with Century United's 2010 Girls Academy team and her long-term goals of playing professionally and representing the full USWNT.\n              https://www.centurysoccer.org/news_article/show/1308307\n        COMPONENTS  audience_growth=50 [ASSUMED]  media_trajectory=65 [EVALUATED]  athletic_trajectory=85 [EVALUATED]  commercial_acceleration=50 [ASSUMED]  search_social_trajectory=45 [EVALUATED]\n\nAUDIENCE TRAJECTORY — follower growth only. It says nothing about athletic or commercial direction.\n    audienceTrajectory                        not known (no growth measurement on any platform)\n\nCOMMERCIAL POSITION — what the market has actually paid. Counted, never estimated.\n    commercialPosition.closedDeals            0  [measured · HIGH confidence]\n    commercialPosition.activeRelationships    []  [measured · HIGH confidence]\n    commercialPosition.demonstratedEconomics  not known (no closed deal carries an amount)\n    commercialPosition.pricingEvidence        none\n\nCONSTRAINTS — only what has been explicitly recorded as a bound on what the athlete can do.\n  An empty list means Nomila has recorded none. It does NOT mean none exist.\n    (none recorded)\n\nWHAT THE ATHLETE HAS SAID — their own words. A refusal bears on an opportunity; an ambition can generate one.\n  Never infer a preference or an ambition that is not listed here.\n    (the athlete has stated nothing)\n\nWHAT NOMILA CANNOT SEE — evidence we looked for and could not find. A research task, not a caveat.\n    materialGaps[0]                           Personal public-facing social media accounts (Instagram, TikTok, X, etc.) and associated demographic or engagement metrics.\n    materialGaps[1]                           Longitudinal data tracking public search interest, digital audience growth, or social chatter trajectory over time.\n    materialGaps[2]                           Any preliminary regional or local commercial agreement details or NIL negotiations.\n\nSOURCES CONSULTED\n    marketability            present · as of 2026-06-18T17:40:16.239Z\n    athlete_intelligence     ABSENT\n    athlete_state            present · as of 2026-09-22T04:31:08.163Z",
+  "startedAt": "2026-09-22T04:31:08.431Z",
+  "latencyMs": 38853,
+  "model": "gemini-3.5-flash",
+  "modelVersion": "gemini-3.5-flash",
+  "finishReason": "STOP",
+  "truncated": false,
+  "usage": {
+   "promptTokens": 7130,
+   "outputTokens": 1386,
+   "thoughtTokens": 5483
+  },
+  "costUsd": 0.0193115,
+  "rawText": "```json\n{\n  \"opportunities\": [\n    {\n      \"key\": \"establish-family-supervised-socials\",\n      \"kind\": \"GROW\",\n      \"domain\": \"audience\",\n      \"statement\": \"Establish a controlled, parent-supervised personal social media presence to capture the digital momentum of her rising national-team profile.\",\n      \"rationale\": \"Her rapid athletic trajectory (scoring for the USYNT U-15s) is generating media coverage and local interest, but with no active personal platforms, she has no way to capture or retain this audience. Given her age and exceptional brand safety, parent-managed channels can safely build a foundational public audience.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"findings[mia.audience_scale]\",\n          \"how\": \"Documents her complete lack of personal brand channels and a minimal footprint restricted to Hudl and family platforms.\"\n        },\n        {\n          \"state_path\": \"findings[mia.momentum]\",\n          \"how\": \"Identifies her rapid on-field athletic progression and climbing media coverage, highlighting a clear contrast with her undeveloped public digital audience.\"\n        },\n        {\n          \"state_path\": \"findings[mia.brand_fit]\",\n          \"how\": \"Establishes her high brand safety (95) and structured family environment as ideal safeguards for initiating a highly brand-safe, supervised public presence.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"high\",\n        \"claim\": \"She will begin building a direct-to-fan audience during a key developmental window of high athletic momentum, turning transient media mentions into a permanent digital asset.\"\n      },\n      \"feasibility\": {\n        \"level\": \"medium\",\n        \"claim\": \"Requires her family to set up, oversee, and actively moderate these accounts to protect her privacy, maintain amateur eligibility compliance, and fit around her training schedule.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"grow-sister-legacy-positioning\",\n      \"kind\": \"GROW\",\n      \"domain\": \"positioning\",\n      \"statement\": \"Position her public identity around the dual narratives of her elite individual talent and her shared multi-cultural athletic legacy with sister Mia Bhuta.\",\n      \"rationale\": \"Lilia's current cultural relevance is isolated to specialized youth soccer networks. However, she possesses a compelling, highly authentic family narrative (the sisterly parallel and Indian-American soccer heritage) that has already shown media resonance. Building her positioning around this legacy will help her cross over to broader soccer and multicultural audiences.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"findings[mia.narrative_power]\",\n          \"how\": \"Highlights her high narrative power centered on the sibling parallel with Stanford midfielder Mia Bhuta and their distinctive multi-cultural background.\"\n        },\n        {\n          \"state_path\": \"findings[mia.cultural_relevance]\",\n          \"how\": \"Indicates her reach is currently limited to youth scout circles but notes her surname carries recognized cultural heritage equity.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"medium\",\n        \"claim\": \"Elevates her profile from a localized youth prospect to a nationally compelling narrative, laying the groundwork for broader cultural relevance.\"\n      },\n      \"feasibility\": {\n        \"level\": \"high\",\n        \"claim\": \"Can be executed through low-effort collaborative family content or shared storytelling, requiring minimal extra time from Lilia.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    },\n    {\n      \"key\": \"integrate-hudl-and-family-platform-metrics\",\n      \"kind\": \"UNLOCK\",\n      \"domain\": \"evidence\",\n      \"statement\": \"Integrate data tracking for her Hudl scouting profile and the family YouTube channel to establish an objective audience and interest baseline.\",\n      \"rationale\": \"Nomila currently lacks visibility into her audience engagement quality due to the lack of personal channels. While she has no personal platforms, her family-managed YouTube and Hudl profiles are active. Unlocking the backend metrics of these existing channels will provide Nomila with actual, non-imputed data on search, views, and scouting interest.\",\n      \"rests_on\": [\n        {\n          \"state_path\": \"findings[mia.audience_scale]\",\n          \"how\": \"Identifies her existing Hudl profile (14 followers) and family YouTube channel as her only digital endpoints.\"\n        },\n        {\n          \"state_path\": \"materialGaps[0]\",\n          \"how\": \"Highlights the complete absence of demographic or engagement metrics to analyze her digital reach.\"\n        }\n      ],\n      \"impact\": {\n        \"level\": \"medium\",\n        \"claim\": \"Gives Nomila verified, first-party data to evaluate her baseline reach and scout interest, replacing low-confidence assumed metrics with real evidence.\"\n      },\n      \"feasibility\": {\n        \"level\": \"high\",\n        \"claim\": \"Only requires linking her existing platform accounts to Nomila's system, taking minutes of the family's time.\"\n      },\n      \"urgency\": null,\n      \"confidence\": \"HIGH\"\n    }\n  ],\n  \"notes\": [\n    \"commercial: Yielded nothing because she is a 14-year-old amateur athlete with zero commercial history or active deals, making any immediate commercial monetization premature.\",\n    \"owned_venture: Yielded nothing because there is no evidence or stated ambition regarding business ownership at this early developmental stage.\",\n    \"impact: No recorded statements, philanthropic history, or cause affiliations exist in the current athlete state.\",\n    \"career: Her career is in its very early youth stage (active/developmental), with no post-playing or media-career goals stated.\",\n    \"relationships: No existing brand relationships are active, and no specific network connections are documented beyond her immediate family.\",\n    \"content: She currently produces no personal content, so content optimization opportunities are deferred until baseline audience channels are established.\",\n    \"athletic: Her athletic trajectory is highly successful (Strength - 77) and showing rapid upward momentum; active intervention in her coaching or selection falls outside our enterprise support scope.\"\n  ]\n}\n```",
+  "parsed": {
+   "opportunities": [
+    {
+     "key": "establish-family-supervised-socials",
+     "kind": "GROW",
+     "domain": "audience",
+     "statement": "Establish a controlled, parent-supervised personal social media presence to capture the digital momentum of her rising national-team profile.",
+     "rationale": "Her rapid athletic trajectory (scoring for the USYNT U-15s) is generating media coverage and local interest, but with no active personal platforms, she has no way to capture or retain this audience. Given her age and exceptional brand safety, parent-managed channels can safely build a foundational public audience.",
+     "rests_on": [
+      {
+       "state_path": "findings[mia.audience_scale]",
+       "how": "Documents her complete lack of personal brand channels and a minimal footprint restricted to Hudl and family platforms."
+      },
+      {
+       "state_path": "findings[mia.momentum]",
+       "how": "Identifies her rapid on-field athletic progression and climbing media coverage, highlighting a clear contrast with her undeveloped public digital audience."
+      },
+      {
+       "state_path": "findings[mia.brand_fit]",
+       "how": "Establishes her high brand safety (95) and structured family environment as ideal safeguards for initiating a highly brand-safe, supervised public presence."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "She will begin building a direct-to-fan audience during a key developmental window of high athletic momentum, turning transient media mentions into a permanent digital asset."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires her family to set up, oversee, and actively moderate these accounts to protect her privacy, maintain amateur eligibility compliance, and fit around her training schedule."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "grow-sister-legacy-positioning",
+     "kind": "GROW",
+     "domain": "positioning",
+     "statement": "Position her public identity around the dual narratives of her elite individual talent and her shared multi-cultural athletic legacy with sister Mia Bhuta.",
+     "rationale": "Lilia's current cultural relevance is isolated to specialized youth soccer networks. However, she possesses a compelling, highly authentic family narrative (the sisterly parallel and Indian-American soccer heritage) that has already shown media resonance. Building her positioning around this legacy will help her cross over to broader soccer and multicultural audiences.",
+     "rests_on": [
+      {
+       "state_path": "findings[mia.narrative_power]",
+       "how": "Highlights her high narrative power centered on the sibling parallel with Stanford midfielder Mia Bhuta and their distinctive multi-cultural background."
+      },
+      {
+       "state_path": "findings[mia.cultural_relevance]",
+       "how": "Indicates her reach is currently limited to youth scout circles but notes her surname carries recognized cultural heritage equity."
+      }
+     ],
+     "impact": {
+      "level": "medium",
+      "claim": "Elevates her profile from a localized youth prospect to a nationally compelling narrative, laying the groundwork for broader cultural relevance."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Can be executed through low-effort collaborative family content or shared storytelling, requiring minimal extra time from Lilia."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "integrate-hudl-and-family-platform-metrics",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": "Integrate data tracking for her Hudl scouting profile and the family YouTube channel to establish an objective audience and interest baseline.",
+     "rationale": "Nomila currently lacks visibility into her audience engagement quality due to the lack of personal channels. While she has no personal platforms, her family-managed YouTube and Hudl profiles are active. Unlocking the backend metrics of these existing channels will provide Nomila with actual, non-imputed data on search, views, and scouting interest.",
+     "rests_on": [
+      {
+       "state_path": "findings[mia.audience_scale]",
+       "how": "Identifies her existing Hudl profile (14 followers) and family YouTube channel as her only digital endpoints."
+      },
+      {
+       "state_path": "materialGaps[0]",
+       "how": "Highlights the complete absence of demographic or engagement metrics to analyze her digital reach."
+      }
+     ],
+     "impact": {
+      "level": "medium",
+      "claim": "Gives Nomila verified, first-party data to evaluate her baseline reach and scout interest, replacing low-confidence assumed metrics with real evidence."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Only requires linking her existing platform accounts to Nomila's system, taking minutes of the family's time."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [
+    "commercial: Yielded nothing because she is a 14-year-old amateur athlete with zero commercial history or active deals, making any immediate commercial monetization premature.",
+    "owned_venture: Yielded nothing because there is no evidence or stated ambition regarding business ownership at this early developmental stage.",
+    "impact: No recorded statements, philanthropic history, or cause affiliations exist in the current athlete state.",
+    "career: Her career is in its very early youth stage (active/developmental), with no post-playing or media-career goals stated.",
+    "relationships: No existing brand relationships are active, and no specific network connections are documented beyond her immediate family.",
+    "content: She currently produces no personal content, so content optimization opportunities are deferred until baseline audience channels are established.",
+    "athletic: Her athletic trajectory is highly successful (Strength - 77) and showing rapid upward momentum; active intervention in her coaching or selection falls outside our enterprise support scope."
+   ]
+  },
+  "structuralProblems": [],
+  "groundingProblems": [],
+  "citations": [
+   {
+    "index": 0,
+    "key": "establish-family-supervised-socials",
+    "statePath": "findings[mia.audience_scale]",
+    "resolved": true
+   },
+   {
+    "index": 0,
+    "key": "establish-family-supervised-socials",
+    "statePath": "findings[mia.momentum]",
+    "resolved": true
+   },
+   {
+    "index": 0,
+    "key": "establish-family-supervised-socials",
+    "statePath": "findings[mia.brand_fit]",
+    "resolved": true
+   },
+   {
+    "index": 1,
+    "key": "grow-sister-legacy-positioning",
+    "statePath": "findings[mia.narrative_power]",
+    "resolved": true
+   },
+   {
+    "index": 1,
+    "key": "grow-sister-legacy-positioning",
+    "statePath": "findings[mia.cultural_relevance]",
+    "resolved": true
+   },
+   {
+    "index": 2,
+    "key": "integrate-hudl-and-family-platform-metrics",
+    "statePath": "findings[mia.audience_scale]",
+    "resolved": true
+   },
+   {
+    "index": 2,
+    "key": "integrate-hudl-and-family-platform-metrics",
+    "statePath": "materialGaps[0]",
+    "resolved": true
+   }
+  ],
+  "map": {
+   "athleteId": "3fd80f19-be44-4cb6-9075-a7e79c1924c4",
+   "asOf": "2026-09-22T04:31:47.283Z",
+   "version": "opportunity-map/1.0.0",
+   "specVersion": "opportunity-eval-spec/1.0.0",
+   "stateAsOf": "2026-09-22T04:31:08.163Z",
+   "opportunities": [
+    {
+     "key": "establish-family-supervised-socials",
+     "kind": "GROW",
+     "domain": "audience",
+     "statement": {
+      "value": "Establish a controlled, parent-supervised personal social media presence to capture the digital momentum of her rising national-team profile.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-22T04:31:08.163Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "findings[mia.audience_scale]",
+       "findings[mia.momentum]",
+       "findings[mia.brand_fit]"
+      ],
+      "rationale": "Her rapid athletic trajectory (scoring for the USYNT U-15s) is generating media coverage and local interest, but with no active personal platforms, she has no way to capture or retain this audience. Given her age and exceptional brand safety, parent-managed channels can safely build a foundational public audience.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "findings[mia.audience_scale]",
+       "how": "Documents her complete lack of personal brand channels and a minimal footprint restricted to Hudl and family platforms."
+      },
+      {
+       "statePath": "findings[mia.momentum]",
+       "how": "Identifies her rapid on-field athletic progression and climbing media coverage, highlighting a clear contrast with her undeveloped public digital audience."
+      },
+      {
+       "statePath": "findings[mia.brand_fit]",
+       "how": "Establishes her high brand safety (95) and structured family environment as ideal safeguards for initiating a highly brand-safe, supervised public presence."
+      }
+     ],
+     "impact": {
+      "level": "high",
+      "claim": "She will begin building a direct-to-fan audience during a key developmental window of high athletic momentum, turning transient media mentions into a permanent digital asset."
+     },
+     "feasibility": {
+      "level": "medium",
+      "claim": "Requires her family to set up, oversee, and actively moderate these accounts to protect her privacy, maintain amateur eligibility compliance, and fit around her training schedule."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "grow-sister-legacy-positioning",
+     "kind": "GROW",
+     "domain": "positioning",
+     "statement": {
+      "value": "Position her public identity around the dual narratives of her elite individual talent and her shared multi-cultural athletic legacy with sister Mia Bhuta.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-22T04:31:08.163Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "findings[mia.narrative_power]",
+       "findings[mia.cultural_relevance]"
+      ],
+      "rationale": "Lilia's current cultural relevance is isolated to specialized youth soccer networks. However, she possesses a compelling, highly authentic family narrative (the sisterly parallel and Indian-American soccer heritage) that has already shown media resonance. Building her positioning around this legacy will help her cross over to broader soccer and multicultural audiences.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "findings[mia.narrative_power]",
+       "how": "Highlights her high narrative power centered on the sibling parallel with Stanford midfielder Mia Bhuta and their distinctive multi-cultural background."
+      },
+      {
+       "statePath": "findings[mia.cultural_relevance]",
+       "how": "Indicates her reach is currently limited to youth scout circles but notes her surname carries recognized cultural heritage equity."
+      }
+     ],
+     "impact": {
+      "level": "medium",
+      "claim": "Elevates her profile from a localized youth prospect to a nationally compelling narrative, laying the groundwork for broader cultural relevance."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Can be executed through low-effort collaborative family content or shared storytelling, requiring minimal extra time from Lilia."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    },
+    {
+     "key": "integrate-hudl-and-family-platform-metrics",
+     "kind": "UNLOCK",
+     "domain": "evidence",
+     "statement": {
+      "value": "Integrate data tracking for her Hudl scouting profile and the family YouTube channel to establish an objective audience and interest baseline.",
+      "owner": "opportunity",
+      "confidence": "HIGH",
+      "asOf": "2026-09-22T04:31:08.163Z",
+      "evidenceClass": "EVALUATED",
+      "evidenceIds": [
+       "findings[mia.audience_scale]",
+       "materialGaps[0]"
+      ],
+      "rationale": "Nomila currently lacks visibility into her audience engagement quality due to the lack of personal channels. While she has no personal platforms, her family-managed YouTube and Hudl profiles are active. Unlocking the backend metrics of these existing channels will provide Nomila with actual, non-imputed data on search, views, and scouting interest.",
+      "falsifiedBy": null
+     },
+     "restsOn": [
+      {
+       "statePath": "findings[mia.audience_scale]",
+       "how": "Identifies her existing Hudl profile (14 followers) and family YouTube channel as her only digital endpoints."
+      },
+      {
+       "statePath": "materialGaps[0]",
+       "how": "Highlights the complete absence of demographic or engagement metrics to analyze her digital reach."
+      }
+     ],
+     "impact": {
+      "level": "medium",
+      "claim": "Gives Nomila verified, first-party data to evaluate her baseline reach and scout interest, replacing low-confidence assumed metrics with real evidence."
+     },
+     "feasibility": {
+      "level": "high",
+      "claim": "Only requires linking her existing platform accounts to Nomila's system, taking minutes of the family's time."
+     },
+     "urgency": null,
+     "confidence": "HIGH"
+    }
+   ],
+   "notes": [
+    "commercial: Yielded nothing because she is a 14-year-old amateur athlete with zero commercial history or active deals, making any immediate commercial monetization premature.",
+    "owned_venture: Yielded nothing because there is no evidence or stated ambition regarding business ownership at this early developmental stage.",
+    "impact: No recorded statements, philanthropic history, or cause affiliations exist in the current athlete state.",
+    "career: Her career is in its very early youth stage (active/developmental), with no post-playing or media-career goals stated.",
+    "relationships: No existing brand relationships are active, and no specific network connections are documented beyond her immediate family.",
+    "content: She currently produces no personal content, so content optimization opportunities are deferred until baseline audience channels are established.",
+    "athletic: Her athletic trajectory is highly successful (Strength - 77) and showing rapid upward momentum; active intervention in her coaching or selection falls outside our enterprise support scope."
+   ],
+   "inputs": [
+    {
+     "kind": "athlete_state",
+     "version": "athlete-state/1.0.0",
+     "present": true
+    },
+    {
+     "kind": "strategy_intelligence",
+     "version": null,
+     "present": false
+    },
+    {
+     "kind": "targeted_research",
+     "version": null,
+     "present": false
+    }
+   ],
+   "overallConfidence": "LOW"
+  }
+ }
+}

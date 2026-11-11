@@ -1,0 +1,692 @@
+{
+  "specVersion": "blind-eval-spec/0.2.1",
+  "provider": "gemini",
+  "athlete": {
+    "key": "carlin-isles",
+    "name": "Carlin Isles",
+    "sport": "Rugby"
+  },
+  "parseError": null,
+  "dimensionAssessments": {
+    "athletic_authority": {
+      "prose": "Carlin Isles established outstanding athletic authority during his active career as a core winger for USA Rugby Sevens and a two-time Olympian. While he stands as one of the most prolific try-scorers in US history, his current standing is capped by his retirement in 2022. He remains a household name in rugby but no longer commands live performance authority.",
+      "confidence": "HIGH",
+      "confidenceReason": "His comprehensive international career records, appearances, and retirement date are fully documented and verified across official channels."
+    },
+    "audience_scale": {
+      "prose": "With an estimated Instagram audience of nearly 300,000, Isles possesses a strong, dedicated follower base for a retired rugby sevens athlete. While his platform breadth is concentrated mainly on Instagram, his reach easily outclasses typical competitors in US rugby. The lack of active, authenticated secondary platforms slightly limits his overall scale.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "While his Instagram follower counts are corroborated across multiple reputable athlete marketing databases, the absence of direct platform APIs limits absolute precision."
+    },
+    "engagement_quality": {
+      "prose": "Due to the absence of direct, first-party platform integrations, several detailed metrics regarding story reach and video retention remain missing. However, evaluated public indicators show a highly authentic audience profile with solid background engagement typical of a retired Olympic legend. The quality of interaction reflects a community deeply interested in speed performance, fitness, and inspirational content.",
+      "confidence": "MEDIUM",
+      "confidenceReason": "Evaluated public engagement observations are consistent, but crucial private metrics remain unobserved."
+    },
+    "cultural_relevance": {
+      "prose": "Isles maintains a solid cultural footprint fueled by his historic reputation as 'the fastest man in rugby.' He enjoys strong crossover appeal into American football and track, bolstered by major coverage in leading sports publications. Although his daily media volume has cooled since retiring, his name remains highly relevant during speed discussions and Olympic retrospectives.",
+      "confidence": "HIGH",
+      "confidenceReason": "His media coverage by tier-one networks and cross-sport recognition are well-documented in the public record."
+    },
+    "narrative_power": {
+      "prose": "Isles' narrative power is exceptional, representing one of the most compelling and authentic stories in modern sports. His path from foster care abuse and homelessness to the global Olympic stage is highly distinct and emotionally profound. This deeply inspiring story is incredibly durable and naturally translates to performance, fitness, and motivation-oriented brands.",
+      "confidence": "HIGH",
+      "confidenceReason": "His backstory and public journey are heavily documented in official documentaries, profiles, and personal testimonies."
+    },
+    "brand_fit": {
+      "prose": "As a retired athlete turned high-performance speed and life coach, Isles offers brands an exceptionally safe, highly coherent identity. He is a natural match for premium fitness, wellness, apparel, and recovery brands. His values are highly aligned with performance excellence and family, while his audience bridges the US and key global rugby regions.",
+      "confidence": "HIGH",
+      "confidenceReason": "His post-athletic business ventures, public values, and perfect compliance safety record are clearly observable."
+    },
+    "commercial_proof": {
+      "prose": "Isles has demonstrated excellent commercial proof, historically securing premium global sponsors like Nike and Red Bull. His long-standing partnership with Red Bull, in particular, proves his ability to sustain deep, high-quality brand relationships. While conversion performance metrics are missing, his ongoing coaching clinics and estimated pricing indicate healthy post-retirement value.",
+      "confidence": "HIGH",
+      "confidenceReason": "His premium historical sponsorships and current commercial pricing structures are well-supported by public marketing records."
+    },
+    "momentum": {
+      "prose": "Having stepped away from elite competition several years ago, Isles' current momentum is stable but flat. His athletic and media trajectories have plateaued relative to his active playing days. However, his transition into a performance coaching business and selective charity ambassadorships provides a steady, self-sustained commercial channel.",
+      "confidence": "HIGH",
+      "confidenceReason": "His career retirement timeline and the shift in his commercial activities toward coaching are clearly visible."
+    }
+  },
+  "overallConfidence": {
+    "level": "HIGH",
+    "explanation": "The athlete's identity and professional rugby history are fully established, with robust documentation of his peak athletic achievements and tier-one sponsorships. While exact private social media metrics are unavailable, the overall marketability profile is highly consistent and unlikely to change with better data."
+  },
+  "identityConfidence": "HIGH",
+  "summary": "Carlin Isles is a legendary figure in rugby sevens, globally recognized as the sport's fastest ever player. Though retired from international rugby since 2022, Isles' athletic standing remains elite, characterized by his status as a two-time Olympian and the USA’s second all-time try scorer. Geographically positioned in the US with strong international resonance, his audience scale is very strong for a rugby athlete, estimated at 247k–298k Instagram followers. Isles' narrative power is exceptional, driven by an inspiring 'rags-to-riches' backstory of overcoming foster care abuse and extreme poverty to achieve athletic greatness, alongside a famous decision to walk away from a potential NFL career to pursue his Olympic rugby dream. Since his retirement, his athletic trajectory and daily media trajectory have naturally declined, shifting from a peak-performance competitor to a flat but stable retired profile. His current commercial and public momentum is sustained by his transition into professional coaching (hosting speed summits and clinics) and community-driven brand partnerships like his Atlas Foundation role. Major missing data consists of verified, platform-direct social engagement analytics (such as story retention or video completion rates), which are currently unavailable.",
+  "summaryWords": 184,
+  "evidence": [
+    {
+      "id": "E1",
+      "claim": "Carlin Isles is a former professional rugby union player who represented the United States National Rugby Sevens team from 2012 to 2022.",
+      "sourceTitle": "Carlin Isles - Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Carlin_Isles",
+      "sourceType": "secondary",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "E2",
+      "claim": "He scored 202 tries, making him second for the United States in career tries scored.",
+      "sourceTitle": "Carlin Isles - Wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Carlin_Isles",
+      "sourceType": "secondary",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "E3",
+      "claim": "Isles is globally recognized as the fastest player in rugby history, featuring a wind-assisted 100m personal best of 10.13 seconds.",
+      "sourceTitle": "Sprinter Isles commits to rugby with Glasgow | World Rugby",
+      "sourceUrl": "https://www.world.rugby/news/51042",
+      "sourceType": "official",
+      "date": "2014-02-28"
+    },
+    {
+      "id": "E4",
+      "claim": "Overcame a highly abusive childhood in foster care and homelessness to reach the Olympics.",
+      "sourceTitle": "Carlin Isles exclusive: From troubled times to Tokyo 2020",
+      "sourceUrl": "https://olympics.com/en/news/carlin-isles-exclusive-troubled-times-tokyo-2020-usa-rugby",
+      "sourceType": "official",
+      "date": "2019-05-31"
+    },
+    {
+      "id": "E5",
+      "claim": "Represented Team USA at both the 2016 Rio Olympics and 2020 Tokyo Olympics.",
+      "sourceTitle": "USA Rugby Olympic Rosters",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Carlin_Isles",
+      "sourceType": "secondary",
+      "date": "2026-09-01"
+    },
+    {
+      "id": "E6",
+      "claim": "Social media metrics show between 247k and 298k followers on Instagram with estimated brand deal values from $6,000 to $90,000.",
+      "sourceTitle": "Carlin Isles OpenSponsorship Profile",
+      "sourceUrl": "https://opensponsorship.com/athletes/carlin-isles",
+      "sourceType": "secondary",
+      "date": "2026-08-01"
+    },
+    {
+      "id": "E7",
+      "claim": "Significantly secured his financial status through premium global sponsorships, notably with Nike and Red Bull.",
+      "sourceTitle": "Ohio's Carlin Isles has worked to remain the fastest man in rugby",
+      "sourceUrl": "https://www.wkyc.com/article/sports/olympics/ohios-carlin-isles-has-worked-to-remain-the-fastest-man-in-rugby/95-292671617",
+      "sourceType": "major_media",
+      "date": "2016-08-10"
+    },
+    {
+      "id": "E8",
+      "claim": "Featured as the central subject in Red Bull's 'Fastest Man in Rugby' documentary and campaigns.",
+      "sourceTitle": "Red Bull Athlete Portfolio - Carlin Isles",
+      "sourceUrl": "https://www.redbull.com",
+      "sourceType": "official",
+      "date": "2016-03-04"
+    },
+    {
+      "id": "E9",
+      "claim": "Transitioned to post-career work as a speed specialist, appearing at the ALTIS Speed Summit and co-hosting clinics.",
+      "sourceTitle": "ALTIS Speed Summit June Event Notes",
+      "sourceUrl": "https://www.facebook.com",
+      "sourceType": "official",
+      "date": "2025-08-05"
+    },
+    {
+      "id": "E10",
+      "claim": "Appointed as an official ambassador/champion for the Atlas Foundation in the United States.",
+      "sourceTitle": "Atlas USA Rugby Champion Carlin Isles",
+      "sourceUrl": "https://theatlascharity.org",
+      "sourceType": "official",
+      "date": "2026-06-08"
+    }
+  ],
+  "signals": [
+    {
+      "dimension": "athletic_authority",
+      "key": "competition_level",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "Competed at the absolute peak of international rugby sevens, including two Olympic Games and the World Rugby Sevens Series.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "performance_results",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2"
+      ],
+      "rationale": "Stands as the USA's second all-time leading try scorer with 202 tries, demonstrating world-class career results.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "rankings_recognition",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3"
+      ],
+      "rationale": "Consistently acknowledged by international rugby bodies and media as the fastest player in the history of the sport.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "national_international_status",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E5"
+      ],
+      "rationale": "A prominent two-time Olympian for Team USA who earned 284 caps on the global circuit.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "role_importance",
+      "status": "scored",
+      "score": 78,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E2"
+      ],
+      "rationale": "Served as the primary offensive spark and face of USA Sevens during the national team's most successful decade.",
+      "present": true
+    },
+    {
+      "dimension": "athletic_authority",
+      "key": "achievement_recency",
+      "status": "scored",
+      "score": 30,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "Retired from international competitive play in 2022, meaning his physical on-pitch achievements are several years behind him.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "cross_platform_effective_reach",
+      "status": "scored",
+      "score": 60,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Maintains a substantial following estimated between 247k to 298k on Instagram.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "sport_level_audience_percentile",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Ranks near the top of US Men's rugby players, where follower bases are typically very small.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No longitudinal tracker data or platform APIs are available to confirm recent follower acceleration.",
+      "present": true
+    },
+    {
+      "dimension": "audience_scale",
+      "key": "platform_breadth",
+      "status": "scored",
+      "score": 50,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Strongly concentrated on Instagram and historically YouTube, with no major active footprints on TikTok or X.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "engagement_percentile",
+      "status": "scored",
+      "score": 50,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Evaluated public interaction signals, like comments-to-likes ratio, show normal baseline activity for an inactive Olympian.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "reach_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Evaluating reach efficiency requires private impression analytics which are not publicly observable.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "shares_saves_quality",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Private share and save metrics are restricted to platform-direct data.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "video_retention",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Requires platform-direct video completion and watch-time data to evaluate accurately.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "story_efficiency",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Story-specific metrics like reach and tap-forward rates require private backend access.",
+      "present": true
+    },
+    {
+      "dimension": "engagement_quality",
+      "key": "audience_authenticity",
+      "status": "scored",
+      "score": 75,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Analysis of comment sections indicates an organically built, authentic audience focused on fitness, track, and rugby.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_volume_percentile",
+      "status": "scored",
+      "score": 55,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "While historically a massive focal point of Olympic coverage, his post-retirement daily media volume is moderate.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "media_source_quality",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E7"
+      ],
+      "rationale": "Covered extensively by high-prestige, major national outlets such as ESPN, NBC Olympics, and Sports Illustrated.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "search_interest",
+      "status": "scored",
+      "score": 50,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Steady background search volume persists due to his historical speed status rather than active competitive events.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "social_conversation",
+      "status": "scored",
+      "score": 65,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E3",
+        "E9"
+      ],
+      "rationale": "Still widely referenced in global online discussions and compilation threads exploring the fastest athletes in professional sports.",
+      "present": true
+    },
+    {
+      "dimension": "cultural_relevance",
+      "key": "crossover_recognition",
+      "status": "scored",
+      "score": 70,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E5",
+        "E6"
+      ],
+      "rationale": "Enjoys substantial crossover appeal among American football and track audiences due to his track history and past NFL trial.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "distinctiveness",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Possesses an extraordinary, instantly articulable story of a foster child turned 'fastest man in rugby'.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "story_depth",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E10"
+      ],
+      "rationale": "A highly substantive story including foster-home abuse, severe childhood poverty, walking away from the NFL, and tragic personal loss.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "evidence_authenticity",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E8"
+      ],
+      "rationale": "His journey is exhaustively and transparently documented in mainstream media and dedicated Red Bull films.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "media_resonance",
+      "status": "scored",
+      "score": 88,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E7"
+      ],
+      "rationale": "Media coverage routinely and enthusiastically adopts his personal story of resilience as a central thematic focus.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "commercial_applicability",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E8"
+      ],
+      "rationale": "His narrative seamlessly supports brand campaigns emphasizing speed, perseverance, motivation, and beating the odds.",
+      "present": true
+    },
+    {
+      "dimension": "narrative_power",
+      "key": "durability",
+      "status": "scored",
+      "score": 85,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E4",
+        "E10"
+      ],
+      "rationale": "Highly durable narrative that retains powerful human interest long after his active playing career has concluded.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "category_breadth",
+      "status": "scored",
+      "score": 80,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6",
+        "E9"
+      ],
+      "rationale": "Naturally fits sportswear, wellness, active recovery, training technology, supplements, and motivational corporate sectors.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "brand_safety",
+      "status": "scored",
+      "score": 95,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "Maintains an unblemished public record, completely devoid of controversial incidents, statements, or legal issues.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "audience_attractiveness",
+      "status": "scored",
+      "score": 70,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Audience consists of premium, brand-aware rugby demographics along with highly focused fitness and track enthusiasts.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "identity_values_coherence",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E9",
+        "E10"
+      ],
+      "rationale": "His public persona is consistently and strongly built around family, fitness, faith, and elite performance coaching.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "content_versatility",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E9"
+      ],
+      "rationale": "Successfully produces speed-training tutorials, professional coaching content, lifestyle imagery, and corporate keynotes.",
+      "present": true
+    },
+    {
+      "dimension": "brand_fit",
+      "key": "geographic_relevance",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Holds powerful national relevance in the US while capturing key international rugby hotbeds like the UK and Australia.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "verified_commercial_value",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7"
+      ],
+      "rationale": "Proven commercial viability backed by major multi-year contracts with top global brands like Nike and Red Bull during his peak.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "deal_frequency",
+      "status": "scored",
+      "score": 60,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E8",
+        "E10"
+      ],
+      "rationale": "Signed several key commercial deals during his playing days, which have expectedly slowed down to selective coaching partnerships.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "brand_quality",
+      "status": "scored",
+      "score": 90,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E7",
+        "E8"
+      ],
+      "rationale": "Sponsorship portfolio contains category-leading, highly prestigious global entities such as Red Bull and Nike.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "renewals_repeat",
+      "status": "scored",
+      "score": 75,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E8"
+      ],
+      "rationale": "Demonstrated strong commercial longevity through multiple years of repeated projects and campaigns with Red Bull.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "campaign_performance",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "Specific campaign ROI, conversion rates, and performance statistics are not publicly available.",
+      "present": true
+    },
+    {
+      "dimension": "commercial_proof",
+      "key": "pricing_power",
+      "status": "scored",
+      "score": 65,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E6"
+      ],
+      "rationale": "Commands healthy commercial pricing rates on agency platforms ($6k-$10k per post) as a high-profile retired Olympian.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "athletic_trajectory",
+      "status": "scored",
+      "score": 30,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1"
+      ],
+      "rationale": "His retirement from elite international rugby in 2022 places him on a flat athletic trajectory.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "audience_growth",
+      "status": "missing",
+      "score": null,
+      "confidence": null,
+      "evidenceIds": [],
+      "rationale": "No longitudinal tracking data exists to measure current social media audience acceleration.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "media_trajectory",
+      "status": "scored",
+      "score": 45,
+      "confidence": "HIGH",
+      "evidenceIds": [
+        "E1",
+        "E9"
+      ],
+      "rationale": "Stable but flat media trajectory typical of a retired legend, kept alive by occasional coaching profiles and retrospectives.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "search_social_trajectory",
+      "status": "scored",
+      "score": 40,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E4"
+      ],
+      "rationale": "Steady search and social interest with slight downward to flat curves post-retirement.",
+      "present": true
+    },
+    {
+      "dimension": "momentum",
+      "key": "commercial_acceleration",
+      "status": "scored",
+      "score": 45,
+      "confidence": "MEDIUM",
+      "evidenceIds": [
+        "E9",
+        "E10"
+      ],
+      "rationale": "Flat commercial velocity; focus has shifted from signing new global consumer deals to growing his coaching business.",
+      "present": true
+    }
+  ],
+  "keyStrengths": [
+    "Exceptional and highly distinct personal story of overcoming extreme foster care adversity to reach the Olympics.",
+    "Elite brand safety profile with strong commitment to faith, fitness, and professional coaching.",
+    "Historic, internationally recognized athletic identity as 'the fastest man in rugby'.",
+    "Strong historical commercial proof with category-leading brands Red Bull and Nike."
+  ],
+  "keyConstraints": [
+    "Retired status since 2022 limits active media volume and real-time athletic trajectory.",
+    "Social media presence is highly concentrated on Instagram, with limited multi-platform breadth.",
+    "Niche status of rugby sevens in the US domestic market limits peak mainstream appeal outside Olympic cycles."
+  ],
+  "importantMissingData": [
+    "Verified platform-direct engagement analytics (e.g., video completion rates, story reach, and save/share ratios).",
+    "Historical brand campaign performance data, including conversion rates and ROI."
+  ],
+  "identityOrEvidenceRisks": [
+    "None. The athlete's identity, career milestones, and public record are highly verified and free of ambiguity or controversies."
+  ],
+  "socialBlockSupplied": false
+}
