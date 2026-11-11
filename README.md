@@ -2,22 +2,15 @@
 
 ## Product demos
 
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <strong>Mila — voice agent and deal intelligence</strong>
+> **Note:** These are not the finished product and are not polished. They are raw recordings I took of the first MVP / early iteration.
+
+### Mila — voice agent and deal intelligence
 
 https://github.com/user-attachments/assets/2d7e6cb4-72c4-4f61-a235-6aa2667ffde8
 
-    </td>
-    <td align="center" width="50%">
-      <strong>Nomila Studio — AI creative and video generation</strong>
+### Nomila Studio — AI creative and video generation
 
 https://github.com/user-attachments/assets/429f68c1-f699-4945-a592-1c735ee06e9a
-
-    </td>
-  </tr>
-</table>
 
 ## Architecture
 
