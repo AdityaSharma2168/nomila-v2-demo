@@ -5,22 +5,16 @@
 <table>
   <tr>
     <td align="center" width="50%">
-      <a href="docs/demos/mila-voice-agent.mp4">
-        <img src="docs/demos/mila-voice-agent.jpg" alt="Mila — voice agent and deal intelligence" height="420">
-      </a>
-      <br>
       <strong>Mila — voice agent and deal intelligence</strong>
-      <br>
-      <sub><a href="docs/demos/mila-voice-agent.mp4">▶ Watch (1:43)</a></sub>
+
+https://github.com/user-attachments/assets/2d7e6cb4-72c4-4f61-a235-6aa2667ffde8
+
     </td>
     <td align="center" width="50%">
-      <a href="docs/demos/nomila-studio.mp4">
-        <img src="docs/demos/nomila-studio.jpg" alt="Nomila Studio — AI creative and video generation" height="420">
-      </a>
-      <br>
       <strong>Nomila Studio — AI creative and video generation</strong>
-      <br>
-      <sub><a href="docs/demos/nomila-studio.mp4">▶ Watch (1:23)</a></sub>
+
+https://github.com/user-attachments/assets/429f68c1-f699-4945-a592-1c735ee06e9a
+
     </td>
   </tr>
 </table>
